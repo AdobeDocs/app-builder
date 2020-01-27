@@ -4,5 +4,7 @@
 
 ## JAMStack: Anatomy of an Adobe Custom Application
 
+![JAMStack Architecture](jamstack-anatomy-application.png)
+
 ## Components Architecture
 
