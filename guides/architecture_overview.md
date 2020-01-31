@@ -41,6 +41,15 @@ The CLI comes out-of-the-box with the following capabilities:
 - [Interactions](https://github.com/adobe/aio-cli-plugin-runtime) with [Adobe's serverless platform Runtime](https://github.com/AdobeDocs/adobeio-runtime)
 - [Livecycle management](https://github.com/adobe/aio-cli-plugin-app) for [Adobe Custom Applications](https://github.com/AdobeDocs/adobe-custom-applications)
 
+### Adobe Custom Applications Generators
+
+The [generators](https://github.com/adobe/generator-aio-app) help developers to bootstrap their Adobe Custom Applications when using the [CLI](https://github.com/adobe/aio-cli).
+
+Generators can help the developer to create:
+
+- An headless application
+- A full-fledged UI SPA that deploys into the [Experience Cloud Unified shell](http://experiencecloud.adobe.com/)
+- [Runtime](https://github.com/AdobeDocs/adobeio-runtime) serverless actions extending specific [Adobe APIs](https://www.adobe.io/apis.html)
 
 ### SDK Libraries
 
