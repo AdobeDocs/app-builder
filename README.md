@@ -7,6 +7,7 @@ This documentation provides an overview of Adobe Custom Applications as well as 
 [Overview](overview.md)
 
 * [What is Adobe Custom Applications](overview/what_is.md)
+* [Hot to Get Access to Adobe Custom Applications](overview/getting_access.md)
 
 [Getting Started](getting_started.md)
 
