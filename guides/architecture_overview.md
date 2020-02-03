@@ -13,7 +13,7 @@ A typical headless application would integrate well with a remote script or proc
 
 ### Headful Application
 
-This is a full-fledged UI Single Page Application served out of the out-of-the-box Content Delivery Network. It calls directly [Adobe Product APIs](https://www.adobe.io/apis.html) from the client when applicable, or from serverless actions and/or sequences deployed to [Runtime](https://github.com/AdobeDocs/adobeio-runtime), when there is a stronger need for orchestration of [Adobe Product APIs](https://www.adobe.io/apis.html) calls with 3rd party APIs., or with Adobe Identity Management System for authentication purpose.
+This is a full-fledged UI Single Page Application served out of the out-of-the-box Content Delivery Network. It calls directly [Adobe Product APIs](https://www.adobe.io/apis.html) from the client when applicable, or from serverless actions and/or sequences deployed to [Runtime](https://github.com/AdobeDocs/adobeio-runtime), when there is a stronger need for orchestration of [Adobe Product APIs](https://www.adobe.io/apis.html) calls with 3rd party APIs, or with Adobe Identity Management System for authentication purpose.
 
 ## JAMStack: Anatomy of an Adobe Custom Application
 
@@ -105,7 +105,7 @@ It lets developers perform the following actions on behalf of their Adobe Custom
 
 - Deploy the web assets of their Adobe Custom Application to the out-of-the-box CDN
 - Use the out-of-the-box cloud storage through the [Files SDK](https://github.com/adobe/aio-lib-files)
-- Use the out-of-the-box key-value store throught the [State SDK](https://github.com/adobe/aio-lib-state)
+- Use the out-of-the-box key-value store through the [State SDK](https://github.com/adobe/aio-lib-state)
 
 ### Github Actions
 
