@@ -13,7 +13,7 @@ A typical headless application would integrate well with a remote script or proc
 
 ### Headful Application
 
-This is a full-fledged UI Single Page Application served out of the out-of-the-box Content Delivery Network. It calls directly [Adobe Product APIs](https://www.adobe.io/apis.html) from the client when applicable, or from serverless actions and/or sequences deployed to [Runtime](https://github.com/AdobeDocs/adobeio-runtime), when there is a stronger need for orchestration of [Adobe Product APIs](https://www.adobe.io/apis.html) calls with 3rd party APIs, or with Adobe Identity Management System for authentication purpose.
+This is a full-fledged UI Single Page Application served out of the out-of-the-box Content Delivery Network. It calls directly [Adobe Product APIs](https://www.adobe.io/apis.html) from the client when applicable, or from serverless actions and/or sequences deployed to [Runtime](https://github.com/AdobeDocs/adobeio-runtime), when there is a stronger need for orchestration of [Adobe Product APIs](https://www.adobe.io/apis.html) calls with 3rd party APIs calls, or with Adobe Identity Management System for authentication purpose.
 
 ## JAMStack: Anatomy of an Adobe Custom Application
 
@@ -45,15 +45,15 @@ The CLI comes out-of-the-box with the following capabilities:
 
 The [generators](https://github.com/adobe/generator-aio-app) help developers to bootstrap their Adobe Custom Applications when using the [CLI](https://github.com/adobe/aio-cli).
 
-Generators can help the developer to create:
+Generators can be used to create:
 
-- An headless application
+- A headless application
 - A full-fledged UI SPA that deploys into the [Experience Cloud Unified shell](http://experiencecloud.adobe.com/)
 - [Runtime](https://github.com/AdobeDocs/adobeio-runtime) serverless actions extending specific [Adobe APIs](https://www.adobe.io/apis.html)
 
 ### SDK Libraries
 
-Adobe Custom Applications framework provides also a collection of Javascript-based SDK libraries, which purpose is to increase the developer's velocity when implementing custom applications on top of Adobe APIs.
+Adobe Custom Applications framework provides also a collection of Javascript-based SDK libraries, which purpose is to increase the developer's velocity when implementing Custom Applications on top of Adobe APIs.
 
 #### Main SDK library
 
