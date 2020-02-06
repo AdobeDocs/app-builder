@@ -18,7 +18,7 @@ This documentation provides an overview of Adobe Custom Applications as well as 
 
 * [Architecture Overview](guides/architecture_overview.md)
 * [Understanding Authentication](guides/understanding_authentication.md)
-* [Dealing with Application State](guides/application_state.md)
+* [Dealing with Application State](guides/application_storage.md)
 * [Using Client SDKs for Accessing Adobe APIs](guides/using_sdks.md)
 * [Introduction to React Spectrum](guides/introduction_to_react_spectrum.md)
 
@@ -27,8 +27,8 @@ This documentation provides an overview of Adobe Custom Applications as well as 
 * [Adobe CLI](https://github.com/adobe/aio-cli)
 * [Adobe Authentication](https://github.com/adobe/aio-lib-core-ims)
 * SDKs
-    * [File Library](https://github.com/adobe/aio-lib-files)
-    * [State Library](https://github.com/adobe/aio-lib-state) 
+    * [File Storage Library](https://github.com/adobe/aio-lib-files)
+    * [Key/Value Storage Library](https://github.com/adobe/aio-lib-state) 
     * [Adobe Analytics 2.0 Library](https://github.com/adobe/aio-lib-analytics)
     * [Adobe Campaign Standard Library](https://github.com/adobe/aio-lib-campaign-standard)
     * [Adobe Target Library](https://github.com/adobe/aio-lib-target)
