@@ -18,7 +18,7 @@ This documentation provides an overview of Adobe Custom Applications as well as 
 
 * [Architecture Overview](guides/architecture_overview.md)
 * [Understanding Authentication](guides/understanding_authentication.md)
-* [Dealing with Application File & State](guides/application_state.md)
+* [Dealing with Application State](guides/application_state.md)
 * [Using Client SDKs for Accessing Adobe APIs](guides/using_sdks.md)
 * [Introduction to React Spectrum](guides/introduction_to_react_spectrum.md)
 
