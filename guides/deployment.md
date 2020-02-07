@@ -46,7 +46,9 @@ The steps to switch to Linux containers are described in the [Docker for Windows
 
 #### Use-Case
 
-This local deployment feature is useful for developers who want to easily get an initial preview of their application before deploying it to [Runtime](https://github.com/AdobeDocs/adobeio-runtime) and to the out-of-the-box Content Delivery Network.
+This local deployment feature is useful for developers who want to easily get an initial preview of their Custom Application before deploying it to [Runtime](https://github.com/AdobeDocs/adobeio-runtime) and to the out-of-the-box Content Delivery Network, along with local [Runtime](https://github.com/AdobeDocs/adobeio-runtime) actions and UI debugging capabilities.
+
+It also helps developers who want to work on their Custom Application implementation without an appropriate Internet connection. However, the tradeoff will be that the developers will not be able to interact with [Adobe APIs](https://www.adobe.io/apis.html) or other systems that require a connection.
 
 This deployment scenario doesn't require any specific credentials, as both [Runtime](https://github.com/AdobeDocs/adobeio-runtime) actions and application UI are hosted on the developer's machine.
 
@@ -62,13 +64,25 @@ The local [Apache OpenWhisk](https://openwhisk.apache.org/) instance runs on por
 http://localhost:3233/api/v1/web/guest/<appname-appversion>/<action-name>
 ```
 
-**appname** and **appversion** are both application name and version, which are maintained in the package.json file at the root of the Custom Application source code.
+**appname** and **appversion** are both application name and version, which are maintained in the package.json file at the root of the Custom Application source code folder.
 
 **action-name** is the name of the action, which has been choosen by the developer when bootstrapping the application from the generator that was executed with `aio app init <appname>`.
 
-In case the Custom Application is headful, the UI will be served locally from [ParcelJS](https://parceljs.org/cli.html), which is the underlying framework used by the [CLI](https://github.com/adobe/aio-cli) to build the front-end source code.
+In case of a headful Custom Application, the UI will be served locally from [ParcelJS](https://parceljs.org/cli.html), which is the underlying framework used by the [CLI](https://github.com/adobe/aio-cli) to build the front-end source code.
 
 ### Remote Runtime actions and local UI
+
+#### Technical Prerequisites
+
+This deployment scenario requires [Runtime](https://github.com/AdobeDocs/adobeio-runtime) credentials in a .env file at the root of the Custom Application source code folder, as documented in the **Setup Assumptions** above.
+
+#### Use-Case
+
+This feature is useful for developers who want to test their Custom Application in an integrated live environment with minimal deployment time and efforts. 
+
+#### Architecture
+
+The UI is still served locally from [ParcelJS](https://parceljs.org/cli.html), which allows hot updates of the front-end code, which is integrated to [Runtime](https://github.com/AdobeDocs/adobeio-runtime) actions deployed to the developer's namespace.
 
 ## Full Deployment
 
