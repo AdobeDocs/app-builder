@@ -48,7 +48,7 @@ The steps to switch to Linux containers are described in the [Docker for Windows
 
 This local deployment feature is useful for developers who want to easily get an initial preview of their Custom Application before deploying it to [Runtime](https://github.com/AdobeDocs/adobeio-runtime) and to the out-of-the-box Content Delivery Network, along with local [Runtime](https://github.com/AdobeDocs/adobeio-runtime) actions and UI debugging capabilities.
 
-It also helps developers who want to work on their Custom Application implementation without an appropriate Internet connection. However, the tradeoff will be that the developers will not be able to interact with [Adobe APIs](https://www.adobe.io/apis.html) or other systems that require a connection.
+It also helps developers who want to work on their Custom Application implementation without an appropriate Internet connection. However, the tradeoff will be that the developers will not be able to interact with [Adobe APIs](https://www.adobe.io/apis.html) or other open systems that are remote.
 
 This deployment scenario doesn't require any specific credentials, as both [Runtime](https://github.com/AdobeDocs/adobeio-runtime) actions and application UI are hosted on the developer's machine.
 
