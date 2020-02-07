@@ -52,6 +52,10 @@ It also helps developers who want to work on their Custom Application implementa
 
 This deployment scenario doesn't require any specific credentials, as both [Runtime](https://github.com/AdobeDocs/adobeio-runtime) actions and application UI are hosted on the developer's machine.
 
+#### CLI Command
+
+This deployment is triggered when running `aio app run --local` at the root of the Custom Application source code directory.
+
 #### Architecture
 
 In this scenario, the [CLI](https://github.com/adobe/aio-cli) will download a [standalone instance](https://github.com/apache/openwhisk/tree/master/core/standalone) of [Apache OpenWhisk](https://openwhisk.apache.org/), which is the open source serverless platform behind [Runtime](https://github.com/AdobeDocs/adobeio-runtime), on the developer's machine.
@@ -78,14 +82,36 @@ This deployment scenario requires [Runtime](https://github.com/AdobeDocs/adobeio
 
 #### Use-Case
 
-This feature is useful for developers who want to test their Custom Application in an integrated live environment with minimal deployment time and efforts. 
+This feature is useful for developers who want to test and debug locally their Custom Application in a live environment fully integrated to Adobe's ecosystem, with minimal deployment time and efforts. 
+
+#### CLI Command
+
+This deployment is triggered when running `aio app run` at the root of the Custom Application source code directory.
 
 #### Architecture
 
-The UI is still served locally from [ParcelJS](https://parceljs.org/cli.html), which allows hot updates of the front-end code, which is integrated to [Runtime](https://github.com/AdobeDocs/adobeio-runtime) actions deployed to the developer's namespace.
+The UI is still served locally from [ParcelJS](https://parceljs.org/cli.html), which allows hot updates of the front-end code. It communicates with [Runtime](https://github.com/AdobeDocs/adobeio-runtime) actions deployed to the developer's Runtime namespace.
 
 ## Full Deployment
 
-### Focus on the token-vending machine
+#### Technical Prerequisites
 
-### Out-of-the-box Content Delivery Network
+This deployment scenario requires [Runtime](https://github.com/AdobeDocs/adobeio-runtime) credentials in a .env file at the root of the Custom Application source code folder, as documented in the **Setup Assumptions** above.
+
+#### Use-Case
+
+This feature is useful for developers who want to test and preview their Custom Application fully integrated to Adobe's ecosystem, in conditions that are similar to a production deployment. 
+
+#### CLI Command
+
+This deployment is triggered when running `aio app deploy` at the root of the Custom Application source code directory.
+
+#### Architecture
+
+The UI is deployed to the out-of-the-box content Content Delivery Network on behalf of the developer's Runtime credentials. It communicates with [Runtime](https://github.com/AdobeDocs/adobeio-runtime) actions deployed to the developer's Runtime namespace.
+
+The out-of-the-box [Token-Vending Machine](https://github.com/adobe/aio-tvm) is implicitely used by the CLI `aio app deploy` command, and validates the developer's Runtime credentials against [Runtime](https://github.com/AdobeDocs/adobeio-runtime).
+
+If the credentials are valid, the Token-Vending Machine provides an access token to the CLI, which will authorize the CLI to deploy the static files of the Custom Application to the Content Delivery Network.
+
+The deployed Custom Application will then be available at `https://<namespace>.adobeio-static.net/<appname>-<appversion>/index.html`, where **namespace** is the developer's namespace, **appname** and **appversion** are respectively the Custom Application name and version, which are maintained in the package.json file at the root of the Custom Application source code folder.
