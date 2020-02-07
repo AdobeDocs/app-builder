@@ -44,6 +44,30 @@ docker pull adobeapiplatform/adobe-action-nodejs-v10:3.0.21
 **Note:** Developers on Windows machines should make sure that they are using Linux containers for the images above.
 The steps to switch to Linux containers are described in the [Docker for Windows documentation](https://docs.docker.com/docker-for-windows/).
 
+#### Use-Case
+
+This local deployment feature is useful for developers who want to easily get an initial preview of their application before deploying it to [Runtime](https://github.com/AdobeDocs/adobeio-runtime) and to the out-of-the-box Content Delivery Network.
+
+This deployment scenario doesn't require any specific credentials, as both [Runtime](https://github.com/AdobeDocs/adobeio-runtime) actions and application UI are hosted on the developer's machine.
+
+#### Architecture
+
+In this scenario, the [CLI](https://github.com/adobe/aio-cli) will download a [standalone instance](https://github.com/apache/openwhisk/tree/master/core/standalone) of [Apache OpenWhisk](https://openwhisk.apache.org/), which is the open source serverless platform behind [Runtime](https://github.com/AdobeDocs/adobeio-runtime), on the developer's machine.
+
+The [Runtime](https://github.com/AdobeDocs/adobeio-runtime) actions of the application will be deployed to this local [Apache OpenWhisk](https://openwhisk.apache.org/) instance, and executed in NodeJS docker containers spinned up locally from the Docker images that are documented in the **Technical Prerequisites** section above.
+
+The local [Apache OpenWhisk](https://openwhisk.apache.org/) instance runs on port 3233 by default, and the deployed actions will be accessible at:
+
+```
+http://localhost:3233/api/v1/web/guest/<appname-appversion>/<action-name>
+```
+
+**appname** and **appversion** are both application name and version, which are maintained in the package.json file at the root of the Custom Application source code.
+
+**action-name** is the name of the action, which has been choosen by the developer when bootstrapping the application from the generator that was executed with `aio app init <appname>`.
+
+In case the Custom Application is headful, the UI will be served locally from [ParcelJS](https://parceljs.org/cli.html), which is the underlying framework used by the [CLI](https://github.com/adobe/aio-cli) to build the front-end source code.
+
 ### Remote Runtime actions and local UI
 
 ## Full Deployment
