@@ -25,13 +25,21 @@ This documentation provides an overview of Adobe Custom Applications as well as 
 [Reference Documentation](reference_documentation.md)
 
 * [Adobe CLI](https://github.com/adobe/aio-cli)
+* [Custom Application Generators](https://github.com/adobe/generator-aio-app)
 * [Adobe Authentication](https://github.com/adobe/aio-lib-core-ims)
-* SDKs
+* [Token-Vending Machine](https://github.com/adobe/aio-tvm)
+* [SDK Libraries](https://github.com/adobe/aio-sdk)
     * [File Storage Library](https://github.com/adobe/aio-lib-files)
     * [Key/Value Storage Library](https://github.com/adobe/aio-lib-state) 
     * [Adobe Analytics 2.0 Library](https://github.com/adobe/aio-lib-analytics)
     * [Adobe Campaign Standard Library](https://github.com/adobe/aio-lib-campaign-standard)
     * [Adobe Target Library](https://github.com/adobe/aio-lib-target)
+    * [Core SDK Library](https://github.com/adobe/aio-sdk-core)
+    * [Logging Library](https://github.com/adobe/aio-lib-core-logging)
+    * [Error Handling Library](https://github.com/adobe/aio-lib-core-errors)
+    * [Configuration Library](https://github.com/adobe/aio-lib-core-config)
+    * [Token-Vending Machine Client Library](https://github.com/adobe/aio-lib-core-tvm)
+
 
 [Contribution Guides](contribution_guides.md)
 
