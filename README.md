@@ -21,6 +21,7 @@ This documentation provides an overview of Adobe Custom Applications as well as 
 * [Dealing with Application State](guides/application_state.md)
 * [Using Client SDKs for Accessing Adobe APIs](guides/using_sdks.md)
 * [Introduction to React Spectrum](guides/introduction_to_react_spectrum.md)
+* [Deployment](guides/deployment.md)
 
 [Reference Documentation](reference_documentation.md)
 
