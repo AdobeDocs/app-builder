@@ -36,10 +36,10 @@ This documentation provides an overview of Adobe Custom Applications as well as 
     * [Adobe Campaign Standard Library](https://github.com/adobe/aio-lib-campaign-standard)
     * [Adobe Target Library](https://github.com/adobe/aio-lib-target)
     * [Core SDK Library](https://github.com/adobe/aio-sdk-core)
-    * [Logging Library](https://github.com/adobe/aio-lib-core-logging)
-    * [Error Handling Library](https://github.com/adobe/aio-lib-core-errors)
-    * [Configuration Library](https://github.com/adobe/aio-lib-core-config)
-    * [Token-Vending Machine Client Library](https://github.com/adobe/aio-lib-core-tvm)
+       * [Logging Library](https://github.com/adobe/aio-lib-core-logging)
+      * [Error Handling Library](https://github.com/adobe/aio-lib-core-errors)
+      * [Configuration Library](https://github.com/adobe/aio-lib-core-config)
+      * [Token-Vending Machine Client Library](https://github.com/adobe/aio-lib-core-tvm)
 
 
 [Contribution Guides](contribution_guides.md)
