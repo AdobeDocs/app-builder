@@ -18,7 +18,7 @@ docker pull adobeapiplatform/adobe-action-nodejs-v10:3.0.21
 **Note:** Developers on Windows machines should make sure that they are using Linux containers for the images above.
 The steps to switch to Linux containers are described in the [Docker for Windows documentation](https://docs.docker.com/docker-for-windows/).
 
-## Supported developers environment
+## Supported developers environments
 
 We aim to provide the similar quality of experience to developers on both Windows 10 and macOS 10.14 and higher.
 Our [CLI](https://github.com/adobe/aio-cli) and its plugins are automatically tested against NodeJS versions 10 and 12 on both Windows and Linux Xenial.
