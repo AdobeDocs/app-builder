@@ -16,7 +16,7 @@ In the following chapters of this documentation, it will be assumed that:
   
 If you do not own a [Runtime](https://github.com/AdobeDocs/adobeio-runtime) namespace, please [request trial access]().
 
-Please also check our [Technical Requirements](../getting_started/technical_requirements.md) documentation before trying out the deployment scenarios described below.
+The [Technical Requirements](../getting_started/technical_requirements.md) documentation should also be checked before trying out the deployment scenarios described below.
 
 # Deployment Scenarios
 
