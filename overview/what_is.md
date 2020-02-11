@@ -43,7 +43,7 @@ This framework is available to Adobe enterprise customers and Adobe partners (wo
 
 If you are familiar with modern web technologies and comfortable with JavaScript, you can get started today.
 
-## What Use Cases You Can Solve
+## Example Use Cases
 
 Here are some of the types of apps that can be built on top of this framework:
 *	Custom dashboards or other decision making support tools that use data from Adobe solutions and/or data from other systems to empower business people and executives to make decisions.
