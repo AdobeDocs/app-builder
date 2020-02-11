@@ -11,9 +11,9 @@ This documentation provides an overview of Adobe Custom Applications as well as 
 
 [Getting Started](getting_started.md)
 
+* [Technical Requirements](getting_started/technical_requirements.md)
 * [Setting up Your Environment](getting_started/setup.md)
 * [Creating your First Jaeger App](https://github.com/adobe/aio-cli#bootstrapping-an-application)
-* [Technical Requirements](getting_started/technical_requirements.md)
 
 [Guides](guides.md)
 
