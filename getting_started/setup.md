@@ -15,17 +15,7 @@ During Private Beta, please following the steps below to acquire access and cred
     
 ## Local Environment Set Up 
 
-### Required
-- [NodeJS](https://nodejs.org/en/download/) (at least v10). It should also install npm together. We recommend using [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md) to manage NodeJS installation and versions on your machine.
-- [Adobe I/O CLI](https://github.com/adobe/aio-cli)
-    - ```npm install -g @adobe/aio-cli```
-
-### Optional
-The following set up is required if you intend to use the Debugger. 
-- [Visual Studio Code (VSCode)](https://code.visualstudio.com/download) as the supported IDE for editor, debuggger, etc. You can use any other IDE as a code editor, but advanced usage e.g. debugger is not yet supported.
-- [Docker Desktop](https://www.docker.com/get-started).
-- [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/overview/index.html) (at least Java 11).
-- [Chrome debugger extension in VSCode](https://github.com/Microsoft/vscode-chrome-debug)
+Before building your own Custom Application, please make sure you visit our [Technical Requirements](technical_requirements.md).
 
 ## Where to Go Next
 
