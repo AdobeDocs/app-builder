@@ -4,7 +4,7 @@
 
 ### Required
 
-These prerequisites should be fulfiled on the developer's machine before using the [CLI](https://github.com/adobe/aio-cli):
+These prerequisites should be fulfilled on the developer's machine before using the [CLI](https://github.com/adobe/aio-cli):
 
 - [NodeJS](https://nodejs.org/en/download/) (at least v10). It should also install npm together. We recommend using [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md) to manage NodeJS installation and versions on the developer's machine. 
 - [Adobe I/O CLI](https://github.com/adobe/aio-cli)
@@ -12,12 +12,12 @@ These prerequisites should be fulfiled on the developer's machine before using t
 
 ### Optional
 
-The following set up is required if you intend to use the local development features provided by the [CLI](https://github.com/adobe/aio-cli). 
+The following set up is required if you intend to use the local development features provided by the [CLI](https://github.com/adobe/aio-cli): 
 
-- [Visual Studio Code (VSCode)](https://code.visualstudio.com/download) as the supported IDE for editor, debuggger, etc. You can use any other IDE as a code editor, but advanced usage e.g. debugger is not yet supported.
-- [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/overview/index.html) (at least Java 11).
+- [Visual Studio Code](https://code.visualstudio.com/download) (VS Code) as the supported IDE for editor, debuggger, etc. You can use any other IDE as a code editor, but advanced usage (e.g. debugger) is not yet supported.
+- [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/overview/index.html) (at least Java 11)
 - [Chrome debugger extension in VSCode](https://github.com/Microsoft/vscode-chrome-debug)
-- [Docker Desktop](https://www.docker.com/get-started).
+- [Docker Desktop](https://www.docker.com/get-started)
 
 The following commands must be executed to install the required Docker images:
 
