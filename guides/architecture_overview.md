@@ -68,7 +68,7 @@ The [main SDK library](https://github.com/adobe/aio-sdk) bundles smaller, reusab
 
 ##### Integration with Adobe's Identity Management System
 
-The [Adobe IMS SDK library](https://github.com/adobe/aio-lib-core-ims) provides authentication management capabilities to Adobe's Identity Management System, for both fof the ollowing scenarios:
+The [Adobe IMS SDK library](https://github.com/adobe/aio-lib-core-ims) provides authentication management capabilities to Adobe's Identity Management System, for both of the following scenarios:
 
 - [User-based (OAuth 2.0)](https://github.com/adobe/aio-lib-core-ims-oauth)
 - [Technical account-based (JWT Bearer-token)](https://github.com/adobe/aio-lib-core-ims-jwt)
