@@ -1,4 +1,4 @@
-# Hot to Get Access to Adobe Custom Applications
+# How to Get Access to Adobe Custom Applications
 
 Adobe Custom Applications is currently available through private beta. 
 
