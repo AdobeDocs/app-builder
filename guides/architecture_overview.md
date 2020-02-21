@@ -13,7 +13,7 @@ A typical headless application would integrate well with a remote script or proc
 
 ### Headful Application
 
-A headful application is a Single Page Application (SPA) with a full-fledged user interface (UI) served from the out-of-the-box Content Delivery Network. This type of application calls [Adobe Product APIs](https://www.adobe.io/apis.html) directly from the client when applicable. When there is a strong need to orchestrate [Adobe Product API](https://www.adobe.io/apis.html) calls with 3rd party API calls, or with Adobe Identity Management System for authentication purposes, you can deploy serverless actions and/or sequences using [Runtime](https://github.com/AdobeDocs/adobeio-runtime), .
+A headful application is a Single Page Application (SPA) with a full-fledged user interface (UI) served from the out-of-the-box Content Delivery Network. This type of application calls [Adobe Product APIs](https://www.adobe.io/apis.html) directly from the client when applicable. When there is a strong need to orchestrate [Adobe Product API](https://www.adobe.io/apis.html) calls with 3rd party API calls, or with Adobe Identity Management System for authentication purposes, you can deploy serverless actions and/or sequences using [Runtime](https://github.com/AdobeDocs/adobeio-runtime).
 
 ## JAMStack: Anatomy of an Adobe Custom Application
 
@@ -99,6 +99,10 @@ The [Logging SDK library](https://github.com/adobe/aio-lib-core-logging) provide
 ##### Errors
 
 The [Errors SDK library](https://github.com/adobe/aio-lib-core-errors) is the base implementation for all errors thrown by the [SDK libraries](https://github.com/adobe/aio-sdk) and can be used by developers to manage their own errors.
+
+##### Networking
+
+The [Networking SDK library](https://github.com/adobe/aio-lib-core-networking) provides low-level networking tools such as exponential back-off that can be used in [SDK libraries](https://github.com/adobe/aio-sdk) and custom API clients.
 
 ### Token-Vending Machine
 
