@@ -40,6 +40,7 @@ This documentation provides an overview of Adobe Custom Applications as well as 
        * [Logging Library](https://github.com/adobe/aio-lib-core-logging)
       * [Error Handling Library](https://github.com/adobe/aio-lib-core-errors)
       * [Configuration Library](https://github.com/adobe/aio-lib-core-config)
+      * [Networking Library](https://github.com/adobe/aio-lib-core-networking)
       * [Token-Vending Machine Client Library](https://github.com/adobe/aio-lib-core-tvm)
 
 
