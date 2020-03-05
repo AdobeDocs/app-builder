@@ -1,12 +1,12 @@
 # Introduction to React Spectrum
 
-[Spectrum](https://spectrum.adobe.com/) is Adobe's shared design system, which provides a consistent look and feel to all Adobe applications.
+The React Spectrum project implements the Adobe's [Spectrum](https://spectrum.adobe.com/) design language into React UI components.
 
-The React Spectrum Project implements the Spectrum design language into React components. This project evolves with design, and rovides implementation guidelines.
+React Spectrum is composed of three parts:  
+- react-spectrum, a component library implementing the Adobe Spectrum design system
+- react-aria, a library of React hooks implementing the patterns defined in the ARIA practices spec, including mouse, touch, and keyboard behavior, accessibility, and internationalization support
+- react-stately, a library of React hooks implementing cross platform (e.g. web/native) state management for components that need it.
 
-Accessibility is built into each component in react-spectrum, including keyboard support, screen reader integration, and more.
+React Spectrum enables accessibility and common behavior to be handled out of the box. Leveraging React Spectrum in your Adobe Custom Application allows you to save front end development time, and focus on styling and other design specific features that can be built on top of the library. The sample templates generated through the CLI leverage React Spectrum in the UI as an example. 
 
-React Spectrum can be used when building your Adobe Custom Application to simplify your front end work and to provide a unified look to your custom application. The sample templates generated through the CLI leverages React Spectrum in the UI as an example. 
-
-To learn more, please visit the React Spectrum GitHub repositories:
-- [React Spectrum](https://github.com/adobe-private/react-spectrum-v3)
+To learn more, please visit the React Spectrum GitHub repository: https://github.com/adobe-private/react-spectrum-v3
