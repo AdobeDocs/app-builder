@@ -28,7 +28,7 @@ This documentation provides an overview of Adobe Custom Applications as well as 
 
 * [Adobe CLI](https://github.com/adobe/aio-cli)
 * [Custom Application Generators](https://github.com/adobe/generator-aio-app)
-* [Adobe Authentication](https://github.com/adobe/aio-lib-core-ims)
+* [Adobe Authentication](https://github.com/adobe/aio-lib-ims)
 * [Token-Vending Machine](https://github.com/adobe/aio-tvm)
 * [SDK Libraries](https://github.com/adobe/aio-sdk)
     * [File Storage Library](https://github.com/adobe/aio-lib-files)
