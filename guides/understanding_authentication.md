@@ -11,6 +11,6 @@ Certain products, like Adobe Analytics 2.0, allow both types of integrations. Yo
 To simplify your interaction with Adobe authentication, we have created a library.
 
 You can configure it and try it out directly at 
-- [Adobe I/O Lib Core IMS Library](https://github.com/adobe/aio-lib-core-ims)
+- [Adobe I/O IMS SDK Library](https://github.com/adobe/aio-lib-ims)
 
 You can also get started through the CLI by ```aio app add auth``` to automatically add the sample code from the library to your project.
