@@ -1,6 +1,6 @@
 # Technical Requirements
 
-## Technical Prerequisites for Adobe Custom Applications
+## Technical Prerequisites for Project Firefly
 
 ### Required
 

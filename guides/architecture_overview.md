@@ -1,8 +1,8 @@
 # Architecture Overview
 
-## Types of Adobe Custom Applications
+## Types of Project Firefly apps
 
-An Adobe Custom Application is a serverless application that extends [Adobe Product APIs](https://www.adobe.io/apis.html).
+A Firefly application is a serverless application that extends [Adobe Product APIs](https://www.adobe.io/apis.html).
 These applications can be one of two kinds: headless or headful. Each of these types is described in more detail in the sections that follow.
 
 ### Headless Application
@@ -15,11 +15,11 @@ A typical headless application would integrate well with a remote script or proc
 
 A headful application is a Single Page Application (SPA) with a full-fledged user interface (UI) served from the out-of-the-box Content Delivery Network. This type of application calls [Adobe Product APIs](https://www.adobe.io/apis.html) directly from the client when applicable. When there is a strong need to orchestrate [Adobe Product API](https://www.adobe.io/apis.html) calls with 3rd party API calls, or with Adobe Identity Management System for authentication purposes, you can deploy serverless actions and/or sequences using [Runtime](https://github.com/AdobeDocs/adobeio-runtime).
 
-## JAMStack: Anatomy of an Adobe Custom Application
+## JAMStack: Anatomy of a Firefly App
 
-Adobe Custom Applications that are Single Page Applications with a full-fledged UI should follow the [JAMStack Architecture](https://jamstack.org/).
+Project Firefly apps that are Single Page Applications with a full-fledged UI should follow the [JAMStack Architecture](https://jamstack.org/).
 
-The three main components of Adobe Custom Applications are:
+The three main components of Project Firefly app are:
 
 - [Adobe Product APIs](https://www.adobe.io/apis.html), exposed to external developers and consumers through Adobe I/O API Gateway.
 - [Javascript-based SDK](https://github.com/adobe/aio-sdk) and serverless actions, sequences, and APIs deployed to [Runtime](https://github.com/AdobeDocs/adobeio-runtime).
@@ -31,7 +31,7 @@ The three main components of Adobe Custom Applications are:
 
 ### CLI
 
-The [CLI](https://github.com/adobe/aio-cli) is one of the main touchpoints for Adobe Custom Applications developers. It is based on [oclif](https://oclif.io/), which is a popular framework to build extensible command line tools.
+The [CLI](https://github.com/adobe/aio-cli) is one of the main touchpoints for Project Firefly developers. It is based on [oclif](https://oclif.io/), which is a popular framework to build extensible command line tools.
 
 The CLI comes out-of-the-box with the following capabilities:
 
@@ -40,11 +40,11 @@ The CLI comes out-of-the-box with the following capabilities:
 - [Configuration management](https://github.com/adobe/aio-cli-plugin-certificate)
 - [Interactions](https://github.com/adobe/aio-cli-plugin-console) with [Adobe Developer Console](https://console.adobe.io/)
 - [Interactions](https://github.com/adobe/aio-cli-plugin-runtime) with [Runtime](https://github.com/AdobeDocs/adobeio-runtime), Adobe's serverless platform
-- [Lifecycle management](https://github.com/adobe/aio-cli-plugin-app) for [Adobe Custom Applications](https://github.com/AdobeDocs/adobe-custom-applications)
+- [Lifecycle management](https://github.com/adobe/aio-cli-plugin-app) for [Project Firefly](https://github.com/AdobeDocs/project-fireflu)
 
-### Adobe Custom Applications Generators
+### Project Firefly Generators
 
-The [generators](https://github.com/adobe/generator-aio-app) help developers to bootstrap their Adobe Custom Applications when using the [CLI](https://github.com/adobe/aio-cli).
+The [generators](https://github.com/adobe/generator-aio-app) help developers to bootstrap their Firefly apps when using the [CLI](https://github.com/adobe/aio-cli).
 
 Generators can be used to create:
 
@@ -54,7 +54,7 @@ Generators can be used to create:
 
 ### SDK Libraries
 
-Adobe Custom Applications framework also provides a collection of JavaScript-based SDK libraries designed to increase the developer's velocity when implementing Custom Applications on top of Adobe APIs.
+Project Firefly also provides a collection of JavaScript-based SDK libraries designed to increase the developer's velocity when implementing Custom Applications on top of Adobe APIs.
 
 #### Main SDK library
 
@@ -82,7 +82,7 @@ The [Adobe IMS SDK library](https://github.com/adobe/aio-lib-core-ims) provides 
 
 The [Core SDK library](https://github.com/adobe/aio-sdk-core) bundled into the [main SDK library](https://github.com/adobe/aio-sdk) provides a lower-level technical framework for developers.   
 
-This framework must be used when contributing to the Adobe Custom Applications SDK. It is also recommended to use it when building an Adobe Custom Application.
+This framework must be used when contributing to the Project Firefly SDK. It is also recommended to use it when building a Firefly application.
 
 #### Core SDK library
 
@@ -108,9 +108,9 @@ The [Networking SDK library](https://github.com/adobe/aio-lib-core-networking) p
 
 The [Token-Vending Machine](https://github.com/adobe/aio-tvm) is exposed as an out-of-the-box API deployed to [Runtime](https://github.com/AdobeDocs/adobeio-runtime).
 
-It enables developers to perform the following actions on behalf of their Adobe Custom Application credentials:
+It enables developers to perform the following actions on behalf of their Project Firefly application credentials:
 
-- Deploy the web assets of their Adobe Custom Application to the out-of-the-box CDN.
+- Deploy the web assets of their Firefly application to the out-of-the-box CDN.
 - Use the out-of-the-box cloud storage through the [Files SDK](https://github.com/adobe/aio-lib-files).
 - Use the out-of-the-box key-value store through the [State SDK](https://github.com/adobe/aio-lib-state).
 

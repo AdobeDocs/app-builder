@@ -1,5 +1,5 @@
-# How to Get Access to Adobe Custom Applications
+# How to Get Access to Project Firefly
 
-Adobe Custom Applications is currently available through private beta. 
+Project Firefly is currently available through private beta. 
 
 Please contact a product manager to be added to the program. 

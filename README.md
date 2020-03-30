@@ -1,13 +1,13 @@
-# Adobe Custom Applications Developer Guide
+# Project Firefly Developer Guide
 
-This documentation provides an overview of Adobe Custom Applications as well as guides, reference documentation, and tools to help you begin developing your own custom applications.
+This documentation provides an overview of Project Firefly as well as guides, reference documentation, and tools to help you begin developing your own custom applications.
 
 ## Contents
 
 [Overview](overview.md)
 
-* [What is Adobe Custom Applications](overview/what_is.md)
-* [How to Get Access to Adobe Custom Applications](overview/getting_access.md)
+* [What is Project Firefly](overview/what_is.md)
+* [How to Get Access to Project Firefly](overview/getting_access.md)
 
 [Getting Started](getting_started.md)
 

@@ -1,6 +1,6 @@
-# What is Adobe Custom Applications
+# What is Project Firefly
 
-Adobe Custom Applications is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure. It leverages modern technologies (JAM stack, serverless computing, Node, and React) and ensures best practices when building applications (event-driven architecture, microservices, continuous integration, and delivery).
+Project Firefly is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure. It leverages modern technologies (JAM stack, serverless computing, Node, and React) and ensures best practices when building applications (event-driven architecture, microservices, continuous integration, and delivery).
 
 From a developer perspective, the main components are:
 *	Single Page Application (SPA) - you build a SPA that uses React Spectrum for the client side, which is the same UI toolkit used by Adobe solutions.
@@ -28,7 +28,7 @@ With this step completed, you can now run the application in the context of Expe
 
 When you are ready to share the application with your end-users, you initiate the publish process from the Developer Console. Once the application is approved by an Admin, business users will be able to find it in Experience Cloud and use it if they have the right permissions.
 
-## Why Would You Use Adobe Custom Applications?
+## Why Would You Use Project Firefly?
 
 The main reasons you would use this framework are:
 *	Time to value – if you want to extend Adobe solutions, this is the fastest way to do it.
@@ -53,6 +53,6 @@ Here are some of the types of apps that can be built on top of this framework:
 
 ## Where to Go Next
 
-To learn more about Adobe Custom Applications, please start by reading the following:
+To learn more about Project Firefly, please start by reading the following:
 * [Architecture Overview](guides/architecture_overview.md)
-* [How to Get Access to Adobe Custom Applications](overview/getting_access.md)
+* [How to Get Access to Project Firefly](overview/getting_access.md)
