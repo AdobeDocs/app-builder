@@ -44,9 +44,9 @@ This documentation provides an overview of Project Firefly as well as guides, re
       * [Networking Library](https://github.com/adobe/aio-lib-core-networking)
       * [Token-Vending Machine Client Library](https://github.com/adobe/aio-lib-core-tvm)
 * [CI/CD Support]
-     * [Github Action to setup the CLI] (https://github.com/adobe/aio-cli-setup-action)
-     * [Github Action to use the CLI] (https://github.com/adobe/aio-apps-action)
-     * [Github workflow generator] ( https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows)
+     * [Github Action to setup the CLI](https://github.com/adobe/aio-cli-setup-action)
+     * [Github Action to use the CLI](https://github.com/adobe/aio-apps-action)
+     * [Github workflow generator](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows)
 
 
 [Contribution Guides](contribution_guides.md)
