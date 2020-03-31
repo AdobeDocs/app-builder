@@ -28,6 +28,9 @@ This documentation provides an overview of Project Firefly as well as guides, re
 [Reference Documentation](reference_documentation.md)
 
 * [Adobe CLI](https://github.com/adobe/aio-cli)
+   * [Github Action to setup the CLI](https://github.com/adobe/aio-cli-setup-action)
+   * [Github Action to use the CLI](https://github.com/adobe/aio-apps-action)
+   * [Github workflow generator](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows)
 * [Custom Application Generators](https://github.com/adobe/generator-aio-app)
 * [Adobe Authentication](https://github.com/adobe/aio-lib-ims)
 * [Token-Vending Machine](https://github.com/adobe/aio-tvm)
@@ -43,10 +46,7 @@ This documentation provides an overview of Project Firefly as well as guides, re
       * [Configuration Library](https://github.com/adobe/aio-lib-core-config)
       * [Networking Library](https://github.com/adobe/aio-lib-core-networking)
       * [Token-Vending Machine Client Library](https://github.com/adobe/aio-lib-core-tvm)
-* [CI/CD Support](https://github.com/marketplace/actions)
-     * [Github Action to setup the CLI](https://github.com/adobe/aio-cli-setup-action)
-     * [Github Action to use the CLI](https://github.com/adobe/aio-apps-action)
-     * [Github workflow generator](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows)
+    
 
 
 [Contribution Guides](contribution_guides.md)
