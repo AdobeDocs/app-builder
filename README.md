@@ -13,7 +13,7 @@ This documentation provides an overview of Project Firefly as well as guides, re
 
 * [Technical Requirements](getting_started/technical_requirements.md)
 * [Setting up Your Environment](getting_started/setup.md)
-* [Creating your First Jaeger App](https://github.com/adobe/aio-cli#bootstrapping-an-application)
+* [Creating your First Firefly App](https://github.com/adobe/aio-cli#bootstrapping-an-application)
 
 [Guides](guides.md)
 
