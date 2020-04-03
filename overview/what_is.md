@@ -54,5 +54,5 @@ Here are some of the types of apps that can be built on top of this framework:
 ## Where to Go Next
 
 To learn more about Project Firefly, please start by reading the following:
-* [Architecture Overview](guides/architecture_overview.md)
-* [How to Get Access to Project Firefly](overview/getting_access.md)
+* [Architecture Overview](../guides/architecture_overview.md)
+* [How to Get Access to Project Firefly](../overview/getting_access.md)
