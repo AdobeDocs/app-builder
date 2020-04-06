@@ -30,7 +30,7 @@ This documentation provides an overview of Project Firefly as well as guides, re
 * [Custom Application Generators](https://github.com/adobe/generator-aio-app)
 * [Adobe Authentication](https://github.com/adobe/aio-lib-ims)
 * [Token-Vending Machine](https://github.com/adobe/aio-tvm)
-* [@adobe/exc-app](reference_documentation/exc_app.md)
+* [@adobe/exc-app](reference_documentation/exc_app/overview.md)
 * [SDK Libraries](https://github.com/adobe/aio-sdk)
     * [File Storage Library](https://github.com/adobe/aio-lib-files)
     * [Key/Value Storage Library](https://github.com/adobe/aio-lib-state) 
