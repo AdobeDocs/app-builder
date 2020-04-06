@@ -1,30 +1,4 @@
-# Project Firefly Developer Guide
-
-This documentation provides an overview of Project Firefly as well as guides, reference documentation, and tools to help you begin developing your own custom applications.
-
-## Contents
-
-[Overview](overview.md)
-
-* [What is Project Firefly](overview/what_is.md)
-* [How to Get Access to Project Firefly](overview/getting_access.md)
-
-[Getting Started](getting_started.md)
-
-* [Technical Requirements](getting_started/technical_requirements.md)
-* [Setting up Your Environment](getting_started/setup.md)
-* [Creating your First Firefly App](https://github.com/adobe/aio-cli#bootstrapping-an-application)
-
-[Guides](guides.md)
-
-* [Architecture Overview](guides/architecture_overview.md)
-* [Understanding Authentication](guides/understanding_authentication.md)
-* [Dealing with Application State](guides/application_state.md)
-* [Using Client SDKs for Accessing Adobe APIs](guides/using_sdks.md)
-* [Introduction to React Spectrum](guides/introduction_to_react_spectrum.md)
-* [Deployment](guides/deployment.md)
-
-[Reference Documentation](reference_documentation.md)
+# Reference Documentation
 
 * [Adobe CLI](https://github.com/adobe/aio-cli)
 * [Custom Application Generators](https://github.com/adobe/generator-aio-app)
@@ -43,10 +17,3 @@ This documentation provides an overview of Project Firefly as well as guides, re
       * [Configuration Library](https://github.com/adobe/aio-lib-core-config)
       * [Networking Library](https://github.com/adobe/aio-lib-core-networking)
       * [Token-Vending Machine Client Library](https://github.com/adobe/aio-lib-core-tvm)
-
-
-[Contribution Guides](contribution_guides.md)
-
-[FAQ](faq.md)
-
-[Support](support.md)
