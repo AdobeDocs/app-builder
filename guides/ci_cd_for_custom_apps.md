@@ -1,6 +1,6 @@
-# CI/CD for Adobe Custom Applications
+# CI/CD for Firefly Applications
 
-## Github CI/CD tools
+## Github Actions Support
 
 ### Github Actions for AIO CLI
 
