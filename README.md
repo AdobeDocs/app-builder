@@ -13,7 +13,7 @@ This documentation provides an overview of Project Firefly as well as guides, re
 
 * [Technical Requirements](getting_started/technical_requirements.md)
 * [Setting up Your Environment](getting_started/setup.md)
-* [Creating your First Jaeger App](https://github.com/adobe/aio-cli#bootstrapping-an-application)
+* [Creating your First Firefly App](https://github.com/adobe/aio-cli#bootstrapping-an-application)
 
 [Guides](guides.md)
 
@@ -46,7 +46,7 @@ This documentation provides an overview of Project Firefly as well as guides, re
 * [Github Actions Support](https://github.com/features/actions)
     * [Github Action to setup the CLI](https://github.com/adobe/aio-cli-setup-action)
     * [Github Action to use the CLI](https://github.com/adobe/aio-apps-action)
-    * [Github workflow generator for Firefly Applications](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows)
+    * [Github workflow generator for Firefly Apps](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows)
 
 [Contribution Guides](contribution_guides.md)
 
