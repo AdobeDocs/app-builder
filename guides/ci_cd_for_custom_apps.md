@@ -11,7 +11,7 @@ Every new application project created by an entitled organization administrator 
 
 The entitled organization users will also be allowed to create as many additional workspaces as required by their project, whether this is to add an extra stage (e.g. qa, preproduction...) to match their infrastructure needs, or to define developer specific workspaces for each of their development team member to work locally against.
 
-<TODO - insert diagram showing local development workspaces>
+<TODO - insert diagram showing local development -> Github>
 
 ## Github Actions Support
 A sample CI/CD workflow is provided out-of-the-box on top of [Github Actions](https://github.com/features/actions).
@@ -31,6 +31,8 @@ The default Github Workflows enable the following actions based on specific Gith
 
 Each of the default [Github Workflows](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) leverages two core features provided by Github: [Github Actions](https://github.com/features/actions) and [Github Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets).
 
+<TODO - insert diagram showing Github action runners>
+
 ### Github Actions for AIO CLI
 
 The following [Github Actions](https://github.com/features/actions) have been built to support the usage of the [CLI](https://github.com/adobe/aio-cli) in a CI/CD workflow running within Github infrastructure.
@@ -45,7 +47,22 @@ These both actions have been published and can be found on Github Marketplace. S
 
 ### Github Secrets
 
+The following [Github Actions](https://github.com/features/actions) above leverage [Github Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) to store environment specific secrets.
 
+They currently need an administrator to manually add the following secret to the application repository:
+
+- AIO_RUNTIME_NAMESPACE_STAGE: the name of the Runtime namespace associated to the `Stage` Firefly project workspace.
+- AIO_RUNTIME_AUTH_STAGE: the credentials for the Runtime namespace associated to the `Stage` Firefly project workspace.
+- AIO_RUNTIME_NAMESPACE_PROD: the name of the Runtime namespace associated to the `Prod` Firefly project workspace.
+- AIO_RUNTIME_AUTH_PROD: the credentials for the Runtime namespace associated to the `Prod` Firefly project workspace.
+
+Note that in the future, an integration between the Developer Console and Github API should allow a direct configuration of the required secrets at Github level.
 
 ## Bring your own CI/CD pipeline
 
+The default implementation of the CI/CD workflow for Firefly applications relies on Github capabilities. However, a developer might need an alternative solution due to project specific requirements, or team preference.
+
+In that case, we recommend implementing the custom solution with focus on two main aspects:
+
+- The CLI is the official tool to manage the Firefly application development lifecycle from bootstrapping to deployment, and can be used within a CI/CD workflow for automation purpose.
+- Security is a key requirement, and any alternative CI/CD workflow should propose a solid secret management solution to store the credentials required to deploy a Firefly application against a specific environment.
