@@ -64,5 +64,5 @@ The default implementation of the CI/CD workflow for Firefly applications relies
 
 In that case, we recommend implementing the custom solution with focus on two main aspects:
 
-- The CLI is the official tool to manage the Firefly application development lifecycle from bootstrapping to deployment, and can be used within a CI/CD workflow for automation purpose.
+- The [CLI](https://github.com/adobe/aio-cli) is the official tool to manage the Firefly application development lifecycle from bootstrapping to deployment, and can be used within a CI/CD workflow for automation purpose.
 - Security is a key requirement, and any alternative CI/CD workflow should propose a solid secret management solution to store the credentials required to deploy a Firefly application against a specific environment.
