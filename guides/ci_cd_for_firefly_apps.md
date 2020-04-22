@@ -17,7 +17,7 @@ The entitled organization users will also be allowed to create as many additiona
 A sample CI/CD workflow is provided out-of-the-box on top of [GitHub Actions](https://github.com/features/actions).
 Upon bootstrapping of a new Firefly application from the [CLI](https://github.com/adobe/aio-cli) by using the `aio app init` command, the application generator asks the developer whether to `include GitHub Actions based workflows for Build, Test and Deploy`.
 
-If the developer selects this option, the application code that is bootstrapped will contain a `.github` folder containing default [GitHub Workflows](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows) that can be extended at application level depending on the developer's needs.
+If the developer selects this option, the application code will be bootstrapped with an additional `.github` folder at its root. This folder contains default [GitHub Workflows](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows) that can be extended at application level depending on the developer's needs.
 
 ### Github Workflows
 
