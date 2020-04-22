@@ -11,7 +11,7 @@ Project Firefly allows you to manage multiple environments. This is achieved thr
 
 The entitled organization users will also be allowed to create as many additional workspaces as required by their project, whether this is to add an extra stage (e.g. qa, preproduction...) to match their infrastructure needs, or to define developer specific workspaces for each of their development team member to work locally against.
 
-<TODO - insert diagram showing local development -> Github>
+![High-Level CI/CD architecture](high-level-ci-cd-architecture.png)
 
 ## GitHub Actions Support
 A sample CI/CD workflow is provided out-of-the-box on top of [GitHub Actions](https://github.com/features/actions).
