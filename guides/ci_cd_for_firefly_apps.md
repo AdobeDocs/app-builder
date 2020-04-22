@@ -1,5 +1,5 @@
 # CI/CD for Firefly Applications
-Continuous integraion and continuous delivery (CI/CD) is an crucial component for the success of any development teams -- a team working on Firefly Applications is no difference. 
+Continuous integraion and continuous delivery (CI/CD) is a crucial component for the success of any development teams -- a team working on Firefly Applications is no difference. 
 
 Allowing the development team to focus on requirements, code quality, and security with deployment automated, CI/CD is one of the best practice to implement and for us to support. 
 
