@@ -3,7 +3,7 @@ Continuous integraion and continuous delivery (CI/CD) is a crucial component for
 
 Allowing the development team to focus on requirements, code quality, and security with deployment automated, CI/CD is one of the best practice to implement and for us to support. 
 
-Project Firefly allows you to manage multiple environments. This is achieved through "Workspace" in Adobe Developer Console. Every new application project created by an entitled organization administrator or developer in the Developer Console will be setup with two named workspaces: Stage and Production. Each workspace will have its own setup:
+Project Firefly allows you to manage multiple environments. This is achieved through *Workspace* in Adobe Developer Console. Every new application project created by an entitled organization administrator or developer in the Developer Console will be setup with two named workspaces: Stage and Production. Each workspace will have its own setup:
 
 - List of Adobe services to integrate via user or technical user accounts
 - Runtime namespace
@@ -25,9 +25,9 @@ The default GitHub Workflows enable the following actions based on specific Gith
 
 - On `Pull Request`, the application unit tests are executed by calling `aio app test` against the requested changes. See the [PR workflow](https://github.com/adobe/generator-aio-app/blob/master/generators/add-ci/.github/workflows/pr_test.yml).
 
-- On `Branch Merge`, the application gets deployed to the `Stage` workspace by calling `aio app deploy`. The back-end serverless actions get deployed to Runtime, while the SPA gets deployed to the out-of-the-box CDN if the application has a web UI. See the [Deploy Stage workflow](https://github.com/adobe/generator-aio-app/blob/master/generators/add-ci/.github/workflows/deploy_stage.yml)
+- On `Branch Merge`, the application gets deployed to the `Stage` workspace by calling `aio app deploy`. The back-end serverless actions get deployed to Runtime, while the SPA gets deployed to the out-of-the-box CDN if the application has a web UI. See the [Deploy Stage workflow](https://github.com/adobe/generator-aio-app/blob/master/generators/add-ci/.github/workflows/deploy_stage.yml).
 
-- On `Repository Release`, the application gets deployed to the `Production` workspace by calling `aio app deploy`. The back-end serverless actions get deployed to Runtime, while the SPA gets deployed to the out-of-the-box CDN if the application has a web UI. See the [Deploy Prod workflow](https://github.com/adobe/generator-aio-app/blob/master/generators/add-ci/.github/workflows/deploy_prod.yml)
+- On `Repository Release`, the application gets deployed to the `Production` workspace by calling `aio app deploy`. The back-end serverless actions get deployed to Runtime, while the SPA gets deployed to the out-of-the-box CDN if the application has a web UI. See the [Deploy Prod workflow](https://github.com/adobe/generator-aio-app/blob/master/generators/add-ci/.github/workflows/deploy_prod.yml).
 
 Each of the default [Github Workflows](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) leverages two core features provided by Github: [Github Actions](https://github.com/features/actions) and [Github Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets).
 
@@ -49,7 +49,7 @@ These both actions have been published and can be found on GitHub Marketplace. S
 
 The following [GitHub Actions](https://github.com/features/actions) leverage [GitHub Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) to store environment specific secrets.
 
-They currently need an administrator to manually add the following secret to the application repository:
+They currently need an administrator to manually add the following secrets to the application repository:
 
 - AIO_RUNTIME_NAMESPACE_STAGE: the name of the Runtime namespace associated to the `Stage` Firefly project workspace.
 - AIO_RUNTIME_AUTH_STAGE: the credentials for the Runtime namespace associated to the `Stage` Firefly project workspace.
@@ -65,4 +65,4 @@ The default implementation of the CI/CD workflow for Firefly applications relies
 In that case, we recommend implementing the custom solution with focus on two main aspects:
 
 - The [CLI](https://github.com/adobe/aio-cli) is the official tool to manage the Firefly application development lifecycle from bootstrapping to deployment, and can be used within a CI/CD workflow for automation purpose.
-- Security is a key requirement, and any alternative CI/CD workflow should propose a solid secret management solution to store the credentials required to deploy a Firefly application against a specific environment.
+- Security is a key requirement, and any alternative CI/CD workflow should propose a solid secret management solution to store the credentials required to deploy a Firefly application against a specific *Workspace*.
