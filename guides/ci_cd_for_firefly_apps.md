@@ -3,7 +3,7 @@ Continuous integraion and continuous delivery (CI/CD) is a crucial component for
 
 Allowing the development team to focus on requirements, code quality, and security with deployment automated, CI/CD is one of the best practice to implement and for us to support. 
 
-Project Firefly allows you to manage multiple environments. This is achieved through *Workspace* in Adobe Developer Console. Every new application project created by an entitled organization administrator or developer in the Developer Console will be setup with two named workspaces: Stage and Production. Each workspace will have its own setup:
+Project Firefly allows you to manage multiple environments. This is achieved through **Workspace** in Adobe Developer Console. Every new application project created by an entitled organization administrator or developer in the Developer Console will be setup with two named workspaces: Stage and Production. Each workspace will have its own setup:
 
 - List of Adobe services to integrate via user or technical user accounts
 - Runtime namespace
@@ -65,4 +65,4 @@ The default implementation of the CI/CD workflow for Firefly applications relies
 In that case, we recommend implementing the custom solution with focus on two main aspects:
 
 - The [CLI](https://github.com/adobe/aio-cli) is the official tool to manage the Firefly application development lifecycle from bootstrapping to deployment, and can be used within a CI/CD workflow for automation purpose.
-- Security is a key requirement, and any alternative CI/CD workflow should propose a solid secret management solution to store the credentials required to deploy a Firefly application against a specific *Workspace*.
+- Security is a key requirement, and any alternative CI/CD workflow should propose a solid secret management solution to store the credentials required to deploy a Firefly application against a specific **Workspace**.
