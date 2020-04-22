@@ -51,10 +51,10 @@ The following [GitHub Actions](https://github.com/features/actions) leverage [Gi
 
 They currently need an administrator to manually add the following secrets to the application repository:
 
-- AIO_RUNTIME_NAMESPACE_STAGE: the name of the Runtime namespace associated to the `Stage` Firefly project workspace.
-- AIO_RUNTIME_AUTH_STAGE: the credentials for the Runtime namespace associated to the `Stage` Firefly project workspace.
-- AIO_RUNTIME_NAMESPACE_PROD: the name of the Runtime namespace associated to the `Prod` Firefly project workspace.
-- AIO_RUNTIME_AUTH_PROD: the credentials for the Runtime namespace associated to the `Prod` Firefly project workspace.
+- **AIO_RUNTIME_NAMESPACE_STAGE**: the name of the Runtime namespace associated to the `Stage` Firefly project workspace.
+- **AIO_RUNTIME_AUTH_STAGE**: the credentials for the Runtime namespace associated to the `Stage` Firefly project workspace.
+- **AIO_RUNTIME_NAMESPACE_PROD**: the name of the Runtime namespace associated to the `Prod` Firefly project workspace.
+- **AIO_RUNTIME_AUTH_PROD**: the credentials for the Runtime namespace associated to the `Prod` Firefly project workspace.
 
 We aim to simplify this configuration process in the future. 
 
