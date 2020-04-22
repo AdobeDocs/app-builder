@@ -31,7 +31,7 @@ The default GitHub Workflows enable the following actions based on specific Gith
 
 Each of the default [Github Workflows](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) leverages two core features provided by Github: [Github Actions](https://github.com/features/actions) and [Github Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets).
 
-<TODO - insert diagram showing Github action runners>
+![CI/CD with Github Actions](ci-cd-github-actions-architecture.png)
 
 ### GitHub Actions for AIO CLI
 
