@@ -24,6 +24,7 @@ This documentation provides an overview of Project Firefly as well as guides, re
 * [Introduction to React Spectrum](guides/introduction_to_react_spectrum.md)
 * [Deployment](guides/deployment.md)
 * [CI/CD for Firefly Applications](guides/ci_cd_for_firefly_apps.md)
+* [Security Overview](guides/security_overview.md)
 
 [Reference Documentation](reference_documentation.md)
 
