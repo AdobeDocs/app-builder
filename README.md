@@ -27,6 +27,7 @@ This documentation provides an overview of Project Firefly as well as guides, re
 
 [Reference Documentation](reference_documentation.md)
 
+* [Firefly CodeLabs](https://adobedocs.github.io/adobeio-codelabs/)
 * [Adobe CLI](https://github.com/adobe/aio-cli)
 * [Custom Application Generators](https://github.com/adobe/generator-aio-app)
 * [Adobe Authentication](https://github.com/adobe/aio-lib-ims)
