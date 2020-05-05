@@ -2,7 +2,9 @@
 
 ## Context
 
-TODO: intro
+This guide provides details about each aspect of the security of Firefly applications. For every application development project, security requirements are among the most critical. But without appropriate guidance and tools, they are also among the most difficult and time-consuming ones, even for seasoned developers.
+
+The SDK and tools for Project Firefly aim to simplify and fasten the implementation of the security requirements for applications that integrate within Adobe's ecosystem.
 
 ## High-Level Overview
 
@@ -10,7 +12,8 @@ TODO: summarize multiple security aspects and how does the tooling helps mitigat
 
 ## Adobe Identity Management System
 
-TODO: describe IMS, and how SPAs in Exc Shell or headless applications can integrate with it
+Any interaction with Adobe product APIs needs to be authenticated against Adobe Identity Management System (IMS).
+The [Understanding Authentication](understanding_authentication.md) guide provides deeper preliminary insights on the topic
 
 ## Securing Firefly Applications
 
