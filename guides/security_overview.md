@@ -41,6 +41,11 @@ Note that this SDK library uses the [State SDK Library](https://github.com/adobe
 
 ### SPAs deployed into the Experience Cloud Shell
 
+These SPAs are business-to-employees custom experiences deployed into the [Experience Cloud Shell](https://experience.adobe.com) for the users of an Enterprise organization.
+
+The SPA interacts with Runtime web actions on specific events at UI-level. If these actions need to integrate with one or several Adobe product APIs, they will also need a valid Adobe IMS token to execute the API call successfully.
+In this scenario, the SPA itself will pass the user OAuth token provided by the Experience Cloud Shell, as it centralizes user-based login to access all the products provisioned for a given Enterprise organization.
+
 ## Securing Firefly Applications
 
 TODO: HTTPS, AuthN/AuthZ, isolation per tenant (both actions & UI), Files/States store security
