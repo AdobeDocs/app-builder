@@ -10,9 +10,9 @@ The Firefly SDK and CLI aim to simplify and fasten the implementation of the sec
 
 TODO: summarize multiple security aspects and how does the tooling helps mitigating the issues
 
-## Adobe Identity Management System
+## Adobe Identity Management Services
 
-Any interaction with Adobe product APIs needs to be authenticated against Adobe Identity Management System (IMS).
+Any interaction with Adobe product APIs needs to be authenticated against Adobe Identity Management Services (IMS).
 The [Understanding Authentication](understanding_authentication.md) guide is a good pre-read to get deeper preliminary insights on the topic.
 
 ### IMS Support at SDK and CLI level
