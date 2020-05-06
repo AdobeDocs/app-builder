@@ -8,7 +8,7 @@ Project Firefly SDK and CLI are designed to fasten the implementation of the typ
 
 ## High-Level Overview
 
-TODO: summarize multiple security aspects and how does the tooling helps mitigating the issues
+**TODO: summarize multiple security aspects and how does the tooling helps mitigating the issues**
 
 ## Adobe Identity Management Services
 
@@ -34,7 +34,7 @@ Headless applications (e.g. Runtime actions or sequences) are usually executed a
 - An Adobe Campaign Standard Marketing Activity
 - A 3rd party CRM workflow
 
-TODO: insert sequence diagram
+**TODO: insert sequence diagram**
 
 A headless Firefly application requires to pass an Adobe IMS JWT access token in order to successfully call Adobe Product APIs. This token can be obtained within the [Developer Console](https://console.adobe.io/), by accessing the corresponding Firefly project and workspace.
 
@@ -48,7 +48,7 @@ This SDK library also uses the [State SDK Library](https://github.com/adobe/aio-
 
 These SPAs are business-to-employees custom applications that deploy into the [Experience Cloud Shell](https://experience.adobe.com) for the end-users of an Enterprise organization.
 
-TODO: insert sequence diagram
+**TODO: insert sequence diagram**
 
 The SPA front-end interacts with Runtime web actions on specific events triggered at UI level.
 In this scenario, the Experience Cloud Shell exposes a [client-side API](../reference_documentation/exc_app/overview.md), which can be used by the SPA to obtain the OAUth token generated for the logged-in Enterprise user. 
@@ -74,7 +74,7 @@ We strongly recommend to ensure that every 3rd party system or service integrati
  
 Every Firefly application gets integrated to an out-of-the-box Authentication and Authorization handling layer when deployed from the CLI with `aio app deploy`.
 
-TODO: insert deployment diagram
+**TODO: insert deployment diagram**
 
 Whether the application is headless or an SPA, this extra-security layer will check that:
 
@@ -130,14 +130,10 @@ However, we strongly recommend to validate these changes against the application
 
 #### SPA front-end
 
-### Additional Firefly Services
+#### Files & State Services
 
-#### Files
-
-#### State
-
-#### Firefly Apps
+#### Firefly Apps Service
 
 ## Summary
 
-TODO: Time to value, User context aware, OOTB Security support, developer friendly, little time to implement security compliant features, Adobe-native 
+**TODO: Time to value, User context aware, OOTB Security support, developer friendly, little time to implement security compliant features, Adobe-native **
