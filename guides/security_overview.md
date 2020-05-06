@@ -87,7 +87,7 @@ Adobe Exchange is the distribution platform for Firefly applications. It will au
 - The invoked back-end action belongs to the Enterprise organization for which the token has been emitted
 - The token is authorized to access the Adobe Product APIs, which are integrated in this Firefly application
 
-TODO: insert architecture diagram
+![Validator Architecture](security-validator-architecture.png)
 
 The authentication and authorization validation is enabled by default for every Runtime action bootstrapped from the CLI with `aio app init` or `aio app add action`. This results in a specific `require-adobe-auth` action annotation set to true in the application `manifest.yml` file:
 
