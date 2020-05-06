@@ -124,9 +124,19 @@ However, we strongly recommend to validate these changes against the application
 
 Note that Project Firefly doesn't offer 3rd party API management at this stage, and similar authentication/authorization handling against 3rd party services should be managed by developers within their custom action codes for the time being.
  
-### Tenant isolation and cookies
+### Tenant isolation
+
+#### Runtime actions
+
+#### SPA front-end
 
 ### Additional Firefly Services
+
+#### Files
+
+#### State
+
+#### Firefly Apps
 
 ## Summary
 
