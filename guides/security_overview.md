@@ -2,9 +2,9 @@
 
 ## Context
 
-This guide provides details about each aspect of the security of Firefly applications. For every application development project, security requirements are among the most critical. But without appropriate guidance and tools, they are also among the most difficult and time-consuming ones, even for seasoned developers.
+Every application development project has its own security requirements. Even for seasoned developers, these critical requirements can lead to complex and time-consuming implementations with an inappropriate support at SDK and tools level.
 
-The Firefly SDK and CLI aim to simplify and fasten the implementation of the security requirements for applications that integrate within Adobe's ecosystem.
+Project Firefly SDK and CLI are designed to fasten the implementation of the typical security requirements for cloud-native applications that deploy into Adobe's ecosystem.
 
 ## High-Level Overview
 
@@ -12,39 +12,47 @@ TODO: summarize multiple security aspects and how does the tooling helps mitigat
 
 ## Adobe Identity Management Services
 
-Any interaction with Adobe product APIs needs to be authenticated against Adobe Identity Management Services (IMS).
-The [Understanding Authentication](understanding_authentication.md) guide is a good pre-read to get deeper preliminary insights on the topic.
+Any interaction with [Adobe Product APIs](https://www.adobe.io/apis.html) needs to be authenticated against Adobe Identity Management Services (IMS).
+The [Understanding Authentication](understanding_authentication.md) guide is a good pre-read to get deeper preliminary insights on those services.
 
-### IMS Support at SDK and CLI level
+### IMS Support for Firefly Applications
 
-The Firefly SDK and CLI help developers to bootstrap applications easily. As part of this process, developers can choose to create actions from a list of generators for every supported Adobe API.
-These generators create Runtime web actions, which implement the boilerplate code that is needed to:
+Project Firefly SDK and CLI help developers to [bootstrap applications](../getting_started/setup.md#bootstrapping-an-application) easily from application templates. 
+These includes templates for Runtime web actions, which integrate with the [Adobe Product APIs](https://www.adobe.io/apis.html), which can be extended with Project Firefly.
+Any generated action is initialized with boilerplate code based on Project Firefly SDK libraries. Out-of-the box, the following steps are implemented:
 
-- Check that a bearer token has been passed as Authorization header of the request that invoked this action
-- Instantiate a client for the API, by using the appropriate product SDK library
-- Call the API and pass the required credentials (including the token), by using the same product SDK library
+- Validation that an Adobe IMS bearer token has been passed as Authorization header of the request which invoked this action
+- Extraction of this bearer token for further usage in the action
+- Instantiation of an API client, by using the appropriate product SDK library
+- Pre-configured API call, passing the required credentials, by using the same product SDK library
 
-### Headless Applications
+### Headless Firefly Applications
 
-Headless applications (e.g. Runtime actions or sequences) are usually executed as a back-end service called by another Adobe product. For example:
+Headless applications (e.g. Runtime actions or sequences) are usually executed as a back-end service invoked by another service - another Adobe product or a 3rd party system. For example:
 
-- A custom worker for AEM Assets as a Cloud Service
-- An external data ingestion process called within an Adobe Campaign Standard Marketing Activity
+- A custom asset worker integrating with AEM Assets as a Cloud Service
+- An Adobe Campaign Standard Marketing Activity
+- A 3rd party CRM workflow
 
-If such a headless application needs to call Adobe APIs, it will usually rely on a JWT access token obtained from an integration of services defined within the Developer Console, for a specific Firefly project and workspace.
+<TODO insert sequence diagram>
 
-Note that this token has a lifetime of 24 hours and will expire afterwards, for obvious security reasons. A developer shouldn't have to manually refresh the token and update the application configuration every day.
+A headless Firefly application requires to pass an Adobe IMS JWT access token in order to successfully call Adobe Product APIs. This token can be obtained within the [Developer Console](https://console.adobe.io/), by accessing the corresponding Firefly project and workspace.
 
-Developers can use the [IMS SDK Library](https://github.com/adobe/aio-lib-ims) to automate the JWT access token generation and renewal from their Runtime action code.
+However, its lifetime will be of 24 hours and it will expire afterwards, for obvious security reasons. A developer shouldn't have to manually refresh the token and update the application configuration every day.
 
-Note that this SDK library uses the [State SDK Library](https://github.com/adobe/aio-lib-state) as a dependency in order to persist the token on behalf of the developer's Runtime credentials between two invocations of the Runtime action that needs this token to sucessfully call Adobe Product APIs.
+The [IMS SDK Library](https://github.com/adobe/aio-lib-ims) can be used to automate the JWT access token generation and renewal from directly from the Runtime action code.
 
-### SPAs deployed into the Experience Cloud Shell
+This SDK library also uses the [State SDK Library](https://github.com/adobe/aio-lib-state) behind the scenes in order to persist the token in Project Firefly's cloud storage on behalf of the developer between two invocations of the Runtime action.
 
-These SPAs are business-to-employees custom experiences deployed into the [Experience Cloud Shell](https://experience.adobe.com) for the users of an Enterprise organization.
+### Firefly SPAs
 
-The SPA interacts with Runtime web actions on specific events at UI-level. If these actions need to integrate with one or several Adobe product APIs, they will also need a valid Adobe IMS token to execute the API call successfully.
-In this scenario, the SPA itself will pass the user OAuth token provided by the Experience Cloud Shell, as it centralizes user-based login to access all the products provisioned for a given Enterprise organization.
+These SPAs are business-to-employees custom applications that deploy into the [Experience Cloud Shell](https://experience.adobe.com) for the end-users of an Enterprise organization.
+
+<TODO insert sequence diagram>
+
+The SPA front-end interacts with Runtime web actions on specific events triggered at UI level.
+In this scenario, the Experience Cloud Shell exposes a [client-side API](../reference_documentation/exc_app/overview.md), which can be used by the SPA to obtain the OAUth token generated for the logged-in Enterprise user. 
+This token will be used by the back-end Runtime actions to call the [Adobe Product APIs](https://www.adobe.io/apis.html), which need to be integrated in this application.
 
 ## Securing Firefly Applications
 
