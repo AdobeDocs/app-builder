@@ -102,7 +102,7 @@ packages:
           require-adobe-auth: true
 ```
 
-Upon deployment with `aio app deploy`, the manifest will be dynamically rewritten and replace the custom Runtime actions by Runtime sequences. The action definition above will by replaced with:
+Upon deployment with `aio app deploy`, the manifest will be dynamically rewritten and replace the custom Runtime actions by Runtime sequences. The action definition above will by seamlessly rewritten into:
 
 ```
 packages:
