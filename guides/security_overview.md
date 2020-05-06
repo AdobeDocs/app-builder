@@ -34,7 +34,7 @@ Headless applications (e.g. Runtime actions or sequences) are usually executed a
 - An Adobe Campaign Standard Marketing Activity
 - A 3rd party CRM workflow
 
-<TODO insert sequence diagram>
+TODO: insert sequence diagram
 
 A headless Firefly application requires to pass an Adobe IMS JWT access token in order to successfully call Adobe Product APIs. This token can be obtained within the [Developer Console](https://console.adobe.io/), by accessing the corresponding Firefly project and workspace.
 
@@ -48,7 +48,7 @@ This SDK library also uses the [State SDK Library](https://github.com/adobe/aio-
 
 These SPAs are business-to-employees custom applications that deploy into the [Experience Cloud Shell](https://experience.adobe.com) for the end-users of an Enterprise organization.
 
-<TODO insert sequence diagram>
+TODO: insert sequence diagram
 
 The SPA front-end interacts with Runtime web actions on specific events triggered at UI level.
 In this scenario, the Experience Cloud Shell exposes a [client-side API](../reference_documentation/exc_app/overview.md), which can be used by the SPA to obtain the OAUth token generated for the logged-in Enterprise user. 
@@ -56,7 +56,21 @@ This token will be used by the back-end Runtime actions to call the [Adobe Produ
 
 ## Securing Firefly Applications
 
-TODO: HTTPS, AuthN/AuthZ, isolation per tenant (both actions & UI), Files/States store security
+### I/O Runtime Specific guidelines
+
+The [security guidelines for I/O Runtime](https://github.com/AdobeDocs/adobeio-runtime/blob/master/guides/security_general.md) generally apply for the back-end actions of a Firefly application.
+
+### Transport Security
+
+Developers building Firefly applications on top of the out-of-the-box infrastructure will benefit from HTTPs connections between all the components that are part of this infrastructure.
+
+We strongly recommend to ensure that every 3rd party system or service integrating with a Firefly application supports HTTPs connections as well.
+
+### Authentication and Authorization
+
+### Tenant isolation
+
+### Additional Firefly Services
 
 ## Summary
 
