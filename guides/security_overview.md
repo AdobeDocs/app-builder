@@ -6,9 +6,7 @@ Every application development project has its own security requirements. Even fo
 
 Project Firefly SDK and CLI are designed to fasten the implementation of the typical security requirements for cloud-native applications that deploy into Adobe's ecosystem.
 
-## High-Level Overview
-
-**TODO: summarize multiple security aspects and how does the tooling helps mitigating the issues**
+The following sections will focus on specific aspects of the security for Firefly Applications.
 
 ## Adobe Identity Management Services
 
@@ -85,7 +83,7 @@ Whether the application is headless or an SPA, this extra-security layer will ch
 Adobe Exchange is the distribution platform for Firefly applications. It will authorize a token if and only if:
 
 - The invoked back-end action belongs to the Enterprise organization for which the token has been emitted
-- The token is authorized to access the Adobe Product APIs, which are integrated in this Firefly application
+- The token is authorized to use the Adobe Product APIs, which are integrated in this Firefly application
 
 ![Validator Architecture](security-validator-architecture.png)
 
