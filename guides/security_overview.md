@@ -15,7 +15,7 @@ TODO: summarize multiple security aspects and how does the tooling helps mitigat
 Any interaction with [Adobe Product APIs](https://www.adobe.io/apis.html) needs to be authenticated against Adobe Identity Management Services (IMS).
 The [Understanding Authentication](understanding_authentication.md) guide is a good pre-read to get deeper preliminary insights on those services.
 
-### IMS Support for Firefly Applications
+### Adobe IMS Support for Firefly Applications
 
 Project Firefly SDK and CLI help developers to [bootstrap applications](../getting_started/setup.md#bootstrapping-an-application) easily from application templates with `aio app init`. 
 These includes templates for Runtime web actions, which integrate with the [Adobe Product APIs](https://www.adobe.io/apis.html) that can be extended with Project Firefly.
@@ -26,7 +26,7 @@ Any generated action is initialized with boilerplate code based on Project Firef
 - Instantiation of an API client, by using the appropriate product SDK library
 - Pre-configured API call, passing the required credentials, by using the same product SDK library
 
-### Headless Firefly Applications
+### Headless Firefly Applications & Adobe IMS
 
 Headless applications (e.g. Runtime actions or sequences) are usually executed as a back-end service invoked by another service - another Adobe product or a 3rd party system. For example:
 
@@ -44,7 +44,7 @@ The [IMS SDK Library](https://github.com/adobe/aio-lib-ims) can be used to autom
 
 This SDK library also uses the [State SDK Library](https://github.com/adobe/aio-lib-state) behind the scenes in order to persist the token in Project Firefly's cloud storage on behalf of the developer between two invocations of the Runtime action.
 
-### Firefly SPAs
+### Firefly SPAs & Adobe IMS
 
 These SPAs are business-to-employees custom applications that deploy into the [Experience Cloud Shell](https://experience.adobe.com) for the end-users of an Enterprise organization.
 
