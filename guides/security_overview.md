@@ -4,7 +4,7 @@
 
 Every application development project has its own security requirements. Even for seasoned developers, these critical requirements can lead to complex and time-consuming implementations with an inappropriate support at SDK and tools level.
 
-Project Firefly SDK and CLI are designed to fasten the implementation of the typical security requirements for cloud-native applications that deploy into Adobe's ecosystem.
+Project Firefly [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) are designed to fasten the implementation of the typical security requirements for cloud-native applications that deploy into Adobe's ecosystem.
 
 The following sections will focus on specific aspects of the security for Firefly Applications.
 
@@ -15,14 +15,14 @@ The [Understanding Authentication](understanding_authentication.md) guide is a g
 
 ### Adobe IMS Support for Firefly Applications
 
-Project Firefly SDK and CLI help developers to [bootstrap applications](../getting_started/setup.md#bootstrapping-an-application) easily from application templates with `aio app init`. 
+Project Firefly [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) help developers to [bootstrap applications](../getting_started/setup.md#bootstrapping-an-application) easily from application templates with `aio app init`. 
 These includes templates for Runtime web actions, which integrate with the [Adobe Product APIs](https://www.adobe.io/apis.html) that can be extended with Project Firefly.
-Any generated action is initialized with boilerplate code based on Project Firefly SDK libraries. Out-of-the box, the following steps are implemented:
+Any generated action is initialized with boilerplate code based on Project Firefly [SDK libraries](https://github.com/adobe/aio-sdk). Out-of-the box, the following steps are implemented:
 
 - Validation that an Adobe IMS bearer token has been passed as Authorization header of the request which invoked this action
 - Extraction of this bearer token for further usage in the action
-- Instantiation of an API client, by using the appropriate product SDK library
-- Pre-configured API call, passing the required credentials, by using the same product SDK library
+- Instantiation of an API client, by using the appropriate product [SDK library](https://github.com/adobe/aio-sdk)
+- Pre-configured API call, passing the required credentials, by using the same product [SDK library](https://github.com/adobe/aio-sdk)
 
 ### Headless Firefly Applications & Adobe IMS
 
@@ -52,7 +52,7 @@ The SPA front-end interacts with Runtime web actions on specific events triggere
 In this scenario, the Experience Cloud Shell exposes a [client-side API](../reference_documentation/exc_app/overview.md), which can be used by the SPA to obtain the OAUth token generated for the logged-in Enterprise user. 
 This token will be used by the back-end Runtime actions to call the [Adobe Product APIs](https://www.adobe.io/apis.html), which need to be integrated in this application.
 
-SPAs bootstrapped from the CLI with `aio app init` automatically include a [React-Spectrum](https://react-spectrum.adobe.com/) based front-end that integrates with the Experience Cloud Shell client-side API and sends the user OAuth token from the client to the invoked Runtime actions.
+SPAs bootstrapped from the [CLI](https://github.com/adobe/aio-cli) with `aio app init` automatically include a [React-Spectrum](https://react-spectrum.adobe.com/) based front-end that integrates with the Experience Cloud Shell [client-side API](../reference_documentation/exc_app/overview.md) and sends the user OAuth token from the client to the invoked Runtime actions.
 
 ## Securing Firefly Applications
 
@@ -70,7 +70,7 @@ We strongly recommend to ensure that every 3rd party system or service integrati
 
 ### Authentication and Authorization
  
-Every Firefly application gets integrated to an out-of-the-box Authentication and Authorization handling layer when deployed from the CLI with `aio app deploy`.
+Every Firefly application gets integrated to an out-of-the-box Authentication and Authorization handling layer when deployed from the [CLI](https://github.com/adobe/aio-cli) with `aio app deploy`.
 
 **TODO: insert deployment diagram**
 
@@ -78,16 +78,16 @@ Whether the application is headless or an SPA, this extra-security layer will ch
 
 - There is a bearer token passed as Authorization header of the calling request
 - This token is validated successfully against Adobe IMS for authentication
-- This token is validated successfully against Adobe Exchange for authorization
+- This token is validated successfully against [Adobe Exchange](https://exchange.adobe.com/) for authorization
 
-Adobe Exchange is the distribution platform for Firefly applications. It will authorize a token if and only if:
+[Adobe Exchange](https://exchange.adobe.com/) is the distribution platform for Firefly applications. It will authorize a token if and only if:
 
 - The invoked back-end action belongs to the Enterprise organization for which the token has been emitted
 - The token is authorized to use the Adobe Product APIs, which are integrated in this Firefly application
 
 ![Validator Architecture](security-validator-architecture.png)
 
-The authentication and authorization validation is enabled by default for every Runtime action bootstrapped from the CLI with `aio app init` or `aio app add action`. This results in a specific `require-adobe-auth` action annotation set to true in the application `manifest.yml` file:
+The authentication and authorization validation is enabled by default for every Runtime action bootstrapped from the [CLI](https://github.com/adobe/aio-cli) with `aio app init` or `aio app add action`. This results in a specific `require-adobe-auth` action annotation set to true in the application `manifest.yml` file:
 
 ```
 packages:
@@ -134,4 +134,7 @@ However, we strongly recommend to validate these changes against the application
 
 ## Summary
 
-**TODO: Time to value, User context aware, OOTB Security support, developer friendly, little time to implement security compliant features, Adobe-native **
+Project Firefly [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) provide an out-of-the-box support for developers to implement secure Adobe-native applications that deploy into Project Firefly Serverless infrastructure and integrate with Adobe Product APIs.
+
+Developers are able to build serverless processes and user-context aware applications with a minimal knowledge of Adobe's authentication and authorization mechanisms for the Enterprise and without having to worry about other key concepts such as tenant isolation.
+
