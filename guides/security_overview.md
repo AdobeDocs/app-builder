@@ -32,7 +32,7 @@ Headless applications (e.g. Runtime actions or sequences) are usually executed a
 - An Adobe Campaign Standard Marketing Activity
 - A 3rd party CRM workflow
 
-**TODO: insert sequence diagram**
+![Headless Access Sequence Diagram](security-headless-access-sequence-diagram.png)
 
 A headless Firefly application requires to pass an Adobe IMS JWT access token in order to successfully call Adobe Product APIs. This token can be obtained within the [Developer Console](https://console.adobe.io/), by accessing the corresponding Firefly project and workspace.
 
