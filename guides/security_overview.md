@@ -58,8 +58,6 @@ SPAs bootstrapped from the [CLI](https://github.com/adobe/aio-cli) with `aio app
  
 Every Firefly application gets integrated to an out-of-the-box Authentication and Authorization handling layer when deployed from the [CLI](https://github.com/adobe/aio-cli) with `aio app deploy`.
 
-**TODO: insert deployment diagram**
-
 Whether the application is headless or an SPA, this extra-security layer will check that:
 
 - There is a bearer token passed as Authorization header of the calling request
