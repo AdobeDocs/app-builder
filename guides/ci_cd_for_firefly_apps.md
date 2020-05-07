@@ -1,5 +1,5 @@
 # CI/CD for Firefly Applications
-Continuous integraion and continuous delivery (CI/CD) is a crucial component for the success of any development team -- a team working on Firefly Applications is no difference. 
+Continuous integration and continuous delivery (CI/CD) is a crucial component for the success of any development team -- a team working on Firefly Applications is no difference. 
 
 Allowing the development team to focus on requirements, code quality, and security with deployment automated, CI/CD is one of the best practice to implement and for us to support. 
 
@@ -7,6 +7,8 @@ Project Firefly allows you to manage multiple environments. This is achieved thr
 
 - List of Adobe services to integrate via user or technical user accounts
 - Runtime namespace
+- Cloud storage for the SPA static files 
+- CDN delegation and sub-domain provisioned on `adobeio-static.net`
 - Related credentials and secrets (API Key, access token, Runtime namespace credentials...)
 
 The entitled organization users will also be allowed to create as many additional workspaces as required by their project, whether this is to add an extra stage (e.g. qa, preproduction...) to match their infrastructure needs, or to define developer specific workspaces for each of their development team member to work locally against.
