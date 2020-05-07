@@ -8,7 +8,7 @@ Project Firefly [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github
 
 The following sections will focus on specific aspects of the security for Firefly Applications.
 
-## Adobe Identity Management Services
+## Securing the access to Firefly Applications
 
 Any interaction with [Adobe Product APIs](https://www.adobe.io/apis.html) needs to be authenticated against Adobe Identity Management Services (IMS).
 The [Understanding Authentication](understanding_authentication.md) guide is a good pre-read to get deeper preliminary insights on those services.
@@ -53,20 +53,6 @@ In this scenario, the Experience Cloud Shell exposes a [client-side API](../refe
 This token will be used by the back-end Runtime actions to call the [Adobe Product APIs](https://www.adobe.io/apis.html), which need to be integrated in this application.
 
 SPAs bootstrapped from the [CLI](https://github.com/adobe/aio-cli) with `aio app init` automatically include a [React-Spectrum](https://react-spectrum.adobe.com/) based front-end that integrates with the Experience Cloud Shell [client-side API](../reference_documentation/exc_app/overview.md) and sends the user OAuth token from the client to the invoked Runtime actions.
-
-## Securing Firefly Applications
-
-### I/O Runtime Specific guidelines
-
-The [security guidelines for I/O Runtime](https://github.com/AdobeDocs/adobeio-runtime/blob/master/guides/security_general.md) generally apply for the back-end actions of a Firefly application.
-
-The guidelines below are specific to Firefly applications.
-
-### Transport Security
-
-Developers building Firefly applications on top of the out-of-the-box infrastructure will benefit from HTTPs connections between all the components that are part of this infrastructure.
-
-We strongly recommend to ensure that every 3rd party system or service integrating with a Firefly application supports HTTPs connections as well.
 
 ### Authentication and Authorization
  
@@ -121,6 +107,20 @@ A developer can still choose to unprotect a specific action by setting the `requ
 However, we strongly recommend to validate these changes against the application security requirements, and to keep the `require-adobe-auth` annotation value to `true` for any action integrating with one or several [Adobe Product APIs](https://www.adobe.io/apis.html).
 
 **Note:** Project Firefly doesn't offer 3rd party API management at this stage, and similar authentication/authorization handling against 3rd party services should be managed by developers within their custom action codes for the time being.
+
+## Securing Firefly Applications
+
+### I/O Runtime Specific guidelines
+
+The [security guidelines for I/O Runtime](https://github.com/AdobeDocs/adobeio-runtime/blob/master/guides/security_general.md) generally apply for the back-end actions of a Firefly application.
+
+The guidelines below are specific to Firefly applications.
+
+### Transport Security
+
+Developers building Firefly applications on top of the out-of-the-box infrastructure will benefit from HTTPs connections between all the components that are part of this infrastructure.
+
+We strongly recommend to ensure that every 3rd party system or service integrating with a Firefly application supports HTTPs connections as well.
  
 ### Tenant isolation
 
