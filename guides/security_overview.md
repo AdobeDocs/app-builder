@@ -46,7 +46,7 @@ This SDK library also uses the [State SDK Library](https://github.com/adobe/aio-
 
 These SPAs are business-to-employees custom applications that deploy into the [Experience Cloud Shell](https://experience.adobe.com) for the end-users of an Enterprise organization.
 
-**TODO: insert sequence diagram**
+![SPA Access Sequence Diagram](security-spa-access-sequence-diagram.png)
 
 The SPA front-end interacts with Runtime web actions on specific events triggered at UI level.
 In this scenario, the Experience Cloud Shell exposes a [client-side API](../reference_documentation/exc_app/overview.md), which can be used by the SPA to obtain the OAUth token generated for the logged-in Enterprise user. 
