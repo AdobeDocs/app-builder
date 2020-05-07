@@ -8,7 +8,7 @@ Project Firefly [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github
 
 The following sections will focus on specific aspects of the security for Firefly Applications.
 
-## Securing the access to Firefly Applications
+## Securing the Access to Firefly Applications
 
 Any interaction with [Adobe Product APIs](https://www.adobe.io/apis.html) needs to be authenticated against Adobe Identity Management Services (IMS).
 The [Understanding Authentication](understanding_authentication.md) guide is a good pre-read to get deeper preliminary insights on those services.
@@ -24,7 +24,7 @@ Any generated action is initialized with boilerplate code based on Project Firef
 - Instantiation of an API client, by using the appropriate product [SDK library](https://github.com/adobe/aio-sdk)
 - Pre-configured API call, passing the required credentials, by using the same product [SDK library](https://github.com/adobe/aio-sdk)
 
-### Headless Firefly Applications & Adobe IMS
+### Securing the Access to Headless Firefly Applications
 
 Headless applications (e.g. Runtime actions or sequences) are usually executed as a back-end service invoked by another service - another Adobe product or a 3rd party system. For example:
 
@@ -42,7 +42,7 @@ If needed, the [IMS SDK Library](https://github.com/adobe/aio-lib-ims) can be us
 
 This SDK library also uses the [State SDK Library](https://github.com/adobe/aio-lib-state) behind the scenes in order to persist the token in Project Firefly's cloud storage on behalf of the developer between two invocations of the Runtime action.
 
-### Firefly SPAs & Adobe IMS
+### Securing the Access to Firefly SPAs
 
 These SPAs are business-to-employees custom applications that deploy into the [Experience Cloud Shell](https://experience.adobe.com) for the end-users of an Enterprise organization.
 
@@ -54,7 +54,7 @@ This token will be used by the back-end Runtime actions to call the [Adobe Produ
 
 SPAs bootstrapped from the [CLI](https://github.com/adobe/aio-cli) with `aio app init` automatically include a [React-Spectrum](https://react-spectrum.adobe.com/) based front-end that integrates with the Experience Cloud Shell [client-side API](../reference_documentation/exc_app/overview.md) and sends the user OAuth token from the client to the invoked Runtime actions.
 
-### Authentication and Authorization
+### Authentication and Authorization Handling
  
 Every Firefly application gets integrated to an out-of-the-box Authentication and Authorization handling layer when deployed from the [CLI](https://github.com/adobe/aio-cli) with `aio app deploy`.
 
@@ -120,11 +120,13 @@ Developers building Firefly applications on top of the out-of-the-box infrastruc
 
 We strongly recommend to ensure that every 3rd party system or service integrating with a Firefly application supports HTTPs connections as well.
  
-### Tenant isolation
+### Tenant Isolation
 
-#### Runtime actions
+#### Runtime Actions
 
-#### SPA front-end
+#### Cloud Storage for SPA Static Files
+
+#### CDN
 
 #### Files & State Services
 
