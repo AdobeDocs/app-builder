@@ -23,7 +23,7 @@ This documentation provides an overview of Project Firefly as well as guides, re
 * [Using Client SDKs for Accessing Adobe APIs](guides/using_sdks.md)
 * [Introduction to React Spectrum](guides/introduction_to_react_spectrum.md)
 * [Deployment](guides/deployment.md)
-* [CI/CD for Firefly Applications](guides/ci_cd_for_firefly_apps.md)
+* [CI/CD for Project Firefly Applications](guides/ci_cd_for_firefly_apps.md)
 
 [Reference Documentation](reference_documentation.md)
 
