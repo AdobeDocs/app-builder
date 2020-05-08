@@ -125,19 +125,36 @@ We strongly recommend to ensure that every 3rd party system or service integrati
  
 ### Tenant Isolation
 
+Project Firefly Applications and Services provide tenant isolation by default. 
+A Project Firefly Application gets deployed into a Project Firefly Workspace defined within the [Developer Console](https://console.adobe.io) for a give Project Firefly project.
+Each Project Firefly Workspace owns its own Runtime namespace.
+
+This combination of `Enterprise Organization`, `Project`, `Workspace` and `Runtime Namespace` define a granular tenant isolation for each deployed Project Firefly Application.
+
 #### Runtime Actions
 
-#### Cloud Storage for SPA Static Files
+The back-end Runtime actions used by a Project Firefly Application respect the [tenant isolation model](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/quickstart.md#security-considerations) implemented by I/O Runtime.
 
-#### CDN
+#### Cloud Storage and CDN for SPA Static Files
+
+If a Project Firefly Application is an SPA that deploys into the [Experience Cloud Shell](https://experience.adobe.com), the static assets of the SPA get deployed from the  or from a [CI/CD pipeline](https://github.com/AdobeDocs/project-firefly/blob/master/guides/ci_cd_for_firefly_apps.md) to Project Firefly's Cloud Storage and CDN.
+
+Both of them have a strict isolation per Runtime namespace. It is only possible to access the Cloud Storage container hosting a Project Firefly SPA by configuring the [CLI](https://github.com/adobe/aio-cli) with the appropriate workspace credentials.
+
+The CDN serves these static assets from a sub-domain exclusively dedicated to the Runtime namespace associated to the Project Firefly Application workspace to which the SPA is deployed.
 
 #### Files & State Services
 
+The [Files](https://github.com/adobe/aio-lib-files) and [State](https://github.com/adobe/aio-lib-state) SDK libraries from the Project Firefly SDK provide an abstraction to interact with Project Firefly Cloud Storage and Key-Value Store from a Runtime action. 
+The access to the data stored in these underlying services is restricted to the Runtime namespace in which the action is executed.
+
 #### Project Firefly Apps Service
+
+The `Project Firefly Apps` application available to each Enterprise Organization within the Experience Cloud Shell is nothing more than a Project Firefly Application that is deployed following the access and isolation paradigms documented in this guide.
 
 ## Summary
 
 Project Firefly [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) provide an out-of-the-box support for developers to implement secure Adobe-native applications that deploy into Project Firefly Serverless infrastructure and integrate with Adobe Product APIs.
 
-Developers are able to build serverless processes and user-context aware applications with a minimal knowledge of Adobe's authentication and authorization mechanisms for the Enterprise and without having to worry about other key concepts such as tenant isolation.
+Developers are able to build serverless processes and user-context aware applications with a minimal knowledge of Adobe's authentication and authorization mechanisms for the Enterprise and without having to worry about  other key concepts such as tenant isolation.
 
