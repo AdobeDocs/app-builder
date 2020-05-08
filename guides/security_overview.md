@@ -99,7 +99,10 @@ packages:
         web: 'yes'
 ```
 
-The first action of the sequence is an out-of-the-box validator will automatically perform the checks against Adobe IMS and Adobe Exchange as described above. The custom action invocation will be chained if and only if the validation is successful.
+The first action of the sequence is an out-of-the-box shared action that binds in the Runtime namespace of the application. It extracts from the incoming request all the data that is required to authenticate and authorize the calling client.
+This data is passed to an out-of-the-box service, which performs the necessary validation against Adobe IMS and Adobe Exchange. The custom action invocation will be chained if and only if the validation is successful, as highlighted on the sequence diagram below:
+
+![Validator Architecture](security-validator-detailed-sequence-diagram.png)
 
 A developer can still choose to unprotect a specific action by setting the `require-adobe-auth` annotation to `false` or by deleting it and redeploying the application with `aio app deploy` afterwards.
 However, we strongly recommend to validate these changes against the application security requirements, and to keep the `require-adobe-auth` annotation value to `true` for any action integrating with one or several [Adobe Product APIs](https://www.adobe.io/apis.html).
