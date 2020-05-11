@@ -32,7 +32,7 @@ Headless applications (e.g. Runtime actions or sequences) are usually executed a
 - An Adobe Campaign Standard Marketing Activity
 - A 3rd party CRM workflow
 
-![Headless Access Sequence Diagram](security-headless-access-sequence-diagram.png)
+![Headless Access Sequence Diagram](../images/security-headless-access-sequence-diagram.png)
 
 A headless Project Firefly application requires to pass an Adobe IMS JWT access token in order to successfully call Adobe Product APIs. This token can be obtained within the [Developer Console](https://console.adobe.io/), by accessing the corresponding Project Firefly project and workspace.
 
@@ -46,7 +46,7 @@ This SDK library also uses the [State SDK Library](https://github.com/adobe/aio-
 
 These SPAs are business-to-employees custom applications that deploy into the [Experience Cloud Shell](https://experience.adobe.com) for the end-users of an Enterprise organization.
 
-![SPA Access Sequence Diagram](security-spa-access-sequence-diagram.png)
+![SPA Access Sequence Diagram](../images/security-spa-access-sequence-diagram.png)
 
 The SPA front-end interacts with Runtime web actions on specific events triggered at UI level.
 In this scenario, the Experience Cloud Shell exposes a [client-side API](../reference_documentation/exc_app/overview.md), which can be used by the SPA to obtain the OAUth token generated for the logged-in Enterprise user. 
@@ -69,7 +69,7 @@ Whether the application is headless or an SPA, this extra-security layer will ch
 - The invoked back-end action belongs to the Enterprise organization for which the token has been emitted
 - The token is authorized to use the Adobe Product APIs, which are integrated in this Project Firefly Application
 
-![Validator Architecture](security-validator-architecture.png)
+![Validator Architecture](../images/security-validator-architecture.png)
 
 The authentication and authorization validation is enabled by default for every Runtime action bootstrapped from the [CLI](https://github.com/adobe/aio-cli) with `aio app init` or `aio app add action`. This results in a specific `require-adobe-auth` action annotation set to true in the application `manifest.yml` file:
 
@@ -102,7 +102,7 @@ packages:
 The first action of the sequence is an out-of-the-box shared action that binds in the Runtime namespace of the application. It extracts from the incoming request all the data that is required to authenticate and authorize the calling client.
 This data is passed to an out-of-the-box service, which performs the necessary validation against Adobe IMS and Adobe Exchange. The custom action invocation will be chained if and only if the validation is successful, as highlighted on the sequence diagram below:
 
-![Validator Architecture](security-validator-detailed-sequence-diagram.png)
+![Validator Architecture](../images/security-validator-detailed-sequence-diagram.png)
 
 A developer can still choose to unprotect a specific action by setting the `require-adobe-auth` annotation to `false` or by deleting it and redeploying the application with `aio app deploy` afterwards.
 However, we strongly recommend to validate these changes against the application security requirements, and to keep the `require-adobe-auth` annotation value to `true` for any action integrating with one or several [Adobe Product APIs](https://www.adobe.io/apis.html).

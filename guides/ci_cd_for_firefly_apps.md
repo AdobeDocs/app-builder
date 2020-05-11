@@ -13,7 +13,7 @@ Project Firefly allows you to manage multiple environments. This is achieved thr
 
 The entitled organization users will also be allowed to create as many additional workspaces as required by their project, whether this is to add an extra stage (e.g. qa, preproduction...) to match their infrastructure needs, or to define developer specific workspaces for each of their development team member to work locally against.
 
-![High-Level CI/CD architecture](high-level-ci-cd-architecture.png)
+![High-Level CI/CD architecture](../images/ci-cd-github-actions-architecture.png)
 
 ## GitHub Actions Support
 A sample CI/CD workflow is provided out-of-the-box on top of [GitHub Actions](https://github.com/features/actions).
@@ -33,7 +33,7 @@ The default GitHub Workflows enable the following actions based on specific Gith
 
 Each of the default [Github Workflows](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) leverages two core features provided by Github: [Github Actions](https://github.com/features/actions) and [Github Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets).
 
-![CI/CD with Github Actions](ci-cd-github-actions-architecture.png)
+![CI/CD with Github Actions](../images/ci-cd-github-actions-architecture.png)
 
 ### GitHub Actions for AIO CLI
 
