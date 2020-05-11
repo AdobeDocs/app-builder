@@ -13,7 +13,7 @@ This documentation provides an overview of Project Firefly as well as guides, re
 
 * [Technical Requirements](getting_started/technical_requirements.md)
 * [Setting up Your Environment](getting_started/setup.md)
-* [Creating your First Firefly App](https://github.com/adobe/aio-cli#bootstrapping-an-application)
+* [Creating your First Firefly App](getting_started/first_app.md)
 
 [Guides](guides.md)
 
@@ -21,9 +21,11 @@ This documentation provides an overview of Project Firefly as well as guides, re
 * [Understanding Authentication](guides/understanding_authentication.md)
 * [Dealing with Application State](guides/application_state.md)
 * [Using Client SDKs for Accessing Adobe APIs](guides/using_sdks.md)
+* [Managing Application Logs](guides/application_logging.md)
 * [Introduction to React Spectrum](guides/introduction_to_react_spectrum.md)
 * [Deployment](guides/deployment.md)
 * [CI/CD for Firefly Applications](guides/ci_cd_for_firefly_apps.md)
+* [Security Overview](guides/security_overview.md)
 
 [Reference Documentation](reference_documentation.md)
 
@@ -31,6 +33,7 @@ This documentation provides an overview of Project Firefly as well as guides, re
 * [Custom Application Generators](https://github.com/adobe/generator-aio-app)
 * [Adobe Authentication](https://github.com/adobe/aio-lib-ims)
 * [Token-Vending Machine](https://github.com/adobe/aio-tvm)
+* [@adobe/exc-app](reference_documentation/exc_app/overview.md)
 * [SDK Libraries](https://github.com/adobe/aio-sdk)
     * [File Storage Library](https://github.com/adobe/aio-lib-files)
     * [Key/Value Storage Library](https://github.com/adobe/aio-lib-state) 
@@ -38,7 +41,7 @@ This documentation provides an overview of Project Firefly as well as guides, re
     * [Adobe Campaign Standard Library](https://github.com/adobe/aio-lib-campaign-standard)
     * [Adobe Target Library](https://github.com/adobe/aio-lib-target)
     * [Core SDK Library](https://github.com/adobe/aio-sdk-core)
-       * [Logging Library](https://github.com/adobe/aio-lib-core-logging)
+      * [Logging Library](https://github.com/adobe/aio-lib-core-logging)
       * [Error Handling Library](https://github.com/adobe/aio-lib-core-errors)
       * [Configuration Library](https://github.com/adobe/aio-lib-core-config)
       * [Networking Library](https://github.com/adobe/aio-lib-core-networking)
@@ -46,7 +49,7 @@ This documentation provides an overview of Project Firefly as well as guides, re
 * [Github Actions Support](https://github.com/features/actions)
     * [Github Action to setup the CLI](https://github.com/adobe/aio-cli-setup-action)
     * [Github Action to use the CLI](https://github.com/adobe/aio-apps-action)
-    * [Github workflow generator for Firefly Apps](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows)
+    * [Github workflow generator for Project Firefly Apps](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows)
 
 [Contribution Guides](contribution_guides.md)
 

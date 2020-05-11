@@ -1,6 +1,6 @@
 # Deployment
 
-The [CLI](https://github.com/adobe/aio-cli) provides out-of-the-box features for developers to manage the lifecycle of their  applications.
+The [CLI](https://github.com/adobe/aio-cli) provides out-of-the-box features for developers to manage the lifecycle of their  Project Firefly Applications.
 
 This documentation focuses on the application deployment step of this lifecycle.
 
@@ -42,7 +42,7 @@ This deployment is triggered when running `aio app run --local` at the root of t
 
 #### Architecture
 
-![Local Runtime Actions and UI](local-actions-local-ui.png)
+![Local Runtime Actions and UI](../images/local-actions-local-ui.png)
 
 In this scenario, the [CLI](https://github.com/adobe/aio-cli) will download a [standalone instance](https://github.com/apache/openwhisk/tree/master/core/standalone) of [Apache OpenWhisk](https://openwhisk.apache.org/), which is the open source serverless platform behind [Runtime](https://github.com/AdobeDocs/adobeio-runtime), on the developer's machine.
 
@@ -76,7 +76,7 @@ This deployment is triggered when running `aio app run` at the root of the Custo
 
 #### Architecture
 
-![Remote Runtime Actions and local UI](remote-actions-local-ui.png)
+![Remote Runtime Actions and local UI](../images/remote-actions-local-ui.png)
 
 The UI is still served locally from [ParcelJS](https://parceljs.org/cli.html), which allows hot updates of the front-end code. It communicates with [Runtime](https://github.com/AdobeDocs/adobeio-runtime) actions deployed to the developer's Runtime namespace.
 
@@ -96,7 +96,7 @@ This deployment is triggered when running `aio app deploy` at the root of the Cu
 
 #### Architecture
 
-![Remote Runtime Actions and UI](remote-actions-remote-ui.png)
+![Remote Runtime Actions and UI](../images/remote-actions-remote-ui.png)
 
 The UI is deployed to the out-of-the-box content Content Delivery Network on behalf of the developer's Runtime credentials. It communicates with [Runtime](https://github.com/AdobeDocs/adobeio-runtime) actions deployed to the developer's Runtime namespace.
 
