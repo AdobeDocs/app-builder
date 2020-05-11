@@ -121,3 +121,5 @@ This will invoke:
 The deployment also outputs 2 URLs of the app, which allow access either to the CDN host or Adobe Experience Cloud (ExC Shell). The URL format of the app on ExC Shell is `https://experience.adobe.com/#/@<your-org-id>/myapps/?localDevUrl=<your-app-url>`.
 
 The app could also be "unpublished" later with `aio app undeploy`.
+
+Read more at [Deployment Overview](../guides/deployment.md)

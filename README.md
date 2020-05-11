@@ -29,13 +29,13 @@ This documentation provides an overview of Project Firefly as well as guides, re
 * [Introduction to React Spectrum](guides/introduction_to_react_spectrum.md)
 * [Using Client SDKs for Accessing Adobe APIs](guides/using_sdks.md)
 #### Best Practice 
-* [Deployment](guides/deployment.md)
+* [Deployment Overview](guides/deployment.md)
 * [CI/CD for Firefly Applications](guides/ci_cd_for_firefly_apps.md)
 * [Managing Application Logs](guides/application_logging.md)
 
 ### [Resources](resources.md)
 
-* [Code Labs](link)
+* [Code Labs](resources/codelab.md)
     * [Build a Customer Dashboard with Project Firefly and Adobe Campaign Standard API](https://adobeio-codelabs-campaign-standard-adobedocs.project-helix.page/)
     * [Firefly Headless App](https://adobeio-codelabs-barcode-adobedocs.project-helix.page/)
     * [Introduction to Spectrum and UI Frameworks](https://adobeio-codelabs-spectrum-intro-adobedocs.project-helix.page/)
