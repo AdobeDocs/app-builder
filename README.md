@@ -21,6 +21,7 @@ This documentation provides an overview of Project Firefly as well as guides, re
 * [Understanding Authentication](guides/understanding_authentication.md)
 * [Dealing with Application State](guides/application_state.md)
 * [Using Client SDKs for Accessing Adobe APIs](guides/using_sdks.md)
+* [Managing Application Logs](guides/application_logging.md)
 * [Introduction to React Spectrum](guides/introduction_to_react_spectrum.md)
 * [Deployment](guides/deployment.md)
 * [CI/CD for Firefly Applications](guides/ci_cd_for_firefly_apps.md)
