@@ -19,6 +19,10 @@ Project Firefly [core Logging library](https://github.com/adobe/aio-lib-core-log
 The errors log messages will then output specific codes defined by each Project Firefly [SDK](https://github.com/adobe/aio-sdk) library.
 Again, the [Realtime Customer Profile](https://github.com/adobe/aio-lib-customer-profile) SDK library is a good example that uses Project Firefly [Logger](https://github.com/adobe/aio-lib-core-logging) with Project Firefly [Errors](https://github.com/adobe/aio-lib-core-errors).
 
+Both Project Firefly [core Logging library](https://github.com/adobe/aio-lib-core-logging) and Project Firefly [core Error library](https://github.com/adobe/aio-lib-core-errors) can also be used directly in Project Firefly Applications.
+
+When bootstrapping a new custom application from the [CLI](https://github.com/adobe/aio-cli) `aio app init` command, the developer is invited to select [action generators](https://github.com/adobe/generator-aio-app), which will create the boilerplate code for the custom back-end actions of the application. These ones integrate out-of-the-box with these two core Project Firefly [SDK](https://github.com/adobe/aio-sdk) features.
+
 # Accessing logs with Project Firefly CLI
 
 Project Firefly [CLI](https://github.com/adobe/aio-cli) exposes application logs to the developers at different levels.
