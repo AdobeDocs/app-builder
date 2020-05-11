@@ -40,6 +40,6 @@ It can be used to retrieve [activations](https://github.com/adobe/aio-cli-plugin
 In that case, the activations and logs will not be aggregated by application, but fetched individually for a more fine-grained control. The [Runtime plugin](https://github.com/adobe/aio-cli-plugin-runtime) provides the same possibilities than the [App plugin](https://github.com/adobe/aio-cli-plugin-app):
 
 - The commands can be used either by a developer or by a script running in a [CI/CD pipeline](https://github.com/AdobeDocs/project-firefly/blob/master/guides/ci_cd_for_firefly_apps.md).
-- The commands can be used either for deployed Runtime actions, or for actions running locally with `aio app run --local` (see the [Deployment guide](https://github.com/AdobeDocs/project-firefly/blob/master/guides/deployment.md)
+- The commands can be used either for deployed Runtime actions, or for actions running locally with `aio app run --local` (see the [Deployment guide](https://github.com/AdobeDocs/project-firefly/blob/master/guides/deployment.md)).
 
 Project Firefly will provide more Logging and Monitoring capabilities as we are expanding both [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) for a broader panel of use-cases.
