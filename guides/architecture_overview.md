@@ -2,7 +2,7 @@
 
 ## Types of Project Firefly apps
 
-A Firefly application is a serverless application that extends [Adobe Product APIs](https://www.adobe.io/apis.html).
+A Project Firefly Application is a serverless application that extends [Adobe Product APIs](https://www.adobe.io/apis.html).
 These applications can be one of two kinds: headless or headful. Each of these types is described in more detail in the sections that follow.
 
 ### Headless Application
@@ -15,11 +15,11 @@ A typical headless application would integrate well with a remote script or proc
 
 A headful application is a Single Page Application (SPA) with a full-fledged user interface (UI) served from the out-of-the-box Content Delivery Network. This type of application calls [Adobe Product APIs](https://www.adobe.io/apis.html) directly from the client when applicable. When there is a strong need to orchestrate [Adobe Product API](https://www.adobe.io/apis.html) calls with 3rd party API calls, or with Adobe Identity Management System for authentication purposes, you can deploy serverless actions and/or sequences using [Runtime](https://github.com/AdobeDocs/adobeio-runtime).
 
-## JAMStack: Anatomy of a Firefly App
+## JAMStack: Anatomy of a Project Firefly App
 
 Project Firefly apps that are Single Page Applications with a full-fledged UI should follow the [JAMStack Architecture](https://jamstack.org/).
 
-The three main components of Project Firefly app are:
+The three main components of Project Firefly apps are:
 
 - [Adobe Product APIs](https://www.adobe.io/apis.html), exposed to external developers and consumers through Adobe I/O API Gateway.
 - [Javascript-based SDK](https://github.com/adobe/aio-sdk) and serverless actions, sequences, and APIs deployed to [Runtime](https://github.com/AdobeDocs/adobeio-runtime).
@@ -44,7 +44,7 @@ The CLI comes out-of-the-box with the following capabilities:
 
 ### Project Firefly Generators
 
-The [generators](https://github.com/adobe/generator-aio-app) help developers to bootstrap their Firefly apps when using the [CLI](https://github.com/adobe/aio-cli).
+The [generators](https://github.com/adobe/generator-aio-app) help developers to bootstrap their Project Firefly apps when using the [CLI](https://github.com/adobe/aio-cli).
 
 Generators can be used to create:
 
@@ -68,7 +68,7 @@ The [main SDK library](https://github.com/adobe/aio-sdk) bundles smaller, reusab
 
 ##### Integration with Adobe's Identity Management System
 
-The [Adobe IMS SDK library](https://github.com/adobe/aio-lib-core-ims) provides authentication management capabilities to Adobe's Identity Management System, for both of the following scenarios:
+The [Adobe IMS SDK library](https://github.com/adobe/aio-lib-core-ims) provides authentication management capabilities to Adobe's Identity Management Services, for both of the following scenarios:
 
 - [User-based (OAuth 2.0)](https://github.com/adobe/aio-lib-core-ims-oauth)
 - [Technical account-based (JWT Bearer-token)](https://github.com/adobe/aio-lib-core-ims-jwt)
@@ -110,13 +110,13 @@ The [Token-Vending Machine](https://github.com/adobe/aio-tvm) is exposed as an o
 
 It enables developers to perform the following actions on behalf of their Project Firefly application credentials:
 
-- Deploy the web assets of their Firefly application to the out-of-the-box CDN.
+- Deploy the web assets of their Project Firefly application to the out-of-the-box CDN.
 - Use the out-of-the-box cloud storage through the [Files SDK](https://github.com/adobe/aio-lib-files).
 - Use the out-of-the-box key-value store through the [State SDK](https://github.com/adobe/aio-lib-state).
 
 ### CI/CD Support
 
-The [out-of-the-box CI/CD support](./ci_cd_for_custom_apps.md) for Firefly Applications consists in:
+The [out-of-the-box CI/CD support](./ci_cd_for_custom_apps.md) for Project Firefly Applications consists in:
 
 - [Github Actions](https://github.com/features/actions) to [setup the CLI](https://github.com/adobe/aio-cli-setup-action) and use it to [perform actions](https://github.com/adobe/aio-apps-action) such as application testing, build and deployment.
 - [Github Workflows](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) to orchestrate the Github Actions upon specific events triggered against the application repository.
