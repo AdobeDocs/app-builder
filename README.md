@@ -23,7 +23,8 @@ This documentation provides an overview of Project Firefly as well as guides, re
 * [Using Client SDKs for Accessing Adobe APIs](guides/using_sdks.md)
 * [Introduction to React Spectrum](guides/introduction_to_react_spectrum.md)
 * [Deployment](guides/deployment.md)
-* [CI/CD for Project Firefly Applications](guides/ci_cd_for_firefly_apps.md)
+* [CI/CD for Firefly Applications](guides/ci_cd_for_firefly_apps.md)
+* [Security Overview](guides/security_overview.md)
 
 [Reference Documentation](reference_documentation.md)
 
@@ -47,7 +48,7 @@ This documentation provides an overview of Project Firefly as well as guides, re
 * [Github Actions Support](https://github.com/features/actions)
     * [Github Action to setup the CLI](https://github.com/adobe/aio-cli-setup-action)
     * [Github Action to use the CLI](https://github.com/adobe/aio-apps-action)
-    * [Github workflow generator for Firefly Apps](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows)
+    * [Github workflow generator for Project Firefly Apps](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows)
 
 [Contribution Guides](contribution_guides.md)
 
