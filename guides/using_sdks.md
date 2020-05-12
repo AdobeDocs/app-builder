@@ -4,7 +4,9 @@ To simplify your interaction with Adobe APIs, we have created a number of librar
 
 You can try it out directly at 
 - [Adobe Analytics 2.0 Library](https://github.com/adobe/aio-lib-analytics)
+- [Adobe Audience Manager Customer Data](https://github.com/adobe/aio-lib-audience-manager-cd)
 - [Adobe Campaign Standard Library](https://github.com/adobe/aio-lib-campaign-standard)
+- [Adobe Experience Platform Real-Time Customer Profile](https://github.com/adobe/aio-lib-customer-profile)
 - [Adobe Target Library](https://github.com/adobe/aio-lib-target)
 
 You can also get started through the CLI by ```aio app init```, and selecting one of the templates to generate project scaffolding automatically. 
