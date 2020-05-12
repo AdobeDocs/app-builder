@@ -47,9 +47,9 @@ This documentation provides an overview of Project Firefly as well as guides, re
 
 * [Adobe CLI](https://github.com/adobe/aio-cli)
 * [Custom Application Generators](https://github.com/adobe/generator-aio-app)
-* [Adobe Authentication](https://github.com/adobe/aio-lib-ims)
+* [Adobe Developer Console](https://www.adobe.io/apis/experienceplatform/console/docs.html)
+* [Adobe Authentication Library](https://github.com/adobe/aio-lib-ims)
 * [Token-Vending Machine](https://github.com/adobe/aio-tvm)
-* [Experience Cloud ](reference_documentation/exc_app/overview.md)
 * [SDK Libraries](https://github.com/adobe/aio-sdk)
     * [File Storage Library](https://github.com/adobe/aio-lib-files)
     * [Key/Value Storage Library](https://github.com/adobe/aio-lib-state) 
