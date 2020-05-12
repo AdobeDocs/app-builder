@@ -8,6 +8,7 @@ This documentation provides an overview of Project Firefly as well as guides, re
 
 * [What is Project Firefly](overview/what_is.md)
 * [How to Get Access to Project Firefly](overview/getting_access.md)
+* [Migrating from Runtime to Firefly](getting_started/runtime_to_firefly.md)
 
 ### [Getting Started](getting_started.md)
 
