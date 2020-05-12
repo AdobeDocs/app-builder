@@ -13,35 +13,35 @@ This documentation provides an overview of Project Firefly as well as guides, re
 
 * [Setting up Your Environment](getting_started/setup.md)
 * [Creating your First Firefly App](getting_started/first_app.md)
-* [Migrating from Runtime to Firefly](getting_started/runtime_to_firefly.md)
 
 ### [Guides](guides.md)
 
-#### Overview
 * [Architecture Overview](guides/architecture_overview.md)
 * [Security Overview](guides/security_overview.md)
 * [Integration Guide with Adobe Experience Cloud](/Users/saxu/Dropbox/Development/adobe-custom-applications/guides/exc_app/overview.md)
 * [Integration Guide for building Event-driven Application with I/O Events]()
 * [Custom Events Overview]()
-#### Tutorials
 * [Understanding Authentication](guides/understanding_authentication.md)
 * [Dealing with Application State](guides/application_state.md)
 * [Introduction to React Spectrum](guides/introduction_to_react_spectrum.md)
 * [Using Client SDKs for Accessing Adobe APIs](guides/using_sdks.md)
-#### Best Practice 
 * [Deployment Overview](guides/deployment.md)
 * [CI/CD for Firefly Applications](guides/ci_cd_for_firefly_apps.md)
 * [Managing Application Logs](guides/application_logging.md)
 
 ### [Resources](resources.md)
 
-* [Code Labs](resources/codelab.md)
-    * [Build a Customer Dashboard with Project Firefly and Adobe Campaign Standard API](https://adobeio-codelabs-campaign-standard-adobedocs.project-helix.page/)
-    * [Firefly Headless App](https://adobeio-codelabs-barcode-adobedocs.project-helix.page/)
-    * [Introduction to Spectrum and UI Frameworks](https://adobeio-codelabs-spectrum-intro-adobedocs.project-helix.page/)
-* [Videos](link)
-* [Webinars](link)
-* [Blog Articles](link)
+#### Code Labs
+
+* [Build a Customer Dashboard with Project Firefly and Adobe Campaign Standard API](https://adobeio-codelabs-campaign-standard-adobedocs.project-helix.page/)
+* [Firefly Headless App](https://adobeio-codelabs-barcode-adobedocs.project-helix.page/)
+* [Introduction to Spectrum and UI Frameworks](https://adobeio-codelabs-spectrum-intro-adobedocs.project-helix.page/)
+
+#### Videos
+
+#### Blog Articles
+
+* [I/O Runtime and the Future of Serverless at Adobe](https://medium.com/adobetech/i-o-runtime-and-the-future-of-serverless-at-adobe-2c647b43d3a7)
 
 ### [Reference Documentation](reference_documentation.md)
 
