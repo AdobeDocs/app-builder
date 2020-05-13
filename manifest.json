@@ -30,7 +30,7 @@
         {
           "importedFileName": "getting_access",
           "pages": [],
-          "path": "AdobeDocs/project-firefly/master/getting_access.md",
+          "path": "AdobeDocs/project-firefly/master/overview/getting_access.md",
           "title": "How to Get Access"
         }
       ]
@@ -74,7 +74,7 @@
           {
             "importedFileName": "overview",
             "pages": [],
-            "path": "AdobeDocs/project-firefly/master/guides/ecx_app/overview.md",
+            "path": "AdobeDocs/project-firefly/master/guides/exc_app/overview.md",
             "title": "Integration Guide with Adobe Experience Cloud"
           },
           {
@@ -114,9 +114,9 @@
             "title": "Using Client SDKs for Accessing Adobe APIs"
           },
           {
-            "importedFileName": "deployment_overview",
+            "importedFileName": "deployment",
             "pages": [],
-            "path": "AdobeDocs/project-firefly/master/guides/deployment_overview.md",
+            "path": "AdobeDocs/project-firefly/master/guides/deployment.md",
             "title": "Deployment Overview"
           },
           {

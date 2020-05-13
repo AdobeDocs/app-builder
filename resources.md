@@ -9,8 +9,7 @@ Follow existing CodeLabs at
 * [Firefly Headless App](https://adobeio-codelabs-barcode-adobedocs.project-helix.page/)
 * [Introduction to Spectrum and UI Frameworks](https://adobeio-codelabs-spectrum-intro-adobedocs.project-helix.page/)
 
-You are invited to create your own public Adobe I/O CodeLab
-Just follow [these steps](https://adobeio-codelabs-howto-adobedocs.project-helix.page/).
+You are invited to create your own public Adobe I/O CodeLab, just follow [these steps](https://adobeio-codelabs-howto-adobedocs.project-helix.page/).
 
 ## Videos
 
