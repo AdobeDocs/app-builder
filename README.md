@@ -31,18 +31,6 @@ This documentation provides an overview of Project Firefly as well as guides, re
 
 ### [Resources](resources.md)
 
-#### Code Labs
-
-* [Build a Customer Dashboard with Project Firefly and Adobe Campaign Standard API](https://adobeio-codelabs-campaign-standard-adobedocs.project-helix.page/)
-* [Firefly Headless App](https://adobeio-codelabs-barcode-adobedocs.project-helix.page/)
-* [Introduction to Spectrum and UI Frameworks](https://adobeio-codelabs-spectrum-intro-adobedocs.project-helix.page/)
-
-#### Videos
-
-#### Blog Articles
-
-* [I/O Runtime and the Future of Serverless at Adobe](https://medium.com/adobetech/i-o-runtime-and-the-future-of-serverless-at-adobe-2c647b43d3a7)
-
 ### [Reference Documentation](reference_documentation.md)
 
 * [Adobe Developer Console](https://www.adobe.io/apis/experienceplatform/console/docs.html)
