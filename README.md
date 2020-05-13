@@ -12,7 +12,7 @@ This documentation provides an overview of Project Firefly as well as guides, re
 ### [Getting Started](getting_started.md)
 
 * [Setting up Your Environment](getting_started/setup.md)
-* [Creating your First Firefly App](getting_started/first_app.md)
+* [Creating your First Project Firefly App](getting_started/first_app.md)
 
 ### [Guides](guides.md)
 
@@ -45,9 +45,10 @@ This documentation provides an overview of Project Firefly as well as guides, re
 
 ### [Reference Documentation](reference_documentation.md)
 
-* [Adobe CLI](https://github.com/adobe/aio-cli)
-* [Custom Application Generators](https://github.com/adobe/generator-aio-app)
 * [Adobe Developer Console](https://www.adobe.io/apis/experienceplatform/console/docs.html)
+* [Adobe CLI](https://github.com/adobe/aio-cli)
+* [Project Firefly Application Generators](https://github.com/adobe/generator-aio-app)
+* [Developer Console Project Generators](https://github.com/adobe/generator-aio-console)
 * [Adobe Authentication Library](https://github.com/adobe/aio-lib-ims)
 * [Token-Vending Machine](https://github.com/adobe/aio-tvm)
 * [SDK Libraries](https://github.com/adobe/aio-sdk)
@@ -58,6 +59,8 @@ This documentation provides an overview of Project Firefly as well as guides, re
     * [Adobe Campaign Standard Library](https://github.com/adobe/aio-lib-campaign-standard)
     * [Adobe Experience Platform Real-Time Customer Profile](https://github.com/adobe/aio-lib-customer-profile)
     * [Adobe Target Library](https://github.com/adobe/aio-lib-target)
+    * [Adobe Developer Console Library](https://github.com/adobe/aio-lib-console)
+    * [Adobe I/O Events Library](https://github.com/adobe/aio-lib-events)
     * [Core SDK Library](https://github.com/adobe/aio-sdk-core)
       * [Logging Library](https://github.com/adobe/aio-lib-core-logging)
       * [Error Handling Library](https://github.com/adobe/aio-lib-core-errors)
