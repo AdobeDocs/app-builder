@@ -36,8 +36,8 @@
       ]
   },
     {
-        "importedFileName": "getting-started",
-        "path": "AdobeDocs/project-firefly/master/getting-started.md",
+        "importedFileName": "getting_started",
+        "path": "AdobeDocs/project-firefly/master/getting_started.md",
         "title": "Getting Started",
         "pages": [
           {
