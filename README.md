@@ -18,8 +18,8 @@ This documentation provides an overview of Project Firefly as well as guides, re
 
 * [Architecture Overview](guides/architecture_overview.md)
 * [Security Overview](guides/security_overview.md)
-* [Integration Guide with Adobe Experience Cloud](/Users/saxu/Dropbox/Development/adobe-custom-applications/guides/exc_app/overview.md)
-* [Integration Guide for building Event-driven Application with I/O Events]()
+* [Integration Guide with Adobe Experience Cloud](guides/exc_app/overview.md)
+* [Integration Guide for building Event-driven Applications with I/O Events]()
 * [Custom Events Overview]()
 * [Understanding Authentication](guides/understanding_authentication.md)
 * [Dealing with Application State](guides/application_state.md)
