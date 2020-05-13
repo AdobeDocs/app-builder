@@ -1,4 +1,4 @@
-# Creating your First Firefly App
+# Creating your First Project Firefly App
 
 ## Creating a new Project on Developer Console
 
@@ -12,7 +12,7 @@ Adobe Developer Console gives you access to APIs, SDKs and developer tools to bu
 
 1. Enter `Project Title` and `App Name` for your templated project. Click `Save` when ready. 
 
-1. You should see a new project generated with 2 default Workspace. Workspaces are where you’ll connect services and get the credential details needed to connect to Adobe APIs. Each Firefly project has two default workspaces: Production and Stage. You can add more workspaces as needed. When you’re ready to deploy your app, submit it for approval from the Production workspace.
+1. You should see a new project generated with 2 default Workspace. Workspaces are where you’ll connect services and get the credential details needed to connect to Adobe APIs. Each Project Firefly project has two default workspaces: Production and Stage. You can add more workspaces as needed. When you’re ready to deploy your app, submit it for approval from the Production workspace.
 
 1. Select a workspace, and you can start adding APIs and Events that you would need for your application. 
 
@@ -42,7 +42,7 @@ Once you have your project set up in Developer Console, it is time to move onto 
 
     You will be prompted with a few questions about how you want your app to have:
     
-1. Select Organization, Project and Workspace that you'd like to use for this new Firefly App. Navigate through the list to find the project you just created. 
+1. Select Organization, Project and Workspace that you'd like to use for this new Project Firefly App. Navigate through the list to find the project you just created. 
 
 
 1. Select app features to enable:
