@@ -21,13 +21,14 @@ Project Firefly is available at no cost to enterprise customers and partners for
 Project Firefly is available to Adobe enterprise customers or partners who want to extend and integrate Adobe Experience Platform and Adobe Experience Cloud solutions. Currently, it is not available to individual developers who are not part of an Adobe enterprise or partner organization.
  
 ## How does someone get access to Project Firefly?
-You can apply for access on [Adobe’s Prelease forum] (http://www.adobeprerelease.com) -> Project Firefly -> Apply. The following information is needed:
-* Your Adobe Organization ID. We are granting access to organizations, not to individuals. You can retrieve your Organization ID from [Adobe Admin Console](https://adminconsole.adobe.com), it is part of the URL (something like some_hash@AdobeOrg)
-* Describe your use case. For example: “I want to extend/integrate Adobe Experience Platform” or “Adobe Campaign Standard”
-* Once your organization has been onboarded, anyone who has a Developer Role or System Administrator permissions will be able to create projects for Firefly in the [Developer Console](https://console.adobe.io)
+You can apply for access on [Adobe’s Prelease forum](http://www.adobeprerelease.com) -> Project Firefly -> Apply. The following information is needed:
+* Your Adobe Organization ID. We are granting access to organizations, not to individuals. You can retrieve your Organization ID from [Adobe Admin Console](https://adminconsole.adobe.com), it is part of the URL (something like some_hash@AdobeOrg).
+* Describe your use case. For example: “I want to extend/integrate Adobe Experience Platform” or “Adobe Campaign Standard”.
+* Once your organization has been onboarded, anyone who has a Developer Role or System Administrator permissions will be able to create projects for Firefly in [Adobe Developer Console](https://www.adobe.com/go/devs_console_ui).
  
 ## What is the relationship with Adobe Experience Platform and Adobe Experience Cloud?
 Project Firefly is part of Adobe Experience Platform, under a workstream called Cloud Extensibility that allows customers and partners to extend the functionality of Adobe Experience Platform and Adobe Experience Cloud solutions.
+
 Firefly offers a consistent way to extend Adobe enterprise solutions, so regardless of which one you choose to extend there is always the same developer experience.
 
 ## What is “in the box”?
@@ -43,6 +44,7 @@ Project Firefly offers a complete application framework for extending Adobe solu
  
 ## Can I extend “Project Firefly”?
 Yes. Firefly was built from the ground-up with extensibility in mind. From the way we develop the core functionalities (open source) to how we enable developers to swap the components with their own components.
+
 This enables developers to extend the reach and complexity of the use cases that can be built on top of Firefly.
  
 ## Are the tools open sourced?
