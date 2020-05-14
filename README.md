@@ -29,8 +29,6 @@ This documentation provides an overview of Project Firefly as well as guides, re
 * [CI/CD for Firefly Applications](guides/ci_cd_for_firefly_apps.md)
 * [Managing Application Logs](guides/application_logging.md)
 
-### [Resources](resources.md)
-
 ### [Reference Documentation](reference_documentation.md)
 
 * [Adobe Developer Console](https://www.adobe.io/apis/experienceplatform/console/docs.html)
@@ -61,6 +59,8 @@ This documentation provides an overview of Project Firefly as well as guides, re
     * [Github workflow generator for Project Firefly Apps](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows)
 
 ### [Contribution Guides](contribution_guides.md)
+
+### [Resources](resources.md)
 
 ### [FAQ](faq.md)
 
