@@ -134,12 +134,6 @@
         ]
     },
     {
-        "importedFileName": "resources",
-        "path": "AdobeDocs/project-firefly/master/resources.md",
-        "title": "Resources",
-        "pages": []
-    },
-    {
         "importedFileName": "reference_documentation",
         "path": "AdobeDocs/project-firefly/master/reference_documentation.md",
         "title": "Reference Documentation",
@@ -150,6 +144,12 @@
         "pages": [],
         "path": "AdobeDocs/project-firefly/master/contribution_guides.md",
         "title": "Contribution Guides"
+    },
+    {
+      "importedFileName": "resources",
+      "path": "AdobeDocs/project-firefly/master/resources.md",
+      "title": "Resources",
+      "pages": []
     },
     {
         "importedFileName": "faq",
