@@ -1,6 +1,6 @@
 # Creating your First Project Firefly App
 
-In this tutorial, we'll guide you through the following steps to give you an introduction on how to set up and to developer a Project Firefly Application. 
+In this tutorial, we'll guide you through the following steps to give you an introduction on how to set up and develop a Project Firefly Application. 
 1. Setting up Local Environment
 1. Creating a new Project on [Adobe Developer Console](https://console.adobe.io/)
 1. Signing in from the [CLI](https://github.com/adobe/aio-cli)
@@ -41,7 +41,7 @@ You can manually remove [Adobe I/O Runtime](https://www.adobe.io/apis/experience
 
 1. You should see a new project generated with 2 default `Workspaces`. 
     - Workspaces can be used to manage different deployment environments (dev, qa, stage, prod) for your application and to provide individual working environment for each developer on the project. Workspace is where you will connect services and get the credential details needed to connect to [Adobe APIs](https://www.adobe.io/apis.html). Connected services can differe from workspace to workspace, and the credentials used within each workspace is not shared across workspaces. 
-    - Each Project Firefly project has two default workspaces: `Production` and `Stage`. You can add more workspaces as needed. The `Production` workspace is specicial, as it is used for the submission and distribution flow. When you’re ready to deploy your app, you will submit it for approval from the Production workspace.
+    - Each Project Firefly project has two default workspaces: `Production` and `Stage`. You can add more workspaces as needed. The `Production` workspace is special, as it is used for the submission and distribution flow. When you’re ready to deploy your app, you will submit it for approval from the Production workspace.
     ![Project Preview](../images/console-5.png)
 
 1. Create a new workspace or select an workspace to start adding [APIs](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/services.md) and [Events](https://www.adobe.io/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/services-add-event.md) that you would need for your application. 
@@ -230,7 +230,7 @@ This flow is intended for developers who have no access or credentials whatsoeve
 
 Now that your project is initialized, let's open the project in your favorite IDE. We recommend using [VSCode](https://code.visualstudio.com/). You can easily open the project by entering `code <app-name>`, or opening VSCode -> Open... -> select app folder.
 
-You should be able to see the these folders and files in your project:
+You should be able to see these folders and files in your project:
 
 1. `actions`: this folder is intended for backend source code for all serverless actions
 1. `web-src`: this folder is intended for frontend source code such as html templates, react components, JS, CSS
@@ -238,15 +238,15 @@ You should be able to see the these folders and files in your project:
 1. `e2e`: this folder is intended for  end-to-end tests
 1. `manifest.yml`: this file describes the backend actions you would like to deploy or to redeploy. 
     - The manifest file contents shoud adhere to the [OpenWhisk deployment YAML specification](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification#package-specification). Once defined, the [CLI](https://github.com/adobe/aio-cli) use this file to deploy or redeploy actions. You might see values like `$CUSTOMER_PROFILE_TENANT` listed on this page. These are environment variables that you can define in your `.env` file. 
-1. `package.json`: this file describles project definition and various metadata relevant to the project. 
+1. `package.json`: this file describes project definition and various metadata relevant to the project. 
     - It is used to give information to npm that allows it to identify the project as well as handle the project's dependencies. Learn more [here](https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-json/).
 1. `.aio`: this file contains config variables that are useful for the [CLI](https://github.com/adobe/aio-cli) to facilitate the app, e.g. supported API services. **This file can be committed to a source code versioning system.**
     - You can manually update the file or use the `aio config` commands to add or to remove configurations. Learn more about the [Config Plugin](https://github.com/adobe/aio-cli-plugin-config). 
 1. `.env`: this file contains environment variables that are useful for the app during development, e.g. Adobe I/O Runtime credentials and Adobe Product API tenant specifics (API key, secrets, etc.)
     - The environment variables defined here can be used in the application (e.g. in `manifest.yml`). If you've set up credentials for the selected workspaces, you should be able to see some of those values prepopulated upon initialization, like `AIO_runtime_auth` and `AIO_runtime_namespace`. 
-    - This file is automatically included in `.gitignore`. **It is not intented be shared given the credentails and secrets listed.**
+    - This file is automatically included in `.gitignore`. **It is not intented be shared given the credentials and secrets listed.**
 1. `console.json`: this file contains the credentials set up through your Project Firefly project. 
-    - This file is also automatically included in `.gitignore`. **It is not intented be shared given the credentails and secrets listed.** 
+    - This file is also automatically included in `.gitignore`. **It is not intented be shared given the credentials and secrets listed.** 
     - This file can be downloaded directly from the [Adobe Developer Console](https://console.adobe.io/) as well. You can retrieve it by going to a workspace, and clicking on the `Download all` button. 
 
 ## 6.Developing the Application
