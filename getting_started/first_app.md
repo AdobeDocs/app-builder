@@ -17,7 +17,7 @@ Please always ensure your local environment and tooling is up to date to avoid a
 
 ## 2. Creating a new Project on Developer Console
 
-[Adobe Developer Console](https://www.adobe.io/apis/experienceplatform/console.html) gives you access to APIs, SDKs and developer tools to build on, integrate, and extend Adobe products. In Project Firefly, you would need access to Runtime credentials which would be used for deploying your application, and access to API credentials if you want to access any Adobe APIs in your application. 
+[Adobe Developer Console](https://console.adobe.io/) gives you access to [APIs](https://www.adobe.io/apis.html), [SDKs](https://github.com/adobe/aio-sdk) and developer tools to build on, integrate, and extend Adobe products. In Project Firefly, you would need access to Runtime credentials which would be used for deploying your application, and access to API credentials if you want to access any Adobe [APIs](https://www.adobe.io/apis.html) in your application. 
 
 Follow the instructions to set up your project:
 1. Navigate to [Adobe Developer Console](https://console.adobe.io/).
@@ -40,7 +40,7 @@ You can manually remove Runtime from individual workspaces later if you determin
     ![Select Template](../images/console-4.png)
 
 1. You should see a new project generated with 2 default `Workspaces`. 
-    - Workspaces can be used to manage different deployment environments (dev, qa, stage, prod) for your application and to provide individual working environment for each developer on the project. Workspace is where you will connect services and get the credential details needed to connect to Adobe APIs. Connected services can differe from workspace to workspace, and the credentials used within each workspace is not shared across workspaces. 
+    - Workspaces can be used to manage different deployment environments (dev, qa, stage, prod) for your application and to provide individual working environment for each developer on the project. Workspace is where you will connect services and get the credential details needed to connect to [Adobe APIs](https://www.adobe.io/apis.html). Connected services can differe from workspace to workspace, and the credentials used within each workspace is not shared across workspaces. 
     - Each Project Firefly project has two default workspaces: `Production` and `Stage`. You can add more workspaces as needed. The `Production` workspace is specicial, as it is used for the submission and distribution flow. When you’re ready to deploy your app, you will submit it for approval from the Production workspace.
     ![Project Preview](../images/console-5.png)
 
@@ -124,13 +124,13 @@ There are two sample flows listed below as we understand some developers may not
      ◉ Generic
     ```
     
-    These sample actions help you quickly get started and show best practice for integrating with Adobe services using SDK in your applications. Note that you may not see all the options listed below on your command line, because we make recommendations based on what credentials you have added in the selected workspace. Similar to the last step, you can select one or all of the options listed. 
-    - **Adobe Target**: including dependencies and examples of accessing the Adobe Target API
-    - **Adobe Analytics**: including dependencies and examples of accessing the Adobe Analytics 2.0 API
-    - **Adobe Audience Manager: Customer Data**: including dependencies and examples of accessing the Adobe Audience Manager Customer Data API'
-    - **Adobe Campaign Standard**: including dependencies and examples of accessing the Adobe Campaign Standard (ACS) API
-    - **Adobe Experience Platform: Realtime Customer Profile**: including dependencies and examples of accessing the Customer Profile API of Adobe Experience Platform
-    - **Generic**: a generic application with hello world flow
+    These sample actions help you quickly get started and show best practice for integrating with Adobe services using [Project Firefly SDK](https://github.com/adobe/aio-sdk) in your applications. Note that you may not see all the options listed below on your command line, because we make recommendations based on what credentials you have added in the selected workspace. Similar to the last step, you can select one or all of the options listed. 
+    - **Adobe Target**: including dependencies and examples of accessing the [Adobe Target API](https://developers.adobetarget.com/api/#admin-apis)
+    - **Adobe Analytics**: including dependencies and examples of accessing the [Adobe Analytics 2.0 API](https://adobedocs.github.io/analytics-2.0-apis/)
+    - **Adobe Audience Manager: Customer Data**: including dependencies and examples of accessing the [Adobe Audience Manager Customer Data API](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/api.html)
+    - **Adobe Campaign Standard**: including dependencies and examples of accessing the [Adobe Campaign Standard (ACS) API](https://docs.adobe.com/content/help/en/campaign-standard/using/working-with-apis/get-started-apis.html)
+    - **Adobe Experience Platform: Realtime Customer Profile**: including dependencies and examples of accessing the [Realtime Customer Profile API of Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/real-time-customer-profile.yaml)
+    - **Generic**: a generic back-end action with hello world flow that can be reused and modified e.g. for simple serverless computing or 3rd party API integration
 
 1. With each sample action selected, we'll ask you to define the name of sample actions. You can keep the default name or specify your own. 
 
