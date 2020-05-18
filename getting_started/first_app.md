@@ -1,6 +1,6 @@
 # Creating your First Project Firefly App
 
-In this tutorial, we'll guide you through the following steps to give you an introduction on how to set up and to developer a Firefly Application. 
+In this tutorial, we'll guide you through the following steps to give you an introduction on how to set up and to developer a Project Firefly Application. 
 1. Setting up Local Environment
 1. Creating a new Project on Developer Console
 1. Signing in from CLI
@@ -73,7 +73,7 @@ Once you have your project set up in Developer Console, it is time to move onto 
     eyJ4NXUiOixxxxxxxxxxxxxxxxxxx
     ```
 
-1. You would now be able to start building Project Firefly Apps with the Adobe I/O CLI.  
+1. You would now be able to start building Project Firefly Applications with the Adobe I/O CLI.  
 
 ## 4. Bootstrapping new App using the Adobe I/O CLI
 
@@ -88,7 +88,7 @@ There are two sample flows listed below as we understand some developers may not
 
     You will be prompted with a few questions about how you want your app to have:
 
-1. Select Organization, Project and Workspace that you'd like to use for this new Project Firefly App. Navigate through the list to find the project and workspace you just created. If you have a lot of organizations / projects / workspaces, you can also start typing in keywords to shorten the list. Upon completing the selection, the CLI automatically downloads a `console.json` file that contains all the credentials from your workspace to be used in your Firefly project. 
+1. Select Organization, Project and Workspace that you'd like to use for this new Project Firefly Application. Navigate through the list to find the project and workspace you just created. If you have a lot of organizations / projects / workspaces, you can also start typing in keywords to shorten the list. Upon completing the selection, the CLI automatically downloads a `console.json` file that contains all the credentials from your workspace to be used in your Project Firefly project. 
     ```
     $ aio app init helloworld
     Retrieving information from Adobe Developer Console..
@@ -110,7 +110,7 @@ There are two sample flows listed below as we understand some developers may not
      ◉ CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy
     ```
     
-    Each option indicates a feature you can enable for your Firefly App. You can select one or all of the options depending on the application you intend to build. We recommend that you select all for now to fully explore all the options. 
+    Each option indicates a feature you can enable for your Project Firefly Application. You can select one or all of the options depending on the application you intend to build. We recommend that you select all for now to fully explore all the options. 
     - **Actions: Deploy Runtime actions:** adding the boilerplate for backend serverless actions on I/O Runtime
     - **Web Assets: Deploy hosted static assets:** adding the boilerplate for frontend react app and static assets
     - **CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy:** adding the boilerplate for Github Actions managing CI/CD process of the app
