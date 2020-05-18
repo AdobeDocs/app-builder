@@ -29,7 +29,13 @@ These prerequisites should be fulfilled on the developer's machine:
 - [Adobe I/O CLI](https://github.com/adobe/aio-cli)
     - `npm install -g @adobe/aio-cli`
     - If you already have Adobe I/O CLI on your local, please ensure you have the latest version of Adobe I/O CLI installed. (Current version: [![Version](https://img.shields.io/npm/v/@adobe/aio-cli.svg)](https://npmjs.org/package/@adobe/aio-cli))
-        - You can check the version through `aio -v`. If you have a version later than `@adobe/aio-cli@3.2.0`, the CLI supports a built-in `update` command. You can simply run `aio update` to update your Adobe I/O CLI and all core plugins. If you have an earlier version, you can update your CLI by running `npm install -g @adobe/aio-cli`. 
+        - For the Adobe I/O CLI, you can check the version through `aio -v` and compare it with `npm show @adobe/aio-cli version`. If your CLI is outdated, update your CLI by running `npm install -g @adobe/aio-cli`. 
+        - If your Adobe I/O CLI is up to date, you can simply run `aio update` to ensure all core plugins are updated as well.
+        - Other than the checking the version on your CLI, whenever a new version of Adobe I/O CLI is updated, we will inform you on your command line by writing a message like this out before the command output. This message last for 7 days after a new release.
+            ```
+             ›   Warning: @adobe/aio-cli update available from 3.3.0 to 3.4.1.
+             ›   Run npm install -g @adobe/aio-cli to update.
+            ```
     
 #### Supported Local Environment
 We aim to provide the similar quality of local development experience on both Windows 10 and macOS 10.14 and higher.

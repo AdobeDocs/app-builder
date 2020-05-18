@@ -384,7 +384,7 @@ Note the last section of the output `To view your deployed application`. There a
 You can also undeploy your app with `aio app undeploy`. To learn more about deployment, please refer to [Deployment Overview](../guides/deployment.md). To automate your build, deploy and build process with our out-of-the-box CI/CD GitHub actions, please refer to [CI/CD for Project Firefly Applications](../guides/ci_cd_for_firefly_apps.md).
 
 ## Common Issues
-1. When in doubt, please first ensure your Adobe I/O CLI is up to date. You can check the version through `aio -v`. If you have a version later than `@adobe/aio-cli@3.2.0`, the CLI supports a built-in update command. You can simply run aio update to update your Adobe I/O CLI and all core plugins. If you have an earlier version, you can update your CLI by running `npm install -g @adobe/aio-cli`.
+1. When in doubt, please first ensure your Adobe I/O CLI and all plugins are up to date. For the Adobe I/O CLI, you can check the version through `aio -v` and compare it with `npm show @adobe/aio-cli version`. If your CLI is outdated, update your CLI by running `npm install -g @adobe/aio-cli`. Once your Adobe I/O CLI is updated, you can simply run `aio update` to ensure all core plugins are updated.
 1. Validation error. If you see the following error, it is because you did not pass in an authorization header to an action expecting one. See `Trying the Sample App` section above or learn more about this in our [Security Overview](../guides/security_overview.md).
     ```
     {"error": "cannot validate token, reason: missing authorization header"}
