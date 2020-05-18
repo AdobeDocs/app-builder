@@ -2,10 +2,10 @@
 
 In this tutorial, we'll guide you through the following steps to give you an introduction on how to set up and to developer a Project Firefly Application. 
 1. Setting up Local Environment
-1. Creating a new Project on Developer Console
-1. Signing in from CLI
-1. Bootstrapping new App using CLI
-1. Understanding Main Components of the App
+1. Creating a new Project on [Adobe Developer Console](https://console.adobe.io/)
+1. Signing in from the [CLI](https://github.com/adobe/aio-cli)
+1. Bootstrapping new App using [CLI](https://github.com/adobe/aio-cli)
+1. Understanding Main Components of the Application
 1. Developing the Application
 1. Deploying the Application
 
@@ -32,7 +32,7 @@ Follow the instructions to set up your project:
     ![Select Template](../images/console-3.png)
 
 1. Enter `Project Title` and `App Name` for your templated project. 
-    - `Project Title` is used to identify this project within Console and in CLI. A default value is suggested on this screen, but we recommend using a meaningful and distinguishable project title.
+    - `Project Title` is used to identify this project within Console and in [CLI](https://github.com/adobe/aio-cli). A default value is suggested on this screen, but we recommend using a meaningful and distinguishable project title.
     - `App Name` will be used as a unique identifier for your application and this value cannot be changed once project set up is complete. 
     - By default, the "Include Runtime with each workspace" checkbox is checked, which means each workspace that created is automatically provisioned with a unique Runtime namespace allowing each developer to work within their own Runtime environment. If you deselect the checkbox and do not opt for automatic inclusion of Runtime, you will need to enable it manually for each individual workspace. You cannot auto-add Runtime to all workspaces after the initial set up is complete.
 You can manually remove Runtime from individual workspaces later if you determine that Runtime is not needed.
@@ -67,15 +67,15 @@ Once you have your project set up in Developer Console, it is time to move onto 
     https://aio-login.adobeioruntime.net/api/v1/web/default/applogin?xxxxxxxx
     ```
 
-1. Once you've logged in, you can close the browser window and go back to your Terminal. You would see a string printed in the terminal. This is your user token. It is automatically stored in CLI config, allowing the CLI to use the token to talk to Developer Console. 
+1. Once you've logged in, you can close the browser window and go back to your Terminal. You would see a string printed in the terminal. This is your user token. It is automatically stored in [CLI](https://github.com/adobe/aio-cli) config, allowing the [CLI](https://github.com/adobe/aio-cli) to use the token to talk to Developer Console. 
 
     ```
     eyJ4NXUiOixxxxxxxxxxxxxxxxxxx
     ```
 
-1. You would now be able to start building Project Firefly Applications with the Adobe I/O CLI.  
+1. You would now be able to start building Project Firefly Applications with the [CLI](https://github.com/adobe/aio-cli).  
 
-## 4. Bootstrapping new App using the Adobe I/O CLI
+## 4. Bootstrapping new App using the CLI
 
 There are two sample flows listed below as we understand some developers may not have access to Adobe Developer Console but still want to look at the project or to import credentials later. 
 
@@ -216,10 +216,10 @@ You should be able to see the these folders and files in your project:
 1. `test`: this folder is intended for unit tests and integration tests
 1. `e2e`: this folder is intended for  end-to-end tests
 1. `manifest.yml`: this file describes the backend actions you would like to deploy or to redeploy. 
-    - The manifest file contents shoud adhere to the [OpenWhisk deployment YAML specification](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification#package-specification). Once defined, the CLI use this file to deploy or redeploy actions. You might see values like `$CUSTOMER_PROFILE_TENANT` listed on this page. These are environment variables that you can define in your `.env` file. 
+    - The manifest file contents shoud adhere to the [OpenWhisk deployment YAML specification](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification#package-specification). Once defined, the [CLI](https://github.com/adobe/aio-cli) use this file to deploy or redeploy actions. You might see values like `$CUSTOMER_PROFILE_TENANT` listed on this page. These are environment variables that you can define in your `.env` file. 
 1. `package.json`: this file describles project definition and various metadata relevant to the project. 
     - It is used to give information to npm that allows it to identify the project as well as handle the project's dependencies. Learn more [here](https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-json/).
-1. `.aio`: this file contains config variables that are useful for the AIO CLI to facilitate the app, e.g. supported API services. 
+1. `.aio`: this file contains config variables that are useful for the [CLI](https://github.com/adobe/aio-cli) to facilitate the app, e.g. supported API services. 
     - You can manually update the file or use the `aio config` commands to add or to remove configurations. Learn more about the [Config Plugin](https://github.com/adobe/aio-cli-plugin-config). 
 1. `.env`: this file contains environment variables that are useful for the app during development, e.g. I/O Runtime credentials and Adobe Product API tenant specifics (API key, secrets, etc.)
     - The environment variables defined here can be used in the application (e.g. in `manifest.yml`). If you've set up credentials for the selected workspaces, you should be able to see some of those values prepopulated upon initialization, like `AIO_runtime_auth` and `AIO_runtime_namespace`. 
@@ -299,7 +299,7 @@ When you access `https://localhost:9080`, you should see the sample app deployed
 This simple UI contains links to documentation and allows you to run your backend actions for tests. To try it, use the selection box to pick the action you'd like to invoke. 
 
 All actions require an `Authorization` in the header by default. In your project code, if you navigate to `manifest.yml`, you cans see that a `require-adobe-auth` annotation is set to `true` for all the sample actions. Having this flag enabled enforces a valid user token be used to invoke this action. We recommend always having this enabled for security reasons. You can learn more about this in our [Security Overview](../guides/security_overview.md).
-1. With the `require-adobe-auth` set to true, you need to pass in a user token to invoke your action. You can easily retrieve this token from your CLI by typing in `aio login`. 
+1. With the `require-adobe-auth` set to true, you need to pass in a user token to invoke your action. You can easily retrieve this token from your [CLI](https://github.com/adobe/aio-cli) by typing in `aio login`. 
 1. Copy the returned token and put it into this following format. 
     ```{"Authorization":"Bearer <token_from_cli>"}```
 1. Go back to your browser, and put the joined value in the `headers` field. You should now be able to invoke actions that does not require additional params (like `generic`).
@@ -313,7 +313,7 @@ The other sample actions require futher params to be invoked. For instance, if y
 
 ### 6.3 Debugging the Application
 
-We integrated our CLI with an open source project [wskdebug](https://github.com/apache/openwhisk-wskdebug) to support our debug functionalities. This tool allows you to develop and debug OpenWhisk actions in your favorite IDE or debugger with a fast feedback loop. It features:
+We integrated our [CLI](https://github.com/adobe/aio-cli) with an open source project [wskdebug](https://github.com/apache/openwhisk-wskdebug) to support our debug functionalities. This tool allows you to develop and debug OpenWhisk actions in your favorite IDE or debugger with a fast feedback loop. It features:
 - full debugging of actions of the respective language runtime
 - automatic code reloading
 - LiveReload for web actions
@@ -344,7 +344,7 @@ Once the application is in a good shape, it could be deployed to a dev environme
 aio app deploy
 ```
 
-This command may take a minute or to as behind the scenes the CLI is building and deploying:
+This command may take a minute or to as behind the scenes the [CLI](https://github.com/adobe/aio-cli) is building and deploying:
 - The actions defined in `manifest.yml` into Adobe I/O Runtime
 - The frontend built files and assets into our CDN
 
@@ -384,7 +384,7 @@ Note the last section of the output `To view your deployed application`. There a
 You can also undeploy your app with `aio app undeploy`. To learn more about deployment, please refer to [Deployment Overview](../guides/deployment.md). To automate your build, deploy and build process with our out-of-the-box CI/CD GitHub actions, please refer to [CI/CD for Project Firefly Applications](../guides/ci_cd_for_firefly_apps.md).
 
 ## Common Issues
-1. When in doubt, please first ensure your Adobe I/O CLI and all plugins are up to date. For the Adobe I/O CLI, you can check the version through `aio -v` and compare it with `npm show @adobe/aio-cli version`. If your CLI is outdated, update your CLI by running `npm install -g @adobe/aio-cli`. Once your Adobe I/O CLI is updated, you can simply run `aio update` to ensure all core plugins are updated.
+1. When in doubt, please first ensure your Adobe I/O CLI and all plugins are up to date. For the [CLI](https://github.com/adobe/aio-cli), you can check the version through `aio -v` and compare it with `npm show @adobe/aio-cli version`. If your [CLI](https://github.com/adobe/aio-cli) is outdated, update it by running `npm install -g @adobe/aio-cli`. After that, you can simply run `aio update` to ensure all core plugins are updated.
 1. Validation error. If you see the following error, it is because you did not pass in an authorization header to an action expecting one. See `Trying the Sample App` section above or learn more about this in our [Security Overview](../guides/security_overview.md).
     ```
     {"error": "cannot validate token, reason: missing authorization header"}
