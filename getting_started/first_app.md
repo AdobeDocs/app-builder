@@ -32,7 +32,7 @@ Follow the instructions to set up your project:
     ![Select Template](../images/console-3.png)
 
 1. Enter `Project Title` and `App Name` for your templated project. 
-    - `Project Title` is used to identify this project within Console and in [CLI](https://github.com/adobe/aio-cli). A default value is suggested on this screen, but we recommend using a meaningful and distinguishable project title.
+    - `Project Title` is used to identify this project within [Adobe Developer Console](https://console.adobe.io/) and in [CLI](https://github.com/adobe/aio-cli). A default value is suggested on this screen, but we recommend using a meaningful and distinguishable project title.
     - `App Name` will be used as a unique identifier for your application and this value cannot be changed once project set up is complete. 
     - By default, the "Include Runtime with each workspace" checkbox is checked, which means each workspace that created is automatically provisioned with a unique Runtime namespace allowing each developer to work within their own Runtime environment. If you deselect the checkbox and do not opt for automatic inclusion of Runtime, you will need to enable it manually for each individual workspace. You cannot auto-add Runtime to all workspaces after the initial set up is complete.
 You can manually remove Runtime from individual workspaces later if you determine that Runtime is not needed.
@@ -51,7 +51,7 @@ To read more about Adobe Developer Console, please refer to [Console Documentati
 
 ## 3. Signing in from CLI
 
-Once you have your project set up in Developer Console, it is time to move onto your local environment. You can always go back to Developer Console to modify your project later.
+Once you have your project set up in [Adobe Developer Console](https://console.adobe.io/), it is time to move onto your local environment. You can always go back to [Adobe Developer Console](https://console.adobe.io/) to modify your project later.
 
 1. On your machine, navigate to the Terminal and enter
 
@@ -67,7 +67,7 @@ Once you have your project set up in Developer Console, it is time to move onto 
     https://aio-login.adobeioruntime.net/api/v1/web/default/applogin?xxxxxxxx
     ```
 
-1. Once you've logged in, you can close the browser window and go back to your Terminal. You would see a string printed in the terminal. This is your user token. It is automatically stored in [CLI](https://github.com/adobe/aio-cli) config, allowing the [CLI](https://github.com/adobe/aio-cli) to use the token to talk to Developer Console. 
+1. Once you've logged in, you can close the browser window and go back to your Terminal. You would see a string printed in the terminal. This is your user token. It is automatically stored in [CLI](https://github.com/adobe/aio-cli) config, allowing the [CLI](https://github.com/adobe/aio-cli) to use the token to talk to [Adobe Developer Console](https://console.adobe.io/). 
 
     ```
     eyJ4NXUiOixxxxxxxxxxxxxxxxxxx
@@ -77,7 +77,7 @@ Once you have your project set up in Developer Console, it is time to move onto 
 
 ## 4. Bootstrapping new App using the CLI
 
-There are two sample flows listed below as we understand some developers may not have access to Adobe Developer Console but still want to look at the project or to import credentials later. 
+There are two sample flows listed below as we understand some developers may not have access to [Adobe Developer Console](https://console.adobe.io/) but still want to look at the project or to import credentials later. 
 
 ### 4.1 Developer is Logged in
 1. In your Terminal, navigate to where you want to initialize your project and type in the following command in your Terminal:
@@ -169,7 +169,7 @@ There are two sample flows listed below as we understand some developers may not
 ### 4.2 Developer is not Logged in
 
 #### Developer with a Console config file
-This flow is intended for developers who do not have access to Adobe Developer Console, likely due to permission issues, but can get credentials that's tied to a Console workspace. For this flow to work, the developer should obtain ask somone with access to set up a project and a workspace following the last few sections. With the workspace correctly set up, the credentails can downloaded by authorized Console users through the `Download all` button in Workspace overview. 
+This flow is intended for developers who do not have access to [Adobe Developer Console](https://console.adobe.io/), likely due to permission issues, but can get credentials that's tied to a Project Firefly workspace. For this flow to work, the developer should obtain ask somone with access to set up a project and a workspace following the last few sections. With the workspace correctly set up, the credentails can downloaded by authorized [Adobe Developer Console](https://console.adobe.io/) users through the `Download all` button in Workspace overview. 
     ![Workspace Download](../images/console-7.png)
 1. In your Terminal, navigate to where you want to initialize your project and type in the following command in your Terminal:
     ```
@@ -183,7 +183,7 @@ This flow is intended for developers who do not have access to Adobe Developer C
     README.md		e2e			node_modules		package.json		web-src
     actions			manifest.yml		package-lock.json	test
     ```
-1. When you generate a project with a downloaded Config file without logging into Developer Console on your [CLI](https://github.com/adobe/aio-cli), everything should be the same. We use the values from the downloaded file to pre-populated values in your `.env` and `.aio`. The only difference you will notice is the missing `config.json` file because that's the file you used to generate this project. 
+1. When you generate a project with a downloaded Config file without logging into [Adobe Developer Console](https://console.adobe.io/) on your [CLI](https://github.com/adobe/aio-cli), everything should be the same. We use the values from the downloaded file to pre-populated values in your `.env` and `.aio`. The only difference you will notice is the missing `config.json` file because that's the file you used to generate this project. 
 
 #### Developer without any credentials
 This flow is intended for developers who have no access or credentials whatsoever but still want to look at the code. 
@@ -224,9 +224,9 @@ You should be able to see the these folders and files in your project:
 1. `.env`: this file contains environment variables that are useful for the app during development, e.g. I/O Runtime credentials and Adobe Product API tenant specifics (API key, secrets, etc.)
     - The environment variables defined here can be used in the application (e.g. in `manifest.yml`). If you've set up credentials for the selected workspaces, you should be able to see some of those values prepopulated upon initialization, like `AIO_runtime_auth` and `AIO_runtime_namespace`. 
     - This file is automatically included in `.gitignore`. It is not intented be shared given the credentails and secrets listed. 
-1. `console.json`: this file contains the credentials set up through your Console project. 
+1. `console.json`: this file contains the credentials set up through your Project Firefly project. 
     - This file is also automatically included in `.gitignore`. It is not intented be shared given the credentails and secrets listed. 
-    - This file can be downloaded directly from the Console as well. You can retrieve it by going to a workspace, and clicking on the `Download all` button. 
+    - This file can be downloaded directly from the [Adobe Developer Console](https://console.adobe.io/) as well. You can retrieve it by going to a workspace, and clicking on the `Download all` button. 
 
 ## 6.Developing the Application
 
