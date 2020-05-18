@@ -383,7 +383,7 @@ You can execute these tests locally by using `aio app test` and `aio app test -e
 
 Of course, as you will modify and extend the code of your application, you will also need to update the tests accordingly.
 
-We are using [jestJS](https://jestjs.io/) for our the unit tests of the CLI, SDK and bootstrapped application. It is however possible to change the implementation to your preferred framework.
+We are using [jestJS](https://jestjs.io/) for the unit tests of the [CLI](https://github.com/adobe/aio-cli), [SDK](https://github.com/adobe/aio-sdk) and bootstrapped application. It is however possible to change the implementation to your preferred framework.
 
 [CI/CD for Project Firefly Applications](../guides/ci_cd_for_firefly_apps.md) also explains how to execute these tests in the context of a CI/CD pipeline.
 
