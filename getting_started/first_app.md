@@ -77,18 +77,19 @@ Once you have your project set up in [Adobe Developer Console](https://console.a
 
 ## 4. Bootstrapping new App using the CLI
 
-There are two sample flows listed below as we understand some developers may not have access to [Adobe Developer Console](https://console.adobe.io/) but still want to look at the project or to import credentials later. 
+There are two sample flows listed below as we understand some developers may not have access to [Adobe Developer Console](https://console.adobe.io/) as entitled Enterprise Organization users but still want to look at the project or to import credentials later. 
 
-### 4.1 Developer is Logged in
+### 4.1 Developer is Logged in as Enterprise Organization user
+
 1. In your Terminal, navigate to where you want to initialize your project and type in the following command in your Terminal:
 
     ```
     aio app init <app_name>
     ```
 
-    You will be prompted with a few questions about how you want your app to have:
+    You will be prompted with a few questions about how you want your app to be boostrapped and configured:
 
-1. Select Organization, Project and Workspace that you'd like to use for this new Project Firefly Application. Navigate through the list to find the project and workspace you just created. If you have a lot of organizations / projects / workspaces, you can also start typing in keywords to shorten the list. Upon completing the selection, the [CLI](https://github.com/adobe/aio-cli) automatically downloads a `console.json` file that contains all the credentials from your workspace to be used in your Project Firefly project. 
+1. Select `Organization`, `Project` and `Workspace` that you'd like to use for this new Project Firefly Application. Navigate through the list to find the project and workspace you just created. If you have a lot of organizations / projects / workspaces, you can also start typing in keywords to shorten the list. Upon completing the selection, the [CLI](https://github.com/adobe/aio-cli) automatically downloads a `console.json` file that contains all the credentials from your workspace to be used in your Project Firefly project. 
     ```
     $ aio app init helloworld
     Retrieving information from Adobe Developer Console..
@@ -111,11 +112,13 @@ There are two sample flows listed below as we understand some developers may not
     ```
     
     Each option indicates a feature you can enable for your Project Firefly Application. You can select one or all of the options depending on the application you intend to build. We recommend that you select all for now to fully explore all the options. 
+    
     - **Actions: Deploy Runtime actions:** adding the boilerplate for backend serverless actions on I/O Runtime
-    - **Web Assets: Deploy hosted static assets:** adding the boilerplate for frontend react app and static assets
-    - **CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy:** adding the boilerplate for Github Actions managing CI/CD process of the app
+    - **Web Assets: Deploy hosted static assets:** adding the boilerplate for frontend [React-Spectrum](https://react-spectrum.adobe.com/) SPA and static assets
+    - **CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy:** adding the boilerplate for Github Actions supporting CI/CD process of the application
 
 1. If you included `Actions` in your last selection, you will be asked to select one or more sample actions to be generated along with the new app. 
+
     ```
     ? Which type of sample actions do you want to create?
     select type of actions to generate (Press <space> to select, <a> to toggle all, <i> to invert selection)
@@ -124,7 +127,9 @@ There are two sample flows listed below as we understand some developers may not
      ◉ Generic
     ```
     
-    These sample actions help you quickly get started and show best practice for integrating with Adobe services using [Project Firefly SDK](https://github.com/adobe/aio-sdk) in your applications. Note that you may not see all the options listed below on your command line, because we make recommendations based on what credentials you have added in the selected workspace. Similar to the last step, you can select one or all of the options listed. 
+    These sample actions help you quickly get started and show best practices for integrating with [Adobe APIs](https://www.adobe.io/apis.html) using [Project Firefly SDK](https://github.com/adobe/aio-sdk) in your applications. 
+Note that you may not see all the options listed below on your command line, because we make recommendations based on what credentials you have added in the selected workspace. Similar to the last step, you can select one or all of the options listed:
+
     - **Adobe Target**: including dependencies and examples of accessing the [Adobe Target API](https://developers.adobetarget.com/api/#admin-apis)
     - **Adobe Analytics**: including dependencies and examples of accessing the [Adobe Analytics 2.0 API](https://adobedocs.github.io/analytics-2.0-apis/)
     - **Adobe Audience Manager: Customer Data**: including dependencies and examples of accessing the [Adobe Audience Manager Customer Data API](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/api.html)
@@ -132,7 +137,7 @@ There are two sample flows listed below as we understand some developers may not
     - **Adobe Experience Platform: Realtime Customer Profile**: including dependencies and examples of accessing the [Realtime Customer Profile API of Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/real-time-customer-profile.yaml)
     - **Generic**: a generic back-end action with hello world flow that can be reused and modified e.g. for simple serverless computing or 3rd party API integration
 
-1. With each sample action selected, we'll ask you to define the name of sample actions. You can keep the default name or specify your own. 
+1. We'll ask you to define the name for the instance of each selected sample actions. You can keep the default name or specify your own.
 
     ```
     ? We are about to create a new sample action that interacts with the Adobe Analytics API
@@ -159,6 +164,7 @@ There are two sample flows listed below as we understand some developers may not
     ```
 
 1. Now your project is initialized! Go into the folder you just created, and you can see a number of files generated. 
+
     ```
     $ cd helloworld
     $ ls
@@ -166,27 +172,41 @@ There are two sample flows listed below as we understand some developers may not
     actions			e2e			node_modules		package.json		web-src
     ```
     
-### 4.2 Developer is not Logged in
+1. Note that you still can add/remove the back-end actions, SPA front-end or Github workflows from your application later by respectively using the `aio app <add|delete> action`, `aio app <add|delete> web-assets` and `aio app <add|delete> ci` commands within your application folder.
+    
+### 4.2 Developer is not Logged in as Enterprise Organization user
 
 #### Developer with a Console config file
-This flow is intended for developers who do not have access to [Adobe Developer Console](https://console.adobe.io/), likely due to permission issues, but can get credentials that's tied to a Project Firefly workspace. For this flow to work, the developer should obtain ask somone with access to set up a project and a workspace following the last few sections. With the workspace correctly set up, the credentails can downloaded by authorized [Adobe Developer Console](https://console.adobe.io/) users through the `Download all` button in Workspace overview. 
+
+This flow is intended for developers who do not have access to [Adobe Developer Console](https://console.adobe.io/) as entitled Enterprise Organization users, likely due to permission issues, but can get credentials that are tied to a Project Firefly workspace from an entitled Enterprise Organization administrator or developer. 
+
+For this flow to work, the developer should ask someone with access to set up a project and a workspace following the last few sections. With the workspace correctly set up, the credentials can downloaded by authorized [Adobe Developer Console](https://console.adobe.io/) users through the `Download all` button in Workspace overview. 
+
     ![Workspace Download](../images/console-7.png)
-1. In your Terminal, navigate to where you want to initialize your project and type in the following command in your Terminal:
+    
+1. In your Terminal, navigate to where you want to initialize your project and type in the following command:
+
     ```
     aio app init <app_name> --import <path_to_config_file>
     ```
+    
 1. Select project configuration options (see section above)
 1. When your project is initialized, go into the folder you just created, and you can see a number of files generated. 
+
      ```
     $ cd helloworld
     $ ls
     README.md		e2e			node_modules		package.json		web-src
     actions			manifest.yml		package-lock.json	test
     ```
-1. When you generate a project with a downloaded Config file without logging into [Adobe Developer Console](https://console.adobe.io/) on your [CLI](https://github.com/adobe/aio-cli), everything should be the same. We use the values from the downloaded file to pre-populated values in your `.env` and `.aio`. The only difference you will notice is the missing `config.json` file because that's the file you used to generate this project. 
+    
+1. When you generate a project with a downloaded configuration file without logging into [Adobe Developer Console](https://console.adobe.io/) on your [CLI](https://github.com/adobe/aio-cli), everything should be the same. 
+We use the values from the downloaded file to pre-populated values in your `.env` and `.aio`. The only difference you will notice is the missing `config.json` file because that's the file you used to generate this project. 
 
 #### Developer without any credentials
+
 This flow is intended for developers who have no access or credentials whatsoever but still want to look at the code. 
+
 1. In your Terminal, navigate to where you want to initialize your project and type in the following command in your Terminal:
 
     ```
@@ -196,6 +216,7 @@ This flow is intended for developers who have no access or credentials whatsoeve
     The `-y` flag allows user to skip all questions and generates a sample project with only the `generic` sample action.
 
 1. You should still be able to see similar files generated, but none of the config files will be pre-polulated. 
+
     ```
     $ cd helloworld
     $ ls
