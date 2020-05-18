@@ -1,4 +1,4 @@
-# Creating your First Project Firefly App
+# Creating your First Project Firefly Application
 
 In this tutorial, we'll guide you through the following steps to give you an introduction on how to set up and develop a Project Firefly Application. 
 1. Setting up Local Environment
