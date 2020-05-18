@@ -2,7 +2,7 @@
 
 As part of Project Firefly, you will have out-of-the-box access to file storage and to a key-value store. 
 
-To provide zero-config state and file caching for Project Firefly, we have created the [Adobe I/O File library](https://github.com/adobe/aio-lib-files) and [Adobe I/O State library](https://github.com/adobe/aio-lib-state). The Adobe I/O State library is an npm module that provides a JavaScript abstraction on top of distributed/cloud DBs with a simple key-value store state persistence API; whereas the Adobe I/O Files library provides a JavaScript abstraction on top of cloud blob storages with a simple file-system like persistence API.
+To provide zero-config state and file caching for Project Firefly, we have created the [Adobe I/O Files library](https://github.com/adobe/aio-lib-files) and [Adobe I/O State library](https://github.com/adobe/aio-lib-state). The Adobe I/O State library is an npm module that provides a JavaScript abstraction on top of distributed/cloud DBs with a simple key-value store state persistence API; whereas the Adobe I/O Files library provides a JavaScript abstraction on top of cloud blob storages with a simple file-system like persistence API.
 
 The state library is meant for storing and accessing small values, while the files library should be used for storing bigger amounts of data.
 

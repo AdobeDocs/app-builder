@@ -13,15 +13,15 @@ This documentation provides an overview of Project Firefly as well as guides, re
 ### [Getting Started](getting_started.md)
 
 * [Setting up Your Environment](getting_started/setup.md)
-* [Creating your First Project Firefly App](getting_started/first_app.md)
+* [Creating your First Project Firefly Application](getting_started/first_app.md)
 
 ### [Guides](guides.md)
 
 * [Architecture Overview](guides/architecture_overview.md)
 * [Security Overview](guides/security_overview.md)
 * [Integration Guide with Adobe Experience Cloud](guides/exc_app/overview.md)
-* [Integration Guide for building Event-driven Applications with I/O Events]()
-* [Custom Events Overview]()
+* [Integration Guide for building Event-driven Applications with I/O Events](https://www.adobe.io/apis/experienceplatform/events/docs.html#!adobedocs/adobeio-events/master/intro/webhook_docs_intro.md)
+* [Custom Events Overview](https://www.adobe.io/apis/experienceplatform/events/docs.html#!adobedocs/adobeio-events/master/custom_events.md)
 * [Understanding Authentication](guides/understanding_authentication.md)
 * [Dealing with Application State](guides/application_state.md)
 * [Introduction to React Spectrum](guides/introduction_to_react_spectrum.md)
