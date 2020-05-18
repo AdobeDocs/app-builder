@@ -88,7 +88,7 @@ There are two sample flows listed below as we understand some developers may not
 
     You will be prompted with a few questions about how you want your app to have:
 
-1. Select Organization, Project and Workspace that you'd like to use for this new Project Firefly Application. Navigate through the list to find the project and workspace you just created. If you have a lot of organizations / projects / workspaces, you can also start typing in keywords to shorten the list. Upon completing the selection, the CLI automatically downloads a `console.json` file that contains all the credentials from your workspace to be used in your Project Firefly project. 
+1. Select Organization, Project and Workspace that you'd like to use for this new Project Firefly Application. Navigate through the list to find the project and workspace you just created. If you have a lot of organizations / projects / workspaces, you can also start typing in keywords to shorten the list. Upon completing the selection, the [CLI](https://github.com/adobe/aio-cli) automatically downloads a `console.json` file that contains all the credentials from your workspace to be used in your Project Firefly project. 
     ```
     $ aio app init helloworld
     Retrieving information from Adobe Developer Console..
@@ -183,7 +183,7 @@ This flow is intended for developers who do not have access to Adobe Developer C
     README.md		e2e			node_modules		package.json		web-src
     actions			manifest.yml		package-lock.json	test
     ```
-1. When you generate a project with a downloaded Config file without logging into Developer Console on your CLI, everything should be the same. We use the values from the downloaded file to pre-populated values in your `.env` and `.aio`. The only difference you will notice is the missing `config.json` file because that's the file you used to generate this project. 
+1. When you generate a project with a downloaded Config file without logging into Developer Console on your [CLI](https://github.com/adobe/aio-cli), everything should be the same. We use the values from the downloaded file to pre-populated values in your `.env` and `.aio`. The only difference you will notice is the missing `config.json` file because that's the file you used to generate this project. 
 
 #### Developer without any credentials
 This flow is intended for developers who have no access or credentials whatsoever but still want to look at the code. 
@@ -308,7 +308,7 @@ All actions require an `Authorization` in the header by default. In your project
 The other sample actions require futher params to be invoked. For instance, if you try to invoke `analytics` with only the authorization header, you would see an error similar to `"error": "missing parameter(s) 'apiKey,companyId'"`. This is because these sample actions use Adobe API that requires those params before it can be invoked. 
 1. Each sample action requires different params. Some only needs an API key, some also requires the tenant ID or more information. Go into the action code in `actions` folder to learn more. 
 1. The API key is a common required field. If you have the service added in the current workspace, it is easily retrievable in `.env` or `console.json` file.
-1. Other fields are not accessible directly through the CLI, like tenant ID for Target and for Campaign Standard or company ID for Adobe Analytics. Please refer to product documentation to locate these value for your Org.
+1. Other fields are not accessible directly through the [CLI](https://github.com/adobe/aio-cli), like tenant ID for Target and for Campaign Standard or company ID for Adobe Analytics. Please refer to product documentation to locate these value for your Org.
 1. Once you have these params handy, construct them in the expected format `{"key": "value"}` and paste into the params. You should now be able to invoke these actions. 
 
 ### 6.3 Debugging the Application
@@ -348,7 +348,7 @@ This command may take a minute or to as behind the scenes the [CLI](https://gith
 - The actions defined in `manifest.yml` into Adobe I/O Runtime
 - The frontend built files and assets into our CDN
 
-The CLI output details this process
+The [CLI](https://github.com/adobe/aio-cli) output details this process:
 
 ```
 > Build actions
@@ -384,7 +384,7 @@ Note the last section of the output `To view your deployed application`. There a
 You can also undeploy your app with `aio app undeploy`. To learn more about deployment, please refer to [Deployment Overview](../guides/deployment.md). To automate your build, deploy and build process with our out-of-the-box CI/CD GitHub actions, please refer to [CI/CD for Project Firefly Applications](../guides/ci_cd_for_firefly_apps.md).
 
 ## Common Issues
-1. When in doubt, please first ensure your Adobe I/O CLI and all plugins are up to date. For the [CLI](https://github.com/adobe/aio-cli), you can check the version through `aio -v` and compare it with `npm show @adobe/aio-cli version`. If your [CLI](https://github.com/adobe/aio-cli) is outdated, update it by running `npm install -g @adobe/aio-cli`. After that, you can simply run `aio update` to ensure all core plugins are updated.
+1. When in doubt, please first ensure your [CLI](https://github.com/adobe/aio-cli) and all plugins are up to date. For the [CLI](https://github.com/adobe/aio-cli), you can check the version through `aio -v` and compare it with `npm show @adobe/aio-cli version`. If your [CLI](https://github.com/adobe/aio-cli) is outdated, update it by running `npm install -g @adobe/aio-cli`. After that, you can simply run `aio update` to ensure all core plugins are updated.
 1. Validation error. If you see the following error, it is because you did not pass in an authorization header to an action expecting one. See `Trying the Sample App` section above or learn more about this in our [Security Overview](../guides/security_overview.md).
     ```
     {"error": "cannot validate token, reason: missing authorization header"}
