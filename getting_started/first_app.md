@@ -182,7 +182,7 @@ This flow is intended for developers who do not have access to [Adobe Developer 
 
 For this flow to work, the developer should ask someone with access to set up a project and a workspace following the last few sections. With the workspace correctly set up, the credentials can downloaded by authorized [Adobe Developer Console](https://console.adobe.io/) users through the `Download all` button in Workspace overview. 
 
-    ![Workspace Download](../images/console-7.png)
+![Workspace Download](../images/console-7.png)
     
 1. In your Terminal, navigate to where you want to initialize your project and type in the following command:
 
