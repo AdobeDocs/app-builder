@@ -13,7 +13,7 @@ If you run into any issues during development, please first refer to the [Common
 
 ## 1. Setting up Local Environment
 
-Please always ensure your local environment and tooling is up to date to avoid any possible issues. The instructions can be located at [Setting up Your Environment](getting_started/setup.md). 
+Please always ensure your local environment and tooling is up to date to avoid any possible issues. The instructions can be located at [Setting up Your Environment](setup.md). 
 
 ## 2. Creating a new Project on Developer Console
 
@@ -127,7 +127,7 @@ There are two sample flows listed below as we understand some developers may not
      ◉ Generic
     ```
     
-    These sample actions help you quickly get started and show best practices for integrating with [Adobe APIs](https://www.adobe.io/apis.html) using [Project Firefly SDK](https://github.com/adobe/aio-sdk) in your applications. 
+    These sample actions help you quickly get started and show best practices for integrating with [Adobe APIs](https://www.adobe.io/apis.html) using [SDK](https://github.com/adobe/aio-sdk) in your applications. 
 Note that you may not see all the options listed below on your command line, because we make recommendations based on what credentials you have added in the selected workspace. Similar to the last step, you can select one or all of the options listed:
 
     - **Adobe Target**: including dependencies and examples of accessing the [Adobe Target API](https://developers.adobetarget.com/api/#admin-apis)
@@ -313,13 +313,13 @@ To view your deployed application in the Experience Cloud shell:
   -> https://experience.adobe.com/?devMode=true#/custom-apps/?localDevUrl=https://localhost:9080
 ```
 
-The first URL allows you to see your standalone application on localhost (by default, but the port is configurable). The second URL places your local application in the context of the [Experience Cloud Shell](http://experience.adobe.com/) for preview. 
+The first URL allows you to see your standalone application on localhost (by default, but the port is configurable). The second URL places your local application in the context of the [Experience Cloud UI](../guides/exc_app/overview.md) for preview. 
 
 While most changes in your code get updated in real-time when your application is running, the `.env` file is not amongst them. Running the application depends on `.env` file to provide necessary credentials, so the file is unmodifiable while the app is running. When your app is running, the `.env` file is backed up, and a new one is written with specific values. When you exit the process, the original `.env` is restored. 
 
 As indicated in the message, when you are done, you can press `CTRL+C` to terminate the local development environment.
 
-To have the application running local completely, which means the actions will run on a local deployed (standalone) version of OpenWhisk instead of on [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), use `aio app run --local`. Some additional dependencies are required if you have not installed them yet, see  `Optional tools` section in  [Setting up Your Environment](getting_started/setup.md) if you want to set them up manually. 
+To have the application running local completely, which means the actions will run on a local deployed (standalone) version of OpenWhisk instead of on [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), use `aio app run --local`. Some additional dependencies are required if you have not installed them yet, see  `Optional tools` section in  [Setting up Your Environment](setup.md) if you want to set them up manually. 
 
 Usually, we recommend running your applications with deployed [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) actions, as your application should run on [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) in production. However, if you need to build complex actions or sequencing, the `--local` flag is handy in allowing you to further debug the application locally. Please see the Debugging the Application section below for more info. 
 
@@ -359,7 +359,7 @@ We integrated our [CLI](https://github.com/adobe/aio-cli) with an open source pr
 - Auto-invoking of actions on code changes
 - Or running any shell command such as a curl request on code changes
 
-To debug your application, you will need to install some additional dependencies if you only set up the required tools, see  `Optional tools` section in  [Setting up Your Environment](getting_started/setup.md). When you have the dependencies installed, make sure that local dev environment is running with `aio app run`, `--local` an option. 
+To debug your application, you will need to install some additional dependencies if you only set up the required tools, see  `Optional tools` section in  [Setting up Your Environment](setup.md). When you have the dependencies installed, make sure that local dev environment is running with `aio app run`, `--local` an option. 
 
 With your application running, you can easily:
 
