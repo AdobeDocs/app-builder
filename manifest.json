@@ -32,6 +32,12 @@
           "pages": [],
           "path": "AdobeDocs/project-firefly/master/overview/getting_access.md",
           "title": "How to Get Access"
+        },
+        {
+          "importedFileName": "firefly_and_runtime",
+          "pages": [],
+          "path": "AdobeDocs/project-firefly/master/overview/firefly_and_runtime.md",
+          "title": "Project Firefly and Adobe I/O Runtime"
         }
       ]
   },
