@@ -193,7 +193,7 @@ For this flow to work, the developer should ask someone with access to set up a 
 1. Select project configuration options (see section above)
 1. When your project is initialized, go into the folder you just created, and you can see a number of files generated. 
 
-     ```
+    ```
     $ cd helloworld
     $ ls
     README.md		e2e			node_modules		package.json		web-src
