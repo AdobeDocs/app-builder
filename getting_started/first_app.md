@@ -9,7 +9,7 @@ In this tutorial, we'll guide you through the following steps to give you an int
 1. Developing the Application
 1. Deploying the Application
 
-If you run into any issues during development, please first refer to the [Common Issues section](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#having-issues) on this page. If that does not resolve your issue, please refer to our [Support Channels](https://github.com/AdobeDocs/project-firefly/blob/master/support.md).
+If you run into any issues during development, please first refer to the [Common Issues section](first_app.md#common-issues) on this page. If that does not resolve your issue, please refer to our [Support Channels](../support.md).
 
 ## 1. Setting up Local Environment
 
