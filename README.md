@@ -13,7 +13,7 @@ This documentation provides an overview of Project Firefly as well as guides, re
 ### [Getting Started](getting_started.md)
 
 * [Setting up Your Environment](getting_started/setup.md)
-* [Creating your First Project Firefly App](getting_started/first_app.md)
+* [Creating your First Project Firefly Application](getting_started/first_app.md)
 
 ### [Guides](guides.md)
 
