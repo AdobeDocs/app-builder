@@ -450,3 +450,7 @@ You can also undeploy your app with `aio app undeploy`. To learn more about depl
     ```
     {"error": "missing parameter(s) 'apiKey,companyId'"}`
     ```
+
+## Next steps
+
+For more code examples and use cases, please refer to the [Resources page](resources.md).
