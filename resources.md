@@ -13,7 +13,7 @@ Follow existing CodeLabs at
 
 You are invited to create your own public Adobe I/O CodeLab, just follow [these steps](https://adobeio-codelabs-howto-adobedocs.project-helix.page/).
 
-## Awesome Apps
+## Sample Apps
 
 Sample Adobe custom web applications built using Project Firefly.
 
