@@ -17,7 +17,7 @@ You are invited to create your own public Adobe I/O CodeLab, just follow [these 
 
 Sample Adobe custom web applications built using Project Firefly.
 
-* [I/O Customers Dashboard](https://github.com/AdobeDocs/adobeio-samples-customers-dashboard)
+* [Customer Profiles Dashboard](https://github.com/AdobeDocs/adobeio-samples-customers-dashboard)
 
 ## Videos
 
