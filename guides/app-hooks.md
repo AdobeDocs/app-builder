@@ -16,3 +16,13 @@ package.json may include the following scripts which are triggered at various ti
     "post-app-deploy": "echo post-app-deploy"
   }
   ```
+
+![aio-app-deploy lifecycle](../images/aio-app-deploy.png)
+
+# NPM script hooks
+
+Use of Firefly event hooks does not interfere with use of npm scripts, however you will need to use `npm run ..` to trigger them.
+The only _default_ script that Firefly tooling calls is `test`
+`aio app test -> npm test`, and in turn, npm calls `pretest` and `posttest` around your actual test script.
+
+[How npm handles the "scripts" field](https://docs.npmjs.com/misc/scripts)
