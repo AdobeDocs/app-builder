@@ -1,7 +1,7 @@
 
-# Firefly application tooling lifecycle event hooks
+# Project Firefly application tooling lifecycle event hooks
 
-Firefly applications created with our tooling are inherently npm packages.
+Project Firefly applications created with our tooling are inherently npm packages.
 This means they support many of the npm conveniences node developers expect.
 
 package.json may include the following scripts which are triggered at various times while an app is being built, deployed and/or run.
@@ -21,7 +21,7 @@ package.json may include the following scripts which are triggered at various ti
 
 # NPM script hooks
 
-Use of Firefly event hooks does not interfere with use of npm scripts, however you will need to use `npm run ..` to trigger them.
+Use of Project Firefly event hooks does not interfere with use of npm scripts, however you will need to use `npm run ..` to trigger them.
 The only _default_ script that Firefly tooling calls is `test`
 `aio app test -> npm test`, and in turn, npm calls `pretest` and `posttest` around your actual test script.
 
