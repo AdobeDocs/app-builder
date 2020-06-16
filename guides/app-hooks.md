@@ -6,6 +6,10 @@ This means they support many of the npm conveniences node developers expect.
 
 package.json may include the following scripts which are triggered at various times while an app is being built, deployed and/or run.
 
+## Sample hooks configuration
+
+For example, pre and post hooks can be defined for the `run`, `build` and `deploy` operations in the package.json file of your app as follows:
+
 ```
   "scripts": {
     "pre-app-run": "echo pre-app-run",
@@ -16,6 +20,10 @@ package.json may include the following scripts which are triggered at various ti
     "post-app-deploy": "echo post-app-deploy"
   }
   ```
+
+## Sample hooks flow
+
+The following diagram illustrates how your custom hooks will be executed within the application build and deploy operations which are triggered from the `aio app deploy` command:
 
 ![aio-app-deploy lifecycle](../images/aio-app-deploy.png)
 
