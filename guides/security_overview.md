@@ -109,6 +109,19 @@ However, we strongly recommend to validate these changes against the application
 
 **Note:** Project Firefly doesn't offer 3rd party API management at this stage, and similar authentication/authorization handling against 3rd party services should be managed by developers within their custom action codes for the time being.
 
+#### Known Issue: Final and Web Annotations
+
+The `require-adobe-auth` annotation is not compatible with the final annotation, which is protecting default parameters in web actions. More precisely, the `final` annotation won't have any effect when the `require-adobe-auth` annotation is set.
+This also impacts other web action annotations such as `web-custom-options`.
+See https://github.com/adobe/aio-cli-plugin-runtime/issues/150 for more details.
+
+A workaround for supporting final parameters without relying on the final annotation is to set them using the [State](https://github.com/adobe/aio-lib-state) SDK. Parameters set in State will be shared among actions running in a same namespace. You can set a permanent value in State from outside a Runtime action by calling this endpoint: 
+```bash
+curl -X POST -u <owAuth> https://adobeio.adobeioruntime.net/api/v1/web/state/put \
+-H 'Content-Type: application/json' \
+--data '{"namespace":"<owNamespace>","key":"<stateKey>","value":"<stateValue>","ttl":"-1"}'
+```
+
 ## Securing Project Firefly Applications
 
 ### I/O Runtime Specific guidelines
