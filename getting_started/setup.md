@@ -41,6 +41,11 @@ These prerequisites should be fulfilled on the developer's machine:
 We aim to provide the similar quality of local development experience on both Windows 10 and macOS 10.14 and higher.
 Our [CLI](https://github.com/adobe/aio-cli) and its plugins are automatically tested against NodeJS versions 10 and 12 on both Windows and [Linux Xenial](http://releases.ubuntu.com/16.04/).
 
+#### Supported terminals for the CLI
+Our [CLI](https://github.com/adobe/aio-cli) uses the popular [inquirer](https://www.npmjs.com/package/inquirer) package for all its interactive functionalities, such as the application generators.
+
+See [inquirer's Support section](https://www.npmjs.com/package/inquirer#support-os-terminals) and [its known issues](https://www.npmjs.com/package/inquirer#know-issues) for up-to-date details.
+
 ### Optional tools
 
 The following set up is required if you intend to use the local development features provided by the [CLI](https://github.com/adobe/aio-cli): 
