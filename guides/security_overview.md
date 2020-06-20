@@ -122,6 +122,8 @@ curl -X POST -u <owAuth> https://adobeio.adobeioruntime.net/api/v1/web/state/put
 --data '{"namespace":"<owNamespace>","key":"<stateKey>","value":"<stateValue>","ttl":"-1"}'
 ```
 
+However, note that we **strongly discourage** to use the [State](https://github.com/adobe/aio-lib-state) SDK in order to store secrets that could be reused within Adobe I/O Runtime actions. For this, developers should prefer using an appropriate Secret Vault that would fulfil their custom application requirements.
+
 ## Securing Project Firefly Applications
 
 ### I/O Runtime Specific guidelines
