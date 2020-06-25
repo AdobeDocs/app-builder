@@ -26,9 +26,15 @@ Sample Adobe custom web applications built using Project Firefly.
 * [Security Overview](https://youtu.be/CHPDtDejy6Q)
 * [End to End User Journey](https://youtu.be/N_0MxSIoKDM)
 
+## Real-world examples
+
+* [Building a Real-Time Airline Application Using Adobe Experience Platform, Adobe I/O Runtime and Project Firefly](https://www.netcentric.biz/insights/2020/06/building-an-aep-demo-with-firefly.html?utm_source=linkedin&utm_medium=social_nonpaid&utm_campaign=20_insights&utm_content=link_post&es_id=8e9abf83f6)
+
+
 ## Blog Articles
 
 * [I/O Runtime and the Future of Serverless at Adobe](https://medium.com/adobetech/i-o-runtime-and-the-future-of-serverless-at-adobe-2c647b43d3a7)
 * [Introducing Project Firefly: Everything You Need to Build a Custom Cloud App to Meet Business Needs](https://medium.com/adobetech/project-firefly-build-custom-cloud-native-adobe-apps-54d157adb473)
 * [Why Your Enterprise Needs Project Firefly](https://medium.com/adobetech/why-your-enterprise-needs-project-firefly-9c2f2469a5f2)
+
 
