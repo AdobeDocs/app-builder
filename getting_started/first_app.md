@@ -107,6 +107,7 @@ There are two sample flows listed below as we understand some developers may not
     ? Which Adobe I/O App features do you want to enable for this project?
     select components to include (Press <space> to select, <a> to toggle all, <i> to invert selection)
     ❯◉ Actions: Deploy Runtime actions
+     ◉ Events: Publish to Adobe I/O Events
      ◉ Web Assets: Deploy hosted static assets
      ◉ CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy
     ```
@@ -114,6 +115,7 @@ There are two sample flows listed below as we understand some developers may not
     Each option indicates a feature you can enable for your Project Firefly Application. You can select one or all of the options depending on the application you intend to build. We recommend that you select all for now to fully explore all the options. 
     
     - **Actions: Deploy Runtime actions:** adding the boilerplate for backend serverless actions on [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html)
+    - **Events: Publish to Adobe I/O Events:** adding the boilerplate for a serverless action that publishes [Custom I/O Events](https://www.adobe.io/apis/experienceplatform/events/docs.html#!adobedocs/adobeio-events/master/custom_events.md)
     - **Web Assets: Deploy hosted static assets:** adding the boilerplate for frontend [React-Spectrum](https://react-spectrum.adobe.com/) SPA and static assets
     - **CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy:** adding the boilerplate for Github Actions supporting CI/CD process of the application
 
