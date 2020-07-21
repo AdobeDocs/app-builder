@@ -11,4 +11,4 @@ React Spectrum enables accessibility and common behavior to be handled out of th
 
 The sample templates generated through the CLI leverage React Spectrum in the UI as an example. 
 
-To learn more, please visit the React Spectrum GitHub repository: https://github.com/adobe-private/react-spectrum-v3
+To learn more, please visit the React Spectrum Homepage: https://react-spectrum.adobe.com/.
