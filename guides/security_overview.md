@@ -126,12 +126,12 @@ However, note that we **strongly discourage** to use the [State](https://github.
 
 #### Known Issue 2: Additional scope for JWT access token validation
 
-The auth validator enabled by `require-adobe-auth: true` annotation requires the access token to have the `read_organizations` scope. While it is always the case for user token used in SPAs, the JWT access token for headless apps may not have this scope if it is generated to integrate with the following services:
+The validator action enabled by `require-adobe-auth: true` annotation requires the provided IMS access token to have the `read_organizations` scope. While it is always the case for user tokens used in SPAs, the JWT access tokens used in headless applicationss may not have this scope. This will be the case if it is generated to integrate with the following services:
 - Adobe Analytics
 - Adobe Campaign Standard
 - No API Service enabled
 
-In these cases, you need to add the "I/O Management API" service to the workspace so that the JWT access token is validated successfully.
+In these cases, the "I/O Management API" service must be added to the appropriate Project Firefly workspace. This will add the required scope to the JWT access token used by the headless application.
 
 ## Securing Project Firefly Applications
 
