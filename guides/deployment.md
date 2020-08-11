@@ -16,8 +16,6 @@ In the following chapters of this documentation, it will be assumed that:
   
 If you do not own a [Runtime](https://github.com/AdobeDocs/adobeio-runtime) namespace, please [request trial access]().
 
-The [Technical Requirements](../getting_started/technical_requirements.md) documentation should also be checked before trying out the deployment scenarios described below.
-
 # Deployment Scenarios
 
 The [CLI](https://github.com/adobe/aio-cli) offers three types of deployment to the developers.
