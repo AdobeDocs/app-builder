@@ -14,6 +14,7 @@ This documentation provides an overview of Project Firefly as well as guides, re
 
 * [Setting up Your Environment](getting_started/setup.md)
 * [Creating your First Project Firefly Application](getting_started/first_app.md)
+* [Troubleshooting the most common issues](getting_started/common_troubleshooting.md)
 
 ### [Guides](guides.md)
 
