@@ -136,6 +136,12 @@
             "pages": [],
             "path": "AdobeDocs/project-firefly/master/guides/application_logging.md",
             "title": "Managing Application Logs"
+          },
+          {
+            "importedFileName": "app-hooks",
+            "pages": [],
+            "path": "AdobeDocs/project-firefly/master/guides/app-hooks.md",
+            "title": "Event hooks for Project Firefly Applications"
           }
         ]
     },
