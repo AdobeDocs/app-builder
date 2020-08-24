@@ -1,13 +1,13 @@
 # Publishing your First Project Firefly Application
 In this tutorial, we'll guide you through the following steps to give you an introduction on how to publish your first Firefly Application. 
 after you deployed your application, you need to go through below 3 steps to publish your headful app
-1. Project approvals through [Adobe Developer Console](https://console.adobe.io/)
-2. Administrater review your app through [My Exchange](https://exchange.adobe.com/my-exchange.html)
-3. Your app show up at [Adobe Experience Cloud](https://experience.adobe.com/#/@adobeio/home)
+1. Submit for approval through [Adobe Developer Console](https://console.adobe.io/)
+2. Review and approve the app in [My Exchange](https://exchange.adobe.com/my-exchange.html)
+3. After approval, your app will be available at [Adobe Experience Cloud](https://experience.adobe.com/#/@adobeio/home)
 
 ## 1: Project approvals (Console Part)
 
-Once you have completed development on your project, your application is ready for approval. 
+Once you have completed development on your project, and deploy your app in the Production workspace,your application is ready for approval. 
 
 There are three different approval processes within Adobe Developer Console, depending on the type of application that you have built:
 
@@ -96,6 +96,12 @@ Click into `Project Firefly App` you will see your published app
 
 ![](../images/approval-myapp-customapps.png)
 
+
+
+# Publishing your headless Project Firefly App
+
+If you publish a headless app, the app would not reflect in My Apps, for headless app please refer to 
+[Your First Headless App with Project Firefly](https://adobeio-codelabs-barcode-adobedocs.project-helix.page/?src=/README.html)
 
 ## Next steps
 
