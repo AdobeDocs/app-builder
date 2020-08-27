@@ -1,9 +1,10 @@
-# Publishing your First Project Firefly Application
-In this tutorial, we'll guide you through the following steps to give you an introduction on how to publish your first Firefly Application. 
-after you deployed your application, you need to go through below 3 steps to publish your headful app
-1. Submit for approval through [Adobe Developer Console](https://console.adobe.io/)
+# Publishing Your First Project Firefly Application
+
+In this tutorial, we'll guide you through the following steps to give you an introduction on how to publish your first Project Firefly Application. 
+After you deployed your application, you need to go through the 3 steps below to publish your SPA
+1. Submit for publishing approval [Adobe Developer Console](https://console.adobe.io/)
 2. Review and approve the app in [My Exchange](https://exchange.adobe.com/my-exchange.html)
-3. After approval, your app will be available at [Adobe Experience Cloud](https://experience.adobe.com/#/@adobeio/home)
+3. After approval, your app will be available at [Adobe Experience Cloud](https://experience.adobe.com)
 
 ## 1: Project approvals (Console Part)
 
@@ -41,7 +42,7 @@ After your application has been submitted for approval, the admin could see your
 
 ![](../images/approval-published.png)
 
-## 2: Administrater review your app (MyExchange Part)
+## 2: Administrator review of your app (MyExchange Part)
 
 Once an application has been submitted for approval, either internal reviewer or Adobe Review team will see an app in My Exchange -> Experience Cloud Apps, you will see your submitted apps under the pending review session。
 
@@ -58,11 +59,11 @@ After approve the app, you will see the app in the approved section, the reviewe
 
 ## 3: Check your published app at Experience Cloud
 
-Once the reviewer approve your application, you will received an email notification. and your app will show up at Experiences cloud
+Once the reviewer approve your application, you will received an email notification. and your app will show up at [Adobe Experience Cloud](https://experience.adobe.com)
 
 ![](../images/approval-myapp-home.png)
 
-Click into `Project Firefly App` you will see your published app
+Click on Project Firefly Apps to discover the applications published for your organization.
 
 ![](../images/approval-myapp-customapps.png)
 
@@ -72,6 +73,7 @@ Click into `Project Firefly App` you will see your published app
 
 If you publish a headless app, the app would not reflect in My Apps, for headless app please refer to 
 [Your First Headless App with Project Firefly](https://adobeio-codelabs-barcode-adobedocs.project-helix.page/?src=/README.html)
+We might add discoverability mechanisms for published headless apps in future Project Firefly releases.
 
 ## Next steps
 
