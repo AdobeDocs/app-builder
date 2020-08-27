@@ -63,7 +63,7 @@ Once the reviewer approve your application, you will received an email notificat
 
 ![](../images/approval-myapp-home.png)
 
-Click on Project Firefly Apps to discover the applications published for your organization.
+Click on `Project Firefly Apps` to discover the applications published for your organization.
 
 ![](../images/approval-myapp-customapps.png)
 
@@ -71,9 +71,10 @@ Click on Project Firefly Apps to discover the applications published for your or
 
 # Publishing your headless Project Firefly App
 
-If you publish a headless app, the app would not reflect in My Apps, for headless app please refer to 
-[Your First Headless App with Project Firefly](https://adobeio-codelabs-barcode-adobedocs.project-helix.page/?src=/README.html)
-We might add discoverability mechanisms for published headless apps in future Project Firefly releases.
+The `Project Firefly Apps` [Adobe Experience Cloud](https://experience.adobe.com) only lists Project Firefly Apps that are SPAs. If you publish a headless app, please refer to 
+[Your First Headless App with Project Firefly](https://adobeio-codelabs-barcode-adobedocs.project-helix.page/?src=/README.html).
+
+We might provide supplementary discoverability mechanisms for published headless apps in future Project Firefly releases.
 
 ## Next steps
 
