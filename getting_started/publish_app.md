@@ -71,7 +71,7 @@ Click on `Project Firefly Apps` to discover the applications published for your 
 
 # Publishing your headless Project Firefly App
 
-The `Project Firefly Apps` [Adobe Experience Cloud](https://experience.adobe.com) only lists Project Firefly Apps that are SPAs. If you publish a headless app, please refer to 
+The `Project Firefly Apps` [Adobe Experience Cloud](https://experience.adobe.com) only lists Project Firefly Apps that are SPAs. If you publish a headless app, please refer to our code lab  
 [Your First Headless App with Project Firefly](https://adobeio-codelabs-barcode-adobedocs.project-helix.page/?src=/README.html).
 
 We might provide supplementary discoverability mechanisms for published headless apps in future Project Firefly releases.
