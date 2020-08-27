@@ -13,7 +13,8 @@ If you run into any issues during development, please first refer to the [Common
 
 ## 1. Setting up Local Environment
 
-Please always ensure your local environment and tooling is up to date to avoid any possible issues. The instructions can be located at [Setting up Your Environment](setup.md). 
+Please always ensure your local environment and tooling is up to date to avoid any possible issues. The instructions can be located at [Setting up Your Environment](setup.md). Ideally while setting up your environment, you requested access to Project Firefly as described at [How to Get Access to Project Firefly](../overview/getting_access.md)
+  and your request has been approved. If your request has not yet been approved, you may want to wait before proceeding with the steps in this document.
 
 ## 2. Creating a new Project on Developer Console
 
@@ -27,6 +28,9 @@ Follow the instructions to set up your project:
     ![Org Switcher](../images/console-2.png)
 
 1. Once you are in the correct organization, Under `Quick Start`, click on the option to `Create project from template`.
+   **Note that if you don't have the `Create project from template` option, it might be because your request to access Project Firefly has not yet been approved.**
+   If you already submitted a request, you may want to wait for it to be approved. If you have not yet submitted a request, you might want to do that,
+   as described at [How to Get Access to Project Firefly](../overview/getting_access.md).
 
 1. Select `Project Firefly` from the list of templates. 
     ![Select Template](../images/console-3.png)
