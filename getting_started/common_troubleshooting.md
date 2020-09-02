@@ -16,6 +16,8 @@ It lists the most recent activations and summary (ID, start / end time, duration
 * `application error`: this error is usually due to some issues at runtime, such as thrown exceptions, getting value of an `undefined` variable. With appropriate try-catch blocks and logging, you can see what goes wrong from the logs `aio runtime activation logs activationID`
 * `internal error`: this could be an error caused by an external factor unrelated to the action itself, e.g. not enough resources to run the action. I/O Runtime is a scalable platform, so you would never see it with default action settings. If you do, please let us know by [email](mailto:iodev@adobe.com) so that we can help to troubleshoot what causes it.
 
+You could also try out [openwhisk-wskdebug](https://github.com/apache/openwhisk-wskdebug) which offers extensive capabilities to develop and debug Openwhisk actions.
+
 ## Action authentication errors
 
 When Adobe authentication and authorization checks are enabled for an action with the `require-adobe-auth` annotation set to `true`, you may see the following errors when making requests to the action:
