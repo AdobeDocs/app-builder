@@ -4,7 +4,7 @@ Here are troubleshooting guides for some of the most common issues as you develo
 
 ## General debugging
 
-When your action code doesn't work as expected, you may want to investigate into what exactly went wrong. Project Firefly provides the [Logging SDK](https://github.com/adobe/aio-lib-core-logging) for managing application logs. 
+When your action code doesn't work as expected, you may want to investigate into what exactly went wrong. Project Firefly provides the [Logging SDK](https://github.com/adobe/aio-lib-core-logging), please check out [Firefly's Application Logging](https://github.com/AdobeDocs/project-firefly/blob/master/guides/application_logging.md) for more details. 
 
 To see the latest activations of your project, run this command:
 ```bash
@@ -16,7 +16,7 @@ It lists the most recent activations and summary (ID, start / end time, duration
 * `application error`: this error is usually due to some issues at runtime, such as thrown exceptions, getting value of an `undefined` variable. With appropriate try-catch blocks and logging, you can see what goes wrong from the logs `aio runtime activation logs activationID`
 * `internal error`: this could be an error caused by an external factor unrelated to the action itself, e.g. not enough resources to run the action. I/O Runtime is a scalable platform, so you would never see it with default action settings. If you do, please let us know by [email](mailto:iodev@adobe.com) so that we can help to troubleshoot what causes it.
 
-You could also try out [openwhisk-wskdebug](https://github.com/apache/openwhisk-wskdebug) which offers extensive capabilities to develop and debug Openwhisk actions.
+You could also try [openwhisk-wskdebug](https://github.com/apache/openwhisk-wskdebug) which offers extensive capabilities to develop and debug Openwhisk actions.
 
 ## Action authentication errors
 
