@@ -10,15 +10,15 @@
 
 October 1, 2020 
 - **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
-- **Join Event:** https://www.adobe.com/go/fireflywebinar
+- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/zwgbvkhu
 
 October 29, 2020 
 - **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
-- **Join Event:** https://www.adobe.com/go/fireflywebinar
+- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/zwgbvkhu
 
 December 3, 2020 
 - **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
-- **Join Event:** https://www.adobe.com/go/fireflywebinar
+- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/fpywqcku
 
 
 ### Stay Informed!
@@ -31,19 +31,19 @@ This session will be divided into two halves, starting with a 15-20 minute prese
 
 September 17, 2020 
 - **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
-- **Join Event:** https://www.adobe.com/go/fireflywebinar
+- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/zwgbvkhu
 
 October 15, 2020 
 - **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
-- **Join Event:** https://www.adobe.com/go/fireflywebinar
+- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/zwgbvkhu
 
 November 12, 2020 
 - **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
-- **Join Event:** https://www.adobe.com/go/fireflywebinar
+- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/zwgbvkhu
 
 December 17, 2020 
 - **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
-- **Join Event:** https://www.adobe.com/go/fireflywebinar
+- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/fpywqcku
 
 
 ## Event Recordings
