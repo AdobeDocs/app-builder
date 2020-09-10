@@ -58,8 +58,13 @@ The following set up is required if you intend to use the local development feat
 The following commands must be executed to install the required Docker images:
 
 ```
+# NodeJS 10 images
 docker pull openwhisk/action-nodejs-v10:latest
 docker pull adobeapiplatform/adobe-action-nodejs-v10:3.0.21
+
+# NodeJS 12 images
+docker pull openwhisk/action-nodejs-v12:latest
+docker pull adobeapiplatform/adobe-action-nodejs-v12:3.0.22
 ```
 
 **Note:** Developers on Windows machines should make sure that they are using Linux containers for the images above.
