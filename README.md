@@ -64,6 +64,8 @@ This documentation provides an overview of Project Firefly as well as guides, re
 
 ### [Contribution Guides](contribution_guides.md)
 
+### [Events](events.md)
+
 ### [Resources](resources.md)
 
 ### [FAQ](faq.md)
