@@ -158,6 +158,12 @@
         "title": "Contribution Guides"
     },
     {
+      "importedFileName": "events",
+      "path": "AdobeDocs/project-firefly/master/events.md",
+      "title": "Events",
+      "pages": []
+    },
+    {
       "importedFileName": "resources",
       "path": "AdobeDocs/project-firefly/master/resources.md",
       "title": "Resources",
