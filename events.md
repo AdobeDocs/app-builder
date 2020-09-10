@@ -18,7 +18,7 @@ October 29, 2020
 
 December 3, 2020 
 - **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
-- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/axbqxsku
+- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/fpywqcku
 
 
 ### Stay Informed!
@@ -43,7 +43,7 @@ November 12, 2020
 
 December 17, 2020 
 - **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
-- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/axbqxsku
+- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/fpywqcku
 
 
 ## Event Recordings
