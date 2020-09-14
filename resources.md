@@ -18,7 +18,8 @@ You are invited to create your own public Adobe I/O CodeLab, just follow [these 
 Sample Adobe custom web applications built using Project Firefly.
 
 * [Customer Profiles Dashboard](https://github.com/AdobeDocs/adobeio-samples-customers-dashboard)
-* [Barcode generator](https://github.com/AdobeDocs/adobeio-samples-barcode-generator)
+* [Barcode Generator](https://github.com/AdobeDocs/adobeio-samples-barcode-generator)
+* [Throttled Queue Processing](https://github.com/AdobeDocs/adobeio-samples-throttled-processing)
 
 ## Videos
 
