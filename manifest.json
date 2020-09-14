@@ -57,6 +57,18 @@
             "pages": [],
             "path": "AdobeDocs/project-firefly/master/getting_started/first_app.md",
             "title": "Creating your First Firefly App"
+          },
+          {
+            "importedFileName": "publish_app",
+            "pages": [],
+            "path": "AdobeDocs/project-firefly/master/getting_started/publish_app.md",
+            "title": "Publishing Your First Project Firefly Application"
+          },
+          {
+            "importedFileName": "common_troubleshooting",
+            "pages": [],
+            "path": "AdobeDocs/project-firefly/master/getting_started/common_troubleshooting.md",
+            "title": "Troubleshooting the most common issues"
           }
         ]
     },
