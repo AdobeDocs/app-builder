@@ -54,6 +54,7 @@ Here are some of the types of apps that can be built on top of this framework:
 ## Examples from real-world
 
 * [Building a Real-Time Airline Application Using Adobe Experience Platform, Adobe I/O Runtime and Project Firefly](https://www.netcentric.biz/insights/2020/06/building-an-aep-demo-with-firefly.html?utm_source=linkedin&utm_medium=social_nonpaid&utm_campaign=20_insights&utm_content=link_post&es_id=8e9abf83f6)
+* [How to generate intelligent renditions with AEM as a Cloud Service](https://tech.cognifide.com/blog/2020/how-to-generate-intelligent-renditions-aem-cloud/)
 
 ## Where to Go Next
 
