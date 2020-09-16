@@ -16,7 +16,7 @@ It lists the most recent activations and summary (ID, start / end time, duration
 * `application error`: this error is usually due to some issues at runtime, such as thrown exceptions, getting value of an `undefined` variable. With appropriate try-catch blocks and logging, you can see what goes wrong from the logs `aio runtime activation logs activationID`
 * `internal error`: this could be an error caused by an external factor unrelated to the action itself, e.g. not enough resources to run the action. I/O Runtime is a scalable platform, so you would never see it with default action settings. If you do, please let us know by [email](mailto:iodev@adobe.com) so that we can help to troubleshoot what causes it.
 
-You could also try [openwhisk-wskdebug](https://github.com/apache/openwhisk-wskdebug) which offers extensive capabilities to develop and debug Openwhisk actions.
+You could also try [openwhisk-wskdebug](https://github.com/apache/openwhisk-wskdebug) which offers extensive capabilities to develop and debug the I/O Runtime actions of your Project Firefly applications.
 
 ## Action authentication errors
 
