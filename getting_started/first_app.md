@@ -13,7 +13,8 @@ If you run into any issues during development, please first refer to the [Common
 
 ## 1. Setting up Local Environment
 
-Please always ensure your local environment and tooling is up to date to avoid any possible issues. The instructions can be located at [Setting up Your Environment](setup.md). 
+Please always ensure your local environment and tooling is up to date to avoid any possible issues. The instructions can be located at [Setting up Your Environment](setup.md). Ideally while setting up your environment, you requested access to Project Firefly as described at [How to Get Access to Project Firefly](../overview/getting_access.md)
+  and your request has been approved. If your request has not yet been approved, you may want to wait before proceeding with the steps in this document.
 
 ## 2. Creating a new Project on Developer Console
 
@@ -27,6 +28,9 @@ Follow the instructions to set up your project:
     ![Org Switcher](../images/console-2.png)
 
 1. Once you are in the correct organization, Under `Quick Start`, click on the option to `Create project from template`.
+   **Note that if you don't have the `Create project from template` option, it might be because your request to access Project Firefly has not yet been approved.**
+   If you already submitted a request, you may want to wait for it to be approved. If you have not yet submitted a request, you might want to do that,
+   as described at [How to Get Access to Project Firefly](../overview/getting_access.md).
 
 1. Select `Project Firefly` from the list of templates. 
     ![Select Template](../images/console-3.png)
@@ -107,6 +111,7 @@ There are two sample flows listed below as we understand some developers may not
     ? Which Adobe I/O App features do you want to enable for this project?
     select components to include (Press <space> to select, <a> to toggle all, <i> to invert selection)
     ❯◉ Actions: Deploy Runtime actions
+     ◉ Events: Publish to Adobe I/O Events
      ◉ Web Assets: Deploy hosted static assets
      ◉ CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy
     ```
@@ -114,6 +119,7 @@ There are two sample flows listed below as we understand some developers may not
     Each option indicates a feature you can enable for your Project Firefly Application. You can select one or all of the options depending on the application you intend to build. We recommend that you select all for now to fully explore all the options. 
     
     - **Actions: Deploy Runtime actions:** adding the boilerplate for backend serverless actions on [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html)
+    - **Events: Publish to Adobe I/O Events:** adding the boilerplate for a serverless action that publishes [Custom I/O Events](https://www.adobe.io/apis/experienceplatform/events/docs.html#!adobedocs/adobeio-events/master/custom_events.md)
     - **Web Assets: Deploy hosted static assets:** adding the boilerplate for frontend [React-Spectrum](https://react-spectrum.adobe.com/) SPA and static assets
     - **CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy:** adding the boilerplate for Github Actions supporting CI/CD process of the application
 

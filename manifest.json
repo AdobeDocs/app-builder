@@ -57,6 +57,18 @@
             "pages": [],
             "path": "AdobeDocs/project-firefly/master/getting_started/first_app.md",
             "title": "Creating your First Firefly App"
+          },
+          {
+            "importedFileName": "publish_app",
+            "pages": [],
+            "path": "AdobeDocs/project-firefly/master/getting_started/publish_app.md",
+            "title": "Publishing Your First Project Firefly Application"
+          },
+          {
+            "importedFileName": "common_troubleshooting",
+            "pages": [],
+            "path": "AdobeDocs/project-firefly/master/getting_started/common_troubleshooting.md",
+            "title": "Troubleshooting the most common issues"
           }
         ]
     },
@@ -136,6 +148,12 @@
             "pages": [],
             "path": "AdobeDocs/project-firefly/master/guides/application_logging.md",
             "title": "Managing Application Logs"
+          },
+          {
+            "importedFileName": "app-hooks",
+            "pages": [],
+            "path": "AdobeDocs/project-firefly/master/guides/app-hooks.md",
+            "title": "Event hooks for Project Firefly Applications"
           }
         ]
     },
@@ -150,6 +168,12 @@
         "pages": [],
         "path": "AdobeDocs/project-firefly/master/contribution_guides.md",
         "title": "Contribution Guides"
+    },
+    {
+      "importedFileName": "events",
+      "path": "AdobeDocs/project-firefly/master/events.md",
+      "title": "Events",
+      "pages": []
     },
     {
       "importedFileName": "resources",

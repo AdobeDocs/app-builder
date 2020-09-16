@@ -124,6 +124,15 @@ curl -X POST -u <owAuth> https://adobeio.adobeioruntime.net/api/v1/web/state/put
 
 However, note that we **strongly discourage** to use the [State](https://github.com/adobe/aio-lib-state) SDK in order to store secrets that could be reused within Adobe I/O Runtime actions. For this, developers should prefer using an appropriate Secret Vault that would fulfil their custom application requirements.
 
+#### Known Issue 2: Additional scope for JWT access token validation
+
+The validator action enabled by `require-adobe-auth: true` annotation requires the provided IMS access token to have the `read_organizations` scope. While it is always the case for user tokens used in SPAs, the JWT access tokens used in headless applicationss may not have this scope. This will be the case if it is generated to integrate with the following services:
+- Adobe Analytics
+- Adobe Campaign Standard
+- No API Service enabled
+
+In these cases, the "I/O Management API" service must be added to the appropriate Project Firefly workspace. This will add the required scope to the JWT access token used by the headless application.
+
 ## Securing Project Firefly Applications
 
 ### I/O Runtime Specific guidelines
