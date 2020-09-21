@@ -12,7 +12,7 @@ Follow our codelabs at:
 * [Introduction to Spectrum and UI Frameworks](https://adobeio-codelabs-spectrum-intro-adobedocs.project-helix.page/)
 
 And more codelabs contributed by the Firefly community:
-* [Build Custom Asset Compute Worker](https://adobeio-asset-compute-labs-cognifide.project-helix.page/) by [Cognifide](https://www.cognifide.com)
+* [Building Custom Asset Compute Worker](https://adobeio-asset-compute-labs-cognifide.project-helix.page/) by [Cognifide](https://www.cognifide.com)
 
 You are invited to create your own public Adobe I/O CodeLab, just follow [these steps](https://adobeio-codelabs-howto-adobedocs.project-helix.page/).
 
