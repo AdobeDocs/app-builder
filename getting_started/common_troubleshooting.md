@@ -2,6 +2,11 @@
 
 Here are troubleshooting guides for some of the most common issues as you develop your first Firefly apps.
 
+## Before you proceed
+
+- Check your Node version and tool versions to ensure they are supported by Project Firefly and up-to-date. You can find the latest supported version [here](setup.md).
+- Check if your application is on Dropbox or OneDrive as file watchers sometimes cause unexpected errors. 
+
 ## General debugging
 
 When your action code doesn't work as expected, you may want to investigate into what exactly went wrong. Project Firefly provides the [Logging SDK](https://github.com/adobe/aio-lib-core-logging), please check out [Firefly's Application Logging](https://github.com/AdobeDocs/project-firefly/blob/master/guides/application_logging.md) for more details. 
