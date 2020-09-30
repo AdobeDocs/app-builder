@@ -1,4 +1,4 @@
-# Tips and Tricks for Firefly Apps
+# Tips and Tricks for optimizing Firefly Apps
 
 There are many areas in a web app where you could optimize the way it works, such as security, performance, and operational cost, to name a few. Here are some tips and tricks to help you gain the most out of your Firefly application.
 
