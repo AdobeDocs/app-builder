@@ -142,6 +142,13 @@ Note that you may not see all the options listed below on your command line, bec
     - **Adobe Campaign Standard**: including dependencies and examples of accessing the [Adobe Campaign Standard (ACS) API](https://docs.adobe.com/content/help/en/campaign-standard/using/working-with-apis/get-started-apis.html)
     - **Adobe Experience Platform: Realtime Customer Profile**: including dependencies and examples of accessing the [Realtime Customer Profile API of Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/real-time-customer-profile.yaml)
     - **Generic**: a generic back-end action with hello world flow that can be reused and modified e.g. for simple serverless computing or 3rd party API integration
+    
+1. If you included `Web Assets` under Adobe I/O App features you will be given two choices. One to include React Spectrum based UI teamplate or a Vanilla HTML/JS one
+    ```
+    ? Which type of UI do you want to add to your project? select template to generate (Use arrow keys)
+    ❯ React Spectrum 3 UI
+      Raw HTML/JS UI
+    ```
 
 1. We'll ask you to define the name for the instance of each selected sample actions. You can keep the default name or specify your own.
 
