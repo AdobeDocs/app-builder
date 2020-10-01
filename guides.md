@@ -12,5 +12,5 @@
 * [Deployment Overview](guides/deployment.md)
 * [CI/CD for Firefly Applications](guides/ci_cd_for_firefly_apps.md)
 * [Managing Application Logs](guides/application_logging.md)
-* [Event hooks for Project Firefly Applications](guides/app-hooks.md)
-* [Tips and Tricks for optimizing Your Firefly Apps](guides/tips_tricks.md)
+* [Extending the CLI App Plugin Commands](guides/app-hooks.md)
+* [Tips and Tricks for optimizing Your Project Firefly Apps](guides/tips_tricks.md)
