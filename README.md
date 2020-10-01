@@ -32,6 +32,7 @@ This documentation provides an overview of Project Firefly as well as guides, re
 * [CI/CD for Firefly Applications](guides/ci_cd_for_firefly_apps.md)
 * [Managing Application Logs](guides/application_logging.md)
 * [Extending the CLI App Plugin Commands](guides/app-hooks.md)
+* [Tips and Tricks for optimizing Your Firefly Apps](guides/tips_tricks.md)
 
 ### [Reference Documentation](reference_documentation.md)
 
