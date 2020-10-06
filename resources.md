@@ -5,6 +5,7 @@
 Adobe I/O CodeLabs provide guided hands-on coding experiences to build awesome apps on top of Project Firefly.
 
 Follow our codelabs at:
+* [Scheduling Cron Jobs](https://adobeio-codelabs-alarms-adobedocs.project-helix.page/)
 * [Debugging a Firefly App](https://adobeio-codelabs-debugging-adobedocs.project-helix.page/)
 * [CI/CD within Firefly](https://adobeio-codelabs-ci-cd-adobedocs.project-helix.page/)
 * [Build a Customer Dashboard with Project Firefly and Adobe Campaign Standard API](https://adobeio-codelabs-campaign-standard-adobedocs.project-helix.page/)
