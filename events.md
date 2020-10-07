@@ -8,10 +8,6 @@
 
 #### Upcoming Events
 
-October 1, 2020 
-- **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
-- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/zwgbvkhu
-
 October 29, 2020 
 - **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
 - **Join Event:** https://primetime.bluejeans.com/a2m/live-event/zwgbvkhu
