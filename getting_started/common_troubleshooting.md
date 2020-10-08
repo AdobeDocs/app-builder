@@ -23,6 +23,14 @@ It lists the most recent activations and summary (ID, start / end time, duration
 
 You could also try [openwhisk-wskdebug](https://github.com/apache/openwhisk-wskdebug) which offers extensive capabilities to develop and debug the I/O Runtime actions of your Project Firefly applications.
 
+## Action logs
+
+When you have [web actions](https://github.com/AdobeDocs/adobeio-runtime/blob/master/guides/creating_actions.md#invoking-web-actions) in your app, they are blocking requests and their activation results are not recorded if they are invoked successfully. To enforce the persistence of activation results, you need to pass the `x-ow-extra-logging: on` flag in the request headers. In the development mode of an SPA, you can add this flag directly to the "invoking action" function so that you will have the activation results and logs recorded for all requests. Then they could be retrieved as demonstrated in the [General debugging](#general-debugging) section above.
+
+```javascript
+headers['x-ow-extra-logging'] = 'on'
+```
+
 ## Action authentication errors
 
 When Adobe authentication and authorization checks are enabled for an action with the `require-adobe-auth` annotation set to `true`, you may see the following errors when making requests to the action:
