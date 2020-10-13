@@ -365,16 +365,9 @@ We integrated our [CLI](https://github.com/adobe/aio-cli) with an open source pr
 - Auto-invoking of actions on code changes
 - Or running any shell command such as a curl request on code changes
 
-To debug your application, you will need to install some additional dependencies if you only set up the required tools, see  `Optional tools` section in  [Setting up Your Environment](setup.md). When you have the dependencies installed, make sure that local dev environment is running with `aio app run`, `--local` an option. 
+Please visit our [Debugging Firefly Apps Codelab](https://adobeio-codelabs-debugging--adobedocs.project-helix.page/) to set up your local environment and go through step-by-step instructions. 
 
-With your application running, you can easily:
-
-- Set a breakpoint in your code in [VSCode](https://code.visualstudio.com/)
-- Go to debugger mode in [VSCode](https://code.visualstudio.com/)
-- Select `Web and actions` profile for debugging
-- Click on Run, the debugger will stop at the breakpoint and you can inspect your application execution
-
-If the local development is run without the `--local` option, the action you are debugging is running directly on [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html). When the `--local` option is used, the actions are debugged in the standalone OpenWhisk instance running locally. Learn more about what you can do in [debug mode](https://www.npmjs.com/package/@adobe/wskdebug).
+If the local development is run without the `--local` option, the action you are debugging is running directly on [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html). When the `--local` option is used, the actions are debugged in the standalone OpenWhisk instance running locally. In both cases, Docker is required on your local machine so that the remote or locally mounted actions get proxied in the local Docker container. Learn more about what you can do in [debug mode](https://www.npmjs.com/package/@openwhisk/wskdebug).
 
 ### 6.4 Retrieving Logs for the Application
 
