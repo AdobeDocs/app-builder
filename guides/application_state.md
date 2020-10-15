@@ -32,9 +32,9 @@ hello-world:
 
 ### Considerations about security
 
-Many developers use the default params as a mechanism to provision actions with the secrets/passwords needed to authenticate against some other systems (databases, services, APIs).
+For authentication with Adobe APIs, you should leverage [Project Firefly security guideline](https://github.com/AdobeDocs/project-firefly/blob/master/guides/security_overview.md) using our supported SDKs. 
 
-In order to support this use case, all default params are automatically encrypted. They are decrypted just before the action code is executed. Thus, the only time you have access to the decrypted value is while executing the action code.
+For other 3rd party systems and APIs when provisioning actions with the secrets/passwords is a must, you can then use the default params as demonstrated above. In order to support this use case, all default params are automatically encrypted. They are decrypted just before the action code is executed. Thus, the only time you have access to the decrypted value is while executing the action code.
 
 ## State and files persistence at runtime
 
