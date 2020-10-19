@@ -25,9 +25,6 @@ This session will be divided into two halves, starting with a 15-20 minute prese
 
 #### Upcoming Events
 
-October 15, 2020 
-- **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
-- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/zwgbvkhu
 
 November 12, 2020 
 - **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
