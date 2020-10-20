@@ -51,6 +51,12 @@ Here are some of the types of apps that can be built on top of this framework:
 *	Custom integrations between Adobe universe and home-grown solutions or other 3rd-party systems. This can include apps with no UI or apps that have a UI.
 *	Extending Adobe built-in functionality, such as Adobe Experience Manager (AEM) Assets.
 
+## Examples from real-world
+
+* [Building a Real-Time Airline Application Using Adobe Experience Platform, Adobe I/O Runtime and Project Firefly](https://www.netcentric.biz/insights/2020/06/building-an-aep-demo-with-firefly.html?utm_source=linkedin&utm_medium=social_nonpaid&utm_campaign=20_insights&utm_content=link_post&es_id=8e9abf83f6)
+* [How to generate intelligent renditions with AEM as a Cloud Service](https://tech.cognifide.com/blog/2020/how-to-generate-intelligent-renditions-aem-cloud/)
+* [Setting Up Adobe I/O CLI for Cloud Manager](https://medium.com/adobetech/setting-up-adobe-i-o-cli-for-cloud-manager-8820f47e3c94)
+
 ## Where to Go Next
 
 To learn more about Project Firefly, please start by reading the following:

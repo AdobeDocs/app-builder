@@ -1,106 +1,76 @@
 # Setting up Your Environment
 
-During the private beta, please follow the steps below to acquire access and credentials, and to set up your local environment to build your first Project Firefly.
+During Developer Preview, please follow the steps below to acquire access and credentials, and to set up your local environment to build your first Project Firefly.
 
 ## Acquire Access and Credentials
 
-- An Adobe Experience Cloud Organization
+Please first follow instructions in [How to Get Access to Project Firefly](../overview/getting_access.md) to join the Developer Preview program. 
+
+Once you have been added to the program, you will need the following information for kicking off your development work. 
+
+- An Adobe Experience Cloud Organization (required)
     - An Adobe Experience Cloud Org is required if you would like to use APIs from Adobe, access Developer Console, set up a Firefly project, publish custom applications, and/or access published custom applications.
     - As an enterprise customer or partner, you should have access to an Adobe Experience Cloud Org. If you do not have access to an organization:
         - Customers: Please contact your account manager for access.
         - Partners: Please contact your partner manager or request sandbox access via [Adobe Solution Partner Portal](https://solutionpartners.adobe.com/home.html).
-- An Adobe I/O Runtime Namespace
-    - Adobe I/O Runtime is the serverless environment to which your code will be deployed. The credential is also used to get access to out-of-the-box File & State Store and CDN.
-    - If you do not already have one, please [request trial access](https://github.com/AdobeDocs/adobeio-runtime/blob/master/overview/request_a_trial.md).  
-- A GitHub Account
-    - A [GitHub](https://github.com/) account is required for access to React Spectrum.  
+- Access to Adobe Developer Console (required)
+    -  Adobe Developer Console gives you access to APIs, SDKs and developer tools to build on, integrate, and extend Adobe products. You will set up your credentials using the Developer Console. 
+    - You must have developer role or system admin role for an Adobe Experience Cloud organization to access Adobe Developer Console.
+- A GitHub Account (optional)
+    - A [GitHub](https://github.com/) account is optional for setting up your CI/CD workflow. 
 
 ## Local Environment Set Up
 
-Before building your own Custom Application, please make sure you review our [Technical Requirements](technical_requirements.md) documentation.  
+### Required tools
 
-Now that you have your environment set up, you can start building your own custom application.
+These prerequisites should be fulfilled on the developer's machine:
 
-## Bootstrapping an application
+- [NodeJS](https://nodejs.org/en/download/) (v10 to [v12 LTS](https://nodejs.org/en/blog/release/v12.13.0/), odd versions not recommended). It should also install npm together. We recommend using [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md) to manage NodeJS installation and versions on the developer's machine. 
+- [Adobe I/O CLI](https://github.com/adobe/aio-cli)
+    - `npm install -g @adobe/aio-cli`
+    - If you already have Adobe I/O CLI on your local, please ensure you have the latest version of Adobe I/O CLI installed. (Current version: [![Version](https://img.shields.io/npm/v/@adobe/aio-cli.svg)](https://npmjs.org/package/@adobe/aio-cli))
+        - For the Adobe I/O CLI, you can check the version through `aio -v` and compare it with `npm show @adobe/aio-cli version`. If your CLI is outdated, update your CLI by running `npm install -g @adobe/aio-cli`. 
+        - If your Adobe I/O CLI is up to date, you can simply run `aio update` to ensure all core plugins are updated as well.
+        - Other than the checking the version on your CLI, whenever a new version of Adobe I/O CLI is updated, we will inform you on your command line by writing a message like this out before the command output. This message last for 7 days after a new release.
+        ```
+        ›   Warning: @adobe/aio-cli update available from 3.3.0 to 3.4.1.
+        ›   Run npm install -g @adobe/aio-cli to update.
+        ```
+    
+#### Supported Local Environment
+We aim to provide the similar quality of local development experience on both Windows 10 and macOS 10.14 and higher.
+Our [CLI](https://github.com/adobe/aio-cli) and its plugins are automatically tested against NodeJS versions 10 and 12 on both Windows and [Linux Xenial](http://releases.ubuntu.com/16.04/).
 
-In order to create your first application, use the following command:
+#### Supported terminals for the CLI
+Our [CLI](https://github.com/adobe/aio-cli) uses the popular [inquirer](https://www.npmjs.com/package/inquirer) package for all its interactive functionalities, such as the application generators.
 
-```bash
-aio app init <app-name>
+See [inquirer's Support section](https://www.npmjs.com/package/inquirer#support-os-terminals) and [its known issues](https://www.npmjs.com/package/inquirer#know-issues) for up-to-date details.
+
+### Optional tools
+
+The following set up is required if you intend to use the local development features provided by the [CLI](https://github.com/adobe/aio-cli): 
+
+- [Visual Studio Code](https://code.visualstudio.com/download) (VS Code) as the supported IDE for editor, debuggger, etc. You can use any other IDE as a code editor, but advanced usage (e.g. debugger) is not yet supported.
+- [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/overview/index.html) (at least Java 11)
+- [Chrome debugger extension in VSCode](https://github.com/Microsoft/vscode-chrome-debug)
+- [Docker Desktop](https://www.docker.com/get-started)
+
+The following commands must be executed to install the required Docker images:
+
+```
+# NodeJS 10 images
+docker pull openwhisk/action-nodejs-v10:latest
+docker pull adobeapiplatform/adobe-action-nodejs-v10:3.0.21
+
+# NodeJS 12 images
+docker pull openwhisk/action-nodejs-v12:latest
+docker pull adobeapiplatform/adobe-action-nodejs-v12:3.0.22
 ```
 
-You will be prompted with a few questions about how you want your app to have:
+**Note:** Developers on Windows machines should make sure that they are using Linux containers for the images above.
+The steps to switch to Linux containers are described in the [Docker for Windows documentation](https://docs.docker.com/docker-for-windows/).
 
-1. Select app features to enable:
-- **Actions: Deploy Runtime actions:** adding the boilerplate for backend serverless actions on I/O Runtime
-- **Web Assets: Deploy hosted static assets:** adding the boilerplate for frontend react app and static assets
 
-You can select either of the options, or both to have a full app for both back and frontend.
+## Next Step
 
-2. Select one or more sample actions to be generated along with the new app:
-- **Adobe Target**: including dependencies and examples of accessing the Adobe Target API
-- **Adobe Analytics**: including dependencies and examples of accessing the Adobe Analytics API
-- **Adobe Campaign Standard**: including dependencies and examples of accessing the Adobe Campaign Standard (ACS) API
-- **Generic**: a generic application with hello world flow
-
-3. Define the names of sample actions (by keeping the defaults or specifying other names). The new app is then generated, and npm dependencies are getting installed.
-
-4. Open the project in VSCode, by entering the command `code <app-name>`, or opening VSCode -> Open... -> select app folder.
-
-5. Open `.env` file, add your I/O Runtime credentials in the `AIO_RUNTIME_XXX` variables, and uncomment them.
-
-## Main components of the App
-
-- `actions`: backend source code for all serverless actions.
-- `web-src`: frontend source code such as html templates, react components, JS, CSS.
-- `test`: including unit tests and integration tests.
-- `manifest.yml`: definition of I/O Runtime actions being deployed with the app
-- `package.json`: project definition and metadata
-- `.env`: containing environment variables that are useful for the app, e.g. I/O Runtime credentials and Adobe Product API tenant specifics (API key, secrets, etc.)
-- `.aio`: containing config variables that are useful for the AIO CLI to facilitate the app, e.g. authentication strategy (JWT / OAuth)
-
-## Local development
-
-### Running the application
-
-To run the application locally, use the following command:
-
-```bash
-aio app run
-```
-
-This will deploy the actions to Adobe I/O Runtime, while running the UI part on the local machine. The app is accessible on the browser at `https://localhost:9080` (by default, but the port is configurable). There is also an output of the second URL that allows accessing the app running on ExC Shell; but you still need to go to the localhost URL for the first time to approve the self-signed SSL certificate.
-
-To have the application running completely locally, which means the actions run on a local deployment of (standalone) OpenWhisk, add the `--local` flag to the above run command.
-
-### Debugging the application
-
-Make sure that local dev environment is running, either with or without `--local`.
-
-An example debugging flow:
-- Set a breakpoint in your code
-- Go to debugger mode in VSCode
-- Select `Web and actions` profile for debugging
-- Click on Run, the debugger will stop at the breakpoint and you can inspect your app execution
-
-If the local development is run without `--local` flag, you debug the actions running directly on Adobe I/O Runtime. When the `--local` flag is set, the actions are debugged in the standalone OpenWhisk instance running locally. More about this can be found on the [wskdebug docs](https://www.npmjs.com/package/@adobe/wskdebug).
-
-### Getting logs
-
-To see logs of your app, use the command `aio app logs`. By default, only the logs of the latest activation is fetched. If you want to see a more extensive list of logs, use the `--limit` flag to define the number of recent activations to be fetched.
-
-## Publishing the application
-
-Once the application is in a good shape, it could be deployed to a dev environment. This is achievable with a single command.
-
-```bash
-aio app deploy
-```
-
-This will invoke:
-- The actions defined in `manifest.yml` being updated on Adobe I/O Runtime
-- The frontend built files and assets being uploaded to our CDN.
-
-The deployment also outputs 2 URLs of the app, which allow access either to the CDN host or Adobe Experience Cloud (ExC Shell). The URL format of the app on ExC Shell is `https://experience.adobe.com/#/@<your-org-id>/myapps/?localDevUrl=<your-app-url>`.
-
-The app could also be "unpublished" later with `aio app undeploy`.
+Now that you have your environment set up, you can start [creating your own Project Firefly application](first_app.md).
