@@ -1,5 +1,3 @@
-# Resources
-
 ## Code Labs
 
 Adobe I/O CodeLabs provide guided hands-on coding experiences to build awesome apps on top of Project Firefly.
