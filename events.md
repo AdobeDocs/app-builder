@@ -1,6 +1,3 @@
-# Events
-
-## Next Event
 
 ### Just Getting Started?
 
