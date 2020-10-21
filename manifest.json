@@ -171,13 +171,13 @@
     },
     {
       "importedFileName": "events",
-      "path": "https://www.stage.adobe.io/apis/experienceplatform/project-firefly/events.html",
+      "path": "https://adobe.io/apis/experienceplatform/project-firefly/events.html",
       "title": "Events",
       "pages": []
     },
     {
       "importedFileName": "resources",
-      "path": "https://www.stage.adobe.io/apis/experienceplatform/project-firefly/resources.html",
+      "path": "https://adobe.io/apis/experienceplatform/project-firefly/resources.html",
       "title": "Resources",
       "pages": []
     },
