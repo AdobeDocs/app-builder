@@ -1,5 +1,5 @@
 
-### Just Getting Started?
+### Getting Started Series
 
 **Exploring Project Firefly** is a monthly series that aims to explore what’s possible with Project Firefly as well as answer questions from our customers & partners. Join us to learn more about how Project Firefly enables you to build cloud-native applications to empower your employees. You’ll learn about common use cases as well as a peek on how to get started building with Project Firefly. We expect the presentation to last about 30 minutes with time for live Q&A.
 
