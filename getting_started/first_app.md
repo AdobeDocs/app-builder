@@ -142,8 +142,20 @@ Note that you may not see all the options listed below on your command line, bec
     - **Adobe Campaign Standard**: including dependencies and examples of accessing the [Adobe Campaign Standard (ACS) API](https://docs.adobe.com/content/help/en/campaign-standard/using/working-with-apis/get-started-apis.html)
     - **Adobe Experience Platform: Realtime Customer Profile**: including dependencies and examples of accessing the [Realtime Customer Profile API of Adobe Experience Platform](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/real-time-customer-profile.yaml)
     - **Generic**: a generic back-end action with hello world flow that can be reused and modified e.g. for simple serverless computing or 3rd party API integration
+    
+1. If you included `Web Assets` under Adobe I/O App features you will be given two choices. One to include React Spectrum based UI template or a Vanilla HTML/JS one
+    ```
+    ? Which type of UI do you want to add to your project? select template to generate (Use arrow keys)
+    ❯ React Spectrum 3 UI
+      Raw HTML/JS UI
+    ```
+    - The `React Spectrum 3 UI` template will add a React based UI with [React Spectrum](https://react-spectrum.adobe.com/) components included.
+    - The `Raw HTML/JS UI` will add a Valinna HTML/JS/CSS UI with [Spectrum CSS](https://opensource.adobe.com/spectrum-css) styles included.
+    
+    Both the templates comes with boilerplate code needed to integrate your Project Firefly application with [Adobe Experience Cloud](https://github.com/AdobeDocs/project-firefly/blob/master/guides/exc_app/overview.md)
+    
 
-1. We'll ask you to define the name for the instance of each selected sample actions. You can keep the default name or specify your own.
+2. We'll ask you to define the name for the instance of each selected sample actions. You can keep the default name or specify your own.
 
     ```
     ? We are about to create a new sample action that interacts with the Adobe Analytics API
@@ -154,7 +166,7 @@ Note that you may not see all the options listed below on your command line, bec
     how would you like to name this action? (generic) 
     ```
 
-1. Once you complete this select, you should see the build process kicking off with necessary npm dependencies are getting installed.
+3. Once you complete this select, you should see the build process kicking off with necessary npm dependencies are getting installed.
 
     ```
     create package.json
@@ -169,7 +181,7 @@ Note that you may not see all the options listed below on your command line, bec
     ✔ App initialization finished!
     ```
 
-1. Now your project is initialized! Go into the folder you just created, and you can see a number of files generated. 
+4. Now your project is initialized! Go into the folder you just created, and you can see a number of files generated. 
 
     ```
     $ cd helloworld
@@ -178,7 +190,7 @@ Note that you may not see all the options listed below on your command line, bec
     actions			e2e			node_modules		package.json		web-src
     ```
     
-1. Note that you still can add/remove the back-end actions, SPA front-end or Github workflows from your application later by respectively using the `aio app <add|delete> action`, `aio app <add|delete> web-assets` and `aio app <add|delete> ci` commands within your application folder.
+5. Note that you still can add/remove the back-end actions, SPA front-end or Github workflows from your application later by respectively using the `aio app <add|delete> action`, `aio app <add|delete> web-assets` and `aio app <add|delete> ci` commands within your application folder.
     
 ### 4.2 Developer is not Logged in as Enterprise Organization user
 
