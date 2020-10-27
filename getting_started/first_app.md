@@ -348,12 +348,12 @@ When you access `https://localhost:9080`, you should see the sample application 
 
 This simple SPA contains links to documentation and allows you to run your backend actions for tests. To try it, use the selection box to pick the action you'd like to invoke. You can also pass request headers and parameters from the corresponding input fields in the SPA UI.
 
-All actions require an `Authorization` in the header by default. In your project code, if you navigate to `manifest.yml`, you can see that a `require-adobe-auth` annotation is set to `true` for all the sample actions. Having this flag enabled enforces a valid user token be used to invoke this action. We recommend always having this enabled for security reasons. You can learn more about this in our [Security Overview](../guides/security_overview.md).
+All actions require `Authorization` and `x-gw-ims-org-id` in the headers by default. In your project code, if you navigate to `manifest.yml`, you can see that a `require-adobe-auth` annotation is set to `true` for all the sample actions. Having this flag enabled enforces a valid user token be used to invoke this action. We recommend always having this enabled for security reasons. You can learn more about this in our [Security Overview](../guides/security_overview.md).
 
-1. With the `require-adobe-auth` annotation set to `true`, you need to pass in a user token to invoke your action. You can easily retrieve this token from your [CLI](https://github.com/adobe/aio-cli) by typing in `aio login`. 
+1. With the `require-adobe-auth` annotation set to `true`, you need to pass in a user token and organization ID to invoke your action. You can easily retrieve the token from your [CLI](https://github.com/adobe/aio-cli) by typing in `aio login`, and the org ID (look for `some_hash@AdobeOrg`) from the workspace details on [Adobe Developer Console](https://console.adobe.io) or from the URL of [Adobe Admin Console](https://adminconsole.adobe.com) (make sure that you have the correct organization selected in the top right corner). 
 
-1. Copy the returned token and put it into this following format. 
-    ```{"Authorization":"Bearer <token_from_cli>"}```
+1. Put the token and org ID into this following format. 
+    ```{"Authorization":"Bearer <token_from_cli>","x-gw-ims-org-id":"<org-id-from-console>"}```
 1. Go back to your browser, and put the joined value in the `headers` input field. You should now be able to invoke actions that does not require additional params (like `generic`).
 ![Hello World](../images/helloworld-2.png)
 
