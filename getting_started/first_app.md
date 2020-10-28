@@ -350,7 +350,8 @@ This simple SPA contains links to documentation and allows you to run your backe
 
 All actions require `Authorization` and `x-gw-ims-org-id` in the headers by default. In your project code, if you navigate to `manifest.yml`, you can see that a `require-adobe-auth` annotation is set to `true` for all the sample actions. Having this flag enabled enforces a valid user token be used to invoke this action. We recommend always having this enabled for security reasons. You can learn more about this in our [Security Overview](../guides/security_overview.md).
 
-1. With the `require-adobe-auth` annotation set to `true`, you need to pass in a user token and organization ID to invoke your action. You can easily retrieve the token from your [CLI](https://github.com/adobe/aio-cli) by typing in `aio login`, and the org ID (look for `some_hash@AdobeOrg`) from the workspace details on [Adobe Developer Console](https://console.adobe.io) or from the URL of [Adobe Admin Console](https://adminconsole.adobe.com) (make sure that you have the correct organization selected in the top right corner). 
+1. With the `require-adobe-auth` annotation set to `true`, you need to pass in a valid user token and corresponding organization ID to invoke your action. You can easily retrieve the token from your [CLI](https://github.com/adobe/aio-cli) by typing in `aio login`, and the org ID (look for `some_hash@AdobeOrg`) from the workspace details on [Adobe Developer Console](https://console.adobe.io) or from the URL of [Adobe Admin Console](https://adminconsole.adobe.com) (make sure that you have the correct organization selected in the top right corner). 
+You can also list all the organizations you belong to and their org ID from your [CLI](https://github.com/adobe/aio-cli) by typing in `aio console org list`.
 
 1. Put the token and org ID into this following format. 
     ```{"Authorization":"Bearer <token_from_cli>","x-gw-ims-org-id":"<org-id-from-console>"}```
