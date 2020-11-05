@@ -30,9 +30,11 @@ Local deployment capabilities are offered to developers who want to test and deb
 
 #### Use-Case
 
-This local deployment feature is useful for developers who want to easily get an initial preview of their Custom Application before deploying it to [Runtime](https://github.com/AdobeDocs/adobeio-runtime) and to the out-of-the-box Content Delivery Network. They will also benefit from local [Runtime](https://github.com/AdobeDocs/adobeio-runtime) actions and UI debugging capabilities.
+This local deployment feature is useful for developers who want to easily get an initial preview of their Custom Application before deploying it to [Runtime](https://github.com/AdobeDocs/adobeio-runtime) and to the out-of-the-box Content Delivery Network. They will also benefit from local [Runtime](https://github.com/AdobeDocs/adobeio-runtime) actions and UI debugging capabilities. 
 
-It also helps developers who want to work on their Custom Application implementation without an appropriate Internet connection. However, the tradeoff will be that the developers will not be able to run code that uses [Files](https://github.com/adobe/aio-lib-files) or [State](https://github.com/adobe/aio-lib-state) SDKs, as well as [cron jobs scheduler with Alarms package](https://adobeio-codelabs-alarms-adobedocs.project-helix.page/). Those are only available if the actions are deployed to [Runtime](https://github.com/AdobeDocs/adobeio-runtime).
+It also helps developers who want to work on their Custom Application implementation without an appropriate Internet connection. Of course, in that case you are not able to interact with [Adobe APIs](https://www.adobe.io/apis.html) or with remote 3rd party systems.
+
+The tradeoff is that developers will not be able to run code that uses [Files](https://github.com/adobe/aio-lib-files) or [State](https://github.com/adobe/aio-lib-state) SDKs, [cron jobs scheduler with Alarms package](https://adobeio-codelabs-alarms-adobedocs.project-helix.page/), as well as exposing web actions as webhooks for [I/O Events](https://www.adobe.io/apis/experienceplatform/events.html) or external events providers. These are only available if the actions are deployed to [Runtime](https://github.com/AdobeDocs/adobeio-runtime).
 
 This deployment scenario doesn't require any specific credentials, as both [Runtime](https://github.com/AdobeDocs/adobeio-runtime) actions and application UI are hosted on the developer's machine.
 
