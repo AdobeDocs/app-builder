@@ -44,3 +44,9 @@ For authentication and authorization checks, the back-end actions of an SPA are 
 On the other hand, the actions of a headless app can be validated against a valid user token from ExC Shell or a valid access token generated with the [JWT (Service Account) Authentication](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md). Please go through the [Firefly Security Overview](../guides/security_overview.md) for more details about SPA vs. headless app authentication. 
 
 If you are developing a headless app but accidentally have the `web-src/` folder added during the app initialization process, you could remove it by executing the command `aio app delete web-assets` at the root of your application source code folder. This will also assure that your actions are validated against the appropriate JWT auth.
+
+## Debugging errors with State and Files SDK
+
+If you code uses Project Firefly [State](https://github.com/adobe/aio-lib-state) or [Files](https://github.com/adobe/aio-lib-files) SDK, you can not use [wskdebug](https://github.com/apache/openwhisk-wskdebug) to debug it. The reason is that `wskdebug` forwards the debugged action from the I/O Runtime system to a local container on your machine and executes it there. This local container is not authorized to access the cloud storage behind State and Files SDKs, as in the case of deployed action in I/O Runtime.
+
+*Note: This is not a problem if you configure the State or Files SDK to connect to your own cloud storage (e.g. Cosmos DB).*
