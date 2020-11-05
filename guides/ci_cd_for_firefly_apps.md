@@ -15,7 +15,7 @@ The entitled organization users will also be allowed to create as many additiona
 
 ![High-Level CI/CD architecture](../images/high-level-ci-cd-architecture.png)
 
-## Application Development
+## Local Application Development
 
 In your project, there could be several developers working on the same application code. They may clone the code from the same branch, or create different branches for new features, but the deployments should all be different so that they do not interfere each other. Each developer is able to use individual workspaces described above to create their own deployment. 
 
