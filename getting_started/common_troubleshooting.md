@@ -49,4 +49,4 @@ If you are developing a headless app but accidentally have the `web-src/` folder
 
 If your code uses Project Firefly [State](https://github.com/adobe/aio-lib-state) or [Files](https://github.com/adobe/aio-lib-files) SDKs, you cannot use [wskdebug](https://github.com/apache/openwhisk-wskdebug) to debug it. The reason is that `wskdebug` forwards the debugged action from the I/O Runtime system to a local container on your machine and executes it there. This local container is not authorized to access the out-of-the-box cloud storage behind State and Files SDKs, as this would be the case with an action deployed to I/O Runtime.
 
-*Note: This is not a problem if you configure the State or Files SDK to connect to your own cloud storage (e.g. Cosmos DB).*
+*Note: This is not a problem if you configure the State or Files SDKs to connect to your own cloud storage (e.g. Cosmos DB).*
