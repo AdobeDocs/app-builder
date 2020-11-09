@@ -11,7 +11,47 @@ You can try it out directly at
 
 You can also get started through the CLI by ```aio app init```, and selecting one of the templates to generate project scaffolding automatically. 
 
-While the current implementation focuses on API wrapping, we are looking to add business abstraction layers in the future. 
+While the current implementation focuses on API wrapping, we are looking to add business abstraction layers in the future.
+
+## Client SDK Initialization
+
+In order to initialize the client SDK, you need to provide the API key and access token as mandatory params. Additionally, some APIs require a tenant name (Analytics, Campaign Standard, Target) or org ID (Audience Manager) or both (AEP Customer Profile). Below is an example of AEP Customer Profile.
+
+```javascript
+const client = await CustomerProfile.init(params.tenant, orgId, params.apiKey, token)
+```
+
+Among these parameters, `orgId` and `token` can be obtained from the request headers (more about that in [Security Overview](./security_overview.md)). For `token` specifically we provide the `getBearerToken(params)` method in the auto-generated utilities under `actions/utils.js`.
+
+```javascript
+const token = getBearerToken(params)
+const orgId = params.__ow_headers['x-gw-ims-org-id']
+```
+
+The other two params `tenant` and `apiKey` have to be passed as default parameters ([more details](./application_state.md#default-parameters)). Particularly, you would set the real values as environment variables in the `.env` file that are mapped to the action default params in the `manifest.yml` file. Below are sample snippets taken from these files.
+
+```bash
+# in .env
+SERVICE_API_KEY=your_api_key
+CUSTOMER_PROFILE_TENANT=your_tenant_name
+```
+
+```yaml
+# in manifest.yml
+customer-profile:
+  function: actions/customer-profile/index.js
+  web: 'yes'
+  runtime: 'nodejs:12'
+  inputs:
+    LOG_LEVEL: debug
+    tenant: $CUSTOMER_PROFILE_TENANT
+    apiKey: $SERVICE_API_KEY
+  annotations:
+    require-adobe-auth: true
+    final: true
+```
+
+Please note that, most of the above steps are already taken care of after actions are created from the app template with `aio app init` or `aio app add action` commands, supposing your project is properly set up with the relevant API services. All you need to do are setting the value of tenant (if required) and customize the action code for your needs.
 
 ## Adobe Analytics API 1.4
 
