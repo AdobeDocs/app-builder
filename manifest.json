@@ -176,9 +176,25 @@
       "pages": []
     },
     {
+      "hideNavMenu": true,
+      "description": "Page to avoid 404's coming from old links to this modified events page",
+      "importedFileName": "events-old",
+      "path": "AdobeDocs/project-firefly/master/events.md",
+      "title": "Events old",
+      "pages": []
+    },
+    {
       "importedFileName": "resources",
       "path": "https://adobe.io/apis/experienceplatform/project-firefly/resources.html",
       "title": "Resources",
+      "pages": []
+    },
+    {
+      "hideNavMenu": true,
+      "description": "Page to avoid 404's coming from old links to this modified resource page",
+      "importedFileName": "resources-old",
+      "path": "AdobeDocs/project-firefly/master/resources.md",
+      "title": "Resources old",
       "pages": []
     },
     {
