@@ -15,6 +15,18 @@ The entitled organization users will also be allowed to create as many additiona
 
 ![High-Level CI/CD architecture](../images/high-level-ci-cd-architecture.png)
 
+## Local Application Development
+
+In your project, there could be several developers working on the same application code. They may clone the code from the same branch, or create different branches for new features, but the deployments should all be different so that they do not interfere each other. Each developer is able to use individual workspaces described above to create their own deployment. 
+
+The pre-requisites are, application code already cloned to the local machine, and the workspace config JSON file that is downloaded from Adobe Developer Console. Then in the terminal, navigate to the home directory of the application code and run this command:
+
+```bash
+aio app use path/to/workspace.json
+```
+
+You can then check if the workspace is set up for the app by verifying the `.aio` and `.env` files, which contain the target workspace details.
+
 ## GitHub Actions Support
 A sample CI/CD workflow is provided out-of-the-box on top of [GitHub Actions](https://github.com/features/actions).
 Upon bootstrapping of a new Project Firefly Application from the [CLI](https://github.com/adobe/aio-cli) by using the `aio app init` command, the application generator asks the developer whether to `include GitHub Actions based workflows for Build, Test and Deploy`.

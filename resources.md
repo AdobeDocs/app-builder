@@ -17,7 +17,7 @@ You are invited to create your own public Adobe I/O CodeLab, just follow [these 
 
 ## Sample Apps
 
-Sample Adobe custom web applications built using Project Firefly.
+We provide a [collection of basic code snippets](https://github.com/AdobeDocs/adobeio-samples-firefly-basics) to get you started. Furthermore, below are more complete sample applications built using Project Firefly.
 
 * [Customer Profiles Dashboard](https://github.com/AdobeDocs/adobeio-samples-customers-dashboard)
 * [Barcode Generator](https://github.com/AdobeDocs/adobeio-samples-barcode-generator)
@@ -42,5 +42,6 @@ Sample Adobe custom web applications built using Project Firefly.
 * [Introducing Project Firefly: Everything You Need to Build a Custom Cloud App to Meet Business Needs](https://medium.com/adobetech/project-firefly-build-custom-cloud-native-adobe-apps-54d157adb473)
 * [Why Your Enterprise Needs Project Firefly](https://medium.com/adobetech/why-your-enterprise-needs-project-firefly-9c2f2469a5f2)
 * [Project Firefly How-To — Projects and Workspaces](https://medium.com/adobetech/project-firefly-how-to-projects-and-workspaces-9738d31338e7)
+* [Project Firefly October Update: New Action and UI Templates and Storage Service Enhancements](https://medium.com/adobetech/project-firefly-update-october-2020-action-ui-templates-presigned-urls-ttl-settings-7394fa019d25)
 
 
