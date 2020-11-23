@@ -9,6 +9,7 @@ Follow our codelabs at:
 * [Build a Customer Dashboard with Project Firefly and Adobe Campaign Standard API](https://adobeio-codelabs-campaign-standard-adobedocs.project-helix.page/)
 * [Firefly Headless App](https://adobeio-codelabs-barcode-adobedocs.project-helix.page/)
 * [Introduction to Spectrum and UI Frameworks](https://adobeio-codelabs-spectrum-intro-adobedocs.project-helix.page/)
+* [Event-driven Firefly Apps](https://adobeio-codelabs-custom-events-adobedocs.project-helix.page/)
 
 And more codelabs contributed by the Firefly community:
 * [Building Custom Asset Compute Worker](https://adobeio-asset-compute-labs-cognifide.project-helix.page/) by [Cognifide](https://www.cognifide.com)
