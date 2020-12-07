@@ -4,13 +4,13 @@
 Project Firefly applications created with [our CLI](https://github.com/adobe/aio-cli) are inherently npm packages.
 This means they support many of the npm conveniences node developers expect.
 
-package.json may include the following scripts which are triggered at various times while an app is being built, deployed and/or run.
+`package.json` may include the following scripts which are triggered at various times while an app is being built, deployed and/or run.
 
 ## Sample hooks configuration
 
 For example, pre and post hooks can be defined for the `run`, `build` and `deploy` operations in the package.json file of your app as follows:
 
-```
+```json
   "scripts": {
     "pre-app-run": "echo pre-app-run",
     "post-app-run": "echo post-app-run",
@@ -18,6 +18,16 @@ For example, pre and post hooks can be defined for the `run`, `build` and `deplo
     "post-app-build": "echo post-app-build",
     "pre-app-deploy": "echo pre-app-deploy",
     "post-app-deploy": "echo post-app-deploy"
+  }
+  ```
+
+  You can also substitute the scripts for building and deploying actions and the web assets by using your own scripts:
+  ```json
+  "scripts": {
+    "build-actions": "echo build-actions",
+    "build-static": "echo build-static",
+    "deploy-actions": "echo deploy-actions",
+    "deploy-static": "echo deploy-static",
   }
   ```
 
