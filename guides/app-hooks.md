@@ -8,12 +8,27 @@ This means they support many of the npm conveniences node developers expect.
 
 ## Sample hooks configuration
 
-For example, pre and post hooks can be defined for the `run`, `build` and `deploy` operations in the package.json file of your app as follows:
+For example, pre and post hooks can be defined for the `run`, `build` and `deploy` operations in the package.json file of your app.
 
+`aio app run` supports:
 ```json
   "scripts": {
     "pre-app-run": "echo pre-app-run",
     "post-app-run": "echo post-app-run",
+  }
+  ```
+
+`aio app build` supports:
+```json
+  "scripts": {
+    "pre-app-build": "echo pre-app-build",
+    "post-app-build": "echo post-app-build",
+  }
+  ```
+
+`aio app deploy` supports:
+```json
+  "scripts": {
     "pre-app-build": "echo pre-app-build",
     "post-app-build": "echo post-app-build",
     "pre-app-deploy": "echo pre-app-deploy",
@@ -21,7 +36,17 @@ For example, pre and post hooks can be defined for the `run`, `build` and `deplo
   }
   ```
 
-  You can also substitute the scripts for building and deploying actions and the web assets by using your own scripts:
+  You can also substitute the scripts for building and deploying actions and the web assets by using your own scripts.
+
+  `aio app build` supports:
+  ```json
+  "scripts": {
+    "build-actions": "echo build-actions",
+    "build-static": "echo build-static",
+  }
+  ```
+
+  `aio app deploy` supports:
   ```json
   "scripts": {
     "build-actions": "echo build-actions",
@@ -31,9 +56,12 @@ For example, pre and post hooks can be defined for the `run`, `build` and `deplo
   }
   ```
 
+
 ## Sample hooks flow
 
-The following diagram illustrates how your custom hooks will be executed within the application build and deploy operations which are triggered from the `aio app deploy` command:
+The following diagram illustrates how your custom hooks will be executed within the application build and deploy operations which are triggered from the `aio app build` and `aio app deploy` commands:
+
+![aio-app-build lifecycle](../images/aio-app-build.png)
 
 ![aio-app-deploy lifecycle](../images/aio-app-deploy.png)
 
