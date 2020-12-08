@@ -59,7 +59,9 @@ For example, pre and post hooks can be defined for the `run`, `build` and `deplo
 
 ## Sample hooks flow
 
-The following diagram illustrates how your custom hooks will be executed within the application build and deploy operations which are triggered from the `aio app build` and `aio app deploy` commands:
+The following diagram illustrates how your custom hooks will be executed within the application via the various commands:
+
+![aio-app-run lifecycle](../images/aio-app-run.png)
 
 ![aio-app-build lifecycle](../images/aio-app-build.png)
 
