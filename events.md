@@ -5,11 +5,7 @@
 
 #### Upcoming Events
 
-October 29, 2020 
-- **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
-- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/zwgbvkhu
-
-December 3, 2020 
+January 14, 2021
 - **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
 - **Join Event:** https://primetime.bluejeans.com/a2m/live-event/fpywqcku
 
@@ -23,11 +19,11 @@ This session will be divided into two halves, starting with a 15-20 minute prese
 #### Upcoming Events
 
 
-November 12, 2020 
-- **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
-- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/zwgbvkhu
-
 December 17, 2020 
+- **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
+- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/fpywqcku
+
+January 28, 2021
 - **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
 - **Join Event:** https://primetime.bluejeans.com/a2m/live-event/fpywqcku
 
