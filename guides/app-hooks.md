@@ -8,7 +8,7 @@ This means they support many of the npm conveniences node developers expect.
 
 ## Sample hooks configuration
 
-For example, pre and post hooks can be defined for the `run`, `build` and `deploy` command in the package.json file of your app. For the `build` and `deploy` commands, you can specify build and deploy script substitutes as well.
+For example, pre and post hooks can be defined for the `run`, `build` and `deploy` commands in the package.json file of your app. For the `build` and `deploy` commands, you can specify build and deploy script substitutes as well.
 
 `aio app run` supports:
 ```json
