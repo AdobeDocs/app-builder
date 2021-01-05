@@ -6,23 +6,23 @@
 #### Upcoming Events
 
 January 14, 2021
-- **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
+- **Time:** 09:00 - 10:00 PT / 17:00 - 18:00 GMT
 - **Join Event:** https://primetime.bluejeans.com/a2m/live-event/dersrzsx
 
 February 11, 2021
-- **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
+- **Time:** 09:00 - 10:00 PT / 17:00 - 18:00 GMT
 - **Join Event:** https://primetime.bluejeans.com/a2m/live-event/dersrzsx
 
 March 11, 2021
-- **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
+- **Time:** 09:00 - 10:00 PT / 17:00 - 18:00 GMT
 - **Join Event:** https://primetime.bluejeans.com/a2m/live-event/dersrzsx
 
 April 08, 2021
-- **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
+- **Time:** 09:00 - 10:00 PT / 17:00 - 18:00 GMT
 - **Join Event:** https://primetime.bluejeans.com/a2m/live-event/dersrzsx
 
 May 06, 2021
-- **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
+- **Time:** 09:00 - 10:00 PT / 17:00 - 18:00 GMT
 - **Join Event:** https://primetime.bluejeans.com/a2m/live-event/dersrzsx
 
 ### Stay Informed!
@@ -34,28 +34,25 @@ This session will be divided into two halves, starting with a 15-20 minute prese
 #### Upcoming Events
 
 
-December 17, 2020 
-- **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
-- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/fpywqcku
 
 January 28, 2021
-- **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
+- **Time:** 09:00 - 10:00 PT / 17:00 - 18:00 GMT
 - **Join Event:** https://primetime.bluejeans.com/a2m/live-event/dersrzsx
 
 February 25, 2021
-- **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
+- **Time:** 09:00 - 10:00 PT / 17:00 - 18:00 GMT
 - **Join Event:** https://primetime.bluejeans.com/a2m/live-event/dersrzsx
 
 March 25, 2021
-- **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
+- **Time:** 09:00 - 10:00 PT / 17:00 - 18:00 GMT
 - **Join Event:** https://primetime.bluejeans.com/a2m/live-event/dersrzsx
 
 April 22, 2021
-- **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
+- **Time:** 09:00 - 10:00 PT / 17:00 - 18:00 GMT
 - **Join Event:** https://primetime.bluejeans.com/a2m/live-event/dersrzsx
 
 March 20, 2021
-- **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
+- **Time:** 09:00 - 10:00 PT / 17:00 - 18:00 GMT
 - **Join Event:** https://primetime.bluejeans.com/a2m/live-event/dersrzsx
 
 
