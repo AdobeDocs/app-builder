@@ -99,7 +99,7 @@ packages:
         web: 'yes'
 ```
 
-The first action of the sequence is an out-of-the-box shared action that binds in the Runtime namespace of the application. It extracts from the incoming request all the data that is required to authenticate and authorize the calling client.
+The first action of the sequence is an out-of-the-box shared action. It extracts from the incoming request all the data that is required to authenticate and authorize the calling client.
 This data is passed to an out-of-the-box service, which performs the necessary validation against Adobe IMS and Adobe Exchange. The custom action invocation will be chained if and only if the validation is successful, as highlighted on the sequence diagram below:
 
 ![Validator Architecture](../images/security-validator-detailed-sequence-diagram.png)
