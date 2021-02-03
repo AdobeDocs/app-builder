@@ -8,13 +8,21 @@ This means they support many of the npm conveniences node developers expect.
 
 ## Sample hooks configuration
 
-For example, pre and post hooks can be defined for the `run`, `build` and `deploy` commands in the package.json file of your app. For the `build` and `deploy` commands, you can specify build and deploy script substitutes as well.
+For example, pre and post hooks can be defined for the `run`, `build` and `deploy` commands in the package.json file of your app. For the `run`, `build` and `deploy` commands, you can specify build and deploy script substitutes as well. For the `run` command, you can specify an additional `serve-static` script (to custom serve your web assets).
 
 `aio app run` supports:
 ```json
   "scripts": {
     "pre-app-run": "echo pre-app-run",
-    "post-app-run": "echo post-app-run"
+    "post-app-run": "echo post-app-run",
+    "pre-app-build": "echo pre-app-build",
+    "post-app-build": "echo post-app-build",
+    "pre-app-deploy": "echo pre-app-deploy",
+    "post-app-deploy": "echo post-app-deploy",
+    "build-actions": "echo build-actions",
+    "deploy-actions": "echo deploy-actions",
+    "build-static": "echo build-static",
+    "serve-static": "echo serve-static"
   }
   ```
 
@@ -44,7 +52,7 @@ For example, pre and post hooks can be defined for the `run`, `build` and `deplo
 
 ## Use cases
 
-`aio app run` **pre-app-run** and **post-app-run** hooks:
+`aio app run` hooks:
 - manage additional local development tooling that is not managed by the out-of-the-box flow
 
 `aio app build` **build-static** and **build-actions** hooks:
