@@ -7,15 +7,6 @@ This session will be divided into two halves, starting with a 15-20 minute prese
 
 #### Upcoming Events
 
-January 28, 2021
-- **Topic:** Debugging
-- **Time:** 09:00 - 10:00 PT / 17:00 - 18:00 GMT
-- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/dersrzsx
-
-February 18, 2021
-- **Topic:** Custom Events
-- **Time:** 09:00 - 10:00 PT / 17:00 - 18:00 GMT
-- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/dersrzsx
 
 March 11, 2021
 - **Topic:** TBD
