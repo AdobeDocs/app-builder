@@ -9,17 +9,27 @@ This session will be divided into two halves, starting with a 15-20 minute prese
 
 
 March 11, 2021
-- **Topic:** TBD
+- **Topic:** Firefly Case Study
 - **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
 - **Join Event:** https://primetime.bluejeans.com/a2m/live-event/dersrzsx
 
 April 1, 2021
-- **Topic:** TBD
+- **Topic:** CI/CD
 - **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
 - **Join Event:** https://primetime.bluejeans.com/a2m/live-event/dersrzsx
 
 April 22, 2021
-- **Topic:** TBD
+- **Topic:** Firefly Case Study
+- **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
+- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/dersrzsx
+
+May 13, 2021
+- **Topic:** Firefly Updates from Adobe Summit
+- **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
+- **Join Event:** https://primetime.bluejeans.com/a2m/live-event/dersrzsx
+
+June 3, 2021
+- **Topic:** Securing Firefly Apps
 - **Time:** 09:00 - 10:00 PT / 16:00 - 17:00 GMT
 - **Join Event:** https://primetime.bluejeans.com/a2m/live-event/dersrzsx
 
