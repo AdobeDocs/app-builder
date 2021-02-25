@@ -22,7 +22,11 @@ For example, pre and post hooks can be defined for the `run`, `build` and `deplo
     "build-actions": "echo build-actions",
     "deploy-actions": "echo deploy-actions",
     "build-static": "echo build-static",
-    "serve-static": "echo serve-static"
+    "serve-static": "echo serve-static",
+    "pre-app-undeploy": "echo pre-app-undeploy",
+    "post-app-undeploy": "echo post-app-undeploy",
+    "undeploy-actions": "echo undeploy-actions",
+    "undeploy-static": "echo undeploy-static"
   }
   ```
 
@@ -50,6 +54,16 @@ For example, pre and post hooks can be defined for the `run`, `build` and `deplo
   }
   ```
 
+`aio app undeploy` supports:
+```json
+  "scripts": {
+    "pre-app-undeploy": "echo pre-app-undeploy",
+    "post-app-undeploy": "echo post-app-undeploy",
+    "undeploy-actions": "echo undeploy-actions",
+    "undeploy-static": "echo undeploy-static"
+  }
+  ```
+
 ## Use cases
 
 `aio app run` hooks:
@@ -62,6 +76,9 @@ For example, pre and post hooks can be defined for the `run`, `build` and `deplo
 `aio app deploy` **deploy-static** and **deploy-actions** hooks:
 - support additional deployment steps (e.g. deploy to multiple servers or locations)
 
+`aio app undeploy` **undeploy-static** and **undeploy-actions** hooks:
+- support additional un-deployment steps (e.g. un-deploy from multiple servers or locations)
+
 ## Hooks flow
 
 The following diagram illustrates how your custom hooks will be executed within the application via the various commands:
@@ -71,6 +88,8 @@ The following diagram illustrates how your custom hooks will be executed within 
 ![aio-app-build lifecycle](../images/aio-app-build.png)
 
 ![aio-app-deploy lifecycle](../images/aio-app-deploy.png)
+
+![aio-app-undeploy lifecycle](../images/aio-app-undeploy.png)
 
 # npm script hooks
 
