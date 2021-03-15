@@ -25,7 +25,7 @@ The three main components of Project Firefly apps are:
 - [Javascript-based SDK](https://github.com/adobe/aio-sdk) and serverless actions, sequences, and APIs deployed to [Runtime](https://github.com/AdobeDocs/adobeio-runtime).
 - [React-Spectrum](https://react-spectrum.adobe.com/), Adobe's front-end framework which applies Adobe's Design System to React-based components.
 
-![JAMStack Architecture](../images/jamstack-anatomy-application-edited.png)
+![JAMStack Architecture](../images/jamstack-anatomy-application-march2021.png)
 
 ## SDK Components
 
