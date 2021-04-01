@@ -3,6 +3,8 @@
 Adobe I/O CodeLabs provide guided hands-on coding experiences to build awesome apps on top of Project Firefly.
 
 Follow our codelabs at:
+* [Building a Todo App with Firefly State SDK and React Spectrum](https://adobeio-codelabs-react-spectrum-crud-adobedocs.hlx.page/)
+* [Consuming events with Journaling API](https://adobeio-codelabs-journaling-events-adobedocs.hlx.page/)
 * [Scheduling Cron Jobs](https://adobeio-codelabs-alarms-adobedocs.project-helix.page/)
 * [Debugging a Firefly App](https://adobeio-codelabs-debugging-adobedocs.project-helix.page/)
 * [CI/CD within Firefly](https://adobeio-codelabs-ci-cd-adobedocs.project-helix.page/)
@@ -24,6 +26,7 @@ We provide a [collection of basic code snippets](https://github.com/AdobeDocs/ad
 * [Barcode Generator](https://github.com/AdobeDocs/adobeio-samples-barcode-generator)
 * [Throttled Queue Processing](https://github.com/AdobeDocs/adobeio-samples-throttled-processing)
 * [Custom Assets Compute Worker for AEM using Photoshop API](https://github.com/AdobeDocs/adobeio-samples-assets-compute-photoshop)
+* [Todo App with React Spectrum](https://github.com/AdobeDocs/adobeio-samples-todoapp)
 
 ## Videos
 
