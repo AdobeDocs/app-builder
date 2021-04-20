@@ -1,2 +1,8 @@
+# gatsby files
+.cache
+public
+node_modules
 
-.idea/*
+yarn-error.log
+.editorconfig
+.env

@@ -2,9 +2,7 @@
 # Project Firefly application tooling lifecycle event hooks
 
 Project Firefly applications created with [our CLI](https://github.com/adobe/aio-cli) are inherently npm packages.
-This means they support many of the npm conveniences node developers expect.
-
-`package.json` may include the following scripts which are triggered at various times while an app is being built, deployed and/or run.
+This means they support many of the npm conveniences node developers expect. `package.json` may include the following scripts which are triggered at various times while an app is being built, deployed and/or run.
 
 ## Sample hooks configuration
 

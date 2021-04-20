@@ -1,8 +1,6 @@
 # Contributing
 
-Thanks for choosing to contribute!
-
-The following are a set of guidelines to follow when contributing to this project.
+Thanks for choosing to contribute! The following are a set of guidelines to follow when contributing to this project.
 
 ## Code Of Conduct
 

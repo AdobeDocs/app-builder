@@ -1,4 +1,8 @@
+<Hero slots="heading"/>
+
 # Support
+
+## Developer support
 
 For developer support type of requests, we encourage developers to use our [forum](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly). 
 

@@ -6,35 +6,35 @@ This documentation provides an overview of Project Firefly as well as guides, re
 
 ### [Overview](overview.md)
 
-* [What is Project Firefly](overview/what_is.md)
-* [How to Get Access to Project Firefly](overview/getting_access.md)
-* [Project Firefly and Adobe I/O Runtime](overview/firefly_and_runtime.md)
+* [What is Project Firefly](src/pages/documentation/index.md)
+* [How to Get Access to Project Firefly](src/pages/documentation/overview/getting_access.md)
+* [Project Firefly and Adobe I/O Runtime](src/pages/documentation/overview/firefly_and_runtime.md)
 
 ### [Getting Started](getting_started.md)
 
-* [Setting up Your Environment](getting_started/setup.md)
-* [Creating your First Project Firefly Application](getting_started/first_app.md)
-* [Publishing Your First Project Firefly Application](getting_started/publish_app.md)
-* [Troubleshooting the most common issues](getting_started/common_troubleshooting.md)
+* [Setting up Your Environment](src/pages/documentation/getting_started/index.md)
+* [Creating your First Project Firefly Application](src/pages/documentation/getting_started/first_app.md)
+* [Publishing Your First Project Firefly Application](src/pages/documentation/getting_started/publish_app.md)
+* [Troubleshooting the most common issues](src/pages/documentation/getting_started/common_troubleshooting.md)
 
 ### [Guides](guides.md)
 
-* [Architecture Overview](guides/architecture_overview.md)
-* [Security Overview](guides/security_overview.md)
-* [Integration Guide with Adobe Experience Cloud](guides/exc_app/overview.md)
+* [Architecture Overview](src/pages/documentation/guides/index.md)
+* [Security Overview](src/pages/documentation/guides/security_overview.md)
+* [Integration Guide with Adobe Experience Cloud](src/pages/documentation/guides/exc_app/overview.md)
 * [Integration Guide for building Event-driven Applications with I/O Events](https://www.adobe.io/apis/experienceplatform/events/docs.html#!adobedocs/adobeio-events/master/intro/webhook_docs_intro.md)
 * [Custom Events Overview](https://www.adobe.io/apis/experienceplatform/events/docs.html#!adobedocs/adobeio-events/master/custom_events.md)
-* [Understanding Authentication](guides/understanding_authentication.md)
-* [Dealing with Application State](guides/application_state.md)
-* [Introduction to React Spectrum](guides/introduction_to_react_spectrum.md)
-* [Using Client SDKs for Accessing Adobe APIs](guides/using_sdks.md)
-* [Deployment Overview](guides/deployment.md)
-* [CI/CD for Firefly Applications](guides/ci_cd_for_firefly_apps.md)
-* [Managing Application Logs](guides/application_logging.md)
-* [Extending the CLI App Plugin Commands](guides/app-hooks.md)
-* [Tips and Tricks for optimizing Your Project Firefly Apps](guides/tips_tricks.md)
+* [Understanding Authentication](src/pages/documentation/guides/understanding_authentication.md)
+* [Dealing with Application State](src/pages/documentation/guides/application_state.md)
+* [Introduction to React Spectrum](src/pages/documentation/guides/introduction_to_react_spectrum.md)
+* [Using Client SDKs for Accessing Adobe APIs](src/pages/documentation/guides/using_sdks.md)
+* [Deployment Overview](src/pages/documentation/guides/deployment.md)
+* [CI/CD for Firefly Applications](src/pages/documentation/guides/ci_cd_for_firefly_apps.md)
+* [Managing Application Logs](src/pages/documentation/guides/application_logging.md)
+* [Extending the CLI App Plugin Commands](src/pages/documentation/guides/app-hooks.md)
+* [Tips and Tricks for optimizing Your Project Firefly Apps](src/pages/documentation/guides/tips_tricks.md)
 
-### [Reference Documentation](reference_documentation.md)
+### [Reference Documentation](src/pages/reference_documentation.md)
 
 * [Adobe Developer Console](https://www.adobe.io/apis/experienceplatform/console/docs.html)
 * [Adobe CLI](https://github.com/adobe/aio-cli)
@@ -63,12 +63,12 @@ This documentation provides an overview of Project Firefly as well as guides, re
     * [Github Action to use the CLI](https://github.com/adobe/aio-apps-action)
     * [Github workflow generator for Project Firefly Apps](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows)
 
-### [Contribution Guides](contribution_guides.md)
+### [Contribution Guides](src/pages/documentation/contribution_guides.md)
 
-### [Events](events.md)
+### [Events](src/pages/events.md)
 
-### [Resources](resources.md)
+### [Resources](src/pages/resources.md)
 
-### [FAQ](faq.md)
+### [FAQ](src/pages/documentation/faq.md)
 
-### [Support](support.md)
+### [Support](src/pages/support.md)

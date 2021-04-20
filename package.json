@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "project-firefly",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdobeDocs/project-firefly"
+  },
+  "dependencies": {
+    "@adobe/gatsby-theme-aio": "^3.1.8",
+    "gatsby": "^3.0.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "scripts": {
+    "start": "gatsby build && gatsby serve",
+    "start:prefix": "gatsby build --prefix-paths && gatsby serve --prefix-paths",
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "build:incremental": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  }
+}

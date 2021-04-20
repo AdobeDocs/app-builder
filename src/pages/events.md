@@ -1,11 +1,14 @@
+<Hero slots="heading"/>
 
-### Stay Informed!
+# Events
+
+## Stay Informed!
 
 **Project Firefly Update and Office Hour** is a regular series for customers who are actively using Project Firefly and who would like to stay informed on new features and technical tips. 
 
 This session will be divided into two halves, starting with a 15-20 minute presentation on new features of Project Firefly, sample use cases, technology exploration. The remaining time will be dedicated as office hour where participants can bring their questions for us to answer.
 
-#### Upcoming Events
+### Upcoming Events
 
 April 7, 2021
 - **Topic:** Project Firefly Office Hours: CI/CD

@@ -1,10 +1,8 @@
 # Deployment Overview
 
-The [CLI](https://github.com/adobe/aio-cli) provides out-of-the-box features for developers to manage the lifecycle of their  Project Firefly Applications.
+The [CLI](https://github.com/adobe/aio-cli) provides out-of-the-box features for developers to manage the lifecycle of their  Project Firefly Applications. This documentation focuses on the application deployment step of this lifecycle.
 
-This documentation focuses on the application deployment step of this lifecycle.
-
-# Setup Assumptions
+## Setup Assumptions
 
 In the following chapters of this documentation, it will be assumed that:
 
@@ -17,8 +15,6 @@ In the following chapters of this documentation, it will be assumed that:
 If you do not own a [Runtime](https://github.com/AdobeDocs/adobeio-runtime) namespace, please [request trial access]().
 
 The [Setup Requirements](../getting_started/setup.md) documentation should also be checked before trying out the deployment scenarios described below.
-
-# Deployment Scenarios
 
 The [CLI](https://github.com/adobe/aio-cli) offers three types of deployment to the developers.
 

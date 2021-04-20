@@ -1,7 +1,5 @@
 # CI/CD for Project Firefly Applications
-Continuous integration and continuous delivery (CI/CD) is a crucial component for the success of any development team -- a team working on Project Firefly Applications is no difference. 
-
-Allowing the development team to focus on requirements, code quality, and security with deployment automated, CI/CD is one of the best practice to implement and for us to support. 
+Continuous integration and continuous delivery (CI/CD) is a crucial component for the success of any development team -- a team working on Project Firefly Applications is no difference. Allowing the development team to focus on requirements, code quality, and security with deployment automated, CI/CD is one of the best practice to implement and for us to support. 
 
 Project Firefly allows you to manage multiple environments. This is achieved through **Workspace** in Adobe Developer Console. Every new application project created by an entitled organization administrator or developer in the Developer Console will be setup with two named workspaces: Stage and Production. Each workspace will have its own setup:
 
