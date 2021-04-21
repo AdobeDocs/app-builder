@@ -51,7 +51,7 @@ Getting access to Project Firefly is a simple two step process.
 Project Firefly greatly simplifies the process of building Cloud Native Applications that leverage Adobe I/O Runtime.
 
 
-
+## Discover
 
 <DiscoverBlock slots="heading, link, text"/>
 
