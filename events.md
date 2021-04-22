@@ -10,7 +10,7 @@ This session will be divided into two halves, starting with a 15-20 minute prese
 May 6, 2021
 - **Topic:** Adobe Summit Speakers Panel
 - **Time:** 09:00 - 10:00 PDT / 16:00 - 17:00 UTC
-- **Join Live Event:** https://youtu.be/PvnWYJylPwE(https://youtu.be/PvnWYJylPwE)
+- **Join Live Event:** [https://youtu.be/PvnWYJylPwE](https://youtu.be/PvnWYJylPwE)
 
 
 
