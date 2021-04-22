@@ -12,6 +12,8 @@ May 6, 2021
 - **Time:** 09:00 - 10:00 PDT / 16:00 - 17:00 UTC
 - **Join Live Event:** https://youtu.be/PvnWYJylPwE
 
+
+
 May 20, 2021
 - **Topic:** Securing Firefly Apps
 - **Time:** 09:00 - 10:00 PDT / 16:00 - 17:00 UTC
