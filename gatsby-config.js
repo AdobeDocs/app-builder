@@ -15,7 +15,7 @@ module.exports = {
     pages: [
       {
         "title": "Project Firefly",
-        "path": "/"
+        "path": "./"
       },
       {
         "title": "Documentation",
