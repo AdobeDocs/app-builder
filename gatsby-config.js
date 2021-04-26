@@ -15,7 +15,7 @@ module.exports = {
     pages: [
       {
         "title": "Project Firefly",
-        "path": "https://stage.adobe.io/project-firefly/"
+        "path": "https://stage.adobe.io/project-firefly"
       },
       {
         "title": "Documentation",
