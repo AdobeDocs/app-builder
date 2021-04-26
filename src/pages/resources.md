@@ -7,6 +7,7 @@
 Adobe I/O CodeLabs provide guided hands-on coding experiences to build awesome apps on top of Project Firefly.
 
 Follow our codelabs at:
+* [Building Custom Asset Compute Worker with Photoshop APIs](https://adobeio-codelabs-assets-compute-photoshop-adobedocs.hlx.page/)
 * [Building a Todo App with Firefly State SDK and React Spectrum](https://adobeio-codelabs-react-spectrum-crud-adobedocs.hlx.page/)
 * [Consuming events with Journaling API](https://adobeio-codelabs-journaling-events-adobedocs.hlx.page/)
 * [Scheduling Cron Jobs](https://adobeio-codelabs-alarms-adobedocs.project-helix.page/)
@@ -18,7 +19,7 @@ Follow our codelabs at:
 * [Event-driven Firefly Apps](https://adobeio-codelabs-custom-events-adobedocs.project-helix.page/)
 
 And more codelabs contributed by the Firefly community:
-* [Building Custom Asset Compute Worker](https://adobeio-asset-compute-labs-cognifide.project-helix.page/) by [Cognifide](https://www.cognifide.com)
+* [Building Custom Asset Compute Worker with IMGIX](https://adobeio-asset-compute-labs-cognifide.project-helix.page/) by [Cognifide](https://www.cognifide.com)
 
 You are invited to create your own public Adobe I/O CodeLab, just follow [these steps](https://adobeio-codelabs-howto-adobedocs.project-helix.page/).
 
