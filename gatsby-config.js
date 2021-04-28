@@ -19,7 +19,7 @@ module.exports = {
       },
       {
         "title": "Documentation",
-        "path": "/documentation/"
+        "path": "/docs/"
       },
       {
         "title": "Resources",
@@ -37,59 +37,59 @@ module.exports = {
     subPages: [
       {
         "title": "Overview",
-        "path": "/documentation/",
+        "path": "/docs/",
         "pages": [
           {
             "title": "What is Project Firefly",
-            "path": "/documentation/"
+            "path": "/docs/"
           },
           {
             "title": "How to Get Access",
-            "path": "/documentation/overview/getting_access/"
+            "path": "/docs/overview/getting_access/"
           },
           {
             "title": "Project Firefly and Adobe I/O Runtime",
-            "path": "/documentation/overview/firefly_and_runtime/"
+            "path": "/docs/overview/firefly_and_runtime/"
           }
         ]
       },
       {
         "title": "Getting Started",
-        "path": "/documentation/getting_started/",
+        "path": "/docs/getting_started/",
         "pages": [
           {
             "title": "Setting up Your Environment",
-            "path": "/documentation/getting_started/"
+            "path": "/docs/getting_started/"
           },
           {
             "title": "Creating your First Firefly App",
-            "path": "/documentation/getting_started/first_app/"
+            "path": "/docs/getting_started/first_app/"
           },
           {
             "title": "Publishing Your First Project Firefly Application",
-            "path": "/documentation/getting_started/publish_app/"
+            "path": "/docs/getting_started/publish_app/"
           },
           {
             "title": "Troubleshooting the most common issues",
-            "path": "/documentation/getting_started/common_troubleshooting/"
+            "path": "/docs/getting_started/common_troubleshooting/"
           }
         ]
       },
       {
         "title": "Guides",
-        "path": "/documentation/guides/",
+        "path": "/docs/guides/",
         "pages": [
           {
             "title": "Architecture Overview",
-            "path": "/documentation/guides/"
+            "path": "/docs/guides/"
           },
           {
             "title": "Security Overview",
-            "path": "/documentation/guides/security_overview/"
+            "path": "/docs/guides/security_overview/"
           },
           {
             "title": "Integration Guide with Adobe Experience Cloud",
-            "path": "/documentation/guides/exc_app/overview/"
+            "path": "/docs/guides/exc_app/overview/"
           },
           {
             "title": "Integration Guide for building Event-driven Applications with I/O Events",
@@ -101,49 +101,49 @@ module.exports = {
           },
           {
             "title": "Understanding Authentication",
-            "path": "/documentation/guides/understanding_authentication/"
+            "path": "/docs/guides/understanding_authentication/"
           },
           {
             "title": "Dealing with Application State",
-            "path": "/documentation/guides/application_state/"
+            "path": "/docs/guides/application_state/"
           },
           {
             "title": "Introduction to React Spectrum",
-            "path": "/documentation/guides/introduction_to_react_spectrum/"
+            "path": "/docs/guides/introduction_to_react_spectrum/"
           },
           {
             "title": "Using Client SDKs for Accessing Adobe APIs",
-            "path": "/documentation/guides/using_sdks/"
+            "path": "/docs/guides/using_sdks/"
           },
           {
             "title": "Deployment Overview",
-            "path": "/documentation/guides/deployment/"
+            "path": "/docs/guides/deployment/"
           },
           {
             "title": "CI/CD for Project Firefly Applications",
-            "path": "/documentation/guides/ci_cd_for_firefly_apps/"
+            "path": "/docs/guides/ci_cd_for_firefly_apps/"
           },
           {
             "title": "Managing Application Logs",
-            "path": "/documentation/guides/application_logging/"
+            "path": "/docs/guides/application_logging/"
           },
           {
             "title": "Event hooks for Project Firefly Applications",
-            "path": "/documentation/guides/app-hooks/"
+            "path": "/docs/guides/app-hooks/"
           }
         ]
       },
       {
         "title": "Reference Documentation",
-        "path": "/documentation/reference_documentation/"
+        "path": "/docs/reference_documentation/"
       },
       {
         "title": "Contribution Guides",
-        "path": "/documentation/contribution_guides/"
+        "path": "/docs/contribution_guides/"
       },
       {
         "title": "FAQ",
-        "path": "/documentation/faq/"
+        "path": "/docs/faq/"
       }
       
     ],

@@ -1,4 +1,11 @@
-<Hero slots="heading"/>
+---
+title: Project Firefly Resources
+description: This documentation provides an overview of Project Firefly as well as guides, reference documentation, and tools to help you begin developing your own custom applications.  
+---
+
+<Hero slots="image, heading"/>
+
+![](images/banner.png)
 
 # Resources
 

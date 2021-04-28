@@ -1,4 +1,6 @@
-<Hero slots="heading"/>
+<Hero slots="image, heading"/>
+
+![](images/banner.png)
 
 # Events
 

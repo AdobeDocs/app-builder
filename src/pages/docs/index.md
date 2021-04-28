@@ -1,3 +1,8 @@
+---
+title: Project Firefly Documentation
+description: This documentation provides an overview of Project Firefly as well as guides, reference documentation, and tools to help you begin developing your own custom applications.  
+---
+
 # What is Project Firefly
 
 Project Firefly is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure. It leverages modern technologies (JAM stack, serverless computing, Node, and React) and ensures best practices when building applications (event-driven architecture, microservices, continuous integration, and delivery).
