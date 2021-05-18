@@ -1,24 +1,16 @@
 
 ### Stay Informed!
 
-**Project Firefly Update and Office Hour** is a regular series for customers who are actively using Project Firefly and who would like to stay informed on new features and technical tips. 
+**Project Firefly Office Hours** is a regular series for customers actively using Project Firefly and would like to learn the latest from the product team as well as ask questions. 
 
-This session will be divided into two halves, starting with a 15-20 minute presentation on new features of Project Firefly, sample use cases, technology exploration. The remaining time will be dedicated as office hour where participants can bring their questions for us to answer.
+Session are divided into two halves, starting with a 15-20 minute presentation, sample use cases, technology exploration. The remaining time is available for attendees to ask questions or provide ideas for future topics they would like us to cover.
 
 #### Upcoming Events
-
-May 6, 2021
-- **Topic:** Adobe Summit Speakers Panel
-- **Time:** 09:00 - 10:00 PDT / 16:00 - 17:00 UTC
-- **Join Live Event:** [https://youtu.be/PvnWYJylPwE](https://youtu.be/PvnWYJylPwE)
-
-
 
 May 20, 2021
 - **Topic:** Securing Firefly Apps
 - **Time:** 09:00 - 10:00 PDT / 16:00 - 17:00 UTC
-- **Join Live Event:** TBD
-
+- **[Sign up here:](https://www.eventbrite.com/e/project-firefly-office-hours-application-security-tickets-155823529371)**
 
 
 ## Event Recordings
