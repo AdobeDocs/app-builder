@@ -13,7 +13,7 @@ May 20, 2021
 - **[Sign up here](https://www.eventbrite.com/e/project-firefly-office-hours-application-security-tickets-155823529371)**
 
 June 3, 2021
-- **Topic:** Securing Firefly Apps
+- **Topic:** Live Wired Sneak Behind the Scenes
 - **Time:** 09:00 - 10:00 PDT / 16:00 - 17:00 UTC
 - **[Sign up here](https://www.eventbrite.com/e/project-firefly-office-hours-live-wired-sneak-tickets-156110078447)**
 
