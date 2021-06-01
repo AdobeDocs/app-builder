@@ -4,7 +4,7 @@
 
 Every application development project has its own security requirements. Even for seasoned developers, these critical requirements can lead to complex and time-consuming implementations with an inappropriate support at SDK and tools level.
 
-Project Firefly [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) are designed to fasten the implementation of the typical security requirements for cloud-native applications that deploy into Adobe's ecosystem.
+Project Firefly [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) are designed to expedite the implementation of the typical security requirements for cloud-native applications that deploy into Adobe's ecosystem.
 
 The following sections will focus on specific aspects of the security for Project Firefly Applications.
 
@@ -16,7 +16,7 @@ The [Understanding Authentication](understanding_authentication.md) guide is a g
 ### Adobe IMS Support for Project Firefly Applications
 
 Project Firefly [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) help developers to [bootstrap applications](../getting_started/setup.md#bootstrapping-an-application) easily from application templates with `aio app init`. 
-These includes templates for Runtime web actions, which integrate with the [Adobe Product APIs](https://www.adobe.io/apis.html) that can be extended with Project Firefly.
+These include templates for Runtime web actions, which integrate with the [Adobe Product APIs](https://www.adobe.io/apis.html) that can be extended with Project Firefly.
 Any generated action is initialized with boilerplate code based on Project Firefly [SDK libraries](https://github.com/adobe/aio-sdk). Out-of-the box, the following steps are implemented:
 
 - Validation that an Adobe IMS bearer token has been passed as Authorization header of the request which invoked this action
@@ -24,7 +24,7 @@ Any generated action is initialized with boilerplate code based on Project Firef
 - Instantiation of an API client, by using the appropriate product [SDK library](https://github.com/adobe/aio-sdk)
 - Pre-configured API call, passing the required credentials, by using the same product [SDK library](https://github.com/adobe/aio-sdk)
 
-### Securing the Access to Headless Project Firefly Applications
+### Securing Access to Headless Project Firefly Applications
 
 Headless applications (e.g. Runtime actions or sequences) are usually executed as a back-end service invoked by another service - another Adobe product or a 3rd party system. For example:
 
@@ -42,15 +42,15 @@ If needed, the [IMS SDK Library](https://github.com/adobe/aio-lib-ims) can be us
 
 This SDK library also uses the [State SDK Library](https://github.com/adobe/aio-lib-state) behind the scenes in order to persist the token in Project Firefly's cloud storage on behalf of the developer between two invocations of the Runtime action.
 
-### Securing the Access to Project Firefly SPAs
+### Securing Access to Project Firefly SPAs
 
-These SPAs are business-to-employees custom applications that deploy into the [Experience Cloud Shell](https://experience.adobe.com) for the end-users of an Enterprise organization.
+These SPAs are business-to-employees custom applications that deploy into the [Experience Cloud Shell](https://experience.adobe.com) for end-users of an Enterprise organization.
 
 ![SPA Access Sequence Diagram](../images/security-spa-access-sequence-diagram.png)
 
 The SPA front-end interacts with Runtime web actions on specific events triggered at UI level.
 In this scenario, the Experience Cloud Shell exposes a [client-side API](../reference_documentation/exc_app/overview.md), which can be used by the SPA to obtain the OAUth token generated for the logged-in Enterprise user. 
-This token will be used by the back-end Runtime actions to call the [Adobe Product APIs](https://www.adobe.io/apis.html), which need to be integrated in this application.
+This token will be used by back-end Runtime actions to call [Adobe Product APIs](https://www.adobe.io/apis.html), which need to be integrated in this application.
 
 SPAs bootstrapped from the [CLI](https://github.com/adobe/aio-cli) with `aio app init` automatically include a [React-Spectrum](https://react-spectrum.adobe.com/) based front-end that integrates with the Experience Cloud Shell [client-side API](../reference_documentation/exc_app/overview.md) and sends the user OAuth token from the client to the invoked Runtime actions.
 
@@ -99,7 +99,7 @@ packages:
         web: 'yes'
 ```
 
-The first action of the sequence is an out-of-the-box shared action. It extracts from the incoming request all the data that is required to authenticate and authorize the calling client.
+The first action of the sequence is an out-of-the-box shared action. All data required to authenticate and authorize the calling client is extracted from the incoming request.
 This data is passed to an out-of-the-box service, which performs the necessary validation against Adobe IMS and Adobe Exchange. The custom action invocation will be chained if and only if the validation is successful, as highlighted on the sequence diagram below:
 
 ![Validator Architecture](../images/security-validator-detailed-sequence-diagram.png)
@@ -115,14 +115,14 @@ The `require-adobe-auth` annotation is not compatible with the `final` annotatio
 This also impacts other web action annotations such as `web-custom-options`.
 See https://github.com/adobe/aio-cli-plugin-runtime/issues/150 for more details.
 
-A workaround for supporting final parameters without relying on the `final` annotation is to set them using the [State](https://github.com/adobe/aio-lib-state) SDK. Parameters set in State will be shared among actions running in a same namespace. You can set a permanent value in State from outside an Adobe I/O Runtime action by calling this endpoint: 
+A workaround for supporting final parameters without relying on the `final` annotation is to set them using the [State](https://github.com/adobe/aio-lib-state) SDK. Parameters set in State will be shared among actions running within the same namespace. You can set a permanent value in State from outside an Adobe I/O Runtime action by calling this endpoint: 
 ```bash
 curl -X POST -u <owAuth> https://adobeio.adobeioruntime.net/api/v1/web/state/put \
 -H 'Content-Type: application/json' \
 --data '{"namespace":"<owNamespace>","key":"<stateKey>","value":"<stateValue>","ttl":"-1"}'
 ```
 
-However, note that we **strongly discourage** to use the [State](https://github.com/adobe/aio-lib-state) SDK in order to store secrets that could be reused within Adobe I/O Runtime actions. For this, developers should prefer using an appropriate Secret Vault that would fulfil their custom application requirements.
+However, note that we **strongly discourage** using the [State](https://github.com/adobe/aio-lib-state) SDK in order to store secrets that could be reused within Adobe I/O Runtime actions. For this, developers should use an appropriate Secret Vault to fulfil their custom application requirements.
 
 #### Known Issue 2: Additional scope for JWT access token validation
 
@@ -143,9 +143,9 @@ The guidelines below are specific to Project Firefly applications.
 
 ### Transport Security
 
-Developers building Project Firefly Applications on top of the out-of-the-box infrastructure will benefit from HTTPs connections between all the components that are part of this infrastructure.
+Developers building Project Firefly Applications on top of the out-of-the-box infrastructure will benefit from HTTPS connections between all the components that are part of this infrastructure.
 
-We strongly recommend to ensure that every 3rd party system or service integrating with a Project Firefly Application supports HTTPs connections as well.
+We strongly recommend to ensure that every 3rd party system or service integrating with a Project Firefly Application supports HTTPS connections as well.
  
 ### Tenant Isolation
 
@@ -178,7 +178,7 @@ The `Project Firefly Apps` application available to each Enterprise Organization
 
 ## Summary
 
-Project Firefly [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) provide an out-of-the-box support for developers to implement secure Adobe-native applications that deploy into Project Firefly Serverless infrastructure and integrate with Adobe Product APIs.
+Project Firefly [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) provide out-of-the-box support for developers to implement secure Adobe-native applications that deploy into Project Firefly serverless infrastructure and integrate with Adobe Product APIs.
 
-Developers are able to build serverless processes and user-context aware applications with a minimal knowledge of Adobe's authentication and authorization mechanisms for the Enterprise and without having to worry about  other key concepts such as tenant isolation.
+Developers are able to build serverless processes and user-context aware applications with minimal knowledge of Adobe's authentication and authorization mechanisms for the Enterprise while not having to worry about other key concepts such as tenant isolation.
 
