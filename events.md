@@ -12,10 +12,10 @@ June 3, 2021
 - **Time:** 09:00 - 10:00 PDT / 16:00 - 17:00 UTC
 - **[Sign up here](https://www.eventbrite.com/e/project-firefly-office-hours-live-wired-sneak-tickets-156110078447)**
 
-June 16, 2021 (Bay Area, CA) June 18, 2021 (Melbourne, AU)
+June 17, 2021 (Bay Area, CA) June 18, 2021 (Melbourne, AU)
 - **Topic:** Dashboard Case Study
-- **Special Time:** 4-5pm Pacific time Wednesday June 17 / 9-10am Friday, June 18 in Melbourne
-- **[Sign up here]()**
+- **Special Time:** 4-5pm Pacific time Thursday June 17 / 9-10am Friday, June 18 in Melbourne
+- **[Sign up here](https://www.eventbrite.com/e/project-firefly-office-hours-dashboard-case-study-tickets-157583298889)**
 
 
 
