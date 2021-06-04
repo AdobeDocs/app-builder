@@ -7,11 +7,6 @@ Session are divided into two halves, starting with a 15-20 minute presentation, 
 
 #### Upcoming Events
 
-June 3, 2021
-- **Topic:** Live Wired Sneak Behind the Scenes
-- **Time:** 09:00 - 10:00 PDT / 16:00 - 17:00 UTC
-- **[Sign up here](https://www.eventbrite.com/e/project-firefly-office-hours-live-wired-sneak-tickets-156110078447)**
-
 June 17, 2021 (Bay Area, CA) June 18, 2021 (Melbourne, AU)
 - **Topic:** Dashboard Case Study
 - **Special Time:** 4-5pm Pacific time Thursday June 17 / 9-10am Friday, June 18 in Melbourne
@@ -32,3 +27,4 @@ June 17, 2021 (Bay Area, CA) June 18, 2021 (Melbourne, AU)
 - **Firefly Office Hours:** [Case Study: ODE App - live interview with Pulkit](https://www.youtube.com/watch?v=PtRxpO_2AvE&t=5s)
 - **Firefly Office Hours:** [Exploring CI/CD](https://www.youtube.com/watch?v=lbB2jl2rQZM)
 - **Firefly Office Hours:** [Application Security](https://www.youtube.com/watch?v=5aMLqzXrH0U)
+- **Firefly Office Hours:** [Live Wired Sneak](https://www.youtube.com/watch?v=8TayjL1bONc)
