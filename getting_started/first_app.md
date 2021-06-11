@@ -186,7 +186,7 @@ Note that you may not see all the options listed below on your command line, bec
     ```
     $ cd helloworld
     $ ls
-    README.md		console.json		manifest.yml		package-lock.json	test
+    README.md		manifest.yml		package-lock.json	test
     actions			e2e			node_modules		package.json		web-src
     ```
     
@@ -263,9 +263,6 @@ You should be able to see these folders and files in your project:
 1. `.env`: this file contains environment variables that are useful for the app during development, e.g. Adobe I/O Runtime credentials and Adobe Product API tenant specifics (API key, secrets, etc.)
     - The environment variables defined here can be used in the application (e.g. in `manifest.yml`). If you've set up credentials for the selected workspaces, you should be able to see some of those values prepopulated upon initialization, like `AIO_runtime_auth` and `AIO_runtime_namespace`. 
     - This file is automatically included in `.gitignore`. **It is not intented be shared given the credentials and secrets listed.**
-1. `console.json`: this file contains the credentials set up through your Project Firefly project. 
-    - This file is also automatically included in `.gitignore`. **It is not intented be shared given the credentials and secrets listed.** 
-    - This file can be downloaded directly from the [Adobe Developer Console](https://console.adobe.io/) as well. You can retrieve it by going to a workspace, and clicking on the `Download all` button. 
 
 ## 6.Developing the Application
 
