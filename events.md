@@ -1,18 +1,15 @@
 
 ### Stay Informed!
 
-**Project Firefly Office Hours** is a regular series for customers actively using Project Firefly who would like to learn the latest from the product team as well as ask questions. 
+**Exploring Project Firefly** is a regular series for customers actively using Project Firefly who would like to learn the latest from the product team as well as ask questions. 
 
 Session are divided into two halves, starting with a 15-20 minute presentation, sample use cases, technology exploration. The remaining time is available for attendees to ask questions or provide ideas for future topics they would like us to cover.
 
 #### Upcoming Events
 
-June 17, 2021 (Bay Area, CA) June 18, 2021 (Melbourne, AU)
-- **Topic:** Dashboard Case Study
-- **Special Time:** 4-5pm Pacific time Thursday June 17 / 9-10am Friday, June 18 in Melbourne
-- **[Sign up here](https://www.eventbrite.com/e/project-firefly-office-hours-dashboard-case-study-tickets-157583298889)**
-
-
+July 1, 2021 
+- **Topic:** TBD
+- **Time:** 9am Thursday
 
 ## Event Recordings
 
@@ -28,3 +25,4 @@ June 17, 2021 (Bay Area, CA) June 18, 2021 (Melbourne, AU)
 - **Firefly Office Hours:** [Exploring CI/CD](https://www.youtube.com/watch?v=lbB2jl2rQZM)
 - **Firefly Office Hours:** [Application Security](https://www.youtube.com/watch?v=5aMLqzXrH0U)
 - **Firefly Office Hours:** [Live Wired Sneak](https://www.youtube.com/watch?v=8TayjL1bONc)
+- **Exploring Project Firefly:** [Dashboard Case Study](https://www.youtube.com/watch?v=jvDONM3kJwY) 
