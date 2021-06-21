@@ -77,4 +77,4 @@ We might provide supplementary discoverability mechanisms for published headless
 
 ## Next steps
 
-For more code examples and use cases, please refer to the [Resources page](../resources.md).
+For more code examples and use cases, please refer to the [Resources page](../resources/index.md).

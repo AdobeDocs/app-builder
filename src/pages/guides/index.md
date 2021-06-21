@@ -40,7 +40,7 @@ The CLI comes out-of-the-box with the following capabilities:
 - [Configuration management](https://github.com/adobe/aio-cli-plugin-certificate)
 - [Interactions](https://github.com/adobe/aio-cli-plugin-console) with [Adobe Developer Console](https://console.adobe.io/)
 - [Interactions](https://github.com/adobe/aio-cli-plugin-runtime) with [Runtime](https://github.com/AdobeDocs/adobeio-runtime), Adobe's serverless platform
-- [Lifecycle management](https://github.com/adobe/aio-cli-plugin-app) for [Project Firefly](https://github.com/AdobeDocs/project-fireflu)
+- [Lifecycle management](https://github.com/adobe/aio-cli-plugin-app) for [Project Firefly](https://github.com/AdobeDocs/project-firefly)
 
 ### Project Firefly Generators
 
@@ -64,7 +64,7 @@ The [main SDK library](https://github.com/adobe/aio-sdk) bundles smaller, reusab
 
 - The [Adobe Analytics](https://github.com/adobe/aio-lib-analytics) SDK library provides a client for [Adobe Analytics 2.0 API](https://adobedocs.github.io/analytics-2.0-apis/).
 - The [Adobe Target](https://github.com/adobe/aio-lib-target) SDK library provides a client for [Adobe Target 1.0 API](https://developers.adobetarget.com/api/).
-- The [Adobe Campaign Standard](https://github.com/adobe/aio-lib-campaign-standard) SDK library provides a client for [Adobe Campaign Standard API](https://docs.adobe.com/content/help/en/campaign-standard/using/working-with-apis/about-campaign-standard-apis/about-campaign-standard-apis.html).
+- The [Adobe Campaign Standard](https://github.com/adobe/aio-lib-campaign-standard) SDK library provides a client for [Adobe Campaign Standard API](https://experienceleague.adobe.com/docs/campaign-standard/using/working-with-apis/get-started-apis.html?lang=en).
 
 ##### Integration with Adobe's Identity Management System
 
@@ -116,7 +116,7 @@ It enables developers to perform the following actions on behalf of their Projec
 
 ### CI/CD Support
 
-The [out-of-the-box CI/CD support](./ci_cd_for_custom_apps.md) for Project Firefly Applications consists in:
+The [out-of-the-box CI/CD support](./deployment/ci_cd_for_custom_apps.md) for Project Firefly Applications consists in:
 
 - [Github Actions](https://github.com/features/actions) to [setup the CLI](https://github.com/adobe/aio-cli-setup-action) and use it to [perform actions](https://github.com/adobe/aio-apps-action) such as application testing, build and deployment.
 - [Github Workflows](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) to orchestrate the Github Actions upon specific events triggered against the application repository.

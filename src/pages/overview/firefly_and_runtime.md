@@ -4,7 +4,7 @@ Project Firefly greatly simplifies the process of building Cloud Native Applicat
 
 If you have existing actions deployed on Adobe I/O Runtime and you want to migrate them to a Firefly application (maybe a headless application) these are the main steps:
 * In the [Developer Console](https://console.adobe.io) create a new project and choose Project Firefly as the template
-* Configure the Adobe CLI and then use it to initialize a new application for the project you’ve created in the Developer Console; check [Setting Up Your Environment](../getting_started/setup.md)
+* Configure the Adobe CLI and then use it to initialize a new application for the project you’ve created in the Developer Console; check [Setting Up Your Environment](../getting_started/index.md)
 * Create copies of your existing actions in this project
 * Deploy and test the new actions
 * Update your applications to point to the new actions

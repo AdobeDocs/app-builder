@@ -171,4 +171,4 @@ function setup() {
 
 ## Licensing
 
-This project is licensed under the Creative Commons Attribution-NoDerivatives 4.0 International Public License. See [LICENSE](LICENSE) for more information.
+This project is licensed under the Creative Commons Attribution-NoDerivatives 4.0 International Public License. See [LICENSE](https://creativecommons.org/licenses/by-nd/4.0/) for more information.

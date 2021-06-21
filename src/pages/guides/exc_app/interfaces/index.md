@@ -8,11 +8,11 @@
 
 ### Properties
 
-* [default](index.modules.md#default)
-* [page](index.modules.md#page)
-* [runtime](index.modules.md#runtime)
-* [topbar](index.modules.md#topbar)
-* [user](index.modules.md#user)
+* [default](index.md#default)
+* [page](index.md#page)
+* [runtime](index.md#runtime)
+* [topbar](index.md#topbar)
+* [user](index.md#user)
 
 ## Properties
 

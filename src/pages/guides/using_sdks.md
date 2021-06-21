@@ -21,7 +21,7 @@ In order to initialize the client SDK, you need to provide the API key and acces
 const client = await CustomerProfile.init(params.tenant, orgId, params.apiKey, token)
 ```
 
-Among these parameters, `orgId` and `token` can be obtained from the request headers (more about that in [Security Overview](./security_overview.md)). For `token` specifically we provide the `getBearerToken(params)` method in the auto-generated utilities under `actions/utils.js`.
+Among these parameters, `orgId` and `token` can be obtained from the request headers (more about that in [Security Overview](./security/index.md)). For `token` specifically we provide the `getBearerToken(params)` method in the auto-generated utilities under `actions/utils.js`.
 
 ```javascript
 const token = getBearerToken(params)

@@ -9,11 +9,11 @@ In this tutorial, we'll guide you through the following steps to give you an int
 1. Developing the Application
 1. Deploying the Application
 
-If you run into any issues during development, please first refer to the [Common Issues section](first_app.md#common-issues) on this page. If that does not resolve your issue, please refer to our [Support Channels](../support.md).
+If you run into any issues during development, please first refer to the [Common Issues section](first_app.md#common-issues) on this page. If that does not resolve your issue, please refer to our [Support Channels](/support).
 
 ## 1. Setting up Local Environment
 
-Please always ensure your local environment and tooling is up to date to avoid any possible issues. The instructions can be located at [Setting up Your Environment](setup.md). Ideally while setting up your environment, you requested access to Project Firefly as described at [How to Get Access to Project Firefly](../overview/getting_access.md)
+Please always ensure your local environment and tooling is up to date to avoid any possible issues. The instructions can be located at [Setting up Your Environment](./index.md). Ideally while setting up your environment, you requested access to Project Firefly as described at [How to Get Access to Project Firefly](../overview/getting_access.md)
   and your request has been approved. If your request has not yet been approved, you may want to wait before proceeding with the steps in this document.
 
 ## 2. Creating a new Project on Developer Console
@@ -152,7 +152,7 @@ Note that you may not see all the options listed below on your command line, bec
     - The `React Spectrum 3 UI` template will add a React based UI with [React Spectrum](https://react-spectrum.adobe.com/) components included.
     - The `Raw HTML/JS UI` will add a Valinna HTML/JS/CSS UI with [Spectrum CSS](https://opensource.adobe.com/spectrum-css) styles included.
     
-    Both the templates comes with boilerplate code needed to integrate your Project Firefly application with [Adobe Experience Cloud](https://github.com/AdobeDocs/project-firefly/blob/master/guides/exc_app/overview.md)
+    Both the templates comes with boilerplate code needed to integrate your Project Firefly application with [Adobe Experience Cloud](../guides/exc_app/index.md)
     
 
 2. We'll ask you to define the name for the instance of each selected sample actions. You can keep the default name or specify your own.
@@ -331,13 +331,13 @@ To view your deployed application in the Experience Cloud shell:
   -> https://experience.adobe.com/?devMode=true#/custom-apps/?localDevUrl=https://localhost:9080
 ```
 
-The first URL allows you to see your standalone application on localhost (by default, but the port is configurable). The second URL places your local application in the context of the [Experience Cloud UI](../guides/exc_app/overview.md) for preview. 
+The first URL allows you to see your standalone application on localhost (by default, but the port is configurable). The second URL places your local application in the context of the [Experience Cloud UI](../guides/exc_app/index.md) for preview. 
 
 While most changes in your code get updated in real-time when your application is running, the `.env` file is not amongst them. Running the application depends on `.env` file to provide necessary credentials, so the file is unmodifiable while the app is running. When your app is running, the `.env` file is backed up, and a new one is written with specific values. When you exit the process, the original `.env` is restored. 
 
 As indicated in the message, when you are done, you can press `CTRL+C` to terminate the local development environment.
 
-To have the application running local completely, which means the actions will run on a local deployed (standalone) version of OpenWhisk instead of on [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), use `aio app run --local`. Some additional dependencies are required if you have not installed them yet, see  `Optional tools` section in  [Setting up Your Environment](setup.md) if you want to set them up manually. 
+To have the application running local completely, which means the actions will run on a local deployed (standalone) version of OpenWhisk instead of on [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), use `aio app run --local`. Some additional dependencies are required if you have not installed them yet, see  `Optional tools` section in  [Setting up Your Environment](./index.md) if you want to set them up manually. 
 
 Usually, we recommend running your applications with deployed [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) actions, as your application should run on [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) in production. However, if you need to build complex actions or sequencing, the `--local` flag is handy in allowing you to further debug the application locally. Please see the Debugging the Application section below for more info. 
 
@@ -348,7 +348,7 @@ When you access `https://localhost:9080`, you should see the sample application 
 
 This simple SPA contains links to documentation and allows you to run your backend actions for tests. To try it, use the selection box to pick the action you'd like to invoke. You can also pass request headers and parameters from the corresponding input fields in the SPA UI.
 
-All actions require `Authorization` and `x-gw-ims-org-id` in the headers by default. In your project code, if you navigate to `manifest.yml`, you can see that a `require-adobe-auth` annotation is set to `true` for all the sample actions. Having this flag enabled enforces a valid user token be used to invoke this action. We recommend always having this enabled for security reasons. You can learn more about this in our [Security Overview](../guides/security_overview.md).
+All actions require `Authorization` and `x-gw-ims-org-id` in the headers by default. In your project code, if you navigate to `manifest.yml`, you can see that a `require-adobe-auth` annotation is set to `true` for all the sample actions. Having this flag enabled enforces a valid user token be used to invoke this action. We recommend always having this enabled for security reasons. You can learn more about this in our [Security Overview](../guides/security/index.md).
 
 1. With the `require-adobe-auth` annotation set to `true`, you need to pass in a valid user token and corresponding organization ID to invoke your action. You can easily retrieve the token from your [CLI](https://github.com/adobe/aio-cli) by typing in `aio login`, and the org ID (look for `some_hash@AdobeOrg`) from the workspace details on [Adobe Developer Console](https://console.adobe.io) or from the URL of [Adobe Admin Console](https://adminconsole.adobe.com) (make sure that you have the correct organization selected in the top right corner). 
 You can also list all the organizations you belong to and their org ID from your [CLI](https://github.com/adobe/aio-cli) by typing in `aio console org list`.
@@ -359,7 +359,7 @@ You can also list all the organizations you belong to and their org ID from your
 ![Hello World](../images/helloworld-2.png)
 
 **Note:** If you open your application in the [Experience Cloud Shell](http://experience.adobe.com/) using the second link provided by the CLI, your Experience Cloud Shell user token will automatically be available to the SPA UI and passed by this one to the underlying [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) actions of your application. 
-This is a very useful feature of our SPA UI template, which integrates for you with the [client-side API](../guides/exc_app/overview.md) of the [Experience Cloud Shell](http://experience.adobe.com/).
+This is a very useful feature of our SPA UI template, which integrates for you with the [client-side API](../guides/exc_app/index.md) of the [Experience Cloud Shell](http://experience.adobe.com/).
 
 The other sample actions require futher paramaters to be invoked. For instance, if you try to invoke `analytics` with only the authorization header, you would see an error similar to `"error": "missing parameter(s) 'apiKey,companyId'"`. This is because these sample actions use Adobe API that requires those params before it can be invoked. 
 
@@ -397,7 +397,7 @@ Of course, as you will modify and extend the code of your application, you will 
 
 We are using [jestJS](https://jestjs.io/) for the unit tests of the [CLI](https://github.com/adobe/aio-cli), [SDK](https://github.com/adobe/aio-sdk) and bootstrapped application. It is however possible to change the implementation to your preferred framework.
 
-[CI/CD for Project Firefly Applications](../guides/ci_cd_for_firefly_apps.md) also explains how to execute these tests in the context of a CI/CD pipeline.
+[CI/CD for Project Firefly Applications](../guides/deployment/ci_cd_for_firefly_apps.md) also explains how to execute these tests in the context of a CI/CD pipeline.
 
 ## 7 Deploying the Application
 
@@ -445,13 +445,13 @@ Well done, your app is now online 🏄
 
 Note the last section of the output `To view your deployed application`. There are 2 urls of the app shown by default, which allow access either to the CDN host or [Experience Cloud Shell](http://experience.adobe.com/). In the latter case, The URL format of the app should follow `https://experience.adobe.com/?devMode=true#/custom-apps/?localDevUrl=<your-app-url>`.
 
-You can also undeploy your app with `aio app undeploy`. To learn more about deployment, please refer to [Deployment Overview](../guides/deployment.md). To automate your build, deploy and build process with our out-of-the-box CI/CD GitHub actions, please refer to [CI/CD for Project Firefly Applications](../guides/ci_cd_for_firefly_apps.md).
+You can also undeploy your app with `aio app undeploy`. To learn more about deployment, please refer to [Deployment Overview](../guides/deployment/index.md). To automate your build, deploy and build process with our out-of-the-box CI/CD GitHub actions, please refer to [CI/CD for Project Firefly Applications](../guides/ci_cd_for_firefly_apps.md).
 
 ## Common Issues
 
 1. When in doubt, please first ensure your [CLI](https://github.com/adobe/aio-cli) and all plugins are up to date. For the [CLI](https://github.com/adobe/aio-cli), you can check the version through `aio -v` and compare it with `npm show @adobe/aio-cli version`. If your [CLI](https://github.com/adobe/aio-cli) is outdated, update it by running `npm install -g @adobe/aio-cli`. After that, you can simply run `aio update` to ensure all core plugins are updated.
 
-1. Validation error. If you see the following error, it is because you did not pass in an authorization header to an action expecting one. See `Trying the Sample App` section above or learn more about this in our [Security Overview](../guides/security_overview.md).
+1. Validation error. If you see the following error, it is because you did not pass in an authorization header to an action expecting one. See `Trying the Sample App` section above or learn more about this in our [Security Overview](../guides/security/index.md).
 
     ```
     {"error": "cannot validate token, reason: missing authorization header"}
