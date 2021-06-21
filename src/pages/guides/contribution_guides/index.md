@@ -4,7 +4,7 @@ Thanks for choosing to contribute! The following are a set of guidelines to foll
 
 ## Code Of Conduct
 
-This project adheres to the Adobe [code of conduct](https://github.com/AdobeDocs/project-firefly/blob/master/.github/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
+This project adheres to the Adobe [code of conduct](https://github.com/AdobeDocs/project-firefly/blob/main/.github/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Contributor License Agreement
 
