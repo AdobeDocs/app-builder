@@ -7,7 +7,7 @@ Cloud.
 
 ### Interfaces
 
-* [Modules](../interfaces/index.modules.md)
+* [Modules](../interfaces/index.md)
 * [Runtime](../interfaces/index.runtime.md)
 
 ### Functions

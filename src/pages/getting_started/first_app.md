@@ -445,7 +445,7 @@ Well done, your app is now online 🏄
 
 Note the last section of the output `To view your deployed application`. There are 2 urls of the app shown by default, which allow access either to the CDN host or [Experience Cloud Shell](http://experience.adobe.com/). In the latter case, The URL format of the app should follow `https://experience.adobe.com/?devMode=true#/custom-apps/?localDevUrl=<your-app-url>`.
 
-You can also undeploy your app with `aio app undeploy`. To learn more about deployment, please refer to [Deployment Overview](../guides/deployment/index.md). To automate your build, deploy and build process with our out-of-the-box CI/CD GitHub actions, please refer to [CI/CD for Project Firefly Applications](../guides/ci_cd_for_firefly_apps.md).
+You can also undeploy your app with `aio app undeploy`. To learn more about deployment, please refer to [Deployment Overview](../guides/deployment/index.md). To automate your build, deploy and build process with our out-of-the-box CI/CD GitHub actions, please refer to [CI/CD for Project Firefly Applications](../guides/deployment/ci_cd_for_firefly_apps.md).
 
 ## Common Issues
 
@@ -465,4 +465,4 @@ You can also undeploy your app with `aio app undeploy`. To learn more about depl
 
 ## Next steps
 
-For more code examples and use cases, please refer to the [Resources page](../resources.md).
+For more code examples and use cases, please refer to the [Resources page](../resources/index.md).
