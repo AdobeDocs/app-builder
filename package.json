@@ -8,8 +8,8 @@
     "url": "https://github.com/AdobeDocs/project-firefly"
   },
   "dependencies": {
-    "@adobe/gatsby-theme-aio": "^3.1.8",
-    "gatsby": "^3.0.0",
+    "@adobe/gatsby-theme-aio": "^3.11.1",
+    "gatsby": "^3.6.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
@@ -17,6 +17,7 @@
     "start": "gatsby build && gatsby serve",
     "start:prefix": "gatsby build --prefix-paths && gatsby serve --prefix-paths",
     "dev": "gatsby develop",
+    "dev:https": "gatsby develop --https --host localhost.corp.adobe.com --port 9000",
     "build": "gatsby build",
     "build:incremental": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "serve": "gatsby serve",
