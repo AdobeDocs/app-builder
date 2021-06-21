@@ -9,7 +9,7 @@ Here are troubleshooting guides for some of the most common issues as you develo
 
 ## General debugging
 
-When your action code doesn't work as expected, you may want to investigate into what exactly went wrong. Project Firefly provides the [Logging SDK](https://github.com/adobe/aio-lib-core-logging), please check out [Firefly's Application Logging](https://github.com/AdobeDocs/project-firefly/blob/master/guides/application_logging.md) for more details. 
+When your action code doesn't work as expected, you may want to investigate into what exactly went wrong. Project Firefly provides the [Logging SDK](https://github.com/adobe/aio-lib-core-logging), please check out [Firefly's Application Logging](../guides/application_logging.md) for more details. 
 
 To see the latest activations of your project, run this command:
 ```bash
