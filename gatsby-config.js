@@ -139,7 +139,7 @@ module.exports = {
             "path": "guides/exc_app/modules",
             "pages": [
               {
-                "title": "Overview",
+                "title": "Index",
                 "path": "guides/exc_app/modules/index.md"
               },
               {
