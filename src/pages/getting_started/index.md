@@ -1,3 +1,5 @@
+import NPMBadge from '../../components/NPMBadge.js'
+
 # Setting up Your Environment
 
 During Developer Preview, please follow the steps below to acquire access and credentials, and to set up your local environment to build your first Project Firefly.
@@ -25,10 +27,10 @@ Once you have been added to the program, you will need the following information
 
 These prerequisites should be fulfilled on the developer's machine:
 
-- [NodeJS](https://nodejs.org/en/download/) (v10 to [v14 LTS](https://nodejs.org/en/blog/release/v14.17.0/), odd versions not recommended). It should also install npm together. We recommend using [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md) to manage NodeJS installation and versions on the developer's machine. 
+- [NodeJS](https://nodejs.org/en/download/) [>=12.22 ... 14.17-LTS](https://nodejs.org/en/blog/release/v14.17.0/), odd versions not recommended). It should also install npm together. We recommend using [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md) to manage NodeJS installation and versions on the developer's machine. 
 - [Adobe I/O CLI](https://github.com/adobe/aio-cli)
     - `npm install -g @adobe/aio-cli`
-    - If you already have Adobe I/O CLI on your local, please ensure you have the latest version of Adobe I/O CLI installed. (Current version: [![Version](https://img.shields.io/npm/v/@adobe/aio-cli.svg)](https://npmjs.org/package/@adobe/aio-cli))
+    - If you already have Adobe I/O CLI on your local, please ensure you have the latest version of Adobe I/O CLI installed. (Current version: <NPMBadge/>)
         - For the Adobe I/O CLI, you can check the version through `aio -v` and compare it with `npm show @adobe/aio-cli version`. If your CLI is outdated, update your CLI by running `npm install -g @adobe/aio-cli`. 
         - If your Adobe I/O CLI is up to date, you can simply run `aio update` to ensure all core plugins are updated as well.
         - Other than the checking the version on your CLI, whenever a new version of Adobe I/O CLI is updated, we will inform you on your command line by writing a message like this out before the command output. This message last for 7 days after a new release.

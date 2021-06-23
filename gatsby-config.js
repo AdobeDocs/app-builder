@@ -72,7 +72,7 @@ module.exports = {
         "path": "guides",
         "pages": [
           {
-            "title": "Overview",
+            "title": "Architecture overview",
             "path": "guides"
           },
           {
@@ -103,7 +103,7 @@ module.exports = {
         "path": "guides/security",
         "pages": [
           {
-            "title": "Overview",
+            "title": "Security overview",
             "path": "guides/security/index.md"
           },
           {
@@ -117,7 +117,7 @@ module.exports = {
         "path": "guides/deployment",
         "pages": [
           {
-            "title": "Overview",
+            "title": "Deployment overview",
             "path": "guides/deployment"
           },
           {
@@ -131,7 +131,7 @@ module.exports = {
         "path": "guides/exc_app",
         "pages": [
           {
-            "title": "Overview",
+            "title": "Getting started with Adobe Experience Cloud",
             "path": "guides/exc_app/index.md"
           },
           {
