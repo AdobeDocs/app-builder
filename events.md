@@ -8,8 +8,9 @@ Session are divided into two halves, starting with a 15-20 minute presentation, 
 #### Upcoming Events
 
 July 1, 2021 
-- **Topic:** TBD
+- **Topic:** Learning Resources
 - **Time:** 9am Thursday
+- [**Register Here**](https://www.eventbrite.com/e/exploring-project-firefly-learning-resources-tickets-161099251197)
 
 ## Event Recordings
 
