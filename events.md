@@ -15,12 +15,12 @@ July 1, 2021
 July 15, 2021 
 - **Topic:** Introducing Project Firefly
 - **Time:** 9am Thursday
-- [**Register Here**]
+- [**Register Here**](https://www.eventbrite.com/e/introducing-project-firefly-tickets-161191880253)
 
 July 29, 2021 
 - **Topic:** Partner Spotlight: Softcrylic
 - **Time:** 9am Thursday
-- [**Register Here**]
+- [**Registeration Coming Soon**]
 
 
 
