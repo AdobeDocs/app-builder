@@ -1,9 +1,9 @@
 
 ### Stay Informed!
 
-**Exploring Project Firefly** is a regular series for customers actively using Project Firefly who would like to learn the latest from the product team as well as ask questions. 
+**Exploring Project Firefly** is a livestream show for customers & partners to learn about new features and capabilities as well as hear from other customers and partners about their journey.
 
-Session are divided into two halves, starting with a 15-20 minute presentation, sample use cases, technology exploration. The remaining time is available for attendees to ask questions or provide ideas for future topics they would like us to cover.
+Each show is begins with a presentation, sample use case or demo and then we take questions from the audience. We always welcome questions about anything Firefly related or requests for future topics.
 
 #### Upcoming Events
 
@@ -12,11 +12,24 @@ July 1, 2021
 - **Time:** 9am Thursday
 - [**Register Here**](https://www.eventbrite.com/e/exploring-project-firefly-learning-resources-tickets-161099251197)
 
+July 15, 2021 
+- **Topic:** Introducing Project Firefly
+- **Time:** 9am Thursday
+- [**Register Here**]
+
+July 29, 2021 
+- **Topic:** Partner Spotlight: Softcrylic
+- **Time:** 9am Thursday
+- [**Register Here**]
+
+
+
+
 ## Event Recordings
 
 ### Videos
 
-- **An introduction to Firefly:** [Exploring Project Firefly](https://youtu.be/kd2i50J9MZI)
+- **An introduction to Firefly:** [Introducing Project Firefly](https://youtu.be/kd2i50J9MZI)
 - **Firefly Office Hours:** [Deep Dive on Use Cases](https://www.youtube.com/watch?v=P19nBf6DGAI)
 - **Firefly Office Hours:** [Introduction to React Spectrum](https://www.youtube.com/watch?v=W5Cqb0QYLSs)
 - **Firefly Office Hours:** [November Update](https://www.youtube.com/watch?v=WG9b-tFdkqs)
