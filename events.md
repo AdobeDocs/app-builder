@@ -20,7 +20,7 @@ July 15, 2021
 July 29, 2021 
 - **Topic:** Partner Spotlight: Softcrylic
 - **Time:** 9am Thursday
-- [**Registeration Coming Soon**]
+- [**Registration Coming Soon**]
 
 
 
