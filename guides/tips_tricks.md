@@ -65,15 +65,24 @@ This is our recommendation to implement the move operation at application level 
  *   file are passed as argument to the callback `progressCallback(srcPath, destPath)`
  */
 async function move (files, src, dest, options = {}) {
-  const res = await files.copy(src, dest, { progressCallback: options.progressCallback })
-  await files.delete(src)
-  return res
+  try {
+    const res = await files.copy(src, dest, { progressCallback: options.progressCallback })
+    await files.delete(src)
+    return res
+  } catch (e) {
+    e.message = `Move operation failed, reason: ${e.message}`
+    throw e
+  }
 }
 ```
 
-Here is an usage example:
+Here are some usage examples:
 
 ```
 const files = await Files.init()
 await move(files, 'my/remote/src/folder/', 'my/remote/dest/')
+await move(files, 'my/remote/src/folder/file.txt', 'my/remote/dest/file2.md') // will move and rename the file
+await move(files, 'my/remote/src/folder/file.txt', 'my/remote/dest/') // will move file.txt to dest folder
+await move(files, 'my/remote/src/folder/', 'my/remote/dest/') // move folder to the dest folder
+await move(files, 'my/remote/folder/', 'my/remote/dest') // will rename folder to dest
 ```
