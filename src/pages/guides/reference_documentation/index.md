@@ -1,6 +1,6 @@
 # Reference Documentation
 
-* [Adobe Developer Console](https://www.adobe.io/apis/experienceplatform/console/docs.html)
+* [Adobe Developer Console](/apis/experienceplatform/console/docs.html)
 * [Adobe CLI](https://github.com/adobe/aio-cli)
 * [Project Firefly Application Generators](https://github.com/adobe/generator-aio-app)
 * [Developer Console Project Generators](https://github.com/adobe/generator-aio-console)

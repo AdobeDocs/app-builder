@@ -10,13 +10,13 @@ The following sections will focus on specific aspects of the security for Projec
 
 ## Securing the Access to Project Firefly Applications
 
-Any interaction with [Adobe Product APIs](https://www.adobe.io/apis.html) needs to be authenticated against Adobe Identity Management Services (IMS).
+Any interaction with [Adobe Product APIs](/apis) needs to be authenticated against Adobe Identity Management Services (IMS).
 The [Understanding Authentication](understanding_authentication.md) guide is a good pre-read to get deeper preliminary insights on those services.
 
 ### Adobe IMS Support for Project Firefly Applications
 
 Project Firefly [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) help developers to [bootstrap applications](../../getting_started/index.md) easily from application templates with `aio app init`. 
-These include templates for Runtime web actions, which integrate with the [Adobe Product APIs](https://www.adobe.io/apis.html) that can be extended with Project Firefly.
+These include templates for Runtime web actions, which integrate with the [Adobe Product APIs](/apis) that can be extended with Project Firefly.
 Any generated action is initialized with boilerplate code based on Project Firefly [SDK libraries](https://github.com/adobe/aio-sdk). Out-of-the box, the following steps are implemented:
 
 - Validation that an Adobe IMS bearer token has been passed as Authorization header of the request which invoked this action
@@ -50,7 +50,7 @@ These SPAs are business-to-employees custom applications that deploy into the [E
 
 The SPA front-end interacts with Runtime web actions on specific events triggered at UI level.
 In this scenario, the Experience Cloud Shell exposes a [client-side API](../exc_app/index.md), which can be used by the SPA to obtain the OAUth token generated for the logged-in Enterprise user. 
-This token will be used by back-end Runtime actions to call [Adobe Product APIs](https://www.adobe.io/apis.html), which need to be integrated in this application.
+This token will be used by back-end Runtime actions to call [Adobe Product APIs](/apis), which need to be integrated in this application.
 
 SPAs bootstrapped from the [CLI](https://github.com/adobe/aio-cli) with `aio app init` automatically include a [React-Spectrum](https://react-spectrum.adobe.com/) based front-end that integrates with the Experience Cloud Shell [client-side API](../exc_app/index.md) and sends the user OAuth token from the client to the invoked Runtime actions.
 
@@ -105,7 +105,7 @@ This data is passed to an out-of-the-box service, which performs the necessary v
 ![Validator Architecture](../../images/security-validator-detailed-sequence-diagram.png)
 
 A developer can still choose to unprotect a specific action by setting the `require-adobe-auth` annotation to `false` or by deleting it and redeploying the application with `aio app deploy` afterwards.
-However, we strongly recommend to validate these changes against the application security requirements, and to keep the `require-adobe-auth` annotation value to `true` for any action integrating with one or several [Adobe Product APIs](https://www.adobe.io/apis.html).
+However, we strongly recommend to validate these changes against the application security requirements, and to keep the `require-adobe-auth` annotation value to `true` for any action integrating with one or several [Adobe Product APIs](/apis).
 
 **Note:** Project Firefly doesn't offer 3rd party API management at this stage, and similar authentication/authorization handling against 3rd party services should be managed by developers within their custom action codes for the time being.
 
@@ -157,7 +157,7 @@ This combination of `Enterprise Organization`, `Project`, `Workspace` and `Runti
 
 #### Runtime Actions
 
-The back-end Runtime actions used by a Project Firefly Application respect the [tenant isolation model](https://www.adobe.io/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/quickstart.md#security-considerations) implemented by I/O Runtime.
+The back-end Runtime actions used by a Project Firefly Application respect the [tenant isolation model](/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/quickstart.md#security-considerations) implemented by I/O Runtime.
 
 #### Cloud Storage and CDN for SPA Static Files
 

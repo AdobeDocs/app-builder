@@ -2,7 +2,7 @@
 
 ## Types of Project Firefly apps
 
-A Project Firefly Application is a serverless application that extends [Adobe Product APIs](https://www.adobe.io/apis.html).
+A Project Firefly Application is a serverless application that extends [Adobe Product APIs](/apis).
 These applications can be one of two kinds: headless or headful. Each of these types is described in more detail in the sections that follow.
 
 ### Headless Application
@@ -13,7 +13,7 @@ A typical headless application would integrate well with a remote script or proc
 
 ### Headful Application
 
-A headful application is a Single Page Application (SPA) with a full-fledged user interface (UI) served from the out-of-the-box Content Delivery Network. This type of application calls [Adobe Product APIs](https://www.adobe.io/apis.html) directly from the client when applicable. When there is a strong need to orchestrate [Adobe Product API](https://www.adobe.io/apis.html) calls with 3rd party API calls, or with Adobe Identity Management System for authentication purposes, you can deploy serverless actions and/or sequences using [Runtime](https://github.com/AdobeDocs/adobeio-runtime).
+A headful application is a Single Page Application (SPA) with a full-fledged user interface (UI) served from the out-of-the-box Content Delivery Network. This type of application calls [Adobe Product APIs](/apis) directly from the client when applicable. When there is a strong need to orchestrate [Adobe Product API](https://www.adobe.io/apis.html) calls with 3rd party API calls, or with Adobe Identity Management System for authentication purposes, you can deploy serverless actions and/or sequences using [Runtime](https://github.com/AdobeDocs/adobeio-runtime).
 
 ## JAMStack: Anatomy of a Project Firefly App
 
@@ -21,7 +21,7 @@ Project Firefly apps that are Single Page Applications with a full-fledged UI sh
 
 The three main components of Project Firefly apps are:
 
-- [Adobe Product APIs](https://www.adobe.io/apis.html), exposed to external developers and consumers through Adobe I/O API Gateway.
+- [Adobe Product APIs](/apis), exposed to external developers and consumers through Adobe I/O API Gateway.
 - [Javascript-based SDK](https://github.com/adobe/aio-sdk) and serverless actions, sequences, and APIs deployed to [Runtime](https://github.com/AdobeDocs/adobeio-runtime).
 - [React-Spectrum](https://react-spectrum.adobe.com/), Adobe's front-end framework which applies Adobe's Design System to React-based components.
 
@@ -50,7 +50,7 @@ Generators can be used to create:
 
 - A headless application
 - A full-fledged UI SPA that deploys into [Experience Cloud Unified shell](http://experiencecloud.adobe.com/)
-- [Runtime](https://github.com/AdobeDocs/adobeio-runtime) serverless actions extending specific [Adobe APIs](https://www.adobe.io/apis.html)
+- [Runtime](https://github.com/AdobeDocs/adobeio-runtime) serverless actions extending specific [Adobe APIs](/apis)
 
 ### SDK Libraries
 
