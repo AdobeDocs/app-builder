@@ -7,13 +7,13 @@ These applications can be one of two kinds: headless or headful. Each of these t
 
 ### Headless Application
 
-In a headless application, the application consists of a set of serverless actions and/or sequences deployed to [Runtime](/apis/experienceplatform/runtime.html), Adobe's serverless platform.
+In a headless application, the application consists of a set of serverless actions and/or sequences deployed to [Runtime](/apis/experienceplatform/runtime), Adobe's serverless platform.
 
 A typical headless application would integrate well with a remote script or process that invokes it, such as an [AEM Assets workflow](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/assets-workflow.html) or an [ACS activity](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/data-management-activities/external-api.html).
 
 ### Headful Application
 
-A headful application is a Single Page Application (SPA) with a full-fledged user interface (UI) served from the out-of-the-box Content Delivery Network. This type of application calls [Adobe Product APIs](/apis) directly from the client when applicable. When there is a strong need to orchestrate [Adobe Product API](/apis) calls with 3rd party API calls, or with Adobe Identity Management System for authentication purposes, you can deploy serverless actions and/or sequences using [Runtime](/apis/experienceplatform/runtime.html).
+A headful application is a Single Page Application (SPA) with a full-fledged user interface (UI) served from the out-of-the-box Content Delivery Network. This type of application calls [Adobe Product APIs](/apis) directly from the client when applicable. When there is a strong need to orchestrate [Adobe Product API](/apis) calls with 3rd party API calls, or with Adobe Identity Management System for authentication purposes, you can deploy serverless actions and/or sequences using [Runtime](/apis/experienceplatform/runtime).
 
 ## JAMStack: Anatomy of a Project Firefly App
 
@@ -22,7 +22,7 @@ Project Firefly apps that are Single Page Applications with a full-fledged UI sh
 The three main components of Project Firefly apps are:
 
 - [Adobe Product APIs](/apis), exposed to external developers and consumers through Adobe I/O API Gateway.
-- [Javascript-based SDK](https://github.com/adobe/aio-sdk) and serverless actions, sequences, and APIs deployed to [Runtime](/apis/experienceplatform/runtime.html).
+- [Javascript-based SDK](https://github.com/adobe/aio-sdk) and serverless actions, sequences, and APIs deployed to [Runtime](/apis/experienceplatform/runtime).
 - [React-Spectrum](https://react-spectrum.adobe.com/), Adobe's front-end framework which applies Adobe's Design System to React-based components.
 
 ![JAMStack Architecture](../images/jamstack-anatomy-application-march2021.png)
@@ -39,7 +39,7 @@ The CLI comes out-of-the-box with the following capabilities:
 - [Certificate management](https://github.com/adobe/aio-cli-plugin-certificate)
 - [Configuration management](https://github.com/adobe/aio-cli-plugin-certificate)
 - [Interactions](https://github.com/adobe/aio-cli-plugin-console) with [Adobe Developer Console](/console)
-- [Interactions](https://github.com/adobe/aio-cli-plugin-runtime) with [Runtime](/apis/experienceplatform/runtime.html), Adobe's serverless platform
+- [Interactions](https://github.com/adobe/aio-cli-plugin-runtime) with [Runtime](/apis/experienceplatform/runtime), Adobe's serverless platform
 - [Lifecycle management](https://github.com/adobe/aio-cli-plugin-app) for [Project Firefly](/project-firefly)
 
 ### Project Firefly Generators
@@ -50,7 +50,7 @@ Generators can be used to create:
 
 - A headless application
 - A full-fledged UI SPA that deploys into [Experience Cloud Unified shell](http://experiencecloud.adobe.com/)
-- [Runtime](/apis/experienceplatform/runtime.html) serverless actions extending specific [Adobe APIs](/apis)
+- [Runtime](/apis/experienceplatform/runtime) serverless actions extending specific [Adobe APIs](/apis)
 
 ### SDK Libraries
 
@@ -94,7 +94,7 @@ The [Configuration SDK library](https://github.com/adobe/aio-lib-core-config) al
 
 ##### Logging
 
-The [Logging SDK library](https://github.com/adobe/aio-lib-core-logging) provides a logger abstraction that can be used in [SDK libraries](https://github.com/adobe/aio-sdk) and serverless actions deployed to [Runtime](/apis/experienceplatform/runtime.html).
+The [Logging SDK library](https://github.com/adobe/aio-lib-core-logging) provides a logger abstraction that can be used in [SDK libraries](https://github.com/adobe/aio-sdk) and serverless actions deployed to [Runtime](/apis/experienceplatform/runtime).
 
 ##### Errors
 
@@ -106,7 +106,7 @@ The [Networking SDK library](https://github.com/adobe/aio-lib-core-networking) p
 
 ### Token-Vending Machine
 
-The [Token-Vending Machine](https://github.com/adobe/aio-tvm) is exposed as an out-of-the-box API deployed to [Runtime](/apis/experienceplatform/runtime.html).
+The [Token-Vending Machine](https://github.com/adobe/aio-tvm) is exposed as an out-of-the-box API deployed to [Runtime](/apis/experienceplatform/runtime).
 
 It enables developers to perform the following actions on behalf of their Project Firefly application credentials:
 

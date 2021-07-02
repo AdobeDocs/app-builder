@@ -18,7 +18,7 @@ Please always ensure your local environment and tooling is up to date to avoid a
 
 ## 2. Creating a new Project on Developer Console
 
-[Adobe Developer Console](/console) gives you access to [APIs](/apis), [SDKs](https://github.com/adobe/aio-sdk) and developer tools to build on, integrate, and extend Adobe products. In Project Firefly, you would need access to [Adobe I/O Runtime](/apis/experienceplatform/runtime.html) credentials which would be used for deploying your application, and access to API credentials if you want to access any Adobe [APIs](/apis) in your application. 
+[Adobe Developer Console](/console) gives you access to [APIs](/apis), [SDKs](https://github.com/adobe/aio-sdk) and developer tools to build on, integrate, and extend Adobe products. In Project Firefly, you would need access to [Adobe I/O Runtime](/apis/experienceplatform/runtime) credentials which would be used for deploying your application, and access to API credentials if you want to access any Adobe [APIs](/apis) in your application. 
 
 Follow the instructions to set up your project:
 1. Navigate to [Adobe Developer Console](/console).
@@ -38,8 +38,8 @@ Follow the instructions to set up your project:
 1. Enter `Project Title` and `App Name` for your templated project. 
     - `Project Title` is used to identify this project within [Adobe Developer Console](/console) and in [CLI](https://github.com/adobe/aio-cli). A default value is suggested on this screen, but we recommend using a meaningful and distinguishable project title.
     - `App Name` will be used as a unique identifier for your application and this value cannot be changed once project set up is complete. 
-    - By default, the "Include Runtime with each workspace" checkbox is checked, which means each workspace that is created is automatically provisioned with a unique [Adobe I/O Runtime](/apis/experienceplatform/runtime.html) namespace allowing each developer to work within their own [Adobe I/O Runtime](/apis/experienceplatform/runtime.html) environment. If you deselect the checkbox and do not opt for automatic inclusion of [Adobe I/O Runtime](/apis/experienceplatform/runtime.html), you will need to enable it manually for each individual workspace. You cannot auto-add [Adobe I/O Runtime](/apis/experienceplatform/runtime.html) to all workspaces after the initial set up is complete.
-You can manually remove [Adobe I/O Runtime](/apis/experienceplatform/runtime.html) from individual workspaces later if you determine that it is not needed.
+    - By default, the "Include Runtime with each workspace" checkbox is checked, which means each workspace that is created is automatically provisioned with a unique [Adobe I/O Runtime](/apis/experienceplatform/runtime) namespace allowing each developer to work within their own [Adobe I/O Runtime](/apis/experienceplatform/runtime) environment. If you deselect the checkbox and do not opt for automatic inclusion of [Adobe I/O Runtime](/apis/experienceplatform/runtime), you will need to enable it manually for each individual workspace. You cannot auto-add [Adobe I/O Runtime](/apis/experienceplatform/runtime) to all workspaces after the initial set up is complete.
+You can manually remove [Adobe I/O Runtime](/apis/experienceplatform/runtime) from individual workspaces later if you determine that it is not needed.
     - Click `Save` when ready. 
     ![Select Template](../images/console-4.png)
 
@@ -48,10 +48,10 @@ You can manually remove [Adobe I/O Runtime](/apis/experienceplatform/runtime.htm
     - Each Project Firefly project has two default workspaces: `Production` and `Stage`. You can add more workspaces as needed. The `Production` workspace is special, as it is used for the submission and distribution flow. When you’re ready to deploy your app, you will submit it for approval from the Production workspace.
     ![Project Preview](../images/console-5.png)
 
-1. Create a new workspace or select an workspace to start adding [APIs](/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/services.md) and [Events](/apis/experienceplatform/console/docs.html#!AdobeDocs/adobeio-console/master/services-add-event.md) that you would need for your application. 
+1. Create a new workspace or select an workspace to start adding [APIs](/apis/experienceplatform/console/docs#!AdobeDocs/adobeio-console/master/services.md) and [Events](/apis/experienceplatform/console/docs#!AdobeDocs/adobeio-console/master/services-add-event.md) that you would need for your application. 
     ![Workspace](../images/console-6.png)
 
-To read more about Adobe Developer Console, please refer to [Console Documentation](/apis/experienceplatform/console/docs.html).
+To read more about Adobe Developer Console, please refer to [Console Documentation](/apis/experienceplatform/console/docs).
 
 ## 3. Signing in from CLI
 
@@ -118,8 +118,8 @@ There are two sample flows listed below as we understand some developers may not
     
     Each option indicates a feature you can enable for your Project Firefly Application. You can select one or all of the options depending on the application you intend to build. We recommend that you select all for now to fully explore all the options. 
     
-    - **Actions: Deploy Runtime actions:** adding the boilerplate for backend serverless actions on [Adobe I/O Runtime](/apis/experienceplatform/runtime.html)
-    - **Events: Publish to Adobe I/O Events:** adding the boilerplate for a serverless action that publishes [Custom I/O Events](/apis/experienceplatform/events/docs.html#!adobedocs/adobeio-events/master/custom_events.md)
+    - **Actions: Deploy Runtime actions:** adding the boilerplate for backend serverless actions on [Adobe I/O Runtime](/apis/experienceplatform/runtime)
+    - **Events: Publish to Adobe I/O Events:** adding the boilerplate for a serverless action that publishes [Custom I/O Events](/apis/experienceplatform/events/docs#!adobedocs/adobeio-events/master/custom_events.md)
     - **Web Assets: Deploy hosted static assets:** adding the boilerplate for frontend [React-Spectrum](https://react-spectrum.adobe.com/) SPA and static assets
     - **CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy:** adding the boilerplate for Github Actions supporting CI/CD process of the application
 
@@ -140,7 +140,7 @@ Note that you may not see all the options listed below on your command line, bec
     - **Adobe Analytics**: including dependencies and examples of accessing the [Adobe Analytics 2.0 API](https://adobedocs.github.io/analytics-2.0-apis/)
     - **Adobe Audience Manager: Customer Data**: including dependencies and examples of accessing the [Adobe Audience Manager Customer Data API](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/api.html)
     - **Adobe Campaign Standard**: including dependencies and examples of accessing the [Adobe Campaign Standard (ACS) API](https://docs.adobe.com/content/help/en/campaign-standard/using/working-with-apis/get-started-apis.html)
-    - **Adobe Experience Platform: Realtime Customer Profile**: including dependencies and examples of accessing the [Realtime Customer Profile API of Adobe Experience Platform](/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/real-time-customer-profile.yaml)
+    - **Adobe Experience Platform: Realtime Customer Profile**: including dependencies and examples of accessing the [Realtime Customer Profile API of Adobe Experience Platform](/apis/experienceplatform/home/api-reference#!acpdr/swagger-specs/real-time-customer-profile.yaml)
     - **Generic**: a generic back-end action with hello world flow that can be reused and modified e.g. for simple serverless computing or 3rd party API integration
     
 1. If you included `Web Assets` under Adobe I/O App features you will be given two choices. One to include React Spectrum based UI template or a Vanilla HTML/JS one
@@ -283,7 +283,7 @@ This will deploy the actions to a local [OpenWhisk](https://openwhisk.apache.org
 aio app run
 ```
 
-This will deploy the actions to [Adobe I/O Runtime](/apis/experienceplatform/runtime.html), while running the UI part on the local machine. 
+This will deploy the actions to [Adobe I/O Runtime](/apis/experienceplatform/runtime), while running the UI part on the local machine. 
 
 #### (First time users) Accepting the Certificate
 
@@ -306,7 +306,7 @@ Click on `Advanced`, the nex screen may vary from browser to browser, but you sh
 You may need to exit the current process and run `aio app run` again. 
 
 #### Proceeding to the Application on localhost
-For users who have accepted the certificate in the past, your should see the following process running in your Teminal instead. You can see that your backend actions are being deployed to [Adobe I/O Runtime](/apis/experienceplatform/runtime.html) (or to the local OpenWhisk instance if the `--local` option has been used. 
+For users who have accepted the certificate in the past, your should see the following process running in your Teminal instead. You can see that your backend actions are being deployed to [Adobe I/O Runtime](/apis/experienceplatform/runtime) (or to the local OpenWhisk instance if the `--local` option has been used. 
 
 ```
 $ aio app run
@@ -337,9 +337,9 @@ While most changes in your code get updated in real-time when your application i
 
 As indicated in the message, when you are done, you can press `CTRL+C` to terminate the local development environment.
 
-To have the application running local completely, which means the actions will run on a local deployed (standalone) version of OpenWhisk instead of on [Adobe I/O Runtime](/apis/experienceplatform/runtime.html), use `aio app run --local`. Some additional dependencies are required if you have not installed them yet, see  `Optional tools` section in  [Setting up Your Environment](./index.md) if you want to set them up manually. 
+To have the application running local completely, which means the actions will run on a local deployed (standalone) version of OpenWhisk instead of on [Adobe I/O Runtime](/apis/experienceplatform/runtime), use `aio app run --local`. Some additional dependencies are required if you have not installed them yet, see  `Optional tools` section in  [Setting up Your Environment](./index.md) if you want to set them up manually. 
 
-Usually, we recommend running your applications with deployed [Adobe I/O Runtime](/apis/experienceplatform/runtime.html) actions, as your application should run on [Adobe I/O Runtime](/apis/experienceplatform/runtime.html) in production. However, if you need to build complex actions or sequencing, the `--local` flag is handy in allowing you to further debug the application locally. Please see the Debugging the Application section below for more info. 
+Usually, we recommend running your applications with deployed [Adobe I/O Runtime](/apis/experienceplatform/runtime) actions, as your application should run on [Adobe I/O Runtime](/apis/experienceplatform/runtime) in production. However, if you need to build complex actions or sequencing, the `--local` flag is handy in allowing you to further debug the application locally. Please see the Debugging the Application section below for more info. 
 
 ### 6.2 Trying the Sample Application
 
@@ -358,7 +358,7 @@ You can also list all the organizations you belong to and their org ID from your
 1. Go back to your browser, and put the joined value in the `headers` input field. You should now be able to invoke actions that does not require additional params (like `generic`).
 ![Hello World](../images/helloworld-2.png)
 
-**Note:** If you open your application in the [Experience Cloud Shell](http://experience.adobe.com/) using the second link provided by the CLI, your Experience Cloud Shell user token will automatically be available to the SPA UI and passed by this one to the underlying [Adobe I/O Runtime](/apis/experienceplatform/runtime.html) actions of your application. 
+**Note:** If you open your application in the [Experience Cloud Shell](http://experience.adobe.com/) using the second link provided by the CLI, your Experience Cloud Shell user token will automatically be available to the SPA UI and passed by this one to the underlying [Adobe I/O Runtime](/apis/experienceplatform/runtime) actions of your application. 
 This is a very useful feature of our SPA UI template, which integrates for you with the [client-side API](../guides/exc_app/index.md) of the [Experience Cloud Shell](http://experience.adobe.com/).
 
 The other sample actions require futher paramaters to be invoked. For instance, if you try to invoke `analytics` with only the authorization header, you would see an error similar to `"error": "missing parameter(s) 'apiKey,companyId'"`. This is because these sample actions use Adobe API that requires those params before it can be invoked. 
@@ -380,7 +380,7 @@ We integrated our [CLI](https://github.com/adobe/aio-cli) with an open source pr
 
 Please visit our [Debugging Firefly Apps Codelab](https://adobeio-codelabs-debugging--adobedocs.project-helix.page/) to set up your local environment and go through step-by-step instructions. 
 
-If the local development is run without the `--local` option, the action you are debugging is running directly on [Adobe I/O Runtime](/apis/experienceplatform/runtime.html). When the `--local` option is used, the actions are debugged in the standalone OpenWhisk instance running locally. In both cases, Docker is required on your local machine so that the remote or locally mounted actions get proxied in the local Docker container. Learn more about what you can do in [debug mode](https://www.npmjs.com/package/@openwhisk/wskdebug).
+If the local development is run without the `--local` option, the action you are debugging is running directly on [Adobe I/O Runtime](/apis/experienceplatform/runtime). When the `--local` option is used, the actions are debugged in the standalone OpenWhisk instance running locally. In both cases, Docker is required on your local machine so that the remote or locally mounted actions get proxied in the local Docker container. Learn more about what you can do in [debug mode](https://www.npmjs.com/package/@openwhisk/wskdebug).
 
 ### 6.4 Retrieving Logs for the Application
 
@@ -409,7 +409,7 @@ aio app deploy
 
 This command may take a minute or two as behind the scenes the [CLI](https://github.com/adobe/aio-cli) is building and deploying:
 
-- The actions defined in `manifest.yml` into [Adobe I/O Runtime](/apis/experienceplatform/runtime.html)
+- The actions defined in `manifest.yml` into [Adobe I/O Runtime](/apis/experienceplatform/runtime)
 - The frontend built files and assets into our out-of-the-box CDN
 
 The [CLI](https://github.com/adobe/aio-cli) output details this process:

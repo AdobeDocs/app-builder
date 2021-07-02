@@ -137,7 +137,7 @@ In these cases, the "I/O Management API" service must be added to the appropriat
 
 ### I/O Runtime Specific guidelines
 
-The [security guidelines for I/O Runtime](/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/security_general.md) generally apply for the back-end actions of a Project Firefly application.
+The [security guidelines for I/O Runtime](/apis/experienceplatform/runtime/docs#!adobedocs/adobeio-runtime/master/guides/security_general.md) generally apply for the back-end actions of a Project Firefly application.
 
 The guidelines below are specific to Project Firefly applications.
 
@@ -157,7 +157,7 @@ This combination of `Enterprise Organization`, `Project`, `Workspace` and `Runti
 
 #### Runtime Actions
 
-The back-end Runtime actions used by a Project Firefly Application respect the [tenant isolation model](/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/quickstart.md#security-considerations) implemented by I/O Runtime.
+The back-end Runtime actions used by a Project Firefly Application respect the [tenant isolation model](/apis/experienceplatform/runtime/docs#!adobedocs/adobeio-runtime/master/quickstart.md#security-considerations) implemented by I/O Runtime.
 
 #### Cloud Storage and CDN for SPA Static Files
 
