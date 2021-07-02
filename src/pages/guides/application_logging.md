@@ -7,7 +7,7 @@ The application logs are important assets to facilitate the investigation and re
 
 Project Firefly [SDK](https://github.com/adobe/aio-sdk) provides a [core Logging library](https://github.com/adobe/aio-lib-core-logging), which defines an [API](https://github.com/adobe/aio-lib-core-logging/blob/master/doc/api.md) on top of the popular [WinstonJS](https://www.npmjs.com/package/winston) and [Debug](https://www.npmjs.com/package/debug).
 
-The [Logging library]((https://github.com/adobe/aio-lib-core-logging)) can be used in Runtime actions or plain libraries. For example, it is used by Project Firefly SDK itself:
+The [Logging library](https://github.com/adobe/aio-lib-core-logging) can be used in Runtime actions or plain libraries. For example, it is used by Project Firefly SDK itself:
 
 - In higher-level SDK libraries, for example the [Realtime Customer Profile](https://github.com/adobe/aio-lib-customer-profile) SDK library
 - In shared Runtime actions, for example the [Token Vending Machine](https://github.com/adobe/aio-tvm)
@@ -30,8 +30,8 @@ Project Firefly [CLI](https://github.com/adobe/aio-cli) exposes application logs
 The CLI [App plugin](https://github.com/adobe/aio-cli-plugin-app) provides the `aio app logs` command, which fetches the logs for a Project Firefly application deployed to the Project Firefly Workspace that is configured in the current working folder:
 
 - The command accepts an integer argument. It defines the number of last Runtime activation logs to fetch from the Runtime namespace bound to the Project Firefly Workspace to which the application has been deployed.
-- The command can be used either by a developer or by a script running in a [CI/CD pipeline](https://github.com/AdobeDocs/project-firefly/blob/master/guides/ci_cd_for_firefly_apps.md).
-- The command can be used either for deployed Project Firefly Applications, or for Applications running locally with `aio app run --local` (see the [Deployment guide](https://github.com/AdobeDocs/project-firefly/blob/master/guides/deployment.md)).
+- The command can be used either by a developer or by a script running in a [CI/CD pipeline](deployment/ci_cd_for_firefly_apps.md).
+- The command can be used either for deployed Project Firefly Applications, or for Applications running locally with `aio app run --local` (see the [Deployment guide](deployment/index.md)).
 
 ### Runtime plugin
 
@@ -41,7 +41,7 @@ It can be used to retrieve [activations](https://github.com/adobe/aio-cli-plugin
 
 In that case, the activations and logs will not be aggregated by application, but fetched individually for a more fine-grained control. The [Runtime plugin](https://github.com/adobe/aio-cli-plugin-runtime) provides the same possibilities than the [App plugin](https://github.com/adobe/aio-cli-plugin-app):
 
-- The commands can be used either by a developer or by a script running in a [CI/CD pipeline](https://github.com/AdobeDocs/project-firefly/blob/master/guides/ci_cd_for_firefly_apps.md).
-- The commands can be used either for deployed Runtime actions, or for actions running locally with `aio app run --local` (see the [Deployment guide](https://github.com/AdobeDocs/project-firefly/blob/master/guides/deployment.md)).
+- The commands can be used either by a developer or by a script running in a [CI/CD pipeline](deployment/ci_cd_for_firefly_apps.md).
+- The commands can be used either for deployed Runtime actions, or for actions running locally with `aio app run --local` (see the [Deployment guide](deployment/index.md)).
 
 Project Firefly will provide more Logging and Monitoring capabilities as we are expanding both [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) for a broader panel of custom application use-cases.

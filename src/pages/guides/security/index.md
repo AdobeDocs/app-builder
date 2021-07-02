@@ -137,7 +137,7 @@ In these cases, the "I/O Management API" service must be added to the appropriat
 
 ### I/O Runtime Specific guidelines
 
-The [security guidelines for I/O Runtime](https://github.com/AdobeDocs/adobeio-runtime/blob/master/guides/security_general.md) generally apply for the back-end actions of a Project Firefly application.
+The [security guidelines for I/O Runtime](/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/security_general.md) generally apply for the back-end actions of a Project Firefly application.
 
 The guidelines below are specific to Project Firefly applications.
 
@@ -161,7 +161,7 @@ The back-end Runtime actions used by a Project Firefly Application respect the [
 
 #### Cloud Storage and CDN for SPA Static Files
 
-If a Project Firefly Application is an SPA that deploys into the [Experience Cloud Shell](https://experience.adobe.com), the static assets of the SPA get deployed from the  or from a [CI/CD pipeline](https://github.com/AdobeDocs/project-firefly/blob/master/guides/ci_cd_for_firefly_apps.md) to Project Firefly's Cloud Storage and CDN.
+If a Project Firefly Application is an SPA that deploys into the [Experience Cloud Shell](https://experience.adobe.com), the static assets of the SPA get deployed from the  or from a [CI/CD pipeline](../deployment/ci_cd_for_firefly_apps.md) to Project Firefly's Cloud Storage and CDN.
 
 Both of them have a strict isolation per Runtime namespace. It is only possible to access the Cloud Storage container hosting a Project Firefly SPA by configuring the [CLI](https://github.com/adobe/aio-cli) with the appropriate workspace credentials.
 
