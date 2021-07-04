@@ -34,7 +34,7 @@ Headless applications (e.g. Runtime actions or sequences) are usually executed a
 
 ![Headless Access Sequence Diagram](../../images/security-headless-access-sequence-diagram.png)
 
-A headless Project Firefly application requires to pass an Adobe IMS JWT access token in order to successfully call Adobe Product APIs. This token can be obtained within the [Developer Console](https://console.adobe.io/), by accessing the corresponding Project Firefly project and workspace.
+A headless Project Firefly application requires to pass an Adobe IMS JWT access token in order to successfully call Adobe Product APIs. This token can be obtained within the [Developer Console](/console), by accessing the corresponding Project Firefly project and workspace.
 
 However, its lifetime will be of 24 hours and it will expire afterwards, for obvious security reasons. A developer shouldn't have to manually refresh the token and update the application configuration every day.
 
@@ -150,7 +150,7 @@ We strongly recommend to ensure that every 3rd party system or service integrati
 ### Tenant Isolation
 
 Project Firefly Applications and Services provide tenant isolation by default. 
-A Project Firefly Application gets deployed into a Project Firefly Workspace defined within the [Developer Console](https://console.adobe.io) for a give Project Firefly project.
+A Project Firefly Application gets deployed into a Project Firefly Workspace defined within the [Developer Console](/console) for a give Project Firefly project.
 Each Project Firefly Workspace owns its own Runtime namespace.
 
 This combination of `Enterprise Organization`, `Project`, `Workspace` and `Runtime Namespace` define a granular tenant isolation for each deployed Project Firefly Application.

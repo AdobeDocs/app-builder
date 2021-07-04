@@ -2,7 +2,7 @@
 
 In this tutorial, we'll guide you through the following steps to give you an introduction on how to publish your first Project Firefly Application. 
 After you deployed your application, you need to go through the 3 steps below to publish your SPA
-1. Submit for publishing approval [Adobe Developer Console](https://console.adobe.io/)
+1. Submit for publishing approval [Adobe Developer Console](/console)
 2. Review and approve the app in [My Exchange](https://exchange.adobe.com/my-exchange.html)
 3. After approval, your app will be available at [Adobe Experience Cloud](https://experience.adobe.com)
 
