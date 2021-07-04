@@ -3,10 +3,6 @@ title: Project Firefly Docs
 description: This documentation provides an overview of Project Firefly as well as guides, reference documentation, and tools to help you begin developing your own custom applications.  
 ---
 
-<Hero slots="image, heading, text" background="rgb(37, 26, 56)" />
-
-![Banner](../images/banner.png)
-
 # Project Firefly Docs
 
 This documentation provides an overview of Project Firefly as well as guides, reference documentation, and tools to help you begin developing your own custom applications.
