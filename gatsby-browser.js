@@ -13,6 +13,7 @@ exports.onInitialClientRender = () => {
                           .replace('faq.md', 'overview/faq.md')
                           .replace('reference_documentation.md', 'guides/reference_documentation.md')
                           .replace('contribution_guides.md', 'guides/contribution_guides.md')
+                          .replace('support.md', 'community.md')
                           .replace('.md', '/');
     
     if (!['README/', 'overview/', 'overview/what_is/'].includes(newLocation)) {

@@ -32,6 +32,10 @@ module.exports = {
       {
         "title": "Resources",
         "path": "resources"
+      },
+      {
+        "title": "Community",
+        "path": "community.md"
       }
     ],
     subPages: [
