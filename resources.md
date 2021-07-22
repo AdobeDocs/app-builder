@@ -28,6 +28,7 @@ We provide a [collection of basic code snippets](https://github.com/AdobeDocs/ad
 * [Throttled Queue Processing](https://github.com/AdobeDocs/adobeio-samples-throttled-processing)
 * [Custom Assets Compute Worker for AEM using Photoshop API](https://github.com/AdobeDocs/adobeio-samples-assets-compute-photoshop)
 * [Todo App with React Spectrum](https://github.com/AdobeDocs/adobeio-samples-todoapp)
+* [Journal Browser using I/O Events Lib](https://github.com/AdobeDocs/adobeio-samples-events-journal-browser)
 
 ## Videos
 
