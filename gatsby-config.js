@@ -32,16 +32,16 @@ module.exports = {
       {
         "title": "Resources",
         "path": "resources"
-      },
-      {
-        "title": "Community",
-        "path": "community.md"
       }
     ],
     subPages: [
       {
-        "title": "What is Project Firefly",
+        "title": "Overview",
         "path": "overview"
+      },
+      {
+        "title": "How it works",
+        "path": "overview/how_it_works.md"
       },
       {
         "title": "How to Get Access",
@@ -54,6 +54,10 @@ module.exports = {
       {
         "title": "FAQ",
         "path": "overview/faq.md"
+      },
+      {
+        "title": "Community",
+        "path": "overview/community.md"
       },
       {
         "title": "Setting up Your Environment",
