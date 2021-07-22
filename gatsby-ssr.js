@@ -3,6 +3,6 @@ import {withPrefix} from 'gatsby';
 
 export const onRenderBody = ({setHeadComponents}) => {
   setHeadComponents([
-    <script src={withPrefix('/redirects.js')}></script>
+    <script src={withPrefix('/redirections.js')}></script>
   ])
 };
