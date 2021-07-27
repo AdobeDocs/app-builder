@@ -17,7 +17,7 @@
       .replace('.md', '/');
     
     if (!['README/', 'overview/'].includes(newLocation)) {
-      window.location.href = window.location.href.split('#')[0].replace('overview/', newLocation);
+      window.location.href = decodeURIComponent(window.location.href.split('#')[0].replace('overview/', newLocation));
     }
   }
 })();
