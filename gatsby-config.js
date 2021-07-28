@@ -135,6 +135,20 @@ module.exports = {
         ]
       },
       {
+        "title": "Extensions",
+        "path": "guides/extensions",
+        "pages": [
+          {
+            "title": "Introduction to Extensions",
+            "path": "guides/extensions/index.md"
+          },
+          {
+            "title": "Extension Migration Guide",
+            "path": "guides/extensions/extension_migration_guide.md"
+          },
+        ]
+      },
+      {
         "title": "Integration Guide with Adobe Experience Cloud",
         "path": "guides/exc_app",
         "pages": [

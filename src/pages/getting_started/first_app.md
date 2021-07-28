@@ -85,10 +85,69 @@ There are two sample flows listed below as we understand some developers may not
 
 ### 4.1 Developer is Logged in as Enterprise Organization user
 
+#### 4.1.1 Initializing your project with Extension Points
 1. In your Terminal, navigate to where you want to initialize your project and type in the following command in your Terminal:
 
     ```
     aio app init <app_name>
+    ```
+
+    You will be prompted with a few questions about how you want your app to be boostrapped and configured:
+
+1. Select `Organization` that you'd like to use for this new Project Firefly Application. Navigate through the list to find the project and workspace you just created. If you have a lot of organizations, you can also start typing in keywords to shorten the list. 
+    ```
+    $ aio app init helloworld
+    Retrieving information from Adobe Developer Console..
+    ? Select Org Adobe IO DEV
+    ```
+
+1. Once you have selected org, project and workspace, next, you will be prompted to select the product you would like to extend:
+
+    ```
+    ? Which extension point(s) do you with to implement?
+    select components to include (Press <space> to select, <a> to toggle all, <i> to invert selection)
+    ❯◉ Firefly Experience Cloud Shell
+     ◉ AEM Asset Compute v1
+    ```
+    
+1. You will then be prompted to select the `Project` you'd like to use for this new Project Firefly Application. Navigate through the list to find the project you just created. If you have a lot of projects, you can also start typing in keywords to shorten the list. 
+
+    ```
+    ? Select Project Demo Project SAXU
+    ```
+
+1. Once you complete this select, you should see the build process kicking off with necessary npm dependencies are getting installed.
+
+    ```
+    create package.json
+    create manifest.yml
+    create .aio
+    create README.md
+    
+    .......
+    
+    found 0 vulnerabilities
+    
+    ✔ App initialization finished!
+    ```
+
+
+1. Now your project is initialized! Go into the folder you just created, and you can see a number of files generated. 
+
+    ```
+    $ cd helloworld
+    $ ls
+    README.md		src		app.config.yaml		package-lock.json	test
+    e2e			node_modules		package.json		web-src
+    ```
+    
+1. Note that you still can add/remove the extension points, back-end actions, SPA front-end or Github workflows from your application later by respectively using the `aio app <add|delete> ext`, `aio app <add|delete> action`, `aio app <add|delete> web-assets` and `aio app <add|delete> ci` commands within your application folder.
+
+#### 4.1.2 Initializing an empty project
+1. In your Terminal, navigate to where you want to initialize your project and type in the following command in your Terminal:
+
+    ```
+    aio app init <app_name> --no-extensions
     ```
 
     You will be prompted with a few questions about how you want your app to be boostrapped and configured:
@@ -181,6 +240,7 @@ Note that you may not see all the options listed below on your command line, bec
     ✔ App initialization finished!
     ```
 
+
 4. Now your project is initialized! Go into the folder you just created, and you can see a number of files generated. 
 
     ```
@@ -250,23 +310,21 @@ Now that your project is initialized, let's open the project in your favorite ID
 
 You should be able to see these folders and files in your project:
 
-1. `actions`: this folder is intended for backend source code for all serverless actions
-1. `web-src`: this folder is intended for frontend source code such as html templates, react components, JS, CSS
+1. `src`: Instead of one folder for all `actions` and all `web-src`, you will see individual folders under `src` for each Extension point you have selected. For instance, a `dx-excshell-1` folder for your Experience Cloud SPA actions and frontend resources. 
+    - Under each folder, you should be able to see both the actions and the frontend code when application. In addition, you should be able to see `ext.config.yaml`. This file contains all the action and extension configuration for the extension point where it's located. This individual configuration allows for more flexibility in defining and managing individual extension points. You can see that this file is also imported to `app.config.yaml` as that's the master config file. 
+    - The action definition in this file shoud adhere to the [OpenWhisk deployment YAML specification](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification#package-specification).
+    - Once defined, the [CLI](https://github.com/adobe/aio-cli) use this file to deploy or redeploy actions. You might see values like `$CUSTOMER_PROFILE_TENANT` listed under environments in this file. These are environment variables that you can define in your `.env` file. 
 1. `test`: this folder is intended for back-end action unit tests and integration tests
 1. `e2e`: this folder is intended for  end-to-end tests
-1. `manifest.yml`: this file describes the backend actions you would like to deploy or to redeploy. 
-    - The manifest file contents shoud adhere to the [OpenWhisk deployment YAML specification](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification#package-specification). Once defined, the [CLI](https://github.com/adobe/aio-cli) use this file to deploy or redeploy actions. You might see values like `$CUSTOMER_PROFILE_TENANT` listed on this page. These are environment variables that you can define in your `.env` file. 
+1. `app.config.yaml`: this is the master configuration file. It follows the same principle as the individual `ext.config.yaml`, and compiles these individual file into one comprehensive config upon application build. 
+1. `lib`: this folder will contain all the shared utility actions across different extension points. 
 1. `package.json`: this file describes project definition and various metadata relevant to the project. 
     - It is used to give information to npm that allows it to identify the project as well as handle the project's dependencies. Learn more [here](https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-json/).
 1. `.aio`: this file contains config variables that are useful for the [CLI](https://github.com/adobe/aio-cli) to facilitate the app, e.g. supported API services. **This file can be committed to a source code versioning system.**
     - You can manually update the file or use the `aio config` commands to add or to remove configurations. Learn more about the [Config Plugin](https://github.com/adobe/aio-cli-plugin-config). 
 1. `.env`: this file contains environment variables that are useful for the app during development, e.g. Adobe I/O Runtime credentials and Adobe Product API tenant specifics (API key, secrets, etc.)
-    - The environment variables defined here can be used in the application (e.g. in `manifest.yml`). If you've set up credentials for the selected workspaces, you should be able to see some of those values prepopulated upon initialization, like `AIO_runtime_auth` and `AIO_runtime_namespace`. 
+    - The environment variables defined here can be used in the application (e.g. in `ext.config.yaml` or `app.config.yaml`). If you've set up credentials for the selected workspaces, you should be able to see some of those values prepopulated upon initialization, like `AIO_runtime_auth` and `AIO_runtime_namespace`. 
     - This file is automatically included in `.gitignore`. **It is not intented be shared given the credentials and secrets listed.**
-1. `console.json`: this file contains the credentials set up through your Project Firefly project. 
-    - This file is also automatically included in `.gitignore`. **It is not intented be shared given the credentials and secrets listed.** 
-    - This file can be downloaded directly from the [Adobe Developer Console](/console) as well. You can retrieve it by going to a workspace, and clicking on the `Download all` button. 
-
 ## 6.Developing the Application
 
 ### 6.1 Running the Application
