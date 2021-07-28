@@ -11,10 +11,12 @@
  */
 
 import React from 'react';
-import {withPrefix} from 'gatsby';
+import { Helmet } from 'react-helmet';
 
-export const onRenderBody = ({setHeadComponents}) => {
-  setHeadComponents([
-    <script src={withPrefix('/redirections.js')}></script>
-  ]);
-};
+const MetaRedirect = ({url}) => (
+  <Helmet>
+    <meta http-equiv="refresh" content={`0; URL='${url}'`} />
+  </Helmet>
+);
+
+export default MetaRedirect;

@@ -237,6 +237,14 @@ module.exports = {
         ]
       },
       {
+        "title": "Integration Guide for building Event-driven Applications with I/O Events",
+        "path": "guides/events/webhooks.md"
+      },
+      {
+        "title": "Custom Events Overview",
+        "path": "guides/events/custom-events.md"
+      },
+      {
         "title": "Reference documentation",
         "path": "guides/reference_documentation"
       },
