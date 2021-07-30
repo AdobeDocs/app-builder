@@ -45,7 +45,7 @@ This Extension Point should be used for developers who want to build AEM Asset M
 Similar to other properties in a Firefly project, we leverage configurations in your codebase to define Extension properties. Follow the detailed instructions below with sample code to see how you can use it in your project!
 
 ### New Project
-Simply follow instructions in [Creating your First Project Firefly Application](../../first_app.md), you will be prompted through a few selections that set up the Extension Point info by default in your Firefly project. 
+Simply follow instructions in [Creating your First Project Firefly Application](../../getting_started/first_app.md), you will be prompted through a few selections that set up the Extension Point info by default in your Firefly project. 
 
 ### Migrating from Existing Project or Editing Endpoints
 If you have an existing Firefly application prior to July 28, 2021 that you'd like to migrate, or if you'd like to edit existing endpoints, please follow [Extension Migration Guide](extension_migration_guide.md) for more details. 
