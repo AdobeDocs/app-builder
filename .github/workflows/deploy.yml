@@ -118,7 +118,6 @@ jobs:
           GATSBY_ALGOLIA_API_KEY: ${{ secrets.AIO_ALGOLIA_API_KEY }}
           GATSBY_ALGOLIA_INDEX_ALL: ${{ secrets.AIO_ALGOLIA_INDEX_ALL }}
           GATSBY_ALGOLIA_SEARCH_INDEX: ${{ secrets.AIO_ALGOLIA_SEARCH_INDEX }}
-          GATSBY_ALGOLIA_SEARCH_KEYWORDS: ${{ secrets.AIO_ALGOLIA_SEARCH_KEYWORDS }}
       - name: Deploy
         uses: icaraps/static-website-deploy@master
         with:
@@ -197,7 +196,6 @@ jobs:
           GATSBY_ALGOLIA_API_KEY: ${{ secrets.AIO_ALGOLIA_API_KEY }}
           GATSBY_ALGOLIA_INDEX_ALL: ${{ secrets.AIO_ALGOLIA_INDEX_ALL }}
           GATSBY_ALGOLIA_SEARCH_INDEX: ${{ secrets.AIO_ALGOLIA_SEARCH_INDEX }}
-          GATSBY_ALGOLIA_SEARCH_KEYWORDS: ${{ secrets.AIO_ALGOLIA_SEARCH_KEYWORDS }}
       - name: Deploy
         uses: icaraps/static-website-deploy@master
         with:
