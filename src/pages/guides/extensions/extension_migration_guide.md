@@ -49,7 +49,7 @@ Please follow the steps below for a detailed instruction for how to migrate your
 ### 0. Understanding the Difference
 Let's start with the why you need to migrate your application. What happens if you migrate your application:
 1. You will be able to take advantage of Extensions and the flexibility of our new configuration set up!
-1. Your application will be using our new validator -- providing more granular access control to ensure the seurity of your application. Read more aboutin our [Security Guide]().
+1. Your application will be using our new validator -- providing more granular access control to ensure the security of your application. Read more about this in our [Security Guide]().
 
 What happens if you don't migrate:
 1. During this release, we have automatically indexed your application in the backend. If you update your application (and it is an SPA in Experience Cloud or an AEM Asset Microservices Custom Processing Profile) using the old CLI (up to 7.1.0), you should see no change until the end of October when we retire some services. 
@@ -81,8 +81,8 @@ Please note that if you have a headless application and you have the `require-ad
 
 1. Create `app.config.yaml` file in the root directory of your project.
 1. Move the content of the `manifest.yml` to `app.config.yaml`, then delete `manifest.yml` file
-1. Move any application hooks you have set up under `scripts` in `package.json` into `application.hooks` in `app.config.yaml`
-1. move any configuration under `.app` in `.aio` into `applications` in `app.config.yaml`.
+1. Move any application hooks you have set up under `scripts` in `package.json` into `applications.hooks` in `app.config.yaml` configuration file.
+1. Move any configuration found under the `.app` section of the `.aio` configuration file into the `applications` section of the new `app.config.yaml` configuration file.
 
 ##### Sample `app.config.yaml` File after the refactoring:
 
