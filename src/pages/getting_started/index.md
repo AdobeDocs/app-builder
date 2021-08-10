@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 import NPMBadge from '../../components/NPMBadge.js'
 
 # Setting up Your Environment

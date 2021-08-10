@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # External module: page
 
 APIs that let solutions interact with the main page and personalize it, e.g. setting the title,

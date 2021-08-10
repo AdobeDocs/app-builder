@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # External module: user
 
 API to request user-specific information such as IMS organization, IMS profile, access token,

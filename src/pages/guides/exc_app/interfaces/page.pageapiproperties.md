@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # Interface: PageApiProperties
 
 Subset of page-level APIs available to solutions that are settable attributes.

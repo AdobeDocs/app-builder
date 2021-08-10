@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # Interface: Solution
 
 Defines the attributes of the solution to display on the left-side of the top bar.

@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # Developer community
 
 Join the worldwide community of Project Firefly Developers who are building apps and extensions for Adobe Experience Platform and Adobe Experience Cloud solutions.

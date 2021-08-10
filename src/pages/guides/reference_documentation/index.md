@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # Reference Documentation
 
 * [Adobe Developer Console](/apis/experienceplatform/console/docs)

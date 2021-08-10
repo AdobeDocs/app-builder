@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # Extension Migration Guide
 
 As of July 28, 2021, we have officially released support for [Extensions](introduction_to_extensions.md) in Project Firefly. This release allows you to extend Adobe Experience Cloud through Firefly applications in a more native and integrated fashion. 

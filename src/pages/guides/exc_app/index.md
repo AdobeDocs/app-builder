@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # Integration Guide with Adobe Experience Cloud
 
 Adobe Experience Cloud gives you everything you need to bring world-class experiences to every

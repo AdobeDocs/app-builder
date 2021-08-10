@@ -1,4 +1,9 @@
 ---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
 title: Project Firefly Docs
 description: This documentation provides an overview of Project Firefly as well as guides, reference documentation, and tools to help you begin developing your own custom applications.  
 ---

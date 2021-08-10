@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # CI/CD for Project Firefly Applications
 Continuous integration and continuous delivery (CI/CD) is a crucial component for the success of any development team -- a team working on Project Firefly Applications is no difference. Allowing the development team to focus on requirements, code quality, and security with deployment automated, CI/CD is one of the best practice to implement and for us to support. 
 
