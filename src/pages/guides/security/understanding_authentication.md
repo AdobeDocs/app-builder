@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # Understanding Authentication
 
 If you plan to work with Adobe APIs in your custom application, please follow this chapter to understand Adobe Authentication and the libraries that you can leverage. 

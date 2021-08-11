@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # Contributing
 
 Thanks for choosing to contribute! The following are a set of guidelines to follow when contributing to this project.

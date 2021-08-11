@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # External module: "index"
 
 API used to integrate as solution web application with the unified shell of the Adobe Experience

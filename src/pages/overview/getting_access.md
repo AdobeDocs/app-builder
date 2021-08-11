@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # How to Get Access to Project Firefly
 
 Getting access is a simple two step process. First fill our [request form](https://adobeio.typeform.com/to/obqgRm) and then click through to join the prerelease program. 

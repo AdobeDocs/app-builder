@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # Introduction to React Spectrum
 
 The React Spectrum project implements the Adobe's [Spectrum](https://spectrum.adobe.com/) design language into React UI components.

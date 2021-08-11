@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # Common Troubleshooting
 
 Here are troubleshooting guides for some of the most common issues as you develop your first Firefly apps.

@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # External module: topbar
 
 APIs that let solutions interact with the top bar and personalize it, e.g. configuring the

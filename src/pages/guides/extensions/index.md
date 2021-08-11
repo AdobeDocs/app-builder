@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # Introduction to Extensions
 
 When Project Firefly was first introduced, we primarily supported two types of use cases -- Single Page Applications (SPAs) that can be accessed in [Experience Cloud UI](https://experience.adobe.com), and standalone Headless Applications. Over time, we began to see patterns and asks for a more integrated way to extend Adobe products through Project Firefly. For instance, [AEM Asset Microservices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=en) allow developers to build [Custom Processing Profile](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=en#custom-config) as Firefly applications that can be used in AEM to process assets in batch. However, developer has to manually set up the connection between AEM and their custom processing profiles built on Firefly. 

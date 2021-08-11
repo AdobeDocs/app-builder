@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # Publishing Your First Project Firefly Application
 
 In this tutorial, we'll guide you through the following steps to give you an introduction on how to publish your first Project Firefly Application. 

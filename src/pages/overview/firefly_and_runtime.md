@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # Project Firefly and Adobe I/O Runtime
  
 Project Firefly greatly simplifies the process of building Cloud Native Applications that leverage Adobe I/O Runtime. 

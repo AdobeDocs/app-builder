@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # Using Client SDKs for Accessing Adobe APIs
 
 To simplify your interaction with Adobe APIs, we have created a number of libraries for Adobe Experience Cloud solution APIs. These libraries are npm modules that provides a JavaScript abstraction on top of our product APIs. 

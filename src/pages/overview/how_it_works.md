@@ -1,3 +1,11 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+---
+
 # How it Works
 
 At a high level, there are three main stages a custom app would go through: build, test and publish.
