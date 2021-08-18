@@ -8,12 +8,12 @@ keywords:
 
 # Extension Migration Guide
 
-As of July 28, 2021, we have officially released support for [Extensions](introduction_to_extensions.md) in Project Firefly. This release allows you to extend Adobe Experience Cloud through Firefly applications in a more native and integrated fashion. 
+As of July 28, 2021, we have officially released support for [Extensions](index.md) in Project Firefly. This release allows you to extend Adobe Experience Cloud through Firefly applications in a more native and integrated fashion. 
 
 While all existing application built prior to July 28,2021 should continue to work as expected without any further action. In the next 90 days (until Oct 28, 2021), please update your Adobe I/O CLI and migrate your application as we’ll be retiring the previous services. Follow this guide to migrate your application in a few simple steps.
 
 ## Understanding Configuration Changes
-With the introduction of [Extensions](introduction_to_extensions.md), we have made a few changes to Firefly project file structures and to how we compile configurations. Before you get started on the migration, please read through the changes so that you can make an informed decision for how to refactor your project during the migration.
+With the introduction of [Extensions](index.md), we have made a few changes to Firefly project file structures and to how we compile configurations. Before you get started on the migration, please read through the changes so that you can make an informed decision for how to refactor your project during the migration.
 
 ### Old File Structure
 Previously, if you initialize a new Firefly Project in the CLI, you will see the following folders and files in your project: 
@@ -23,16 +23,16 @@ Previously, if you initialize a new Firefly Project in the CLI, you will see the
 1. `test`: this folder is intended for back-end action unit tests and integration tests
 1. `e2e`: this folder is intended for  end-to-end tests
 1. `manifest.yml`: this file describes the backend actions you would like to deploy or to redeploy. 
-    - The manifest file contents shoud adhere to the [OpenWhisk deployment YAML specification](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification#package-specification). Once defined, the [CLI](https://github.com/adobe/aio-cli) use this file to deploy or redeploy actions. You might see values like `$CUSTOMER_PROFILE_TENANT` listed on this page. These are environment variables that you can define in your `.env` file. 
+    - The manifest file contents should adhere to the [OpenWhisk deployment YAML specification](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification#package-specification). Once defined, the [CLI](https://github.com/adobe/aio-cli) use this file to deploy or redeploy actions. You might see values like `$CUSTOMER_PROFILE_TENANT` listed on this page. These are environment variables that you can define in your `.env` file. 
 1. `package.json`: this file describes project definition and various metadata relevant to the project. 
     - It is used to give information to npm that allows it to identify the project as well as handle the project's dependencies. Learn more [here](https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-json/).
 1. `.aio`: this file contains config variables that are useful for the [CLI](https://github.com/adobe/aio-cli) to facilitate the app, e.g. supported API services. **This file can be committed to a source code versioning system.**
     - You can manually update the file or use the `aio config` commands to add or to remove configurations. Learn more about the [Config Plugin](https://github.com/adobe/aio-cli-plugin-config). 
 1. `.env`: this file contains environment variables that are useful for the app during development, e.g. Adobe I/O Runtime credentials and Adobe Product API tenant specifics (API key, secrets, etc.)
     - The environment variables defined here can be used in the application (e.g. in `manifest.yml`). If you've set up credentials for the selected workspaces, you should be able to see some of those values prepopulated upon initialization, like `AIO_runtime_auth` and `AIO_runtime_namespace`. 
-    - This file is automatically included in `.gitignore`. **It is not intented be shared given the credentials and secrets listed.**
+    - This file is automatically included in `.gitignore`. **It is not intended be shared given the credentials and secrets listed.**
 1. `console.json`: this file contains the credentials set up through your Project Firefly project. 
-    - This file is also automatically included in `.gitignore`. **It is not intented be shared given the credentials and secrets listed.** 
+    - This file is also automatically included in `.gitignore`. **It is not intended be shared given the credentials and secrets listed.** 
     - This file can be downloaded directly from the [Adobe Developer Console](/console) as well. You can retrieve it by going to a workspace, and clicking on the `Download all` button. 
 
 ### New File Structure
@@ -49,7 +49,7 @@ With the introduction of extensions, your new file structure would look somethin
     - You can manually update the file or use the `aio config` commands to add or to remove configurations. Learn more about the [Config Plugin](https://github.com/adobe/aio-cli-plugin-config). 
 1. `.env`: this file contains environment variables that are useful for the app during development, e.g. Adobe I/O Runtime credentials and Adobe Product API tenant specifics (API key, secrets, etc.)
     - The environment variables defined here can be used in the application (e.g. in `ext.config.yaml` or `app.config.yaml`). If you've set up credentials for the selected workspaces, you should be able to see some of those values prepopulated upon initialization, like `AIO_runtime_auth` and `AIO_runtime_namespace`. 
-    - This file is automatically included in `.gitignore`. **It is not intented be shared given the credentials and secrets listed.**
+    - This file is automatically included in `.gitignore`. **It is not intended be shared given the credentials and secrets listed.**
 
 ## Step-by-step Migration Instruction 
 Please follow the steps below for a detailed instruction for how to migrate your application! 
@@ -57,7 +57,7 @@ Please follow the steps below for a detailed instruction for how to migrate your
 ### 0. Understanding the Difference
 Let's start with the why you need to migrate your application. What happens if you migrate your application:
 1. You will be able to take advantage of Extensions and the flexibility of our new configuration set up!
-1. Your application will be using our new validator -- providing more granular access control to ensure the security of your application. Read more about this in our [Security Guide]().
+1. Your application will be using our new validator -- providing more granular access control to ensure the security of your application. Read more about this in our [Security Guide](../security/index.md).
 
 What happens if you don't migrate:
 1. During this release, we have automatically indexed your application in the backend. If you update your application (and it is an SPA in Experience Cloud or an AEM Asset Microservices Custom Processing Profile) using the old CLI (up to 7.1.0), you should see no change until the end of October when we retire some services. 
@@ -72,10 +72,10 @@ First of all, please make sure your local tooling and environment set up is up t
 ### 2. Update Configuration
 Your existing application could be one of three types: 
 1. an application not extending any Extension Points (for instance, your application is a standalone Headless application **OR** a standalone Single Page Application that does not integrate with Experience Cloud UI)
-1. an application extending **one** Extension Points (for instance, your application is a Single Page Application accessed through Experience Cloud UI **OR** a Custom Processing Profile for AEM Asset Microserves)
-1. an application extending **two or more** Extension Points (for instance, your application is a Custom Processing Profile for AEM Asset Microserves **AND** contains a Single Page Application accessible through Experience Cloud UI).
+1. an application extending **one** Extension Points (for instance, your application is a Single Page Application accessed through Experience Cloud UI **OR** a Custom Processing Profile for AEM Asset Microservices)
+1. an application extending **two or more** Extension Points (for instance, your application is a Custom Processing Profile for AEM Asset Microservices **AND** contains a Single Page Application accessible through Experience Cloud UI).
 
-Learn more about Extension Points in [Introduction to Extensions](introduction_to_extensions.md). Based on the nature of your existing project, please following the corresponding the section below. 
+Learn more about Extension Points in [Introduction to Extensions](index.md). Based on the nature of your existing project, please following the corresponding the section below. 
 
 #### 2.1 Application not extending any Extension Points
 
@@ -116,7 +116,7 @@ application:
 
 #### 2.2 Application Extending one Extension Point
 
-Follow this section if your application is a Single Page Application accessed through Experience Cloud UI OR a Custom Processing Profile for AEM Asset Microserves.
+Follow this section if your application is a Single Page Application accessed through Experience Cloud UI OR a Custom Processing Profile for AEM Asset Microservices.
 
 ##### Instructions:
 
@@ -186,9 +186,9 @@ extensions:
 
 #### 2.3 Application Extending two or more Extension Points
 
-Follow this section your application is a Custom Processing Profile for AEM Asset Microserves AND contains a Single Page Application accessible through Experience Cloud UI. 
+Follow this section your application is a Custom Processing Profile for AEM Asset Microservices AND contains a Single Page Application accessible through Experience Cloud UI. 
 
-Please note that there are multiple ways to structure your configuration. You can refactor your code into folders for each extension, and create extension specific configuration, then import them into your main `app.config.yaml` using `$include: path/to/myfile.yaml`, you can also manage them all in one file in the root directory `app.config.yaml`. You could try to initialize a new project with multiple extension points through `aio app init` to see how we structure the code and config file my default. Below, we are showing the easist way to refactor by merging all config into `app.config.yaml`, but you are more than welcome to explore and to try different methods. 
+Please note that there are multiple ways to structure your configuration. You can refactor your code into folders for each extension, and create extension specific configuration, then import them into your main `app.config.yaml` using `$include: path/to/myfile.yaml`, you can also manage them all in one file in the root directory `app.config.yaml`. You could try to initialize a new project with multiple extension points through `aio app init` to see how we structure the code and config file my default. Below, we are showing the easiest way to refactor by merging all config into `app.config.yaml`, but you are more than welcome to explore and to try different methods. 
 
 ##### Instructions:
 
