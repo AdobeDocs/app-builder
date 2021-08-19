@@ -1,0 +1,213 @@
+---
+title: Project Firefly Tech Talks, Deep Dive Sessions and Partner Use Cases     
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling  
+---
+
+# Project Firefly Tech Talks, Deep Dive Sessions and Partner Use Cases
+
+## Overview
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### Introducing Project Firefly
+
+[Watch](overview/introduction.md) 
+
+This Firefly tech talk aims to explore what’s possible with Project Firefly as well as answer questions from our customers & partners.
+
+
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### Getting Started
+
+[Watch](overview/getting-started.md) 
+
+In this video, we will cover how to setup your project in the Adobe Developer Console, init the code, review the project structure, test, and play with the working code.
+
+
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### Architecture
+
+[Watch](overview/architecture.md) 
+
+A Breakdown of Firefly's Architecture.
+
+
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### Security
+
+[Watch](overview/security.md) 
+
+A Full Security Overview.
+
+
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### User Journey
+
+[Watch](overview/e2e-user-journey.md) 
+
+Following the End-to-End User Journey.
+
+
+
+## Exploring Project Firefly
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### Projects and Workspaces
+
+[Watch](exploring/projects-and-workspaces.md) 
+
+The Project Firefly team shared a short presentation about projects and workspaces and how to use customizations to help your team collaborate on building Firefly Applications.
+
+
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### React Spectrum
+
+[Watch](exploring/react-spectrum.md) 
+
+We are joined by Rob Snow from the React Spectrum team to learn about React Spectrum, how to get started using it and how to get involved in their open source project. After Rob's presentation, stick around as we answer questions from our community.
+
+
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### Custom Events
+
+[Watch](exploring/custom-events.md) 
+
+Join us as we dive deep into the topic of Adobe I/O Events including our new feature with Project Firefly - Custom Events. Kanika Gera, Sr Product Manager and Sangeetha Krishnan share everything you need to know about Adobe I/O Events and how they are used in Project Firefly applications.
+
+
+
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### CI/CD
+
+[Watch](exploring/ci-cd.md)
+
+Manik Jindal, Firefly Product Manager, will dive into CI/CD. You'll learn how to set up Github CI/CD we include with Project Firefly. In addition, we'll cover how to setup  a custom CI/CD pipeline with your tool of choice. Bring your questions and the Firefly team will be happy to answer any and all after the presentation.
+
+
+
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### Debugging
+
+[Watch](exploring/debugging.md) 
+
+This session we go in depth on debugging. Shazron Abdullah & Duy Nguyen take you through the ins and outs of finding problems in your code.
+
+
+
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### Learning Resources
+
+[Watch](exploring/learning-resources.md) 
+
+We focus on learning resources from code labs to documentation to videos like this livestream and our upcoming digital learning series.
+
+
+
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### Live Wired Sneak
+
+[Watch](exploring/live-wired-sneak.md) 
+
+Join us for a very special Adobe Summit edition of Office Hours. Ron, Alex and Dave will go behind the scenes to show how they brought to life a no code future for building React Spectrum UI for Firefly apps. If you watched Adobe Summit sneaks be sure to see how the app works and talk about this exciting new development! Bring your questions and the Firefly team will be happy to answer any and all after the presentation.
+
+
+
+
+## Case Study
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### Dashboard Case Study
+
+[Watch](exploring/dashboard-case-study.md) 
+
+Project Firefly Case Study
+
+
+
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### ODE Case Study
+
+[Watch](exploring/ode-case-study.md) 
+
+Project Firefly Case Study
+
+
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### Deep Dive Use Cases
+
+[Watch](exploring/deep-dive-use-cases.md) 
+
+Manik & Ron take a look at a number of great use cases. Join us as we share some popular ways to use Project Firefly.
+
+
+
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### Softcrylic Partner Showcase
+
+[Watch](exploring/softcrylic-showcase.md) 
+
+Sundar Sritharan from Softcrylic joins us to share what they are cooking up with Project Firefly.
+
+
+
+## Adobe Developers Live 
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### Project Firefly Deep Dive
+
+[Watch](developers-live/deep-dive.md) 
+
+Join us and see Firefly in action: code, security, headfull and headless apps, CI/CD and more.
+
+
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### Extend Adobe Experience Cloud
+
+[Watch](developers-live/extend-experience-cloud.md) 
+
+You want to extend Adobe solutions using a modern architecture that works for multiple solutions? Well, we think that you should give Project Firefly a try.
+
+
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### Asset Compute Service Extensibility
+
+[Watch](developers-live/asset-compute-service-extensibility.md) 
+
+Learn how to use Project Firefly to build custom Asset Compute worker for asset processing during ingestion into Adobe Experience Manager.
