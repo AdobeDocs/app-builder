@@ -10,7 +10,7 @@ description: Creating a Headless App using Project Firefly to render a barcode w
 
 # Headless Apps with Project Firefly
 
-This codelab will guide you through creating a headless app using [Project Firefly](https://github.com/AdobeDocs/project-firefly).   
+This codelab will guide you through creating a headless app using Project Firefly.   
 
 The app will generate a code128 barcode based on the user provided value. It's a simple app that can be used and adapted for different use cases.
  

@@ -75,7 +75,7 @@ Verify that the new action is working by running the app locally with `aio app r
 
 ![generate-code](assets/generate-code.png)
 
-*Note: Visit the codelab [Headless Apps with Project Firefly](https://adobeio-codelabs-barcode-adobedocs.project-helix.page) to learn more about building a headless app for barcode generation.*  
+*Note: Visit the codelab [Headless Apps with Project Firefly](../barcode-reader/index.md) to learn more about building a headless app for barcode generation.*  
 
 Now that you have it set up in Firefly app, next step is to create a marketing workflow in Campaign Standard which takes care of receiving external signals from the app and sending promotion emails. To do that, go to *Marketing Activities > Create > Workflow*. Define the properties of your workflow, and finish the creation.  
 

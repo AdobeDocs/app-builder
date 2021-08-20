@@ -21,7 +21,7 @@ In this lab, we're only interested in `Web Assets: Deploy hosted static assets`.
 
 ## Single Page Application
 
-This will generate a Single Page Application project using [React](https://reactjs.org/) and [Experience Cloud Shell](https://github.com/AdobeDocs/project-firefly/blob/master/guides/exc_app/overview.md) utilities to integrate the SPA within the Adobe Experience Cloud.
+This will generate a Single Page Application project using [React](https://reactjs.org/) and [Experience Cloud Shell](../../guides/exc_app/index.md) utilities to integrate the SPA within the Adobe Experience Cloud.
 How to best leverage the Experience Shell (e.g routing etc.) will be covered in another codelab.
 
 Project Firefly SPAs are following [JAMstack principles](https://jamstack.org/) "Fast and secure apps delivered by pre-rendering files and serving them directly from a Content Delivery Network". 

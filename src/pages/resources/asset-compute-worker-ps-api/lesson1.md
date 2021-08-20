@@ -10,13 +10,13 @@ contributors:
 
 # Lesson 1: Create a Firefly app from the Asset Compute template
 
-To begin this codelab, you should have [a project already created from Project Firefly Template in Adobe Developer Console](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#2-creating-a-new-project-on-developer-console). Please add the `Asset Compute` and `Adobe Photoshop APIs (Trial)` services to the workspace that you are using for the codelab.
+To begin this codelab, you should have [a project already created from Project Firefly Template in Adobe Developer Console](../../getting_started/first_app.md#2-creating-a-new-project-on-developer-console). Please add the `Asset Compute` and `Adobe Photoshop APIs (Trial)` services to the workspace that you are using for the codelab.
 
 ![Console Workspace](assets/console-workspace.png)
 
 Make sure to have the Adobe I/O CLI installed locally. In your terminal, execute the command `aio app init <app-name>`.
 
-If you have not logged in already, this command prompts a browser asking you to sign into the Adobe Developer Console with your Adobe ID. See [here](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md#3-signing-in-from-cli) for more information on signing in from the cli.
+If you have not logged in already, this command prompts a browser asking you to sign into the Adobe Developer Console with your Adobe ID. See [here](../../getting_started/first_app.md#3-signing-in-from-cli) for more information on signing in from the cli.
 
 After logging in, follow the prompts in the CLI and select the Organization, Project, and Workspace to use for the application. Choose the project and workspace you created when you set up your environment.
 

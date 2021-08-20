@@ -45,7 +45,7 @@ Name your action, then you have created your project firefly template. Now you c
 ![event-provider](assets/publish-event-cli.png)
 
 In this lab, user will create a webpage using this generic template. if this is your first time to use project firefly, follow below instructions:
-* [Creating your First Firefly App](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md)
+* [Creating your First Firefly App](../../getting_started/first_app.md)
 
 In next lesson, we will show how to use custom event to register this app as event provider and click the `invoke` button 
 to fire an event, this event will be consumed by three ways (Journaling API, webhook URL, runtime action)

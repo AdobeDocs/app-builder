@@ -46,5 +46,5 @@ At this time, the action runs successfully, and you can see the list of profiles
 
 ![profiles-success](assets/profiles-success.png)
 
-This has worked like a charm. The app is now running locally and ready for development. If you want to discover the magic behind it, please check out [Firefly App Security Overview](https://github.com/AdobeDocs/project-firefly/blob/master/guides/security_overview.md).
+This has worked like a charm. The app is now running locally and ready for development. If you want to discover the magic behind it, please check out [Firefly App Security Overview](../../guides/security/index.md).
 

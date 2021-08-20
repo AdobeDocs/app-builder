@@ -14,7 +14,7 @@ contributors:
 
 This codelab will guide you through creating a dashboard of customer profiles from Adobe Campaign Standard using Project Firefly.  
 
-[Project Firefly](https://github.com/AdobeDocs/project-firefly) is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure. It leverages modern technologies (JAM stack, serverless computing, Node, and React) and ensures best practices when building applications (event-driven architecture, microservices, continuous integration, and delivery).  
+Project Firefly is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure. It leverages modern technologies (JAM stack, serverless computing, Node, and React) and ensures best practices when building applications (event-driven architecture, microservices, continuous integration, and delivery).  
 
 [Adobe Campaign Standard (ACS)](https://www.adobe.com/marketing/campaign.html) provides a platform for designing and executing digital marketing campaigns and provides an environment for visual campaign orchestration.  
 

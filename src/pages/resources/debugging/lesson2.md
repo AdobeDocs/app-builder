@@ -29,7 +29,7 @@ You may want to debug what is returned from this API call to decide what to do n
 
 Go back to the Chrome Debug window, access the at inside ExC Shell if not already done: https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080. Select the `hello` action and invoke. Your debugger would stop at the breakpoint you set earlier, which allows inspecting values of the variables in your code.
 
-*Note: If your code uses Project Firefly [State](https://github.com/adobe/aio-lib-state) or [Files](https://github.com/adobe/aio-lib-files) SDKs, you cannot use this debugging method. More details about it [here](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/common_troubleshooting.md#debugging-errors-with-state-and-files-sdk).*
+*Note: If your code uses Project Firefly [State](https://github.com/adobe/aio-lib-state) or [Files](https://github.com/adobe/aio-lib-files) SDKs, you cannot use this debugging method. More details about it [here](../../getting_started/common_troubleshooting.md#debugging-errors-with-state-and-files-sdk).*
 
 ![debugger-action](https://raw.githubusercontent.com/AdobeDocs/adobeio-codelabs-debugging/master/lessons/assets/debugger-action.gif)
 
@@ -37,5 +37,5 @@ You can debug your UI code in the `web-src` folder in the same way as [debugging
 
 Below is an example ran on Firefox.
 
-![debugger-ui](https://github.com/AdobeDocs/adobeio-codelabs-debugging/blob/master/lessons/assets/debugger-ui.png?raw=true)
+![debugger-ui](assets/debugger-ui.png)
 

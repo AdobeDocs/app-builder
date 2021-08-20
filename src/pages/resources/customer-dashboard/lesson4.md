@@ -10,7 +10,7 @@ contributors:
 
 # Lesson 4: List All Customer Profiles on the UI
 
-The app UI is powered by [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) by default. To learn more about React Spectrum, you're recommended to go through the [Spectrum Introduction Codelab](https://adobeio-codelabs-spectrum-intro-adobedocs.project-helix.page).  
+The app UI is powered by [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) by default. To learn more about React Spectrum, you're recommended to go through the [Spectrum Introduction Codelab](../spectrum-intro/index.md).  
 
 In the [previous lesson](lesson3.md), customer profiles are only loaded to the frontend once you click the "Invoke" button. Now we want the profiles automatically loaded on the Home page when the page is ready, without any human interaction. 
 

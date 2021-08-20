@@ -21,7 +21,7 @@ In this codelab, to provide an end to end solution, we need to have an event pro
 cron jobs. 
 
 First, let's create a new firefly App from template by follow the below codelab:
-[here](https://adobeio-codelabs-custom-events-adobedocs.project-helix.page/?src=/lessons/lesson1.html)
+[here](../event-driven/lesson1.md)
 please make sure you add `I/O management API` in console and choose `publish-event` in the cli template. 
 
 
@@ -31,13 +31,13 @@ Now we use cli to register the app as event provider, we need to install the Ado
 npm install -g @adobe/aio-cli-plugin-events
 ``` 
 and then follow below codelab step by step:
-[here](https://adobeio-codelabs-custom-events-adobedocs.project-helix.page/?src=/lessons/lesson2.html)
+[here](../event-driven/lesson2.md)
 
 ## Fire Events and set up consume Events 
-Now we can set up fire event by follow [this](https://adobeio-codelabs-custom-events-adobedocs.project-helix.page/?src=/lessons/lesson3.html) and make sure that you choose journaling API as the way to consume events by follow [this](https://adobeio-codelabs-custom-events-adobedocs.project-helix.page/?src=/lessons/lesson4.html)
+Now we can set up fire event by follow [this](../event-driven/index.md) and make sure that you choose journaling API as the way to consume events by follow [this](https://adobeio-codelabs-custom-events-adobedocs.project-helix.page/?src=/lessons/lesson4.html)
 
 ## Scheduling cron jobs with alarms
-Follow this codelab to automatically fire event by using runtime alarms package [Scheduling Cron Jobs with Alarms](https://adobeio-codelabs-alarms-adobedocs.project-helix.page/?src=/README.html)
+Follow this codelab to automatically fire event by using runtime alarms package [Scheduling Cron Jobs with Alarms](../cron-jobs/index.md)
 
 Your manifest file should look like this as below.
 ```yaml

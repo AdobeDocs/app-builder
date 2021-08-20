@@ -32,9 +32,9 @@ get-profiles:
 
 Currently your app only has one action `get-profiles`.
 * Source code is at `actions/get-profiles/index.js`
-* It is a [web action](https://github.com/AdobeDocs/adobeio-runtime/blob/master/guides/creating_actions.md#invoking-web-actions)
-* The action will be run in the `nodejs:12` [runtime container on I/O Runtime](https://github.com/AdobeDocs/adobeio-runtime/blob/master/reference/runtimes.md)
-* It has some [default params](https://github.com/AdobeDocs/adobeio-runtime/blob/master/guides/creating_actions.md#working-with-parameters) such as `LOG_LEVEL`, `tenant`, `apiKey`, which are automatically available in the `params` object of the action without passing it to the action for every invocation. The `final` annotation set as `true` tells that those params are immutable.
+* It is a [web action](/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/creating_actions.md#invoking-actions)
+* The action will be run in the `nodejs:12` [runtime container on I/O Runtime](/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/reference/runtimes.md)
+* It has some [default params](/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/creating_actions.md#working-with-parameters) such as `LOG_LEVEL`, `tenant`, `apiKey`, which are automatically available in the `params` object of the action without passing it to the action for every invocation. The `final` annotation set as `true` tells that those params are immutable.
 * Setting the `require-adobe-auth` annotation as `true` enables this action to be protected by Adobe IMS user token in the request header. Without it, the action will return `401 Unauthorized` error.
 
 Now let's have a deeper look at the action's source code.

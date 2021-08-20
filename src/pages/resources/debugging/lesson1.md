@@ -24,7 +24,7 @@ You will see the VSCode launch profile automatically generated in `.vscode/launc
 
 Let's navigate to the "Run" mode.
 
-![debug-config](https://github.com/AdobeDocs/adobeio-codelabs-debugging/blob/master/lessons/assets/debug-config.png?raw=true)
+![debug-config](assets/debug-config.png)
 
 Select the `WebAndActions` profile, and click the Start Debugging button.
 

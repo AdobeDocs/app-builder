@@ -48,12 +48,12 @@ packages:
           final: true
 ```
 
-Now let's start to take a deeper look the tempalte code: 
+Now let's start to take a deeper look the template code: 
 
 * Source code is at `actions/publish-events/index.js`
-* It is a [web action](https://github.com/AdobeDocs/adobeio-runtime/blob/master/guides/creating_actions.md#invoking-web-actions)
-* The action will be run in the `nodejs:12` [runtime container on I/O Runtime](https://github.com/AdobeDocs/adobeio-runtime/blob/master/reference/runtimes.md)
-* It has some [default params](https://github.com/AdobeDocs/adobeio-runtime/blob/master/guides/creating_actions.md#working-with-parameters) such as `LOG_LEVEL`, you can pass in your `params` like `apiKey`, `provideId` and `eventCode`from `manifest.yml` 
+* It is a [web action](/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/creating_actions.md#invoking-actions)
+* The action will be run in the `nodejs:12` [runtime container on I/O Runtime](/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/reference/runtimes.md)
+* It has some [default params](/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/creating_actions.md#working-with-parameters) such as `LOG_LEVEL`, you can pass in your `params` like `apiKey`, `provideId` and `eventCode`from `manifest.yml`
 
 ```javascript
 const { Core, Events } = require('@adobe/aio-sdk')
