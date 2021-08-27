@@ -485,26 +485,48 @@ module.exports = {
           },
           {
             title: 'Customer Profiles Dashboard',
-            path: 'resources/customer-dashboard/index.md'
+            path: 'resources/customer-dashboard/index.md',
+            pages: [{
+              "title": "Requirements",
+              "path": "resources/customer-dashboard/requirements"
+            }, {
+              "title": "Lesson 1: Create a New Firefly App from Campaign Standard Template",
+              "path": "resources/customer-dashboard/lesson1"
+            }, {
+              "title": "Lesson 2: Explore the Firefly App",
+              "path": "resources/customer-dashboard/lesson2"
+            }, {
+              "title": "Lesson 3: Run the Firefly App Locally",
+              "path": "resources/customer-dashboard/lesson3"
+            }, {
+              "title": "Lesson 4: List All Customer Profiles on the UI",
+              "path": "resources/customer-dashboard/lesson4"
+            }, {
+              "title": "Lesson 5: Add Personalized Promotion Emails Triggering",
+              "path": "resources/customer-dashboard/lesson5"
+            }, {
+              "title": "Well Done",
+              "path": "resources/customer-dashboard/welldone"
+            }]
           },
           {
             title: 'Firefly Headless App',
             path: 'resources/barcode-reader/index.md',
             pages: [{
               "title": "Requirements",
-              "url": "resources/barcode-reader/requirements"
+              "path": "resources/barcode-reader/requirements"
             }, {
               "title": "Lesson 1: Bootstrap a Headless App",
-              "url": "resources/barcode-reader/bootstrap"
+              "path": "resources/barcode-reader/bootstrap"
             }, {
               "title": "Lesson 2: Writing a Serverless Action",
-              "url": "resources/barcode-reader/barcode"
+              "path": "resources/barcode-reader/barcode"
             }, {
               "title": "Lesson 3: Unit and E2E Tests",
-              "url": "resources/barcode-reader/test"
+              "path": "resources/barcode-reader/test"
             }, {
               "title": "Well done",
-              "url": "resources/barcode-reader/welldone"
+              "path": "resources/barcode-reader/welldone"
             }]
           },
           {
