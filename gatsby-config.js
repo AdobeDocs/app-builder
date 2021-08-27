@@ -294,6 +294,23 @@ module.exports = {
             }]
           },
           {
+            title: 'Events Using Runtime Actions as Webhook',
+            path: 'resources/events-runtime/index.md',
+            pages: [{
+              "title": "Requirements",
+              "path": "resources/events-runtime/requirements"
+            }, {
+              "title": "Lesson 1: Step by Step Guide",
+              "path": "resources/events-runtime/lesson1"
+            }, {
+              "title": "Lesson 2: Verify the result",
+              "path": "resources/events-runtime/lesson2"
+            }, {
+              "title": "Well done",
+              "path": "resources/events-runtime/welldone"
+            }]
+          },
+          {
             title: 'Consume Events Using Journaling API',
             path: 'resources/journaling-events/index.md',
             pages: [{
