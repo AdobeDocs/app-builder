@@ -124,10 +124,6 @@ Creating a dashboard of customer profiles from Adobe Campaign Standard using Pro
 
 
 
-## Community contributions
-
-And more Code Labs contributed by the Firefly community.
-
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
 
