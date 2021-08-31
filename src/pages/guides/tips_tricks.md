@@ -47,3 +47,50 @@ return {
   statusCode: 302
 }
 ```
+
+## Implementing a move operation for the Project Firefly Files SDK
+
+While handling large files within a Runtime action using [Project Firefly Files SDK](https://github.com/adobe/aio-lib-files), you might have the need to move those files to another location in the underlying cloud storage, e.g. for archiving purpose when computing is over.
+
+We have decided until now to not expose a move operation in our abstraction, for the two main following reasons:
+
+- Some cloud storage APIs do not provide an atomic move operation, meaning that there is a tradeoff between abstraction and consistency. Users might expect that files operations on single files are atomic. Operations on folders are not atomic neither.
+- The implementation of such a feature is a two-liner, which makes it simple enough to implement and test the abstraction at application level
+
+This is our recommendation to implement the move operation at application level by using the [Project Firefly Files SDK](https://github.com/adobe/aio-lib-files) primitives:
+
+```
+/**
+ * Note: this operation is not atomic.
+ * Moves files from one location to another in the remote storage. 
+ *  
+ * @param {Files} files the files instance
+ * @param {string} src source file/folder
+ * @param {string} dest destination file/folder
+ * @param {object} [options={}] move options
+ * @param {Function} [options.progressCallback] a function that will be called every
+ *   time the operation completes on a single file, the srcPath and destPath to the moved
+ *   file are passed as argument to the callback `progressCallback(srcPath, destPath)`
+ */
+async function move (files, src, dest, options = {}) {
+  try {
+    const res = await files.copy(src, dest, { progressCallback: options.progressCallback })
+    await files.delete(src)
+    return res
+  } catch (e) {
+    e.message = `Move operation failed, reason: ${e.message}`
+    throw e
+  }
+}
+```
+
+Here are some usage examples:
+
+```
+const files = await Files.init()
+await move(files, 'my/remote/src/folder/', 'my/remote/dest/')
+await move(files, 'my/remote/src/folder/file.txt', 'my/remote/dest/file2.md') // will move and rename the file
+await move(files, 'my/remote/src/folder/file.txt', 'my/remote/dest/') // will move file.txt to dest folder
+await move(files, 'my/remote/src/folder/', 'my/remote/dest/') // move folder to the dest folder
+await move(files, 'my/remote/folder/', 'my/remote/dest') // will rename folder to dest
+```
