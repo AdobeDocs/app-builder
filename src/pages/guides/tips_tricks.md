@@ -59,7 +59,7 @@ We have decided until now to not expose a move operation in our abstraction, for
 
 This is our recommendation to implement the move operation at application level by using the [Project Firefly Files SDK](https://github.com/adobe/aio-lib-files) primitives:
 
-```
+```javascript
 /**
  * Note: this operation is not atomic.
  * Moves files from one location to another in the remote storage. 
@@ -86,7 +86,7 @@ async function move (files, src, dest, options = {}) {
 
 Here are some usage examples:
 
-```
+```javascript
 const files = await Files.init()
 await move(files, 'my/remote/src/folder/', 'my/remote/dest/')
 await move(files, 'my/remote/src/folder/file.txt', 'my/remote/dest/file2.md') // will move and rename the file
