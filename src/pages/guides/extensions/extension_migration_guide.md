@@ -45,7 +45,7 @@ With the introduction of extensions, your new file structure would look somethin
 1. `lib`: this folder will contain all the shared utility actions across different extension points. 
 1. `package.json`: this file describes project definition and various metadata relevant to the project. 
     - It is used to give information to npm that allows it to identify the project as well as handle the project's dependencies. Learn more [here](https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-json/).
-1. `.aio`: this file contains config variables that are useful for the [CLI](https://github.com/adobe/aio-cli) to facilitate the app, e.g. supported API services. **This file can be committed to a source code versioning system.**
+1. `.aio`: this file contains config variables that are useful for the [CLI](https://github.com/adobe/aio-cli) to facilitate the app, e.g. supported API services.
     - You can manually update the file or use the `aio config` commands to add or to remove configurations. Learn more about the [Config Plugin](https://github.com/adobe/aio-cli-plugin-config). 
 1. `.env`: this file contains environment variables that are useful for the app during development, e.g. Adobe I/O Runtime credentials and Adobe Product API tenant specifics (API key, secrets, etc.)
     - The environment variables defined here can be used in the application (e.g. in `ext.config.yaml` or `app.config.yaml`). If you've set up credentials for the selected workspaces, you should be able to see some of those values prepopulated upon initialization, like `AIO_runtime_auth` and `AIO_runtime_namespace`. 
@@ -108,8 +108,6 @@ application:
             web: 'yes'
             annotations:
               require-adobe-auth: true
-  env:
-    SOME_ENV: dev
   hooks:
     post-app-build: 'echo hook'
 ```
@@ -150,8 +148,6 @@ extensions:
               annotations:
               require-adobe-auth: true
               final: true
-  env:
-    SOME_ENV: dev
   hooks:
     post-app-build: 'echo hook'
 ```
@@ -178,8 +174,6 @@ extensions:
               annotations:
               require-adobe-auth: true
               final: true
-  env:
-    SOME_ENV: dev
   hooks:
     post-app-build: 'echo hook'
 ```
@@ -241,8 +235,6 @@ extensions:
               annotations:
               require-adobe-auth: true
               final: true
-  env:
-    SOME_ENV: dev
   hooks:
     post-app-build: 'echo hook'
 ```
