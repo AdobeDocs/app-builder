@@ -44,7 +44,7 @@ Headless applications (e.g. Runtime actions or sequences) are usually executed a
 
 A headless Project Firefly application requires to pass an Adobe IMS JWT access token in order to successfully call Adobe Product APIs. This token can be obtained within the [Developer Console](/console), by accessing the corresponding Project Firefly project and workspace.
 
-However, its lifetime will be of 24 hours and it will expire afterwards. Consequently, developers have to manually refresh the token and update the application configuration every day. To automate this process, the [IMS SDK Library](https://github.com/adobe/aio-lib-ims) can be used to generate or renew the JWT access token directly from a custom Runtime action.
+However, its lifetime will be of 24 hours and it will expire afterwards. Consequently, developers have to manually refresh the token and update the application configuration every day. To automate this process, the [IMS SDK Library](https://github.com/adobe/aio-lib-ims) can be used to generate or renew the JWT access token directly from a custom Runtime action (which should not be a web-action so that no unauthorized user can access it).
 
 This SDK library also uses the [State SDK Library](https://github.com/adobe/aio-lib-state) behind the scenes in order to persist the token in Project Firefly's cloud storage on behalf of the developer between two invocations of the Runtime action.
 
