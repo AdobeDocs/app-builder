@@ -15,6 +15,16 @@ Below are complete sample applications built using Project Firefly.
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
 
+### Live demo: Adobe Stock Image Search 
+
+[Demo](demo.md) 
+
+This is a Project Firefly Demo App which enables searching Adobe Stock images.
+
+
+
+<DiscoverBlock slots="heading, link, text" width="100%" />
+
 ### Customer Profiles Dashboard
 
 <https://github.com/AdobeDocs/adobeio-samples-customers-dashboard>

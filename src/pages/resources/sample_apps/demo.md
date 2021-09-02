@@ -6,4 +6,5 @@ keywords:
   - Developer Tooling
 title: Project Firefly Demo App
 frameSrc: https://53444-stocksearch-stage.adobeio-static.net/index.html
+frameHeight: 500px
 ---
