@@ -58,3 +58,10 @@ If you are developing a headless app but accidentally have the `web-src/` folder
 If your code uses Project Firefly [State](https://github.com/adobe/aio-lib-state) or [Files](https://github.com/adobe/aio-lib-files) SDKs, you cannot use [wskdebug](https://github.com/apache/openwhisk-wskdebug) to debug it. The reason is that `wskdebug` forwards the debugged action from the I/O Runtime system to a local container on your machine and executes it there. This local container is not authorized to access the out-of-the-box cloud storage behind State and Files SDKs, as this would be the case with an action deployed to I/O Runtime.
 
 *Note: This is not a problem if you configure the State or Files SDKs to connect to your own cloud storage (e.g. Cosmos DB).*
+
+## NodeJS with Mac M1 chip
+
+There are no pre-compiled NodeJS binaries for versions prior to 15.x for Apple's new M1 chip (arm64 architecture).
+One solution is to change the architecture of your shell from arm64 to x86.
+
+We recommend using the [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm) over [Homebrew](https://brew.sh/) and follow their [troubleshooting guides for macOS](https://github.com/nvm-sh/nvm#macos-troubleshooting) (section **Macs with M1 chip**). 
