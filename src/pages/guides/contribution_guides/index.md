@@ -23,3 +23,7 @@ All third-party contributions to this project must be accompanied by a signed co
 All submissions should come in the form of pull requests and need to be reviewed by project committers. Read [GitHub's pull request documentation](https://help.github.com/articles/about-pull-requests/) for more information on sending pull requests.
 
 Lastly, please follow the [pull request template](https://github.com/AdobeDocs/project-firefly/blob/main/.github/PULL_REQUEST_TEMPLATE.md) when submitting a pull request!
+
+## CLI and plugins best practises
+
+We follow the [12 Factors CLI principles](https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46) for our CLI and plugins.
