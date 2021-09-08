@@ -97,6 +97,37 @@ The following diagram illustrates how your custom hooks will be executed within 
 
 ![aio-app-undeploy lifecycle](../images/aio-app-undeploy.png)
 
+## Extension hooks
+
+With the introduction of [Extensions](extensions/index.md), hooks must be placed at the root of the `ext.config.yaml` file.
+For example, for a default bootstrapped Experience Cloud extension: 
+
+```yaml
+operations:
+  view:
+    - type: web
+      impl: index.html
+actions: actions
+web: web-src
+runtimeManifest:
+  packages:
+    dx-excshell-1:
+      license: Apache-2.0
+      actions:
+        generic:
+          function: actions/generic/index.js
+          web: 'yes'
+          runtime: 'nodejs:14'
+          inputs:
+            LOG_LEVEL: debug
+          annotations:
+            require-adobe-auth: true
+            final: true
+hooks:
+  build-actions: echo build-actions
+  build-static: echo build-static
+``` 
+
 # npm script hooks
 
 Use of Project Firefly event hooks does not interfere with use of npm scripts, however you will need to use `npm run ..` to trigger them.

@@ -94,3 +94,40 @@ await move(files, 'my/remote/src/folder/file.txt', 'my/remote/dest/') // will mo
 await move(files, 'my/remote/src/folder/', 'my/remote/dest/') // move folder to the dest folder
 await move(files, 'my/remote/folder/', 'my/remote/dest') // will rename folder to dest
 ```
+
+## Minification of actions and web assets
+
+The Firefly build process doesn't minify the files by default. 
+[Minification](https://en.wikipedia.org/wiki/Minification_%28programming%29) is the process of removing all unnecessary characters from your source code without altering its functionality. 
+It’s one of the main methods used to reduce load times and bandwidth usage on websites.**
+
+If you wish to minify your source code e.g. before a deployment, you can use [hooks](app-hooks.md) to override the build process with a custom one that includes a minification step.
+
+For example, with a default bootstrapped Experience Cloud extension, you can add the `build-actions` hook to minify the action and the `build-static` hook to minify web-assets:
+
+*/src/dx-excshell-1/ext.config.yaml*
+
+```yaml
+hooks:
+  build-actions: ncc build src/dx-excshell-1/actions/generic/index.js -o dist/dx-excshell-1/actions/generic-temp -m && bestzip dist/dx-excshell-1/actions/generic.zip dist/dx-excshell-1/actions/generic-temp/index.js
+  build-static: parcel build src/dx-excshell-1/web-src/index.html -d dist/dx-excshell-1/web-prod
+```   
+
+* `ncc` is used bundle the action into a single file, together with all its dependencies, gcc-style. This is a requirement for actions.
+* `bestzip` is used to zip the action for deployment.
+* `parcel` is used to bundle all web-assets including JS and CSS files.
+
+Make sure to add these dependencies to your `package.json`:
+ 
+```
+"devDependencies": {
+  "@vercel/ncc": "^0.30.0",
+  "bestzip": "1.1.6",
+  "cssnano": "^4.1.11",
+  "jest": "^26.6.3",
+  "parcel": "1.12.3",
+  "postcss": "^8.3.6" 
+}
+``` 
+
+Then you can run the build hooks with `aio app build`. You can expect a file size reduction of **50% at least** for actions and web-assets.    
