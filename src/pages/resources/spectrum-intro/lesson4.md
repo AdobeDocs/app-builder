@@ -11,13 +11,14 @@ keywords:
 To initialize a Firefly app, let’s use the init command from the [CLI](https://github.com/adobe/aio-cli).
 
 ```bash
-aio app init my-app
+aio app init my-app --no-extensions
 ```
 
 You’re presented with a few options what you want your app to include (serverless actions, web UI assets, CI/CD pipeline). 
 In this lab, we're only interested in `Web Assets: Deploy hosted static assets`.
 
-![web-assets](assets/web-assets.png)
+![web-assets](assets/web-assets-1.png)
+![web-assets](assets/web-assets-2.png)
 
 ## Single Page Application
 
