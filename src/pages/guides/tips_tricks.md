@@ -121,6 +121,7 @@ Make sure to add these dependencies to your `package.json`:
  
 ```
 "devDependencies": {
+  ...
   "@vercel/ncc": "^0.30.0",
   "bestzip": "1.1.6",
   "cssnano": "^4.1.11",
