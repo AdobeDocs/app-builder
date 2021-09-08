@@ -259,6 +259,10 @@ module.exports = {
         "path": "guides/events/custom-events.md"
       },
       {
+        "title": "Tips and Tricks for optimizing Project Firefly Apps",
+        "path": "guides/tips_tricks.md"
+      },
+      {
         "title": "Reference documentation",
         "path": "guides/reference_documentation"
       },
