@@ -19,21 +19,25 @@ Then `manifest.yml` lists the declaration of serverless actions including name, 
 
 Note: here put in the `providerId`,`apiKey` and `eventCode`from lesson 2 in the `manifest.yml` and `orgId`,`accessToken`can be passed through `headers`
 
-Below is a sample `manifest.yml` 
+Below is a sample `app.config.yaml` 
 ```javascript
-packages:
-  __APP_PACKAGE__:
-    license: Apache-2.0
-    actions:
-      <project-name>:
-        function: actions/<project-name>/index.js
-        web: 'yes'
-        runtime: 'nodejs:14'
-        inputs:
-          LOG_LEVEL: debug
-        annotations:
-          require-adobe-auth: true
-          final: true
+application:
+  actions: actions
+  web: web-src
+  runtimeManifest:
+    packages:
+      my-app:
+        license: Apache-2.0
+        actions:
+          generic:
+            function: actions/generic/index.js
+            web: 'yes'
+            runtime: 'nodejs:14'
+            inputs:
+              LOG_LEVEL: debug
+            annotations:
+              require-adobe-auth: true
+              final: true
       publish-events:
         function: actions/publish-events/index.js
         web: 'yes'
@@ -44,7 +48,6 @@ packages:
           providerId: <YOUR-PROVIDER_ID>
           eventCode: <YOUR-EVENT_CODE>
         annotations:
-          require-adobe-auth: true
           final: true
 ```
 
