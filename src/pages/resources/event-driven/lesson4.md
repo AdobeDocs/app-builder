@@ -27,7 +27,7 @@ Or you can use [Custom event SDK](https://github.com/adobe/aio-lib-events/) to c
 
 ## Option 2: Using runtime action
 Once you have access to [Adobe I/O Runtime](/apis/experienceplatform/runtime.html) (in our case you already have) and you have your [slack webhook url defined](https://api.slack.com/incoming-webhooks) :
-* Edit the `manifest.yml` to add an action called slack 
+* Edit the `app.config.yaml` to add an action called slack 
 ```javascript
  slack:
         function: actions/slack/index.js
