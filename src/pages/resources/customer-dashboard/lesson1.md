@@ -22,7 +22,7 @@ The next question asks you to select the sample actions to be created as part of
 
 Then you will be asked to specify the names of the sample action. Let's name it `get-profiles`.
 
-![app-init](assets/app-init.png)
+![app-init](assets/app-init-1.png)
 
 What happens next, is that from the command line a NodeJS project is created including the Adobe I/O Runtime actions, configuration files, tests etc. You could explore your project in VS Code, either by opening VSCode -> Open... -> select app folder, or typing the following command.
 
