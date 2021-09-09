@@ -67,23 +67,27 @@ exports.main = worker(async (source, rendition, params) => {
 });
 ```
 
-Because the SDK requires `apiKey` to be passed in the input params, update your manifest to include it.
+Because the SDK requires `apiKey` to be passed in the input params, update your `app.config.yaml` to include it.
 
 ```yaml
-packages:
-  __APP_PACKAGE__:
-    license: Apache-2.0
-    actions:
-      worker:
-        function: actions/worker/index.js
-        web: 'yes'
-        runtime: 'nodejs:14'
-        inputs:
-          apiKey: $SERVICE_API_KEY
-        limits:
-          concurrency: 10
-        annotations:
-          require-adobe-auth: true
+application:
+  actions: actions
+  web: web-src
+  runtimeManifest:
+    packages:
+      my-app:
+        license: Apache-2.0
+        actions:
+          worker:
+            function: actions/worker/index.js
+            web: 'yes'
+            runtime: 'nodejs:14'
+            limits:
+              concurrency: 10
+            inputs:
+              apiKey: $SERVICE_API_KEY
+            annotations:
+              require-adobe-auth: true
 ```
 
 Your worker should now be set. Execute the command `aio app run` to test it. In the development tool UI, select an existing or upload a new test image, define the rendition request and click the Run button. You will see the rendition result with a removed background.
