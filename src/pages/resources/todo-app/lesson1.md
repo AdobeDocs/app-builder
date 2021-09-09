@@ -15,7 +15,7 @@ In this lesson, we'll start bootstrapping the app with Runtime actions and the R
 To initialize a Firefly app, let's use init command from the CLI.
 
 ```bash
-aio app init todo-app
+aio app init todo-app --no-extensions
 ```
 
 You should be selecting the org, project and workspace for your app, and then presented with a few options what you want your app to include (serverless actions, web UI assets, CI/CD pipeline, events). In this lab, we keep all except events.
