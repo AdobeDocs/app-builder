@@ -33,10 +33,10 @@ downloaded automatically, you will need the private key to generate JWT token.
 
 ## Initialize a Firefly app using CLI template
 
-To initialize a Project Firefly app, let's use init command from the CLI.
+To initialize a Project Firefly app, let's use init command from the CLI. More information please refer to [Creating your First Project Firefly Application](https://www.adobe.io/project-firefly/docs/getting_started/first_app/)
 
 ```bash
-aio app init <Your-project-name>
+aio app init <Your-project-name> --no-extensions
 ```
 
 You will be presented with a few options, first question is "Which Adobe I/O App features do you want to enable for this project?" In this lab, we keep all of them. The second question is "Which type of sample actions do you want to create?" in this lab, we will select `Generic`, please remember to keep the `publish-event` template.
