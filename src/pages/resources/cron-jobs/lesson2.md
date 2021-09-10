@@ -15,7 +15,7 @@ Let's first try the `/whisk.system/alarms/interval` feed of the OpenWhisk Alarm 
 The only required param for the `interval` feed is `minutes`, which is an integer representing the length of the interval (in minutes) between trigger fires. Optional params are `trigger_payload`, `startDate` and `stopDate`.
 
 ```yaml
-pplication:
+application:
   actions: actions
   web: web-src
   runtimeManifest:
