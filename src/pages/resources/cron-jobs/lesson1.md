@@ -11,7 +11,7 @@ contributors:
 # Lesson 1: Bootstrap a Headless App
 
 First of all, you need a new headless app created with AIO CLI. This app only needs a simple action to test the cron job, so all other components are deselected.
-Follow this [Creating your First Project Firefly Application](https://www.adobe.io/project-firefly/docs/getting_started/first_app/)
+Follow this [Creating your First Project Firefly Application](https://github.com/AdobeDocs/project-firefly/blob/main/src/pages/getting_started/first_app.md)
 
 ![app-init](assets/app-init.png)
 
