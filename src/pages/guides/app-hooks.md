@@ -25,6 +25,8 @@ application:
     pre-app-run: echo pre-app-run
 ```
 
+For a legacy app, if you add extensions in the future via `aio app add extension`, note that your `app.config.yaml` hooks will always run first, then your extension hooks in `ext.config.yaml` will be run.
+
 ## App with Extensions
 
 In your app extension folder (typically at `src/EXTENSION_NAME`), find the `ext.config.yaml` file, and add in a `hooks` key. Example:
@@ -32,7 +34,6 @@ In your app extension folder (typically at `src/EXTENSION_NAME`), find the `ext.
 hooks:
   pre-app-run: echo pre-app-run
 ```
-
 
 ## Command Support
 
