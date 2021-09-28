@@ -25,7 +25,7 @@ application:
     pre-app-run: echo pre-app-run
 ```
 
-For a legacy app, if you add extensions in the future via `aio app add extension`, note that your `app.config.yaml` hooks will always run first, then your extension hooks in `ext.config.yaml` will be run.
+If you add extensions to a standalone app via `aio app add extension`, note that your `app.config.yaml` hooks will always run first, then your extension hooks in each `ext.config.yaml` will be run.
 
 ## App with Extensions
 
