@@ -39,37 +39,51 @@ Now we can set up fire event by follow [this](../event-driven/index.md) and make
 ## Scheduling cron jobs with alarms
 Follow this codelab to automatically fire event by using runtime alarms package [Scheduling Cron Jobs with Alarms](../cron-jobs/index.md)
 
-Your manifest file should look like this as below.
+Your `app.config.yaml` should look like this as below.
 ```yaml
-packages:
-  __APP_PACKAGE__:
-    license: Apache-2.0
-    actions:
-      publish-events:
-        function: actions/publish-events/index.js
-        runtime: 'nodejs:14'
-        inputs:
-          LOG_LEVEL: debug
-          apiKey: $SERVICE_API_KEY
-          providerId: $PROVIDER_ID
-          eventCode: $EVENT_CODE
-          client_id: $CLIENT_ID
-          client_secret: $CLIENT_SECRET
-          technical_account_email: $TECH_ACCOUNT_EMAIL
-          technical_account_id: $TECH_ACCOUNT_ID
-          ims_org_id: $IMS_ORG_ID
-          private_key: $PRIVATE_KEY
-        annotations:
-          final: true
-    triggers:
-      everyMin:
-        feed: /whisk.system/alarms/interval
-        inputs:
-          minutes: 1
-    rules:
-      everyMinRule:
-        trigger: everyMin
-        action: publish-events
+application:
+  actions: actions
+  web: web-src
+  runtimeManifest:
+    packages:
+      my-app:
+        license: Apache-2.0
+        actions:
+          generic:
+            function: actions/generic/index.js
+            web: 'yes'
+            runtime: 'nodejs:14'
+            inputs:
+              LOG_LEVEL: debug
+            annotations:
+              require-adobe-auth: true
+              final: true
+          publish-events:
+            function: actions/publish-events/index.js
+            web: 'yes'
+            runtime: 'nodejs:14'
+            inputs:
+              LOG_LEVEL: debug
+              apiKey: $SERVICE_API_KEY
+              providerId: $PROVIDER_ID
+              eventCode: $EVENT_CODE
+              client_id: $CLIENT_ID
+              client_secret: $CLIENT_SECRET
+              technical_account_email: $TECH_ACCOUNT_EMAIL
+              technical_account_id: $TECH_ACCOUNT_ID
+              ims_org_id: $IMS_ORG_ID
+              private_key: $PRIVATE_KEY
+            annotations:
+              final: true
+        Triggers:
+          everyMin:
+            feed: /whisk.system/alarms/interval
+            inputs:
+              minutes: 1
+          rules:
+            everyMinRule:
+              trigger: everyMin
+              action: publish-events
 ```
 
 In order to test the action, you could execute `aio app deploy` in the VSCode terminal. Once the deployment is finished, run `aio rt action invoke your-app-name/generic`, and then verify its result and logs using `aio rt activation get ID` and `aio rt activation logs ID`

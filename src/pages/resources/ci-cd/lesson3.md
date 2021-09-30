@@ -14,24 +14,28 @@ You can add additional environment variables to the test and deploy GitHub workf
 
 In our case, if you want to add for example environment values named `MY_ENV_VALUE_1` and `MY_ENV_VALUE_2` to the stage and production deploy workflow, follow these steps:
 
-1. First define the environment variables as input to your Runtime action in the `manifest.yml` e.g. :
+1. First define the environment variables as input to your Runtime action in the `app.config.yaml` e.g. :
 
 ```yml
-packages:
-  __APP_PACKAGE__:
-    license: Apache-2.0
-    actions:
-      generic:
-        function: actions/generic/index.js
-        web: 'yes'
-        runtime: 'nodejs:14'
-        inputs:
-          LOG_LEVEL: debug
-          my_value_1: $MY_ENV_VALUE_1
-          my_value_2: $MY_ENV_VALUE_2
-        annotations:
-          require-adobe-auth: true
-          final: true
+application:
+  actions: actions
+  web: web-src
+  runtimeManifest:
+    packages:
+      my-app:
+        license: Apache-2.0
+        actions:
+          generic:
+            function: actions/generic/index.js
+            web: 'yes'
+            runtime: 'nodejs:14'
+            inputs:
+              LOG_LEVEL: debug
+              my_value_1: $MY_ENV_VALUE_1
+              my_value_2: $MY_ENV_VALUE_2
+            annotations:
+              require-adobe-auth: true
+              final: true
 
 ```
  

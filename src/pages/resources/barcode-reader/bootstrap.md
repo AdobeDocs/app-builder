@@ -10,7 +10,7 @@ keywords:
 
 In order to create your barcode application, use the following command:
 ```bash
-aio app init my-barcode-app 
+aio app init my-barcode-app --no-extensions
 ```
 
 We select the org, project and workspace for our app, and then be presented with a few options what you want your app to include (Serverless Actions, Web UI, CI/CD pipeline, I/O Events). Since we are building a headless app, we're only interested in using `Actions: Deploy Runtime actions`.
@@ -33,22 +33,26 @@ We didn't include the UI setup nor the CI/CD pipeline nor I/O Events. These topi
 
 For our barcode app, we'll start by modifying the following files:
 
-**manifest.yml** which contains all defined actions with their default parameters:
+**app.config.yaml** which contains all defined actions with their default parameters:
 
 ```yaml
-packages:
-  __APP_PACKAGE__:
-    license: Apache-2.0
-    actions:
-      barcode:
-        function: actions/barcode/index.js
-        web: 'yes'
-        runtime: 'nodejs:14'
-        inputs:
-          LOG_LEVEL: debug
-        annotations:
-          require-adobe-auth: true
-          final: true
+application:
+  actions: actions
+  web: web-src
+  runtimeManifest:
+    packages:
+      my-app:
+        license: Apache-2.0
+        actions:
+          generic:
+            function: actions/generic/index.js
+            web: 'yes'
+            runtime: 'nodejs:14'
+            inputs:
+              LOG_LEVEL: debug
+            annotations:
+              require-adobe-auth: true
+              final: true
 
 ```
 
