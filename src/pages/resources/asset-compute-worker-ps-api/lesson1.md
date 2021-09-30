@@ -18,7 +18,7 @@ Make sure to have the Adobe I/O CLI installed locally. In your terminal, execute
 
 If you have not logged in already, this command prompts a browser asking you to sign into the Adobe Developer Console with your Adobe ID. See [here](../../getting_started/first_app.md#3-signing-in-from-cli) for more information on signing in from the cli.
 
-After logging in, follow the prompts in the CLI and select the Organization, Project, and Workspace to use for the application. Choose the project and workspace you created when you set up your environment. When prompted `Which extension point(s) do you wish to implement ? `, make sure to select `DX Asset Compute Worker v1y`:
+After logging in, follow the prompts in the CLI and select the Organization, Project, and Workspace to use for the application. Choose the project and workspace you created when you set up your environment. When prompted `Which extension point(s) do you wish to implement ? `, make sure to select `DX Asset Compute Worker`:
 
 ```bash
 $ aio app init <app-name>
@@ -27,8 +27,8 @@ Retrieving information from [!DNL Adobe I/O] Console.
 ? Select Project MyFireflyProject
 ? Which extension point(s) do you wish to implement ? (Press <space> to select, <a>
 to toggle all, <i> to invert selection)
-❯◯ DX Experience Cloud SPA v1
- ◯ DX Asset Compute Worker v1y
+❯◯ DX Experience Cloud SPA
+ ◯ DX Asset Compute Worker
 ```
 
 When prompted with `Which Adobe I/O App features do you want to enable for this project?`, select `Actions`. Make sure to **deselect** `Web Assets` option as web assets use different authentication and authorization checks.
