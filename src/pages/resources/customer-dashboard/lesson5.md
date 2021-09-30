@@ -21,7 +21,7 @@ aio app add action
 ```
 ![action-code](assets/action-code.png)
 
-Upon a successful command execution, the `generate-code` action is added to the manifest.yml file, and its source code is at `actions/generate-code/index.js`. As we don't need an authentication on this action, we will remove `require-adobe-auth: true` from its definition in manifest file, as well as remove the relevant authorization checks in the code. In addition, we add the code for generating UUID and return it in the response body.
+Upon a successful command execution, the `generate-code` action is added to the ext.config.yaml file, and its source code is at `src/dx-excshell-1/actions/generate-code/index.js`. As we don't need an authentication on this action, we will remove `require-adobe-auth: true` from its definition in manifest file, as well as remove the relevant authorization checks in the code. In addition, we add the code for generating UUID and return it in the response body.
 
 ```javascript
 /**
@@ -71,7 +71,7 @@ async function main (params) {
 exports.main = main
 ```
 
-Verify that the new action is working by running the app locally with `aio app run`, and check the response of `https://<your-namespace>.adobeioruntime.net/api/v1/web/customers-dashboard-0.0.1/generate-code` on the browser. You can find your own URL from the terminal output.
+Verify that the new action is working by running the app locally with `aio app run`, and check the response of `https://<your-namespace>.adobeioruntime.net/api/v1/dx-excshell-1/generate-code` on the browser. You can find your own URL from the terminal output.
 
 ![generate-code](assets/generate-code.png)
 
@@ -106,7 +106,7 @@ The last step is to add an action to trigger the Campaign Standard workflow, and
 
 ![action-promo](assets/action-promo.png)
 
-In order to trigger the workflow, you need to provide a workflow ID to the triggering API. You can find it on the Campaign Standard UI. In your `.env` file, add a new variable for it, for example `CAMPAIGN_STANDARD_WORKFLOW_ID=WKFXX`. This environment variable is then interpreted into a default param of the `send-promo` action in the manifest file.
+In order to trigger the workflow, you need to provide a workflow ID to the triggering API. You can find it on the Campaign Standard UI. In your `.env` file, add a new variable for it, for example `CAMPAIGN_STANDARD_WORKFLOW_ID=WKFXX`. This environment variable is then interpreted into a default param of the `send-promo` action in the `ext.config.yaml` file.
 
 ```yaml
 send-promo:

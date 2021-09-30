@@ -31,17 +31,6 @@ to toggle all, <i> to invert selection)
  ◯ DX Asset Compute Worker
 ```
 
-When prompted with `Which Adobe I/O App features do you want to enable for this project?`, select `Actions`. Make sure to **deselect** `Web Assets` option as web assets use different authentication and authorization checks.
-
-```bash
-? Which Adobe I/O App features do you want to enable for this project?
-select components to include (Press <space> to select, <a> to toggle all, <i> to invert selection)
-❯◉ Actions: Deploy Runtime actions
- ◯ Events: Publish to Adobe I/O Events
- ◯ Web Assets: Deploy hosted static assets
- ◯ CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy
-```
-
 Follow the rest of the prompts and open the new application in Visual Studio Code (or your favorite code editor). It contains the scaffolding and sample code for a custom application.
 
 The template application leverages the [Asset Compute SDK](https://github.com/adobe/asset-compute-sdk) for the uploading, downloading, and orchestration of application renditions so developers only need to implement the custom application logic. Inside the `actions/<worker-name>` folder, the `index.js` file is where to add the custom application code.

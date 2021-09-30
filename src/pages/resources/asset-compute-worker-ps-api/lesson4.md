@@ -10,7 +10,7 @@ contributors:
 
 # Lesson 4: Integrate and use the custom worker in AEMaaCS
 
-When the custom workers are done, you could deploy it onto I/O Runtime serverless platform to make it ready for integration in AEMaaCS. Execute the command `aio app deploy`, which will output all the endpoints of your custom workers in this format `https://1234-projectA-workspaceB.adobeioruntime.net/api/v1/web/example-custom-worker-0.0.1/worker-name`.
+When the custom workers are done, you could deploy it onto I/O Runtime serverless platform to make it ready for integration in AEMaaCS. Execute the command `aio app deploy`, which will output all the endpoints of your custom workers in this format `https://1234-projectA-workspaceB.adobeioruntime.net/api/v1/web/dx-asset-compute-worker-1/worker-name`.
 
 Next, in AEMaaCS, go to `Tools -> Assets -> Processing Profiles` to create a new processing profile. Give it a name, then under the Custom tab, configure the processing service to map the custom worker endpoints to corresponding renditions.
 

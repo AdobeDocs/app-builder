@@ -45,7 +45,7 @@ IMGIX_SECURE_TOKEN=imgx-token
 IMGIX_DOMAIN=your-subdomain.imgix.net
 ```
 
-Edit `ext.config.yaml` file inside the extension folder and add `inputs` object, as shown below. This file describes IO Runtime action to be deployed.
+Edit `ext.config.yaml` file inside the `src/dx-asset-compute-worker-1/` folder and add `inputs` object, as shown below. This file describes IO Runtime action to be deployed.
 And `input` param sets the default parameters with values referenced to our environment variables. Those params are
 available in action JS as `param` object.
 
@@ -87,7 +87,7 @@ blob storage and to generated signed URL for imgIX.
 $> npm install @adobe/aio-lib-files imgix-core-js
 ```
 
-Finally, edit the worker source code (located under `my-custom-worker/actions/<worker-name>/index.js`) and replace it
+Finally, edit the worker source code (located under `src/dx-asset-compute-worker-1/actions/<worker-name>/index.js`) and replace it
 with the following code.
 
 ```javascript

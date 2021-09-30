@@ -42,8 +42,8 @@ to put it in AEM configuration.
 
 ```
 Your deployed actions:
-  -> MyAssetCompute-0.0.1/__secured_my-worker
-  -> https://99999-myassetcompute-dev.adobeioruntime.net/api/v1/web/MyAssetCompute-0.0.1/my-worker
+  -> dx-asset-compute-worker-1/__secured_my-worker
+  -> https://99999-myassetcompute-dev.adobeioruntime.net/api/v1/web/dx-asset-compute-worker-1/my-worker
 Well done, your app is now online 🏄
 ```
 

@@ -67,7 +67,7 @@ exports.main = worker(async (source, rendition, params) => {
 });
 ```
 
-Because the SDK requires `apiKey` to be passed in the input params, update your `ext.config.yaml` in extension folder to include it.
+Because the SDK requires `apiKey` to be passed in the input params, update your `ext.config.yaml` in the `src/dx-asset-compute-worker-1/` folder to include it.
 
 ```yaml
 operations:
