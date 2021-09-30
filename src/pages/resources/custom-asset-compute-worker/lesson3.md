@@ -45,34 +45,39 @@ IMGIX_SECURE_TOKEN=imgx-token
 IMGIX_DOMAIN=your-subdomain.imgix.net
 ```
 
-Edit `app.config.yaml` file and add `inputs` object, as shown below. This file describes IO Runtime action to be deployed.
+Edit `ext.config.yaml` file inside the extension folder and add `inputs` object, as shown below. This file describes IO Runtime action to be deployed.
 And `input` param sets the default parameters with values referenced to our environment variables. Those params are
 available in action JS as `param` object.
 
 ```yaml
-application:
-  actions: actions
-  web: web-src
-  runtimeManifest:
-    packages:
-      my-app:
-        license: Apache-2.0
-        actions:
-          czeczek-worker:
-            function: actions/custom-worker/index.js
-            web: 'yes'
-            runtime: 'nodejs:14'
-            limits:
-              concurrency: 10
-            inputs:
+operations:
+  workerProcess:
+    - type: action
+      impl: dx-asset-compute-worker-1/worker
+hooks:
+  post-app-run: adobe-asset-compute devtool
+  test: adobe-asset-compute test-worker
+actions: actions
+runtimeManifest:
+  packages:
+    dx-asset-compute-worker-1:
+      license: Apache-2.0
+      actions:
+        czeczek-worker:
+          function: actions/worker/index.js
+          web: 'yes'
+          runtime: 'nodejs:14'
+          limits:
+            concurrency: 10
+          inputs:
               imgixStorageAccount: $IMGIX_STORAGE_ACCOUNT
               imgixStorageKey: $IMGIX_STORAGE_KEY
               imgixStorageContainerName: $IMGIX_STORAGE_CONTAINER_NAME
               imgixSecureToken: $IMGIX_SECURE_TOKEN
               imgixDomain: $IMGIX_DOMAIN
-            annotations:
-              require-adobe-auth: true
-              final: true
+          annotations:
+            require-adobe-auth: true
+            final: true
 ```
 
 We also need to add two dependencies to our project. These are the libraries we will use to simplify access to the Azure
