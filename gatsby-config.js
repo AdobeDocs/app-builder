@@ -13,8 +13,8 @@
 module.exports = {
   siteMetadata: {
     "home": {
-      "title": "Project Firefly",
-      "path": "/project-firefly"
+      "title": "App Builder",
+      "path": "/app-builder"
     },
     pages: [
       {
@@ -676,5 +676,5 @@ module.exports = {
     ],
   },
   plugins: ['@adobe/gatsby-theme-aio'],
-  pathPrefix: process.env.PATH_PREFIX || '/project-firefly/docs/'
+  pathPrefix: process.env.PATH_PREFIX || '/app-builder/docs/'
 };
