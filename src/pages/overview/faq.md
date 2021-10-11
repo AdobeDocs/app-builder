@@ -80,3 +80,18 @@ Today, Project Firefly focuses on Adobe Experience Platform and Adobe Experience
 Project Firefly is not a generic framework for creating cloud native apps. It is a framework that is designed from ground-up to support 3rd-parties who want to extend and integrate Adobe Experience Cloud and Adobe Experience Platform. It is pre-integrated with Adobe APIs, Events, Adobe I/O Runtime, and Adobe authentication/authorization. 
 
 Our value proposition is that Project Firefly is the fastest and easiest way for a developer to extend and integrate with Adobe enterprise solutions.
+
+## Which languages are supported in I/O Runtime?  
+For now, Adobe I/O Runtime only supports Node.js. We might add support for other languages in the future.
+
+## Where we execute your actions?
+I/O Runtime runs in Azure in multiple regions. We deploy your code in all regions and execute it in the closest region to the caller (latency-based routing). You can't restrict the execution to a specific region only.
+
+You can find more information about the regions and how you can check where your actions are being executed here - [Multiple Regions](../guides/runtime/reference/multiple_regions.md).
+
+## Which limits are imposed onto actions?  
+All available limits (and the default values) are listed here: [System Settings](../guides/runtime/using/system_settings.md). Notable limits are the timeout for functions and the maximum payload that can get posted to a function.
+
+## Developer Support
+
+You can use the [Forums](https://experienceleaguecommunities.adobe.com/t5/adobe-i-o-cloud-extensibility/ct-p/adobe-io) for developer support related questions.

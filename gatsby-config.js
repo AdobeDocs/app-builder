@@ -149,6 +149,175 @@ module.exports = {
         ]
       },
       {
+        "title": "I/O Runtime",
+        "path": "guides/runtime",
+        "pages": [
+          {
+            "pages": [
+              {
+                "path": "guides/runtime/overview/what_is_runtime.md",
+                "title": "What is Adobe I/O Runtime"
+              },
+              {
+            
+                "path": "guides/runtime/overview/usecases.md",
+                "title": "Use cases"
+              },
+              {
+                "path": "guides/runtime/overview/howitworks.md",
+                "title": "How Adobe I/O Runtime Works"
+              },
+              {
+                "path": "guides/runtime/overview/entities.md",
+                "title": "Adobe I/O Runtime Entities"
+              },
+              {
+                "path": "guides/runtime/overview/getting_access.md",
+                "title": "Getting Access"
+              }
+            ],
+            "path": "guides/runtime/overview/index.md",
+            "title": "Overview"
+          },
+          {
+            "pages": [
+              {
+                "path": "guides/runtime/getting-started/setup.md",
+                "title": "Setting up Your Environment"
+              },
+              {
+                "path": "guides/runtime/getting-started/deploy.md",
+                "title": "Deploying your First Adobe I/O Runtime Function"
+              },
+              {
+                "path": "guides/runtime/getting-started/activations.md",
+                "title": "Retrieve Action Invocation Results"
+              }
+            ],
+            "path": "guides/runtime/getting-started/index.md",
+            "title": "Getting Started with Adobe I/O Runtime"
+          },
+          {
+            "pages": [
+              {
+                "path": "guides/runtime/using/creating_actions.md",
+                "title": "Creating Actions"
+              },
+              {
+                "path": "guides/runtime/using/asynchronous_calls.md",
+                "title": "Asynchronous Calls"
+              },
+              {
+                "path": "guides/runtime/using/throughput_tuning.md",
+                "title": "Throughput Tuning"
+              },
+              {
+                "path": "guides/runtime/using/security_general.md",
+                "title": "Security Guide"
+              },
+              {
+                "path": "guides/runtime/using/securing_web_actions.md",
+                "title": "Securing Web Actions"
+              },
+              {
+                "path": "guides/runtime/using/creating_rest_apis.md",
+                "title": "Creating REST APIs"
+              },
+              {
+                "path": "guides/runtime/using/using_packages.md",
+                "title": "Using Packages"
+              },
+              {
+                "path": "guides/runtime/using/logging_monitoring.md",
+                "title": "Logging & Monitoring"
+              },
+              {
+                "path": "guides/runtime/using/debugging.md",
+                "title": "Debugging"
+              },
+              {
+                "path": "guides/runtime/using/system_settings.md",
+                "title": "System Settings"
+              },
+              {
+                "path": "guides/runtime/using/ci-cd_pipeline.md",
+                "title": "CI/CD Pipeline"
+              }
+            ],
+            "path": "guides/runtime/using/index.md",
+            "title": "Using Adobe I/O Runtime"
+          },
+          {
+            "pages": [
+              {
+                "path": "guides/runtime/reference/cli_use.md",
+                "title": "Using aio CLI"
+              },
+              {
+                "path": "guides/runtime/reference/wsk_use.md",
+                "title": "Using the wsk CLI"
+              },
+              {
+                "path": "guides/runtime/reference/environment_variables.md",
+                "title": "Environment Variables"
+              },
+              {
+                "path": "guides/runtime/reference/multiple_regions.md",
+                "title": "Multiple Regions"
+              },
+              {
+                "path": "guides/runtime/reference/prepackages.md",
+                "title": "Pre-installed packages"
+              },
+              {
+                "path": "guides/runtime/reference/runtimes.md",
+                "title": "Runtimes"
+              },
+              {
+                "path": "guides/runtime/reference/api_ref.md",
+                "title": "API Reference"
+              },
+              {
+                "path": "guides/runtime/reference/triggersrules.md",
+                "title": "Triggers & Rules"
+              },
+              {
+                "path": "guides/runtime/reference/sequences_compositions.md",
+                "title": "Sequences & Compositions"
+              },
+              {
+                "path": "guides/runtime/reference/packages.md",
+                "title": "Packages"
+              },
+              {
+                "path": "guides/runtime/reference/feeds.md",
+                "title": "Feeds"
+              }
+            ],
+            "path": "guides/runtime/reference/index.md",
+            "title": "Adobe I/O Runtime reference documentation"
+          },
+          {
+            "pages": [
+              {
+                "path": "guides/runtime/tools/cli_install.md",
+                "title": "Setting up the aio CLI"
+              },
+              {
+                "path": "guides/runtime/tools/wsk_install.md",
+                "title": "Setting up the wsk CLI"
+              },
+              {
+                "path": "guides/runtime/tools/wskdeploy_install.md",
+                "title": "Setting up the wskdeploy CLI"
+              }
+            ],
+            "path": "guides/runtime/tools/index.md",
+            "title": "Tools"
+          },
+        ]
+      },
+      {
         "title": "Integration Guide with Adobe Experience Cloud",
         "path": "guides/exc_app",
         "pages": [
