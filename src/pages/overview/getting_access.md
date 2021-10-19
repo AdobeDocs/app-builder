@@ -14,7 +14,8 @@ Requesting access is a simple two step process.
 2. Login with your Adobe ID to our forum & accept agreement _(step 1 will automatically forward you to the forum)_
 
 
-App Builder Trial FAQ
+## App Builder Trial FAQ
+
 **I do not use Adobe Experience Cloud products like Adobe Analytics, Adobe Experience Manager, Adobe Campaign or others, can I still try App Builder?**
 
 No. App Builder is built specifically for users of Adobe Experience Cloud so you will need to have access to at least one Experience Cloud product to be accepted into the trial.
