@@ -22,7 +22,7 @@ No. App Builder is built specifically for users of Adobe Experience Cloud so you
 
 **Do I need any special information I need to apply?**
 
-Yes. You will need the Adobe Identity Management Service (IMS) Orginzation Name and ID. This is the org you use to login to Adobe Experience Cloud. You can retrieve your Organization ID and name from [Adobe Admin Console](https://adminconsole.adobe.com), the ID is part of the URL, the numbers and letters prior to @AdobeOrg) and the name is listed in the top-right corner
+Yes. You will need the Adobe Identity Management Service (IMS) Organization Name and ID. This is the org you use to login to Adobe Experience Cloud. You can retrieve your Organization ID and name from [Adobe Admin Console](https://adminconsole.adobe.com), the ID is part of the URL, the numbers and letters prior to @AdobeOrg) and the name is listed in the top-right corner
 
 If you are unable to access the Adobe Admin Console you will need to ask a sys admin for the org ID and Name in order to apply for a trial.
 
