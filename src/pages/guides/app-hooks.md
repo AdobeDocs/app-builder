@@ -9,9 +9,6 @@ keywords:
 
 # Project Firefly application tooling lifecycle event hooks
 
-Project Firefly applications created with [our CLI](https://github.com/adobe/aio-cli) are inherently npm packages.
-This means they support many of the npm conveniences node developers expect. `package.json` may include the following scripts which are triggered at various times while an app is being built, deployed and/or run.
-
 ## Sample hooks configuration
 
 For example, pre and post hooks can be defined for the `run`, `build` and `deploy` commands in the app.config.yaml or ext.config.yaml file of your app. For the `run`, `build` and `deploy` commands, you can specify build and deploy script substitutes as well. For the `run` command, you can specify an additional `serve-static` script (to custom serve your web assets).
