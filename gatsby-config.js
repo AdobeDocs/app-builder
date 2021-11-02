@@ -251,6 +251,10 @@ module.exports = {
         ]
       },
       {
+        "title": "Configuration Files",
+        "path": "guides/appbuilder-configuration.md"
+      },
+      {
         "title": "Integration Guide for building Event-driven Applications with I/O Events",
         "path": "guides/events/webhooks.md"
       },
