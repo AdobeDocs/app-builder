@@ -4,14 +4,14 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: Debugging Firefly Apps
-description: The basic steps of debugging a Firefly App.
+title: Debugging App Builder Apps
+description: The basic steps of debugging a App Builder App.
 contributors: 
   - https://github.com/duynguyen 
 ---
 
-# Debugging Firefly Apps
+# Debugging App Builder Apps
 
-This codelab will guide you through debugging a Firefly app using its available tooling.
+This codelab will guide you through debugging a App Builder app using its available tooling.
 
 ![front-banner](assets/front-banner.png)

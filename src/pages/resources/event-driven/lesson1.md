@@ -8,7 +8,7 @@ contributors:
   - https://github.com/Yu1986
 ---
 
-# Lesson 1: Create a New Firefly App from Template 
+# Lesson 1: Create a New App Builder App from Template 
 
 ## Create a Console Integration and Set up Project
 In order to use custom events CLI plugin, you need to get below information from console integration.
@@ -31,9 +31,9 @@ downloaded automatically, you will need the private key to generate JWT token.
 
 4. Go to `project overview` tab, download project metadata from `Download` button and get the needed info from this `.json`file, or you can also get these info from `.aio` file in the project folder.
 
-## Initialize a Firefly app using CLI template
+## Initialize a App Builder app using CLI template
 
-To initialize a App Builder app, let's use init command from the CLI. More information please refer to [Creating your First App Builder Application](https://www.adobe.io/project-firefly/docs/getting_started/first_app/)
+To initialize a App Builder app, let's use init command from the CLI. More information please refer to [Creating your First App Builder Application](../../getting_started/first_app.md)
 
 ```bash
 aio app init <Your-project-name> --no-extensions
@@ -45,7 +45,7 @@ Name your action, then you have created your App Builder template. Now you can u
 ![event-provider](assets/publish-event-cli.png)
 
 In this lab, user will create a webpage using this generic template. if this is your first time to use App Builder, follow below instructions:
-* [Creating your First Firefly App](../../getting_started/first_app.md)
+* [Creating your First App Builder App](../../getting_started/first_app.md)
 
 In next lesson, we will show how to use custom event to register this app as event provider and click the `invoke` button 
 to fire an event, this event will be consumed by three ways (Journaling API, webhook URL, runtime action)

@@ -23,7 +23,7 @@ For enterprise developers, Adobe offers journaling to consume events. The Adobe 
 After you fire event, you should be able to verify your event through journaling UNIQUE API ENDPOINT you get from console by follow below instruction Journaling api you could use Curl command or POSTMAN to call this journaling UNIQUE API ENDPOINT to see your fired event. Or you can use [Custom Event SDK](https://github.com/adobe/aio-lib-events) to call Journaling API to retrieve your event.
 
 
-## Write the data into Firefly storage
+## Write the data into App Builder storage
 We will use [aio-lib-state](https://github.com/adobe/aio-lib-state) to store the event from journaling api. So first we’re going to install the dependency with:
 ```bash
 npm i --save @adobe/aio-lib-state

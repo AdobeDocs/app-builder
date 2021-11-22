@@ -1,6 +1,6 @@
 ---
 title: Adobe Developers Live | App Builder Deep Dive
-description: Join us and see Firefly in action - code, security, headfull and headless apps, CI/CD and more. 
+description: Join us and see App Builder in action - code, security, headfull and headless apps, CI/CD and more. 
 keywords:
   - Adobe I/O
   - Extensibility
@@ -10,7 +10,7 @@ keywords:
 
 # Adobe Developers Live | App Builder Deep Dive
 
-Join us and see Firefly in action: code, security, headfull and headless apps, CI/CD and more.
+Join us and see App Builder in action: code, security, headfull and headless apps, CI/CD and more.
 
 <Media slots="video"/>
 

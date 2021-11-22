@@ -8,7 +8,7 @@ contributors:
   - https://github.com/duynguyen 
 ---
 
-# Lesson 1: Create a Firefly app from the Asset Compute template
+# Lesson 1: Create a App Builder app from the Asset Compute template
 
 To begin this codelab, you should have [a project already created from App Builder Template in Adobe Developer Console](../../getting_started/first_app.md#2-creating-a-new-project-on-developer-console). Please add the `Asset Compute` and `Adobe Photoshop APIs (Trial)` services to the workspace that you are using for the codelab.
 

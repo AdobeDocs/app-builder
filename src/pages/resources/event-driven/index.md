@@ -4,13 +4,13 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: Event-Driven Firefly Apps
-description: Introduction to applying Custom I/O Events in event-driven use cases of Firefly applications.
+title: Event-Driven App Builder Apps
+description: Introduction to applying Custom I/O Events in event-driven use cases of App Builder applications.
 contributors:
   - https://github.com/Yu1986
 ---
 
-# Build an Event-Driven Firefly App Using Custom Events
+# Build an Event-Driven App Builder App Using Custom Events
 
 ## Overview
 

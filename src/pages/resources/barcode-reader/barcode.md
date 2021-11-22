@@ -115,7 +115,7 @@ which will:
 2. Package and deploy the Runtime action and its dependencies using a built-in webpack configuration.   
 3. Start a local development environment and provide the action url e.g. `http://localhost:3233/api/v1/web/guest/my-barcode-app-0.0.1/barcode` for testing and debugging. 
 
-Note that we'll cover how to do debug a Firefly app in another codelab.
+Note that we'll cover how to do debug a App Builder app in another codelab.
 
 Now if you add the value parameter to the url e.g. `?value=test`, the action should generate a barcode:
 
@@ -123,8 +123,8 @@ Now if you add the value parameter to the url e.g. `?value=test`, the action sho
 
 ## Deploying
 
-You can deploy a Firefly Headless app with `aio app run` or `aio app deploy`. This will deploy the actions to Adobe I/O Runtime.
-`aio app deploy` would have deployed the UI to a CDN but since we don't have any UI, that step is simply ignored. We'll have a separate codelab to guide you through building a Firefly App with UI.
+You can deploy a App Builder Headless app with `aio app run` or `aio app deploy`. This will deploy the actions to Adobe I/O Runtime.
+`aio app deploy` would have deployed the UI to a CDN but since we don't have any UI, that step is simply ignored. We'll have a separate codelab to guide you through building a App Builder App with UI.
 
 Make sure to set your Adobe I/O Runtime secrets (namespace and auth) in the `.env` file. 
 We'll also turn off the built-in authentication by setting `require-adobe-auth: false` in the `manifest.yml`.    
@@ -134,7 +134,7 @@ Hitting deploy with the CLI will output the deployed action url:
 
 ![deploy](assets/deploy.png)  
 
-**Congratulations ! Your first Firefly Headless App is live.** 
+**Congratulations ! Your first App Builder Headless App is live.** 
 
 How can we test that the passed value is actually rendered as a barcode ? Luckily for us, there are also barcode readers that we can leverage in our tests.
 

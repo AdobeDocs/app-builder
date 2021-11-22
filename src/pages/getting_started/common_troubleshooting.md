@@ -8,7 +8,7 @@ keywords:
 
 # Common Troubleshooting
 
-Here are troubleshooting guides for some of the most common issues as you develop your first Firefly apps.
+Here are troubleshooting guides for some of the most common issues as you develop your first App Builder apps.
 
 ## Before you proceed
 
@@ -17,7 +17,7 @@ Here are troubleshooting guides for some of the most common issues as you develo
 
 ## General debugging
 
-When your action code doesn't work as expected, you may want to investigate into what exactly went wrong. App Builder provides the [Logging SDK](https://github.com/adobe/aio-lib-core-logging), please check out [Firefly's Application Logging](../guides/application_logging.md) for more details. 
+When your action code doesn't work as expected, you may want to investigate into what exactly went wrong. App Builder provides the [Logging SDK](https://github.com/adobe/aio-lib-core-logging), please check out [App Builder's Application Logging](../guides/application_logging.md) for more details. 
 
 To see the latest activations of your project, run this command:
 ```bash
@@ -49,7 +49,7 @@ When Adobe authentication and authorization checks are enabled for an action wit
 An SPA is an application with web UI components (located in the `web-src/` folder). Headless app are back-end microservices without web UI. 
 For authentication and authorization checks, the back-end actions of an SPA are validated against a valid user token which is passed directly from Adobe Experience Cloud (ExC) Shell. 
 
-On the other hand, the actions of a headless app can be validated against a valid user token from ExC Shell or a valid access token generated with the [JWT (Service Account) Authentication](/authentication/auth-methods#!AdobeDocs/adobeio-auth/master/JWT/JWT.md). Please go through the [Firefly Security Overview](../guides/security/index.md) for more details about SPA vs. headless app authentication. 
+On the other hand, the actions of a headless app can be validated against a valid user token from ExC Shell or a valid access token generated with the [JWT (Service Account) Authentication](/authentication/auth-methods#!AdobeDocs/adobeio-auth/master/JWT/JWT.md). Please go through the [App Builder Security Overview](../guides/security/index.md) for more details about SPA vs. headless app authentication. 
 
 If you are developing a headless app but accidentally have the `web-src/` folder added during the app initialization process, you could remove it by executing the command `aio app delete web-assets` at the root of your application source code folder. This will also assure that your actions are validated against the appropriate JWT auth.
 

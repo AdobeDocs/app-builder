@@ -14,7 +14,7 @@ Now you got the development environment set up locally and can run a basic worke
 
 [Adobe Photoshop APIs](/photoshop/api/) enable you to build plugins and integrations that harness the power of the world’s best image editing and graphic design software to transform creative workflows for users everywhere. In this codelab, you leverage the Photoshop APIs to generate custom renditions in AEM Assets.
 
-You will need the [Firefly Files SDK](https://github.com/adobe/aio-lib-files) to store images, the [Photoshop API SDK](https://github.com/adobe/aio-lib-photoshop-api) to call Photoshop APIs, and UUID to generate unique folder names for renditions of different images. Add them as dependencies in your `package.json` file.
+You will need the [App Builder Files SDK](https://github.com/adobe/aio-lib-files) to store images, the [Photoshop API SDK](https://github.com/adobe/aio-lib-photoshop-api) to call Photoshop APIs, and UUID to generate unique folder names for renditions of different images. Add them as dependencies in your `package.json` file.
 
 ```json
 "dependencies": {

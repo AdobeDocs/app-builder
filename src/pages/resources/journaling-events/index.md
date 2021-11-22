@@ -5,24 +5,24 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Consume Events Using Journaling API
-description: Creating cron jobs in a Firefly application to consume events using Journaling API.
+description: Creating cron jobs in a App Builder application to consume events using Journaling API.
 contributors:
   - https://github.com/Yu1986
 ---
 
 # Consume Events using Journaling API
 
-This codelab will guide you through creating cron jobs in a Firefly application to consume events using journaling API
+This codelab will guide you through creating cron jobs in a App Builder application to consume events using journaling API
 
 ## User Story
-There is a class of Firefly apps in which customers want guarantees that the I/O Events are processed without losing any event especially 
+There is a class of App Builder apps in which customers want guarantees that the I/O Events are processed without losing any event especially 
 when there is a surge of events, a runtime webhook would return 429 response beyond the concurrency limit, thereby causing the webhook to be 
 marked unreachable and causing no further events to be delivered. In this use case, the journaling API of custom events would be useful here. 
 
 ## Solution
 - Using [Journaling API](/apis/experienceplatform/events/docs.html#!adobedocs/adobeio-events/master/api/journaling_api.md) to retrieve the events instead of relying on the webhook approach.
 - Use a runtime action that uses the [Alarm package](../cron-jobs/index.md) to read the events every X minutes.
-- The alarm action stores the events in the Firefly storage [aio-lib-state](https://github.com/adobe/aio-lib-state).
+- The alarm action stores the events in the App Builder storage [aio-lib-state](https://github.com/adobe/aio-lib-state).
 - Index of events has been recorded in storage that if the action fails, the next invocation will retrieve from the same index, thus no events are lost.
 
 In order to demo how to using journaling API to consume events, we provide an end to end solution in this codelab, 

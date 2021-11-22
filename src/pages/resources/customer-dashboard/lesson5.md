@@ -77,7 +77,7 @@ Verify that the new action is working by running the app locally with `aio app r
 
 *Note: Visit the codelab [Headless Apps with App Builder](../barcode-reader/index.md) to learn more about building a headless app for barcode generation.*  
 
-Now that you have it set up in Firefly app, next step is to create a marketing workflow in Campaign Standard which takes care of receiving external signals from the app and sending promotion emails. To do that, go to *Marketing Activities > Create > Workflow*. Define the properties of your workflow, and finish the creation.  
+Now that you have it set up in App Builder app, next step is to create a marketing workflow in Campaign Standard which takes care of receiving external signals from the app and sending promotion emails. To do that, go to *Marketing Activities > Create > Workflow*. Define the properties of your workflow, and finish the creation.  
 
 Your new workflow should contain 3 components, in correct order:
 1. External signal

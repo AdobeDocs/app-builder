@@ -119,7 +119,7 @@ jobs:
           AIO_RUNTIME_NAMESPACE: ${{ secrets.AIO_RUNTIME_NAMESPACE_STAGE }}
 ```
 
-**deploy_prod.yml** is the GitHub action that will deploy the Firefly App to the production environment by calling `aio app deploy`. It will run anytime the [release](https://help.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release) event occurs. Please read [GitHub's documentation ](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository) to learn how to perform releases. 
+**deploy_prod.yml** is the GitHub action that will deploy the App Builder App to the production environment by calling `aio app deploy`. It will run anytime the [release](https://help.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release) event occurs. Please read [GitHub's documentation ](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository) to learn how to perform releases. 
 
 ```yaml
 name: AIO App CI
@@ -166,7 +166,7 @@ jobs:
 
 The back-end serverless actions get deployed to Runtime, while the SPA gets deployed to the out-of-the-box CDN for every deployment whether to stage or production.    
 
-For that, we'll push the project on GitHub with `git commit "Initial commit" && git push origin master` which will commit the Firefly App to the `master` branch of the GitHub repository.
+For that, we'll push the project on GitHub with `git commit "Initial commit" && git push origin master` which will commit the App Builder App to the `master` branch of the GitHub repository.
 
 The GitHub actions defined in `deploy_stage.yml` will run by default. Go to `https://github.com/<org>/<project_name>/actions` to see the workflow running:
 

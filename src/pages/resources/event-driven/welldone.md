@@ -28,6 +28,6 @@ You have learned:
 
 * How to start a App Builder app 
 * Register event provider using custom event
-* Testing the flow by emitting event from firefly app
+* Testing the flow by emitting event from App Builder app
 * Consuming the events in three options
 

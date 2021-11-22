@@ -10,8 +10,8 @@ contributors:
 
 # Lesson 1: Step by Step Guide
 
-## Initialize a Firefly app using template 
-If you don't have a Firefly app, please follow [Create a New Firefly App from Template](../event-driven/lesson1.md) to create one, make sure you have `publish-event`in the template and add `I/O management API`in console. After done, and run `aio app deploy` you should have seen this 
+## Initialize a App Builder app using template 
+If you don't have a App Builder app, please follow [Create a New App Builder App from Template](../event-driven/lesson1.md) to create one, make sure you have `publish-event`in the template and add `I/O management API`in console. After done, and run `aio app deploy` you should have seen this 
 ![publishevent](assets/publishevent-1.png)
 
 and here is the project I set up at adobe developer console 
@@ -149,7 +149,7 @@ Please note that: An action used as event consumer does not need to be `web: yes
 
 ## Event Runtime Integration 
 
-- With all above setup, now you get your `providerId`, `eventCode`, you can go back to your firefly App trying to invoke a custom event like below: 
+- With all above setup, now you get your `providerId`, `eventCode`, you can go back to your App Builder App trying to invoke a custom event like below: 
 ![invoke-event](assets/event-invoke-4.png)
 
 - You should see this runtime action created in the `user defined actions` 

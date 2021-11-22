@@ -8,7 +8,7 @@ contributors:
   - https://github.com/Yu1986
 ---
 
-# Lesson 1: Create an Event Provider using Firefly
+# Lesson 1: Create an Event Provider using App Builder
 
 In this lesson, we will do the follow steps:
 - Create an event provider using App Builder template
@@ -17,10 +17,10 @@ In this lesson, we will do the follow steps:
 - Scheduling cron jobs with alarms
 
 ## Create an event provider using App Builder template
-In this codelab, to provide an end to end solution, we need to have an event provider generating tons of events sending to journaling API, and the events provider need to be configurable to send x events/min to help user to test. so we choose to use OpenWhisk Alarms Package in Firefly application to create 
+In this codelab, to provide an end to end solution, we need to have an event provider generating tons of events sending to journaling API, and the events provider need to be configurable to send x events/min to help user to test. so we choose to use OpenWhisk Alarms Package in App Builder application to create 
 cron jobs. 
 
-First, let's create a new firefly App from template by follow the below codelab:
+First, let's create a new App Builder App from template by follow the below codelab:
 [here](../event-driven/lesson1.md)
 please make sure you add `I/O management API` in console and choose `publish-event` in the cli template. 
 
