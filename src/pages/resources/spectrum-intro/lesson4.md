@@ -6,7 +6,7 @@ keywords:
   - Developer Tooling
 ---
 
-# Lesson 4: React Spectrum in Project Firefly
+# Lesson 4: React Spectrum in App Builder
 
 To initialize a Firefly app, let’s use the init command from the [CLI](https://github.com/adobe/aio-cli).
 
@@ -25,7 +25,7 @@ In this lab, we're only interested in `Web Assets: Deploy hosted static assets`.
 This will generate a Single Page Application project using [React](https://reactjs.org/) and [Experience Cloud Shell](../../guides/exc_app/index.md) utilities to integrate the SPA within the Adobe Experience Cloud.
 How to best leverage the Experience Shell (e.g routing etc.) will be covered in another codelab.
 
-Project Firefly SPAs are following [JAMstack principles](https://jamstack.org/) "Fast and secure apps delivered by pre-rendering files and serving them directly from a Content Delivery Network". 
+App Builder SPAs are following [JAMstack principles](https://jamstack.org/) "Fast and secure apps delivered by pre-rendering files and serving them directly from a Content Delivery Network". 
 
 *The SPA is using client-side rendering. Server side rendering or isomorphic rendering to build views on the server at runtime is not supported.*
 

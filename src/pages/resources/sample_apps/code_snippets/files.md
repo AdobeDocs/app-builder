@@ -4,10 +4,10 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: Project Firefly Code Snippets - Firefly Files SDK  
+title: App Builder Code Snippets - App Builder Files SDK  
 ---
 
-# Firefly Files SDK
+# App Builder Files SDK
 
 ## Return a list of files stored with the Files SDK
 

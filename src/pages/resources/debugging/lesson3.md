@@ -10,7 +10,7 @@ contributors:
 
 # Lesson 3: Managing Application Logs
 
-Logging is a great add-on for debugging apps during development as well as at runtime. Project Firefly [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) provide commodities for developers to log and retrieve information and data from their apps.  
+Logging is a great add-on for debugging apps during development as well as at runtime. App Builder [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) provide commodities for developers to log and retrieve information and data from their apps.  
 
 In our sample app, `logger` is used throughout the `hello` action. It is provided by the [Firefly's core Logging library](https://github.com/adobe/aio-lib-core-logging).
 

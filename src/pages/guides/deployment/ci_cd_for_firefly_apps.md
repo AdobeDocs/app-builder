@@ -6,10 +6,10 @@ keywords:
   - Developer Tooling
 ---
 
-# CI/CD for Project Firefly Applications
-Continuous integration and continuous delivery (CI/CD) is a crucial component for the success of any development team -- a team working on Project Firefly Applications is no difference. Allowing the development team to focus on requirements, code quality, and security with deployment automated, CI/CD is one of the best practice to implement and for us to support. 
+# CI/CD for App Builder Applications
+Continuous integration and continuous delivery (CI/CD) is a crucial component for the success of any development team -- a team working on App Builder Applications is no difference. Allowing the development team to focus on requirements, code quality, and security with deployment automated, CI/CD is one of the best practice to implement and for us to support. 
 
-Project Firefly allows you to manage multiple environments. This is achieved through **Workspace** in Adobe Developer Console. Every new application project created by an entitled organization administrator or developer in the Developer Console will be setup with two named workspaces: Stage and Production. Each workspace will have its own setup:
+App Builder allows you to manage multiple environments. This is achieved through **Workspace** in Adobe Developer Console. Every new application project created by an entitled organization administrator or developer in the Developer Console will be setup with two named workspaces: Stage and Production. Each workspace will have its own setup:
 
 - List of Adobe services to integrate via user or technical user accounts
 - Runtime namespace
@@ -35,7 +35,7 @@ You can then check if the workspace is set up for the app by verifying the `.aio
 
 ## GitHub Actions Support
 A sample CI/CD workflow is provided out-of-the-box on top of [GitHub Actions](https://github.com/features/actions).
-Upon bootstrapping of a new Project Firefly Application from the [CLI](https://github.com/adobe/aio-cli) by using the `aio app init` command, the application generator asks the developer whether to `include GitHub Actions based workflows for Build, Test and Deploy`.
+Upon bootstrapping of a new App Builder Application from the [CLI](https://github.com/adobe/aio-cli) by using the `aio app init` command, the application generator asks the developer whether to `include GitHub Actions based workflows for Build, Test and Deploy`.
 
 If the developer selects this option, the application code will be initialized with an additional `.github` folder at its root. This folder contains default [GitHub Workflows](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows) that can be extended at application level depending on the developer's needs.
 
@@ -57,7 +57,7 @@ Each of the default [Github Workflows](https://help.github.com/en/actions/config
 
 The following [GitHub Actions](https://github.com/features/actions) have been built to support the usage of the [CLI](https://github.com/adobe/aio-cli) in a CI/CD workflow running within GitHub infrastructure.
 
-They are used in the default [Project Firefly Apps workflows](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows), but can also be used further in custom GitHub workflows built by developers to fulfil their project needs.
+They are used in the default [App Builder Apps workflows](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows), but can also be used further in custom GitHub workflows built by developers to fulfil their project needs.
 
 - The [CLI Setup Action](https://github.com/adobe/aio-cli-setup-action) can be used to install and configure the [CLI](https://github.com/adobe/aio-cli) on the GitHub infrastructure running the workflow that invoked the action.
 
@@ -71,18 +71,18 @@ The following [GitHub Actions](https://github.com/features/actions) leverage [Gi
 
 They currently need an administrator to manually add the following secrets to the application repository:
 
-- **AIO_RUNTIME_NAMESPACE_STAGE**: the name of the Runtime namespace associated to the `Stage` Project Firefly workspace.
-- **AIO_RUNTIME_AUTH_STAGE**: the credentials for the Runtime namespace associated to the `Stage` Project Firefly workspace.
-- **AIO_RUNTIME_NAMESPACE_PROD**: the name of the Runtime namespace associated to the `Prod` Project Firefly workspace.
-- **AIO_RUNTIME_AUTH_PROD**: the credentials for the Runtime namespace associated to the `Prod` Project Firefly workspace.
+- **AIO_RUNTIME_NAMESPACE_STAGE**: the name of the Runtime namespace associated to the `Stage` App Builder workspace.
+- **AIO_RUNTIME_AUTH_STAGE**: the credentials for the Runtime namespace associated to the `Stage` App Builder workspace.
+- **AIO_RUNTIME_NAMESPACE_PROD**: the name of the Runtime namespace associated to the `Prod` App Builder workspace.
+- **AIO_RUNTIME_AUTH_PROD**: the credentials for the Runtime namespace associated to the `Prod` App Builder workspace.
 
 We aim to simplify this configuration process in the future. 
 
 ## Bring your own CI/CD pipeline
 
-The default implementation of the CI/CD workflow for Project Firefly Applications relies on GitHub capabilities. However, a developer might need an alternative solution due to project specific requirements, or team preference.
+The default implementation of the CI/CD workflow for App Builder Applications relies on GitHub capabilities. However, a developer might need an alternative solution due to project specific requirements, or team preference.
 
 In that case, we recommend implementing the custom solution with focus on two main aspects:
 
-- The [CLI](https://github.com/adobe/aio-cli) is the official tool to manage the Project Firefly Application development lifecycle from bootstrapping to deployment, and can be used within a CI/CD workflow for automation purpose.
-- Security is a key requirement, and any alternative CI/CD workflow should propose a solid secret management solution to store the credentials required to deploy a Project Firefly Application against a specific **Workspace**.
+- The [CLI](https://github.com/adobe/aio-cli) is the official tool to manage the App Builder Application development lifecycle from bootstrapping to deployment, and can be used within a CI/CD workflow for automation purpose.
+- Security is a key requirement, and any alternative CI/CD workflow should propose a solid secret management solution to store the credentials required to deploy a App Builder Application against a specific **Workspace**.

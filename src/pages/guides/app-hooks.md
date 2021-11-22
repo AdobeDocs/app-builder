@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-# Project Firefly application tooling lifecycle event hooks
+# App Builder application tooling lifecycle event hooks
 
 ## Sample hooks configuration
 

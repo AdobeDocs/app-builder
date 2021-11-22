@@ -6,14 +6,14 @@ keywords:
   - Developer Tooling
 ---
 
-# Creating your First Project Firefly Application
+# Creating your First App Builder Application
 
-In this tutorial, we'll guide you through the following steps to give you an introduction on how to set up and develop a Project Firefly Application. 
+In this tutorial, we'll guide you through the following steps to give you an introduction on how to set up and develop a App Builder Application. 
 1. Setting up Local Environment
 1. Creating a new Project on [Adobe Developer Console](/console)
 1. Signing in from the [CLI](https://github.com/adobe/aio-cli)
 1. Bootstrapping new App using [CLI](https://github.com/adobe/aio-cli)
-1. Anatomy of a Project Firefly Application
+1. Anatomy of a App Builder Application
 1. Developing the Application
 1. Deploying the Application
 
@@ -21,12 +21,12 @@ If you run into any issues during development, please first refer to the [Common
 
 ## 1. Setting up Local Environment
 
-Please always ensure your local environment and tooling is up to date to avoid any possible issues. The instructions can be located at [Setting up Your Environment](./index.md). Ideally while setting up your environment, you requested access to Project Firefly as described at [How to Get Access to Project Firefly](../overview/getting_access.md)
+Please always ensure your local environment and tooling is up to date to avoid any possible issues. The instructions can be located at [Setting up Your Environment](./index.md). Ideally while setting up your environment, you requested access to App Builder as described at [How to Get Access to App Builder](../overview/getting_access.md)
   and your request has been approved. If your request has not yet been approved, you may want to wait before proceeding with the steps in this document.
 
 ## 2. Creating a new Project on Developer Console
 
-[Adobe Developer Console](/console) gives you access to [APIs](/apis), [SDKs](https://github.com/adobe/aio-sdk) and developer tools to build on, integrate, and extend Adobe products. In Project Firefly, you would need access to [Adobe I/O Runtime](/apis/experienceplatform/runtime) credentials which would be used for deploying your application, and access to API credentials if you want to access any Adobe [APIs](/apis) in your application. 
+[Adobe Developer Console](/console) gives you access to [APIs](/apis), [SDKs](https://github.com/adobe/aio-sdk) and developer tools to build on, integrate, and extend Adobe products. In App Builder, you would need access to [Adobe I/O Runtime](/apis/experienceplatform/runtime) credentials which would be used for deploying your application, and access to API credentials if you want to access any Adobe [APIs](/apis) in your application. 
 
 Follow the instructions to set up your project:
 1. Navigate to [Adobe Developer Console](/console).
@@ -36,11 +36,11 @@ Follow the instructions to set up your project:
     ![Org Switcher](../images/console-2.png)
 
 1. Once you are in the correct organization, Under `Quick Start`, click on the option to `Create project from template`.
-   **Note that if you don't have the `Create project from template` option, it might be because your request to access Project Firefly has not yet been approved.**
+   **Note that if you don't have the `Create project from template` option, it might be because your request to access App Builder has not yet been approved.**
    If you already submitted a request, you may want to wait for it to be approved. If you have not yet submitted a request, you might want to do that,
-   as described at [How to Get Access to Project Firefly](../overview/getting_access.md).
+   as described at [How to Get Access to App Builder](../overview/getting_access.md).
 
-1. Select `Project Firefly` from the list of templates. 
+1. Select `App Builder` from the list of templates. 
     ![Select Template](../images/console-3.png)
 
 1. Enter `Project Title` and `App Name` for your templated project. 
@@ -53,7 +53,7 @@ You can manually remove [Adobe I/O Runtime](/apis/experienceplatform/runtime) fr
 
 1. You should see a new project generated with 2 default `Workspaces`. 
     - Workspaces can be used to manage different deployment environments (dev, qa, stage, prod) for your application and to provide individual working environment for each developer on the project. Workspace is where you will connect services and get the credential details needed to connect to [Adobe APIs](/apis). Connected services can differe from workspace to workspace, and the credentials used within each workspace is not shared across workspaces. 
-    - Each Project Firefly project has two default workspaces: `Production` and `Stage`. You can add more workspaces as needed. The `Production` workspace is special, as it is used for the submission and distribution flow. When you’re ready to deploy your app, you will submit it for approval from the Production workspace.
+    - Each App Builder project has two default workspaces: `Production` and `Stage`. You can add more workspaces as needed. The `Production` workspace is special, as it is used for the submission and distribution flow. When you’re ready to deploy your app, you will submit it for approval from the Production workspace.
     ![Project Preview](../images/console-5.png)
 
 1. Create a new workspace or select an workspace to start adding [APIs](/apis/experienceplatform/console/docs#!AdobeDocs/adobeio-console/master/services.md) and [Events](/apis/experienceplatform/console/docs#!AdobeDocs/adobeio-console/master/services-add-event.md) that you would need for your application. 
@@ -85,7 +85,7 @@ Once you have your project set up in [Adobe Developer Console](/console), it is 
     eyJ4NXUiOixxxxxxxxxxxxxxxxxxx
     ```
 
-1. You would now be able to start building Project Firefly Applications with the [CLI](https://github.com/adobe/aio-cli).  
+1. You would now be able to start building App Builder Applications with the [CLI](https://github.com/adobe/aio-cli).  
 
 ## 4. Bootstrapping new App using the CLI
 
@@ -102,7 +102,7 @@ There are two sample flows listed below as we understand some developers may not
 
     You will be prompted with a few questions about how you want your app to be boostrapped and configured:
 
-1. Select `Organization` that you'd like to use for this new Project Firefly Application. Navigate through the list to find the project and workspace you just created. If you have a lot of organizations, you can also start typing in keywords to shorten the list. 
+1. Select `Organization` that you'd like to use for this new App Builder Application. Navigate through the list to find the project and workspace you just created. If you have a lot of organizations, you can also start typing in keywords to shorten the list. 
     ```
     $ aio app init helloworld
     Retrieving information from Adobe Developer Console..
@@ -114,11 +114,11 @@ There are two sample flows listed below as we understand some developers may not
     ```
     ? Which extension point(s) do you with to implement?
     select components to include (Press <space> to select, <a> to toggle all, <i> to invert selection)
-    ❯◉ Firefly Experience Cloud Shell
+    ❯◉ App Builder Experience Cloud Shell
      ◉ AEM Asset Compute v1
     ```
     
-1. You will then be prompted to select the `Project` you'd like to use for this new Project Firefly Application. Navigate through the list to find the project you just created. If you have a lot of projects, you can also start typing in keywords to shorten the list. 
+1. You will then be prompted to select the `Project` you'd like to use for this new App Builder Application. Navigate through the list to find the project you just created. If you have a lot of projects, you can also start typing in keywords to shorten the list. 
 
     ```
     ? Select Project Demo Project SAXU
@@ -160,7 +160,7 @@ There are two sample flows listed below as we understand some developers may not
 
     You will be prompted with a few questions about how you want your app to be boostrapped and configured:
 
-1. Select `Organization`, `Project` and `Workspace` that you'd like to use for this new Project Firefly Application. Navigate through the list to find the project and workspace you just created. If you have a lot of organizations / projects / workspaces, you can also start typing in keywords to shorten the list. Upon completing the selection, the [CLI](https://github.com/adobe/aio-cli) automatically downloads a `console.json` file that contains all the credentials from your workspace to be used in your Project Firefly project. 
+1. Select `Organization`, `Project` and `Workspace` that you'd like to use for this new App Builder Application. Navigate through the list to find the project and workspace you just created. If you have a lot of organizations / projects / workspaces, you can also start typing in keywords to shorten the list. Upon completing the selection, the [CLI](https://github.com/adobe/aio-cli) automatically downloads a `console.json` file that contains all the credentials from your workspace to be used in your App Builder project. 
     ```
     $ aio app init helloworld
     Retrieving information from Adobe Developer Console..
@@ -183,7 +183,7 @@ There are two sample flows listed below as we understand some developers may not
      ◉ CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy
     ```
     
-    Each option indicates a feature you can enable for your Project Firefly Application. You can select one or all of the options depending on the application you intend to build. We recommend that you select all for now to fully explore all the options. 
+    Each option indicates a feature you can enable for your App Builder Application. You can select one or all of the options depending on the application you intend to build. We recommend that you select all for now to fully explore all the options. 
     
     - **Actions: Deploy Runtime actions:** adding the boilerplate for backend serverless actions on [Adobe I/O Runtime](/apis/experienceplatform/runtime)
     - **Events: Publish to Adobe I/O Events:** adding the boilerplate for a serverless action that publishes [Custom I/O Events](/apis/experienceplatform/events/docs.html#!adobedocs/adobeio-events/master/using/custom_events.md)
@@ -219,7 +219,7 @@ Note that you may not see all the options listed below on your command line, bec
     - The `React Spectrum 3 UI` template will add a React based UI with [React Spectrum](https://react-spectrum.adobe.com/) components included.
     - The `Raw HTML/JS UI` will add a Valinna HTML/JS/CSS UI with [Spectrum CSS](https://opensource.adobe.com/spectrum-css) styles included.
     
-    Both the templates comes with boilerplate code needed to integrate your Project Firefly application with [Adobe Experience Cloud](../guides/exc_app/index.md)
+    Both the templates comes with boilerplate code needed to integrate your App Builder application with [Adobe Experience Cloud](../guides/exc_app/index.md)
     
 
 2. We'll ask you to define the name for the instance of each selected sample actions. You can keep the default name or specify your own.
@@ -264,7 +264,7 @@ Note that you may not see all the options listed below on your command line, bec
 
 #### Developer with a Console config file
 
-This flow is intended for developers who do not have access to [Adobe Developer Console](/console) as entitled Enterprise Organization users, likely due to permission issues, but can get credentials that are tied to a Project Firefly workspace from an entitled Enterprise Organization administrator or developer. 
+This flow is intended for developers who do not have access to [Adobe Developer Console](/console) as entitled Enterprise Organization users, likely due to permission issues, but can get credentials that are tied to a App Builder workspace from an entitled Enterprise Organization administrator or developer. 
 
 For this flow to work, the developer should ask someone with access to set up a project and a workspace following the last few sections. With the workspace correctly set up, the credentials can downloaded by authorized [Adobe Developer Console](/console) users through the `Download all` button in Workspace overview. 
 
@@ -312,7 +312,7 @@ This flow is intended for developers who have no access or credentials whatsoeve
 
 1. You will not be able to run or to deploy your application by default because there is no credential provided. 
 
-## 5. Anatomy of a Project Firefly Application
+## 5. Anatomy of a App Builder Application
 
 Now that your project is initialized, let's open the project in your favorite IDE. We recommend using [VSCode](https://code.visualstudio.com/). You can easily open the project by entering `code <app-name>`, or opening VSCode -> Open... -> select app folder.
 
@@ -444,7 +444,7 @@ We integrated our [CLI](https://github.com/adobe/aio-cli) with an open source pr
 - Auto-invoking of actions on code changes
 - Or running any shell command such as a curl request on code changes
 
-Please visit our [Debugging Firefly Apps Codelab](https://adobeio-codelabs-debugging--adobedocs.project-helix.page/) to set up your local environment and go through step-by-step instructions. 
+Please visit our [Debugging App Builder Apps Codelab](https://adobeio-codelabs-debugging--adobedocs.project-helix.page/) to set up your local environment and go through step-by-step instructions. 
 
 If the local development is run without the `--local` option, the action you are debugging is running directly on [Adobe I/O Runtime](/apis/experienceplatform/runtime). When the `--local` option is used, the actions are debugged in the standalone OpenWhisk instance running locally. In both cases, Docker is required on your local machine so that the remote or locally mounted actions get proxied in the local Docker container. Learn more about what you can do in [debug mode](https://www.npmjs.com/package/@openwhisk/wskdebug).
 
@@ -463,7 +463,7 @@ Of course, as you will modify and extend the code of your application, you will 
 
 We are using [jestJS](https://jestjs.io/) for the unit tests of the [CLI](https://github.com/adobe/aio-cli), [SDK](https://github.com/adobe/aio-sdk) and bootstrapped application. It is however possible to change the implementation to your preferred framework.
 
-[CI/CD for Project Firefly Applications](../guides/deployment/ci_cd_for_firefly_apps.md) also explains how to execute these tests in the context of a CI/CD pipeline.
+[CI/CD for App Builder Applications](../guides/deployment/ci_cd_for_firefly_apps.md) also explains how to execute these tests in the context of a CI/CD pipeline.
 
 ## 7 Deploying the Application
 
@@ -511,7 +511,7 @@ Well done, your app is now online 🏄
 
 Note the last section of the output `To view your deployed application`. There are 2 urls of the app shown by default, which allow access either to the CDN host or [Experience Cloud Shell](http://experience.adobe.com/). In the latter case, The URL format of the app should follow `https://experience.adobe.com/?devMode=true#/custom-apps/?localDevUrl=<your-app-url>`.
 
-You can also undeploy your app with `aio app undeploy`. To learn more about deployment, please refer to [Deployment Overview](../guides/deployment/index.md). To automate your build, deploy and build process with our out-of-the-box CI/CD GitHub actions, please refer to [CI/CD for Project Firefly Applications](../guides/deployment/ci_cd_for_firefly_apps.md).
+You can also undeploy your app with `aio app undeploy`. To learn more about deployment, please refer to [Deployment Overview](../guides/deployment/index.md). To automate your build, deploy and build process with our out-of-the-box CI/CD GitHub actions, please refer to [CI/CD for App Builder Applications](../guides/deployment/ci_cd_for_firefly_apps.md).
 
 ## Common Issues
 

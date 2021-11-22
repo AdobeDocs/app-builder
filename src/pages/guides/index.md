@@ -8,9 +8,9 @@ keywords:
 
 # Architecture Overview
 
-## Types of Project Firefly apps
+## Types of App Builder apps
 
-A Project Firefly Application is a serverless application that extends [Adobe Product APIs](/apis).
+A App Builder Application is a serverless application that extends [Adobe Product APIs](/apis).
 These applications can be one of two kinds: headless or headful. Each of these types is described in more detail in the sections that follow.
 
 ### Headless Application
@@ -23,11 +23,11 @@ A typical headless application would integrate well with a remote script or proc
 
 A headful application is a Single Page Application (SPA) with a full-fledged user interface (UI) served from the out-of-the-box Content Delivery Network. This type of application calls [Adobe Product APIs](/apis) directly from the client when applicable. When there is a strong need to orchestrate [Adobe Product API](/apis) calls with 3rd party API calls, or with Adobe Identity Management System for authentication purposes, you can deploy serverless actions and/or sequences using [Runtime](/apis/experienceplatform/runtime).
 
-## JAMStack: Anatomy of a Project Firefly App
+## JAMStack: Anatomy of a App Builder App
 
-Project Firefly apps that are Single Page Applications with a full-fledged UI should follow the [JAMStack Architecture](https://jamstack.org/).
+App Builder apps that are Single Page Applications with a full-fledged UI should follow the [JAMStack Architecture](https://jamstack.org/).
 
-The three main components of Project Firefly apps are:
+The three main components of App Builder apps are:
 
 - [Adobe Product APIs](/apis), exposed to external developers and consumers through Adobe I/O API Gateway.
 - [Javascript-based SDK](https://github.com/adobe/aio-sdk) and serverless actions, sequences, and APIs deployed to [Runtime](/apis/experienceplatform/runtime).
@@ -39,7 +39,7 @@ The three main components of Project Firefly apps are:
 
 ### CLI
 
-The [CLI](https://github.com/adobe/aio-cli) is one of the main touchpoints for Project Firefly developers. It is based on [oclif](https://oclif.io/), which is a popular framework to build extensible command line tools.
+The [CLI](https://github.com/adobe/aio-cli) is one of the main touchpoints for App Builder developers. It is based on [oclif](https://oclif.io/), which is a popular framework to build extensible command line tools.
 
 The CLI comes out-of-the-box with the following capabilities:
 
@@ -48,11 +48,11 @@ The CLI comes out-of-the-box with the following capabilities:
 - [Configuration management](https://github.com/adobe/aio-cli-plugin-certificate)
 - [Interactions](https://github.com/adobe/aio-cli-plugin-console) with [Adobe Developer Console](/console)
 - [Interactions](https://github.com/adobe/aio-cli-plugin-runtime) with [Runtime](/apis/experienceplatform/runtime), Adobe's serverless platform
-- [Lifecycle management](https://github.com/adobe/aio-cli-plugin-app) for [Project Firefly](/project-firefly)
+- [Lifecycle management](https://github.com/adobe/aio-cli-plugin-app) for [App Builder](/app-builder)
 
-### Project Firefly Generators
+### App Builder Generators
 
-The [generators](https://github.com/adobe/generator-aio-app) help developers to bootstrap their Project Firefly apps when using the [CLI](https://github.com/adobe/aio-cli).
+The [generators](https://github.com/adobe/generator-aio-app) help developers to bootstrap their App Builder apps when using the [CLI](https://github.com/adobe/aio-cli).
 
 Generators can be used to create:
 
@@ -62,7 +62,7 @@ Generators can be used to create:
 
 ### SDK Libraries
 
-Project Firefly also provides a collection of JavaScript-based SDK libraries designed to increase the developer's velocity when implementing Custom Applications on top of Adobe APIs.
+App Builder also provides a collection of JavaScript-based SDK libraries designed to increase the developer's velocity when implementing Custom Applications on top of Adobe APIs.
 
 #### Main SDK library
 
@@ -90,7 +90,7 @@ The [Adobe IMS SDK library](https://github.com/adobe/aio-lib-core-ims) provides 
 
 The [Core SDK library](https://github.com/adobe/aio-sdk-core) bundled into the [main SDK library](https://github.com/adobe/aio-sdk) provides a lower-level technical framework for developers.   
 
-This framework must be used when contributing to the Project Firefly SDK. It is also recommended to use it when building a Firefly application.
+This framework must be used when contributing to the App Builder SDK. It is also recommended to use it when building a App Builder application.
 
 #### Core SDK library
 
@@ -116,15 +116,15 @@ The [Networking SDK library](https://github.com/adobe/aio-lib-core-networking) p
 
 The [Token-Vending Machine](https://github.com/adobe/aio-tvm) is exposed as an out-of-the-box API deployed to [Runtime](/apis/experienceplatform/runtime).
 
-It enables developers to perform the following actions on behalf of their Project Firefly application credentials:
+It enables developers to perform the following actions on behalf of their App Builder application credentials:
 
-- Deploy the web assets of their Project Firefly application to the out-of-the-box CDN.
+- Deploy the web assets of their App Builder application to the out-of-the-box CDN.
 - Use the out-of-the-box cloud storage through the [Files SDK](https://github.com/adobe/aio-lib-files).
 - Use the out-of-the-box key-value store through the [State SDK](https://github.com/adobe/aio-lib-state).
 
 ### CI/CD Support
 
-The [out-of-the-box CI/CD support](./deployment/ci_cd_for_firefly_apps.md) for Project Firefly Applications consists in:
+The [out-of-the-box CI/CD support](./deployment/ci_cd_for_firefly_apps.md) for App Builder Applications consists in:
 
 - [Github Actions](https://github.com/features/actions) to [setup the CLI](https://github.com/adobe/aio-cli-setup-action) and use it to [perform actions](https://github.com/adobe/aio-apps-action) such as application testing, build and deployment.
 - [Github Workflows](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) to orchestrate the Github Actions upon specific events triggered against the application repository.

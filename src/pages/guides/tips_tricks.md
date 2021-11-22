@@ -6,9 +6,9 @@ keywords:
   - Developer Tooling
 ---
 
-# Tips and Tricks for optimizing Project Firefly Apps
+# Tips and Tricks for optimizing App Builder Apps
 
-There are many areas in a web app where you could optimize the way it works, such as security, performance, and operational cost, to name a few. Here are some tips and tricks to help you gain the most out of your Project Firefly applications.
+There are many areas in a web app where you could optimize the way it works, such as security, performance, and operational cost, to name a few. Here are some tips and tricks to help you gain the most out of your App Builder applications.
 
 ## Caching HTTP Responses
 
@@ -32,7 +32,7 @@ When you test this functionality for web action using Postman or web browser wit
 
 ## Returning Large Response Payload
 
-You can return a [response payload of max 1MB](/apis/experienceplatform/runtime/docs#!adobedocs/adobeio-runtime/master/guides/system_settings.md) in an Adobe I/O Runtime action. That is more than enough for the majority of the use cases we have seen so far. However, if your action would return a larger payload than the 1MB limit, we provide a scalable solution with [Project Firefly Files SDK](https://github.com/adobe/aio-lib-files). It allows you to [persist a binary file to the blob storage](https://github.com/adobe/aio-lib-files/blob/master/doc/api.md#Files+write), obtain [a temporary downloadable URL](https://github.com/adobe/aio-lib-files/blob/master/doc/api.md#Files+generatePresignURL) and return an [HTTP Redirect response](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302) to the file with this URL. Below is a simple code snippet to demonstrate that.
+You can return a [response payload of max 1MB](/apis/experienceplatform/runtime/docs#!adobedocs/adobeio-runtime/master/guides/system_settings.md) in an Adobe I/O Runtime action. That is more than enough for the majority of the use cases we have seen so far. However, if your action would return a larger payload than the 1MB limit, we provide a scalable solution with [App Builder Files SDK](https://github.com/adobe/aio-lib-files). It allows you to [persist a binary file to the blob storage](https://github.com/adobe/aio-lib-files/blob/master/doc/api.md#Files+write), obtain [a temporary downloadable URL](https://github.com/adobe/aio-lib-files/blob/master/doc/api.md#Files+generatePresignURL) and return an [HTTP Redirect response](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302) to the file with this URL. Below is a simple code snippet to demonstrate that.
 
 ```javascript
 const fileLocation = '/private-dir/large-image.png'
@@ -48,16 +48,16 @@ return {
 }
 ```
 
-## Implementing a move operation for the Project Firefly Files SDK
+## Implementing a move operation for the App Builder Files SDK
 
-While handling large files within a Runtime action using [Project Firefly Files SDK](https://github.com/adobe/aio-lib-files), you might have the need to move those files to another location in the underlying cloud storage, e.g. for archiving purpose when computing is over.
+While handling large files within a Runtime action using [App Builder Files SDK](https://github.com/adobe/aio-lib-files), you might have the need to move those files to another location in the underlying cloud storage, e.g. for archiving purpose when computing is over.
 
 We have decided until now to not expose a move operation in our abstraction, for the two main following reasons:
 
 - Some cloud storage APIs do not provide an atomic move operation, meaning that there is a tradeoff between abstraction and consistency. Users might expect that files operations on single files are atomic. Operations on folders are not atomic neither.
 - The implementation of such a feature is a two-liner, which makes it simple enough to implement and test the abstraction at application level
 
-This is our recommendation to implement the move operation at application level by using the [Project Firefly Files SDK](https://github.com/adobe/aio-lib-files) primitives:
+This is our recommendation to implement the move operation at application level by using the [App Builder Files SDK](https://github.com/adobe/aio-lib-files) primitives:
 
 ```javascript
 /**

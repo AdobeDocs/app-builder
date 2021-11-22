@@ -1,5 +1,5 @@
 ---
-title: Adobe Developers Live | Project Firefly Deep Dive
+title: Adobe Developers Live | App Builder Deep Dive
 description: Join us and see Firefly in action - code, security, headfull and headless apps, CI/CD and more. 
 keywords:
   - Adobe I/O
@@ -8,7 +8,7 @@ keywords:
   - Developer Tooling  
 ---
 
-# Adobe Developers Live | Project Firefly Deep Dive
+# Adobe Developers Live | App Builder Deep Dive
 
 Join us and see Firefly in action: code, security, headfull and headless apps, CI/CD and more.
 

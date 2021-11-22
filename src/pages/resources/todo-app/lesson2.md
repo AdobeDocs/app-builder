@@ -14,7 +14,7 @@ The app we're building can handle multiple todo lists and each todo list can hav
 ## Global configuration file 
 
 To avoid long todo lists, we'll define a `MAX_TODO_ITEMS` value within a global configuration file that we will import from the `actions` folder but also from the `web-src` folder.
-We'll create the file at the root of the Firefly App and name it `defaults.json`.
+We'll create the file at the root of the App Builder App and name it `defaults.json`.
   
 ```json
 {

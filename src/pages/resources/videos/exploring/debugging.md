@@ -1,5 +1,5 @@
 ---
-title: Exploring Project Firefly - Debugging
+title: Exploring App Builder - Debugging
 description: This session we go in depth on debugging. Shazron Abdullah & Duy Nguyen take you through the ins and outs of finding problems in your code. 
 keywords:
   - Adobe I/O
@@ -8,7 +8,7 @@ keywords:
   - Developer Tooling  
 ---
 
-# Exploring Project Firefly - Debugging
+# Exploring App Builder - Debugging
 
 This session we go in depth on debugging. Shazron Abdullah & Duy Nguyen take you through the ins and outs of finding problems in your code.
 

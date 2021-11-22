@@ -44,7 +44,7 @@ It will show you a sample of JSON format, make sure you select `webhook` in my c
 ![console-event](assets/console-event-3.png)
 
 ## Create Event Consumer 
-We will use the `generic` project firefly template to modify the code to create event consumer, I will name the action to `consume-event`, after deploy the event you will be able to set up an event registration runtime actions you deployed.
+We will use the `generic` App Builder template to modify the code to create event consumer, I will name the action to `consume-event`, after deploy the event you will be able to set up an event registration runtime actions you deployed.
 
 Note: here is one simple sample code that you could refer to test the webhook feature: 
 ```

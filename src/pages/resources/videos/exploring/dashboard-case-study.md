@@ -1,5 +1,5 @@
 ---
-title: Exploring Project Firefly - Dashboard Case Study
+title: Exploring App Builder - Dashboard Case Study
 keywords:
   - Adobe I/O
   - Extensibility
@@ -7,7 +7,7 @@ keywords:
   - Developer Tooling  
 ---
 
-# Exploring Project Firefly - Dashboard Case Study
+# Exploring App Builder - Dashboard Case Study
 
 <Media slots="video"/>
 

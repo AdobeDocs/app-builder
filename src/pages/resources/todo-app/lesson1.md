@@ -6,13 +6,13 @@ keywords:
   - Developer Tooling
 ---
 
-# Lesson 1: Create a New Firefly App with the React Spectrum template
+# Lesson 1: Create a New App Builder App with the React Spectrum template
 
 In this lesson, we'll start bootstrapping the app with Runtime actions and the React Spectrum starter template.
 
 ## Initialization 
 
-To initialize a Firefly app, let's use init command from the CLI.
+To initialize a App Builder app, let's use init command from the CLI.
 
 ```bash
 aio app init todo-app --no-extensions

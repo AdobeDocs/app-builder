@@ -1,6 +1,6 @@
 ---
 title: Adobe Developers Live | Asset Compute Service Extensibility
-description: Learn how to use Project Firefly to build custom Asset Compute worker for asset processing during ingestion into Adobe Experience Manager. 
+description: Learn how to use App Builder to build custom Asset Compute worker for asset processing during ingestion into Adobe Experience Manager. 
 keywords:
   - Adobe I/O
   - Extensibility
@@ -10,7 +10,7 @@ keywords:
 
 # Adobe Developers Live | Asset Compute Service Extensibility
 
-Learn how to use Project Firefly to build custom Asset Compute worker for asset processing during ingestion into Adobe Experience Manager.
+Learn how to use App Builder to build custom Asset Compute worker for asset processing during ingestion into Adobe Experience Manager.
 
 <Media slots="video"/>
 

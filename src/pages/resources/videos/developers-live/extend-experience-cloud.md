@@ -1,6 +1,6 @@
 ---
 title: Adobe Developers Live | So you want to extend Adobe Experience Cloud?
-description: You want to extend Adobe solutions using a modern architecture that works for multiple solutions? Well, we think that you should give Project Firefly a try. 
+description: You want to extend Adobe solutions using a modern architecture that works for multiple solutions? Well, we think that you should give App Builder a try. 
 keywords:
   - Adobe I/O
   - Extensibility
@@ -10,7 +10,7 @@ keywords:
 
 # Adobe Developers Live | So you want to extend Adobe Experience Cloud?
 
-You want to extend Adobe solutions using a modern architecture that works for multiple solutions? Well, we think that you should give Project Firefly a try.
+You want to extend Adobe solutions using a modern architecture that works for multiple solutions? Well, we think that you should give App Builder a try.
 
 <Media slots="video"/>
 

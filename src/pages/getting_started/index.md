@@ -10,11 +10,11 @@ import NPMBadge from '../../components/NPMBadge.js'
 
 # Setting up Your Environment
 
-During Developer Preview, please follow the steps below to acquire access and credentials, and to set up your local environment to build your first Project Firefly.
+During Developer Preview, please follow the steps below to acquire access and credentials, and to set up your local environment to build your first App Builder.
 
 ## Acquire Access and Credentials
 
-Please first follow instructions in [How to Get Access to Project Firefly](../overview/getting_access.md) to join the Developer Preview program. 
+Please first follow instructions in [How to Get Access to App Builder](../overview/getting_access.md) to join the Developer Preview program. 
 
 Once you have been added to the program, you will need the following information for kicking off your development work. 
 
@@ -83,4 +83,4 @@ The steps to switch to Linux containers are described in the [Docker for Windows
 
 ## Next Step
 
-Now that you have your environment set up, you can start [creating your own Project Firefly application](first_app.md).
+Now that you have your environment set up, you can start [creating your own App Builder application](first_app.md).

@@ -11,12 +11,12 @@ contributors:
 # Lesson 2: Create the Event Consumer using Journaling API
 
 In this lesson, we will do the follow steps:
-- Create an event consumer using Project Firefly template.
+- Create an event consumer using App Builder template.
 - Use [aio-lib-state](https://github.com/adobe/aio-lib-state) as storage library to store the events from journaling api.
 - Scheduling cron jobs with alarms to trigger event consumer to pull event from journaling api every x mins.
 
-## Create an event consumer using Project Firefly template
-We will also use Project Firefly template to create the event consumer, this time we could use the `generic` template. in this codelab I will create a headless app follow [here](../cron-jobs/index.md)
+## Create an event consumer using App Builder template
+We will also use App Builder template to create the event consumer, this time we could use the `generic` template. in this codelab I will create a headless app follow [here](../cron-jobs/index.md)
 
 For enterprise developers, Adobe offers journaling to consume events. The Adobe I/O Events Journaling API enables enterprise integrations to consume events according to their own cadence and process them in bulk. Unlike webhooks, no additional registration or other configuration is required; every enterprise integration that is registered for events is automatically enabled for journaling. Journaling data is retained for 7 days.
 

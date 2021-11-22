@@ -8,16 +8,16 @@ keywords:
 
 # Lesson 1: Setup CI/CD
 
-Project Firefly comes with pre-defined GitHub actions to manage your CI/CD workflow. **GitHub actions can only work once the Firefly app and the corresponding GitHub actions are committed to a GitHub repository.**
+App Builder comes with pre-defined GitHub actions to manage your CI/CD workflow. **GitHub actions can only work once the App Builder app and the corresponding GitHub actions are committed to a GitHub repository.**
 
-## Setup your GitHub repository for your Firefly App
+## Setup your GitHub repository for your App Builder App
 
-To put your Firefly App up on GitHub, you'll need to create a repository for it to live in. You can follow these [steps](https://help.github.com/en/github/getting-started-with-github/create-a-repo) to create an empty repository.
+To put your App Builder App up on GitHub, you'll need to create a repository for it to live in. You can follow these [steps](https://help.github.com/en/github/getting-started-with-github/create-a-repo) to create an empty repository.
 Once your repository is available on GitHub, you can copy your repository url e.g. `https://github.com/<org>/<project_name>.git`.
 
 Then in the command line, use `git clone https://github.com/<org>/<project_name>.git` to clone the repository to your local system.
 
-Go to the project folder with `cd <project_name>` and run the command `aio app init` to bootstrap a new Project Firefly Application from the [CLI](https://github.com/adobe/aio-cli), the application generator will ask whether to include GitHub Actions based workflows for Build, Test and Deploy.
+Go to the project folder with `cd <project_name>` and run the command `aio app init` to bootstrap a new App Builder Application from the [CLI](https://github.com/adobe/aio-cli), the application generator will ask whether to include GitHub Actions based workflows for Build, Test and Deploy.
 
 ![bootstrap](assets/bootstrap.png)
 
@@ -72,7 +72,7 @@ jobs:
           command: test
 ```
 
-**deploy_stage.yml** is the GitHub action that will deploy the Firefly App to the stage environment on every new commit on the `master` branch by calling `aio app deploy`. 
+**deploy_stage.yml** is the GitHub action that will deploy the App Builder App to the stage environment on every new commit on the `master` branch by calling `aio app deploy`. 
 It will run anytime the [push](https://help.github.com/en/actions/reference/events-that-trigger-workflows#push-event-push) event occurs on the `master` branch. 
 
 ```yaml

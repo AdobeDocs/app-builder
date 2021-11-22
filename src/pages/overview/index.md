@@ -4,23 +4,23 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: Project Firefly Docs
-description: This documentation provides an overview of Project Firefly as well as guides, reference documentation, and tools to help you begin developing your own custom applications.  
+title: App Builder Docs
+description: This documentation provides an overview of App Builder as well as guides, reference documentation, and tools to help you begin developing your own custom applications.  
 ---
 
 <Hero slots="image, heading, text" background="rgb(37,26,56)" />
 
 ![](../images/banner.png)
 
-# Project Firefly Docs
+# App Builder Docs
 
-This documentation provides an overview of Project Firefly as well as guides, reference documentation, and tools to help you begin developing your own custom applications.
+This documentation provides an overview of App Builder as well as guides, reference documentation, and tools to help you begin developing your own custom applications.
 
 
 
-## What is Project Firefly
+## What is App Builder
 
-Project Firefly is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure. It leverages modern technologies (JAM stack, serverless computing, Node, and React) and ensures best practices when building applications (event-driven architecture, microservices, continuous integration, and delivery).
+App Builder is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure. It leverages modern technologies (JAM stack, serverless computing, Node, and React) and ensures best practices when building applications (event-driven architecture, microservices, continuous integration, and delivery).
 
 From a developer perspective, the main components are:
 *	Single Page Application (SPA) - you build a SPA that uses React Spectrum for the client side, which is the same UI toolkit used by Adobe solutions.
@@ -30,8 +30,8 @@ From a developer perspective, the main components are:
 
 ## Where to Go Next
 
-To learn more about Project Firefly, please start by reading the following:
+To learn more about App Builder, please start by reading the following:
 
 * [How it works](how_it_works.md)
 * [Architecture Overview](../guides/index.md)
-* [How to Get Access to Project Firefly](./getting_access.md)
+* [How to Get Access to App Builder](./getting_access.md)

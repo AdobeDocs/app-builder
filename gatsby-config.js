@@ -48,7 +48,7 @@ module.exports = {
         "path": "overview/getting_access.md"
       },
       {
-        "title": "Project Firefly and Adobe I/O Runtime",
+        "title": "App Builder and Adobe I/O Runtime",
         "path": "overview/firefly_and_runtime.md"
       },
       {
@@ -64,11 +64,11 @@ module.exports = {
         "path": "getting_started"
       },
       {
-        "title": "Creating your First Firefly App",
+        "title": "Creating your First App Builder App",
         "path": "getting_started/first_app.md"
       },
       {
-        "title": "Publishing Your First Project Firefly Application",
+        "title": "Publishing Your First Project App Builder Application",
         "path": "getting_started/publish_app.md"
       },
       {
@@ -101,7 +101,7 @@ module.exports = {
             "path": "guides/application_logging.md"
           },
           {
-            "title": "Event hooks for Project Firefly Applications",
+            "title": "Event hooks for App Builder Applications",
             "path": "guides/app-hooks.md"
           }
         ]
@@ -129,7 +129,7 @@ module.exports = {
             "path": "guides/deployment"
           },
           {
-            "title": "CI/CD for Project Firefly Applications",
+            "title": "CI/CD for App Builder Applications",
             "path": "guides/deployment/ci_cd_for_firefly_apps.md"
           },
         ]
@@ -321,7 +321,7 @@ module.exports = {
               "title": "Requirements",
               "path": "resources/journaling-events/requirements"
             }, {
-              "title": "Lesson 1: Create an Event Provider using Firefly",
+              "title": "Lesson 1: Create an Event Provider using App Builder",
               "path": "resources/journaling-events/lesson1"
             }, {
               "title": "Lesson 2: Create the Event Consumer using Journaling API",
@@ -335,7 +335,7 @@ module.exports = {
             }]
           },
           {
-            title: 'Building a Firefly Todo App',
+            title: 'Building an App Builder Todo App',
             path: 'resources/todo-app/index.md',
             pages: [
               {
@@ -343,7 +343,7 @@ module.exports = {
                 "path": "resources/todo-app/requirements"
               },
               {
-                "title": "Lesson 1: Create a New Firefly App with the React Spectrum template",
+                "title": "Lesson 1: Create a New App Builder App with the React Spectrum template",
                 "path": "resources/todo-app/lesson1"
               },
               {
@@ -373,13 +373,13 @@ module.exports = {
             ]
           },
           {
-            title: 'Event-Driven Firefly Apps',
+            title: 'Event-Driven App Builder Apps',
             path: 'resources/event-driven/index.md',
             pages: [{
               "title": "Requirements",
               "path": "resources/event-driven/requirements"
             }, {
-              "title": "Lesson 1: Create a New Firefly App from Template",
+              "title": "Lesson 1: Create a New App Builder App from Template",
               "path": "resources/event-driven/lesson1"
             }, {
               "title": "Lesson 2: Register the App as Event Provider",
@@ -448,7 +448,7 @@ module.exports = {
             }]
           },
           {
-            title: 'CI/CD in Firefly Apps',
+            title: 'CI/CD in App Builder Apps',
             path: 'resources/ci-cd/index.md',
             pages: [{
               "title": "Requirements",
@@ -468,7 +468,7 @@ module.exports = {
             }]
           },
           {
-            title: 'Debugging Firefly Apps',
+            title: 'Debugging App Builder Apps',
             path: 'resources/debugging/index.md',
             pages: [{
               "title": "Requirements",
@@ -494,13 +494,13 @@ module.exports = {
               "title": "Requirements",
               "path": "resources/customer-dashboard/requirements"
             }, {
-              "title": "Lesson 1: Create a New Firefly App from Campaign Standard Template",
+              "title": "Lesson 1: Create a New App Builder App from Campaign Standard Template",
               "path": "resources/customer-dashboard/lesson1"
             }, {
-              "title": "Lesson 2: Explore the Firefly App",
+              "title": "Lesson 2: Explore the App Builder App",
               "path": "resources/customer-dashboard/lesson2"
             }, {
-              "title": "Lesson 3: Run the Firefly App Locally",
+              "title": "Lesson 3: Run the App Builder App Locally",
               "path": "resources/customer-dashboard/lesson3"
             }, {
               "title": "Lesson 4: List All Customer Profiles on the UI",
@@ -514,7 +514,7 @@ module.exports = {
             }]
           },
           {
-            title: 'Firefly Headless App',
+            title: 'App Builder Headless App',
             path: 'resources/barcode-reader/index.md',
             pages: [{
               "title": "Requirements",
@@ -546,7 +546,7 @@ module.exports = {
               "title": "Lesson 3: Using React Spectrum",
               "path": "resources/spectrum-intro/lesson3"
             }, {
-              "title": "Lesson 4: Using React Spectrum in Project Firefly",
+              "title": "Lesson 4: Using React Spectrum in App Builder",
               "path": "resources/spectrum-intro/lesson4"
             }, {
               "title": "Well done",
@@ -572,11 +572,11 @@ module.exports = {
                 path: 'resources/sample_apps/code_snippets/index.md',
               },
               {
-                title: 'Firefly Files SDK',
+                title: 'App Builder Files SDK',
                 path: 'resources/sample_apps/code_snippets/files.md',
               },
               {
-                title: 'Firefly State SDK',
+                title: 'App Builder State SDK',
                 path: 'resources/sample_apps/code_snippets/state.md',
               },
               {
@@ -596,7 +596,7 @@ module.exports = {
         "path": "resources/videos/index.md",
         pages: [
           {
-            title: 'Introducing Project Firefly',
+            title: 'Introducing App Builder',
             path: "resources/videos/overview/introduction.md",
           },
           {
@@ -660,7 +660,7 @@ module.exports = {
             path: "resources/videos/exploring/softcrylic-showcase.md",
           },
           {
-            title: 'Project Firefly Deep Dive',
+            title: 'App Builder Deep Dive',
             path: "resources/videos/developers-live/deep-dive.md",
           },
           {
