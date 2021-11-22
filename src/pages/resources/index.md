@@ -19,7 +19,7 @@ Code Labs provide guided hands-on coding experiences to build awesome apps on to
 
 [Start (20mins)](spectrum-intro/index.md) 
 
-Introduction to Spectrum to build a App Builder App UI.
+Introduction to Spectrum to build an App Builder App UI.
 
 
 
@@ -30,7 +30,7 @@ Introduction to Spectrum to build a App Builder App UI.
 
 [Start (30mins)](journaling-events/index.md) 
 
-Creating cron jobs in a App Builder application to consume events using Journaling API.
+Creating cron jobs in an App Builder application to consume events using Journaling API.
 
 
 
@@ -63,7 +63,7 @@ How to consume I/O Events using I/O Runtime actions as webhook.
 
 [Start (15mins)](ci-cd/index.md) 
 
-Setting up CI/CD for a App Builder App using GitHub Actions.
+Setting up CI/CD for an App Builder App using GitHub Actions.
 
 
 
@@ -74,7 +74,7 @@ Setting up CI/CD for a App Builder App using GitHub Actions.
 
 [Start (25mins)](debugging/index.md) 
 
-The basic steps of debugging a App Builder App.
+The basic steps of debugging an App Builder App.
 
 
 
@@ -85,7 +85,7 @@ The basic steps of debugging a App Builder App.
 
 [Start (20mins)](cron-jobs/index.md) 
 
-Creating cron jobs in a App Builder app using OpenWhisk Alarms Package.
+Creating cron jobs in an App Builder app using OpenWhisk Alarms Package.
 
 
 
@@ -114,7 +114,7 @@ Building asset compute workers leveraging Photoshop APIs to generate custom rend
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
 
-### Building a App Builder Todo App
+### Building an App Builder Todo App
 
 [Start (30mins)](todo-app/index.md) 
 

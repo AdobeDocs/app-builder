@@ -16,7 +16,7 @@ Congratulations, you've reached the end.
 
 In this codelab, you have learned:
 * How to **bootstrap** a new App Builder app using Adobe Campaign Standard template
-* What is **inside a App Builder app**
+* What is **inside an App Builder app**
 * How to **run** the app locally, and **deploy** it onto the App Builder platform
 * How to leverage **IMS user profile** from Adobe Experience Cloud Shell to call Campaign Standard APIs
 * How to use **React Spectrum** to display a simple list of customer profiles on the **app UI**

@@ -10,7 +10,7 @@ contributors:
 
 # Well done
 
-Congratulations! You have successfully completed the codelab and should be now able to develop a App Builder app to generate custom renditions for assets in AEMaaCS.
+Congratulations! You have successfully completed the codelab and should be now able to develop an App Builder app to generate custom renditions for assets in AEMaaCS.
 
 ## Achievements
 

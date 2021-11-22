@@ -35,7 +35,7 @@ App Builder [CLI](https://github.com/adobe/aio-cli) exposes application logs to 
 
 ### App Builder app plugin
 
-The CLI [App plugin](https://github.com/adobe/aio-cli-plugin-app) provides the `aio app logs` command, which fetches the logs for a App Builder application deployed to the App Builder Workspace that is configured in the current working folder:
+The CLI [App plugin](https://github.com/adobe/aio-cli-plugin-app) provides the `aio app logs` command, which fetches the logs for an App Builder application deployed to the App Builder Workspace that is configured in the current working folder:
 
 - The command accepts an integer argument. It defines the number of last Runtime activation logs to fetch from the Runtime namespace bound to the App Builder Workspace to which the application has been deployed.
 - The command can be used either by a developer or by a script running in a [CI/CD pipeline](deployment/ci_cd_for_firefly_apps.md).

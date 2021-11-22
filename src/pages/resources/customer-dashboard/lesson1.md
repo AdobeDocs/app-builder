@@ -10,7 +10,7 @@ contributors:
 
 # Lesson 1: Create a New App Builder App from Campaign Standard Template
 
-To initialize a App Builder app, let's use init command from the CLI.
+To initialize an App Builder app, let's use init command from the CLI.
 
 ```bash
 aio app init customers-dashboard

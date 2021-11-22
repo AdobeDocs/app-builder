@@ -8,7 +8,7 @@ keywords:
 
 # Lesson 4: React Spectrum in App Builder
 
-To initialize a App Builder app, let’s use the init command from the [CLI](https://github.com/adobe/aio-cli).
+To initialize an App Builder app, let’s use the init command from the [CLI](https://github.com/adobe/aio-cli).
 
 ```bash
 aio app init my-app --no-extensions

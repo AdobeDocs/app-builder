@@ -85,4 +85,4 @@ The default implementation of the CI/CD workflow for App Builder Applications re
 In that case, we recommend implementing the custom solution with focus on two main aspects:
 
 - The [CLI](https://github.com/adobe/aio-cli) is the official tool to manage the App Builder Application development lifecycle from bootstrapping to deployment, and can be used within a CI/CD workflow for automation purpose.
-- Security is a key requirement, and any alternative CI/CD workflow should propose a solid secret management solution to store the credentials required to deploy a App Builder Application against a specific **Workspace**.
+- Security is a key requirement, and any alternative CI/CD workflow should propose a solid secret management solution to store the credentials required to deploy an App Builder Application against a specific **Workspace**.

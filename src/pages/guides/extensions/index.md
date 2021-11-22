@@ -13,7 +13,7 @@ When App Builder was first introduced, we primarily supported two types of use c
 Introducing **Extensions** -- a new property of App Builder applications that enables developers to build and to extend specific Adobe products in an integrated fashion across our ecosystem. 
 
 ## How does it work?
-Think of extensions as a contract between an Adobe product and a App Builder application.
+Think of extensions as a contract between an Adobe product and an App Builder application.
 
 Let's revisit the AEM Asset Microservices example. Adobe products, like AEM Asset, can define how they'd like customers to extend the product through App Builder Applications -- what kind of operations is allowed, what kind of data format is expected, etc. This definition is called an **Extension Point**. From the developer's perspective, developer would be able to build applications against these Extension Points that maps to the requirement of the product. Developers will also define **Endpoints** that map to the Extension Point. 
 
@@ -50,7 +50,7 @@ This Extension Point should be used for developers who want to build AEM Asset M
         - produces `application/json`
 
 ## How do I use it in my App Builder Project?
-Similar to other properties in a App Builder project, we leverage configurations in your codebase to define Extension properties. Follow the detailed instructions below with sample code to see how you can use it in your project!
+Similar to other properties in an App Builder project, we leverage configurations in your codebase to define Extension properties. Follow the detailed instructions below with sample code to see how you can use it in your project!
 
 ### New Project
 Simply follow instructions in [Creating your First App Builder Application](../../getting_started/first_app.md), you will be prompted through a few selections that set up the Extension Point info by default in your App Builder project. 

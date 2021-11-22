@@ -19,7 +19,7 @@ Below are complete sample applications built using App Builder.
 
 [Demo](demo.md) 
 
-This is a App Builder Demo App which enables searching Adobe Stock images.
+This is an App Builder Demo App which enables searching Adobe Stock images.
 
 
 
@@ -29,7 +29,7 @@ This is a App Builder Demo App which enables searching Adobe Stock images.
 
 <https://github.com/AdobeDocs/adobeio-samples-customers-dashboard>
 
-This App Builder app is a complete solution of the codelab Build a App Builder App for Customer Profiles using Adobe Campaign Standard API. It lists customer profiles from Adobe Campaign Standard and allows sending marketing campaign emails with personalized promo code.
+This App Builder app is a complete solution of the codelab Build an App Builder App for Customer Profiles using Adobe Campaign Standard API. It lists customer profiles from Adobe Campaign Standard and allows sending marketing campaign emails with personalized promo code.
  
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
@@ -65,7 +65,7 @@ This is a sample app that implements a custom Assets Compute Worker for AEM to g
 
 <https://github.com/AdobeDocs/adobeio-samples-todoapp>
  
-This App Builder app is a complete solution of the codelab Bulding a App Builder Todo App with aio-lib-state and React Spectrum which shows you how to use aio-lib-state as part of Runtime actions and how to bind React Spectrum components to Runtime actions.
+This App Builder app is a complete solution of the codelab Bulding an App Builder Todo App with aio-lib-state and React Spectrum which shows you how to use aio-lib-state as part of Runtime actions and how to bind React Spectrum components to Runtime actions.
 
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
@@ -74,7 +74,7 @@ This App Builder app is a complete solution of the codelab Bulding a App Builder
 
 <https://github.com/AdobeDocs/adobeio-samples-events-journal-browser> 
 
-This is a App Builder App which enables users to browse through events from Journaling using a simple interface.
+This is an App Builder App which enables users to browse through events from Journaling using a simple interface.
 
 
 ## Code Snippets

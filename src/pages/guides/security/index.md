@@ -143,7 +143,7 @@ In these cases, the "I/O Management API" service must be added to the appropriat
 
 ### I/O Runtime Specific guidelines
 
-The [security guidelines for I/O Runtime](/apis/experienceplatform/runtime/docs#!adobedocs/adobeio-runtime/master/guides/security_general.md) generally apply for the back-end actions of a App Builder application.
+The [security guidelines for I/O Runtime](/apis/experienceplatform/runtime/docs#!adobedocs/adobeio-runtime/master/guides/security_general.md) generally apply for the back-end actions of an App Builder application.
 
 The guidelines below are specific to App Builder applications.
 
@@ -151,25 +151,25 @@ The guidelines below are specific to App Builder applications.
 
 Developers building App Builder Applications on top of the out-of-the-box infrastructure will benefit from HTTPS connections between all the components that are part of this infrastructure.
 
-We strongly recommend to ensure that every 3rd party system or service integrating with a App Builder Application supports HTTPS connections as well.
+We strongly recommend to ensure that every 3rd party system or service integrating with an App Builder Application supports HTTPS connections as well.
  
 ### Tenant Isolation
 
 App Builder Applications and Services provide tenant isolation by default. 
-A App Builder Application gets deployed into a App Builder Workspace defined within the [Developer Console](/console) for a give App Builder project.
+A App Builder Application gets deployed into an App Builder Workspace defined within the [Developer Console](/console) for a give App Builder project.
 Each App Builder Workspace owns its own Runtime namespace.
 
 This combination of `Enterprise Organization`, `Project`, `Workspace` and `Runtime Namespace` define a granular tenant isolation for each deployed App Builder Application.
 
 #### Runtime Actions
 
-The back-end Runtime actions used by a App Builder Application respect the [tenant isolation model](/apis/experienceplatform/runtime/docs#!adobedocs/adobeio-runtime/master/quickstart.md#security-considerations) implemented by I/O Runtime.
+The back-end Runtime actions used by an App Builder Application respect the [tenant isolation model](/apis/experienceplatform/runtime/docs#!adobedocs/adobeio-runtime/master/quickstart.md#security-considerations) implemented by I/O Runtime.
 
 #### Cloud Storage and CDN for SPA Static Files
 
-If a App Builder Application is an SPA that deploys into the [Experience Cloud Shell](https://experience.adobe.com), the static assets of the SPA get deployed from the  or from a [CI/CD pipeline](../deployment/ci_cd_for_firefly_apps.md) to App Builder's Cloud Storage and CDN.
+If an App Builder Application is an SPA that deploys into the [Experience Cloud Shell](https://experience.adobe.com), the static assets of the SPA get deployed from the  or from a [CI/CD pipeline](../deployment/ci_cd_for_firefly_apps.md) to App Builder's Cloud Storage and CDN.
 
-Both of them have a strict isolation per Runtime namespace. It is only possible to access the Cloud Storage container hosting a App Builder SPA by configuring the [CLI](https://github.com/adobe/aio-cli) with the appropriate workspace credentials.
+Both of them have a strict isolation per Runtime namespace. It is only possible to access the Cloud Storage container hosting an App Builder SPA by configuring the [CLI](https://github.com/adobe/aio-cli) with the appropriate workspace credentials.
 
 The CDN serves these static assets from a sub-domain exclusively dedicated to the Runtime namespace associated to the App Builder Application workspace to which the SPA is deployed.
 
@@ -180,7 +180,7 @@ The access to the data stored in these underlying services is restricted to the 
 
 #### App Builder Apps Service
 
-The `App Builder Apps` application available to each Enterprise Organization within the Experience Cloud Shell is nothing more than a App Builder Application that is deployed following the access and isolation paradigms documented in this guide.
+The `App Builder Apps` application available to each Enterprise Organization within the Experience Cloud Shell is nothing more than an App Builder Application that is deployed following the access and isolation paradigms documented in this guide.
 
 ## Summary
 

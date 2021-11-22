@@ -8,12 +8,12 @@ keywords:
 
 # Creating your First App Builder Application
 
-In this tutorial, we'll guide you through the following steps to give you an introduction on how to set up and develop a App Builder Application. 
+In this tutorial, we'll guide you through the following steps to give you an introduction on how to set up and develop an App Builder Application. 
 1. Setting up Local Environment
 1. Creating a new Project on [Adobe Developer Console](/console)
 1. Signing in from the [CLI](https://github.com/adobe/aio-cli)
 1. Bootstrapping new App using [CLI](https://github.com/adobe/aio-cli)
-1. Anatomy of a App Builder Application
+1. Anatomy of an App Builder Application
 1. Developing the Application
 1. Deploying the Application
 
@@ -264,7 +264,7 @@ Note that you may not see all the options listed below on your command line, bec
 
 #### Developer with a Console config file
 
-This flow is intended for developers who do not have access to [Adobe Developer Console](/console) as entitled Enterprise Organization users, likely due to permission issues, but can get credentials that are tied to a App Builder workspace from an entitled Enterprise Organization administrator or developer. 
+This flow is intended for developers who do not have access to [Adobe Developer Console](/console) as entitled Enterprise Organization users, likely due to permission issues, but can get credentials that are tied to an App Builder workspace from an entitled Enterprise Organization administrator or developer. 
 
 For this flow to work, the developer should ask someone with access to set up a project and a workspace following the last few sections. With the workspace correctly set up, the credentials can downloaded by authorized [Adobe Developer Console](/console) users through the `Download all` button in Workspace overview. 
 
@@ -312,7 +312,7 @@ This flow is intended for developers who have no access or credentials whatsoeve
 
 1. You will not be able to run or to deploy your application by default because there is no credential provided. 
 
-## 5. Anatomy of a App Builder Application
+## 5. Anatomy of an App Builder Application
 
 Now that your project is initialized, let's open the project in your favorite IDE. We recommend using [VSCode](https://code.visualstudio.com/). You can easily open the project by entering `code <app-name>`, or opening VSCode -> Open... -> select app folder.
 

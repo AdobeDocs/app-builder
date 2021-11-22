@@ -29,7 +29,7 @@ We have big plans for our serverless efforts. From high-throughput real-time use
 
 [Read on Medium](https://medium.com/adobetech/following-the-end-to-end-user-journey-project-firefly-guides-6f961648ed20)
 
-App Builder impacts more than just developers. See the end-to-end journey of a App Builder app, and understand the stakeholders involved.
+App Builder impacts more than just developers. See the end-to-end journey of an App Builder app, and understand the stakeholders involved.
 
 
 

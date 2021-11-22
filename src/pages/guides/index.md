@@ -23,7 +23,7 @@ A typical headless application would integrate well with a remote script or proc
 
 A headful application is a Single Page Application (SPA) with a full-fledged user interface (UI) served from the out-of-the-box Content Delivery Network. This type of application calls [Adobe Product APIs](/apis) directly from the client when applicable. When there is a strong need to orchestrate [Adobe Product API](/apis) calls with 3rd party API calls, or with Adobe Identity Management System for authentication purposes, you can deploy serverless actions and/or sequences using [Runtime](/apis/experienceplatform/runtime).
 
-## JAMStack: Anatomy of a App Builder App
+## JAMStack: Anatomy of an App Builder App
 
 App Builder apps that are Single Page Applications with a full-fledged UI should follow the [JAMStack Architecture](https://jamstack.org/).
 
@@ -90,7 +90,7 @@ The [Adobe IMS SDK library](https://github.com/adobe/aio-lib-core-ims) provides 
 
 The [Core SDK library](https://github.com/adobe/aio-sdk-core) bundled into the [main SDK library](https://github.com/adobe/aio-sdk) provides a lower-level technical framework for developers.   
 
-This framework must be used when contributing to the App Builder SDK. It is also recommended to use it when building a App Builder application.
+This framework must be used when contributing to the App Builder SDK. It is also recommended to use it when building an App Builder application.
 
 #### Core SDK library
 

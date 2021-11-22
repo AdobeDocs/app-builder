@@ -12,7 +12,7 @@ In this lesson, we'll start bootstrapping the app with Runtime actions and the R
 
 ## Initialization 
 
-To initialize a App Builder app, let's use init command from the CLI.
+To initialize an App Builder app, let's use init command from the CLI.
 
 ```bash
 aio app init todo-app --no-extensions

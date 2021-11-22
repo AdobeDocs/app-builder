@@ -22,7 +22,7 @@ Once you have completed development on your project, and deploy your app in the 
     
 ### App Builder applications approval process
 
-Once you have completed development on a App Builder application, it is time to submit the application to your administrators for review and approval.
+Once you have completed development on an App Builder application, it is time to submit the application to your administrators for review and approval.
 
 The final app is based on the *Production* workspace, therefore it is important to ensure that the production workspace contains all of the necessary APIs, Events, and Runtime code that it needs before submitting for approval.
 

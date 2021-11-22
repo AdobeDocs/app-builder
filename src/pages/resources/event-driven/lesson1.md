@@ -31,9 +31,9 @@ downloaded automatically, you will need the private key to generate JWT token.
 
 4. Go to `project overview` tab, download project metadata from `Download` button and get the needed info from this `.json`file, or you can also get these info from `.aio` file in the project folder.
 
-## Initialize a App Builder app using CLI template
+## Initialize an App Builder app using CLI template
 
-To initialize a App Builder app, let's use init command from the CLI. More information please refer to [Creating your First App Builder Application](../../getting_started/first_app.md)
+To initialize an App Builder app, let's use init command from the CLI. More information please refer to [Creating your First App Builder Application](../../getting_started/first_app.md)
 
 ```bash
 aio app init <Your-project-name> --no-extensions

@@ -10,8 +10,8 @@ contributors:
 
 # Lesson 1: Step by Step Guide
 
-## Initialize a App Builder app using template 
-If you don't have a App Builder app, please follow [Create a New App Builder App from Template](../event-driven/lesson1.md) to create one, make sure you have `publish-event`in the template and add `I/O management API`in console. After done, and run `aio app deploy` you should have seen this 
+## Initialize an App Builder app using template 
+If you don't have an App Builder app, please follow [Create a New App Builder App from Template](../event-driven/lesson1.md) to create one, make sure you have `publish-event`in the template and add `I/O management API`in console. After done, and run `aio app deploy` you should have seen this 
 ![publishevent](assets/publishevent-1.png)
 
 and here is the project I set up at adobe developer console 

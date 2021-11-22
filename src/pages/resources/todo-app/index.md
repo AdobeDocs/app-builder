@@ -4,11 +4,11 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: Building a App Builder Todo App
+title: Building an App Builder Todo App
 description: How to build a Todo App with App Builder using aio-lib-state as storage library and React Spectrum components.
 ---
 
-# Building a App Builder Todo App with aio-lib-state and React Spectrum 
+# Building an App Builder Todo App with aio-lib-state and React Spectrum 
 
 This codelab will show you how to build a Todo App with App Builder using [aio-lib-state](https://github.com/adobe/aio-lib-state) as storage library and [React Spectrum](https://react-spectrum.adobe.com/) components.        
 

@@ -5,14 +5,14 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Consume Events Using Journaling API
-description: Creating cron jobs in a App Builder application to consume events using Journaling API.
+description: Creating cron jobs in an App Builder application to consume events using Journaling API.
 contributors:
   - https://github.com/Yu1986
 ---
 
 # Consume Events using Journaling API
 
-This codelab will guide you through creating cron jobs in a App Builder application to consume events using journaling API
+This codelab will guide you through creating cron jobs in an App Builder application to consume events using journaling API
 
 ## User Story
 There is a class of App Builder apps in which customers want guarantees that the I/O Events are processed without losing any event especially 
@@ -29,7 +29,7 @@ In order to demo how to using journaling API to consume events, we provide an en
 - Event provider - we need to create an event provider to automatically generate events sending to Journaling API or if you already have event provider you could skip this step
 - Event consumer - which is the main demo part of this codelab, we create another App Builder headless app to create cron jobs with alarms, we set up recurring jobs to pull from journaling API every x mins and write into App Builder storage.
 
-Event provider and event consumer both need to be deployed as a App Builder app under different namespace to make sure end to end workflow.
+Event provider and event consumer both need to be deployed as an App Builder app under different namespace to make sure end to end workflow.
 So for that purpose, you may need to create two projects at Console follow below:
 [Creating your First App Builder Application](../../getting_started/first_app.md)
 
