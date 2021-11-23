@@ -156,7 +156,7 @@ We strongly recommend to ensure that every 3rd party system or service integrati
 ### Tenant Isolation
 
 App Builder Applications and Services provide tenant isolation by default. 
-A App Builder Application gets deployed into an App Builder Workspace defined within the [Developer Console](/console) for a give App Builder project.
+An App Builder Application gets deployed into an App Builder Workspace defined within the [Developer Console](/console) for a give App Builder project.
 Each App Builder Workspace owns its own Runtime namespace.
 
 This combination of `Enterprise Organization`, `Project`, `Workspace` and `Runtime Namespace` define a granular tenant isolation for each deployed App Builder Application.

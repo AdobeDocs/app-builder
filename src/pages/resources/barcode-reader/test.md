@@ -8,7 +8,7 @@ keywords:
 
 # Lesson 3: Testing a Serverless Action
 
-A App Builder App created with `aio app init` has a [jest](https://jestjs.io/) test structure by default. We'll show how to take advantage of it.
+An App Builder App created with `aio app init` has a [jest](https://jestjs.io/) test structure by default. We'll show how to take advantage of it.
 
 ## Unit Tests
 
