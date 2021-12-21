@@ -143,3 +143,15 @@ Creating a dashboard of customer profiles from Adobe Campaign Standard using Pro
 [Start (20mins)](custom-asset-compute-worker/index.md) 
 
 Building a Custom Asset Compute Worker leveraging 3rd-party services to generate intelligent renditions in AEM.
+
+
+
+
+<DiscoverBlock slots="heading, link, text" width="100%" />
+
+### Build an app that consumes Adobe Experience Manager Events
+
+[Start (30mins)](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/consume-aem-events.html?lang=en) 
+
+Learn WHY is it a good idea to build event-driven applications and HOW we can build them with ease using App Builder. 
+
