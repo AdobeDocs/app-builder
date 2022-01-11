@@ -26,7 +26,7 @@ With this step completed, you can now run the application in the context of Expe
 
 When you are ready to share the application with your end-users, you initiate the publish process from the Developer Console. Once the application is approved by an Admin, business users will be able to find it in Experience Cloud and use it if they have the right permissions.
 
-## Why Would You Use Project Firefly?
+## Why Would You Use App Builder?
 
 The main reasons you would use this framework are:
 *	Time to value – if you want to extend Adobe solutions, this is the fastest way to do it.
@@ -51,6 +51,6 @@ Here are some of the types of apps that can be built on top of this framework:
 
 ## Examples from real-world
 
-* [Building a Real-Time Airline Application Using Adobe Experience Platform, Adobe I/O Runtime and Project Firefly](https://www.netcentric.biz/insights/2020/06/building-an-aep-demo-with-firefly.html?utm_source=linkedin&utm_medium=social_nonpaid&utm_campaign=20_insights&utm_content=link_post&es_id=8e9abf83f6)
+* [Building a Real-Time Airline Application Using Adobe Experience Platform, Adobe I/O Runtime and App Builder](https://www.netcentric.biz/insights/2020/06/building-an-aep-demo-with-firefly.html?utm_source=linkedin&utm_medium=social_nonpaid&utm_campaign=20_insights&utm_content=link_post&es_id=8e9abf83f6)
 * [How to generate intelligent renditions with AEM as a Cloud Service](https://tech.cognifide.com/blog/2020/how-to-generate-intelligent-renditions-aem-cloud/)
 * [Setting Up Adobe I/O CLI for Cloud Manager](https://medium.com/adobetech/setting-up-adobe-i-o-cli-for-cloud-manager-8820f47e3c94)

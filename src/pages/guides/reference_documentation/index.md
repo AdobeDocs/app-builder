@@ -10,7 +10,7 @@ keywords:
 
 * [Adobe Developer Console](/apis/experienceplatform/console/docs)
 * [Adobe CLI](https://github.com/adobe/aio-cli)
-* [Project Firefly Application Generators](https://github.com/adobe/generator-aio-app)
+* [App Builder Application Generators](https://github.com/adobe/generator-aio-app)
 * [Developer Console Project Generators](https://github.com/adobe/generator-aio-console)
 * [Adobe Authentication Library](https://github.com/adobe/aio-lib-ims)
 * [Token-Vending Machine](https://github.com/adobe/aio-tvm)
@@ -33,4 +33,4 @@ keywords:
 * [Github Actions Support](https://github.com/features/actions)
     * [Github Action to setup the CLI](https://github.com/adobe/aio-cli-setup-action)
     * [Github Action to use the CLI](https://github.com/adobe/aio-apps-action)
-    * [Github workflow generator for Project Firefly Apps](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows)
+    * [Github workflow generator for App Builder Apps](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows)

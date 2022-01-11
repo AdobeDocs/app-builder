@@ -22,26 +22,26 @@ Now that the secrets are defined, you can try to rerun the job by clicking on Re
 
 ![success](assets/success.png)
 
-If you click on the Deploy step to open the logs, you'll see that your Firefly App was deployed successfully on your stage environment:
+If you click on the Deploy step to open the logs, you'll see that your App Builder App was deployed successfully on your stage environment:
 
 ![deploy](assets/deploy.png)
 
 ## Run tests on pull request
 
 The GitHub action defined in `pr_test.yml` will run `aio app test` anytime a pull request is submitted to your project. 
-By default, it will only run the tests for the Runtime actions. If all the checks are passing and the pull request is merged, the above workflow will run and deploy the Firefly App on the stage environment. 
+By default, it will only run the tests for the Runtime actions. If all the checks are passing and the pull request is merged, the above workflow will run and deploy the App Builder App on the stage environment. 
 
 ![tests](assets/tests.png)
 
 ## Continuous deployment
 
-To deploy your Firefly App on the production environment, you'll have to perform a GitHub release in your project repository since the GitHub action relies on the `release` event.
+To deploy your App Builder App on the production environment, you'll have to perform a GitHub release in your project repository since the GitHub action relies on the `release` event.
 
 For convenience, we'll go to `https://github.com/<org>/<project_name>/releases/new` to perform a release. Fill out the release version and optionally, you can add a release title and description then hit Publish release. 
 
 ![release](assets/release.png)     
 
-Finally, the deploy GitHub action will run and deploy the Firefly App on the production environment using the production GitHub secrets.
+Finally, the deploy GitHub action will run and deploy the App Builder App on the production environment using the production GitHub secrets.
 
 ![production](assets/production.png)
 

@@ -4,10 +4,10 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: Project Firefly Code Snippets - Firefly State SDK  
+title: App Builder Code Snippets - App Builder State SDK  
 ---
 
-# Firefly State SDK
+# App Builder State SDK
 
 ## Read a value by key from the State SDK
 

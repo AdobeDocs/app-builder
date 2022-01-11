@@ -37,7 +37,7 @@ To test your configuration:
 
 ## Configure Adobe IO
 
-1. Go to the [https://console.adobe.io][adobe-console] and create a [new project using Firefly template][adobe-console-firefly-template].
+1. Go to the [https://console.adobe.io][adobe-console] and create a [new project using App Builder template][adobe-console-firefly-template].
 1. Add the following services to your project workspace:
    - Asset Compute
    - I/O Management API

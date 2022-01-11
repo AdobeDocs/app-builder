@@ -1,6 +1,6 @@
 ---
-title: Exploring Project Firefly - Custom Events
-description: Join us as we dive deep into the topic of Adobe I/O Events including our new feature with Project Firefly - Custom Events. Kanika Gera, Sr Product Manager and Sangeetha Krishnan share everything you need to know about Adobe I/O Events and how they are used in Project Firefly applications. 
+title: Exploring App Builder - Custom Events
+description: Join us as we dive deep into the topic of Adobe I/O Events including our new feature with App Builder - Custom Events. Kanika Gera, Sr Product Manager and Sangeetha Krishnan share everything you need to know about Adobe I/O Events and how they are used in App Builder applications. 
 keywords:
   - Adobe I/O
   - Extensibility
@@ -8,9 +8,9 @@ keywords:
   - Developer Tooling  
 ---
 
-# Exploring Project Firefly - Custom Events
+# Exploring App Builder - Custom Events
 
-Join us as we dive deep into the topic of Adobe I/O Events including our new feature with Project Firefly - Custom Events. Kanika Gera, Sr Product Manager and Sangeetha Krishnan share everything you need to know about Adobe I/O Events and how they are used in Project Firefly applications.
+Join us as we dive deep into the topic of Adobe I/O Events including our new feature with App Builder - Custom Events. Kanika Gera, Sr Product Manager and Sangeetha Krishnan share everything you need to know about Adobe I/O Events and how they are used in App Builder applications.
 
 <Media slots="video"/>
 

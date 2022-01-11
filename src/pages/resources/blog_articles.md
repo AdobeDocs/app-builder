@@ -4,10 +4,10 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: Project Firefly Blog Articles  
+title: App Builder Blog Articles  
 ---
 
-# Project Firefly Blog Articles
+# App Builder Blog Articles
 
 ## Overview
 
@@ -29,17 +29,17 @@ We have big plans for our serverless efforts. From high-throughput real-time use
 
 [Read on Medium](https://medium.com/adobetech/following-the-end-to-end-user-journey-project-firefly-guides-6f961648ed20)
 
-Firefly impacts more than just developers. See the end-to-end journey of a Project Firefly app, and understand the stakeholders involved.
+App Builder impacts more than just developers. See the end-to-end journey of an App Builder app, and understand the stakeholders involved.
 
 
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
-### A Breakdown of Firefly’s Architecture
+### A Breakdown of App Builder’s Architecture
 
 [Read on Medium](https://medium.com/adobetech/a-breakdown-of-fireflys-architecture-project-firefly-guides-fe4f38e16014) 
 
-To help you understand what exactly Project Firefly is, we explore the underlying architecture that powers it.
+To help you understand what exactly App Builder is, we explore the underlying architecture that powers it.
 
 
 
@@ -50,7 +50,7 @@ To help you understand what exactly Project Firefly is, we explore the underlyin
 
 [Read on Medium](https://medium.com/adobetech/a-full-security-overview-project-firefly-guides-c0b10919be2a) 
 
-We know security of your app is a top concern, and so we've built Firefly to be highly secure. We breakdown Firefly's security measures.
+We know security of your app is a top concern, and so we've built App Builder to be highly secure. We breakdown App Builder's security measures.
 
 
 
@@ -68,22 +68,22 @@ Adobe has more than 5,000 engineers working across the world on hundreds of prod
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
-### The Future of Project Firefly: B2B and B2C Expansion
+### The Future of App Builder: B2B and B2C Expansion
 
 [Read on Medium](https://medium.com/adobetech/the-future-of-project-firefly-b2b-and-b2c-expansion-89de7ec60610) 
 
-Almost a year ago, we launched the developer preview program for a new third-party developer capability called Project Firefly. If you haven’t heard of Firefly, the simplest way to explain is this…
+Almost a year ago, we launched the developer preview program for a new third-party developer capability called App Builder. If you haven’t heard of App Builder, the simplest way to explain is this…
 
 
 
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
-### Why Your Enterprise Needs Project Firefly
+### Why Your Enterprise Needs App Builder
 
 [Read on Medium](https://medium.com/adobetech/why-your-enterprise-needs-project-firefly-9c2f2469a5f2) 
 
-What can we do to democratize cloud-native applications? We introduce Project Firefly and look at its use of mega-components.
+What can we do to democratize cloud-native applications? We introduce App Builder and look at its use of mega-components.
 
 
 
@@ -95,7 +95,7 @@ What can we do to democratize cloud-native applications? We introduce Project Fi
 
 [Read on Medium](https://medium.com/adobetech/project-firefly-how-to-projects-and-workspaces-9738d31338e7) 
 
-Project Firefly is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure.
+App Builder is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure.
 
 
 
@@ -114,17 +114,17 @@ Project Firefly is a complete framework that enables enterprise developers to bu
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
-### Ensemble and Project Firefly: Unlocking Better B2E Workflows Through Custom Apps
+### Ensemble and App Builder: Unlocking Better B2E Workflows Through Custom Apps
 
 [Read on Medium](https://medium.com/adobetech/building-an-spa-to-enhance-b2e-workflows-with-project-firefly-de128b180ee3) 
 
-Learn how Ensemble leveraged the power of Adobe’s Project Firefly framework to develop a custom SPA that enhanced their B2E campaign code tracking workflows.
+Learn how Ensemble leveraged the power of Adobe’s App Builder framework to develop a custom SPA that enhanced their B2E campaign code tracking workflows.
 
 
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
-### Contributing to Adobe’s Open Source World with the Adobe Experience Platform SDK for Project Firefly
+### Contributing to Adobe’s Open Source World with the Adobe Experience Platform SDK for App Builder
 
 [Read on Medium](https://medium.com/adobetech/contributing-to-adobes-open-source-world-with-the-adobe-experience-platform-sdk-for-project-1ae80d140608) 
 
@@ -134,11 +134,11 @@ The Adobe Experience Platform provides an API first approach and while working o
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
-### Use Cases for Cloud-Native Apps with Project Firefly
+### Use Cases for Cloud-Native Apps with App Builder
 
 [Read on Medium](https://medium.com/adobetech/use-cases-project-firefly-cloud-native-apps-32f5ac6ef718) 
 
-It’s hard to believe that it was just May 2020 when we introduced Project Firefly to the world via developer preview. As Adobe’s complete framework for building custom, cloud-native Experience Cloud…
+It’s hard to believe that it was just May 2020 when we introduced App Builder to the world via developer preview. As Adobe’s complete framework for building custom, cloud-native Experience Cloud…
 
 
 
@@ -156,11 +156,11 @@ AEMaaCS Assets offers a cloud-native digital assets management solution, which i
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
-### Finding Your Feet with Project Firefly
+### Finding Your Feet with App Builder
 
 [Read on Medium](https://medium.com/adobetech/project-firefly-getting-started-b3957e83b9f1) 
 
-Anil is a big advocate of Project Firefly for non-developers. He shares insights, based on his first (& very successful) experience building with Firefly.
+Anil is a big advocate of App Builder for non-developers. He shares insights, based on his first (& very successful) experience building with App Builder.
 
 
 
@@ -169,18 +169,18 @@ Anil is a big advocate of Project Firefly for non-developers. He shares insights
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
-### Building a Real-Time Airline Application Using Adobe Experience Platform, Adobe I/O Runtime and Project Firefly
+### Building a Real-Time Airline Application Using Adobe Experience Platform, Adobe I/O Runtime and App Builder
 
 [Read on Medium](https://www.netcentric.biz/insights/2020/06/building-an-aep-demo-with-firefly.html?utm_source=linkedin&utm_medium=social_nonpaid&utm_campaign=20_insights&utm_content=link_post&es_id=8e9abf83f6) 
 
-Find out how our team of experts built a real-time Airline application using AEP, Adobe I/O Runtime and Adobe’s latest Firefly technology in just six weeks. 
+Find out how our team of experts built a real-time Airline application using AEP, Adobe I/O Runtime and Adobe’s latest App Builder technology in just six weeks. 
 
 
 ## Miscellaneous
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
-### How We Made Project Firefly’s Videos Remotely While Quarantined at Home 
+### How We Made App Builder’s Videos Remotely While Quarantined at Home 
 
 [Read on Medium](https://medium.com/adobetech/how-we-made-project-firefly-videos-remotely-in-quarantine-1a20c0f53e83)
 

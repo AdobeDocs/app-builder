@@ -1,5 +1,5 @@
 ---
-title: Exploring Project Firefly - ODE Case Study   
+title: Exploring App Builder - ODE Case Study   
 keywords:
   - Adobe I/O
   - Extensibility
@@ -7,7 +7,7 @@ keywords:
   - Developer Tooling  
 ---
 
-# Exploring Project Firefly - ODE Case Study
+# Exploring App Builder - ODE Case Study
 
 <Media slots="video"/>
 

@@ -1,5 +1,5 @@
 ---
-title: Project Firefly - A Breakdown of Firefly's Architecture
+title: App Builder - A Breakdown of App Builder's Architecture
 keywords:
   - Adobe I/O
   - Extensibility
@@ -7,7 +7,7 @@ keywords:
   - Developer Tooling  
 ---
 
-# A Breakdown of Firefly's Architecture
+# A Breakdown of App Builder's Architecture
 
 <Media slots="video"/>
 

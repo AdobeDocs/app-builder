@@ -6,7 +6,7 @@ keywords:
   - Developer Tooling 
 ---
 
-# Lesson 1: Bootstrap a Headless Firefly App
+# Lesson 1: Bootstrap a Headless App Builder App
 
 In order to create your barcode application, use the following command:
 ```bash

@@ -17,5 +17,5 @@ import Requirements from '../transclusions/_requirements.md'
 In addition to above pre-requisites, it will be helpful for you to read through the below docs learning about Adobe I/O events: 
 
 * [Consume Events using Journaling API](../journaling-events/index.md)
-* [Building Event driven Firefly App Using Custom Events](../event-driven/index.md)
+* [Building Event driven App Builder App Using Custom Events](../event-driven/index.md)
 

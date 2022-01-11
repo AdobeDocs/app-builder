@@ -16,6 +16,6 @@ Congratulations! You have successfully completed the codelab.
 
 You have learned: 
 
-* How to start a debugger for a Firefly app in VSCode
+* How to start a debugger for an App Builder app in VSCode
 * How to debug an action
 * How to manage application logs

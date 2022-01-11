@@ -1,6 +1,6 @@
 ---
-title: Exploring Project Firefly - Projects and Workspaces
-description: The Project Firefly team shared a short presentation about projects and workspaces and how to use customizations to help your team collaborate on building Firefly Applications.  
+title: Exploring App Builder - Projects and Workspaces
+description: The App Builder team shared a short presentation about projects and workspaces and how to use customizations to help your team collaborate on building App Builder Applications.  
 keywords:
   - Adobe I/O
   - Extensibility
@@ -8,9 +8,9 @@ keywords:
   - Developer Tooling  
 ---
 
-# Exploring Project Firefly - Projects and Workspaces
+# Exploring App Builder - Projects and Workspaces
 
-The Project Firefly team shared a short presentation about projects and workspaces and how to use customizations to help your team collaborate on building Firefly Applications.
+The App Builder team shared a short presentation about projects and workspaces and how to use customizations to help your team collaborate on building App Builder Applications.
 
 <Media slots="video"/>
 

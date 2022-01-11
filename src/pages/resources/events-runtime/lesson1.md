@@ -10,8 +10,8 @@ contributors:
 
 # Lesson 1: Step by Step Guide
 
-## Initialize a Firefly app using template 
-If you don't have a Firefly app, please follow [Create a New Firefly App from Template](../event-driven/lesson1.md) to create one, make sure you have `publish-event`in the template and add `I/O management API`in console. After done, and run `aio app deploy` you should have seen this 
+## Initialize an App Builder app using template 
+If you don't have an App Builder app, please follow [Create a New App Builder App from Template](../event-driven/lesson1.md) to create one, make sure you have `publish-event`in the template and add `I/O management API`in console. After done, and run `aio app deploy` you should have seen this 
 ![publishevent](assets/publishevent-1.png)
 
 and here is the project I set up at adobe developer console 
@@ -44,7 +44,7 @@ It will show you a sample of JSON format, make sure you select `webhook` in my c
 ![console-event](assets/console-event-3.png)
 
 ## Create Event Consumer 
-We will use the `generic` project firefly template to modify the code to create event consumer, I will name the action to `consume-event`, after deploy the event you will be able to set up an event registration runtime actions you deployed.
+We will use the `generic` App Builder template to modify the code to create event consumer, I will name the action to `consume-event`, after deploy the event you will be able to set up an event registration runtime actions you deployed.
 
 Note: here is one simple sample code that you could refer to test the webhook feature: 
 ```
@@ -149,7 +149,7 @@ Please note that: An action used as event consumer does not need to be `web: yes
 
 ## Event Runtime Integration 
 
-- With all above setup, now you get your `providerId`, `eventCode`, you can go back to your firefly App trying to invoke a custom event like below: 
+- With all above setup, now you get your `providerId`, `eventCode`, you can go back to your App Builder App trying to invoke a custom event like below: 
 ![invoke-event](assets/event-invoke-4.png)
 
 - You should see this runtime action created in the `user defined actions` 

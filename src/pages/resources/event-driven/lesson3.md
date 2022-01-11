@@ -133,7 +133,7 @@ exports.main = main
 ```
 What happens here is that the action exposes a `main` function, which accepts a list of params from the client. It checks the required params for using the `cloudevents-sdk`. 
 
-You can run the firefly app locally by execute the below command with AIO CLI:
+You can run the App Builder app locally by execute the below command with AIO CLI:
 ```bash
 aio app run
 ```
