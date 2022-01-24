@@ -56,10 +56,10 @@ You can manually remove [Adobe I/O Runtime](/apis/experienceplatform/runtime) fr
     - Each App Builder project has two default workspaces: `Production` and `Stage`. You can add more workspaces as needed. The `Production` workspace is special, as it is used for the submission and distribution flow. When you’re ready to deploy your app, you will submit it for approval from the Production workspace.
     ![Project Preview](../images/console-5.png)
 
-1. Create a new workspace or select an workspace to start adding [APIs](/apis/experienceplatform/console/docs#!AdobeDocs/adobeio-console/master/services.md) and [Events](/apis/experienceplatform/console/docs#!AdobeDocs/adobeio-console/master/services-add-event.md) that you would need for your application. 
+2. Create a new workspace or select an workspace to start adding [APIs](https://developer.adobe.com/developer-console/docs/guides/services/#add-a-service) and [Events](https://developer.adobe.com/developer-console/docs/guides/services/services-add-event/) that you would need for your application. 
     ![Workspace](../images/console-6.png)
 
-To read more about Adobe Developer Console, please refer to [Console Documentation](/apis/experienceplatform/console/docs).
+To read more about Adobe Developer Console, please refer to [Console Documentation](https://developer.adobe.com/developer-console/docs).
 
 ## 3. Signing in from CLI
 
