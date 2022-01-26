@@ -107,7 +107,7 @@ module.exports = {
         "pages": [
           {
             "title": "Managing Application Logs",
-            "path": "guides/application_logging.md"
+            "path": "guides/application_logging/index.md"
           },
           {
             "title": "Forwarding logs to Azure Log Analytics",
