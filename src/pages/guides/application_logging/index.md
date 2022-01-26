@@ -59,11 +59,11 @@ Again, the `aio runtime logs` command can be used by a developer or by a script 
 Apart from viewing application logs using the AIO CLI, a developer can also configure an App Builder application to forward all application logs to a **customer-owned** log management solution. Forwarding logs has several benefits over retrieving logs through the AIO CLI, especially for applications that are deployed in Production or Staging environments. The supported log management solutions include 
 
 1. Adobe I/O Runtime (default)
-2. [Splunk Cloud]()
-3. [Splunk Enterprise]()
-4. [Azure Log Analytics]()
+2. [Splunk Cloud](splunk_cloud.md)
+3. [Splunk Enterprise](splunk_enterprise.md)
+4. [Azure Log Analytics](azure_log_analytics.md)
 
-_Note: Please click on the links above to view the steps to set up log forwarding with that solution._
+_Note: Please visit the above links to view the steps to set up log forwarding with that solution._
 
 ### When to use Log forwarding
 
@@ -96,9 +96,9 @@ _Note: Running `aio app deploy --no-actions` or `aio app deploy --no-log-forward
 <InlineAlert slots="text"/>
 
 Please visit the individual guides to set up log forwarding for your log management solution of choice.
-1. Splunk Cloud
-2. Splunk Enterprise
-3. Azure Log Analytics
+1. [Splunk Cloud](splunk_cloud.md)
+2. [Splunk Enterprise](splunk_enterprise.md)
+3. [Azure Log Analytics](azure_log_analytics.md)
 
 #### Viewing the current Log Forwarding configuration
 
