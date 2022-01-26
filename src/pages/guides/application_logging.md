@@ -4,52 +4,52 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+  - Log Forwarding
+  - Monitoring
 ---
 
-# Managing application logs
+# Managing Application Logs
 
-Logging is a crucial need for every application developer. While it is a great add-on for debugging the code at implementation time, it also provides information about the behavior of an application that has been deployed to a specific environment such as `Stage` or `Production`.
-The application logs are important assets to facilitate the investigation and resolution of application-specific issues and outages happening remotely from the developer's machine. App Builder [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) provide commodities for developers to log and retrieve information and data from their custom applications.
+Logging is one of the most important tools in a developer's tool kit. Application logs allow a developer to debug an application in development as well as monitor it in production. The App Builder [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) provide significant out-of-the-box capabilities to facilitate logging from code and for viewing and forwarding those applications logs as needed.
 
 ## Logging with App Builder SDK
 
-App Builder [SDK](https://github.com/adobe/aio-sdk) provides a [core Logging library](https://github.com/adobe/aio-lib-core-logging), which defines an [API](https://github.com/adobe/aio-lib-core-logging/blob/master/doc/api.md) on top of the popular [WinstonJS](https://www.npmjs.com/package/winston) and [Debug](https://www.npmjs.com/package/debug).
+The App Builder [SDK](https://github.com/adobe/aio-sdk) provides a [core logging library](https://github.com/adobe/aio-lib-core-logging) that defines an [API](https://github.com/adobe/aio-lib-core-logging/blob/master/doc/api.md) on top of the popular [WinstonJS](https://www.npmjs.com/package/winston) and [Debug](https://www.npmjs.com/package/debug) npm packages. The core logging library can be used in a Runtime action or in other libraries.
 
-The [Logging library](https://github.com/adobe/aio-lib-core-logging) can be used in Runtime actions or plain libraries. For example, it is used by App Builder SDK itself:
+Furthermore, the App Builder core logging library can be used with the App Builder [core errors library](https://github.com/adobe/aio-lib-core-errors). The App Builder core errors library aims to streamline error management across the [AIO SDK](https://github.com/adobe/aio-sdk) and App Builder applications. When the core errors library is used in conjunction with the core logging library, the error log messages output specific error codes, as defined by each App Builder [SDK](https://github.com/adobe/aio-sdk), that further aid debugging.
 
-- In higher-level SDK libraries, for example the [Realtime Customer Profile](https://github.com/adobe/aio-lib-customer-profile) SDK library
-- In shared Runtime actions, for example the [Token Vending Machine](https://github.com/adobe/aio-tvm)
+Both the core logging library and the core errors library can be directly used in an App Builder application, a Runtime action, and other libraries. For example, both libraries are used in:
 
-App Builder [core Logging library](https://github.com/adobe/aio-lib-core-logging) can be used together with App Builder [core Error library](https://github.com/adobe/aio-lib-core-errors), which purpose is to streamline error management across the [SDK](https://github.com/adobe/aio-sdk) and custom App Builder Applications which are using it.
+- The App Builder [SDK](https://github.com/adobe/aio-sdk) itself.
+- Higher-level SDK libraries, such as the [Real-time Customer Profile](https://github.com/adobe/aio-lib-customer-profile) SDK library.
+- Shared Runtime actions, such as the [Token Vending Machine](https://github.com/adobe/aio-tvm).
 
-The errors log messages will then output specific codes defined by each App Builder [SDK](https://github.com/adobe/aio-sdk) library.
-Again, the [Realtime Customer Profile](https://github.com/adobe/aio-lib-customer-profile) SDK library is a good example that uses App Builder [Logger](https://github.com/adobe/aio-lib-core-logging) with App Builder [Errors](https://github.com/adobe/aio-lib-core-errors).
+<InlineAlert slots="text"/>
 
-Both App Builder [core Logging library](https://github.com/adobe/aio-lib-core-logging) and App Builder [core Error library](https://github.com/adobe/aio-lib-core-errors) can also be used directly in App Builder Applications.
-
-When bootstrapping a new custom application from the [CLI](https://github.com/adobe/aio-cli) `aio app init` command, the developer is invited to select [action generators](https://github.com/adobe/generator-aio-app), which will create the boilerplate code for the custom back-end actions of the application. These ones integrate out-of-the-box with these two core App Builder [SDK](https://github.com/adobe/aio-sdk) features.
+When a new App Builder application is bootstrapped from the [AIO CLI](https://github.com/adobe/aio-cli) using the `aio app init` command, the [generated boilerplate action code](https://github.com/adobe/generator-aio-app) integrates with both the core and errors logging libraries out-of-the-box. 
 
 ## Accessing logs with App Builder CLI
 
-App Builder [CLI](https://github.com/adobe/aio-cli) exposes application logs to the developers at different levels.
+App Builder [CLI](https://github.com/adobe/aio-cli) exposes application logs to the developers at different levels:
+- at an App Builder application level using the `aio app` plugin.
+- at a Runtime action level using the `aio runtime` plugin.
 
 ### App Builder app plugin
 
-The CLI [App plugin](https://github.com/adobe/aio-cli-plugin-app) provides the `aio app logs` command, which fetches the logs for an App Builder application deployed to the App Builder Workspace that is configured in the current working folder:
+The AIO CLI [App plugin](https://github.com/adobe/aio-cli-plugin-app) provides the `aio app logs` command, which fetches the logs for an App Builder application deployed to the App Builder Workspace that is configured in the current working folder:
 
-- The command accepts an integer argument. It defines the number of last Runtime activation logs to fetch from the Runtime namespace bound to the App Builder Workspace to which the application has been deployed.
-- The command can be used either by a developer or by a script running in a [CI/CD pipeline](deployment/ci_cd_for_firefly_apps.md).
-- The command can be used either for deployed App Builder Applications, or for Applications running locally with `aio app run --local` (see the [Deployment guide](deployment/index.md)).
+- The command accepts an integer argument with the `--limit` flag that allows fetching logs from the last `n` Runtime activations.
+- The command accepts an action name with the `--action` flag that allows fetching logs from a particular action within the App Builder application.
+- The command allows a `--tail` or `--watch` flag that would continuously fetch logs as they appear.
+
+To see more command options, run `aio app logs --help` on your terminal.
+
+The `aio app logs` command can be used either by a developer or even by a script running in a [CI/CD pipeline](deployment/ci_cd_for_firefly_apps.md). Furthermore, the command can be used for App Builder Applications deployed on Runtime or even those running locally through the `aio app run --local` command (see the [Deployment guide](deployment/index.md)).
 
 ### Runtime plugin
 
-The CLI [Runtime plugin](https://github.com/adobe/aio-cli-plugin-runtime) operates at a lower level than the [App plugin](https://github.com/adobe/aio-cli-plugin-app). It directly exposes Runtime primitives and does not interact with higher-level App Builder applications and related concepts.
+The AIO CLI [Runtime plugin](https://github.com/adobe/aio-cli-plugin-runtime) operates at the level of a Runtime action. When a [Runtime action is invoked](https://github.com/adobe/aio-cli-plugin-runtime#binrun-runtimeactioninvoke-actionname), the corresponding [activation's logs](https://github.com/adobe/aio-cli-plugin-runtime#binrun-runtimeactivationlogs-activationid) can be fetched using the `aio runtime logs <activation_id>` command.
 
-It can be used to retrieve [activations](https://github.com/adobe/aio-cli-plugin-runtime#binrun-runtimeactivation) and [activation logs](https://github.com/adobe/aio-cli-plugin-runtime#binrun-runtimeactivationlogs-activationid) from [invoked actions](https://github.com/adobe/aio-cli-plugin-runtime#binrun-runtimeactioninvoke-actionname).
+This command also offers command options to `--watch` or `--tail` the logs among other options (run `aio runtime logs --help`). 
 
-In that case, the activations and logs will not be aggregated by application, but fetched individually for a more fine-grained control. The [Runtime plugin](https://github.com/adobe/aio-cli-plugin-runtime) provides the same possibilities than the [App plugin](https://github.com/adobe/aio-cli-plugin-app):
-
-- The commands can be used either by a developer or by a script running in a [CI/CD pipeline](deployment/ci_cd_for_firefly_apps.md).
-- The commands can be used either for deployed Runtime actions, or for actions running locally with `aio app run --local` (see the [Deployment guide](deployment/index.md)).
-
-App Builder will provide more Logging and Monitoring capabilities as we are expanding both [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) for a broader panel of custom application use-cases.
+Again, the `aio runtime logs` command can be used by a developer or by a script running in a [CI/CD pipeline](deployment/ci_cd_for_firefly_apps.md). Furthermore, the command can be used for App Builder Applications deployed on Runtime or even those running locally through the `aio app run --local` command (see the [Deployment guide](deployment/index.md)).
