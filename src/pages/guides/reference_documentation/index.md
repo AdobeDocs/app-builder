@@ -8,7 +8,7 @@ keywords:
 
 # Reference Documentation
 
-* [Adobe Developer Console](/apis/experienceplatform/console/docs)
+* [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/)
 * [Adobe CLI](https://github.com/adobe/aio-cli)
 * [App Builder Application Generators](https://github.com/adobe/generator-aio-app)
 * [Developer Console Project Generators](https://github.com/adobe/generator-aio-console)

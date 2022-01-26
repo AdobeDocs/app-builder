@@ -95,14 +95,31 @@ module.exports = {
             "title": "Using Client SDKs for Accessing Adobe APIs",
             "path": "guides/using_sdks.md"
           },
-          
-          {
-            "title": "Managing Application Logs",
-            "path": "guides/application_logging.md"
-          },
           {
             "title": "Event hooks for App Builder Applications",
             "path": "guides/app-hooks.md"
+          }
+        ]
+      },
+      {
+        "title": "Logging",
+        "path": "guides/application_logging",
+        "pages": [
+          {
+            "title": "Managing Application Logs",
+            "path": "guides/application_logging/index.md"
+          },
+          {
+            "title": "Forwarding logs to Azure Log Analytics",
+            "path": "guides/application_logging/azure_log_analytics.md"
+          },
+          {
+            "title": "Forwarding logs to Splunk Cloud",
+            "path": "guides/application_logging/splunk_cloud.md"
+          },
+          {
+            "title": "Forwarding logs to Splunk Enterprise",
+            "path": "guides/application_logging/splunk_enterprise.md"
           }
         ]
       },
