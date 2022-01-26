@@ -53,3 +53,59 @@ The AIO CLI [Runtime plugin](https://github.com/adobe/aio-cli-plugin-runtime) op
 This command also offers command options to `--watch` or `--tail` the logs among other options (run `aio runtime logs --help`). 
 
 Again, the `aio runtime logs` command can be used by a developer or by a script running in a [CI/CD pipeline](deployment/ci_cd_for_firefly_apps.md). Furthermore, the command can be used for App Builder Applications deployed on Runtime or even those running locally through the `aio app run --local` command (see the [Deployment guide](deployment/index.md)).
+
+## Forwarding Application logs
+
+Apart from viewing application logs using the AIO CLI, a developer can also configure an App Builder application to forward all application logs to a **customer-owned** log management solution. Forwarding logs has several benefits over retrieving logs through the AIO CLI, especially for applications that are deployed in Production or Staging environments. The supported log management solutions include 
+
+1. Adobe I/O Runtime (default)
+2. [Splunk Cloud]()
+3. [Splunk Enterprise]()
+4. [Azure Log Analytics]()
+
+_Note: Please click on the links above to view the steps to set up log forwarding with that solution._
+
+### When to use Log forwarding
+
+The following table outlines a quick comparison between storing and viewing logs within Adobe I/O Runtime, the compute platform for App Builder vs forwarding application logs to a log management solution of your choice.
+
+| \            |  Storing logs in Runtime  |  Forwarding application logs  |
+|--------------|---------------------------|-------------------------------|
+| Setup        |  All workspaces default to storing logs in Runtime. Included in App Builder SKU. |  Needs to be configured per workspace of an App Builder application. Customer needs to bring in a log management solution they own. |
+| When to use  |  Good for local development and when each developer works in their own workspace.  |  Ideal for shared environments such as Stage and Production workspaces.  |
+| Access to logs |  Adobe I/O Runtime stores application logs for only failed or asynchronous activations.  |  Log forwarding allows you to gain access to **all** your application logs.  |
+| Logging limits       |  Maximum of 10 MB of log lines per activation beyond which log lines are truncated.  |  Maximum of 10 MB of log lines per activation beyond which log lines are truncated.  |
+| Throttling   |  Using the `x-ow-extra-logging` header stores all logs but is meant to be used in local development and is throttled for high log volume.  |  Do not need to use `x-ow-extra-logging` as all application logs are forwarded by design.  |
+| Log retention    |  Logs stored in Adobe I/O Runtime are retained for 7 days.  |  Developers can choose to retain logs for a longer duration.  |
+| Capabilities |  Ability to view and `tail` application logs on per application or activation level.  |  Ability to view logs, search through unstructured logs, and chart data extracted from logs. Ability to consolidate logs with the rest of your infrastucture logs for better correlation.  |
+
+### Log Forwarding Commands
+
+
+```
+aio app config set log-forwarding
+```
+
+This command allows you to configure log forwarding for your workspace or reset it to store logs in Adobe I/O Runtime. 
+
+Once a log forwarding configuration is successfully set, the log forwarding configuration is also stored in the `.aio` and `.env` files. Any changes made directly to the log forwarding configuration in the `.aio` or `.env` file would now be deployed when you run `aio app deploy`.
+
+_Note: Running `aio app deploy --no-actions` or `aio app deploy --no-log-forwarding-update` would skip deploying any changes made to the local log forwarding configuration._
+
+<InlineAlert slots="text"/>
+
+Please visit the individual guides to set up log forwarding for your log management solution of choice.
+1. Splunk Cloud
+2. Splunk Enterprise
+3. Azure Log Analytics
+
+```
+aio app config get log-forwarding
+```
+This command outputs the current log forwarding configuration for your workspace and compares it to the locally set log forwarding configuration. Defaults to Adobe I/O Runtime.
+
+
+```
+aio app config get log-forwarding errors
+```
+This command outputs any errors that occurred when application logs were being forwarded to your configured log management solution. The command shows the most recent 10 log forwarding errors for the current log forwarding configuration, up to 30 days.
