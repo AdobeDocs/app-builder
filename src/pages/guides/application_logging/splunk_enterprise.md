@@ -6,7 +6,7 @@ This guide would cover configuring your app builder application to forward appli
 
 1. An index on your Splunk Enterprise instance. To create a new index, you can follow Splunk's guide [here](https://docs.splunk.com/Documentation/Splunk/8.2.4/Indexer/Setupmultipleindexes).
 2. Local development setup for your App Builder application.
-3. AIO CLI version 8.2.0 or higher. Check by running `aio --version`. To update run `npm install -g @adobe/aio-cli`.
+3. The latest version of AIO CLI. Check your version by running `aio --version`. To update run `npm install -g @adobe/aio-cli`.
 
 
 ## Steps to configure Log Forwarding

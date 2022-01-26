@@ -6,7 +6,7 @@ This guide would cover configuring your app builder application to forward appli
 
 1. Access to an Azure Log Analytics workspace. If you need to create one, then you can follow Azure's guide [here](https://docs.microsoft.com/en-us/azure/azure-monitor/logs/quick-create-workspace).
 2. Local development setup for your App Builder application.
-3. AIO CLI version 8.2.0 or higher. Check by running `aio --version`. To update run `npm install -g @adobe/aio-cli`.
+3. The latest version of AIO CLI. Check your version by running `aio --version`. To update run `npm install -g @adobe/aio-cli`.
 
 
 ## Steps to configure Log Forwarding
