@@ -33,7 +33,7 @@ This guide would cover configuring your app builder application to forward appli
 
 ### 2. Getting Splunk Host and Port
 
-1. To find out your `hostname` and `port` number, read the **_Send data to HTTP Event Collector on Splunk Enterprise_** section on Splunk's documentation [here](https://docs.splunk.com/Documentation/SplunkCloud/8.2.2106/Data/UsetheHTTPEventCollector). 
+1. To find out your `hostname` and `port` number, read the **_Send data to HTTP Event Collector on Splunk Enterprise_** section on Splunk's documentation [here](https://docs.splunk.com/Documentation/Splunk/8.2.4/Data/UsetheHTTPEventCollector#Send_data_to_HTTP_Event_Collector_on_Splunk_Enterprise). 
 
 2. Confirm whether you have got the correct `hostname` and `port` number by executing the following cURL request. If you get a `200 OK` response, you are good to proceed.
 
