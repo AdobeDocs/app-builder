@@ -81,6 +81,7 @@ The following table outlines a quick comparison between storing and viewing logs
 
 ### Log Forwarding Commands
 
+#### Setting Log Forwarding 
 
 ```
 aio app config set log-forwarding
@@ -99,11 +100,16 @@ Please visit the individual guides to set up log forwarding for your log managem
 2. Splunk Enterprise
 3. Azure Log Analytics
 
+#### Viewing the current Log Forwarding configuration
+
 ```
 aio app config get log-forwarding
 ```
 This command outputs the current log forwarding configuration for your workspace and compares it to the locally set log forwarding configuration. Defaults to Adobe I/O Runtime.
 
+_Note: For security reasons we never return the configured secret from our servers._
+
+#### Debugging Log Forwarding
 
 ```
 aio app config get log-forwarding errors
