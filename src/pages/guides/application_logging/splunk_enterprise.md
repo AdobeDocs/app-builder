@@ -1,3 +1,16 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+  - Logging
+  - Log Forwarding
+  - Monitoring
+  - Splunk 
+  - Slpunk Enterprise
+---
+
 # Forwarding logs to Splunk Enterprise
 
 This guide would cover configuring your app builder application to forward application logs to your Splunk Enterprise deployment.
@@ -37,13 +50,13 @@ This guide would cover configuring your app builder application to forward appli
 
 2. Confirm whether you have got the correct `hostname` and `port` number by executing the following cURL request. If you get a `200 OK` response, you are good to proceed.
 
-```
-curl -X POST 'https://<hostname>:<port>/services/collector' \     
--H "Authorization: Splunk <token>" \
--d '{"event": "hello world"}'
-```
+   ```
+   curl -X POST 'https://<hostname>:<port>/services/collector' \     
+   -H "Authorization: Splunk <token>" \
+   -d '{"event": "hello world"}'
+   ```
 
-_Note: The `token` value is from step 1.5.1_
+   _Note: The `token` value is from step 1.5.1_
 
 
 ### 3. Set up Log Forwarding in App Builder
@@ -52,37 +65,36 @@ _Note: The `token` value is from step 1.5.1_
 
 2. Run the following command and supply the values from previous steps
 
-```
-aio app config set log-forwarding
-? select log forwarding destination: Splunk HEC
-? host: <hostname>
-? port: <port_number>
-? index: <index>
-? hec_token: <token>
-```
+   ```
+   aio app config set log-forwarding
+   ? select log forwarding destination: Splunk HEC
+   ? host: <hostname>
+   ? port: <port_number>
+   ? index: <index>
+   ? hec_token: <token>
+   ```
 
-Note:
-* Make sure to not prefix the protocol (`http://` or `https://`) before the hostname.
-* Replace the value of `hostname` and `port` as ascertained in step 2.2.1. 
-* Replace the value of `token`  from step 1.5.1.
+   Note:
+   + Make sure to not prefix the protocol (`http://` or `https://`) before the hostname.
+   + Replace the value of `hostname` and `port` as ascertained in step 2.2.1. 
+   + Replace the value of `token`  from step 1.5.1.
 
 
 3. Verify that the config change has taken effect 
-
-```
-aio app config get log-forwarding
-```
+   ```
+   aio app config get log-forwarding
+   ```
 
 4. Execute an action in your runtime namespace to generate logs.
 
 5. Go to Splunk Home > Search and run the query 
-```
-index=<index>
-```
+   ```
+   index=<index>
+   ```
 
 6. If you don't see any logs in Splunk, please check the log forwarding errors.
-```
-aio app config get log-forwarding errors
-```
+   ```
+   aio app config get log-forwarding errors
+   ```
 
-_Note: Please post on our [App Builder forums](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly) to get support if you are unable to setup log forwarding correctly._
+   _Note: If you are unable to set up log forwarding correctly, please visit our [App Builder forums](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly) for support._
