@@ -102,7 +102,6 @@ Please visit the individual guides to set up log forwarding for your log managem
 2. [Splunk Enterprise](splunk_enterprise.md)
 3. [Azure Log Analytics](azure_log_analytics.md)
 
-
 #### Viewing the current Log Forwarding configuration
 
 ```
