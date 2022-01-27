@@ -42,7 +42,6 @@ This guide would cover configuring your app builder application to forward appli
     + Replace the value of `Workspace ID` and `Primary Key` as copied in step 1.
     + Replace the value of `table_name_alpha_chars_only` with the custom table name that you wish to provide. This field only accepts alpha characters.
 
-
 4. Verify that the config change has taken effect 
 
     ```
