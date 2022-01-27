@@ -85,7 +85,7 @@ This guide would cover configuring your app builder application to forward appli
    aio app config get log-forwarding
    ```
 
-4. Execute an action in your runtime namespace to generate logs.
+4. Execute an action in your App Builder application workspace to generate logs.
 
 5. Go to Splunk Home > Search and run the query 
    ```
