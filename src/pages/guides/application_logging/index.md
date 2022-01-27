@@ -25,11 +25,9 @@ Both the core logging library and the core errors library can be directly used i
 - Higher-level SDK libraries, such as the [Real-time Customer Profile](https://github.com/adobe/aio-lib-customer-profile) SDK library.
 - Shared Runtime actions, such as the [Token Vending Machine](https://github.com/adobe/aio-tvm).
 
-<InlineAlert slots="text">
+<InlineAlert slots="text" />
 
-When a new App Builder application is bootstrapped from the [AIO CLI](https://github.com/adobe/aio-cli) using the `aio app init` command, the [generated boilerplate action code](https://github.com/adobe/generator-aio-app) integrates with both the core and errors logging libraries out-of-the-box. 
-
-</InlineAlert>
+When a new App Builder application is bootstrapped from the [AIO CLI](https://github.com/adobe/aio-cli) using the `aio app init` command, the [generated boilerplate action code](https://github.com/adobe/generator-aio-app) integrates with both the core and errors logging libraries out-of-the-box.
 
 ## Accessing logs with App Builder CLI
 
@@ -99,14 +97,11 @@ Once a log forwarding configuration is successfully set, the log forwarding conf
 
 _Note: Running `aio app deploy --no-actions` or `aio app deploy --no-log-forwarding-update` would skip deploying any changes made to the local log forwarding configuration._
 
-<InlineAlert slots="text">
-
 Please visit the individual guides to set up log forwarding for your log management solution of choice.
 1. [Splunk Cloud](splunk_cloud.md)
 2. [Splunk Enterprise](splunk_enterprise.md)
 3. [Azure Log Analytics](azure_log_analytics.md)
 
-</InlineAlert>
 
 #### Viewing the current Log Forwarding configuration
 
