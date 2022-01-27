@@ -48,7 +48,7 @@ This guide would cover configuring your app builder application to forward appli
     aio app config get log-forwarding
     ```
 
-5. Execute an action in your runtime namespace to generate logs.
+5. Execute an action in your App Builder application workspace to generate logs.
 
 6. Go to Azure Portal, and on the overview screen of your workspace, select Logs on the left menu. Run a query using the table name you provided in step 3. Note the table name that shows up on the Azure portal will have the suffix **`_CL`** appended to the table name you provided.
 
