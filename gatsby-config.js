@@ -556,10 +556,6 @@ module.exports = {
         "path": "resources/sample_apps/index.md",
         pages: [
           {
-            title: 'Live demo: Adobe Stock Image Search',
-            path: 'resources/sample_apps/demo.md',
-          },
-          {
             title: 'Code Snippets',
             path: 'resources/sample_apps/code_snippets/index.md',
             pages: [

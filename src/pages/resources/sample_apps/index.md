@@ -76,6 +76,8 @@ This Firefly app is a complete solution of the codelab Bulding a Firefly Todo Ap
 
 This is a Project Firefly App which enables users to browse through events from Journaling using a simple interface.
 
+<DiscoverBlock slots="heading, link, text" width="100%" />
+
 ### Adobe I/O Events - Azure Service Bus connector
 
 <https://github.com/AdobeDocs/adobeio-samples-events-azureservicebus-connector> 
