@@ -128,7 +128,7 @@ There are two sample flows listed below as we understand some developers may not
 
     ```
     create package.json
-    create manifest.yml
+    create app.config.yaml
     create .aio
     create README.md
     
@@ -237,7 +237,7 @@ Note that you may not see all the options listed below on your command line, bec
 
     ```
     create package.json
-    create manifest.yml
+    create app.config.yaml
     create .aio
     create README.md
     
@@ -254,7 +254,7 @@ Note that you may not see all the options listed below on your command line, bec
     ```
     $ cd helloworld
     $ ls
-    README.md		console.json		manifest.yml		package-lock.json	test
+    README.md		console.json		app.config.yaml		package-lock.json	test
     actions			e2e			node_modules		package.json		web-src
     ```
     
@@ -283,7 +283,7 @@ For this flow to work, the developer should ask someone with access to set up a 
     $ cd helloworld
     $ ls
     README.md		e2e			node_modules		package.json		web-src
-    actions			manifest.yml		package-lock.json	test
+    actions			app.config.yaml		package-lock.json	test
     ```
     
 1. When you generate a project with a downloaded configuration file without logging into [Adobe Developer Console](/console) on your [CLI](https://github.com/adobe/aio-cli), everything should be the same. 
@@ -307,7 +307,7 @@ This flow is intended for developers who have no access or credentials whatsoeve
     $ cd helloworld
     $ ls
     README.md		e2e			node_modules		package.json		web-src
-    actions			manifest.yml		package-lock.json	test
+    actions			app.config.yaml		package-lock.json	test
     ```
 
 1. You will not be able to run or to deploy your application by default because there is no credential provided. 
@@ -414,7 +414,7 @@ When you access `https://localhost:9080`, you should see the sample application 
 
 This simple SPA contains links to documentation and allows you to run your backend actions for tests. To try it, use the selection box to pick the action you'd like to invoke. You can also pass request headers and parameters from the corresponding input fields in the SPA UI.
 
-All actions require `Authorization` and `x-gw-ims-org-id` in the headers by default. In your project code, if you navigate to `manifest.yml`, you can see that a `require-adobe-auth` annotation is set to `true` for all the sample actions. Having this flag enabled enforces a valid user token be used to invoke this action. We recommend always having this enabled for security reasons. You can learn more about this in our [Security Overview](../guides/security/index.md).
+All actions require `Authorization` and `x-gw-ims-org-id` in the headers by default. In your project code, if you navigate to `app.config.yaml`, you can see that a `require-adobe-auth` annotation is set to `true` for all the sample actions. Having this flag enabled enforces a valid user token be used to invoke this action. We recommend always having this enabled for security reasons. You can learn more about this in our [Security Overview](../guides/security/index.md).
 
 1. With the `require-adobe-auth` annotation set to `true`, you need to pass in a valid user token and corresponding organization ID to invoke your action. You can easily retrieve the token from your [CLI](https://github.com/adobe/aio-cli) by typing in `aio login`, and the org ID (look for `some_hash@AdobeOrg`) from the workspace details on [Adobe Developer Console](/console) or from the URL of [Adobe Admin Console](https://adminconsole.adobe.com) (make sure that you have the correct organization selected in the top right corner). 
 You can also list all the organizations you belong to and their org ID from your [CLI](https://github.com/adobe/aio-cli) by typing in `aio console org list`.
@@ -475,7 +475,7 @@ aio app deploy
 
 This command may take a minute or two as behind the scenes the [CLI](https://github.com/adobe/aio-cli) is building and deploying:
 
-- The actions defined in `manifest.yml` into [Adobe I/O Runtime](/apis/experienceplatform/runtime)
+- The actions defined in `app.config.yaml` into [Adobe I/O Runtime](/apis/experienceplatform/runtime)
 - The frontend built files and assets into our out-of-the-box CDN
 
 The [CLI](https://github.com/adobe/aio-cli) output details this process:
