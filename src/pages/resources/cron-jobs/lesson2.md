@@ -31,15 +31,15 @@ application:
               LOG_LEVEL: debug
             annotations:
               final: true
-          triggers:
-            everyMin:
-              feed: /whisk.system/alarms/interval
-              inputs: 
-                minutes: 1
-          rules:
-            everyMinRule:
-              trigger: everyMin
-              action: generic
+        triggers:
+          everyMin:
+            feed: /whisk.system/alarms/interval
+            inputs: 
+              minutes: 1
+        rules:
+          everyMinRule:
+            trigger: everyMin
+            action: generic
 ```
 
 To test the trigger schedule, simply deploy the app again with `aio app deploy`, and observe that the action is invoked after 1 - 2 minutes with `aio rt activation list`.
