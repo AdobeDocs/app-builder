@@ -81,7 +81,7 @@ runtimeManifest:
 hooks:
   <app-hooks>
 actions: <path to action folder>
-web-src: <path to web folder>
+web: <path to web folder>
 unitTest: <path to unit test folder>
 e2eTest: <path to e2e test folder>
 dist: <path to build folder>
