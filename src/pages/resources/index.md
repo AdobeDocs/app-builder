@@ -4,12 +4,12 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: Project Firefly Code Labs  
+title: App Builder Code Labs  
 ---
 
 # Code Labs
 
-Code Labs provide guided hands-on coding experiences to build awesome apps on top of Project Firefly.
+Code Labs provide guided hands-on coding experiences to build awesome apps on top of App Builder.
 
 ## Tech tutorials
 
@@ -19,7 +19,7 @@ Code Labs provide guided hands-on coding experiences to build awesome apps on to
 
 [Start (20mins)](spectrum-intro/index.md) 
 
-Introduction to Spectrum to build a Firefly App UI.
+Introduction to Spectrum to build an App Builder App UI.
 
 
 
@@ -30,18 +30,18 @@ Introduction to Spectrum to build a Firefly App UI.
 
 [Start (30mins)](journaling-events/index.md) 
 
-Creating cron jobs in a Firefly application to consume events using Journaling API.
+Creating cron jobs in an App Builder application to consume events using Journaling API.
 
 
 
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
 
-### Event-Driven Firefly Apps 
+### Event-Driven App Builder Apps 
 
 [Start (25mins)](event-driven/index.md) 
 
-Introduction to applying Custom I/O Events in event-driven use cases of Firefly applications.
+Introduction to applying Custom I/O Events in event-driven use cases of App Builder applications.
 
 
 
@@ -59,22 +59,22 @@ How to consume I/O Events using I/O Runtime actions as webhook.
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
 
-### CI/CD in Firefly Apps
+### CI/CD in App Builder Apps
 
 [Start (15mins)](ci-cd/index.md) 
 
-Setting up CI/CD for a Firefly App using GitHub Actions.
+Setting up CI/CD for an App Builder App using GitHub Actions.
 
 
 
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
 
-### Debugging Firefly Apps
+### Debugging App Builder Apps
 
 [Start (25mins)](debugging/index.md) 
 
-The basic steps of debugging a Firefly App.
+The basic steps of debugging an App Builder App.
 
 
 
@@ -85,7 +85,7 @@ The basic steps of debugging a Firefly App.
 
 [Start (20mins)](cron-jobs/index.md) 
 
-Creating cron jobs in a Firefly app using OpenWhisk Alarms Package.
+Creating cron jobs in an App Builder app using OpenWhisk Alarms Package.
 
 
 
@@ -94,11 +94,11 @@ Creating cron jobs in a Firefly app using OpenWhisk Alarms Package.
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
 
-### Firefly Headless App
+### App Builder Headless App
 
 [Start (30mins)](barcode-reader/index.md)
 
-Creating a Headless App using Project Firefly to render a barcode with dynamic data.
+Creating a Headless App using App Builder to render a barcode with dynamic data.
 
 
 
@@ -114,11 +114,11 @@ Building asset compute workers leveraging Photoshop APIs to generate custom rend
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
 
-### Building a Firefly Todo App
+### Building an App Builder Todo App
 
 [Start (30mins)](todo-app/index.md) 
 
-How to build a Todo App with Project Firefly using aio-lib-state as storage library and React Spectrum components.
+How to build a Todo App with App Builder using aio-lib-state as storage library and React Spectrum components.
 
 
 
@@ -130,7 +130,7 @@ How to build a Todo App with Project Firefly using aio-lib-state as storage libr
 
 [Start (1h)](customer-dashboard/index.md) 
 
-Creating a dashboard of customer profiles from Adobe Campaign Standard using Project Firefly.
+Creating a dashboard of customer profiles from Adobe Campaign Standard using App Builder.
 
 
 
@@ -143,3 +143,15 @@ Creating a dashboard of customer profiles from Adobe Campaign Standard using Pro
 [Start (20mins)](custom-asset-compute-worker/index.md) 
 
 Building a Custom Asset Compute Worker leveraging 3rd-party services to generate intelligent renditions in AEM.
+
+
+
+
+<DiscoverBlock slots="heading, link, text" width="100%" />
+
+### Build an app that consumes Adobe Experience Manager Events
+
+[Start (30mins)](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/consume-aem-events.html?lang=en) 
+
+Learn WHY is it a good idea to build event-driven applications and HOW we can build them with ease using App Builder. 
+

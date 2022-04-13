@@ -5,7 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Spectrum Introduction
-description: Introduction to Spectrum to build a Firefly App UI.
+description: Introduction to Spectrum to build an App Builder App UI.
 ---
 
 # Spectrum Introduction
@@ -16,5 +16,5 @@ This codelab is an introduction to:
 * Spectrum CSS 
 * React Spectrum  
 
-At the end, we'll show you how to build and deploy a Spectrum Single Page Application using Project Firefly.
+At the end, we'll show you how to build and deploy a Spectrum Single Page Application using App Builder.
 

@@ -8,7 +8,7 @@ keywords:
 
 # Well done
 
-You have successfully completed the codelab and learnt how to build a Firefly React app using fundamental React knowledge and React Spectrum components.
+You have successfully completed the codelab and learnt how to build an App Builder React app using fundamental React knowledge and React Spectrum components.
 
 ## Achievements
 

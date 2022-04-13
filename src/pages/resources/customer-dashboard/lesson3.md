@@ -8,7 +8,7 @@ contributors:
   - https://github.com/duynguyen 
 ---
 
-# Lesson 3: Run the Firefly App Locally
+# Lesson 3: Run the App Builder App Locally
 
 Firstly, let's open the terminal in VS Code.
 
@@ -46,5 +46,5 @@ At this time, the action runs successfully, and you can see the list of profiles
 
 ![profiles-success](assets/profiles-success.png)
 
-This has worked like a charm. The app is now running locally and ready for development. If you want to discover the magic behind it, please check out [Firefly App Security Overview](../../guides/security/index.md).
+This has worked like a charm. The app is now running locally and ready for development. If you want to discover the magic behind it, please check out [App Builder App Security Overview](../../guides/security/index.md).
 

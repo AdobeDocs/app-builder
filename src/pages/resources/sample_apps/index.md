@@ -4,12 +4,12 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: Project Firefly Sample Apps  
+title: App Builder Sample Apps  
 ---
 
 # Sample Apps 
 
-Below are complete sample applications built using Project Firefly.
+Below are complete sample applications built using App Builder.
 
 ## Overview
 
@@ -19,7 +19,7 @@ Below are complete sample applications built using Project Firefly.
 
 [Demo](demo.md) 
 
-This is a Project Firefly Demo App which enables searching Adobe Stock images.
+This is an App Builder Demo App which enables searching Adobe Stock images.
 
 
 
@@ -29,7 +29,7 @@ This is a Project Firefly Demo App which enables searching Adobe Stock images.
 
 <https://github.com/AdobeDocs/adobeio-samples-customers-dashboard>
 
-This Firefly app is a complete solution of the codelab Build a Firefly App for Customer Profiles using Adobe Campaign Standard API. It lists customer profiles from Adobe Campaign Standard and allows sending marketing campaign emails with personalized promo code.
+This App Builder app is a complete solution of the codelab Build an App Builder App for Customer Profiles using Adobe Campaign Standard API. It lists customer profiles from Adobe Campaign Standard and allows sending marketing campaign emails with personalized promo code.
  
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
@@ -38,7 +38,7 @@ This Firefly app is a complete solution of the codelab Build a Firefly App for C
 
 <https://github.com/AdobeDocs/adobeio-samples-barcode-generator>
 
-This Firefly app is a complete solution of the codelab Firefly Headless App. The app will generate a code128 barcode based on the user provided value. It’s a simple app that can be used and adapted for different use cases.
+This App Builder app is a complete solution of the codelab App Builder Headless App. The app will generate a code128 barcode based on the user provided value. It’s a simple app that can be used and adapted for different use cases.
 
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
@@ -65,7 +65,7 @@ This is a sample app that implements a custom Assets Compute Worker for AEM to g
 
 <https://github.com/AdobeDocs/adobeio-samples-todoapp>
  
-This Firefly app is a complete solution of the codelab Bulding a Firefly Todo App with aio-lib-state and React Spectrum which shows you how to use aio-lib-state as part of Runtime actions and how to bind React Spectrum components to Runtime actions.
+This App Builder app is a complete solution of the codelab Bulding an App Builder Todo App with aio-lib-state and React Spectrum which shows you how to use aio-lib-state as part of Runtime actions and how to bind React Spectrum components to Runtime actions.
 
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
@@ -74,7 +74,21 @@ This Firefly app is a complete solution of the codelab Bulding a Firefly Todo Ap
 
 <https://github.com/AdobeDocs/adobeio-samples-events-journal-browser> 
 
-This is a Project Firefly App which enables users to browse through events from Journaling using a simple interface.
+This is an App Builder App which enables users to browse through events from Journaling using a simple interface.
+
+### Adobe I/O Events - Azure Service Bus connector
+
+<https://github.com/AdobeDocs/adobeio-samples-events-azureservicebus-connector> 
+
+This is a sample I/O Events consumer, built using App Builder, that forwards all incoming events to Azure Service Bus. This sample consumer application can be used as a reference to connect Adobe I/O Events with enterprise's Azure Service Bus.
+
+<DiscoverBlock slots="heading, link, text" width="100%" />
+
+### Adobe I/O Events - Azure Service Bus connector
+
+<https://github.com/AdobeDocs/adobeio-samples-events-azureservicebus-connector> 
+
+This is a sample I/O Events consumer, built using App Builder, that forwards all incoming events to Azure Service Bus. This sample consumer application can be used as a reference to connect Adobe I/O Events with enterprise's Azure Service Bus.
 
 
 ## Code Snippets
@@ -82,8 +96,8 @@ This is a Project Firefly App which enables users to browse through events from 
 We also provide a collection of basic code snippets to get you started: 
 
 * [Caching HTTP responses](code_snippets/index.md)
-* [Firefly Files SDK](code_snippets/files.md)
-* [Firefly State SDK](code_snippets/state.md)
+* [App Builder Files SDK](code_snippets/files.md)
+* [App Builder State SDK](code_snippets/state.md)
 * [I/O Events handler](code_snippets/events.md)
 * [Real-time data from Adobe Analytics API 1.4](code_snippets/analytics.md)
 

@@ -1,6 +1,6 @@
 ---
-title: Exploring Project Firefly - Softcrylic Partner Showcase 
-description: This week Sundar Sritharan from Softcrylic joins us to share what they are cooking up with Project Firefly.   
+title: Exploring App Builder - Softcrylic Partner Showcase 
+description: This week Sundar Sritharan from Softcrylic joins us to share what they are cooking up with App Builder.   
 keywords:
   - Adobe I/O
   - Extensibility
@@ -8,9 +8,9 @@ keywords:
   - Developer Tooling  
 ---
 
-# Exploring Project Firefly - Partner Showcase: Softcrylic
+# Exploring App Builder - Partner Showcase: Softcrylic
 
-Sundar Sritharan from Softcrylic joins us to share what they are cooking up with Project Firefly.
+Sundar Sritharan from Softcrylic joins us to share what they are cooking up with App Builder.
 
 <Media slots="video"/>
 

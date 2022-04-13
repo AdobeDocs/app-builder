@@ -8,13 +8,13 @@ contributors:
   - https://github.com/duynguyen 
 ---
 
-# Lesson 2: Explore the Firefly App
+# Lesson 2: Explore the App Builder App
 
 Within the newly created app, you have seen the `.env` file which contains your credentials for running the app. Let's explore further.
 
 Firstly, `package.json` is the [crucial part](https://docs.npmjs.com/creating-a-package-json-file) of almost every NodeJS project. It contains the list of dependencies, version, reproducible builds, etc.
 
-Then `ext.config.yaml` in the `src/dx-excshell-1/` folder is the cockpit of your Firefly app backend. It lists the declaration of serverless actions including name, source files, runtime kind, default params, annotations, and so on. You can find the grammar of writing manifest [here](https://github.com/apache/openwhisk-wskdeploy/blob/master/docs/programming_guide.md#wskdeploy-utility-by-example).
+Then `ext.config.yaml` in the `src/dx-excshell-1/` folder is the cockpit of your App Builder app backend. It lists the declaration of serverless actions including name, source files, runtime kind, default params, annotations, and so on. You can find the grammar of writing manifest [here](https://github.com/apache/openwhisk-wskdeploy/blob/master/docs/programming_guide.md#wskdeploy-utility-by-example).
 
 ```yaml
 operations:

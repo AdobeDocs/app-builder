@@ -4,13 +4,13 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: Firefly Headless App
-description: Creating a Headless App using Project Firefly to render a barcode with dynamic data.
+title: App Builder Headless App
+description: Creating a Headless App using App Builder to render a barcode with dynamic data.
 ---
 
-# Headless Apps with Project Firefly
+# Headless Apps with App Builder
 
-This codelab will guide you through creating a headless app using Project Firefly.   
+This codelab will guide you through creating a headless app using App Builder.   
 
 The app will generate a code128 barcode based on the user provided value. It's a simple app that can be used and adapted for different use cases.
  

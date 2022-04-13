@@ -16,7 +16,7 @@ If you're not familiar with React components and props, please first read the Re
 
 ## Import React Spectrum components
 
-If you choose the React Spectrum template, the Firefly app will have `@adobe/react-spectrum` dependencies installed by default.
+If you choose the React Spectrum template, the App Builder app will have `@adobe/react-spectrum` dependencies installed by default.
 
 This component will make use of several React Spectrum components: 
 

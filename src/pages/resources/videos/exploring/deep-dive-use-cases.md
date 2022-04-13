@@ -1,6 +1,6 @@
 ---
-title: Exploring Project Firefly - Deep Dive on Use Cases
-description: Manik & Ron take a look at a number of great use cases. Join us as we share some popular ways to use Project Firefly. 
+title: Exploring App Builder - Deep Dive on Use Cases
+description: Manik & Ron take a look at a number of great use cases. Join us as we share some popular ways to use App Builder. 
 keywords:
   - Adobe I/O
   - Extensibility
@@ -8,9 +8,9 @@ keywords:
   - Developer Tooling  
 ---
 
-# Exploring Project Firefly - Deep Dive on Use Cases
+# Exploring App Builder - Deep Dive on Use Cases
 
-Manik & Ron take a look at a number of great use cases. Join us as we share some popular ways to use Project Firefly.
+Manik & Ron take a look at a number of great use cases. Join us as we share some popular ways to use App Builder.
 
 <Media slots="video"/>
 

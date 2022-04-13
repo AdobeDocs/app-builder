@@ -8,15 +8,15 @@ keywords:
 
 # Extension Migration Guide
 
-As of July 28, 2021, we have officially released support for [Extensions](index.md) in Project Firefly. This release allows you to extend Adobe Experience Cloud through Firefly applications in a more native and integrated fashion. 
+As of July 28, 2021, we have officially released support for [Extensions](index.md) in App Builder. This release allows you to extend Adobe Experience Cloud through App Builder applications in a more native and integrated fashion. 
 
 While all existing application built prior to July 28,2021 should continue to work as expected without any further action. In the next 90 days (until Oct 28, 2021), please update your Adobe I/O CLI and migrate your application as we’ll be retiring the previous services. Follow this guide to migrate your application in a few simple steps.
 
 ## Understanding Configuration Changes
-With the introduction of [Extensions](index.md), we have made a few changes to Firefly project file structures and to how we compile configurations. Before you get started on the migration, please read through the changes so that you can make an informed decision for how to refactor your project during the migration.
+With the introduction of [Extensions](index.md), we have made a few changes to App Builder project file structures and to how we compile configurations. Before you get started on the migration, please read through the changes so that you can make an informed decision for how to refactor your project during the migration.
 
 ### Old File Structure
-Previously, if you initialize a new Firefly Project in the CLI, you will see the following folders and files in your project: 
+Previously, if you initialize a new App Builder Project in the CLI, you will see the following folders and files in your project: 
 
 1. `actions`: this folder is intended for backend source code for all serverless actions
 1. `web-src`: this folder is intended for frontend source code such as html templates, react components, JS, CSS
@@ -31,7 +31,7 @@ Previously, if you initialize a new Firefly Project in the CLI, you will see the
 1. `.env`: this file contains environment variables that are useful for the app during development, e.g. Adobe I/O Runtime credentials and Adobe Product API tenant specifics (API key, secrets, etc.)
     - The environment variables defined here can be used in the application (e.g. in `manifest.yml`). If you've set up credentials for the selected workspaces, you should be able to see some of those values prepopulated upon initialization, like `AIO_runtime_auth` and `AIO_runtime_namespace`. 
     - This file is automatically included in `.gitignore`. **It is not intended be shared given the credentials and secrets listed.**
-1. `console.json`: this file contains the credentials set up through your Project Firefly project. 
+1. `console.json`: this file contains the credentials set up through your App Builder project. 
     - This file is also automatically included in `.gitignore`. **It is not intended be shared given the credentials and secrets listed.** 
     - This file can be downloaded directly from the [Adobe Developer Console](/console) as well. You can retrieve it by going to a workspace, and clicking on the `Download all` button. 
 
@@ -67,7 +67,7 @@ What happens if you don't migrate:
 With this context, let's dive in. 
 
 ### 1. Update Tooling
-First of all, please make sure your local tooling and environment set up is up to date. You can find the latest supported environment and tooling info in [here](https://www.adobe.io/project-firefly/docs/getting_started/). 
+First of all, please make sure your local tooling and environment set up is up to date. You can find the latest supported environment and tooling info in [here](../../getting_started). 
 
 ### 2. Update Configuration
 Your existing application could be one of three types: 
@@ -194,7 +194,7 @@ Please note that there are multiple ways to structure your configuration. You ca
 
 ##### Sample `app.config.yaml` File after the refactoring:
 
-**Firefly Project Extending Multiple Extension Points**
+**App Builder Project Extending Multiple Extension Points**
 ```
 extensions:
   dx/excshell/1:

@@ -51,7 +51,7 @@ function TodoList({ todoList, onDelete, onUpdate }) {
 ## Spectrum Icons
 
 We'll add [React Spectrum Workflow Icons](https://react-spectrum.adobe.com/react-spectrum/workflow-icons.html) to the `TodoList` component. The icons are simply SVGs packed as React components.  
-To import icons, you have to install the `@spectrum-icons/workflow` dependency. It's pre-installed if you initialize the Firefly app with the React Spectrum template.
+To import icons, you have to install the `@spectrum-icons/workflow` dependency. It's pre-installed if you initialize the App Builder app with the React Spectrum template.
 
 Each icon has to be imported individually with a single statement.
 
@@ -113,7 +113,7 @@ We're also passing the `name`, `todo` and `onUpdate` props down to the `Todo` co
 
 ## Creating a todo item
 
-If you remember in [lesson 2](lesson2.md), we defined a `MAX_TODO_ITEMS` value within a global configuration file `defaults.json` at the root of the Firefly App.
+If you remember in [lesson 2](lesson2.md), we defined a `MAX_TODO_ITEMS` value within a global configuration file `defaults.json` at the root of the App Builder App.
 
 We'll use it to block the user from creating too many todo items inside a todo list. We can import the value similarly to what we have done in the Runtime action.
 

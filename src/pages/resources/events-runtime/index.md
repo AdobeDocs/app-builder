@@ -5,7 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Consume Events Using Journaling API
-description: Creating cron jobs in a Firefly application to consume events using Journaling API.
+description: Creating cron jobs in an App Builder application to consume events using Journaling API.
 contributors:
   - https://github.com/Yu1986
 ---
@@ -32,7 +32,7 @@ There are two main benefits to choose runtime action as webhook:
 This codelab will take you through the I/O events SYNC webhook registration using your own runtime actions via console.
 As part of this codelab, we will cover all the behind the scene actions happening for the below 
 
-- Using firefly template `publish-event`to set up custom event as event provider
+- Using App Builder template `publish-event`to set up custom event as event provider
 - Setting up event registration 
 - Ingesting subscribed events for that webhook in I/O Events pipeline
 - Debug tracing on console for the Success and Failure scenarios

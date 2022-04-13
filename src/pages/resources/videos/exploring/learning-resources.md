@@ -1,5 +1,5 @@
 ---
-title: Exploring Project Firefly - Learning Resources
+title: Exploring App Builder - Learning Resources
 description: We focus on learning resources from code labs to documentation to videos like this livestream and our upcoming digital learning series.   
 keywords:
   - Adobe I/O
@@ -8,7 +8,7 @@ keywords:
   - Developer Tooling  
 ---
 
-# Exploring Project Firefly - Learning Resources
+# Exploring App Builder - Learning Resources
 
 We focus on learning resources from code labs to documentation to videos like this livestream and our upcoming digital learning series.
 

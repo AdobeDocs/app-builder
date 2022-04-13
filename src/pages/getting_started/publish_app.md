@@ -6,9 +6,9 @@ keywords:
   - Developer Tooling
 ---
 
-# Publishing Your First Project Firefly Application
+# Publishing Your First App Builder Application
 
-In this tutorial, we'll guide you through the following steps to give you an introduction on how to publish your first Project Firefly Application. 
+In this tutorial, we'll guide you through the following steps to give you an introduction on how to publish your first App Builder Application. 
 After you deployed your application, you need to go through the 3 steps below to publish your SPA
 1. Submit for publishing approval [Adobe Developer Console](/console)
 2. Review and approve the app in [My Exchange](https://exchange.adobe.com/my-exchange.html)
@@ -18,11 +18,11 @@ After you deployed your application, you need to go through the 3 steps below to
 
 Once you have completed development on your project, and deploy your app in the Production workspace,your application is ready for approval. 
 
-**Project Firefly applications:** Projects built using the Project Firefly template are built by an organization for use within that organization. Therefore, Firefly applications require approvals by the enterprise organization administrator only. 
+**App Builder applications:** Projects built using the App Builder template are built by an organization for use within that organization. Therefore, App Builder applications require approvals by the enterprise organization administrator only. 
     
-### Project Firefly applications approval process
+### App Builder applications approval process
 
-Once you have completed development on a Project Firefly application, it is time to submit the application to your administrators for review and approval.
+Once you have completed development on an App Builder application, it is time to submit the application to your administrators for review and approval.
 
 The final app is based on the *Production* workspace, therefore it is important to ensure that the production workspace contains all of the necessary APIs, Events, and Runtime code that it needs before submitting for approval.
 
@@ -46,7 +46,7 @@ Following a review by your organization administrators, your application will ei
 
 ### Published app
 
-After your application has been submitted for approval, the admin could see your app pending for review in Adobe Exchange. next section will describe admin approval flow from My exchange. From console side, once an application has been approved, either by internal reviewers or the Adobe Review team, its *Status* will be updated to "Published" and the application will be available for use either by employees within your enterprise organization (for Project Firefly applications) or for the general public through Adobe Exchange.
+After your application has been submitted for approval, the admin could see your app pending for review in Adobe Exchange. next section will describe admin approval flow from My exchange. From console side, once an application has been approved, either by internal reviewers or the Adobe Review team, its *Status* will be updated to "Published" and the application will be available for use either by employees within your enterprise organization (for App Builder applications) or for the general public through Adobe Exchange.
 
 ![](../images/approval-published.png)
 
@@ -71,17 +71,17 @@ Once the reviewer approve your application, you will received an email notificat
 
 ![](../images/approval-myapp-home.png)
 
-Click on `Project Firefly Apps` to discover the applications published for your organization.
+Click on `App Builder Apps` to discover the applications published for your organization.
 
 ![](../images/approval-myapp-customapps.png)
 
 
 
-# Publishing your headless Project Firefly App
+# Publishing your headless App Builder App
 
-The `Project Firefly Apps` [Adobe Experience Cloud](https://experience.adobe.com) only lists Project Firefly Apps that are SPAs. If you publish a headless app, please refer to our code lab [Your First Headless App with Project Firefly](https://adobeio-codelabs-barcode-adobedocs.project-helix.page/?src=/README.html).
+The `App Builder Apps` [Adobe Experience Cloud](https://experience.adobe.com) only lists App Builder Apps that are SPAs. If you publish a headless app, please refer to our code lab [Your First Headless App with App Builder](https://adobeio-codelabs-barcode-adobedocs.project-helix.page/?src=/README.html).
 
-We might provide supplementary discoverability mechanisms for published headless apps in future Project Firefly releases.
+We might provide supplementary discoverability mechanisms for published headless apps in future App Builder releases.
 
 ## Next steps
 

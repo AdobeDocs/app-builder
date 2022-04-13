@@ -8,7 +8,7 @@ keywords:
 
 # Dealing with Application State
 
-Application state could be a pre-defined variable of your action that is accessible across all invocations, or dynamic values or files uploaded by the web users when the app is running. Project Firefly provides the appropriate tools to handle each of these requirements.
+Application state could be a pre-defined variable of your action that is accessible across all invocations, or dynamic values or files uploaded by the web users when the app is running. App Builder provides the appropriate tools to handle each of these requirements.
 
 ## Default parameters
 
@@ -40,15 +40,15 @@ hello-world:
 
 ### Considerations about security
 
-For authentication with Adobe APIs, you should leverage [Project Firefly Security Guideline](security/index.md) using our supported SDKs. 
+For authentication with Adobe APIs, you should leverage [App Builder Security Guideline](security/index.md) using our supported SDKs. 
 
 For other 3rd party systems and APIs when provisioning actions with the secrets/passwords is a must, you can then use the default params as demonstrated above. In order to support this use case, all default params are automatically encrypted. They are decrypted just before the action code is executed. Thus, the only time you have access to the decrypted value is while executing the action code.
 
 ## State and files persistence at runtime
 
-As part of Project Firefly, you will have out-of-the-box access to file storage and to a key-value store. These are particularly useful when you want to persist data dynamically in the individual action invocations.
+As part of App Builder, you will have out-of-the-box access to file storage and to a key-value store. These are particularly useful when you want to persist data dynamically in the individual action invocations.
 
-To provide zero-config state and file caching for Project Firefly, we have created the [Adobe I/O Files library](https://github.com/adobe/aio-lib-files) and [Adobe I/O State library](https://github.com/adobe/aio-lib-state). The Adobe I/O State library is an npm module that provides a JavaScript abstraction on top of distributed/cloud DBs with a simple key-value store state persistence API; whereas the Adobe I/O Files library provides a JavaScript abstraction on top of cloud blob storages with a simple file-system like persistence API.
+To provide zero-config state and file caching for App Builder, we have created the [Adobe I/O Files library](https://github.com/adobe/aio-lib-files) and [Adobe I/O State library](https://github.com/adobe/aio-lib-state). The Adobe I/O State library is an npm module that provides a JavaScript abstraction on top of distributed/cloud DBs with a simple key-value store state persistence API; whereas the Adobe I/O Files library provides a JavaScript abstraction on top of cloud blob storages with a simple file-system like persistence API.
 
 The state library is meant for storing and accessing small values, while the files library should be used for storing bigger amounts of data.
 

@@ -26,8 +26,8 @@ In addition, more to read about Adobe I/O Event:
 
 You have learned: 
 
-* How to start a project firefly app 
+* How to start an App Builder app 
 * Register event provider using custom event
-* Testing the flow by emitting event from firefly app
+* Testing the flow by emitting event from App Builder app
 * Consuming the events in three options
 
