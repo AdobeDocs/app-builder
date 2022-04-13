@@ -114,8 +114,8 @@ There are two sample flows listed below as we understand some developers may not
     ```
     ? Which extension point(s) do you with to implement?
     select components to include (Press <space> to select, <a> to toggle all, <i> to invert selection)
-    ❯◉ App Builder Experience Cloud Shell
-     ◉ AEM Asset Compute v1
+    ❯◉ DX Experience Cloud SPA v1
+     ◉ DX Asset Compute Worker v1
     ```
     
 1. You will then be prompted to select the `Project` you'd like to use for this new App Builder Application. Navigate through the list to find the project you just created. If you have a lot of projects, you can also start typing in keywords to shorten the list. 
