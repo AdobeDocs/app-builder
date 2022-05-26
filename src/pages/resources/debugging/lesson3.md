@@ -25,5 +25,5 @@ inputs:
   LOG_LEVEL: debug
 ```
 
-Please refer to the [App Builder's core Logging library](https://github.com/adobe/aio-lib-core-logging) to learn more about using logger in your app. If you need more information on this topic on a high level, visit [Managing logs in App Builder Apps](https://raw.githubusercontent.com/AdobeDocs/project-firefly/master/guides/application_logging.md).
+Please refer to the [App Builder's core Logging library](https://github.com/adobe/aio-lib-core-logging) to learn more about using logger in your app. If you need more information on this topic on a high level, visit [Managing logs in App Builder Apps](https://developer.adobe.com/app-builder/docs/guides/application_logging/).
 
