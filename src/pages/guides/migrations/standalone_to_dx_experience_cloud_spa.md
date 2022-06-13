@@ -70,15 +70,16 @@ directory structure and a deeper dive into extension points.
         3. Select **DX Experience Cloud SPA v1**
         4. Overwrite package.json 
         5. Overwrite .env
-5. Deploy your application: `aio app deploy` 
-6. Submit application for approval
+5. Deploy your application
+    1. Run `aio app deploy` 
+7. Submit application for approval
     1. Navigate to the Adobe Developer Console 
     2. Select your project
     3. Select the Production workspace 
     4. Find and click **Submit for Approval**
     5. Fill out the relevant submission details
     6. Find and click **Submit** 
-7. Approve application 
+8. Approve application 
     1. If Admin
         1. Navigate to Adobe Exchange 
         2. Select **Manage** in the top toolbar 
@@ -89,4 +90,4 @@ directory structure and a deeper dive into extension points.
     2. If not Admin
         1. Ping Admin for approval
         2. Wait for approval
-8. Done, your application should now be in the App Builder Catalag in Adobe Experience Cloud
+9. Done, your application should now be in the App Builder Catalag in Adobe Experience Cloud
