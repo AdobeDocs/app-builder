@@ -23,12 +23,11 @@ Your application will **not** have the `App Builder ExcShell` sub-heading in Ado
 ### DX Experience Cloud SPA v1
 ![image](https://user-images.githubusercontent.com/28722775/173436294-9ecca357-1b63-441f-ad4a-b1cb903ebd1c.png)
 
-
 ## Understanding the Difference 
 
 See [this](https://github.com/AdobeDocs/project-firefly/edit/main/src/pages/guides/extensions/extension_migration_guide.md#old-file-structure) guide to 
-better understand the differences between a Standalone Application and a DX Experience Cloud SPA v1. This guide also provides an overview of the
-directory structure and a deeper dive into extension points.
+better understand the difference between a Standalone Application and a DX Experience Cloud SPA v1. This guide also provides an overview of the
+directory structure for a DX Experience Cloud SPA v1 application (Under **New File Structure**) and a deeper dive into extension point configuration. 
 
 ## Migration Steps 
 
