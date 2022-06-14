@@ -2,8 +2,8 @@
 
 ## Overview 
 
-In this guide, you will learn how to migrate an App Builder application that was originally initialized as a Standalone Application to a 
-DX Experience Cloud SPA v1. 
+In this guide, you will learn one of the ways to migrate an App Builder application that was originally initialized as a Standalone Application to a 
+DX Experience Cloud SPA v1. It is possible to accomplish this by only modifying the configuration of the project, but following this guide will allow your application to closely mirror that of an application that is generated when you initialize an App Builder application as DX Experience Cloud SPA v1. 
 
 ## Who is This Migration Guide For?
 
@@ -18,7 +18,7 @@ Experience Cloud SPA v1**.
 Your application will **not** have the `App Builder ExcShell` sub-heading in Adobe Exchange. 
 
 ### Standalone Application 
-![image](https://user-images.githubusercontent.com/28722775/173436533-7adf7cf4-c783-41eb-8e80-d78a91c13227.png)
+<img width="806" alt="image" src="https://user-images.githubusercontent.com/28722775/173623479-3deebcc4-695a-4387-a714-b3eecc682c34.png">
 
 ### DX Experience Cloud SPA v1
 ![image](https://user-images.githubusercontent.com/28722775/173436294-9ecca357-1b63-441f-ad4a-b1cb903ebd1c.png)
