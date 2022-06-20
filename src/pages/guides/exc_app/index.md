@@ -63,26 +63,26 @@ init(runtime => {
 
 Core APIs that let solutions initialize the application, provide access to the runtime object from
 anywhere in the app, listen to events.
-[learn more](./modules/index.md)
+[learn more](https://github.com/AdobeDocs/exc-app/blob/master/docs/modules/root.md)
 
 #### Page
 
 APIs that let solutions interact with the main page and personalize it, e.g. setting the title,
 favicon, refreshing the solution iframe, etc.
-[learn more](./modules/page.md)
+[learn more](https://github.com/AdobeDocs/exc-app/blob/master/docs/modules/page.md)
 
 #### TopBar
 
 APIs that let solutions interact with the top bar and personalize it, e.g. configuring the solution
 area on the left, setting up workspaces, custom search, etc.
-[learn more](./modules/topbar.md)
+[learn more](https://github.com/AdobeDocs/exc-app/blob/master/docs/modules/topbar.md)
 
 #### User
 
 APIs to request user-specific information such as IMS organization, IMS profile, access token,
 tenant, etc. It also  provides solutions with other capabilities such as notifying the shell that
 the session has expired and configuring a logout URL to expire custom sessions.
-[learn more](./modules/user.md)
+[learn more](https://github.com/AdobeDocs/exc-app/blob/master/docs/modules/user.md)
 
 ### Events
 
