@@ -143,7 +143,7 @@ In these cases, the "I/O Management API" service must be added to the appropriat
 
 ### I/O Runtime Specific guidelines
 
-The [security guidelines for I/O Runtime](/apis/experienceplatform/runtime/docs#!adobedocs/adobeio-runtime/master/guides/security_general.md) generally apply for the back-end actions of an App Builder application.
+The [security guidelines for I/O Runtime](/runtime/docs/guides/using/security_general/) generally apply for the back-end actions of an App Builder application.
 
 The guidelines below are specific to App Builder applications.
 
