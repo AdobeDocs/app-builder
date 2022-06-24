@@ -10,12 +10,12 @@ or an entire project. See [here](https://webpack.js.org/configuration/#options) 
 When Runtime code is bundled, the CLI will search for a `*webpack-config.js` file starting at the path of the action code, working up to the root 
 of the project. 
 
-If you want to specify a webpack configuration for a single action, place the `*webpack-config.js` file in the action folder. 
+If you want to specify a Webpack configuration for a single action, place the `*webpack-config.js` file in the action folder. 
 
-If you want to specify a webpack configuration for a set of actions, place the `*webpack-config.js` file in the parent directory of your action
+If you want to specify a Webpack configuration for a set of actions, place the `*webpack-config.js` file in the parent directory of your action
 folders. 
 
-If you want to specify a webpack configuration for an entire project, place the `*webpack-config.js` file in the root directory of your project. 
+If you want to specify a Webpack configuration for an entire project, place the `*webpack-config.js` file in the root directory of your project. 
 
 ## Configuration Types
 
