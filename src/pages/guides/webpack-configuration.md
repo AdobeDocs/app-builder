@@ -139,7 +139,7 @@ App Builder does not allow changing the following Webpack configuration options.
 
 If you have chosen to export a function, an async function, or an array of functions from your Webpack configuration file, App Builder will pass the environment to these functions. You can use this, for instance, to make decisions about bundling based on the environment. 
 
-If you exported an envinronment variable called `MODE` before building your application, you can use this in your Webpack configuration file: 
+Example: If you exported an envinronment variable called `MODE` before building your application, you can use this in your Webpack configuration file: 
 
 ```
 module.exports = (env) => ({
