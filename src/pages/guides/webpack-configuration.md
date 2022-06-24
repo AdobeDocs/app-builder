@@ -100,8 +100,54 @@ App Builder supports exporting the following configuration types in `*webpack-co
     })
   ]
   ```
+ 
+## Configuration
+
+### Overview
+
+Assuming `config` contains your Webpack configuration: 
+
+```
+{
+  mode: config.mode || 'production', 
+  optimization: {
+    minimize: config.optimization.minimize || false
+  },
+  output: { 
+    libraryTarget: config.output.libraryTarget || 'commonjs2',
+    path: './dist/${actionPath}/${actionName}-temp/' // Cannot change 
+    fileName: `${output.path}/index.js` // Cannot change 
+  },
+  target: 'node' // Cannot change,
+  entry: [
+    <path to the action>, 
+    ...config.entry
+  ],
+  resolve: { 
+    extensions: [
+      '.js', 
+      '.json', 
+      ...config.extensions
+    ],
+    mainFields: [ 
+      'main',
+      ...config.mainFields
+    ]
+  },
+  plugins: [
+    new DefaultPlugin({
+      WEBPACK_ACTION_BUILD: 'true', 
+      `process.env.AIO_CLI_ENV`: ${cliEnv}
+    }),
+    ...config.plugins
+  ]
   
-## Base Options 
+  ... all other Webpack configuration options are valid
+
+}
+```
+
+### Base Options 
 
 App Builder starts off with the following Webpack configuration options, any additional values will be added on for these fields: 
 
@@ -117,7 +163,7 @@ App Builder starts off with the following Webpack configuration options, any add
    }
    ```
    
-## Defaults 
+### Defaults 
 
 App Builder defaults the following Webpack configuration options if they are not present in your configuration file: 
 
@@ -125,7 +171,7 @@ App Builder defaults the following Webpack configuration options if they are not
 * `mode` - Will default to `production`. 
 * `optimization.minimize` - Will default to `false`.
 
-## Immutable Options 
+### Immutable Options 
 
 App Builder does not allow changing the following Webpack configuration options. These fields will be ignored if present in your configuration file: 
 
