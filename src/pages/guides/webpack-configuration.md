@@ -156,7 +156,7 @@ App Builder starts off with the following Webpack configuration options, any add
    
 ### Defaults 
 
-App Builder defaults the following Webpack configuration options if they are not present in your configuration file: 
+App Builder defaults to the following Webpack configuration options if they are not present in your configuration file: 
 
 * `output.libraryTarget` - Will default to `commonjs2`.
 * `mode` - Will default to `production`. 
@@ -164,7 +164,7 @@ App Builder defaults the following Webpack configuration options if they are not
 
 ### Immutable Options 
 
-App Builder does not allow changing the following Webpack configuration options. These fields will be ignored if present in your configuration file: 
+App Builder does not allow changing of the following Webpack configuration options. These fields will be ignored if present in your configuration file: 
 
 * `target` - This must be `node`. I/O Runtime only supports Node.js as a runtime. 
 * `output.path` - Will always be `./dist/${actionPath}/${actionName}-temp/`
