@@ -7,8 +7,7 @@ or an entire project. See [here](https://webpack.js.org/configuration/#options) 
 
 ## Configuration File 
 
-When Runtime code is bundled, the CLI will search for a `*webpack-config.js` file starting at the path of the action code, working up to the root 
-of the project. 
+When Runtime action code is bundled during `aio app build|run|deploy` the action directory is searched for a webpack config file named `*webpack-config.js`. The search is done first in the directory of the action being built, then the parent directory, up to the project root.
 
 If you want to specify a Webpack configuration for a single action, place the `*webpack-config.js` file in the action folder. 
 
@@ -154,14 +153,6 @@ App Builder starts off with the following Webpack configuration options, any add
 * `entry` - Will always contain the path to the action, additional paths identified in your configuration file will be added on.
 * `resolve.extensions` - Will always contain `.js` and `.json`, additional extensions identified in your configuration file will be added on.
 * `resolve.mainFields` - Will always contain `main`, additional main fields identified in your configuration file will be added on.
-* `plugins` - Will always contain a plugin that injects the following, additional plugins identified in your configuratoin file will be added on.
-   
-   ```
-   {
-      WEBPACK_ACTION_BUILD: 'true', 
-      `process.env.AIO_CLI_ENV`: ${cliEnv}
-   }
-   ```
    
 ### Defaults 
 
