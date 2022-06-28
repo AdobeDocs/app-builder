@@ -18,10 +18,10 @@ Experience Cloud SPA v1**.
 Your application will **not** have the `App Builder ExcShell` sub-heading in Adobe Exchange. 
 
 ### Standalone Application 
-<img width="806" alt="image" src="https://user-images.githubusercontent.com/28722775/173623479-3deebcc4-695a-4387-a714-b3eecc682c34.png">
+![Standalone Application](../../images/experience_cloud_standalone_application.png)
 
 ### DX Experience Cloud SPA v1
-![image](https://user-images.githubusercontent.com/28722775/173436294-9ecca357-1b63-441f-ad4a-b1cb903ebd1c.png)
+![DX Experience Cloud SPA v1](../../images/experience_cloud_dx_experience_cloud_spa.png)
 
 ## Understanding the Difference 
 
