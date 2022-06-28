@@ -60,7 +60,7 @@ directory structure for a DX Experience Cloud SPA v1 application (Under **New Fi
         4. Find your application in the list, click **Revoke**
         5. Click **Revoke**
     2. If not admin
-        1. Ping Admin to revoke
+        1. Ping admin to revoke
         2. Wait for admin to revoke 
 4. Re-initialize application 
     1. Run `aio app init`
@@ -79,14 +79,14 @@ directory structure for a DX Experience Cloud SPA v1 application (Under **New Fi
     5. Fill out the relevant submission details
     6. Find and click **Submit** 
 8. Approve application 
-    1. If Admin
+    1. If admin
         1. Navigate to Adobe Exchange 
         2. Select **Manage** in the top toolbar 
         3. Select **Apps Pending Review** in the top sub toolbar
         4. Find your application in the list, click **Review**
             1. Note: Application should have `App Builder ExcShell` sub-heading
         5. Fill in approval notes, click **Approve** 
-    2. If not Admin
-        1. Ping Admin for approval
+    2. If not admin
+        1. Ping admin for approval
         2. Wait for approval
-9. Done, your application should now be in the App Builder Catalag in Adobe Experience Cloud
+9. Done, your application should now be in the App Builder Catalog in Adobe Experience Cloud
