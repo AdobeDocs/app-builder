@@ -141,7 +141,7 @@ Assuming `config` contains your Webpack configuration:
     ...config.plugins
   ]
   
-  ... all other Webpack configuration options are valid
+  // ... all other Webpack configuration options are valid
 
 }
 ```
