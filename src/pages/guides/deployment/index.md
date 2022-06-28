@@ -20,7 +20,7 @@ In the following chapters of this documentation, it will be assumed that:
   - **AIO_RUNTIME_AUTH**, which holds the credentials for the Runtime namespace to use
   - **AIO_RUNTIME_NAMESPACE**, which holds the name of the Runtime namespace to use
   
-If you do not own a [Runtime](/runtime) namespace, please [request trial access](https://adobeio.typeform.com/to/obqgRm).
+If you do not own a [Runtime](/runtime) namespace, please [request trial access](https://developer.adobe.com/app-builder/trial/).
 
 The [Setup Requirements](../../getting_started/index.md) documentation should also be checked before trying out the deployment scenarios described below.
 
@@ -38,7 +38,7 @@ This local deployment feature is useful for developers who want to easily get an
 
 It also helps developers who want to work on their Custom Application implementation without an appropriate Internet connection. Of course, in that case you are not able to interact with [Adobe APIs](/apis) or with remote 3rd party systems.
 
-The tradeoff is that developers will not be able to run code that uses [Files](https://github.com/adobe/aio-lib-files) or [State](https://github.com/adobe/aio-lib-state) SDKs, [cron jobs scheduler with Alarms package](app-builder/docs/resources/cron-jobs/), as well as expose web actions as webhooks for [I/O Events](/events) or external events providers. These are only available if the actions are deployed to [Runtime](/runtime).
+The tradeoff is that developers will not be able to run code that uses [Files](https://github.com/adobe/aio-lib-files) or [State](https://github.com/adobe/aio-lib-state) SDKs, [cron jobs scheduler with Alarms package](/app-builder/docs/resources/cron-jobs/), as well as expose web actions as webhooks for [I/O Events](/events) or external events providers. These are only available if the actions are deployed to [Runtime](/runtime).
 
 This deployment scenario doesn't require any specific credentials, as both [Runtime](/runtime) actions and application UI are hosted on the developer's machine.
 
