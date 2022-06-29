@@ -209,3 +209,6 @@ The legacy configuration system does not have an `app.config.yaml` and instead u
 3. `package.json` to store hooks.
 4. `.env` behaves the same.
 
+## Migrating between Standalone Application and DX Experience Cloud SPA v1
+
+- [Standalone Application to DX Experience Cloud SPA v1](/migrations/standalone_to_dx_experience_cloud_spa.md) - Useful if you can't seem to view your application in the App Builder Catalog in Adobe Experience Cloud. 
