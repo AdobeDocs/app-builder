@@ -130,6 +130,10 @@ The [out-of-the-box CI/CD support](./deployment/ci_cd_for_firefly_apps.md) for A
 - [Github Workflows](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) to orchestrate the Github Actions upon specific events triggered against the application repository.
 - [Github Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) to store application secrets required for the execution of the Github Workflows against specific environments.
 
+### Webpack 
+
+App Builder uses Webpack for bundling I/O Runtime action code. See [here](/guides/webpack-configuration) for an overview on webpack configuration.
+
 ### Migration Guides 
 
 - [Standalone Application to DX Experience Cloud SPA v1](/migrations/standalone_to_dx_experience_cloud_spa.md) - Migrate an App Builder application that's been initialized as a Standalone Application to a DX Experience Cloud SPA v1. Useful if you can't seem to view your application in the App Builder Catalog in Adobe Experience Cloud. 
