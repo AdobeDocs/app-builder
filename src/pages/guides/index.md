@@ -136,4 +136,4 @@ App Builder uses Webpack for bundling I/O Runtime action code. See [here](/guide
 
 ### Migration Guides 
 
-- [Standalone Application to DX Experience Cloud SPA v1](/migrations/standalone_to_dx_experience_cloud_spa.md) - Migrate an App Builder application that's been initialized as a Standalone Application to a DX Experience Cloud SPA v1. Useful if you can't seem to view your application in the App Builder Catalog in Adobe Experience Cloud. 
+- [Standalone Application to DX Experience Cloud SPA v1](migrations/standalone_to_dx_experience_cloud_spa.md) - Migrate an App Builder application that's been initialized as a Standalone Application to a DX Experience Cloud SPA v1. Useful if you can't seem to view your application in the App Builder Catalog in Adobe Experience Cloud. 
