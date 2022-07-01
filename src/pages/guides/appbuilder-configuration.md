@@ -14,7 +14,7 @@ Note: `.env` and `.aio` files **should not be committed to version control**.
 
 ### Tl;dr: give me a full example:
 
-```
+```yaml
 # standalone application config
 application:
   hostname: 'customhost'
@@ -54,7 +54,7 @@ extensions:
 The `app.config.yaml` file can contain two top level fields: `application` and `extensions`.
 Only one is required.
 
-```
+```yaml
 # app.config.yaml
 
 application:
@@ -73,7 +73,7 @@ Extensions and the standalone application behave in a similar way.
 Both can contain a UI and actions and both support a common configuration.
 The common configuration contains following fields:
 
-```
+```yaml
 # <common-config>
 
 runtimeManifest:
@@ -102,7 +102,7 @@ The `runtimeManifest` field holds the backend configuration deployed into Adobe 
 The full spec can be found [here](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification/html)
 Here is an example to get started:
 
-```
+```yaml
 runtimeManifest
    packages:
      myapp:
@@ -140,7 +140,7 @@ The `<extension-type>` indicates which product the extension is extending, curre
 The Experience Cloud Shell extension supports a `view` operation that points to the entry html file of the SPA.
 In the following example the `impl` field points to an `index.html` file stored in the `web/` folder of the extension.
 
-```
+```yaml
 extensions
   dx/excshell/1:
     operations:
@@ -155,7 +155,7 @@ extensions
 The AEM Asset Compute worker extension supports a `workerProcess` operation that points to the backend Adobe I/O Runtime action implementing the worker logic.
 In the following example the `impl` field points to the  `dx-asset-compute-worker-1/worker` action defined in the `runtimeManifest`.
 
-```
+```yaml
 extensions
   dx/asset-compute/worker/1:
     operations:
@@ -176,7 +176,7 @@ extensions
 The `$include` directive allows to defer any part of the `app.config.yaml` to another file.
 In the following example, the `dx/excshell/1` configuration is stored in another `./src/dx-excshell-1/ext.config.yaml` file.
 
-```
+```yaml
 extensions:
   dx/excshell/1:
     $include: ./src/dx-excshell-1/ext.config.yaml
