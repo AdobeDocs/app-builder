@@ -26,7 +26,7 @@ script.
   - [Getting Started](#getting-started)
   - [Features](#features)
     - [APIs](#apis)
-      - [root](#root)
+      - [Index](#index)
       - [Page](#page)
       - [TopBar](#topbar)
       - [User](#user)
@@ -59,11 +59,11 @@ init(runtime => {
 
 ### APIs
 
-#### root
+#### Index
 
 Core APIs that let solutions initialize the application, provide access to the runtime object from
 anywhere in the app, listen to events.
-[learn more](./modules/root.md)
+[learn more](./modules/index.md)
 
 #### Page
 
