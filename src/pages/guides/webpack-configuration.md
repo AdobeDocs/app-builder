@@ -21,21 +21,21 @@ If you want to specify a Webpack configuration for an entire project, place the 
 App Builder supports exporting the following configuration types in `*webpack-config.js`. 
 
 ### Object
-  ```
+  ```javascript
   module.exports = { 
     mode: 'development' 
   }
   ```
   
 ### Function that returns an object
-  ```
+  ```javascript
   module.exports = (env) => ({
     mode: 'development'
   })
   ```
   
 ### Function that returns an array of objects
-  ```
+  ```javascript
   module.exports = (env) => ([
     {
       mode: 'development' 
@@ -47,14 +47,14 @@ App Builder supports exporting the following configuration types in `*webpack-co
   ```
   
 ### Async function that returns an object
-  ```
+  ```javascript
   module.exports = async (env) => ({
     mode: 'development'
   })
   ```
   
 ### Async function that returns an array of objects
-  ```
+  ```javascript
   module.exports = async (env) => ([
     {
       mode: 'development' 
@@ -65,7 +65,7 @@ App Builder supports exporting the following configuration types in `*webpack-co
   ])
   ```
 ### Array of objects
-  ```
+  ```javascript
   module.exports = [
     {
       mode: 'development'
@@ -77,7 +77,7 @@ App Builder supports exporting the following configuration types in `*webpack-co
   ```
   
 ### Array of functions that return objects
-  ```
+  ```javascript
   module.exports = [
     (env) => ({
       mode: 'development'
@@ -89,7 +89,7 @@ App Builder supports exporting the following configuration types in `*webpack-co
   ```
   
 ### Array of async functions that return objects
-  ```
+  ```javascript
   module.exports = [
     async (env) => ({
       mode: 'development'
@@ -106,7 +106,7 @@ App Builder supports exporting the following configuration types in `*webpack-co
 
 Assuming `config` contains your Webpack configuration: 
 
-```
+```javascript
 {
   mode: config.mode || 'production', 
   optimization: {
@@ -119,7 +119,7 @@ Assuming `config` contains your Webpack configuration:
   },
   target: 'node' // Cannot change,
   entry: [
-    <path to the action>, 
+    '<path to the action>', 
     ...config.entry
   ],
   resolve: { 
@@ -178,7 +178,7 @@ If you have chosen to export a function, an async function, or an array of funct
 
 Example: If you exported an environment variable called `MODE` before building your application, you can use this in your Webpack configuration file: 
 
-```
+```javascript
 module.exports = (env) => ({
   mode: env.FEATURE_FLAG_PIRATES_BOUNTY ? 'production' : 'development'
 })
