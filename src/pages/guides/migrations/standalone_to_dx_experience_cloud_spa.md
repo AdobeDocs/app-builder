@@ -40,14 +40,14 @@ directory structure for a DX Experience Cloud SPA v1 application (Under **New Fi
     4. Delete the `application` tag in `src/dx-excshell-1/ext.config.yaml` 
     5. Shift contents of `src/dx-excshell-1/ext.config.yaml` left one tab space 
     6. Add an `operations` tag at the top of `src/dx-excshell-1/ext.config.yaml` with the following contents: 
-        ```
+        ```yaml
         operations:
           view:
             - type: web
               impl: index.html
         ```
     6. Replace the contents of `app.config.yaml` with the following: 
-        ```
+        ```yaml
         extensions:
             dx/excshell/1:
                 $include: src/dx-excshell-1/ext.config.yaml
