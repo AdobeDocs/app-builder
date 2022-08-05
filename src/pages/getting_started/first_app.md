@@ -444,7 +444,7 @@ We integrated our [CLI](https://github.com/adobe/aio-cli) with an open source pr
 - Auto-invoking of actions on code changes
 - Or running any shell command such as a curl request on code changes
 
-Please visit our [Debugging App Builder Apps Codelab](https://developer.adobe.com/app-builder/docs/resources/debugging/) to set up your local environment and go through step-by-step instructions. 
+Please visit our [Debugging App Builder Apps Codelab](../resources/debugging/index.md) to set up your local environment and go through step-by-step instructions. 
 
 If the local development is run without the `--local` option, the action you are debugging is running directly on [Adobe I/O Runtime](/apis/experienceplatform/runtime). When the `--local` option is used, the actions are debugged in the standalone OpenWhisk instance running locally. In both cases, Docker is required on your local machine so that the remote or locally mounted actions get proxied in the local Docker container. Learn more about what you can do in [debug mode](https://www.npmjs.com/package/@openwhisk/wskdebug).
 
