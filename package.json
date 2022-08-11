@@ -1,17 +1,17 @@
 {
   "private": true,
-  "name": "project-firefly",
+  "name": "adobe-developer-app-builder",
   "version": "1.0.0",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AdobeDocs/project-firefly"
+    "url": "https://github.com/AdobeDocs/adobe-developer-app-builder"
   },
   "dependencies": {
-    "@adobe/gatsby-theme-aio": "^3.23.11",
-    "gatsby": "^3.6.0",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "@adobe/gatsby-theme-aio": "4.4.2",
+    "gatsby": "^4.20.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "scripts": {
     "start": "gatsby build && gatsby serve",
@@ -22,5 +22,6 @@
     "build:incremental": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
-  }
+  },
+  "packageManager": "yarn@3.2.2"
 }

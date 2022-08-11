@@ -6,3 +6,12 @@ node_modules
 yarn-error.log
 .editorconfig
 .env
+.history
+
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
