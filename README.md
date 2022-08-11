@@ -36,6 +36,7 @@ Corepack is a binary shipped with all Node.js releases starting from 16.10.
 That's it. For more information on Yarn 3 usage, see [Yarn usage](https://yarnpkg.com/getting-started/usage).
 
 For the documentation developer, please read these sections on how to:
+
 - [Arrange the structure content of your docs](https://github.com/adobe/gatsby-theme-aio#content-structure)
 - [Linking to pages](https://github.com/adobe/gatsby-theme-aio#links)
 - [Using assets](https://github.com/adobe/gatsby-theme-aio#assets)
@@ -69,7 +70,8 @@ After installing `yarn` v3 as noted above, you can develop locally by running th
 ## How to deploy
 
 For any team that wishes to deploy to the adobe.io and stage.adobe.io website, they must be in contact with the dev-site team. Teams will be given a path that will follow the pattern `adobe.io/{product}/`. This will allow doc developers to setup their subpaths to look something like:
-```
+
+```terminal
 adobe.io/{product}/docs
 adobe.io/{product}/community
 adobe.io/{product}/community/code_of_conduct
