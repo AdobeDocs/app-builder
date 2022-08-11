@@ -1,21 +1,39 @@
-# Project Firefly Docs  
+# App Builder Docs
 
-This site is built with [Adobe I/O Theme](https://github.com/adobe/gatsby-theme-aio).  
+This site is built with [Adobe I/O Theme](https://github.com/adobe/gatsby-theme-aio).
 
 Follow the [instructions](https://github.com/adobe/gatsby-theme-aio#getting-started) to get started.
 
 ## Where to ask for help
 
-The slack channel #adobeio-onsite-onboarding is our main point of contact for help. Feel free to join the channel and ask any questions. 
+The slack channel #adobeio-onsite-onboarding is our main point of contact for help. Feel free to join the channel and ask any questions.
 
-## How to develop
+## How to develop locally
 
-For local development, simply run :
-```
-$ npm install
-$ npm run dev
-$ open localhost:8000/overview
-```
+This site uses Yarn 3 to manage package dependencies. If you do not have Yarn 3 installed, follow these instructions:
+
+1. Install [Node.js LTS](https://nodejs.org/en/download/). At the time of writing, the latest LTS version is `v16.15.1`.
+2. Install Yarn 3 by running the following command:
+
+   ```bash
+   corepack enable
+   ```
+
+Corepack is a binary shipped with all Node.js releases starting from 16.10.
+
+3. Update Yarn to the latest version by running the following command:
+
+   ```bash
+   yarn set version stable
+   ```
+
+4. Make sure you are now using version 3.2.2 of Yarn:.
+
+   ```bash
+   yarn --version
+   ```
+
+That's it. For more information on Yarn 3 usage, see [Yarn usage](https://yarnpkg.com/getting-started/usage).
 
 For the documentation developer, please read these sections on how to:
 - [Arrange the structure content of your docs](https://github.com/adobe/gatsby-theme-aio#content-structure)
