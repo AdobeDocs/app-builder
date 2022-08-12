@@ -203,16 +203,6 @@ jobs:
         with:
           cmd: install
 
-      - name: Gatsby Cache
-        uses: actions/cache@v2
-        with:
-          path: |
-            public
-            .cache
-          key: ${{ needs.set-state.outputs.branch_short_ref }}-gatsby-cache-${{ github.run_id }}
-          restore-keys: |
-            ${{ needs.set-state.outputs.branch_short_ref }}-gatsby-cache-
-
       - name: Clean Cache
         if: needs.set-state.outputs.clean_cache == 'true'
         uses: borales/actions-yarn@v3
