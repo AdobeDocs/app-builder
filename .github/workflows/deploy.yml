@@ -141,6 +141,7 @@ jobs:
           GATSBY_ALGOLIA_INDEX_ALL_SRC: ${{ secrets.AIO_ALGOLIA_INDEX_ALL_SRC }}
           GATSBY_ALGOLIA_SEARCH_INDEX: ${{ secrets.AIO_ALGOLIA_SEARCH_INDEX }}
           GATSBY_FEDS_PRIVACY_ID: ${{ secrets.AIO_FEDS_PRIVACY_ID }}
+          GATSBY_SITE_DOMAIN_URL: ${{ secrets.AIO_FASTLY_DEV_URL }}
 
       - name: Deploy
         uses: icaraps/static-website-deploy@master
@@ -239,6 +240,8 @@ jobs:
           GATSBY_ALGOLIA_INDEX_ALL_SRC: ${{ secrets.AIO_ALGOLIA_INDEX_ALL_SRC }}
           GATSBY_ALGOLIA_SEARCH_INDEX: ${{ secrets.AIO_ALGOLIA_SEARCH_INDEX }}
           GATSBY_FEDS_PRIVACY_ID: ${{ secrets.AIO_FEDS_PRIVACY_ID }}
+          GATSBY_SITE_DOMAIN_URL: ${{ secrets.AIO_FASTLY_PROD_URL }}
+
       - name: Deploy
         uses: icaraps/static-website-deploy@master
         with:
