@@ -346,10 +346,16 @@ aio app run --local
 This will deploy the actions to a local [OpenWhisk](https://openwhisk.apache.org/) instance, which the [CLI](https://github.com/adobe/aio-cli) will autmomatically download and install. The SPA will be run on the local machine. 
 
 ```
+aio app deploy
+```
+
+This will deploy the actions to [Adobe I/O Runtime](/apis/experienceplatform/runtime).
+
+```
 aio app run
 ```
 
-This will deploy the actions to [Adobe I/O Runtime](/apis/experienceplatform/runtime), while running the UI part on the local machine. 
+This will use the actions deployed to [Adobe I/O Runtime](/apis/experienceplatform/runtime), while running the UI part on the local machine. 
 
 #### (First time users) Accepting the Certificate
 
