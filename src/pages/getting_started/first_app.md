@@ -26,7 +26,7 @@ Please always ensure your local environment and tooling is up to date to avoid a
 
 ## 2. Creating a new Project on Developer Console
 
-[Adobe Developer Console](/console) gives you access to [APIs](/apis), [SDKs](https://github.com/adobe/aio-sdk) and developer tools to build on, integrate, and extend Adobe products. In App Builder, you would need access to [Adobe I/O Runtime](/apis/experienceplatform/runtime) credentials which would be used for deploying your application, and access to API credentials if you want to access any Adobe [APIs](/apis) in your application. 
+[Adobe Developer Console](/console) gives you access to [APIs](/apis), [SDKs](https://github.com/adobe/aio-sdk) and developer tools to build on, integrate, and extend Adobe products. In App Builder, you would need access to [Adobe I/O Runtime](/runtime) credentials which would be used for deploying your application, and access to API credentials if you want to access any Adobe [APIs](/apis) in your application. 
 
 Follow the instructions to set up your project:
 1. Navigate to [Adobe Developer Console](/console).
