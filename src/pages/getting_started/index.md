@@ -4,6 +4,9 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+  - Integration
+title: Getting Started
+description: App Builder is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure.
 ---
 
 import NPMBadge from '../../components/NPMBadge.js'
