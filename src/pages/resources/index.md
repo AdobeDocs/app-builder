@@ -4,7 +4,8 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: App Builder Code Labs  
+title: App Builder Code Labs
+description: Code Labs provide guided hands-on coding experiences to build awesome apps on top of App Builder.
 ---
 
 # Code Labs
