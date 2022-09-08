@@ -42,7 +42,7 @@ Then we're going to import it as well:
 
 ```javascript
 const stateLib = require('@adobe/aio-lib-state');
-``
+```
 
 ## Main function
 
