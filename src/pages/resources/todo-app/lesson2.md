@@ -40,7 +40,7 @@ npm i --save @adobe/aio-lib-state
 
 Then we're going to import it as well:
 
-``javascript
+```javascript
 const stateLib = require('@adobe/aio-lib-state');
 ``
 
