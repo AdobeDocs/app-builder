@@ -21,12 +21,11 @@ If you run into any issues during development, please first refer to the [Common
 
 ## 1. Setting up Local Environment
 
-Please always ensure your local environment and tooling is up to date to avoid any possible issues. The instructions can be located at [Setting up Your Environment](./index.md). Ideally while setting up your environment, you requested access to App Builder as described at [How to Get Access to App Builder](../overview/getting_access.md)
-  and your request has been approved. If your request has not yet been approved, you may want to wait before proceeding with the steps in this document.
+Ensure your local environment and tooling is up to date. Instructions are here: [Setting up Your Environment](./index.md). Make sure you have access to App Builder as described here [How to Get Access to App Builder](../overview/getting_access.md). If are have not yet been granted access, you may want to wait before proceeding.
 
 ## 2. Creating a new Project on Developer Console
 
-[Adobe Developer Console](/console) gives you access to [APIs](/apis), [SDKs](https://github.com/adobe/aio-sdk) and developer tools to build on, integrate, and extend Adobe products. In App Builder, you would need access to [Adobe I/O Runtime](/apis/experienceplatform/runtime) credentials which would be used for deploying your application, and access to API credentials if you want to access any Adobe [APIs](/apis) in your application. 
+[Adobe Developer Console](/console) gives you access to [APIs](/apis), [SDKs](https://github.com/adobe/aio-sdk) and developer tools to integrate, and extend Adobe products. In App Builder, you need access to [Adobe I/O Runtime](/apis/experienceplatform/runtime) credentials used for deploying your application, and access to API credentials if you want to access Adobe [APIs](/apis) in your application. 
 
 Follow the instructions to set up your project:
 1. Navigate to [Adobe Developer Console](/console).
@@ -44,9 +43,10 @@ Follow the instructions to set up your project:
     ![Select Template](../images/console-3.png)
 
 1. Enter `Project Title` and `App Name` for your templated project. 
-    - `Project Title` is used to identify this project within [Adobe Developer Console](/console) and in [CLI](https://github.com/adobe/aio-cli). A default value is suggested on this screen, but we recommend using a meaningful and distinguishable project title.
-    - `App Name` will be used as a unique identifier for your application and this value cannot be changed once project set up is complete. 
-    - By default, the "Include Runtime with each workspace" checkbox is checked, which means each workspace that is created is automatically provisioned with a unique [Adobe I/O Runtime](/apis/experienceplatform/runtime) namespace allowing each developer to work within their own [Adobe I/O Runtime](/apis/experienceplatform/runtime) environment. If you deselect the checkbox and do not opt for automatic inclusion of [Adobe I/O Runtime](/apis/experienceplatform/runtime), you will need to enable it manually for each individual workspace. You cannot auto-add [Adobe I/O Runtime](/apis/experienceplatform/runtime) to all workspaces after the initial set up is complete.
+    - `Project Title` is used to identify this project within [Adobe Developer Console](/console) and in [CLI](https://github.com/adobe/aio-cli). We recommend changing the default title to a meaningful project title.
+    - `App Name` is a unique identifier for your application. **Note:** once project set up is complete this value cannot be changed. 
+    - By default, the "Include Runtime with each workspace" checkbox is checked. Each workspace is automatically provisioned with a unique [Adobe I/O Runtime](/apis/experienceplatform/runtime) namespace allowing each developer to work within their own [Adobe I/O Runtime](/apis/experienceplatform/runtime) environment. 
+    - If you deselect the checkbox and do not opt for automatic inclusion of [Adobe I/O Runtime](/apis/experienceplatform/runtime), you will need to enable it manually for each individual workspace. You cannot auto-add [Adobe I/O Runtime](/apis/experienceplatform/runtime) to all workspaces after the initial set up is complete.
 You can manually remove [Adobe I/O Runtime](/apis/experienceplatform/runtime) from individual workspaces later if you determine that it is not needed.
     - Click `Save` when ready. 
     ![Select Template](../images/console-4.png)
@@ -56,14 +56,14 @@ You can manually remove [Adobe I/O Runtime](/apis/experienceplatform/runtime) fr
     - Each App Builder project has two default workspaces: `Production` and `Stage`. You can add more workspaces as needed. The `Production` workspace is special, as it is used for the submission and distribution flow. When you’re ready to deploy your app, you will submit it for approval from the Production workspace.
     ![Project Preview](../images/console-5.png)
 
-2. Create a new workspace or select an workspace to start adding [APIs](https://developer.adobe.com/developer-console/docs/guides/services/#add-a-service) and [Events](https://developer.adobe.com/developer-console/docs/guides/services/services-add-event/) that you would need for your application. 
+2. Create a new workspace or select a workspace to add [APIs](https://developer.adobe.com/developer-console/docs/guides/services/#add-a-service) and [Events](https://developer.adobe.com/developer-console/docs/guides/services/services-add-event/) that you will need for your application. 
     ![Workspace](../images/console-6.png)
 
-To read more about Adobe Developer Console, please refer to [Console Documentation](https://developer.adobe.com/developer-console/docs).
+To learn more about Adobe Developer Console, please refer to [Console Documentation](https://developer.adobe.com/developer-console/docs).
 
 ## 3. Signing in from CLI
 
-Once you have your project set up in [Adobe Developer Console](/console), it is time to move onto your local environment. You can always go back to [Adobe Developer Console](/console) to modify your project later.
+Once your project is set up in [Adobe Developer Console](/console), let's move onto your local environment. You can always go back to [Adobe Developer Console](/console) to modify your project later.
 
 1. On your machine, navigate to the Terminal and enter
 
@@ -71,7 +71,7 @@ Once you have your project set up in [Adobe Developer Console](/console), it is 
     $ aio login
     ```
 
-1. A browser window should prompt open, asking you to sign in with your Adobe ID. If the window did not automatically open, you can also copy paste the URL printed in your browser to log in. 
+1. A browser window should open, asking you to sign in with your Adobe ID. If the window did not automatically open, you can also copy paste the URL printed in your browser to log in. 
 
     ```
     $ aio login
@@ -79,17 +79,17 @@ Once you have your project set up in [Adobe Developer Console](/console), it is 
     https://aio-login.adobeioruntime.net/api/v1/web/default/applogin?xxxxxxxx
     ```
 
-1. Once you've logged in, you can close the browser window and go back to your Terminal. You would see a string printed in the terminal. This is your user token. It is automatically stored in [CLI](https://github.com/adobe/aio-cli) config, allowing the [CLI](https://github.com/adobe/aio-cli) to use the token to talk to [Adobe Developer Console](/console). 
+1. Once you've logged in, you can close the browser window and go back to Terminal. You will see a string printed in the terminal. This is your user token. It is automatically stored in [CLI](https://github.com/adobe/aio-cli) config, allowing the [CLI](https://github.com/adobe/aio-cli) to use the token to talk to [Adobe Developer Console](/console). 
 
     ```
     eyJ4NXUiOixxxxxxxxxxxxxxxxxxx
     ```
 
-1. You would now be able to start building App Builder Applications with the [CLI](https://github.com/adobe/aio-cli).  
+1. Now you can start building App Builder Applications with the [CLI](https://github.com/adobe/aio-cli)!  
 
 ## 4. Bootstrapping new App using the CLI
 
-There are two sample flows listed below as we understand some developers may not have access to [Adobe Developer Console](/console) as entitled Enterprise Organization users but still want to look at the project or to import credentials later. 
+There are two sample flows listed below. Some developers may not have access to [Adobe Developer Console](/console) as entitled Enterprise Organization users but may still want to look at the project or to import credentials later. 
 
 ### 4.1 Developer is Logged in as Enterprise Organization user
 
@@ -102,14 +102,14 @@ There are two sample flows listed below as we understand some developers may not
 
     You will be prompted with a few questions about how you want your app to be boostrapped and configured:
 
-1. Select `Organization` that you'd like to use for this new App Builder Application. Navigate through the list to find the project and workspace you just created. If you have a lot of organizations, you can also start typing in keywords to shorten the list. 
+1. Select `Organization` that you'd like to use for this new App Builder Application. Navigate through the list to find the project and workspace you just created. If you have a lot of organizations, you can also start typing to shorten the list. 
     ```
     $ aio app init helloworld
     Retrieving information from Adobe Developer Console..
     ? Select Org Adobe IO DEV
     ```
 
-1. Once you have selected org, project and workspace, next, you will be prompted to select the product you would like to extend:
+1. Once you have selected org, project and workspace, next, select the product you would like to extend:
 
     ```
     ? Which extension point(s) do you with to implement?
@@ -118,13 +118,13 @@ There are two sample flows listed below as we understand some developers may not
      ◉ DX Asset Compute Worker v1
     ```
     
-1. You will then be prompted to select the `Project` you'd like to use for this new App Builder Application. Navigate through the list to find the project you just created. If you have a lot of projects, you can also start typing in keywords to shorten the list. 
+1. Select the `Project` you'd like to use for this new App Builder application. Navigate through the list to find the project you just created. If you have a lot of projects, you can also start typing to shorten the list. 
 
     ```
     ? Select Project Demo Project SAXU
     ```
 
-1. Once you complete this select, you should see the build process kicking off with necessary npm dependencies are getting installed.
+1. Once you complete this selection, you should see the build process kicking off with necessary npm dependencies are getting installed.
 
     ```
     create package.json
@@ -160,7 +160,7 @@ There are two sample flows listed below as we understand some developers may not
 
     You will be prompted with a few questions about how you want your app to be boostrapped and configured:
 
-1. Select `Organization`, `Project` and `Workspace` that you'd like to use for this new App Builder Application. Navigate through the list to find the project and workspace you just created. If you have a lot of organizations / projects / workspaces, you can also start typing in keywords to shorten the list. Upon completing the selection, the [CLI](https://github.com/adobe/aio-cli) automatically downloads a `console.json` file that contains all the credentials from your workspace to be used in your App Builder project. 
+1. Select `Organization`, `Project` and `Workspace` that you'd like to use for this new App Builder Application. Navigate through the list to find the project and workspace you just created. *If you have a lot of organizations / projects / workspaces, you can also start typing to shorten the list.* Upon completing the selection, the [CLI](https://github.com/adobe/aio-cli) automatically downloads a `console.json` file that contains all the credentials from your workspace to be used in your App Builder project. 
     ```
     $ aio app init helloworld
     Retrieving information from Adobe Developer Console..
@@ -170,7 +170,7 @@ There are two sample flows listed below as we understand some developers may not
        create console.json
     ```
 
-1. Once you have selected org, project and workspace, next, you will be asked to select app features to enable:
+1. Next, you will be asked to select app features to enable:
 
     ```
     You are about to initialize the project 'demoproject'
@@ -183,7 +183,7 @@ There are two sample flows listed below as we understand some developers may not
      ◉ CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy
     ```
     
-    Each option indicates a feature you can enable for your App Builder Application. You can select one or all of the options depending on the application you intend to build. We recommend that you select all for now to fully explore all the options. 
+    Each option indicates a feature you can enable for your App Builder application. Select one or all the options depending on the application you intend to build. We recommend you select all for now to fully explore all the options. 
     
     - **Actions: Deploy Runtime actions:** adding the boilerplate for backend serverless actions on [Adobe I/O Runtime](/apis/experienceplatform/runtime)
     - **Events: Publish to Adobe I/O Events:** adding the boilerplate for a serverless action that publishes [Custom I/O Events](/apis/experienceplatform/events/docs.html#!adobedocs/adobeio-events/master/using/custom_events.md)
@@ -270,7 +270,7 @@ For this flow to work, the developer should ask someone with access to set up a 
 
 ![Workspace Download](../images/console-7.png)
     
-1. In your Terminal, navigate to where you want to initialize your project and type in the following command:
+1. In Terminal, navigate to where you want to initialize your project and type in the following command:
 
     ```
     aio app init <app_name> --import <path_to_config_file>
@@ -372,7 +372,7 @@ Click on `Advanced`, the nex screen may vary from browser to browser, but you sh
 You may need to exit the current process and run `aio app run` again. 
 
 #### Proceeding to the Application on localhost
-For users who have accepted the certificate in the past, your should see the following process running in your Teminal instead. You can see that your backend actions are being deployed to [Adobe I/O Runtime](/apis/experienceplatform/runtime) (or to the local OpenWhisk instance if the `--local` option has been used. 
+For users who have accepted the certificate in the past, you should see the following process running in Teminal instead. You can see your backend actions are being deployed to [Adobe I/O Runtime](/apis/experienceplatform/runtime) (or to the local OpenWhisk instance if the `--local` option has been used. 
 
 ```
 $ aio app run
@@ -399,13 +399,13 @@ To view your deployed application in the Experience Cloud shell:
 
 The first URL allows you to see your standalone application on localhost (by default, but the port is configurable). The second URL places your local application in the context of the [Experience Cloud UI](../guides/exc_app/index.md) for preview. 
 
-While most changes in your code get updated in real-time when your application is running, the `.env` file is not amongst them. Running the application depends on `.env` file to provide necessary credentials, so the file is unmodifiable while the app is running. When your app is running, the `.env` file is backed up, and a new one is written with specific values. When you exit the process, the original `.env` is restored. 
+While most changes in your code get updated in real-time when your application is running, the `.env` file is not among them. Running the application depends on `.env` file to provide necessary credentials, so the file is unmodifiable while the app is running. When your app is running, the `.env` file is backed up, and a new one is written with specific values. When you exit the process, the original `.env` is restored. 
 
 As indicated in the message, when you are done, you can press `CTRL+C` to terminate the local development environment.
 
-To have the application running local completely, which means the actions will run on a local deployed (standalone) version of OpenWhisk instead of on [Adobe I/O Runtime](/apis/experienceplatform/runtime), use `aio app run --local`. Some additional dependencies are required if you have not installed them yet, see  `Optional tools` section in  [Setting up Your Environment](./index.md) if you want to set them up manually. 
+To have the application run completely locally, which means the actions will run on a local deployed (standalone) version of OpenWhisk instead of on [Adobe I/O Runtime](/apis/experienceplatform/runtime), use `aio app run --local`. Some additional dependencies are required if you have not installed them yet, see  `Optional tools` section in  [Setting up Your Environment](./index.md) if you want to set them up manually. 
 
-Usually, we recommend running your applications with deployed [Adobe I/O Runtime](/apis/experienceplatform/runtime) actions, as your application should run on [Adobe I/O Runtime](/apis/experienceplatform/runtime) in production. However, if you need to build complex actions or sequencing, the `--local` flag is handy in allowing you to further debug the application locally. Please see the Debugging the Application section below for more info. 
+Usually, we recommend running your applications with deployed [Adobe I/O Runtime](/apis/experienceplatform/runtime) actions, as your application should run on [Adobe I/O Runtime](/apis/experienceplatform/runtime) in production. However, if you need to build complex actions or sequencing, the `--local` flag is handy to locally debug the application. Please see the Debugging the Application section below for more info. 
 
 ### 6.2 Trying the Sample Application
 
@@ -436,7 +436,7 @@ The other sample actions require futher paramaters to be invoked. For instance, 
 
 ### 6.3 Debugging the Application
 
-We integrated our [CLI](https://github.com/adobe/aio-cli) with an open source project [wskdebug](https://github.com/apache/openwhisk-wskdebug) to support our debug functionalities. This tool allows you to develop and debug OpenWhisk actions in your favorite IDE or debugger with a fast feedback loop. It features:
+Our [CLI](https://github.com/adobe/aio-cli) is integrated with an open source project [wskdebug](https://github.com/apache/openwhisk-wskdebug) to support debug functionalities. You can develop and debug OpenWhisk actions in your favorite IDE or debugger with a fast feedback loop. It features:
 
 - Full debugging of actions of the respective language runtime
 - Automatic code reloading
@@ -444,7 +444,7 @@ We integrated our [CLI](https://github.com/adobe/aio-cli) with an open source pr
 - Auto-invoking of actions on code changes
 - Or running any shell command such as a curl request on code changes
 
-Please visit our [Debugging App Builder Apps Codelab](../resources/debugging/index.md) to set up your local environment and go through step-by-step instructions. 
+Please visit [Debugging App Builder Apps Codelab](../resources/debugging/index.md) to set up your local environment and go through step-by-step instructions. 
 
 If the local development is run without the `--local` option, the action you are debugging is running directly on [Adobe I/O Runtime](/apis/experienceplatform/runtime). When the `--local` option is used, the actions are debugged in the standalone OpenWhisk instance running locally. In both cases, Docker is required on your local machine so that the remote or locally mounted actions get proxied in the local Docker container. Learn more about what you can do in [debug mode](https://www.npmjs.com/package/@openwhisk/wskdebug).
 
@@ -459,9 +459,9 @@ Read more at [Managing Application Logs](../guides/application_logging.md)
 The bootstrapped application comes with sample implementations for both unit and end-to-end tests. 
 You can execute these tests locally by using `aio app test` and `aio app test -e`, which will respectively run the unit and end-to-end tests against the bootstrapped codebase.
 
-Of course, as you will modify and extend the code of your application, you will also need to update the tests accordingly.
+As you modify and extend the code of your application, you will need to update the tests accordingly.
 
-We are using [jestJS](https://jestjs.io/) for the unit tests of the [CLI](https://github.com/adobe/aio-cli), [SDK](https://github.com/adobe/aio-sdk) and bootstrapped application. It is however possible to change the implementation to your preferred framework.
+We are using [jestJS](https://jestjs.io/) for the unit tests of the [CLI](https://github.com/adobe/aio-cli), [SDK](https://github.com/adobe/aio-sdk) and bootstrapped application. It is possible to change the implementation to your preferred framework.
 
 [CI/CD for App Builder Applications](../guides/deployment/ci_cd_for_firefly_apps.md) also explains how to execute these tests in the context of a CI/CD pipeline.
 
