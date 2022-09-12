@@ -1,10 +1,9 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
-  - Integration
+  - Acquire Access
+  - Credentials
+  - Local Environment
+  - Set up
 title: Getting Started
 description: App Builder is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure.
 ---
