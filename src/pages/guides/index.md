@@ -1,10 +1,10 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
-  - Integration
+  - Headless Application
+  - Headful Application
+  - SDK Components
+  - SDK Library
+  - Migration Guides
 title: Guides
 description: An App Builder Application is a serverless application that extends Adobe Product APIs. These applications can be headless or headful. Each of these types is described in more detail in the sections that follow.
 ---
