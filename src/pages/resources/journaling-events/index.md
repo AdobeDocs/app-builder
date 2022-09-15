@@ -1,8 +1,5 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
   - Developer Tooling
 title: Consume Events Using Journaling API
 description: Creating cron jobs in an App Builder application to consume events using Journaling API.
