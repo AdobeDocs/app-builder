@@ -1,9 +1,8 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+  - API
+title: Guides
+description: API used to integrate as solution web application with the unified shell of the Adobe Experience Cloud.  
 ---
 
 # External module: "index"
