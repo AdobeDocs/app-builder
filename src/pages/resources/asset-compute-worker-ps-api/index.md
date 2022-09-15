@@ -1,9 +1,6 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+  - AEM Asset Compute
 title: Build AEM Asset Compute Worker with Photoshop API
 description: Building asset compute workers leveraging Photoshop APIs to generate custom renditions in AEM.
 contributors: 
