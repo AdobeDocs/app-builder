@@ -1,8 +1,5 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
   - Developer Tooling
 title: Scheduling Cron Jobs
 description: Creating cron jobs in an App Builder app using OpenWhisk Alarms Package.
