@@ -1,9 +1,8 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+  - Documentation
+title: Guides
+description: Reference Documentation. 
 ---
 
 # Reference Documentation
