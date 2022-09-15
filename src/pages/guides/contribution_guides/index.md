@@ -1,9 +1,10 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+  - Contributor License Agreement
+  - Code Reviews
+  - Code of Conduct
+title: Guides
+description: Thanks for choosing to contribute! The following are a set of guidelines to follow when contributing to this project.
 ---
 
 # Contributing
