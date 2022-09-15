@@ -1,9 +1,6 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+  - Spectrum
 title: Spectrum Introduction
 description: Introduction to Spectrum to build an App Builder App UI.
 ---
