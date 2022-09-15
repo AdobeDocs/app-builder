@@ -1,8 +1,5 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
   - Developer Tooling
 title: Event-Driven App Builder Apps
 description: Introduction to applying Custom I/O Events in event-driven use cases of App Builder applications.
