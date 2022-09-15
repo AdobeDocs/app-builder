@@ -1,9 +1,8 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+  - Security
+title: Guides
+description: Every application development project has its own security requirements. Even for seasoned developers, these critical requirements can lead to complex and time-consuming implementations with an inappropriate support at SDK and tools level.  
 ---
 
 # Security Overview
