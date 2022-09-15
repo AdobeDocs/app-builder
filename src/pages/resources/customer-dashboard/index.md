@@ -1,8 +1,5 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
   - Developer Tooling
 title: Customer Profiles Dashboard
 description: Creating a dashboard of customer profiles from Adobe Campaign Standard using App Builder.
