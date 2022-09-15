@@ -1,8 +1,9 @@
 ---
 keywords:
-  - Documentation
-title: Guides
-description: Reference Documentation. 
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
 ---
 
 # Reference Documentation

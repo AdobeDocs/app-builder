@@ -1,8 +1,9 @@
 ---
 keywords:
-  - Integration Guide
-title: Guides
-description: Adobe Experience Cloud gives you everything you need to bring world-class experiences to every customer. It consists of multiple solutions that power insights, content, engagement, commerce and optimization.   
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
 ---
 
 # Integration Guide with Adobe Experience Cloud

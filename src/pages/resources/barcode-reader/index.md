@@ -1,6 +1,9 @@
 ---
 keywords:
-  - Headless App
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
 title: App Builder Headless App
 description: Creating a Headless App using App Builder to render a barcode with dynamic data.
 ---

@@ -1,8 +1,9 @@
 ---
 keywords:
-  - API
-title: Guides
-description: API used to integrate as solution web application with the unified shell of the Adobe Experience Cloud.  
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
 ---
 
 # External module: "index"

@@ -1,5 +1,8 @@
 ---
 keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
   - Developer Tooling
 title: Debugging App Builder Apps
 description: The basic steps of debugging an App Builder App.

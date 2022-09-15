@@ -1,5 +1,8 @@
 ---
 keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
   - Developer Tooling
 title: Custom Asset Compute Worker
 description: Building a Custom Asset Compute Worker leveraging 3rd-party services to generate intelligent renditions in AEM.

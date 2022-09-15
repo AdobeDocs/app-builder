@@ -1,5 +1,8 @@
 ---
 keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
   - Developer Tooling
 title: Building an App Builder Todo App
 description: How to build a Todo App with App Builder using aio-lib-state as storage library and React Spectrum components.

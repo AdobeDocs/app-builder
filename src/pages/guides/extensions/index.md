@@ -1,8 +1,9 @@
 ---
 keywords:
-  - Extension Points
-title: Guides
-description: When App Builder was first introduced, we primarily supported two types of use cases -- Single Page Applications (SPAs) that can be accessed in Experience Cloud UI, and standalone Headless Applications.  
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
 ---
 
 # Introduction to Extensions
