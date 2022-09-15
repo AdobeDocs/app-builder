@@ -1,8 +1,5 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
   - Developer Tooling
 title: CI/CD in App Builder Apps
 description: Setting up CI/CD for an App Builder App using GitHub Actions.
