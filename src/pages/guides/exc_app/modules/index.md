@@ -1,9 +1,8 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+  - External Module
+title: Guides
+description: External modules
 ---
 
 # External module: "index"
