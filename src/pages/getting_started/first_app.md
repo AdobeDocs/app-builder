@@ -89,7 +89,7 @@ Once your project is set up in [Adobe Developer Console](/console), let's move o
 
 ## 4. Bootstrapping new App using the CLI
 
-There are two sample flows listed below. Some developers may not have access to [Adobe Developer Console](/console) as entitled Enterprise Organization users but may still want to look at the project or to import credentials later. 
+There are a few sample flows listed below. Some developers may not have access to [Adobe Developer Console](/console) as entitled Enterprise Organization users but may still want to look at the project or to import credentials later. 
 
 ### 4.1 Developer is Logged in as Enterprise Organization user
 
@@ -102,14 +102,14 @@ There are two sample flows listed below. Some developers may not have access to 
 
     You will be prompted with a few questions about how you want your app to be boostrapped and configured:
 
-1. Select `Organization` that you'd like to use for this new App Builder Application. Navigate through the list to find the project and workspace you just created. If you have a lot of organizations, you can also start typing to shorten the list. 
+2. Select `Organization` that you'd like to use for this new App Builder Application. Navigate through the list to find the project and workspace you just created. If you have a lot of organizations, you can also start typing to shorten the list. 
     ```
     $ aio app init helloworld
     Retrieving information from Adobe Developer Console..
     ? Select Org Adobe IO DEV
     ```
 
-1. Once you have selected org, project and workspace, next, select the product you would like to extend:
+3. Once you have selected org, project and workspace, next, select the product you would like to extend:
 
     ```
     ? Which extension point(s) do you with to implement?
@@ -118,13 +118,13 @@ There are two sample flows listed below. Some developers may not have access to 
      ◉ DX Asset Compute Worker v1
     ```
     
-1. Select the `Project` you'd like to use for this new App Builder application. Navigate through the list to find the project you just created. If you have a lot of projects, you can also start typing to shorten the list. 
+4. Select the `Project` you'd like to use for this new App Builder application. Navigate through the list to find the project you just created. If you have a lot of projects, you can also start typing to shorten the list. 
 
     ```
     ? Select Project Demo Project SAXU
     ```
 
-1. Once you complete this selection, you should see the build process kicking off with necessary npm dependencies are getting installed.
+5. Once you complete this selection, you should see the build process kicking off with necessary npm dependencies are getting installed.
 
     ```
     create package.json
@@ -140,7 +140,7 @@ There are two sample flows listed below. Some developers may not have access to 
     ```
 
 
-1. Now your project is initialized! Go into the folder you just created, and you can see a number of files generated. 
+6. Now your project is initialized! Go into the folder you just created, and you can see a number of files generated. 
 
     ```
     $ cd helloworld
@@ -149,8 +149,21 @@ There are two sample flows listed below. Some developers may not have access to 
     e2e			node_modules		package.json		web-src
     ```
     
-1. Note that you still can add/remove the extension points, back-end actions, SPA front-end or Github workflows from your application later by respectively using the `aio app <add|delete> ext`, `aio app <add|delete> action`, `aio app <add|delete> web-assets` and `aio app <add|delete> ci` commands within your application folder.
+7. Note that you still can add/remove the extension points, back-end actions, SPA front-end or Github workflows from your application later by respectively using the `aio app <add|delete> ext`, `aio app <add|delete> action`, `aio app <add|delete> web-assets` and `aio app <add|delete> ci` commands within your application folder.
 
+8. Optionally, you can install an App Builder template using Template Registry. Discover available templates in the App Builder template registry with the following command:
+
+    ```
+    $ aio templates discover
+    ```
+
+9. Install the desired template with the following command:
+
+    ```
+    $ aio templates install <npm package name>
+    ```
+    The template's npm package will be downloaded and extracted, and its installation configuration file parsed for workspace setup, APIs, event registration, and runtime required. `npm install` will run in the background to install the npm package.
+    
 #### 4.1.2 Initializing an empty project
 1. In your Terminal, navigate to where you want to initialize your project and type in the following command in your Terminal:
 
@@ -259,7 +272,7 @@ Note that you may not see all the options listed below on your command line, bec
     ```
     
 5. Note that you still can add/remove the back-end actions, SPA front-end or Github workflows from your application later by respectively using the `aio app <add|delete> action`, `aio app <add|delete> web-assets` and `aio app <add|delete> ci` commands within your application folder.
-    
+
 ### 4.2 Developer is not Logged in as Enterprise Organization user
 
 #### Developer with a Console config file
