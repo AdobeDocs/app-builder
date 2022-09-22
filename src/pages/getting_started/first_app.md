@@ -162,7 +162,7 @@ There are a few sample flows listed below. Some developers may not have access t
     ```
     $ aio templates install <npm package name>
     ```
-    The template's npm package will be downloaded and extracted, and its installation configuration file parsed for workspace setup, APIs, event registration, and runtime required. `npm install` will run in the background to install the npm package.
+    The template's npm package will be downloaded and extracted, and Developer Console resources such as services and workspaces will be created and configured based on the template's **install.yaml** configuration file. `npm install` will run in the background to install the npm package.
     
 #### 4.1.2 Initializing an empty project
 1. In your Terminal, navigate to where you want to initialize your project and type in the following command in your Terminal:
