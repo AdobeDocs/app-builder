@@ -58,7 +58,7 @@ You can manually remove [Adobe I/O Runtime](/apis/experienceplatform/runtime) fr
     - Each App Builder project has two default workspaces: `Production` and `Stage`. You can add more workspaces as needed. The `Production` workspace is special, as it is used for the submission and distribution flow. When you’re ready to deploy your app, you will submit it for approval from the Production workspace.
     ![Project Preview](../images/console-5.png)
 
-2. Create a new workspace or select a workspace to add [APIs](https://developer.adobe.com/developer-console/docs/guides/services/#add-a-service) and [Events](https://developer.adobe.com/developer-console/docs/guides/services/services-add-event/) that you will need for your application.
+1. Create a new workspace or select a workspace to add [APIs](https://developer.adobe.com/developer-console/docs/guides/services/#add-a-service) and [Events](https://developer.adobe.com/developer-console/docs/guides/services/services-add-event/) that you will need for your application.
     ![Workspace](../images/console-6.png)
 
 To learn more about Adobe Developer Console, please refer to [Console Documentation](https://developer.adobe.com/developer-console/docs).
@@ -69,13 +69,13 @@ Once your project is set up in [Adobe Developer Console](/console), let's move o
 
 1. On your machine, navigate to the Terminal and enter
 
-    ```
+    ```bash
     aio login
     ```
 
 1. A browser window should open, asking you to sign in with your Adobe ID. If the window did not automatically open, you can also copy paste the URL printed in your browser to log in.
 
-    ```
+    ```bash
     $ aio login
     Visit this url to log in: 
     https://aio-login.adobeioruntime.net/api/v1/web/default/applogin?xxxxxxxx
@@ -83,7 +83,7 @@ Once your project is set up in [Adobe Developer Console](/console), let's move o
 
 1. Once you've logged in, you can close the browser window and go back to Terminal. You will see a string printed in the terminal. This is your user token. It is automatically stored in [CLI](https://github.com/adobe/aio-cli) config, allowing the [CLI](https://github.com/adobe/aio-cli) to use the token to talk to [Adobe Developer Console](/console).
 
-    ```
+    ```bash
     eyJ4NXUiOixxxxxxxxxxxxxxxxxxx
     ```
 
@@ -99,38 +99,38 @@ There are a few sample flows listed below. Some developers may not have access t
 
 1. In your Terminal, navigate to where you want to initialize your project and type in the following command in your Terminal:
 
-    ```
+    ```bash
     aio app init <app_name>
     ```
 
     You will be prompted with a few questions about how you want your app to be boostrapped and configured:
 
-2. Select `Organization` that you'd like to use for this new App Builder Application. Navigate through the list to find the project and workspace you just created. If you have a lot of organizations, you can also start typing to shorten the list.
+1. Select `Organization` that you'd like to use for this new App Builder Application. Navigate through the list to find the project and workspace you just created. If you have a lot of organizations, you can also start typing to shorten the list.
 
-    ```
+    ```bash
     $ aio app init helloworld
     Retrieving information from Adobe Developer Console..
     ? Select Org Adobe IO DEV
     ```
 
-3. Once you have selected org, project and workspace, next, select the product you would like to extend:
+1. Once you have selected org, project and workspace, next, select the product you would like to extend:
 
-    ```
+    ```bash
     ? Which extension point(s) do you with to implement?
     select components to include (Press <space> to select, <a> to toggle all, <i> to invert selection)
     ❯◉ DX Experience Cloud SPA v1
      ◉ DX Asset Compute Worker v1
     ```
 
-4. Select the `Project` you'd like to use for this new App Builder application. Navigate through the list to find the project you just created. If you have a lot of projects, you can also start typing to shorten the list.
+1. Select the `Project` you'd like to use for this new App Builder application. Navigate through the list to find the project you just created. If you have a lot of projects, you can also start typing to shorten the list.
 
-    ```
+    ```bash
     ? Select Project Demo Project SAXU
     ```
 
-5. Once you complete this selection, you should see the build process kicking off with necessary npm dependencies are getting installed.
+1. Once you complete this selection, you should see the build process kicking off with necessary npm dependencies are getting installed.
 
-    ```
+    ```bash
     create package.json
     create app.config.yaml
     create .aio
@@ -143,26 +143,26 @@ There are a few sample flows listed below. Some developers may not have access t
     ✔ App initialization finished!
     ```
 
-6. Now your project is initialized! Go into the folder you just created, and you can see a number of files generated.
+1. Now your project is initialized! Go into the folder you just created, and you can see a number of files generated.
 
-    ```
+    ```bash
     $ cd helloworld
     $ ls
     README.md  src  app.config.yaml  package-lock.json test
     e2e   node_modules  package.json  web-src
     ```
 
-7. Note that you still can add/remove the extension points, back-end actions, SPA front-end or Github workflows from your application later by respectively using the `aio app <add|delete> ext`, `aio app <add|delete> action`, `aio app <add|delete> web-assets` and `aio app <add|delete> ci` commands within your application folder.
+1. Note that you still can add/remove the extension points, back-end actions, SPA front-end or Github workflows from your application later by respectively using the `aio app <add|delete> ext`, `aio app <add|delete> action`, `aio app <add|delete> web-assets` and `aio app <add|delete> ci` commands within your application folder.
 
-8. Optionally, you can install an App Builder template using Template Registry. Discover available templates in the App Builder template registry with the following command:
+1. Optionally, you can install an App Builder template using Template Registry. Discover available templates in the App Builder template registry with the following command:
 
-    ```
+    ```bash
     aio templates discover
     ```
 
-9. Install the desired template with the following command:
+1. Install the desired template with the following command:
 
-    ```
+    ```bash
     aio templates install <npm package name>
     ```
 
@@ -172,7 +172,7 @@ There are a few sample flows listed below. Some developers may not have access t
 
 1. In your Terminal, navigate to where you want to initialize your project and type in the following command in your Terminal:
 
-    ```
+    ```bash
     aio app init <app_name> --no-extensions
     ```
 
@@ -180,7 +180,7 @@ There are a few sample flows listed below. Some developers may not have access t
 
 1. Select `Organization`, `Project` and `Workspace` that you'd like to use for this new App Builder Application. Navigate through the list to find the project and workspace you just created. *If you have a lot of organizations / projects / workspaces, you can also start typing to shorten the list.* Upon completing the selection, the [CLI](https://github.com/adobe/aio-cli) automatically downloads a `console.json` file that contains all the credentials from your workspace to be used in your App Builder project.
 
-    ```
+    ```bash
     $ aio app init helloworld
     Retrieving information from Adobe Developer Console..
     ? Select Org Adobe IO DEV
@@ -191,7 +191,7 @@ There are a few sample flows listed below. Some developers may not have access t
 
 1. Next, you will be asked to select app features to enable:
 
-    ```
+    ```bash
     You are about to initialize the project 'demoproject'
     Generating code in: /Users/sarahxxu/Dropbox/Development/helloworld
     ? Which Adobe I/O App features do you want to enable for this project?
@@ -211,7 +211,7 @@ There are a few sample flows listed below. Some developers may not have access t
 
 1. If you included `Actions` in your last selection, you will be asked to select one or more sample actions to be generated along with the new app.
 
-    ```
+    ```bash
     ? Which type of sample actions do you want to create?
     select type of actions to generate (Press <space> to select, <a> to toggle all, <i> to invert selection)
     ❯◯ Adobe Analytics
@@ -231,7 +231,7 @@ Note that you may not see all the options listed below on your command line, bec
 
 1. If you included `Web Assets` under Adobe I/O App features you will be given two choices. One to include React Spectrum based UI template or a Vanilla HTML/JS one
 
-    ```
+    ```bash
     ? Which type of UI do you want to add to your project? select template to generate (Use arrow keys)
     ❯ React Spectrum 3 UI
       Raw HTML/JS UI
@@ -242,9 +242,9 @@ Note that you may not see all the options listed below on your command line, bec
 
     Both the templates comes with boilerplate code needed to integrate your App Builder application with [Adobe Experience Cloud](../guides/exc_app/index.md)
 
-2. We'll ask you to define the name for the instance of each selected sample actions. You can keep the default name or specify your own.
+1. We'll ask you to define the name for the instance of each selected sample actions. You can keep the default name or specify your own.
 
-    ```
+    ```bash
     ? We are about to create a new sample action that interacts with the Adobe Analytics API
     how would you like to name this action? analytics
     ? We are about to create a new sample action that interacts with the Adobe Experience Platform: Realtime Customer Profile
@@ -253,9 +253,9 @@ Note that you may not see all the options listed below on your command line, bec
     how would you like to name this action? (generic) 
     ```
 
-3. Once you complete this select, you should see the build process kicking off with necessary npm dependencies are getting installed.
+1. Once you complete this select, you should see the build process kicking off with necessary npm dependencies are getting installed.
 
-    ```
+    ```bash
     create package.json
     create app.config.yaml
     create .aio
@@ -268,16 +268,16 @@ Note that you may not see all the options listed below on your command line, bec
     ✔ App initialization finished!
     ```
 
-4. Now your project is initialized! Go into the folder you just created, and you can see a number of files generated.
+1. Now your project is initialized! Go into the folder you just created, and you can see a number of files generated.
 
-    ```
+    ```bash
     $ cd helloworld
     $ ls
     README.md  console.json  app.config.yaml  package-lock.json test
     actions   e2e   node_modules  package.json  web-src
     ```
 
-5. Note that you still can add/remove the back-end actions, SPA front-end or Github workflows from your application later by respectively using the `aio app <add|delete> action`, `aio app <add|delete> web-assets` and `aio app <add|delete> ci` commands within your application folder.
+1. Note that you still can add/remove the back-end actions, SPA front-end or Github workflows from your application later by respectively using the `aio app <add|delete> action`, `aio app <add|delete> web-assets` and `aio app <add|delete> ci` commands within your application folder.
 
 ### 4.2 Developer is not Logged in as Enterprise Organization user
 
@@ -291,14 +291,14 @@ For this flow to work, the developer should ask someone with access to set up a 
 
 1. In Terminal, navigate to where you want to initialize your project and type in the following command:
 
-    ```
+    ```bash
     aio app init <app_name> --import <path_to_config_file>
     ```
 
 1. Select project configuration options (see section above)
 1. When your project is initialized, go into the folder you just created, and you can see a number of files generated.
 
-    ```
+    ```bash
     $ cd helloworld
     $ ls
     README.md  e2e   node_modules  package.json  web-src
@@ -314,7 +314,7 @@ This flow is intended for developers who have no access or credentials whatsoeve
 
 1. In your Terminal, navigate to where you want to initialize your project and type in the following command in your Terminal:
 
-    ```
+    ```bash
     aio app init <app_name> -y
     ```
 
@@ -322,7 +322,7 @@ This flow is intended for developers who have no access or credentials whatsoeve
 
 1. You should still be able to see similar files generated, but none of the config files will be pre-polulated.
 
-    ```
+    ```bash
     $ cd helloworld
     $ ls
     README.md  e2e   node_modules  package.json  web-src
@@ -359,13 +359,13 @@ You should be able to see these folders and files in your project:
 
 To run the application locally, use one of the following commands:
 
-```
+```bash
 aio app run --local
 ```
 
 This will deploy the actions to a local [OpenWhisk](https://openwhisk.apache.org/) instance, which the [CLI](https://github.com/adobe/aio-cli) will autmomatically download and install. The SPA will be run on the local machine.
 
-```
+```bash
 aio app run
 ```
 
@@ -375,7 +375,7 @@ This will deploy the actions to [Adobe I/O Runtime](/apis/experienceplatform/run
 
 If you are using this application for the first time, you will see a message similar to
 
-```
+```bash
 success: generated certificate
 A self signed development certificate has been generated, you will need to accept it in your browser in order to use it.
 Waiting for the certificate to be accepted.... timed out
@@ -395,7 +395,7 @@ You may need to exit the current process and run `aio app run` again.
 
 For users who have accepted the certificate in the past, you should see the following process running in Teminal instead. You can see your backend actions are being deployed to [Adobe I/O Runtime](/apis/experienceplatform/runtime) (or to the local OpenWhisk instance if the `--local` option has been used.
 
-```
+```bash
 $ aio app run
 > Local Dev Server
 ℹ using remote actions
@@ -411,7 +411,7 @@ $ aio app run
 
 There are two URLs printed:
 
-```
+```bash
 To view your local application:
   -> https://localhost:9080
 To view your deployed application in the Experience Cloud shell:
@@ -441,7 +441,7 @@ All actions require `Authorization` and `x-gw-ims-org-id` in the headers by defa
 You can also list all the organizations you belong to and their org ID from your [CLI](https://github.com/adobe/aio-cli) by typing in `aio console org list`.
 
 1. Put the token and org ID into this following format.
-    ```{"Authorization":"Bearer <token_from_cli>","x-gw-ims-org-id":"<org-id-from-console>"}```
+    `{"Authorization":"Bearer <token_from_cli>","x-gw-ims-org-id":"<org-id-from-console>"}`
 1. Go back to your browser, and put the joined value in the `headers` input field. You should now be able to invoke actions that does not require additional params (like `generic`).
 ![Hello World](../images/helloworld-2.png)
 
@@ -490,7 +490,7 @@ We are using [jestJS](https://jestjs.io/) for the unit tests of the [CLI](https:
 
 Once the application is in a good shape, it can be fully deployed to your development workspace. This is achievable with a single command.
 
-```
+```bash
 aio app deploy
 ```
 
@@ -501,7 +501,7 @@ This command may take a minute or two as behind the scenes the [CLI](https://git
 
 The [CLI](https://github.com/adobe/aio-cli) output details this process:
 
-```
+```bash
 > Build actions
 ℹ dist/actions/analytics.zip
 ...
@@ -540,13 +540,13 @@ You can also undeploy your app with `aio app undeploy`. To learn more about depl
 
 1. Validation error. If you see the following error, it is because you did not pass in an authorization header to an action expecting one. See `Trying the Sample App` section above or learn more about this in our [Security Overview](../guides/security/index.md).
 
-    ```
+    ```bash
     {"error": "cannot validate token, reason: missing authorization header"}
     ```
 
 1. Missing param error. If you see the following error, it is because you did not pass in required params to an action expecting one. See `Trying the Sample App` section above.
 
-    ```
+    ```bash
     {"error": "missing parameter(s) 'apiKey,companyId'"}`
     ```
 
