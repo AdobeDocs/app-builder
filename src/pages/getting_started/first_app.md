@@ -165,7 +165,9 @@ There are a few sample flows listed below. Some developers may not have access t
     ```bash
     aio templates install <npm package name>
     ```
+
     or
+    
     ```bash
     aio templates discover --interactive
     ```
