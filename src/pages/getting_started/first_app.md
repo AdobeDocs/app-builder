@@ -167,7 +167,7 @@ There are a few sample flows listed below. Some developers may not have access t
     ```
 
     or
-    
+
     ```bash
     aio templates discover --interactive
     ```
