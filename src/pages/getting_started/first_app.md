@@ -160,10 +160,14 @@ There are a few sample flows listed below. Some developers may not have access t
     aio templates discover
     ```
 
-1. Install the desired template with the following command:
+1. Install the desired template with either of these commands:
 
     ```bash
     aio templates install <npm package name>
+    ```
+    or
+    ```bash
+    aio templates discover --interactive
     ```
 
     The template's npm package will be downloaded and extracted, and Developer Console resources such as services and workspaces will be created and configured based on the template's **install.yaml** configuration file. `npm install` will run in the background to install the npm package.
@@ -173,7 +177,7 @@ There are a few sample flows listed below. Some developers may not have access t
 1. In your Terminal, navigate to where you want to initialize your project and type in the following command in your Terminal:
 
     ```bash
-    aio app init <app_name> --no-extensions
+    aio app init <app_name> --standalone-app
     ```
 
     You will be prompted with a few questions about how you want your app to be boostrapped and configured:
