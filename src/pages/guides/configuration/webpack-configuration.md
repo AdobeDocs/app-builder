@@ -69,6 +69,7 @@ App Builder supports exporting the following configuration types in `*webpack-co
     }
   ])
   ```
+
 ### Array of objects
 
   ```javascript
@@ -161,7 +162,7 @@ App Builder starts off with the following Webpack configuration options, any add
 * `entry` - Will always contain the path to the action, additional paths identified in your configuration file will be added on.
 * `resolve.extensions` - Will always contain `.js` and `.json`, additional extensions identified in your configuration file will be added on.
 * `resolve.mainFields` - Will always contain `main`, additional main fields identified in your configuration file will be added on.
-   
+
 ### Defaults
 
 App Builder defaults to the following Webpack configuration options if they are not present in your configuration file:
@@ -177,9 +178,8 @@ App Builder does not allow changing of the following Webpack configuration optio
 * `target` - This must be `node`. I/O Runtime only supports Node.js as a runtime.
 * `output.path` - Will always be `./dist/${actionPath}/${actionName}-temp/`.
 * `output.filename` - Will always be `${output.path}/index.js`.
-  * Note: If supplying multiple configurations, this is true for the first configuration. For all subsequent configurations, it will be 
-    `${output.path}/index.[hashname].js`.
-    
+  * Note: If supplying multiple configurations, this is true for the first configuration. For all subsequent configurations, it will be `${output.path}/index.[hashname].js`.
+
 ## Environment Variables
 
 If you have chosen to export a function, an async function, or an array of functions from your Webpack configuration file, App Builder will pass the environment to these functions. You can use this, for instance, to make decisions about bundling based on the environment.
