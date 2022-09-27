@@ -40,7 +40,8 @@ The data we collect is anonymous and only meaningful in aggregate form. We may s
 # How do I opt out?
 
 You may turn telemetry off, (or __on__) at any time and this setting will persist until you change it.
-```
+
+```bash
 ➜ aio telemetry off
 Telemetry is off.
 If you would like to turn telemetry on, simply run `aio telemetry on`
@@ -51,7 +52,8 @@ If you would like to turn telemetry off, simply run `aio telemetry off`
 ```
 
 You can also just check the status of telemetry.
-```
+
+```bash
 ➜ aio telemetry
 Telemetry is on! Nice, you are helping us improve Adobe Developer CLI
 If you would like to turn telemetry off, simply run `aio telemetry off`
