@@ -166,6 +166,20 @@ module.exports = {
         ]
       },
       {
+        "title": "Configuration",
+        "path": "guides/configuration",
+        "pages": [
+          {
+            "title": "App Builder Configuration Files",
+            "path": "guides/configuration/index.md"
+          },
+          {
+            "title": "Webpack Configuration",
+            "path": "guides/configuration/webpack-configuration.md"
+          }
+        ]
+      },
+      {
         "title": "Integration Guide with Adobe Experience Cloud",
         "path": "guides/exc_app",
         "pages": [
@@ -266,10 +280,6 @@ module.exports = {
             ]
           }
         ]
-      },
-      {
-        "title": "Configuration Files",
-        "path": "guides/appbuilder-configuration.md"
       },
       {
         "title": "Integration Guide for building Event-driven Applications with I/O Events",

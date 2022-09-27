@@ -117,7 +117,7 @@ Assuming `config` contains your Webpack configuration:
     path: './dist/${actionPath}/${actionName}-temp/' // Cannot change 
     fileName: `${output.path}/index.js` // Cannot change 
   },
-  target: 'node' // Cannot change,
+  target: 'node' // Cannot change
   entry: [
     '<path to the action>', 
     ...config.entry
@@ -141,7 +141,7 @@ Assuming `config` contains your Webpack configuration:
     ...config.plugins
   ]
   
-  // ... all other Webpack configuration options are valid
+  // ... All other Webpack configuration options are valid
 
 }
 ```
@@ -167,8 +167,8 @@ App Builder defaults to the following Webpack configuration options if they are 
 App Builder does not allow changing of the following Webpack configuration options. These fields will be ignored if present in your configuration file: 
 
 * `target` - This must be `node`. I/O Runtime only supports Node.js as a runtime. 
-* `output.path` - Will always be `./dist/${actionPath}/${actionName}-temp/`
-* `output.filename` - Will always be `${output.path}/index.js`
+* `output.path` - Will always be `./dist/${actionPath}/${actionName}-temp/`.
+* `output.filename` - Will always be `${output.path}/index.js`.
   * Note: If supplying multiple configurations, this is true for the first configuration. For all subsequent configurations, it will be 
     `${output.path}/index.[hashname].js`.  
     
@@ -176,7 +176,7 @@ App Builder does not allow changing of the following Webpack configuration optio
 
 If you have chosen to export a function, an async function, or an array of functions from your Webpack configuration file, App Builder will pass the environment to these functions. You can use this, for instance, to make decisions about bundling based on the environment. 
 
-Example: If you exported an environment variable called `MODE` before building your application, you can use this in your Webpack configuration file: 
+Example: If you exported an environment variable called `FEATURE_FLAG_PIRATES_BOUNTY` before building your application, you can use this in your Webpack configuration file: 
 
 ```javascript
 module.exports = (env) => ({
