@@ -64,7 +64,7 @@ If you would like to turn telemetry off, simply run `aio telemetry off`
 Additionally, any individual command may be run with telemetry off by using the `--no-telemetry` flag.
 
 _example:_
- 
+
 > `aio app info --no-telemetry`
 
 ## Show me the code
