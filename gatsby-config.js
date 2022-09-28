@@ -163,6 +163,10 @@ module.exports = {
             "title": "Extension Migration Guide",
             "path": "guides/extensions/extension_migration_guide.md"
           },
+          {
+            "title": "Migration Guide - Standalone Application to DX Experience Cloud SPA v1",
+            "path": "guides/migrations/standalone_to_dx_experience_cloud_spa.md"
+          }
         ]
       },
       {
