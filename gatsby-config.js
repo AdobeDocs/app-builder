@@ -288,6 +288,10 @@ module.exports = {
         "path": "guides/contribution_guides"
       },
       {
+        "title": "Telemetry",
+        "path": "guides/telemetry"
+      },
+      {
         "title": "Code Labs",
         "path": "resources/index.md",
         pages: [
