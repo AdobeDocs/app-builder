@@ -65,7 +65,7 @@ extensions:
     <common-config>
 ```
 
-A project can implement a standalone application and N extensions. 
+A project can implement a standalone application and N extensions.
 
 ### Common configuration
 
@@ -194,7 +194,7 @@ The `.env` file is used to store:
 
 ## `.aio`
 
-The `.aio` file is auto generated and contains Developer Console specific configuration. 
+The `.aio` file is auto generated and contains Developer Console specific configuration.
 This file is updated via the `aio app use` command and should not be edited manually.
 
 ## Legacy configuration system
@@ -211,4 +211,4 @@ The legacy configuration system does not have an `app.config.yaml` and instead u
 
 ## Migrating between Standalone Application and DX Experience Cloud SPA v1
 
-- [Standalone Application to DX Experience Cloud SPA v1](migrations/standalone_to_dx_experience_cloud_spa.md) - Useful if you can't seem to view your application in the App Builder Catalog in Adobe Experience Cloud. 
+- [Standalone Application to DX Experience Cloud SPA v1](migrations/standalone_to_dx_experience_cloud_spa.md) - Useful if you can't seem to view your application in the App Builder Catalog in Adobe Experience Cloud.
