@@ -46,10 +46,10 @@ These prerequisites should be fulfilled on the developer's machine:
         - Check the version using `aio -v` and compare it with `npm show @adobe/aio-cli version`. If your CLI is outdated, update by running `npm install -g @adobe/aio-cli`.
         - If your Adobe I/O CLI is up to date, run `aio update` to ensure all core plugins are updated as well.
         - When we release a new version of Adobe I/O CLI, you'll see a message liks this before the command output. This message lasts for 7 days after a new release.
-        ```bash
-        ›   Warning: @adobe/aio-cli update available from 3.3.0 to 3.4.1.
-        ›   Run npm install -g @adobe/aio-cli to update.
-        ```
+```bash
+›   Warning: @adobe/aio-cli update available from 3.3.0 to 3.4.1.
+›   Run npm install -g @adobe/aio-cli to update.
+```
 
 #### Supported Local Environment
 
@@ -73,7 +73,6 @@ The following is required if you intend to use local development features provid
 
 **Note:** Developers on Windows machines should make sure that they are using Linux containers for the images above.
 The steps to switch to Linux containers are described in the [Docker for Windows documentation](https://docs.docker.com/docker-for-windows/).
-
 
 ## Next Step
 
