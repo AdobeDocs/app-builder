@@ -12,7 +12,7 @@ import NPMBadge from '../../components/NPMBadge.js'
 
 # Start your App Builder Journey
 
-Welcome. Here you'll learn what systems you need to access, how to access them, and how to configure your local environment.
+Welcome! Here you'll learn what systems you need to access, how to access them, and how to configure your local environment.
 
 ## Access and Credentials
 
@@ -35,7 +35,7 @@ Adobe Experience Cloud IMS Organization _(required)_
 
 ## Local Environment Set Up
 
-### Required tools
+### Required Tools
 
 These prerequisites should be fulfilled on the developer's machine:
 
@@ -46,7 +46,7 @@ These prerequisites should be fulfilled on the developer's machine:
         - Check the version using `aio -v` and compare it with `npm show @adobe/aio-cli version`. If your CLI is outdated, update by running `npm install -g @adobe/aio-cli`.
         - If your Adobe I/O CLI is up to date, run `aio update` to ensure all core plugins are updated as well.
         - When we release a new version of Adobe I/O CLI, you'll see a message liks this before the command output. This message lasts for 7 days after a new release.
-        ```
+        ```bash
         ›   Warning: @adobe/aio-cli update available from 3.3.0 to 3.4.1.
         ›   Run npm install -g @adobe/aio-cli to update.
         ```
@@ -56,13 +56,13 @@ These prerequisites should be fulfilled on the developer's machine:
 We aim to provide the similar quality of local development experience on both Windows 10 and macOS 10.14 and higher.
 Our [CLI](https://github.com/adobe/aio-cli) and its plugins are automatically tested against NodeJS versions 14 and 16 on both Windows and [Linux Xenial](http://releases.ubuntu.com/16.04/).
 
-#### Supported terminals for the CLI
+#### Supported Terminals for the CLI
 
 Our [CLI](https://github.com/adobe/aio-cli) uses the popular [inquirer](https://www.npmjs.com/package/inquirer) package for all its interactive functionalities, such as the application generators.
 
 See [inquirer's Support section](https://www.npmjs.com/package/inquirer#support-os-terminals) and [its known issues](https://www.npmjs.com/package/inquirer#know-issues) for up-to-date details.
 
-### Optional tools
+### Optional Tools
 
 The following is required if you intend to use local development features provided by the [CLI](https://github.com/adobe/aio-cli):
 
