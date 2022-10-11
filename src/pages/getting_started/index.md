@@ -10,26 +10,28 @@ description: App Builder is a complete framework that enables enterprise develop
 
 import NPMBadge from '../../components/NPMBadge.js'
 
-# Setting up Your Environment
+## Start your App Builder Journey
 
-During Developer Preview, please follow the steps below to acquire access and credentials, and to set up your local environment to build your first App Builder.
+Welcome to App Builder. Here you'll learn what systems you need to access, how to access them, and how to configure your local environment.
 
-## Acquire Access and Credentials
+## Access and Credentials
 
-Please first follow instructions in [How to Get Access to App Builder](../overview/getting_access.md) to join the Developer Preview program. 
+First ensure you have [access to App Builder](../overview/getting_access.md) either via trial or having purchased a license. 
 
-Once you have been added to the program, you will need the following information for kicking off your development work. 
+You'll need to confirm access to the following services:
 
-- An Adobe Experience Cloud Organization (required)
-    - An Adobe Experience Cloud Org is required if you would like to use APIs from Adobe, access Developer Console, set up an App Builder project, publish custom applications, and/or access published custom applications.
-    - As an enterprise customer or partner, you should have access to an Adobe Experience Cloud Org. If you do not have access to an organization:
-        - Customers: Please contact your account manager for access.
-        - Partners: Please contact your partner manager or request sandbox access via [Adobe Solution Partner Portal](https://solutionpartners.adobe.com/home.html).
-- Access to Adobe Developer Console (required)
-    -  Adobe Developer Console gives you access to APIs, SDKs and developer tools to build on, integrate, and extend Adobe products. You will set up your credentials using the Developer Console. 
-    - You must have developer role or system admin role for an Adobe Experience Cloud organization to access Adobe Developer Console.
-- A GitHub Account (optional)
-    - A [GitHub](https://github.com/) account is optional for setting up your CI/CD workflow. 
+[Adobe Developer Console](https://developer.adobe.com/console) _(required)_
+    - Adobe Developer Console gives you access to APIs, SDKs and developer tools. You will set up your credentials using the Developer Console. 
+    - **note:** To access you need you need developer or system admin role for your Adobe Experience Cloud IMS organization. 
+
+Adobe Experience Cloud IMS Organization _(required)_
+    - App Builder access is provided via an Adobe Experience Cloud IMS Org. If you are using the trial you should use the IMS org you requested or that was assigned to you. If you have a license for App Builder, then the IMS org was selected by the person who purchsed it for your company.
+    - If you do not have access to an organization:
+        - _Customers: Please contact your account manager for access._
+        - _Partners: Please contact your partner manager or request sandbox access via [Adobe Solution Partner Portal](https://solutionpartners.adobe.com/home.html)._
+
+- A GitHub Account _(optional)_
+    - A [GitHub](https://github.com/) account is optional, but highly recommended, for setting up your CI/CD workflow. 
 
 ## Local Environment Set Up
 
@@ -37,13 +39,14 @@ Once you have been added to the program, you will need the following information
 
 These prerequisites should be fulfilled on the developer's machine:
 
-- [NodeJS](https://nodejs.org/en/download/) [>=12.22 ... 14.17-LTS](https://nodejs.org/en/blog/release/v14.17.0/), odd versions not recommended). It should also install npm together. We recommend using [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md) to manage NodeJS installation and versions on the developer's machine. 
+- [NodeJS](https://nodejs.org/en/download/) [>=12.22 ... 14.17-LTS](https://nodejs.org/en/blog/release/v14.17.0/), odd versions not recommended). It should also install npm together. We recommend using [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md) to manage NodeJS installation and versions.
 - [Adobe I/O CLI](https://github.com/adobe/aio-cli)
     - `npm install -g @adobe/aio-cli`
-    - If you already have Adobe I/O CLI on your local, please ensure you have the latest version of Adobe I/O CLI installed. (Current version: <NPMBadge/>)
-        - For the Adobe I/O CLI, you can check the version through `aio -v` and compare it with `npm show @adobe/aio-cli version`. If your CLI is outdated, update your CLI by running `npm install -g @adobe/aio-cli`. 
-        - If your Adobe I/O CLI is up to date, you can simply run `aio update` to ensure all core plugins are updated as well.
-        - Other than the checking the version on your CLI, whenever a new version of Adobe I/O CLI is updated, we will inform you on your command line by writing a message like this out before the command output. This message last for 7 days after a new release.
+    - If you have Adobe I/O CLI installed, please ensure you have the latest version. (Current version: <NPMBadge/>)
+        - Check the version using `aio -v` and compare it with `npm show @adobe/aio-cli version`. If your CLI is outdated, update by running `npm install -g @adobe/aio-cli`. 
+        - If your Adobe I/O CLI is up to date, run `aio update` to ensure all core plugins are updated as well.
+        - When we release a new version of Adobe I/O CLI, you'll see a message liks this before the command output. This message lasts for 7 days after a new release.
+
         ```
         ›   Warning: @adobe/aio-cli update available from 3.3.0 to 3.4.1.
         ›   Run npm install -g @adobe/aio-cli to update.
@@ -51,7 +54,7 @@ These prerequisites should be fulfilled on the developer's machine:
     
 #### Supported Local Environment
 We aim to provide the similar quality of local development experience on both Windows 10 and macOS 10.14 and higher.
-Our [CLI](https://github.com/adobe/aio-cli) and its plugins are automatically tested against NodeJS versions 10 and 12 on both Windows and [Linux Xenial](http://releases.ubuntu.com/16.04/).
+Our [CLI](https://github.com/adobe/aio-cli) and its plugins are automatically tested against NodeJS versions 14 and 16 on both Windows and [Linux Xenial](http://releases.ubuntu.com/16.04/).
 
 #### Supported terminals for the CLI
 Our [CLI](https://github.com/adobe/aio-cli) uses the popular [inquirer](https://www.npmjs.com/package/inquirer) package for all its interactive functionalities, such as the application generators.
@@ -60,7 +63,7 @@ See [inquirer's Support section](https://www.npmjs.com/package/inquirer#support-
 
 ### Optional tools
 
-The following set up is required if you intend to use the local development features provided by the [CLI](https://github.com/adobe/aio-cli): 
+The following is required if you intend to use local development features provided by the [CLI](https://github.com/adobe/aio-cli): 
 
 - [Visual Studio Code](https://code.visualstudio.com/download) (VS Code) as the supported IDE for editor, debuggger, etc. You can use any other IDE as a code editor, but advanced usage (e.g. debugger) is not yet supported.
 - [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/overview/index.html) (at least Java 11)
