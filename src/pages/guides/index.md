@@ -135,7 +135,7 @@ The [out-of-the-box CI/CD support](./deployment/ci_cd_for_firefly_apps.md) for A
 
 ### Webpack 
 
-App Builder uses Webpack for bundling I/O Runtime action code. See [here](/guides/webpack-configuration) for an overview on webpack configuration.
+App Builder uses Webpack for bundling I/O Runtime action code. See [here](/guides/configuration/webpack-configuration) for an overview on webpack configuration.
 
 ### Migration Guides 
 
