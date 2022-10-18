@@ -4,6 +4,9 @@ This site is built with [Adobe I/O Theme](https://github.com/adobe/gatsby-theme-
 
 Follow the [instructions](https://github.com/adobe/gatsby-theme-aio#getting-started) to get started.
 
+Main branch is auto-published to github pages [here](https://adobedocs.github.io/app-builder/overview/)
+Note, this is not the full site, and this url is not shared.  This is a very quick way to go and verify relative links and general formatting before running the deployment workflows.
+
 ## Where to ask for help
 
 The slack channel #adobeio-onsite-onboarding is our main point of contact for help. Feel free to join the channel and ask any questions.
