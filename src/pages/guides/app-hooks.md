@@ -9,6 +9,8 @@ keywords:
 
 # App Builder application tooling lifecycle event hooks
 
+Hooks can be defined to run before, after, or in place of many of the app plugin commands in the app.config.yaml or ext.config.yaml file of your app. 
+
 ## Command Support
 
 `aio app run` supports:
