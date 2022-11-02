@@ -66,9 +66,10 @@ directory structure for a DX Experience Cloud SPA v1 application (Under **New Fi
     1. Run `aio app init`
         1. Select your organization 
         2. Select your project 
-        3. Select **DX Experience Cloud SPA v1**
-        4. Overwrite package.json 
-        5. Overwrite .env
+        3. Select **All Templates**
+        4. Select the **@adobe/generator-app-excshell** template
+        5. Overwrite package.json 
+        6. Overwrite .env
 5. Deploy your application
     1. Run `aio app deploy` 
 7. Submit application for approval
