@@ -9,29 +9,6 @@ keywords:
 
 # App Builder application tooling lifecycle event hooks
 
-## Sample hooks configuration
-
-For example, pre and post hooks can be defined for the `run`, `build` and `deploy` commands in the app.config.yaml or ext.config.yaml file of your app. For the `run`, `build` and `deploy` commands, you can specify build and deploy script substitutes as well. For the `run` command, you can specify an additional `serve-static` script (to custom serve your web assets).
-
-## Legacy App (no extensions)
-
-In the root of your app, you will have to add a `hooks` key in the `app.config.yaml` file, under the `application` key. Example:
-```
-application:
-  hooks:
-    pre-app-run: echo pre-app-run
-```
-
-If you add extensions to a standalone app via `aio app add extension`, note that your `app.config.yaml` hooks will always run first, then your extension hooks in each `ext.config.yaml` will be run.
-
-## App with Extensions
-
-In your app extension folder (typically at `src/EXTENSION_NAME`), find the `ext.config.yaml` file, and add in a `hooks` key. Example:
-```
-hooks:
-  pre-app-run: echo pre-app-run
-```
-
 ## Command Support
 
 `aio app run` supports:
@@ -108,6 +85,24 @@ hooks:
 `aio app test` **test** hook:
 - support a custom test runner for your app or extension
 
+## Legacy App (no extensions)
+
+In the root of your app, you will have to add a `hooks` key in the `app.config.yaml` file, under the `application` key. Example:
+```
+application:
+  hooks:
+    pre-app-run: echo pre-app-run
+```
+
+If you add extensions to a standalone app via `aio app add extension`, note that your `app.config.yaml` hooks will always run first, then your extension hooks in each `ext.config.yaml` will be run.
+
+## App with Extensions
+
+In your app extension folder (typically at `src/EXTENSION_NAME`), find the `ext.config.yaml` file, and add in a `hooks` key. Example:
+```
+hooks:
+  pre-app-run: echo pre-app-run
+```
 
 ## Hooks flow
 
