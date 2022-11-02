@@ -475,6 +475,19 @@ Please visit [Debugging App Builder Apps Codelab](../resources/debugging/index.m
 
 If the local development is run without the `--local` option, the action you are debugging is running directly on [Adobe I/O Runtime](/apis/experienceplatform/runtime). When the `--local` option is used, the actions are debugged in the standalone OpenWhisk instance running locally. In both cases, Docker is required on your local machine so that the remote or locally mounted actions get proxied in the local Docker container. Learn more about what you can do in [debug mode](https://www.npmjs.com/package/@openwhisk/wskdebug).
 
+#### Targeting local actions with `aio runtime` 
+To target local actions with `aio runtime`, you will have to populate the project's `.env` with the local Runtime credentials. 
+
+These credentials can be found in `dist/<extension|application>/.env.local`. 
+
+```
+AIO_runtime_auth=
+AIO_runtime_namespace=
+AIO_runtime_apihost=
+```
+
+Once the project's `.env` has been populated with the local Runtime credentials, commands executed with `aio runtime` in the root project directory will target the locally deployed instance of Runtime. 
+
 ### 6.4 Retrieving Logs for the Application
 
 To see your application logs, use the command `aio app logs`. By default, only the logs of the latest activation is fetched. If you want to see a more extensive list of logs, use the `--limit` flag to define the number of recent activations to be fetched.
