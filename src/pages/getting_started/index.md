@@ -43,8 +43,8 @@ These prerequisites should be fulfilled on the developer's machine:
 - [Adobe I/O CLI](https://github.com/adobe/aio-cli)
     - `npm install -g @adobe/aio-cli`
     - If you have Adobe I/O CLI installed, please ensure you have the latest version. (Current version: <NPMBadge/>)
-        - Check the version using `aio -v` and compare it with `npm show @adobe/aio-cli version`. If your CLI is outdated, update by running `npm install -g @adobe/aio-cli`.
-        - If your Adobe I/O CLI is up to date, run `aio update` to ensure all core plugins are updated as well.
+        - Check CLI version using `aio -v` and compare it with `npm show @adobe/aio-cli version`. If your CLI is outdated, update by running `npm install -g @adobe/aio-cli`.
+        - Even if your Adobe I/O CLI is up to date, run `aio update` to ensure all core plugins are updated as well.
         - When we release a new version of Adobe I/O CLI, you'll see a message liks this before the command output. This message lasts for 7 days after a new release.
 
 ```bash
