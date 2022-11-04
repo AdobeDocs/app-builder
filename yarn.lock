@@ -33,9 +33,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@adobe/gatsby-theme-aio@npm:4.6.1":
-  version: 4.6.1
-  resolution: "@adobe/gatsby-theme-aio@npm:4.6.1"
+"@adobe/gatsby-theme-aio@npm:4.6.6":
+  version: 4.6.6
+  resolution: "@adobe/gatsby-theme-aio@npm:4.6.6"
   dependencies:
     "@adobe/focus-ring-polyfill": ^0.1.5
     "@adobe/gatsby-source-github-file-contributors": ^0.3.1
@@ -86,16 +86,15 @@ __metadata:
     gatsby-plugin-mdx-embed: ^1.0.0
     gatsby-plugin-preact: ^6.23.0
     gatsby-plugin-react-helmet: ^5.23.0
-    gatsby-plugin-sharp: ^4.23.0
+    gatsby-plugin-sharp: 4.23.0
     gatsby-remark-autolink-headers: ^5.23.0
     gatsby-remark-copy-linked-files: ^5.23.0
     gatsby-remark-images-remote: ^2.1.1
     gatsby-source-filesystem: ^4.23.0
     gatsby-transformer-remark: ^5.23.0
-    gatsby-transformer-sharp: ^4.23.0
+    gatsby-transformer-sharp: 4.23.0
     https-browserify: ^1.0.0
     jsdom: ^20.0.0
-    lmdb-store: ^1.6.14
     mdx-embed: ^1.0.0
     mobx: ^6.6.2
     normalize-path: ^3.0.0
@@ -125,7 +124,7 @@ __metadata:
     gatsby: ^4.22.0
     react: ^17.0.2
     react-dom: ^17.0.2
-  checksum: 6360e6a0e50de9c7e8f71342a8a148af17d8ad17770aaea80325e0fc1611514f455c6e5468b69fa845c826174471f94e8737b4d69bb7caa31b8cf5624112ff46
+  checksum: 573aa83e406cb3c53c7b78fceb88102224a41bf417b5a1bdb9418b868dbb4f6dba218916f8e6a72dc20641686d151b1098dbb38acab25cf201a157049590c56c
   languageName: node
   linkType: hard
 
@@ -4758,7 +4757,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "adobe-developer-app-builder@workspace:."
   dependencies:
-    "@adobe/gatsby-theme-aio": 4.6.1
+    "@adobe/gatsby-theme-aio": 4.6.6
     gatsby: 4.22.0
     react: ^17.0.2
     react-dom: ^17.0.2
@@ -9612,7 +9611,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sharp@npm:^4.23.0":
+"gatsby-plugin-sharp@npm:4.23.0":
   version: 4.23.0
   resolution: "gatsby-plugin-sharp@npm:4.23.0"
   dependencies:
@@ -9852,7 +9851,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-transformer-sharp@npm:^4.23.0":
+"gatsby-transformer-sharp@npm:4.23.0":
   version: 4.23.0
   resolution: "gatsby-transformer-sharp@npm:4.23.0"
   dependencies:
@@ -12262,20 +12261,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lmdb-store@npm:^1.6.14":
-  version: 1.6.14
-  resolution: "lmdb-store@npm:1.6.14"
-  dependencies:
-    msgpackr: ^1.5.0
-    nan: ^2.14.2
-    node-gyp: latest
-    node-gyp-build: ^4.2.3
-    ordered-binary: ^1.0.0
-    weak-lru-cache: ^1.0.0
-  checksum: ba5fbed286efc981fcb0de523e4637d9ef62ebfa96da5ba537b26b74bc60b6eec75b9d8029f5450049c5371cb99be0a8781969491bdf386e5a509b1224ddd6b0
-  languageName: node
-  linkType: hard
-
 "lmdb@npm:2.5.2":
   version: 2.5.2
   resolution: "lmdb@npm:2.5.2"
@@ -13616,7 +13601,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"msgpackr@npm:^1.5.0, msgpackr@npm:^1.5.4":
+"msgpackr@npm:^1.5.4":
   version: 1.6.3
   resolution: "msgpackr@npm:1.6.3"
   dependencies:
@@ -13647,15 +13632,6 @@ __metadata:
   version: 0.0.8
   resolution: "mute-stream@npm:0.0.8"
   checksum: ff48d251fc3f827e5b1206cda0ffdaec885e56057ee86a3155e1951bc940fd5f33531774b1cc8414d7668c10a8907f863f6561875ee6e8768931a62121a531a1
-  languageName: node
-  linkType: hard
-
-"nan@npm:^2.14.2":
-  version: 2.16.0
-  resolution: "nan@npm:2.16.0"
-  dependencies:
-    node-gyp: latest
-  checksum: cb16937273ea55b01ea47df244094c12297ce6b29b36e845d349f1f7c268b8d7c5abd126a102c5678a1e1afd0d36bba35ea0cc959e364928ce60561c9306064a
   languageName: node
   linkType: hard
 
@@ -13829,7 +13805,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-gyp-build@npm:^4.2.3, node-gyp-build@npm:^4.3.0":
+"node-gyp-build@npm:^4.3.0":
   version: 4.5.0
   resolution: "node-gyp-build@npm:4.5.0"
   bin:
@@ -14327,7 +14303,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ordered-binary@npm:^1.0.0, ordered-binary@npm:^1.2.4":
+"ordered-binary@npm:^1.2.4":
   version: 1.3.0
   resolution: "ordered-binary@npm:1.3.0"
   checksum: 1ba6544139c90fa2da536fa751b9e0d1e836968ddba54d4ef10876f8e9f11abbad9c0d849cafd959a4014aad1bb095b0cd140c1c0ed032d15ed2c1df5ee5c396
@@ -19344,7 +19320,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"weak-lru-cache@npm:^1.0.0, weak-lru-cache@npm:^1.2.2":
+"weak-lru-cache@npm:^1.2.2":
   version: 1.2.2
   resolution: "weak-lru-cache@npm:1.2.2"
   checksum: 0fbe16839d193ed82ddb4fe331ca8cfaee2ecbd42596aa02366c708956cf41f7258f2d5411c3bc9aa099c26058dc47afbd2593d449718a18e4ef4d870c5ace18
