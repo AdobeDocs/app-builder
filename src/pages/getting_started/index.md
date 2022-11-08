@@ -54,7 +54,7 @@ These prerequisites should be fulfilled on the developer's machine:
 
 #### Supported Local Environment
 
-We aim to provide the similar quality of local development experience on both Windows 10 and macOS 10.14 and higher.
+We aim to provide similar quality of local development experience on both Windows 10 or 11 and macOS 10.14 and higher.
 Our [CLI](https://github.com/adobe/aio-cli) and its plugins are automatically tested against NodeJS versions 14 and 16 on both Windows and [Linux Xenial](http://releases.ubuntu.com/16.04/).
 
 #### Supported Terminals for the CLI
