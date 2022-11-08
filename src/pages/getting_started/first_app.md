@@ -357,7 +357,7 @@ You should be able to see these folders and files in your project:
     - You can manually update the file or use the `aio config` commands to add or to remove configurations. Learn more about the [Config Plugin](https://github.com/adobe/aio-cli-plugin-config).
 1. `.env`: this file contains environment variables that are useful for the app during development, e.g. Adobe I/O Runtime credentials and Adobe Product API tenant specifics (API key, secrets, etc.)
     - The environment variables defined here can be used in the application (e.g. in `ext.config.yaml` or `app.config.yaml`). If you've set up credentials for the selected workspaces, you should be able to see some of those values prepopulated upon initialization, like `AIO_runtime_auth` and `AIO_runtime_namespace`.
-    - This file is automatically included in `.gitignore`. **It is not intented be shared given the credentials and secrets listed.**
+    - This file is automatically included in `.gitignore`. **It is not intended be shared given the credentials and secrets listed.**
 
 ## 6.Developing the Application
 
