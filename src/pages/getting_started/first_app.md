@@ -478,12 +478,12 @@ If the local development is run without the `--local` option, the action you are
 #### Targeting local actions with `aio runtime` 
 To target local actions with `aio runtime`, you will have to populate the project's `.env` with the local Runtime credentials. 
 
-These credentials can be found in `dist/<extension|application>/.env.local`. 
+These credentials are always the following when using `aio`: 
 
 ```
-AIO_runtime_auth=
-AIO_runtime_namespace=
-AIO_runtime_apihost=
+AIO_runtime_auth=23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP
+AIO_runtime_namespace=guest
+AIO_runtime_apihost=http://localhost:3233
 ```
 
 Once the project's `.env` has been populated with the local Runtime credentials, commands executed with `aio runtime` in the root project directory will target the locally deployed instance of Runtime. 
