@@ -16,6 +16,10 @@ folders.
 
 If you want to specify a Webpack configuration for an entire project, place the `*webpack-config.js` file in the root directory of your project.
 
+### ES Module Syntax 
+
+App Builder currently does not support ES Module syntax. This file must be written in CommonJS otherwise failures will occur at build time. 
+
 ## Configuration Types
 
 App Builder supports exporting the following configuration types in `*webpack-config.js`.
