@@ -18,11 +18,11 @@ Welcome! Here you'll learn what systems you need to access, how to access them, 
 
 First ensure you have [access to App Builder](../overview/getting_access.md) either via trial or having purchased a license.
 
-You'll need to confirm access to the following services:
+Next, confirm access to the following services:
 
 [Adobe Developer Console](https://developer.adobe.com/console) _(required)_
     - Adobe Developer Console gives you access to APIs, SDKs and developer tools. You will set up your credentials using the Developer Console.
-    - **note:** To access you need you need developer or system admin role for your Adobe Experience Cloud IMS organization.
+    - **note:** You need a developer or system admin role for your Adobe Experience Cloud IMS organization.
 
 Adobe Experience Cloud IMS Organization _(required)_
     - App Builder access is provided via an Adobe Experience Cloud IMS Org. If you are using the trial you should use the IMS org you requested or that was assigned to you. If you have a license for App Builder, then the IMS org was selected by the person who purchsed it for your company.
