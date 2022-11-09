@@ -166,6 +166,10 @@ module.exports = {
           {
             "title": "Migration Guide - Standalone Application to DX Experience Cloud SPA v1",
             "path": "guides/migrations/standalone_to_dx_experience_cloud_spa.md"
+          },
+          {
+            "title": "UI Extensibility",
+            "path": "https://developer.adobe.com/uix/docs/"
           }
         ]
       },
