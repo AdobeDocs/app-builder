@@ -163,6 +163,28 @@ module.exports = {
             "title": "Extension Migration Guide",
             "path": "guides/extensions/extension_migration_guide.md"
           },
+          {
+            "title": "Migration Guide - Standalone Application to DX Experience Cloud SPA v1",
+            "path": "guides/migrations/standalone_to_dx_experience_cloud_spa.md"
+          },
+          {
+            "title": "UI Extensibility",
+            "path": "guides/extensions/ui_extensibility.md"
+          }
+        ]
+      },
+      {
+        "title": "Configuration",
+        "path": "guides/configuration",
+        "pages": [
+          {
+            "title": "App Builder Configuration Files",
+            "path": "guides/configuration/index.md"
+          },
+          {
+            "title": "Webpack Configuration",
+            "path": "guides/configuration/webpack-configuration.md"
+          }
         ]
       },
       {
@@ -268,10 +290,6 @@ module.exports = {
         ]
       },
       {
-        "title": "Configuration Files",
-        "path": "guides/appbuilder-configuration.md"
-      },
-      {
         "title": "Integration Guide for building Event-driven Applications with I/O Events",
         "path": "guides/events/webhooks.md"
       },
@@ -286,6 +304,10 @@ module.exports = {
       {
         "title": "Contribution guides",
         "path": "guides/contribution_guides"
+      },
+      {
+        "title": "Telemetry",
+        "path": "guides/telemetry"
       },
       {
         "title": "Code Labs",

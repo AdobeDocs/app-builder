@@ -1,9 +1,12 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+  - Headless Application
+  - Headful Application
+  - SDK Components
+  - SDK Library
+  - Migration Guides
+title: Guides
+description: An App Builder Application is a serverless application that extends Adobe Product APIs. These applications can be headless or headful. Each of these types is described in more detail in the sections that follow.
 ---
 
 # Architecture Overview
@@ -132,7 +135,7 @@ The [out-of-the-box CI/CD support](./deployment/ci_cd_for_firefly_apps.md) for A
 
 ### Webpack 
 
-App Builder uses Webpack for bundling I/O Runtime action code. See [here](/guides/webpack-configuration) for an overview on webpack configuration.
+App Builder uses Webpack for bundling I/O Runtime action code. See [here](/guides/configuration/webpack-configuration) for an overview on webpack configuration.
 
 ### Migration Guides 
 

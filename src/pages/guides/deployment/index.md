@@ -1,9 +1,10 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+  - Deployment
+  - Local Deployment
+  - Architecture
+title: Deployment
+description: The CLI provides out-of-the-box features for developers to manage the lifecycle of their  App Builder Applications. This documentation focuses on the application deployment step of this lifecycle.
 ---
 
 # Deployment Overview

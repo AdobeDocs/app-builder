@@ -1,8 +1,6 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
+  - Single Page Application
   - Developer Tooling
 title: App Builder Docs
 description: This documentation provides an overview of App Builder as well as guides, reference documentation, and tools to help you begin developing your own custom applications.  

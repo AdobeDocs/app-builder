@@ -17,7 +17,4 @@ If you have existing actions deployed on Adobe I/O Runtime and you want to migra
 * Deploy and test the new actions
 * Update your applications to point to the new actions
  
-## Developer Preview and Production SLA
- 
-If you are a customer who uses Adobe I/O Runtime in production (with production SLAs) and plan on using App Builder, you might wonder what the App Builder Developer Preview and I/O Runtime production SLA mean. Any I/O Runtime action you deploy as part of your App Builder projects is also covered by the overall production SLA you have for I/O Runtime.
 
