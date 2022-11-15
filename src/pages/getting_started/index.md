@@ -21,8 +21,8 @@ First ensure you have [access to App Builder](../overview/getting_access.md) eit
 Next, confirm access to the following services:
 
 [Adobe Developer Console](https://developer.adobe.com/console) _(required)_
-    - Adobe Developer Console gives you access to APIs, SDKs and developer tools. You will set up your credentials using the Developer Console.
-    - **note:** You need a developer or system admin role for your Adobe Experience Cloud IMS organization.
+- Adobe Developer Console gives you access to APIs, SDKs and developer tools. You will set up your credentials using the Developer Console.
+- **note:** You need a developer or system admin role for your Adobe Experience Cloud IMS organization.
 
 Adobe Experience Cloud IMS Organization _(required)_
     - App Builder access is provided via an Adobe Experience Cloud IMS Org. If you are using the trial you should use the IMS org you requested or that was assigned to you. If you have a license for App Builder, then the IMS org was selected by the person who purchsed it for your company.
@@ -37,9 +37,9 @@ Adobe Experience Cloud IMS Organization _(required)_
 
 ### Required Tools
 
-These prerequisites should be fulfilled on the developer's machine:
+Please ensure you have these tools:
 
-- [NodeJS](https://nodejs.org/en/download/) [>=12.22 ... 14.17-LTS](https://nodejs.org/en/blog/release/v14.17.0/), odd versions not recommended). It should also install npm together. We recommend using [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md) to manage NodeJS installation and versions.
+- [NodeJS](https://nodejs.org/en/download/) [>=12.22 ... 14.17-LTS](https://nodejs.org/en/blog/release/v14.17.0/), (odd versions are not recommended). It should also install npm together. We recommend using [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md) to manage NodeJS installation and versions.
 - [Adobe I/O CLI](https://github.com/adobe/aio-cli)
     - `npm install -g @adobe/aio-cli`
     - If you have Adobe I/O CLI installed, please ensure you have the latest version. (Current version: <NPMBadge/>)
