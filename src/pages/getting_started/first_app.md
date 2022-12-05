@@ -47,9 +47,9 @@ Follow the instructions to set up your project:
 1. Enter `Project Title` and `App Name` for your templated project.
     - `Project Title` is used to identify this project within [Adobe Developer Console](/console) and in [CLI](https://github.com/adobe/aio-cli). We recommend changing the default title to a meaningful project title.
     - `App Name` is a unique identifier for your application. **Note:** once project set up is complete this value cannot be changed.
-    - By default, the "Include Runtime with each workspace" checkbox is checked. Each workspace is automatically provisioned with a unique [Adobe I/O Runtime](/apis/experienceplatform/runtime) namespace allowing each developer to work within their own [Adobe I/O Runtime](/apis/experienceplatform/runtime) environment.
-    - If you deselect the checkbox and do not opt for automatic inclusion of [Adobe I/O Runtime](/apis/experienceplatform/runtime), you will need to enable it manually for each individual workspace. You cannot auto-add [Adobe I/O Runtime](/apis/experienceplatform/runtime) to all workspaces after the initial set up is complete.
-You can manually remove [Adobe I/O Runtime](/apis/experienceplatform/runtime) from individual workspaces later if you determine that it is not needed.
+    - By default, the "Include Runtime with each workspace" checkbox is checked. Each workspace is automatically provisioned with a unique [Adobe I/O Runtime](/runtime) namespace allowing each developer to work within their own [Adobe I/O Runtime](/runtime) environment.
+    - If you deselect the checkbox and do not opt for automatic inclusion of [Adobe I/O Runtime](/runtime), you will need to enable it manually for each individual workspace. You cannot auto-add [Adobe I/O Runtime](/runtime) to all workspaces after the initial set up is complete.
+You can manually remove [Adobe I/O Runtime](/runtime) from individual workspaces later if you determine that it is not needed.
     - Click `Save` when ready.
     ![Select Template](../images/console-4.png)
 
@@ -210,7 +210,7 @@ There are a few sample flows listed below. Some developers may not have access t
 
     Each option indicates a feature you can enable for your App Builder application. Select one or all the options depending on the application you intend to build. We recommend you select all for now to fully explore all the options.
 
-    - **Actions: Deploy Runtime actions:** adding the boilerplate for backend serverless actions on [Adobe I/O Runtime](/apis/experienceplatform/runtime)
+    - **Actions: Deploy Runtime actions:** adding the boilerplate for backend serverless actions on [Adobe I/O Runtime](/runtime)
     - **Events: Publish to Adobe I/O Events:** adding the boilerplate for a serverless action that publishes [Custom I/O Events](/apis/experienceplatform/events/docs.html#!adobedocs/adobeio-events/master/using/custom_events.md)
     - **Web Assets: Deploy hosted static assets:** adding the boilerplate for frontend [React-Spectrum](https://react-spectrum.adobe.com/) SPA and static assets
     - **CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy:** adding the boilerplate for Github Actions supporting CI/CD process of the application
@@ -376,7 +376,7 @@ This will deploy the actions to a local [OpenWhisk](https://openwhisk.apache.org
 aio app run
 ```
 
-This will deploy the actions to [Adobe I/O Runtime](/apis/experienceplatform/runtime), while running the UI part on the local machine.
+This will deploy the actions to [Adobe I/O Runtime](/runtime), while running the UI part on the local machine.
 
 #### (First time users) Accepting the Certificate
 
@@ -400,7 +400,7 @@ You may need to exit the current process and run `aio app run` again.
 
 #### Proceeding to the Application on localhost
 
-For users who have accepted the certificate in the past, you should see the following process running in Teminal instead. You can see your backend actions are being deployed to [Adobe I/O Runtime](/apis/experienceplatform/runtime) (or to the local OpenWhisk instance if the `--local` option has been used.
+For users who have accepted the certificate in the past, you should see the following process running in Teminal instead. You can see your backend actions are being deployed to [Adobe I/O Runtime](/runtime) (or to the local OpenWhisk instance if the `--local` option has been used.
 
 ```bash
 $ aio app run
@@ -431,9 +431,9 @@ While most changes in your code get updated in real-time when your application i
 
 As indicated in the message, when you are done, you can press `CTRL+C` to terminate the local development environment.
 
-To have the application run completely locally, which means the actions will run on a local deployed (standalone) version of OpenWhisk instead of on [Adobe I/O Runtime](/apis/experienceplatform/runtime), use `aio app run --local`. Some additional dependencies are required if you have not installed them yet, see  `Optional tools` section in  [Setting up Your Environment](./index.md) if you want to set them up manually.
+To have the application run completely locally, which means the actions will run on a local deployed (standalone) version of OpenWhisk instead of on [Adobe I/O Runtime](/runtime), use `aio app run --local`. Some additional dependencies are required if you have not installed them yet, see  `Optional tools` section in  [Setting up Your Environment](./index.md) if you want to set them up manually.
 
-Usually, we recommend running your applications with deployed [Adobe I/O Runtime](/apis/experienceplatform/runtime) actions, as your application should run on [Adobe I/O Runtime](/apis/experienceplatform/runtime) in production. However, if you need to build complex actions or sequencing, the `--local` flag is handy to locally debug the application. Please see the Debugging the Application section below for more info.
+Usually, we recommend running your applications with deployed [Adobe I/O Runtime](/runtime) actions, as your application should run on [Adobe I/O Runtime](/runtime) in production. However, if you need to build complex actions or sequencing, the `--local` flag is handy to locally debug the application. Please see the Debugging the Application section below for more info.
 
 ### 6.2 Trying the Sample Application
 
@@ -452,7 +452,7 @@ You can also list all the organizations you belong to and their org ID from your
 1. Go back to your browser, and put the joined value in the `headers` input field. You should now be able to invoke actions that does not require additional params (like `generic`).
 ![Hello World](../images/helloworld-2.png)
 
-**Note:** If you open your application in the [Experience Cloud Shell](http://experience.adobe.com/) using the second link provided by the CLI, your Experience Cloud Shell user token will automatically be available to the SPA UI and passed by this one to the underlying [Adobe I/O Runtime](/apis/experienceplatform/runtime) actions of your application.
+**Note:** If you open your application in the [Experience Cloud Shell](http://experience.adobe.com/) using the second link provided by the CLI, your Experience Cloud Shell user token will automatically be available to the SPA UI and passed by this one to the underlying [Adobe I/O Runtime](/runtime) actions of your application.
 This is a very useful feature of our SPA UI template, which integrates for you with the [client-side API](../guides/exc_app/index.md) of the [Experience Cloud Shell](http://experience.adobe.com/).
 
 The other sample actions require futher paramaters to be invoked. For instance, if you try to invoke `analytics` with only the authorization header, you would see an error similar to `"error": "missing parameter(s) 'apiKey,companyId'"`. This is because these sample actions use Adobe API that requires those params before it can be invoked.
@@ -474,7 +474,7 @@ Our [CLI](https://github.com/adobe/aio-cli) is integrated with an open source pr
 
 Please visit [Debugging App Builder Apps Codelab](../resources/debugging/index.md) to set up your local environment and go through step-by-step instructions.
 
-If the local development is run without the `--local` option, the action you are debugging is running directly on [Adobe I/O Runtime](/apis/experienceplatform/runtime). When the `--local` option is used, the actions are debugged in the standalone OpenWhisk instance running locally. In both cases, Docker is required on your local machine so that the remote or locally mounted actions get proxied in the local Docker container. Learn more about what you can do in [debug mode](https://www.npmjs.com/package/@openwhisk/wskdebug).
+If the local development is run without the `--local` option, the action you are debugging is running directly on [Adobe I/O Runtime](/runtime). When the `--local` option is used, the actions are debugged in the standalone OpenWhisk instance running locally. In both cases, Docker is required on your local machine so that the remote or locally mounted actions get proxied in the local Docker container. Learn more about what you can do in [debug mode](https://www.npmjs.com/package/@openwhisk/wskdebug).
 
 #### Targeting local actions with `aio runtime` 
 To target local actions with `aio runtime`, you will have to populate the project's `.env` with the local Runtime credentials. 
@@ -516,7 +516,7 @@ aio app deploy
 
 This command may take a minute or two as behind the scenes the [CLI](https://github.com/adobe/aio-cli) is building and deploying:
 
-- The actions defined in `app.config.yaml` into [Adobe I/O Runtime](/apis/experienceplatform/runtime)
+- The actions defined in `app.config.yaml` into [Adobe I/O Runtime](/runtime)
 - The frontend built files and assets into our out-of-the-box CDN
 
 The [CLI](https://github.com/adobe/aio-cli) output details this process:
