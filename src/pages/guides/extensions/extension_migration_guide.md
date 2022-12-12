@@ -88,7 +88,7 @@ Please note that if you have a headless application and you have the `require-ad
 ##### Instructions:
 
 1. Create `app.config.yaml` file in the root directory of your project.
-1. Move the content of the `manifest.yml` to `app.config.yaml`, then delete `manifest.yml` file
+1. Move the content of `manifest.yml` to `app.config.yaml` under the `application.runtimeManifest` property, and delete `manifest.yml` file.
 1. Move any application hooks you have set up under `scripts` in `package.json` into `applications.hooks` in `app.config.yaml` configuration file.
 1. Move any configuration found under the `.app` section of the `.aio` configuration file into the `applications` section of the new `app.config.yaml` configuration file.
 
