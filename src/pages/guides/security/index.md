@@ -163,7 +163,7 @@ This combination of `Enterprise Organization`, `Project`, `Workspace` and `Runti
 
 #### Runtime Actions
 
-The back-end Runtime actions used by an App Builder Application respect the [tenant isolation model](/apis/experienceplatform/runtime/docs#!adobedocs/adobeio-runtime/master/quickstart.md#security-considerations) implemented by I/O Runtime.
+The back-end Runtime actions used by an App Builder Application respect the [tenant isolation model](runtime/docs/guides/#security-considerations) implemented by I/O Runtime.
 
 #### Cloud Storage and CDN for SPA Static Files
 
