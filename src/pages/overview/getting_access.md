@@ -31,7 +31,7 @@ Once your organization has been onboarded, anyone who has a Developer Role or Sy
 
 If you are unable to access the Adobe Admin Console you will need to ask a sys admin for the org ID and Name in order to apply for a trial.
 
-**Why don't I see my IMS org listed when I try to sign up for a trial.
+**Why don't I see my IMS org listed when I try to sign up.**
 
 You may not have either a developer or sys admin role for the IMS org you expected to see. If the IMS org you want to use does not show up in the IMS drop down on the trial sign up form, you can contact the sys admin for the org you want to use with App Builder. 
 
@@ -47,7 +47,7 @@ While we hope to be able to add Creative Cloud and Document Cloud use cases, we 
 
 No. The trial is free to use for the duration of the trial period.
 
-**How do I get support during the trial period?**
+**How do I get support during the trial?**
 
 We have an online forum, [Experience League forum](https://adobe.ly/appbuilder-forum), for support questions. In addition, when you receive your welcome email you will be asked to setup a meeting with our team so we can help you get up to speed and answer any questions you may have.
 
@@ -59,7 +59,7 @@ Usually it takes between 1 to 3 days. It may take longer depending on the number
 
 Just visit the [Adobe Developer Console](/console). If you have the button "create project from template" next to the button "create new project" then you are provisioned for App Builder. 
 
-**Will you offer the trial to customers who are not yet Adobe Experience Cloud customers?
+**Will you offer the trial to customers who are not yet Adobe Experience Cloud customers?**
 
 Yes. We are working to provide a trial environment to customers new to Adobe in the future. 
 
