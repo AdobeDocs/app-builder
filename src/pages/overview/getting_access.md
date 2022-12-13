@@ -6,12 +6,13 @@ keywords:
   - Developer Tooling
 ---
 
-# How to Request an App Builder Trial
+## How to get access to App Builder
 
-Requesting access is a simple two step process. 
+App Builder is available to Adobe Experience Cloud customers. Adobe Experience Cloud customers can purchase a license for App Builder by contacting their Adobe Sales team.
 
-1. Complete our [request form](https://adobe.ly/appbuilder-trial) 
-2. Login with your Adobe ID to our forum & accept agreement _(step 1 will automatically forward you to the forum)_
+Many customers perfer to try before they purchase. This will give you an opportunity to test your approach to extending Adobe Experience Cloud solutions. To get started just fill out our form:
+
+- App Builder Trial [request form](https://adobe.ly/appbuilder-trial) 
 
 
 ## App Builder Trial FAQ
@@ -22,25 +23,25 @@ No. App Builder is built specifically for users of Adobe Experience Cloud so you
 
 **Do I need any special information I need to apply?**
 
-Yes. You will need the Adobe Identity Management Service (IMS) Organization Name and ID. This is the org you use to login to Adobe Experience Cloud. You can retrieve your Organization ID and name from [Adobe Admin Console](https://adminconsole.adobe.com), the ID is part of the URL, the numbers and letters prior to @AdobeOrg) and the name is listed in the top-right corner
+Other than access to an Adobe Experience Cloud IMS org, no. You will be asked to select the Adobe Identity Management Service (IMS) Organization you want to use with this trial. This is the org you use to login to Adobe Experience Cloud. 
 
-If you are unable to access the Adobe Admin Console you will need to ask a sys admin for the org ID and Name in order to apply for a trial.
-
-**Do I need a special role within my company to request a trial?**
-
-In order to login to Admin Console you need to have access to manage your IMS Org. This means you will need to be a sys admin or some sort of administrator for your org (product admin, etc.) 
+**Do I need a special role within my company to use App Builder?**
 
 Once your organization has been onboarded, anyone who has a Developer Role or System Administrator permissions will be able to create projects for App Builder in the [Developer Console](/console)
 
 If you are unable to access the Adobe Admin Console you will need to ask a sys admin for the org ID and Name in order to apply for a trial.
 
-**Can I use this with Creative Cloud or Document Cloud?**
+**Why don't I see my IMS org listed when I try to sign up for a trial.
 
-Out of the box, App Builder is currently focused on use cases for Adobe Experience Cloud solutions. As such we have SDKs that make developing for Experience Cloud much easier. 
+You may not have either a developer or sys admin role for the IMS org you expected to see. If the IMS org you want to use does not show up in the IMS drop down on the trial sign up form, you can contact the sys admin for the org you want to use with App Builder. 
 
 **How do I find a sys admin for my org?**
 
 This is likely the person who gave you access to login to the Adobe Experience Cloud. This could be someone in your company IT department or in your marketing team.
+
+**Can I use this with Creative Cloud or Document Cloud?**
+
+While we hope to be able to add Creative Cloud and Document Cloud use cases, we do not currently support them. Right now App Builder is focused on use cases for Adobe Experience Cloud. We offer SDKs that make developing for Experience Cloud much easier. 
 
 **Is there a cost for the trial?**
 
@@ -48,13 +49,17 @@ No. The trial is free to use for the duration of the trial period.
 
 **How do I get support during the trial period?**
 
-For trial customers please use our [Experience League forum](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly) to get support.
+We have an online forum, [Experience League forum](https://adobe.ly/appbuilder-forum), for support questions. In addition, when you receive your welcome email you will be asked to setup a meeting with our team so we can help you get up to speed and answer any questions you may have.
 
 **How long does it take to get access**
 
-Usually it takes between 1 and 3 days. It may take longer depending on the number of requests we have.
+Usually it takes between 1 to 3 days. It may take longer depending on the number of requests we have.
 
 **How can I check if my org is already onboarded to the trial?**
 
-Just visit the Adobe [Developer Console](/console). If you have the button "create project from template" next to the button "create new project" then you are provisioned for App Builder. 
+Just visit the [Adobe Developer Console](/console). If you have the button "create project from template" next to the button "create new project" then you are provisioned for App Builder. 
+
+**Will you offer the trial to customers who are not yet Adobe Experience Cloud customers?
+
+Yes. We are working to provide a trial environment to customers new to Adobe in the future. 
 
