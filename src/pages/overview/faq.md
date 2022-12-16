@@ -14,11 +14,6 @@ App Builder is a complete design, application, and runtime framework for buildin
 ## When is App Builder going to be publicly available?
 App Builder has been available since Dec. 17th, 2021. 
  
-## What is a “Developer Preview” release?
-By “previewing” the technology, customers and partners can try the functionality and give feedback to our product team to further shape our product.  We are constantly working on extending the capabilities and feature set of App Builder
-
-Some of the stack behind App Builder is production ready and customers have been using it in production for some time: Adobe I/O Runtime, I/O Events, Adobe solution APIs, and Adobe authorization and authentication.
- 
 ## What is the support for App Builder?
 For developer support type of requests, we encourage developers to use our [forum](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly). In addition, feature requests or bugs can be submitted on our public repositories – [CLI repo](https://github.com/adobe/aio-cli) and [SDK repo]( https://github.com/adobe/aio-sdk). Enterprise Customer support is not available during the “Developer Preview” phase.
  
