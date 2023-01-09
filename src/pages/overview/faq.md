@@ -12,12 +12,7 @@ keywords:
 App Builder is a complete design, application, and runtime framework for building 3rd-party cloud native applications. These custom web apps run on Adobe infrastructure and extend the functionality of Adobe Experience Platform and Adobe Experience Cloud. With App Builder, customers can build custom integrations between Adobe products and 3rd-party products, enabling greater efficiency and improved workflows.
  
 ## When is App Builder going to be publicly available?
-App Builder is available starting on May 18, 2020. We invite enterprise customers and partners to join our Developer Preview release. We will announce the General Availability release at a later time.
- 
-## What is a “Developer Preview” release?
-By “previewing” the technology, customers and partners can try the functionality and give feedback to our product team to further shape our product.  We are constantly working on extending the capabilities and feature set of App Builder
-
-Some of the stack behind App Builder is production ready and customers have been using it in production for some time: Adobe I/O Runtime, I/O Events, Adobe solution APIs, and Adobe authorization and authentication.
+App Builder has been available since Dec. 17th, 2021. 
  
 ## What is the support for App Builder?
 For developer support type of requests, we encourage developers to use our [forum](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly). In addition, feature requests or bugs can be submitted on our public repositories – [CLI repo](https://github.com/adobe/aio-cli) and [SDK repo]( https://github.com/adobe/aio-sdk). Enterprise Customer support is not available during the “Developer Preview” phase.
