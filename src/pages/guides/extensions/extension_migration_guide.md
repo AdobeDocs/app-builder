@@ -180,7 +180,7 @@ extensions:
 
 #### 2.3 Application Extending two or more Extension Points
 
-Follow this section your application is a Custom Processing Profile for AEM Asset Microservices AND contains a Single Page Application accessible through Experience Cloud UI. 
+Follow this section if your application is a Custom Processing Profile for AEM Asset Microservices, AND contains a Single Page Application accessible through Experience Cloud UI. 
 
 Please note that there are multiple ways to structure your configuration. You can refactor your code into folders for each extension, and create extension specific configuration, then import them into your main `app.config.yaml` using `$include: path/to/myfile.yaml`, you can also manage them all in one file in the root directory `app.config.yaml`. You could try to initialize a new project with multiple extension points through `aio app init` to see how we structure the code and config file my default. Below, we are showing the easiest way to refactor by merging all config into `app.config.yaml`, but you are more than welcome to explore and to try different methods. 
 
@@ -242,7 +242,7 @@ extensions:
 ### 3. Testing
 Once you've completed your refactoring, simply try `aio app run` or `aio app deploy`, and everything should work as usual. 
 
-Should you run into any issues, please contact us through the [Experience League Forum](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly) and we'll support you as soon as possible.
+Should you run into any issues, please contact us through the [Experience League Forum](https://adobe.ly/appbuilder-forum) and we'll support you as soon as possible.
 
 ## Adding or removing Endpoints from Existing Projects
 
