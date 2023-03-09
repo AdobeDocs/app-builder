@@ -8,7 +8,7 @@ keywords:
   - Log Forwarding
   - Monitoring
   - Splunk 
-  - Slpunk Cloud
+  - Splunk Cloud
 ---
 
 # Forwarding logs to Splunk Cloud
