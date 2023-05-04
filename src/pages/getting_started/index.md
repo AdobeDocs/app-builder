@@ -45,7 +45,7 @@ Please ensure you have these tools:
     - If you have Adobe I/O CLI installed, please ensure you have the latest version. (Current version: <NPMBadge/>)
         - Check CLI version using `aio -v` and compare it with `npm show @adobe/aio-cli version`. If your CLI is outdated, update by running `npm install -g @adobe/aio-cli`.
         - Even if your Adobe I/O CLI is up to date, run `aio update` to ensure all core plugins are updated as well.
-        - When we release a new version of Adobe I/O CLI, you'll see a message liks this before the command output. This message lasts for 7 days after a new release.
+        - When we release a new version of Adobe I/O CLI, you'll see a message like this before the command output. This message lasts for 7 days after a new release.
 
 ```bash
 ›   Warning: @adobe/aio-cli update available from 3.3.0 to 3.4.1.
