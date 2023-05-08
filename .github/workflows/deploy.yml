@@ -143,7 +143,7 @@ jobs:
           GATSBY_FEDS_PRIVACY_ID: ${{ secrets.AIO_FEDS_PRIVACY_ID }}
 
       - name: Deploy
-        uses: icaraps/static-website-deploy@master
+        uses: icaraps/static-website-deploy@no-downtime
         with:
           enabled-static-website: 'true'
           source: 'public'
@@ -250,7 +250,7 @@ jobs:
           GATSBY_ALGOLIA_SEARCH_INDEX: ${{ secrets.AIO_ALGOLIA_SEARCH_INDEX }}
           GATSBY_FEDS_PRIVACY_ID: ${{ secrets.AIO_FEDS_PRIVACY_ID }}
       - name: Deploy
-        uses: icaraps/static-website-deploy@master
+        uses: icaraps/static-website-deploy@no-downtime
         with:
           enabled-static-website: 'true'
           source: 'public'
