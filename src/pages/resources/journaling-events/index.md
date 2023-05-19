@@ -20,7 +20,7 @@ when there is a surge of events, a runtime webhook would return 429 response bey
 marked unreachable and causing no further events to be delivered. In this use case, the journaling API of custom events would be useful here. 
 
 ## Solution
-- Using [Journaling API](/apis/experienceplatform/events/docs.html#!adobedocs/adobeio-events/master/api/journaling_api.md) to retrieve the events instead of relying on the webhook approach.
+- Using [Journaling API](/events/docs/guides/api/journaling_api/) to retrieve the events instead of relying on the webhook approach.
 - Use a runtime action that uses the [Alarm package](../cron-jobs/index.md) to read the events every X minutes.
 - The alarm action stores the events in the App Builder storage [aio-lib-state](https://github.com/adobe/aio-lib-state).
 - Index of events has been recorded in storage that if the action fails, the next invocation will retrieve from the same index, thus no events are lost.
