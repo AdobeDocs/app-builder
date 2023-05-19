@@ -211,7 +211,7 @@ There are a few sample flows listed below. Some developers may not have access t
     Each option indicates a feature you can enable for your App Builder application. Select one or all the options depending on the application you intend to build. We recommend you select all for now to fully explore all the options.
 
     - **Actions: Deploy Runtime actions:** adding the boilerplate for backend serverless actions on [Adobe I/O Runtime](/runtime)
-    - **Events: Publish to Adobe I/O Events:** adding the boilerplate for a serverless action that publishes [Custom I/O Events](/apis/experienceplatform/events/docs.html#!adobedocs/adobeio-events/master/using/custom_events.md)
+    - **Events: Publish to Adobe I/O Events:** adding the boilerplate for a serverless action that publishes [Custom I/O Events](/events/docs/guides/using/custom_events/)
     - **Web Assets: Deploy hosted static assets:** adding the boilerplate for frontend [React-Spectrum](https://react-spectrum.adobe.com/) SPA and static assets
     - **CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy:** adding the boilerplate for Github Actions supporting CI/CD process of the application
 

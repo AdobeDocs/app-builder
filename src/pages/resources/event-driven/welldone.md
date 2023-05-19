@@ -16,7 +16,7 @@ Explore more features with custom event SDK
 [Custom event SDK](https://github.com/adobe/aio-lib-events/) and [Custom Event CLI Plugin](https://github.com/adobe/aio-cli-plugin-events)
 
 If you would like to use API, here is the API doc: 
-[Event API](/apis/experienceplatform/events/ioeventsapi.html#!adobedocs/adobeio-events/master/events-api-reference.yaml)
+[Event API](/events/docs/guides/api/)
 
 In addition, more to read about Adobe I/O Event: 
 [Adobe I/O Event](/experienceplatform/events.html)
