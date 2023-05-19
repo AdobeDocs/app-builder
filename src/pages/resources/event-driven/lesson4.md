@@ -20,7 +20,7 @@ There are three ways one can consume event:
 For enterprise developers, Adobe offers journaling to consume events. The Adobe I/O Events Journaling API enables enterprise integrations to consume events according to their own cadence and process them in bulk. Unlike webhooks, no additional registration or other configuration is required; every enterprise integration that is registered for events is automatically enabled for journaling. Journaling data is retained for 7 days. 
 
 After you fire event, you should be able to verify your event through journaling `UNIQUE API ENDPOINT` you get from console by follow below instruction
-[Journaling api](/apis/experienceplatform/events/docs.html#!adobedocs/adobeio-events/master/intro/journaling_api.md)
+[Journaling api](/events/docs/guides/api/journaling_api/)
 you could use `Curl` command or `POSTMAN` to call this journaling `UNIQUE API ENDPOINT` to see your fired event.
 Or you can use [Custom event SDK](https://github.com/adobe/aio-lib-events/) to call Journaling API to retrieve your event.
 
@@ -144,7 +144,7 @@ Your webhook needs to
 -   be reachable over HTTPS
 -   correctly respond to a "challenge" request
 For more details, follow the link below: 
-[how to use webhook](/apis/experienceplatform/events/docs.html#!adobedocs/adobeio-events/master/intro/webhook_docs_intro.md)
+[how to use webhook](/events/docs/guides/)
 
 ## Let's test it, and fire events
 With that,once you fire the event (in our codelab case, click the invoke button) you should see them appearing in above three options:
