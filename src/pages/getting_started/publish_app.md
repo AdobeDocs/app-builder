@@ -79,7 +79,7 @@ Click on `App Builder Apps` to discover the applications published for your orga
 
 # Publishing your headless App Builder App
 
-The `App Builder Apps` [Adobe Experience Cloud](https://experience.adobe.com) only lists App Builder Apps that are SPAs. If you publish a headless app, please refer to our code lab [Your First Headless App with App Builder](https://adobeio-codelabs-barcode-adobedocs.project-helix.page/?src=/README.html).
+The `App Builder Apps` [Adobe Experience Cloud](https://experience.adobe.com) only lists App Builder Apps that are SPAs. If you publish a headless app, please refer to our code lab [Your First Headless App with App Builder](https://developer.adobe.com/app-builder/docs/resources/barcode-reader/).
 
 We might provide supplementary discoverability mechanisms for published headless apps in future App Builder releases.
 
