@@ -58,6 +58,8 @@ This guide would cover configuring your app builder application to forward appli
 
    _Note: The `token` value is from step 1.5.1_
 
+<InlineAlert slots="text" />
+Only ports `443` and `8088` are supported by I/O Runtime for port forwarding.
 
 ### 3. Set up Log Forwarding in App Builder
 
