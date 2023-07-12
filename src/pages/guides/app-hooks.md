@@ -87,6 +87,23 @@ hooks:
 `aio app test` **test** hook:
 - support a custom test runner for your app or extension
 
+## Using JavaScript files
+
+You can specify a JavaScript file that contains your hook code. This file must export a function. 
+
+**app.config.yaml**
+```yaml
+hooks:
+  post-app-deploy: ./hooks/post-app-deploy.js
+```
+
+**./hooks/post-app-deploy.js**
+```js
+module.exports = () => {
+    console.log("Post app deploy hook")
+}
+```
+
 ## Legacy App (no extensions)
 
 In the root of your app, you will have to add a `hooks` key in the `app.config.yaml` file, under the `application` key. Example:
