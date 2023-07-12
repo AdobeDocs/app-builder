@@ -85,7 +85,7 @@ This deployment is triggered when running `aio app run` at the root of the Custo
 
 ![Remote Runtime Actions and local UI](../../images/remote-actions-local-ui.png)
 
-The UI is still served locally from [ParcelJS](https://parceljs.org/cli.html), which allows hot updates of the front-end code. It communicates with [Runtime](/runtime) actions deployed to the developer's Runtime namespace.
+The UI is still served locally from [ParcelJS](https://parceljs.org/features/cli/), which allows hot updates of the front-end code. It communicates with [Runtime](/runtime) actions deployed to the developer's Runtime namespace.
 
 ## Full Deployment
 
