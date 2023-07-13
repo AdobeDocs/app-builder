@@ -14,7 +14,7 @@ Join the worldwide community of App Builder Developers who are building apps and
  
 Here are a few ways to get involved:
 
-* Join the [App Builder Developer Forums](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly) to meet other developers, ask questions, and offer help.
+* Join the [App Builder Developer Forums](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/app-builder) to meet other developers, ask questions, and offer help.
 * Contribute issues and pull requests to our open source repos, including:
     * [CLI repo](https://github.com/adobe/aio-cli)
     * [SDK repo]( https://github.com/adobe/aio-sdk)

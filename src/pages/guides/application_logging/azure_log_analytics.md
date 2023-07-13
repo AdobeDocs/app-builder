@@ -57,4 +57,4 @@ This guide would cover configuring your app builder application to forward appli
     aio app config get log-forwarding errors
     ```
 
-    _Note: If you are unable to set up log forwarding correctly, please visit our [App Builder forums](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly) for support._
+    _Note: If you are unable to set up log forwarding correctly, please visit our [App Builder forums](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/app-builder) for support._

@@ -15,7 +15,7 @@ App Builder is a complete design, application, and runtime framework for buildin
 App Builder has been available since Dec. 17th, 2021. 
  
 ## What is the support for App Builder?
-For developer support type of requests, we encourage developers to use our [forum](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly). In addition, feature requests or bugs can be submitted on our public repositories – [CLI repo](https://github.com/adobe/aio-cli) and [SDK repo]( https://github.com/adobe/aio-sdk). Enterprise Customer support is not available during the “Developer Preview” phase.
+For developer support type of requests, we encourage developers to use our [forum](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/app-builder). In addition, feature requests or bugs can be submitted on our public repositories – [CLI repo](https://github.com/adobe/aio-cli) and [SDK repo]( https://github.com/adobe/aio-sdk). Enterprise Customer support is not available during the “Developer Preview” phase.
  
 ## What is the pricing / licensing?
 App Builder is available at no cost to enterprise customers and partners for the duration of the Developer Preview. Pricing and licensing details will be announced later this year.
