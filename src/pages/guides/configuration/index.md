@@ -118,7 +118,7 @@ runtimeManifest
            function: src/myapp/actions/target/index.js
            web: 'yes'
            limits:
-             timeout: 60
+             timeout: 60000
              memory: 512
            include:
               - ["myfilestoinclude/*.txt", "text/"]        
