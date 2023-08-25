@@ -62,6 +62,7 @@ The supported log management solutions include:
 2. [Splunk Cloud](splunk_cloud.md)
 3. [Splunk Enterprise](splunk_enterprise.md)
 4. [Azure Log Analytics](azure_log_analytics.md)
+5. [New Relic](new_relic.md)
 
 _Visit the above links to view the steps to set up log forwarding with that solution._
 
@@ -99,6 +100,7 @@ Please visit the individual guides to set up log forwarding for your log managem
 1. [Splunk Cloud](splunk_cloud.md)
 2. [Splunk Enterprise](splunk_enterprise.md)
 3. [Azure Log Analytics](azure_log_analytics.md)
+4. [New Relic](new_relic.md)
 
 #### Viewing the current Log Forwarding configuration
 

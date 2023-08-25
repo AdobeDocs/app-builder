@@ -114,6 +114,10 @@ module.exports = {
             "path": "guides/application_logging/azure_log_analytics.md"
           },
           {
+            "title": "Forwarding logs to New Relic",
+            "path": "guides/application_logging/new_relic.md"
+          },
+          {
             "title": "Forwarding logs to Splunk Cloud",
             "path": "guides/application_logging/splunk_cloud.md"
           },
