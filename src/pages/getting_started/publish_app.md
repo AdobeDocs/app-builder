@@ -46,21 +46,21 @@ Following a review by your organization administrators, your application will ei
 
 ### Published app
 
-After your application has been submitted for approval, the admin could see your app pending for review in Adobe Exchange. next section will describe admin approval flow from My exchange. From console side, once an application has been approved, either by internal reviewers or the Adobe Review team, its *Status* will be updated to "Published" and the application will be available for use either by employees within your enterprise organization (for App Builder applications) or for the general public through Adobe Exchange.
+After your application has been submitted for approval, the admin could see your app pending for review in Adobe Exchange. The next section will describe admin approval flow from My exchange. From console side, once an application has been approved, either by internal reviewers, its *Status* will be updated to "Published" and the application will be available for use by employees within your enterprise organization.
 
 ![](../images/approval-published.png)
 
 ## 2: Administrator review of your app (MyExchange Part)
 
-Once an application has been submitted for approval, either internal reviewer or Adobe Review team will see an app in My Exchange -> Experience Cloud Apps, you will see your submitted apps under the pending review session。
+Once an application has been submitted for approval, your organization administrators will see an app in My Exchange -> Experience Cloud Apps and you will see your submitted apps under the pending review status.
 
 ![](../images/approval-myexchange.png)
 
-The reviewer could review this app, either approve it or reject it 
+The reviewer could review this app, and either approve it or reject it. If the application is rejected, your admin will be able to include a note telling you what went wrong, allowing you to fix the error and submit for approval again.
 
 ![](../images/approval-myexchange-review.png)
 
-After approve the app, you will see the app in the approved section, the reviewer could revoke this app to unpublished the app. The owner of the app could re-submit the application for review.
+After approve the app, you will see the app in the approved section. The reviewer can later revoke this app to unpublish the app. The owner of the app could re-submit the application for review.
 
 ![](../images/approval-myexchange-revoke.png)
 
