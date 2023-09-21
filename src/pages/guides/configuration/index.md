@@ -25,6 +25,7 @@ application:
           count-apples:
             function: actions/count-apples/index.js
             web: 'yes'
+            runtime: nodejs:18
             annotations:
               require-adobe-auth: true
   hooks:
@@ -47,6 +48,7 @@ extensions:
             myworker:
               function: actions/worker/index.js
               web: 'yes'
+              runtime: nodejs:18
 ```
 
 ### Standalone application and extensions
@@ -112,11 +114,13 @@ runtimeManifest
            # path relative to the configuration file
            function: src/myapp/actions/generic/index.js
            web: 'yes'
+           runtime: nodejs:18
            annotations:
             require-adobe-auth: true
          target:
            function: src/myapp/actions/target/index.js
            web: 'yes'
+           runtime: nodejs:18
            limits:
              timeout: 60000
              memory: 512
@@ -174,6 +178,7 @@ extensions
             myworker:
               function: actions/worker/index.js
               web: 'yes'
+              runtime: nodejs:18
 ```
 
 ### The `$include` directive
