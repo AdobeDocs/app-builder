@@ -133,7 +133,22 @@ The example will copy all .txt files from the `myfilestoinclude/` directory and 
 
 ##### Annotations 
 
-Runtime actions can be decorated with annotations to enhance or modify action behavior. In addition to the annotations provided out of the box by Apache Openwhisk (See [here](https://github.com/apache/openwhisk/blob/master/docs/annotations.md#annotations-on-openwhisk-assets)), there are a few annotations specific to I/O Runtime: 
+Runtime actions can be decorated with annotations to enhance or modify action behavior. 
+
+```yaml
+runtimeManifest:
+   packages:
+     myapp:
+       license: Apache-2.0
+       actions:
+         generic:
+           annotations:
+             require-adobe-auth: true
+             disable-download: true  
+```
+
+
+In addition to the annotations provided out of the box by Apache Openwhisk (See [here](https://github.com/apache/openwhisk/blob/master/docs/annotations.md#annotations-on-openwhisk-assets)), there are a few annotations specific to I/O Runtime: 
 
 - **disable-download** (Default: false) - Determines whether action code can be downloaded.
 - **require-adobe-auth** (Default: false) - Determines whether the action will require Adobe authentication to invoke. See [here](https://developer.adobe.com/app-builder/docs/guides/security/#authentication-and-authorization-handling) for more.
