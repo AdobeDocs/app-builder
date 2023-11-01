@@ -131,6 +131,13 @@ runtimeManifest
 > Note that the above example also demonstrates the 'include' field of an action.  In some cases you may want to have a file deployed with your action code, and available to your code when it runs.
 The example will copy all .txt files from the `myfilestoinclude/` directory and place it in a new dir `text/` that is available via `fs.readFile('text/somefile.txt', 'utf8', callback);` when your action is invoked.
 
+##### Annotations 
+
+Runtime actions can be decorated with annotations to enhance or modify action behavior. In addition to the annotations provided out of the box by Apache Openwhisk (See [here](https://github.com/apache/openwhisk/blob/master/docs/annotations.md#annotations-on-openwhisk-assets)), there are a few annotations specific to I/O Runtime: 
+
+- **disable-download** (Default: false) - Determines whether action code can be downloaded.
+- **require-adobe-auth** (Default: false) - Determines whether the action will require Adobe authentication to invoke. See [here](https://developer.adobe.com/app-builder/docs/guides/security/#authentication-and-authorization-handling) for more.
+
 #### Hooks to customize the tooling
 
 Hooks can be used to customize `aio app` commands. Hooks are documented [here](https://github.com/AdobeDocs/project-firefly/blob/main/src/pages/guides/app-hooks.md).
