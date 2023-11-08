@@ -148,9 +148,9 @@ runtimeManifest:
 ```
 
 
-In addition to the annotations provided out of the box by Apache Openwhisk (See [here](https://github.com/apache/openwhisk/blob/master/docs/annotations.md#annotations-on-openwhisk-assets)), there are a few annotations specific to I/O Runtime: 
+In addition to the base annotations provided by Runtime (See [here](https://github.com/adobe-apiplatform/incubator-openwhisk/blob/master/docs/annotations.md)), there are a few special annotations: 
 
-- **disable-download** (Default: false) - Determines whether action code can be downloaded.
+- **disable-download** (Default: false) - Determines whether action code can be downloaded. Once this annotationi is set to true, it cannot be set back to false. 
 - **require-adobe-auth** (Default: false) - Determines whether the action will require Adobe authentication to invoke. See [here](https://developer.adobe.com/app-builder/docs/guides/security/#authentication-and-authorization-handling) for more.
 
 #### Hooks to customize the tooling
