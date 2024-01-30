@@ -37,8 +37,27 @@ In order to update the inputs for a particular action we use the `aio runtime ac
 
 ```
 
+<InlineAlert slots="text" />
+
+Very important! You must pass ALL parameters in a single `update` call.  Any parameters not specified will disappear.
+
+## Using a parameters file ( JSON )
+
+You can also put your input values in a json file instead of typing them all into the command line.  This applies to both `aio runtime action update` and `aio runtime package update`
+
+```bash
+# actionInputs.json
+{
+  "actionCredential": "value from actionInputs.json"
+}
+
+➜ aio runtime action update <action-name> --param-file=<value>
+# concrete example
+➜ aio runtime action update dx-excshell-1/generic --param-file=actionInputs.json
+
+```
 
 
 <InlineAlert slots="text" />
 
-Very important! You must pass ALL parameters in a single `update` call.  Any parameters not specified will disappear.
+Again! This is very important! You must pass ALL parameters in a single `update` call.  Any parameters NOT specified will disappear.
