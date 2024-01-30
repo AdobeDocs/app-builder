@@ -77,7 +77,7 @@ Whether the application is headless or an SPA, this extra-security layer will ch
 
 ![Validator Architecture](../../images/security-validator-architecture.png)
 
-The authentication and authorization validation is enabled by default for every Runtime action bootstrapped from the [CLI](https://github.com/adobe/aio-cli) with `aio app init` or `aio app add action`. This results in a specific `require-adobe-auth` action annotation set to true in the application `manifest.yml` file:
+The authentication and authorization validation is enabled by default for every Runtime action bootstrapped from the [CLI](https://github.com/adobe/aio-cli) with `aio app init` or `aio app add action`. This results in a specific `require-adobe-auth` action annotation set to true in the application `manifest.yml` or `app.config.yaml` file:
 
 ```
 packages:
