@@ -39,7 +39,7 @@ Adobe Experience Cloud IMS Organization _(required)_
 
 Please ensure you have these tools:
 
-- [NodeJS](https://nodejs.org/en/download/) [>=12.22 ... 14.17-LTS](https://nodejs.org/en/blog/release/v14.17.0/), (odd versions are not recommended). It should also install npm together. We recommend using [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md) to manage NodeJS installation and versions.
+- [NodeJS](https://nodejs.org/en/download/) Version 18-20 (odd versions are not recommended). It should also install npm together. We recommend using [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md) to manage NodeJS installation and versions.
 - [Adobe I/O CLI](https://github.com/adobe/aio-cli)
     - `npm install -g @adobe/aio-cli`
     - If you have Adobe I/O CLI installed, please ensure you have the latest version. (Current version: <NPMBadge/>)
