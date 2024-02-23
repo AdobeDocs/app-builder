@@ -153,6 +153,10 @@ module.exports = {
             "title": "CI/CD for App Builder Applications",
             "path": "guides/deployment/ci_cd_for_firefly_apps.md"
           },
+          {
+            "title": "Credential Rotation",
+            "path": "guides/credential-rotation.md"
+          },
         ]
       },
       {
