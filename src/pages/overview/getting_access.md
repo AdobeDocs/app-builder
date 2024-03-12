@@ -10,10 +10,16 @@ keywords:
 
 App Builder is available to Adobe Experience Cloud customers. Adobe Experience Cloud customers can purchase a license for App Builder by contacting their Adobe Sales team.
 
+**Trial access**
 Many customers perfer to try before they purchase. This will give you an opportunity to test your approach to extending Adobe Experience Cloud solutions. To get started just fill out our form:
 
 - App Builder Trial [request form](https://adobe.ly/appbuilder-trial) 
 
+**Access for Adobe Commerce customers**
+App Builder capacity is included at no additional cost for customers running Adobe Commerce on the cloud. Customers can contact their account team to get access to App Builder. Customers may also purchase App Builder capacity for use with Adobe Commerce self-hosted.
+
+**Access for Adobe Commerce solution partners**
+Adobe Commerce solution partners may request an App Builder sandbox through the [solution partner portal](https://solutionpartners.adobe.com/solution-partners/home/learn/tools/sandboxes.html). 
 
 ## App Builder Trial FAQ
 
