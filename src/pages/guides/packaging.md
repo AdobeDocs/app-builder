@@ -9,7 +9,7 @@ keywords:
 
 # Packaging for Developer Distribution
 
-To get your App Buikder app listed for [Adobe Developer Distribution](https://developer.adobe.com/developer-distribution/), you will need to package it.
+To get your App Builder app listed for [Adobe Developer Distribution](https://developer.adobe.com/developer-distribution/), you will need to package it.
 
 The `aio app pack` command will verify and bundle your app. In the root of your app folder, run this command:
 
