@@ -101,7 +101,7 @@ hostname: <alternative hostname for the UI>
 #### Runtime Manifest
 
 The `runtimeManifest` field holds the backend configuration deployed into Adobe I/O Runtime.
-The full spec can be found [here](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification/html)
+The full spec can be found [here](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification/html). Acceptable values for the `limits` fields below can be found on the [Runtime System Settings](https://developer.adobe.com/runtime/docs/guides/using/system_settings/) page.
 Here is an example to get started:
 
 ```yaml
@@ -124,12 +124,15 @@ runtimeManifest
            limits:
              timeout: 60000
              memory: 512
+             concurrency: 1
+             logs: 10
            include:
               - ["myfilestoinclude/*.txt", "text/"]        
 ```
 
 > Note that the above example also demonstrates the 'include' field of an action.  In some cases you may want to have a file deployed with your action code, and available to your code when it runs.
 The example will copy all .txt files from the `myfilestoinclude/` directory and place it in a new dir `text/` that is available via `fs.readFile('text/somefile.txt', 'utf8', callback);` when your action is invoked.
+>
 
 ##### Annotations 
 
