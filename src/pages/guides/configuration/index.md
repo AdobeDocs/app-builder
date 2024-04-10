@@ -101,7 +101,7 @@ hostname: <alternative hostname for the UI>
 #### Runtime Manifest
 
 The `runtimeManifest` field holds the backend configuration deployed into Adobe I/O Runtime.
-The full spec can be found [here](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification/html)
+The full spec can be found [here](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification/html). Acceptable values for the `limits` fields below can be found on the [Runtime System Settings](https://developer.adobe.com/runtime/docs/guides/using/system_settings/) page.
 Here is an example to get started:
 
 ```yaml
@@ -124,12 +124,26 @@ runtimeManifest
            limits:
              timeout: 60000
              memory: 512
+             concurrency: 1
+             logs: 10
            include:
               - ["myfilestoinclude/*.txt", "text/"]        
 ```
 
 > Note that the above example also demonstrates the 'include' field of an action.  In some cases you may want to have a file deployed with your action code, and available to your code when it runs.
 The example will copy all .txt files from the `myfilestoinclude/` directory and place it in a new dir `text/` that is available via `fs.readFile('text/somefile.txt', 'utf8', callback);` when your action is invoked.
+
+
+> Note the above sets limit values.  Limits are defined as:
+> 
+> - `concurrency`: the maximum number of action invocations to send to the same container in parallel (default 200, min: 1,max: 500)
+> - `logs`: the maximum log size LIMIT in MB for the action (default 10, min: 0, max: 10)
+> - `timeout`: the timeout LIMIT in milliseconds after which the action is terminated (default 60000, min: 100, max: 3600000)
+>   - _for web actions served from cdn there is a hard limit of 30 seconds for timeout_
+> - `memory`: the maximum memory LIMIT in MB for the action (default 256, min: 128, max: 4096)
+>   - _setting distinct values (ex. 671) can impact cold starts as Runtime keeps a number of pre-warmed containers, but only for common memory sizes (128, 256, 512, 1024, etc.)_
+> 
+> More info on `limits` can be found on the [Runtime System Settings](https://developer.adobe.com/runtime/docs/guides/using/system_settings/) page.
 
 ##### Annotations 
 
