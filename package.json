@@ -34,7 +34,7 @@
       "remark-validate-links"
     ]
   },
-  "packageManager": "yarn@3.2.2",
+  "packageManager": "yarn@4.1.1",
   "devDependencies": {
     "remark-cli": "^11.0.0",
     "remark-validate-links": "^12.1.0"

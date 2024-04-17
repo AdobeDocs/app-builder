@@ -33,7 +33,7 @@ You could also try [openwhisk-wskdebug](https://github.com/apache/openwhisk-wskd
 
 ## Action logs
 
-When you have [web actions](/apis/experienceplatform/runtime/docs#!adobedocs/adobeio-runtime/master/guides/creating_actions.md#invoking-web-actions) in your app, they are blocking requests and their activation results are not recorded if they are invoked successfully. To enforce the persistence of activation results, you need to pass the `x-ow-extra-logging: on` flag in the request headers. In the development mode of an SPA, you can add this flag directly to the "invoking action" function so that you will have the activation results and logs recorded for all requests. Then they could be retrieved as demonstrated in the [General debugging](#general-debugging) section above.
+When you have [web actions](/runtime/docs/guides/using/creating_actions/#invoking-web-actions) in your app, they are blocking requests and their activation results are not recorded if they are invoked successfully. To enforce the persistence of activation results, you need to pass the `x-ow-extra-logging: on` flag in the request headers. In the development mode of an SPA, you can add this flag directly to the "invoking action" function so that you will have the activation results and logs recorded for all requests. Then they could be retrieved as demonstrated in the [General debugging](#general-debugging) section above.
 
 ```javascript
 headers['x-ow-extra-logging'] = 'on'
