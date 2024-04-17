@@ -167,6 +167,36 @@ In addition to the base annotations provided by Runtime (See [here](https://gith
 - **disable-download** (Default: false) - Determines whether action code can be downloaded. Once this annotation is set to true, it cannot be set back to false. 
 - **require-adobe-auth** (Default: false) - Determines whether the action will require Adobe authentication to invoke. See [here](https://developer.adobe.com/app-builder/docs/guides/security/#authentication-and-authorization-handling) for more.
 
+##### API Gateway Configuration
+
+A Runtime API Gateway configuration can be added to expose web actions over specific paths and HTTP verbs. 
+
+```yaml
+runtimeManifest:
+   packages:
+     petsapp:
+       license: Apache-2.0
+       actions:
+         get-pets: # Note the name of the action
+           function: actions/pets/index.js
+           web: 'yes'
+           runtime: nodejs:18
+       apis: 
+        get-pets: # API Name
+          v1: # Base Path
+            pets: # Relative Path
+              get-pets: # Name of the action to connect this path to
+                method: get
+                response: http
+```
+
+> Note: The configuration above will result in the following: `GET https://adobeioruntime.net/apis/{namespace}/v1/pets`
+
+- The following options are available for `method`: get, post, put, delete, patch
+- The following options are available for `response`: http (default), json, text, or html
+
+Learn more about API Gateway Configuration with the [Action APIs QuickStart](https://github.com/adobe/appbuilder-quickstarts/tree/master/action-apis)
+
 #### Hooks to customize the tooling
 
 Hooks can be used to customize `aio app` commands. Hooks are documented [here](https://github.com/AdobeDocs/project-firefly/blob/main/src/pages/guides/app-hooks.md).
