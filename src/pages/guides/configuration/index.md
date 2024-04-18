@@ -178,7 +178,11 @@ runtimeManifest:
        license: Apache-2.0
        actions:
          get-pets: # Note the name of the action
-           function: actions/pets/index.js
+           function: actions/get-pets/index.js
+           web: 'yes'
+           runtime: nodejs:18
+         get-pet: # Note the name of the action
+           function: actions/get-pet/index.js
            web: 'yes'
            runtime: nodejs:18
        apis: 
@@ -188,9 +192,20 @@ runtimeManifest:
               get-pets: # Name of the action to connect this path to
                 method: get
                 response: http
+        get-pet: # API Name
+          v1: # Base Path
+            pets/{petName}: # Relative Path, with a path parameter
+              get-pet: # Name of the action to connect this path to
+                method: get
+                response: http
 ```
 
-> Note: The configuration above will result in the following: `GET https://adobeioruntime.net/apis/{namespace}/v1/pets`
+> Note: The configuration above will result in the following: 
+> - `GET https://adobeioruntime.net/apis/[namespace]/v1/pets`
+> - `GET https://adobeioruntime.net/apis/[namespace]/v1/pets/{petName}`
+
+> Note: The second API above defines a path parameter in the relative path by using curly braces, i.e `pets/{petName}`
+> - APIs using path parameters must use the `http` response type
 
 - The following options are available for `method`: get, post, put, delete, patch
 - The following options are available for `response`: http (default), json, text, or html
