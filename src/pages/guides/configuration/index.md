@@ -285,7 +285,7 @@ The `.env` file is used to store:
 
 ```
 # User secrets
-VARIABLE=value
+ENABLE_DEV_DEBUG=true
 
 # Auto-generated secrets
 AIO_runtime_namespace=
@@ -298,7 +298,7 @@ AIO_runtime_apihost=
 Environment variables set in .env can be accessed directly via `process.env`:
 
 ```jsx
-<View variable={process.env.VARIABLE}></View>
+<View showDevDebugOverlay={process.env.ENABLE_DEV_DEBUG}></View>
 ```
 
 ### Using environment variables in Runtime actions 
@@ -316,13 +316,15 @@ runtimeManifest:
            web: 'yes'
            runtime: nodejs:18
            inputs:
-               VARIABLE: $VARIABLE
+               ENABLE_DEV_DEBUG: $ENABLE_DEV_DEBUG
 ```
 
 #### Action code
 ```javascript
 async function main (params) {
-  console.log("My environment variable", params.VARIABLE)
+  if (params.ENABLE_DEV_DEBUG) {
+    console.debug("Enabling dev tools, extra usage data will be captured...")
+  }
 }
 
 exports.main = main
