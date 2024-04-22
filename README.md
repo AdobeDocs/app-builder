@@ -11,12 +11,12 @@ Note, this is not the full site, and this url is not shared.  This is a very qui
 
 The slack channel #adobeio-onsite-onboarding is our main point of contact for help. Feel free to join the channel and ask any questions.
 
-## Prerequisite: Install Yarn 3
+## Prerequisite: Install Yarn 4
 
-This site uses Yarn 3 to manage package dependencies. If you do not have Yarn 3 installed, follow these instructions:
+This site uses Yarn 4 to manage package dependencies. If you do not have Yarn 4 installed, follow these instructions:
 
-1. Install [Node.js LTS](https://nodejs.org/en/download/). At the time of writing, the latest LTS version is `v16.15.1`.
-2. Install Yarn 3 by running the following command:
+1. Install [Node.js LTS](https://nodejs.org/en/download/). At the time of writing, the latest LTS version is `v20.12.2`.
+2. Install Yarn 4 by running the following command:
 
    ```bash
    corepack enable
@@ -30,13 +30,13 @@ Corepack is a binary shipped with all Node.js releases starting from 16.10.
    yarn set version stable
    ```
 
-4. Make sure you are now using version 3.2.2 of Yarn:.
+4. Make sure you are now using version 4.1.1 of Yarn:.
 
    ```bash
    yarn --version
    ```
 
-That's it. For more information on Yarn 3 usage, see [Yarn usage](https://yarnpkg.com/getting-started/usage).
+That's it. For more information on Yarn 4 usage, see [Yarn usage](https://yarnpkg.com/getting-started/usage).
 
 For the documentation developer, please read these sections on how to:
 
@@ -50,7 +50,7 @@ For the documentation developer, please read these sections on how to:
 
 ## How to build the site locally
 
-After installing `yarn` v3 as noted above, you can develop locally by running the following commands:
+After installing `yarn` v4 as noted above, you can develop locally by running the following commands:
 
 1. Install the dependencies:
 
