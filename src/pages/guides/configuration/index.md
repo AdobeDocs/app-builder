@@ -283,6 +283,53 @@ The `.env` file is used to store:
 2. environment variables available to `hooks`.
 3. auto generated secrets used by the `aio` CLI, prefixed by `AIO_`, those should not be edited.
 
+```
+# User secrets
+ENABLE_DEV_DEBUG=true
+
+# Auto-generated secrets
+AIO_runtime_namespace=
+AIO_runtime_auth=
+AIO_runtime_apihost=
+```
+
+### Using environment variables in frontend
+
+Environment variables set in .env can be accessed directly via `process.env`:
+
+```jsx
+<View showDevDebugOverlay={process.env.ENABLE_DEV_DEBUG}></View>
+```
+
+### Using environment variables in Runtime actions 
+
+Environment variables set in .env need to be passed as inputs to an action and then are available via the action parameters.
+
+#### app.config.yaml
+```yaml
+runtimeManifest:
+   packages:
+     myapp:
+       actions:
+         generic:
+           function: src/myapp/actions/generic/index.js
+           web: 'yes'
+           runtime: nodejs:18
+           inputs:
+               ENABLE_DEV_DEBUG: $ENABLE_DEV_DEBUG
+```
+
+#### Action code
+```javascript
+async function main (params) {
+  if (params.ENABLE_DEV_DEBUG) {
+    console.debug("Enabling dev tools, extra usage data will be captured...")
+  }
+}
+
+exports.main = main
+```
+
 ## `.aio`
 
 The `.aio` file is auto generated and contains Developer Console specific configuration.
