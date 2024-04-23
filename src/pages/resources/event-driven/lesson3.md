@@ -32,7 +32,7 @@ application:
           generic:
             function: actions/generic/index.js
             web: 'yes'
-            runtime: 'nodejs:14'
+            runtime: 'nodejs:18'
             inputs:
               LOG_LEVEL: debug
             annotations:
@@ -41,7 +41,7 @@ application:
       publish-events:
         function: actions/publish-events/index.js
         web: 'yes'
-        runtime: 'nodejs:14'
+        runtime: 'nodejs:18'
         inputs:
           LOG_LEVEL: debug
           apiKey: <Your-SERVICE_API_KEY>
@@ -54,9 +54,9 @@ application:
 Now let's start to take a deeper look the template code: 
 
 * Source code is at `actions/publish-events/index.js`
-* It is a [web action](/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/creating_actions.md#invoking-actions)
-* The action will be run in the `nodejs:12` [runtime container on I/O Runtime](/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/reference/runtimes.md)
-* It has some [default params](/apis/experienceplatform/runtime/docs.html#!adobedocs/adobeio-runtime/master/guides/creating_actions.md#working-with-parameters) such as `LOG_LEVEL`, you can pass in your `params` like `apiKey`, `provideId` and `eventCode`from `manifest.yml`
+* It is a [web action](/runtime/docs/guides/using/creating_actions/#invoking-web-actions)
+* The action will be run in the `nodejs:18` [runtime container on I/O Runtime](/runtime/docs/guides/reference/runtimes)
+* It has some [default params](/runtime/docs/guides/using/creating_actions/#working-with-parameters) such as `LOG_LEVEL`, you can pass in your `params` like `apiKey`, `provideId` and `eventCode`from `manifest.yml`
 
 ```javascript
 const { Core, Events } = require('@adobe/aio-sdk')
