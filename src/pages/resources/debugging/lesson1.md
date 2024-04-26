@@ -4,11 +4,11 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-contributors: 
-  - https://github.com/duynguyen 
+contributors:
+  - https://github.com/duynguyen
 ---
 
-# Lesson 1: Getting familiar with Debugger
+# Lesson 1: Getting familiar with Debugger TODO:JM
 
 First of all, you need a new app created with AIO CLI.
 

@@ -13,11 +13,11 @@ Here are troubleshooting guides for some of the most common issues as you develo
 ## Before you proceed
 
 - Check your Node version and tool versions to ensure they are supported by App Builder and up-to-date. You can find the latest supported version [here](index.md).
-- Check if your application is on Dropbox or OneDrive as file watchers sometimes cause unexpected errors. 
+- Check if your application is on Dropbox or OneDrive as file watchers sometimes cause unexpected errors.
 
-## General debugging
+## General debugging TODO:JM
 
-When your action code doesn't work as expected, you may want to investigate into what exactly went wrong. App Builder provides the [Logging SDK](https://github.com/adobe/aio-lib-core-logging), please check out [App Builder's Application Logging](../guides/application_logging.md) for more details. 
+When your action code doesn't work as expected, you may want to investigate into what exactly went wrong. App Builder provides the [Logging SDK](https://github.com/adobe/aio-lib-core-logging), please check out [App Builder's Application Logging](../guides/application_logging.md) for more details.
 
 To see the latest activations of your project, run this command:
 ```bash
@@ -46,14 +46,14 @@ When Adobe authentication and authorization checks are enabled for an action wit
 1. `request is invalid, failed authorization. Please use a valid user token for this SPA.`
 2. `request is invalid, failed authorization. Please use a valid JWT or user access token for this headless application.`
 
-An SPA is an application with web UI components (located in the `web-src/` folder). Headless app are back-end microservices without web UI. 
-For authentication and authorization checks, the back-end actions of an SPA are validated against a valid user token which is passed directly from Adobe Experience Cloud (ExC) Shell. 
+An SPA is an application with web UI components (located in the `web-src/` folder). Headless app are back-end microservices without web UI.
+For authentication and authorization checks, the back-end actions of an SPA are validated against a valid user token which is passed directly from Adobe Experience Cloud (ExC) Shell.
 
-On the other hand, the actions of a headless app can be validated against a valid user token from ExC Shell or a valid access token generated with the [JWT (Service Account) Authentication](/authentication/auth-methods#!AdobeDocs/adobeio-auth/master/JWT/JWT.md). Please go through the [App Builder Security Overview](../guides/security/index.md) for more details about SPA vs. headless app authentication. 
+On the other hand, the actions of a headless app can be validated against a valid user token from ExC Shell or a valid access token generated with the [JWT (Service Account) Authentication](/authentication/auth-methods#!AdobeDocs/adobeio-auth/master/JWT/JWT.md). Please go through the [App Builder Security Overview](../guides/security/index.md) for more details about SPA vs. headless app authentication.
 
 If you are developing a headless app but accidentally have the `web-src/` folder added during the app initialization process, you could remove it by executing the command `aio app delete web-assets` at the root of your application source code folder. This will also assure that your actions are validated against the appropriate JWT auth.
 
-## Debugging errors with State and Files SDK
+## Debugging errors with State and Files SDK TODO:JM
 
 If your code uses App Builder [State](https://github.com/adobe/aio-lib-state) or [Files](https://github.com/adobe/aio-lib-files) SDKs, you cannot use [wskdebug](https://github.com/apache/openwhisk-wskdebug) to debug it. The reason is that `wskdebug` forwards the debugged action from the I/O Runtime system to a local container on your machine and executes it there. This local container is not authorized to access the out-of-the-box cloud storage behind State and Files SDKs, as this would be the case with an action deployed to I/O Runtime.
 
@@ -64,4 +64,4 @@ If your code uses App Builder [State](https://github.com/adobe/aio-lib-state) or
 There are no pre-compiled NodeJS binaries for versions prior to 15.x for Apple's new M1 chip (arm64 architecture).
 One solution is to change the architecture of your shell from arm64 to x86.
 
-We recommend using the [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm) over [Homebrew](https://brew.sh/) and follow their [troubleshooting guides for macOS](https://github.com/nvm-sh/nvm#macos-troubleshooting) (section **Macs with M1 chip**). 
+We recommend using the [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm) over [Homebrew](https://brew.sh/) and follow their [troubleshooting guides for macOS](https://github.com/nvm-sh/nvm#macos-troubleshooting) (section **Macs with M1 chip**).

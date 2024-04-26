@@ -3,7 +3,7 @@ keywords:
   - Adobe I/O
   - Extensibility
   - API Documentation
-  - Developer Tooling 
+  - Developer Tooling
 ---
 
 # Lesson 1: Bootstrap a Headless App Builder App
@@ -17,7 +17,7 @@ We select the org, project and workspace for our app, and then be presented with
 
 ![cli1](assets/cli1.png)
 
-The second question, the CLI asks us which experience cloud or experience platform apps you want to extend or build. In this case, we're going to choose `Generic`. 
+The second question, the CLI asks us which experience cloud or experience platform apps you want to extend or build. In this case, we're going to choose `Generic`.
 
 ![cli2](assets/cli2.png)
 
@@ -25,11 +25,11 @@ The third question, we'll specify the action name `barcode`.
 
 ![cli3](assets/cli3.png)
 
-What's happening here, from the command line a developer project is created that includes everything from the serverless actions, configuration files, tests etc. 
+What's happening here, from the command line a developer project is created that includes everything from the serverless actions, configuration files, tests etc.
 
 ![cli3](assets/cli4.png)
 
-We didn't include the UI setup nor the CI/CD pipeline nor I/O Events. These topics will be covered in other codelabs. 
+We didn't include the UI setup nor the CI/CD pipeline nor I/O Events. These topics will be covered in other codelabs.
 
 For our barcode app, we'll start by modifying the following files:
 
@@ -58,6 +58,8 @@ application:
 
 **package.json** holds your app name, version and all dependencies that will be bundled when deploying the barcode action:
 
+TODO:JM
+
 ```json
 {
   "name": "my-barcode-app",
@@ -76,7 +78,7 @@ application:
   }
 }
 ```
- 
+
 **.env** should not be committed as this is where you'll store your Adobe I/O Runtime secrets (namespace and auth):
 
 ```
@@ -88,7 +90,7 @@ application:
 # AIO_RUNTIME_NAMESPACE=
 ```
 
-**actions/barcode/index.js** is the source code of your barcode action:       
+**actions/barcode/index.js** is the source code of your barcode action:
 
 ```javascript
 /*

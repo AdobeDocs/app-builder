@@ -6,11 +6,11 @@ keywords:
   - Developer Tooling
 title: Debugging App Builder Apps
 description: The basic steps of debugging an App Builder App.
-contributors: 
-  - https://github.com/duynguyen 
+contributors:
+  - https://github.com/duynguyen
 ---
 
-# Debugging App Builder Apps
+# Debugging App Builder Apps TODO:JM
 
 This codelab will guide you through debugging an App Builder app using its available tooling.
 

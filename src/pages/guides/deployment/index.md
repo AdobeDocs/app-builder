@@ -20,7 +20,7 @@ In the following chapters of this documentation, it will be assumed that:
 
   - **AIO_RUNTIME_AUTH**, which holds the credentials for the Runtime namespace to use
   - **AIO_RUNTIME_NAMESPACE**, which holds the name of the Runtime namespace to use
-  
+
 If you do not own a [Runtime](/runtime) namespace, please [request trial access](https://developer.adobe.com/app-builder/trial/).
 
 The [Setup Requirements](../../getting_started/index.md) documentation should also be checked before trying out the deployment scenarios described below.
@@ -31,11 +31,11 @@ The [CLI](https://github.com/adobe/aio-cli) offers three types of deployment to 
 
 Local deployment capabilities are offered to developers who want to test and debug their application before this one gets deployed to the out-of-the-box Content Delivery Network.
 
-### Local Runtime actions and UI
+### Local Runtime actions and UI TODO:JM
 
 #### Use-Case
 
-This local deployment feature is useful for developers who want to easily get an initial preview of their Custom Application before deploying it to [Runtime](/runtime) and to the out-of-the-box Content Delivery Network. They will also benefit from local [Runtime](/runtime) actions and UI debugging capabilities. 
+This local deployment feature is useful for developers who want to easily get an initial preview of their Custom Application before deploying it to [Runtime](/runtime) and to the out-of-the-box Content Delivery Network. They will also benefit from local [Runtime](/runtime) actions and UI debugging capabilities.
 
 It also helps developers who want to work on their Custom Application implementation without an appropriate Internet connection. Of course, in that case you are not able to interact with [Adobe APIs](/apis) or with remote 3rd party systems.
 
@@ -75,7 +75,7 @@ This deployment scenario requires [Runtime](/runtime) credentials in a .env file
 
 #### Use-Case
 
-This feature is useful for developers who want to test and debug locally their Custom Application in a live environment fully integrated to Adobe's ecosystem, with minimal deployment time and efforts. 
+This feature is useful for developers who want to test and debug locally their Custom Application in a live environment fully integrated to Adobe's ecosystem, with minimal deployment time and efforts.
 
 #### CLI Command
 
@@ -95,7 +95,7 @@ This deployment scenario requires [Runtime](/runtime) credentials in a .env file
 
 #### Use-Case
 
-This feature is useful for developers who want to test and preview their Custom Application fully integrated to Adobe's ecosystem, in conditions that are similar to a production deployment. 
+This feature is useful for developers who want to test and preview their Custom Application fully integrated to Adobe's ecosystem, in conditions that are similar to a production deployment.
 
 #### CLI Command
 
