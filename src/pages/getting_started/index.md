@@ -59,21 +59,16 @@ Our [CLI](https://github.com/adobe/aio-cli) and its plugins are automatically te
 
 #### Supported Terminals for the CLI
 
-Our [CLI](https://github.com/adobe/aio-cli) uses the popular [inquirer](https://www.npmjs.com/package/inquirer) package for all its interactive functionalities, such as the application generators.
+The [CLI](https://github.com/adobe/aio-cli) uses the popular [inquirer](https://www.npmjs.com/package/inquirer) package for all its interactive functionalities, such as the application generators.
 
 See [inquirer's Support section](https://www.npmjs.com/package/inquirer#support-os-terminals) and [its known issues](https://www.npmjs.com/package/inquirer#know-issues) for up-to-date details.
 
-### Optional Tools TODO:JM
+### Optional Tools
 
-The following is required if you intend to use local development features provided by the [CLI](https://github.com/adobe/aio-cli):
+The following is required if you intend to use local development (`aio app dev`) features provided by the [CLI](https://github.com/adobe/aio-cli):
 
 - [Visual Studio Code](https://code.visualstudio.com/download) (VS Code) as the supported IDE for editor, debuggger, etc. You can use any other IDE as a code editor, but advanced usage (e.g. debugger) is not yet supported.
-- [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/overview/index.html) (at least Java 11)
 - [Chrome debugger extension in VSCode](https://github.com/Microsoft/vscode-chrome-debug)
-- [Docker Desktop](https://www.docker.com/get-started)
-
-**Note:** Developers on Windows machines should make sure that they are using Linux containers for the images above.
-The steps to switch to Linux containers are described in the [Docker for Windows documentation](https://docs.docker.com/docker-for-windows/).
 
 ## Next Step
 

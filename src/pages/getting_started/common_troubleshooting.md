@@ -15,7 +15,7 @@ Here are troubleshooting guides for some of the most common issues as you develo
 - Check your Node version and tool versions to ensure they are supported by App Builder and up-to-date. You can find the latest supported version [here](index.md).
 - Check if your application is on Dropbox or OneDrive as file watchers sometimes cause unexpected errors.
 
-## General debugging TODO:JM
+## General debugging
 
 When your action code doesn't work as expected, you may want to investigate into what exactly went wrong. App Builder provides the [Logging SDK](https://github.com/adobe/aio-lib-core-logging), please check out [App Builder's Application Logging](../guides/application_logging.md) for more details.
 
@@ -29,7 +29,8 @@ It lists the most recent activations and summary (ID, start / end time, duration
 * `application error`: this error is usually due to some issues at runtime, such as thrown exceptions, getting value of an `undefined` variable. With appropriate try-catch blocks and logging, you can see what goes wrong from the logs `aio runtime activation logs activationID`
 * `internal error`: this could be an error caused by an external factor unrelated to the action itself, e.g. not enough resources to run the action. I/O Runtime is a scalable platform, so you would never see it with default action settings. If you do, please let us know by [email](mailto:iodev@adobe.com) so that we can help to troubleshoot what causes it.
 
-You could also try [openwhisk-wskdebug](https://github.com/apache/openwhisk-wskdebug) which offers extensive capabilities to develop and debug the I/O Runtime actions of your App Builder applications.
+You could also try running your actions locally with the `aio app dev` command.  This is very similar to `aio app run` except that it will run your action code on localhost in a node process.  Not all api calls will work in this context because of cors restrictions, but this is still useful in catching syntax errors, logic errors and enables step debugging of your actions without timeouts.
+
 
 ## Action logs
 
@@ -53,9 +54,9 @@ On the other hand, the actions of a headless app can be validated against a vali
 
 If you are developing a headless app but accidentally have the `web-src/` folder added during the app initialization process, you could remove it by executing the command `aio app delete web-assets` at the root of your application source code folder. This will also assure that your actions are validated against the appropriate JWT auth.
 
-## Debugging errors with State and Files SDK TODO:JM
+## Debugging errors with State and Files SDK
 
-If your code uses App Builder [State](https://github.com/adobe/aio-lib-state) or [Files](https://github.com/adobe/aio-lib-files) SDKs, you cannot use [wskdebug](https://github.com/apache/openwhisk-wskdebug) to debug it. The reason is that `wskdebug` forwards the debugged action from the I/O Runtime system to a local container on your machine and executes it there. This local container is not authorized to access the out-of-the-box cloud storage behind State and Files SDKs, as this would be the case with an action deployed to I/O Runtime.
+If your code uses App Builder [State](https://github.com/adobe/aio-lib-state) or [Files](https://github.com/adobe/aio-lib-files) SDKs, you cannot use `aio app dev` to debug it. The reason is that State and Files services have additional security which limits calls from outside of Adobe Runtime actions. Your action code is run on localhost which is not authorized to access the out-of-the-box cloud storage behind State and Files SDKs.
 
 *Note: This is not a problem if you configure the State or Files SDKs to connect to your own cloud storage (e.g. Cosmos DB).*
 
