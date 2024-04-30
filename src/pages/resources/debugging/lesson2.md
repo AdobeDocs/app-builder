@@ -8,7 +8,7 @@ contributors:
   - https://github.com/duynguyen
 ---
 
-# Lesson 2: Debugging Application Code TODO:JM
+# Lesson 2: Debugging Application Code
 
 To overcome the error that you got in the previous lesson, now open your app inside Adobe Experience Cloud (ExC) Shell on the same Chrome Debug window: https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080. You might be asked to log in using your Adobe ID. When opened, the UI is almost similar to that when you access it on localhost, except the ExC Shell on top.
 

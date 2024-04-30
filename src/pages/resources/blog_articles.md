@@ -101,7 +101,7 @@ App Builder is a complete framework that enables enterprise developers to build 
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
-### Debugging Applications TODO:JM
+### Debugging Applications
 
 [Read on Medium](https://medium.com/adobetech/debugging-applications-project-firefly-ecbe3e2a4495)
 

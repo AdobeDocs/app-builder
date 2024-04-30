@@ -58,8 +58,6 @@ application:
 
 **package.json** holds your app name, version and all dependencies that will be bundled when deploying the barcode action:
 
-TODO:JM
-
 ```json
 {
   "name": "my-barcode-app",

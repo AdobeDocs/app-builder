@@ -70,7 +70,7 @@ Setting up CI/CD for an App Builder App using GitHub Actions.
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
 
-### Debugging App Builder Apps TODO:JM
+### Debugging App Builder Apps
 
 [Start (25mins)](debugging/index.md)
 
