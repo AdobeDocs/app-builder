@@ -8,7 +8,7 @@ contributors:
   - https://github.com/duynguyen
 ---
 
-# Lesson 1: Getting familiar with Debugger TODO:JM
+# Lesson 1: Getting familiar with Debugger (wskdebug)
 
 First of all, you need a new app created with AIO CLI.
 
