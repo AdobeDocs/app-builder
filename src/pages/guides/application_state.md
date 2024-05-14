@@ -60,7 +60,7 @@ No pre-configuration is required, just install the libraries and use them in you
 
 ***How is my data stored?***
 
-- Your data is stored in an isolated "State container" mapping to the I/O Runtime namespace and Application Workspace.
+- State is a multi-tenant storage, your data is isolated in a "State container" mapping to the I/O Runtime namespace and application Workspace.
 - Each region stores your data independently, treat it as a different instance. We support `amer` and `emea`. *`apac` is coming soon.*
 - Note the default time-to-live for a key-value which is 1 day, the maximum is 1 year (365 days).
 
