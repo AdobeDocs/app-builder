@@ -4,10 +4,10 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: Scheduling Cron Jobs
+title: Scheduling Cron Jobs with Alarms
 description: Creating cron jobs in an App Builder app using OpenWhisk Alarms Package.
-contributors: 
-  - https://github.com/duynguyen 
+contributors:
+  - 'https://github.com/duynguyen'
 ---
 
 # Scheduling Cron Jobs with Alarms

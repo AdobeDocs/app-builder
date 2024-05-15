@@ -4,8 +4,9 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-contributors: 
-  - https://github.com/duynguyen 
+contributors:
+  - 'https://github.com/duynguyen'
+title: 'Lesson 4: Integrate and use the custom worker in AEMaaCS'
 ---
 
 # Lesson 4: Integrate and use the custom worker in AEMaaCS

@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+title: 'Lesson 5: Setup the TodoList component'
 ---
 
 # Lesson 5: Setup the TodoList component

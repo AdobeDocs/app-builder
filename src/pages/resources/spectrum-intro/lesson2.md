@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+title: 'Lesson 2: Spectrum CSS'
 ---
 
 # Lesson 2: Spectrum CSS

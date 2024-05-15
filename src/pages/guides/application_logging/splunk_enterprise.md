@@ -7,8 +7,9 @@ keywords:
   - Logging
   - Log Forwarding
   - Monitoring
-  - Splunk 
+  - Splunk
   - Splunk Enterprise
+title: Forwarding logs to Splunk Enterprise
 ---
 
 # Forwarding logs to Splunk Enterprise

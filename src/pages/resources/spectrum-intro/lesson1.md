@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+title: 'Lesson 1: Introduction to Spectrum'
 ---
 
 # Lesson 1: Introduction to Spectrum

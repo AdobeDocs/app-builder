@@ -4,8 +4,9 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-contributors: 
-  - https://github.com/duynguyen 
+contributors:
+  - 'https://github.com/duynguyen'
+title: 'Lesson 4: List All Customer Profiles on the UI'
 ---
 
 # Lesson 4: List All Customer Profiles on the UI

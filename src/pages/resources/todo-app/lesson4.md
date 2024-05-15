@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+title: 'Lesson 4: Setup the Todo component'
 ---
 
 # Lesson 4: Setup the Todo component

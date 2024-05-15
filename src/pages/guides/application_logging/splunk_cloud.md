@@ -7,8 +7,9 @@ keywords:
   - Logging
   - Log Forwarding
   - Monitoring
-  - Splunk 
+  - Splunk
   - Splunk Cloud
+title: Forwarding logs to Splunk Cloud
 ---
 
 # Forwarding logs to Splunk Cloud

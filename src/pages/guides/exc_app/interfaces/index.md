@@ -1,7 +1,7 @@
 ---
 keywords:
-  - Interface 
-title: Guides
+  - Interface
+title: 'Interface: Modules'
 description: Interface modules
 ---
 

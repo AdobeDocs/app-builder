@@ -4,11 +4,12 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-contributors: 
-  - https://github.com/marcinczeczko 
+contributors:
+  - 'https://github.com/marcinczeczko'
+title: 'Lesson 3: Implement the worker'
 ---
 
-# Implement the worker
+# Lesson 3: Implement the worker
 
 Create a new application using AIO CLI
 

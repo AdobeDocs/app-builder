@@ -4,8 +4,9 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-contributors: 
-  - https://github.com/duynguyen 
+contributors:
+  - 'https://github.com/duynguyen'
+title: 'Lesson 3: Develop custom worker calling Photoshop APIs'
 ---
 
 # Lesson 3: Develop custom worker calling Photoshop APIs

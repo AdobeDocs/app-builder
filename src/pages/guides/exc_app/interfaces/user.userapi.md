@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+title: 'Interface: UserApi'
 ---
 
 # Interface: UserApi

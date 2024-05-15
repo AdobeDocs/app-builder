@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+title: Introduction to React Spectrum
 ---
 
 # Introduction to React Spectrum
