@@ -61,7 +61,7 @@ Now let's start to take a deeper look the template code:
 ```javascript
 const { Core, Events } = require('@adobe/aio-sdk')
 const uuid = require('uuid')
-const cloudEventV1 = require('cloudevents-sdk/v1')
+const { CloudEvent } = require('cloudevents')
 const { errorResponse, getBearerToken, stringParameters, checkMissingRequestInputs } = require('../utils')
 
 // main function that will be executed by Adobe I/O Runtime
@@ -121,12 +121,15 @@ async function main (params) {
 }
 
 function createCloudEvent(providerId, eventCode, payload) {
-  let cloudevent = cloudEventV1.event()
-    .data(payload)
-    .source('urn:uuid:' + providerId)
-    .type(eventCode)
-    .id(uuid.v4())
-  return cloudevent.format()
+  let cloudevent = new CloudEvent({
+    specversion: "1.0",
+    source: 'urn:uuid:' + providerId,
+    type: eventCode,
+    id: uuid.v4(),
+    data: payload,
+  })
+
+  return cloudevent;
 }
 exports.main = main
 
