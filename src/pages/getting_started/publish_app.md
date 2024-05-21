@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+title: Publishing Your First App Builder Application
 ---
 
 # Publishing Your First App Builder Application

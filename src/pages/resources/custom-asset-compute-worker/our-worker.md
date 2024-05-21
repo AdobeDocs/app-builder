@@ -4,8 +4,9 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-contributors: 
-  - https://github.com/marcinczeczko 
+contributors:
+  - 'https://github.com/marcinczeczko'
+title: Architecture of our worker
 ---
 
 # Architecture of our worker

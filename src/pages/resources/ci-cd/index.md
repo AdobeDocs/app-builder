@@ -4,7 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: CI/CD in App Builder Apps
+title: Setup CI/CD in an App Builder App
 description: Setting up CI/CD for an App Builder App using GitHub Actions.
 ---
 

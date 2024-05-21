@@ -3,7 +3,8 @@ keywords:
   - Adobe I/O
   - Extensibility
   - API Documentation
-  - Developer Tooling 
+  - Developer Tooling
+title: 'Lesson 3: Custom CI/CD workflow'
 ---
 
 # Lesson 3: Custom CI/CD workflow 

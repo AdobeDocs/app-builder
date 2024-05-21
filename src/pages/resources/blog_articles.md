@@ -4,7 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: App Builder Blog Articles  
+title: App Builder Blog Articles
 ---
 
 # App Builder Blog Articles

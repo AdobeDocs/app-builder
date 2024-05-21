@@ -1,3 +1,6 @@
+---
+title: Configuration
+---
 # App Builder Configuration Files
 
 ## Overview

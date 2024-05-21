@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+title: 'Lesson 5: Bringing the pieces together to build the App'
 ---
 
 # Lesson 5: Bringing the pieces together to build the App

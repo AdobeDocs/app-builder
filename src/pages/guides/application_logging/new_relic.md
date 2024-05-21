@@ -7,7 +7,8 @@ keywords:
   - Logging
   - Log Forwarding
   - Monitoring
-  - New Relic 
+  - New Relic
+title: Forwarding logs to New Relic
 ---
 
 # Forwarding logs to New Relic

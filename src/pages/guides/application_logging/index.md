@@ -3,8 +3,11 @@ keywords:
   - Logging
   - Log Forwarding
   - Monitoring
-title: Guides
-description: Logging is one of the most important tools in a developer's tool kit. Application logs allow a developer to debug an application in development as well as monitor it in production.
+title: Managing Application Logs
+description: >-
+  Logging is one of the most important tools in a developer's tool kit.
+  Application logs allow a developer to debug an application in development as
+  well as monitor it in production.
 ---
 
 # Managing Application Logs

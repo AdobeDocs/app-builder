@@ -7,8 +7,9 @@ keywords:
   - Logging
   - Log Forwarding
   - Monitoring
-  - Azure 
+  - Azure
   - Azure Log Analytics
+title: Forwarding logs to Azure Log Analytics
 ---
 
 # Forwarding logs to Azure Log Analytics

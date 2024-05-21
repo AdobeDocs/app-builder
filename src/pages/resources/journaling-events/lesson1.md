@@ -5,7 +5,8 @@ keywords:
   - API Documentation
   - Developer Tooling
 contributors:
-  - https://github.com/Yu1986
+  - 'https://github.com/Yu1986'
+title: 'Lesson 1: Create an Event Provider using App Builder'
 ---
 
 # Lesson 1: Create an Event Provider using App Builder

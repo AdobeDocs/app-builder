@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+title: 'Lesson 2: Setup Runtime actions'
 ---
 
 # Lesson 2: Setup Runtime actions

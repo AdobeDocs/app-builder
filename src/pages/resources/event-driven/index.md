@@ -4,10 +4,12 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: Event-Driven App Builder Apps
-description: Introduction to applying Custom I/O Events in event-driven use cases of App Builder applications.
+title: Build an Event-Driven App Builder App Using Custom Events
+description: >-
+  Introduction to applying Custom I/O Events in event-driven use cases of App
+  Builder applications.
 contributors:
-  - https://github.com/Yu1986
+  - 'https://github.com/Yu1986'
 ---
 
 # Build an Event-Driven App Builder App Using Custom Events

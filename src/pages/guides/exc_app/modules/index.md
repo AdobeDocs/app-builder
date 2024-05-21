@@ -1,7 +1,7 @@
 ---
 keywords:
   - External Module
-title: Guides
+title: 'External module: "index"'
 description: External modules
 ---
 

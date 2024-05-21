@@ -1,3 +1,6 @@
+---
+title: 'Migration Guide - Standalone Application to DX Experience Cloud SPA v1'
+---
 # Migration Guide - Standalone Application to DX Experience Cloud SPA v1
 
 ## Overview 

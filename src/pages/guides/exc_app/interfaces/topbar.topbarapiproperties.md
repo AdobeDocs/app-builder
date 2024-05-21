@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+title: 'Interface: TopbarApiProperties'
 ---
 
 # Interface: TopbarApiProperties

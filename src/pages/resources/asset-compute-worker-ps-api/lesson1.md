@@ -4,8 +4,9 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-contributors: 
-  - https://github.com/duynguyen 
+contributors:
+  - 'https://github.com/duynguyen'
+title: 'Lesson 1: Create an App Builder app from the Asset Compute template'
 ---
 
 # Lesson 1: Create an App Builder app from the Asset Compute template

@@ -4,10 +4,12 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: Customer Profiles Dashboard
-description: Creating a dashboard of customer profiles from Adobe Campaign Standard using App Builder.
-contributors: 
-  - https://github.com/duynguyen 
+title: Build a Customer Profiles Dashboard with App Builder
+description: >-
+  Creating a dashboard of customer profiles from Adobe Campaign Standard using
+  App Builder.
+contributors:
+  - 'https://github.com/duynguyen'
 ---
 
 # Build a Customer Profiles Dashboard with App Builder

@@ -1,6 +1,8 @@
 ---
-title: Custom Webpack Configuration for App Builder
-description: Users can specify a Webpack configuration for an individual action, a set of actions, or an entire project.
+title: Webpack Configuration
+description: >-
+  Users can specify a Webpack configuration for an individual action, a set of
+  actions, or an entire project.
 keywords:
   - Webpack
   - Configuration

@@ -3,7 +3,8 @@ keywords:
   - Adobe I/O
   - Extensibility
   - API Documentation
-  - Developer Tooling 
+  - Developer Tooling
+title: 'Lesson 2: Writing a Serverless Action'
 ---
 
 # Lesson 2: Writing a Serverless Action
