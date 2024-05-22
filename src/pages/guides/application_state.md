@@ -18,7 +18,6 @@ Sometimes you want to bind the same parameter values for all invocations or you 
 ```yaml
 hello-world:
   function: actions/hello/index.js
-  runtime: 'nodejs:12'
   inputs:
     name: Joe
 ```
@@ -34,29 +33,116 @@ NAME=Joe
 # in manifest.yaml
 hello-world:
   function: actions/hello/index.js
-  runtime: 'nodejs:12'
   inputs:
     name: $NAME
 ```
 
 ### Considerations about security
 
-For authentication with Adobe APIs, you should leverage [App Builder Security Guideline](security/index.md) using our supported SDKs. 
+For authentication with Adobe APIs, you should leverage [App Builder Security Guideline](security/index.md) using our supported SDKs.
 
 For other 3rd party systems and APIs when provisioning actions with the secrets/passwords is a must, you can then use the default params as demonstrated above. In order to support this use case, all default params are automatically encrypted. They are decrypted just before the action code is executed. Thus, the only time you have access to the decrypted value is while executing the action code.
 
-## State and files persistence at runtime
+## Persistence at runtime
 
-As part of App Builder, you will have out-of-the-box access to file storage and to a key-value store. These are particularly useful when you want to persist data dynamically in the individual action invocations.
+As part of App Builder, you will have out-of-the-box access to *Files* and *State*, our two storage services meant for persisting data dynamically from your Runtime actions.
 
-To provide zero-config state and file caching for App Builder, we have created the [Adobe I/O Files library](https://github.com/adobe/aio-lib-files) and [Adobe I/O State library](https://github.com/adobe/aio-lib-state). The Adobe I/O State library is an npm module that provides a JavaScript abstraction on top of distributed/cloud DBs with a simple key-value store state persistence API; whereas the Adobe I/O Files library provides a JavaScript abstraction on top of cloud blob storages with a simple file-system like persistence API.
+No pre-configuration is required, just install the libraries and use them in your project. We will be transparently using your AppBuilder credentials to authorize and entitle your requests.
 
-The state library is meant for storing and accessing small values, while the files library should be used for storing bigger amounts of data.
+*When should I use Files vs State?*
 
-To learn more or to try them out, please visit the following GitHub repositories:
-- [Adobe I/O File Storage library](https://github.com/adobe/aio-lib-files)
-- [Adobe I/O Key/Value Storage library](https://github.com/adobe/aio-lib-state)
+- Files is good for bandwidth and State is good for latency.
+- Files supports sharing data via presigned-url, State supports setting expirations.
+- As a rule of thumb if you expect your data to grow larger than 100KBs go with Files, otherwise use State.
 
-After reviewing each of the libraries, you may have noticed that the sample code only requires your Runtime namespace credentials in order to start accessing the cloud services behind the scenes. This is handled through the [Adobe I/O Token Vending Machine](https://github.com/adobe/aio-tvm) (TVM). TVM is a set of Adobe I/O Runtime actions exposed as an API that allows developers to trade their credentials for temporary and restricted tokens to external cloud services. Users authenticate to the TVM with their Adobe I/O Runtime (OpenWhisk) credentials and are only authorized to access their own resources.
+## State
 
-You can also opt out of using Runtime (OpenWhisk) and leverage your own cloud services (for example, Azure). Please see the sample code in either of the library GitHub repositories for more information.
+***We are introducing major changes for State**, now hosting our storage service. The documentation refers to the new version which is still in **developer preview**. Documentation for the last stable version based on CosmosDB is available [here](https://github.com/adobe/aio-lib-state/tree/3.x)*
+
+***How is my data stored?***
+
+- State is a multi-tenant storage, your data is isolated in a "State container" mapping to the I/O Runtime namespace and application Workspace.
+- Each region stores your data independently, treat it as a different instance. We support `amer` and `emea`. *`apac` is coming soon.*
+- Note the default time-to-live for a key-value which is 1 day, the maximum is 1 year (365 days).
+
+### Getting started
+
+***Library usage, from an I/O Runtime Action:***
+
+```bash
+npm install @adobe/aio-lib-state@next
+```
+
+```js
+  const stateLib = require('@adobe/aio-lib-state')
+
+  // init with implicit I/O Runtime credentials, default region is 'amer'.
+  const state = await stateLib.init()
+  // set an explicit region
+  const state2 = await stateLib.init({ region: 'emea' })
+
+  // get
+  const res = await state.get('key') // res = { value, expiration }
+  const value = res.value
+  // put
+  await state.put('key', 'value') // with default ttl
+  await state.put('another key', 'another value', { ttl: 200 }) // in seconds, use -1 for max.
+  // delete
+  await state.delete('key')
+  // delete all keys and values
+  await state.deleteAll()
+  // returns usage statistics (storage)
+  await state.stats()
+  // returns true if you have at least one key and value
+  await state.any()
+
+  // coming soon!
+  // await state.listKeys()
+```
+
+Explore the [full API](https://github.com/adobe/aio-lib-state/blob/main/doc/api.md)
+
+***CLI usage, from your local machine***: *coming soon!*
+
+### Limits & validation (preview)
+
+Limits are enforced and can't be changed on a per-user basis.
+
+- State is only available to Runtime Namespaces that follow the AppBuilder format: `amsorg-project(-workspace)?`.
+- Max state value size: `1MB`.
+- Max state key size: `1024 bytes`.
+- Max-supported TTL is `365 days`.
+- Values format: any `string|binary`.
+- Keys format: `string` only `alphanumeric` with `-`,`_`,`.`.
+
+### Quotas (preview)
+
+Quotas are limits that depend on the organization's entitlements. Every organization with AppBuilder access is entitled to at least 1 State quota.
+
+At the organization level, 1 quota provides:
+
+- 200GB/month bandwidth usage (~5MB/min): `bandwidth usage = bytes uploaded + bytes downloaded`
+- 1GB storage: `storage usage = 2 * key_sizes + value_sizes`
+
+The quota is shared for all State Containers in the organization, across all regions. It is not enforced for now, just tracked.
+
+*Example: org 123 is entitled to 3 quotas, the total bandwidth usage of the organization should not exceed 600GB/month and the storage across regions should not exceed 3GB*
+
+We also enforce rate-limiting at the State Container (=Workspace) level. Rate-limiting per quota unit is defined as:
+
+- 10MB/min with up to 1MB/sec peaks for production Workspaces.
+- 2MB/min with up to 1MB/sec peaks for non-production Workspaces.
+
+In case of exceeding the rate-limiting quota, the State service will return with 429s. However, a retry mechanism in the State library will mitigate the propagation of the error on short time windows.
+
+*Example: org 123 is entitled to 5 quotas, any production workspace will not be throttled before consuming 50MB/min or 5MB/sec bandwidth*
+
+### Troubleshooting
+
+Set `DEBUG=@adobe/aio-lib-state*` to see debug logs.
+
+## Files
+
+*Files is currently implemented as an abstraction layer over Azure Blob. Major changes and additional features are planned, stay tuned.*
+
+To learn more please visit the [Adobe I/O File Storage library](https://github.com/adobe/aio-lib-files) repository.
