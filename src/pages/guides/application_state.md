@@ -47,23 +47,23 @@ For other 3rd party systems and APIs when provisioning actions with the secrets/
 
 As part of App Builder, you will have out-of-the-box access to *Files* and *State*, our two storage services meant for persisting data dynamically from your Runtime actions.
 
-No pre-configuration is required, just install the libraries and use them in your project. We will be transparently using your AppBuilder credentials to authorize and entitle your requests.
+No pre-configuration is required, just install the libraries and use them in your project. We will be transparently using your App Builder credentials to authorize and entitle your requests.
 
 *When should I use Files vs State?*
 
-- Files is good for bandwidth and State is good for latency.
+- Files is good for transferring large payloads (bandwidth oriented) and State is good for fast access (latency oriented).
 - Files supports sharing data via presigned-url, State supports setting expirations.
 - As a rule of thumb if you expect your data to grow larger than 100KBs go with Files, otherwise use State.
 
 ## State
 
-***We are introducing major changes for State**, now hosting our storage service. The documentation refers to the new version which is still in **developer preview**. Documentation for the last stable version based on CosmosDB is available [here](https://github.com/adobe/aio-lib-state/tree/3.x)*
+**We are introducing major changes for State**, now hosting our storage service. The documentation refers to the new version which is still in **developer preview**. *Documentation for the latest stable version based on CosmosDB is available [here](https://github.com/adobe/aio-lib-state/tree/3.x)*
 
 ***How is my data stored?***
 
-- State is a multi-tenant storage, your data is isolated in a "State container" mapping to the I/O Runtime namespace and application Workspace.
-- Each region stores your data independently, treat it as a different instance. We support `amer` and `emea`. *`apac` is coming soon.*
-- Note the default time-to-live for a key-value which is 1 day, the maximum is 1 year (365 days).
+- State is a multi-tenant storage. Your data is isolated in a "State container" which maps to your I/O Runtime namespace and application Workspace. This means that each application Workspace has its own isolated data.
+- You have the option to store data in either North America (`amer`) or Europe (`emea`). These regions operate independently, so treat them as separate instances. You may prefer one region over the other to optimize latency, as it may be closer to your users, or for compliance reasons such as GDPR. *East Asia will be available soon.*
+- Your data is not eternal. There is a configurable time-to-live (TTL) for each key-value pair, the default is 1 day and the maximum is 1 year (365 days).
 
 ### Getting started
 
@@ -85,8 +85,8 @@ npm install @adobe/aio-lib-state@next
   const res = await state.get('key') // res = { value, expiration }
   const value = res.value
   // put
-  await state.put('key', 'value') // with default ttl
-  await state.put('another key', 'another value', { ttl: 200 }) // in seconds, use -1 for max.
+  await state.put('key', 'value') // with default ttl of 1 day
+  await state.put('another key', 'another value', { ttl: 200 }) // in seconds, use -1 for max (365 days).
   // delete
   await state.delete('key')
   // delete all keys and values
@@ -108,7 +108,7 @@ Explore the [full API](https://github.com/adobe/aio-lib-state/blob/main/doc/api.
 
 Limits are enforced and can't be changed on a per-user basis.
 
-- State is only available to Runtime Namespaces that follow the AppBuilder format: `amsorg-project(-workspace)?`.
+- State is only available to Runtime namespaces created via the Developer Console, which follow the App Builder format: `orgId-project(-workspace)?`. Legacy namespaces are not supported.
 - Max state value size: `1MB`.
 - Max state key size: `1024 bytes`.
 - Max-supported TTL is `365 days`.
@@ -117,25 +117,25 @@ Limits are enforced and can't be changed on a per-user basis.
 
 ### Quotas (preview)
 
-Quotas are limits that depend on the organization's entitlements. Every organization with AppBuilder access is entitled to at least 1 State quota.
+Quotas are limits that depend on the organization's entitlements. Every organization with App Builder access is entitled to at least 1 State quota.
 
 At the organization level, 1 quota provides:
 
 - 200GB/month bandwidth usage (~5MB/min): `bandwidth usage = bytes uploaded + bytes downloaded`
 - 1GB storage: `storage usage = 2 * key_sizes + value_sizes`
 
-The quota is shared for all State Containers in the organization, across all regions. It is not enforced for now, just tracked.
+The quota is shared for all State containers in the organization, across all regions. It is not enforced for now, just tracked.
 
-*Example: org 123 is entitled to 3 quotas, the total bandwidth usage of the organization should not exceed 600GB/month and the storage across regions should not exceed 3GB*
+*Example: org 123 is entitled to 3 quotas, the total bandwidth usage of the organization should not exceed 600GB/month and the storage across regions should not exceed 3GB.*
 
-We also enforce rate-limiting at the State Container (=Workspace) level. Rate-limiting per quota unit is defined as:
+We also enforce rate-limiting at the State container (=Workspace) level within a region. Rate-limiting per quota unit is defined as:
 
 - 10MB/min with up to 1MB/sec peaks for production Workspaces.
 - 2MB/min with up to 1MB/sec peaks for non-production Workspaces.
 
 In case of exceeding the rate-limiting quota, the State service will return with 429s. However, a retry mechanism in the State library will mitigate the propagation of the error on short time windows.
 
-*Example: org 123 is entitled to 5 quotas, any production workspace will not be throttled before consuming 50MB/min or 5MB/sec bandwidth*
+*Example: org 123 is entitled to 5 quotas, any production workspace will not be throttled before consuming 50MB/min or 5MB/sec bandwidth in a single region.*
 
 ### Troubleshooting
 
