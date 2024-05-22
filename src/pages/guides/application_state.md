@@ -62,8 +62,14 @@ No pre-configuration is required, just install the libraries and use them in you
 ***How is my data stored?***
 
 - State is a multi-tenant storage. Your data is isolated in a "State container" which maps to your I/O Runtime namespace and application Workspace. This means that each application Workspace has its own isolated data.
-- You have the option to store data in either North America (`amer`) or Europe (`emea`). These regions operate independently, so treat them as separate instances. You may prefer one region over the other to optimize latency, as it may be closer to your users, or for compliance reasons such as GDPR. *East Asia will be available soon.*
+- You have the option to store data in either the `amer` or `emea` region. These regions operate independently, so treat them as separate instances. You may prefer one region over the other to optimize latency, as it may be closer to your users, or for compliance reasons such as GDPR. *`apac` will be available soon.*
 - Your data is not eternal. There is a configurable time-to-live (TTL) for each key-value pair, the default is 1 day and the maximum is 1 year (365 days).
+
+Region Acronyms are abbreviations for one or more continents that are part of a business region.
+
+- `amer`: North, Central, and South America
+- `apac`: Asia and Pacific
+- `emea`: Europe, the Middle East, and Africa
 
 ### Getting started
 
