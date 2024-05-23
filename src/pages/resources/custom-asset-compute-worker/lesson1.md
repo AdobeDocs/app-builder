@@ -4,11 +4,12 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-contributors: 
-  - https://github.com/marcinczeczko 
+contributors:
+  - 'https://github.com/marcinczeczko'
+title: 'Lesson 1: Configure services'
 ---
 
-# Configure services
+# Lesson 1: Configure services
 
 ## Create Azure blob storages
 

@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+title: Common Troubleshooting
 ---
 
 # Common Troubleshooting
@@ -65,4 +66,4 @@ If your code uses App Builder [State](https://github.com/adobe/aio-lib-state) or
 There are no pre-compiled NodeJS binaries for versions prior to 15.x for Apple's new M1 chip (arm64 architecture).
 One solution is to change the architecture of your shell from arm64 to x86.
 
-We recommend using the [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm) over [Homebrew](https://brew.sh/) and follow their [troubleshooting guides for macOS](https://github.com/nvm-sh/nvm#macos-troubleshooting) (section **Macs with M1 chip**).
+We recommend using the [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm) over [Homebrew](https://brew.sh/) and follow their [troubleshooting guides for macOS](https://github.com/nvm-sh/nvm#macos-troubleshooting) (section **Macs with M1 chip**). 

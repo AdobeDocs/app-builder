@@ -4,8 +4,9 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-contributors: 
-  - https://github.com/duynguyen 
+contributors:
+  - 'https://github.com/duynguyen'
+title: 'Lesson 2: Set up Alarm Feed with Trigger and Rule'
 ---
 
 # Lesson 2: Set up Alarm Feed with Trigger and Rule

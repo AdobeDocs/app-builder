@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+title: UI Extensibility
 ---
 
 import MetaRedirect from '../../../components/MetaRedirect'

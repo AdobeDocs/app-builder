@@ -4,8 +4,10 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: App Builder Headless App
-description: Creating a Headless App using App Builder to render a barcode with dynamic data.
+title: Headless Apps with App Builder
+description: >-
+  Creating a Headless App using App Builder to render a barcode with dynamic
+  data.
 ---
 
 # Headless Apps with App Builder

@@ -4,8 +4,9 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-contributors: 
-  - https://github.com/duynguyen 
+contributors:
+  - 'https://github.com/duynguyen'
+title: Codelab Environment Requirements
 ---
 
 import Requirements from '../transclusions/_requirements.md'

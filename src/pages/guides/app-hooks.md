@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+title: App Builder application tooling lifecycle event hooks
 ---
 
 

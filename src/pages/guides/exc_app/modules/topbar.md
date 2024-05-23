@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+title: 'External module: topbar'
 ---
 
 # External module: topbar

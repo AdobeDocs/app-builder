@@ -4,8 +4,9 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-contributors: 
-  - https://github.com/duynguyen 
+contributors:
+  - 'https://github.com/duynguyen'
+title: 'Lesson 1: Bootstrap a Headless App'
 ---
 
 # Lesson 1: Bootstrap a Headless App

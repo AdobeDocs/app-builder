@@ -4,11 +4,12 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-contributors: 
-  - https://github.com/marcinczeczko 
+contributors:
+  - 'https://github.com/marcinczeczko'
+title: 'Lesson 5: Setup AEM to use the worker'
 ---
 
-# Setup AEM to use the worker
+# Lesson 5: Setup AEM to use the worker
 
 Go to your **AEM Cloud** instance and open **Tools -> Assets -> Processing Profiles** and then create a new processing profile, e.g. `My Worker test profile`.
 On the **Custom** tab, configure your renditions to use your worker, as shown below.

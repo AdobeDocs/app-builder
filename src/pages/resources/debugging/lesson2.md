@@ -5,7 +5,8 @@ keywords:
   - API Documentation
   - Developer Tooling
 contributors:
-  - https://github.com/duynguyen
+  - 'https://github.com/duynguyen'
+title: 'Lesson 2: Debugging Application Code'
 ---
 
 # Lesson 2: Debugging Application Code

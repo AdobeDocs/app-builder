@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+title: 'Lesson 1: Bootstrap a Headless App Builder App'
 ---
 
 # Lesson 1: Bootstrap a Headless App Builder App

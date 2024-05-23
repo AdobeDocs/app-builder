@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+title: 'Lesson 1: Create a New App Builder App with the React Spectrum template'
 ---
 
 # Lesson 1: Create a New App Builder App with the React Spectrum template

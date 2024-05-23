@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+title: How to get access to App Builder
 ---
 
 ## How to get access to App Builder

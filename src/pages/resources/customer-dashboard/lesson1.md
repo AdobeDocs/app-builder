@@ -4,8 +4,9 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-contributors: 
-  - https://github.com/duynguyen 
+contributors:
+  - 'https://github.com/duynguyen'
+title: 'Lesson 1: Create a New App Builder App from Campaign Standard Template'
 ---
 
 # Lesson 1: Create a New App Builder App from Campaign Standard Template

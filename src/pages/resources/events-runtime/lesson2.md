@@ -5,7 +5,8 @@ keywords:
   - API Documentation
   - Developer Tooling
 contributors:
-  - https://github.com/Yu1986
+  - 'https://github.com/Yu1986'
+title: 'Lesson 2: Verify the result'
 ---
 
 # Lesson 2: Verify the result

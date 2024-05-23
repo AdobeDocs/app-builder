@@ -5,7 +5,8 @@ keywords:
   - API Documentation
   - Developer Tooling
 contributors:
-  - https://github.com/duynguyen
+  - 'https://github.com/duynguyen'
+title: 'Lesson 1: Getting familiar with Debugger'
 ---
 
 # Lesson 1: Getting familiar with Debugger (wskdebug)

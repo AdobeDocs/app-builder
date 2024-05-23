@@ -3,7 +3,8 @@ keywords:
   - Adobe I/O
   - Extensibility
   - API Documentation
-  - Developer Tooling 
+  - Developer Tooling
+title: 'Lesson 1: Setup CI/CD'
 ---
 
 # Lesson 1: Setup CI/CD

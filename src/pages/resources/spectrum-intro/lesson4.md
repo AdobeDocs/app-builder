@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+title: 'Lesson 4: React Spectrum in App Builder'
 ---
 
 # Lesson 4: React Spectrum in App Builder

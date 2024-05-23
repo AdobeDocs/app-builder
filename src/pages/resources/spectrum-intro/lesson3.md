@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+title: 'Lesson 3: React Spectrum'
 ---
 
 # Lesson 3: React Spectrum

@@ -5,7 +5,8 @@ keywords:
   - API Documentation
   - Developer Tooling
 contributors:
-  - https://github.com/Yu1986
+  - 'https://github.com/Yu1986'
+title: 'Lesson 2: Register the App as Event Provider'
 ---
 
 # Lesson 2: Register the App as Event Provider 
