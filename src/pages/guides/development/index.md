@@ -12,12 +12,12 @@ keywords:
 
 The aio-cli includes a development server for seamless local development, enabling you to run, develop, and test your applications on localhost. Traffic is securely served over HTTPS using a self-signed certificate. This server supports hot-reloading, allowing you to instantly see the effects of any changes made to your application.
 
-Please be aware: If you receive an 'unsafe site' warning, you may need to accept this certificate explicitly. This is common with self-signed certificates. Upon the initial page load, you may need to manually trust this certificate in your browser settings.
+> Please be aware: If you receive an 'unsafe site' warning, you may need to accept this certificate explicitly. This is common with self-signed certificates. Upon the initial page load, you may need to manually trust this certificate in your browser settings.
 
 ## aio app dev vs. aio app run
 
 These commands are very similar but offer several distinct differences giving you several ways of working with your application.
-Both commands allow you to do browser debugging and run a local webserver to server your frontend on localhost.  Both commands support browser hot reload on frontend code changes.
+Both commands allow you to do browser debugging and run a local webserver to serve your frontend on localhost.  Both commands support browser hot reload on frontend code changes.
 
 When you use the command `aio app run`, before the localhost webserver is started the following happens:
 - your action code is transpiled, zipped, and deployed to Runtime.
@@ -39,13 +39,9 @@ When you use the command `aio app dev`
 - there are no activation records
 - logs cannot be forwarded
 
-There are also differences in what your actions can do in either case.
-`aio app run`
-
 ## State-lib and Files-lib usage
 
-The storage libraries have security restrictions limiting calls from outside of Runtime actions. This means if your action needs either state/files libs, it will fail with `aio app dev`
-
+There are also differences in what your actions can do in either case. The storage libraries have security restrictions limiting calls from outside of Runtime actions. This means if your action needs either state/files libs, it will fail with `aio app dev`.  Third party apis may have similar restrictions.
 
 ## Debugging
 
