@@ -174,6 +174,8 @@ In addition to the base annotations provided by Runtime (See [here](https://gith
 
 A Runtime API Gateway configuration can be added to expose web actions over specific paths and HTTP verbs. 
 
+> Note: It can take 5 to 10 minutes for new gateway configurations to provision. In the meantime, you may see 404 errors from your API.
+
 ```yaml
 runtimeManifest:
    packages:
