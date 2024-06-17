@@ -200,6 +200,20 @@ module.exports = {
         ]
       },
       {
+        "title": "Distribution",
+        "path": "guides/distribution/index.md",
+        "pages": [
+          {
+            "title": "Private Distribution",
+            "path": "guides/distribution/private.md"
+          },
+          {
+            "title": "Public Distribution",
+            "path": "guides/distribution/public.md"
+          }
+        ]
+      },
+      {
         "title": "Integration Guide with Adobe Experience Cloud",
         "path": "guides/exc_app",
         "pages": [
