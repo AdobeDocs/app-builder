@@ -98,10 +98,6 @@ module.exports = {
           {
             "title": "Event hooks for App Builder Applications",
             "path": "guides/app-hooks.md"
-          },
-          {
-            "title": "Packaging for Developer Distribution",
-            "path": "guides/packaging.md"
           }
         ]
       },
