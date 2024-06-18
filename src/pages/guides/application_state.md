@@ -57,7 +57,7 @@ No pre-configuration is required, just install the libraries and use them in you
 
 ## State
 
-*We've just released a [new State version](https://github.com/adobe/aio-lib-state/releases/tag/4.0.0) built on top of our own storage service. [Legacy State](https://github.com/adobe/aio-lib-state/tree/3.x) (< v4.0, based on CosmosDB) is still available, but we strongly advise new users to use the latest library version. We will be sending out migration steps for existing customers soon.*
+*We've just released a [new State version](https://github.com/adobe/aio-lib-state/releases/tag/4.0.0) built on top of our own storage service. [Legacy State](https://github.com/adobe/aio-lib-state/tree/3.x) (< v4.0, based on CosmosDB) is still available, but we strongly advise new users to use the latest library version to avoid migrating later. We will be sending out migration steps for existing customers soon.*
 
 ***How is my data stored?***
 
