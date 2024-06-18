@@ -57,7 +57,7 @@ No pre-configuration is required, just install the libraries and use them in you
 
 ## State
 
-*We've just released a [new State version](https://github.com/adobe/aio-lib-state/releases/tag/4.0.0) built on top of our own storage service. [Legacy State](https://github.com/adobe/aio-lib-state/tree/3.x) (< v4.0, based on CosmosDB) is still available, but we strongly advice new users to use the latest library version. We will be sending out migration steps for existing customers soon.*
+*We've just released a [new State version](https://github.com/adobe/aio-lib-state/releases/tag/4.0.0) built on top of our own storage service. [Legacy State](https://github.com/adobe/aio-lib-state/tree/3.x) (< v4.0, based on CosmosDB) is still available, but we strongly advise new users to use the latest library version. We will be sending out migration steps for existing customers soon.*
 
 ***How is my data stored?***
 
@@ -76,7 +76,7 @@ Region Acronyms are abbreviations for one or more continents that are part of a 
 ***Library usage, from an I/O Runtime Action:***
 
 ```bash
-npm install @adobe/aio-lib-state@next
+npm install @adobe/aio-lib-state
 ```
 
 ```js
@@ -101,13 +101,13 @@ npm install @adobe/aio-lib-state@next
     console.log(keys)
   }
 
-  // delete all keys and values
-  await state.deleteAll()
-
-  // returns usage statistics (storage)
-  await state.stats()
   // returns true if you have at least one key and value
   await state.any()
+  // returns usage statistics (storage)
+  await state.stats()
+
+  // delete all keys and values
+  await state.deleteAll()
 ```
 
 Explore the [full API](https://github.com/adobe/aio-lib-state/blob/main/doc/api.md)
