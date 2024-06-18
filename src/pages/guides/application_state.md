@@ -57,7 +57,7 @@ No pre-configuration is required, just install the libraries and use them in you
 
 ## State
 
-**We are introducing major changes for State**, now hosting our storage service. The documentation refers to the new version which is still in **developer preview**. *Documentation for the latest stable version based on CosmosDB is available [here](https://github.com/adobe/aio-lib-state/tree/3.x)*
+*We've just released a [new State version](https://github.com/adobe/aio-lib-state/releases/tag/4.0.0) built on top of our own storage service. [Legacy State](https://github.com/adobe/aio-lib-state/tree/3.x) (based on CosmosDB < v4.0) is still available, but we strongly advice new users to use the latest library version. We will be sending out migration steps for existing customers soon.*
 
 ***How is my data stored?***
 
@@ -95,22 +95,26 @@ npm install @adobe/aio-lib-state@next
   await state.put('another key', 'another value', { ttl: 200 }) // in seconds, use -1 for max (365 days).
   // delete
   await state.delete('key')
+
+  // list keys using an iterator, with glob pattern support
+  await for (const { keys } of state.list({ match: 'my.g*ob.patter*' })) {
+    console.log(keys)
+  }
+
   // delete all keys and values
   await state.deleteAll()
+
   // returns usage statistics (storage)
   await state.stats()
   // returns true if you have at least one key and value
   await state.any()
-
-  // coming soon!
-  // await state.listKeys()
 ```
 
 Explore the [full API](https://github.com/adobe/aio-lib-state/blob/main/doc/api.md)
 
 ***CLI usage, from your local machine***: *coming soon!*
 
-### Limits & validation (preview)
+### Limits & validation
 
 Limits are enforced and can't be changed on a per-user basis.
 
@@ -121,7 +125,7 @@ Limits are enforced and can't be changed on a per-user basis.
 - Values format: any `string|binary`.
 - Keys format: `string` only `alphanumeric` with `-`,`_`,`.`.
 
-### Quotas (preview)
+### Quotas
 
 Quotas are limits that depend on the organization's entitlements. Every organization with App Builder access is entitled to at least 1 State quota.
 
