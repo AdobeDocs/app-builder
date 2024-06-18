@@ -151,7 +151,7 @@ In case of exceeding the rate-limiting quota, the State service will return with
 
 ### List guarantees
 
-With `state.list`, you can iterate over the keys stored in your State container. State relies on a cursor based implementation in which multiple calls to the State service are needed to iterate over all your keys.
+Using `state.list`, you can iterate over the keys stored in your State container. State implements listing with a cursor-based iterator, which requires multiple calls to the State service to traverse all your keys.
 
 List provides the following guarantees:
 
