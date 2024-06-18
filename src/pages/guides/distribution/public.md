@@ -241,7 +241,22 @@ productDependencies:
     maxVersion: 1.0.0
 ```
 
-*TODO: Help customers find product codes and available versions*
+#### Valid products 
+- **AEM** - Experience Manager
+- **AAM** - Audience Manager
+- **ANLYTC** - Analytics
+- **CMPGN** - Campaign
+- **TRGT** - Target
+- **AEP** - Experience Platform Services
+- **COMMC** - Commerce Cloud
+- **MRKTO** - Marketo Engage
+- **WRKFRNT** - Workfront
+- **AAC** - Advertising Cloud
+- **RTCDP** - Real-time Customer Data Platform
+- **AJO** - Journey Optimizer
+- **CJA** - Customer Journey Analytics
+
+Product version information can be found on [Adobe Experience League](https://experienceleague.adobe.com/en/docs).
 
 ## Packaging for developer distribution
 
