@@ -55,9 +55,11 @@ No pre-configuration is required, just install the libraries and use them in you
 - Files supports sharing data via presigned-url, State supports setting expirations.
 - As a rule of thumb if you expect your data to grow larger than 100KBs go with Files, otherwise use State.
 
+Please refer to the [feature matrix](#feature-matrix) for a detailed comparison.
+
 ## State
 
-*We've just released a [new State version](https://github.com/adobe/aio-lib-state/releases/tag/4.0.0) built on top of our own storage service. [Legacy State](https://github.com/adobe/aio-lib-state/tree/3.x) (< v4.0, based on CosmosDB) is still available, but we strongly advise new users to use the latest library version to avoid migrating later. We will be sending out migration steps for existing customers soon.*
+*We've just released a [new State version](https://github.com/adobe/aio-lib-state/releases/tag/4.0.0) built on top of our own storage service. [Legacy State](https://github.com/adobe/aio-lib-state/tree/3.x) (< v4.0, based on CosmosDB) is still available, but we strongly advise new users to use the latest library version to avoid migrating later. We will be sending out migration steps for existing customers soon. The [feature matrix](#feature-matrix) provides a detailed comparison of both versions.*
 
 ***How is my data stored?***
 
@@ -147,6 +149,25 @@ In case of exceeding the rate-limiting quota, the State service will return with
 
 *Example: org 123 is entitled to 5 quotas, any production workspace will not be throttled before consuming 50MB/min or 5MB/sec bandwidth in a single region.*
 
+### List guarantees
+
+Using `state.list`, you can iterate over the keys stored in your State container. State implements listing with a cursor-based iterator, which requires multiple calls to the State service to traverse all your keys.
+
+List provides the following guarantees:
+
+- A full iteration always returns all keys that were present in the container during the start to the end of a full iteration.
+- A full iteration never returns any key that was deleted prior to an iteration.
+
+However, list also has the following drawbacks:
+
+- Keys that were not constantly present in the collection during a full iteration, may be returned or not: it is undefined.
+- In some rare cases, list may return expired keys.
+
+Furthermore, you can control the list behavior via those two options:
+
+- `match`, to filter keys using a glob-style pattern via the `*` character.
+- `countHint`, to specify an approximate amount of keys returned per iteration. State doesn't provide a guarantee on the number of elements returned per iteration, but we try (again with no guarantees) to return at least `countHint` elements per iteration.
+
 ### Troubleshooting
 
 Set `DEBUG=@adobe/aio-lib-state*` to see debug logs.
@@ -155,4 +176,24 @@ Set `DEBUG=@adobe/aio-lib-state*` to see debug logs.
 
 *Files is currently implemented as an abstraction layer over Azure Blob. Major changes and additional features are planned, stay tuned.*
 
-To learn more please visit the [Adobe I/O File Storage library](https://github.com/adobe/aio-lib-files) repository.
+To learn more please visit the [Adobe I/O File Storage library](https://github.com/adobe/aio-lib-files?tab=readme-ov-file#adobe-io-lib-files) repository.
+
+## Feature Matrix
+
+|       | Files     | State    | State Legacy
+| ----------- | ----------- |----------- | --------- |
+| read <br> write <br> delete | Y | Y | Y |
+| list | Y | Y | N
+| streams | Y | N | N
+| copy | Y | N | N
+| deleteAll | N | Y | N
+| sharing | Y (pre-sign URLs) | N | N
+| Time-To-Live | N | Y | Y
+| max TTL | infinite | 365 days | infinite
+| max file/value size | 200GB | 1MB | 2MB |
+| max key size | 1KB | 1KB | 1KB |
+| key charset | open | `alphanumeric` with `_-.` | any but `/\?#` |
+| max request load | 500 req/min <br>(per blob) | 10MB/min, 1MB/s <br>(scalable) | 900 RU/min (~KB/min) |
+| max storage | N/A | 1GB (scalable) | 10GB |
+| regions | East US <br> West US read-only | Amer<br>Emea (EU)<br> *Apac (coming soon)* | East US <br> Europe read-only
+| consistency | strong | strong | eventual
