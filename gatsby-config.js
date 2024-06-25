@@ -165,13 +165,7 @@ module.exports = {
       },
       {
         "title": "Development",
-        "path": "guides/develoment",
-        "pages": [
-          {
-            "title": "Development",
-            "path": "guides/develoment"
-          }
-        ]
+        "path": "guides/develoment/index",
       },
       {
         "title": "Extensions",
