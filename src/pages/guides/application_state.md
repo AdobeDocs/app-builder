@@ -151,9 +151,9 @@ In case of exceeding the rate-limiting quota, the State service will return with
 
 ### List guarantees
 
-Using `state.list`, you can iterate over the keys stored in your State container. State implements listing with a cursor-based iterator, which requires multiple calls to the State service to traverse all your keys.
+Using `state.list`, you can iterate over the keys stored in your State container. State implements listing with a cursor-based iterator, which requires multiple calls to the State service to traverse all your keys. Please note, that `list` is subject to the bandwidth rate-limiting quotas, so listing many keys may result in 429s.
 
-List provides the following guarantees:
+`list` provides the following guarantees:
 
 - A full iteration always returns all keys that were present in the container during the start to the end of a full iteration.
 - A full iteration never returns any key that was deleted prior to an iteration.
@@ -161,9 +161,13 @@ List provides the following guarantees:
 However, list also has the following drawbacks:
 
 - Keys that were not constantly present in the collection during a full iteration, may be returned or not: it is undefined.
-- In some rare cases, list may return expired keys.
+- A given key may be returned multiple times across iterations (but not within a
+  same iteration). You can mitigate this by either performing operations that are
+  safe when applied multiple times (recommended with many keys) or by collecting all keys in an
+  array first and then remove any duplicates.
+- In some rare cases, `list` may return expired keys.
 
-Furthermore, you can control the list behavior via those two options:
+Furthermore, you can control the `list` behavior via those two options:
 
 - `match`, to filter keys using a glob-style pattern via the `*` character.
 - `countHint`, to specify an approximate amount of keys returned per iteration. State doesn't provide a guarantee on the number of elements returned per iteration, but we try (again with no guarantees) to return at least `countHint` elements per iteration.
