@@ -97,5 +97,5 @@ You can use the step through debugging features of VS Code, inspect variables, a
 ## More Information
 
 Learn more about using a JavaScript debugger
-- [chrome devtools](https://developer.chrome.com/docs/devtools/){target="_blank"}
-- [node.js debugging in VS Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging){target="_blank"}
+- [chrome devtools](https://developer.chrome.com/docs/devtools/)
+- [node.js debugging in VS Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)
