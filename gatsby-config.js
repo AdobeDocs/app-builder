@@ -165,7 +165,7 @@ module.exports = {
       },
       {
         "title": "Development",
-        "path": "guides/develoment/index",
+        "path": "guides/development",
       },
       {
         "title": "Extensions",
