@@ -90,7 +90,7 @@ Create a file named .vscode/launch.json at the root of your project with the fol
 > ex. <br/>
 > &nbsp;  `PORT=3000`
 
-Actions are loaded dynamically so the code is not evaluated until an http request is made.  This means that when you put a breakpoint in your action code it will be grayed out until you trigger a call to the action. Web action urls are mapped to https://localhost:PORT/api/v1/web/<package-name>/<action-name> and can be called from your frontend, opening the url in the browser, or with cURL etc.
+Actions are loaded dynamically so the code is not evaluated until an http request is made.  This means that when you put a breakpoint in your action code it will be grayed out until you trigger a call to the action. Web action urls are mapped to `https://localhost:PORT/api/v1/web/<package-name>/<action-name>` and can be called from your frontend, opening the url in the browser, or with cURL etc.
 
 You can use the step through debugging features of VS Code, inspect variables, add watches, etc.
 
