@@ -11,7 +11,7 @@ title: 'Lesson 2: Debugging Application Code'
 
 # Lesson 2: Debugging Application Code
 
-To overcome the error that you got in the previous lesson, now open your app inside Adobe Experience Cloud (ExC) Shell on the same Chrome Debug window: https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080. You might be asked to log in using your Adobe ID. When opened, the UI is almost similar to that when you access it on localhost, except the ExC Shell on top.  
+To overcome the error that you got in the previous lesson, now open your app inside Adobe Experience Cloud (ExC) Shell on the same Chrome Debug window: https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080. You might be asked to log in using your Adobe ID. When opened, the UI is almost similar to that when you access it on localhost, except the ExC Shell on top.
 
 At this time, the action runs successfully, and you can see the response body of `hello` action in the browser console.
 
@@ -34,7 +34,7 @@ Go back to the Chrome Debug window, access the at inside ExC Shell if not alread
 
 ![debugger-action](https://raw.githubusercontent.com/AdobeDocs/adobeio-codelabs-debugging/master/lessons/assets/debugger-action.gif)
 
-You can debug your UI code in the `web-src` folder in the same way as [debugging action code](lesson2.md). However, almost every browser comes with handy built-in debugging capabilities, you should leverage these to get the most out of it.  
+You can debug your UI code in the `web-src` folder in the same way as [debugging action code](lesson2.md). However, almost every browser comes with handy built-in debugging capabilities, you should leverage these to get the most out of it.
 
 Below is an example ran on Firefox.
 

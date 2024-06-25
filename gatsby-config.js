@@ -519,7 +519,7 @@ module.exports = {
             }]
           },
           {
-            title: 'Debugging App Builder Apps',
+            title: 'Debugging App Builder Apps With Wskdebug',
             path: 'resources/debugging/index.md',
             pages: [{
               "title": "Requirements",

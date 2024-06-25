@@ -78,7 +78,7 @@ Once your project is set up in [Adobe Developer Console](/console), let's move o
 
     ```bash
     $ aio login
-    Visit this url to log in: 
+    Visit this url to log in:
     https://aio-login.adobeioruntime.net/api/v1/web/default/applogin?xxxxxxxx
     ```
 
@@ -88,7 +88,7 @@ Once your project is set up in [Adobe Developer Console](/console), let's move o
     eyJ4NXUiOixxxxxxxxxxxxxxxxxxx
     ```
 
-1. Now you can start building App Builder Applications with the [CLI](https://github.com/adobe/aio-cli)!  
+1. Now you can start building App Builder Applications with the [CLI](https://github.com/adobe/aio-cli)!
 
 ## 4. Bootstrapping new App using the CLI
 
@@ -136,11 +136,11 @@ There are a few sample flows listed below. Some developers may not have access t
     create app.config.yaml
     create .aio
     create README.md
-    
+
     .......
-    
+
     found 0 vulnerabilities
-    
+
     ✔ App initialization finished!
     ```
 
@@ -257,7 +257,7 @@ Note that you may not see all the options listed below on your command line, bec
     ? We are about to create a new sample action that interacts with the Adobe Experience Platform: Realtime Customer Profile
     how would you like to name this action? customer-profile
     ? We are about to create a new sample action that showcases how to access an external API
-    how would you like to name this action? (generic) 
+    how would you like to name this action? (generic)
     ```
 
 1. Once you complete this select, you should see the build process kicking off with necessary npm dependencies are getting installed.
@@ -267,11 +267,11 @@ Note that you may not see all the options listed below on your command line, bec
     create app.config.yaml
     create .aio
     create README.md
-    
+
     .......
-    
+
     found 0 vulnerabilities
-    
+
     ✔ App initialization finished!
     ```
 
@@ -465,34 +465,23 @@ The other sample actions require futher paramaters to be invoked. For instance, 
 
 ### 6.3 Debugging the Application
 
-Our [CLI](https://github.com/adobe/aio-cli) is integrated with an open source project [wskdebug](https://github.com/apache/openwhisk-wskdebug) to support debug functionalities. You can develop and debug OpenWhisk actions in your favorite IDE or debugger with a fast feedback loop. It features:
+The [CLI](https://github.com/adobe/aio-cli) has a _dev_ command (`aio app dev`) to support debug functionalities. You can develop and debug your Adobe Runtime actions in your favorite IDE or debugger with a fast feedback loop. It features:
 
-- Full debugging of actions of the respective language runtime
-- Automatic code reloading
+- Step through debugging with lengthy timeouts _(previously you could only stop at a breakpoint for 60 seconds)_
 - LiveReload for web actions
-- Auto-invoking of actions on code changes
-- Or running any shell command such as a curl request on code changes
+- Instant logging output to terminal
 
 Please visit [Debugging App Builder Apps Codelab](../resources/debugging/index.md) to set up your local environment and go through step-by-step instructions.
 
-If the local development is run without the `--local` option, the action you are debugging is running directly on [Adobe I/O Runtime](/runtime). When the `--local` option is used, the actions are debugged in the standalone OpenWhisk instance running locally. In both cases, Docker is required on your local machine so that the remote or locally mounted actions get proxied in the local Docker container. Learn more about what you can do in [debug mode](https://www.npmjs.com/package/@openwhisk/wskdebug).
-
-#### Targeting local actions with `aio runtime` 
-To target local actions with `aio runtime`, you will have to populate the project's `.env` with the local Runtime credentials. 
-
-These credentials are always the following when using `aio`: 
-
-```
-AIO_runtime_auth=23bc46b1-71f6-4ed5-8c54-816aa4f8c502:123zO3xZCLrMN6v2BKK1dXYFpXlPkccOFqm12CdAsMgRU4VrNZ9lyGVCGuMDGIwP
-AIO_runtime_namespace=guest
-AIO_runtime_apihost=http://localhost:3233
-```
-
-Once the project's `.env` has been populated with the local Runtime credentials, commands executed with `aio runtime` in the root project directory will target the locally deployed instance of Runtime. 
+If the local development is run (`aio app run`), the actions you are calling are run directly on [Adobe I/O Runtime](/runtime). When you use `aio app dev`, the actions are run/debugged in node directly. In both cases your frontend is run on localhost.
 
 ### 6.4 Retrieving Logs for the Application
 
-To see your application logs, use the command `aio app logs`. By default, only the logs of the latest activation is fetched. If you want to see a more extensive list of logs, use the `--limit` flag to define the number of recent activations to be fetched.
+#### Dev
+When using `aio app dev` logs are immediately output to the terminal and are not kept in an activation record.
+
+#### Run or Deploy
+To see your application logs after running `aio app run` or after running your deployed app (`aio app deploy`), use the command `aio app logs`. By default, only the logs of the latest activation is fetched. If you want to see a more extensive list of logs, use the `--limit` flag to define the number of recent activations to be fetched.
 
 Read more at [Managing Application Logs](../guides/application_logging.md)
 
@@ -541,7 +530,7 @@ The [CLI](https://github.com/adobe/aio-cli) output details this process:
 ...
 
 Your deployed actions:
-  -> demoproject-0.0.1/__secured_analytics 
+  -> demoproject-0.0.1/__secured_analytics
 ...
 
 To view your deployed application:
