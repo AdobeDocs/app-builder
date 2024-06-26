@@ -94,7 +94,7 @@ npm install @adobe/aio-lib-state
   const value = res.value
   // put
   await state.put('key', 'value') // with default ttl of 1 day
-  await state.put('another key', 'another value', { ttl: 200 }) // in seconds, use -1 for max (365 days).
+  await state.put('another key', 'another value', { ttl: 200 }) // in seconds, use stateLib.MAX_TTL for 365 days.
   // delete
   await state.delete('key')
 
