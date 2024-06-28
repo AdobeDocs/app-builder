@@ -98,10 +98,6 @@ module.exports = {
           {
             "title": "Event hooks for App Builder Applications",
             "path": "guides/app-hooks.md"
-          },
-          {
-            "title": "Packaging for Developer Distribution",
-            "path": "guides/packaging.md"
           }
         ]
       },
@@ -200,6 +196,20 @@ module.exports = {
           {
             "title": "Webpack Configuration",
             "path": "guides/configuration/webpack-configuration.md"
+          }
+        ]
+      },
+      {
+        "title": "Distribution",
+        "path": "guides/distribution/index.md",
+        "pages": [
+          {
+            "title": "Private Distribution",
+            "path": "guides/distribution/private.md"
+          },
+          {
+            "title": "Public Distribution",
+            "path": "guides/distribution/public.md"
           }
         ]
       },

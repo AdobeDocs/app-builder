@@ -70,6 +70,13 @@ hooks:
   test: echo this is your custom test runner
 ```
 
+`aio app pack` supports: 
+```yaml
+hooks: 
+  pre-pack: echo this is before packaging
+  post-pack: echo this is after packaging
+```
+
 ## Use cases
 
 `aio app run` hooks:

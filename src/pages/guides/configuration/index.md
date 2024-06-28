@@ -52,6 +52,22 @@ extensions:
               function: actions/worker/index.js
               web: 'yes'
               runtime: nodejs:18
+
+# public distribution only - customer configuration
+configSchema: 
+  title: 'the title'
+  description: 'the description'
+  properties:
+    - title: 'Slack Webhook'
+      type: 'string'
+      description: 'Please provide the webhook used by this application. Configure in slack.com'
+      envKey: 'SLACK_WEBHOOK'
+
+# public distribution only - required products
+requiredProducts: 
+  - code: AEP
+    minVersion: 0.0.0
+    maxVersion: 1.0.0
 ```
 
 ### Standalone application and extensions
@@ -279,6 +295,26 @@ extensions:
 ```
 
 Configuration paths defined in `./src/dx-excshell-1/ext.config.yaml` must be relative to that file.
+
+### Public distribution configuration
+
+A subset of configuration options are specific to publicly distributable apps. See the [Public Distribution](../distribution/public.md) guide for more details.
+
+```yaml
+configSchema: 
+  title: 'the title'
+  description: 'the description'
+  properties:
+    - title: 'Slack Webhook'
+      type: 'string'
+      description: 'Please provide the webhook used by this application. Configure in slack.com'
+      envKey: 'SLACK_WEBHOOK'
+
+requiredProducts: 
+  - code: AEP
+    minVersion: 0.0.0
+    maxVersion: 1.0.0
+```
 
 ## `.env`
 
