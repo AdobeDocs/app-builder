@@ -98,8 +98,8 @@ npm install @adobe/aio-lib-state
   // delete
   await state.delete('key')
 
-  // list keys using an iterator, with glob pattern support
-  await for (const { keys } of state.list({ match: 'ke*' })) {
+  // list keys using an iterator, with glob pattern support, omit the match option to list all keys
+  for await (const { keys } of state.list({ match: 'ke*' })) {
     console.log(keys)
   }
 
