@@ -1,10 +1,6 @@
 ---
 name: Search Indexing
 on:
-  workflow_run:
-    workflows: ["Deployment"]
-    types:
-      - completed
   workflow_dispatch:
     inputs:
       mode:
