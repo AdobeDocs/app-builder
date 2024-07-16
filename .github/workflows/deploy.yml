@@ -15,6 +15,14 @@ on:
         description: "Exclude a subfolder from deletion"
         required: false
         default: ""
+      index-mode:
+        description: 'Type of indexing. "index" to push to Algolia, "console" for dry run.'
+        required: true
+        default: "index"
+        type: choice
+        options:
+          - console
+          - index
 jobs:
   set-state:
     runs-on: ubuntu-latest
@@ -142,6 +150,7 @@ jobs:
           GATSBY_ALGOLIA_SEARCH_INDEX: ${{ secrets.AIO_ALGOLIA_SEARCH_INDEX }}
           GATSBY_ALGOLIA_INDEX_ENV_PREFIX: ${{ secrets.AIO_ALGOLIA_INDEX_ENV_PREFIX }}
           GATSBY_FEDS_PRIVACY_ID: ${{ secrets.AIO_FEDS_PRIVACY_ID }}
+          GATSBY_SITE_DOMAIN_URL: https://developer-stage.adobe.com
 
       - name: Deploy
         uses: AdobeDocs/static-website-deploy@master
@@ -242,12 +251,13 @@ jobs:
           GATSBY_ALGOLIA_APP_ID: ${{ secrets.AIO_ALGOLIA_APP_ID }}
           GATSBY_ALGOLIA_API_KEY: ${{ secrets.AIO_ALGOLIA_API_KEY }}
           ALGOLIA_WRITE_API_KEY: ${{ secrets.AIO_ALGOLIA_WRITE_API_KEY }}
-          ALGOLIA_INDEXATION_MODE: ${{ secrets.AIO_ALGOLIA_INDEXATION_MODE }}
-          ALGOLIA_INDEX_NAME: ${{ secrets.ALGOLIA_INDEX_NAME || github.event.repository.name }}
+          ALGOLIA_INDEXATION_MODE: ${{ github.event.inputs.index-mode || 'index' }}
+          GATSBY_ALGOLIA_INDEX_NAME: ${{ secrets.ALGOLIA_INDEX_NAME || github.event.repository.name }}
           GATSBY_ALGOLIA_INDEX_ALL_SRC: ${{ secrets.AIO_ALGOLIA_INDEX_ALL_SRC }}
           GATSBY_ALGOLIA_SEARCH_INDEX: ${{ secrets.AIO_ALGOLIA_SEARCH_INDEX }}
           GATSBY_ALGOLIA_INDEX_ENV_PREFIX: ${{ secrets.AIO_ALGOLIA_INDEX_ENV_PREFIX }}
           GATSBY_FEDS_PRIVACY_ID: ${{ secrets.AIO_FEDS_PRIVACY_ID }}
+          GATSBY_SITE_DOMAIN_URL: https://developer.adobe.com
       - name: Deploy
         uses: AdobeDocs/static-website-deploy@master
         with:
