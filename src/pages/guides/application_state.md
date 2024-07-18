@@ -108,10 +108,8 @@ npm install @adobe/aio-lib-state
   // returns usage statistics (storage)
   await state.stats()
 
-  // delete all keys and values, careful!
-  await state.deleteAll()
-
   // delete selected keys matching a glob pattern
+  // Note: the match option is required!
   await state.deleteAll({ match: 'ke*' })
 ```
 
