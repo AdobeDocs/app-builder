@@ -26,11 +26,11 @@ The manifest allows these headers to be set as rules which can select or reject 
 
 These rules are as follows:
 
-| Rule                         | Description                             |
-|------------------------------|-----------------------------------------|
-| /*                           | Include all static content              |
+| Rule                               | Description                             |
+|------------------------------------|-----------------------------------------|
+| /*                                 | Include all static content              |
 | /&lt;folder name&gt;/*             | Include all files within a given folder |
-| *.html or *.js etc.          | Include files based on extension        |
+| \*.html or \*.js etc.              | Include files based on extension        |
 | /file or /&lt;folder name&gt;/file | Include a specific file                 |
 
 These rules are applied in the order in which they are specified in the manifest. For example, rules placed after a given rule can override the previous rule if both match the same file.
