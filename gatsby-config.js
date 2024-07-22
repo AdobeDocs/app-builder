@@ -155,7 +155,11 @@ module.exports = {
           },
           {
             "title": "Credential Rotation",
-            "path": "guides/credential-rotation.md"
+            "path": "guides/deployment/credential-rotation.md"
+          },
+          {
+            "title": "Setting Response Headers",
+            "path": "guides/deployment/setting-response-headers.md"
           },
         ]
       },
