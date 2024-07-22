@@ -30,7 +30,7 @@ These rules are as follows:
 |------------------------------------|-----------------------------------------|
 | /*                                 | Include all static content              |
 | /&lt;folder name&gt;/*             | Include all files within a given folder |
-| \*.html or \*.js etc.              | Include files based on extension        |
+| \*.html or \*.js etc.              | Include files based on a file extension |
 | /file or /&lt;folder name&gt;/file | Include a specific file                 |
 
 These rules are applied in the order in which they are specified in the manifest. For example, rules placed after a given rule can override the previous rule if both match the same file.
