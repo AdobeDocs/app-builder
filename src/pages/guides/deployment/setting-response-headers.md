@@ -8,7 +8,7 @@ description: How to set response headers for your static assets
 
 # Setting Response Headers
 
-For developers building applications with UI, the static assets (HTML, Javascript, css, images, etc) and so on) are served by our CDN (via the `adobeio-static.net` domain).
+For developers building applications with UI, the static assets (HTML, Javascript, css, images, etc) are served by our CDN via the `adobeio-static.net` domain.
 
 Adobe Developer App Builder supports setting response headers for this static content (since aio-cli version 9.3.0).
 
