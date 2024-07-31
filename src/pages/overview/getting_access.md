@@ -14,8 +14,8 @@ App Builder is available to Adobe Experience Cloud customers and partners. You m
 **Trial access**
 App Builder Trial is now offered as part of Adobe Experience Manager Headless trial. See how App Builder is better with Adobe Experience Manager:
 
-- [Adobe Experience Manager Headless Trial]([https://adobe.ly/appbuilder-trial](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fbusiness.adobe.com%2Fresources%2Faem-headless-trials.html&data=05%7C02%7Crnagy%40adobe.com%7Ca911da6d7fad4631fec408dcb15edebc%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638580268228310850%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=Lbg3ZhJn%2F%2Bx2m5T4uVPddwN2E5VCAYpmqpQvJyaFeuk%3D&reserved=0))
-
+- [Adobe Experience Manager Headless Trial](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&cli=headless_exl_banner_campaign&co=US&lang=en)
+  
 **Purchase a license**
 
 App Builder is included with the purchase of Adobe Experience Manager Sites Cloud Service and Adobe Commerce on cloud. Customers can also purchase a license for use with any Adobe Experience Cloud product or add extra units to add capacity. 
