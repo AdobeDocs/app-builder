@@ -7,7 +7,7 @@ keywords:
 title: How to get access to App Builder
 ---
 
-## How to get access to App Builder
+## Get access to App Builder
 
 App Builder is available to Adobe Experience Cloud customers and partners. You may already have access to App Builder. You can check by visiting the [Adobe Developer Console](/console) And see if you have the "create from template" button under quick start.
 
