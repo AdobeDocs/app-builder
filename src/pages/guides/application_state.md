@@ -108,8 +108,9 @@ npm install @adobe/aio-lib-state
   // returns usage statistics (storage)
   await state.stats()
 
-  // delete all keys and values
-  await state.deleteAll()
+  // delete selected keys matching a glob pattern
+  // Note: the match option is required!
+  await state.deleteAll({ match: 'ke*' })
 ```
 
 Explore the [full API](https://github.com/adobe/aio-lib-state/blob/main/doc/api.md)
@@ -149,6 +150,18 @@ In case of exceeding the rate-limiting quota, the State service will return with
 
 *Example: org 123 is entitled to 5 quotas, any production workspace will not be throttled before consuming 50MB/min or 5MB/sec bandwidth in a single region.*
 
+### `match` option
+
+`state.deleteAll` and `state.list` support a `match` option to filter keys.
+
+`match` supports a glob-style pattern via the `*` character, suppose you have the following keys: `key`, `base.key`, `key-1`
+
+- `match=key` will match `key`
+- `match=k*` will match `key`
+- `match=*k*` will match `key`, `base.key`, `key-1`
+- `match=*-1` will match `key-1`
+- `match=base.*-1` will match none
+
 ### List guarantees
 
 Using `state.list`, you can iterate over the keys stored in your State container. State implements listing with a cursor-based iterator, which requires multiple calls to the State service to traverse all your keys. Please note, that `list` is subject to the bandwidth rate-limiting quotas, so listing many keys may result in 429s.
@@ -169,7 +182,7 @@ However, list also has the following drawbacks:
 
 Furthermore, you can control the `list` behavior via those two options:
 
-- `match`, to filter keys using a glob-style pattern via the `*` character.
+- `match`, to filter keys [using a glob-style pattern](#match-option).
 - `countHint`, to specify an approximate amount of keys returned per iteration. State doesn't provide a guarantee on the number of elements returned per iteration, but we try (again with no guarantees) to return at least `countHint` elements per iteration.
 
 ### Troubleshooting
