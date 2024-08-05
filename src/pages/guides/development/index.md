@@ -55,22 +55,31 @@ Create a file named .vscode/launch.json at the root of your project with the fol
 
 ```json
 {
-  "version": "0.2.0",
+  "version": "0.3.0",
   "configurations": [
     {
       "name": "App Builder: debug actions",
       "type": "node-terminal",
       "request": "launch",
-      "command": "aio app dev"
+      "command": "aio app dev",
+      "skipFiles": [
+        "<node_internals>/**/*.js",
+        "${workspaceFolder}/node_modules/**/*.js",
+        "${workspaceFolder}/dist/**/*.js"
+     ]
     }, {
       "name": "App Builder: debug full stack",
       "type": "node-terminal",
       "request": "launch",
       "command": "aio app dev",
-      "skipFiles": ["<node_internals>/**"],
       "sourceMapPathOverrides": {
         "/__parcel_source_root/*": "${webRoot}/*"
       },
+      "skipFiles": [
+        "<node_internals>/**/*.js",
+        "${workspaceFolder}/node_modules/**/*.js",
+        "${workspaceFolder}/dist/**/*.js"
+     ],
       "serverReadyAction": {
         "pattern": "server running on port : ([0-9]+)",
         "uriFormat": "https://localhost:%s",
