@@ -64,9 +64,8 @@ Create a file named .vscode/launch.json at the root of your project with the fol
       "command": "aio app dev",
       "skipFiles": [
         "<node_internals>/**/*.js",
-        "${workspaceFolder}/node_modules/**/*.js",
-        "${workspaceFolder}/dist/**/*.js"
-     ]
+        "${workspaceFolder}/node_modules/**/*.js"
+      ]
     }, {
       "name": "App Builder: debug full stack",
       "type": "node-terminal",
@@ -77,9 +76,8 @@ Create a file named .vscode/launch.json at the root of your project with the fol
       },
       "skipFiles": [
         "<node_internals>/**/*.js",
-        "${workspaceFolder}/node_modules/**/*.js",
-        "${workspaceFolder}/dist/**/*.js"
-     ],
+        "${workspaceFolder}/node_modules/**/*.js"
+      ],
       "serverReadyAction": {
         "pattern": "server running on port : ([0-9]+)",
         "uriFormat": "https://localhost:%s",
