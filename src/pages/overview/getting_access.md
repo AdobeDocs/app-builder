@@ -18,7 +18,7 @@ App Builder Trial is now offered as part of Adobe Experience Manager Headless tr
   
 **Purchase a license**
 
-YOu may be entitled to App Builder as part of a product you previously purchased App Builder is included with the purchase of Adobe Experience Manager Sites Cloud Service and Adobe Commerce on cloud. If you have Adobe Experience Manager Sites Cloud Service but do not have access to App Builder, please contact your sales team to request 1 pack of App Builder to be added. 
+You may be entitled to App Builder as part of a product you previously purchased. 1 pack of App Builder is included with the purchase of Adobe Experience Manager Sites Cloud Service and Adobe Commerce on cloud. If you have Adobe Experience Manager Sites Cloud Service but do not have access to App Builder, please contact your sales team to request 1 pack of App Builder to be added. 
 
 In addition, customers can purchase a license for use with any Adobe Experience Cloud product or add extra packs to add capacity. Please contact your sales team for details.
 
@@ -53,6 +53,10 @@ If you are unable to access the Adobe Admin Console you will need to ask a Syste
 **How do I find a sys admin for my org?**
 
 This is likely the person who gave you access to login to the Adobe Experience Cloud. This could be someone in your company IT department or in your marketing team.
+
+**What is included in 1 pack of App Builder?**
+
+Please refer to our [product description page](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) for details.
 
 **Can I use this with Creative Cloud or Document Cloud?**
 
