@@ -1,6 +1,6 @@
 ---
 keywords:
-  - Adobe I/O
+  - App Builder
   - Extensibility
   - API Documentation
   - Developer Tooling
@@ -12,6 +12,7 @@ title: How to get access to App Builder
 App Builder is available to Adobe Experience Cloud customers and partners. You may already have access to App Builder. You can check by visiting the [Adobe Developer Console](/console) And see if you have the "create from template" button under quick start.
 
 **Trial access**
+
 App Builder Trial is now offered as part of Adobe Experience Manager Headless trial. See how App Builder is better with Adobe Experience Manager:
 
 - [Adobe Experience Manager Headless Trial](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&cli=headless_exl_banner_campaign&co=US&lang=en)
