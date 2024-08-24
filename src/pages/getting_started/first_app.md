@@ -368,16 +368,32 @@ You should be able to see these folders and files in your project:
 To run the application locally, use one of the following commands:
 
 ```bash
-aio app run --local
+aio app dev
 ```
 
-This will deploy the actions to a local [OpenWhisk](https://openwhisk.apache.org/) instance, which the [CLI](https://github.com/adobe/aio-cli) will autmomatically download and install. The SPA will be run on the local machine.
+This is thre preferred method of local development. The command will launch the application locally with the following supported Features:
+
+- Web actions/sequences served via http
+- Hot reload of actions on code change
+- Hot reload of web source on code change
+- Debug web browser JavaScript code in Visual Studio Code
+- Debug web actions/sequences in Visual Studio Code
+- Require-adobe-auth web annotation support
+- Logging to console
+
 
 ```bash
 aio app run
 ```
 
-This will deploy the actions to [Adobe I/O Runtime](/runtime), while running the UI part on the local machine.
+If you need to test functionality that is not supported by `aio app dev`, you can deploy the actions to Adobe I/O Runtime while running the UI part on your local machine.
+
+```bash
+aio app run --local
+```
+
+(Deprecated) This will deploy the actions to a local [OpenWhisk](https://openwhisk.apache.org/) instance, which the [CLI](https://github.com/adobe/aio-cli) will autmomatically download and install. The SPA will be run on the local machine. **Note: Users of Apple Silicon will encounter issues with this command. Please use `aio app dev` instead.**
+
 
 #### (First time users) Accepting the Certificate
 
