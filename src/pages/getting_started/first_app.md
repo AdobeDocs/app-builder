@@ -392,7 +392,7 @@ If you need to test functionality that is not supported by `aio app dev`, you ca
 aio app run --local
 ```
 
-(Soon to be deprecated) This will deploy the actions to a local [OpenWhisk](https://openwhisk.apache.org/) instance, which the [CLI](https://github.com/adobe/aio-cli) will autmomatically download and install. The SPA will be run on the local machine. **Note: Users of Apple Silicon will encounter issues with this command. Please use `aio app dev` instead.**
+(Deprecated) This will deploy the actions to a local [OpenWhisk](https://openwhisk.apache.org/) instance, which the [CLI](https://github.com/adobe/aio-cli) will autmomatically download and install. The SPA will be run on the local machine. **Note: Users of Apple Silicon will encounter issues with this command. Please use `aio app dev` instead.**
 
 
 #### (First time users) Accepting the Certificate
