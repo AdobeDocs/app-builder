@@ -19,7 +19,7 @@ App Builder Trial is now offered as part of Adobe Experience Manager Headless tr
   
 **Purchase a license**
 
-You may be entitled to App Builder as part of a product you previously purchased. 1 pack of App Builder is included with the purchase of Adobe Experience Manager Sites Cloud Service and Adobe Commerce on cloud. If you have Adobe Experience Manager Sites Cloud Service but do not have access to App Builder, please contact your sales team to request 1 pack of App Builder to be added. 
+You may be entitled to App Builder as part of a product you previously purchased. 1 pack of App Builder is included with the purchase of Adobe Experience Manager Sites Cloud Service and 1 or several packs with Adobe Commerce on cloud. If you have Adobe Experience Manager Sites Cloud Service but do not have access to App Builder, please contact your sales team to request 1 pack of App Builder to be added. Adobe Commerce packs will be added automatically by Adobe.
 
 In addition, customers can purchase a license for use with any Adobe Experience Cloud product or add extra packs to add capacity. Please contact your sales team for details.
 
