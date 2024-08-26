@@ -1,6 +1,6 @@
 ---
 keywords:
-  - Adobe I/O
+  - App Builder
   - Extensibility
   - API Documentation
   - Developer Tooling
@@ -16,12 +16,12 @@ App Builder is a complete design, application, and runtime framework for buildin
 App Builder offers a complete application framework for extending Adobe solutions:
 * Support for headful apps (Single Page Applications) or headless apps (microservices, service-to-service type of integrations)
 * React-Spectrum as the default UI toolkit (other toolkits can be used)
-* CLI and code generators for creating and managing the code
+* CLI and code generators for creating and managing code
 * SDK libraries to integrate with Adobe solutions
 * Enterprise grade security for accessing data and control end-user access; System Admins can control what App Builder apps are published and who gets access to them
 * CI/CD pipeline and building blocks to create a custom pipeline if needed
 * Execution environment so you do not need to bring your own infrastructure: serverless platform for backend (Adobe I/O Runtime), CDN for static assets, experience.adobe.com for surfacing the UI, custom events for publishing your events through our infrastructure, and file and data storage to persist application state
-* Your App Builder apps will be surfaced within the experience.adobe.com, so end-users can move seamlessly between Adobe and App Builder apps.
+* Your App Builder apps will be surfaced within [experience.adobe.com](https://experience.adobe.com), so end-users can move seamlessly between Adobe and App Builder apps.
 
 ## Is there a trial available?
 Yes. App Builder Trial is now offered as part of Adobe Experience Manager Headless trial. See how App Builder is better with Adobe Experience Manager:
@@ -36,13 +36,7 @@ You may be entitled to App Builder as part of a product you previously purchased
 In addition, customers can purchase a license for use with any Adobe Experience Cloud product or add extra packs to add capacity. Please contact your sales team for details.
 
 ## What comes in an App Builder license?
-App Builder is licensed in packs, and each App Builder pack includes:
-
-* **I/O Runtime:**  	     6 GB-Seconds / Year
-* **Custom Events:** 	     24 million Custom Events / Year
-* **CDN:** 		             10 TB / Year
-* **File Storage:** 	     1 TB / Year
-* **Key-Value Storage:**  900 Request Units per Second
+App Builder is licensed in packs. Please refer to our [product description page](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) for details. 
 
 Contact your sales team for details about licensing.
 
