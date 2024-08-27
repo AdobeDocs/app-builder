@@ -67,7 +67,7 @@ See [inquirer's Support section](https://www.npmjs.com/package/inquirer#support-
 
 The following is required if you intend to use local development (`aio app dev`) features provided by the [CLI](https://github.com/adobe/aio-cli):
 
-- [Visual Studio Code](https://code.visualstudio.com/download) (VS Code) as the supported IDE for editor, debuggger, etc. You can use any other IDE as a code editor, but advanced usage (e.g. debugger) is not yet supported.
+- [Visual Studio Code](https://code.visualstudio.com/download) (VS Code) as the supported IDE for editor, debugger, etc. You can use any other IDE as a code editor, but advanced usage (e.g. debugger) is not yet supported.
 
 
 ## Next Step
