@@ -1,6 +1,6 @@
 ---
 keywords:
-  - Adobe I/O
+  - App Builder
   - Extensibility
   - API Documentation
   - Developer Tooling
