@@ -11,60 +11,75 @@ title: Creating your First App Builder Application
 
 In this tutorial, we'll guide you through the following steps to give you an introduction on how to set up and develop an App Builder Application.
 
-1. Setting up Local Environment
-1. Creating a new Project on [Adobe Developer Console](/console)
-1. Signing in from the [CLI](https://github.com/adobe/aio-cli)
-1. Bootstrapping new App using [CLI](https://github.com/adobe/aio-cli)
+1. Set up Local Environment
+1. Create new Project on [Adobe Developer Console](/console)
+1. Sign in from the [CLI](https://github.com/adobe/aio-cli)
+1. Bootstrap new App using [CLI](https://github.com/adobe/aio-cli)
 1. Anatomy of an App Builder Application
 1. Developing the Application
 1. Deploying the Application
 
-If you run into any issues during development, please first refer to the [Common Issues section](first_app.md#common-issues) on this page. If that does not resolve your issue, please refer to our [Support Channels](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/app-builder).
+If you run into any issues during development, please first refer to the [Common Issues section](first_app.md#common-issues) on this page. 
 
-## 1. Setting up Local Environment
+## 1. Set up Local Environment
 
-Ensure your local environment and tooling is up to date. Instructions are here: [Setting up Your Environment](./index.md). Make sure you have access to App Builder as described here [How to Get Access to App Builder](../overview/getting_access.md). If are have not yet been granted access, you may want to wait before proceeding.
+Ensure your local environment and tooling is up to date. Instructions are here: [Setting up Your Environment](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up). Make sure you have access to App Builder as described here [How to Get Access to App Builder](../overview/getting_access.md). If are have not yet been granted access, you may want to wait before proceeding.
 
-## 2. Creating a new Project on Developer Console
+## 2. Create a new Project on Developer Console
 
 [Adobe Developer Console](/console) gives you access to [APIs](/apis), [SDKs](https://github.com/adobe/aio-sdk) and developer tools to integrate, and extend Adobe products. In App Builder, you need access to [Adobe I/O Runtime](/runtime) credentials used for deploying your application, and access to API credentials if you want to access Adobe [APIs](/apis) in your application.
 
 Follow the instructions to set up your project:
 
 1. Navigate to [Adobe Developer Console](/console).
+
     ![Adobe Developer Console](../images/console-1.png)
 
-1. Use the Org Switcher on the upper right corner to ensure or to select the Org you want to use.
+2. Use the IMS Org Switcher in the upper right corner to select the IMS organization you want to use, if it is not the correct one.
+
     ![Org Switcher](../images/console-2.png)
 
-1. Once you are in the correct organization, Under `Quick Start`, click on the option to `Create project from template`.
-   **Note that if you don't have the `Create project from template` option, it might be because your request to access App Builder has not yet been approved.**
-   If you already submitted a request, you may want to wait for it to be approved. If you have not yet submitted a request, you might want to do that,
-   as described at [How to Get Access to App Builder](../overview/getting_access.md).
+3. Once you are in the correct organization, Under `Quick Start`, click on the option to `Create project from template`.
 
-1. Select `App Builder` from the list of templates.
-    ![Select Template](../images/console-3.png)
+  > **Note:** if you don't have the `Create project from template` option, confirm the IMS org is correct. If it is, you do not yet have access to App Builder.
+   Make sure you followed the process for [How to Get Access to App Builder](../overview/getting_access.md).
 
-1. Enter `Project Title` and `App Name` for your templated project.
-    - `Project Title` is used to identify this project within [Adobe Developer Console](/console) and in [CLI](https://github.com/adobe/aio-cli). We recommend changing the default title to a meaningful project title.
-    - `App Name` is a unique identifier for your application. **Note:** once project set up is complete this value cannot be changed.
-    - By default, the "Include Runtime with each workspace" checkbox is checked. Each workspace is automatically provisioned with a unique [Adobe I/O Runtime](/runtime) namespace allowing each developer to work within their own [Adobe I/O Runtime](/runtime) environment.
-    - If you deselect the checkbox and do not opt for automatic inclusion of [Adobe I/O Runtime](/runtime), you will need to enable it manually for each individual workspace. You cannot auto-add [Adobe I/O Runtime](/runtime) to all workspaces after the initial set up is complete.
-You can manually remove [Adobe I/O Runtime](/runtime) from individual workspaces later if you determine that it is not needed.
-    - Click `Save` when ready.
-    ![Select Template](../images/console-4.png)
+4. Select `App Builder` from the list of templates.
 
-1. You should see a new project generated with 2 default `Workspaces`.
-    - Workspaces can be used to manage different deployment environments (dev, qa, stage, prod) for your application and to provide individual working environment for each developer on the project. Workspace is where you will connect services and get the credential details needed to connect to [Adobe APIs](/apis). Connected services can differe from workspace to workspace, and the credentials used within each workspace is not shared across workspaces.
-    - Each App Builder project has two default workspaces: `Production` and `Stage`. You can add more workspaces as needed. The `Production` workspace is special, as it is used for the submission and distribution flow. When you’re ready to deploy your app, you will submit it for approval from the Production workspace.
+   ![Select Template](../images/console-3.png)
+
+5. Enter `Project Title` and `App Name` for your templated project.
+
+  `Project Title` is used to identify this project within [Adobe Developer Console](/console) and in [CLI](https://github.com/adobe/aio-cli). We recommend changing the default title to a meaningful project title. 
+  
+  `App Name` is a unique identifier for your application. 
+  
+ > **Note:** once project set up is complete `App Name` cannot be changed.
+   
+  By default, the "Include Runtime with each workspace" checkbox is checked. Each workspace is automatically provisioned with a unique [Adobe I/O Runtime](/runtime) namespace allowing each developer to work within their own [Adobe I/O Runtime](/runtime) environment.
+
+ > **Note:** If you deselect the checkbox and do not opt for automatic inclusion of [Adobe I/O Runtime](/runtime), you will need to enable it manually for each individual workspace. You cannot auto-add [Adobe I/O Runtime](/runtime) to all workspaces after the initial set up is complete.
+
+  You can manually remove [Adobe I/O Runtime](/runtime) from individual workspaces later if you determine that it is not needed.
+
+  Click `Save` when ready.
+
+  ![Select Template](../images/console-4.png)
+
+6. You should see a new project generated with 2 default `Workspaces`.
+    - Workspaces can be used to manage different deployment environments (dev, qa, stage, prod) for your application and to provide individual working environment for each developer on the project. Workspace is where you will connect services and get the credential details needed to connect to [Adobe APIs](/apis). Connected services can differ from workspace to workspace, and credentials used within each workspace is not shared across workspaces.
+   
+    - Each App Builder project has two default workspaces: `Production` and `Stage`. You can add more workspaces as needed. The `Production` workspace is a special workspace used for the submission and distribution flow. When you’re ready to deploy your app, you will submit it for approval from the Production workspace.
+   
     ![Project Preview](../images/console-5.png)
 
-1. Create a new workspace or select a workspace to add [APIs](https://developer.adobe.com/developer-console/docs/guides/services/#add-a-service) and [Events](https://developer.adobe.com/developer-console/docs/guides/services/services-add-event/) that you will need for your application.
+7. Create a new workspace or select a workspace to add [APIs](https://developer.adobe.com/developer-console/docs/guides/services/#add-a-service) and [Events](https://developer.adobe.com/developer-console/docs/guides/services/services-add-event/) that you will need for your application.
+   
     ![Workspace](../images/console-6.png)
 
 To learn more about Adobe Developer Console, please refer to [Console Documentation](https://developer.adobe.com/developer-console/docs).
 
-## 3. Signing in from CLI
+## 3. Sign in from CLI
 
 Once your project is set up in [Adobe Developer Console](/console), let's move onto your local environment. You can always go back to [Adobe Developer Console](/console) to modify your project later.
 
@@ -90,13 +105,13 @@ Once your project is set up in [Adobe Developer Console](/console), let's move o
 
 1. Now you can start building App Builder Applications with the [CLI](https://github.com/adobe/aio-cli)!
 
-## 4. Bootstrapping new App using the CLI
+## 4. Bootstrap new App using the CLI
 
 There are a few sample flows listed below. Some developers may not have access to [Adobe Developer Console](/console) as entitled Enterprise Organization users but may still want to look at the project or to import credentials later.
 
 ### 4.1 Developer is Logged in as Enterprise Organization user
 
-#### 4.1.1 Initializing your project with Extension Points
+#### 4.1.1 Initialize your project with Extension Points
 
 1. In your Terminal, navigate to where you want to initialize your project and type in the following command in your Terminal:
 
@@ -175,7 +190,7 @@ There are a few sample flows listed below. Some developers may not have access t
 
     The template's npm package will be downloaded and extracted, and Developer Console resources such as services and workspaces will be created and configured based on the template's **install.yaml** configuration file. `npm install` will run in the background to install the npm package.
 
-#### 4.1.2 Initializing an empty project
+#### 4.1.2 Initialize an empty project
 
 1. In your Terminal, navigate to where you want to initialize your project and type in the following command in your Terminal:
 
@@ -340,9 +355,9 @@ This flow is intended for developers who have no access or credentials whatsoeve
 
 ## 5. Anatomy of an App Builder Application
 
-Now that your project is initialized, let's open the project in your favorite IDE. We recommend using [VSCode](https://code.visualstudio.com/). You can easily open the project by entering `code <app-name>`, or opening VSCode -> Open... -> select app folder.
+Now that your project is initialized, let's open the project in your favorite IDE. We recommend using [VSCode](https://code.visualstudio.com/). If you have enabled the shell command, open the project by entering `code <app-name>`, or open VSCode -> Open... -> select app folder.
 
-You should be able to see these folders and files in your project:
+You should see these folders and files in your project:
 
 1. `src`: Instead of one folder for all `actions` and all `web-src`, you will see individual folders under `src` for each Extension point you have selected. For instance, a `dx-excshell-1` folder for your Experience Cloud SPA actions and frontend resources.
     - Under each folder, you should be able to see both the actions and the frontend code when application. In addition, you should be able to see `ext.config.yaml`. This file contains all the action and extension configuration for the extension point where it's located. This individual configuration allows for more flexibility in defining and managing individual extension points. You can see that this file is also imported to `app.config.yaml` as that's the master config file.
@@ -395,7 +410,7 @@ aio app run --local
 (Deprecated) This will deploy the actions to a local [OpenWhisk](https://openwhisk.apache.org/) instance, which the [CLI](https://github.com/adobe/aio-cli) will autmomatically download and install. The SPA will be run on the local machine. **Note: Users of Apple Silicon will encounter issues with this command. Please use `aio app dev` instead.**
 
 
-#### (First time users) Accepting the Certificate
+#### (First time users) Accept the Certificate
 
 If you are using this application for the first time, you will see a message similar to
 
@@ -415,7 +430,7 @@ Click on `Advanced`, the nex screen may vary from browser to browser, but you sh
 
 You may need to exit the current process and run `aio app run` again.
 
-#### Proceeding to the Application on localhost
+#### Proceed to the Application on localhost
 
 For users who have accepted the certificate in the past, you should see the following process running in Teminal instead. You can see your backend actions are being deployed to [Adobe I/O Runtime](/runtime) (or to the local OpenWhisk instance if the `--local` option has been used.
 
@@ -431,8 +446,8 @@ $ aio app run
 ℹ local frontend server running at https://localhost:9080
 ℹ setting up vscode debug configuration files..
 ℹ press CTRL+C to terminate dev environment
-```
 
+```
 There are two URLs printed:
 
 ```bash
@@ -452,7 +467,7 @@ To have the application run completely locally, which means the actions will run
 
 Usually, we recommend running your applications with deployed [Adobe I/O Runtime](/runtime) actions, as your application should run on [Adobe I/O Runtime](/runtime) in production. However, if you need to build complex actions or sequencing, the `--local` flag is handy to locally debug the application. Please see the Debugging the Application section below for more info.
 
-### 6.2 Trying the Sample Application
+### 6.2 Try the Sample Application
 
 When you access `https://localhost:9080`, you should see the sample application deployed.
 ![Hello World](../images/helloworld-1.png)
@@ -501,7 +516,7 @@ To see your application logs after running `aio app run` or after running your d
 
 Read more at [Managing Application Logs](../guides/application_logging.md)
 
-### 6.5 Testing the Application
+### 6.5 Test the Application
 
 The bootstrapped application comes with sample implementations for both unit and end-to-end tests.
 You can execute these tests locally by using `aio app test` and `aio app test -e`, which will respectively run the unit and end-to-end tests against the bootstrapped codebase.
@@ -512,7 +527,7 @@ We are using [jestJS](https://jestjs.io/) for the unit tests of the [CLI](https:
 
 [CI/CD for App Builder Applications](../guides/deployment/ci_cd_for_firefly_apps.md) also explains how to execute these tests in the context of a CI/CD pipeline.
 
-## 7 Deploying the Application
+## 7 Deploy the Application
 
 Once the application is in a good shape, it can be fully deployed to your development workspace. This is achievable with a single command.
 
