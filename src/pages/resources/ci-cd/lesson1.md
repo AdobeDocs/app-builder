@@ -35,6 +35,8 @@ This folder contains default GitHub Workflows that can be customized and extende
 
 **pr_test.yml** is the GitHub action that will run the App unit tests on the stage environment by calling `aio app test` against the requested changes. It will run anytime the [pull_request](https://help.github.com/en/actions/reference/events-that-trigger-workflows#pull-request-event-pull_request) event occurs.
 
+> Note: The versions in the example workflow files below (ex. @3) may not be the latest. We recommend updating to the newest major version when starting a new project, especially if setup is not working. To see the latest release, go to the Releases section of [adobe/aio-apps-action](https://github.com/adobe/aio-apps-action).
+
 ```yaml
 name: AIO App CI
 
@@ -45,29 +47,29 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node-version: ['14']
+        node-version: ['20']
         os: [macOS-latest, ubuntu-latest, windows-latest]
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
       - name: npm install
         run: npm i
       - name: Setup CLI
-        uses: adobe/aio-cli-setup-action@1.0.0
+        uses: adobe/aio-cli-setup-action@3
         with:
           os: ${{ matrix.os }}
       - name: Build
-        uses: adobe/aio-apps-action@1.0.0
+        uses: adobe/aio-apps-action@3
         with:
           os: ${{ matrix.os }}
           command: build
           AIO_RUNTIME_NAMESPACE: ${{ secrets.AIO_RUNTIME_NAMESPACE_STAGE }}
       - name: Test
-        uses: adobe/aio-apps-action@1.0.0
+        uses: adobe/aio-apps-action@3
         with:
           os: ${{ matrix.os }}
           command: test
@@ -90,29 +92,29 @@ jobs:
     strategy:
       max-parallel: 1
       matrix:
-        node-version: ['14']
+        node-version: ['20']
         os: [ubuntu-latest]
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
       - name: npm install
         run: npm i
       - name: Setup CLI
-        uses: adobe/aio-cli-setup-action@1.0.0
+        uses: adobe/aio-cli-setup-action@1
         with:
           os: ${{ matrix.os }}
       - name: Build
-        uses: adobe/aio-apps-action@1.0.0
+        uses: adobe/aio-apps-action@3
         with:
           os: ${{ matrix.os }}
           command: build
           AIO_RUNTIME_NAMESPACE: ${{ secrets.AIO_RUNTIME_NAMESPACE_STAGE }}
       - name: Deploy
-        uses: adobe/aio-apps-action@1.0.0
+        uses: adobe/aio-apps-action@3
         with:
           os: ${{ matrix.os }}
           command: deploy
@@ -139,25 +141,25 @@ jobs:
         os: [ubuntu-latest]
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
       - name: npm install
         run: npm i
       - name: Setup CLI
-        uses: adobe/aio-cli-setup-action@1.0.0
+        uses: adobe/aio-cli-setup-action@1
         with:
           os: ${{ matrix.os }}
       - name: Build
-        uses: adobe/aio-apps-action@1.0.0
+        uses: adobe/aio-apps-action@3
         with:
           os: ${{ matrix.os }}
           command: build
           AIO_RUNTIME_NAMESPACE: ${{ secrets.AIO_RUNTIME_NAMESPACE_PROD }}
       - name: Deploy
-        uses: adobe/aio-apps-action@1.0.0
+        uses: adobe/aio-apps-action@3
         with:
           os: ${{ matrix.os }}
           command: deploy
