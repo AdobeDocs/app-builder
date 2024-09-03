@@ -59,7 +59,7 @@ Please refer to the [feature matrix](#feature-matrix) for a detailed comparison.
 
 ## State
 
-*We've just released a [new State version](https://github.com/adobe/aio-lib-state/releases/tag/4.0.0) built on top of our own storage service. [Legacy State](https://github.com/adobe/aio-lib-state/tree/3.x) (< v4.0, based on CosmosDB) is still available, but we strongly advise new users to use the latest library version to avoid migrating later. We will be sending out migration steps for existing customers soon. The [feature matrix](#feature-matrix) provides a detailed comparison of both versions.*
+*We've just released a [new State version](https://github.com/adobe/aio-lib-state/releases/tag/4.0.0) built on top of our own storage service. [Legacy State](https://github.com/adobe/aio-lib-state/tree/3.x) (`@adobe/aio-lib-state` < v4 based on CosmosDB) is still available, but we strongly advise new users to use the latest library version to avoid migrating later. Note that this applies also to `State` imported from `@adobe/aio-sdk` < v6. We will be sending out migration steps for existing customers soon. The [feature matrix](#feature-matrix) provides a detailed comparison of both versions.*
 
 ***How is my data stored?***
 
