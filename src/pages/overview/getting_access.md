@@ -43,7 +43,7 @@ No. The trial is free to use for the duration of the trial period.
 
 **How long does it take to get access for the AEM Trial**
 
-Access is granted almost immediatly. Usually it takes 15-30 minutes until your new Adobe IMS org is created and products are made available. 
+Access is granted almost immediately. Usually it takes 15-30 minutes until your new Adobe IMS org is created and products are made available. 
 
 **Do I need a special role within my company to use App Builder?**
 
