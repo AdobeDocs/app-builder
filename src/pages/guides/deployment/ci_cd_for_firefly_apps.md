@@ -40,9 +40,9 @@ Upon bootstrapping of a new App Builder Application from the [CLI](https://githu
 
 If the developer selects this option, the application code will be initialized with an additional `.github` folder at its root. This folder contains default [GitHub Workflows](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows) that can be extended at application level depending on the developer's needs.
 
-### Github Workflows
+### GitHub Workflows
 
-The default GitHub Workflows enable the following actions based on specific Github events triggered on the application repository:
+The default GitHub Workflows enable the following actions based on specific GitHub events triggered on the application repository:
 
 - On `Pull Request`, the application unit tests are executed by calling `aio app test` against the requested changes. See the [PR workflow](https://github.com/adobe/generator-aio-app/blob/master/generators/add-ci/.github/workflows/pr_test.yml).
 
@@ -50,9 +50,9 @@ The default GitHub Workflows enable the following actions based on specific Gith
 
 - On `Repository Release`, the application gets deployed to the `Production` workspace by calling `aio app deploy`. The back-end serverless actions get deployed to Runtime, while the SPA gets deployed to the out-of-the-box CDN if the application has a web UI. See the [Deploy Prod workflow](https://github.com/adobe/generator-aio-app/blob/master/generators/add-ci/.github/workflows/deploy_prod.yml).
 
-Each of the default [Github Workflows](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) leverages two core features provided by Github: [Github Actions](https://github.com/features/actions) and [Github Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets).
+Each of the default [GitHub Workflows](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) leverages two core features provided by GitHub: [GitHub Actions](https://github.com/features/actions) and [GitHub Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets).
 
-![CI/CD with Github Actions](../../images/ci-cd-github-actions-architecture.png)
+![CI/CD with GitHub Actions](../../images/ci-cd-github-actions-architecture.png)
 
 ### GitHub Actions for AIO CLI
 
