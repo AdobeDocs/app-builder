@@ -12,7 +12,9 @@
     "@adobe/react-spectrum": "^3.35.1",
     "gatsby": "4.22.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
   },
   "resolutions": {
     "sharp": "0.33.0",
@@ -28,7 +30,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test:links": "remark src/pages --quiet --frail",
-    "lint": "docker run --rm -e RUN_LOCAL=true --env-file '.github/super-linter.env' -v \"$PWD\":/tmp/lint github/super-linter:slim-v4.10.1"
+    "lint": "docker run --rm -e RUN_LOCAL=true --env-file '.github/super-linter.env' -v \"$PWD\":/tmp/lint github/super-linter:slim-v4.10.1",
+    "buildNavigation": "node buildNavigation.js"
   },
   "remarkConfig": {
     "plugins": [
