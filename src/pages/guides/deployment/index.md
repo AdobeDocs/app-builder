@@ -23,7 +23,7 @@ In the following chapters of this documentation, it will be assumed that:
 
 If you do not own a [Runtime](/runtime) namespace, please [request trial access](https://developer.adobe.com/app-builder/trial/).
 
-The [Setup Requirements](../../getting_started/index.md) documentation should also be checked before trying out the deployment scenarios described below.
+The [Setup Requirements](../../getting-started/index.md) documentation should also be checked before trying out the deployment scenarios described below.
 
 The [CLI](https://github.com/adobe/aio-cli) offers three types of deployment to the developers.
 

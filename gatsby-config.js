@@ -23,7 +23,7 @@ module.exports = {
       },
       {
         "title": "Getting Started",
-        "path": "getting_started"
+        "path": "getting-started"
       },
       {
         "title": "Guides",
@@ -41,15 +41,15 @@ module.exports = {
       },
       {
         "title": "How it works",
-        "path": "overview/how_it_works.md"
+        "path": "overview/how-it-works.md"
       },
       {
         "title": "How to Get Access",
-        "path": "overview/getting_access.md"
+        "path": "overview/getting-access.md"
       },
       {
         "title": "App Builder and Adobe I/O Runtime",
-        "path": "overview/firefly_and_runtime.md"
+        "path": "overview/firefly-and-runtime.md"
       },
       {
         "title": "FAQ",
@@ -61,19 +61,19 @@ module.exports = {
       },
       {
         "title": "Setting up Your Environment",
-        "path": "getting_started"
+        "path": "getting-started"
       },
       {
         "title": "Creating your First App Builder App",
-        "path": "getting_started/first_app.md"
+        "path": "getting-started/first-app.md"
       },
       {
         "title": "Publishing Your First Project App Builder Application",
-        "path": "getting_started/publish_app.md"
+        "path": "getting-started/publish-app.md"
       },
       {
         "title": "Troubleshooting the most common issues",
-        "path": "getting_started/common_troubleshooting.md"
+        "path": "getting-started/common-troubleshooting.md"
       },
       {
         "title": "Architecture",
@@ -85,15 +85,15 @@ module.exports = {
           },
           {
             "title": "Dealing with Application State",
-            "path": "guides/application_state.md"
+            "path": "guides/application-state.md"
           },
           {
             "title": "Introduction to React Spectrum",
-            "path": "guides/introduction_to_react_spectrum.md"
+            "path": "guides/introduction-to-react-spectrum.md"
           },
           {
             "title": "Using Client SDKs for Accessing Adobe APIs",
-            "path": "guides/using_sdks.md"
+            "path": "guides/using-sdks.md"
           },
           {
             "title": "Event hooks for App Builder Applications",
@@ -103,27 +103,27 @@ module.exports = {
       },
       {
         "title": "Logging",
-        "path": "guides/application_logging",
+        "path": "guides/application-logging",
         "pages": [
           {
             "title": "Managing Application Logs",
-            "path": "guides/application_logging/index.md"
+            "path": "guides/application-logging/index.md"
           },
           {
             "title": "Forwarding logs to Azure Log Analytics",
-            "path": "guides/application_logging/azure_log_analytics.md"
+            "path": "guides/application-logging/azure-log-analytics.md"
           },
           {
             "title": "Forwarding logs to New Relic",
-            "path": "guides/application_logging/new_relic.md"
+            "path": "guides/application-logging/new-relic.md"
           },
           {
             "title": "Forwarding logs to Splunk Cloud",
-            "path": "guides/application_logging/splunk_cloud.md"
+            "path": "guides/application-logging/splunk-cloud.md"
           },
           {
             "title": "Forwarding logs to Splunk Enterprise",
-            "path": "guides/application_logging/splunk_enterprise.md"
+            "path": "guides/application-logging/splunk-enterprise.md"
           }
         ]
       },
@@ -137,7 +137,7 @@ module.exports = {
           },
           {
             "title": "Understanding Authentication",
-            "path": "guides/security/understanding_authentication.md"
+            "path": "guides/security/understanding-authentication.md"
           },
         ]
       },
@@ -151,7 +151,7 @@ module.exports = {
           },
           {
             "title": "CI/CD for App Builder Applications",
-            "path": "guides/deployment/ci_cd_for_firefly_apps.md"
+            "path": "guides/deployment/ci-cd-for-firefly-apps.md"
           },
           {
             "title": "Credential Rotation",
@@ -177,15 +177,15 @@ module.exports = {
           },
           {
             "title": "Extension Migration Guide",
-            "path": "guides/extensions/extension_migration_guide.md"
+            "path": "guides/extensions/extension-migration-guide.md"
           },
           {
             "title": "Migration Guide - Standalone Application to DX Experience Cloud SPA v1",
-            "path": "guides/migrations/standalone_to_dx_experience_cloud_spa.md"
+            "path": "guides/migrations/standalone-to-dx-experience-cloud-spa.md"
           },
           {
             "title": "UI Extensibility",
-            "path": "guides/extensions/ui_extensibility.md"
+            "path": "guides/extensions/ui-extensibility.md"
           }
         ]
       },
@@ -219,101 +219,101 @@ module.exports = {
       },
       {
         "title": "Integration Guide with Adobe Experience Cloud",
-        "path": "guides/exc_app",
+        "path": "guides/exc-app",
         "pages": [
           {
             "title": "Getting started with Adobe Experience Cloud",
-            "path": "guides/exc_app/index.md"
+            "path": "guides/exc-app/index.md"
           },
           {
             "title": "Modules",
-            "path": "guides/exc_app/modules",
+            "path": "guides/exc-app/modules",
             "pages": [
               {
                 "title": "Index",
-                "path": "guides/exc_app/modules/index.md"
+                "path": "guides/exc-app/modules/index.md"
               },
               {
                 "title": "Page",
-                "path": "guides/exc_app/modules/page.md"
+                "path": "guides/exc-app/modules/page.md"
               },
               {
                 "title": "Topbar",
-                "path": "guides/exc_app/modules/topbar.md"
+                "path": "guides/exc-app/modules/topbar.md"
               },
               {
                 "title": "User",
-                "path": "guides/exc_app/modules/user.md"
+                "path": "guides/exc-app/modules/user.md"
               }
             ]
           },
           {
             "title": "Interfaces",
-            "path": "guides/exc_app/interfaces",
+            "path": "guides/exc-app/interfaces",
             "pages": [
               {
                 "title": "Modules",
-                "path": "guides/exc_app/interfaces/index.md"
+                "path": "guides/exc-app/interfaces/index.md"
               },
               {
                 "title": "Runtime",
-                "path": "guides/exc_app/interfaces/index.runtime.md"
+                "path": "guides/exc-app/interfaces/index.runtime.md"
               },
               {
                 "title": "Page Object with href",
-                "path": "guides/exc_app/interfaces/page.objectwithhref.md"
+                "path": "guides/exc-app/interfaces/page.objectwithhref.md"
               },
               {
                 "title": "Page Object with path",
-                "path": "guides/exc_app/interfaces/page.objectwithpath.md"
+                "path": "guides/exc-app/interfaces/page.objectwithpath.md"
               },
               {
                 "title": "Page API",
-                "path": "guides/exc_app/interfaces/page.pageapi.md"
+                "path": "guides/exc-app/interfaces/page.pageapi.md"
               },
               {
                 "title": "Page API Properties",
-                "path": "guides/exc_app/interfaces/page.pageapiproperties.md"
+                "path": "guides/exc-app/interfaces/page.pageapiproperties.md"
               },
               {
                 "title": "Topbar callback",
-                "path": "guides/exc_app/interfaces/topbar.callback.md"
+                "path": "guides/exc-app/interfaces/topbar.callback.md"
               },
               {
                 "title": "Topbar custom feedback config",
-                "path": "guides/exc_app/interfaces/topbar.customfeedbackconfig.md"
+                "path": "guides/exc-app/interfaces/topbar.customfeedbackconfig.md"
               },
               {
                 "title": "Topbar custom search config",
-                "path": "guides/exc_app/interfaces/topbar.customsearchconfig.md"
+                "path": "guides/exc-app/interfaces/topbar.customsearchconfig.md"
               },
               {
                 "title": "Topbar external feedback config",
-                "path": "guides/exc_app/interfaces/topbar.externalfeedbackconfig.md"
+                "path": "guides/exc-app/interfaces/topbar.externalfeedbackconfig.md"
               },
               {
                 "title": "Topbar help center feedback config",
-                "path": "guides/exc_app/interfaces/topbar.helpcenterfeedbackconfig.md"
+                "path": "guides/exc-app/interfaces/topbar.helpcenterfeedbackconfig.md"
               },
               {
                 "title": "Topbar solution",
-                "path": "guides/exc_app/interfaces/topbar.solution.md"
+                "path": "guides/exc-app/interfaces/topbar.solution.md"
               },
               {
                 "title": "Topbar API",
-                "path": "guides/exc_app/interfaces/topbar.topbarapi.md"
+                "path": "guides/exc-app/interfaces/topbar.topbarapi.md"
               },
               {
                 "title": "Topbar API properties",
-                "path": "guides/exc_app/interfaces/topbar.topbarapiproperties.md"
+                "path": "guides/exc-app/interfaces/topbar.topbarapiproperties.md"
               },
               {
                 "title": "User API",
-                "path": "guides/exc_app/interfaces/user.userapi.md"
+                "path": "guides/exc-app/interfaces/user.userapi.md"
               },
               {
                 "title": "User Info",
-                "path": "guides/exc_app/interfaces/user.userinfo.md"
+                "path": "guides/exc-app/interfaces/user.userinfo.md"
               },
             ]
           }
@@ -329,11 +329,11 @@ module.exports = {
       },
       {
         "title": "Reference documentation",
-        "path": "guides/reference_documentation"
+        "path": "guides/reference-documentation"
       },
       {
         "title": "Contribution guides",
-        "path": "guides/contribution_guides"
+        "path": "guides/contribution-guides"
       },
       {
         "title": "Telemetry",
@@ -626,31 +626,31 @@ module.exports = {
       },
       {
         "title": "Sample Apps",
-        "path": "resources/sample_apps/index.md",
+        "path": "resources/sample-apps/index.md",
         pages: [
           {
             title: 'Code Snippets',
-            path: 'resources/sample_apps/code_snippets/index.md',
+            path: 'resources/sample-apps/code-snippets/index.md',
             pages: [
               {
                 title: 'Caching HTTP responses',
-                path: 'resources/sample_apps/code_snippets/index.md',
+                path: 'resources/sample-apps/code-snippets/index.md',
               },
               {
                 title: 'App Builder Files SDK',
-                path: 'resources/sample_apps/code_snippets/files.md',
+                path: 'resources/sample-apps/code-snippets/files.md',
               },
               {
                 title: 'App Builder State SDK',
-                path: 'resources/sample_apps/code_snippets/state.md',
+                path: 'resources/sample-apps/code-snippets/state.md',
               },
               {
                 title: 'I/O Events handler',
-                path: 'resources/sample_apps/code_snippets/events.md',
+                path: 'resources/sample-apps/code-snippets/events.md',
               },
               {
                 title: 'Real-time data from Adobe Analytics API 1.4',
-                path: 'resources/sample_apps/code_snippets/analytics.md',
+                path: 'resources/sample-apps/code-snippets/analytics.md',
               }
             ]
           }
@@ -740,7 +740,7 @@ module.exports = {
       },
       {
         "title": "Blog Articles",
-        "path": "resources/blog_articles.md"
+        "path": "resources/blog-articles.md"
       }
     ],
   },

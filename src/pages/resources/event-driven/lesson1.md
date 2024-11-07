@@ -34,7 +34,7 @@ downloaded automatically, you will need the private key to generate JWT token.
 
 ## Initialize an App Builder app using CLI template
 
-To initialize an App Builder app, let's use init command from the CLI. More information please refer to [Creating your First App Builder Application](../../getting_started/first_app.md)
+To initialize an App Builder app, let's use init command from the CLI. More information please refer to [Creating your First App Builder Application](../../getting-started/first-app.md)
 
 ```bash
 aio app init <Your-project-name> --no-extensions
@@ -46,7 +46,7 @@ Name your action, then you have created your App Builder template. Now you can u
 ![event-provider](assets/publish-event-cli.png)
 
 In this lab, user will create a webpage using this generic template. if this is your first time to use App Builder, follow below instructions:
-* [Creating your First App Builder App](../../getting_started/first_app.md)
+* [Creating your First App Builder App](../../getting-started/first-app.md)
 
 In next lesson, we will show how to use custom event to register this app as event provider and click the `invoke` button 
 to fire an event, this event will be consumed by three ways (Journaling API, webhook URL, runtime action)

@@ -16,7 +16,7 @@ Welcome! Here you'll learn what systems you need to access, how to access them, 
 
 ## Access and Credentials
 
-First, ensure you have [access to App Builder](../overview/getting_access.md) either via trial (AEM Headless trial which includes App Builder) or having purchased a license.
+First, ensure you have [access to App Builder](../overview/getting-access.md) either via trial (AEM Headless trial which includes App Builder) or having purchased a license.
 
 Next, confirm access to the following services:
 
@@ -72,4 +72,4 @@ The following is required if you intend to use local development (`aio app dev`)
 
 ## Next Step
 
-Now that you have your environment set up, you can start [creating your own App Builder application](first_app.md).
+Now that you have your environment set up, you can start [creating your own App Builder application](first-app.md).

@@ -30,7 +30,7 @@ You may want to debug what is returned from this API call to decide what to do n
 
 Go back to the Chrome Debug window, access the at inside ExC Shell if not already done: https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080. Select the `hello` action and invoke. Your debugger would stop at the breakpoint you set earlier, which allows inspecting values of the variables in your code.
 
-*Note: If your code uses App Builder [State](https://github.com/adobe/aio-lib-state) or [Files](https://github.com/adobe/aio-lib-files) SDKs, you cannot use this debugging method. More details about it [here](../../getting_started/common_troubleshooting.md#debugging-errors-with-state-and-files-sdk).*
+*Note: If your code uses App Builder [State](https://github.com/adobe/aio-lib-state) or [Files](https://github.com/adobe/aio-lib-files) SDKs, you cannot use this debugging method. More details about it [here](../../getting-started/common-troubleshooting.md#debugging-errors-with-state-and-files-sdk).*
 
 ![debugger-action](https://raw.githubusercontent.com/AdobeDocs/adobeio-codelabs-debugging/master/lessons/assets/debugger-action.gif)
 

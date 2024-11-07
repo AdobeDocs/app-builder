@@ -15,7 +15,7 @@ import Requirements from '../transclusions/_requirements.md'
 
 ## Codelab environment
 
-The [Optional tools](../../getting_started/index.md#optional-tools) are required for this lab. Please make sure you have all of them installed.*
+The [Optional tools](../../getting-started/index.md#optional-tools) are required for this lab. Please make sure you have all of them installed.*
 
 
 

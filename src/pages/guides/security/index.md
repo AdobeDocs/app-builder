@@ -20,11 +20,11 @@ The following sections will focus on specific aspects of the security for App Bu
 ## Securing the Access to App Builder Applications
 
 Any interaction with [Adobe Product APIs](/apis) needs to be authenticated against Adobe Identity Management Services (IMS).
-The [Understanding Authentication](understanding_authentication.md) guide is a good pre-read to get deeper preliminary insights on those services.
+The [Understanding Authentication](understanding-authentication.md) guide is a good pre-read to get deeper preliminary insights on those services.
 
 ### Adobe IMS Support for App Builder Applications
 
-App Builder [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) help developers to [bootstrap applications](../../getting_started/index.md) easily from application templates with `aio app init`. 
+App Builder [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) help developers to [bootstrap applications](../../getting-started/index.md) easily from application templates with `aio app init`. 
 These include templates for Runtime web actions, which integrate with the [Adobe Product APIs](/apis) that can be extended with App Builder.
 Any generated action is initialized with boilerplate code based on App Builder [SDK libraries](https://github.com/adobe/aio-sdk). Out-of-the box, the following steps are implemented:
 
@@ -56,10 +56,10 @@ These SPAs are business-to-employees custom applications that deploy into the [E
 ![SPA Access Sequence Diagram](../../images/security-spa-access-sequence-diagram.png)
 
 The SPA front-end interacts with Runtime web actions on specific events triggered at UI level.
-In this scenario, the Experience Cloud Shell exposes a [client-side API](../exc_app/index.md), which can be used by the SPA to obtain the OAUth token generated for the logged-in Enterprise user. 
+In this scenario, the Experience Cloud Shell exposes a [client-side API](../exc-app/index.md), which can be used by the SPA to obtain the OAUth token generated for the logged-in Enterprise user. 
 This token will be used by back-end Runtime actions to call [Adobe Product APIs](/apis), which need to be integrated in this application.
 
-SPAs bootstrapped from the [CLI](https://github.com/adobe/aio-cli) with `aio app init` automatically include a [React-Spectrum](https://react-spectrum.adobe.com/) based front-end that integrates with the Experience Cloud Shell [client-side API](../exc_app/index.md) and sends the user OAuth token from the client to the invoked Runtime actions.
+SPAs bootstrapped from the [CLI](https://github.com/adobe/aio-cli) with `aio app init` automatically include a [React-Spectrum](https://react-spectrum.adobe.com/) based front-end that integrates with the Experience Cloud Shell [client-side API](../exc-app/index.md) and sends the user OAuth token from the client to the invoked Runtime actions.
 
 ### Authentication and Authorization Handling
  
@@ -157,7 +157,7 @@ An issue is [filed here](https://git.corp.adobe.com/CNA/aio-action-validators/is
 
 ### I/O Runtime Specific guidelines
 
-The [security guidelines for I/O Runtime](/runtime/docs/guides/using/security_general/) generally apply for the back-end actions of an App Builder application.
+The [security guidelines for I/O Runtime](/runtime/docs/guides/using/security-general/) generally apply for the back-end actions of an App Builder application.
 
 The guidelines below are specific to App Builder applications.
 
@@ -181,7 +181,7 @@ The back-end Runtime actions used by an App Builder Application respect the [ten
 
 #### Cloud Storage and CDN for SPA Static Files
 
-If an App Builder Application is an SPA that deploys into the [Experience Cloud Shell](https://experience.adobe.com), the static assets of the SPA get deployed from the  or from a [CI/CD pipeline](../deployment/ci_cd_for_firefly_apps.md) to App Builder's Cloud Storage and CDN.
+If an App Builder Application is an SPA that deploys into the [Experience Cloud Shell](https://experience.adobe.com), the static assets of the SPA get deployed from the  or from a [CI/CD pipeline](../deployment/ci-cd-for-firefly-apps.md) to App Builder's Cloud Storage and CDN.
 
 Both of them have a strict isolation per Runtime namespace. It is only possible to access the Cloud Storage container hosting an App Builder SPA by configuring the [CLI](https://github.com/adobe/aio-cli) with the appropriate workspace credentials.
 

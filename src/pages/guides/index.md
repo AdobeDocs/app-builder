@@ -127,7 +127,7 @@ It enables developers to perform the following actions on behalf of their App Bu
 
 ### CI/CD Support
 
-The [out-of-the-box CI/CD support](./deployment/ci_cd_for_firefly_apps.md) for App Builder Applications consists in:
+The [out-of-the-box CI/CD support](./deployment/ci-cd-for-firefly-apps.md) for App Builder Applications consists in:
 
 - [Github Actions](https://github.com/features/actions) to [setup the CLI](https://github.com/adobe/aio-cli-setup-action) and use it to [perform actions](https://github.com/adobe/aio-apps-action) such as application testing, build and deployment.
 - [Github Workflows](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) to orchestrate the Github Actions upon specific events triggered against the application repository.
@@ -139,4 +139,4 @@ App Builder uses Webpack for bundling I/O Runtime action code. See [here](/guide
 
 ### Migration Guides 
 
-- [Standalone Application to DX Experience Cloud SPA v1](migrations/standalone_to_dx_experience_cloud_spa.md) - Migrate an App Builder application that's been initialized as a Standalone Application to a DX Experience Cloud SPA v1. Useful if you can't seem to view your application in the App Builder Catalog in Adobe Experience Cloud. 
+- [Standalone Application to DX Experience Cloud SPA v1](migrations/standalone-to-dx-experience-cloud-spa.md) - Migrate an App Builder application that's been initialized as a Standalone Application to a DX Experience Cloud SPA v1. Useful if you can't seem to view your application in the App Builder Catalog in Adobe Experience Cloud. 

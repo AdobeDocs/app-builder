@@ -14,6 +14,6 @@ This codelab is useful for anyone who are getting started with developing App Bu
 
 If not already done, you should follow the below links to have your environment set up before starting the codelab:
 
-* [How to Get Access to App Builder](../../overview/getting_access.md)
-* [Setting up Your Environment](../../getting_started/index.md)
-* [Creating your First App Builder App](../../getting_started/first_app.md)
+* [How to Get Access to App Builder](../../overview/getting-access.md)
+* [Setting up Your Environment](../../getting-started/index.md)
+* [Creating your First App Builder App](../../getting-started/first-app.md)

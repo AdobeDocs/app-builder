@@ -28,7 +28,7 @@ Your application will **not** have the `App Builder ExcShell` sub-heading in Ado
 
 ## Understanding the Difference 
 
-See [this](../extensions/extension_migration_guide.md#old-file-structure) guide to 
+See [this](../extensions/extension-migration-guide.md#old-file-structure) guide to 
 better understand the difference between a Standalone Application and a DX Experience Cloud SPA v1. This guide also provides an overview of the
 directory structure for a DX Experience Cloud SPA v1 application (Under **New File Structure**) and a deeper dive into extension point configuration. 
 

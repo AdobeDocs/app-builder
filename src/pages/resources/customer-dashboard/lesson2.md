@@ -46,9 +46,9 @@ runtimeManifest:
 
 Currently your app only has one action `get-profiles`.
 * Source code is at `src/dx-excshell-1/actions/get-profiles/index.js`
-* It is a [web action](/runtime/docs/guides/using/creating_actions/#invoking-web-actions)
+* It is a [web action](/runtime/docs/guides/using/creating-actions/#invoking-web-actions)
 * The action will be run in the `nodejs:18` [runtime container on I/O Runtime](/runtime/docs/guides/reference/runtimes)
-* It has some [default params](/runtime/docs/guides/using/creating_actions/#working-with-parameters) such as `LOG_LEVEL`, `tenant`, `apiKey`, which are automatically available in the `params` object of the action without passing it to the action for every invocation. The `final` annotation set as `true` tells that those params are immutable.
+* It has some [default params](/runtime/docs/guides/using/creating-actions/#working-with-parameters) such as `LOG_LEVEL`, `tenant`, `apiKey`, which are automatically available in the `params` object of the action without passing it to the action for every invocation. The `final` annotation set as `true` tells that those params are immutable.
 * Setting the `require-adobe-auth` annotation as `true` enables this action to be protected by Adobe IMS user token in the request header. Without it, the action will return `401 Unauthorized` error.
 
 Now let's have a deeper look at the action's source code.

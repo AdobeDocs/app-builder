@@ -6,7 +6,7 @@ title: App Builder Docs
 description: This documentation provides an overview of App Builder as well as guides, reference documentation, and tools to help you begin developing your own custom applications.  
 ---
 
-<Hero slots="image, heading, text" background="rgb(37,26,56)" />
+<HeroSimple slots="image, heading, text" background="rgb(37,26,56)" />
 
 ![](../images/banner.png)
 
@@ -30,6 +30,6 @@ From a developer perspective, the main components are:
 
 To learn more about App Builder, please start by reading the following:
 
-* [How it works](how_it_works.md)
+* [How it works](how-it-works.md)
 * [Architecture Overview](../guides/index.md)
-* [How to Get Access to App Builder](./getting_access.md)
+* [How to Get Access to App Builder](./getting-access.md)

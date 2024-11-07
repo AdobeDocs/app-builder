@@ -21,6 +21,6 @@ import Requirements from '../transclusions/_requirements.md'
 - An account on [imgIX service][imgix]. You can sign up to imgIX for free to try it.
 
 [experience-cloud]: https://www.adobe.com/experience-cloud.html
-[firefly-get-access]: ../../overview/getting_access.md
+[firefly-get-access]: ../../overview/getting-access.md
 [azure-free-account]: https://azure.microsoft.com/en-us/free/
 [imgix]: https://www.imgix.com/

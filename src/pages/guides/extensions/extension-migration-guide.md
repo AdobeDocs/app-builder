@@ -68,7 +68,7 @@ What happens if you don't migrate:
 With this context, let's dive in. 
 
 ### 1. Update Tooling
-First of all, please make sure your local tooling and environment set up is up to date. You can find the latest supported environment and tooling info in [here](../../getting_started). 
+First of all, please make sure your local tooling and environment set up is up to date. You can find the latest supported environment and tooling info in [here](../../getting-started). 
 
 ### 2. Update Configuration
 Your existing application could be one of three types: 

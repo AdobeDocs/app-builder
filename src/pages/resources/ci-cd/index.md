@@ -18,7 +18,7 @@ App Builder allows you to manage multiple environments called workspaces. Each w
 * CDN delegation and sub-domain provisioned on adobeio-static.net
 * Related credentials and secrets (API Key, access token, Runtime namespace credentials...)
 
-We recommend to go through the [App Builder CI/CD documentation](../../guides/deployment/ci_cd_for_firefly_apps.md) to learn more about the architectural details.
+We recommend to go through the [App Builder CI/CD documentation](../../guides/deployment/ci-cd-for-firefly-apps.md) to learn more about the architectural details.
 
 This codelab will show you how to create a CI/CD worflow for a stage and production environment using [Github actions](https://github.com/features/actions) within an App Builder App.   
 

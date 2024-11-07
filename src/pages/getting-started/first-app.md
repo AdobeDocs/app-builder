@@ -19,11 +19,11 @@ In this tutorial, we'll guide you through the following steps to give you an int
 1. Developing the Application
 1. Deploying the Application
 
-If you run into any issues during development, please first refer to the [Common Issues section](first_app.md#common-issues) on this page. 
+If you run into any issues during development, please first refer to the [Common Issues section](first-app.md#common-issues) on this page. 
 
 ## 1. Set up Local Environment
 
-Ensure your local environment and tooling is up to date. Instructions are here: [Setting up Your Environment](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up). Make sure you have access to App Builder as described here [How to Get Access to App Builder](../overview/getting_access.md). If are have not yet been granted access, you may want to wait before proceeding.
+Ensure your local environment and tooling is up to date. Instructions are here: [Setting up Your Environment](https://developer.adobe.com/app-builder/docs/getting-started/#local-environment-set-up). Make sure you have access to App Builder as described here [How to Get Access to App Builder](../overview/getting-access.md). If are have not yet been granted access, you may want to wait before proceeding.
 
 ## 2. Create a new Project on Developer Console
 
@@ -42,7 +42,7 @@ Follow the instructions to set up your project:
 3. Once you are in the correct organization, Under `Quick Start`, click on the option to `Create project from template`.
 
   > **Note:** if you don't have the `Create project from template` option, confirm the IMS org is correct. If it is, you do not yet have access to App Builder.
-   Make sure you followed the process for [How to Get Access to App Builder](../overview/getting_access.md).
+   Make sure you followed the process for [How to Get Access to App Builder](../overview/getting-access.md).
 
 4. Select `App Builder` from the list of templates.
 
@@ -227,7 +227,7 @@ There are a few sample flows listed below. Some developers may not have access t
     Each option indicates a feature you can enable for your App Builder application. Select one or all the options depending on the application you intend to build. We recommend you select all for now to fully explore all the options.
 
     - **Actions: Deploy Runtime actions:** adding the boilerplate for backend serverless actions on [Adobe I/O Runtime](/runtime)
-    - **Events: Publish to Adobe I/O Events:** adding the boilerplate for a serverless action that publishes [Custom I/O Events](/events/docs/guides/using/custom_events/)
+    - **Events: Publish to Adobe I/O Events:** adding the boilerplate for a serverless action that publishes [Custom I/O Events](/events/docs/guides/using/custom-events/)
     - **Web Assets: Deploy hosted static assets:** adding the boilerplate for frontend [React-Spectrum](https://react-spectrum.adobe.com/) SPA and static assets
     - **CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy:** adding the boilerplate for Github Actions supporting CI/CD process of the application
 
@@ -262,7 +262,7 @@ Note that you may not see all the options listed below on your command line, bec
     - The `React Spectrum 3 UI` template will add a React based UI with [React Spectrum](https://react-spectrum.adobe.com/) components included.
     - The `Raw HTML/JS UI` will add a Valinna HTML/JS/CSS UI with [Spectrum CSS](https://opensource.adobe.com/spectrum-css) styles included.
 
-    Both the templates comes with boilerplate code needed to integrate your App Builder application with [Adobe Experience Cloud](../guides/exc_app/index.md)
+    Both the templates comes with boilerplate code needed to integrate your App Builder application with [Adobe Experience Cloud](../guides/exc-app/index.md)
 
 1. We'll ask you to define the name for the instance of each selected sample actions. You can keep the default name or specify your own.
 
@@ -457,7 +457,7 @@ To view your deployed application in the Experience Cloud shell:
   -> https://experience.adobe.com/?devMode=true#/custom-apps/?localDevUrl=https://localhost:9080
 ```
 
-The first URL allows you to see your standalone application on localhost (by default, but the port is configurable). The second URL places your local application in the context of the [Experience Cloud UI](../guides/exc_app/index.md) for preview.
+The first URL allows you to see your standalone application on localhost (by default, but the port is configurable). The second URL places your local application in the context of the [Experience Cloud UI](../guides/exc-app/index.md) for preview.
 
 While most changes in your code get updated in real-time when your application is running, the `.env` file is not among them. Running the application depends on `.env` file to provide necessary credentials, so the file is unmodifiable while the app is running. When your app is running, the `.env` file is backed up, and a new one is written with specific values. When you exit the process, the original `.env` is restored.
 
@@ -485,7 +485,7 @@ You can also list all the organizations you belong to and their org ID from your
 ![Hello World](../images/helloworld-2.png)
 
 **Note:** If you open your application in the [Experience Cloud Shell](http://experience.adobe.com/) using the second link provided by the CLI, your Experience Cloud Shell user token will automatically be available to the SPA UI and passed by this one to the underlying [Adobe I/O Runtime](/runtime) actions of your application.
-This is a very useful feature of our SPA UI template, which integrates for you with the [client-side API](../guides/exc_app/index.md) of the [Experience Cloud Shell](http://experience.adobe.com/).
+This is a very useful feature of our SPA UI template, which integrates for you with the [client-side API](../guides/exc-app/index.md) of the [Experience Cloud Shell](http://experience.adobe.com/).
 
 The other sample actions require futher paramaters to be invoked. For instance, if you try to invoke `analytics` with only the authorization header, you would see an error similar to `"error": "missing parameter(s) 'apiKey,companyId'"`. This is because these sample actions use Adobe API that requires those params before it can be invoked.
 
@@ -514,7 +514,7 @@ When using `aio app dev` logs are immediately output to the terminal and are not
 #### Run or Deploy
 To see your application logs after running `aio app run` or after running your deployed app (`aio app deploy`), use the command `aio app logs`. By default, only the logs of the latest activation is fetched. If you want to see a more extensive list of logs, use the `--limit` flag to define the number of recent activations to be fetched.
 
-Read more at [Managing Application Logs](../guides/application_logging.md)
+Read more at [Managing Application Logs](../guides/application-logging.md)
 
 ### 6.5 Test the Application
 
@@ -525,7 +525,7 @@ As you modify and extend the code of your application, you will need to update t
 
 We are using [jestJS](https://jestjs.io/) for the unit tests of the [CLI](https://github.com/adobe/aio-cli), [SDK](https://github.com/adobe/aio-sdk) and bootstrapped application. It is possible to change the implementation to your preferred framework.
 
-[CI/CD for App Builder Applications](../guides/deployment/ci_cd_for_firefly_apps.md) also explains how to execute these tests in the context of a CI/CD pipeline.
+[CI/CD for App Builder Applications](../guides/deployment/ci-cd-for-firefly-apps.md) also explains how to execute these tests in the context of a CI/CD pipeline.
 
 ## 7 Deploy the Application
 
@@ -573,7 +573,7 @@ Well done, your app is now online 🏄
 
 Note the last section of the output `To view your deployed application`. There are 2 urls of the app shown by default, which allow access either to the CDN host or [Experience Cloud Shell](http://experience.adobe.com/). In the latter case, The URL format of the app should follow `https://experience.adobe.com/?devMode=true#/custom-apps/?localDevUrl=<your-app-url>`.
 
-You can also undeploy your app with `aio app undeploy`. To learn more about deployment, please refer to [Deployment Overview](../guides/deployment/index.md). To automate your build, deploy and build process with our out-of-the-box CI/CD GitHub actions, please refer to [CI/CD for App Builder Applications](../guides/deployment/ci_cd_for_firefly_apps.md).
+You can also undeploy your app with `aio app undeploy`. To learn more about deployment, please refer to [Deployment Overview](../guides/deployment/index.md). To automate your build, deploy and build process with our out-of-the-box CI/CD GitHub actions, please refer to [CI/CD for App Builder Applications](../guides/deployment/ci-cd-for-firefly-apps.md).
 
 ## Common Issues
 

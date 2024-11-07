@@ -13,7 +13,7 @@ App Builder greatly simplifies the process of building Cloud Native Applications
 
 If you have existing actions deployed on Adobe I/O Runtime and you want to migrate them to an App Builder application (maybe a headless application) these are the main steps:
 * In the [Developer Console](/console) create a new project and choose App Builder as the template
-* Configure the Adobe CLI and then use it to initialize a new application for the project you’ve created in the Developer Console; check [Setting Up Your Environment](../getting_started/index.md)
+* Configure the Adobe CLI and then use it to initialize a new application for the project you’ve created in the Developer Console; check [Setting Up Your Environment](../getting-started/index.md)
 * Create copies of your existing actions in this project
 * Deploy and test the new actions
 * Update your applications to point to the new actions
