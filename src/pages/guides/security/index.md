@@ -145,7 +145,7 @@ Actions designed to receive data in params.body will behave differently with the
 }
 ```
 
-An issue is [filed here](https://git.corp.adobe.com/CNA/aio-action-validators/issues/22).  Please use a different variable until this issue is resolved
+Please use a different variable until this issue is resolved.
 
 ## Securing App Builder Applications
 
@@ -172,7 +172,7 @@ Back-end Runtime actions used by App Builder applications respect the [tenant is
 
 #### Cloud storage and content delivery network (CDN) for SPA static files
 
-When an App Builder single-page application (SPA) is deployed into the [Experience Cloud Shell](https://experience.adobe.com), the static assets of the SPA are deployed from a [CI/CD pipeline](../deployment/ci_cd_for_firefly_apps.md) to App Builder's cloud storage and CDN.
+When an App Builder single-page application (SPA) is deployed into the [Experience Cloud Shell](https://experience.adobe.com), the static assets of the SPA are deployed from the CLI or a [CI/CD pipeline](../deployment/ci_cd_for_firefly_apps.md) to App Builder's cloud storage and CDN.
 
 Both of these have a strict isolation according to the Runtime namespace. Cloud Storage containers hosting App Builder SPAs can be accessed only by configuring the [CLI](https://github.com/adobe/aio-cli) with appropriate workspace credentials.
 
@@ -180,7 +180,7 @@ The CDN serves these static assets from a sub-domain dedicated exclusively to th
 
 #### Files and State services
 
-The [Files](https://github.com/adobe/aio-lib-files) and [State](https://github.com/adobe/aio-lib-state) SDK libraries from the App Builder SDK provide an abstraction to interact with the App Builder cloud storage and key-value store from a Runtime action. 
+The [Files](https://github.com/adobe/aio-lib-files) and [State](https://github.com/adobe/aio-lib-state) libraries from the App Builder SDK offer an abstraction layer for interacting with App Builder's file storage and data tier from within a Runtime action. 
 Access to data stored in these underlying services is restricted to the Runtime namespace in which the action is executed.
 
 #### App Builder Apps service
