@@ -21,6 +21,7 @@ First, ensure you have [access to App Builder](../overview/getting_access.md) ei
 Next, confirm access to the following services:
 
 [Adobe Developer Console](https://developer.adobe.com/console) _(required)_
+
 - Adobe Developer Console gives you access to APIs, SDKs and developer tools. You will set up your credentials using the Developer Console.
 - **note:** You need a developer or system admin role for your Adobe Experience Cloud IMS organization.
 
@@ -31,7 +32,7 @@ Adobe Experience Cloud IMS Organization _(required)_
         - _Partners: Please contact your partner manager or request sandbox access via [Adobe Solution Partner Portal](https://solutionpartners.adobe.com/home.html)._
 
 - A GitHub Account _(optional)_
-    - A [GitHub](https://github.com/) account is optional, but highly recommended, for setting up your CI/CD workflow.
+  - A [GitHub](https://github.com/) account is optional, but highly recommended, for setting up your CI/CD workflow.
 
 ## Local Environment Set Up
 
@@ -41,11 +42,11 @@ Please ensure you have these tools:
 
 - [NodeJS](https://nodejs.org/en/download/) Version 18-20 (odd versions are not recommended). It should also install npm together. We recommend using [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md) to manage NodeJS installation and versions.
 - [Adobe I/O CLI](https://github.com/adobe/aio-cli)
-    - `npm install -g @adobe/aio-cli`
-    - If you have Adobe I/O CLI installed, please ensure you have the latest version. (Current version: <NPMBadge/>)
-        - Check CLI version using `aio -v` and compare it with `npm show @adobe/aio-cli version`. If your CLI is outdated, update by running `npm install -g @adobe/aio-cli`.
-        - Even if your Adobe I/O CLI is up to date, run `aio update` to ensure all core plugins are updated as well.
-        - When we release a new version of Adobe I/O CLI, you'll see a message like this before the command output. This message lasts for 7 days after a new release.
+  - `npm install -g @adobe/aio-cli`
+  - If you have Adobe I/O CLI installed, please ensure you have the latest version. (Current version: <NPMBadge/>)
+    - Check CLI version using `aio -v` and compare it with `npm show @adobe/aio-cli version`. If your CLI is outdated, update by running `npm install -g @adobe/aio-cli`.
+    - Even if your Adobe I/O CLI is up to date, run `aio update` to ensure all core plugins are updated as well.
+    - When we release a new version of Adobe I/O CLI, you'll see a message like this before the command output. This message lasts for 7 days after a new release.
 
 ```bash
 ›   Warning: @adobe/aio-cli update available from 3.3.0 to 3.4.1.
@@ -68,7 +69,6 @@ See [inquirer's Support section](https://www.npmjs.com/package/inquirer#support-
 The following is required if you intend to use local development (`aio app dev`) features provided by the [CLI](https://github.com/adobe/aio-cli):
 
 - [Visual Studio Code](https://code.visualstudio.com/download) (VS Code) as the supported IDE for editor, debugger, etc. You can use any other IDE as a code editor, but advanced usage (e.g. debugger) is not yet supported.
-
 
 ## Next Step
 

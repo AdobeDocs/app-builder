@@ -84,7 +84,7 @@ The [Adobe IMS SDK library](https://github.com/adobe/aio-lib-core-ims) provides 
 - [User-based (OAuth 2.0)](https://github.com/adobe/aio-lib-core-ims-oauth)
 - [Technical account-based (JWT Bearer-token)](https://github.com/adobe/aio-lib-core-ims-jwt)
 
-##### Integration with additional out-of-the-box services 
+##### Integration with additional out-of-the-box services
 
 - The [Files SDK](https://github.com/adobe/aio-lib-files) provides a file system-like abstraction on top of an out-of-the-box cloud storage to store large, temporary files.
 - The [State SDK](https://github.com/adobe/aio-lib-state) provides a state-like abstraction on top of an out-of-the-box cloud-based key-value store.
@@ -133,10 +133,10 @@ The [out-of-the-box CI/CD support](./deployment/ci_cd_for_firefly_apps.md) for A
 - [Github Workflows](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) to orchestrate the Github Actions upon specific events triggered against the application repository.
 - [Github Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) to store application secrets required for the execution of the Github Workflows against specific environments.
 
-### Webpack 
+### Webpack
 
 App Builder uses Webpack for bundling I/O Runtime action code. See [here](/guides/configuration/webpack-configuration) for an overview on webpack configuration.
 
-### Migration Guides 
+### Migration Guides
 
 - [Standalone Application to DX Experience Cloud SPA v1](migrations/standalone_to_dx_experience_cloud_spa.md) - Migrate an App Builder application that's been initialized as a Standalone Application to a DX Experience Cloud SPA v1. Useful if you can't seem to view your application in the App Builder Catalog in Adobe Experience Cloud. 

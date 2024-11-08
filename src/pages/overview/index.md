@@ -10,26 +10,46 @@ description: This documentation provides an overview of App Builder as well as g
 
 ![](../images/banner.png)
 
-# App Builder Docs
+# App Builder Overview
 
-This documentation provides an overview of App Builder as well as guides, reference documentation, and tools to help you begin developing your own custom applications.
+This documentation describes App Builder, a complete framework for enterprise developers to build and deploy custom web applications. App Builder applications extend Adobe Experience Cloud solutions and run on Adobe infrastructure, including Adobe I/O Runtime, the serverless, event-driven, on-demand computing platform included with App Builder.
 
+The documentation includes guides, references, and tools to help developers understand the App Builder framework, learn how to use it, resolve technical issues, and optimize performance.
 
+## Who is App Builder for?
 
-## What is App Builder
+App Builder is available to Adobe enterprise customers and Adobe partners working with them who want to extend the capabilities of their Adobe Experience Cloud solutions. 
 
-App Builder is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure. It leverages modern technologies (JAM stack, serverless computing, Node, and React) and ensures best practices when building applications (event-driven architecture, microservices, continuous integration, and delivery).
+## How to use these documents
 
-From a developer perspective, the main components are:
-*	Single Page Application (SPA) - you build a SPA that uses React Spectrum for the client side, which is the same UI toolkit used by Adobe solutions.
-*	For the backend, you create microservices and orchestrate APIs by leveraging I/O Runtime (Adobe’s serverless platform).
-*	The main developer tools are the CLI, SDKs, Adobe Services and Developer Console. Support for Adobe authentication, end-user access control, publishing/consuming custom events, storing data and files, CI/CD pipelines, CDN, and developer sandboxes are provided out-of-the-box.
-*	The execution environment is [Adobe Experience Cloud](https://experience.adobe.com). Your custom apps will be living side-by-side with the Adobe Experience Cloud solutions and will be executed in the context of the organization and its authenticated employees.
+**Business users and decision-makers** can review the [Business case for App Builder](business-case.md), outlining the reasons it makes good business sense, the most pertinent App Builder use cases, and links to real-world success stories from Adobe customers and partners.
+
+**Developers** learning or using App Builder can find support at every stage:
+
+* Explore how the App Builder framework aligns to the development cycle in [How App Builder works](how_app-builder_works.md).
+
+* Review key App Builder components and concepts in the [Architecture Overview](../guides/index.md).
+
+* Start building custom applications:
+  
+  * [Get access to App Builder](./getting_access.md)
+  
+  * <mark>[Set up a local environment</mark>](../getting_started/index.md)
+  
+  * [Create an App Builder application](../getting_started/first_app.md) 
+
+* Resolve technical issues and optimize application performance with App Builder resources:
+  
+  * [Technical Guides](../guides/index.md) arranged by topic, including [Reference Documentation](../guides/reference_documentation/index.md)
+  
+  * Technical and application <mark>[tutorial videos</mark>](dummy)  
+  
+  * Step-by-step [<mark>Code Labs</mark>](dummy) illustrating key App Builder concepts and applications
 
 ## Where to Go Next
 
 To learn more about App Builder, please start by reading the following:
 
-* [How it works](how_it_works.md)
+* [How it works](how_app-builder_works.md)
 * [Architecture Overview](../guides/index.md)
 * [How to Get Access to App Builder](./getting_access.md)

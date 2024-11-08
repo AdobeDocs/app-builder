@@ -16,7 +16,7 @@ App Builder is available to Adobe Experience Cloud customers and partners. You m
 App Builder Trial is now offered as part of Adobe Experience Manager Headless trial. See how App Builder is better with Adobe Experience Manager:
 
 - [Adobe Experience Manager Headless Trial](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&cli=headless_exl_banner_campaign&co=US&lang=en)
-  
+
 **Purchase a license**
 
 You may be entitled to App Builder as part of a product you previously purchased. 1 pack of App Builder is included with the purchase of Adobe Experience Manager Sites Cloud Service and 1 or several packs with Adobe Commerce on cloud. If you have Adobe Experience Manager Sites Cloud Service but do not have access to App Builder, please contact your sales team to request 1 pack of App Builder to be added. Adobe Commerce packs will be added automatically by Adobe.
@@ -31,7 +31,7 @@ Adobe Solution Partners may request access to App Builder through the [solution 
 
 **How can I check if my company already has access to App Builder?**
 
-Just visit the [Adobe Developer Console](/console). If you have the button "create project from template" next to the button "create new project" then you are provisioned for App Builder. 
+Just visit the [<mark>Adobe Developer Console</mark>](/console). If you have the button "create project from template" next to the button "create new project" then you are provisioned for App Builder. 
 
 **What information do I need for the AEM trial?**
 
@@ -47,7 +47,7 @@ Access is granted almost immediately. Usually it takes 15-30 minutes until your 
 
 **Do I need a special role within my company to use App Builder?**
 
-Once your organization has been onboarded, anyone who has a Developer Role or System Administrator permissions will be able to create projects for App Builder in the [Developer Console](/console)
+Once your organization has been onboarded, anyone who has a Developer Role or System Administrator permissions will be able to create projects for App Builder in the [<mark>Developer Console</mark>](/console)
 
 If you are unable to access the Adobe Admin Console you will need to ask a System Admin for the org ID and Name in order to apply for a trial.
 
