@@ -337,7 +337,7 @@ module.exports = {
       },
       {
         "title": "Telemetry",
-        "path": "guides/telemetry/index.md"
+        "path": "guides/telemetry"
       },
       {
         "title": "Code Labs",

@@ -81,7 +81,7 @@
     - [Custom Events Overview](guides/events/custom-events.md) 
     - [Reference documentation](guides/reference-documentation/index.md) 
     - [Contribution guides](guides/contribution-guides/index.md) 
-    - [Telemetry](guides/telemetry/index.md) 
+    - [Telemetry](guides/telemetry) 
     - [Code Labs](resources/index.md) 
         - [Asset Compute with Photoshop APIs](resources/asset-compute-worker-ps-api/index.md) 
             - [Requirements](resources/asset-compute-worker-ps-api/requirements) 
