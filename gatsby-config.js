@@ -19,25 +19,25 @@ module.exports = {
     pages: [
       {
         "title": "Overview",
-        "path": "overview"
+        "path": "overview/index.md"
       },
       {
         "title": "Getting Started",
-        "path": "getting-started"
+        "path": "getting-started/index.md"
       },
       {
         "title": "Guides",
-        "path": "guides"
+        "path": "guides/index.md"
       },
       {
         "title": "Resources",
-        "path": "resources"
+        "path": "resources/index.md"
       }
     ],
     subPages: [
       {
         "title": "Overview",
-        "path": "overview"
+        "path": "overview/index.md"
       },
       {
         "title": "How it works",
@@ -61,7 +61,7 @@ module.exports = {
       },
       {
         "title": "Setting up Your Environment",
-        "path": "getting-started"
+        "path": "getting-started/index.md"
       },
       {
         "title": "Creating your First App Builder App",
@@ -77,11 +77,11 @@ module.exports = {
       },
       {
         "title": "Architecture",
-        "path": "guides",
+        "path": "guides/index.md",
         "pages": [
           {
             "title": "Architecture overview",
-            "path": "guides"
+            "path": "guides/index.md"
           },
           {
             "title": "Dealing with Application State",
@@ -103,7 +103,7 @@ module.exports = {
       },
       {
         "title": "Logging",
-        "path": "guides/application-logging",
+        "path": "guides/application-logging/index.md",
         "pages": [
           {
             "title": "Managing Application Logs",
@@ -129,7 +129,7 @@ module.exports = {
       },
       {
         "title": "Security",
-        "path": "guides/security",
+        "path": "guides/security/index.md",
         "pages": [
           {
             "title": "Security overview",
@@ -143,11 +143,11 @@ module.exports = {
       },
       {
         "title": "Deployment",
-        "path": "guides/deployment",
+        "path": "guides/deployment/index.md",
         "pages": [
           {
             "title": "Deployment overview",
-            "path": "guides/deployment"
+            "path": "guides/deployment/index.md"
           },
           {
             "title": "CI/CD for App Builder Applications",
@@ -165,11 +165,11 @@ module.exports = {
       },
       {
         "title": "Development",
-        "path": "guides/development",
+        "path": "guides/development/index.md",
       },
       {
         "title": "Extensions",
-        "path": "guides/extensions",
+        "path": "guides/extensions/index.md",
         "pages": [
           {
             "title": "Introduction to Extensions",
@@ -191,7 +191,7 @@ module.exports = {
       },
       {
         "title": "Configuration",
-        "path": "guides/configuration",
+        "path": "guides/configuration/index.md",
         "pages": [
           {
             "title": "App Builder Configuration Files",
@@ -219,7 +219,7 @@ module.exports = {
       },
       {
         "title": "Integration Guide with Adobe Experience Cloud",
-        "path": "guides/exc-app",
+        "path": "guides/exc-app/index.md",
         "pages": [
           {
             "title": "Getting started with Adobe Experience Cloud",
@@ -227,7 +227,7 @@ module.exports = {
           },
           {
             "title": "Modules",
-            "path": "guides/exc-app/modules",
+            "path": "guides/exc-app/modules/index.md",
             "pages": [
               {
                 "title": "Index",
@@ -249,7 +249,7 @@ module.exports = {
           },
           {
             "title": "Interfaces",
-            "path": "guides/exc-app/interfaces",
+            "path": "guides/exc-app/interfaces/index.md",
             "pages": [
               {
                 "title": "Modules",
@@ -329,15 +329,15 @@ module.exports = {
       },
       {
         "title": "Reference documentation",
-        "path": "guides/reference-documentation"
+        "path": "guides/reference-documentation/index.md"
       },
       {
         "title": "Contribution guides",
-        "path": "guides/contribution-guides"
+        "path": "guides/contribution-guides/index.md"
       },
       {
         "title": "Telemetry",
-        "path": "guides/telemetry"
+        "path": "guides/telemetry/index.md"
       },
       {
         "title": "Code Labs",
