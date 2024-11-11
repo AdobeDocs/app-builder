@@ -14,4 +14,4 @@ This App Builder tech talk aims to explore what’s possible with App Builder as
 
 <Embed slots="video"/>
 
-(https://youtu.be/kd2i50J9MZI)
+https://youtu.be/kd2i50J9MZI
