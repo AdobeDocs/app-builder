@@ -7,35 +7,45 @@ keywords:
 title: Common Troubleshooting
 ---
 
-# Common Troubleshooting
+# Troubleshooting common Issues
 
-Here are troubleshooting guides for some of the most common issues as you develop your first App Builder apps.
+This is a guide for troubleshooting some of the most common issues you may encounter when developing App Builder apps.
 
 ## Before you proceed
 
-- Check your Node version and tool versions to ensure they are supported by App Builder and up-to-date. You can find the latest supported version [here](index.md).
-- Check if your application is on Dropbox or OneDrive as file watchers sometimes cause unexpected errors.
+- Check your Node and tool versions to make sure they are supported by App Builder and up to date. You can find the latest supported versions [here](index.md).
+- If your application is on Dropbox or OneDrive, consider moving it since file watchers there sometimes cause unexpected errors.
 
 ## General debugging
 
-When your action code doesn't work as expected, you may want to investigate into what exactly went wrong. App Builder provides the [Logging SDK](https://github.com/adobe/aio-lib-core-logging), please check out [App Builder's Application Logging](../guides/application_logging.md) for more details.
+When your action code doesn't work as expected, you may want to check the logs to investigate what went wrong. App Builder provides the [Logging SDK](https://github.com/adobe/aio-lib-core-logging) for this; please check out [App Builder's Application Logging](../guides/application_logging.md) for more details.
 
 To see the latest activations of your project, run this command:
+
 ```bash
 aio runtime activation list
 ```
-It lists the most recent activations and summary (ID, start / end time, duration, status, and so on). There are 4 most popular statuses of a finished activation:
-* `success`: the action was successfully executed and you can obtain it's result with `aio runtime activation result activationID`
-* `developer error`: the most likely reasons of this are compilation errors (missing variables, module not found) and action time-out (due to an internal issue within the action or time-out of a backend service the action connects to). You can get the activation details to see what exact error causing this by running the command `aio runtime activation get activationID`
-* `application error`: this error is usually due to some issues at runtime, such as thrown exceptions, getting value of an `undefined` variable. With appropriate try-catch blocks and logging, you can see what goes wrong from the logs `aio runtime activation logs activationID`
-* `internal error`: this could be an error caused by an external factor unrelated to the action itself, e.g. not enough resources to run the action. I/O Runtime is a scalable platform, so you would never see it with default action settings. If you do, please let us know by [email](mailto:iodev@adobe.com) so that we can help to troubleshoot what causes it.
 
-You could also try running your actions locally with the `aio app dev` command.  This is very similar to `aio app run` except that it will run your action code on localhost in a node process.  Not all api calls will work in this context because of cors restrictions, but this is still useful in catching syntax errors, logic errors and enables step debugging of your actions without timeouts.
+It lists the most recent activations and a summary with ID, start and end times, duration, status, and so on. The four most common status conditions of finished activations are:
 
+* `success`: the action executed successfully; you can obtain its result with `aio runtime activation result activationID`
+
+* `developer error`: the most likely reasons for this are:
+  
+  * compilation errors such as missing variables or modules not found
+  * action time outs due to issues internal issues within the action or time outs of the back-end services to which the action connects
+  
+  You can get activation details to see the underlying error by running the command `aio runtime activation get activationID`
+
+* `application error`, usually due to runtime issues such as thrown exceptions or attempts to get the value of an `undefined` variable. With appropriate try-catch blocks and logging, you can see what goes wrong from the logs through the command, `aio runtime activation logs activationID`
+
+* `internal error`caused by external factors unrelated to the action itself, for example not enough resources to run the action. Since I/O Runtime is a scalable platform you would never see this error with the default action settings. If you do, please let us know by [email](mailto:iodev@adobe.com) so that we can help your troubleshoot its cause.
+
+You could also try running your actions locally with the `aio app dev` command.  This is very similar to `aio app run` except it runs your action code on localhost in a node process.  Not all API calls work in this context because of cors restrictions, but it is still useful for catching syntax and logic errors, and allowing step debugging of your actions without timeouts.
 
 ## Action logs
 
-When you have [web actions](/runtime/docs/guides/using/creating_actions/#invoking-web-actions) in your app, they are blocking requests and their activation results are not recorded if they are invoked successfully. To enforce the persistence of activation results, you need to pass the `x-ow-extra-logging: on` flag in the request headers. In the development mode of an SPA, you can add this flag directly to the "invoking action" function so that you will have the activation results and logs recorded for all requests. Then they could be retrieved as demonstrated in the [General debugging](#general-debugging) section above.
+[Web actions](/runtime/docs/guides/using/creating_actions/#invoking-web-actions) in your app are blocking requests; their activation results are not recorded if they are invoked successfully. To enforce persistence of activation results. pass the `x-ow-extra-logging: on` flag in the request headers. In the development mode of an SPA, you can add this flag directly to the "invoking action" function so you will have the activation results and logs recorded for all requests. They could then be retrieved as shown in the [General debugging](#general-debugging) section above.
 
 ```javascript
 headers['x-ow-extra-logging'] = 'on'
@@ -43,27 +53,34 @@ headers['x-ow-extra-logging'] = 'on'
 
 ## Action authentication errors
 
-When Adobe authentication and authorization checks are enabled for an action with the `require-adobe-auth` annotation set to `true`, you may see the following errors when making requests to the action:
+When you make requests to an action with Adobe authentication and authorization checks enabled with the `require-adobe-auth` annotation set to `true`, you may see the following errors:
 
 1. `request is invalid, failed authorization. Please use a valid user token for this SPA.`
 2. `request is invalid, failed authorization. Please use a valid JWT or user access token for this headless application.`
 
-An SPA is an application with web UI components (located in the `web-src/` folder). Headless app are back-end microservices without web UI.
-For authentication and authorization checks, the back-end actions of an SPA are validated against a valid user token which is passed directly from Adobe Experience Cloud (ExC) Shell.
+SPAs are applications with web UI components, located in the `web-src/` folder; headless app are back-end microservices without web UI.
+For authentication and authorization checks, the back-end actions of SPAs are validated against valid user tokens  passed directly from tje Adobe Experience Cloud (ExC) Shell.
 
-On the other hand, the actions of a headless app can be validated against a valid user token from ExC Shell or a valid access token generated with the [JWT (Service Account) Authentication](/authentication/auth-methods#!AdobeDocs/adobeio-auth/master/JWT/JWT.md). Please go through the [App Builder Security Overview](../guides/security/index.md) for more details about SPA vs. headless app authentication.
+Actions of a headless app can also be validated against a valid user token from ExC Shell or generated from the [JWT (Service Account) Authentication](/authentication/auth-methods#!AdobeDocs/adobeio-auth/master/JWT/JWT.md). Please review the [App Builder Security Overview](../guides/security/index.md) for more details about SPA vs. headless app authentication.
 
 If you are developing a headless app but accidentally have the `web-src/` folder added during the app initialization process, you could remove it by executing the command `aio app delete web-assets` at the root of your application source code folder. This will also assure that your actions are validated against the appropriate JWT auth.
 
 ## Debugging errors with State and Files SDK
 
-If your code uses App Builder [State](https://github.com/adobe/aio-lib-state) or [Files](https://github.com/adobe/aio-lib-files) SDKs, you cannot use `aio app dev` to debug it. The reason is that State and Files services have additional security which limits calls from outside of Adobe Runtime actions. Your action code is run on localhost which is not authorized to access the out-of-the-box cloud storage behind State and Files SDKs.
+If your code uses App Builder [State](https://github.com/adobe/aio-lib-state) or [Files](https://github.com/adobe/aio-lib-files) SDKs, you cannot use `aio app dev` to debug it. The reason is that State and Files services have additional security which limits calls from outside of Adobe Runtime actions. Your action code is run on localhost, which is not authorized to access the out-of-the-box cloud storage behind State and Files SDKs.
 
-*Note: This is not a problem if you configure the State or Files SDKs to connect to your own cloud storage (e.g. Cosmos DB).*
+Note: This is not a problem if you configure the State or Files SDKs to connect to your own cloud storage, for example Cosmos DB.
 
 ## NodeJS with Mac M1 chip
 
-There are no pre-compiled NodeJS binaries for versions prior to 15.x for Apple's new M1 chip (arm64 architecture).
-One solution is to change the architecture of your shell from arm64 to x86.
+There are no precompiled NodeJS binaries for versions prior to 15.x of Apple's new M1 chip with ARM64 architecture. One solution to this is to change the architecture of your shell from arm64 to x86.
 
-We recommend using the [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm) over [Homebrew](https://brew.sh/) and follow their [troubleshooting guides for macOS](https://github.com/nvm-sh/nvm#macos-troubleshooting) (section **Macs with M1 chip**). 
+We recommend using [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm) over [Homebrew](https://brew.sh/) and following their [troubleshooting guides for macOS](https://github.com/nvm-sh/nvm#macos-troubleshooting), section "Macs with M1 chip."
+
+## Next steps
+
+This completes the "Getting Started" tutorials for App Builder. 
+
+To learn how to extend App Builder capabilities using the Adobe I/O Runtime platform, proceed to the [Getting Started with Adobe I/O Runtime](dummy) tutorial.
+
+For in-depth review of App Builder architecture, development, deployment, integration, and security, visit the [<mark>Guides</mark>](dummy) index and select your topic of interest.
