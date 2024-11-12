@@ -12,6 +12,6 @@ keywords:
 
 In this video, we will cover how to setup your project in the Adobe Developer Console, init the code, review the project structure, test, and play with the working code.
 
-<Embed slots="video"/>
+<Media slots="video"/>
 
 https://youtu.be/AwL0QRxH9JQ

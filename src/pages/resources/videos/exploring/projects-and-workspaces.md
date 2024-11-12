@@ -12,6 +12,6 @@ keywords:
 
 The App Builder team shared a short presentation about projects and workspaces and how to use customizations to help your team collaborate on building App Builder Applications.
 
-<Embed slots="video"/>
+<Media slots="video"/>
 
 https://youtu.be/bXftsgCnwks

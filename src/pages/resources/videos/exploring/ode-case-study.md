@@ -9,6 +9,6 @@ keywords:
 
 # Exploring App Builder - ODE Case Study
 
-<Embed slots="video"/>
+<Media slots="video"/>
 
 https://youtu.be/PtRxpO_2AvE

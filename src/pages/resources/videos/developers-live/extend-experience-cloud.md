@@ -12,6 +12,6 @@ keywords:
 
 You want to extend Adobe solutions using a modern architecture that works for multiple solutions? Well, we think that you should give App Builder a try.
 
-<Embed slots="video"/>
+<Media slots="video"/>
 
 https://youtu.be/FGMhy38OKMg

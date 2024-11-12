@@ -12,6 +12,6 @@ keywords:
 
 We are joined by Rob Snow from the React Spectrum team to learn about React Spectrum, how to get started using it and how to get involved in their open source project. After Rob's presentation, stick around as we answer questions from our community.
 
-<Embed slots="video"/>
+<Media slots="video"/>
 
 https://youtu.be/W5Cqb0QYLSs
