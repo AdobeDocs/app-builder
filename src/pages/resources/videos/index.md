@@ -194,7 +194,7 @@ Join us and see App Builder in action: code, security, headfull and headless app
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%"/>
+<TraceBlock slots="heading, link, text" width="100%"/>
 
 ### Extend Adobe Experience Cloud
 
@@ -204,7 +204,7 @@ You want to extend Adobe solutions using a modern architecture that works for mu
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%"/>
+<TraceBlock slots="heading, link, text" width="100%"/>
 
 ### Asset Compute Service Extensibility
 
