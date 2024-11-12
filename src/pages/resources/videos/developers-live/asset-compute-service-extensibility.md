@@ -12,6 +12,6 @@ keywords:
 
 Learn how to use App Builder to build custom Asset Compute worker for asset processing during ingestion into Adobe Experience Manager.
 
-<Media slots="video"/>
+<Embed slots="video"/>
 
-<https://youtu.be/6wdbd050UMM>
+https://youtu.be/6wdbd050UMM
