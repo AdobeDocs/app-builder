@@ -8,8 +8,6 @@ title: Getting Started
 description: App Builder is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure.
 ---
 
-import NPMBadge from '../../components/NPMBadge.js'
-
 # Start your App Builder Journey
 
 Welcome! Here you'll learn what systems you need to access, how to access them, and how to configure your local environment.
@@ -42,7 +40,7 @@ Please ensure you have these tools:
 - [NodeJS](https://nodejs.org/en/download/) Version 18-20 (odd versions are not recommended). It should also install npm together. We recommend using [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md) to manage NodeJS installation and versions.
 - [Adobe I/O CLI](https://github.com/adobe/aio-cli)
     - `npm install -g @adobe/aio-cli`
-    - If you have Adobe I/O CLI installed, please ensure you have the latest version. (Current version: <NPMBadge/>)
+    - If you have Adobe I/O CLI installed, please ensure you have the latest version. 
         - Check CLI version using `aio -v` and compare it with `npm show @adobe/aio-cli version`. If your CLI is outdated, update by running `npm install -g @adobe/aio-cli`.
         - Even if your Adobe I/O CLI is up to date, run `aio update` to ensure all core plugins are updated as well.
         - When we release a new version of Adobe I/O CLI, you'll see a message like this before the command output. This message lasts for 7 days after a new release.
