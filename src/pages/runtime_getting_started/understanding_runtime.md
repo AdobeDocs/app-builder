@@ -1,4 +1,4 @@
-# I/O Runtime Quick Start Guide
+# Understanding Adobe I/O Runtime
 
 Serverless platforms greatly simplify the development and operation of business applications. Successful use of them takes advantage of their many strengths, while working around their limitations. This Quick Start Guide explores the most critical of these considerations as they apply to I/O Runtime.
 
@@ -50,7 +50,7 @@ When an action invocation request is accepted by I/O Runtime and an ActivationId
 
 ### Container lifecycle
 
-* When an action is invoked for the first time, a new container is created and the action code injected into it, making it a "warm" container.
+* When an action is invoked for the first time, a new container is created and the action code injected into it, making it a "warm" container. Container initialization takes time; minimizing this overhead contributes significantly to Runtime performance.
 * Warm containers can be reused only by the same user and action version.
 * Warm containers may sit idle for 10 minutes, and are then recycled if no requests are received.
 * The System maintains a pool of "prewarmed" containers, created with the default Node version and a memory value of `256MB`, `512MB`, or `1024MB`; they may be used by any user or action. Once initialized for an action, they become warm containers.
@@ -91,9 +91,12 @@ The I/O Runtime compute platform is highly available and scalable, there are som
 * **Favor async calls** if your application can work with an async design, to give your code a better chance to execute instead of running in timeouts.
 * **Respond to** `429` **status codes** if your application is hitting the upper limit for throttling. If you don’t scale back, you'll keep getting them.
 * **Respond to** `5xx` **status codes**. There are situations in which your invocation will not come though - otherwise, we would offer 100% uptime. If you can’t afford to lose an invocation, build a retry mechanism outside the Runtime platform, or use the Runtime Triggers feature to create an action that is executed every 40 minutes and performs the retry or does some logging in your system so you can try again.
-* **Minimize chances for cold starts** if low latency and high availability are priorities, by tuning:  
-  * **Concurrency per container**. The default limit is 200 invocations sent in parallel to the same container. If you set the value to 1, then 10 invocations in a second  would use 10 different containers. If your code initializes data  by downloading data or creating an object, this will happen only once. <mark>All the invocations sent to the same container don’t have to spend that time</mark>.
-  * **Memory**. I/O Runtime keeps a pool of prewarmed containers that use the default RAM setting. Using the default RAM setting for your action lets you use them, the next best thing to reusing containers.
+* **Minimize chances for cold starts** whenever low latency and high availability are priorities, by tuning:  
+  * **Concurrency per container** is the number of invocations that may be sent in parallel to the same container. Exceeding this limit by 1 opens a new container:  for example, with concurrency set to the default 200, a burst of 450 requests would open new containers at requests 1, 201, and 401.
+    * For use cases with low resource consumption, leaving concurrency at 200, or even increasing it to its maximum 500, will minimize overhead from container initialization.
+    * But for high resource consumption use cases, you may need to reduce concurrency to avoid performance degradation from too many requests sharing the container's CPU, memory, and other resources.  
+    * The default concurrency works well for most use cases, but performance tuning and load testing for each use case is the ideal.
+  * **Memory**. I/O Runtime keeps a pool of prewarmed containers that use the default RAM setting. Using the default RAM setting for your action lets you use prewarmed containers, the next fastest thing to reusing containers.
 * **Fan out**. I/O Runtime is built to run lots of tasks in parallel. So if you can, split large tasks into multiple small ones. Otherwise, your action may need a long time to execute and possibly use so much memory that you can't use prewarmed containers (see above). 
 
 <InlineAlert slots="text"/>
@@ -149,4 +152,4 @@ The [Adobe I/O Runtime Forum](https://forums.adobe.com/community/adobe-io/adobe-
 
 If you have issues with the documentation, please submit a pull request at the [Adobe I/O Runtime GitHub repository](https://github.com/AdobeDocs/adobeio-runtime).
 
-And please check the [FAQ](../support/faq.md) for answers to some of the most common questions asked about Adobe I/O Runtime.
+And please check the [FAQ](../app-builder-overview/faq.md) for answers to some of the most common questions asked about Adobe I/O Runtime.

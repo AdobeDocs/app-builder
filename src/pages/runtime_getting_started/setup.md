@@ -1,74 +1,51 @@
-# Setting up Your Environment
+# Set up Your Environment
 
-## Getting access
+## Get access
 
-Adobe I/O Runtime is part of Adobe App Builder. Adobe customers and partners who want to try Adobe I/O Runtime along with storage, custom events, and other App Builder features may sign up for an [App Builder trial](https://developer.adobe.com/app-builder/trial/).
+Adobe I/O Runtime is part of Adobe App Builder. Customers and partners who want to try Adobe I/O Runtime along with the storage, custom events, and other features of App Builder may sign up for an [App Builder trial](https://developer.adobe.com/app-builder/trial/).
 
-~~Once you have access to Runtime, you can log into the Adobe I/O Console, create a new project, and add Runtime to them. All actions you run on Runtime are executed within a namespace associated with a project. When you create your new project, you'll get an authorization key that you can use to create and manage your actions.~~
+## Install the Adobe I/O (aio) command-line interface (CLI)
 
-Once you have an authorization key and an integration with a namespace created, you'll need to install the OpenWhisk CLI. Then, you can get started building applications on the system:Before you can create and run actions, you have to install and configure a couple of tools on your machine. Please note that for some of the steps (creating integrations in I/O Console) you need to have System Administrator or Developer Role permissions. If you don&rsquo;t have those, you need either to be provisioned with these permissions or someone from your team has to share the credentials.
-
-## Step 1: Install aio CLI and wsk CLI
-
-You need `npm` installed in order to install `aio` (make sure you have the latest versions of Node and npm installed):
+To install `aio`, you'll need the `npm` package manager. Make sure that the latest versions of `npm` and `Node.js` are both installed, and then install `aio`:
 
 `npm install -g @adobe/aio-cli`
 
-For the `wsk` CLI, download the executable from the [OpenWhisk GitHub repository](https://github.com/apache/incubator-openwhisk-cli/releases). Choose the version that matches your operating system and download the compressed archive.
-
-Extract the executable from the compressed archive and place it in a folder of your choice.
-
-Add the folder into which you placed the executable to your `$PATH` environment variable. This enables you to call the CLI from anywhere.
-
-Try to run these commands to check that `aio` and `wsk` were properly installed:
-
-`wsk -h`
-
-and:
+Then confirm that `aio` installed properly:
 
 `aio help`
 
-### Creating a Namespace and retrieving the credentials
+### Create a namespace and retrieve credentials
 
-If your organization has access to I/O Runtime, then you manage namespaces in the [Developer Console](/console). Please note that you need Developer Role or System Administrator permissions in order to do this.
+Organizations with access to I/O Runtime manage namespaces from the [Developer Console](/console). Namespace management requires the Developer role or System Administrator permissions.
 
 In the Developer Console:
 
-* Create a new `Project`
-* Choose one of the workspaces, for example `Production` and then click `Add service` and choose `Runtime` 
-* Go to back to `Workspace overview` page and, at the top of the page, click on the `Download all` button. This will download the configuration file for this project -> workspace
-* Open this file in a text editor and search for the `runtime` > `namespaces` entry. This is where you will find the namespace `name` and `auth` values you can use to set the .wskprops file or configue the `aio` CLI (see the next sections). 
+* Create a new `Project`.
+* Select a workspace option, for example `Production`.
+* Click `Add service` and choose `Runtime`.
+* Navigate back to `Workspace overview` page and click on the `Download all` button at the top of the page. This will download the configuration file for this project and workspace.
+* Open the configuration file in a text editor and search for the `runtime` > `namespaces` entry. Here you will find the namespace `name` and `auth` values you will use to configure the `aio` CLI. 
 
-### Configuring the wsk CLI with a .wskprops file
+### Sign in from the CLI
 
-If you have a `.wskprops` file, then you can use it to configure the `wsk` CLI, so you'll be creating actions in the namespace that is defined in that file.
+There are two ways to configure the `aio` CLI:
 
-For Mac, you just need to copy the `.wskprops` in the user home folder.
+* **With Developer Role or System Administrator permissions**, sign in to the `aio` CLI as shown [here](../app-builder-getting-started/first-app.md/#3-sign-in-from-the-cli), then use it to retrieve the projects you created in the Developer Console and select the workspace you want to work in. 
 
-For Windows, you'll place the `.wskprops` in `C:\Users\<user>`.
+* **If you lack the right permissions** but have a namespace and authorization for it, manually configure the `aio` CLI as shown in the next section.
 
-### Signing in aio CLI
+### Configure aio CLI
 
-There are two ways you can configure your aio CLI: if you have Developer Role or System Administrator permissions, then you can sign in in aio CLI, and then the CLI will be able to retrieve the projects you have created in the Developer Console and select the workspace you want to work in.
+The `aio` CLI will pick up credentials from an `.env` file in the current working directory.
 
-This [page](https://developer.adobe.com/app-builder/docs/getting_started/first_app/#3-signing-in-from-cli) walks you through the steps.
+## Test that the CLI is set up correctly
 
-If you don't have the right permissions, but you have the namespace and the authorization for it, then you can manually configure aio CLI (see the next section).
-
-### Configuring aio CLI to use your .wskprops file
-
-The `aio` CLI will pickup credentials from the exact same path as the wsk CLI ( `.wskprops` file )
-
-Additionally, the `aio` CLI allows the use of .env files, so if you have multiple namespaces you can have a different set of credentials associated with each project/directory.  `aio` CLI always looks for a .env file in the current working directory before looking to the default location of .wskprops.
-
-## Step 2: Testing the CLI is setup correctly
-
-Once you've configured the CLI, you should test it:
-
-`wsk list`
+Once the CLI is configured, test it:
 
 `aio runtime list`
 
-If successful, you should see a list of the entities defined in your namespace.
+A successful test will display a list of the entities defined in your namespace.
 
-You&rsquo;re ready to [deploy your first function](deploy.md).
+## Next step
+
+With the CLI installed and tested, you're ready to [deploy your first function](deploy.md).

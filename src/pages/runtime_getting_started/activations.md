@@ -1,20 +1,22 @@
 # Retrieve Action Invocation Results
 
-The activation record contains information that helps you understand what happened: activation ID (the unique identifier), namespace and action name, logs (if any), response (a dictionary that contains the status, success, and result).
+The activation record of an action invocation contains information to help you understand what happened. It contains the invocation's: 
 
-## Activations TTL
+* **Activation ID**, a unique identifier
 
-The activation TTL (Time To Live) is seven days. This is a system setting, not a user setting (it can't be changed by developers).
+* **Namespace** and **action name** of the invoked action
 
-Thus, if you don't see any activations or not seeing an activation you know that has happened, it could be that they happend more than 7 days ago.
+* **Logs**, if your action generated any
 
-## Example
+* **Response**, a dictionary that contains the status, success, and result of the invoked action
 
-Assuming that you&rsquo;ve invoked an action called `hello`, this is how you retrieve the latest activations:
+## Retrieve activations
+
+If you have invoked an action named `hello` and enter the command: 
 
 `aio rt:activation:list`
 
-The result will be a list of activation IDs (if any) and the action invoked for each:
+You will see a list of activation IDs from actions invoked during the preceding seven days, along with the name of each invoked action:
 
 ```
 e9932762894d4ccf932762894d6ccff4 hello            
@@ -22,7 +24,7 @@ c76dbe66e9b04ad5adbe66e9b06ad541 hello
 []...]
 ```
 
-You can retrieve the whole activation record by running `aio rt:activation:get <activation id>`:
+You can retrieve the entire activation record by entering `aio rt:activation:get <activation id>`:
 
 ```
 aio rt:activation:get e9932762894d4ccf932762894d6ccff4
@@ -80,7 +82,7 @@ ok: got activation e9932762894d4ccf932762894d6ccff4
 }
 ```
 
-Or you can extract a specific part from the activation record:
+You can also retrieve part of the activation record:
 
 ```
 // just the result
@@ -90,26 +92,25 @@ aio rt:activation:result <activation ID>
 aio rt:activation:logs <activation ID>
 ```
 
-## Retrieving Activations for Blocking Successful Calls
+## Block or unblock successful activations
 
-At scale, when you run millions of activations in a day, it may be difficult to extract the activations that failed in order to debug them. To help with this task, the system skips persisting the activation that succeeded. 
+At a scale of millions of activations per day, it may be difficult to screen out successful activations to debug those that failed. To simplify this task, I/O Runtime doesn't persist successful activations. 
 
-The exceptions are asynchronous actions that are invoked in a non-blocking fashion. Their results are persisted regardless 
-so that you can extract the response of the action at a later time. 
+The exceptions are asynchronous actions invoked in a non-blocking fashion. Their results are persisted regardless of success or failure, so you can extract their responses later. 
 
-You can still view the number of executions, please see the [Logging and Monitoring](https://github.com/AdobeDocs/adobeio-runtime/blob/master/guides/logging_monitoring.md) section. 
+You can still view the total number of executions, as described in the [Logging and Monitoring](https://github.com/AdobeDocs/adobeio-runtime/blob/master/guides/logging_monitoring.md) section. 
 
-However, during development it is important to have access to all activation results. You can enable this by setting in the request the extra logging header to `on`: 
+To review all activation results during development, set the extra logging header to `on` in the request: 
 
 ```
 X-OW-EXTRA-LOGGING: on
 ```
 
-> It's not recommended to use the extra logging headers in the production environment as invocation performance can be impacted. 
+We do not recommend use of the extra logging headers in production environments, since it may degrade invocation performance. 
 
-## Retrieving Activations for Non-blocking Calls
+## Retrieve activations for non-blocking calls
 
-When you execute a non-blocking action (async action), the action returns immediately the activation ID. If you query for the result or logs before the action finished the execution you get an error:
+Execution of a non-blocking asynchronous action immediately returns its activation ID. Queries for an action's result or logs before execution is compete will generate an error:
 
 ```
 aio rt:activation:get 1d24121f91384740a4121f91389740f0
@@ -120,4 +121,14 @@ aio rt:activation:logs c8c4f354c1824f2c84f354c182ef2cdb
 error: Unable to get logs for activation 'c8c4f354c1824f2c84f354c182ef2cdb': The requested resource does not exist. (code nCPo4KRbYmvOTcwPQVfDJdrwtJpv1c3d)
 ```
 
-This should give you enough tools to debug your first actions. If you want to read more, take a look at the [Logging and Monitoring](../guides/logging_monitoring.md 'Logging and Monitoring') page.
+## Activation time to live
+
+Activation time to live is seven days, a system setting, and can't be changed by Developers. If you can't see activations that you know took place, they may have timed out.
+
+## Next steps
+
+This completes the "Get Started with Adobe I/O Runtime" tutorial.
+
+The procedures described above will help you debug your first actions. Review the [Logging and Monitoring](../guides/logging_monitoring.md 'Logging and Monitoring') Guide for additional details about debugging tools and processes.
+
+For a detailed review of Runtime components, operations, settings, and tuning, see [Understanding I/O Runtime](understanding_runtime.md).

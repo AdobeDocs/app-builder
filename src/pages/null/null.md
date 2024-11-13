@@ -18,4 +18,4 @@ Once you have an authorization key and an integration with a namespace created, 
 
 * [Setting up your environment](setup.md)
 * [Deploy and invoke your first action](deploy.md)
-* [Retrieve Action Invocation Results](activations.md)
+* [Retrieve Action Invocation Results](activations.md)null
