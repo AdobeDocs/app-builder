@@ -99,6 +99,7 @@ npm install @adobe/aio-lib-state
   await state.delete('key')
 
   // list keys using an iterator, with glob pattern support, omit the match option to list all keys
+  // Note: match doesn't reduce the amount of work needed to traverse your key-values (see the #list-guarantees section)
   for await (const { keys } of state.list({ match: 'ke*' })) {
     console.log(keys)
   }
@@ -173,21 +174,15 @@ In case of exceeding the rate-limiting quota, the State service will return with
 
 *Example: org 123 is entitled to 5 quotas, any production workspace will not be throttled before consuming 50MB/min or 5MB/sec bandwidth in a single region.*
 
-### `match` option
-
-`state.deleteAll` and `state.list` support a `match` option to filter keys.
-
-`match` supports a glob-style pattern via the `*` character, suppose you have the following keys: `key`, `base.key`, `key-1`
-
-- `match=key` will match `key`
-- `match=k*` will match `key`
-- `match=*k*` will match `key`, `base.key`, `key-1`
-- `match=*-1` will match `key-1`
-- `match=base.*-1` will match none
-
 ### List guarantees
 
-Using `state.list`, you can iterate over the keys stored in your State container. State implements listing with a cursor-based iterator, which requires multiple calls to the State service to traverse all your keys. Please note, that `list` is subject to the bandwidth rate-limiting quotas, so listing many keys may result in 429s.
+Using `state.list`, you can scan through the keys stored in your State container. `list` is a cursor-based iterator, which requires multiple calls to the State service to traverse all your keys.
+
+It is important to understand that `list` is scanning through your keys:
+
+- **the more keys you have stored**, the longer a full iteration will take to complete, regardless of whether you use the [using a glob-style pattern](#match-option).
+- every call to `list` will iterate over up to 1000 keys. The former `countHint` option is now ignored.
+- As an example, trying to match 1 key in a 10k key-values data-set will still require 10 calls to `list` to fetch it.
 
 `list` provides the following guarantees:
 
@@ -203,10 +198,24 @@ However, list also has the following drawbacks:
   array first and then remove any duplicates.
 - In some rare cases, `list` may return expired keys.
 
-Furthermore, you can control the `list` behavior via those two options:
+Please note, that `list` is subject to the bandwidth rate-limiting quotas, so listing many keys may result in 429s.
 
-- `match`, to filter keys [using a glob-style pattern](#match-option).
-- `countHint`, to specify an approximate amount of keys returned per iteration. State doesn't provide a guarantee on the number of elements returned per iteration, but we try (again with no guarantees) to return at least `countHint` elements per iteration.
+### `match` option
+
+`state.deleteAll` and `state.list` support a `match` option to filter keys.
+
+`match` supports a glob-style pattern via the `*` character, suppose you have the following keys: `key`, `base.key`, `key-1`
+
+- `match=key` will match `key`
+- `match=k*` will match `key`
+- `match=*k*` will match `key`, `base.key`, `key-1`
+- `match=*-1` will match `key-1`
+- `match=base.*-1` will match none
+
+The `match` filter is applied server-side **after** traversing elements, this means:
+
+- `match` does not reduce the work needed to iterate over your key-values.
+- every call to `list` may return only few keys when matching a handful of key-values in a large dataset.
 
 ### Troubleshooting
 
