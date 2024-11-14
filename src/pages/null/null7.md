@@ -7,7 +7,9 @@ keywords:
 title: How it Works
 ---
 
-# How App Builder works
+This content has been incorporated into "app_builder_intro.md" 
+
+# How App Builder Works
 
 The App Builder framework supports custom application development through build, deploy and test, and publish stages.
 
@@ -32,3 +34,7 @@ You can now run the application in the context of Experience Cloud and simulate 
 ## Publish
 
 Once you are ready to share the application with end users, initiate the publish process from the Developer Console. After Admin approval, authenticated business users will be able to find your new app in Adobe Experience Cloud and use it.
+
+## Next step
+
+Set up your access permissions, local environment, and tools in [Set up](set_up.md).

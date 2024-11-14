@@ -1,4 +1,6 @@
-# Getting Started with Adobe I/O Runtime
+# Get Started with Adobe I/O Runtime
+
+This has been replaced by the new runtime_intro under runtime_getting_started.
 
 If you&rsquo;ve read the [introductory documentation](../overview/what_is_runtime.md), then you&rsquo;re already familiar with the Runtime concept: an easy way to run code on demand on Adobe Experience Cloud and integrate with Adobe&rsquo;s cloud services without the effort of managing servers and the expense of always-on computing resources.  
 

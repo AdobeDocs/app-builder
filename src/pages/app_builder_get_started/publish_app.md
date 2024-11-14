@@ -15,7 +15,7 @@ This tutorial will guide you through the three steps needed to publish your firs
 2. Review and approve the app in [My Exchange](https://exchange.adobe.com/my-exchange.html)
 3. Check your app at [Adobe Experience Cloud](https://experience.adobe.com)
 
-## 1: Project approvals (Console part)
+## Project approvals (Console part)
 
 Once you have completed development on your project and deployed your app in the Production workspace, it is ready for approval. 
 
@@ -51,7 +51,7 @@ Once your application has been submitted for approval, the Admin can see it pend
 
 ![](../images/approval-published.png)
 
-## 2: Administrator review of your app (MyExchange part)
+## Administrator review of your app (MyExchange part)
 
 Once an application has been submitted for approval, your organization's Administrators will see it in My Exchange -> Experience Cloud Apps, and you will see your submitted apps under Pending Review status.
 
@@ -65,7 +65,7 @@ After the app is approved, you will see it in the Approved section. The reviewer
 
 ![](../images/approval-myexchange-revoke.png)
 
-## 3: Check your published app at Experience Cloud
+## Check your published app at Experience Cloud
 
 Once the reviewer has approved your application, you will be notified by email and your app will appear at [Adobe Experience Cloud](https://experience.adobe.com):
 
@@ -85,4 +85,4 @@ We may add other discoverability methods for published headless apps in future A
 
 For more code examples and use cases, please refer to the [Resources](../resources/index.md) page.
 
-To review troubleshooting methods and complete this tutorial, continue to the 
+To review troubleshooting methods and complete this tutorial, continue to the [Troubleshooting Common Issues](troubleshoot.md) page.

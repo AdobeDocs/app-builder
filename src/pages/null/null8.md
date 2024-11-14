@@ -2,8 +2,7 @@
 
 Adobe I/O Runtime is based on OpenWhisk, and uses its architecture to provide function-as-a-service. Here is a look at the high-level OpenWhisk architecture:
 
-![The OpenWhisk architecture](../../img/howitworks_f01.png 'The OpenWhisk architecture')
-_The OpenWhisk architecture_
+![The OpenWhisk architecture](E:\GitHub\app-builder\src\pages\images\howitworks_f01.png "The OpenWhisk architecture")nWhisk architecture_
 
 This figure shows how Runtime (via OpenWhisk) is set up to respond to events and direct invocations. Whether the event comes from an external or internal source, it gets associated with a trigger, which invokes an action in accordance with whatever rules are applied. You can also invoke an action directly using the Runtime (OpenWhisk) CLI or the REST API.
 
@@ -50,7 +49,7 @@ Host: $openwhiskEndpoint
 ```
 
 Note the $userNamespace variable. You can&rsquo;t submit requests to Runtime without having access to a namespace; specifically, the same namespace into which the action was created. When you&rsquo;re configured for an account in Runtime, you&rsquo;re given a personal namespace.
-![Internal process flow](../../img/howitworks_f02.png 'Internal process flow')
+![Internal process flow](E:\GitHub\app-builder\src\pages\images\howitworks_f02.png "Internal process flow")
 _Internal process flow_
 
 #### Receiving: nginx

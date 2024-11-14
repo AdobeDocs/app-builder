@@ -22,3 +22,7 @@ Its main components are:
 Adobe I/O Runtime is Adobe's serverless computing platform, included as a component of App Builder. Serverless computing abstracts server infrastructure from developers so they can concentrate on application logic, not infrastructure. 
 
 Serverless computing platforms like Adobe I/O Runtime host those portions of application logic that need to be Internet-accessible as on-demand functions. Adobe I/O Runtime executes code in response to Adobe I/O Events or HTTP requests controlled by conditional logic, or rules. It provides a programming environment supported by a REST API-based CLI and other tools.
+
+## Next step
+
+Understand core App Builder concepts and start building your first App Builder application with the [Get Started with App Builder](../app_builder_get_started/app_builder_intro.md) tutorial series.

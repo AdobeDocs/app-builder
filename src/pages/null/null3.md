@@ -1,3 +1,5 @@
+This content has been consolidated into "what_is_app_builder.md"
+
 # What is Adobe I/O Runtime
 
 The idea of serverless computing is to abstract the server infrastructure from the developer, so developers can concentrate on application logic, not configuring and deploying servers. With a serverless computing platform like Adobe I/O Runtime, those portions of your application logic that need to be accessible from the Internet, and would normally be executed on a traditionally hosted server or a cloud service such as AWS or Azure, can be hosted on Runtime as on-demand functions and executed as needed via HTTP requests or Adobe I/O Events.

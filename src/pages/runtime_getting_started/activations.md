@@ -127,8 +127,8 @@ Activation time to live is seven days, a system setting, and can't be changed by
 
 ## Next steps
 
-This completes the "Get Started with Adobe I/O Runtime" tutorial.
-
-The procedures described above will help you debug your first actions. Review the [Logging and Monitoring](../guides/logging_monitoring.md 'Logging and Monitoring') Guide for additional details about debugging tools and processes.
+This completes the "Get Started with Adobe I/O Runtime" tutorial. 
 
 For a detailed review of Runtime components, operations, settings, and tuning, see [Understanding I/O Runtime](understanding_runtime.md).
+
+The procedures described above will help you debug your first actions. For additional details about debugging tools and processes, review the [Logging and Monitoring](../guides/logging_monitoring.md 'Logging and Monitoring') Guide.

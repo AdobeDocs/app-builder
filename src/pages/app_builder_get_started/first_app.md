@@ -7,7 +7,7 @@ keywords:
 title: Creating your First App Builder Application
 ---
 
-# Creating your First App Builder Application
+# Create your First App Builder Application
 
 This is a guide through the steps to set up and develop an App Builder Application. Please refer to the [Common issues](first_app.md#common-issues) section at the end of this page to resolve any problems you encounter. 
 
@@ -99,7 +99,7 @@ Once your project is set up in [Adobe Developer Console](/console), you can move
 
 Several flow options are listed below, because some Developers may not have access to [Adobe Developer Console](/console) as entitled enterprise organization users but may still want to look at the project, and others may wish to import their credentials later.
 
-Entitled enterprise organization users should start immediately below. Developers who plan to use a Console configuration file should start [<mark>here</mark>](#developer-with-a-console-config-file), and Developers without any credentials should start [<mark>here</mark>](#developer-without-any-credentials).
+Entitled enterprise organization users should start immediately below. Developers who plan to use a Console configuration file should start [here](#422-developer-with-a-console-config-file), and Developers without any credentials should start [here](#422-developer-without-any-credentials).
 
 ### 4.1 Option 1: Developer is logged in as enterprise organization user
 
@@ -302,7 +302,7 @@ This ends the section on how enterprise organization users can initialize an emp
 
 ### 4.2 Developer is not Logged in as enterprise organization user
 
-#### Developer with a Console config file
+#### 4.2.1 Developer with a Console config file
 
 This flow is intended for Developers who:
 
@@ -336,7 +336,7 @@ For this flow to work, the Developer should ask someone with access to set up a 
    
    This ends the tutorial for Developers initializing their apps from a Console config file. you may review the next section on Developers without access or credentials, or scroll down to "Anatomy of an App Builder Application" below. 
 
-#### Developer without any credentials
+#### 4.2.2 Developer without any credentials
 
 This flow is intended for Developers who have no access or credentials but still want to look at the code.
 
@@ -382,9 +382,9 @@ You should see these folders and files in your project:
    - The environment variables defined here can be used in the application, for example in `ext.config.yaml` and`app.config.yaml`. If you've set up credentials for the selected workspaces, you should be able to see some of those values, like `AIO_runtime_auth` and `AIO_runtime_namespace`, prepopulated upon initialization.
    - This file is automatically included in `.gitignore`. Because of the credentials and secrets it contains, it is not intended be shared.
 
-## 6.Developing the Application
+## 6. Develop the application
 
-### 6.1 Running the Application
+### 6.1 Run the application
 
 To run the application locally, use one of the following commands:
 
@@ -414,7 +414,7 @@ aio app run --local
 
 This deprecated command will deploy actions to a local [OpenWhisk](https://openwhisk.apache.org/) instance, which the [CLI](https://github.com/adobe/aio-cli) will autmomatically download and install. The SPA will then run on the local machine. Note that users of Apple Silicon processors will encounter issues with this command, and should use `aio app dev` instead.
 
-#### Accept the Certificate (on first use)
+#### 6.2 Accept the certificate (on first use)
 
 If you are using this application for the first time, you will see a message similar to:
 
@@ -432,7 +432,7 @@ Click on `Advanced`. The next screen will vary from browser to browser, but shou
 
 You may need to exit the current process and run `aio app run` again.
 
-#### Proceed to the Application on localhost
+#### 6.3 Proceed to the application on localhost
 
 Users who accepted the certificate in the past should see the process shown below running in Teminal, with backend actions deployed to [Adobe I/O Runtime](/runtime) or to the local OpenWhisk instance if the `--local` option was used.
 
@@ -469,7 +469,7 @@ To have the application run completely locally, so the actions run on a locally 
 
 Usually, we recommend running your applications with deployed [Adobe I/O Runtime](/runtime) actions, since your application should run on [Adobe I/O Runtime](/runtime) in production. However, if you need to build complex actions or sequencing, the `--local` flag is helpful to debug the application locally. Please see the "Debugging the Application"" section below for more information.
 
-### 6.2 Try the Sample Application
+### 6.4 Try the sample application
 
 When you access `https://localhost:9080`, you should see the sample application deployed.
 ![Hello World](../images/helloworld-1.png)
@@ -497,7 +497,7 @@ The other sample actions require invoking additional paramaters. For example, if
 3. Other fields, like tenant ID for Target and Campaign Standard or company ID for Adobe Analytics, are not accessible directly through the [CLI](https://github.com/adobe/aio-cli), . Please refer to product documentation to locate these value for your Organization.
 4. Once you have these parameters on hand, construct them in the expected format `{"key": "value"}` and paste into the parameters. You should now be able to invoke the corresponding actions.
 
-### 6.3 Debugging the Application
+### 6.5 Debug the application
 
 The [CLI](https://github.com/adobe/aio-cli) has a _dev_ command (`aio app dev`) that supports debugging. You can develop and debug Adobe Runtime actions in your favorite IDE or debugger with a fast feedback loop. It features:
 
@@ -509,19 +509,19 @@ Please visit the [Debugging App Builder Apps](../resources/debugging/index.md) C
 
 If the local development is run (`aio app run`), the actions you call are run directly on [Adobe I/O Runtime](/runtime). When you use `aio app dev`, the actions are run or debugged directly in Node. In both cases your front end is run on localhost.
 
-### 6.4 Retrieving application logs
+### 6.4 Retrieve application logs
 
-#### Dev
+#### 6.4.1 Dev
 
 When using `aio app dev` logs are output immediately to the terminal and not kept in an activation record.
 
-#### Run or Deploy
+#### 6.4.2 Run or deploy
 
 To see application logs after running `aio app run` or after running your deployed app (`aio app deploy`), use the command `aio app logs`. By default, only the logs of the latest activation are fetched. If you want to see a more extensive list of logs, use the `--limit` flag to define the number of recent activations to be fetched.
 
 Read more at [Managing Application Logs](../guides/application_logging.md).
 
-### 6.5 Test the Application
+### 6.5 Test the application
 
 The bootstrapped application comes with sample implementations for both unit and end-to-end tests. You can execute these tests locally using `aio app test` or `aio app test -e`, which will run the unit and end-to-end tests, respectively, against the bootstrapped codebase.
 
@@ -531,7 +531,7 @@ Adobe uses [jestJS](https://jestjs.io/) for the unit tests of the [CLI](https://
 
 [CI/CD for App Builder Applications](../guides/deployment/ci_cd_for_firefly_apps.md) also explains how to execute these tests in the context of a CI/CD pipeline.
 
-## 7 Deploy the Application
+## 7. Deploy the application
 
 Once the application is in a good shape, it can be fully deployed to your development workspace. This requires a single command:
 
@@ -579,7 +579,7 @@ Note the last section of the output, `To view your deployed application`, shows 
 
 You can undeploy your app with `aio app undeploy`. To learn more about deployment, please refer to [Deployment Overview](../guides/deployment/index.md). To automate your build, deploy, and build process with out-of-the-box CI/CD GitHub actions, please refer to [CI/CD for App Builder Applications](../guides/deployment/ci_cd_for_firefly_apps.md).
 
-## Common Issues
+## 8. Common Issues
 
 1. Please first make sure your [CLI](https://github.com/adobe/aio-cli) and all plugins are up to date. For the [CLI](https://github.com/adobe/aio-cli), you can check the version through `aio -v` and compare it with the `npm show @adobe/aio-cli version`. If your [CLI](https://github.com/adobe/aio-cli) is outdated, update it by running `npm install -g @adobe/aio-cli`. After that, you can simply run `aio update` to ensure all core plugins are updated.
 

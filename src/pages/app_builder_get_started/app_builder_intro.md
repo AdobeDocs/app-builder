@@ -7,15 +7,19 @@ keywords:
 title: How it Works
 ---
 
-# Getting started with App Builder
+# Get Started with App Builder
 
 This series of tutorials will show you how to:
+
+* Align App Builder's development stages - build, deploy and test, publish - to your own development process
 
 * Arrange access and secure the necessary credentials, set up your local environment, and collect the tools you'll need
 
 * Write, deploy, and test your app
 
 * Troubleshoot your app and correct common error conditions
+
+Customers with currently deployed Adobe I/O Runtime actions they wish to convert into App Builder applications should consider [this shortcut](app_builder_and_runtime.md).
 
 ## Overview
 
@@ -45,4 +49,4 @@ Once you are ready to share the application with end users, initiate the publish
 
 ## Next step
 
-First, we'll review the access permissions, credentials, local environment, and tools you'll need for your App Builder app: [Setting up](setting_up.md)
+First, we'll review the access permissions, credentials, local environment, and tools you'll need for your App Builder app: [Set up](set_up.md).

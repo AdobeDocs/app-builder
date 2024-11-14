@@ -7,7 +7,7 @@ keywords:
 title: Common Troubleshooting
 ---
 
-# Troubleshooting common Issues
+# Troubleshooting Common Issues
 
 This is a guide for troubleshooting some of the most common issues you may encounter when developing App Builder apps.
 
@@ -79,7 +79,7 @@ We recommend using [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm) o
 
 ## Next steps
 
-This completes the "Getting Started" tutorials for App Builder. 
+This completes the "Getting Started" tutorial series for App Builder. 
 
 To learn how to extend App Builder capabilities using the Adobe I/O Runtime platform, proceed to the [Getting Started with Adobe I/O Runtime](dummy) tutorial.
 

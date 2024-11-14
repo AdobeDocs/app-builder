@@ -18,6 +18,64 @@ Once an action is complete, its instantiation is disposed, so there’s no need 
 
 Compare this approach to traditional long-running VMs or containers, which need to be architected for resiliency by provisioning multiple VMs or containers running in parallel to take over if a VM or container fails. Such architectures incur the costs of continuous uptime, and require expertise and dedicated resources to design and configure them properly and keep them running.
 
+## The process in detail
+
+Here, we'll trace the process from an event to the completed action executed in response. OpenWhisk (and therefore Runtime) is built on well-established open-source tools such as Nginx, Docker, Kafka, and CosmosDB, assembled into a seamless pipeline to provide serverless event-based processing.
+
+### Start with an action
+
+First, we need an action against which to trigger an event. Actions are functions, so a simple JavaScript function will do:
+
+```js
+function main() {
+  console.log('Hello World');
+  return { hello: 'world' };
+}
+```
+
+Saved as `hello.js`, this function will print "Hello World" to stdout and return a JSON object containing the key-value pair "hello: world".
+
+The function is uploaded to Runtime as an action by this command in the CLI:
+
+`aio rt:action:create helloAction <path>/hello.js`
+
+Now that the action is created, it can be invoked by an HTTP call or associated with a trigger. It can also be invoked directly through the CLI:
+
+`aio rt:action:invoke helloAction --result`
+
+### Trace the process
+
+An action has been created and invoked; now it can be processed, as an HTTP request. The Runtime (OpenWhisk) system is a completely HTTP-based open REST API, so the invocation sent in the CLI is translated into an HTTP request against Runtime. The command translates roughly into this POST:
+
+```
+POST /api/v1/namespaces/$userNamespace/actions/helloAction
+Host: $openwhiskEndpoint
+```
+
+Note the `$userNamespace` variable. Runtime requests require access to the same namespace in which the action was created. When users are configured for Runtime accounts, they are given their own personal namespaces. 
+
+![@](E:\GitHub\app-builder\src\pages\images\howitworks_f02.png)
+
+*Internal process flow*
+
+#### Receiving: nginx
+
+[Nginx](https://www.nginx.com/ "Nginx") is a reverse proxy and HTTP server. The OpenWhisk architecture uses it to terminal SSL and forward the HTTP request to the next component in the processing loop.
+
+#### Interpreting: the Controller
+
+The Controller is the core component of Runtime (OpenWhisk). It serves as the interface for everything a user can do. It is an imlementation of the actual REST API, written in the [Scala](https://www.scala-lang.org/ "Scala programming language") programming language, and built on the [Akka](https://akka.io/ "Akka runtime") runtime environment and the [Spray](http://spray.io/ "Spray toolkit") REST/HTTP toolkit.
+
+The Controller receives HTTP requests from nginx and interprets them. The results may be a [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) requests or direct invocations of an action. In this example, the Controller reads an HTTP POST request to an existing action as an invocation of that action, and moves to the next step.
+
+#### Permitting: CosmosDB
+
+Now the Controller authenticates the user and determines authorization, by checking credentials in a CosmosDB database called **subjects.** If the account is valid, the permissions correct, and the action in a namespace owned by the user, the Controller  retrieves the action itself.
+
+#### Retrieving: CosmosDB
+
+CosmosDB stores user credentials and also the code for the actions themselves. So, after the Controller has determined user permissions by its first call to CosmosDB, it calls CosmosDB again, to a database called **whisks.** CosmosDB returns the code for the action, so the Controller can take the next step: queueing the action for processing.
+
 ## Next step
 
-For a step-by-step tutorial on creating, deploying, and testing your first Runtime action, start with [Set up Your Environment](setup.md).
+To begin a step-by-step tutorial for creating, deploying, and testing your first Runtime action, start with [Set up Your Environment](setup.md).

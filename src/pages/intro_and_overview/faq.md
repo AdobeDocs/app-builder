@@ -56,7 +56,7 @@ Yes; tools are developed under Apache License Version 2.0; I/O Runtime is built 
 
 ## How to get App Builder
 
-### How do customers license App Builder?
+### How can customers license App Builder?
 
 There are several ways to license App Builder. First, customers can purchase App Builder with Adobe Experience Manager or Adobe Commerce, or to use with Adobe Experience Platform apps such as Adobe Journey Optimizer, Customer Journey Analytics, or Real-Time Customer Data Platform.
 
