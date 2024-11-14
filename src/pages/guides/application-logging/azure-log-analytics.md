@@ -25,6 +25,14 @@ This guide would cover configuring your app builder application to forward appli
 
 ## Steps to configure Log Forwarding
 
+    ```yaml
+    aio app config set log-forwarding
+    ? select log forwarding destination: Azure Log Analytics
+    ? customer ID: <Workspace ID>
+    ? shared key: <Primary Key>
+    ? log type: <table_name_alpha_chars_only>
+    ```
+
 1. Open Azure Portal and navigate to the Azure Log Analytics workspace you want to use. Go to the workspace overview screen and pick Agent Management from the menu on the left. Copy the **`Workspace ID`** and the **`Primary Key`** for later use.
 
 2. Open terminal and navigate to the App Builder project directory on your machine.
