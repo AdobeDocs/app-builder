@@ -1,21 +1,16 @@
----
-title: Configuration
----
 # App Builder Configuration Files
 
 ## Overview
 
-An app has three configuration files, **defined in the root of the project folder**:
+An App Builder application has three configuration files defined in the root of the project folder:
 
-- `app.config.yaml` is the main configuration file, defining the application's behavior and implementation.
+- `app.config.yaml` is the main configuration file that defines the application's behavior and implementation
 - `.env` is used to store secrets and environment variables available during build time.
 - `.aio` is populated by the `aio` CLI to store the current Developer Console Workspace details.
 
-Note: `.env` and `.aio` files **should not be committed to version control**.
+For security reasons, `.env` and `.aio` files should not be committed to version control.
 
-## `app.config.yaml`
-
-### Tl;dr: give me a full example:
+## Complete example: `app.config.yaml`
 
 ```yaml
 # standalone application config
@@ -72,8 +67,7 @@ requiredProducts:
 
 ### Standalone application and extensions
 
-The `app.config.yaml` file can contain two top level fields: `application` and `extensions`.
-Only one is required.
+The `app.config.yaml` file can contain two top level fields: `application` and `extensions`; only one is required.
 
 ```yaml
 # app.config.yaml
@@ -90,9 +84,7 @@ A project can implement a standalone application and N extensions.
 
 ### Common configuration
 
-Extensions and the standalone application behave in a similar way.
-Both can contain a UI and actions and both support a common configuration.
-The common configuration contains following fields:
+Extensions and the standalone application behave in a similar way: both can contain a UI and actions, and both support a common configuration. Their common configuration contains these fields:
 
 ```yaml
 # <common-config>
@@ -119,9 +111,8 @@ hostname: <alternative hostname for the UI>
 
 #### Runtime Manifest
 
-The `runtimeManifest` field holds the backend configuration deployed into Adobe I/O Runtime.
-The full spec can be found [here](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification/html). Acceptable values for the `limits` fields below can be found on the [Runtime System Settings](https://developer.adobe.com/runtime/docs/guides/using/system_settings/) page.
-Here is an example to get started:
+The `runtimeManifest` field holds the back-end configuration deployed into Adobe I/O Runtime; its full spec can be found [here](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification/html). Acceptable values for the `limits` fields below can be found on the [Runtime System Settings](https://developer.adobe.com/runtime/docs/guides/using/system_settings/) page.
+Here is an example `runtimeManifest`:
 
 ```yaml
 runtimeManifest
@@ -149,24 +140,23 @@ runtimeManifest
               - ["myfilestoinclude/*.txt", "text/"]        
 ```
 
-> Note that the above example also demonstrates the 'include' field of an action.  In some cases you may want to have a file deployed with your action code, and available to your code when it runs.
-The example will copy all .txt files from the `myfilestoinclude/` directory and place it in a new dir `text/` that is available via `fs.readFile('text/somefile.txt', 'utf8', callback);` when your action is invoked.
+> Note: the example above demonstrates the 'include' field of an action, for cases when you may want to have a file deployed with your action code and available to your code while it runs.
+> The example copies all .txt files from the `myfilestoinclude/` directory and places them in a new dir `text/` available when your action is invoked via `fs.readFile('text/somefile.txt', 'utf8', callback);` 
 
-
-> Note the above sets limit values.  Limits are defined as:
+> Note: the example above sets limit values.  Limits are defined as:
 > 
-> - `concurrency`: the maximum number of action invocations to send to the same container in parallel (default 200, min: 1,max: 500)
-> - `logs`: the maximum log size LIMIT in MB for the action (default 10, min: 0, max: 10)
-> - `timeout`: the timeout LIMIT in milliseconds after which the action is terminated (default 60000, min: 100, max: 3600000)
->   - _for web actions served from cdn there is a hard limit of 30 seconds for timeout_
-> - `memory`: the maximum memory LIMIT in MB for the action (default 256, min: 128, max: 4096)
->   - _setting distinct values (ex. 671) can impact cold starts as Runtime keeps a number of pre-warmed containers, but only for common memory sizes (128, 256, 512, 1024, etc.)_
+> - `timeout`: the maximum time that an action may run before it is terminated (in msec., default 60000 [1 minute], min: 100 [0.1 second], max: 3600000 [60 hours])
+>   - For web actions served from the Content Delivery Network, there is a hard timeout limit of 30 seconds.
+> - `memory`: the maximum allocation of memory for an action (in MB, default: 256, min: 128, max: 4096)
+>   - Specifying nonstandard values like 671 can increase the number of "cold start" container initializations: Runtime maintains pre-warmed containers only for common memory sizes (128, 256, 512, 1024, etc.)
+> - `concurrency`: the maximum number of action invocations that can be sent in parallel to the same container (default 200, min: 1,max: 500)
+> - `logs`: the maximum log size for the action (in MB, default 10, min: 0, max: 10)
 > 
 > More info on `limits` can be found on the [Runtime System Settings](https://developer.adobe.com/runtime/docs/guides/using/system_settings/) page.
 
-##### Annotations 
+##### Annotations
 
-Runtime actions can be decorated with annotations to enhance or modify action behavior. 
+Annotations may be added to Runtime actions to modify their behavior. 
 
 ```yaml
 runtimeManifest:
@@ -180,17 +170,16 @@ runtimeManifest:
              disable-download: true  
 ```
 
+In addition to the [base annotations](https://github.com/adobe-apiplatform/incubator-openwhisk/blob/master/docs/annotations.md) provided by Runtime, there are two special ones: 
 
-In addition to the base annotations provided by Runtime (See [here](https://github.com/adobe-apiplatform/incubator-openwhisk/blob/master/docs/annotations.md)), there are a few special annotations: 
-
-- **disable-download** (Default: false) - Determines whether action code can be downloaded. Once this annotation is set to true, it cannot be set back to false. 
-- **require-adobe-auth** (Default: false) - Determines whether the action will require Adobe authentication to invoke. See [here](https://developer.adobe.com/app-builder/docs/guides/security/#authentication-and-authorization-handling) for more.
+- **disable-download** (default: false) determines whether action code can be downloaded. Once this annotation is set to true, it cannot be set back to false. 
+- **require-adobe-auth** (Default: false) determines whether the action will require Adobe authentication to invoke. See [here](/app_builder_guides/security/index.md#authentication-and-authorization-handling) for more.
 
 ##### API Gateway Configuration
 
 A Runtime API Gateway configuration can be added to expose web actions over specific paths and HTTP verbs. 
 
-> Note: It can take 5 to 10 minutes for new gateway configurations to provision. In the meantime, you may see 404 errors from your API.
+> Note: It can take 5 to 10 minutes for new gateway configurations to provision. Until they do, you may see 404 errors from your API.
 
 ```yaml
 runtimeManifest:
@@ -222,34 +211,36 @@ runtimeManifest:
 ```
 
 > Note: The configuration above will result in the following: 
+> 
 > - `GET https://adobeioruntime.net/apis/[namespace]/v1/pets`
 > - `GET https://adobeioruntime.net/apis/[namespace]/v1/pets/{petName}`
 
 > Note: The second API above defines a path parameter in the relative path by using curly braces, i.e `pets/{petName}`
+> 
 > - APIs using path parameters must use the `http` response type
 
-- The following options are available for `method`: get, post, put, delete, patch
-- The following options are available for `response`: http (default), json, text, or html
+- These options are available for `method`: get, post, put, delete, patch
+- These options are available for `response`: http (default), json, text, or html
 
-Learn more about API Gateway Configuration with the [Action APIs QuickStart](https://github.com/adobe/appbuilder-quickstarts/tree/master/action-apis)
+Learn more about API Gateway Configuration with the [Action APIs QuickStart](https://github.com/adobe/appbuilder-quickstarts/tree/master/action-apis).
 
 #### Hooks to customize the tooling
 
-Hooks can be used to customize `aio app` commands. Hooks are documented [here](https://github.com/AdobeDocs/project-firefly/blob/main/src/pages/guides/app-hooks.md).
+Hooks can be used to customize `aio app` commands, as documented [here](https://github.com/AdobeDocs/project-firefly/blob/main/src/pages/guides/app-hooks.md).
 
-### Extension specific configuration
+### Extension-specific configuration
 
 #### Extension types
 
-The `<extension-type>` indicates which product the extension is extending, currently we support the following product extensions:
+The `<extension-type>` indicates which product the extension is extending. Adobe currently supports:
 
-1. `dx/excshell/1` to implement an Experience Cloud Shell single page application.
-2. `dx/asset-compute/worker/1` to implement an AEM Asset Compute worker.
+- `dx/excshell/1` to implement Experience Cloud Shell single-page applications
+- `dx/asset-compute/worker/1` to implement AEM Asset Compute workers
 
-#### `dx/excshell/1` definition
+#### Definition of `dx/excshell/1`
 
 The Experience Cloud Shell extension supports a `view` operation that points to the entry html file of the SPA.
-In the following example the `impl` field points to an `index.html` file stored in the `web/` folder of the extension.
+In this example, the `impl` field points to an `index.html` file stored in the `web/` folder of the extension:
 
 ```yaml
 extensions
@@ -261,10 +252,10 @@ extensions
      web-src: web/
 ```
 
-#### `dx/asset-compute/worker/1` definition
+#### Definition of  `dx/asset-compute/worker/1`
 
-The AEM Asset Compute worker extension supports a `workerProcess` operation that points to the backend Adobe I/O Runtime action implementing the worker logic.
-In the following example the `impl` field points to the  `dx-asset-compute-worker-1/worker` action defined in the `runtimeManifest`.
+The AEM Asset Compute worker extension supports a `workerProcess` operation that points to the back-end Adobe I/O Runtime action implementing the worker logic.
+In this example, the `impl` field points to the  `dx-asset-compute-worker-1/worker` action defined in the `runtimeManifest`.
 
 ```yaml
 extensions
@@ -285,8 +276,8 @@ extensions
 
 ### The `$include` directive
 
-The `$include` directive allows to defer any part of the `app.config.yaml` to another file.
-In the following example, the `dx/excshell/1` configuration is stored in another `./src/dx-excshell-1/ext.config.yaml` file.
+The `$include` directive allows any part of `app.config.yaml` to defer to another file.
+In this example, the `dx/excshell/1` configuration is stored in another `./src/dx-excshell-1/ext.config.yaml` file:
 
 ```yaml
 extensions:
@@ -298,7 +289,7 @@ Configuration paths defined in `./src/dx-excshell-1/ext.config.yaml` must be rel
 
 ### Public distribution configuration
 
-A subset of configuration options are specific to publicly distributable apps. See the [Public Distribution](../distribution/public.md) guide for more details.
+A subset of configuration options is specific to publicly distributable apps, as detailed in the [Public Distribution](../distribution/public.md) Guide.
 
 ```yaml
 configSchema: 
@@ -316,13 +307,13 @@ requiredProducts:
     maxVersion: 1.0.0
 ```
 
-## `.env`
+## The `.env` file
 
 The `.env` file is used to store:
 
-1. secrets to be injected into I/O Runtime Actions.
-2. environment variables available to `hooks`.
-3. auto generated secrets used by the `aio` CLI, prefixed by `AIO_`, those should not be edited.
+- Secrets to be injected into I/O Runtime Actions
+- Environment variables available to `hooks`
+- Auto-generated secrets used by the `aio` CLI and prefixed by `AIO_`. These should not be edited.
 
 ```
 # User secrets
@@ -334,19 +325,20 @@ AIO_runtime_auth=
 AIO_runtime_apihost=
 ```
 
-### Using environment variables in frontend
+### Using environment variables in front-end
 
-Environment variables set in .env can be accessed directly via `process.env`:
+Environment variables set in .env can be accessed directly using `process.env`:
 
 ```jsx
 <View showDevDebugOverlay={process.env.ENABLE_DEV_DEBUG}></View>
 ```
 
-### Using environment variables in Runtime actions 
+### Using environment variables in Runtime actions
 
-Environment variables set in .env need to be passed as inputs to an action and then are available via the action parameters.
+Environment variables set in .env need to be passed as inputs to an action; they are then available through the action parameters.
 
 #### app.config.yaml
+
 ```yaml
 runtimeManifest:
    packages:
@@ -361,6 +353,7 @@ runtimeManifest:
 ```
 
 #### Action code
+
 ```javascript
 async function main (params) {
   if (params.ENABLE_DEV_DEBUG) {
@@ -373,21 +366,24 @@ exports.main = main
 
 ## `.aio`
 
-The `.aio` file is auto generated and contains Developer Console specific configuration.
-This file is updated via the `aio app use` command and should not be edited manually.
+The `.aio` file is auto-generated; it contains Developer Console-specific configuration.
+This file is updated by the `aio app use` command; it should not be edited manually.
 
 ## Legacy configuration system
 
-Apps initialized using a `@adobe/aio-cli` CLI version prior to 8.x use a legacy configuration system that we still support in newer CLI versions.
-Those apps do not support extensions, and only get deployed as standalone applications.
+Apps initialized using a `@adobe/aio-cli` CLI version prior to 8.x use a legacy configuration system that we still support in newer CLI versions. These older apps do not support extensions, and may be deployed only as standalone applications.
 
 The legacy configuration system does not have an `app.config.yaml` and instead uses:
 
-1. `.aio` to store common configuration bits, but hooks and Runtime Manifest, such as `actions` path.
-2. `manifest.yaml` to stores the Runtime Manifest.
-3. `package.json` to store hooks.
-4. `.env` behaves the same.
+- `.aio` to store common configuration bits, but hooks and Runtime Manifest, such as `actions` path.
+- `manifest.yaml` to stores the Runtime Manifest.
+- `package.json` to store hooks.
+- `.env` behaves the same.
 
-## Migrating between Standalone Application and DX Experience Cloud SPA v1
+## Next steps
 
-- [Standalone Application to DX Experience Cloud SPA v1](migrations/standalone_to_dx_experience_cloud_spa.md) - Useful if you can't seem to view your application in the App Builder Catalog in Adobe Experience Cloud.
+If you can't view your application in the App Builder Catalog of Adobe Experience Cloud, this migration protocol may be useful: [Standalone Application to DX Experience Cloud SPA v1](../migrations/standalone_to_dx_experience_cloud_spa.md).
+
+Proceed to [Webpack Configuration](webpack_configuration.md).
+
+Return to [Guides Index](guides/guides_index.md).

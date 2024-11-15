@@ -16,8 +16,9 @@ The [CLI](https://github.com/adobe/aio-cli) provides out-of-the-box features for
 In the following chapters of this documentation, it will be assumed that:
 
 - The Custom Adobe Application has been bootstrapped from a [generator](https://github.com/adobe/generator-aio-app/) using the [CLI](https://github.com/adobe/aio-cli)
-- There is a **.env** file at the root of the application folder, which contains the following keys and their values:
 
+- There is a **.env** file at the root of the application folder, which contains the following keys and their values:
+  
   - **AIO_RUNTIME_AUTH**, which holds the credentials for the Runtime namespace to use
   - **AIO_RUNTIME_NAMESPACE**, which holds the name of the Runtime namespace to use
 

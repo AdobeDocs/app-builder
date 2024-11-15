@@ -20,9 +20,9 @@ with components of the unified shell such as topbar, menus, nps, alerts, etc. Th
 made possible through two components: -
 
 1. A module-runtime script that is injected into the product iframe
-2. This @adobe/exc-app package that provides an API to interact with the injected module-runtime
-script.
 
+2. This @adobe/exc-app package that provides an API to interact with the injected module-runtime
+   script.
 - [exc-app](#exc-app)
   - [Getting Started](#getting-started)
   - [Features](#features)
@@ -43,7 +43,7 @@ To get started with this integration, below two things need to be done.
 
 1. Include the runtime loader script on the home page
 2. Include the [@adobe/exc-app](https://www.npmjs.com/package/@adobe/exc-app) package in your NPM
-`package.json` and invoke the init API.
+   `package.json` and invoke the init API.
 
 ```typescript
 import React from 'react';
@@ -121,7 +121,7 @@ function setup() {
 - `environment`: Environment being used.
 - `historyType`: Type of history.
 - `imsEnvironment`: IMS environment. This follows general rules unless shell_ims query param is
-in use.
+  in use.
 - `imsOrg`: IMS org ID.
 - `imsOrgName`: Name of the IMS org.
 - `imsProfile`: Object containing information about the authenticated user.
@@ -129,7 +129,7 @@ in use.
 - `locale`: Locale string for globalization.
 - `preferredLanguages`: List of preferred languages from the user's IMS profile.
 - `shellInfo`: Shell related information needed to populate the shell UI. More details about what
-is included are Shell API.
+  is included are Shell API.
 - `tenant`: tenant name for current ims org.
 
 #### Configuration
