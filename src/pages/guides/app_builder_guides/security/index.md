@@ -11,7 +11,7 @@ title: Security Overview
 
 Security requirements of application development projects vary widely. Meeting them often requires complex, time-consuming implementations with substantial support at the SDK and tools level. 
 
-App Builder saves developer time, with an [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) designed to make it easier and faster to secure cloud-native applications deployed into Adobe's ecosystem.
+App Builder saves Developers' time with an [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) designed to make it easier and faster to secure cloud-native applications deployed into Adobe's ecosystem.
 
 ## Securing access to App Builder applications
 
@@ -22,20 +22,20 @@ All interactions with [Adobe Product APIs](/apis) need to be authenticated again
 App Builder [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) help developers [bootstrap applications](../../getting_started/index.md) easily from templates, using `aio app init`. Included are templates for Runtime web actions, which integrate with [Adobe Product APIs](/apis) that can be extended using App Builder.
 Any generated action is initialized with boilerplate code based on App Builder [SDK libraries](https://github.com/adobe/aio-sdk). Out of the box, these steps are implemented:
 
-- Validation that an Adobe IMS bearer token has been passed as Authorization header of the request that invoked the action
-- Extraction of this bearer token for further use in the action
-- Instantiation of an API client, by using the appropriate product [SDK library](https://github.com/adobe/aio-sdk)
-- A pre-configured API call, passing the required credentials, using the same product [SDK library](https://github.com/adobe/aio-sdk)
+- **Validation** that an Adobe IMS bearer token has been passed as Authorization header of the request that invoked the action
+- **Extraction** of this bearer token for further use in the action
+- **Instantiation** of an API client, by using the appropriate product [SDK library](https://github.com/adobe/aio-sdk)
+- A pre-configured **API call** passing the required credentials, using the same product [SDK library](https://github.com/adobe/aio-sdk)
 
 ### Securing access to headless App Builder applications
 
-Headless applications, for example Runtime actions or sequences, are usually executed as back-end services invoked by other services such as Adobe products or third-party systems. Examples include:
+Headless applications, for example Runtime actions or sequences, are usually executed as back-end services invoked by other services such as Adobe products or third-party systems. Example use cases include:
 
 - A custom asset worker integrating with AEM Assets as a Cloud Service
 - An Adobe Campaign marketing activity
 - A third-party CRM workflow
 
-![Headless Access Sequence Diagram](../../images/security-headless-access-sequence-diagram.png)
+![Headless Access Sequence Diagram](E:\GitHub\app-builder\src\pages\images\security-headless-access-sequence-diagram.png)
 
 To call Adobe Product APIs successfully, headless App Builder applications must pass Adobe IMS JWT access tokens. These can be obtained within the [Developer Console](/console) by accessing the corresponding App Builder project and workspace.
 
@@ -47,17 +47,17 @@ The SDK library uses the [State SDK Library](https://github.com/adobe/aio-lib-st
 
 These SPAs are business-to-employee custom applications that deploy into the [Experience Cloud Shell](https://experience.adobe.com) for end users in enterprise organizations.
 
-![SPA Access Sequence Diagram](../../images/security-spa-access-sequence-diagram.png)
+![SPA Access Sequence Diagram](E:\GitHub\app-builder\src\pages\images\security-spa-access-sequence-diagram.png)
 
 The SPA front end interacts with Runtime web actions on specific events triggered at UI level.
-In this scenario, the Experience Cloud Shell exposes a [client-side API](../exc_app/index.md), which can be used by the SPA to obtain the OAUth token generated for the logged-in user. 
+In this scenario, the Experience Cloud Shell exposes a [client-side API](../exc_app/index.md), which can be used by the SPA to obtain the OAuth token generated for the logged-in user. 
 This token will be used by back-end Runtime actions to call [Adobe Product APIs](/apis), which need to be integrated in the application.
 
 SPAs bootstrapped from the [CLI](https://github.com/adobe/aio-cli) using `aio app init` automatically include a [React-Spectrum](https://react-spectrum.adobe.com/)-based front end that integrates with the Experience Cloud Shell [client-side API](../exc_app/index.md), and sends the user OAuth token from the client to the invoked Runtime actions.
 
 ### Authentication and authorization handling
 
-Every App Builder application is integrated to an out-of-the-box Authentication and Authorization handling layer when deployed from the [CLI](https://github.com/adobe/aio-cli) using `aio app deploy`.
+Every App Builder application is integrated to an out-of-the-box Authentication and Authorization-handling layer when deployed from the [CLI](https://github.com/adobe/aio-cli) using `aio app deploy`.
 
 Whether the application is headless or an SPA, this extra security layer checks that:
 
@@ -70,7 +70,7 @@ Whether the application is headless or an SPA, this extra security layer checks 
 - The invoked back-end action belongs to the organization for which the token was emitted
 - The token is authorized to use the Adobe Product APIs integrated in the App Builder Application
 
-![Validator Architecture](../../images/security-validator-architecture.png)
+![Validator Architecture](E:\GitHub\app-builder\src\pages\images\security-validator-architecture.png)
 
 Authentication and authorization validation is enabled by default for every Runtime action bootstrapped from the [CLI](https://github.com/adobe/aio-cli) using `aio app init` or `aio app add action`. This results in a specific `require-adobe-auth` action annotation set to `true` in the application `manifest.yml` or `app.config.yaml` file:
 
@@ -103,7 +103,7 @@ packages:
 The first action in the sequence is an out-of-the-box shared action. All data required to authenticate and authorize the calling client is extracted from the incoming request.
 The data is passed to an out-of-the-box service that performs the necessary validation against Adobe IMS and Adobe Exchange. The custom action invocation will be chained if and only if validation is successful, as shown here:
 
-![Validator Architecture](../../images/security-validator-detailed-sequence-diagram.png)
+![Validator Architecture](E:\GitHub\app-builder\src\pages\images\security-validator-detailed-sequence-diagram.png)
 
 Developers can unprotect an action by setting its `require-adobe-auth` annotation to `false`, or by deleting it and redeploying the application using `aio app deploy`. But we strongly recommend evaluating any such changes in light of the application security requirements, and retaining the `require-adobe-auth` annotation value `true` for any action that integrates with one or more [Adobe Product APIs](/apis).
 
@@ -176,7 +176,7 @@ When an App Builder single-page application (SPA) is deployed into the [Experien
 
 Both of these have a strict isolation according to the Runtime namespace. Cloud Storage containers hosting App Builder SPAs can be accessed only by configuring the [CLI](https://github.com/adobe/aio-cli) with appropriate workspace credentials.
 
-The CDN serves these static assets from a sub-domain dedicated exclusively to the Runtime namespace associated with the App Builder application workspace to which the SPA is deployed.
+The CDN serves these static assets from a subdomain dedicated exclusively to the Runtime namespace associated with the App Builder application workspace to which the SPA is deployed.
 
 #### Files and State services
 
@@ -189,6 +189,12 @@ The `App Builder Apps` application available within the Experience Cloud Shell i
 
 ## Summary
 
-The App Builder [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) provide out-of-the-box support for developers to implement secure Adobe-native applications that deploy into App Builder serverless infrastructure and integrate with Adobe Product APIs.
+The App Builder [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) provide out-of-the-box support for Developers to implement secure Adobe-native applications that deploy into App Builder serverless infrastructure and integrate with Adobe Product APIs.
 
 Developers can build serverless processes and user-context-aware applications with only minimal familiarity with Adobe authentication and authorization mechanisms. And   they can save time doing so, because potentially complex security processes like tenant isolation are built into the product.
+
+## Next steps
+
+Continue to [Understanding Authentication](understanding_authentication.md).
+
+Return to [Guides Index](../pages/guides/guides_index.md).

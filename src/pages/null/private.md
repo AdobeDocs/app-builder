@@ -9,6 +9,7 @@ description: This documentation focuses on privately distributing App Builder ap
 ---
 
 # Private Distribution
+
 Distribute apps to other members in your Adobe organization.
 
 ## Overview

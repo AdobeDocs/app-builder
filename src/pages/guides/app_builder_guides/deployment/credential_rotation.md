@@ -11,16 +11,15 @@ description: How to rotate your secrets and keep your actions secured.
 
 # Credential Rotation
 
-Eventually you will need to rotate your credentials to make sure everything remains secure.  This guide outlines best practices you can use to update the parameters ( aka inputs ) to your actions without disruption.
+Eventually you will need to rotate your credentials to keep everything secure.  This page outlines best practices for updating parameters (inputs ) to your actions without disruption.
 
 ## Why rotate credentials?
 
-It is possible your credentials were leaked somehow, either by appearing in a errant log, or maybe a developer has left the team ... and it is just good practice to periodically rotate them. _because security_
-
+If your credentials were leaked, for example by appearing in a errant log, or by a Developer who left the team, it is simply good practice to rotate them periodically.
 
 ## How to rotate credentials
 
-In order to update the inputs for a particular action we use the `aio runtime action update` command.
+Use the `aio runtime action update` command to update inputs for an action:
 
 ```bash
 ➜ aio runtime action update <action-name> --param <param-name> <param-value>
@@ -34,16 +33,15 @@ In order to update the inputs for a particular action we use the `aio runtime ac
 
 # secondly, you can use the --param flag more than once .. here we use the shortened version -p
 ➜ aio rt action update <action-name> -p <param-name> <param-value> -p <param-name> <param-value> -p <param-name> <param-value>
-
 ```
 
 <InlineAlert slots="text" />
 
-Very important! You must pass ALL parameters in a single `update` call.  Any parameters not specified will disappear.
+It is critically important to pass all parameters in a single `update` call.  Any parameters that are not specified will disappear.
 
-## Using a parameters file ( JSON )
+## Using a JSON parameters file
 
-You can also put your input values in a json file instead of typing them all into the command line.  This applies to both `aio runtime action update` and `aio runtime package update`
+You can also put your input values in a json file instead of typing them all into the command line.  This applies to both the `aio runtime action update` and the `aio runtime package update`:
 
 ```bash
 # actionInputs.json
@@ -54,10 +52,16 @@ You can also put your input values in a json file instead of typing them all int
 ➜ aio runtime action update <action-name> --param-file=<value>
 # concrete example
 ➜ aio runtime action update dx-excshell-1/generic --param-file=actionInputs.json
-
 ```
-
 
 <InlineAlert slots="text" />
 
-Again! This is very important! You must pass ALL parameters in a single `update` call.  Any parameters NOT specified will disappear.
+Again, it is critically important to pass all parameters in a single `update` call. Any parameters that are not specified will disappear.
+
+## Next steps
+
+Continue to [Setting Response Headers](setting_response_headers.md).
+
+Return to [Deployment Overview](index.md).
+
+Return to the [Guides Index](guides/guides_index.md).

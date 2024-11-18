@@ -72,8 +72,6 @@ This guide covers configuration of your App Builder application to forward logs 
 
 If you are unable to set up log forwarding using these procedures, please visit Adobe [App Builder forums](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/app-builder) for support.
 
-
-
 Return to [Managing Application Logs](index.md).
 
 Return to [Guides Index](/guides_index.md).

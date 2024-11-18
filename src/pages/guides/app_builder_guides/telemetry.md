@@ -1,6 +1,6 @@
 ---
 keywords:
-  - cli
+  - CLI
   - Extensibility
   - Developer Tooling
   - telemetry
@@ -10,26 +10,26 @@ description: The latest release of the Adobe Developer Platform CLI (v9.0.0) col
 
 # Telemetry
 
-The latest release of the Adobe Developer Platform CLI (v9.0.0) collects anonymous telemetry data about general usage.  This is an optional feature, and you may opt-out if you would not like to share your anonymous usage information.
+The latest release of the Adobe Developer Platform CLI (v9.0.0) collects anonymized telemetry data about usage. This is an optional feature; you may opt out if you do not care to share anonymous usage information.
 
 ## Why collect telemetry?
 
-The cli has grown from a small project developed by a small team to being used and contributed to by many teams inside and even outside of Adobe.  As we have grown we have strived to keep consistency across operating systems, node versions, terminal choices, etc.  Telemetry allows us to observe feature usage, and focus on removing pain points as we aim to maintain a first class developer experience.
+The Command Line Interface (CLI) has grown from a small project developed by a small team to a tool that is used and supported by many teams inside and outside of Adobe.  As it has grown, we have tried to maintain consistency across operating systems, node versions, terminal choices, and so on.  Telemetry allows us to observe feature usage so we can focus on removing pain points as we try to maintain a first-class Developer experience.
 
 ## What data is collected?
 
-Our goal is primarily performance, so in addition to tracking what commands are run, and whether they are successful, we keep track of how long each command runs.
+Our primary goal is performance, so in addition to tracking which commands are run and whether they are successful, we keep track of how long each command runs.
 
-The data collected includes specifically:
+The data collected includes:
 
-  - the command being run, including any aliases used
-  - any flags being used ( but not the values of the flags )
-  - how long the command ran, and whether it was successful or not
-  - environment info including macOS/Linux/Windows, node version and cli version
+- The command being run, with any aliases used
+- Any flags used, but not the values of the flags 
+- How long each command ran, and whether it was successful
+- Information about the environment, including operating system, node version and CLI version
 
 ## What about secrets and sensitive data?
 
-We __do not__ collect any data that might be sensitive.  This includes, but is not limited to: command arguments and flag values, file paths, environment variables, logs, stack traces, or error output.
+We __never__ collect any that might be sensitive, including but not limited to command arguments and flag values, file paths, environment variables, logs, stack traces, or error output.
 
 <InlineAlert slots="text" />
 
@@ -37,11 +37,11 @@ For more information please read our [privacy policy](https://www.adobe.com/priv
 
 ## Will this data be shared? With whom?
 
-The data we collect is anonymous and only meaningful in aggregate form. We may share non-personally identifiable aggregate data with other teams at Adobe to help them develop or improve their cli plugins.  Some info may be shared with the developer community as well, presumably high level info like operating system, or node version popularity.
+The data we collect is anonymized, and meaningful only in aggregate. We may share non-personally identifiable aggregate data with other teams at Adobe to help them develop or improve their CLI plugins.  Some information may be also shared with the Developer community, this will usually be high-level information such as the popularity of an operating system or node version.
 
 ## How do I opt out?
 
-You may turn telemetry off, (or __on__) at any time and this setting will persist until you change it.
+You may turn telemetry off or on at any time; this setting will persist until you change it.
 
 ```bash
 ➜ aio telemetry off
@@ -53,7 +53,7 @@ Telemetry is on! Nice, you are helping us improve Adobe Developer CLI
 If you would like to turn telemetry off, simply run `aio telemetry off`
 ```
 
-You can also just check the status of telemetry.
+You can also check telemetry status:
 
 ```bash
 ➜ aio telemetry
@@ -61,16 +61,16 @@ Telemetry is on! Nice, you are helping us improve Adobe Developer CLI
 If you would like to turn telemetry off, simply run `aio telemetry off`
 ```
 
-Additionally, any individual command may be run with telemetry off by using the `--no-telemetry` flag.
+Individual commands may be run with telemetry off by using the `--no-telemetry` flag, for example:
 
-_example:_
-
-> `aio app info --no-telemetry`
+`aio app info --no-telemetry`
 
 ## Show me the code
 
-Telemetry itself is implemented as a cli plugin.  It is developed in the open, and released under the Apache 2.0 license.  If you would like to watch, review, _(star!)_ or contribute to the project please visit [aio-cli-plugin-telemetry](https://github.com/adobe/aio-cli-plugin-telemetry)
+Telemetry itself is implemented as a CLI plugin.  It is developed in the open and released under the Apache 2.0 license.  If you would like to watch, review, or contribute to the CLI project please visit [aio-CLI-plugin-telemetry](https://github.com/adobe/aio-CLI-plugin-telemetry): pull requests are welcome.
 
-<InlineAlert slots="text" />
+## Next steps
 
-_Pull requests welcomed!_
+Review Adobe policies and guidelines for [contributions](../contribution_guide/index.md).
+
+Return to the [Guides Index](../guides_index.md).

@@ -4,11 +4,28 @@ keywords:
   - Local Distribution
   - App Builder
   - Public
-title: Public Distribution
-description: This documentation focuses on publicly distributing App Builder applications.
+  - Private
+title: Distribution
+description: The Developer Console and aio CLI provide features for developers to distribute their App Builder applications. This documentation focuses on the distribution step of this lifecycle.
 ---
 
-# Public Distribution
+# Distribution Overview
+
+Developers can distribute their App Builder apps privately or publicly.
+
+## Private
+
+Privately distributed apps are available only to users in the Developer's organization. They are submitted through the [Developer Console](https://developer.adobe.com/console), reviewed by an Administrator of the organization, and accessed through the [App Builder Catalog](https://experience.adobe.com/#/@adobeio/custom-apps). 
+
+See [Publishing Your First App Builder Application](../../getting_started/publish_app.md) for a thorough walkthrough on this topic.
+
+> Note: To appear in the App Builder Catalog, an application must be an Experience Cloud Shell extension.
+
+## Public
+
+Publicly distributed apps are available for install via Adobe Exchange. See [Public Distribution](./public.md) for details on how to configure and prepare your app for public distribution. 
+
+Public Distribution
 
 Distribute apps to anyone on [Adobe Exchange](https://exchange.adobe.com/apps/browse/ec).
 
@@ -125,8 +142,6 @@ application:
 
 #### Text field
 
-![Screenshot of text field](../../images/cc-textfield.png)
-
 ```yaml
 configSchema:
   title: 'Configure your application'
@@ -141,8 +156,6 @@ configSchema:
 
 #### Checkbox
 
-![Screenshot of checkbox](../../images/cc-checkbox.png)
-
 ```yaml
 configSchema:
   title: 'Configure your application'
@@ -155,8 +168,6 @@ configSchema:
 ```
 
 #### Dropdown
-
-![Screenshot of dropdown](../../images/cc-dropdown.png)
 
 ```yaml
 configSchema:
@@ -175,7 +186,7 @@ configSchema:
 
 #### Secret
 
-_Secret screenshot pending bug fix_
+*Secret screenshot pending bug fix*
 
 ```yaml
 configSchema:
@@ -189,8 +200,6 @@ configSchema:
 ```
 
 #### Multiple configuration options
-
-![Screenshot of Multiple Configuration](../../images/cc-mult-config.png)
 
 ```yaml
 configSchema:
@@ -241,7 +250,8 @@ productDependencies:
     maxVersion: 1.0.0
 ```
 
-#### Valid products 
+#### Valid products
+
 - **AEM** - Experience Manager
 - **AAM** - Audience Manager
 - **ANLYTC** - Analytics
@@ -268,31 +278,31 @@ The `aio app pack` command will verify and bundle your app. In the root of your 
 aio app pack
 ```
 
-After this command completes, you can find the app package in your app folder as: `dist/app.zip`. 
+After this command completes, you can find the app package in your app folder as: `dist/app.zip`.
 
 Continue to the [Adobe Developer Distribution](/developer-distribution/experience-cloud/docs/guides/getting_started/) documentation for details on how to upload your package.
 
 ### Validation
 
-When a developer uploads a package to Adobe Developer Distribution, the following validations are performed: 
+When a developer uploads a package to Adobe Developer Distribution, the following validations are performed:
 
-1. `app.config.yaml` 
-     - will be checked if it's in a valid format, and will show specific config errors for you to fix, if necessary
+1. `app.config.yaml`
+   - will be checked if it's in a valid format, and will show specific config errors for you to fix, if necessary
 2. `package.json` version
-     - application version format must be `X.Y.Z`, where X, Y, and Z are non-negative integers
+   - application version format must be `X.Y.Z`, where X, Y, and Z are non-negative integers
 3. files to be packaged. All the files in your app folder will be packaged EXCEPT:
-     - files specified in `.gitignore`
-     - files specified in `.npmignore`
-     - any `dist` folders
-     - any dot files (.env, .gitignore, etc)
-     - any OS junk files (.DS_Store, thumbs.db, etc)
+   - files specified in `.gitignore`
+   - files specified in `.npmignore`
+   - any `dist` folders
+   - any dot files (.env, .gitignore, etc)
+   - any OS junk files (.DS_Store, thumbs.db, etc)
 4. event registrations will be validated (if any)
 
 ### Hooks
 
 Two [hooks](../app-hooks.md) are available to customize the packaging step:
 
-1. `pre-pack` - runs before packaging 
+1. `pre-pack` - runs before packaging
 2. `post-pack` - runs after packaging
 
 Your hook handler function will be passed two items:
