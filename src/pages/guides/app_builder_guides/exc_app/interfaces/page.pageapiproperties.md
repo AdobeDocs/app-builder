@@ -14,7 +14,7 @@ Subset of page-level APIs available to solutions that are settable attributes.
 ## Hierarchy
 
 * **PageApiProperties**
-
+  
   ↳ [PageApi](page.pageapi.md)
 
 ## Index
@@ -30,7 +30,7 @@ Subset of page-level APIs available to solutions that are settable attributes.
 
 ## Properties
 
-###  favicon
+### favicon
 
 • **favicon**: *string*
 
@@ -45,7 +45,7 @@ page.favicon = "https://img.icons8.com/color/48/000000/thumb-up.png";
 
 ___
 
-###  modal
+### modal
 
 • **modal**: *boolean*
 
@@ -59,7 +59,7 @@ page.modal = true;
 
 ___
 
-###  preventDefaultCombos
+### preventDefaultCombos
 
 • **preventDefaultCombos**: *object[]*
 
@@ -79,7 +79,7 @@ page.preventDefaultCombos = [
 
 ___
 
-###  spinner
+### spinner
 
 • **spinner**: *boolean*
 
@@ -96,7 +96,7 @@ page.spinner = true;
 
 ___
 
-###  title
+### title
 
 • **title**: *string*
 
@@ -110,7 +110,7 @@ page.title = 'Adobe Experience Cloud';
 
 ___
 
-###  viewportTakeover
+### viewportTakeover
 
 • **viewportTakeover**: *boolean*
 

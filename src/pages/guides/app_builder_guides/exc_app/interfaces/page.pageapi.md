@@ -14,7 +14,7 @@ Defines page-level APIs available to solutions.
 ## Hierarchy
 
 * [PageApiProperties](page.pageapiproperties.md)
-
+  
   ↳ **PageApi**
 
 ## Index
@@ -38,7 +38,7 @@ Defines page-level APIs available to solutions.
 
 ## Properties
 
-###  favicon
+### favicon
 
 • **favicon**: *string*
 
@@ -55,7 +55,7 @@ page.favicon = "https://img.icons8.com/color/48/000000/thumb-up.png";
 
 ___
 
-###  modal
+### modal
 
 • **modal**: *boolean*
 
@@ -71,7 +71,7 @@ page.modal = true;
 
 ___
 
-###  preventDefaultCombos
+### preventDefaultCombos
 
 • **preventDefaultCombos**: *object[]*
 
@@ -93,7 +93,7 @@ page.preventDefaultCombos = [
 
 ___
 
-###  spinner
+### spinner
 
 • **spinner**: *boolean*
 
@@ -112,7 +112,7 @@ page.spinner = true;
 
 ___
 
-###  title
+### title
 
 • **title**: *string*
 
@@ -128,7 +128,7 @@ page.title = 'Adobe Experience Cloud';
 
 ___
 
-###  viewportTakeover
+### viewportTakeover
 
 • **viewportTakeover**: *boolean*
 
@@ -157,7 +157,7 @@ the application.
 
 ## Methods
 
-###  done
+### done
 
 ▸ **done**(): *void*
 
@@ -174,7 +174,7 @@ page.done();
 
 ___
 
-###  generateShellUrl
+### generateShellUrl
 
 ▸ **generateShellUrl**(`location`: [LocationLike](../modules/page.md#locationlike)): *string*
 
@@ -192,9 +192,9 @@ page.generateShellUrl({href: 'https://example.com/abc'});
 
 **Parameters:**
 
-Name | Type | Description |
------- | ------ | ------ |
-`location` | [LocationLike](../modules/page.md#locationlike) | Object with either a path or href key and corresponding value from which to generate the shell URL. |
+| Name       | Type                                            | Description                                                                                         |
+| ---------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| `location` | [LocationLike](../modules/page.md#locationlike) | Object with either a path or href key and corresponding value from which to generate the shell URL. |
 
 **Returns:** *string*
 
@@ -202,7 +202,7 @@ The shell URL for the specified view of the solution.
 
 ___
 
-###  iframeReload
+### iframeReload
 
 ▸ **iframeReload**(): *void*
 
@@ -219,7 +219,7 @@ page.iframeReload();
 
 ___
 
-###  openInNewTab
+### openInNewTab
 
 ▸ **openInNewTab**(`path`: string): *void*
 
@@ -234,15 +234,15 @@ page.openInNewTab('/path');
 
 **Parameters:**
 
-Name | Type | Description |
------- | ------ | ------ |
-`path` | string | The relative path within the solution.  |
+| Name   | Type   | Description                            |
+| ------ | ------ | -------------------------------------- |
+| `path` | string | The relative path within the solution. |
 
 **Returns:** *void*
 
 ___
 
-###  shellRedirect
+### shellRedirect
 
 ▸ **shellRedirect**(`path`: string): *void*
 
@@ -258,8 +258,8 @@ page.shellRedirect('/path?a=b#workspace');
 
 **Parameters:**
 
-Name | Type | Description |
------- | ------ | ------ |
-`path` | string | Path including search and hash to a unified shell solution.  |
+| Name   | Type   | Description                                                 |
+| ------ | ------ | ----------------------------------------------------------- |
+| `path` | string | Path including search and hash to a unified shell solution. |
 
 **Returns:** *void*

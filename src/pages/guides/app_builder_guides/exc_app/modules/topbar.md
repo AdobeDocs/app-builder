@@ -7,7 +7,7 @@ keywords:
 title: 'External module: topbar'
 ---
 
-# External module: topbar
+# Topbar External Module
 
 APIs that let solutions interact with the top bar and personalize it, e.g. configuring the
 solution area on the left, setting up workspaces, custom search, etc.

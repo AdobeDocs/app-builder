@@ -21,7 +21,7 @@ title: 'Interface: ObjectWithPath'
 
 ## Properties
 
-###  path
+### path
 
 • **path**: *string*
 

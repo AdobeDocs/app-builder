@@ -24,24 +24,24 @@ title: 'Interface: CustomFeedbackConfig'
 
 ## Properties
 
-###  buttonLabel
+### buttonLabel
 
 • **buttonLabel**: *string*
 
 ___
 
-###  callback
+### callback
 
 • **callback**: *[Callback](topbar.callback.md)*
 
 ___
 
-###  enabled
+### enabled
 
 • **enabled**: *boolean*
 
 ___
 
-###  type
+### type
 
 • **type**: *"custom"*

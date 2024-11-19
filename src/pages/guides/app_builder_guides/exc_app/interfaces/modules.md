@@ -23,7 +23,7 @@ description: Interface modules
 
 ## Properties
 
-###  default
+### default
 
 • **default**: *function*
 
@@ -33,32 +33,31 @@ description: Interface modules
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`options?` | any |
+| Name       | Type |
+| ---------- | ---- |
+| `options?` | any  |
 
 ___
 
-###  page
+### page
 
 • **page**: *[PageApi](page.pageapi.md)*
 
 ___
 
-
-###  runtime
+### runtime
 
 • **runtime**: *[Runtime](index.runtime.md)*
 
 ___
 
-###  topbar
+### topbar
 
 • **topbar**: *[TopbarApi](topbar.topbarapi.md)*
 
 ___
 
-###  user
+### user
 
 • **user**: *function*
 

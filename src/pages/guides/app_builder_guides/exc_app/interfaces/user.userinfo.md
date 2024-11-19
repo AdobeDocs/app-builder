@@ -29,54 +29,54 @@ title: 'Interface: UserInfo'
 
 ## Properties
 
-###  imsOrg
+### imsOrg
 
 • **imsOrg**: *string*
 
 ___
 
-###  imsOrgName
+### imsOrgName
 
 • **imsOrgName**: *string*
 
 ___
 
-###  imsOrgs
+### imsOrgs
 
 • **imsOrgs**: *object[]*
 
 ___
 
-###  imsProfile
+### imsProfile
 
 • **imsProfile**: *Record‹string, any›*
 
 ___
 
-###  imsToken
+### imsToken
 
 • **imsToken**: *string*
 
 ___
 
-###  locale
+### locale
 
 • **locale**: *string*
 
 ___
 
-###  preferredLanguages
+### preferredLanguages
 
 • **preferredLanguages**: *string[]*
 
 ___
 
-###  subOrg
+### subOrg
 
 • **subOrg**: *string | null*
 
 ___
 
-###  tenant
+### tenant
 
 • **tenant**: *string*

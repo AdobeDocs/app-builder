@@ -7,7 +7,7 @@ keywords:
 title: 'External module: user'
 ---
 
-# External module: user
+# User External Module
 
 API to request user-specific information such as IMS organization, IMS profile, access token,
 tenant, etc. It also  provides solutions with other capabilities such as notifying the shell that

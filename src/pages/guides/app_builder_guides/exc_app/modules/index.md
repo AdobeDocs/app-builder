@@ -5,7 +5,7 @@ title: 'External module: "index"'
 description: External modules
 ---
 
-# External module: "index"
+# Index External Module
 
 API used to integrate as solution web application with the unified shell of the Adobe Experience
 Cloud.
@@ -24,12 +24,13 @@ Cloud.
 
 ## Functions
 
-###  init
+### init
 
 ▸ **init**(`bootstrap`: function): *void*
 
 Initializes a solution web application by invoking the bootstrap callback
 once the runtime is ready.
+
 1. if the module is already defined, start to bootstrap
 2. otherwise define the global callback that will be called when runtime is ready.
 
@@ -56,15 +57,15 @@ parameter to this callback.
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`runtime` | [Runtime](../interfaces/index.runtime.md) |
+| Name      | Type                                      |
+| --------- | ----------------------------------------- |
+| `runtime` | [Runtime](../interfaces/index.runtime.md) |
 
 **Returns:** *void*
 
 ___
 
-###  runtime
+### runtime
 
 ▸ **runtime**(): *[Runtime](../interfaces/index.runtime.md)*
 

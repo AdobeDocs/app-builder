@@ -14,7 +14,7 @@ Defines page-level APIs available to solutions.
 ## Hierarchy
 
 * [TopbarApiProperties](topbar.topbarapiproperties.md)
-
+  
   ↳ **TopbarApi**
 
 ## Index
@@ -33,7 +33,7 @@ Defines page-level APIs available to solutions.
 
 ## Properties
 
-###  customEnvLabel
+### customEnvLabel
 
 • **customEnvLabel**: *string*
 
@@ -49,7 +49,7 @@ topbar.customEnvLabel = 'Beta';
 
 ___
 
-###  solution
+### solution
 
 • **solution**: *[Solution](topbar.solution.md)*
 
@@ -69,7 +69,7 @@ topbar.solution = {
 
 ___
 
-###  workspaces
+### workspaces
 
 • **workspaces**: *WorkspaceMenu[]*
 
@@ -115,7 +115,7 @@ topbar.workspaces = [
 
 ## Methods
 
-###  onHeroClick
+### onHeroClick
 
 ▸ **onHeroClick**(`callback`: [Callback](topbar.callback.md)): *void*
 
@@ -124,15 +124,15 @@ the Shell is clicked.
 
 **Parameters:**
 
-Name | Type | Description |
------- | ------ | ------ |
-`callback` | [Callback](topbar.callback.md) | The callback to execute.  |
+| Name       | Type                           | Description              |
+| ---------- | ------------------------------ | ------------------------ |
+| `callback` | [Callback](topbar.callback.md) | The callback to execute. |
 
 **Returns:** *void*
 
 ___
 
-###  setCustomSearch
+### setCustomSearch
 
 ▸ **setCustomSearch**(`config`: [CustomSearchConfig](topbar.customsearchconfig.md) | null): *void*
 
@@ -141,15 +141,15 @@ when the custom search icon is clicked.
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`config` | [CustomSearchConfig](topbar.customsearchconfig.md) &#124; null |
+| Name     | Type                                                           |
+| -------- | -------------------------------------------------------------- |
+| `config` | [CustomSearchConfig](topbar.customsearchconfig.md) &#124; null |
 
 **Returns:** *void*
 
 ___
 
-###  setFeedbackButton
+### setFeedbackButton
 
 ▸ **setFeedbackButton**(`config`: [CustomFeedbackConfig](topbar.customfeedbackconfig.md) | [HelpCenterFeedbackConfig](topbar.helpcenterfeedbackconfig.md) | [ExternalFeedbackConfig](topbar.externalfeedbackconfig.md) | null): *void*
 
@@ -157,8 +157,8 @@ Determines whether or not to enable a feedback button.
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`config` | [CustomFeedbackConfig](topbar.customfeedbackconfig.md) &#124; [HelpCenterFeedbackConfig](topbar.helpcenterfeedbackconfig.md) &#124; [ExternalFeedbackConfig](topbar.externalfeedbackconfig.md) &#124; null |
+| Name     | Type                                                                                                                                                                                                       |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `config` | [CustomFeedbackConfig](topbar.customfeedbackconfig.md) &#124; [HelpCenterFeedbackConfig](topbar.helpcenterfeedbackconfig.md) &#124; [ExternalFeedbackConfig](topbar.externalfeedbackconfig.md) &#124; null |
 
 **Returns:** *void*

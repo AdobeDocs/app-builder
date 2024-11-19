@@ -11,35 +11,31 @@ description: The Developer Console and aio CLI provide features for developers t
 
 # Distribution Overview
 
-Developers can distribute their App Builder apps privately or publicly.
+Developers may distribute App Builder applications privately or publicly.
 
 ## Private
 
 Privately distributed apps are available only to users in the Developer's organization. They are submitted through the [Developer Console](https://developer.adobe.com/console), reviewed by an Administrator of the organization, and accessed through the [App Builder Catalog](https://experience.adobe.com/#/@adobeio/custom-apps). 
 
-See [Publishing Your First App Builder Application](../../getting_started/publish_app.md) for a thorough walkthrough on this topic.
+See [Publishing Your First App Builder Application](../../getting_started/publish_app.md) for a thorough discussion of this topic and a hands-on sample project.
 
-> Note: To appear in the App Builder Catalog, an application must be an Experience Cloud Shell extension.
+> Note: Only Adobe Experience Cloud Shell extensions may appear in the App Builder Catalog.
 
 ## Public
 
-Publicly distributed apps are available for install via Adobe Exchange. See [Public Distribution](./public.md) for details on how to configure and prepare your app for public distribution. 
+Publicly distributed apps are available for installation by anyone on [Adobe Exchange](https://exchange.adobe.com/apps/browse/ec). 
 
-Public Distribution
+### Overview
 
-Distribute apps to anyone on [Adobe Exchange](https://exchange.adobe.com/apps/browse/ec).
+Publicly distributed applications are available for any Adobe organization to install and distribute for access through [Adobe Exchange](https://exchange.adobe.com/). These apps are submitted through [Adobe Developer Distribution](https://developer.adobe.com/developer-distribution/) and reviewed by Adobe. This section reviews configuration options and the steps required to prepare your app for public distribution.
 
-## Overview
+### Customer configuration
 
-Publicly distributed apps are available for any Adobe organization to install and can be accessed via [Adobe Exchange](https://exchange.adobe.com/). These apps are submitted via [Adobe Developer Distribution](https://developer.adobe.com/developer-distribution/) and reviewed by Adobe. See below for configuration options and required steps to prepare your app for public distribution.
+Developers of publicly distributable apps can define configuration options for customers to set during installation.
 
-## Customer configuration
+#### Defining customer configuration options
 
-Developers of publicly distributable apps can define configuration options for customers to set at install time.
-
-### Defining customer configuration options
-
-Customer configuration can be defined via the `configSchema` property.
+Customer configuration can be defined through the `configSchema` property.
 
 **app.config.yaml**
 
@@ -58,11 +54,11 @@ configSchema: # This is a top-level property and is global to the app and all ex
       envKey: 'SLACK_WEBHOOK'
 ```
 
-### Usage
+#### Usage
 
 The `envKey` property of a customer configuration option maps to the environment variable name in the app.
 
-#### Runtime action
+##### Runtime action
 
 To use customer configuration in a Runtime action, map the `envKey` value for the desired variable to the inputs of the Runtime action, then access values via `params.<envKey>` in the action code.
 
@@ -109,9 +105,9 @@ async function main (params) {
 exports.main = main
 ```
 
-#### Web application
+##### Web application
 
-To use customer configuration in the web application, values can be accessed directly via `process.env.<envKey>`.
+To use customer configuration in a web application, access values directly through `process.env.<envKey>`.
 
 **app.config.yaml**
 
@@ -138,9 +134,9 @@ application:
 <View backgroundColor={process.env.FRONTEND_BACKGROUND_COLOR}></View>
 ```
 
-### Customer configuration types
+#### Customer configuration types
 
-#### Text field
+##### Text field
 
 ```yaml
 configSchema:
@@ -154,7 +150,7 @@ configSchema:
       default: 'https://slack.com/webhook'
 ```
 
-#### Checkbox
+##### Checkbox
 
 ```yaml
 configSchema:
@@ -167,7 +163,7 @@ configSchema:
       envKey: 'IS_CACHING_ENABLED'
 ```
 
-#### Dropdown
+##### Dropdown
 
 ```yaml
 configSchema:
@@ -184,9 +180,7 @@ configSchema:
       envKey: FRONTEND_BACKGROUND_COLOR
 ```
 
-#### Secret
-
-*Secret screenshot pending bug fix*
+##### Secret
 
 ```yaml
 configSchema:
@@ -199,7 +193,9 @@ configSchema:
       envKey: 'AWS_SECRET'
 ```
 
-#### Multiple configuration options
+*This secret screenshot is pending a bug fix*
+
+##### Multiple configuration options
 
 ```yaml
 configSchema:
@@ -225,15 +221,13 @@ configSchema:
       default: 'https://slack.com/webhook'
 ```
 
-## Required products
+### Required products
 
-Developers of publicly distributable App Builder apps can define Adobe products that are required for their apps to work properly.
+Developers of publicly distributable App Builder apps can define Adobe products that are required for their apps to work properly. The [Discover](https://developer.adobe.com/developer-distribution/experience-cloud/docs/guides/discoverandmanage/#discover) and [Acquire](https://developer.adobe.com/developer-distribution/experience-cloud/docs/guides/discoverandmanage/#acquire) sections of the distribution documentation show how these options are surfaced to customers.
 
-See the [Discover](/developer-distribution/experience-cloud/docs/guides/discoverandmanage/#discover) and [Acquire](/developer-distribution/experience-cloud/docs/guides/discoverandmanage/#acquire) sections of the distribution documentation for more details on how these options surface to customers.
+#### Defining required products
 
-### Defining required products
-
-Required products can be defined via the `productDependencies` property.
+Required products can be defined using the `productDependencies` property.
 
 **app.config.yaml**
 
@@ -250,7 +244,7 @@ productDependencies:
     maxVersion: 1.0.0
 ```
 
-#### Valid products
+##### Valid products
 
 - **AEM** - Experience Manager
 - **AAM** - Audience Manager
@@ -268,44 +262,44 @@ productDependencies:
 
 Product version information can be found on [Adobe Experience League](https://experienceleague.adobe.com/en/docs).
 
-## Packaging for developer distribution
+### Packaging for developer distribution
 
-Once you've configured your app for public distribution, it's time to upload it to [Adobe Developer Distribution](/developer-distribution). Before you do that, you will need to package it.
+Once an app is configured for public distribution, it can be packaged and uploaded to [Adobe Developer Distribution](/developer-distribution). 
 
-The `aio app pack` command will verify and bundle your app. In the root of your app folder, run this command:
+The `aio app pack` command verifies and bundles applications for upload. In the root of your app folder, run:
 
 ```sh
 aio app pack
 ```
 
-After this command completes, you can find the app package in your app folder as: `dist/app.zip`.
+When it completes, you will find the app package in your app folder as `dist/app.zip`. Continue to the [Adobe Developer Distribution](/developer-distribution/experience-cloud/docs/guides/getting_started/) documentation for details on how to upload it.
 
-Continue to the [Adobe Developer Distribution](/developer-distribution/experience-cloud/docs/guides/getting_started/) documentation for details on how to upload your package.
+#### Validation
 
-### Validation
+When a Developer uploads a package to Adobe Developer Distribution, these validations are performed:
 
-When a developer uploads a package to Adobe Developer Distribution, the following validations are performed:
-
-1. `app.config.yaml`
-   - will be checked if it's in a valid format, and will show specific config errors for you to fix, if necessary
-2. `package.json` version
-   - application version format must be `X.Y.Z`, where X, Y, and Z are non-negative integers
-3. files to be packaged. All the files in your app folder will be packaged EXCEPT:
+1. `app.config.yaml` is checked for format validity, returning configuration errors to fix if necessary
+2. `package.json` version format must be `X.Y.Z`, where X, Y, and Z are non-negative integers
+3. files to be packaged - all files in your app folder will be packaged except:
    - files specified in `.gitignore`
    - files specified in `.npmignore`
    - any `dist` folders
    - any dot files (.env, .gitignore, etc)
    - any OS junk files (.DS_Store, thumbs.db, etc)
-4. event registrations will be validated (if any)
+4. event registrations, if any, for validity
 
-### Hooks
+#### Hooks
 
 Two [hooks](../app-hooks.md) are available to customize the packaging step:
 
 1. `pre-pack` - runs before packaging
 2. `post-pack` - runs after packaging
 
-Your hook handler function will be passed two items:
+Hook-handler functions will be passed two items:
 
-1. `appConfig` (object) - this contains the config of the current application
-2. `artifactsFolder` (string) - this will be the location of the folder containing all the packaging artifacts that will be bundled
+1. `appConfig` (object) contains the configuration of the current application
+2. `artifactsFolder` (string) is the location of the folder that contains all the packaging artifacts to be bundled
+
+## Next step
+
+Return to the [Guides Index](../guides_index.md).

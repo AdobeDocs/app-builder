@@ -21,7 +21,7 @@ title: 'Interface: ObjectWithHref'
 
 ## Properties
 
-###  href
+### href
 
 • **href**: *string*
 

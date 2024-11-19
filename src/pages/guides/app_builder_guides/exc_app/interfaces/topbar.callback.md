@@ -19,8 +19,8 @@ title: 'Interface: Callback'
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`value?` | any |
+| Name     | Type |
+| -------- | ---- |
+| `value?` | any  |
 
 **Returns:** *void*

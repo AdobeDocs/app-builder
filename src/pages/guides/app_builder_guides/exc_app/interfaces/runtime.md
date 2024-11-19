@@ -18,7 +18,7 @@ Defines the runtime object providing all unified-shell APIs for solution authors
 ## Hierarchy
 
 * EventEmitter
-
+  
   ↳ **Runtime**
 
 ## Index
@@ -31,7 +31,7 @@ Defines the runtime object providing all unified-shell APIs for solution authors
 
 ## EventEmitter Methods
 
-###  emit
+### emit
 
 ▸ **emit**<**K**>(`type`: K, `event?`: T[K]): *void*
 
@@ -45,16 +45,16 @@ Invoke all handlers for the given type.
 
 **Parameters:**
 
-Name | Type | Description |
------- | ------ | ------ |
-`type` | K | The event type to invoke. |
-`event?` | T[K] | Any value (object is recommended and powerful), passed to each handler. |
+| Name     | Type | Description                                                             |
+| -------- | ---- | ----------------------------------------------------------------------- |
+| `type`   | K    | The event type to invoke.                                               |
+| `event?` | T[K] | Any value (object is recommended and powerful), passed to each handler. |
 
 **Returns:** *void*
 
 ___
 
-###  off
+### off
 
 ▸ **off**<**K**>(`type`: K, `handler`: function): *void*
 
@@ -80,15 +80,15 @@ Handler function to remove.
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`event?` | T[K] |
+| Name     | Type |
+| -------- | ---- |
+| `event?` | T[K] |
 
 **Returns:** *void*
 
 ___
 
-###  on
+### on
 
 ▸ **on**<**K**>(`type`: K, `handler`: function): *void*
 
@@ -114,8 +114,8 @@ Function to call in response to given event.
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`event?` | T[K] |
+| Name     | Type |
+| -------- | ---- |
+| `event?` | T[K] |
 
 **Returns:** *void*

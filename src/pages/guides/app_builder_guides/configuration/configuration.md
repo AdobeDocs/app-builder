@@ -325,7 +325,7 @@ AIO_runtime_auth=
 AIO_runtime_apihost=
 ```
 
-### Using environment variables in front-end
+### Using environment variables in the front end
 
 Environment variables set in .env can be accessed directly using `process.env`:
 

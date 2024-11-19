@@ -25,7 +25,7 @@ Defines the attributes of the solution to display on the left-side of the top ba
 
 ## Properties
 
-###  icon
+### icon
 
 • **icon**: *string*
 
@@ -34,7 +34,7 @@ icon will be used.
 
 ___
 
-###  shortTitle
+### shortTitle
 
 • **shortTitle**: *string*
 
@@ -42,7 +42,7 @@ The title to display on smaller browser resolutions where the horizonal space is
 
 ___
 
-###  title
+### title
 
 • **title**: *string*
 

@@ -7,7 +7,7 @@ keywords:
 title: 'External module: page'
 ---
 
-# External module: page
+# Page External Module
 
 APIs that let solutions interact with the main page and personalize it, e.g. setting the title,
 favicon, refreshing the solution iframe, etc.
@@ -59,7 +59,7 @@ page.shellRedirect('/target');
 
 ## Type aliases
 
-###  LocationLike
+### LocationLike
 
 Ƭ **LocationLike**: *[ObjectWithHref](../interfaces/page.objectwithhref.md) | [ObjectWithPath](../interfaces/page.objectwithpath.md)*
 
