@@ -257,11 +257,11 @@ module.exports = {
               },
               {
                 "title": "Runtime",
-                "path": "guides/exc-app/interfaces/index.runtime.md"
+                "path": "guides/exc-app/interfaces/index-runtime.md"
               },
               {
                 "title": "Page Object with href",
-                "path": "guides/exc-app/interfaces/page.objectwithhref.md"
+                "path": "guides/exc-app/interfaces/page-objectwithhref.md"
               },
               {
                 "title": "Page Object with path",
