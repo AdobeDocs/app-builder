@@ -13,17 +13,17 @@ Below are complete sample applications built using App Builder.
 
 ## Overview
 
-<TraceBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" />
 
 ### Live demo: Adobe Stock Image Search 
 
-[Demo](demo.md) 
+[Demo](./demo.md) 
 
 This is an App Builder Demo App which enables searching Adobe Stock images.
 
 
 
-<TraceBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" />
 
 ### Customer Profiles Dashboard
 
@@ -32,7 +32,7 @@ This is an App Builder Demo App which enables searching Adobe Stock images.
 This App Builder app is a complete solution of the codelab Build an App Builder App for Customer Profiles using Adobe Campaign Standard API. It lists customer profiles from Adobe Campaign Standard and allows sending marketing campaign emails with personalized promo code.
  
 
-<TraceBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" />
 
 ### Barcode Generator
 
@@ -41,7 +41,7 @@ This App Builder app is a complete solution of the codelab Build an App Builder 
 This App Builder app is a complete solution of the codelab App Builder Headless App. The app will generate a code128 barcode based on the user provided value. It’s a simple app that can be used and adapted for different use cases.
 
 
-<TraceBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" />
 
 ### Throttled Queue Processing
 
@@ -50,7 +50,7 @@ This App Builder app is a complete solution of the codelab App Builder Headless 
 This headless application manages the processing of a queue of tasks which requires communication with a throttled external system. In particular, it retrieves short URLs from bit.ly for which request threshold depends on the pricing plans.
 
 
-<TraceBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" />
 
 ### Custom Assets Compute Worker for AEM using Photoshop API 
 
@@ -59,7 +59,7 @@ This headless application manages the processing of a queue of tasks which requi
 This is a sample app that implements a custom Assets Compute Worker for AEM to generate cutout and automatically toned renditions by leveraging Photoshop APIs.
 
 
-<TraceBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" />
 
 ### Todo App with React Spectrum
 
@@ -68,7 +68,7 @@ This is a sample app that implements a custom Assets Compute Worker for AEM to g
 This App Builder app is a complete solution of the codelab Bulding an App Builder Todo App with aio-lib-state and React Spectrum which shows you how to use aio-lib-state as part of Runtime actions and how to bind React Spectrum components to Runtime actions.
 
 
-<TraceBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" />
 
 ### Journal Browser using I/O Events Library
 
@@ -82,7 +82,7 @@ This is an App Builder App which enables users to browse through events from Jou
 
 This is a sample I/O Events consumer, built using App Builder, that forwards all incoming events to Azure Service Bus. This sample consumer application can be used as a reference to connect Adobe I/O Events with enterprise's Azure Service Bus.
 
-<TraceBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" />
 
 ### Adobe I/O Events - Azure Service Bus connector
 
