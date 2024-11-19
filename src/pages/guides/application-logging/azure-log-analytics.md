@@ -36,8 +36,7 @@ This guide would cover configuring your app builder application to forward appli
     ? select log forwarding destination: Azure Log Analytics
     ? customer ID: <Workspace ID>
     ? shared key: <Primary Key>
-    ? log type: <table_name_alpha_chars_only>
-    ```
+    ? log type: <table_name_alpha_chars_only>```
 
     Note:
     + Replace the value of `Workspace ID` and `Primary Key` as copied in step 1.
@@ -46,8 +45,7 @@ This guide would cover configuring your app builder application to forward appli
 4. Verify that the config change has taken effect 
 
     ```yaml
-    aio app config get log-forwarding
-    ```
+    aio app config get log-forwarding```
 
 5. Execute an action in your App Builder application workspace to generate logs.
 
@@ -56,7 +54,6 @@ This guide would cover configuring your app builder application to forward appli
 7. If you don't see any logs in Azure, please check the log forwarding errors.
 8. 
     ```yaml
-    aio app config get log-forwarding errors
-    ```
+    aio app config get log-forwarding errors```
 
     _Note: If you are unable to set up log forwarding correctly, please visit our [App Builder forums](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/app-builder) for support._
