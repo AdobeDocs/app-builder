@@ -12,7 +12,7 @@ title: App Builder Blog Articles
 ## Overview
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### I/O Runtime and the Future of Serverless at Adobe
 
@@ -23,7 +23,7 @@ We have big plans for our serverless efforts. From high-throughput real-time use
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Following the End-to-End User Journey
 
@@ -33,7 +33,7 @@ App Builder impacts more than just developers. See the end-to-end journey of an 
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### A Breakdown of App Builder’s Architecture
 
@@ -44,7 +44,7 @@ To help you understand what exactly App Builder is, we explore the underlying ar
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### A Full Security Overview
 
@@ -55,7 +55,7 @@ We know security of your app is a top concern, and so we've built App Builder to
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Introducing React Spectrum
 
@@ -66,7 +66,7 @@ Adobe has more than 5,000 engineers working across the world on hundreds of prod
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### The Future of App Builder: B2B and B2C Expansion
 
@@ -77,7 +77,7 @@ Almost a year ago, we launched the developer preview program for a new third-par
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Why Your Enterprise Needs App Builder
 
@@ -89,7 +89,7 @@ What can we do to democratize cloud-native applications? We introduce App Builde
 
 ## How Tos
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Projects and Workspaces
 
@@ -99,7 +99,7 @@ App Builder is a complete framework that enables enterprise developers to build 
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Debugging Applications
 
@@ -112,7 +112,7 @@ App Builder is a complete framework that enables enterprise developers to build 
 
 ## Partner use cases and contributions
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Ensemble and App Builder: Unlocking Better B2E Workflows Through Custom Apps
 
@@ -122,7 +122,7 @@ Learn how Ensemble leveraged the power of Adobe’s App Builder framework to dev
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Contributing to Adobe’s Open Source World with the Adobe Experience Platform SDK for App Builder
 
@@ -132,7 +132,7 @@ The Adobe Experience Platform provides an API first approach and while working o
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Use Cases for Cloud-Native Apps with App Builder
 
@@ -143,7 +143,7 @@ It’s hard to believe that it was just May 2020 when we introduced App Builder 
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Adobe I/O-Powered AEMaaCS Assets Export Implemented in Real-Time or Batch Mode
 
@@ -154,7 +154,7 @@ AEMaaCS Assets offers a cloud-native digital assets management solution, which i
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Finding Your Feet with App Builder
 
@@ -167,7 +167,7 @@ Anil is a big advocate of App Builder for non-developers. He shares insights, ba
 
 ## Real-word examples
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Building a Real-Time Airline Application Using Adobe Experience Platform, Adobe I/O Runtime and App Builder
 
@@ -178,7 +178,7 @@ Find out how our team of experts built a real-time Airline application using AEP
 
 ## Miscellaneous
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### How We Made App Builder’s Videos Remotely While Quarantined at Home
 

@@ -11,7 +11,7 @@ keywords:
 
 ## Overview
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Introducing App Builder
 
@@ -21,7 +21,7 @@ This App Builder tech talk aims to explore what’s possible with App Builder as
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Getting Started
 
@@ -31,7 +31,7 @@ In this video, we will cover how to setup your project in the Adobe Developer Co
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Architecture
 
@@ -41,7 +41,7 @@ A Breakdown of App Builder's Architecture.
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Security
 
@@ -51,7 +51,7 @@ A Full Security Overview.
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### User Journey
 
@@ -63,7 +63,7 @@ Following the End-to-End User Journey.
 
 ## Exploring App Builder
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Projects and Workspaces
 
@@ -73,7 +73,7 @@ The App Builder team shared a short presentation about projects and workspaces a
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### React Spectrum
 
@@ -83,7 +83,7 @@ We are joined by Rob Snow from the React Spectrum team to learn about React Spec
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Custom Events
 
@@ -94,7 +94,7 @@ Join us as we dive deep into the topic of Adobe I/O Events including our new fea
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### CI/CD
 
@@ -105,7 +105,7 @@ Manik Jindal, App Builder Product Manager, will dive into CI/CD. You'll learn ho
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Debugging
 
@@ -116,7 +116,7 @@ This session we go in depth on debugging. Shazron Abdullah & Duy Nguyen take you
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Learning Resources
 
@@ -127,7 +127,7 @@ We focus on learning resources from code labs to documentation to videos like th
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Live Wired Sneak
 
@@ -140,7 +140,7 @@ Join us for a very special Adobe Summit edition of Office Hours. Ron, Alex and D
 
 ## Case Study
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Dashboard Case Study
 
@@ -151,7 +151,7 @@ App Builder Case Study
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### ODE Case Study
 
@@ -161,7 +161,7 @@ App Builder Case Study
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Deep Dive Use Cases
 
@@ -172,7 +172,7 @@ Manik & Ron take a look at a number of great use cases. Join us as we share some
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Softcrylic Partner Showcase
 
@@ -184,7 +184,7 @@ Sundar Sritharan from Softcrylic joins us to share what they are cooking up with
 
 ## Adobe Developers Live 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### App Builder Deep Dive
 
@@ -194,7 +194,7 @@ Join us and see App Builder in action: code, security, headfull and headless app
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Extend Adobe Experience Cloud
 
@@ -204,7 +204,7 @@ You want to extend Adobe solutions using a modern architecture that works for mu
 
 
 
-<TraceBlock slots="heading, link, text" width="100%"/>
+<DiscoverBlock slots="heading, link, text" width="100%"/>
 
 ### Asset Compute Service Extensibility
 
