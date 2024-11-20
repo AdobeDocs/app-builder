@@ -12,6 +12,6 @@ keywords:
 
 We focus on learning resources from code labs to documentation to videos like this livestream and our upcoming digital learning series.
 
-<Media slots="video"/>
+<Embed slots="video"/>
 
 https://youtu.be/MLvwAsoXpFg

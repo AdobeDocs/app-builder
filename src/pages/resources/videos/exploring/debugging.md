@@ -12,6 +12,6 @@ keywords:
 
 This session we go in depth on debugging. Shazron Abdullah & Duy Nguyen take you through the ins and outs of finding problems in your code.
 
-<Media slots="video"/>
+<Embed slots="video"/>
 
 https://youtu.be/RgHNJWTCSqw
