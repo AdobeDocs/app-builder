@@ -27,6 +27,6 @@ You can configure it and try it out directly at
 To migrate your old Service Account (JWT) credentials to the new OAuth Server-to-Server credentials, follow the steps mentioned in the [migration guide](./ServerToServerAuthentication/migration.md).
 
 Once you update your application code to use the new credential to generate access tokens, you can deploy your updated application to test, staging, and production environments.
-Even for already published applications, you can deploy these code changes without any downtime or re-publishing the application. To do this using AIO CLI, run command `aio app deploy --force-deploy --no-publish` 
+Even for already published applications, you can deploy these code changes without any downtime or re-publishing the application. To do this using the AIO CLI, run the command `aio app deploy --force-deploy --no-publish` 
 
 
