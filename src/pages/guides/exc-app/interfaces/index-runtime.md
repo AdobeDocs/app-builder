@@ -26,3 +26,7 @@ EventEmitter
 ## EventEmitter Methods
 
 ###  emit
+
+###  off
+
+###  on
