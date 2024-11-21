@@ -15,8 +15,10 @@ Defines the runtime object providing all unified-shell APIs for solution authors
 
 EventEmitter
 
-  ↳ **Runtime**
-
 ## Index
 
 ### EventEmitter Methods
+
+## EventEmitter Methods
+
+###  emit
