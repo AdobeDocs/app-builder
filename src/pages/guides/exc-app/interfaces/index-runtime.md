@@ -1,1 +1,30 @@
-### Test URL
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
+title: 'Interface: Runtime <**T**>'
+---
+
+# Interface: Runtime <**T**>
+
+Defines the runtime object providing all unified-shell APIs for solution authors.
+
+## Type parameters
+
+▪ **T**
+
+## Hierarchy
+
+* EventEmitter
+
+  ↳ **Runtime**
+
+## Index
+
+### EventEmitter Methods
+
+* [emit](index.runtime.md#emit)
+* [off](index.runtime.md#off)
+* [on](index.runtime.md#on)
