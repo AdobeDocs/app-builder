@@ -44,8 +44,6 @@ Invoke all handlers for the given type.
 
 **Returns:** *void*
 
-___
-
 ###  off
 
 
