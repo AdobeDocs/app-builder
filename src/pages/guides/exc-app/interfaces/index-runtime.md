@@ -19,6 +19,10 @@ EventEmitter
 
 ### EventEmitter Methods
 
+* [emit](index-runtime.md#emit)
+* [off](index-runtime.md#off)
+* [on](index-runtime.md#on)
+
 ## EventEmitter Methods
 
 ###  emit
