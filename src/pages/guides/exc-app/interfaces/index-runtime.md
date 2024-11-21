@@ -13,21 +13,17 @@ Defines the runtime object providing all unified-shell APIs for solution authors
 
 ## Type parameters
 
-
 ## Hierarchy
 
 * EventEmitter
-
 
 ## Index
 
 ### EventEmitter Methods
 
-
 ## EventEmitter Methods
 
 ###  emit
-
 
 *Inherited from void*
 
@@ -46,7 +42,6 @@ Invoke all handlers for the given type.
 
 ###  off
 
-
 *Inherited from void*
 
 Remove an event handler for the given type.
@@ -57,9 +52,7 @@ Remove an event handler for the given type.
 
 Type of event to unregister `handler` from.
 
-
 Handler function to remove.
-
 
 **Parameters:**
 
@@ -68,9 +61,7 @@ Handler function to remove.
 | `event?` | T[K] |
 
 **Returns:** *void*
-
 ###  on
-
 
 *Inherited from void*
 
@@ -78,15 +69,11 @@ Register an event handler for the given type.
 
 **Type parameters:**
 
-
 **Parameters:**
-
 
 Type of event to listen for.
 
-
 Function to call in response to given event.
-
 
 **Parameters:**
 
