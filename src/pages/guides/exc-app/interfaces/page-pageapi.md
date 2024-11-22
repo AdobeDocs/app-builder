@@ -13,7 +13,7 @@ Defines page-level APIs available to solutions.
 
 ## Hierarchy
 
-* [PageApiProperties](page.pageapiproperties.md)
+* [PageApiProperties](page-pageapiproperties.md)
 
   ↳ **PageApi**
 
@@ -21,20 +21,20 @@ Defines page-level APIs available to solutions.
 
 ### Properties
 
-* [favicon](page.pageapi.md#favicon)
-* [modal](page.pageapi.md#modal)
-* [preventDefaultCombos](page.pageapi.md#preventdefaultcombos)
-* [spinner](page.pageapi.md#spinner)
-* [title](page.pageapi.md#title)
-* [viewportTakeover](page.pageapi.md#viewporttakeover)
+* [favicon](page-pageapi.md#favicon)
+* [modal](page-pageapi.md#modal)
+* [preventDefaultCombos](page-pageapi.md#preventdefaultcombos)
+* [spinner](page-pageapi.md#spinner)
+* [title](page-pageapi.md#title)
+* [viewportTakeover](page-pageapi.md#viewporttakeover)
 
 ### Methods
 
-* [done](page.pageapi.md#done)
-* [generateShellUrl](page.pageapi.md#generateshellurl)
-* [iframeReload](page.pageapi.md#iframereload)
-* [openInNewTab](page.pageapi.md#openinnewtab)
-* [shellRedirect](page.pageapi.md#shellredirect)
+* [done](page-pageapi.md#done)
+* [generateShellUrl](page-pageapi.md#generateshellurl)
+* [iframeReload](page-pageapi.md#iframereload)
+* [openInNewTab](page-pageapi.md#openinnewtab)
+* [shellRedirect](page-pageapi.md#shellredirect)
 
 ## Properties
 
@@ -42,7 +42,7 @@ Defines page-level APIs available to solutions.
 
 • **favicon**: *string*
 
-*Inherited from [PageApiProperties](page.pageapiproperties.md).[favicon](page.pageapiproperties.md#favicon)*
+*Inherited from [PageApiProperties](page-pageapiproperties.md).[favicon](page-pageapiproperties.md#favicon)*
 
 Gets or set the favicon for the page. If this isn't set, then the default experience cloud
 favicon will be used.
@@ -53,13 +53,13 @@ favicon will be used.
 page.favicon = "https://img.icons8.com/color/48/000000/thumb-up.png";
 ```
 
-___
+<hr />
 
 ###  modal
 
 • **modal**: *boolean*
 
-*Inherited from [PageApiProperties](page.pageapiproperties.md).[modal](page.pageapiproperties.md#modal)*
+*Inherited from [PageApiProperties](page-pageapiproperties.md).[modal](page-pageapiproperties.md#modal)*
 
 Configuration to show/hide a modal with fullscreen overlay. Defaults to false.
 
@@ -69,13 +69,13 @@ Configuration to show/hide a modal with fullscreen overlay. Defaults to false.
 page.modal = true;
 ```
 
-___
+<hr />
 
 ###  preventDefaultCombos
 
 • **preventDefaultCombos**: *object[]*
 
-*Inherited from [PageApiProperties](page.pageapiproperties.md).[preventDefaultCombos](page.pageapiproperties.md#preventdefaultcombos)*
+*Inherited from [PageApiProperties](page-pageapiproperties.md).[preventDefaultCombos](page-pageapiproperties.md#preventdefaultcombos)*
 
 An array of key combinations for the shell to prevent default browser behavior on in cases
 where an application performs some other action.
@@ -91,13 +91,13 @@ page.preventDefaultCombos = [
 ];
 ```
 
-___
+<hr />
 
 ###  spinner
 
 • **spinner**: *boolean*
 
-*Inherited from [PageApiProperties](page.pageapiproperties.md).[spinner](page.pageapiproperties.md#spinner)*
+*Inherited from [PageApiProperties](page-pageapiproperties.md).[spinner](page-pageapiproperties.md#spinner)*
 
 Gets or sets a value indicating whether or not to show a spinner on the page. This
 configuration value is NOT used for the initial loading spinner (see Route Configuration
@@ -110,13 +110,13 @@ dismissed before a solution invokes runtime.done().
 page.spinner = true;
 ```
 
-___
+<hr />
 
 ###  title
 
 • **title**: *string*
 
-*Inherited from [PageApiProperties](page.pageapiproperties.md).[title](page.pageapiproperties.md#title)*
+*Inherited from [PageApiProperties](page-pageapiproperties.md).[title](page-pageapiproperties.md#title)*
 
 Gets or sets the title of the page.
 
@@ -126,13 +126,13 @@ Gets or sets the title of the page.
 page.title = 'Adobe Experience Cloud';
 ```
 
-___
+<hr />
 
 ###  viewportTakeover
 
 • **viewportTakeover**: *boolean*
 
-*Inherited from [PageApiProperties](page.pageapiproperties.md).[viewportTakeover](page.pageapiproperties.md#viewporttakeover)*
+*Inherited from [PageApiProperties](page-pageapiproperties.md).[viewportTakeover](page-pageapiproperties.md#viewporttakeover)*
 
 Configuration to alter the z-index ordering of the Shell and iframe based on whether viewport
 takeover is needed.
@@ -172,7 +172,7 @@ page.done();
 
 **Returns:** *void*
 
-___
+<hr />
 
 ###  generateShellUrl
 
@@ -200,7 +200,7 @@ Name | Type | Description |
 
 The shell URL for the specified view of the solution.
 
-___
+<hr />
 
 ###  iframeReload
 
@@ -217,7 +217,7 @@ page.iframeReload();
 
 **Returns:** *void*
 
-___
+<hr />
 
 ###  openInNewTab
 
@@ -240,7 +240,7 @@ Name | Type | Description |
 
 **Returns:** *void*
 
-___
+<hr />
 
 ###  shellRedirect
 
