@@ -13,7 +13,7 @@ Code Labs provide guided hands-on coding experiences to build awesome apps on to
 
 ## Tech tutorials
 
-<DiscoverBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"/>
 
 ### Spectrum Introduction
 
@@ -24,7 +24,7 @@ Introduction to Spectrum to build an App Builder App UI.
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"/>
 
 ### Consume Events Using Journaling API
 
@@ -35,7 +35,7 @@ Creating cron jobs in an App Builder application to consume events using Journal
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"/>
 
 ### Event-Driven App Builder Apps
 
@@ -46,7 +46,7 @@ Introduction to applying Custom I/O Events in event-driven use cases of App Buil
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"/>
 
 ### Events Using Runtime Actions as Webhook
 
@@ -57,7 +57,7 @@ How to consume I/O Events using I/O Runtime actions as webhook.
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"/>
 
 ### CI/CD in App Builder Apps
 
@@ -68,7 +68,7 @@ Setting up CI/CD for an App Builder App using GitHub Actions.
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"/>
 
 ### Debugging App Builder Apps
 
@@ -79,7 +79,7 @@ The basic steps of debugging an App Builder App.
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"/>
 
 ### Scheduling Cron Jobs
 
@@ -92,7 +92,7 @@ Creating cron jobs in an App Builder app using OpenWhisk Alarms Package.
 ## App tutorials
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"/>
 
 ### App Builder Headless App
 
@@ -102,7 +102,7 @@ Creating a Headless App using App Builder to render a barcode with dynamic data.
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"/>
 
 ### Asset Compute with Photoshop APIs
 
@@ -112,7 +112,7 @@ Building asset compute workers leveraging Photoshop APIs to generate custom rend
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"/>
 
 ### Building an App Builder Todo App
 
@@ -124,7 +124,7 @@ How to build a Todo App with App Builder using aio-lib-state as storage library 
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"/>
 
 ### Customer Profiles Dashboard
 
@@ -136,7 +136,7 @@ Creating a dashboard of customer profiles from Adobe Campaign Standard using App
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"/>
 
 ### Custom Asset Compute Worker
 
@@ -147,7 +147,7 @@ Building a Custom Asset Compute Worker leveraging 3rd-party services to generate
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" />
+<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"/>
 
 ### Build an app that consumes Adobe Experience Manager Events
 
