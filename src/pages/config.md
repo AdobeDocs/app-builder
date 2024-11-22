@@ -67,7 +67,7 @@
             - [Page Object with path](guides/exc-app/interfaces/page-objectwithpath.md) 
             - [Page API](guides/exc-app/interfaces/page-pageapi.md) 
             - [Page API Properties](guides/exc-app/interfaces/page-pageapiproperties.md) 
-            - [Topbar callback](guides/exc-app/interfaces/topbar.callback.md) 
+            - [Topbar callback](guides/exc-app/interfaces/topbar-callback.md) 
             - [Topbar custom feedback config](guides/exc-app/interfaces/topbar-customfeedbackconfig.md) 
             - [Topbar custom search config](guides/exc-app/interfaces/topbar-customsearchconfig.md) 
             - [Topbar external feedback config](guides/exc-app/interfaces/topbar-externalfeedbackconfig.md) 

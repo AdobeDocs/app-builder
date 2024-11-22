@@ -277,7 +277,7 @@ module.exports = {
               },
               {
                 "title": "Topbar callback",
-                "path": "guides/exc-app/interfaces/topbar.callback.md"
+                "path": "guides/exc-app/interfaces/topbar-callback.md"
               },
               {
                 "title": "Topbar custom feedback config",
