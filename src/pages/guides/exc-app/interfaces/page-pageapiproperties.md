@@ -15,18 +15,18 @@ Subset of page-level APIs available to solutions that are settable attributes.
 
 * **PageApiProperties**
 
-  ↳ [PageApi](page.pageapi.md)
+  ↳ [PageApi](page-pageapi.md)
 
 ## Index
 
 ### Properties
 
-* [favicon](page.pageapiproperties.md#favicon)
-* [modal](page.pageapiproperties.md#modal)
-* [preventDefaultCombos](page.pageapiproperties.md#preventdefaultcombos)
-* [spinner](page.pageapiproperties.md#spinner)
-* [title](page.pageapiproperties.md#title)
-* [viewportTakeover](page.pageapiproperties.md#viewporttakeover)
+* [favicon](page-pageapiproperties.md#favicon)
+* [modal](page-pageapiproperties.md#modal)
+* [preventDefaultCombos](page-pageapiproperties.md#preventdefaultcombos)
+* [spinner](page-pageapiproperties.md#spinner)
+* [title](page-pageapiproperties.md#title)
+* [viewportTakeover](page-pageapiproperties.md#viewporttakeover)
 
 ## Properties
 
@@ -43,7 +43,7 @@ favicon will be used.
 page.favicon = "https://img.icons8.com/color/48/000000/thumb-up.png";
 ```
 
-___
+<hr />
 
 ###  modal
 
@@ -57,7 +57,7 @@ Configuration to show/hide a modal with fullscreen overlay. Defaults to false.
 page.modal = true;
 ```
 
-___
+<hr />
 
 ###  preventDefaultCombos
 
@@ -77,7 +77,7 @@ page.preventDefaultCombos = [
 ];
 ```
 
-___
+<hr />
 
 ###  spinner
 
@@ -94,7 +94,7 @@ dismissed before a solution invokes runtime.done().
 page.spinner = true;
 ```
 
-___
+<hr />
 
 ###  title
 
@@ -108,7 +108,7 @@ Gets or sets the title of the page.
 page.title = 'Adobe Experience Cloud';
 ```
 
-___
+<hr />
 
 ###  viewportTakeover
 
