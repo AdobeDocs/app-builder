@@ -7,11 +7,11 @@ keywords:
 title: Integration Guide with Adobe Experience Cloud
 ---
 
-# Integration Guide with Adobe Experience Cloud
+# Integration with Adobe Experience Cloud
 
 Adobe Experience Cloud consists of solutions to power insights, content, engagement, commerce, optimization, and more.  Its [unified shell web application](https://experience.adobe.com) provides a unified user experience for customers to manage these solutions from a single place.
 
-The solution experiences run within an iframe in the unified shell web application, and can interact with components of the unified shell including the topbar, menus, nps, alerts, etc. These interactions are made possible through two components: -
+The solution experiences run within an iframe in the unified shell, and can interact with its including the topbar, menus, nps, and alerts. These interactions are made possible through:
 
 1. A module-runtime script injected into the product iframe
 
@@ -43,8 +43,7 @@ This is a glossary of Experience Cloud integration APIs, with links to details:
 
 **[Index]((./modules/index.md)** lets solutions initialize the application, provide access to the runtime object from anywhere in the app, and listen to events.
 
-**[Page](./modules/page.md)** lets solutions interact with and personalize the main page by setting the title or
-favicon, refreshing the solution iframe, and so on.
+**[Page](./modules/page.md)** lets solutions interact with and personalize the main page by setting the title or favicon, refreshing the solution iframe, and so on.
 
 **[TopBar](./modules/topbar.md)** lets solutions interact with and personalize the top bar by configuring the left-side solution area, setting up workspaces, arranging custom search, and so on.
 
@@ -52,11 +51,11 @@ favicon, refreshing the solution iframe, and so on.
 
 ### Events
 
-Events are emitted by the module runtime when it receives certain messages from the Unified Shell.
+Events are emitted by the module-runtime when it receives certain messages from the unified shell.
 
 #### Ready
 
-The Ready event fires when the initial configuration is received from the Shell. It makes sense to wait for this event before rendering the application or setting any workspaces: the locale is required for globalization, and workspaces must be translated before setting them on the Shell, since we don’t have translations for every solution’s workspaces.
+The Ready event fires when the initial configuration is received from the shell. It makes sense to wait for this event before rendering the application or setting any workspaces: the locale is required for globalization, and workspaces must be translated before setting them on the shell, since we don’t have translations for every solution’s workspaces.
 
 ***Example:***
 
@@ -93,7 +92,7 @@ function setup() {
 
 #### Configuration
 
-The Configuration event fires when any configuration change arrives from the Shell. It has the same payload as the Ready event.
+The Configuration event fires when any configuration change arrives from the shell. It has the same payload as the Ready event.
 
 ***Example:***
 

@@ -21,14 +21,6 @@ Defines the runtime object providing all unified-shell APIs for solution authors
   
   ↳ **Runtime**
 
-## Index
-
-### EventEmitter Methods
-
-* [emit](index.runtime.md#emit)
-* [off](index.runtime.md#off)
-* [on](index.runtime.md#on)
-
 ## EventEmitter Methods
 
 ### emit
@@ -45,10 +37,10 @@ Invoke all handlers for the given type.
 
 **Parameters:**
 
-| Name     | Type | Description                                                             |
-| -------- | ---- | ----------------------------------------------------------------------- |
-| `type`   | K    | The event type to invoke.                                               |
-| `event?` | T[K] | Any value (object is recommended and powerful), passed to each handler. |
+| Name     | Type | Description                                                              |
+| -------- | ---- | ------------------------------------------------------------------------ |
+| `type`   | K    | The event type to invoke.                                                |
+| `event?` | T[K] | Any value  passed to each handler -  object is recommended, and powerful |
 
 **Returns:** *void*
 
@@ -94,7 +86,7 @@ ___
 
 *Inherited from void*
 
-Register an event handler for the given type.
+Registers an event handler for the given type.
 
 **Type parameters:**
 
@@ -119,3 +111,24 @@ Function to call in response to given event.
 | `event?` | T[K] |
 
 **Returns:** *void*
+
+## Next steps
+
+Explore details of the [Index](./modules/index.md), [Page](./modules/page.md), [TopBar](./modules/topbar.md), and [User](./modules/user.md) external modules.
+
+Explore the attributes and behavior of other Adobe Experience Cloud interfaces:
+
+[Modules](modules.md)
+
+| Page                                             | Topbar                                                     | User                          |
+| ------------------------------------------------ | ---------------------------------------------------------- | ----------------------------- |
+| [Object with Href](page.objectwithhref.md)       | [Callback](topbar.callback)                                | [User API](user.userapi.md)   |
+| [Object with Path](pageobjectwithpath.md)        | [Custom Feedback](topbar.customfeedback.md)                | [User Info](user.userinfo.md) |
+| [Page API](page.pageapi.md)                      | [Custom Search](topbar.customsearchconfig.md)              |                               |
+| [Page API Properties](page.pageapiproperties.md) | [Help Center Feedback](topbar.helpcenterfeedbackconfig.md) |                               |
+|                                                  | [External Feedback](topbar.externalfeedbackconfig.md)      |                               |
+|                                                  | [Solution](topbar.solution.md)                             |                               |
+|                                                  | [Topbar API](topbar.topbarapi.md)                          |                               |
+|                                                  | [Topbar API Properties](topbar.topbarapiproperties.md)     |                               |
+
+Return to the [Guides Index](../../guides_index.md).

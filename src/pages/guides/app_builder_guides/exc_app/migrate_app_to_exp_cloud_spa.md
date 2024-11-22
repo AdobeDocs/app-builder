@@ -1,16 +1,16 @@
 ---
-title: 'Migration Guide - Standalone Application to DX Experience Cloud SPA v1'
+title: 'Migration tutorial - Standalone Application to DX Experience Cloud SPA v1'
 ---
 
 # Migrating Apps to DX Experience Cloud v1 SPAs
 
 ## Overview
 
-This Guide documents one way to migrate App Builder applications originally initialized as standalone applications to DX Experience Cloud v1 Single-Page Applications (SPAs). Although this can be done by modifying only the project's configuration, following this Guide will allow your application to closely mirror those initialized as DX Experience Cloud v1 SPAs. 
+This tutorial documents one way to migrate App Builder applications originally initialized as standalone applications to DX Experience Cloud v1 Single-Page Applications (SPAs). Although this can be done by modifying only the project's configuration, following this tutorial will allow your application to closely mirror those initialized as DX Experience Cloud v1 SPAs. 
 
-## Who is this Guide for?
+## Who is this tutorial for?
 
-This Guide is for Developers who can't view an application in Adobe Experience Cloud and may have initialized it as a standalone application. Applications built with App Builder can only be accessed through the App Builder Catalog in Adobe Experience Cloud if they have been initialized as DX Experience Cloud v1 SPAs. 
+This tutorial is for Developers who can't view an application in Adobe Experience Cloud and may have initialized it as a standalone application. Applications built with App Builder can only be accessed through the App Builder Catalog in Adobe Experience Cloud if they have been initialized as DX Experience Cloud v1 SPAs. 
 
 ## How can I tell if my project is a standalone application?
 
@@ -18,11 +18,11 @@ Standalone applications will **not** have the `App Builder ExcShell` sub-heading
 
 **Standalone application**
 
-![Standalone Application](../../images/experience_cloud_standalone_application.png)
+![Standalone Application](E:\GitHub\app-builder\src\pages\images\experience_cloud_standalone_application.png)
 
 **DX Experience Cloud v1 SPA**
 
-![DX Experience Cloud SPA v1](../../images/experience_cloud_dx_experience_cloud_spa.png)
+![DX Experience Cloud SPA v1](E:\GitHub\app-builder\src\pages\images\experience_cloud_dx_experience_cloud_spa.png)
 
 ## Understanding the difference
 

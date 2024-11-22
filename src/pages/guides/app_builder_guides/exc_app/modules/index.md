@@ -5,34 +5,25 @@ title: 'External module: "index"'
 description: External modules
 ---
 
-# Index External Module
+# External Module: Index
 
-API used to integrate as solution web application with the unified shell of the Adobe Experience
-Cloud.
-
-## Index
+This API is used to integrate solution web applications with the unified shell of Adobe Experience Cloud.
 
 ### Interfaces
 
 * [Modules](../interfaces/index.md)
 * [Runtime](../interfaces/index.runtime.md)
 
-### Functions
-
-* [init](index.md#init)
-* [runtime](index.md#runtime)
-
 ## Functions
 
-### init
+### Init
 
 ▸ **init**(`bootstrap`: function): *void*
 
-Initializes a solution web application by invoking the bootstrap callback
-once the runtime is ready.
+Initializes a solution web application by invoking the bootstrap callback once the runtime is ready.
 
-1. if the module is already defined, start to bootstrap
-2. otherwise define the global callback that will be called when runtime is ready.
+1. If the module is already defined, begin bootstrap
+2. Otherwise, define the global callback that will be called when runtime is ready
 
 ***Example:***
 
@@ -50,8 +41,7 @@ init(() => {
 
 ▪ **bootstrap**: *function*
 
-Callback used to bootstrap a solution. The runtime object is passed in as a
-parameter to this callback.
+The callback used to bootstrap a solution. The runtime object is passed in as a parameter to this callback.
 
 ▸ (`runtime`: [Runtime](../interfaces/index.runtime.md)): *void*
 
@@ -69,7 +59,7 @@ ___
 
 ▸ **runtime**(): *[Runtime](../interfaces/index.runtime.md)*
 
-Get the runtime object which contains all unified-shell APIs.
+Get the runtime object, which contains all unified-shell APIs.
 
 ***Example:***
 
@@ -88,3 +78,26 @@ export class MyComponent extends React.Component {
 **Returns:** *[Runtime](../interfaces/index.runtime.md)*
 
 The runtime object.
+
+## Next steps
+
+Explore details of the [Page](./modules/page.md), [TopBar](./modules/topbar.md), and [User](./modules/user.md) external modules.
+
+Explore the attributes and behavior of Adobe Experience Cloud Interfaces:
+
+[Modules](modules.md)
+
+[Runtime](runtime.md)
+
+| Page                                             | Topbar                                                     | User                          |
+| ------------------------------------------------ | ---------------------------------------------------------- | ----------------------------- |
+| [Object with Href](page.objectwithhref.md)       | [Callback](topbar.callback)                                | [User API](user.userapi.md)   |
+| [Object with Path](pageobjectwithpath.md)        | [Custom Feedback](topbar.customfeedback.md)                | [User Info](user.userinfo.md) |
+| [Page API](page.pageapi.md)                      | [Custom Search](topbar.customsearchconfig.md)              |                               |
+| [Page API Properties](page.pageapiproperties.md) | [Help Center Feedback](topbar.helpcenterfeedbackconfig.md) |                               |
+|                                                  | [External Feedback](topbar.externalfeedbackconfig.md)      |                               |
+|                                                  | [Solution](topbar.solution.md)                             |                               |
+|                                                  | [Topbar API](topbar.topbarapi.md)                          |                               |
+|                                                  | [Topbar API Properties](topbar.topbarapiproperties.md)     |                               |
+
+Return to the [Guides Index](../../guides_index.md).

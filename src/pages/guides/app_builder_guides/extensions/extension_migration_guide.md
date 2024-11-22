@@ -7,104 +7,102 @@ keywords:
 title: Extension Migration Guide
 ---
 
-# Extension Migration Guide
+# Migrating Legacy Applications
 
-The 2021 release of support for [Extensions](index.md) in App Builder allows Developers to extend Adobe Experience Cloud through App Builder applications in a more native and integrated fashion. 
+> Note: This information applies **only** to applications that:
+> 
+> * Were created before July 28, 2021
+> 
+> * Have not yet been migrated to the new App Builder file structure and configuration protocol
+> 
+> * Have not been used successfully since the October 28, 2021 retirement of the legacy App Builder file structure and configuration protocol
+> 
+> Unless you are trying to recover a legacy application that was created before July 28, 2021 and remained unused since October 28, 2021, this information does not apply to you.
 
-Application built before July 28,2021 should continue to work as expected without any further action. In the next 90 days (until Oct 28, 2021), please update your Adobe I/O CLI and migrate your application as we’ll be retiring the previous services. Follow this guide to migrate your application in a few simple steps.
+## Understanding configuration changes
 
-## Understanding Configuration Changes
+The 2021 release of support for [Extensions](index.md) in App Builder allowed Developers to extend Adobe Experience Cloud through App Builder applications in a more native and integrated fashion. It also required changes to App Builder project file structures and the way we compile configurations. Before starting this migration, please read through all the changes so you can make an informed decision on how to refactor your project.
 
-With the introduction of [Extensions](index.md), we have made a few changes to App Builder project file structures and to how we compile configurations. Before you get started on the migration, please read through the changes so that you can make an informed decision for how to refactor your project during the migration.
+### Old file structure
 
-### Old File Structure
+Under the old file structure, initialization of a new App Builder Project in the CLI created these folders and files: 
 
-Previously, if you initialize a new App Builder Project in the CLI, you will see the following folders and files in your project: 
+1. `actions`: folder for back-end source code of all serverless actions.
+2. `web-src`: folder for front-end source code such as html templates, react components, JS, CSS.
+3. `test`: folder for back-end action unit and integration tests.
+4. `e2e`:  folder for end-to-end tests.
+5. `manifest.yml`: file describing back-end actions to deploy or redeploy
+   - `manifest` file contents should adhere to the [OpenWhisk deployment YAML specification](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification#package-specification). Once defined, the [CLI](https://github.com/adobe/aio-cli) uses this file to deploy or redeploy actions. You might see values like `$CUSTOMER_PROFILE_TENANT` listed on this page; they are environment variables that can be defined in the `.env` file. 
+6. `package.json`: file with the project definition and relevant metadata. 
+   - `package.json` gives informs npm so it can identify the project and handle its dependencies. Learn more [here](https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-json/).
+7. `.aio`: file containing configuration variables used by the [CLI](https://github.com/adobe/aio-cli) to facilitate the application, for example supported API services. This file can be committed to a source-code versioning system.
+   - You may manually update the file, or use `aio config` commands to add or to configurations. Learn more about the [Config Plugin](https://github.com/adobe/aio-cli-plugin-config). 
+8. `.env`: file containing environment variables useful for application development, for example Adobe I/O Runtime credentials and Adobe Product API tenant specifics  such as API key and secrets.
+   - The environment variables defined here can be used in the application (for example  in `manifest.yml`). If credentials are set up for the selected workspaces, you should see some of these values such as `AIO_runtime_auth` and `AIO_runtime_namespace`pre-populated upon initialization. 
+   - This file is automatically included in `.gitignore`: the listed credentials and secrets are not intended to be shared. 
+9. `console.json`: file containing credentials set up through your App Builder project. 
+   - This file is also automatically included in `.gitignore`, and contains credentials and secrets not intended to be shared.
+   - This file can be also downloaded directly from the [Adobe Developer Console](/console),  by going to a workspace, and clicking  the `Download all` button. 
 
-1. `actions`: this folder is intended for backend source code for all serverless actions
-2. `web-src`: this folder is intended for frontend source code such as html templates, react components, JS, CSS
-3. `test`: this folder is intended for back-end action unit tests and integration tests
-4. `e2e`: this folder is intended for  end-to-end tests
-5. `manifest.yml`: this file describes the backend actions you would like to deploy or to redeploy. 
-   - The manifest file contents should adhere to the [OpenWhisk deployment YAML specification](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification#package-specification). Once defined, the [CLI](https://github.com/adobe/aio-cli) use this file to deploy or redeploy actions. You might see values like `$CUSTOMER_PROFILE_TENANT` listed on this page. These are environment variables that you can define in your `.env` file. 
-6. `package.json`: this file describes project definition and various metadata relevant to the project. 
-   - It is used to give information to npm that allows it to identify the project as well as handle the project's dependencies. Learn more [here](https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-json/).
-7. `.aio`: this file contains config variables that are useful for the [CLI](https://github.com/adobe/aio-cli) to facilitate the app, e.g. supported API services. **This file can be committed to a source code versioning system.**
-   - You can manually update the file or use the `aio config` commands to add or to remove configurations. Learn more about the [Config Plugin](https://github.com/adobe/aio-cli-plugin-config). 
-8. `.env`: this file contains environment variables that are useful for the app during development, e.g. Adobe I/O Runtime credentials and Adobe Product API tenant specifics (API key, secrets, etc.)
-   - The environment variables defined here can be used in the application (e.g. in `manifest.yml`). If you've set up credentials for the selected workspaces, you should be able to see some of those values prepopulated upon initialization, like `AIO_runtime_auth` and `AIO_runtime_namespace`. 
-   - This file is automatically included in `.gitignore`. **It is not intended be shared given the credentials and secrets listed.**
-9. `console.json`: this file contains the credentials set up through your App Builder project. 
-   - This file is also automatically included in `.gitignore`. **It is not intended be shared given the credentials and secrets listed.** 
-   - This file can be downloaded directly from the [Adobe Developer Console](/console) as well. You can retrieve it by going to a workspace, and clicking on the `Download all` button. 
+### New file structure
 
-### New File Structure
+When extensions were introduced, the file structure changed to:
 
-With the introduction of extensions, your new file structure would look something like this --
-
-1. `src`: Instead of one folder for all `actions` and all `web-src`, you will see individual folders under `src` for each Extension point you have selected. For instance, a `dx-excshell-1` folder for your Experience Cloud SPA actions and frontend resources. 
-   - Under each folder, you should be able to see both the actions and the frontend code when application. In addition, you should be able to see `ext.config.yaml`. This file contains all the action and extension configuration for the extension point where it's located. This individual configuration allows for more flexibility in defining and managing individual extension points. You can see that this file is also imported to `app.config.yaml` as that's the master config file. 
-   - The action definition in this file shoud adhere to the [OpenWhisk deployment YAML specification](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification#package-specification).
-   - Once defined, the [CLI](https://github.com/adobe/aio-cli) use this file to deploy or redeploy actions. You might see values like `$CUSTOMER_PROFILE_TENANT` listed under environments in this file. These are environment variables that you can define in your `.env` file. 
-2. `app.config.yaml`: this is the master configuration file. It follows the same principle as the individual `ext.config.yaml`, and compiles these individual file into one comprehensive config upon application build. 
-3. `lib`: this folder will contain all the shared utility actions across different extension points. 
-4. `package.json`: this file describes project definition and various metadata relevant to the project. 
+1. `src`: Instead of one folder for all `actions` and all `web-src`, there are individual folders under `src` for each selected extension point, for example, a `dx-excshell-1` folder for Experience Cloud SPA actions and front-end resources.
+   - Under each folder will be both the actions and the front-end code for the application. You should also see `ext.config.yaml`, a file containing all the action and extension configuration for the extension point corresponding to its folder. This configuration allows more flexibility in defining and managing extension points. This file is also imported to `app.config.yaml`, the master config file. 
+   - The action definition in this file should adhere to the [OpenWhisk deployment YAML specification](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification#package-specification).
+   - Once defined, the [CLI](https://github.com/adobe/aio-cli) uses this file to deploy or redeploy actions. You might see values like `$CUSTOMER_PROFILE_TENANT` listed on this page; they are environment variables that can be defined in the `.env` file.
+2. `app.config.yaml`,  the master configuration file. It follows the same principle as the individual `ext.config.yaml`, and compiles these individual files into one comprehensive configuration upon application build. 
+3. `lib`: a folder containing all the shared utility actions across different extension points. 
+4. `package.json`: file describes project definition and various metadata relevant to the project. 
    - It is used to give information to npm that allows it to identify the project as well as handle the project's dependencies. Learn more [here](https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-json/).
 5. `.aio`: this file contains config variables that are useful for the [CLI](https://github.com/adobe/aio-cli) to facilitate the app, e.g. supported API services.
    - You can manually update the file or use the `aio config` commands to add or to remove configurations. Learn more about the [Config Plugin](https://github.com/adobe/aio-cli-plugin-config). 
-6. `.env`: this file contains environment variables that are useful for the app during development, e.g. Adobe I/O Runtime credentials and Adobe Product API tenant specifics (API key, secrets, etc.)
-   - The environment variables defined here can be used in the application (e.g. in `ext.config.yaml` or `app.config.yaml`). If you've set up credentials for the selected workspaces, you should be able to see some of those values prepopulated upon initialization, like `AIO_runtime_auth` and `AIO_runtime_namespace`. 
-   - This file is automatically included in `.gitignore`. **It is not intended be shared given the credentials and secrets listed.**
+6. `.env`: file containing environment variables useful for application development, for example Adobe I/O Runtime credentials and Adobe Product API tenant specifics such as API key and secrets.
+   - The environment variables defined here can be used in the application (for example in `manifest.yml`). If credentials are set up for the selected workspaces, you should see some of these values such as `AIO_runtime_auth` and `AIO_runtime_namespace`pre-populated upon initialization.
+   - This file is automatically included in `.gitignore`: the listed credentials and secrets are not intended to be shared.
 
-## Step-by-step Migration Instruction
+## Why migrate?
 
-Please follow the steps below for a detailed instruction for how to migrate your application! 
+When you migrate your application:
 
-### 0. Understanding the Difference
+1. You can take advantage of Extensions and new, more flexible configuration setup.
+2. Your application will be protected by Adobe's validator, which offers more granular access control. Read more about this in our [Security Guide](../security/index.md).
 
-Let's start with the why you need to migrate your application. What happens if you migrate your application:
+If you don't migrate, your application will not work using the current CLI and configuration protocol.
 
-1. You will be able to take advantage of Extensions and the flexibility of our new configuration set up!
-2. Your application will be using our new validator -- providing more granular access control to ensure the security of your application. Read more about this in our [Security Guide](../security/index.md).
+## Step-by-step migration instructions
 
-What happens if you don't migrate:
+Please follow these steps to migrate your application:
 
-1. During this release, we have automatically indexed your application in the backend. If you update your application (and it is an SPA in Experience Cloud or an AEM Asset Microservices Custom Processing Profile) using the old CLI (up to 7.1.0), you should see no change until the end of October when we retire some services. 
-2. If you update the CLI before the end of October, but didnot refactor your code following the guide below, you may no longer be able to see your application in Experience Cloud UI and will need to refactor your code. 
-3. Long story short -- don't upgrade the CLI until you are ready to refactor your project, and do refactor your project within the next three months. 
+### 1. Update tooling
 
-With this context, let's dive in. 
+Make sure your local tooling and environment setup is current, as described [here](../../getting_started). 
 
-### 1. Update Tooling
+### 2. Update configuration
 
-First of all, please make sure your local tooling and environment set up is up to date. You can find the latest supported environment and tooling info in [here](../../getting_started). 
+Applications that are candidates for migration may extend: 
 
-### 2. Update Configuration
+1. **No extension points**, for example standalone Headless applications or standalone Single-Page Applications that do not integrate with Experience Cloud UI
+2. **One extension point**, for example Single-Page Applications accessed through the Experience Cloud UI or a Custom Processing Profile for AEM Asset Microservices
+3. **Two or more extension points**, for example Custom Processing Profiles for AEM Asset Microservices that also contain one or more Single-Page Applications accessible through Experience Cloud UI
 
-Your existing application could be one of three types: 
+Learn more about extension points in [Introduction to Extensions](extensions.md), and then follow the instruction set below that corresponds to your project.
 
-1. an application not extending any Extension Points (for instance, your application is a standalone Headless application **OR** a standalone Single Page Application that does not integrate with Experience Cloud UI)
-2. an application extending **one** Extension Points (for instance, your application is a Single Page Application accessed through Experience Cloud UI **OR** a Custom Processing Profile for AEM Asset Microservices)
-3. an application extending **two or more** Extension Points (for instance, your application is a Custom Processing Profile for AEM Asset Microservices **AND** contains a Single Page Application accessible through Experience Cloud UI).
+#### 2.1 Application with no extension points
 
-Learn more about Extension Points in [Introduction to Extensions](index.md). Based on the nature of your existing project, please following the corresponding the section below. 
+If your application has no extension points, refactoring is not mandatory: the CLI will continue to support the old configuration protocol. However, if you plan to integrate with extension points later or simply want to bring your project up to date, refactor your codebase following the instructions below. 
 
-#### 2.1 Application not extending any Extension Points
-
-Congratulations! Technically you won't NEED to do any refactoring. Our CLI will continue to support the old configuration system. 
-
-That being said, if you do plan to integrate with Extension Points in the future or simply want to make sure your project is up-to-date, we highly recommend that you follow the instruction in the next section to refactor your codebase. 
-
-Please note that if you have a headless application and you have the `require-adobe-auth` set to `true`, refactoring your codebase and redeploying your application with the new CLI will switch you to our new validator, which means we'll validate the token passed in belongs to the same IMS organization, and contains product profile required for your application. For instance, if your application uses Adobe Analytics API, the token you pass in must also have access to Adobe Analytics.
+> **Note:** for headless applications with `require-adobe-auth` set to `true`, refactoring the code base and redeploying the application using the new CLI will switch it to the new validator. This means Adobe will validate that tokens passed in belong to your IMS organization and contain the product profile required for your application. For instance, if your application uses the Adobe Analytics API, the token you pass in must also have access to Adobe Analytics.
 
 ##### Instructions:
 
-1. Create `app.config.yaml` file in the root directory of your project.
-2. Move the content of `manifest.yml` to `app.config.yaml` under the `application.runtimeManifest` property, and delete `manifest.yml` file.
-3. Move any application hooks you have set up under `scripts` in `package.json` into `applications.hooks` in `app.config.yaml` configuration file.
-4. Move any configuration found under the `.app` section of the `.aio` configuration file into the `applications` section of the new `app.config.yaml` configuration file.
+1. Create the file `app.config.yaml` in the project's root directory
+2. Move the content of `manifest.yml` to `app.config.yaml` under the `application.runtimeManifest` property, and delete the `manifest.yml` file
+3. Move any application hooks under `scripts` in `package.json` into `applications.hooks` in the `app.config.yaml` configuration file
+4. Move any configuration found under the `.app` section of the `.aio` configuration file into the `applications` section of the new `app.config.yaml` configuration file
 
-##### Sample `app.config.yaml` File after the refactoring:
+##### Sample `app.config.yaml` file after refactoring:
 
 ```
 # standalone application
@@ -124,19 +122,19 @@ application:
     post-app-build: 'echo hook'
 ```
 
-#### 2.2 Application Extending one Extension Point
+#### 2.2 Application with one extension point
 
-Follow this section if your application is a Single Page Application accessed through Experience Cloud UI OR a Custom Processing Profile for AEM Asset Microservices.
+Follow the instructions in this section if your application is a Single-Page Application accessed through Experience Cloud UI or a Custom Processing Profile for AEM Asset Microservices.
 
 ##### Instructions:
 
-1. Create `app.config.yaml` file in the root directory of your project.
-2. Create a definition for the extension in your `app.config.yaml`. If you have a Single Page Application in Experience Cloud UI, use `dx/exchshell/1:` with `operations` set to `view`. If you have a AEM Asset Microservices Custom Profile, use `dx/sset-compute/worker/1:` with `operations` set to `workerProcess`. (See sample configurations below)
-3. Move the content of the `manifest.yml` under the extensions in `app.config.yaml`, then delete `manifest.yml` file
-4. Move any application hooks you have set up under `scripts` in `package.json` into `extensions.<extensionname>.hooks` in `app.config.yaml`
-5. move any configuration under `.app` in `.aio` into `extensions.<extensionname>` in `app.config.yaml`.
+1. Create the file `app.config.yaml` in the project's root directory.
+2. Create a definition for the extension in your `app.config.yaml`. If you have a Single-Page Application in Experience Cloud UI, use `dx/exchshell/1:` with `operations` set to `view`. If you have a AEM Asset Microservices Custom Profile, use `dx/sset-compute/worker/1:` with `operations` set to `workerProcess` - see the sample configurations below.
+3. Move the content of the `manifest.yml` under the `app.config.yaml` extensions, and then delete the `manifest.yml` file.
+4. Move any application hooks under `scripts` in `package.json` into `extensions.<extensionname>.hooks` in `app.config.yaml`.
+5. Move any configuration under `.app` in `.aio` into `extensions.<extensionname>` in `app.config.yaml`.
 
-##### Sample `app.config.yaml` File after the refactoring:
+##### Sample `app.config.yaml` file after refactoring:
 
 **SPA in Experience Cloud UI**
 
@@ -192,23 +190,31 @@ extensions:
     post-app-build: 'echo hook'
 ```
 
-#### 2.3 Application Extending two or more Extension Points
+#### 2.3 Applications with two or more extension points
 
-Follow this section if your application is a Custom Processing Profile for AEM Asset Microservices, AND contains a Single Page Application accessible through Experience Cloud UI. 
+Follow this section if your application is a Custom Processing Profile for AEM Asset Microservices, and contains a Single-Page Application accessible through Experience Cloud UI. 
 
-Please note that there are multiple ways to structure your configuration. You can refactor your code into folders for each extension, and create extension specific configuration, then import them into your main `app.config.yaml` using `$include: path/to/myfile.yaml`, you can also manage them all in one file in the root directory `app.config.yaml`. You could try to initialize a new project with multiple extension points through `aio app init` to see how we structure the code and config file my default. Below, we are showing the easiest way to refactor by merging all config into `app.config.yaml`, but you are more than welcome to explore and to try different methods. 
+There are multiple ways to structure your configuration:
+
+- You could refactor your code into folders for each extension, create extension-specific configurations, and then import them into your main `app.config.yaml` using `$include: path/to/myfile.yaml`
+
+- You could manage them all in one file in the root directory `app.config.yaml` 
+
+- You could try to initialize a new project with multiple extension points using `aio app init` to see how Adobe structures the code and configuration file by default 
+
+The instructions below show the easiest way to refactor by merging all config into `app.config.yaml`, but you are welcome to explore alternatives. 
 
 ##### Instructions:
 
-1. Create `app.config.yaml` file in the root directory of your project.
-2. Create the definitions for the extensions in your `app.config.yaml`. For the Single Page Application in Experience Cloud UI, use `dx/exchshell/1:` with `operations` set to `view`. For the AEM Asset Microservices Custom Profile, use `dx/sset-compute/worker/1:` with `operations` set to `workerProcess`. (See sample configurations below)
-3. Move the content of the `manifest.yml` under the extensions in `app.config.yaml`, then delete `manifest.yml` file
-4. Move any application hooks you have set up under `scripts` in `package.json` into `extensions.<extensionname>.hooks` in `app.config.yaml`
-5. move any configuration under `.app` in `.aio` into `extensions.<extensionname>` in `app.config.yaml`.
+1. Create the file `app.config.yaml` in the project's root directory.
+2. Create definitions for the extensions in your `app.config.yaml` file. For the Single-Page Application in Experience Cloud UI, use `dx/exchshell/1:` with `operations` set to `view`. For the AEM Asset Microservices Custom Profile, use `dx/sset-compute/worker/1:` with `operations` set to `workerProcess` - see the sample configurations below.
+3. Move the content of the `manifest.yml` under the `app.config.yaml` extensions, then delete `manifest.yml` file.
+4. Move any application hooks under `scripts` in `package.json` into `extensions.<extensionname>.hooks` in `app.config.yaml`
+5. Move any configuration under `.app` in `.aio` into `extensions.<extensionname>` in `app.config.yaml`.
 
-##### Sample `app.config.yaml` File after the refactoring:
+##### Sample `app.config.yaml` file after refactoring:
 
-**App Builder Project Extending Multiple Extension Points**
+**App Builder project extending multiple extension points**
 
 ```
 extensions:
@@ -256,13 +262,17 @@ extensions:
 
 ### 3. Testing
 
-Once you've completed your refactoring, simply try `aio app run` or `aio app deploy`, and everything should work as usual. 
+Once refactoring is complete, test it using `aio app run` or `aio app deploy`. Everything should work normally. If you encounter any issues, please contact us through the [Experience League Forum](https://adobe.ly/appbuilder-forum) and we'll support you as quickly as possible.
 
-Should you run into any issues, please contact us through the [Experience League Forum](https://adobe.ly/appbuilder-forum) and we'll support you as soon as possible.
+## Adding or removing endpoints from existing projects
 
-## Adding or removing Endpoints from Existing Projects
+As with actions, you can edit your extension configuration directly by modifying your code. Alternatively, you could use:
 
-Similar to actions, you can choose to directly edit your extension configuration by modifying your code. Alternatively, we provide a few simple commands:
+- `aio app add ext` to add a new extension point to your application
+- `aio app delete ext` to delete an extension point project and configuration
 
-- `aio app add ext` for adding a new Extension Point to your application. 
-- `aio app delete ext` for deleting an existing Extension Point project and configuration. 
+## Next steps
+
+Return to [Introduction to Extensions](extensions.md).
+
+Return to [Guides Index](../../guides_index.md).

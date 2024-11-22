@@ -7,25 +7,17 @@ keywords:
 title: 'Interface: TopbarApiProperties'
 ---
 
-# Interface: TopbarApiProperties
+# Interface: TopbarAPIProperties
 
 ## Hierarchy
 
 * **TopbarApiProperties**
-
+  
   ↳ [TopbarApi](topbar.topbarapi.md)
-
-## Index
-
-### Properties
-
-* [customEnvLabel](topbar.topbarapiproperties.md#customenvlabel)
-* [solution](topbar.topbarapiproperties.md#solution)
-* [workspaces](topbar.topbarapiproperties.md#workspaces)
 
 ## Properties
 
-###  customEnvLabel
+### customEnvLabel
 
 • **customEnvLabel**: *string*
 
@@ -39,7 +31,7 @@ topbar.customEnvLabel = 'Beta';
 
 ___
 
-###  solution
+### solution
 
 • **solution**: *[Solution](topbar.solution.md)*
 
@@ -57,12 +49,11 @@ topbar.solution = {
 
 ___
 
-###  workspaces
+### workspaces
 
 • **workspaces**: *WorkspaceMenu[]*
 
-Configuration for the Shell workspaces. Workspace names should be unique, and should be
-localized using the unified shell locale prior to setting runtime.workspaces.
+Configuration for the Shell workspaces. Workspace names should be unique, and should be localized using the unified-shell locale prior to setting runtime.workspaces.
 
 ```typescript
 topbar.workspaces = [
@@ -72,12 +63,7 @@ topbar.workspaces = [
 ];
 ```
 
-Unified shell also supports workspace flyout menus, where clicking on a workspace displays a
-dropdown menu. The top-level workspace is present in the dropdown menu as the first menu item.
-Menus may be nested multiple times, and used in combination with normal workspaces. By default,
-parent menu items will be automatically added to the sub-menu due to how the user interaction
-works. To prevent this functionality, simply remove the url property on the parent item and it
-will not be injected into the sub-menu.
+Unified shell also supports workspace flyout menus, where clicking on a workspace displays a dropdown menu. The top-level workspace is present in the dropdown menu as the first menu item. Menus may be nested multiple times, and used in combination with normal workspaces. By default, parent menu items are automatically added to the sub-menu because of the way the user interaction works. To prevent this, remove the url property on the parent item; it will then not be injected into the sub-menu.
 
 ```typescript
 topbar.workspaces = [
@@ -98,3 +84,25 @@ topbar.workspaces = [
   }
 ];
 ```
+
+## Next steps
+
+Explore details of the [Index](./modules/index.md), [Page](./modules/page.md), [TopBar](./modules/topbar.md), and [User](./modules/user.md) external modules.
+
+Explore the attributes and behavior of other Adobe Experience Cloud interfaces:
+
+[Modules](modules.md)
+
+[Runtime](runtime.md)
+
+| Page                                             | Topbar                                                     | User                          |
+| ------------------------------------------------ | ---------------------------------------------------------- | ----------------------------- |
+| [Object with Href](page.objectwithhref.md)       | [Callback](topbar.callback)                                | [User API](user.userapi.md)   |
+| [Object with Path](pageobjectwithpath.md)        | [Custom Feedback](topbar.customfeedback.md)                | [User Info](user.userinfo.md) |
+| [Page API](page.pageapi.md)                      | [Custom Search](topbar.customsearchconfig.md)              |                               |
+| [Page API Properties](page.pageapiproperties.md) | [Help Center Feedback](topbar.helpcenterfeedbackconfig.md) |                               |
+|                                                  | [External Feedback](topbar.externalfeedbackconfig.md)      |                               |
+|                                                  | [Solution](topbar.solution.md)                             |                               |
+|                                                  | [Topbar API](topbar.topbarapi.md)                          |                               |
+
+Return to the [Guides Index](../../guides_index.md).

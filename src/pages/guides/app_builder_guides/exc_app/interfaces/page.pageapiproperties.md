@@ -17,25 +17,13 @@ Subset of page-level APIs available to solutions that are settable attributes.
   
   ↳ [PageApi](page.pageapi.md)
 
-## Index
-
-### Properties
-
-* [favicon](page.pageapiproperties.md#favicon)
-* [modal](page.pageapiproperties.md#modal)
-* [preventDefaultCombos](page.pageapiproperties.md#preventdefaultcombos)
-* [spinner](page.pageapiproperties.md#spinner)
-* [title](page.pageapiproperties.md#title)
-* [viewportTakeover](page.pageapiproperties.md#viewporttakeover)
-
 ## Properties
 
 ### favicon
 
 • **favicon**: *string*
 
-Gets or set the favicon for the page. If this isn't set, then the default experience cloud
-favicon will be used.
+Gets or set the favicon for the page. If this isn't set, the default Experience Cloud favicon will be used.
 
 ***Example:***
 
@@ -49,7 +37,7 @@ ___
 
 • **modal**: *boolean*
 
-Configuration to show/hide a modal with fullscreen overlay. Defaults to false.
+Configuration to show or hide a modal with full-screen overlay. Defaults to false.
 
 ***Example:***
 
@@ -63,8 +51,7 @@ ___
 
 • **preventDefaultCombos**: *object[]*
 
-An array of key combinations for the shell to prevent default browser behavior on in cases
-where an application performs some other action.
+An array of key combinations for the shell to prevent default browser behavior, or in cases where an application performs some other action.
 
 ***Example:***
 
@@ -83,10 +70,7 @@ ___
 
 • **spinner**: *boolean*
 
-Gets or sets a value indicating whether or not to show a spinner on the page. This
-configuration value is NOT used for the initial loading spinner (see Route Configuration
-hideInitialSpinner for that), but can be used to dismiss it if the spinner needs to be
-dismissed before a solution invokes runtime.done().
+Gets or sets a value indicating whether or not to show a spinner on the page. This configuration value is not used for the initial loading spinner (see Route Configuration hideInitialSpinner for that), but can be used to dismiss it if the spinner needs to be dismissed before a solution invokes runtime.done().
 
 ***Example:***
 
@@ -114,23 +98,37 @@ ___
 
 • **viewportTakeover**: *boolean*
 
-Configuration to alter the z-index ordering of the Shell and iframe based on whether viewport
-takeover is needed.
+Configuration to alter the z-index ordering of the Shell and iframe based on whether viewport takeover is needed.
 
-Some applications will need to open a view that takes up the entire viewport of the browser.
-This works by increasing the size of the iframe the entire height of the viewport and using the
-`z-index` property to switch between the header or the content (iframe) being on top. To make
-this work seamlessly, a DOM element with `id="shell-placeholder"` is automatically added to the
-top of the `document.body` container. The Unified Shell adds a `height` property to the DOM
-element, effectively pushing down the rest of the application's UI below the Shell UI.
+Some applications will need to open a view that takes up the entire viewport of the browser. This works by increasing the size of the iframe to the full height of the viewport, and using the `z-index` property to alternate between header and content (iframe) on top. To make this work seamlessly, a DOM element with `id="shell-placeholder"` is automatically added to the top of the `document.body` container. The Unified Shell adds a `height` property to the DOM element, effectively pushing down the rest of the application's UI below the Shell UI.
 
-By default, the Shell will have a higher `z-index` than the iframe, so it will be usable. In
-order to alternate the `z-index` values, putting the iframe above the Shell, set:
+By default, the Shell will have a higher `z-index` than the iframe, so it will be usable. In order to alternate the `z-index` values, putting the iframe above the Shell, set:
 
 ```typescript
 page.viewportTakeover = true;
 ```
 
-Now the solution application is 100% of the browser's viewport and can open any views at 100%.
-When the takeover is complete, set the value back to `false` to return the Shell to the top of
-the application.
+Now the solution application is 100% of the browser's viewport and can open any views at 100%. When the takeover is complete, set the value back to `false` to return the Shell to the top of the application.
+
+## Next steps
+
+Explore details of the [Index](./modules/index.md), [Page](./modules/page.md), [TopBar](./modules/topbar.md), and [User](./modules/user.md) external modules.
+
+Explore the attributes and behavior of other Adobe Experience Cloud interfaces:
+
+[Modules](modules.md)
+
+[Runtime](runtime.md)
+
+| Page                                       | Topbar                                                     | User                          |
+| ------------------------------------------ | ---------------------------------------------------------- | ----------------------------- |
+| [Object with Href](page.objectwithhref.md) | [Callback](topbar.callback)                                | [User API](user.userapi.md)   |
+| [Object with Path](pageobjectwithpath.md)  | [Custom Feedback](topbar.customfeedback.md)                | [User Info](user.userinfo.md) |
+| [Page API](page.pageapi.md)                | [Custom Search](topbar.customsearchconfig.md)              |                               |
+|                                            | [Help Center Feedback](topbar.helpcenterfeedbackconfig.md) |                               |
+|                                            | [External Feedback](topbar.externalfeedbackconfig.md)      |                               |
+|                                            | [Solution](topbar.solution.md)                             |                               |
+|                                            | [Topbar API](topbar.topbarapi.md)                          |                               |
+|                                            | [Topbar API Properties](topbar.topbarapiproperties.md)     |                               |
+
+Return to the [Guides Index](../../guides_index.md).

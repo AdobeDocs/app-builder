@@ -7,7 +7,7 @@ keywords:
 title: 'Interface: PageApi'
 ---
 
-# Interface: PageApi
+# Interface: PageAPI
 
 Defines page-level APIs available to solutions.
 
@@ -17,25 +17,6 @@ Defines page-level APIs available to solutions.
   
   ↳ **PageApi**
 
-## Index
-
-### Properties
-
-* [favicon](page.pageapi.md#favicon)
-* [modal](page.pageapi.md#modal)
-* [preventDefaultCombos](page.pageapi.md#preventdefaultcombos)
-* [spinner](page.pageapi.md#spinner)
-* [title](page.pageapi.md#title)
-* [viewportTakeover](page.pageapi.md#viewporttakeover)
-
-### Methods
-
-* [done](page.pageapi.md#done)
-* [generateShellUrl](page.pageapi.md#generateshellurl)
-* [iframeReload](page.pageapi.md#iframereload)
-* [openInNewTab](page.pageapi.md#openinnewtab)
-* [shellRedirect](page.pageapi.md#shellredirect)
-
 ## Properties
 
 ### favicon
@@ -44,8 +25,7 @@ Defines page-level APIs available to solutions.
 
 *Inherited from [PageApiProperties](page.pageapiproperties.md).[favicon](page.pageapiproperties.md#favicon)*
 
-Gets or set the favicon for the page. If this isn't set, then the default experience cloud
-favicon will be used.
+Gets or set the favicon for the page. If this isn't set, then the default Experience Cloud favicon will be used.
 
 ***Example:***
 
@@ -61,7 +41,7 @@ ___
 
 *Inherited from [PageApiProperties](page.pageapiproperties.md).[modal](page.pageapiproperties.md#modal)*
 
-Configuration to show/hide a modal with fullscreen overlay. Defaults to false.
+Configuration to show or hide a modal with full-screen overlay. Defaults to false.
 
 ***Example:***
 
@@ -77,8 +57,7 @@ ___
 
 *Inherited from [PageApiProperties](page.pageapiproperties.md).[preventDefaultCombos](page.pageapiproperties.md#preventdefaultcombos)*
 
-An array of key combinations for the shell to prevent default browser behavior on in cases
-where an application performs some other action.
+An array of key combinations for the shell to prevent default browser behavior, on in cases where an application performs some other action.
 
 ***Example:***
 
@@ -99,10 +78,7 @@ ___
 
 *Inherited from [PageApiProperties](page.pageapiproperties.md).[spinner](page.pageapiproperties.md#spinner)*
 
-Gets or sets a value indicating whether or not to show a spinner on the page. This
-configuration value is NOT used for the initial loading spinner (see Route Configuration
-hideInitialSpinner for that), but can be used to dismiss it if the spinner needs to be
-dismissed before a solution invokes runtime.done().
+Gets or sets a value indicating whether or not to show a spinner on the page. This configuration value is not used for the initial loading spinner (see Route Configuration hideInitialSpinner for that), but can be used to dismiss it if the spinner needs to be dismissed before a solution invokes runtime.done().
 
 ***Example:***
 
@@ -134,26 +110,17 @@ ___
 
 *Inherited from [PageApiProperties](page.pageapiproperties.md).[viewportTakeover](page.pageapiproperties.md#viewporttakeover)*
 
-Configuration to alter the z-index ordering of the Shell and iframe based on whether viewport
-takeover is needed.
+Configuration to alter the z-index ordering of the Shell and iframe based on whether viewport takeover is needed.
 
-Some applications will need to open a view that takes up the entire viewport of the browser.
-This works by increasing the size of the iframe the entire height of the viewport and using the
-`z-index` property to switch between the header or the content (iframe) being on top. To make
-this work seamlessly, a DOM element with `id="shell-placeholder"` is automatically added to the
-top of the `document.body` container. The Unified Shell adds a `height` property to the DOM
-element, effectively pushing down the rest of the application's UI below the Shell UI.
+Some applications will need to open a view that takes up the entire viewport of the browser. This works by increasing the size of the iframe to the full height of the viewport, and using the `z-index` property to alternate between header and content (iframe) on top. To make this work seamlessly, a DOM element with `id="shell-placeholder"` is automatically added to the top of the `document.body` container. The Unified Shell adds a `height` property to the DOM element, effectively pushing down the rest of the application's UI below the Shell UI.
 
-By default, the Shell will have a higher `z-index` than the iframe, so it will be usable. In
-order to alternate the `z-index` values, putting the iframe above the Shell, set:
+By default, the Shell will have a higher `z-index` than the iframe, so it will be usable. In order to alternate the `z-index` values, putting the iframe above the Shell, set:
 
 ```typescript
 page.viewportTakeover = true;
 ```
 
-Now the solution application is 100% of the browser's viewport and can open any views at 100%.
-When the takeover is complete, set the value back to `false` to return the Shell to the top of
-the application.
+Now the solution application is 100% of the browser's viewport and can open any views at 100%. When the takeover is complete, set the value back to `false` to return the Shell to the top of the application.
 
 ## Methods
 
@@ -161,8 +128,7 @@ the application.
 
 ▸ **done**(): *void*
 
-Tells the Shell that the Solution has loaded and is ready to be used by a user and dismisses
-the initial loading spinner.
+Tells the Shell that the Solution has loaded and is ready to be used by a user and dismisses the initial loading spinner.
 
 ***Example:***
 
@@ -206,8 +172,7 @@ ___
 
 ▸ **iframeReload**(): *void*
 
-Triggers the reload of the solution iframe. Calling this function will regenerate the iframe
-source, triggering the discovery URL flow if configured.
+Triggers the reload of the solution iframe. Calling this function will regenerate the iframe source, triggering the discovery URL flow if configured.
 
 ***Example:***
 
@@ -223,8 +188,7 @@ ___
 
 ▸ **openInNewTab**(`path`: string): *void*
 
-Opens the specified URL in the shell in a new tab. This is useful in scenarios where an element
-won't be an anchor or link and solution needs to open the URL.
+Opens the specified URL in the shell in a new tab. This is useful in scenarios where an element won't be an anchor or link and solution needs to open the URL.
 
 ***Example:***
 
@@ -246,9 +210,7 @@ ___
 
 ▸ **shellRedirect**(`path`: string): *void*
 
-Redirects to another unified shell solution. Path should be the complete relative path of a
-valid unified shell solution url (i.e. if shellRedirect is called from /target to /analytics,
-the path paremeter would need to start with /analytics). Query and hash are optional.
+Redirects to another unified shell solution. Path should be the complete relative path of a valid unified shell solution url - for example, if shellRedirect is called from /target to /analytics, the path paremeter would need to start with /analytics. Query and hash are optional.
 
 ***Example:***
 
@@ -263,3 +225,26 @@ page.shellRedirect('/path?a=b#workspace');
 | `path` | string | Path including search and hash to a unified shell solution. |
 
 **Returns:** *void*
+
+## Next steps
+
+Explore details of the [Index](./modules/index.md), [Page](./modules/page.md), [TopBar](./modules/topbar.md), and [User](./modules/user.md) external modules.
+
+Explore the attributes and behavior of other Adobe Experience Cloud interfaces:
+
+[Modules](modules.md)
+
+[Runtime](runtime.md)
+
+| Page                                             | Topbar                                                     | User                          |
+| ------------------------------------------------ | ---------------------------------------------------------- | ----------------------------- |
+| [Object with Href](page.objectwithhref.md)       | [Callback](topbar.callback)                                | [User API](user.userapi.md)   |
+| [Object with Path](pageobjectwithpath.md)        | [Custom Feedback](topbar.customfeedback.md)                | [User Info](user.userinfo.md) |
+| [Page API Properties](page.pageapiproperties.md) | [Custom Search](topbar.customsearchconfig.md)              |                               |
+|                                                  | [Help Center Feedback](topbar.helpcenterfeedbackconfig.md) |                               |
+|                                                  | [External Feedback](topbar.externalfeedbackconfig.md)      |                               |
+|                                                  | [Solution](topbar.solution.md)                             |                               |
+|                                                  | [Topbar API](topbar.topbarapi.md)                          |                               |
+|                                                  | [Topbar API Properties](topbar.topbarapiproperties.md)     |                               |
+
+Return to the [Guides Index](../../guides_index.md).

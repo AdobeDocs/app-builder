@@ -12,39 +12,20 @@ title: 'Interface: UserApi'
 ## Hierarchy
 
 * EventEmitter‹UserInfoEvent›
-
+  
   ↳ **UserApi**
-
-## Index
-
-### Properties
-
-* [logoutUrl](user.userapi.md#logouturl)
-
-### EventEmitter Methods
-
-* [emit](user.userapi.md#emit)
-* [off](user.userapi.md#off)
-* [on](user.userapi.md#on)
-
-### Other Methods
-
-* [authExpired](user.userapi.md#authexpired)
-* [get](user.userapi.md#get)
 
 ## Properties
 
-###  logoutUrl
+### logoutUrl
 
 • **logoutUrl**: *string | undefined*
 
-Optional. When specified this URL will be invoked upon user logging out. This is useful to
-reduce the number of lingering sessions for solutions who have their own sessions server
-(in addition to IMS).
+Optional. When specified, this URL will be invoked when the user logs out. This is useful to reduce the number of lingering sessions for solutions that have their own sessions server in addition to IMS.
 
 ## EventEmitter Methods
 
-###  emit
+### emit
 
 ▸ **emit**<**K**>(`type`: K, `event?`: UserInfoEvent[K]): *void*
 
@@ -58,16 +39,16 @@ Invoke all handlers for the given type.
 
 **Parameters:**
 
-Name | Type | Description |
------- | ------ | ------ |
-`type` | K | The event type to invoke. |
-`event?` | UserInfoEvent[K] | Any value (object is recommended and powerful), passed to each handler. |
+| Name     | Type             | Description                                                              |
+| -------- | ---------------- | ------------------------------------------------------------------------ |
+| `type`   | K                | The event type to invoke.                                                |
+| `event?` | UserInfoEvent[K] | Any value  passed to each handler - object is recommended, and powerful. |
 
 **Returns:** *void*
 
 ___
 
-###  off
+### off
 
 ▸ **off**<**K**>(`type`: K, `handler`: function): *void*
 
@@ -93,15 +74,15 @@ Handler function to remove.
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`event?` | UserInfoEvent[K] |
+| Name     | Type             |
+| -------- | ---------------- |
+| `event?` | UserInfoEvent[K] |
 
 **Returns:** *void*
 
 ___
 
-###  on
+### on
 
 ▸ **on**<**K**>(`type`: K, `handler`: function): *void*
 
@@ -127,9 +108,9 @@ Function to call in response to given event.
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`event?` | UserInfoEvent[K] |
+| Name     | Type             |
+| -------- | ---------------- |
+| `event?` | UserInfoEvent[K] |
 
 **Returns:** *void*
 
@@ -137,18 +118,17 @@ ___
 
 ## Other Methods
 
-###  authExpired
+### authExpired
 
 ▸ **authExpired**(): *void*
 
-API to notify the unified shell that APIs are returning 401 and user needs to be
-re-authenticated.
+API to notify the unified shell that APIs are returning 401 and the user needs to be re-authenticated.
 
 **Returns:** *void*
 
 ___
 
-###  get
+### get
 
 ▸ **get**<**T**>(`type`: T): *Promise‹UserInfo[T]›*
 
@@ -160,8 +140,31 @@ Gets the specified type of information about an user.
 
 **Parameters:**
 
-Name | Type | Description |
------- | ------ | ------ |
-`type` | T | The type of information to get.  |
+| Name   | Type | Description                     |
+| ------ | ---- | ------------------------------- |
+| `type` | T    | The type of information to get. |
 
 **Returns:** *Promise‹UserInfo[T]›*
+
+## Next steps
+
+Explore details of the [Index](./modules/index.md), [Page](./modules/page.md), [TopBar](./modules/topbar.md), and [User](./modules/user.md) external modules.
+
+Explore the attributes and behavior of other Adobe Experience Cloud interfaces:
+
+[Modules](modules.md)
+
+[Runtime](runtime.md)
+
+| Page                                             | Topbar                                                     | User                          |
+| ------------------------------------------------ | ---------------------------------------------------------- | ----------------------------- |
+| [Object with Href](page.objectwithhref.md)       | [Callback](topbar.callback)                                | [User Info](user.userinfo.md) |
+| [Object with Path](pageobjectwithpath.md)        | [Custom Feedback](topbar.customfeedback.md)                |                               |
+| [Page API](page.pageapi.md)                      | [Custom Search](topbar.customsearchconfig.md)              |                               |
+| [Page API Properties](page.pageapiproperties.md) | [Help Center Feedback](topbar.helpcenterfeedbackconfig.md) |                               |
+|                                                  | [External Feedback](topbar.externalfeedbackconfig.md)      |                               |
+|                                                  | [Solution](topbar.solution.md)                             |                               |
+|                                                  | [Topbar API](topbar.topbarapi.md)                          |                               |
+|                                                  | [Topbar API Properties](topbar.topbarapiproperties.md)     |                               |
+
+Return to the [Guides Index](../../guides_index.md).

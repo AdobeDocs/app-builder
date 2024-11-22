@@ -17,20 +17,6 @@ Defines page-level APIs available to solutions.
   
   ↳ **TopbarApi**
 
-## Index
-
-### Properties
-
-* [customEnvLabel](topbar.topbarapi.md#customenvlabel)
-* [solution](topbar.topbarapi.md#solution)
-* [workspaces](topbar.topbarapi.md#workspaces)
-
-### Methods
-
-* [onHeroClick](topbar.topbarapi.md#onheroclick)
-* [setCustomSearch](topbar.topbarapi.md#setcustomsearch)
-* [setFeedbackButton](topbar.topbarapi.md#setfeedbackbutton)
-
 ## Properties
 
 ### customEnvLabel
@@ -75,8 +61,7 @@ ___
 
 *Inherited from [TopbarApiProperties](topbar.topbarapiproperties.md).[workspaces](topbar.topbarapiproperties.md#workspaces)*
 
-Configuration for the Shell workspaces. Workspace names should be unique, and should be
-localized using the unified shell locale prior to setting runtime.workspaces.
+Configuration for the Shell workspaces. Workspace names should be unique, and localized using the unified-shell locale prior to setting runtime.workspaces.
 
 ```typescript
 topbar.workspaces = [
@@ -86,12 +71,7 @@ topbar.workspaces = [
 ];
 ```
 
-Unified shell also supports workspace flyout menus, where clicking on a workspace displays a
-dropdown menu. The top-level workspace is present in the dropdown menu as the first menu item.
-Menus may be nested multiple times, and used in combination with normal workspaces. By default,
-parent menu items will be automatically added to the sub-menu due to how the user interaction
-works. To prevent this functionality, simply remove the url property on the parent item and it
-will not be injected into the sub-menu.
+Unified shell also supports workspace flyout menus, where clicking on a workspace displays a dropdown menu. The top-level workspace is present in the dropdown menu as the first menu item. Menus may be nested multiple times, and used in combination with normal workspaces. By default, parent menu items will be automatically added to the sub-menu because of the way the user interaction works. To prevent this, remove the url property on the parent item; it will then not be injected into the sub-menu.
 
 ```typescript
 topbar.workspaces = [
@@ -119,8 +99,7 @@ topbar.workspaces = [
 
 ▸ **onHeroClick**(`callback`: [Callback](topbar.callback.md)): *void*
 
-Registers a callback to execute when the hero (solution) icon in the upper lefthand corner of
-the Shell is clicked.
+Registers a callback to execute when the hero (solution) icon in the upper lefthand corner of the Shell is clicked.
 
 **Parameters:**
 
@@ -136,8 +115,7 @@ ___
 
 ▸ **setCustomSearch**(`config`: [CustomSearchConfig](topbar.customsearchconfig.md) | null): *void*
 
-Determines whether or not to enable the custom search property and enacts a callback
-when the custom search icon is clicked.
+Determines whether or not to enable the custom search property, and enacts a callback when the custom search icon is clicked.
 
 **Parameters:**
 
@@ -162,3 +140,25 @@ Determines whether or not to enable a feedback button.
 | `config` | [CustomFeedbackConfig](topbar.customfeedbackconfig.md) &#124; [HelpCenterFeedbackConfig](topbar.helpcenterfeedbackconfig.md) &#124; [ExternalFeedbackConfig](topbar.externalfeedbackconfig.md) &#124; null |
 
 **Returns:** *void*
+
+## Next steps
+
+Explore details of the [Index](./modules/index.md), [Page](./modules/page.md), [TopBar](./modules/topbar.md), and [User](./modules/user.md) external modules.
+
+Explore the attributes and behavior of other Adobe Experience Cloud interfaces:
+
+[Modules](modules.md)
+
+[Runtime](runtime.md)
+
+| Page                                             | Topbar                                                     | User                          |
+| ------------------------------------------------ | ---------------------------------------------------------- | ----------------------------- |
+| [Object with Href](page.objectwithhref.md)       | [Callback](topbar.callback)                                | [User API](user.userapi.md)   |
+| [Object with Path](pageobjectwithpath.md)        | [Custom Feedback](topbar.customfeedback.md)                | [User Info](user.userinfo.md) |
+| [Page API](page.pageapi.md)                      | [Custom Search](topbar.customsearchconfig.md)              |                               |
+| [Page API Properties](page.pageapiproperties.md) | [Help Center Feedback](topbar.helpcenterfeedbackconfig.md) |                               |
+|                                                  | [External Feedback](topbar.externalfeedbackconfig.md)      |                               |
+|                                                  | [Solution](topbar.solution.md)                             |                               |
+|                                                  | [Topbar API Properties](topbar.topbarapiproperties.md)     |                               |
+
+Return to the [Guides Index](../../guides_index.md).
