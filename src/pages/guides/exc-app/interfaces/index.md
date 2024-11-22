@@ -37,26 +37,25 @@ Name | Type |
 ------ | ------ |
 `options?` | any |
 
-___
+<hr />
 
 ###  page
 
 • **page**: *[PageApi](page.pageapi.md)*
 
-___
-
+<hr />
 
 ###  runtime
 
 • **runtime**: *[Runtime](index.runtime.md)*
 
-___
+<hr />
 
 ###  topbar
 
 • **topbar**: *[TopbarApi](topbar.topbarapi.md)*
 
-___
+<hr />
 
 ###  user
 
