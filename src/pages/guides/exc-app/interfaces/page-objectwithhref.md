@@ -17,7 +17,7 @@ title: 'Interface: ObjectWithHref'
 
 ### Properties
 
-* [href](page.objectwithhref.md#href)
+* [href](page-objectwithhref.md#href)
 
 ## Properties
 
