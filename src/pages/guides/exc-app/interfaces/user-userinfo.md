@@ -17,15 +17,15 @@ title: 'Interface: UserInfo'
 
 ### Properties
 
-* [imsOrg](user.userinfo.md#imsorg)
-* [imsOrgName](user.userinfo.md#imsorgname)
-* [imsOrgs](user.userinfo.md#imsorgs)
-* [imsProfile](user.userinfo.md#imsprofile)
-* [imsToken](user.userinfo.md#imstoken)
-* [locale](user.userinfo.md#locale)
-* [preferredLanguages](user.userinfo.md#preferredlanguages)
-* [subOrg](user.userinfo.md#suborg)
-* [tenant](user.userinfo.md#tenant)
+* [imsOrg](user-userinfo.md#imsorg)
+* [imsOrgName](user-userinfo.md#imsorgname)
+* [imsOrgs](user-userinfo.md#imsorgs)
+* [imsProfile](user-userinfo.md#imsprofile)
+* [imsToken](user-userinfo.md#imstoken)
+* [locale](user-userinfo.md#locale)
+* [preferredLanguages](user-userinfo.md#preferredlanguages)
+* [subOrg](user-userinfo.md#suborg)
+* [tenant](user-userinfo.md#tenant)
 
 ## Properties
 
@@ -33,49 +33,49 @@ title: 'Interface: UserInfo'
 
 • **imsOrg**: *string*
 
-___
+<hr />
 
 ###  imsOrgName
 
 • **imsOrgName**: *string*
 
-___
+<hr />
 
 ###  imsOrgs
 
 • **imsOrgs**: *object[]*
 
-___
+<hr />
 
 ###  imsProfile
 
 • **imsProfile**: *Record‹string, any›*
 
-___
+<hr />
 
 ###  imsToken
 
 • **imsToken**: *string*
 
-___
+<hr />
 
 ###  locale
 
 • **locale**: *string*
 
-___
+<hr />
 
 ###  preferredLanguages
 
 • **preferredLanguages**: *string[]*
 
-___
+<hr />
 
 ###  subOrg
 
 • **subOrg**: *string | null*
 
-___
+<hr />
 
 ###  tenant
 

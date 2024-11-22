@@ -13,15 +13,15 @@ title: 'Interface: TopbarApiProperties'
 
 * **TopbarApiProperties**
 
-  ↳ [TopbarApi](topbar.topbarapi.md)
+  ↳ [TopbarApi](topbar-topbarapi.md)
 
 ## Index
 
 ### Properties
 
-* [customEnvLabel](topbar.topbarapiproperties.md#customenvlabel)
-* [solution](topbar.topbarapiproperties.md#solution)
-* [workspaces](topbar.topbarapiproperties.md#workspaces)
+* [customEnvLabel](topbar-topbarapiproperties.md#customenvlabel)
+* [solution](topbar-topbarapiproperties.md#solution)
+* [workspaces](topbar-topbarapiproperties.md#workspaces)
 
 ## Properties
 
@@ -37,7 +37,7 @@ Gets or sets a custom environment label in the shell.
 topbar.customEnvLabel = 'Beta';
 ```
 
-___
+<hr />
 
 ###  solution
 
@@ -55,7 +55,7 @@ topbar.solution = {
 };
 ```
 
-___
+<hr />
 
 ###  workspaces
 

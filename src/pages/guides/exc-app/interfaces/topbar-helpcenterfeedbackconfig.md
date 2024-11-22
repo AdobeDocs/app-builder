@@ -17,10 +17,10 @@ title: 'Interface: HelpCenterFeedbackConfig'
 
 ### Properties
 
-* [buttonLabel](topbar.helpcenterfeedbackconfig.md#buttonlabel)
-* [enabled](topbar.helpcenterfeedbackconfig.md#enabled)
-* [subject](topbar.helpcenterfeedbackconfig.md#optional-subject)
-* [type](topbar.helpcenterfeedbackconfig.md#type)
+* [buttonLabel](topbar-helpcenterfeedbackconfig.md#buttonlabel)
+* [enabled](topbar-helpcenterfeedbackconfig.md#enabled)
+* [subject](topbar-helpcenterfeedbackconfig.md#optional-subject)
+* [type](topbar-helpcenterfeedbackconfig.md#type)
 
 ## Properties
 
@@ -28,19 +28,19 @@ title: 'Interface: HelpCenterFeedbackConfig'
 
 • **buttonLabel**: *string*
 
-___
+<hr />
 
 ###  enabled
 
 • **enabled**: *boolean*
 
-___
+<hr />
 
 ### `Optional` subject
 
 • **subject**? : *undefined | string*
 
-___
+<hr />
 
 ###  type
 

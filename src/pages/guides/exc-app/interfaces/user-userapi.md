@@ -19,18 +19,18 @@ title: 'Interface: UserApi'
 
 ### Properties
 
-* [logoutUrl](user.userapi.md#logouturl)
+* [logoutUrl](user-userapi.md#logouturl)
 
 ### EventEmitter Methods
 
-* [emit](user.userapi.md#emit)
-* [off](user.userapi.md#off)
-* [on](user.userapi.md#on)
+* [emit](user-userapi.md#emit)
+* [off](user-userapi.md#off)
+* [on](user-userapi.md#on)
 
 ### Other Methods
 
-* [authExpired](user.userapi.md#authexpired)
-* [get](user.userapi.md#get)
+* [authExpired](user-userapi.md#authexpired)
+* [get](user-userapi.md#get)
 
 ## Properties
 
@@ -65,7 +65,7 @@ Name | Type | Description |
 
 **Returns:** *void*
 
-___
+<hr />
 
 ###  off
 
@@ -99,7 +99,7 @@ Name | Type |
 
 **Returns:** *void*
 
-___
+<hr />
 
 ###  on
 
@@ -133,7 +133,7 @@ Name | Type |
 
 **Returns:** *void*
 
-___
+<hr />
 
 ## Other Methods
 
@@ -146,7 +146,7 @@ re-authenticated.
 
 **Returns:** *void*
 
-___
+<hr />
 
 ###  get
 

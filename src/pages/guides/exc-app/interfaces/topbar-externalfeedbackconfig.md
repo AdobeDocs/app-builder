@@ -17,10 +17,10 @@ title: 'Interface: ExternalFeedbackConfig'
 
 ### Properties
 
-* [buttonLabel](topbar.externalfeedbackconfig.md#buttonlabel)
-* [enabled](topbar.externalfeedbackconfig.md#enabled)
-* [type](topbar.externalfeedbackconfig.md#type)
-* [url](topbar.externalfeedbackconfig.md#url)
+* [buttonLabel](topbar-externalfeedbackconfig.md#buttonlabel)
+* [enabled](topbar-externalfeedbackconfig.md#enabled)
+* [type](topbar-externalfeedbackconfig.md#type)
+* [url](topbar-externalfeedbackconfig.md#url)
 
 ## Properties
 
@@ -28,19 +28,19 @@ title: 'Interface: ExternalFeedbackConfig'
 
 • **buttonLabel**: *string*
 
-___
+<hr />
 
 ###  enabled
 
 • **enabled**: *boolean*
 
-___
+<hr />
 
 ###  type
 
 • **type**: *"external"*
 
-___
+<hr />
 
 ###  url
 

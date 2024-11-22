@@ -19,9 +19,9 @@ Defines the attributes of the solution to display on the left-side of the top ba
 
 ### Properties
 
-* [icon](topbar.solution.md#icon)
-* [shortTitle](topbar.solution.md#shorttitle)
-* [title](topbar.solution.md#title)
+* [icon](topbar-solution.md#icon)
+* [shortTitle](topbar-solution.md#shorttitle)
+* [title](topbar-solution.md#title)
 
 ## Properties
 
@@ -32,7 +32,7 @@ Defines the attributes of the solution to display on the left-side of the top ba
 The icon to display in the solution area. If this isn't set, then the default experience cloud
 icon will be used.
 
-___
+<hr />
 
 ###  shortTitle
 
@@ -40,7 +40,7 @@ ___
 
 The title to display on smaller browser resolutions where the horizonal space is constrained.
 
-___
+<hr />
 
 ###  title
 
