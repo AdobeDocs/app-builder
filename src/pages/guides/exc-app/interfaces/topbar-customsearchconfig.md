@@ -17,15 +17,15 @@ title: 'Interface: CustomSearchConfig'
 
 ### Properties
 
-* [callback](topbar.customsearchconfig.md#optional-callback)
-* [enabled](topbar.customsearchconfig.md#optional-enabled)
-* [open](topbar.customsearchconfig.md#optional-open)
+* [callback](topbar-customsearchconfig.md#optional-callback)
+* [enabled](topbar-customsearchconfig.md#optional-enabled)
+* [open](topbar-customsearchconfig.md#optional-open)
 
 ## Properties
 
 ### `Optional` callback
 
-• **callback**? : *[Callback](topbar.callback.md)*
+• **callback**? : *[Callback](topbar-callback.md)*
 
 The callback to execute when the search icon is clicked.
 
