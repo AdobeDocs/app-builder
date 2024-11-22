@@ -17,10 +17,10 @@ title: 'Interface: CustomFeedbackConfig'
 
 ### Properties
 
-* [buttonLabel](topbar.customfeedbackconfig.md#buttonlabel)
-* [callback](topbar.customfeedbackconfig.md#callback)
-* [enabled](topbar.customfeedbackconfig.md#enabled)
-* [type](topbar.customfeedbackconfig.md#type)
+* [buttonLabel](topbar-customfeedbackconfig.md#buttonlabel)
+* [callback](topbar-customfeedbackconfig.md#callback)
+* [enabled](topbar-customfeedbackconfig.md#enabled)
+* [type](topbar-customfeedbackconfig.md#type)
 
 ## Properties
 
@@ -28,19 +28,19 @@ title: 'Interface: CustomFeedbackConfig'
 
 • **buttonLabel**: *string*
 
-___
+<hr />
 
 ###  callback
 
-• **callback**: *[Callback](topbar.callback.md)*
+• **callback**: *[Callback](topbar-callback.md)*
 
-___
+<hr />
 
 ###  enabled
 
 • **enabled**: *boolean*
 
-___
+<hr />
 
 ###  type
 
