@@ -265,15 +265,15 @@ module.exports = {
               },
               {
                 "title": "Page Object with path",
-                "path": "guides/exc-app/interfaces/page.objectwithpath.md"
+                "path": "guides/exc-app/interfaces/page-objectwithpath.md"
               },
               {
                 "title": "Page API",
-                "path": "guides/exc-app/interfaces/page.pageapi.md"
+                "path": "guides/exc-app/interfaces/page-pageapi.md"
               },
               {
                 "title": "Page API Properties",
-                "path": "guides/exc-app/interfaces/page.pageapiproperties.md"
+                "path": "guides/exc-app/interfaces/page-pageapiproperties.md"
               },
               {
                 "title": "Topbar callback",
@@ -281,39 +281,39 @@ module.exports = {
               },
               {
                 "title": "Topbar custom feedback config",
-                "path": "guides/exc-app/interfaces/topbar.customfeedbackconfig.md"
+                "path": "guides/exc-app/interfaces/topbar-customfeedbackconfig.md"
               },
               {
                 "title": "Topbar custom search config",
-                "path": "guides/exc-app/interfaces/topbar.customsearchconfig.md"
+                "path": "guides/exc-app/interfaces/topbar-customsearchconfig.md"
               },
               {
                 "title": "Topbar external feedback config",
-                "path": "guides/exc-app/interfaces/topbar.externalfeedbackconfig.md"
+                "path": "guides/exc-app/interfaces/topbar-externalfeedbackconfig.md"
               },
               {
                 "title": "Topbar help center feedback config",
-                "path": "guides/exc-app/interfaces/topbar.helpcenterfeedbackconfig.md"
+                "path": "guides/exc-app/interfaces/topbar-helpcenterfeedbackconfig.md"
               },
               {
                 "title": "Topbar solution",
-                "path": "guides/exc-app/interfaces/topbar.solution.md"
+                "path": "guides/exc-app/interfaces/topbar-solution.md"
               },
               {
                 "title": "Topbar API",
-                "path": "guides/exc-app/interfaces/topbar.topbarapi.md"
+                "path": "guides/exc-app/interfaces/topbar-topbarapi.md"
               },
               {
                 "title": "Topbar API properties",
-                "path": "guides/exc-app/interfaces/topbar.topbarapiproperties.md"
+                "path": "guides/exc-app/interfaces/topbar-topbarapiproperties.md"
               },
               {
                 "title": "User API",
-                "path": "guides/exc-app/interfaces/user.userapi.md"
+                "path": "guides/exc-app/interfaces/user-userapi.md"
               },
               {
                 "title": "User Info",
-                "path": "guides/exc-app/interfaces/user.userinfo.md"
+                "path": "guides/exc-app/interfaces/user-userinfo.md"
               },
             ]
           }

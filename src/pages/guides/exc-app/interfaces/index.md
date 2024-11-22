@@ -29,7 +29,7 @@ description: Interface modules
 
 #### Type declaration:
 
-▸ (`options?`: any): *[Runtime](index.runtime.md)*
+▸ (`options?`: any): *[Runtime](index-runtime.md)*
 
 **Parameters:**
 
@@ -41,19 +41,19 @@ Name | Type |
 
 ###  page
 
-• **page**: *[PageApi](page.pageapi.md)*
+• **page**: *[PageApi](page-pageapi.md)*
 
 <hr />
 
 ###  runtime
 
-• **runtime**: *[Runtime](index.runtime.md)*
+• **runtime**: *[Runtime](index-runtime.md)*
 
 <hr />
 
 ###  topbar
 
-• **topbar**: *[TopbarApi](topbar.topbarapi.md)*
+• **topbar**: *[TopbarApi](topbar-topbarapi.md)*
 
 <hr />
 
@@ -63,4 +63,4 @@ Name | Type |
 
 #### Type declaration:
 
-▸ (): *[UserApi](user.userapi.md)*
+▸ (): *[UserApi](user-userapi.md)*
