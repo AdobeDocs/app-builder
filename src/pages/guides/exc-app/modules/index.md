@@ -62,6 +62,8 @@ Name | Type |
 
 **Returns:** *void*
 
+___
+
 ###  runtime
 
 ▸ **runtime**(): *[Runtime](../interfaces/index.runtime.md)*
