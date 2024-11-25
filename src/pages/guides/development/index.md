@@ -93,7 +93,9 @@ Create a file named .vscode/launch.json at the root of your project with the fol
 2. Select a launch configuration
 3. Press F5 or select Debug: Start Debugging from the Command Palette to start your debugging session.
 
-
+> Note: This debug configuration is dynamic and allows you to set a port in the .env file 
+> ex.
+> &nbsp;  `PORT=3000`
 
 Actions are loaded dynamically so the code is not evaluated until an http request is made.  This means that when you put a breakpoint in your action code it will be grayed out until you trigger a call to the action. Web action urls are mapped to `https://localhost:PORT/api/v1/web/<package-name>/<action-name>` and can be called from your frontend, opening the url in the browser, or with cURL etc.
 
