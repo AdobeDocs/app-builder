@@ -22,7 +22,7 @@ Now let's take a deeper look into these actions:
 
 Debug Tracing is a pretty important tool on Developer Console for users who want to be informed whether their runtime action invocation is successful or not or what it responds.
 After setting up a runtime action as webhook, upon its successful invocation, you can see custom response returned from your own runtime action in the Debug Tracing webhook response section as below.
-![debug-1](assets/console-project-2.png)
+![debug-1](assets/debug-tracing-1.png)
 
 However, in case of any failed invocation to your webhook, you will get an error response body with an activation id for the same. This helps users to debug their actions as below
 
