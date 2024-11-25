@@ -49,7 +49,6 @@ The following covers how you can debug your App Builder application frontend and
 
 > Technically, any debugger that can attach to Node.js can be used to debug App Builder applications, although some of the details will differ from the configurations covered here. For details on node debugging see: 
 
-
 ### Debugging with VS Code
 
 Create a file named .vscode/launch.json at the root of your project with the following content:
@@ -93,7 +92,3 @@ Create a file named .vscode/launch.json at the root of your project with the fol
 1. Open the Debug panel (Ctrl+Shift+D on Windows/Linux, ⇧+⌘+D on macOS)
 2. Select a launch configuration
 3. Press F5 or select Debug: Start Debugging from the Command Palette to start your debugging session.
-
-> Note: This debug configuration is dynamic and allows you to set a port in the .env file <br/>
-> ex. <br/>
-> &nbsp;  `PORT=3000`
