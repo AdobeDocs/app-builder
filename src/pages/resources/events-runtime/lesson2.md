@@ -37,5 +37,4 @@ You may now get activation ids for two types of failed activations -
 ![debug-2](assets/debug-tracing-2.png)
 
 For failed invocation to your runtime action, you will get an error response with the failed activation id for the same like below
-
 ![debug-3](assets/debug-tracing-3.png)
