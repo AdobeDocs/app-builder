@@ -33,3 +33,9 @@ You may now get activation ids for two types of failed activations -
 - Signature Validator Action
 - Your Runtime Action
 - In case of failure in the signature verification step, this is how you will get the error response and the failed activation id for the same.
+
+![debug-2](assets/debug-tracing-2.png)
+
+For failed invocation to your runtime action, you will get an error response with the failed activation id for the same like below
+
+![debug-3](assets/debug-tracing-3.png)
