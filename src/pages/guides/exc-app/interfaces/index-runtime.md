@@ -52,7 +52,7 @@ Name | Type | Description |
 
 **Returns:** *void*
 
-___
+<hr />
 
 ###  off
 
@@ -86,7 +86,7 @@ Name | Type |
 
 **Returns:** *void*
 
-___
+<hr />
 
 ###  on
 
