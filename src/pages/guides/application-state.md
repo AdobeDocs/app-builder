@@ -136,3 +136,105 @@ COMMANDS
   app state put     Put a key-value
   app state stats   Display stats
 ```
+
+The default region is amer, to access another region, you can use the --region flag or add the AIO_STATE_REGION=emea variable to your .env.
+
+Navigate the CLI usage documentation from the repo's [README](https://github.com/adobe/aio-cli-plugin-app-storage?tab=readme-ov-file#usage) or by using the --help flag on the desired command.
+
+### Limits & validation
+
+Limits are enforced and can't be changed on a per-user basis.
+
+- State is only available to Runtime namespaces created via the Developer Console, which follow the App Builder format: orgId-project(-workspace)?. Legacy namespaces are not supported.
+- Max state value size: 1MB.
+- Max state key size: 1024 bytes.
+- Max-supported TTL is 365 days.
+- Values format: any string|binary.
+- Keys format: string only alphanumeric with -,_,..
+
+### Quotas
+
+Quotas are limits that depend on the organization's entitlements. Every organization with App Builder access is entitled to at least 1 State quota.
+
+At the organization level, 1 quota provides:
+
+- 200GB/month bandwidth usage (~5MB/min): bandwidth usage = bytes uploaded + bytes downloaded
+- 1GB storage: storage usage = 2 * key_sizes + value_sizes
+
+The quota is shared for all State containers in the organization, across all regions. It is not enforced for now, just tracked.
+
+*Example: org 123 is entitled to 3 quotas, the total bandwidth usage of the organization should not exceed 600GB/month and the storage across regions should not exceed 3GB.*
+
+We also enforce rate-limiting at the State container (=Workspace) level within a region. Rate-limiting per quota unit is defined as:
+
+- 10MB/min with up to 1MB/sec peaks for production Workspaces.
+- 2MB/min with up to 1MB/sec peaks for non-production Workspaces.
+
+In case of exceeding the rate-limiting quota, the State service will return with 429s. However, a retry mechanism in the State library will mitigate the propagation of the error on short time windows.
+
+*Example: org 123 is entitled to 5 quotas, any production workspace will not be throttled before consuming 50MB/min or 5MB/sec bandwidth in a single region.*
+
+### match option
+
+state.deleteAll and state.list support a match option to filter keys.
+
+match supports a glob-style pattern via the * character, suppose you have the following keys: key, base.key, key-1
+
+- match=key will match key
+- match=k* will match key
+- match=*k* will match key, base.key, key-1
+- match=*-1 will match key-1
+- match=base.*-1 will match none
+
+### List guarantees
+
+Using state.list, you can iterate over the keys stored in your State container. State implements listing with a cursor-based iterator, which requires multiple calls to the State service to traverse all your keys. Please note, that list is subject to the bandwidth rate-limiting quotas, so listing many keys may result in 429s.
+
+list provides the following guarantees:
+
+- A full iteration always returns all keys that were present in the container during the start to the end of a full iteration.
+- A full iteration never returns any key that was deleted prior to an iteration.
+
+However, list also has the following drawbacks:
+
+- Keys that were not constantly present in the collection during a full iteration, may be returned or not: it is undefined.
+- A given key may be returned multiple times across iterations (but not within a
+  same iteration). You can mitigate this by either performing operations that are
+  safe when applied multiple times (recommended with many keys) or by collecting all keys in an
+  array first and then remove any duplicates.
+- In some rare cases, list may return expired keys.
+
+Furthermore, you can control the list behavior via those two options:
+
+- match, to filter keys [using a glob-style pattern](#match-option).
+- countHint, to specify an approximate amount of keys returned per iteration. State doesn't provide a guarantee on the number of elements returned per iteration, but we try (again with no guarantees) to return at least countHint elements per iteration.
+
+### Troubleshooting
+
+Set DEBUG=@adobe/aio-lib-state* to see debug logs.
+
+## Files
+
+*Files is currently implemented as an abstraction layer over Azure Blob. Major changes and additional features are planned, stay tuned.*
+
+To learn more please visit the [Adobe I/O File Storage library](https://github.com/adobe/aio-lib-files?tab=readme-ov-file#adobe-io-lib-files) repository.
+
+## Feature Matrix
+
+|                     | Files                           | State                                    | State Legacy                   |
+| ------------------- | ------------------------------- | ---------------------------------------- | ------------------------------ |
+| read  write  delete | Y                               | Y                                        | Y                              |
+| list                | Y                               | Y                                        | N                              |
+| streams             | Y                               | N                                        | N                              |
+| copy                | Y                               | N                                        | N                              |
+| deleteAll           | N                               | Y                                        | N                              |
+| sharing             | Y (pre-sign URLs)               | N                                        | N                              |
+| Time-To-Live        | N                               | Y                                        | Y                              |
+| max TTL             | infinite                        | 365 days                                 | infinite                       |
+| max file/value size | 200GB                           | 1MB                                      | 2MB                            |
+| max key size        | 1KB                             | 1KB                                      | 1KB                            |
+| key charset         | open                            | alphanumeric with _-.                    | any but /\?#                   |
+| max request load    | N/A                             | 10MB/min, 1MB/s <br/>(scalable)          | 900 RU/min (~KB/min)           |
+| max storage         | 1TB                             | 1GB (scalable)                           | 10GB                           |
+| regions             | East US <br/> West US read-only | Amer (US) <br/>Emea (EU)<br/> Apac (JPN) | East US <br/> Europe read-only |
+| consistency         | strong                          | strong                                   | eventual                       |
