@@ -221,20 +221,20 @@ To learn more please visit the [Adobe I/O File Storage library](https://github.c
 
 ## Feature Matrix
 
-|            | Files                     | State                         | State Legacy             |
-| ---------------- | ------------------------- | ----------------------------- | ------------------------ |
-| Read Write Delete| Y<br>Y<br>Y                | Y<br>Y<br>Y                    | Y<br>Y<br>Y               |
-| List             | Y                         | Y                             | N                        |
-| Streams          | Y                         | N                             | N                        |
-| Copy             | Y                         | N                             | N                        |
-| DeleteAll        | N                         | Y                             | N                        |
-| Sharing          | Y (pre-sign URLs)         | N                             | N                        |
-| Time-To-Live     | N                         | Y                             | Y                        |
-| Max TTL          | infinite                  | 365 days                      | infinite                 |
-| Max file/value size | 200GB                   | 1MB                           | 2MB                      |
-| Max key size     | 1KB                       | 1KB                           | 1KB                      |
-| Key charset      | open                      | alphanumeric with _-.         | any but /\?#             |
-| Max request load | N/A                       | 10MB/min, 1MB/s (scalable)    | 900 RU/min (~KB/min)     |
-| Max storage      | 1TB                       | 1GB (scalable)                | 10GB                     |
-| Regions          | East US, West US (read-only) | Amer (US), EMEA (EU), APAC (JPN) | East US, Europe (read-only) |
-| Consistency      | Strong                    | Strong                        | Eventual                 |
+|                     | Files                     | State                         | State Legacy             |
+| ------------------- | ------------------------- | ----------------------------- | ------------------------ |
+| read write  delete  | Y<br>Y<br>Y               | Y<br>Y<br>Y                   | Y<br>Y<br>Y              |
+| list                | Y                         | Y                             | N                        |
+| streams             | Y                         | N                             | N                        |
+| copy                | Y                         | N                             | N                        |
+| deleteAll           | N                         | Y                             | N                        |
+| sharing             | Y (pre-sign URLs)         | N                             | N                        |
+| Time-To-Live        | N                         | Y                             | Y                        |
+| max TTL             | infinite                  | 365 days                      | infinite                 |
+| max file/value size | 200GB                     | 1MB                           | 2MB                      |
+| max key size        | 1KB                       | 1KB                           | 1KB                      |
+| key charset         | open                      | alphanumeric with _-.         | any but /\?#             |
+| max request load    | N/A                       | 10MB/min, 1MB/s(scalable)     | 900 RU/min (~KB/min)     |
+| max storage         | 1TB                       | 1GB (scalable)                | 10GB                     |
+| regions             | East US West US read-only | Amer (US)Emea (EU) Apac (JPN) | East US Europe read-only |
+| consistency         | strong                    | strong                        | eventual                 |
