@@ -44,5 +44,3 @@ Finally, for Campaign Standard integration, you also need to set the required va
 All set environment variables should be then uncommented.
 
 ![dot-env](assets/dot-env.png)
-
-

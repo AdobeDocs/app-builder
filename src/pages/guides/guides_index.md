@@ -11,32 +11,33 @@ title: Reference Documentation
 
 ## App Builder guides
 
-* [Application logging](app_builder_guides/application_logging/logging.md)
+For a close examination of App Builder's components, operation, and resources, follow the [Architecture overview](app_builder_guides/architecture_overview/architecture_overview.md) thread. For details of specific technologies and processes, consult the materials under your topic of interest below.
 
 * [Architecture overview](app_builder_guides/architecture_overview/architecture_overview.md)
-
+* [Application logging](app_builder_guides/application_logging/logging.md)
 * [Configuration](app_builder_guides/configuration/configuration.md)
-
 * [Deployment](app_builder_guides/deployment/deployment.md)
-
 * [Development](app_builder_guides/development.md)
-
 * [Distribution](app_builder_guides/distribution.md)
-
 * [Events](app_builder_guides/custom-events.md)
-
 * [Extensions](app_builder_guides/extensions/extensions.md)
-
 * [Integration with Adobe Experience Cloud](app_builder_guides/exc_app/aec_integration.md)
-
 * [Security](app_builder_guides/security/index.md)
-
 * [Telemetry](app_builder_guides/telemetry.md)
-
-* [Migrating Apps to DX Experience Cloud v1 SPAs](app_builder_guides/migrate_app_to_exp_cloud_spa.md)
 
 ## Adobe I/O Runtime guides
 
-* [Asynchronous calls](runtime_guides/asynchronous_calls.md)
-* [CI/CD pipeline](runtime_guides/ci-cd_pipeline.md)
-* [Creating actions](runtime_guides/creating_actions.md)
+These materials may be read as a tutorial or as a set of reference materials. Start the tutorial with [Using Adobe I/O Runtime](runtime_guides/using_runtime.md), or select the reference topic of interest.
+
+* [Creating Actions](runtime_guides/creating_actions.md)
+* [Asynchronous Calls](runtime_guides/asynchronous_calls.md)
+* [Throughput Tuning](runtime_guides/throughput_tuning.md)
+* [Security Guide](runtime_guides/security_general.md) 
+* [Securing Web Actions](runtime_guides/securing_web_actions.md)
+* [Creating REST APIs](runtime_guides/creating_rest_apis.md)
+* [Using Packages](runtime_guides/using_packages.md)
+* [Logging and Monitoring](runtime_guides/logging_monitoring.md)
+* [Debugging](runtime_guides/debugging.md)
+* [Troubleshooting](runtime_guides/troubleshooting.md)
+* [System Settings](runtime_guides/system_settings.md)
+* [CI/CD Pipeline](runtime_guides/ci-cd_pipeline.md)

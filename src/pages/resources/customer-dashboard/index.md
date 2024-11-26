@@ -23,6 +23,7 @@ App Builder is a complete framework that enables enterprise developers to build 
 [Campaign Standard APIs](https://docs.adobe.com/content/help/en/campaign-standard/using/working-with-apis/about-campaign-standard-apis/about-campaign-standard-apis.html) are aimed at letting you create integrations for Adobe Campaign Standard and build your own ecosystem by interfacing Adobe Campaign Standard with the panel of technologies that you use.
 
 In this lab, you will learn how to:
+
 * build a simple web app listing customer profiles 
 * enable custom workflow for sending personalized email promotions through Campaign Standard API.
 

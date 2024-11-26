@@ -1,36 +1,42 @@
 # Throughput Tuning
 
-The main instrument you can use for tuning how a given action is executed and enable a faster number of executions, is the value you set for the `action/container concurrency`. This value is not related to the concurrent value per namespace or minuteRate value, though these two enforce the upper limit for actions executed per minute your namespace can reach.
+## Containers
 
-The default value is `200` and it means that 200 invocation can happen in the same container for the that action. Suppose that you want to execute 100 times a `HelloWorld` action at the same time or in short period of time (minutes). With the default value (`200`) it means that the system will use 1  container instead of using up to 100 containers.
+### Setting concurrency
 
-This enables you to avoid cold-start issues. When the system doesn't have any containers left, it has to create new ones. This cold-start adds a lot of latency to your application.
+The main instrument for tuning how rapidly actions can be executed is the value you set for `action/container concurrency`. This is not related to the concurrent value per namespace or minuteRate value, although these two enforce an upper limit on actions executed per minute in your namespace.
 
-You can set any value between `1` and `500`. In the example below, the limit is set to `100`:
+The default `action/container concurrency` value is `200` invocations of that action can occur in the same container. If, for example, you plan to execute a `HelloWorld` action 100 times, either simultaneously or within minutes, the default value (`200`) means that the system will use one container rather than as many as 100.
+
+This helps avoid cold-start issues. When the system has no containers left, it creates new ones - "cold starts" that add a lot of latency to your application.
+
+You can set `action/container concurrency` to any value between `1` and `500`. Here, the limit is set to `100`:
+
 ```
 aio rt:action:create actionName fileName.js -c 100
 ```
 
-Some considerations to keep in mind:
-1. A container is kept warm after an invocation finished for 10 minutes. This means that for 10 minutes you can be 99% you don't get cold-starts when executing the same action
-2. Depending on how much memory/resources your action consumes, you can use a smaller or a higher value. A good average number to start with is `200`. You should experiment to make sure the value you choose is working 
-3. Make sure that your code is working when being executed in parallel. Using global variables to store values that are different between invocations is a recipe for disaster
-4. If your Action works on some large data that is not different between invocations, then using a global variable can maximize the chances that the next execution can reuse it. However your code should handle the situation where the variable is not initialized
-5. It is not guarantee that all invocations will use the same container. In case of errors, the existing container is destroyed and a new container will be used
-6. In cases where your action code is memory hungry, you might need to tweak this setting to a lower value 
+### Concurrency considerations
 
+1. Containers are kept warm after for 10 minutes after an invocation finishes. For those 10 minutes, it is highly unlikely (p<.01) that invoking the same action will require a cold start.
+2. Experiment with the value you set for concurrency limits. The default, `200`, is a good place to start, but a smaller or a larger value may be better, depending on how much memory and other resources your action consumes.  
+3. Be sure your code is designed to work when executed in parallel. For example, avoid using global variables to store values that may differ between invocations.
+4. If an action works on a large data set that is not different from one invocation to another, a global variable can maximize the chances that the next execution can use it. But your code should handle the condition in which the variable is not initialized.
+5. It is not guaranteed that all invocations will use the same container. In case of errors, for example, the existing container is destroyed and a new one created.
+6. If your action code consumes a large amount of memory, you may need to set concurrency to a lower value to avoid exceeding the container's memory limit.
 
-## Using pre-warm containers or optimizing against cold-starts
+### Using pre-warmed containers
 
-A second way for maximizing your chances of having the best low latency possible is creating actions that use the default Node version and a memory setting that is `256MB`, `512MB`, or `1024MB` - this way you avoid cold-starts in most cases. 
+A second way avoid cold-starts and mimimize latency is to create actions that use the default Node version, and a memory settings of `256MB`, `512MB`, or `1024MB`. 
 
-The system has a pool of containers with these settings waiting to be used for any incoming call that can't be sent to an existing running container and the action matches the container settings (Node version and memory setting). In this scenario, time will only be spent for injecting your action code as opposed to wait for creating a container first and then get the code injected.
+The system has a pool of "pre-warmed" containers it will use for any incoming call that can't be sent to a running container - so long as the action matches the pre-warmed container's Node version and memory setting. If it does, time will still be spent for injecting your action code, but not for creating a container first.
 
-## Caching Responses
+## Caching responses
 
-The second instrument you have to maximize throughput is caching the action response. When you cache an action response, for the time the cache is valid, you can invoke the action without increasing the counter used by minuteRate or concurrent action invocations per namespace. In this situations, your action is not actually executed, instead the system serves the result from cache.
+In addition to optimizing the use of containers, caching action responses helps improve throughput. For the time a cache is valid, invocations of the action will not increase the `minuteRate` counter or concurrent action invocations per namespace. This is because the action is not actually executed: the system serves the result from the cache.
 
-You use the Cache-Control dirrective in order to configure the cache. Below is an example of an action that sets the cache with a TTL of `30 minutes`. In the response object you'll find an entry with `X-Cache: HIT` or `X-Cache: MISS` (depending on the answer being returned from cache or not). 
+Use the Cache-Control dirrective to configure the cache. Here is an example of an action that sets the cache with a Time to Live of `30 minutes`. In the response object you'll find an entry with `X-Cache: HIT` or `X-Cache: MISS`, depending on whether the answer was returned from the cache or not. 
+
 ```
 function main(args) {
    return {
@@ -43,23 +49,30 @@ function main(args) {
 }
 ```
 
-One way to verify if a response is returned from the cache or not is by checking for the following header:
+One way to verify whether a response is returned from the cache or not is to check for this header:
+
 ```
 X-GW-Cache: HIT
 ```
 
 <InlineAlert slots="text"/>
 
-Encoded responses can't be cached, this means that `Content-Encoding` response header needs to be always empty in order for the response to be cached. 
+Encoded responses can't be cached, so the `Content-Encoding` response header must be empty to cache responses. 
 
-### Vary Header
-The caching layer supports the use of [Vary header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Vary) to enable caching based not only on URL and query parameters but on header fields.
+### Vary header
 
-For example you here is some action that responds to certain header fields when doing some complex calculation:
+The caching layer supports the use of [Vary header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Vary) to cache based on header fields as well as on URL and query parameters.
 
-`curl -H "storeId: 1234" https://runtime-namespace-1.adobeioruntime.net/api/v1/web/store?query={products(pageSize: 10,filter:{ id:{ eq:"abcedefg"}}){items{name}}}`
+This action responds to certain header fields while doing a complex calculation:
 
-Could produce a response:
+```
+curl -H "storeId: 1234" https://runtime-namespace-1.
+adobeioruntime.net/api/v1/web/store?query={products
+(pageSize: 10,filter:{ id:{ eq:"abcedefg"}}){items{name}}}`
+```
+
+It could produce this response:
+
 ```
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -70,4 +83,8 @@ X-GW-Cache: MISS
 {"someBigData" : ["array"]}
 ```
 
-That would add the `storeId` to the cache key such that subsequent requests with the same `storeId` in the headers will create a `HIT` up till the cahe control header settings and anytime the value varies, it will be a `MISS` and be stored under a new key with new cache control directives.
+This response would add the `storeId` to the cache key, so that subsequent requests with the same `storeId` in their headers would create a `HIT`, up to the limits imposed by the cache control header settings. Any time the value varied, it would be a `MISS`, and would be stored under a new key with new cache control directives.
+
+## Next step
+
+Return to [Guides Index](../guides_index.md).

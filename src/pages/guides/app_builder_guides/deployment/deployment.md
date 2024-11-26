@@ -26,7 +26,7 @@ If you do not own a [Runtime](/runtime) namespace, please [request trial access]
 
 The [CLI](https://github.com/adobe/aio-cli) offers three types of deployment to Developers:
 
-## Local Deployment
+## Local deployment
 
 Local deployment capabilities are offered to Developers who plan to test and debug their application before it is deployed to the Content Delivery Network included with App Builder.
 
@@ -42,7 +42,7 @@ Developers who choose this option will not be able to run code that uses [Files]
 
 This deployment scenario doesn't require any specific credentials, since both [Runtime](/runtime) actions and application UI are hosted on the developer's machine.
 
-#### CLI Command
+#### CLI command
 
 This deployment is triggered when running `aio app dev` at the root of the Custom Application source code directory.
 
@@ -62,7 +62,7 @@ For headful custom applications, the UI will be served locally from [ParcelJS](h
 
 ### Remote Runtime actions and local UI
 
-#### Technical Prerequisites
+#### Technical prerequisites
 
 This deployment scenario requires [Runtime](/runtime) credentials in a .env file at the root of the custom application source code folder, as documented in the [Setup Assumptions](#setup-assumptions) above.
 
@@ -70,7 +70,7 @@ This deployment scenario requires [Runtime](/runtime) credentials in a .env file
 
 This feature is useful for Developers planning to test and debug locally their custom application in a live environment fully integrated to Adobe's ecosystem, with minimal deployment time and efforts.
 
-#### CLI Command
+#### CLI command
 
 This deployment is triggered when running `aio app run` at the root of the Custom Application source code directory.
 
@@ -90,7 +90,7 @@ This deployment scenario requires [Runtime](/runtime) credentials in an `.env` f
 
 This feature is useful for Developers planning to test and preview custom applications fully integrated to Adobe's ecosystem, in conditions that are similar to a production deployment.
 
-#### CLI Command
+#### CLI command
 
 This deployment is triggered when running `aio app deploy` at the root of the Custom Application source code directory.
 

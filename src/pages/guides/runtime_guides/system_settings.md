@@ -1,51 +1,47 @@
 # System Settings
 
-When creating actions or debugging issues, it is important to know the system settings and limitations. Here are the ones you should consider when designing your actions.
+These are the system settings and limitations to consider when designing and debugging your actions.
 
-| Limit | Description | Configurable | Default         |  Range  | 
-|---|---| --- |-----------------| --- |
-| timeout | A container is not allowed to run longer than N milliseconds. Blocking calls (like web actions) can't run longer than 60,000 milliseconds (1 minute). Non-blocking calls can run up to 3,600,000 milliseconds | per action | 60,000 milliseconds | 100ms - 3,600,000ms  |
-| memory | A container is not allowed to allocate more than N MB of memory | per action | 256MB           | 128MB - 4096MB |
-| minuteRate (actions)| no more than N actions may be invoked per namespace per minute. If exceeded, the error is `429: TOO MANY REQUESTS` | not configurable, per namespace | 600/minute      | 600/minute |
-| minuteRate (web actions with extra logging)| no more than N web actions may be invoked with the header `X-OW_EXTRA-LOGGING: on` per namespace per minute. If exceeded, the error is `429: TOO MANY REQUESTS` | not configurable, per namespace | 30/minute       | 30/minute |
-| logs | A container is not allowed to write more than N MB to stdout | per action | 10MB            | 0MB - 10MB |
-| concurrent | No more than N activations may be submitted per namespace either executing or queued for execution. If exceeded, the error is `429: TOO MANY REQUESTS` | Not configurable, per namespace | 100             | 100 |
-| action/container concurrency  | The number of action invocations send to the same container in parallel | per action | 200             |1 - 500 |
-| codeSize | The maximum size of the action including dependencies, archived | not configurable, per action | 22MB            | 0MB - 22MB |
-| parameters | The maximum size of the parameters that can be attached | not configurable, per action/package/trigger | 1MB             | 0 - 1MB |
-| payload | The maximum POST content size plus any carried parameters for an action invocation or trigger firing | not configurable, per action/trigger | 1MB             | 0 - 1MB |
-| result | The maximum size of the action result | not configurable, per action | 1MB             |  |
-| minuteRate (triggers) | No more than N triggers may be fired per namespace per minute. If exceeded, the error is `429: TOO MANY REQUESTS` | not configurable, per namespace | 600/minute      | 600/minute |
-| actionsSequenceMaxlength | No more than N actions can be chained in a sequence | not configurable, per namespace | 50              | 50 |
-| list | The maximum number of entities that can be listed | per list request | 30              | 1 - 50 |
-| local storage | Local storage available for action | not configurable | 600MB ||
+| Limit                                       | Description                                                                                                                                      | Configurable                                      | Default             | Range               |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------- | ------------------- | ------------------- |
+| timeout                                     | Container run time limit, in msec. For blocking calls like web actions, 60,000 msec (1 minute); for non-blocking calls, 3,600,000 msec (1 hour). | per action                                        | 60,000 milliseconds | 100ms - 3,600,000ms |
+| memory                                      | Container memory allocation limit, in MB.                                                                                                        | per action                                        | 256MB               | 128MB - 4096MB      |
+| minuteRate (actions)                        | Action rate limit per namespace per minute. Returns `429: TOO MANY REQUESTS` if exceeded.                                                        | per namespace (not configurable)                  | 600/minute          | 600/minute          |
+| minuteRate (web actions with extra logging) | Rate limit per namespace per minute for actions invoked with the header `X-OW_EXTRA-LOGGING: on` Returns `429: TOO MANY REQUESTS` if exceeded.   | per namespace (not configurable)                  | 30/minute           | 30/minute           |
+| logs                                        | Container limit on write volume to stdout, in MB.                                                                                                | per action                                        | 10MB                | 0MB - 10MB          |
+| concurrent                                  | Limit on  activations  submitted or queued for execution per namespace. Returns `429: TOO MANY REQUESTS` if exceeded.                            | per namespace (not configurable)                  | 100                 | 100                 |
+| action / container concurrency              | Limit on action invocations sent in parallel to the same container.                                                                              | per action                                        | 200                 | 1 - 500             |
+| codeSize                                    | Limit on archived action size, including dependencies,  in MB.                                                                                   | per action (not configurable)                     | 22MB                | 0MB - 22MB          |
+| parameters                                  | Size limit of attached parameters, in MB.                                                                                                        | per action / package / trigger (not configurable) | 1MB                 | 0 - 1MB             |
+| payload                                     | Size limit on POST content, including  carried parameters for an action invocation or trigger firing, in MB.                                     | per action / trigger (not configurable)           | 1MB                 | 0 - 1MB             |
+| result                                      | Size limit on action result, in MB.                                                                                                              | per action (not configurable)                     | 1MB                 |                     |
+| minuteRate (triggers)                       | Limit on triggers fired per namespace per minute. Returns `429: TOO MANY REQUESTS` if exceeded.                                                  | per namespace (not configurable)                  | 600/minute          | 600/minute          |
+| actions Sequence Maxlength                  | Limit on number of actions  chained in a sequence.                                                                                               | per namespace (not configurable)                  | 50                  | 50                  |
+| list                                        | Limit on number of entities that can be listed.                                                                                                  | per list request                                  | 30                  | 1 - 50              |
+| local storage                               | Limit on local storage available for action, in MB.                                                                                              | not configurable                                  | 600MB               |                     |
 
-## Sequences and Timeout
+## Sequences and timeout
 
-Sequences that are invoked in a blocking manner (for example web actions have a hard limit for timeout and this limit can't be changed 60 seconds. Essentially, adding up the execution time taken by each action has to be 60 seconds or less.
+For sequences invoked in a blocking manner, the execution time of every action in the sequence must be 60 seconds or less. The system will allow setting a higher timeout value for the sequence, but it will be ignored and the 60-second per action limit will be enforced.
 
-Although the system lets you set a higher timeout on the sequence, this value is ignored and the 60 seconds limit per action is enforced.
+If one of your actions needs more than 60 seconds, then the only solution is to invoke a non-blocking action using the OpenWhisk npm module. So, using the example above, you could have `actionA` calling another action in a non-blocking manner. You can see an example of how to do this [here](asynchronous_calls.md).
 
-If one of your actions needs more than 60 seconds, then the only solution is to invoke a non-blocking action using the OpenWhisk npm module. So, using the same example, you could have `actionA` calling another action in a non-blocking manner. You can see an example of how to do this [here](asynchronous_calls.md).
+## Using pre-warmed containers
 
+You can avoid most container cold starts and improve chances of low-latency execution by creating actions that use the default Node version and a memory setting of `256MB`, `512MB`, or `1024MB`. 
 
-## Using pre-warm containers or optimizing against cold-starts
-
-You can maximize your chances of having the best low latency possible by creating actions that use the default Node version and a memory setting that is `256MB`, `512MB`, or `1024MB` - this way you avoid cold-starts in most cases. 
-
-The system has a pool of containers with these settings waiting to be used for any incoming call that can't be sent to an existing running container and the action matches the container settings (Node version and memory setting). In this scenario, time will only be spent for injecting your action code as opposed to wait for both creating a container and then get the code injected.
+The system maintains a pool of "pre-warmed" containers with these settings waiting to be used. Incoming calls that can't be sent to an existing running container will be sent to one of the pre-warmed containers, but only if the action's Node version and memory setting match the container's.  Use of pre-warmed containers cuts latency because time is spent only to inject action code, not to wait for creation of a container.
 
 ## Timeout
 
-If you want to change the default timeout setting, you need to do it explicitly. This is how you increase the timeout to 5 minutes:
+Changes to the default timeout setting must be done explicitly. For example, this command increases the timeout to 300,000 msec (5 minutes):
 `aio rt:action:create action-name source.js -t 300000`
 
-When you plan on increasing the timeout to more than one minute, you should be aware of:
-1. Blocking calls (web actions for example) will timeout in one minute regardless of the timeout set and return an error to the caller. However, the action execution continues until it finishes or the timeout value is exceeded (at this point you get a developer error as the result). You will retrieve the result by polling for activationId and use the right activationId to get the result
-2. Async calls respond immediately with an activationId. The execution continues, until the work is done or the timeout value is reached
+If you plan to increase the timeout to more than one minute, be aware that:
 
-## Activations TTL
+1. Blocking calls such as web actions time out in one minute regardless of the timeout setting, and return an error to the caller. But action execution will continue until either it completes or the timeout value is exceeded. Actions that time out produce a Developer error as their result; retrieve it by polling for the activationId, then use it to get the result.
+2. Asynchronous calls respond immediately with an activationId. Execution continues until the work is done or the timeout value is reached.
 
-The activation TTL (Time To Live) is seven days. This is a system setting, not a user setting (it can't be changed by developers).
+## Activation TTL
 
-Thus, if you don't see any activations or not seeing an activation you know that has happened, it could be that they happened more than 7 days ago.
+Activation Time To Live (TTL) is seven days. This is a system setting that can't be changed by Developers. If you don't see activations that you know took place, consider whether they exceeded their TTL .
