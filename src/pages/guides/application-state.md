@@ -24,7 +24,7 @@ hello-world:
 
 In many cases, these variables are different depending on the build environment of the app, such as different tenant names in dev, stage, prod, etc. To make it work seamlessly with Git commits, you could store the real value of the variables in the `.env` file (which is not committed to Git), and reference them in the `manifest.yaml` file.
 
-```bash
+```yaml
 # in .env
 NAME=Joe
 ```
@@ -77,11 +77,11 @@ Region Acronyms are abbreviations for one or more continents that are part of a 
 
 ***Library usage, from an I/O Runtime Action:***
 
-```bash
+```yaml
 npm install @adobe/aio-lib-state
 ```
 
-```js
+```yaml
   const stateLib = require('@adobe/aio-lib-state')
 
   // init with implicit I/O Runtime credentials, default region is 'amer'.
@@ -121,7 +121,7 @@ Available for `aio --version` >= `10.2`.
 
 The CLI must be run from within a valid App Builder application folder and uses the Runtime credentials to authenticate your requests to State. Each namespace has its own State container, so please ensure that your are accessing the expected instance by looking in your `.env` file for the `AIO_RUNTIME_NAMESPACE` variable.
 
-```bash
+```yaml
 > aio app state
 Manage your App Builder State storage
 
