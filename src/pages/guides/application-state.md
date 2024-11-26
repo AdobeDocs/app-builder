@@ -24,11 +24,6 @@ hello-world:
 
 In many cases, these variables are different depending on the build environment of the app, such as different tenant names in dev, stage, prod, etc. To make it work seamlessly with Git commits, you could store the real value of the variables in the .env file (which is not committed to Git), and reference them in the manifest.yaml file.
 
-bash
-# in .env
-NAME=Joe
-
-
 yaml
 # in manifest.yaml
 hello-world:
@@ -76,65 +71,6 @@ Region Acronyms are abbreviations for one or more continents that are part of a 
 ### Getting started
 
 ***Library usage, from an I/O Runtime Action:***
-
-bash
-npm install @adobe/aio-lib-state
-
-
-js
-  const stateLib = require('@adobe/aio-lib-state')
-
-  // init with implicit I/O Runtime credentials, default region is 'amer'.
-  const state = await stateLib.init()
-  // set an explicit region
-  const state2 = await stateLib.init({ region: 'emea' })
-
-  // get
-  const res = await state.get('key') // res = { value, expiration }
-  const value = res.value
-  // put
-  await state.put('key', 'value') // with default ttl of 1 day
-  await state.put('another key', 'another value', { ttl: 200 }) // in seconds, use stateLib.MAX_TTL for 365 days.
-  // delete
-  await state.delete('key')
-
-  // list keys using an iterator, with glob pattern support, omit the match option to list all keys
-  for await (const { keys } of state.list({ match: 'ke*' })) {
-    console.log(keys)
-  }
-
-  // returns true if you have at least one key and value
-  await state.any()
-  // returns usage statistics (storage)
-  await state.stats()
-
-  // delete selected keys matching a glob pattern
-  // Note: the match option is required!
-  await state.deleteAll({ match: 'ke*' })
-
-
-Explore the [full API](https://github.com/adobe/aio-lib-state/blob/main/doc/api.md)
-
-***CLI usage, from your local machine***:
-
-Available for aio --version >= 10.2.
-
-The CLI must be run from within a valid App Builder application folder and uses the Runtime credentials to authenticate your requests to State. Each namespace has its own State container, so please ensure that your are accessing the expected instance by looking in your .env file for the AIO_RUNTIME_NAMESPACE variable.
-
-bash
-> aio app state
-Manage your App Builder State storage
-
-USAGE
-  $ aio app state COMMAND
-
-COMMANDS
-  app state delete  Delete key-values
-  app state get     Get a key-value
-  app state list    List key-values
-  app state put     Put a key-value
-  app state stats   Display stats
-
 
 The default region is amer, to access another region, you can use the --region flag or add the AIO_STATE_REGION=emea variable to your .env.
 
@@ -217,3 +153,23 @@ Set DEBUG=@adobe/aio-lib-state* to see debug logs.
 *Files is currently implemented as an abstraction layer over Azure Blob. Major changes and additional features are planned, stay tuned.*
 
 To learn more please visit the [Adobe I/O File Storage library](https://github.com/adobe/aio-lib-files?tab=readme-ov-file#adobe-io-lib-files) repository.
+
+## Feature Matrix
+
+|       | Files     | State    | State Legacy
+| ----------- | ----------- |----------- | --------- |
+| read <br/> write <br/> delete | Y | Y | Y |
+| list | Y | Y | N
+| streams | Y | N | N
+| copy | Y | N | N
+| deleteAll | N | Y | N
+| sharing | Y (pre-sign URLs) | N | N
+| Time-To-Live | N | Y | Y
+| max TTL | infinite | 365 days | infinite
+| max file/value size | 200GB | 1MB | 2MB |
+| max key size | 1KB | 1KB | 1KB |
+| key charset | open | alphanumeric with _-. | any but /\?# |
+| max request load | N/A | 10MB/min, 1MB/s <br/>(scalable) | 900 RU/min (~KB/min) |
+| max storage | 1TB | 1GB (scalable) | 10GB |
+| regions | East US <br/> West US read-only | Amer (US) <br/>Emea (EU)<br/> Apac (JPN) | East US <br/> Europe read-only
+| consistency | strong | strong | eventual
