@@ -21,15 +21,7 @@ hello-world:
   inputs:
     name: Joe
 
-
 In many cases, these variables are different depending on the build environment of the app, such as different tenant names in dev, stage, prod, etc. To make it work seamlessly with Git commits, you could store the real value of the variables in the .env file (which is not committed to Git), and reference them in the manifest.yaml file.
-
-yaml
-# in manifest.yaml
-hello-world:
-  function: actions/hello/index.js
-  inputs:
-    name: $NAME
 
 ## Feature Matrix
 
