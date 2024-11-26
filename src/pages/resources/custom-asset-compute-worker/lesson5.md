@@ -60,6 +60,8 @@ As the last step, you need to apply the profile to DAM folder.
 
 Now you can upload images to the folder and observe results on the asset details page.
 
-![Renditions list in Asset view 11](assets/aemcloud-assets-overview.png)
+![Renditions list in Asset view 11](assets/all-worker-results.png)
+
+Now you can upload images to the folder and observe results on the asset details page.
 
 *Photo by [LinkedIn Sales Navigator](https://unsplash.com/@linkedinsalesnavigator?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/women-sitting?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)*
