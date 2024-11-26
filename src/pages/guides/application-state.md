@@ -29,4 +29,24 @@ In many cases, these variables are different depending on the build environment 
 NAME=Joe
 ```
 
+```yaml
+# in manifest.yaml
+hello-world:
+  function: actions/hello/index.js
+  inputs:
+    name: $NAME
+```
+
 ### Considerations about security
+
+For authentication with Adobe APIs, you should leverage [App Builder Security Guideline](./security/index.md) using our supported SDKs.
+
+For other 3rd party systems and APIs when provisioning actions with the secrets/passwords is a must, you can then use the default params as demonstrated above. In order to support this use case, all default params are automatically encrypted. They are decrypted just before the action code is executed. Thus, the only time you have access to the decrypted value is while executing the action code.
+
+## Persistence at runtime
+
+As part of App Builder, you will have out-of-the-box access to *Files* and *State*, our two storage services meant for persisting data dynamically from your Runtime actions.
+
+No pre-configuration is required, just install the libraries and use them in your project. We will be transparently using your App Builder credentials to authorize and entitle your requests.
+
+*When should I use Files vs State?*
