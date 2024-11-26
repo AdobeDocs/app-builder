@@ -14,10 +14,3 @@ Application state can either be pre-defined variables accessible across all invo
 ## Default Parameters
 
 Sometimes, you may want to set default parameter values for all invocations or bind specific values at the action or package level. These parameters are defined in the `manifest.yaml` file, as shown in the following example:
-
-```yaml
-hello-world:
-  function: actions/hello/index.js
-  inputs:
-    name: Joe
-```
