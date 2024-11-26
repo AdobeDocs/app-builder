@@ -9,7 +9,7 @@ title: 'Lesson 1: Introduction to Spectrum'
 
 # Lesson 1: Introduction to Spectrum
 
-![spectrum](https://opensource.adobe.com/spectrum-css/img/spectrum-css_illustration_desktop@2x.png)
+![spectrum](https://opensource.adobe.com/spectrum-css/images/spectrum-css_illustration_desktop.png)
 
 Spectrum is Adobe's design system which includes design guidelines and recommended components to create a unified experience for all Adobe Clouds. 
 The initiative to create a common design system for Adobe started years ago by a team of engineers and UX designers at Adobe and 
