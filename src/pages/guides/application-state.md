@@ -221,7 +221,7 @@ To learn more please visit the [Adobe I/O File Storage library](https://github.c
 
 ## Feature Matrix
 
-| Action           | Files                     | State                         | State Legacy             |
+|            | Files                     | State                         | State Legacy             |
 | ---------------- | ------------------------- | ----------------------------- | ------------------------ |
 | Read Write Delete| Y<br>Y<br>Y                | Y<br>Y<br>Y                    | Y<br>Y<br>Y               |
 | List             | Y                         | Y                             | N                        |
