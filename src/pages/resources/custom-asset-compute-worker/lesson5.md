@@ -56,7 +56,7 @@ I configured 3 renditions using following imgix configuration params (we don't n
 
 As the last step, you need to apply the profile to DAM folder.
 
-![Apply Profile to Folder](assets/apply-profile-to-folder.png)
+![Apply Profile to Folder](assets/processing-profile-1800.png)
 
 Now you can upload images to the folder and observe results on the asset details page.
 
