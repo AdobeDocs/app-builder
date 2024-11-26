@@ -236,5 +236,5 @@ To learn more please visit the [Adobe I/O File Storage library](https://github.c
 | key charset         | open                      | alphanumeric with _-.              | any but /\?#             |
 | max request load    | N/A                       | 10MB/min, 1MB/s(scalable)          | 900 RU/min (~KB/min)     |
 | max storage         | 1TB                       | 1GB (scalable)                     | 10GB                     |
-| regions             | East US West US read-only | Amer (US)Emea (EU)<br/> Apac (JPN) | East US Europe read-only |
+| regions             | East US West US read-only | Amer (US)Emea (EU) Apac (JPN) | East US Europe read-only |
 | consistency         | strong                    | strong                             | eventual                 |
