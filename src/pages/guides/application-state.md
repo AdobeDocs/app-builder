@@ -22,23 +22,3 @@ hello-world:
     name: Joe
 
 In many cases, these variables are different depending on the build environment of the app, such as different tenant names in dev, stage, prod, etc. To make it work seamlessly with Git commits, you could store the real value of the variables in the .env file (which is not committed to Git), and reference them in the manifest.yaml file.
-
-## Feature Matrix
-
-|       | Files     | State    | State Legacy
-| ----------- | ----------- |----------- | --------- |
-| read <br/> write <br/> delete | Y | Y | Y |
-| list | Y | Y | N
-| streams | Y | N | N
-| copy | Y | N | N
-| deleteAll | N | Y | N
-| sharing | Y (pre-sign URLs) | N | N
-| Time-To-Live | N | Y | Y
-| max TTL | infinite | 365 days | infinite
-| max file/value size | 200GB | 1MB | 2MB |
-| max key size | 1KB | 1KB | 1KB |
-| key charset | open | alphanumeric with _-. | any but /\?# |
-| max request load | N/A | 10MB/min, 1MB/s <br/>(scalable) | 900 RU/min (~KB/min) |
-| max storage | 1TB | 1GB (scalable) | 10GB |
-| regions | East US <br/> West US read-only | Amer (US) <br/>Emea (EU)<br/> Apac (JPN) | East US <br/> Europe read-only
-| consistency | strong | strong | eventual
