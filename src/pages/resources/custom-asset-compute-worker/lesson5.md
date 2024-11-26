@@ -14,7 +14,7 @@ title: 'Lesson 5: Setup AEM to use the worker'
 Go to your **AEM Cloud** instance and open **Tools -> Assets -> Processing Profiles** and then create a new processing profile, e.g. `My Worker test profile`.
 On the **Custom** tab, configure your renditions to use your worker, as shown below.
 
-![Config of custom renditions](assets/worker-results.png.png)
+![Config of custom renditions](assets/processing-profile-1800.png)
 
 I configured 3 renditions using following imgix configuration params (we don't need to escape JSON if it's used in AEM)
 
