@@ -87,8 +87,8 @@ This is a sample I/O Events consumer, built using App Builder, that forwards all
 
 We also provide a collection of basic code snippets to get you started: 
 
-* [Caching HTTP responses](code_snippets/index.md)
-* [App Builder Files SDK](code_snippets/files.md)
-* [App Builder State SDK](code_snippets/state.md)
-* [I/O Events handler](code_snippets/events.md)
-* [Real-time data from Adobe Analytics API 1.4](code_snippets/analytics.md)
+* [Caching HTTP responses](code-snippets/index.md)
+* [App Builder Files SDK](code-snippets/files.md)
+* [App Builder State SDK](code-snippets/state.md)
+* [I/O Events handler](code-snippets/events.md)
+* [Real-time data from Adobe Analytics API 1.4](code-snippets/analytics.md)
