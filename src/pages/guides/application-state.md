@@ -23,3 +23,10 @@ hello-world:
 ```
 
 In many cases, these variables are different depending on the build environment of the app, such as different tenant names in dev, stage, prod, etc. To make it work seamlessly with Git commits, you could store the real value of the variables in the .env file (which is not committed to Git), and reference them in the manifest.yaml file.
+
+```bash
+# in .env
+NAME=Joe
+```
+
+### Considerations about security
