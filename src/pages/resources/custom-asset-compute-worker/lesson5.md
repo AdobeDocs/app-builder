@@ -56,10 +56,10 @@ I configured 3 renditions using following imgix configuration params (we don't n
 
 As the last step, you need to apply the profile to DAM folder.
 
-![Apply Profile to Folder](assets/apply-profile-to-folder.png)
+![Renditions list in Asset view](assets/worker-results.png)
 
 Now you can upload images to the folder and observe results on the asset details page.
 
-![Renditions list in Asset view](assets/worker-results.png)
+![Apply Profile to Folder](assets/apply-profile-to-folder.png)
 
 *Photo by [LinkedIn Sales Navigator](https://unsplash.com/@linkedinsalesnavigator?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/women-sitting?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)*
