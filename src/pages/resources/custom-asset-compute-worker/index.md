@@ -14,6 +14,8 @@ contributors:
 
 ![front-banner](assets/hero-banner.jpg)
 
+![Hero banner created by starline - www.freepik.com](https://www.freepik.com/vectors/banner)
+
 > *This CodeLab is based on the [**How to generate intelligent renditions with AEM as a Cloud**][original-post] blog post.*
 
 Image resizing or format conversion is a relatively easy task when doing renditions in **Adobe Experience Manager**. 
