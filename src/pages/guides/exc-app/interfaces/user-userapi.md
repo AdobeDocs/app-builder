@@ -44,6 +44,8 @@ reduce the number of lingering sessions for solutions who have their own session
 
 ###  emit
 
+▸ **emit**<**K**>(`type`: K, `event?`: UserInfoEvent[K]): *void*
+
 *Inherited from void*
 
 Invoke all handlers for the given type.
