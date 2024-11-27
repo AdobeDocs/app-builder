@@ -9,4 +9,4 @@ title: Runtime
 
 # Interface: Runtime < **T** >
 
-Defines the runtime object providing all unified-shell APIs for solution authors.
+Defines the runtime object providing all unified-shell APIs for solution authors test.
