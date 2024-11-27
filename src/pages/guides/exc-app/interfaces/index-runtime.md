@@ -56,3 +56,11 @@ Function to call in response to given event.
 ▸ (`event?`: T[ K ]): *void*
 
 **Parameters:**
+
+| Name     | Type     |
+|----------| -------- |
+| `event?` | T[ K ]   |
+
+**Returns:** *void*
+
+###  on
