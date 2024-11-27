@@ -10,3 +10,5 @@ title: Runtime
 # Interface: Runtime < **T** >
 
 Defines the runtime object providing all unified-shell APIs for solution authors test.
+
+## Type parameters
