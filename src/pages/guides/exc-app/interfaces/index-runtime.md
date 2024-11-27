@@ -48,3 +48,11 @@ Invoke all handlers for the given type.
 ▪ **type**: *K*
 
 Type of event to listen for.
+
+▪ **handler**: *function*
+
+Function to call in response to given event.
+
+▸ (`event?`: T[ K ]): *void*
+
+**Parameters:**
