@@ -44,7 +44,7 @@ reduce the number of lingering sessions for solutions who have their own session
 
 ###  emit
 
-▸ **emit** &lt**K**&gt (`type`: K, `event?`: UserInfoEvent[K]): *void*
+▸ **emit** `<`**K**`>` (`type`: K, `event?`: UserInfoEvent[K]): *void*`
 
 *Inherited from void*
 
