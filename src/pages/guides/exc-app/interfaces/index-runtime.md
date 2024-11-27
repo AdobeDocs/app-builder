@@ -4,13 +4,12 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: Interface Runtime <**T**>
+title: Runtime
 ---
 
-# Interface: Runtime 
+# Interface: Runtime <**T**>
 
 Defines the runtime object providing all unified-shell APIs for solution authors.
 
 ## Type parameters
 
-**T**
