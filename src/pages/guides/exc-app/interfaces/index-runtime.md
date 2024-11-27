@@ -33,6 +33,6 @@ Defines the runtime object providing all unified-shell APIs for solution authors
 
 ###  emit
 
-▸ **emit**< **K** > (`type`: K, `event?`: T[K]): *void*
+▸ **emit** < **K** > (`type`: K, `event?`: T[ K ]): *void*
 
 Invoke all handlers for the given type.
