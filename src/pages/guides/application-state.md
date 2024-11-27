@@ -223,8 +223,8 @@ To learn more please visit the [Adobe I/O File Storage library](https://github.c
 
 |                     | Files                     | State                         | State Legacy             |
 | ------------------- | ------------------------- | ----------------------------- | ------------------------ |
-| read<br>write<br>delete  | Y                         | Y                             | Y                        |
-| list-1                | Y                         | Y                             | N                        |
+| read<br>write       | Y                         | Y                             | Y                        |
+| list test-mani      | Y                         | Y                             | N                        |
 | streams             | Y                         | N                             | N                        |
 | copy                | Y                         | N                             | N                        |
 | deleteAll           | N                         | Y                             | N                        |
