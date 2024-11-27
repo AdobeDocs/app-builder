@@ -35,4 +35,16 @@ Defines the runtime object providing all unified-shell APIs for solution authors
 
 ▸ **emit** < **K** > (`type`: K, `event?`: T[ K ]): *void*
 
+*Inherited from void*
+
 Invoke all handlers for the given type.
+
+**Type parameters:**
+
+▪ **K** : *keyof T*
+
+**Parameters:**
+
+▪ **type**: *K*
+
+Type of event to listen for.
