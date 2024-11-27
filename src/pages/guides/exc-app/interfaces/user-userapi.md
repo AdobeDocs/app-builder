@@ -11,8 +11,6 @@ title: 'Interface: UserApi'
 
 ## Hierarchy
 
-* EventEmitter‹UserInfoEvent›
-
   ↳ **UserApi**
 
 ## Index
