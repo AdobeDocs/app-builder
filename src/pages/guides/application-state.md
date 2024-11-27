@@ -218,23 +218,3 @@ Set `DEBUG=@adobe/aio-lib-state*` to see debug logs.
 *Files is currently implemented as an abstraction layer over Azure Blob. Major changes and additional features are planned, stay tuned.*
 
 To learn more please visit the [Adobe I/O File Storage library](https://github.com/adobe/aio-lib-files?tab=readme-ov-file#adobe-io-lib-files) repository.
-
-## Feature Matrix
-
-|                     | Files                     | State                         | State Legacy             |
-| ------------------- | ------------------------- | ----------------------------- | ------------------------ |
-| read write  delete  | <br>Y<br>                 | <br>Y<br>                     |<br>Y<br>                 |
-| list                | Y                         | Y                             | N                        |
-| streams             | Y                         | N                             | N                        |
-| copy                | Y                         | N                             | N                        |
-| deleteAll           | N                         | Y                             | N                        |
-| sharing             | Y (pre-sign URLs)         | N                             | N                        |
-| Time-To-Live        | N                         | Y                             | Y                        |
-| max TTL             | infinite                  | 365 days                      | infinite                 |
-| max file/value size | 200GB                     | 1MB                           | 2MB                      |
-| max key size        | 1KB                       | 1KB                           | 1KB                      |
-| key charset         | open                      | `alphanumeric` with `_-`.     | any but `/\?# `          |
-| max request load    | N/A                       | 10MB/min, 1MB/s(scalable)     | 900 RU/min (~KB/min)     |
-| max storage         | 1TB                       | 1GB (scalable)                | 10GB                     |
-| regions             | East US West US read-only | Amer (US)Emea (EU) Apac (JPN) | East US Europe read-only |
-| consistency         | strong                    | strong                        | eventual                 |
