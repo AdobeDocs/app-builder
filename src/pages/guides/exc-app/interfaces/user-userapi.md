@@ -10,3 +10,11 @@ title: 'Interface: UserApi'
 # Interface: UserApi
 
 ## Hierarchy
+
+* EventEmitter‹UserInfoEvent›
+
+  ↳ **UserApi**
+
+## Index
+
+### Properties
