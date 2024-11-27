@@ -67,6 +67,8 @@ Name | Type | Description |
 
 ###  off
 
+▸ **off**\<**K**\>(`type`: K, `handler`: function): *void*
+
 *Inherited from void*
 
 Remove an event handler for the given type.
@@ -98,6 +100,8 @@ Name | Type |
 <hr />
 
 ###  on
+
+▸ **on**\<**K**\>(`type`: K, `handler`: function): *void*
 
 *Inherited from void*
 
