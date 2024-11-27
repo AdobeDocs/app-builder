@@ -7,6 +7,6 @@ keywords:
 title: Runtime
 ---
 
-# Interface: Runtime <**T**>
+# Interface: Runtime **T**
 
 Defines the runtime object providing all unified-shell APIs for solution authors.
