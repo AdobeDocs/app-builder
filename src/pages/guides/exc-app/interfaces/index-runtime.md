@@ -12,3 +12,5 @@ title: Runtime
 Defines the runtime object providing all unified-shell APIs for solution authors test.
 
 ## Type parameters
+
+▪ **T**
