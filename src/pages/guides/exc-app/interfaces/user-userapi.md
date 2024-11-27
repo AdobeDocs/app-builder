@@ -43,3 +43,113 @@ reduce the number of lingering sessions for solutions who have their own session
 ## EventEmitter Methods
 
 ###  emit
+
+*Inherited from void*
+
+Invoke all handlers for the given type.
+
+**Type parameters:**
+
+▪ **K**: *keyof UserInfoEvent*
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`type` | K | The event type to invoke. |
+`event?` | UserInfoEvent[K] | Any value (object is recommended and powerful), passed to each handler. |
+
+**Returns:** *void*
+
+<hr />
+
+###  off
+
+*Inherited from void*
+
+Remove an event handler for the given type.
+
+**Type parameters:**
+
+▪ **K**: *keyof UserInfoEvent*
+
+**Parameters:**
+
+▪ **type**: *K*
+
+Type of event to unregister `handler` from.
+
+▪ **handler**: *function*
+
+Handler function to remove.
+
+▸ (`event?`: UserInfoEvent[K]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`event?` | UserInfoEvent[K] |
+
+**Returns:** *void*
+
+<hr />
+
+###  on
+
+*Inherited from void*
+
+Register an event handler for the given type.
+
+**Type parameters:**
+
+▪ **K**: *keyof UserInfoEvent*
+
+**Parameters:**
+
+▪ **type**: *K*
+
+Type of event to listen for.
+
+▪ **handler**: *function*
+
+Function to call in response to given event.
+
+▸ (`event?`: UserInfoEvent[K]): *void*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`event?` | UserInfoEvent[K] |
+
+**Returns:** *void*
+
+<hr />
+
+## Other Methods
+
+###  authExpired
+
+▸ **authExpired**(): *void*
+
+API to notify the unified shell that APIs are returning 401 and user needs to be
+re-authenticated.
+
+**Returns:** *void*
+
+<hr />
+
+###  get
+
+Gets the specified type of information about an user.
+
+**Type parameters:**
+
+▪ **T**: *keyof UserInfo*
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`type` | T | The type of information to get.  |
