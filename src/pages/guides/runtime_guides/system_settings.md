@@ -22,9 +22,9 @@ These are the system settings and limitations to consider when designing and deb
 
 ## Sequences and timeout
 
-For sequences invoked in a blocking manner, the execution time of every action in the sequence must be 60 seconds or less. The system will allow setting a higher timeout value for the sequence, but it will be ignored and the 60-second per action limit will be enforced.
+When invoking a sequence in a blocking manner, there is a 60-second limit for timeout that can't be changed. This means the sum of the execution times of all actions in the sequence must be 60 seconds or less. You can specify a timeout value greater than 60 seconds, but the system will ignore it and impose the 60-second limit.
 
-If one of your actions needs more than 60 seconds, then the only solution is to invoke a non-blocking action using the OpenWhisk npm module. So, using the example above, you could have `actionA` calling another action in a non-blocking manner. You can see an example of how to do this [here](asynchronous_calls.md).
+If one of your actions needs more than 60 seconds (therefore putting the sequence over the limit), the only solution is to invoke it as a non-blocking action using the OpenWhisk npm module. So, using the example above, you could have `actionA` calling another action in a non-blocking manner. You can see an example of how to do this [here](asynchronous_calls.md).
 
 ## Using pre-warmed containers
 

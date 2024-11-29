@@ -9,9 +9,11 @@ title: Integration Guide with Adobe Experience Cloud
 
 # Integration with Adobe Experience Cloud
 
-Adobe Experience Cloud consists of solutions to power insights, content, engagement, commerce, optimization, and more.  Its [unified shell web application](https://experience.adobe.com) provides a unified user experience for customers to manage these solutions from a single place.
+> Note: this section shows how to integrate custom App Builder applications with Adobe Experience Cloud (AEC). App Builder can also be used to extend the AEC User Interface, as discussed [here](../extensions/extensions.md), with links to Developer documentation and a sample project.
 
-The solution experiences run within an iframe in the unified shell, and can interact with its including the topbar, menus, nps, and alerts. These interactions are made possible through:
+Adobe Experience Cloud (AEC) consists of solutions to power insights, content, engagement, commerce, optimization, and more.  Its [unified shell web application](https://experience.adobe.com) provides a unified user experience for customers to manage these solutions from a single place.
+
+AEC solution experiences run within an iframe in the unified shell, and can interact with its including the topbar, menus, nps, and alerts. These interactions are made possible through:
 
 1. A module-runtime script injected into the product iframe
 

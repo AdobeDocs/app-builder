@@ -9,11 +9,11 @@ contributors:
 title: 'Lesson 3: Develop custom worker calling Photoshop APIs'
 ---
 
-# Lesson 3: Develop custom worker calling Photoshop APIs
+# Lesson 3: Develop Custom Worker Calling Photoshop APIs
 
-Now you got the development environment set up locally and can run a basic worker, let's enhance it to do something more complex.
+Now that you have the development environment set up locally and can run a basic worker, let's enhance it to do something more complex.
 
-[Adobe Photoshop APIs](/photoshop/api/) enable you to build plugins and integrations that harness the power of the world’s best image editing and graphic design software to transform creative workflows for users everywhere. In this codelab, you leverage the Photoshop APIs to generate custom renditions in AEM Assets.
+[Adobe Photoshop APIs](/photoshop/api/) enable you to build plugins and integrations that harness the power of the world’s best image editing and graphic design software to transform creative workflows for users everywhere. In this Code Lab, you use the Photoshop APIs to generate custom renditions in AEM Assets.
 
 You will need the [App Builder Files SDK](https://github.com/adobe/aio-lib-files) to store images, the [Photoshop API SDK](https://github.com/adobe/aio-lib-photoshop-api) to call Photoshop APIs, and UUID to generate unique folder names for renditions of different images. Add them as dependencies in your `package.json` file.
 
@@ -102,4 +102,4 @@ Run the `aio app deploy` command to deploy your action to test in the developmen
 
 Then execute the command `aio app run` to test it. In the development tool UI, select an existing or upload a new test image, define the rendition request and click the Run button. You will see the rendition result with a removed background.
 
-There are various options of other photo magics that you can use to enhance your custom worker, such as [Auto Tone](https://adobe.io/apis/creativecloud/photo-imaging-api/api-demo.html?ref=autotone) and [Photoshop actions](https://adobe.io/apis/creativecloud/photo-imaging-api/api-demo.html?ref=psactions). Be creative!
+There are various options of other photo magics that you can use to enhance your custom worker, such as [Auto Tone](https://adobe.io/apis/creativecloud/photo-imaging-api/api-demo.html?ref=autotone) and [Photoshop actions](https://adobe.io/apis/creativecloud/photo-imaging-api/api-demo.html?ref=psactions). 

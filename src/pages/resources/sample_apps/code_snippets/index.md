@@ -12,7 +12,6 @@ title: App Builder Code Snippets - Caching HTTP responses
 Demonstrating how to cache response of an action at Gateway level. To test this functionality, make sure that the Cache-Control header in your HTTP request is not set to `no-cache` 
 (which is by default if you use Postman or browser's developer tools). More info [here](/runtime/docs/guides/using/throughput_tuning/#caching-responses). 
 
-
 ```javascript
 const { Core } = require('@adobe/aio-sdk')
 const { errorResponse, stringParameters, checkMissingRequestInputs } = require('../utils')
@@ -62,6 +61,3 @@ async function main (params) {
 
 exports.main = main
 ```
-
-
-

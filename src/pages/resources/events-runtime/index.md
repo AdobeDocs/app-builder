@@ -22,23 +22,22 @@ In previous codelab [Consume Events using Journaling API](../journaling-events/i
 
 ## Benefits of using Runtime Action as Webhook
 
-There are two main benefits to choose runtime action as webhook: 
+There are two main benefits to choose Runtime action as webhook: 
+
 - [Built in Signature Verification](https://developer.adobe.com/events/docs/guides/sdk/sdk_signature_verification/)
 - Tracing actions with Activation Ids 
 
 ## How to choose between Journaling API and Runtime Action webhook
+
 - Journaling API: when you have a long running(async) actions that require guaranteed event handling especially when there is a surge of events, you should consider using the [journaling approach](../journaling-events/index.md) to consume events. 
 - Runtime action webhook: if you have short-running (sync) action for example, responds within 10 sec, we recommend setting up your runtime action as webhook
 
 ## Overview
-This codelab will take you through the I/O events SYNC webhook registration using your own runtime actions via console.
-As part of this codelab, we will cover all the behind the scene actions happening for the below 
+
+This Code Lab will take you through the I/O events SYNC webhook registration using your own runtime actions via console.
+As part of this Code Lab, we will cover all the behind the scene actions happening for: 
 
 - Using App Builder template `publish-event`to set up custom event as event provider
 - Setting up event registration 
 - Ingesting subscribed events for that webhook in I/O Events pipeline
 - Debug tracing on console for the Success and Failure scenarios
-
-
-
-

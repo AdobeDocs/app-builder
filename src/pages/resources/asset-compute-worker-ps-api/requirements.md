@@ -13,10 +13,10 @@ import Requirements from '../transclusions/_requirements.md'
 
 <Requirements/>
 
-## Codelab environment
+## Code Lab environment
 
-In addition to above pre-requisites, you'll need:
+In addition to above prerequisites, you'll need:
 
 * An AEM as a Cloud Service instance running in your IMS org
-* Photoshop API service already provisioned for your org. If not already done, please [sign up for the trial](/photoshop/api/)
+* Photoshop API service already provisioned for your org. If you haven't already, please [sign up for the trial](/photoshop/api/)
 * [Understanding the working of a custom application in AEM Assets](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html)

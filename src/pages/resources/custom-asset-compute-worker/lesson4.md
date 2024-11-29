@@ -9,37 +9,33 @@ contributors:
 title: 'Lesson 4: Test the worker'
 ---
 
-# Lesson 4: Test the worker
+# Lesson 4: Test the Worker
 
-Just run the following command.
+Run this command:
 
 ```
 $> aio app run
 ```
 
-After a couple of seconds, it will open Asset Compute Devtool in your browser. Within that tool, you can test your
-worker without the AEM.
+After a few seconds it will open Asset Compute Devtool in your browser. Within that tool, you can test your worker without the AEM.
 
 ![Asset Compute Devtool](assets/asset-compute-devtool.png)
 
-Since our worker requires `imgix` parameter (as you can see at line 34 in the worker code), you need to provide it in
-the worker request object as shown on the screenshot. That parameter must be an escaped JSON. For instance, use the
-below parameter to just resize an image to 300x300px.
+Since our worker requires `imgix` parameter (as seen at line 34 in the worker code), you need to provide it in the worker request object as shown on the screenshot. That parameter must be an escaped JSON. For instance, use this parameter to resize an image to 300x300px:
 
 ```json
 "imgix": "{ \"h\": 300, \"w\": 300}"
 ```
 
-Then you run your worker and observe results on the right-hand side of the Asset Compute Devtool.
+Then run your worker and observe results on the right side of the Asset Compute Devtool.
 
-To let AEM use our worker, deploy the app by running the command.
+To let AEM use our worker, deploy the app by running:
 
 ```
 $> aio app deploy
 ```
 
-As a result of that command, you will get the URL of your worker, similar to the below. Write down that URL as we need
-to put it in AEM configuration.
+The command, will return the URL of your worker, similar to the below. Write it down, so we can put it in the AEM configuration.
 
 ```
 Your deployed actions:
@@ -47,4 +43,3 @@ Your deployed actions:
   -> https://99999-myassetcompute-dev.adobeioruntime.net/api/v1/web/dx-asset-compute-worker-1/my-worker
 Well done, your app is now online 🏄
 ```
-

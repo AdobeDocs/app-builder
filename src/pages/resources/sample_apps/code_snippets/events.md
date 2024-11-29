@@ -53,16 +53,16 @@ async function main (params) {
 
     // NOTE: please customize the following lines based on the event object data type you receive from I/O Events
     const eventDetail = params.event['activitystreams:object']
-     
+
     const slackMessage = params.event['@type'] + " Event for: " + eventDetail['xdmAsset:asset_name'] + " at " + eventDetail['xdmAsset:path']
-      
+
     const payload = {
       channel: slackChannel,
       username: 'incoming-webhook',
       text: slackMessage,
       mrkdwn: true
     }
-      
+
     var slackOpts = {
       method: 'POST',
       headers: {
@@ -92,9 +92,3 @@ async function main (params) {
 
 exports.main = main
 ```
-
-
-
-
-
-

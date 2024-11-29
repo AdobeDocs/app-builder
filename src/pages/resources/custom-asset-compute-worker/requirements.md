@@ -13,11 +13,11 @@ import Requirements from '../transclusions/_requirements.md'
 
 <Requirements/>
 
-## Codelab environment
+## Code Lab Environment
 
-### 3rd party services
+### Third-party services
 
-- Azure blob storage, so an Azure subscription is required ([Azure free account][azure-free-account] is enough)
+- Azure blob storage, so an Azure subscription is required ([Azure free account][azure-free-account] is enough).
 - An account on [imgIX service][imgix]. You can sign up to imgIX for free to try it.
 
 [experience-cloud]: https://www.adobe.com/experience-cloud.html
