@@ -7,9 +7,9 @@ keywords:
 title: App Builder Code Snippets - I/O Events handler  
 ---
 
-# I/O Events handler
+# I/O Events Handler
 
-Demonstrating how to write an event handler for webhook calls. This action is expose as a web action, you can use its URL to register as a webhook for I/O Events.
+Demonstrates how to write an event handler for webhook calls. This action is exposed as a web action, so you can use its URL to register as a webhook for I/O Events.
 
 ```javascript
 /**

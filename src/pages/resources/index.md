@@ -23,7 +23,7 @@ Introduction to Spectrum to build an App Builder App UI.
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
 
-### Consume Events using Journaling API
+### Consume events using Journaling API
 
 [Video (30mins)](journaling-events/index.md)
 
@@ -63,7 +63,7 @@ The basic steps of debugging an App Builder App.
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
 
-### Scheduling cron Jobs
+### Scheduling cron jobs
 
 [Start (20mins)](cron-jobs/index.md)
 
@@ -85,7 +85,7 @@ Creating a Headless App using App Builder to render a barcode with dynamic data.
 
 [Start (40mins)](asset-compute-worker-ps-api/index.md)
 
-Building asset compute workers leveraging Photoshop APIs to generate custom renditions in AEM.
+Building asset compute workers using Photoshop APIs to generate custom renditions in AEM.
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
 
@@ -93,7 +93,7 @@ Building asset compute workers leveraging Photoshop APIs to generate custom rend
 
 [Start (30mins)](todo-app/index.md)
 
-How to build a Todo App with App Builder using aio-lib-state as storage library and React Spectrum components.
+How to build a To-do App with App Builder using aio-lib-state as storage library and React Spectrum components.
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
 
@@ -109,12 +109,12 @@ Creating a dashboard of customer profiles from Adobe Campaign Standard using App
 
 [Start (20mins)](custom-asset-compute-worker/index.md)
 
-Building a Custom Asset Compute Worker leveraging 3rd-party services to generate intelligent renditions in AEM.
+Building a Custom Asset Compute Worker using third-party services to generate intelligent renditions in AEM.
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
 
-### Build an app that consumes Adobe Experience Manager Events
+### Build an app that consumes Adobe Experience Manager events
 
 [Start (30mins)](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/consume-aem-events.html?lang=en)
 
-Learn WHY is it a good idea to build event-driven applications and HOW we can build them with ease using App Builder.
+Learn why is it a good idea to build event-driven applications and how to build them with ease using App Builder.

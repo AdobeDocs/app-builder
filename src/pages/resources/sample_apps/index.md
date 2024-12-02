@@ -72,7 +72,3 @@ Here is a collection of basic code snippets to get you started:
 * [App Builder State SDK](code_snippets/state.md)
 * [I/O Events handler](code_snippets/events.md)
 * [Real-time data from Adobe Analytics API 1.4](code_snippets/analytics.md)
-
-## Next steps
-
-Continue to 

@@ -25,7 +25,7 @@ Invoke this as you would any other action, for example:
 
 When invoking a sequence in a blocking manner, there is a 60-second timeout limit that can't be changed: the sum of the execution times of all actions in the sequence must be 60 seconds or less. 
 
-If we apply this limitation to the example above, then `actionA` and `actionB` have a total budget of 60 seconds. Although the system allows you to set a higher timeout value for `mySequence`, it will ignore the value and enforce 60-second limit.
+If we apply this limitation to the example above, then `actionA` and `actionB` have a total budget of 60 seconds. Although the system allows you to set a higher timeout value for `mySequence`, it will ignore the value and enforce the 60-second limit.
 
 If one of your actions needs more than 60 seconds (therefore putting the sequence over the limit), the only solution is to invoke it as a non-blocking action using the OpenWhisk npm module. So, using the same example, you could have `actionA` calling another action in a non-blocking manner. You can see an example of how to do this [here](../guides/asynchronous_calls.md).
 

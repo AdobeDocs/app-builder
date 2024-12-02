@@ -16,4 +16,4 @@ This Code Lab is an introduction to:
 * Spectrum CSS 
 * React Spectrum  
 
-At the end, we'll show you how to build and deploy a Spectrum Single Page Application using App Builder.
+At the end, we'll show you how to build and deploy a Spectrum Single-Page Application using App Builder.
