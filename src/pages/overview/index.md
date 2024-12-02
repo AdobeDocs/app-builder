@@ -6,7 +6,7 @@ title: App Builder Docs
 description: This documentation provides an overview of App Builder as well as guides, reference documentation, and tools to help you begin developing your own custom applications.  
 ---
 
-<HeroSimple slots="image, heading, text" background="rgb(37,26,56)" hideBreadcrumbNav="false"/>
+<HeroSimple slots="image, heading, text" background="rgb(37,26,56)" hideBreadcrumbNav="false" data-generateCodeSamples="languages: [{ lang: 'curl' }, { lang: 'Node.js' }, { lang: 'JavaScript' }, { lang: 'Python'}]" data-typography="fontFamily: `serif`, fontSize: '16px' " data-requestInterceptor= "function(req, operation) {console.log('Args:', req, operation); return req;}"/>
 
 ![](../images/banner.png)
 
