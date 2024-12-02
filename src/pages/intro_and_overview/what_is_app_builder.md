@@ -25,4 +25,4 @@ Serverless computing platforms like Adobe I/O Runtime host those portions of app
 
 ## Next step
 
-Understand core App Builder concepts and start building your first App Builder application with the [Get Started with App Builder](../app_builder_get_started/app_builder_intro.md) tutorial series.
+Understand core App Builder concepts and start building your first App Builder application with the [Get Started with App Builder](../get_started/app_builder_get_started/app_builder_intro.md) tutorial series.

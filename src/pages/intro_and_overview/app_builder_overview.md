@@ -20,33 +20,33 @@ Please refer to the [FAQ](faq.md) for information about licensing or trial of Ap
   
   - App Builder and I/O Runtime design concepts in [What Is App Builder?](what_is_app_builder.md)
   
-  - Key App Builder components and concepts in the [Architecture Overview](../guides/index.md)
+  - Key App Builder components and concepts in the [Architecture Overview](../guides/app_builder_guides/architecture_overview/architecture_overview.md)
   
-  - How the App Builder framework aligns to the development cycle in [How App Builder Works](../app_builder_get_started/how_app_builder_works.md)
+  - How the App Builder framework aligns to the development cycle in [How App Builder Works](../get_started/app_builder_get_started/app_builder_intro.md#overview)
 
 - **Learn** how to build custom applications and deploy them on Adobe infrastructure through hands-on tutorials:
   
-  - [Get Started with App Builder](../app_builder_get_started/app_builder_intro.md) covering access, setup, creation, publication, and troubleshooting of your first App Builder app
+  - [Get Started with App Builder](../get_started/app_builder_get_started/app_builder_intro.md) covering access, setup, creation, publication, and troubleshooting of your first App Builder app
   
-  - [Get Started with Adobe I/O Runtime](../runtime_getting_started/runtime_intro.md) covering access, setup, deployment, and invocation of your first Adobe Runtime action, recovery and interpretation of results, and core concepts and tactics for optimizing performance
+  - [Get Started with Adobe I/O Runtime](../get_started/runtime_getting_started/runtime_intro.md) covering access, setup, deployment, and invocation of your first Adobe Runtime action, recovery and interpretation of results, and core concepts and tactics for optimizing performance
 
 - **Resolve issues** and optimize performance with App Builder resources:
   
   - [FAQ](faq.md) with answers to questions about App Builder and I/O Runtime integration, support, and other technical issues
   
-  - [Technical Guides](../guides/index.md) arranged by topic, including [<mark>Reference Documentation</mark>](../guides/reference_documentation/index.md)
+  - [Technical Guides](../guides/guides_index.md) arranged by topic, including [Reference Documentation](../guides/references.md)
   
-  - Technical and application<mark> [tutorial videos](dummy)</mark>
+  - Technical and application [tutorial videos](../resources/videos/index.md)
   
-  - Step-by-step <mark>[Code Labs](dummy)</mark> illustrating key App Builder concepts and applications
+  - Step-by-step [Code Labs](../resources/index.md) illustrating key App Builder concepts and applications
 
-- **[Contribute](community.md)** to the worldwide App Builder Developer community by working with peers in Developer Forums, helping to improve our product - and this documentation - in our open-source repositories, and more.
+- [Contribute](community.md) to the worldwide App Builder Developer community by working with peers in Developer Forums, helping to improve our product - and this documentation - in our open-source repositories, and more.
 
 ## Next steps
 
 To learn more about App Builder, please consult the following:
 
-- [What is App Builder?](what_is_app_builder.md)
-- <mark>[Architecture Overview](../guides/index.md)</mark>
+- [What Is App Builder?](what_is_app_builder.md)
+- [Architecture Overview](../guides/app_builder_guides/architecture_overview/architecture_overview.md)
 
-Or start building right now: [Get Started with App Builder](../app_builder_get_started/app_builder_intro.md)
+Or start building right now: [Get Started with App Builder](../get_started/app_builder_get_started/app_builder_intro.md).
