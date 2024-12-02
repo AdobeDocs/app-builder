@@ -16,7 +16,7 @@ Then confirm that `aio` installed properly:
 
 ### Create a namespace and retrieve credentials
 
-Organizations with access to I/O Runtime manage namespaces from the [Developer Console](/console). Namespace management requires the Developer role or System Administrator permissions.
+Organizations with access to I/O Runtime manage namespaces from the [Developer Console](https://developer.adobe.com/developer-console/). Namespace management requires the Developer role or System Administrator permissions.
 
 In the Developer Console:
 
@@ -30,7 +30,7 @@ In the Developer Console:
 
 There are two ways to configure the `aio` CLI:
 
-* **With Developer Role or System Administrator permissions**, sign in to the `aio` CLI as shown [here](../app-builder-getting-started/first-app.md/#3-sign-in-from-the-cli), then use it to retrieve the projects you created in the Developer Console and select the workspace you want to work in. 
+* **With Developer Role or System Administrator permissions**, sign in to the `aio` CLI as shown [here](../app_builder_get_started/first_app.md#-sign-in-from-the-CLI), then use it to retrieve the projects you created in the Developer Console and select the workspace you want to work in. 
 
 * **If you lack the right permissions** but have a namespace and authorization for it, manually configure the `aio` CLI as shown in the next section.
 

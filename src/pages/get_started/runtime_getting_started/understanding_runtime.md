@@ -58,7 +58,7 @@ When an action invocation request is accepted by I/O Runtime and an ActivationId
 
 ## Understanding system settings
 
-Some system limits are relevant to your application design; you can find a full reference in the Adobe I/O Runtime [System Settings Guide](https://github.com/AdobeDocs/adobeio-runtime/blob/master/guides/system_settings.md).
+Some system limits are relevant to your application design; you can find a full reference in the Adobe I/O Runtime [System Settings Guide](../../guides/runtime_guides/system_settings.md).
 
 These are particularly important:
 
@@ -70,7 +70,7 @@ These are particularly important:
 
 <InlineAlert slots="text"/>
 
-If your organization cannot be served by these default values, MinuteRate and Concurrent limits can be raised. Please visit the [Adobe I/O Runtime Forums](https://forums.adobe.com/community/adobe-io/adobe-io-runtime) for developer support.
+If your organization cannot be served by these default values, MinuteRate and Concurrent limits can be raised. Please visit the [Adobe I/O Runtime Forums](https://forums.adobe.com/community/adobe-io/adobe-io-runtime) for Developer support.
 
 ## I/O Events integration
 
@@ -152,4 +152,4 @@ The [Adobe I/O Runtime Forum](https://forums.adobe.com/community/adobe-io/adobe-
 
 If you have issues with the documentation, please submit a pull request at the [Adobe I/O Runtime GitHub repository](https://github.com/AdobeDocs/adobeio-runtime).
 
-And please check the [FAQ](../app-builder-overview/faq.md) for answers to some of the most common questions asked about Adobe I/O Runtime.
+And please check the [FAQ](../../intro_and_overview/faq.md#using-i-o-runtime) for answers to some of the most common questions asked about Adobe I/O Runtime.

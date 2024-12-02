@@ -4,7 +4,7 @@ keywords:
 title: How I/O Runtime works
 ```
 
-# How Adobe I/O Runtime works
+# How Adobe I/O Runtime Works
 
 Adobe I/O Runtime is based on the open source Apache OpenWhisk platform, and uses the OpenWhisk architecture to provide function-as-a-service. Here is a high-level look at the architecture:
 
@@ -60,11 +60,11 @@ Note the `$userNamespace` variable. Runtime requests require access to the same 
 
 #### Receiving: nginx
 
-[Nginx](https://www.nginx.com/ "Nginx") is a reverse proxy and HTTP server. The OpenWhisk architecture uses it to terminal SSL and forward the HTTP request to the next component in the processing loop.
+[Nginx](https://www.nginx.com/) is a reverse proxy and HTTP server. The OpenWhisk architecture uses it to terminal SSL and forward the HTTP request to the next component in the processing loop.
 
 #### Interpreting: the Controller
 
-The Controller is the core component of Runtime (OpenWhisk). It serves as the interface for everything a user can do. It is an imlementation of the actual REST API, written in the [Scala](https://www.scala-lang.org/ "Scala programming language") programming language, and built on the [Akka](https://akka.io/ "Akka runtime") runtime environment and the [Spray](http://spray.io/ "Spray toolkit") REST/HTTP toolkit.
+The Controller is the core component of Runtime (OpenWhisk). It serves as the interface for everything a user can do. It is an imlementation of the actual REST API, written in the [Scala](https://www.scala-lang.org/) programming language, and built on the [Akka](https://akka.io/ "Akka runtime") runtime environment and the [Spray](http://spray.io/) REST/HTTP toolkit.
 
 The Controller receives HTTP requests from nginx and interprets them. The results may be a [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) requests or direct invocations of an action. In this example, the Controller reads an HTTP POST request to an existing action as an invocation of that action, and moves to the next step.
 
@@ -79,3 +79,5 @@ CosmosDB stores user credentials and also the code for the actions themselves. S
 ## Next step
 
 To begin a step-by-step tutorial for creating, deploying, and testing your first Runtime action, start with [Set up Your Environment](setup.md).
+
+For a closer look at the programming model, components, operation, integrations, and security provisions of Adobe I/O Runtime, review [Understanding Adobe I/O Runtime](understanding_runtime.md)

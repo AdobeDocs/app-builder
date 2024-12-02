@@ -27,9 +27,9 @@ Here you'll learn what systems you need to access, how to access them, and how t
   
   - Partners should request App Builder access from their partner manager, or Sandbox access though the [Adobe Solution Partner Portal](https://solutionpartners.adobe.com/home.html)
 
-[**App Builder access**](../overview/getting_access.md) is available under a purchased license or as a trial. For example, the AEM Headless trial includes App Builder.
+**App Builder access** is available under a purchased license or as a trial. For example, the AEM Headless trial includes App Builder.
 
-**[Adobe Developer Console](https://developer.adobe.com/console)** gives you access to APIs, SDKs, and developer tools. It also provides a way to set up your credentials.
+**[Adobe Developer Console](https://developer.adobe.com/developer-console/)** gives you access to APIs, SDKs, and developer tools. It also provides a way to set up your credentials.
 
 **[A GitHub account](https://github.com/)** is optional but highly recommended for setting up your CI/CD workflow.
 
@@ -61,7 +61,7 @@ We aim to provide similar quality of local development experience on Windows 10 
 
 The [CLI](https://github.com/adobe/aio-cli) uses the popular [inquirer](https://www.npmjs.com/package/inquirer) package for all its interactive functions such as application generators.
 
-See [inquirer's Support section](https://www.npmjs.com/package/inquirer#support-os-terminals) and its [known issues](https://www.npmjs.com/package/inquirer#know-issues) for up-to-date details.
+See [inquirer's Support section](https://www.npmjs.com/package/inquirer) and its [known issues](https://www.npmjs.com/package/inquirer#known-issues) for up-to-date details.
 
 ### Optional tool
 
