@@ -11,7 +11,7 @@ title: Codelab Environment Requirements
 
 import Requirements from '../transclusions/requirements.md'
 
-<Requirements/>
+<Fragment src="/src/pages/resources/transclusions/requirements.md" />
 
 ### Codelab environment
 
