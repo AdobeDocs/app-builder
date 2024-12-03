@@ -13,7 +13,7 @@ Below are complete sample applications built using App Builder.
 
 ## Overview
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"/>
+<DiscoverBlock slots="heading, link, text" width="100%" />
 
 ### Live demo: Adobe Stock Image Search
 
