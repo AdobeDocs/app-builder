@@ -27,7 +27,7 @@ You could also use the `Curl` command or `POSTMAN` to call the journaling `UNIQU
 
 ## Option 2: Using runtime action
 
-If you have access to [Adobe I/O Runtime](/runtime) (included with App Builder) and have defined a [slack webhook url](https://api.slack.com/incoming-webhooks), you can edit the `app.config.yaml` to add an action called slack:
+If you have access to Adobe I/O Runtime (included with App Builder) and have defined a [slack webhook url](https://api.slack.com/incoming-webhooks), you can edit the `app.config.yaml` to add an action called slack:
 
 * ```javascript
   slack:

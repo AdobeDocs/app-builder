@@ -49,4 +49,4 @@ This time, the action runs successfully and you can see the list of profiles in 
 
 ![profiles-success](assets/profiles-success.png)
 
-The app is now running locally and ready for development. If you explore why it works, please check out [App Builder App Security Overview](../../guides/security/index.md).
+The app is now running locally and ready for development. If you explore why it works, please check out [App Builder App Security Overview](../../guides/app_builder_guides/security/index.md).

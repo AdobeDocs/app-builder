@@ -26,6 +26,6 @@ inputs:
   LOG_LEVEL: debug
 ```
 
-Please refer to the [App Builder's core Logging library](https://github.com/adobe/aio-lib-core-logging) to learn more about using `logger` in your app. If you need more high-level information on this topic, review [Managing logs in App Builder Apps](https://developer.adobe.com/app-builder/docs/guides/application_logging/).
+Please refer to the [App Builder's core Logging library](https://github.com/adobe/aio-lib-core-logging) to learn more about using `logger` in your app. If you need more high-level information on this topic, review [Managing logs in App Builder Apps](../../guides/app_builder_guides/application_logging/logging.md).
 
 

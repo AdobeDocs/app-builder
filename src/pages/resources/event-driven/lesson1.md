@@ -53,6 +53,6 @@ You will be presented with several options:
 
 Once you have named your action, you have created your App Builder template and can use it to start your app.
 
-For this lab, you will use this generic template to create a web page. If this is your first time using App Builder, please follow the instructions at [Creating your First App Builder App](../../getting_started/first_app.md).
+For this lab, you will use this generic template to create a web page. If this is your first time using App Builder, please follow the instructions at [Creating your First App Builder App](../../get_started/app_builder_get_started/first_app.md).
 
 In the next lesson, we will show how to use the custom events plugin to register this app as event provider and click the `invoke` button to fire an event. The event will be consumed by Journaling API, webhook URL, and runtime action.

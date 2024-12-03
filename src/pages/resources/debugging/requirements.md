@@ -15,4 +15,4 @@ import Requirements from '../transclusions/_requirements.md'
 
 ## Code Lab Environment
 
-The [Optional tools](../../getting_started/index.md#optional-tools) are required for this lab. Please make they are installed.
+The [Optional tools](../../get_started/app_builder_get_started/app_builder_intro.md#optional-tools) are required for this lab. Please make sure they are installed.

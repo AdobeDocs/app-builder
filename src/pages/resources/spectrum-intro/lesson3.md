@@ -73,7 +73,7 @@ Provider is the containing component that all other React Spectrum components ar
 
 Consult the [React documentation](https://react-spectrum.adobe.com/docs/react-spectrum/Provider.html) (404!) for more details.
 
-> **Note**: A Typekit ID is required to use the suggested Adobe fonts. Visit https://typekit.com/account/kits to create one. The default font is intended only for prototyping work.
+> **Note**: A Typekit ID is required to use the suggested Adobe fonts. Visit [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) to create one. The default font is intended only for prototyping work.
 
 You should then see the same result as in the previous lesson on [Spectrum CSS](lesson2.md). If you have dark mode enabled in your OS, you will see the Spectrum dark theme instead.
 

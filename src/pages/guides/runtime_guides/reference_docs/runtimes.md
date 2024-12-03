@@ -4,7 +4,7 @@ Adobe I/O Runtime supports the three latest Node.js versions (see the [Node.js r
 
 These npm modules are pre-installed, so you don't need to package them with your action code to use them:
 
-### Node.js V22.6.0
+### Node.js v22.6.0
 
     "express": "4.18.2",
     "openwhisk": "3.21.7",

@@ -18,7 +18,7 @@ The Code Lab will show how to consume events using runtime actions as webhook.
 
 ## Background
 
-In previous Code Lab [Consume Events using Journaling API](../journaling-events/index.md) we showed how to consume events using Journaling API. This one will introduce another way to consume events - runtime action as webhook. The integration between Adobe I/O Runtime and I/O Events allows you create runtime actions set up as webhook endpoints on the Adobe Developer console for receiving events. Every time an event fires, your runtime action is executed and the debug tracing feature allows you to debug easily.  
+In the Code Lab [Consume Events using Journaling API](../journaling-events/index.md) we showed how to consume events using Journaling API. This one will introduce another way to consume events - runtime action as webhook. The integration between Adobe I/O Runtime and I/O Events allows you create runtime actions set up as webhook endpoints on the Adobe Developer console for receiving events. Every time an event fires, your runtime action is executed and the debug tracing feature allows you to debug easily.  
 
 ## Benefits of using Runtime Actions as webhook
 
@@ -29,7 +29,7 @@ Two main benefits to choose Runtime actions as webhook are:
 
 ## How to choose between Journaling API and Runtime Action webhook
 
-- The [journaling approach](./journaling-events/index.md) is recommended when you have long-running (asynchronous) actions that require guaranteed event handling, especially when there is a surge of events 
+- The [journaling approach](../journaling-events/index.md) is recommended when you have long-running (asynchronous) actions that require guaranteed event handling, especially when there is a surge of events 
 - Runtime action webhook is recommended for short-running (synchronous) actions, for example those that respond within 10 sec
 
 ## Overview

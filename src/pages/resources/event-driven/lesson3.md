@@ -57,9 +57,9 @@ application:
 In the template code: 
 
 * Source code is at `actions/publish-events/index.js`
-* It is a [web action](/runtime/docs/guides/using/creating_actions/#invoking-web-actions)
-* The action will be run in the `nodejs:18` [runtime container on I/O Runtime](/runtime/docs/guides/reference/runtimes)
-* It has some [default params](/runtime/docs/guides/using/creating_actions/#working-with-parameters) such as `LOG_LEVEL`, and those you can pass in your `params` like `apiKey`, `provideId` and `eventCode`from `manifest.yml`
+* It is a [web action](../../guides/runtime_guides/creating_actions.md#invoking-web-actions)
+* The action will be run in the `nodejs:18` [runtime container on I/O Runtime](../../guides/runtime_guides/reference_docs/runtimes.md#node-js-v18-14-2)
+* It has some [default params](../../guides/runtime_guides/creating_actions.md#working-with-parameters) such as `LOG_LEVEL`, and those you can pass in your `params` like `apiKey`, `provideId` and `eventCode`from `manifest.yml`
 
 ```javascript
 const { Core, Events } = require('@adobe/aio-sdk')
@@ -160,7 +160,7 @@ You will see your deployed link in the terminal.
 Next, let's see how the web UI communicates with the back end. In `web-src/src/components` we already provided a template of the UI.
 After you select the actions to `publish-events`, clicking the `invoke` button will invoke the action. The action will send out the event. When you invoke, you could also add actual parameters. In this example we added `{"payload": "you got a like"}` In the webhook result, you will see the payload: `{"data": "you got a like"}`.
 
-> Note: This example uses [this webhook tool](https://io-webhook.herokuapp.com/) to generate a webhook link and put the webhook to the console integration. You can use other tools as discussed in Lesson 4. 
+> Note: This example uses [this webhook tool](https://io-webhook.herokuapp.com/) to generate a webhook link and put the webhook to the console integration. You can use other tools, as discussed in the next lesson. 
 
 ![templateui](assets/template-ui.png)
 

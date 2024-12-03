@@ -22,7 +22,7 @@ There is a class of App Builder apps in which customers want guarantees that I/O
 
 ## Solution
 
-- Use the [Journaling API](/events/docs/guides/api/journaling_api/) to retrieve events instead of relying on the webhook approach.
+- Use the [Journaling API](https://developer.adobe.com/events/docs/guides/api/journaling_api/) to retrieve events instead of relying on the webhook approach.
 - Use a Runtime action that uses the [Alarm package](../cron-jobs/index.md) to read the events every X minutes.
 - The alarm action stores the events in the App Builder storage [aio-lib-state](https://github.com/adobe/aio-lib-state)
 - Record an index of events in storage so that if the action fails, the next invocation will retrieve from the same index, and no events will be lost.

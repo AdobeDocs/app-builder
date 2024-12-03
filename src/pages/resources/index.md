@@ -17,7 +17,7 @@ Code Labs are guided hands-on coding experiences to build apps on top of App Bui
 
 ### Spectrum introduction
 
-[Video (20mins)](spectrum-intro/index.md)
+[Start (20mins)](spectrum-intro/index.md)
 
 Introduction to Spectrum to build an App Builder App UI.
 
@@ -25,7 +25,7 @@ Introduction to Spectrum to build an App Builder App UI.
 
 ### Consume events using Journaling API
 
-[Video (30mins)](journaling-events/index.md)
+[Start (30mins)](journaling-events/index.md)
 
 Creating cron jobs in an App Builder application to consume events using Journaling API.
 

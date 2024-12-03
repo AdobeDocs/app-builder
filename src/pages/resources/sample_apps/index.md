@@ -9,7 +9,7 @@ title: App Builder Sample Apps
 
 # Sample Apps
 
-These are complete sample applications built using App Builder. See below for a [collection of code snippets](#code-snippets) for common operations.
+These are complete sample applications built using App Builder. See below for a [collection of code snippets](code_snippets/index.md) for common operations.
 
 ## Overview
 
@@ -56,8 +56,6 @@ This is a complete solution of the Code Lab [Building an App Builder To-Do App w
 [Journal browser using I/O Events library](https://github.com/AdobeDocs/adobeio-samples-events-journal-browser) is an App Builder App that lets users browse through events from Journaling using a simple interface.
 
 ### Adobe I/O Events - Azure Service Bus connector
-
-<https://github.com/AdobeDocs/adobeio-samples-events-azureservicebus-connector> 
 
 [Azure Service Bus connector](https://github.com/AdobeDocs/adobeio-samples-events-azureservicebus-connector) is a sample I/O Events consumer, built using App Builder, that forwards all incoming events to Azure Service Bus. This sample consumer application can be used as a reference to connect Adobe I/O Events with an enterprise's Azure Service Bus.
 

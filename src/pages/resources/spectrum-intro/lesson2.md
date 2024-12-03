@@ -57,7 +57,7 @@ Then, make sure you've included the relevant classes so you can choose which sca
 <html lang="en" dir="ltr" class="spectrum spectrum--medium spectrum--light"> 
 ```
 
-Then include the Adobe Fonts, for example using your Typekit ID. To create one, visit https://typekit.com/account/kits.
+Then include the Adobe Fonts, for example using your Typekit ID. To create one, visit [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com).
 
 ```html
 <!-- mge7bvf is the Typekit id. Please don't reuse, it's not meant for production. -->

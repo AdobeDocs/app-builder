@@ -83,4 +83,4 @@ This completes the "Getting Started" tutorial series for App Builder.
 
 To learn how to extend App Builder capabilities using the Adobe I/O Runtime platform, proceed to the [Getting Started with Adobe I/O Runtime](dummy) tutorial.
 
-For in-depth review of App Builder architecture, development, deployment, integration, and security, visit the [<mark>Guides</mark>](dummy) index and select your topic of interest.
+For in-depth review of App Builder architecture, development, deployment, integration, and security, visit the [Guides Index](../../guides/guides_index.md) and select your topic of interest.

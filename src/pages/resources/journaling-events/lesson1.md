@@ -40,7 +40,7 @@ Now we can arrange to fire events by following [the procedure from this Code Lab
 
 ## Scheduling cron jobs with alarms
 
-Follow [this CodeLab](../cron-jobs/index.md) to fire events automatically by using the runtime alarms package as shown in [Scheduling Cron Jobs with Alarms](../cron-jobs/index.md).
+Follow [this CodeLab](../cron-jobs/index.md) to fire events automatically by using the runtime alarms package.
 
 Your `app.config.yaml` should now look like this:
 
