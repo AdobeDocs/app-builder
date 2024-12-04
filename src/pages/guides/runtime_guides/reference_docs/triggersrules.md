@@ -2,8 +2,8 @@
 
 Actions invoked directly in the CLI have limited application; Adobe I/O Runtime is most useful when it is configured to respond to events. Runtime features that support this are triggers and rules:
 
-* _Triggers_ are events: each trigger you create represents a class of event.
-* _Rules_ are associations between triggers and actions. Rules are the way you make Runtime execute code in response to an event.
+* **Triggers** are events: each trigger you create represents a class of event.
+* **Rules** are associations between triggers and actions. Rules are the way you make Runtime execute code in response to an event.
 
 ## About triggers
 
@@ -124,7 +124,7 @@ Finally, to stop a rule, disable it:
 
 `aio rt:rule:disable greetLoc`
 
-## Rules on triggers and rules
+## Working with triggers and rules
 
 Triggers, rules, and actions can be combined in different ways: you can associate a trigger with multiple actions by using a different rule for each action, and an action can be the target of multiple triggers, again by creating a rule for each trigger. 
 

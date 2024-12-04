@@ -1,6 +1,6 @@
 # Securing Web Actions
 
-By default, a web action can be invoked by anyone knowing the action&rsquo;s URL. If you want to restrict the access, you either use Basic Authentication or you build your own authentication layer.
+By default, a web action can be invoked by anyone knowing the action's URL. If you want to restrict 'access, either use Basic Authentication or you build your own authentication layer.
 
 ## Basic authentication
 
@@ -49,7 +49,7 @@ or
 aio rt:action:update my-require-validation-web-action main.js --web true -a require-gw-validation true
 ```
 
-To interact with the action, set up a security configuration in your Swagger API route for that action. Detailed instructions on how to do this can be found in [Securing the API Endpoints](https://developer.adobe.com/runtime/docs/guides/using/creating_rest_apis/#securing-the-api-endpoints).  
+To interact with the action, set up a security configuration in your Swagger API route for that action. Detailed instructions on how to do this can be found in [Securing API Endpoints](creating_rest_apis.md#securing-api-endpoints).  
 
 # Non-web actions
 

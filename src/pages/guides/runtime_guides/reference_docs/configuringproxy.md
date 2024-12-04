@@ -4,14 +4,14 @@ For security reasons, Runtime does not expose egress IPs. Customers who need a w
 
 This can be done by adding a proxy component (in this example, an AWS EC2 instance running nginx). The proxy component will have a fixed IP address, so using an IP allowlist can secure the backend service. Communication between I/O Runtime and the proxy component will be secured via mutual TLS (mTLS) communication. 
 
-![](../../img/configure-proxy.png)
+![](E:\GitHub\app-builder\src\pages\images\configure-proxy.png)
 
 The following steps outline how to:
 
 * Configure the NGINX proxy component to support mutual TLS (mTLS)
 * Configure an AppBuilder action to use mTLS to securely communicate with the proxy component
 
-_**Prerequisite:** An EC2 instance with NGINX installed. The [official NGINX documentation](https://docs.nginx.com/nginx/deployment-guides/amazon-web-services/ec2-instances-for-nginx/) has more information._
+An EC2 instance with NGINX installed is a prerequisite for configuring this proxy. The [official NGINX documentation](https://docs.nginx.com/nginx/deployment-guides/amazon-web-services/ec2-instances-for-nginx/) has more information.
 
 1. Verify SSH connectivity to the EC2 instance. (screenshot of terminal/template cmd)
    

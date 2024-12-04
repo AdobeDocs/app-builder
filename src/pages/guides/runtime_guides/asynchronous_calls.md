@@ -99,6 +99,8 @@ aio rt:trigger:get my-worker-trigger -v
 
 Retrieval of the action activationId (and not the trigger activationId) is trickier than in Option 1. Use the trigger activationId to retrieve the logs, which will contain the action activationId you can use to read the result.
 
-## Next step
+## Next steps
+
+Learn about [Triggers and Rules](reference_docs/triggersrules.md).
 
 Return to [Guides Index](../guides_index.md).

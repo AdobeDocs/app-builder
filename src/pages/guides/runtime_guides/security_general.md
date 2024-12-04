@@ -42,7 +42,7 @@ When invoking functions on the command line, your namespace and key are authenti
 
 ### Adobe IMS authentication
 
-Actions should include the [aio-lib-ims](https://github.com/adobe/aio-lib-ims) library to authenticate with Adobe IMS. Alternatively, you could use [App Builder to authenticate your actions against Adobe IMS](https://developer.adobe.com/app-builder/docs/guides/security/#authentication-and-authorization-handling). 
+Actions should include the [aio-lib-ims](https://github.com/adobe/aio-lib-ims) library to authenticate with Adobe IMS. Alternatively, you could use [App Builder](../app_builder_guides/security/index.md#authentication-and-authorization-handling) to authenticate your actions against Adobe IMS. 
 
 ### Securing web actions
 
@@ -66,14 +66,14 @@ Using a CDN in front of web actions improves security. Many CDNs offer built-in 
 
 You can secure web actions using any CDN by following these steps: 
 
-1. Choose a provider that meets your needs and sign up for their service. [Wikipedia]([Content delivery network - Wikipedia](https://en.wikipedia.org/wiki/Content_delivery_network#Notable_content_delivery_service_providers)) lists notable alternatives.
+1. Choose a provider that meets your needs and sign up for their service. [Wikipedia](https://en.wikipedia.org/wiki/Content_delivery_network#notable_content_delivery_service_providers) provides a list of alternatives.
 2. Configure the CDN and point it to Runtime’s domain name, `<your-namespace>.adobeioruntime.net`. This can usually be done through the CDN provider's web interface or API.
 3. Configure your action to use a security header as described in [Securing Web Actions](securing_web_actions.md). 
 4. Configure the CDN to add the `X-Require-Whisk-Auth` security header, with the secret hash value, for all requests made to the secured web actions.
 
 ## Secure communication with back-end services
 
-For security reasons, Runtime does not expose egress IPs . Customers who need a way to  communicate securely with their back-end services can use a proxy between their system and Runtime, as described in [Configuring a Secure Proxy](../reference/configuringproxy.md).
+For security reasons, Runtime does not expose egress IPs . Customers who need a way to  communicate securely with their back-end services can use a proxy between their system and Runtime, as described in [Configuring a Secure Proxy](reference_docs/configuringproxy.md).
 
 Runtime ingress IPs are not static. To facilitate operational changes,  IPs returned when looking up I/O Runtime endpoints may change. To ensure uninterrupted service availability, it is critical that clients honor the Time to Live (TTL) returned by I/O Runtime DNS records. When the IPs associated with these endpoints change due to operational adjustments, clients who rely on the outdated addresses may experience service disruptions, increased latency, or network connectivity issues. How clients honoring TTL is implementation-specific, but in general, clients should not cache DNS records for longer than the specified TTL.
 

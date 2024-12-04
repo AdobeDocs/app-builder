@@ -45,3 +45,7 @@ If you plan to increase the timeout to more than one minute, be aware that:
 ## Activation TTL
 
 Activation Time To Live (TTL) is seven days. This is a system setting that can't be changed by Developers. If you don't see activations that you know took place, consider whether they exceeded their TTL .
+
+## Next step
+
+Return to [Guides Index](../guides_index.md).

@@ -6,7 +6,9 @@ Adobe I/O Runtime is more than a way of deploying individual actions and invokin
 
 * [Asynchronous Calls](asynchronous_calls.md) and how to execute these long-running, non-blocking calls
 
-* [Throughput Tuning](throughput_tuning.md) to maximize the number of action invocations
+* [Security](security_general.md) issues to consider when working with I/O Runtime
+
+* [Throughput Tuning](throughput_tuning.md) to maximize invocations and performance
 
 * [Securing Web Actions](securing_web_actions.md) through effective access control
 

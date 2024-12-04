@@ -5,7 +5,7 @@ To execute as an action on Adobe I/O Runtime, the function you code must both :
 - Either be named *main* or have an entry point exported as *main* - the function that will be executed when invoked
 - Accept valid JSON objects as input, and output valid JSON objects
 
-To create and invoke actions, you must also configure the `aio` CLI on your machine: refer to the [aio CLI](../tools/cli_install.md) page for installation and configuration instructions. 
+To create and invoke actions, you must also configure the `aio` CLI on your machine: refer to the [aio CLI](tools/cli_install.md) page for installation and configuration instructions. 
 
 Let's assume you have this function available on your machine:
 
@@ -313,7 +313,7 @@ Requirements to deploy a ZIP action are:
 
 ### wskdeploy
 
-If you need to install `wskdeploy`, check [Setting up the wskdeploy CLI](../tools/wskdeploy_install.md).
+If you need to install `wskdeploy`, check [Setting up the wskdeploy CLI](tools/wskdeploy_install.md).
 
 ### Package.json file
 

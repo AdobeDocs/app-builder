@@ -35,9 +35,9 @@ However, during development it is important to have access to all activation res
 X-OW-EXTRA-LOGGING: on
 ```
 
-> It's not recommended to use the extra logging headers in the production environment as invocation performance can be impacted. 
+> It's not recommended to use the extra logging headers in the production environment; it can reduce invocation performance. 
 
-## Understanding The Error Codes
+## Understanding the Error Codes
 
 When you have action invocations that fail, sometimes the best way to understand the reason behind the failing is to take a look at the error object part of the activation record - running `aio rt:activation:get <activationId>` you will get the activation record.
 
@@ -48,7 +48,7 @@ The following are the possible values and the meaning for `error` in `response.s
 * `application error`: Action ran, but there was an error thrown in the action code (deliberatly or not) that was handled by I/O Runtime (status is false).
 * `whisk internal error`: Action did not run, an internal I/O Runtime system error occurred while starting the action, more info in `response.status.result.error`
 
-## 3rd-Party Tools
+## Third-Party Tools
 
 I/O Runtime doesn’t offer a configuration to send activations and logs to an external system, something like Splunk, Datadog or New Relic. This is something we are considering to offer in the future. 
 
@@ -56,7 +56,7 @@ Although there is no out-of-the-box integration, there are still ways you can pu
 
 #### Epsagon
 
-One tool that made it easy to do this is [Epsagon](https://epsagon.com/?utm_source=adobe.io&utm_medium=referral&utm_campaign=adobe_io_docs). Epsagon built an integration for OpenWhisk based systems (I/O Runtime is built on top of the open source project OpenWhisk) that makes super easy to see your activations, errors, latency information and logs in their system. Check this [guide](https://docs.epsagon.com/docs/openwhisk?utm_source=adobe.io&utm_medium=referral&utm_campaign=adobe_io_docs) or this [video presentation](https://www.youtube.com/watch?v=4iprbivqrxQ&t=1517s) if you want to find more.
+One tool that made it easy to do this is [Epsagon](https://epsagon.com). Epsagon built an integration for OpenWhisk-based systems like I/O Runtime that simplifies seeing your activations, errors, latency information and logs. Check this [guide](https://docs.epsagon.com/docs/openwhisk?utm_source=adobe.io&utm_medium=referral&utm_campaign=adobe_io_docs) or this [video presentation](https://www.youtube.com/watch?v=4iprbivqrxQ&t=1517s) if you want to find more.
 
 #### New Relic
 
@@ -80,8 +80,12 @@ function main(params) {
 }
 ```
 
-You need to package the new relic agent as part of your action code and deploy the action as [.zip file](creating_actions#deploying-zip-actions). 
+You need to package the new relic agent as part of your action code and deploy the action as [.zip file](creating_actions.md#deploying-zip-actions). 
 
 ## Debugging Locally
 
 Check this [page](debugging.md) if you want to learn how to debug your actions locally.
+
+## Next steps
+
+Return to the [Guides Index](../guides_index.md).

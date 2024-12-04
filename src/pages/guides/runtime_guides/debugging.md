@@ -45,6 +45,6 @@ Next, place breakpoints in your action code and launch the debugger. Once you ca
 
 For details of how `wskdebug` works, its limitations, and how to use it to its full potential, please read the [Adobe's `wskdebug` documentation](https://github.com/adobe/wskdebug).
 
-## Next steps
+## Next step
 
 Return to the [Guides Index](../guides_index.md).

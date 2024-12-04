@@ -2,7 +2,7 @@
 
 Individual actions (functions) can be effective, but you may also need to create sets of actions that interact with each other, or make them available to other Developers. Runtime meets these requirements with packages.
 
-Packages are bundles of related actions; they can contain both actions and feeds, or streams of events. Feeds are created by feed actions that specify a trigger to fire for a given event source, so that each time the event is received, the selected trigger is fired and the associated action executed. For more information, see [Using Feeds](../reference/feeds.md 'Using Feeds').
+Packages are bundles of related actions; they can contain both actions and feeds, or streams of events. Feeds are created by feed actions that specify a trigger to fire for a given event source, so that each time the event is received, the selected trigger is fired and the associated action executed. For more information, see [Using Feeds](reference_docs/feeds.md).
 
 ## Creating packages
 
@@ -29,7 +29,7 @@ package /<yourNamespace>/hellopackage
 
 ## Adding actions to a package
 
-The package you created is empty. To add an action to it, use the source code from the `hello` action created in [Deploying your first Adobe I/O Runtime function](../gettingstarted/deploy.md 'Deploying your first function'). Here is the code:
+The package you created is empty. To add an action to it, use the source code from the `hello` action created in [Deploying your first Adobe I/O Runtime function](../../get_started/runtime_getting_started/deploy.md). Here is the code:
 
 ```
 function main(params) {
@@ -280,6 +280,6 @@ Shared packages enforce `execute-only` permission for any operation initiated fr
 * Attempts to read, update, or delete `my-package` code from namespace `b` will fail
 * Attempts to create, read, update, or delete `my-package` will work only from namespace `a`
 
-## Next steps
+## Next step
 
-Return to [Guides Index](../guides_index.md)
+Return to [Guides Index](../guides_index.md).
