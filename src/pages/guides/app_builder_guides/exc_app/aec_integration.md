@@ -43,11 +43,11 @@ init(runtime => {
 
 This is a glossary of Experience Cloud integration APIs, with links to details:
 
-**[Index]((./modules/index.md)** lets solutions initialize the application, provide access to the runtime object from anywhere in the app, and listen to events.
+**[Index](modules/index.md)** lets solutions initialize the application, provide access to the runtime object from anywhere in the app, and listen to events.
 
-**[Page](./modules/page.md)** lets solutions interact with and personalize the main page by setting the title or favicon, refreshing the solution iframe, and so on.
+**[Page](modules/page.md)** lets solutions interact with and personalize the main page by setting the title or favicon, refreshing the solution iframe, and so on.
 
-**[TopBar](./modules/topbar.md)** lets solutions interact with and personalize the top bar by configuring the left-side solution area, setting up workspaces, arranging custom search, and so on.
+**[TopBar](modules/topbar.md)** lets solutions interact with and personalize the top bar by configuring the left-side solution area, setting up workspaces, arranging custom search, and so on.
 
 **[User](./modules/user.md)** requests user-specific information including IMS organization, IMS profile, access token, tenant, and so on. It also gives solutions capabilities such as notifying the shell that a session has expired and configuring logout URLs to expire custom sessions.
 
@@ -143,23 +143,23 @@ This project is licensed under the Creative Commons Attribution-NoDerivatives 4.
 
 ## Next steps
 
-Explore details of the [Index](./modules/index.md), [Page](./modules/page.md), [TopBar](./modules/topbar.md), and [User](./modules/user.md) external modules.
+Explore details of the [Index](modules/index.md), [Page](modules/page.md), [TopBar](modules/topbar.md), and [User](modules/user.md) external modules.
 
 Explore the attributes and behavior of Adobe Experience Cloud Interfaces:
 
-[Modules](modules.md)
+[Modules](interfaces/modules.md)
 
-[Runtime](runtime.md)
+[Runtime](interfaces/runtime.md)
 
-| Page                                             | Topbar                                                     | User                          |
-|:------------------------------------------------ | ---------------------------------------------------------- | ----------------------------- |
-| [Object with Href](page.objectwithhref.md)       | [Callback](topbar.callback)                                | [User API](user.userapi.md)   |
-| [Object with Path](pageobjectwithpath.md)        | [Custom Feedback](topbar.customfeedback.md)                | [User Info](user.userinfo.md) |
-| [Page API](page.pageapi.md)                      | [Custom Search](topbar.customsearchconfig.md)              |                               |
-| [Page API Properties](page.pageapiproperties.md) | [Help Center Feedback](topbar.helpcenterfeedbackconfig.md) |                               |
-|                                                  | [External Feedback](topbar.externalfeedbackconfig.md)      |                               |
-|                                                  | [Solution](topbar.solution.md)                             |                               |
-|                                                  | [Topbar API](topbar.topbarapi.md)                          |                               |
-|                                                  | [Topbar API Properties](topbar.topbarapiproperties.md)     |                               |
+| Page                                                        | Topbar                                                                | User                                     |
+|:----------------------------------------------------------- | --------------------------------------------------------------------- | ---------------------------------------- |
+| [Object with Href](interfaces/page.objectwithhref.md)       | [Callback](interfaces/topbar.callback.md)                             | [User API](interfaces/user.userapi.md)   |
+| [Object with Path](interfaces/page.objectwithpath.md)       | [Custom Feedback](interfaces/topbar.customfeedbackconfig.md)          | [User Info](interfaces/user.userinfo.md) |
+| [Page API](interfaces/page.pageapi.md)                      | [Custom Search](interfaces/topbar.customsearchconfig.md)              |                                          |
+| [Page API Properties](interfaces/page.pageapiproperties.md) | [Help Center Feedback](interfaces/topbar.helpcenterfeedbackconfig.md) |                                          |
+|                                                             | [External Feedback](interfaces/topbar.externalfeedbackconfig.md)      |                                          |
+|                                                             | [Solution](interfaces/topbar.solution.md)                             |                                          |
+|                                                             | [Topbar API](interfaces/topbar.topbarapi.md)                          |                                          |
+|                                                             | [Topbar API Properties](interfaces/topbar.topbarapiproperties.md)     | `                                        |
 
 Return to the [Guides Index](../../guides_index.md).

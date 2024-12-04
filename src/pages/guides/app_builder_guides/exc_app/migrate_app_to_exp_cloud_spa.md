@@ -26,7 +26,7 @@ Standalone applications will **not** have the `App Builder ExcShell` sub-heading
 
 ## Understanding the difference
 
-The [Extension Migration Guide](extensions/extension_migration_guide.md#old-file-structure) details the differences between standalone applications and DX Experience Cloud v1 SPAs, provides an overview of the directory structure for DX Experience Cloud v1 SPAs )under [New file structure](extensions/extension_migration_guide.md#old-file-structure)), and shows how to configure extension points. 
+The [Extension Migration Guide](../extensions/extension_migration_guide.md#old-file-structure) details the differences between standalone applications and DX Experience Cloud v1 SPAs, provides an overview of the directory structure for DX Experience Cloud v1 SPAs )under [New file structure](../extensions/extension_migration_guide.md#new-file-structure)), and shows how to configure extension points. 
 
 ## Migration steps
 
@@ -114,6 +114,6 @@ The [Extension Migration Guide](extensions/extension_migration_guide.md#old-file
 
 ## Next steps
 
-Explore migration details in the [Extension Migration Guide](extensions/extension_migration_guide.md).
+Explore migration details in the [Extension Migration Guide](../extensions/extension_migration_guide.md).
 
-Return to the [Guides Index](../guides_index.md).
+Return to the [Guides Index](../../guides_index.md).

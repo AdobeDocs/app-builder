@@ -19,7 +19,7 @@ import user from '@adobe/exc-app/user';
 
 ***Default export:***
 
-[UserApi](../interfaces/user.userapi.md#interface-userapi)
+[UserApi](../interfaces/user.userapi.md)
 
 ***Usage:***
 
@@ -65,7 +65,7 @@ async componentDidMount() {
 
 ## Next steps
 
-Explore details of the [Index](./modules/index.md), [Page](./modules/page.md), and [TopBar](./modules/topbar.md) external modules.
+Explore details of the [Index](index.md), [Page](page.md), and [TopBar](topbar.md) external modules.
 
 Explore the attributes and behavior of Adobe Experience Cloud Interfaces:
 

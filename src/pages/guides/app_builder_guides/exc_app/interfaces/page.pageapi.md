@@ -39,7 +39,7 @@ ___
 
 • **modal**: *boolean*
 
-*Inherited from [PageApiProperties](page.pageapiproperties.md).[modal](page.pageapiproperties.md#modal)*
+*Inherited from [PageApiProperties.modal](page.pageapiproperties.md#modal)*
 
 Configuration to show or hide a modal with full-screen overlay. Defaults to false.
 
@@ -55,7 +55,7 @@ ___
 
 • **preventDefaultCombos**: *object[]*
 
-*Inherited from [PageApiProperties](page.pageapiproperties.md).[preventDefaultCombos](page.pageapiproperties.md#preventdefaultcombos)*
+*Inherited from [PageApiProperties.preventDefaultCombos](page.pageapiproperties.md)*
 
 An array of key combinations for the shell to prevent default browser behavior, on in cases where an application performs some other action.
 
@@ -76,7 +76,7 @@ ___
 
 • **spinner**: *boolean*
 
-*Inherited from [PageApiProperties](page.pageapiproperties.md).[spinner](page.pageapiproperties.md#spinner)*
+*Inherited from [PageApiProperties.spinner](page.pageapiproperties.md#spinner)*
 
 Gets or sets a value indicating whether or not to show a spinner on the page. This configuration value is not used for the initial loading spinner (see Route Configuration hideInitialSpinner for that), but can be used to dismiss it if the spinner needs to be dismissed before a solution invokes runtime.done().
 
@@ -142,7 +142,7 @@ ___
 
 ### generateShellUrl
 
-▸ **generateShellUrl**(`location`: [LocationLike](../modules/page.md#locationlike)): *string*
+▸ **generateShellUrl**(`location`: [LocationLike](../modules/page.md#locationlike): *string*
 
 Method to take a relative path or full iframe URL and generate a unified shell url.
 
@@ -228,23 +228,23 @@ page.shellRedirect('/path?a=b#workspace');
 
 ## Next steps
 
-Explore details of the [Index](./modules/index.md), [Page](./modules/page.md), [TopBar](./modules/topbar.md), and [User](./modules/user.md) external modules.
+Explore details of the [Index](../modules/index.md), [Page](../modules/page.md), [TopBar](../modules/topbar.md), and [User](../modules/user.md) external modules.
 
-Explore the attributes and behavior of other Adobe Experience Cloud interfaces:
+Explore the attributes and behavior of Adobe Experience Cloud Interfaces:
 
 [Modules](modules.md)
 
 [Runtime](runtime.md)
 
-| Page                                             | Topbar                                                     | User                          |
-| ------------------------------------------------ | ---------------------------------------------------------- | ----------------------------- |
-| [Object with Href](page.objectwithhref.md)       | [Callback](topbar.callback)                                | [User API](user.userapi.md)   |
-| [Object with Path](pageobjectwithpath.md)        | [Custom Feedback](topbar.customfeedback.md)                | [User Info](user.userinfo.md) |
-| [Page API Properties](page.pageapiproperties.md) | [Custom Search](topbar.customsearchconfig.md)              |                               |
-|                                                  | [Help Center Feedback](topbar.helpcenterfeedbackconfig.md) |                               |
-|                                                  | [External Feedback](topbar.externalfeedbackconfig.md)      |                               |
-|                                                  | [Solution](topbar.solution.md)                             |                               |
-|                                                  | [Topbar API](topbar.topbarapi.md)                          |                               |
-|                                                  | [Topbar API Properties](topbar.topbarapiproperties.md)     |                               |
+| Page                                        | Topbar                                                     | User                     |
+| ------------------------------------------- | ---------------------------------------------------------- | ------------------------ |
+| [Object with Href](page.objectwithhref.md)  | [Callback](topbar.callback.md)                             | [API](user.userapi.md)   |
+| [Object with Path](page.objectwithpath.md)  | [Custom Feedback](topbar.customfeedbackconfig.md)          | [Info](user.userinfo.md) |
+|                                             | [Custom Search](topbar.customsearchconfig.md)              |                          |
+| [API Properties](page.pageapiproperties.md) | [Help Center Feedback](topbar.helpcenterfeedbackconfig.md) |                          |
+|                                             | [External Feedback](topbar.externalfeedbackconfig.md)      |                          |
+|                                             | [Solution](topbar.solution.md)                             |                          |
+|                                             | [API](topbar.topbarapi.md)                                 |                          |
+|                                             | [API Properties](topbar.topbarapiproperties.md)            | `                        |
 
-Return to the [Guides Index](../../guides_index.md).
+Return to the [Guides Index](../../../guides_index.md).

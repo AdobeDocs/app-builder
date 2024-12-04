@@ -11,8 +11,8 @@ This API is used to integrate solution web applications with the unified shell o
 
 ### Interfaces
 
-* [Modules](../interfaces/index.md)
-* [Runtime](../interfaces/index.runtime.md)
+* [Modules](../interfaces/modules.md)
+* [Runtime](../interfaces/runtime.md)
 
 ## Functions
 
@@ -43,13 +43,13 @@ init(() => {
 
 The callback used to bootstrap a solution. The runtime object is passed in as a parameter to this callback.
 
-▸ (`runtime`: [Runtime](../interfaces/index.runtime.md)): *void*
+▸ (`runtime`: [Runtime](../interfaces/runtime.md)): *void*
 
 **Parameters:**
 
-| Name      | Type                                      |
-| --------- | ----------------------------------------- |
-| `runtime` | [Runtime](../interfaces/index.runtime.md) |
+| Name      | Type                                |
+| --------- | ----------------------------------- |
+| `runtime` | [Runtime](../interfaces/runtime.md) |
 
 **Returns:** *void*
 
@@ -57,7 +57,7 @@ ___
 
 ### runtime
 
-▸ **runtime**(): *[Runtime](../interfaces/index.runtime.md)*
+▸ **runtime**(): *[Runtime](../interfaces/runtime.md)*
 
 Get the runtime object, which contains all unified-shell APIs.
 
@@ -75,13 +75,13 @@ export class MyComponent extends React.Component {
 }
 ```
 
-**Returns:** *[Runtime](../interfaces/index.runtime.md)*
+**Returns:** *[Runtime](../interfaces/runtime.md)*
 
 The runtime object.
 
 ## Next steps
 
-Explore details of the [Page](./modules/page.md), [TopBar](./modules/topbar.md), and [User](./modules/user.md) external modules.
+Explore details of the [Page](page.md), [TopBar](topbar.md), and [User](user.md) external modules.
 
 Explore the attributes and behavior of Adobe Experience Cloud Interfaces:
 

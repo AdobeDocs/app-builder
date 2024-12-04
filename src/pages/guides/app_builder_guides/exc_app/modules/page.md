@@ -38,7 +38,7 @@ import page from '@adobe/exc-app/page';
 
 ***Default export:***
 
-[PageApi](../interfaces/page.pageapi.md#interface-pageapi)
+[PageApi](../interfaces/page.pageapi.md)
 
 ***Usage:***
 
@@ -64,7 +64,7 @@ page.shellRedirect('/target');
 
 ## Next steps
 
-Explore details of the [Index](./modules/index.md), [TopBar](./modules/topbar.md), and [User](./modules/user.md) external modules.
+Explore details of the [Index](index.md), [TopBar](topbar.md), and [User](user.md) external modules.
 
 Explore the attributes and behavior of Adobe Experience Cloud Interfaces:
 

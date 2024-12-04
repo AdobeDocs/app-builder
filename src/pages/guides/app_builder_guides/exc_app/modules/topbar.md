@@ -30,7 +30,7 @@ import topbar from '@adobe/exc-app/topbar';
 
 ***Default export:***
 
-[TopbarApi](../interfaces/topbar.topbarapi.md#interface-topbarapi)
+[TopbarApi](../interfaces/topbar.topbarapi.md)
 
 ***Usage:***
 
@@ -42,7 +42,7 @@ topbar.customEnvLabel = 'Beta';
 
 ## Next steps
 
-Explore details of the [Index](./modules/index.md), [Page](./modules/page.md), and [User](./modules/user.md) external modules.
+Explore details of the [Index](index.md), [Page](page.md), and [User](user.md) external modules.
 
 Explore the attributes and behavior of Adobe Experience Cloud Interfaces:
 
