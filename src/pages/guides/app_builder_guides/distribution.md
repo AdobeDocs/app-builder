@@ -15,9 +15,9 @@ Developers may distribute App Builder applications privately or publicly.
 
 ## Private
 
-Privately distributed apps are available only to users in the Developer's organization. They are submitted through the [Developer Console](https://developer.adobe.com/console), reviewed by an Administrator of the organization, and accessed through the [App Builder Catalog](https://experience.adobe.com/#/@adobeio/custom-apps). 
+Privately distributed apps are available only to users in the Developer's organization. They are submitted through the [Developer Console](https://developer.adobe.com/developer-console/), reviewed by an Administrator of the organization, and accessed through the [App Builder Catalog](https://experience.adobe.com/#/@adobeio/custom-apps). 
 
-See [Publishing Your First App Builder Application](../../getting_started/publish_app.md) for a thorough discussion of this topic and a hands-on sample project.
+See [Publishing Your First App Builder Application](../../get_started/app_builder_get_started/publish_app.md) for a thorough discussion of this topic and a hands-on sample project.
 
 > Note: Only Adobe Experience Cloud Shell extensions may appear in the App Builder Catalog.
 
@@ -193,7 +193,7 @@ configSchema:
       envKey: 'AWS_SECRET'
 ```
 
-*This secret screenshot is pending a bug fix*
+> Note: This secret screenshot is pending a bug fix.
 
 ##### Multiple configuration options
 
@@ -272,7 +272,7 @@ The `aio app pack` command verifies and bundles applications for upload. In the 
 aio app pack
 ```
 
-When it completes, you will find the app package in your app folder as `dist/app.zip`. Continue to the [Adobe Developer Distribution](/developer-distribution/experience-cloud/docs/guides/getting_started/) documentation for details on how to upload it.
+When it completes, you will find the app package in your app folder as `dist/app.zip`. Continue to the [Adobe Developer Distribution](https://developer.adobe.com/developer-distribution/) documentation for details on how to upload it.
 
 #### Validation
 
@@ -290,7 +290,7 @@ When a Developer uploads a package to Adobe Developer Distribution, these valida
 
 #### Hooks
 
-Two [hooks](../app-hooks.md) are available to customize the packaging step:
+Two [hooks](architecture_overview/app_hooks.md) are available to customize the packaging step:
 
 1. `pre-pack` - runs before packaging
 2. `post-pack` - runs after packaging

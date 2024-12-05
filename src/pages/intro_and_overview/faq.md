@@ -118,7 +118,7 @@ Limits and their default values are listed under [System Settings](../guides/run
 
 ### Do ingress IP addresses for Adobe I/O Runtime ever change?
 
-Yes, IP addresses returned when looking up an Adobe I/O Runtime endpoint's DNS record can change at any time. To avoid issues connecting and routing to the platform, clients should not cache DNS-lookup responses for Adobe I/O Runtime endpoints beyond the TTL of the DNS record. For more information, see [Secure Communication with Back-end Services](../guides/runtime_guides/security_general.md#secure-communication-with-back-end-services) in the [Security Guide](../guides/runtime_guides/security_general.md).
+Yes, IP addresses returned when looking up an Adobe I/O Runtime endpoint's DNS record can change at any time. To avoid issues connecting and routing to the platform, clients should not cache DNS-lookup responses for Adobe I/O Runtime endpoints beyond the TTL of the DNS record. For more information, see [Secure communication with back-end services](../guides/runtime_guides/security_general.md#secure-communication-with-back-end-services) in the [Security Guide](../guides/runtime_guides/security_general.md).
 
 ### What ports and outbound connections does I/O Runtime support?
 

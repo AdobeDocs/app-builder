@@ -51,7 +51,7 @@ There are also differences in what your actions can do in these cases. The stora
 
 This section covers how to debug your App Builder application front-end and back-end code with full source maps support using VS Code Debugging or Chrome DevTools.
 
-> Note: although any debugger that can attach to Node.js can technically be used to debug App Builder applications, some of the details will differ from the configurations covered here. For details on node debugging see the Node.js [Debugging Guide]([Node.js — Debugging Node.js](https://nodejs.org/en/learn/getting-started/debugging)
+> Note: although any debugger that can attach to Node.js can technically be used to debug App Builder applications, some of the details will differ from the configurations covered here. For details on node debugging see the Node.js [Debugging Guide](https://nodejs.org/en/learn/getting-started/debugging)
 
 ### Debugging with VS code
 
@@ -105,8 +105,8 @@ You can use the step-through debugging features of VS Code, inspect variables, a
 
 Learn more about using a JavaScript debugger
 
-- [chrome devtools](https://developer.chrome.com/docs/devtools/)
-- [node.js debugging in VS Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)
+- [Chrome devtools](https://developer.chrome.com/docs/devtools/)
+- [Node.js debugging in VS Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)
 
 ## Next step
 
