@@ -21,7 +21,7 @@ title: Extension Migration Guide
 
 ## Understanding configuration changes
 
-The 2021 release of support for [Extensions](index.md) in App Builder allowed Developers to extend Adobe Experience Cloud through App Builder applications in a more native and integrated fashion. It also required changes to App Builder project file structures and the way we compile configurations. Before starting this migration, please read through all the changes so you can make an informed decision on how to refactor your project.
+The 2021 release of support for [Extensions](extensions.md) in App Builder allowed Developers to extend Adobe Experience Cloud through App Builder applications in a more native and integrated fashion. It also required changes to App Builder project file structures and the way we compile configurations. Before starting this migration, please read through all the changes so you can make an informed decision on how to refactor your project.
 
 ### Old file structure
 
@@ -34,7 +34,7 @@ Under the old file structure, initialization of a new App Builder Project in the
 5. `manifest.yml`: file describing back-end actions to deploy or redeploy
    - `manifest` file contents should adhere to the [OpenWhisk deployment YAML specification](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification#package-specification). Once defined, the [CLI](https://github.com/adobe/aio-cli) uses this file to deploy or redeploy actions. You might see values like `$CUSTOMER_PROFILE_TENANT` listed on this page; they are environment variables that can be defined in the `.env` file. 
 6. `package.json`: file with the project definition and relevant metadata. 
-   - `package.json` gives informs npm so it can identify the project and handle its dependencies. Learn more [here](https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-json/).
+   - `package.json` gives informs npm so it can identify the project and handle its dependencies. Learn more [here](https://nodejs.org/docs/v22.12.0/api/packages.html#packagejson-and-file-extensions).
 7. `.aio`: file containing configuration variables used by the [CLI](https://github.com/adobe/aio-cli) to facilitate the application, for example supported API services. This file can be committed to a source-code versioning system.
    - You may manually update the file, or use `aio config` commands to add or to configurations. Learn more about the [Config Plugin](https://github.com/adobe/aio-cli-plugin-config). 
 8. `.env`: file containing environment variables useful for application development, for example Adobe I/O Runtime credentials and Adobe Product API tenant specifics  such as API key and secrets.
@@ -42,7 +42,7 @@ Under the old file structure, initialization of a new App Builder Project in the
    - This file is automatically included in `.gitignore`: the listed credentials and secrets are not intended to be shared. 
 9. `console.json`: file containing credentials set up through your App Builder project. 
    - This file is also automatically included in `.gitignore`, and contains credentials and secrets not intended to be shared.
-   - This file can be also downloaded directly from the [Adobe Developer Console](/console),  by going to a workspace, and clicking  the `Download all` button. 
+   - This file can be also downloaded directly from the Adobe Developer Console,  by going to a workspace, and clicking  the `Download all` button. 
 
 ### New file structure
 

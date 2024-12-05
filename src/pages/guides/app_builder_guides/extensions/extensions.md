@@ -56,7 +56,7 @@ These instructions will show you how to set up extension point information in ne
 
 ### New projects
 
-The instructions in [Creating your First App Builder Application](../../../app_builder_get_started/first_app.md) show how to set up extension point information by default in App Builder projects. 
+The instructions in [Creating your First App Builder Application](../../../get_started/app_builder_get_started/first_app.md) show how to set up extension point information by default in App Builder projects. 
 
 ### Migrating projects and editing endpoints
 

@@ -94,7 +94,7 @@ Yes. App Builder was built for extensibility, from Adobe's open-source developme
 
 We currently support the JavaScript language and Node.js environment, which cover the majority of code used on the web today. The free npm Registry contains ready-made libraries developers can bring into most applications.
 
-App Builder supports the three latest Node.js versions. When a new Node version is added to the system, old versions are still available. So old actions will still work, but new ones can't be created with the old versions. We encourage developers to update actions to the latest version in order to take advantage of the pre-warm containers feature.
+App Builder supports the three latest Node.js versions. When a new Node version is added to the system, old versions are still available. So old actions will still work, but new ones can't be created with the old versions. We encourage developers to update actions to the latest version in order to take advantage of the pre-warmed containers feature.
 
 ### Can I use App Builder to extend Document Cloud or Creative Cloud products?
 
@@ -106,7 +106,7 @@ Enterprises can use Adobe Exchange to control application lifecycles (test, publ
 
 ### How do I request support for App Builder?
 
-App Builder uses the same support process as other Adobe Experience Cloud products. Details can be found [here]([Enterprise Support Programs](https://helpx.adobe.com/support/programs/enterprise-support-programs.html)).
+App Builder uses the same support process as other Adobe Experience Cloud products. Details can be found in Adobe's [Enterprise Support Programs](https://helpx.adobe.com/support/programs/enterprise-support-programs.html).
 
 The [Adobe I/O Runtime Forums](https://forums.adobe.com/community/adobe-io/adobe-io-runtime) offer developer support for I/O Runtime questions.
 
@@ -118,7 +118,7 @@ Limits and their default values are listed under [System Settings](../guides/run
 
 ### Do ingress IP addresses for Adobe I/O Runtime ever change?
 
-Yes, IP addresses returned when looking up an Adobe I/O Runtime endpoint's DNS record can change at any time. To avoid issues connecting and routing to the platform, clients should not cache DNS-lookup responses for Adobe I/O Runtime endpoints beyond the TTL of the DNS record. For more information, see [Secure Communication with Back-end Services](../guides/runtime_guides/security_general.md#secure-communication-with-backend-services) in the [Security Guide](../guides/runtime_guides/security_general.md).
+Yes, IP addresses returned when looking up an Adobe I/O Runtime endpoint's DNS record can change at any time. To avoid issues connecting and routing to the platform, clients should not cache DNS-lookup responses for Adobe I/O Runtime endpoints beyond the TTL of the DNS record. For more information, see [Secure Communication with Back-end Services](../guides/runtime_guides/security_general.md#secure-communication-with-back-end-services) in the [Security Guide](../guides/runtime_guides/security_general.md).
 
 ### What ports and outbound connections does I/O Runtime support?
 
