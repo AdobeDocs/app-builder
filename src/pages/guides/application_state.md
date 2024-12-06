@@ -141,12 +141,9 @@ The default region is `amer`, to access another region, you can use the `--regio
 
 Navigate the CLI usage documentation from the repo's [README](https://github.com/adobe/aio-cli-plugin-app-storage?tab=readme-ov-file#usage) or by using the `--help` flag on the desired command.
 
-
 ### Usage limits
 
-Usage limits are enforced at the **workspace** level within a **single** region. Default
-limits are applied but can be increased upon request. For adjustments specific
-to an application, please contact the App Builder team.
+Usage limits are enforced at the **workspace** level within a **single** region.
 
 **Load**
 
