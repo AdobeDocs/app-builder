@@ -23,11 +23,11 @@ Follow these instructions to set up your project:
 
 1. Navigate to [Adobe Developer Console](https://developer.adobe.com/developer-console/).
    
-    ![Adobe Developer Console](E:\GitHub\app-builder\src\pages\images\console-1.png)
+   ![Adobe Developer Console](..\..\images\console-1.png)
 
 2. Use the IMS Org Switcher in the upper right corner to select the IMS organization you want to use if it is not the current one.
    
-   ![Org Switcher](E:\GitHub\app-builder\src\pages\images\console-2.png)
+   ![Org Switcher](..\..\images\console-2.png)
 
 3. Once you are in the correct organization, click on `Quick Start` and select the option `Create project from template`
    
@@ -35,7 +35,7 @@ Follow these instructions to set up your project:
 
 4. Select `App Builder` from the list of templates.
    
-   ![Select Template](E:\GitHub\app-builder\src\pages\images\console-3.png)
+   ![Select Template](..\..\images\console-3.png)
 
 5. Enter `Project Title` and `App Name` for your templated project.
    
@@ -53,7 +53,7 @@ Follow these instructions to set up your project:
    
    Click `Save` when ready.
    
-   ![Select Template](E:\GitHub\app-builder\src\pages\images\console-4.png)
+   ![Select Template](..\..\images\console-4.png)
 
 6. You should now see a new project generated with two default `Workspaces`.
    
@@ -61,11 +61,11 @@ Follow these instructions to set up your project:
    
    - Every App Builder project has two default workspaces, `Production` and `Stage`. You can add more workspaces as needed. The `Production` workspace is used for submission and distribution workflows: when you’re ready to deploy your app, you will submit it for approval from the Production workspace.
      
-     ![Project Preview](E:\GitHub\app-builder\src\pages\images\console-5.png)
+     ![Project Preview](..\..\images\console-5.png)
 
 7. Create a new workspace or select a workspace to add [APIs](https://developer.adobe.com/developer-console/docs/guides/services/#add-api) and [Events](https://developer.adobe.com/developer-console/docs/guides/services/services-add-event/) that you will need for your application.
    
-    ![Workspace](E:\GitHub\app-builder\src\pages\images\console-6.png)
+    ![Workspace](..\..\images\console-6.png)
 
 To learn more about Adobe Developer Console, please refer to [Console Documentation](https://developer.adobe.com/developer-console/docs).
 
@@ -312,7 +312,7 @@ This flow is intended for Developers who:
 
 For this flow to work, the Developer should ask someone with access to set up a project and a workspace following the instructions in the preceding sections. With the workspace correctly set up, credentials can downloaded by authorized Adobe Developer Console users through the `Download all` button in Workspace overview.
 
-![Workspace Download](E:\GitHub\app-builder\src\pages\images\console-7.png)
+![Workspace Download](..\..\images\console-7.png)
 
 1. In Terminal, navigate to the place where you want to initialize your project and type:
    
@@ -472,7 +472,7 @@ Usually, we recommend running your applications with deployed Adobe I/O Runtime 
 ### 6.4 Try the sample application
 
 When you access `https://localhost:9080`, you should see the sample application deployed:
-![Hello World](E:\GitHub\app-builder\src\pages\images\helloworld-1.png)
+![Hello World](..\..\images\helloworld-1.png)
 
 This simple SPA contains links to documentation and allows you to run your back-end actions for tests. Use the selection box to pick the action you'd like to invoke. You can also pass request headers and parameters from the corresponding input fields in the SPA UI.
 
@@ -485,7 +485,7 @@ All actions require `Authorization` and `x-gw-ims-org-id` in the headers by defa
     `{"Authorization":"Bearer <token_from_cli>","x-gw-ims-org-id":"<org-id-from-console>"}`
 
 3. Go back to your browser and put the joined value in the `headers` input field. You should now be able to invoke actions that do not require additional parameters (like `generic`).
-   ![Hello World](E:\GitHub\app-builder\src\pages\images\helloworld-2.png)
+   ![Hello World](..\..\images\helloworld-2.png)
 
 **Note:** If you open your application in the [Experience Cloud Shell](http://experience.adobe.com/) using the second link provided by the CLI, your Experience Cloud Shell user token will automatically be available to the SPA UI and passed to the underlying Adobe I/O Runtime actions of your application.
 This is a very useful feature of the SPA UI template, which integrates with the [client-side API](../../guides/app_builder_guides/exc_app/aec_integration.md) of Experience Cloud Shell.
