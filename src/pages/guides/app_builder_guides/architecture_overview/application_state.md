@@ -9,7 +9,7 @@ title: Dealing with Application State
 
 # Dealing with Application State
 
-Application state could be pre-defined variables of an action accessible across all invocations, or dynamic values or files uploaded by the web users when the app is running. App Builder provides appropriate tools to handle each of these conditions.
+Application state could be the pre-defined variables of an action accessible across all invocations, or the dynamic values or files uploaded by web users while the app is running. App Builder provides appropriate tools to handle each of these conditions.
 
 ## Default parameters
 
@@ -39,7 +39,7 @@ hello-world:
 
 ### Considerations about security
 
-For authentication with Adobe APIs, you should use [App Builder Security Guideline](security/index.md) and our supported SDKs.
+For authentication with Adobe APIs, you should use [App Builder Security Guidelines](../security/index.md) and Adobe-supported SDKs.
 
 For other third-party systems and APIs when provisioning actions with secrets and passwords is necessary, you can use the default parameters as demonstrated above. To support this use case, all default parameters are automatically encrypted, and decrypted just before the action code is executed. Thus, the only time you will have access to the decrypted value is while executing the action code.
 
@@ -51,21 +51,21 @@ No pre-configuration is required, just install the libraries and use them in you
 
 ### When should I use Files vs State?
 
-- Files is good for bandwidth-oriented transfer of large payloads; State for latency-oriented fast access
-- Files supports sharing data using presigned urls, State supports setting expirations
+- Files is a good choice for bandwidth-oriented transfer of large payloads; State for latency-oriented fast access
+- Files supports sharing data using presigned URLs; State supports setting expirations
 - As a rule of thumb, if you expect your data to grow larger than 100KBs use Files, otherwise State.
 
 Please refer to the [feature matrix](#feature-matrix) below for a detailed comparison.
 
 ## State
 
-We have just released a [new version of State](https://github.com/adobe/aio-lib-state/releases/tag/4.0.0) built on top of our own storage service. [Legacy State](https://github.com/adobe/aio-lib-state/tree/3.x) (`@adobe/aio-lib-state` < v4 based on CosmosDB) is still available, but we strongly advise new users to use the latest version to avoid migrating later. Note that this applies also to `State` imported from `@adobe/aio-sdk` < v6. We will send migration steps for current customers soon. The [feature matrix](#feature-matrix) below provides a detailed comparison of both versions.
+We have released a [new version of State](https://github.com/adobe/aio-lib-state/releases/tag/4.0.0) built on top of Adobe's own storage service. [Legacy State](https://github.com/adobe/aio-lib-state/tree/3.x) (`@adobe/aio-lib-state` < v4, based on CosmosDB) is still available. However, we strongly advise new users to use the latest version to avoid migrating later. Note that this applies also to `State` imported from `@adobe/aio-sdk` < v6. The [feature matrix](#feature-matrix) below provides a detailed comparison of both versions.
 
 ### How is data stored?
 
-- State is a multi-tenant storage. Data is isolated in a "State container" which maps to your I/O Runtime namespace and application Workspace. This means each application Workspace has its own isolated data.
-- You may store data in the `amer`, `emea` or `apac` region. Since these regions operate independently, treat them as separate instances. You may prefer a region clos to your users to optimize latency, or to meet General Data Protection Regulation (GDPR) or other regulatory requirements. 
-- Your data is not eternal. There is a configurable time-to-live (TTL) for each key-value pair, the default is one day; the maximum one year (365 days).
+- State is a multi-tenant storage. Data is isolated in a "State container" which maps to your I/O Runtime  and application workspaces. This means each application workspace has its own isolated data.
+- You may store data in the `amer`, `emea` or `apac` region. Since these regions operate independently, they should be treated as separate instances. You may prefer a region close to your users to minimize latency, comply with the General Data Protection Regulation (GDPR), or meet other regulatory requirements. 
+- Your data is not eternal. There is a configurable time-to-live (TTL) for each key-value pair: the default is one day, the maximum one year (365 days).
 
 Region acronyms are abbreviations for business regions:
 
@@ -115,7 +115,7 @@ npm install @adobe/aio-lib-state
 
 Explore the [full API](https://github.com/adobe/aio-lib-state/blob/main/doc/api.md).
 
-#### CLI usage, from your local machine
+#### Using CLI from your local machine
 
 Available for `aio --version` `10.2` or greater, the CLI must be run from within a valid App Builder application folder; it uses Runtime credentials to authenticate your requests to State. Each namespace has its own State container, so ensure that you access the expected instance by looking in your `.env` file for the `AIO_RUNTIME_NAMESPACE` variable.
 
@@ -151,23 +151,23 @@ Limits are enforced and can't be changed on a per-user basis:
 
 ### Quotas
 
-Quotas are limits that depend on an organization's entitlements. Every organization with App Builder access is entitled to at least 1 State quota.
+Quotas are limits that depend on an organization's entitlements. Every organization with App Builder access is entitled to at least one State quota.
 
-At the organization level, 1 quota provides:
+At the organization level, one quota provides:
 
 - 200GB/month bandwidth usage (~5MB/min): `bandwidth usage = bytes uploaded + bytes downloaded`
 - 1GB storage: `storage usage = 2 * key_sizes + value_sizes`
 
 The quota is shared for all State containers in an organization, across all regions. They are currently tracked but not enforced.
 
-For example: if an organization is entitled to 3 quotas, its total bandwidth usage should not exceed 600GB/month, and the storage across regions should not exceed 3GB.
+For example: if an organization is entitled to three quotas, its total bandwidth usage should not exceed 600GB/month, and the storage across regions should not exceed 3GB.
 
 We enforce rate-limiting at the State container (workspace) level within a region. Rate-limiting per quota unit is defined as:
 
 - 10MB/min with up to 1MB/sec peaks for production workspaces
 - 2MB/min with up to 1MB/sec peaks for non-production workspaces
 
-If a rate-limiting quota is exceeded, the State service will return a 429 (Too Many Requests) error. However, a retry mechanism in the State library will mitigate the propagation of the error for short time windows.
+If the rate-limiting quota is exceeded, the State service will return a 429 (Too Many Requests) error. However, a retry mechanism in the State library will mitigate the propagation of the error for short time windows.
 
 For example: if an organization is entitled to 5 quotas, a production workspace will not be throttled before it consumes 50MB/min or 5MB/sec bandwidth in a single region.
 
@@ -202,7 +202,7 @@ But `list` has some limitations:
 
 You can also control `list` behavior using:
 
-- `match` to filter keys [using a glob-style pattern](#match-option).
+- [Match to filter keys](#match-option) using a glob-style pattern.
 - `countHint` to specify an approximate amount of keys returned per iteration. State doesn't guarantee the number of elements returned per iteration, attempts to return at least `countHint` elements per iteration.
 
 ### Troubleshooting
@@ -239,4 +239,4 @@ Continue to [Introduction to React Spectrum](introduction_to_react_spectrum.md).
 
 Return to [Architecture Overview](architecture_overview.md).
 
-Return to the [Guides Index](../guides_index.md).
+Return to the [Guides Index](../../../guides/guides_index.md).

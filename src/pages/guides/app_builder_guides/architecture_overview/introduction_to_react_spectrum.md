@@ -21,12 +21,10 @@ React Spectrum supports accessibility and common-behavior handling out of the bo
 
 Sample templates generated through the CLI use React Spectrum in the UI as an example. 
 
-To learn more, please visit the [React Spectrum homepage](https://react-spectrum.adobe.com/).
+To learn more, please review the [React Spectrum Libraries homepage](https://react-spectrum.adobe.com/).
 
 ## Next steps
 
 Continue to [Using Client SDKs for Accessing Adobe APIs](using_sdks.md).
-
-Return to [Dealing with Application State](application_state.md).
 
 Return to [Architecture Overview](architecture_overview.md).

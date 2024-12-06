@@ -154,4 +154,4 @@ These diagrams show how custom hooks are run, built, deployed, and undeployed wi
 
 [Return to Architecture Overview](architecture_overview.md)
 
-[Return to Guides Index](../guides_index.md)
+[Return to Guides Index](../../../guides/guides_index.md)

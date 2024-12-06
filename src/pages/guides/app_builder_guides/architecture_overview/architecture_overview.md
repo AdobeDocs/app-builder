@@ -13,18 +13,18 @@ description: An App Builder Application is a serverless application that extends
 
 ## Types of App Builder apps
 
-An App Builder Application is a serverless application that extends [Adobe Product APIs](/apis).
+An App Builder Application is a serverless application that extends [Adobe Product APIs](https://developer.adobe.com/apis).
 These applications may be headless or headful, as described below.
 
 ### Headless applications
 
-Headless applications consist of a set of serverless actions or sequences deployed to [Runtime](/runtime), Adobe's serverless platform.
+Headless applications consist of a set of serverless actions or sequences deployed to [I/O Runtime](../../../intro_and_overview/what_is_app_builder.md#what-is-adobe-i-o-runtime), Adobe's serverless platform.
 
 Headless applications integrate well with remote scripts or processes that invoke them, for example [AEM Assets workflows](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/assets-workflow.html) or [ACS activities](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/data-management-activities/external-api.html).
 
 ### Headful applications
 
-Headful applications are Single-Page Applications (SPAs) with full-fledged user interfaces (UIs) served from the Content Delivery Network included with App Builder. Headful applications call [Adobe Product APIs](/apis) directly from the client. When there is a need to orchestrate [Adobe Product API](/apis) calls with third-party API calls, or with the Adobe Identity Management System for authentication, you can deploy serverless actions and sequences using [Runtime](/runtime).
+Headful applications are Single-Page Applications (SPAs) with full-fledged user interfaces (UIs) served from the Content Delivery Network included with App Builder. Headful applications call Adobe Product APIs directly from the client. When there is a need to orchestrate Adobe Product API calls with third-party API calls, or with the Adobe Identity Management System for authentication, you can deploy serverless actions and sequences using Runtime].
 
 ## JAMStack: anatomy of an App Builder app
 
@@ -32,7 +32,7 @@ Single-Page App Builder applications with full-fledged UIs should follow the [JA
 
 The three main components of App Builder apps are:
 
-- [Adobe Product APIs](/apis), exposed to external Developers and consumers through Adobe I/O API Gateway
+- Adobe Product APIs, exposed to external Developers and consumers through Adobe I/O API Gateway
 - [Javascript-based SDK](https://github.com/adobe/aio-sdk) and serverless actions, sequences, and APIs deployed to [Runtime](/runtime)
 - [React-Spectrum](https://react-spectrum.adobe.com/), Adobe's front-end framework that applies Adobe's design system to React-based components
 
@@ -49,17 +49,17 @@ The CLI is supplied with these capabilities:
 - [Authentication](https://github.com/adobe/aio-cli-plugin-auth) to Adobe's Identity Management System
 - [Certificate management](https://github.com/adobe/aio-cli-plugin-certificate)
 - [Configuration management](https://github.com/adobe/aio-cli-plugin-certificate)
-- [Interactions](https://github.com/adobe/aio-cli-plugin-console) with [Adobe Developer Console](/console)
-- [Interactions](https://github.com/adobe/aio-cli-plugin-runtime) with [Runtime](/runtime), Adobe's serverless platform
-- [Lifecycle management](https://github.com/adobe/aio-cli-plugin-app) for [App Builder](/app-builder)
+- [Interactions](https://github.com/adobe/aio-cli-plugin-console) with [Adobe Developer Console](https://developer.adobe.com/developer-console/)
+- [Interactions](https://github.com/adobe/aio-cli-plugin-runtime) with [Runtime](../../../intro_and_overview/what_is_app_builder.md#what-is-adobe-i-o-runtime), Adobe's serverless platform
+- [Lifecycle management](https://github.com/adobe/aio-cli-plugin-app) for App Builder
 
 ### App Builder generators
 
-[Generators](https://github.com/adobe/generator-aio-app) help Developers bootstrap App Builder apps when using the [CLI](https://github.com/adobe/aio-cli). They can be used to create:
+[Generators](https://github.com/adobe/generator-aio-app) help Developers bootstrap App Builder apps when using the CLI. They can be used to create:
 
 - Headless applications
 - Full-fledged UI Single-Page Applications that deploy into Adobe's [Experience Cloud Unified shell](http://experiencecloud.adobe.com/)
-- [Runtime](/runtime) serverless actions extending specific [Adobe APIs](/apis)
+- Runtime serverless actions extending specific Adobe APIs
 
 ### SDK libraries
 
@@ -103,19 +103,19 @@ The [Configuration SDK library](https://github.com/adobe/aio-lib-core-config) al
 
 ##### Logging
 
-The [Logging SDK library](https://github.com/adobe/aio-lib-core-logging) provides a logger abstraction that can be used in [SDK libraries](https://github.com/adobe/aio-sdk) and serverless actions deployed to [Runtime](/runtime).
+The [Logging SDK library](https://github.com/adobe/aio-lib-core-logging) provides a logger abstraction that can be used in [SDK libraries](https://github.com/adobe/aio-sdk) and serverless actions deployed to Runtime.
 
 ##### Errors
 
-The [Errors SDK library](https://github.com/adobe/aio-lib-core-errors) is the base implementation for all errors thrown by the [SDK libraries](https://github.com/adobe/aio-sdk); Developers may use it to manage their own errors.
+The [Errors SDK library](https://github.com/adobe/aio-lib-core-errors) is the base implementation for all errors thrown by the SDK libraries; Developers may use it to manage their own errors.
 
 ##### Networking
 
-The [Networking SDK library](https://github.com/adobe/aio-lib-core-networking) provides low-level networking tools such as exponential back-off that can be used in [SDK libraries](https://github.com/adobe/aio-sdk) and custom API clients.
+The [Networking SDK library](https://github.com/adobe/aio-lib-core-networking) provides low-level networking tools such as exponential back-off that can be used in SDK libraries and custom API clients.
 
 ### Token-Vending Machine
 
-The [Token-Vending Machine](https://github.com/adobe/aio-tvm) is exposed as an API deployed to [Runtime](/runtime), provided with App Builder.
+The [Token-Vending Machine](https://github.com/adobe/aio-tvm) is exposed as an API deployed to Runtime, provided with App Builder.
 
 It lets Developers perform these actions on behalf of their App Builder application credentials:
 
@@ -125,24 +125,24 @@ It lets Developers perform these actions on behalf of their App Builder applicat
 
 ### CI/CD support
 
-[CI/CD support](./deployment/ci_cd_for_firefly_apps.md) provided with App Builder for App Builder applications includes:
+[CI/CD support](../deployment/cicd_for_app_builder_apps.md) provided with App Builder for App Builder applications includes:
 
-- [Github Actions](https://github.com/features/actions) to [setup the CLI](https://github.com/adobe/aio-cli-setup-action) and use it to [perform actions](https://github.com/adobe/aio-apps-action) such as application testing, build, and deployment
-- [Github Workflows](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) to orchestrate the Github Actions upon specific events triggered against the application repository
-- [Github Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) to store application secrets required for the execution of the Github Workflows against specific environments
+- [GitHub Actions](https://github.com/features/actions) to [setup the CLI](https://github.com/adobe/aio-cli-setup-action) and use it to [perform actions](https://github.com/adobe/aio-apps-action) such as application testing, build, and deployment
+- [GitHub Workflows](https://docs.github.com/en/actions/writing-workflows) to orchestrate the GitHub Actions upon specific events triggered against the application repository
+- [GitHub Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) to store application secrets required for the execution of the GitHub Workflows against specific environments
 
 ### Webpack
 
-App Builder uses webpack for bundling I/O Runtime action code. See [here](/guides/configuration/webpack-configuration) for an overview on how to configure webpack.
+App Builder uses webpack for bundling I/O Runtime action code. See [Webpack Configuration](../configuration/webpack_configuration.md) for an overview on how to configure webpack.
 
 ### Migration guides
 
-- [Standalone Application to DX Experience Cloud SPA v1](migrations/standalone_to_dx_experience_cloud_spa.md) shows how to migrate an App Builder application initialized as a Standalone Application to a DX Experience Cloud Single-Page Application v1. This is useful if you can't view your application in Adobe Experience Cloud's App Builder Catalog. 
+- [Migrating Apps to DX Experience Cloud v1 SPAs](../exc_app/migrate_app_to_exp_cloud_spa.md) shows how to migrate App Builder applications initialized as Standalone Applications to a DX Experience Cloud Single-Page Application v1. This is useful if you can't view your application in Adobe Experience Cloud's App Builder Catalog. 
 
 ## Next steps
 
-Continue to Dealing with [Application State](application_state.md).
+Continue to [Dealing with Application State](application_state.md).
 
-Return to [App Builder Overview](./intro_and_overview/app_builder_overview.md).
+Return to [App Builder Overview](../../../intro_and_overview/app_builder_overview.md).
 
-Return to [Guides Index](guides_index.md).
+Return to [Guides Index](../../../guides/guides_index.md).
