@@ -83,10 +83,10 @@ Listed headers are ignored because they are either meant for internal use or are
 21. upgrade
 22. x-cache
 
-Next steps
+## Next steps
 
 This concludes the Deployment section.
 
-Return to [Deployment Overview](index.md).
+Return to [Deployment Overview](deployment.md).
 
-Return to the [Guides Index](../guides_index.md).
+Return to the [Guides Index](../../guides_index.md).

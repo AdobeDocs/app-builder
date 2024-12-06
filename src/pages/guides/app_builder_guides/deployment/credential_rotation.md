@@ -62,6 +62,6 @@ Again, it is critically important to pass all parameters in a single `update` ca
 
 Continue to [Setting Response Headers](setting_response_headers.md).
 
-Return to [Deployment Overview](index.md).
+Return to [Deployment Overview](deployment.md).
 
-Return to the [Guides Index](guides/guides_index.md).
+Return to the [Guides Index](../../guides_index.md).

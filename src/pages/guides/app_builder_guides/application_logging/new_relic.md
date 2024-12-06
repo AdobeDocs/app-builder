@@ -17,7 +17,7 @@ This guide covers configuration of your App Builder application to forward logs 
 
 ## Prerequisites
 
-* A New Relic account and an [**Ingest license API key**](https://docs.newrelic.com/docs/apis/intro-apis/new-relic-api-keys/).
+* A New Relic account and an [Ingest license API key](https://docs.newrelic.com/docs/apis/intro-apis/new-relic-api-keys/).
 
 * A local development setup for your App Builder application.
 
@@ -72,6 +72,6 @@ This guide covers configuration of your App Builder application to forward logs 
 
 If you are unable to set up log forwarding using these procedures, please visit Adobe [App Builder forums](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/app-builder) for support.
 
-Return to [Managing Application Logs](index.md).
+Return to [Managing Application Logs](logging.md).
 
-Return to [Guides Index](/guides_index.md).
+Return to [Guides Index](../../guides_index.md).

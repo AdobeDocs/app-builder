@@ -103,10 +103,10 @@ aio app config get log-forwarding errors
 
 ## Next steps
 
-If you are unable to set up log forwarding using these procedures, please visit Adobe [App Builder forums](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/app-builder) for support.
+If you are unable to set up log forwarding using these procedures, please visit Adobe [App Builder forums](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/adobe-app-builder) for support.
 
 Proceed to [Forwarding logs to Splunk Enterprise](splunk_enterprise.md).
 
-Return to [Managing Application Logs](index.md).
+Return to [Managing Application Logs](logging.md).
 
-Return to [Guides Index](/guides_index.md).
+Return to [Guides Index](../../guides_index.md).

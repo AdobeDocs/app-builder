@@ -52,15 +52,15 @@ The default GitHub workflows support the following actions, based on the Github 
 
 - On `Repository Release`, the application is deployed to the `Production` workspace by calling `aio app deploy`. The back-end serverless actions are deployed to Runtime, and the SPA to the CDN if the application has a web UI. See the [Deploy Prod workflow](https://github.com/adobe/generator-aio-app/blob/master/generators/add-ci/.github/workflows/deploy_prod.yml).
 
-Each of the default [Github Workflows](https://help.github.com/en/actions/configuring-and-managing-workflows/configuring-a-workflow) uses two core features provided by Github: [Github Actions](https://github.com/features/actions) and [Github Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets).
+Each of the default Github Workflows uses two core features provided by Github: [Github Actions](https://github.com/features/actions) and [Github Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets).
 
 ![CI/CD with Github Actions](E:\GitHub\app-builder\src\pages\images\ci-cd-github-actions-architecture.png)
 
 ### GitHub actions for AIO CLI
 
-These [GitHub Actions](https://github.com/features/actions) have been built to support the use of the [CLI](https://github.com/adobe/aio-cli) in a CI/CD workflow running within GitHub infrastructure. They are used in the default [App Builder Apps workflows](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows), and can also be used in custom GitHub workflows built by Developers to fulfil project needs:
+These GitHub Actions have been built to support the use of the CLI in a CI/CD workflow running within GitHub infrastructure. They are used in the default [App Builder Apps workflows](https://github.com/adobe/generator-aio-app/tree/master/generators/add-ci/.github/workflows), and can also be used in custom GitHub workflows built by Developers to fulfil project needs:
 
-- [CLI Setup Action](https://github.com/adobe/aio-cli-setup-action) can be used to install and configure the [CLI](https://github.com/adobe/aio-cli) on the GitHub infrastructure running the workflow that invoked the action
+- [CLI Setup Action](https://github.com/adobe/aio-cli-setup-action) can be used to install and configure the CLI on the GitHub infrastructure running the workflow that invoked the action
 
 - [Apps Action](https://github.com/adobe/aio-apps-action) centralizes support for a GitHub workflow to use application-specific commands such as testing using `aio app test` and deployment using `aio app deploy`.
 
@@ -68,7 +68,7 @@ Both actions have been published and can be found on GitHub Marketplace. See [CL
 
 ### GitHub secrets
 
-The following [GitHub Actions](https://github.com/features/actions) use [GitHub Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) to store environment-specific secrets. Currently, an Administrator must add these secrets to the application repository manually:
+The following GitHub Actions use GitHub Secrets to store environment-specific secrets. Currently, an Administrator must add these secrets to the application repository manually:
 
 - **AIO_RUNTIME_NAMESPACE_STAGE**, the name of the Runtime namespace associated with the `Stage` App Builder workspace
 - **AIO_RUNTIME_AUTH_STAGE**, credentials for the Runtime namespace associated with the `Stage` App Builder workspace
@@ -81,13 +81,13 @@ We plan to simplify this configuration process in the future.
 
 The default implementation of the CI/CD workflow for App Builder Applications relies on GitHub capabilities. However, Developers might need an alternative solution due to project requirements or team preferences. If so, we recommend that the custom solution focus on:
 
-- The [CLI](https://github.com/adobe/aio-cli), the official tool to manage the development lifecycle of App Builder applications from bootstrapping to deployment. It can be used within CI/CD workflows for automation purposes.
+- The CLI, the official tool to manage the development lifecycle of App Builder applications from bootstrapping to deployment. It can be used within CI/CD workflows for automation purposes.
 - Security, a key requirement: any alternative CI/CD workflow should include a solid secret-management solution to store credentials needed to deploy an App Builder Application against a specific workspace.
 
 ## Next steps
 
 Continue to [Credential Rotation](credential_rotation.md).
 
-Return to [Deployment Overview](index.md).
+Return to [Deployment Overview](deployment.md).
 
-Return to the [Guides Index](../guides_index.md).
+Return to the [Guides Index](../../guides_index.md).

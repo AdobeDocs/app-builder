@@ -18,7 +18,7 @@ This guide covers configuration of App Builder applications to forward logs to y
 
 ## Prerequisites
 
-1. An index on your Splunk Enterprise instance. Create a new index following [Splunk's guide](https://docs.splunk.com/Documentation/Splunk/8.2.4/Indexer/Setupmultipleindexes)
+1. An index on your Splunk Enterprise instance. Create a new index following [Splunk's guide](https://docs.splunk.com/Documentation/Splunk/8.2.4/Indexer/Setupmultipleindexes).
 2. Local development setup for your App Builder application
 3. The latest version of AIO CLI. Check by running `aio --version`; update by running `npm install -g @adobe/aio-cli`
 
@@ -107,6 +107,6 @@ This guide covers configuration of App Builder applications to forward logs to y
    
    Proceed to [Forwarding logs to Splunk Cloud](splunk_cloud.md).
    
-   Return to [Managing Application Logs](index.md).
+   Return to [Managing Application Logs](logging.md).
    
-   Return to [Guides Index](/guides_index.md).
+   Return to [Guides Index](../../guides_index.md).
