@@ -321,7 +321,7 @@ module.exports = {
       },
       {
         "title": "Integration Guide for building Event-driven Applications with I/O Events",
-        "path": "guides/events/webhooks.md"
+        "path": "https://developer.adobe.com/events/docs/guides/"
       },
       {
         "title": "Custom Events Overview",
