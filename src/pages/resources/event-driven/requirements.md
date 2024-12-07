@@ -23,6 +23,6 @@ npm install -g @adobe/aio-cli-plugin-events
 
 We assume you have access to create integration on [Adobe I/O Console](https://console.adobe.io/) with `I/O Management Service` needs to be enabled for the integration. This will help create the JWT token with adobeio_api scope which is required for all the API calls.
 
-![webhook](assets/event.png)
+![webhook](./assets/event.png)
 
 
