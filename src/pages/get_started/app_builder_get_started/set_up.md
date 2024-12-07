@@ -10,7 +10,7 @@ description: App Builder is a complete framework that enables enterprise develop
 
 import NPMBadge from '../../components/NPMBadge.js'
 
-# Set up Access, Environment, and Tools
+# Set Up Access, Environment, and Tools
 
 Here you'll learn what systems you need to access, how to access them, and how to configure your local environment.
 
