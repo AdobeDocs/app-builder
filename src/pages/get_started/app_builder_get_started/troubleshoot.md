@@ -4,7 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: Common Troubleshooting
+title: Troubleshooting Common Issues
 ---
 
 # Troubleshooting Common Issues
@@ -13,8 +13,8 @@ This is a guide for troubleshooting some of the most common issues you may encou
 
 ## Before you proceed
 
-- Check your Node and tool versions to make sure they are supported by App Builder and up to date. You can find the latest supported versions [here](index.md).
-- If your application is on Dropbox or OneDrive, consider moving it since file watchers there sometimes cause unexpected errors.
+- Check your Node and tool versions to make sure they are supported by App Builder and up to date. We recommend [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md) for version management.
+- If your application is on Dropbox or OneDrive, consider moving it: file watchers there sometimes cause unexpected errors.
 
 ## General debugging
 
@@ -39,13 +39,13 @@ It lists the most recent activations and a summary with ID, start and end times,
 
 * `application error`, usually due to runtime issues such as thrown exceptions or attempts to get the value of an `undefined` variable. With appropriate try-catch blocks and logging, you can see what goes wrong from the logs through the command, `aio runtime activation logs activationID`
 
-* `internal error`caused by external factors unrelated to the action itself, for example not enough resources to run the action. Since I/O Runtime is a scalable platform you would never see this error with the default action settings. If you do, please let us know by [email](mailto:iodev@adobe.com) so that we can help your troubleshoot its cause.
+* `internal error`caused by external factors unrelated to the action itself, for example not enough resources to run the action. Since I/O Runtime is a scalable platform, you should never see this error with the default action settings. If you do, please let us know by [email](mailto:iodev@adobe.com) so we can help you troubleshoot its cause.
 
-You could also try running your actions locally with the `aio app dev` command.  This is very similar to `aio app run` except it runs your action code on localhost in a node process.  Not all API calls work in this context because of cors restrictions, but it is still useful for catching syntax and logic errors, and allowing step debugging of your actions without timeouts.
+You could also try running your actions locally with the `aio app dev` command.  This is very similar to `aio app run` except it runs your action code on localhost in a node process.  Not all API calls work in this context because of cors restrictions, but it is still useful for catching syntax and logic errors, and it allows step debugging of your actions without timeouts.
 
 ## Action logs
 
-[Web actions](/runtime/docs/guides/using/creating_actions/#invoking-web-actions) in your app are blocking requests; their activation results are not recorded if they are invoked successfully. To enforce persistence of activation results. pass the `x-ow-extra-logging: on` flag in the request headers. In the development mode of an SPA, you can add this flag directly to the "invoking action" function so you will have the activation results and logs recorded for all requests. They could then be retrieved as shown in the [General debugging](#general-debugging) section above.
+[Web actions](../../guides/runtime_guides/creating_actions.md/#invoking-web-actions) in your app are blocking requests; their activation results are not recorded if they are invoked successfully. To enforce persistence of activation results. pass the `x-ow-extra-logging: on` flag in the request headers. In the development mode of an SPA, you can add this flag directly to the "invoking action" function so you will have the activation results and logs recorded for all requests. They could then be retrieved as shown in the [General debugging](#general-debugging) section above.
 
 ```javascript
 headers['x-ow-extra-logging'] = 'on'
@@ -61,7 +61,7 @@ When you make requests to an action with Adobe authentication and authorization 
 SPAs are applications with web UI components, located in the `web-src/` folder; headless app are back-end microservices without web UI.
 For authentication and authorization checks, the back-end actions of SPAs are validated against valid user tokens  passed directly from tje Adobe Experience Cloud (ExC) Shell.
 
-Actions of a headless app can also be validated against a valid user token from ExC Shell or generated from the [JWT (Service Account) Authentication](/authentication/auth-methods#!AdobeDocs/adobeio-auth/master/JWT/JWT.md). Please review the [App Builder Security Overview](../guides/security/index.md) for more details about SPA vs. headless app authentication.
+Actions of a headless app can also be validated against a valid user token from ExC Shell or generated from the [JWT (Service Account) Authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/#service-account-jwt-credential-deprecated). Please review the [App Builder Security Overview](../../guides/app_builder_guides/security/index.md) for more details about SPA vs. headless app authentication.
 
 If you are developing a headless app but accidentally have the `web-src/` folder added during the app initialization process, you could remove it by executing the command `aio app delete web-assets` at the root of your application source code folder. This will also assure that your actions are validated against the appropriate JWT auth.
 
@@ -69,7 +69,7 @@ If you are developing a headless app but accidentally have the `web-src/` folder
 
 If your code uses App Builder [State](https://github.com/adobe/aio-lib-state) or [Files](https://github.com/adobe/aio-lib-files) SDKs, you cannot use `aio app dev` to debug it. The reason is that State and Files services have additional security which limits calls from outside of Adobe Runtime actions. Your action code is run on localhost, which is not authorized to access the out-of-the-box cloud storage behind State and Files SDKs.
 
-Note: This is not a problem if you configure the State or Files SDKs to connect to your own cloud storage, for example Cosmos DB.
+Note: This is not a problem if you configure the State or Files SDKs to connect to your own cloud storage, for example [Azure Cosmos DB](https://azure.microsoft.com/en-us/products/cosmos-db/).
 
 ## NodeJS with Mac M1 chip
 
@@ -81,6 +81,6 @@ We recommend using [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm) o
 
 This completes the "Getting Started" tutorial series for App Builder. 
 
-To learn how to extend App Builder capabilities using the Adobe I/O Runtime platform, proceed to the [Getting Started with Adobe I/O Runtime](dummy) tutorial.
+To learn how to extend App Builder capabilities using the Adobe I/O Runtime platform, proceed to the [Get Started with Adobe I/O Runtime](../runtime_getting_started/runtime_intro.md) tutorial.
 
 For in-depth review of App Builder architecture, development, deployment, integration, and security, visit the [Guides Index](../../guides/guides_index.md) and select your topic of interest.
