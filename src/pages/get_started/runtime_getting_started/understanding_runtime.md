@@ -70,7 +70,7 @@ These are particularly important:
 
 <InlineAlert slots="text"/>
 
-If your organization cannot be served by these default values, MinuteRate and Concurrent limits can be raised. Please visit the [Adobe I/O Runtime Forums](https://forums.adobe.com/community/adobe-io/adobe-io-runtime) for Developer support.
+If your organization cannot be served by these default values, MinuteRate and Concurrent limits can be raised. Please visit the [Adobe Experience League Community](https://experienceleaguecommunities.adobe.com) for support.
 
 ## I/O Events integration
 
@@ -148,7 +148,7 @@ You can follow the Adobe I/O team on [Twitter](https://twitter.com/adobeio), [Me
 
 ### Support
 
-The [Adobe I/O Runtime Forum](https://forums.adobe.com/community/adobe-io/adobe-io-runtime) can help you address issues with Adobe I/O Runtime.
+The [Adobe I/O Runtime Forum](https://experienceleaguecommunities.adobe.com) can help you address issues with Adobe I/O Runtime.
 
 If you have issues with the documentation, please submit a pull request at the [Adobe I/O Runtime GitHub repository](https://github.com/AdobeDocs/adobeio-runtime).
 
