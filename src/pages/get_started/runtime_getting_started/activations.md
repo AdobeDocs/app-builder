@@ -98,7 +98,7 @@ At a scale of millions of activations per day, it may be difficult to screen out
 
 The exceptions are asynchronous actions invoked in a non-blocking fashion. Their results are persisted regardless of success or failure, so you can extract their responses later. 
 
-You can still view the total number of executions, as described in the [Logging and Monitoring](../../guides/runtime_guides/logging_monitoring.md) section. 
+You can still view the total number of executions, as described in the [Logging and Monitoring](../../guides/runtime_guides/logging_monitoring.md) Guide. 
 
 To review all activation results during development, set the extra logging header to `on` in the request: 
 
