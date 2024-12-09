@@ -70,7 +70,7 @@ These are particularly important:
 
 <InlineAlert slots="text"/>
 
-If your organization cannot be served by these default values, MinuteRate and Concurrent limits can be raised. Please visit the [Adobe Experience League Community](https://experienceleaguecommunities.adobe.com) for support.
+If your organization cannot be served by these default values, MinuteRate and Concurrent limits can be raised. Please visit the [Adobe Experience Leage App Builder Community](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/adobe-app-builder) for support.
 
 ## I/O Events integration
 
