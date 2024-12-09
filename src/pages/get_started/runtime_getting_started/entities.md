@@ -29,7 +29,7 @@ For more information, see [Triggers and Rules](../../guides/runtime_guides/refer
 In OpenWhisk, packages can bundle a set of related actions and share them with others. Packages can include actions and feeds. See:
 
 - [Pre-installed Packages](../../guides/runtime_guides/reference_docs/prepackages.md)
-- [Using Packages](../../guides/runtime_guides/reference_docs/packages.md)
+- [Working with Packages](../../guides/runtime_guides/reference_docs/packages.md)
 
 ## Sequences and compositions
 
@@ -46,9 +46,7 @@ Feeds are streams of events, distinct from triggers:
 * **Triggers** classify events: each defines a type of event and is activated when that event is received by Runtime. Triggers are linked to actions by rules; each rule links a trigger to a single action.
 * **Feeds** are streams of events handled by the same trigger. Feeds are controlled by feed actions that manage the stream: creating, deleting, pausing, or resuming it as needed. In this way, feeds therefore control the flow of input to triggers. Feed actions use a REST API to interact with external services to produce the events to which triggers are set to respond.
 
-For more information, see this topic: 
-
-- [Using Feeds](../../guides/runtime_guides/reference_docs/feeds.md)
+For more information, see [Using Feeds](../../guides/runtime_guides/reference_docs/feeds.md).
 
 ## Next step
 
