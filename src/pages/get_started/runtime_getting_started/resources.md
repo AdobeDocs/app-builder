@@ -16,6 +16,6 @@ You can follow our team on [Twitter](https://twitter.com/adobeio), [Medium](http
 
 Please consult the [FAQ](../../intro_and_overview/faq.md) for answers to some of the most common questions.
 
-If you have issues with Adobe I/O Runtime, please refer to the [Adobe I/O Runtime Forum](https://forums.adobe.com/community/adobe-io/adobe-io-runtime).
+If you have issues with Adobe I/O Runtime, please refer to the [Adobe Experience Leage Communities](https://experienceleaguecommunities.adobe.com).
 
 To suggest improvements to this documentation, please submit a pull request at the AdobeDocs [App Builder GitHub Repository](https://github.com/AdobeDocs/app-builder).
