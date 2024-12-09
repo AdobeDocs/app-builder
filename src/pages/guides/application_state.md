@@ -173,7 +173,7 @@ At the organization level, 1 quota provides:
 - 200GB/month bandwidth usage (~5MB/min): `bandwidth usage = bytes uploaded + bytes downloaded`
 - 1GB storage: `storage usage = 2 * key_sizes + value_sizes`
 
-The quota is shared for all State containers in the organization, across all regions. It is not enforced, just tracked for billing purpose.
+The quota is shared for all State containers in the organization, across all regions and is tracked for billing purposes.
 
 *Example: org 123 is entitled to 3 quotas, the total bandwidth usage of the organization should not exceed 600GB/month and the storage across regions should not exceed 3GB.*
 
