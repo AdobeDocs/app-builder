@@ -222,7 +222,7 @@ select components to include (Press <space> to select, <a> to toggle all, <i> to
 
 Each option represents a feature you can enable for the App Builder application. Select one or more depending on the application you intend to build. For this tutorial, we recommend you select them all.
 
-- **Actions: Deploy Runtime actions** adds the boilerplate for backend serverless actions on Adobe I/O Runtime.
+- **Actions: Deploy Runtime actions** adds the boilerplate for backend serverless actions on Adobe I/O Runtime
 - **Events: Publish to Adobe I/O Events** adds the boilerplate for a serverless action that publishes [Custom I/O Events](https://developer.adobe.com/events/docs/guides/using/custom_events/)
 - **Web Assets: Deploy hosted static assets** adds the boilerplate for front-end [React-Spectrum](https://react-spectrum.adobe.com/) Single-Page Applications (SPAs) and static assets
 - **CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy** adds the boilerplate for Github Actions that support the Continuous Integration/Continuous Delivery (CI/CD) process for the application
@@ -374,7 +374,7 @@ You should see these folders and files in your project:
 3. `e2e` is for  end-to-end tests.
 4. `app.config.yaml` is the master configuration file. It follows the same principle as the individual `ext.config.yaml`, and compiles these individual file into one comprehensive config upon application build.
 5. `lib`  contains all the shared utility actions across different extension points.
-6. `package.json` describes project definition and various metadata relevant to the project. It sends information to npm that allows npm to identify the project and handle its dependencies. Learn more [here]([Node.js — An introduction to the npm package manager](https://nodejs.org/en/learn/getting-started/an-introduction-to-the-npm-package-manager#packages)).
+6. `package.json` describes project definition and various metadata relevant to the project. It sends information to npm that allows npm to identify the project and handle its dependencies. Learn more [here](https://nodejs.org/en/learn/getting-started/an-introduction-to-the-npm-package-manager#packages).
 7. `.aio` contains config variables that are useful for the CLI to facilitate the app, for example, supported API services. 
    - This file should not be committed to a source code versioning system.
    - You can manually update the file or use the `aio config` commands to add or to remove configurations. Learn more about the [Config Plugin](https://github.com/adobe/aio-cli-plugin-config).
@@ -465,7 +465,7 @@ While most changes in your code are updated in real time when the application is
 
 As indicated in the message, when you are done, you can press `CTRL+C` to terminate the local development environment.
 
-To have the application run completely locally, so the actions run on a locally deployed standalone version of OpenWhisk instead of on Adobe I/O Runtime, use `aio app run --local`. Some additional dependencies are required if you have not installed them already; see  `Optional tools` section in  [Setting up](set_up.md#optional-tool) to set them up manually.
+To have the application run completely locally, so the actions run on a locally deployed standalone version of OpenWhisk instead of on Adobe I/O Runtime, use `aio app run --local`. Some additional dependencies are required if you have not installed them already; see  [Optional tool](set_up.md#optional-tool) section in [Set Up Access, Environment, and Tools](set_up.md) to set them up manually.
 
 Usually, we recommend running your applications with deployed Adobe I/O Runtime actions, since your application should run on Adobe I/O Runtimein production. However, if you need to build complex actions or sequencing, the `--local` flag is helpful to debug the application locally. Please see the "Debugging the Application"" section below for more information.
 
@@ -529,7 +529,7 @@ As you modify and extend the application code, you will need to update the tests
 
 Adobe uses [jestJS](https://jestjs.io/) for the unit tests of the CLI, SDK, and bootstrapped application. You can change the implementation to your preferred framework.
 
-[CI/CD for App Builder Applications](../../guides/app_builder_guides/deployment/ci_cd_for_app_builder_apps.md) explains how you can also execute these tests in the context of a CI/CD pipeline.
+[CI/CD for App Builder Applications](../../guides/app_builder_guides/deployment/cicd_for_app_builder_apps.md) explains how you can also execute these tests in the context of a CI/CD pipeline.
 
 ## 7. Deploy the application
 
@@ -577,9 +577,9 @@ Well done, your app is now online 🏄
 
 Note the last section of the output, `To view your deployed application`, shows two urls of the app by default, for the CDN host and Experience Cloud Shell. In the latter case, The URL format of the app should follow `https://experience.adobe.com/?devMode=true#/custom-apps/?localDevUrl=<your-app-url>`.
 
-You can undeploy your app with `aio app undeploy`. To learn more about deployment, please refer to [Deployment Overview](../../guides/app_builder_guides/deployment/deployment.md). To automate your build, deploy, and build process with out-of-the-box CI/CD GitHub actions, please refer to [CI/CD for App Builder Applications](../../guides/app_builder_guides/deployment/cicd_for_app_builder_apps.md).
+You can undeploy your app with `aio app undeploy`. To learn more about deployment, please refer to the [Deployment Overview](../../guides/app_builder_guides/deployment/deployment.md). To automate your build, deploy, and build process with out-of-the-box CI/CD GitHub actions, please refer to [CI/CD for App Builder Applications](../../guides/app_builder_guides/deployment/cicd_for_app_builder_apps.md).
 
-## 8. Common Issues
+## 8. Common issues
 
 1. Please first make sure your CLI and all plugins are up to date. For the CLI, you can check the version through `aio -v` and compare it with the `npm show @adobe/aio-cli version`. If your CLI is outdated, update it by running `npm install -g @adobe/aio-cli`. After that, you can simply run `aio update` to ensure all core plugins are updated.
 
@@ -599,4 +599,4 @@ You can undeploy your app with `aio app undeploy`. To learn more about deploymen
 
 For more code examples and use cases, please refer to the [Resources page](../../resources/index.md).
 
-Continue the tutorial at [Publishing your headless App Builder app](publish_app.md)
+Continue the tutorial at [Publishing Your First App Builder Application](publish_app.md)
