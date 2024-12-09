@@ -9,10 +9,10 @@ keywords:
   - Monitoring
   - Azure
   - Azure Log Analytics
-title: Forwarding logs to Azure Log Analytics
+title: Forwarding Logs to Azure Log Analytics
 ---
 
-# Forwarding logs to Azure Log Analytics
+# Forwarding Logs to Azure Log Analytics
 
 This guide covers configuration of your App Builder application to forward logs to your Azure Log Analytics workspace.
 
