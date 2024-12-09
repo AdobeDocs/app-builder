@@ -108,7 +108,7 @@ Enterprises can use Adobe Exchange to control application lifecycles (test, publ
 
 App Builder uses the same support process as other Adobe Experience Cloud products. Details can be found in Adobe's [Enterprise Support Programs](https://helpx.adobe.com/support/programs/enterprise-support-programs.html).
 
-The [Adobe I/O Runtime Forums](https://forums.adobe.com/community/adobe-io/adobe-io-runtime) offer developer support for I/O Runtime questions.
+The [Adobe Experience Leage App Builder Community](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/adobe-app-builder) page offers Developer support for I/O Runtime questions.
 
 ## Using I/O Runtime
 
