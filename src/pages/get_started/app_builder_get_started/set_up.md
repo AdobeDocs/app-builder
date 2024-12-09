@@ -4,7 +4,7 @@ keywords:
   - Credentials
   - Local Environment
   - Set up
-title: Getting Started
+title: Set Up Access, Environment, and Tools
 description: App Builder is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure.
 ---
 
@@ -71,4 +71,4 @@ If you intend to use local development (`aio app dev`) features provided by the 
 
 ## Next step
 
-Now that you have your environment set up, you can start [creating your first App Builder application](first_app.md).
+Now that you have your environment set up, you can start to [Create your First App Builder Application](first_app.md).
