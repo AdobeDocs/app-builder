@@ -12,6 +12,6 @@ For a step-by-step tutorial for building applications on I/O Runtime, follow thi
 
 - [Set up your environment](setup.md)
 - [Deploy and invoke your first action](deploy.md)
-- [Retrieve Action Invocation Results](activations.md)
+- [Retrieve action invocation results](activations.md)
 
 For detailed description of the Runtime programming model, components, and processes, with recommendations about working with Runtime and optimizing performance, see [Understanding Adobe I/O Runtime ](understanding_runtime.md).
