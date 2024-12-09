@@ -47,15 +47,15 @@ The AIO CLI [App plugin](https://github.com/adobe/aio-cli-plugin-app) provides t
 
 To see more command options, run `aio app logs --help` on your terminal.
 
-The `aio app logs` command can be used by developers or by scripts running in a [CI/CD pipeline](deployment/ci_cd_for_firefly_apps.md). The command can also be used for App Builder Applications deployed on Runtime, or running locally through the `aio app run --local` command as discussed in the [Deployment Guide](../deployment/deployment.md).
+The `aio app logs` command can be used by developers or by scripts running in a [CI/CD pipeline](../deployment/cicd_for_app_builder_apps.md). The command can also be used for App Builder Applications deployed on Runtime, or running locally through the `aio app run --local` command as discussed in the [Deployment Guide](../deployment/deployment.md).
 
 ### Runtime plugin
 
-The AIO CLI [Runtime plugin](https://github.com/adobe/aio-cli-plugin-runtime) operates at the level of a Runtime action. When a [Runtime action is invoked](https://github.com/adobe/aio-cli-plugin-runtime#aio-runtime-action-create-actionname-actionpath)), the corresponding [activation's logs](https://github.com/adobe/aio-cli-plugin-runtime#aio-runtime-activation-logs-activationid) can be fetched using the `aio runtime logs <activation_id>` command.
-
+The AIO CLI [Runtime plugin](https://github.com/adobe/aio-cli-plugin-runtime) operates at the level of a Runtime action. When a [Runtime action is invoked](https://github.com/adobe/aio-cli-plugin-runtime#aio-runtime-action-create-actionname-actionpath), the corresponding [activation's logs](https://github.com/adobe/aio-cli-plugin-runtime#aio-runtime-activation-logs-activationid) can be fetched using the `aio runtime logs <activation_id>` command.
+ 
 This command also offers options to `--watch` or `--tail` the logs, and other options you can review by running `aio runtime logs --help`. 
 
-As with `aio app logs`, the `aio runtime logs` command can be used by Developers or by scripts running in a [CI/CD pipeline](../deployment/cicd_for_app_builder_apps.md). The command can also be used for App Builder applications deployed on Runtime or  running locally through the `aio app run --local` command as discussed in the [Deployment guide](../deployment/deployment.md).
+As with `aio app logs`, the `aio runtime logs` command can be used by Developers or by scripts running in a [Deployment Guide](../deployment/deployment.md). The command can also be used for App Builder applications deployed on Runtime or  running locally through the `aio app run --local` command as discussed in the [Deployment Guide](../deployment/deployment.md).
 
 ## Forwarding Application logs
 
