@@ -9,10 +9,10 @@ keywords:
   - Monitoring
   - Splunk
   - Splunk Cloud
-title: Forwarding logs to Splunk Cloud
+title: Forwarding Logs to Splunk Cloud
 ---
 
-# Forwarding logs to Splunk Cloud
+# Forwarding Logs to Splunk Cloud
 
 This guide covers configuring App Builder to forward application logs to a Splunk Cloud account. 
 
@@ -103,7 +103,7 @@ aio app config get log-forwarding errors
 
 ## Next steps
 
-If you are unable to set up log forwarding using these procedures, please visit Adobe [App Builder forums](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/adobe-app-builder) for support.
+If you are unable to set up log forwarding using these procedures, please visit [Adobe Experience Leage App Builder Community](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/adobe-app-builder) for support.
 
 Proceed to [Forwarding logs to Splunk Enterprise](splunk_enterprise.md).
 
