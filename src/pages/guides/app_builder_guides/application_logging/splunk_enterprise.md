@@ -9,10 +9,10 @@ keywords:
   - Monitoring
   - Splunk
   - Splunk Enterprise
-title: Forwarding logs to Splunk Enterprise
+title: Forwarding Logs to Splunk Enterprise
 ---
 
-# Forwarding logs to Splunk Enterprise
+# Forwarding Logs to Splunk Enterprise
 
 This guide covers configuration of App Builder applications to forward logs to your Splunk Enterprise deployment.
 
@@ -48,7 +48,7 @@ This guide covers configuration of App Builder applications to forward logs to y
 
 ### 2. Get your Splunk host and port
 
-1. To find your `hostname` and `port` number, follow the procedures in [Send data to HTTP Event Collector on Splunk Enterprise](https://docs.splunk.com/Documentation/Splunk/8.2.4/Data/UsetheHTTPEventCollector#Send_data_to_HTTP_Event_Collector_on_Splunk_Enterprise)) from Splunk documentation.
+1. To find your `hostname` and `port` number, follow the procedures in [Send data to HTTP Event Collector on Splunk Enterprise](https://docs.splunk.com/Documentation/Splunk/8.2.4/Data/UsetheHTTPEventCollector#Send_data_to_HTTP_Event_Collector_on_Splunk_Enterprise) from Splunk documentation.
 
 2. Confirm your `hostname` and `port` number by executing this cURL request, using the token saved when you set up the Splunk HTTP event collector:
    
@@ -103,7 +103,7 @@ This guide covers configuration of App Builder applications to forward logs to y
    
    ## Next steps
    
-   If you are unable to set up log forwarding using these procedures, please visit Adobe [App Builder forums](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/app-builder) for support.
+   If you are unable to set up log forwarding using these procedures, please visit [Adobe Experience Leage App Builder Community](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/adobe-app-builder) for support.
    
    Proceed to [Forwarding logs to Splunk Cloud](splunk_cloud.md).
    
