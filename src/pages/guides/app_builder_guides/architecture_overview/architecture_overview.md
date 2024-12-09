@@ -5,7 +5,7 @@ keywords:
   - SDK Components
   - SDK Library
   - Migration Guides
-title: Guides
+title: Architecture Overview
 description: An App Builder Application is a serverless application that extends Adobe Product APIs. These applications can be headless or headful. Each of these types is described in more detail in the sections that follow.
 ---
 
@@ -18,7 +18,7 @@ These applications may be headless or headful, as described below.
 
 ### Headless applications
 
-Headless applications consist of a set of serverless actions or sequences deployed to [I/O Runtime](../../../intro_and_overview/what_is_app_builder.md#what-is-adobe-i-o-runtime), Adobe's serverless platform.
+Headless applications consist of a set of serverless actions or sequences deployed to [I/O Runtime](../../../intro_and_overview/what_is_app_builder.md#what-is-adobe-i-o-runtime-), Adobe's serverless platform.
 
 Headless applications integrate well with remote scripts or processes that invoke them, for example [AEM Assets workflows](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/assets-workflow.html) or [ACS activities](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/data-management-activities/external-api.html).
 
@@ -36,7 +36,7 @@ The three main components of App Builder apps are:
 - [Javascript-based SDK](https://github.com/adobe/aio-sdk) and serverless actions, sequences, and APIs deployed to [Runtime](/runtime)
 - [React-Spectrum](https://react-spectrum.adobe.com/), Adobe's front-end framework that applies Adobe's design system to React-based components
 
-![JAMStack Architecture](E:\GitHub\app-builder\src\pages\images\jamstack-anatomy-application-march2021.png)
+![JAMStack Architecture](../../../images/jamstack-anatomy-application-march2021.png)
 
 ## SDK components
 
