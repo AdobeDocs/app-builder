@@ -245,7 +245,9 @@ To learn more please visit the [Adobe I/O File Storage library](https://github.c
 | max file/value size | 200GB | 1MB | 2MB |
 | max key size | 1KB | 1KB | 1KB |
 | key charset | open | `alphanumeric` with `_-.` | any but `/\?#` |
-| max request load | N/A | 10MB/min, 1MB/s <br/>(scalable) | 900 RU/min (~KB/min) |
+| max load | N/A | 10MB/min, 1MB/s <br/> 1k/min `list` requests | 900 RU/min (~KB/min) |
+| max key values | N/A | 100K (scalable) | N/A |
 | max storage | 1TB | 1GB (scalable) | 10GB |
+| max monthly load | N/A | 200GB (scalable) | N/A |
 | regions | East US <br/> West US read-only | Amer (US) <br/>Emea (EU)<br/> Apac (JPN) | East US <br/> Europe read-only
 | consistency | strong | strong | eventual
