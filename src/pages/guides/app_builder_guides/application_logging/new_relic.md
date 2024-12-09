@@ -8,10 +8,10 @@ keywords:
   - Log Forwarding
   - Monitoring
   - New Relic
-title: Forwarding logs to New Relic
+title: Forwarding Logs to New Relic
 ---
 
-# Forwarding logs to New Relic
+# Forwarding Logs to New Relic
 
 This guide covers configuration of your App Builder application to forward logs to your New Relic deployment.
 
@@ -70,7 +70,7 @@ This guide covers configuration of your App Builder application to forward logs 
 
 ## Next steps
 
-If you are unable to set up log forwarding using these procedures, please visit Adobe [App Builder forums](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/app-builder) for support.
+If you are unable to set up log forwarding using these procedures, please visit [Adobe Experience Leage App Builder Community](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/adobe-app-builder) for support.
 
 Return to [Managing Application Logs](logging.md).
 
