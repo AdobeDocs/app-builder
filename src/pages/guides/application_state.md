@@ -141,38 +141,41 @@ The default region is `amer`, to access another region, you can use the `--regio
 
 Navigate the CLI usage documentation from the repo's [README](https://github.com/adobe/aio-cli-plugin-app-storage?tab=readme-ov-file#usage) or by using the `--help` flag on the desired command.
 
-### Limits & validation
+### Usage limits
 
-Limits are enforced and can't be changed on a per-user basis.
+Usage limits are enforced at the **workspace** level within a **single** region.
 
-- State is only available to Runtime namespaces created via the Developer Console, which follow the App Builder format: `orgId-project(-workspace)?`. Legacy namespaces are not supported.
-- Max state value size: `1MB`.
-- Max state key size: `1024 bytes`.
-- Max-supported TTL is `365 days`.
-- Values format: any `string|binary`.
-- Keys format: `string` only `alphanumeric` with `-`,`_`,`.`.
+**Load**
+
+- bandwidth
+  - 10MB/min with up to 1MB/sec peaks for production Workspaces.
+  - 2MB/min with up to 1MB/sec peaks for non-production Workspaces.
+
+- requests
+  - 1000 req/min for `list`, `deleteAll`, `stats` operations on production Workspaces.
+  - 200 req/min for `list`, `deleteAll`, `stats` operations on non-production Workspaces.
+
+In case of exceeding the usage limits, the State service will return with 429s. However, a retry mechanism in the State library will mitigate the propagation of the error on short time windows.
+
+**Storage**
+
+- 100K key-values pairs
+- 1GB storage usage: `2 * key_sizes + value_sizes`
+
+In case of exceeding the storage limits the service will return with an error and you will have to delete keys or wait for expiration to resume writing.
 
 ### Quotas
 
-Quotas are limits that depend on the organization's entitlements. Every organization with App Builder access is entitled to at least 1 State quota.
+Every organization with App Builder access is entitled to at least 1 State quota.
 
 At the organization level, 1 quota provides:
 
 - 200GB/month bandwidth usage (~5MB/min): `bandwidth usage = bytes uploaded + bytes downloaded`
 - 1GB storage: `storage usage = 2 * key_sizes + value_sizes`
 
-The quota is shared for all State containers in the organization, across all regions. It is not enforced for now, just tracked.
+The quota is shared for all State containers in the organization, across all regions and is tracked for billing purposes.
 
 *Example: org 123 is entitled to 3 quotas, the total bandwidth usage of the organization should not exceed 600GB/month and the storage across regions should not exceed 3GB.*
-
-We also enforce rate-limiting at the State container (=Workspace) level within a region. Rate-limiting per quota unit is defined as:
-
-- 10MB/min with up to 1MB/sec peaks for production Workspaces.
-- 2MB/min with up to 1MB/sec peaks for non-production Workspaces.
-
-In case of exceeding the rate-limiting quota, the State service will return with 429s. However, a retry mechanism in the State library will mitigate the propagation of the error on short time windows.
-
-*Example: org 123 is entitled to 5 quotas, any production workspace will not be throttled before consuming 50MB/min or 5MB/sec bandwidth in a single region.*
 
 ### List guarantees
 
@@ -242,7 +245,9 @@ To learn more please visit the [Adobe I/O File Storage library](https://github.c
 | max file/value size | 200GB | 1MB | 2MB |
 | max key size | 1KB | 1KB | 1KB |
 | key charset | open | `alphanumeric` with `_-.` | any but `/\?#` |
-| max request load | N/A | 10MB/min, 1MB/s <br/>(scalable) | 900 RU/min (~KB/min) |
+| max load | N/A | 10MB/min, 1MB/s <br/> 1k/min `list` requests | 900 RU/min (~KB/min) |
+| max key values | N/A | 100K (scalable) | N/A |
 | max storage | 1TB | 1GB (scalable) | 10GB |
+| max monthly load | N/A | 200GB (scalable) | N/A |
 | regions | East US <br/> West US read-only | Amer (US) <br/>Emea (EU)<br/> Apac (JPN) | East US <br/> Europe read-only
 | consistency | strong | strong | eventual
