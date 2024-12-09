@@ -27,7 +27,7 @@ Here's a high-level view of the process by which you'll build and launch your fi
 
 ### Build
 
-Start in the [Developer Console](/console):
+Start in the [Developer Console](https://developer.adobe.com/developer-console/):
 
 - Create a new project
 
