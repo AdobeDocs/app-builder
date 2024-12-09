@@ -61,7 +61,7 @@ We aim to provide similar quality of local development experience on Windows 10 
 
 The [CLI](https://github.com/adobe/aio-cli) uses the popular [inquirer](https://www.npmjs.com/package/inquirer) package for all its interactive functions such as application generators.
 
-See [inquirer's Support section](https://www.npmjs.com/package/inquirer) and its [known issues](https://www.npmjs.com/package/inquirer#known-issues) for up-to-date details.
+See [inquirer's Support section](https://www.npmjs.com/package/inquirer#support-os-terminals) and its [known issues](https://www.npmjs.com/package/inquirer#known-issues) for up-to-date details.
 
 ### Optional tool
 
