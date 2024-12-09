@@ -54,7 +54,7 @@ Host: $openwhiskEndpoint
 
 Note the `$userNamespace` variable. Runtime requests require access to the same namespace in which the action was created. When users are configured for Runtime accounts, they are given their own personal namespaces. 
 
-![@](E:\GitHub\app-builder\src\pages\images\howitworks_f02.png)
+![](../../images/howitworks_f02.png)
 
 *Internal process flow*
 
@@ -64,7 +64,7 @@ Note the `$userNamespace` variable. Runtime requests require access to the same 
 
 #### Interpreting: the Controller
 
-The Controller is the core component of Runtime (OpenWhisk). It serves as the interface for everything a user can do. It is an imlementation of the actual REST API, written in the [Scala](https://www.scala-lang.org/) programming language, and built on the [Akka](https://akka.io/ "Akka runtime") runtime environment and the [Spray](http://spray.io/) REST/HTTP toolkit.
+The Controller is the core component of Runtime (OpenWhisk). It serves as the interface for everything a user can do. It is an imlementation of the actual REST API, written in the [Scala](https://www.scala-lang.org/) programming language, and built on the [Akka](https://akka.io/ "Akka runtime") runtime environment and the [Spray](https://spray.readthedocs.io/en/latest/introduction/what-is-spray.html) REST/HTTP toolkit.
 
 The Controller receives HTTP requests from nginx and interprets them. The results may be a [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) requests or direct invocations of an action. In this example, the Controller reads an HTTP POST request to an existing action as an invocation of that action, and moves to the next step.
 
