@@ -45,6 +45,6 @@ These materials may be read as a tutorial or as a set of reference materials. St
 * [CI/CD Pipeline](runtime_guides/ci-cd_pipeline.md)
 * [I/O Runtime reference documentation index](runtime_guides/reference_docs/index.md)
 
-## Next Step
+## Next step
 
 Return to [App Builder Overview](../intro_and_overview/app_builder_overview.md).
