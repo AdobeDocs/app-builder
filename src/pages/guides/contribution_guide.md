@@ -24,6 +24,10 @@ All submissions should come in the form of pull requests and need to be reviewed
 
 Finally, please follow the [pull request template](https://github.com/AdobeDocs/project-firefly/blob/main/.github/PULL_REQUEST_TEMPLATE.md) when submitting a pull request.
 
-## CLI and plugins best practises
+## CLI and plugins best practices
 
 Adobe follows [12 Factor](https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46) principles for its CLI and plugins.
+
+## Next step
+
+Return to the [Guides Index](guides_index.md).
