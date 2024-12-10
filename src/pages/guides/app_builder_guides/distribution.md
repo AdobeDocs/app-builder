@@ -264,7 +264,7 @@ Product version information can be found on [Adobe Experience League](https://ex
 
 ### Packaging for developer distribution
 
-Once an app is configured for public distribution, it can be packaged and uploaded to [Adobe Developer Distribution](/developer-distribution). 
+Once an app is configured for public distribution, it can be packaged and uploaded to [Adobe Developer Distribution](https://developer.adobe.com/developer-distribution/). 
 
 The `aio app pack` command verifies and bundles applications for upload. In the root of your app folder, run:
 
