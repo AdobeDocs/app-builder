@@ -48,7 +48,7 @@ This deployment is triggered when running `aio app dev` at the root of the Custo
 
 #### Architecture
 
-![Local Runtime Actions and UI](E:\GitHub\app-builder\src\pages\images\cli-dev.jpg)
+![Local Runtime Actions and UI](../../../images/cli-dev.jpg)
 
 The Runtime actions of the application will be run in NodeJS:
 
@@ -64,7 +64,7 @@ For headful custom applications, the UI will be served locally from [ParcelJS](h
 
 #### Technical prerequisites
 
-This deployment scenario requires Runtime credentials in a .env file at the root of the custom application source code folder, as documented in the [Setup Assumptions](#setup-assumptions) above.
+This deployment scenario requires Runtime credentials in a .env file at the root of the custom application source code folder, as documented in the [Setup assumptions](#setup-assumptions) above.
 
 #### Use case
 
@@ -76,7 +76,7 @@ This deployment is triggered when running `aio app run` at the root of the Custo
 
 #### Architecture
 
-![Remote Runtime Actions and local UI](E:\GitHub\app-builder\src\pages\images\remote-actions-local-ui.png)
+![Remote Runtime Actions and local UI](../../../images/remote-actions-local-ui.png)
 
 The UI is still served locally from [ParcelJS](https://parceljs.org/features/cli/), which allows hot updates of the front-end code. It communicates with Runtime actions deployed to the Developer's Runtime namespace.
 
@@ -84,7 +84,7 @@ The UI is still served locally from [ParcelJS](https://parceljs.org/features/cli
 
 #### Technical prerequisites
 
-This deployment scenario requires Runtime credentials in an `.env` file at the root of the custom application source code folder, as documented in the [Setup Assumptions](#setup-assumptions) above.
+This deployment scenario requires Runtime credentials in an `.env` file at the root of the custom application source code folder, as documented in the [Setup assumptions](#setup-assumptions) above.
 
 #### Use case
 
@@ -96,9 +96,9 @@ This deployment is triggered when running `aio app deploy` at the root of the Cu
 
 #### Architecture
 
-![Remote Runtime Actions and UI](E:\GitHub\app-builder\src\pages\images\remote-actions-remote-ui.png)
+![Remote Runtime Actions and UI](../../../images/remote-actions-remote-ui.png)
 
-The UI is deployed to the Content Delivery Network on behalf of the Developer's Runtime credentials. It communicates with [Runtime](/runtime) actions deployed to the developer's Runtime namespace.
+The UI is deployed to the Content Delivery Network on behalf of the Developer's Runtime credentials. It communicates with [Runtime](../../../intro_and_overview/what_is_app_builder.md#what-is-adobe-io-runtime) actions deployed to the developer's Runtime namespace.
 
 The [Token-Vending Machine](https://github.com/adobe/aio-tvm) supplied with App Builder is implicitely used by the CLI `aio app deploy` command, and validates the developer's Runtime credentials against Runtime.
 
