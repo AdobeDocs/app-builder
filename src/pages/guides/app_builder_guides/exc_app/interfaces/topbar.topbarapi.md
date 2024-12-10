@@ -4,18 +4,18 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: 'Interface: TopbarApi'
+title: 'Interface: TopbarAPI'
 ---
 
-# Interface: TopbarApi
+# Interface: TopbarAPI
 
 Defines page-level APIs available to solutions.
 
 ## Hierarchy
 
-* [TopbarApiProperties](topbar.topbarapiproperties.md)
+* [TopbarAPIProperties](topbar.topbarapiproperties.md)
   
-  ↳ **TopbarApi**
+  ↳ **TopbarAPI**
 
 ## Properties
 
@@ -23,7 +23,7 @@ Defines page-level APIs available to solutions.
 
 • **customEnvLabel**: *string*
 
-*Inherited from [TopbarApiProperties.customEnvLabel](topbar.topbarapiproperties.md#customenvlabel)*
+*Inherited from [TopbarAPIProperties.customEnvLabel](topbar.topbarapiproperties.md#customenvlabel)*
 
 Gets or sets a custom environment label in the shell.
 
