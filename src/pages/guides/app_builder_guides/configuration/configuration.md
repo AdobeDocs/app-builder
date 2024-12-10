@@ -289,7 +289,7 @@ Configuration paths defined in `./src/dx-excshell-1/ext.config.yaml` must be rel
 
 ### Public distribution configuration
 
-A subset of configuration options is specific to publicly distributable apps, as detailed in the [Public Distribution](../distribution/public.md) Guide.
+A subset of configuration options is specific to publicly distributable apps, as detailed in the [Distribution](../distribution.md#public) Guide.
 
 ```yaml
 configSchema: 
