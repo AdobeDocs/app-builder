@@ -185,7 +185,7 @@ module.exports = {
           },
           {
             "title": "UI Extensibility",
-            "path": "guides/extensions/ui-extensibility.md"
+            "path": "https://developer.adobe.com/uix/docs/"
           }
         ]
       },

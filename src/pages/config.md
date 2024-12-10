@@ -46,7 +46,7 @@
         - [Introduction to Extensions](guides/extensions/index.md) 
         - [Extension Migration Guide](guides/extensions/extension-migration-guide.md) 
         - [Migration Guide - Standalone Application to DX Experience Cloud SPA v1](guides/migrations/standalone-to-dx-experience-cloud-spa.md) 
-        - [UI Extensibility](guides/extensions/ui-extensibility.md) 
+        - [UI Extensibility](https://developer.adobe.com/uix/docs/) 
     - [Configuration](guides/configuration/index.md) 
         - [App Builder Configuration Files](guides/configuration/index.md) 
         - [Webpack Configuration](guides/configuration/webpack-configuration.md) 
