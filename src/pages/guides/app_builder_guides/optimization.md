@@ -4,7 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: Tips and Tricks for optimizing App Builder Apps
+title: Optimizing App Builder Apps
 ---
 
 # Optimizing App Builder Apps
