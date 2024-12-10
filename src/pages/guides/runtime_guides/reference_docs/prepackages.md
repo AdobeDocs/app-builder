@@ -1,4 +1,4 @@
-# Pre-installed packages
+# Pre-Installed Packages
 
 These packages are pre-installed and available to any I/O Runtime user:
 
@@ -18,11 +18,11 @@ You can execute any of the actions defined in a shared package by using the full
 aio rt:action:invoke /whisk.system/alarms/alarm
 ```
 
-Alternatively, you can bind any of these packages to your namespace; see the [Packages page](../reference/packages.md). When you bind a package, you can set your own default parameters (if any) and run the actions as local to your namespace.
+Alternatively, you can bind any of these packages to your namespace; see the [Packages](packages.md) page. When you bind a package, you can set your own default parameters (if any) and run the actions as local to your namespace.
 
 ## Using the alarms package
 
-The alarms package can be used to trigger a actions for a single or recurring interval.This is a three-step process:
+The alarms package can be used to trigger a actions for a single or recurring interval. This is a three-step process:
 
 1. Create one or more actions you want to be executed. There is nothing special about these actions; create them as you would any other.
 2. Create a trigger and specify the frequency. This is what the Alarms package provides.
