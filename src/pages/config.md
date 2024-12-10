@@ -78,7 +78,7 @@
             - [User API](guides/exc-app/interfaces/user-userapi.md) 
             - [User Info](guides/exc-app/interfaces/user-userinfo.md) 
     - [Integration Guide for building Event-driven Applications with I/O Events](https://developer.adobe.com/events/docs/guides/) 
-    - [Custom Events Overview](guides/events/custom-events.md) 
+    - [Custom Events Overview](https://developer.adobe.com/events/docs/guides/using/custom_events/) 
     - [Reference documentation](guides/reference-documentation/index.md) 
     - [Contribution guides](guides/contribution-guides/index.md) 
     - [Telemetry](guides/telemetry) 

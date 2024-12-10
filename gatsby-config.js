@@ -325,7 +325,7 @@ module.exports = {
       },
       {
         "title": "Custom Events Overview",
-        "path": "guides/events/custom-events.md"
+        "path": "https://developer.adobe.com/events/docs/guides/using/custom_events/"
       },
       {
         "title": "Reference documentation",
