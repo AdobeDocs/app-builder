@@ -38,4 +38,4 @@ You can debug your UI code in the `web-src` folder in the same way as [debugging
 
 Below is an example ran on Firefox.
 
-![debugger-ui](./assets/debugger-ui.png)
+![debugger-ui](https://raw.githubusercontent.com/AdobeDocs/adobeio-codelabs-debugging/master/lessons/assets/debugger-action.gif)
