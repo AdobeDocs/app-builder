@@ -82,7 +82,7 @@ function main(params) {
 
 You need to package the new relic agent as part of your action code and deploy the action as [.zip file](creating_actions.md#deploying-zip-actions). 
 
-## Debugging Locally
+## Debugging locally
 
 Check this [page](debugging.md) if you want to learn how to debug your actions locally.
 
