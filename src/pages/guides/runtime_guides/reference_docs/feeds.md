@@ -1,6 +1,6 @@
 # Using Feeds
 
-Feeds are streams of events. The distinction between [triggers](triggersrules.md 'Using Triggers and Rules') and feeds is:
+Feeds are streams of events. The difference between [triggers](triggersrules.md 'Using Triggers and Rules') and feeds is:
 
 * **Triggers** are a way to classify events: each defines a type of event and is fired when that event is received by Runtime. Triggers are linked to actions by rules; each rule links a trigger to a single action.
 * **Feeds** are streams of events that are all handled by the same trigger. Each feed is controlled by a _feed action_ that manages the stream: creating, deleting, pausing or resuming it as needed. In this way, a feed controls the flow of input to a trigger. Feed actions use a REST API to interact with external services that produce the events to which triggers are set to respond.
