@@ -142,16 +142,16 @@ hooks:
 
 These diagrams show how custom hooks are run, built, deployed, and undeployed within applications by commands:
 
-![aio-app-run lifecycle](E:\GitHub\app-builder\src\pages\images\aio-app-run.png)
+![aio-app-run lifecycle](../../../images/aio-app-run.png)
 
-![aio-app-build lifecycle](E:\GitHub\app-builder\src\pages\images\aio-app-build.png)
+![aio-app-build lifecycle](../../../images/aio-app-build.png)
 
-![aio-app-deploy lifecycle](E:\GitHub\app-builder\src\pages\images\aio-app-deploy.png)
+![aio-app-deploy lifecycle](../../../images/aio-app-deploy.png)
 
-![aio-app-undeploy lifecycle](E:\GitHub\app-builder\src\pages\images\aio-app-undeploy.png)
+![aio-app-undeploy lifecycle](../../../images/aio-app-undeploy.png)
 
 ## Next steps
 
-[Return to Architecture Overview](architecture_overview.md)
+Return to [Architecture Overview](architecture_overview.md).
 
-[Return to Guides Index](../../../guides/guides_index.md)
+Return to [Guides Index](../../../guides/guides_index.md).
