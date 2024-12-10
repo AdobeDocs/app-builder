@@ -15,7 +15,7 @@ Subset of page-level APIs available to solutions that are settable attributes.
 
 * **PageAPIProperties**
   
-  ↳ [PageApi](page.pageapi.md)
+  ↳ [PageAPI](page.pageapi.md)
 
 ## Properties
 
