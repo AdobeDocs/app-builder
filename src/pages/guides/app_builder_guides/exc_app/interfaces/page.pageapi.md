@@ -21,9 +21,9 @@ Defines page-level APIs available to solutions.
 
 ### favicon
 
-• **favicon**: *string*
+**favicon**: *string*
 
-*Inherited from [PageApiProperties](page.pageapiproperties.md).[favicon](page.pageapiproperties.md#favicon)*
+*Inherited from [PageApiProperties.favicon](page.pageapiproperties.md#favicon)*
 
 Gets or set the favicon for the page. If this isn't set, then the default Experience Cloud favicon will be used.
 
@@ -55,7 +55,7 @@ ___
 
 • **preventDefaultCombos**: *object[]*
 
-*Inherited from [PageApiProperties.preventDefaultCombos](page.pageapiproperties.md)*
+*Inherited from [PageApiProperties.preventDefaultCombos](page.pageapiproperties.md#preventdefaultcombos)*
 
 An array of key combinations for the shell to prevent default browser behavior, on in cases where an application performs some other action.
 
@@ -92,7 +92,7 @@ ___
 
 • **title**: *string*
 
-*Inherited from [PageApiProperties](page.pageapiproperties.md).[title](page.pageapiproperties.md#title)*
+*Inherited from [PageApiProperties.title](page.pageapiproperties.md#title)*
 
 Gets or sets the title of the page.
 
@@ -108,7 +108,7 @@ ___
 
 • **viewportTakeover**: *boolean*
 
-*Inherited from [PageApiProperties](page.pageapiproperties.md).[viewportTakeover](page.pageapiproperties.md#viewporttakeover)*
+*Inherited from [PageApiProperties.viewportTakeover](page.pageapiproperties.md#viewporttakeover)*
 
 Configuration to alter the z-index ordering of the Shell and iframe based on whether viewport takeover is needed.
 
@@ -240,8 +240,8 @@ Explore the attributes and behavior of Adobe Experience Cloud Interfaces:
 | ------------------------------------------- | ---------------------------------------------------------- | ------------------------ |
 | [Object with Href](page.objectwithhref.md)  | [Callback](topbar.callback.md)                             | [API](user.userapi.md)   |
 | [Object with Path](page.objectwithpath.md)  | [Custom Feedback](topbar.customfeedbackconfig.md)          | [Info](user.userinfo.md) |
-|                                             | [Custom Search](topbar.customsearchconfig.md)              |                          |
-| [API Properties](page.pageapiproperties.md) | [Help Center Feedback](topbar.helpcenterfeedbackconfig.md) |                          |
+| [API Properties](page.pageapiproperties.md) | [Custom Search](topbar.customsearchconfig.md)              |                          |
+|                                             | [Help Center Feedback](topbar.helpcenterfeedbackconfig.md) |                          |
 |                                             | [External Feedback](topbar.externalfeedbackconfig.md)      |                          |
 |                                             | [Solution](topbar.solution.md)                             |                          |
 |                                             | [API](topbar.topbarapi.md)                                 |                          |
