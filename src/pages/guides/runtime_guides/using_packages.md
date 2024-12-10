@@ -29,7 +29,7 @@ package /<yourNamespace>/hellopackage
 
 ## Adding actions to a package
 
-The package you created is empty. To add an action to it, use the source code from the `hello` action created in [Deploying your first Adobe I/O Runtime function](../../get_started/runtime_getting_started/deploy.md). Here is the code:
+The package you created is empty. To add an action to it, use the source code from the `hello` action created in [Deploying your first Adobe I/O Runtime action](../../get_started/runtime_getting_started/deploy.md). Here is the code:
 
 ```
 function main(params) {
@@ -139,7 +139,7 @@ package /<yourNamespace>/hellopackage: Returns a result based on parameter name
    (parameters: none defined)
 ```
 
-The asterisk in "*name" above indicates that the parameter is bound (see [Package bindings](#package-bindings) below. A single asterisk means the parameter has a default value defined; a double asterisk means it has a finalized default value - one that cannot be changed by the user.
+The asterisk in "*name" above indicates that the parameter is bound: see [Package bindings](#package-bindings) below. A single asterisk means the parameter has a defined default value; a double asterisk means its default value is finalized, and cannot be changed by the user.
 
 If you invoke the action without specifying any parameters, you will see that it inherits them from the package:
 
