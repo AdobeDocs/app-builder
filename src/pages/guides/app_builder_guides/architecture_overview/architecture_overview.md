@@ -33,7 +33,7 @@ Single-Page App Builder applications with full-fledged UIs should follow the [JA
 The three main components of App Builder apps are:
 
 - Adobe Product APIs, exposed to external Developers and consumers through Adobe I/O API Gateway
-- [Javascript-based SDK](https://github.com/adobe/aio-sdk) and serverless actions, sequences, and APIs deployed to [Runtime](/runtime)
+- [Javascript-based SDK](https://github.com/adobe/aio-sdk) and serverless actions, sequences, and APIs deployed to [I/O Runtime](../../../intro_and_overview/what_is_app_builder.md#what-is-adobe-io-runtime)
 - [React-Spectrum](https://react-spectrum.adobe.com/), Adobe's front-end framework that applies Adobe's design system to React-based components
 
 ![JAMStack Architecture](../../../images/jamstack-anatomy-application-march2021.png)
