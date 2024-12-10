@@ -68,9 +68,9 @@ Explore details of the [Index](index.md), [TopBar](topbar.md), and [User](user.m
 
 Explore the attributes and behavior of Adobe Experience Cloud Interfaces:
 
-[Modules](modules.md)
+[Modules](../interfaces/modules.md)
 
-[Runtime](runtime.md)
+[Runtime](../interfaces/runtime.md)
 
 | Page                                             | Topbar                                                     | User                          |
 | ------------------------------------------------ | ---------------------------------------------------------- | ----------------------------- |
