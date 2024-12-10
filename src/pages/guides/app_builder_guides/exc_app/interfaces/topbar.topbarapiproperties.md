@@ -4,16 +4,16 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: 'Interface: TopbarApiProperties'
+title: 'Interface: TopbarAPIProperties'
 ---
 
 # Interface: TopbarAPIProperties
 
 ## Hierarchy
 
-* **TopbarApiProperties**
+* **TopbarAPIProperties**
   
-  ↳ [TopbarApi](topbar.topbarapi.md)
+  ↳ [TopbarAPI](topbar.topbarapi.md)
 
 ## Properties
 
