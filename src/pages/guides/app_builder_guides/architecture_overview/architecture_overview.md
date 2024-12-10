@@ -50,7 +50,7 @@ The CLI is supplied with these capabilities:
 - [Certificate management](https://github.com/adobe/aio-cli-plugin-certificate)
 - [Configuration management](https://github.com/adobe/aio-cli-plugin-certificate)
 - [Interactions](https://github.com/adobe/aio-cli-plugin-console) with [Adobe Developer Console](https://developer.adobe.com/developer-console/)
-- [Interactions](https://github.com/adobe/aio-cli-plugin-runtime) with [Runtime](../../../intro_and_overview/what_is_app_builder.md#what-is-adobe-i-o-runtime), Adobe's serverless platform
+- [Interactions](https://github.com/adobe/aio-cli-plugin-runtime) with [Runtime](../../../intro_and_overview/what_is_app_builder.md), Adobe's serverless platform
 - [Lifecycle management](https://github.com/adobe/aio-cli-plugin-app) for App Builder
 
 ### App Builder generators
