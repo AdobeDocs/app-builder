@@ -17,7 +17,7 @@ Extensions provide a simpler, more integrated way for Developers to extend produ
 
 Extensions act like contracts between Adobe products and App Builder applications. An Adobe product like AEM Assets defines how customers may extend the product through App Builder applications: what kind of operations are allowed, what kind of data formats are expected, and so on. This definition is called an **extension point**. Developers build applications against these Extension Points that map to the product's requirements, and define **endpoints** that map to the Extension Point. 
 
-![extension diagram](E:\GitHub\app-builder\src\pages\images\extensions.png)
+![extension diagram](../../../images/extensions.png)
 
 Adobe products may define extension points - just one or two in the illustration above, but in practice as many as needed. App Builder applications expose endpoints that implement these extension points. An application may implement multiple extension points across the Adobe ecosystem, or none at all. 
 
