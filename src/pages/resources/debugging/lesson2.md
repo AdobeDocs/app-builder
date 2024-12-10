@@ -26,7 +26,7 @@ const res = await fetch(apiEndpoint)
 
 You may want to debug what is returned from this API call to decide what to do next. To debug, you first need a breakpoint at line 40.
 
-![set-breakpoint](./assets/debugger-action.gif)
+![set-breakpoint](./assets/set-breakpoint.png)
 
 Go back to the Chrome Debug window, access the at inside ExC Shell if not already done: https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080. Select the `hello` action and invoke. Your debugger would stop at the breakpoint you set earlier, which allows inspecting values of the variables in your code.
 
