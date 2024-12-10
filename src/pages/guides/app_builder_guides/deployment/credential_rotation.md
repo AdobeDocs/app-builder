@@ -11,11 +11,11 @@ description: How to rotate your secrets and keep your actions secured.
 
 # Credential Rotation
 
-Eventually you will need to rotate your credentials to keep everything secure.  This page outlines best practices for updating parameters (inputs ) to your actions without disruption.
+Eventually you will need to rotate your credentials to keep everything secure.  This page outlines best practices for updating parameters (inputs) to your actions without disruption.
 
 ## Why rotate credentials?
 
-If your credentials were leaked, for example by appearing in a errant log, or by a Developer who left the team, it is simply good practice to rotate them periodically.
+If your credentials may have been leaked, for example by appearing in a errant log or because a Developer left the team, it is good practice to rotate them.
 
 ## How to rotate credentials
 
