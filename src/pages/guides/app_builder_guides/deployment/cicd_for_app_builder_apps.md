@@ -21,7 +21,7 @@ App Builder allows you to manage multiple environments through Workspace in Adob
 
 Users at entitled organizations will also be allowed to create as many additional workspaces as their project requires, whether to add extra stages (QA, Preproduction, etc.), to match infrastructure requirements, or to define Developer-specific workspaces for each team member to work against locally.
 
-![High-Level CI/CD architecture](E:\GitHub\app-builder\src\pages\images\high-level-ci-cd-architecture.png)
+![High-Level CI/CD architecture](../../../images/high-level-ci-cd-architecture.png)
 
 ## Local application development
 
@@ -54,7 +54,7 @@ The default GitHub workflows support the following actions, based on the Github 
 
 Each of the default Github Workflows uses two core features provided by Github: [Github Actions](https://github.com/features/actions) and [Github Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets).
 
-![CI/CD with Github Actions](E:\GitHub\app-builder\src\pages\images\ci-cd-github-actions-architecture.png)
+![CI/CD with Github Actions](../../../images/ci-cd-github-actions-architecture.png)
 
 ### GitHub actions for AIO CLI
 
