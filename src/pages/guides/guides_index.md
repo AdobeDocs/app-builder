@@ -25,6 +25,7 @@ For a close examination of App Builder's components, operation, and resources, f
 * [Optimization](app_builder_guides/optimization.md)
 * [Security](app_builder_guides/security/index.md)
 * [Telemetry](app_builder_guides/telemetry.md)
+* [App Builder reference documentation index](../guides/references.md)
 
 ## Adobe I/O Runtime guides
 
