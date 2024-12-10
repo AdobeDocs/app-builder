@@ -33,7 +33,7 @@ We __never__ collect any that might be sensitive, including but not limited to c
 
 <InlineAlert slots="text" />
 
-For more information please read our [privacy policy](https://www.adobe.com/privacy.html)
+For more information please read our [privacy policy](https://www.adobe.com/privacy.html).
 
 ## Will this data be shared? With whom?
 
