@@ -4,16 +4,16 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: 'Interface: PageApiProperties'
+title: 'Interface: PageAPIProperties'
 ---
 
-# Interface: PageApiProperties
+# Interface: PageAPIProperties
 
 Subset of page-level APIs available to solutions that are settable attributes.
 
 ## Hierarchy
 
-* **PageApiProperties**
+* **PageAPIProperties**
   
   ↳ [PageApi](page.pageapi.md)
 
