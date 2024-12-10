@@ -18,11 +18,11 @@ Standalone applications will **not** have the `App Builder ExcShell` sub-heading
 
 **Standalone application**
 
-![Standalone Application](E:\GitHub\app-builder\src\pages\images\experience_cloud_standalone_application.png)
+![Standalone Application](../../../images/experience_cloud_standalone_application.png)
 
 **DX Experience Cloud v1 SPA**
 
-![DX Experience Cloud SPA v1](E:\GitHub\app-builder\src\pages\images\experience_cloud_dx_experience_cloud_spa.png)
+![DX Experience Cloud SPA v1](../../../images/experience_cloud_dx_experience_cloud_spa.png)
 
 ## Understanding the difference
 
