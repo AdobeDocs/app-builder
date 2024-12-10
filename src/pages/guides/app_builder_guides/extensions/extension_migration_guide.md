@@ -77,7 +77,7 @@ Please follow these steps to migrate your application:
 
 ### 1. Update tooling
 
-Make sure your local tooling and environment setup is current, as described [here](../../getting_started). 
+Make sure your local tooling and environment setup is current, as described [here](../../../get_started/app_builder_get_started/set_up.md#local-environment-setup). 
 
 ### 2. Update configuration
 
@@ -262,7 +262,7 @@ extensions:
 
 ### 3. Testing
 
-Once refactoring is complete, test it using `aio app run` or `aio app deploy`. Everything should work normally. If you encounter any issues, please contact us through the [Experience League Forum](https://adobe.ly/appbuilder-forum) and we'll support you as quickly as possible.
+Once refactoring is complete, test it using `aio app run` or `aio app deploy`. Everything should work normally. If you encounter any issues, please contact us through the [Experience League Developer Community](https://adobe.ly/appbuilder-forum) and we'll get you the support you need as quickly as we can.
 
 ## Adding or removing endpoints from existing projects
 
