@@ -6,7 +6,7 @@ title: App Builder Docs
 description: This documentation provides an overview of App Builder as well as guides, reference documentation, and tools to help you begin developing your own custom applications.  
 ---
 
-<HeroSimple />
+<HeroSimple slots="image, heading, text" background="rgb(37,26,56)" hideBreadcrumbNav="false" />
 
 ![](../images/banner.png)
 
