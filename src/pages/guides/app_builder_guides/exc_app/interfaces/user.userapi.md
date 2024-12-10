@@ -4,16 +4,16 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: 'Interface: UserApi'
+title: 'Interface: UserAPI'
 ---
 
-# Interface: UserApi
+# Interface: UserAPI
 
 ## Hierarchy
 
 * EventEmitter‹UserInfoEvent›
   
-  ↳ **UserApi**
+  ↳ **UserAPI**
 
 ## Properties
 
