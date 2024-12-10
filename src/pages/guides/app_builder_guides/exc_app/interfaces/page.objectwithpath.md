@@ -29,10 +29,6 @@ The relative path within the solution.
 
 ## Next steps
 
-Explore details of the [Index](./modules/index.md), [Page](./modules/page.md), [TopBar](./modules/topbar.md), and [User](./modules/user.md) external modules.
-
-Explore the attributes and behavior of other Adobe Experience Cloud interfaces:
-
 Explore details of the [Index](../modules/index.md), [Page](../modules/page.md), [TopBar](../modules/topbar.md), and [User](../modules/user.md) external modules.
 
 Explore the attributes and behavior of Adobe Experience Cloud Interfaces:
