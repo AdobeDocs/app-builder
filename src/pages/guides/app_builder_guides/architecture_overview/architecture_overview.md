@@ -18,7 +18,7 @@ These applications may be headless or headful, as described below.
 
 ### Headless applications
 
-Headless applications consist of a set of serverless actions or sequences deployed to [I/O Runtime](../../../intro_and_overview/what_is_app_builder.md#what-is-adobe-i-o-runtime-), Adobe's serverless platform.
+Headless applications consist of a set of serverless actions or sequences deployed to [I/O Runtime](../../../intro_and_overview/what_is_app_builder.md#what-is-adobe-io-runtime), Adobe's serverless platform.
 
 Headless applications integrate well with remote scripts or processes that invoke them, for example [AEM Assets workflows](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/assets-workflow.html) or [ACS activities](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/data-management-activities/external-api.html).
 
@@ -50,7 +50,7 @@ The CLI is supplied with these capabilities:
 - [Certificate management](https://github.com/adobe/aio-cli-plugin-certificate)
 - [Configuration management](https://github.com/adobe/aio-cli-plugin-certificate)
 - [Interactions](https://github.com/adobe/aio-cli-plugin-console) with [Adobe Developer Console](https://developer.adobe.com/developer-console/)
-- [Interactions](https://github.com/adobe/aio-cli-plugin-runtime) with [Runtime](../../../intro_and_overview/what_is_app_builder.md), Adobe's serverless platform
+- [Interactions](https://github.com/adobe/aio-cli-plugin-runtime) with [I/O Runtime](../../../intro_and_overview/what_is_app_builder.md#what-is-adobe-io-runtime), Adobe's serverless platform
 - [Lifecycle management](https://github.com/adobe/aio-cli-plugin-app) for App Builder
 
 ### App Builder generators
