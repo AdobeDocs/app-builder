@@ -11,7 +11,7 @@ title: 'Lesson 1: Configure services'
 
 # Lesson 1: Configure Services
 
-## Create Azure blob storages
+## Create Azure blob storage
 
 You need to [create Azure blob storage][create-azure-blob] on your Azure account. Then, create two containers:
 
@@ -49,4 +49,4 @@ To test your configuration:
 [imgix-create-azure-source]: https://docs.imgix.com/setup/creating-sources/microsoft-azure 'Setting up your Microsoft Azure Source'
 [imgix-tools]: https://dashboard.imgix.com/tools
 [adobe-console]: https://console.adobe.io 'Adobe IO Console'
-[adobe-console-firefly-template]: ../../getting_started/first_app.md#2-creating-a-new-project-on-developer-console 'Creating new project on Adobe developer console'
+[adobe-console-firefly-template]: ../../get_started/app_builder_get_started/first_app.md#2-creating-a-new-project-on-developer-console 'Creating new project on Adobe Developer console'
