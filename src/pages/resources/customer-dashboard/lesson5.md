@@ -11,18 +11,18 @@ title: 'Lesson 5: Add Personalized Promotion Emails Triggering'
 
 # Lesson 5: Add Personalized Promotion Emails Triggering
 
-*Note: This is an advanced part of the codelab. You are recommended to go through it, but feel free to skip and jump to the [Recap](welldone.md).*
+>Note: This is an advanced part of the Code Lab. Feel free to skip and jump to the [Recap](welldone.md).
 
-Now that your app displays a list of customer profiles, let's try adding some user interaction to it. Imagine as a marketer looking at different customer profiles with more extensive data (past orders, date of birth, gender), you may want to send promotional discount codes to some specific customers to motivate them to buy your products. Therefore, we will add a "Send promo code" button.
+Now that your app displays a list of customer profiles, let's try adding some user interaction to it. Imagine a marketer looking at different customer profiles with more extensive data (past orders, date of birth, gender), who wants to send promotional discount codes to some of them to motivate them to buys. We will add a "Send promo code" button to accomplish this.
 
-First of all, you need a new action for generating promo code. Here we use the [uuid](https://www.npmjs.com/package/uuid) npm package to generate it, and [bwip-js](https://www.npmjs.com/package/bwip-js) to render a visual barcode. Simply add them as a dependency in `package.json`, and run `npm install`. To add the new action, run the following `aio` command, and specify the inputs according to the screenshot below.
+First, you need a new action for generating promo code. Here we use the [uuid](https://www.npmjs.com/package/uuid) npm package to generate it, and [bwip-js](https://www.npmjs.com/package/bwip-js) to render a visual barcode. Add them as a dependency in `package.json`, and run `npm install`. To add the new action, run the following `aio` command, and specify the inputs according to the screenshot below.
 
 ```bash
 aio app add action
 ```
 ![action-code](assets/action-code.png)
 
-Upon a successful command execution, the `generate-code` action is added to the ext.config.yaml file, and its source code is at `src/dx-excshell-1/actions/generate-code/index.js`. As we don't need an authentication on this action, we will remove `require-adobe-auth: true` from its definition in manifest file, as well as remove the relevant authorization checks in the code. In addition, we add the code for generating UUID and return it in the response body.
+Upon a successful command execution, the `generate-code` action is added to the ext.config.yaml file, and its source code is at `src/dx-excshell-1/actions/generate-code/index.js`. Since we don't need an authentication for this action, we will remove `require-adobe-auth: true` from its definition in manifest file, as well as the relevant authorization checks in the code. In addition, we add the code for generating UUID and return it in the response body:
 
 ```javascript
 /**
@@ -72,15 +72,15 @@ async function main (params) {
 exports.main = main
 ```
 
-Verify that the new action is working by running the app locally with `aio app run`, and check the response of `https://<your-namespace>.adobeioruntime.net/api/v1/dx-excshell-1/generate-code` on the browser. You can find your own URL from the terminal output.
+Verify that the new action is working by running the app locally with `aio app run` and check the response of `https://<your-namespace>.adobeioruntime.net/api/v1/dx-excshell-1/generate-code` on the browser. You can find your own URL from the terminal output.
 
 ![generate-code](assets/generate-code.png)
 
-*Note: Visit the codelab [Headless Apps with App Builder](../barcode-reader/index.md) to learn more about building a headless app for barcode generation.*  
+>Note: Visit the codelab [Headless Apps with App Builder](../barcode-reader/index.md) to learn more about building a headless app for barcode generation.  
 
-Now that you have it set up in App Builder app, next step is to create a marketing workflow in Campaign Standard which takes care of receiving external signals from the app and sending promotion emails. To do that, go to *Marketing Activities > Create > Workflow*. Define the properties of your workflow, and finish the creation.  
+Now that you have it set up in App Builder app, create a marketing workflow in Campaign Standard to take care of receiving external signals from the app and sending promotion emails. To do that, go to *Marketing Activities > Create > Workflow*. Define the properties of your workflow, and finish the creation.  
 
-Your new workflow should contain 3 components, in correct order:
+Your new workflow should contain three components in this order:
 1. External signal
 2. Query user by email
 3. Email delivery
@@ -91,23 +91,23 @@ In the "External signal" component, make sure that it accepts `email` as an inpu
 
 ![external-signal](assets/external-signal.png)
 
-In the "Query" component, make sure that it uses the `email` param to query user.
+In the "Query" component, make sure that it uses the `email` parameter to query the user.
 
 ![acs-query](assets/acs-query.png)
 
-In the "Email delivery" component, go to its editor to design the email. In this lab we will use the "Email Designer" mode, and leverage the available "Astro - Coupon" template.  
+Go to the editor of the "Email delivery" component to design the email. In this lab we will use the "Email Designer" mode, and use the available "Astro - Coupon" template.  
 
 Design the email as you prefer. One required component is an image that loads the barcode from the `generate-code` action.
 
 ![acs-editor](assets/acs-editor.png)
 
-Save your Campaign Standard Workflow and start it. It should be now ready to execute upon external signal triggering!  
+Save your Campaign Standard Workflow and start it. It should be now ready to execute upon external signal triggering.  
 
-The last step is to add an action to trigger the Campaign Standard workflow, and a "Send promo code" button on the app UI. We use `aio app add action` again to add the `send-promo` action.
+Finally, add an action to trigger the Campaign Standard workflow, and a "Send promo code" button on the app UI. We use `aio app add action` again to add the `send-promo` action.
 
 ![action-promo](assets/action-promo.png)
 
-In order to trigger the workflow, you need to provide a workflow ID to the triggering API. You can find it on the Campaign Standard UI. In your `.env` file, add a new variable for it, for example `CAMPAIGN_STANDARD_WORKFLOW_ID=WKFXX`. This environment variable is then interpreted into a default param of the `send-promo` action in the `ext.config.yaml` file.
+To trigger the workflow, provide a workflow ID to the triggering API. You can find it on the Campaign Standard UI. In your `.env` file, add a new variable for it, for example `CAMPAIGN_STANDARD_WORKFLOW_ID=WKFXX`. This environment variable is then interpreted into a default parameter of the `send-promo` action in the `ext.config.yaml` file:
 
 ```yaml
 send-promo:
@@ -124,7 +124,7 @@ send-promo:
     final: true
 ```
 
-Then you should update the source code at `actions/send-promo/index.js` as following:
+Then update the source code at `actions/send-promo/index.js`:
 
 ```javascript
 /**
@@ -190,7 +190,7 @@ async function main (params) {
 exports.main = main
 ```
 
-To update the UI, open `Home.js` and add method `sendPromo()` as following.
+To update the UI, open `Home.js` and add method `sendPromo()`:
 
 ```javascript
 async sendPromo (email) {
@@ -213,7 +213,7 @@ async sendPromo (email) {
 }
 ```
 
-Finally let's update the renderred profiles grid view to include the send promo button. As we're using new React Spectrum components for the confirm dialog, make sure that they are imported properly in `Home.js`.
+Finally update the renderred profiles grid view to include the Send Promo button. Since we're using new React Spectrum components for the confirm dialog, make sure that they are imported properly in `Home.js`:
 
 ```javascript
 // importing confirm dialog components, along with previously available components
@@ -266,11 +266,11 @@ render () {
 }
 ```
 
-After that, execute `aio app run` again so that your app is running locally.
+After that, execute `aio app run` again so that your app is running locally:
 
 ![ui-profiles-button](assets/ui-profiles-button.png)
 
-Try clicking to send promo to a profile which has your own email address. There will be a prompt confirming your command. Check your email inbox that you have received a promo email.
+Try clicking to send a promo to a profile with your own email address. There will be a prompt confirming your command. Check your email inbox and confirm that you received a promo email:
 
 ![email-promo](assets/email-promo.png)
 
