@@ -9,7 +9,7 @@ title: App Builder Sample Apps
 
 # Sample Apps
 
-These are complete sample applications built using App Builder. See below for a [collection of code snippets](code_snippets/index.md) for common operations.
+These are complete sample applications built using App Builder. See below for a [collection of code snippets](#code-snippets) for common operations.
 
 ## Overview
 
