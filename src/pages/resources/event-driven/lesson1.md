@@ -37,7 +37,7 @@ To use the custom events CLI plugin, you need this information from the console 
 
 ## Initialize an App Builder app using a CLI template
 
-To initialize an App Builder app, let's use the `init` command from the CLI. For more information, please refer to [Creating your First App Builder Application](../../getting_started/first_app.md).
+To initialize an App Builder app, let's use the `init` command from the CLI. For more information, please refer to [Creating your First App Builder App](../../get_started/app_builder_get_started/first_app.md).
 
 ```bash
 aio app init <Your-project-name> --no-extensions
