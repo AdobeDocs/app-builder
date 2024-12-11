@@ -19,4 +19,4 @@ You have learned:
 
 * How to set up a headless App Builder app with a scheduler using triggers and rules
 * How to use aio-lib-state as part of runtime actions
-* How to use custom events and the Journaling API to build a high availability solution 
+* How to use custom events and the Journaling API to build a high-availability solution 
