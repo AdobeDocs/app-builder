@@ -18,7 +18,7 @@ This Code Lab will guide you through creating cron jobs in an App Builder applic
 
 ## User story
 
-There is a class of App Builder apps in which customers want guarantees that I/O Events will be processed without losing any events, especially during a surge of events. Without processing guarantees, a Runtime webhook would return a 429 response when it passed its concurrency limit, causing the webhook to be marked unreachable and ending delivery of events. The Journaling API of custom events resolves this situation. 
+There is a class of App Builder apps for which customers want guarantees that I/O Events will be processed without losing any, for example during a surge of events. Without processing guarantees, a Runtime webhook would return a 429 response when it passed its concurrency limit, causing the webhook to be marked unreachable and ending delivery of events. The Journaling API of custom events resolves this situation. 
 
 ## Solution
 
