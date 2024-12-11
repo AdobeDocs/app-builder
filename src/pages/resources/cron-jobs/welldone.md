@@ -9,9 +9,9 @@ contributors:
 title: Well done
 ---
 
-# Well done
+# Well Done
 
-Congratulations! You have successfully completed the codelab.
+Congratulations! You have successfully completed the Code Lab.
 
 ## Achievements
 
