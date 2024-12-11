@@ -21,13 +21,13 @@ There are three ways one can consume event:
 
 Adobe offers journaling to consume events. The Adobe I/O Events Journaling API lets enterprise integrations consume events at their own cadence and process them in bulk. Unlike webhooks, no additional registration or other configuration is required. Every enterprise integration that is registered for events is automatically enabled for journaling. Journaling data is retained for 7 days. 
 
-After you fire an event, you should be able to verify it by journaling the `UNIQUE API ENDPOINT` you get from the console by following the instructions in the Adobe I/O Events documentation: [Journaling api](https://developer.adobe.com/events/docs/guides/api/journaling_api/).
+After you fire an event, you should be able to verify it by journaling the `UNIQUE API ENDPOINT` you get from the console by following the instructions in the Adobe I/O Events documentation: [Journaling API](https://developer.adobe.com/events/docs/guides/api/journaling_api/).
 
 You could also use the `Curl` command or `POSTMAN` to call the journaling `UNIQUE API ENDPOINT` to see your fired event. Or you could use [Custom event SDK](https://github.com/adobe/aio-lib-events/) to call the Journaling API and retrieve your event.
 
 ## Option 2: Using runtime action
 
-If you have access to Adobe I/O Runtime (included with App Builder) and have defined a [slack webhook url](https://api.slack.com/incoming-webhooks), you can edit the `app.config.yaml` to add an action called slack:
+If you have access to Adobe I/O Runtime (included with App Builder) and have defined a [Slack webhook url](https://api.slack.com/incoming-webhooks), you can edit the `app.config.yaml` to add an action called slack:
 
 * ```javascript
   slack:
@@ -133,8 +133,8 @@ Once you have deployed your runtime action, verfiy that the webhook is working b
 curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://<your-namespace>.adobeio-static.net/api/v1/web/event-demo-0.0.1/slack
 ```
 
-On developer console, you will see: ![slack webhook](assets/slack-webhook.png)
-Select the slack option and save it. Now when you fire an event, you should receive a Slack message whenever a person clicks the "Like" button:
+On Developer console, you will see: ![slack webhook](assets/slack-webhook.png)
+Select the Slack option and save it. Now when you fire an event, you should receive a Slack message whenever a person clicks the "Like" button:
 ![slack message](assets/slack-message.png)
 
 ## Option 3: Using webhook to consume events
