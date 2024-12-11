@@ -9,32 +9,32 @@ title: 'Lesson 1: Bootstrap a Headless App Builder App'
 
 # Lesson 1: Bootstrap a Headless App Builder App
 
-In order to create your barcode application, use the following command:
+To create a barcode application, use the following command:
 ```bash
 aio app init my-barcode-app --no-extensions
 ```
 
-We select the org, project and workspace for our app, and then be presented with a few options what you want your app to include (Serverless Actions, Web UI, CI/CD pipeline, I/O Events). Since we are building a headless app, we're only interested in using `Actions: Deploy Runtime actions`.
+Select the org, project and workspace for your app, and specify the options you want your app to include: Serverless Actions, Web UI, CI/CD pipeline, and I/O Events. Since we are building a headless app, we're only interested in using `Actions: Deploy Runtime actions`.
 
 ![cli1](assets/cli1.png)
 
-The second question, the CLI asks us which experience cloud or experience platform apps you want to extend or build. In this case, we're going to choose `Generic`.
+The CLI then asks  which Experience Cloud or Experience Platform apps you want to extend or build. In this case, we're going to choose `Generic`.
 
 ![cli2](assets/cli2.png)
 
-The third question, we'll specify the action name `barcode`.
+To the third question we'll specify the action name `barcode`.
 
 ![cli3](assets/cli3.png)
 
-What's happening here, from the command line a developer project is created that includes everything from the serverless actions, configuration files, tests etc.
+From the command line, a Developer project is now created that includes serverless actions, configuration files, tests etc.
 
 ![cli3](assets/cli4.png)
 
-We didn't include the UI setup nor the CI/CD pipeline nor I/O Events. These topics will be covered in other codelabs.
+We didn't include a UI setup, CI/CD pipeline, or I/O Events. These  will be covered in other Code Labs.
 
-For our barcode app, we'll start by modifying the following files:
+For the barcode app, we'll start by modifying these files:
 
-**app.config.yaml** which contains all defined actions with their default parameters:
+**app.config.yaml** contains all defined actions with their default parameters:
 
 ```yaml
 application:
@@ -78,7 +78,7 @@ application:
 }
 ```
 
-**.env** should not be committed as this is where you'll store your Adobe I/O Runtime secrets (namespace and auth):
+**.env** should not be committed, since this is where you'll store your Adobe I/O Runtime secrets (namespace and auth):
 
 ```
 # Specify your secrets here
