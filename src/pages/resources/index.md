@@ -4,12 +4,12 @@ keywords:
   - App Tutorials
   - Code Labs
 title: App Builder Code Labs
-description: Code Labs provide guided hands-on coding experiences to build awesome apps on top of App Builder.
+description: Code Labs provide guided hands-on coding experiences to build apps on top of App Builder.
 ---
 
 # Code Labs
 
-Code Labs are guided hands-on coding experiences to build apps on top of App Builder.
+Code Labs are guided hands-on coding experiences to build apps on top of App Builder. An estimate of time to complete is shown for each.
 
 ## Tech tutorials
 
@@ -17,7 +17,7 @@ Code Labs are guided hands-on coding experiences to build apps on top of App Bui
 
 ### Spectrum introduction
 
-[Start (20mins)](spectrum-intro/index.md)
+[Start (20 min)](spectrum-intro/index.md)
 
 Introduction to Spectrum to build an App Builder App UI.
 
@@ -25,7 +25,7 @@ Introduction to Spectrum to build an App Builder App UI.
 
 ### Consume events using Journaling API
 
-[Start (30mins)](journaling-events/index.md)
+[Start (30 min)](journaling-events/index.md)
 
 Creating cron jobs in an App Builder application to consume events using Journaling API.
 
@@ -33,7 +33,7 @@ Creating cron jobs in an App Builder application to consume events using Journal
 
 ### Event-Driven App Builder apps
 
-[Start (25mins)](event-driven/index.md)
+[Start (25 min)](event-driven/index.md)
 
 Introduction to applying Custom I/O Events in event-driven use cases of App Builder applications.
 
@@ -41,7 +41,7 @@ Introduction to applying Custom I/O Events in event-driven use cases of App Buil
 
 ### Events using Runtime Actions as webhook
 
-[Start (30mins)](events-runtime/index.md)
+[Start (30 min)](events-runtime/index.md)
 
 How to consume I/O Events using I/O Runtime actions as webhook.
 
@@ -49,7 +49,7 @@ How to consume I/O Events using I/O Runtime actions as webhook.
 
 ### CI/CD in App Builder apps
 
-[Start (15mins)](ci-cd/index.md)
+[Start (15 min)](ci-cd/index.md)
 
 Setting up CI/CD for an App Builder App using GitHub Actions.
 
@@ -57,7 +57,7 @@ Setting up CI/CD for an App Builder App using GitHub Actions.
 
 ### Debugging App Builder apps
 
-[Start (25mins)](debugging/index.md)
+[Start (25 min)](debugging/index.md)
 
 The basic steps of debugging an App Builder App.
 
@@ -65,7 +65,7 @@ The basic steps of debugging an App Builder App.
 
 ### Scheduling cron jobs
 
-[Start (20mins)](cron-jobs/index.md)
+[Start (20 min)](cron-jobs/index.md)
 
 Creating cron jobs in an App Builder app using OpenWhisk Alarms Package.
 
@@ -75,7 +75,7 @@ Creating cron jobs in an App Builder app using OpenWhisk Alarms Package.
 
 ### App Builder headless app
 
-[Start (30mins)](barcode-reader/index.md)
+[Start (30 min)](barcode-reader/index.md)
 
 Creating a Headless App using App Builder to render a barcode with dynamic data.
 
@@ -83,7 +83,7 @@ Creating a Headless App using App Builder to render a barcode with dynamic data.
 
 ### Asset compute worker with Photoshop APIs
 
-[Start (40mins)](asset-compute-worker-ps-api/index.md)
+[Start (40 min)](asset-compute-worker-ps-api/index.md)
 
 Building asset compute workers using Photoshop APIs to generate custom renditions in AEM.
 
@@ -91,7 +91,7 @@ Building asset compute workers using Photoshop APIs to generate custom rendition
 
 ### Building an App Builder To-Do app
 
-[Start (30mins)](todo-app/index.md)
+[Start (30 min)](todo-app/index.md)
 
 How to build a To-do App with App Builder using aio-lib-state as storage library and React Spectrum components.
 
@@ -99,7 +99,7 @@ How to build a To-do App with App Builder using aio-lib-state as storage library
 
 ### Customer profiles dashboard
 
-[Start (1h)](customer-dashboard/index.md)
+[Start (1 h)](customer-dashboard/index.md)
 
 Creating a dashboard of customer profiles from Adobe Campaign Standard using App Builder.
 
@@ -107,7 +107,7 @@ Creating a dashboard of customer profiles from Adobe Campaign Standard using App
 
 ### Custom Asset compute worker
 
-[Start (20mins)](custom-asset-compute-worker/index.md)
+[Start (20 min)](custom-asset-compute-worker/index.md)
 
 Building a Custom Asset Compute Worker using third-party services to generate intelligent renditions in AEM.
 
@@ -115,6 +115,10 @@ Building a Custom Asset Compute Worker using third-party services to generate in
 
 ### Build an app that consumes Adobe Experience Manager events
 
-[Start (30mins)](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/consume-aem-events.html?lang=en)
+[Start (30 min)](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/consume-aem-events.html?lang=en)
 
 Learn why is it a good idea to build event-driven applications and how to build them with ease using App Builder.
+
+## Next step
+
+Return to [App Builder Overview](../intro_and_overview/app_builder_overview.md).
