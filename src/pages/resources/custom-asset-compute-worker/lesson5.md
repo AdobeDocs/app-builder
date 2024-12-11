@@ -6,19 +6,19 @@ keywords:
   - Developer Tooling
 contributors:
   - 'https://github.com/marcinczeczko'
-title: 'Lesson 5: Setup AEM to use the worker'
+title: 'Lesson 5: Set Up AEM to Use the Worker'
 ---
 
-# Lesson 5: Setup AEM to use the worker
+# Lesson 5: Set Up AEM to Use the Worker
 
-Go to your **AEM Cloud** instance and open **Tools -> Assets -> Processing Profiles** and then create a new processing profile, e.g. `My Worker test profile`.
-On the **Custom** tab, configure your renditions to use your worker, as shown below.
+Go to your **AEM Cloud** instance and open **Tools -> Assets -> Processing Profiles**, then create a new processing profile, e.g. `My Worker test profile`.
+On the **Custom** tab, configure your renditions to use your worker, as shown here:
 
 ![Config of custom renditions](assets/processing-profile-1800.png)
 
-I configured 3 renditions using following imgix configuration params (we don't need to escape JSON if it's used in AEM)
+These examples use renditions created following imgix configuration parameters; we don't need to escape JSON if it's used in AEM.
 
-1. Crop an image to 300x300 px around faces if detected, or around busy sections of the image (entropy).
+1. Crop an image to 300x300 px around faces if detected, or around busy sections of the image (entropy):
 
   ```json
   {
@@ -29,7 +29,7 @@ I configured 3 renditions using following imgix configuration params (we don't n
   }
   ```
 
-2. Same as the previous, but additionally apply an ellipse mask around the cropped area.
+2. In addition, apply an ellipse mask around the cropped area:
 
   ```json
   {
@@ -42,7 +42,7 @@ I configured 3 renditions using following imgix configuration params (we don't n
   }
   ```
 
-3. The last one is similar to the first, but this time we add a text watermark to the image.
+3. This time, add a text watermark to the image:
 
   ```json
   {
@@ -54,11 +54,11 @@ I configured 3 renditions using following imgix configuration params (we don't n
   }
   ```
 
-As the last step, you need to apply the profile to DAM folder.
+As the last step, apply the profile to DAM folder:
 
 ![Apply Profile to Folder](assets/apply-profile-to-folder.png)
 
-Now you can upload images to the folder and observe results on the asset details page.
+Now you can upload images to the folder and observe results on the asset details page:
 
 ![Renditions list in Asset view](assets/worker-results.png) 
 
