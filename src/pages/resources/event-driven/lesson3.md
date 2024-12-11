@@ -58,8 +58,8 @@ In the template code:
 
 * Source code is at `actions/publish-events/index.js`
 * It is a [web action](../../guides/runtime_guides/creating_actions.md#invoking-web-actions)
-* The action will be run in the `nodejs:18` [runtime container on I/O Runtime](../../guides/runtime_guides/reference_docs/runtimes.md#node-js-v18-14-2)
-* It has some [default params](../../guides/runtime_guides/creating_actions.md#working-with-parameters) such as `LOG_LEVEL`, and those you can pass in your `params` like `apiKey`, `provideId` and `eventCode`from `manifest.yml`
+* The action will be run in the `nodejs:18` [runtime container on I/O Runtime](../../guides/runtime_guides/reference_docs/runtimes.md#nodejs-v18142)
+* It has some [default parameters](../../guides/runtime_guides/creating_actions.md#working-with-parameters) such as `LOG_LEVEL`, and those you can pass in your `params` like `apiKey`, `provideId` and `eventCode`from `manifest.yml`
 
 ```javascript
 const { Core, Events } = require('@adobe/aio-sdk')
