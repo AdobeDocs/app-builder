@@ -68,11 +68,11 @@ Then include the Adobe Fonts, for example using your Typekit ID. To create one, 
 Now you can start using components by copy/pasting their code from the [documentation](http://opensource.adobe.com/spectrum-css/).
 In this example, we'll use these components: 
 
-* [Heading](https://opensource.adobe.com/spectrum-css/components/typography-heading/) - 404
-* [Form](https://opensource.adobe.com/spectrum-css/components/form/) - 404
-* [CTA Button](https://opensource.adobe.com/spectrum-css/components/button-cta/) - 404
-* [Textfield](https://opensource.adobe.com/spectrum-css/components/textfield/) - 404
-* [Checkbox](https://opensource.adobe.com/spectrum-css/components/checkbox/) - 404
+* [Heading](https://opensource.adobe.com/spectrum-css/components/typography-heading/)
+* [Form](https://opensource.adobe.com/spectrum-css/components/form/)
+* [CTA Button](https://opensource.adobe.com/spectrum-css/components/button-cta/)
+* [Textfield](https://opensource.adobe.com/spectrum-css/components/textfield/)
+* [Checkbox](https://opensource.adobe.com/spectrum-css/components/checkbox/)
 
 This results in the following code: 
 
