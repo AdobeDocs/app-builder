@@ -262,7 +262,7 @@ extensions:
 
 ### 3. Testing
 
-Once refactoring is complete, test it using `aio app run` or `aio app deploy`. Everything should work normally. If you encounter any issues, please contact us through the [Experience League Developer Community](https://adobe.ly/appbuilder-forum) and we'll get you the support you need as quickly as we can.
+Once refactoring is complete, test it using `aio app run` or `aio app deploy`. Everything should work normally. If you encounter any issues, please contact us through the [Experience League Developer Community](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/adobe-app-builder) and we'll get you the support you need as quickly as we can.
 
 ## Adding or removing endpoints from existing projects
 
