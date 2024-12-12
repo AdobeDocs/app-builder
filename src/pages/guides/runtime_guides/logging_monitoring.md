@@ -22,7 +22,7 @@ aio rt:activation:logs <activation ID>
 2018-11-14T22:23:00.002Z       stdout: 1542234180001: param = John Doe
 ```
 
-# Retrieving Activations for Blocking Successful Calls
+# Retrieving activations for blocking successful calls
 
 At scale, when you run millions of activations in a day, it may be difficult to extract the activations that failed in order to debug them. To help with this task, the system skips persisting the activation that succeeded. 
 
@@ -37,7 +37,7 @@ X-OW-EXTRA-LOGGING: on
 
 > It's not recommended to use the extra logging headers in the production environment; it can reduce invocation performance. 
 
-## Understanding the Error Codes
+## Understanding the error codes
 
 When you have action invocations that fail, sometimes the best way to understand the reason behind the failing is to take a look at the error object part of the activation record - running `aio rt:activation:get <activationId>` you will get the activation record.
 
@@ -48,7 +48,7 @@ The following are the possible values and the meaning for `error` in `response.s
 * `application error`: Action ran, but there was an error thrown in the action code (deliberatly or not) that was handled by I/O Runtime (status is false).
 * `whisk internal error`: Action did not run, an internal I/O Runtime system error occurred while starting the action, more info in `response.status.result.error`
 
-## Third-Party Tools
+## Third-Party tools
 
 I/O Runtime doesn’t offer a configuration to send activations and logs to an external system, something like Splunk, Datadog or New Relic. This is something we are considering to offer in the future. 
 
