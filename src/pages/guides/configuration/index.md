@@ -371,6 +371,22 @@ async function main (params) {
 exports.main = main
 ```
 
+As an alternative, environment variables in .env can be declared as inputs to a package, to make them available to all the actions in the package via their parameters.
+
+#### app.config.yaml
+```yaml
+runtimeManifest:
+   packages:
+     myapp:
+       inputs:
+         ENABLE_DEV_DEBUG: $ENABLE_DEV_DEBUG
+       actions:
+         generic:
+           function: src/myapp/actions/generic/index.js
+           web: 'yes'
+           runtime: nodejs:18
+```
+
 ## `.aio`
 
 The `.aio` file is auto generated and contains Developer Console specific configuration.
