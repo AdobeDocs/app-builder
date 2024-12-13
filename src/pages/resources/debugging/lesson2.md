@@ -32,7 +32,7 @@ Go back to the Chrome Debug window, access the at inside ExC Shell if not alread
 
 *Note: If your code uses App Builder [State](https://github.com/adobe/aio-lib-state) or [Files](https://github.com/adobe/aio-lib-files) SDKs, you cannot use this debugging method. More details about it [here](../../getting-started/common-troubleshooting.md#debugging-errors-with-state-and-files-sdk).*
 
-![debugger-action](https://raw.githubusercontent.com/AdobeDocs/adobeio-codelabs-debugging/master/lessons/assets/debugger-action.gif)
+![debugger-action](https://drive.google.com/file/d/14qDRZv0Lz8j_10l129zPEYdyb1r0bTQR/view)
 
 You can debug your UI code in the `web-src` folder in the same way as [debugging action code](lesson2.md). However, almost every browser comes with handy built-in debugging capabilities, you should leverage these to get the most out of it.
 
