@@ -371,7 +371,8 @@ async function main (params) {
 exports.main = main
 ```
 
-As an alternative, environment variables in .env can be declared as inputs to a package, to make them available to all the actions in the package via their parameters.
+Alternatively, environment variables defined in a .env file can be configured as inputs to a package, making them accessible to all actions within the package through their parameters. 
+Keep in mind that package-level inputs can still be overridden at the action level.
 
 #### app.config.yaml
 ```yaml
