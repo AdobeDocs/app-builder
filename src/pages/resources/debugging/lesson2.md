@@ -34,7 +34,7 @@ Go back to the Chrome Debug window, access the at inside ExC Shell if not alread
 
 <Embed slots="video" />
 
-https://drive.google.com/file/d/1Ks2TKJagkJtp6GjaWilTWPb_nYB0ceX5/view
+./assets/debugger-action.mp4
 
 You can debug your UI code in the `web-src` folder in the same way as [debugging action code](lesson2.md). However, almost every browser comes with handy built-in debugging capabilities, you should leverage these to get the most out of it.
 
