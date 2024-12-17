@@ -26,16 +26,19 @@ const res = await fetch(apiEndpoint)
 
 You may want to debug what is returned from this API call to decide what to do next. To debug, you first need a breakpoint at line 40.
 
-![set-breakpoint](./assets/set-breakpoint.png)
+![set-breakpoint](assets/set-breakpoint.png)
 
 Go back to the Chrome Debug window, access the at inside ExC Shell if not already done: https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080. Select the `hello` action and invoke. Your debugger would stop at the breakpoint you set earlier, which allows inspecting values of the variables in your code.
 
 *Note: If your code uses App Builder [State](https://github.com/adobe/aio-lib-state) or [Files](https://github.com/adobe/aio-lib-files) SDKs, you cannot use this debugging method. More details about it [here](../../getting-started/common-troubleshooting.md#debugging-errors-with-state-and-files-sdk).*
 
-<video src="./assets/debugger-action.mp4" />
+<video controls>
+  <source src="assets/debugger-action.mp4" type="video/mp4">
+</video>
 
 You can debug your UI code in the `web-src` folder in the same way as [debugging action code](lesson2.md). However, almost every browser comes with handy built-in debugging capabilities, you should leverage these to get the most out of it.
 
 Below is an example ran on Firefox.
 
-![debugger-ui](./assets/debugger-ui.png)
+![debugger-ui](assets/debugger-ui.png)
+
