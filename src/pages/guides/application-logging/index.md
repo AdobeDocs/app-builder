@@ -46,7 +46,7 @@ The AIO CLI [App plugin](https://github.com/adobe/aio-cli-plugin-app) provides t
 
 To see more command options, run `aio app logs --help` on your terminal.
 
-The `aio app logs` command can be used either by a developer or even by a script running in a [CI/CD pipeline](deployment/ci-cd-for-firefly-apps.md). Furthermore, the command can be used for App Builder Applications deployed on Runtime or even those running locally through the `aio app run --local` command (see the [Deployment guide](deployment/index.md)).
+The `aio app logs` command can be used either by a developer or even by a script running in a [CI/CD pipeline](../deployment/ci-cd-for-firefly-apps.md). Furthermore, the command can be used for App Builder Applications deployed on Runtime or even those running locally through the `aio app run --local` command (see the [Deployment guide](../deployment/index.md)).
 
 ### Runtime plugin
 
@@ -54,7 +54,7 @@ The AIO CLI [Runtime plugin](https://github.com/adobe/aio-cli-plugin-runtime) op
 
 This command also offers command options to `--watch` or `--tail` the logs among other options (run `aio runtime logs --help`). 
 
-Again, the `aio runtime logs` command can be used by a developer or by a script running in a [CI/CD pipeline](deployment/ci-cd-for-firefly-apps.md). Furthermore, the command can be used for App Builder Applications deployed on Runtime or even those running locally through the `aio app run --local` command (see the [Deployment guide](deployment/index.md)).
+Again, the `aio runtime logs` command can be used by a developer or by a script running in a [CI/CD pipeline](../deployment/ci-cd-for-firefly-apps.md). Furthermore, the command can be used for App Builder Applications deployed on Runtime or even those running locally through the `aio app run --local` command (see the [Deployment guide](../deployment/index.md)).
 
 ## Forwarding Application logs
 
@@ -62,10 +62,10 @@ Apart from viewing application logs using the AIO CLI, a developer can also conf
 
 The supported log management solutions include:
 1. Adobe I/O Runtime (default)
-2. [Splunk Cloud](splunk-cloud.md)
-3. [Splunk Enterprise](splunk-enterprise.md)
-4. [Azure Log Analytics](azure-log-analytics.md)
-5. [New Relic](new-relic.md)
+2. [Splunk Cloud](./splunk-cloud.md)
+3. [Splunk Enterprise](./splunk-enterprise.md)
+4. [Azure Log Analytics](./azure-log-analytics.md)
+5. [New Relic](./new-relic.md)
 
 _Visit the above links to view the steps to set up log forwarding with that solution._
 
@@ -100,10 +100,10 @@ Once a log forwarding configuration is successfully set, the log forwarding conf
 _Note: Running `aio app deploy --no-actions` or `aio app deploy --no-log-forwarding-update` would skip deploying any changes made to the local log forwarding configuration._
 
 Please visit the individual guides to set up log forwarding for your log management solution of choice.
-1. [Splunk Cloud](splunk-cloud.md)
-2. [Splunk Enterprise](splunk-enterprise.md)
-3. [Azure Log Analytics](azure-log-analytics.md)
-4. [New Relic](new-relic.md)
+1. [Splunk Cloud](./splunk-cloud.md)
+2. [Splunk Enterprise](./splunk-enterprise.md)
+3. [Azure Log Analytics](./azure-log-analytics.md)
+4. [New Relic](./new-relic.md)
 
 #### Viewing the current Log Forwarding configuration
 
