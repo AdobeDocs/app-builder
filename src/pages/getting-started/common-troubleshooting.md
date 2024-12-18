@@ -18,7 +18,7 @@ Here are troubleshooting guides for some of the most common issues as you develo
 
 ## General debugging
 
-When your action code doesn't work as expected, you may want to investigate into what exactly went wrong. App Builder provides the [Logging SDK](https://github.com/adobe/aio-lib-core-logging), please check out [App Builder's Application Logging](../guides/application-logging.md) for more details.
+When your action code doesn't work as expected, you may want to investigate into what exactly went wrong. App Builder provides the [Logging SDK](https://github.com/adobe/aio-lib-core-logging), please check out [App Builder's Application Logging](../guides/application-logging/index.md) for more details.
 
 To see the latest activations of your project, run this command:
 ```bash
@@ -35,7 +35,7 @@ You could also try running your actions locally with the `aio app dev` command. 
 
 ## Action logs
 
-When you have [web actions](/runtime/docs/guides/using/creating-actions/#invoking-web-actions) in your app, they are blocking requests and their activation results are not recorded if they are invoked successfully. To enforce the persistence of activation results, you need to pass the `x-ow-extra-logging: on` flag in the request headers. In the development mode of an SPA, you can add this flag directly to the "invoking action" function so that you will have the activation results and logs recorded for all requests. Then they could be retrieved as demonstrated in the [General debugging](#general-debugging) section above.
+When you have [web actions](https://developer.adobe.com/runtime/docs/guides/using/creating-actions/#invoking-web-actions) in your app, they are blocking requests and their activation results are not recorded if they are invoked successfully. To enforce the persistence of activation results, you need to pass the `x-ow-extra-logging: on` flag in the request headers. In the development mode of an SPA, you can add this flag directly to the "invoking action" function so that you will have the activation results and logs recorded for all requests. Then they could be retrieved as demonstrated in the [General debugging](#general-debugging) section above.
 
 ```javascript
 headers['x-ow-extra-logging'] = 'on'
