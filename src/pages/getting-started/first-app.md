@@ -27,11 +27,11 @@ Ensure your local environment and tooling is up to date. Instructions are here: 
 
 ## 2. Create a new Project on Developer Console
 
-[Adobe Developer Console](/console) gives you access to [APIs](/apis), [SDKs](https://github.com/adobe/aio-sdk) and developer tools to integrate, and extend Adobe products. In App Builder, you need access to [Adobe I/O Runtime](/runtime) credentials used for deploying your application, and access to API credentials if you want to access Adobe [APIs](/apis) in your application.
+[Adobe Developer Console](https://developer.adobe.com/console/) gives you access to [APIs](https://developer.adobe.com/apis), [SDKs](https://github.com/adobe/aio-sdk) and developer tools to integrate, and extend Adobe products. In App Builder, you need access to [Adobe I/O Runtime](https://developer.adobe.com/runtime) credentials used for deploying your application, and access to API credentials if you want to access Adobe [APIs](https://developer.adobe.com/apis) in your application.
 
 Follow the instructions to set up your project:
 
-1. Navigate to [Adobe Developer Console](/console).
+1. Navigate to [Adobe Developer Console](https://developer.adobe.com/console/).
 
     ![Adobe Developer Console](../images/console-1.png)
 
@@ -50,24 +50,24 @@ Follow the instructions to set up your project:
 
 5. Enter `Project Title` and `App Name` for your templated project.
 
-  `Project Title` is used to identify this project within [Adobe Developer Console](/console) and in [CLI](https://github.com/adobe/aio-cli). We recommend changing the default title to a meaningful project title. 
+  `Project Title` is used to identify this project within [Adobe Developer Console](https://developer.adobe.com/console/) and in [CLI](https://github.com/adobe/aio-cli). We recommend changing the default title to a meaningful project title. 
   
   `App Name` is a unique identifier for your application. 
   
  > **Note:** once project set up is complete `App Name` cannot be changed.
    
-  By default, the "Include Runtime with each workspace" checkbox is checked. Each workspace is automatically provisioned with a unique [Adobe I/O Runtime](/runtime) namespace allowing each developer to work within their own [Adobe I/O Runtime](/runtime) environment.
+  By default, the "Include Runtime with each workspace" checkbox is checked. Each workspace is automatically provisioned with a unique [Adobe I/O Runtime](https://developer.adobe.com/runtime) namespace allowing each developer to work within their own [Adobe I/O Runtime](https://developer.adobe.com/runtime) environment.
 
- > **Note:** If you deselect the checkbox and do not opt for automatic inclusion of [Adobe I/O Runtime](/runtime), you will need to enable it manually for each individual workspace. You cannot auto-add [Adobe I/O Runtime](/runtime) to all workspaces after the initial set up is complete.
+ > **Note:** If you deselect the checkbox and do not opt for automatic inclusion of [Adobe I/O Runtime](https://developer.adobe.com/runtime), you will need to enable it manually for each individual workspace. You cannot auto-add [Adobe I/O Runtime](https://developer.adobe.com/runtime) to all workspaces after the initial set up is complete.
 
-  You can manually remove [Adobe I/O Runtime](/runtime) from individual workspaces later if you determine that it is not needed.
+  You can manually remove [Adobe I/O Runtime](https://developer.adobe.com/runtime) from individual workspaces later if you determine that it is not needed.
 
   Click `Save` when ready.
 
   ![Select Template](../images/console-4.png)
 
 6. You should see a new project generated with 2 default `Workspaces`.
-    - Workspaces can be used to manage different deployment environments (dev, qa, stage, prod) for your application and to provide individual working environment for each developer on the project. Workspace is where you will connect services and get the credential details needed to connect to [Adobe APIs](/apis). Connected services can differ from workspace to workspace, and credentials used within each workspace is not shared across workspaces.
+    - Workspaces can be used to manage different deployment environments (dev, qa, stage, prod) for your application and to provide individual working environment for each developer on the project. Workspace is where you will connect services and get the credential details needed to connect to [Adobe APIs](https://developer.adobe.com/apis). Connected services can differ from workspace to workspace, and credentials used within each workspace is not shared across workspaces.
    
     - Each App Builder project has two default workspaces: `Production` and `Stage`. You can add more workspaces as needed. The `Production` workspace is a special workspace used for the submission and distribution flow. When you’re ready to deploy your app, you will submit it for approval from the Production workspace.
    
@@ -81,7 +81,7 @@ To learn more about Adobe Developer Console, please refer to [Console Documentat
 
 ## 3. Sign in from CLI
 
-Once your project is set up in [Adobe Developer Console](/console), let's move onto your local environment. You can always go back to [Adobe Developer Console](/console) to modify your project later.
+Once your project is set up in [Adobe Developer Console](https://developer.adobe.com/console/), let's move onto your local environment. You can always go back to [Adobe Developer Console](https://developer.adobe.com/console/) to modify your project later.
 
 1. On your machine, navigate to the Terminal and enter
 
@@ -97,7 +97,7 @@ Once your project is set up in [Adobe Developer Console](/console), let's move o
     https://aio-login.adobeioruntime.net/api/v1/web/default/applogin?xxxxxxxx
     ```
 
-1. Once you've logged in, you can close the browser window and go back to Terminal. You will see a string printed in the terminal. This is your user token. It is automatically stored in [CLI](https://github.com/adobe/aio-cli) config, allowing the [CLI](https://github.com/adobe/aio-cli) to use the token to talk to [Adobe Developer Console](/console).
+1. Once you've logged in, you can close the browser window and go back to Terminal. You will see a string printed in the terminal. This is your user token. It is automatically stored in [CLI](https://github.com/adobe/aio-cli) config, allowing the [CLI](https://github.com/adobe/aio-cli) to use the token to talk to [Adobe Developer Console](https://developer.adobe.com/console/).
 
     ```bash
     eyJ4NXUiOixxxxxxxxxxxxxxxxxxx
@@ -107,7 +107,7 @@ Once your project is set up in [Adobe Developer Console](/console), let's move o
 
 ## 4. Bootstrap new App using the CLI
 
-There are a few sample flows listed below. Some developers may not have access to [Adobe Developer Console](/console) as entitled Enterprise Organization users but may still want to look at the project or to import credentials later.
+There are a few sample flows listed below. Some developers may not have access to [Adobe Developer Console](https://developer.adobe.com/console/) as entitled Enterprise Organization users but may still want to look at the project or to import credentials later.
 
 ### 4.1 Developer is Logged in as Enterprise Organization user
 
@@ -226,8 +226,8 @@ There are a few sample flows listed below. Some developers may not have access t
 
     Each option indicates a feature you can enable for your App Builder application. Select one or all the options depending on the application you intend to build. We recommend you select all for now to fully explore all the options.
 
-    - **Actions: Deploy Runtime actions:** adding the boilerplate for backend serverless actions on [Adobe I/O Runtime](/runtime)
-    - **Events: Publish to Adobe I/O Events:** adding the boilerplate for a serverless action that publishes [Custom I/O Events](/events/docs/guides/using/custom-events/)
+    - **Actions: Deploy Runtime actions:** adding the boilerplate for backend serverless actions on [Adobe I/O Runtime](https://developer.adobe.com/runtime)
+    - **Events: Publish to Adobe I/O Events:** adding the boilerplate for a serverless action that publishes [Custom I/O Events](https://developer.adobe.com/events/docs/guides/using/custom-events/)
     - **Web Assets: Deploy hosted static assets:** adding the boilerplate for frontend [React-Spectrum](https://react-spectrum.adobe.com/) SPA and static assets
     - **CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy:** adding the boilerplate for Github Actions supporting CI/CD process of the application
 
@@ -241,7 +241,7 @@ There are a few sample flows listed below. Some developers may not have access t
      ◉ Generic
     ```
 
-    These sample actions help you quickly get started and show best practices for integrating with [Adobe APIs](/apis) using [SDK](https://github.com/adobe/aio-sdk) in your applications.
+    These sample actions help you quickly get started and show best practices for integrating with [Adobe APIs](https://developer.adobe.com/apis) using [SDK](https://github.com/adobe/aio-sdk) in your applications.
 Note that you may not see all the options listed below on your command line, because we make recommendations based on what credentials you have added in the selected workspace. Similar to the last step, you can select one or all of the options listed:
 
     - **Adobe Target**: including dependencies and examples of accessing the [Adobe Target API](https://developers.adobetarget.com/api/#admin-apis)
@@ -305,9 +305,9 @@ Note that you may not see all the options listed below on your command line, bec
 
 #### Developer with a Console config file
 
-This flow is intended for developers who do not have access to [Adobe Developer Console](/console) as entitled Enterprise Organization users, likely due to permission issues, but can get credentials that are tied to an App Builder workspace from an entitled Enterprise Organization administrator or developer.
+This flow is intended for developers who do not have access to [Adobe Developer Console](https://developer.adobe.com/console/) as entitled Enterprise Organization users, likely due to permission issues, but can get credentials that are tied to an App Builder workspace from an entitled Enterprise Organization administrator or developer.
 
-For this flow to work, the developer should ask someone with access to set up a project and a workspace following the last few sections. With the workspace correctly set up, the credentials can downloaded by authorized [Adobe Developer Console](/console) users through the `Download all` button in Workspace overview.
+For this flow to work, the developer should ask someone with access to set up a project and a workspace following the last few sections. With the workspace correctly set up, the credentials can downloaded by authorized [Adobe Developer Console](https://developer.adobe.com/console/) users through the `Download all` button in Workspace overview.
 
 ![Workspace Download](../images/console-7.png)
 
@@ -327,7 +327,7 @@ For this flow to work, the developer should ask someone with access to set up a 
     actions   app.config.yaml  package-lock.json test
     ```
 
-1. When you generate a project with a downloaded configuration file without logging into [Adobe Developer Console](/console) on your [CLI](https://github.com/adobe/aio-cli), everything should be the same.
+1. When you generate a project with a downloaded configuration file without logging into [Adobe Developer Console](https://developer.adobe.com/console/) on your [CLI](https://github.com/adobe/aio-cli), everything should be the same.
 We use the values from the downloaded file to pre-populated values in your `.env` and `.aio`. The only difference you will notice is the missing `config.json` file because that's the file you used to generate this project.
 
 #### Developer without any credentials
@@ -432,7 +432,7 @@ You may need to exit the current process and run `aio app run` again.
 
 #### Proceed to the Application on localhost
 
-For users who have accepted the certificate in the past, you should see the following process running in Teminal instead. You can see your backend actions are being deployed to [Adobe I/O Runtime](/runtime) (or to the local OpenWhisk instance if the `--local` option has been used.
+For users who have accepted the certificate in the past, you should see the following process running in Teminal instead. You can see your backend actions are being deployed to [Adobe I/O Runtime](https://developer.adobe.com/runtime) (or to the local OpenWhisk instance if the `--local` option has been used.
 
 ```bash
 $ aio app run
@@ -463,9 +463,9 @@ While most changes in your code get updated in real-time when your application i
 
 As indicated in the message, when you are done, you can press `CTRL+C` to terminate the local development environment.
 
-To have the application run completely locally, which means the actions will run on a local deployed (standalone) version of OpenWhisk instead of on [Adobe I/O Runtime](/runtime), use `aio app run --local`. Some additional dependencies are required if you have not installed them yet, see  `Optional tools` section in  [Setting up Your Environment](./index.md) if you want to set them up manually.
+To have the application run completely locally, which means the actions will run on a local deployed (standalone) version of OpenWhisk instead of on [Adobe I/O Runtime](https://developer.adobe.com/runtime), use `aio app run --local`. Some additional dependencies are required if you have not installed them yet, see  `Optional tools` section in  [Setting up Your Environment](./index.md) if you want to set them up manually.
 
-Usually, we recommend running your applications with deployed [Adobe I/O Runtime](/runtime) actions, as your application should run on [Adobe I/O Runtime](/runtime) in production. However, if you need to build complex actions or sequencing, the `--local` flag is handy to locally debug the application. Please see the Debugging the Application section below for more info.
+Usually, we recommend running your applications with deployed [Adobe I/O Runtime](https://developer.adobe.com/runtime) actions, as your application should run on [Adobe I/O Runtime](https://developer.adobe.com/runtime) in production. However, if you need to build complex actions or sequencing, the `--local` flag is handy to locally debug the application. Please see the Debugging the Application section below for more info.
 
 ### 6.2 Try the Sample Application
 
@@ -476,7 +476,7 @@ This simple SPA contains links to documentation and allows you to run your backe
 
 All actions require `Authorization` and `x-gw-ims-org-id` in the headers by default. In your project code, if you navigate to `app.config.yaml`, you can see that a `require-adobe-auth` annotation is set to `true` for all the sample actions. Having this flag enabled enforces a valid user token be used to invoke this action. We recommend always having this enabled for security reasons. You can learn more about this in our [Security Overview](../guides/security/index.md).
 
-1. With the `require-adobe-auth` annotation set to `true`, you need to pass in a valid user token and corresponding organization ID to invoke your action. You can easily retrieve the token from your [CLI](https://github.com/adobe/aio-cli) by typing in `aio login`, and the org ID (look for `some_hash@AdobeOrg`) from the workspace details on [Adobe Developer Console](/console) or from the URL of [Adobe Admin Console](https://adminconsole.adobe.com) (make sure that you have the correct organization selected in the top right corner).
+1. With the `require-adobe-auth` annotation set to `true`, you need to pass in a valid user token and corresponding organization ID to invoke your action. You can easily retrieve the token from your [CLI](https://github.com/adobe/aio-cli) by typing in `aio login`, and the org ID (look for `some_hash@AdobeOrg`) from the workspace details on [Adobe Developer Console](https://developer.adobe.com/console/) or from the URL of [Adobe Admin Console](https://adminconsole.adobe.com) (make sure that you have the correct organization selected in the top right corner).
 You can also list all the organizations you belong to and their org ID from your [CLI](https://github.com/adobe/aio-cli) by typing in `aio console org list`.
 
 1. Put the token and org ID into this following format.
@@ -484,7 +484,7 @@ You can also list all the organizations you belong to and their org ID from your
 1. Go back to your browser, and put the joined value in the `headers` input field. You should now be able to invoke actions that does not require additional params (like `generic`).
 ![Hello World](../images/helloworld-2.png)
 
-**Note:** If you open your application in the [Experience Cloud Shell](http://experience.adobe.com/) using the second link provided by the CLI, your Experience Cloud Shell user token will automatically be available to the SPA UI and passed by this one to the underlying [Adobe I/O Runtime](/runtime) actions of your application.
+**Note:** If you open your application in the [Experience Cloud Shell](http://experience.adobe.com/) using the second link provided by the CLI, your Experience Cloud Shell user token will automatically be available to the SPA UI and passed by this one to the underlying [Adobe I/O Runtime](https://developer.adobe.com/runtime) actions of your application.
 This is a very useful feature of our SPA UI template, which integrates for you with the [client-side API](../guides/exc-app/index.md) of the [Experience Cloud Shell](http://experience.adobe.com/).
 
 The other sample actions require futher paramaters to be invoked. For instance, if you try to invoke `analytics` with only the authorization header, you would see an error similar to `"error": "missing parameter(s) 'apiKey,companyId'"`. This is because these sample actions use Adobe API that requires those params before it can be invoked.
@@ -504,7 +504,7 @@ The [CLI](https://github.com/adobe/aio-cli) has a _dev_ command (`aio app dev`) 
 
 Please visit [Debugging App Builder Apps Codelab](../resources/debugging/index.md) to set up your local environment and go through step-by-step instructions.
 
-If the local development is run (`aio app run`), the actions you are calling are run directly on [Adobe I/O Runtime](/runtime). When you use `aio app dev`, the actions are run/debugged in node directly. In both cases your frontend is run on localhost.
+If the local development is run (`aio app run`), the actions you are calling are run directly on [Adobe I/O Runtime](https://developer.adobe.com/runtime). When you use `aio app dev`, the actions are run/debugged in node directly. In both cases your frontend is run on localhost.
 
 ### 6.4 Retrieving Logs for the Application
 
@@ -537,7 +537,7 @@ aio app deploy
 
 This command may take a minute or two as behind the scenes the [CLI](https://github.com/adobe/aio-cli) is building and deploying:
 
-- The actions defined in `app.config.yaml` into [Adobe I/O Runtime](/runtime)
+- The actions defined in `app.config.yaml` into [Adobe I/O Runtime](https://developer.adobe.com/runtime)
 - The frontend built files and assets into our out-of-the-box CDN
 
 The [CLI](https://github.com/adobe/aio-cli) output details this process:
