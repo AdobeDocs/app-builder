@@ -75,4 +75,4 @@ async componentDidMount() {
 ### Interfaces
 
 * [UserApi](../interfaces/user-userapi.md)
-* [UserInfo](../interfaces/user.userinfo.md)
+* [UserInfo](../interfaces/user-userinfo.md)
