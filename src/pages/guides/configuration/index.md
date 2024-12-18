@@ -390,4 +390,4 @@ The legacy configuration system does not have an `app.config.yaml` and instead u
 
 ## Migrating between Standalone Application and DX Experience Cloud SPA v1
 
-- [Standalone Application to DX Experience Cloud SPA v1](migrations/standalone-to-dx-experience-cloud-spa.md) - Useful if you can't seem to view your application in the App Builder Catalog in Adobe Experience Cloud.
+- [Standalone Application to DX Experience Cloud SPA v1](../migrations/standalone-to-dx-experience-cloud-spa.md) - Useful if you can't seem to view your application in the App Builder Catalog in Adobe Experience Cloud.
