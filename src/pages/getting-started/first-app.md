@@ -248,7 +248,7 @@ Note that you may not see all the options listed below on your command line, bec
     - **Adobe Analytics**: including dependencies and examples of accessing the [Adobe Analytics 2.0 API](https://adobedocs.github.io/analytics-2.0-apis/)
     - **Adobe Audience Manager: Customer Data**: including dependencies and examples of accessing the [Adobe Audience Manager Customer Data API](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/api.html)
     - **Adobe Campaign Standard**: including dependencies and examples of accessing the [Adobe Campaign Standard (ACS) API](https://docs.adobe.com/content/help/en/campaign-standard/using/working-with-apis/get-started-apis.html)
-    - **Adobe Experience Platform: Realtime Customer Profile**: including dependencies and examples of accessing the [Realtime Customer Profile API of Adobe Experience Platform](/apis/experienceplatform/home/api-reference#!acpdr/swagger-specs/real-time-customer-profile.yaml)
+    - **Adobe Experience Platform: Realtime Customer Profile**: including dependencies and examples of accessing the [Realtime Customer Profile API of Adobe Experience Platform](https://developer.adobe.com/apis/experienceplatform/home/api-reference#!acpdr/swagger-specs/real-time-customer-profile.yaml)
     - **Generic**: a generic back-end action with hello world flow that can be reused and modified e.g. for simple serverless computing or 3rd party API integration
 
 1. If you included `Web Assets` under Adobe I/O App features you will be given two choices. One to include React Spectrum based UI template or a Vanilla HTML/JS one
