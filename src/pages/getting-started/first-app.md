@@ -12,7 +12,7 @@ title: Creating your First App Builder Application
 In this tutorial, we'll guide you through the following steps to give you an introduction on how to set up and develop an App Builder Application.
 
 1. Set up Local Environment
-1. Create new Project on [Adobe Developer Console](/console)
+1. Create new Project on [Adobe Developer Console](https://developer.adobe.com/console/)
 1. Sign in from the [CLI](https://github.com/adobe/aio-cli)
 1. Bootstrap new App using [CLI](https://github.com/adobe/aio-cli)
 1. Anatomy of an App Builder Application
