@@ -23,7 +23,7 @@ If you run into any issues during development, please first refer to the [Common
 
 ## 1. Set up Local Environment
 
-Ensure your local environment and tooling is up to date. Instructions are here: [Setting up Your Environment](https://developer.adobe.com/app-builder/docs/getting-started/#local-environment-set-up). Make sure you have access to App Builder as described here [How to Get Access to App Builder](../overview/getting-access.md). If are have not yet been granted access, you may want to wait before proceeding.
+Ensure your local environment and tooling is up to date. Instructions are here: [Setting up Your Environment](./index.md#local-environment-set-up). Make sure you have access to App Builder as described here [How to Get Access to App Builder](../overview/getting-access.md). If are have not yet been granted access, you may want to wait before proceeding.
 
 ## 2. Create a new Project on Developer Console
 

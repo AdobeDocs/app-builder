@@ -57,7 +57,7 @@ These SPAs are business-to-employees custom applications that deploy into the [E
 
 The SPA front-end interacts with Runtime web actions on specific events triggered at UI level.
 In this scenario, the Experience Cloud Shell exposes a [client-side API](../exc-app/index.md), which can be used by the SPA to obtain the OAUth token generated for the logged-in Enterprise user. 
-This token will be used by back-end Runtime actions to call [Adobe Product APIs](/apis), which need to be integrated in this application.
+This token will be used by back-end Runtime actions to call [Adobe Product APIs](https://developer.adobe.com/apis), which need to be integrated in this application.
 
 SPAs bootstrapped from the [CLI](https://github.com/adobe/aio-cli) with `aio app init` automatically include a [React-Spectrum](https://react-spectrum.adobe.com/) based front-end that integrates with the Experience Cloud Shell [client-side API](../exc-app/index.md) and sends the user OAuth token from the client to the invoked Runtime actions.
 
