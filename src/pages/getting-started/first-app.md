@@ -115,7 +115,7 @@ There are a few sample flows listed below. Some developers may not have access t
 
 1. In your Terminal, navigate to where you want to initialize your project and type in the following command in your Terminal:
 
-    ```bash
+    ```
     aio app init <app_name>
     ```
 
