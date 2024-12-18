@@ -20,7 +20,7 @@ import topbar from '@adobe/exc-app/topbar';
 
 ***Default export:***
 
-[TopbarApi](../interfaces/topbar.topbarapi.md#interface-topbarapi)
+[TopbarApi](../interfaces/topbar-topbarapi.md#interface-topbarapi)
 
 ***Usage:***
 
@@ -34,11 +34,11 @@ topbar.customEnvLabel = 'Beta';
 
 ### Interfaces
 
-* [Callback](../interfaces/topbar.callback.md)
-* [CustomFeedbackConfig](../interfaces/topbar.customfeedbackconfig.md)
-* [CustomSearchConfig](../interfaces/topbar.customsearchconfig.md)
-* [ExternalFeedbackConfig](../interfaces/topbar.externalfeedbackconfig.md)
-* [HelpCenterFeedbackConfig](../interfaces/topbar.helpcenterfeedbackconfig.md)
-* [Solution](../interfaces/topbar.solution.md)
-* [TopbarApi](../interfaces/topbar.topbarapi.md)
-* [TopbarApiProperties](../interfaces/topbar.topbarapiproperties.md)
+* [Callback](../interfaces/topbar-callback.md)
+* [CustomFeedbackConfig](../interfaces/topbar-customfeedbackconfig.md)
+* [CustomSearchConfig](../interfaces/topbar-customsearchconfig.md)
+* [ExternalFeedbackConfig](../interfaces/topbar-externalfeedbackconfig.md)
+* [HelpCenterFeedbackConfig](../interfaces/topbar-helpcenterfeedbackconfig.md)
+* [Solution](../interfaces/topbar-solution.md)
+* [TopbarApi](../interfaces/topbar-topbarapi.md)
+* [TopbarApiProperties](../interfaces/topbar-topbarapiproperties.md)

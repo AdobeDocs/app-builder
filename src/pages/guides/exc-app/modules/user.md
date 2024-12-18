@@ -21,7 +21,7 @@ import user from '@adobe/exc-app/user';
 
 ***Default export:***
 
-[UserApi](../interfaces/user.userapi.md#interface-userapi)
+[UserApi](../interfaces/user-userapi.md#interface-userapi)
 
 ***Usage:***
 
@@ -74,5 +74,5 @@ async componentDidMount() {
 
 ### Interfaces
 
-* [UserApi](../interfaces/user.userapi.md)
+* [UserApi](../interfaces/user-userapi.md)
 * [UserInfo](../interfaces/user.userinfo.md)
