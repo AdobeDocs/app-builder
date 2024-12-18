@@ -19,13 +19,13 @@ The following sections will focus on specific aspects of the security for App Bu
 
 ## Securing the Access to App Builder Applications
 
-Any interaction with [Adobe Product APIs](/apis) needs to be authenticated against Adobe Identity Management Services (IMS).
-The [Understanding Authentication](understanding-authentication.md) guide is a good pre-read to get deeper preliminary insights on those services.
+Any interaction with [Adobe Product APIs](https://developer.adobe.com/apis) needs to be authenticated against Adobe Identity Management Services (IMS).
+The [Understanding Authentication](./understanding-authentication.md) guide is a good pre-read to get deeper preliminary insights on those services.
 
 ### Adobe IMS Support for App Builder Applications
 
 App Builder [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) help developers to [bootstrap applications](../../getting-started/index.md) easily from application templates with `aio app init`. 
-These include templates for Runtime web actions, which integrate with the [Adobe Product APIs](/apis) that can be extended with App Builder.
+These include templates for Runtime web actions, which integrate with the [Adobe Product APIs](https://developer.adobe.com/apis) that can be extended with App Builder.
 Any generated action is initialized with boilerplate code based on App Builder [SDK libraries](https://github.com/adobe/aio-sdk). Out-of-the box, the following steps are implemented:
 
 - Validation that an Adobe IMS bearer token has been passed as Authorization header of the request which invoked this action
@@ -43,7 +43,7 @@ Headless applications (e.g. Runtime actions or sequences) are usually executed a
 
 ![Headless Access Sequence Diagram](../../images/security-headless-access-sequence-diagram.png)
 
-A headless App Builder application requires to pass an Adobe IMS JWT access token in order to successfully call Adobe Product APIs. This token can be obtained within the [Developer Console](/console), by accessing the corresponding App Builder project and workspace.
+A headless App Builder application requires to pass an Adobe IMS JWT access token in order to successfully call Adobe Product APIs. This token can be obtained within the [Developer Console](https://developer.adobe.com/console), by accessing the corresponding App Builder project and workspace.
 
 However, its lifetime will be of 24 hours and it will expire afterwards. Consequently, developers have to manually refresh the token and update the application configuration every day. To automate this process, the [IMS SDK Library](https://github.com/adobe/aio-lib-ims) can be used to generate or renew the JWT access token directly from a custom Runtime action (which should not be a web-action so that no unauthorized user can access it).
 
@@ -112,7 +112,7 @@ This data is passed to an out-of-the-box service, which performs the necessary v
 ![Validator Architecture](../../images/security-validator-detailed-sequence-diagram.png)
 
 A developer can still choose to unprotect a specific action by setting the `require-adobe-auth` annotation to `false` or by deleting it and redeploying the application with `aio app deploy` afterwards.
-However, we strongly recommend to validate these changes against the application security requirements, and to keep the `require-adobe-auth` annotation value to `true` for any action integrating with one or several [Adobe Product APIs](/apis).
+However, we strongly recommend to validate these changes against the application security requirements, and to keep the `require-adobe-auth` annotation value to `true` for any action integrating with one or several [Adobe Product APIs](https://developer.adobe.com/apis).
 
 **Note:** App Builder doesn't offer 3rd party API management at this stage, and similar authentication/authorization handling against 3rd party services should be managed by developers within their custom action codes for the time being.
 
@@ -157,7 +157,7 @@ An issue is [filed here](https://git.corp.adobe.com/CNA/aio-action-validators/is
 
 ### I/O Runtime Specific guidelines
 
-The [security guidelines for I/O Runtime](/runtime/docs/guides/using/security-general/) generally apply for the back-end actions of an App Builder application.
+The [security guidelines for I/O Runtime](https://developer.adobe.com/runtime/docs/guides/using/security-general/) generally apply for the back-end actions of an App Builder application.
 
 The guidelines below are specific to App Builder applications.
 
@@ -170,14 +170,14 @@ We strongly recommend to ensure that every 3rd party system or service integrati
 ### Tenant Isolation
 
 App Builder Applications and Services provide tenant isolation by default. 
-An App Builder Application gets deployed into an App Builder Workspace defined within the [Developer Console](/console) for a give App Builder project.
+An App Builder Application gets deployed into an App Builder Workspace defined within the [Developer Console](https://developer.adobe.com/console) for a give App Builder project.
 Each App Builder Workspace owns its own Runtime namespace.
 
 This combination of `Enterprise Organization`, `Project`, `Workspace` and `Runtime Namespace` define a granular tenant isolation for each deployed App Builder Application.
 
 #### Runtime Actions
 
-The back-end Runtime actions used by an App Builder Application respect the [tenant isolation model](runtime/docs/guides/#security-considerations) implemented by I/O Runtime.
+The back-end Runtime actions used by an App Builder Application respect the [tenant isolation model](https://developer.adobe.com/runtime/docs/guides/#security-considerations) implemented by I/O Runtime.
 
 #### Cloud Storage and CDN for SPA Static Files
 

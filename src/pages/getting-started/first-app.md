@@ -514,7 +514,7 @@ When using `aio app dev` logs are immediately output to the terminal and are not
 #### Run or Deploy
 To see your application logs after running `aio app run` or after running your deployed app (`aio app deploy`), use the command `aio app logs`. By default, only the logs of the latest activation is fetched. If you want to see a more extensive list of logs, use the `--limit` flag to define the number of recent activations to be fetched.
 
-Read more at [Managing Application Logs](../guides/application-logging.md)
+Read more at [Managing Application Logs](../guides/application-logging/index.md)
 
 ### 6.5 Test the Application
 
