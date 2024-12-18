@@ -49,7 +49,7 @@ page.shellRedirect('/target');
 ### Interfaces
 
 * [ObjectWithHref](../interfaces/page-objectwithhref.md)
-* [ObjectWithPath](../interfaces/page.objectwithpath.md)
+* [ObjectWithPath](../interfaces/page-objectwithpath.md)
 * [PageApi](../interfaces/page-pageapi.md)
 * [PageApiProperties](../interfaces/page-pageapiproperties.md)
 
@@ -61,7 +61,7 @@ page.shellRedirect('/target');
 
 ###  LocationLike
 
-Ƭ **LocationLike**: *[ObjectWithHref](../interfaces/page-objectwithhref.md) | [ObjectWithPath](../interfaces/page.objectwithpath.md)*
+Ƭ **LocationLike**: *[ObjectWithHref](../interfaces/page-objectwithhref.md) | [ObjectWithPath](../interfaces/page-objectwithpath.md)*
 
 Defines the location-like object for which to get the shell URL. You can either specify a path or
 an absolute URL.
