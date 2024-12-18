@@ -220,7 +220,7 @@ configSchema:
 
 Developers of publicly distributable App Builder apps can define Adobe products that are required for their apps to work properly.
 
-See the [Discover](/developer-distribution/experience-cloud/docs/guides/discoverandmanage/#discover) and [Acquire](/developer-distribution/experience-cloud/docs/guides/discoverandmanage/#acquire) sections of the distribution documentation for more details on how these options surface to customers.
+See the [Discover](https://developer.adobe.com/developer-distribution/experience-cloud/docs/guides/discoverandmanage/#discover) and [Acquire](https://developer.adobe.com/developer-distribution/experience-cloud/docs/guides/discoverandmanage/#acquire) sections of the distribution documentation for more details on how these options surface to customers.
 
 ### Defining required products
 
@@ -260,7 +260,7 @@ Product version information can be found on [Adobe Experience League](https://ex
 
 ## Packaging for developer distribution
 
-Once you've configured your app for public distribution, it's time to upload it to [Adobe Developer Distribution](/developer-distribution). Before you do that, you will need to package it.
+Once you've configured your app for public distribution, it's time to upload it to [Adobe Developer Distribution](https://developer.adobe.com/developer-distribution). Before you do that, you will need to package it.
 
 The `aio app pack` command will verify and bundle your app. In the root of your app folder, run this command:
 
@@ -270,7 +270,7 @@ aio app pack
 
 After this command completes, you can find the app package in your app folder as: `dist/app.zip`. 
 
-Continue to the [Adobe Developer Distribution](/developer-distribution/experience-cloud/docs/guides/getting_started/) documentation for details on how to upload your package.
+Continue to the [Adobe Developer Distribution](https://developer.adobe.com/developer-distribution/experience-cloud/docs/guides/getting_started/) documentation for details on how to upload your package.
 
 ### Validation
 
