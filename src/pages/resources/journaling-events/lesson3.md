@@ -19,5 +19,3 @@ If you would like to config the alarm package to automatically trigger events or
 The only required param for the `interval` feed is `minutes`, which is an integer representing the length of the interval (in minutes) between trigger fires. Optional params are `trigger_payload`, `startDate` and `stopDate`.
 
 Now we deployed these two apps separately in different namespaces, we can configure these two apps at different paces to trigger. if succesful, the events will be stored in the App Builder database. 
-
-

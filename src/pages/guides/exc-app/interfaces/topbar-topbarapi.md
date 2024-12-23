@@ -51,7 +51,7 @@ topbar.customEnvLabel = 'Beta';
 
 ###  solution
 
-• **solution**: *[Solution](topbar.solution.md)*
+• **solution**: *[Solution](topbar-solution.md)*
 
 *Inherited from [TopbarApiProperties](topbar-topbarapiproperties.md).[solution](topbar-topbarapiproperties.md#solution)*
 

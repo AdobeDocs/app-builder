@@ -17,7 +17,7 @@ title: 'Interface: ObjectWithPath'
 
 ### Properties
 
-* [path](page.objectwithpath.md#path)
+* [path](page-objectwithpath.md#path)
 
 ## Properties
 

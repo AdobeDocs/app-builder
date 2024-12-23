@@ -41,7 +41,7 @@ topbar.customEnvLabel = 'Beta';
 
 ###  solution
 
-• **solution**: *[Solution](topbar.solution.md)*
+• **solution**: *[Solution](topbar-solution.md)*
 
 Configuration for solution name and hero.
 
