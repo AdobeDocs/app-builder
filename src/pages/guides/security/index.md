@@ -80,7 +80,7 @@ Whether the application is headless or an SPA, this extra-security layer will ch
 
 The authentication and authorization validation is enabled by default for every Runtime action bootstrapped from the [CLI](https://github.com/adobe/aio-cli) with `aio app init` or `aio app add action`. This results in a specific `require-adobe-auth` action annotation set to true in the application `manifest.yml` or `app.config.yaml` file:
 
-```
+```js
 packages:
   helloworld:
     actions:
@@ -93,7 +93,7 @@ packages:
 
 Upon deployment with `aio app deploy`, the manifest will be dynamically rewritten and replace the custom Runtime actions by Runtime sequences. The action definition above will by seamlessly rewritten into:
 
-```
+```js
 packages:
   helloworld:
     actions:
@@ -144,7 +144,7 @@ In these cases, the "I/O Management API" service must be added to the appropriat
 
 If you're action expects to receive data in params.body it will behave differently with the validator.
 The validator action currently always passes the value:
-```
+```json
 "body": {
   "message": "validation success"
 }
