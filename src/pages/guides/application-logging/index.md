@@ -89,7 +89,7 @@ The following table outlines a quick comparison between storing logs in Adobe I/
 
 #### Setting Log Forwarding 
 
-```
+```bash
 aio app config set log-forwarding
 ```
 
@@ -107,7 +107,7 @@ Please visit the individual guides to set up log forwarding for your log managem
 
 #### Viewing the current Log Forwarding configuration
 
-```
+```bash
 aio app config get log-forwarding
 ```
 This command outputs the current log forwarding configuration for your workspace and compares it to the locally set log forwarding configuration. If log forwarding is not configured for your workspace, then Adobe I/O Runtime would be returned by default.
@@ -116,7 +116,7 @@ _Note: We never return the configured secret from our servers for security reaso
 
 #### Debugging Log Forwarding
 
-```
+```bash
 aio app config get log-forwarding errors
 ```
 This command outputs any errors that occurred when application logs were being forwarded to your configured log management solution. The command shows the most recent 10 log forwarding errors for the current log forwarding configuration, up to 30 days.
