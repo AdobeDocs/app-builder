@@ -51,7 +51,7 @@ This guide would cover configuring your app builder application to forward appli
 
 2. Confirm whether you have got the correct `hostname` and `port` number by executing the following cURL request. If you get a `200 OK` response, you are good to proceed.
 
-   ```
+   ```bash
    curl -X POST 'https://<hostname>:<port>/services/collector' \     
    -H "Authorization: Splunk <token>" \
    -d '{"event": "hello world"}'
@@ -68,7 +68,7 @@ Only ports `443` and `8088` are supported by I/O Runtime for port forwarding.
 
 2. Run the following command and supply the values from previous steps
 
-   ```
+   ```bash
    aio app config set log-forwarding
    ? select log forwarding destination: Splunk HEC
    ? host: <hostname>
@@ -84,19 +84,19 @@ Only ports `443` and `8088` are supported by I/O Runtime for port forwarding.
 
 
 3. Verify that the config change has taken effect 
-   ```
+   ```yaml
    aio app config get log-forwarding
    ```
 
 4. Execute an action in your App Builder application workspace to generate logs.
 
 5. Go to Splunk Home > Search and run the query 
-   ```
+   ```bash
    index=<index>
    ```
 
 6. If you don't see any logs in Splunk, please check the log forwarding errors.
-   ```
+   ```yaml
    aio app config get log-forwarding errors
    ```
 
