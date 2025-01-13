@@ -388,6 +388,9 @@ runtimeManifest:
            runtime: nodejs:18
 ```
 
+**Note:** You can specify package-level parameters directly via the command line without redeploying. 
+Refer to `aio rt package bind --help` for more details.
+
 ## `.aio`
 
 The `.aio` file is auto generated and contains Developer Console specific configuration.
