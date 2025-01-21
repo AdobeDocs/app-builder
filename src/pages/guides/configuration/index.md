@@ -341,6 +341,7 @@ Environment variables set in .env can be accessed directly via `process.env`:
 ```jsx
 <View showDevDebugOverlay={process.env.ENABLE_DEV_DEBUG}></View>
 ```
+Any environment variables are replaced during build time by the [parcel bundler](https://parceljs.org/).
 
 ### Using environment variables in Runtime actions 
 
