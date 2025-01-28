@@ -9,12 +9,12 @@ title: 'Lesson 3: Testing a Serverless Action'
 
 # Lesson 3: Testing a Serverless Action
 
-An App Builder App created with `aio app init` has a [jest](https://jestjs.io/) test structure by default. We'll show how to take advantage of it.
+An App Builder App created with `aio app init` has a [Jest](https://jestjs.io/) test structure by default. We'll show how to take advantage of it.
 
 ## Unit Tests
 
-Under `test/actions`, you should see a file named `barcode.test.js`. We'll add our barcode action unit tests in there.
-First we're adding required dependencies like the action itself, the logger and `bwip-js` that we'll mock using jest utilities.   
+Under `test/actions`, you should see a file named `barcode.test.js`. We'll add our barcode action unit tests to it.
+First we add some required dependencies like the action itself, the logger, and `bwip-js` that we'll mock using Jest utilities.   
 
 ```javascript
 const { Core } = require('@adobe/aio-sdk');
@@ -49,7 +49,7 @@ const params = {
 };
 ```
 
-The first test which is bootstrapped by default is testing that our action is exporting a main function which is a main requirement for all actions.
+The first test, bootstrapped by default, determines whether our action is exporting a main function - a main requirement for all actions.
 
 ```javascript
 test('main should be defined', () => {
@@ -57,7 +57,7 @@ test('main should be defined', () => {
 });
 ```
 
-The second test which is also bootstrapped is testing the log level defined in the `manifest.yml` for our barcode action which is defined as `LOG_LEVEL: debug` by default.
+The second test, also bootstrapped, determines the log level defined in the `manifest.yml` for our barcode action, which is `LOG_LEVEL: debug` by default.
 
 ```javascript
 test('should set logger to use LOG_LEVEL param', async () => {
@@ -114,7 +114,7 @@ test('missing input request parameters, should return 400', async () => {
 });
 ```
 
-To run the tests, we can use `npm run test` which is is a pre-defined npm script in `package.json` but before, we'll modify the script to add the code coverage in the output:
+To run the tests, we can use `npm run test` which is is a pre-defined npm script in `package.json` but before that we'll modify the script to add the code coverage in the output:
 
 ```javascript
 "test": "jest --collectCoverage=true --testRegex ./test/actions"
@@ -124,12 +124,12 @@ Running the unit tests should output 100% coverage (which also includes the util
 
 ![unit-tests](assets/unit-tests.png) 
 
-## End to End Tests
+## End-to-End tests
 
-Similar to unit tests, we have a pre-defined structure for e2e tests but it's empty so let's add a test that will read our barcode.
+Similar to unit tests, we have a pre-defined structure for e2e tests, but it's empty: let's add a test that will read our barcode.
 For that we'll use [javascript-barcode-reader](https://www.npmjs.com/package/javascript-barcode-reader/) to read the code128 barcode output by our action. 
 
-First we're adding our dependencies like `node-fetch` to make an http request to fetch the action response and of course `javascript-barcode-reader` to read it.
+First we add  dependencies like `node-fetch` to make an http request to fetch the action response, and of course `javascript-barcode-reader` to read it.
 
 ```javascript
 const { Config } = require('@adobe/aio-sdk').Core;
@@ -138,7 +138,7 @@ const fetch = require('node-fetch');
 const barcodeReader = require('javascript-barcode-reader');
 ``` 
 
-By default, your deployed action is accessible at `https://<namespace>.adobeioruntime.net/api/v1/web/<app-name>-<version>/<action>`. 
+By default, the deployed action is accessible at `https://<namespace>.adobeioruntime.net/api/v1/web/<app-name>-<version>/<action>`. 
 We can construct the action url by following this pattern:
 
 ```javascript

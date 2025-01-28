@@ -6,10 +6,10 @@ keywords:
   - Developer Tooling
 contributors:
   - 'https://github.com/duynguyen'
-title: 'Lesson 4: Integrate and use the custom worker in AEMaaCS'
+title: 'Lesson 4: Integrate and Use the Custom Worker in AEMaaCS'
 ---
 
-# Lesson 4: Integrate and use the custom worker in AEMaaCS
+# Lesson 4: Integrate and Use the Custom Worker in AEMaaCS
 
 When the custom workers are done, you could deploy it onto I/O Runtime serverless platform to make it ready for integration in AEMaaCS. Execute the command `aio app deploy`, which will output all the endpoints of your custom workers in this format `https://1234-projectA-workspaceB.adobeioruntime.net/api/v1/web/dx-asset-compute-worker-1/worker-name`.
 

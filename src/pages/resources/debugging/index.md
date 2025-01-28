@@ -12,6 +12,6 @@ contributors:
 
 # Debugging App Builder Apps With Wskdebug
 
-This codelab will guide you through debugging an App Builder app using its available tooling.
+This Code Lab will guide you through debugging an App Builder app using its available tooling.
 
 ![front-banner](assets/front-banner.png)

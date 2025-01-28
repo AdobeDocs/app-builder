@@ -22,3 +22,11 @@ To simplify your interaction with Adobe authentication, we have created a librar
 You can configure it and try it out directly at 
 - [Adobe I/O IMS SDK Library](https://github.com/adobe/aio-lib-ims)
 
+**Note:** The Service Account (JWT) credentials have been deprecated in favor of the OAuth Server-to-Server credentials. Your applications using the Service Account (JWT) credentials will stop working after Jan 27, 2025. You must migrate to the new credential by **Jan 27, 2025**, to ensure your application continues functioning.
+
+To migrate your old Service Account (JWT) credentials to the new OAuth Server-to-Server credentials, follow the steps mentioned in the [migration guide](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration).
+
+Once you update your application code to use the new credential to generate access tokens, you can deploy your updated application to test, staging, and production environments.
+Even for already published applications, you can deploy these code changes without any downtime or re-publishing the application. To do this using the AIO CLI, run the command `aio app deploy --force-deploy --no-publish` 
+
+

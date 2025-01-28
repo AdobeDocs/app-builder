@@ -341,6 +341,7 @@ Environment variables set in .env can be accessed directly via `process.env`:
 ```jsx
 <View showDevDebugOverlay={process.env.ENABLE_DEV_DEBUG}></View>
 ```
+Environment variables are replaced during build time by the [parcel bundler](https://parceljs.org/).
 
 ### Using environment variables in Runtime actions 
 
@@ -370,6 +371,26 @@ async function main (params) {
 
 exports.main = main
 ```
+
+Alternatively, environment variables defined in a .env file can be configured as inputs to a package, making them accessible to all actions within the package through their parameters. 
+Keep in mind that package-level inputs can still be overridden at the action level.
+
+#### app.config.yaml
+```yaml
+runtimeManifest:
+   packages:
+     myapp:
+       inputs:
+         ENABLE_DEV_DEBUG: $ENABLE_DEV_DEBUG
+       actions:
+         generic:
+           function: src/myapp/actions/generic/index.js
+           web: 'yes'
+           runtime: nodejs:18
+```
+
+**Note:** You can specify package-level parameters directly via the command line without redeploying. 
+Refer to `aio rt package bind --help` for more details.
 
 ## `.aio`
 

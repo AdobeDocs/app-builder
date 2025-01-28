@@ -168,7 +168,7 @@ There are a few sample flows listed below. Some developers may not have access t
     e2e   node_modules  package.json  web-src
     ```
 
-1. Note that you still can add/remove the extension points, back-end actions, SPA front-end or Github workflows from your application later by respectively using the `aio app <add|delete> ext`, `aio app <add|delete> action`, `aio app <add|delete> web-assets` and `aio app <add|delete> ci` commands within your application folder.
+1. Note that you still can add/remove the extension points, back-end actions, SPA front-end or GitHub workflows from your application later by respectively using the `aio app <add|delete> ext`, `aio app <add|delete> action`, `aio app <add|delete> web-assets` and `aio app <add|delete> ci` commands within your application folder.
 
 1. Optionally, you can install an App Builder template using Template Registry. Discover available templates in the App Builder template registry with the following command:
 
@@ -229,7 +229,7 @@ There are a few sample flows listed below. Some developers may not have access t
     - **Actions: Deploy Runtime actions:** adding the boilerplate for backend serverless actions on [Adobe I/O Runtime](https://developer.adobe.com/runtime)
     - **Events: Publish to Adobe I/O Events:** adding the boilerplate for a serverless action that publishes [Custom I/O Events](https://developer.adobe.com/events/docs/guides/using/custom-events/)
     - **Web Assets: Deploy hosted static assets:** adding the boilerplate for frontend [React-Spectrum](https://react-spectrum.adobe.com/) SPA and static assets
-    - **CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy:** adding the boilerplate for Github Actions supporting CI/CD process of the application
+    - **CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy:** adding the boilerplate for GitHub Actions supporting CI/CD process of the application
 
 1. If you included `Actions` in your last selection, you will be asked to select one or more sample actions to be generated along with the new app.
 
@@ -299,7 +299,7 @@ Note that you may not see all the options listed below on your command line, bec
     actions   e2e   node_modules  package.json  web-src
     ```
 
-1. Note that you still can add/remove the back-end actions, SPA front-end or Github workflows from your application later by respectively using the `aio app <add|delete> action`, `aio app <add|delete> web-assets` and `aio app <add|delete> ci` commands within your application folder.
+1. Note that you still can add/remove the back-end actions, SPA front-end or GitHub workflows from your application later by respectively using the `aio app <add|delete> action`, `aio app <add|delete> web-assets` and `aio app <add|delete> ci` commands within your application folder.
 
 ### 4.2 Developer is not Logged in as Enterprise Organization user
 

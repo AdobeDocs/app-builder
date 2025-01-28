@@ -63,6 +63,19 @@ jobs:
       - run: echo "Path prefix - ${{ needs.set-state.outputs.path_prefix }}"
       - run: echo "Exclude subfolder - ${{ needs.set-state.outputs.exclude_subfolder }}"
 
+  pre-build-dev:
+    needs: [set-state]
+    runs-on: ubuntu-latest
+    if: needs.set-state.outputs.deploy_dev == 'true'
+    steps:
+      - name: check dev azure connection string
+        if: env.AIO_AZURE_DEV_CONNECTION_STRING == null
+        run: |
+          echo "::error::Please set the Azure Blob Storage connection string as AIO_AZURE_DEV_CONNECTION_STRING in GitHub Secrets"
+          exit 1
+        env:
+          AIO_AZURE_DEV_CONNECTION_STRING: ${{ secrets.AIO_AZURE_DEV_CONNECTION_STRING }}
+
   build-dev:
     defaults:
       run:
@@ -197,7 +210,7 @@ jobs:
       - name: check prod azure connection string
         if: env.AIO_AZURE_PROD_CONNECTION_STRING == null
         run: |
-          echo "::error::Please set the Azure Blob Storage connection string as AIO_AZURE_PROD_CONNECTION_STRING in Github Secrets"
+          echo "::error::Please set the Azure Blob Storage connection string as AIO_AZURE_PROD_CONNECTION_STRING in GitHub Secrets"
           exit 1
         env:
           AIO_AZURE_PROD_CONNECTION_STRING: ${{ secrets.AIO_AZURE_PROD_CONNECTION_STRING }}
