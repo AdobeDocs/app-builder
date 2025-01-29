@@ -13,8 +13,8 @@ You have successfully setup a CI/CD workflow based on GitHub actions for your Ap
 
 ## Achievements
 
-In this codelab, you’ve learnt how to:
+In this Code Lab, you’ve learned how to:
 
 * Setup App Builder GitHub Actions using `aio app init`
 * Define GitHub secrets for a stage and production environment
-* Trigger workflows for testing, stage and production deployment 
+* Trigger workflows for testing, stage, and production deployment 

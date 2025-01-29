@@ -100,6 +100,7 @@ npm install @adobe/aio-lib-state
   await state.delete('key')
 
   // list keys using an iterator, with glob pattern support, omit the match option to list all keys
+  // Note: match doesn't reduce the amount of work needed to traverse your key-values (see the #list-guarantees section)
   for await (const { keys } of state.list({ match: 'ke*' })) {
     console.log(keys)
   }
@@ -119,3 +120,135 @@ Explore the [full API](https://github.com/adobe/aio-lib-state/blob/main/doc/api.
 ***CLI usage, from your local machine***:
 
 Available for aio --version >= 10.2.
+
+The CLI must be run from within a valid App Builder application folder and uses the Runtime credentials to authenticate your requests to State. Each namespace has its own State container, so please ensure that your are accessing the expected instance by looking in your .env file for the AIO_RUNTIME_NAMESPACE variable.
+
+```bash
+> aio app state
+Manage your App Builder State storage
+
+USAGE
+  $ aio app state COMMAND
+
+COMMANDS
+  app state delete  Delete key-values
+  app state get     Get a key-value
+  app state list    List key-values
+  app state put     Put a key-value
+  app state stats   Display stats
+```
+
+The default region is amer, to access another region, you can use the --region flag or add the AIO_STATE_REGION=emea variable to your .env.
+
+Navigate the CLI usage documentation from the repo's [README](https://github.com/adobe/aio-cli-plugin-app-storage?tab=readme-ov-file#usage) or by using the --help flag on the desired command.
+
+### Usage limits
+
+Usage limits are enforced at the **workspace** level within a **single** region.
+
+**Load**
+
+- bandwidth
+  - 10MB/min with up to 1MB/sec peaks for production Workspaces.
+  - 2MB/min with up to 1MB/sec peaks for non-production Workspaces.
+
+- requests
+  - 1000 req/min for `list`, `deleteAll`, `stats` operations on production Workspaces.
+  - 200 req/min for `list`, `deleteAll`, `stats` operations on non-production Workspaces.
+
+In case of exceeding the usage limits, the State service will return with 429s. However, a retry mechanism in the State library will mitigate the propagation of the error on short time windows.
+
+**Storage**
+
+- 100K key-values pairs
+- 1GB storage usage: `2 * key_sizes + value_sizes`
+
+In case of exceeding the storage limits the service will return with an error and you will have to delete keys or wait for expiration to resume writing.
+
+### Quotas
+
+Every organization with App Builder access is entitled to at least 1 State quota.
+
+At the organization level, 1 quota provides:
+
+- 200GB/month bandwidth usage (~5MB/min): bandwidth usage = bytes uploaded + bytes downloaded
+- 1GB storage: storage usage = 2 * key_sizes + value_sizes
+
+The quota is shared for all State containers in the organization, across all regions and is tracked for billing purposes.
+
+*Example: org 123 is entitled to 3 quotas, the total bandwidth usage of the organization should not exceed 600GB/month and the storage across regions should not exceed 3GB.*
+
+### List guarantees
+
+Using `state.list`, you can scan through the keys stored in your State container. `list` is a cursor-based iterator, which requires multiple calls to the State service to traverse all your keys.
+
+It is important to understand that `list` is scanning through your keys:
+
+- **the more keys you have stored**, the longer a full iteration will take to complete, regardless of whether you use the [using a glob-style pattern](#match-option).
+- every call to `list` will iterate over up to 1000 keys. The former `countHint` option is now ignored.
+- As an example, trying to match 1 key in a 10k key-values data-set will still require 10 calls to `list` to fetch it.
+
+list provides the following guarantees:
+
+- A full iteration always returns all keys that were present in the container during the start to the end of a full iteration.
+- A full iteration never returns any key that was deleted prior to an iteration.
+
+However, list also has the following drawbacks:
+
+- Keys that were not constantly present in the collection during a full iteration, may be returned or not: it is undefined.
+- A given key may be returned multiple times across iterations (but not within a
+  same iteration). You can mitigate this by either performing operations that are
+  safe when applied multiple times (recommended with many keys) or by collecting all keys in an
+  array first and then remove any duplicates.
+- In some rare cases, list may return expired keys.
+
+Please note, that `list` is subject to the bandwidth rate-limiting quotas, so listing many keys may result in 429s.
+
+### `match` option
+
+`state.deleteAll` and `state.list` support a `match` option to filter keys.
+
+`match` supports a glob-style pattern via the `*` character, suppose you have the following keys: `key`, `base.key`, `key-1`
+
+- `match=key` will match `key`
+- `match=k*` will match `key`
+- `match=*k*` will match `key`, `base.key`, `key-1`
+- `match=*-1` will match `key-1`
+- `match=base.*-1` will match none
+
+The `match` filter is applied server-side **after** traversing elements, this means:
+
+- `match` does not reduce the work needed to iterate over your key-values.
+- every call to `list` may return only few keys when matching a handful of key-values in a large dataset.
+
+### Troubleshooting
+
+Set DEBUG=@adobe/aio-lib-state* to see debug logs.
+
+## Files
+
+*Files is currently implemented as an abstraction layer over Azure Blob. Major changes and additional features are planned, stay tuned.*
+
+To learn more please visit the [Adobe I/O File Storage library](https://github.com/adobe/aio-lib-files?tab=readme-ov-file#adobe-io-lib-files) repository.
+
+## Feature Matrix
+
+|                     | Files                      | State                                   | State Legacy              |
+| ------------------- | -------------------------- | --------------------------------------- | ------------------------- |
+| read  write  delete | Y                          | Y                                       | Y                         |
+| list                | Y                          | Y                                       | N                         |
+| streams             | Y                          | N                                       | N                         |
+| copy                | Y                          | N                                       | N                         |
+| deleteAll           | N                          | Y                                       | N                         |
+| sharing             | Y (pre-sign URLs)          | N                                       | N                         |
+| Time-To-Live        | N                          | Y                                       | Y                         |
+| max TTL             | infinite                   | 365 days                                | infinite                  |
+| max file/value size | 200GB                      | 1MB                                     | 2MB                       |
+| max key size        | 1KB                        | 1KB                                     | 1KB                       |
+| key charset         | open                       | `alphanumeric` with `_-.`               | any but `/\?#`            |
+| max load            | N/A                        | 10MB/min, 1MB/s  1k/min `list` requests | 900 RU/min (~KB/min)      |
+| max key values      | N/A                        | 100K (scalable)                         | N/A                       |
+| max storage         | 1TB                        | 1GB (scalable)                          | 10GB                      |
+| max monthly load    | N/A                        | 200GB (scalable)                        | N/A                       |
+| regions             | East US  West US read-only | Amer (US) Emea (EU) Apac (JPN)          | East US  Europe read-only |
+| consistency         | strong                     | strong                                  | eventual                  |

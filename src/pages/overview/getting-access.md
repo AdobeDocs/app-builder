@@ -9,7 +9,7 @@ title: How to get access to App Builder
 
 ## Get access to App Builder
 
-App Builder is available to Adobe Experience Cloud customers and partners. You may already have access to App Builder. You can check by visiting the [Adobe Developer Console](/console) And see if you have the "create from template" button under quick start.
+App Builder is available to Adobe Experience Cloud customers and partners. You may already have access to App Builder. You can check by visiting the [Adobe Developer Console](https://developer.adobe.com/console) And see if you have the "create from template" button under quick start.
 
 **Trial access**
 
@@ -25,17 +25,17 @@ In addition, customers can purchase a license for use with any Adobe Experience 
 
 **Partner Access**
 
-Adobe Solution Partners may request access to App Builder through the [solution partner portal](https://solutionpartners.adobe.com/solution-partners/home/learn/tools/sandboxes.html). 
+Adobe Solution Partners may request access to App Builder through the [solution partner portal](https://solutionpartners.adobe.com/solution-partners/home/learn/tools/sandboxes.html).
 
 ## App Builder Access FAQ
 
 **How can I check if my company already has access to App Builder?**
 
-Just visit the [Adobe Developer Console](/console). If you have the button "create project from template" next to the button "create new project" then you are provisioned for App Builder. 
+Just visit the [Adobe Developer Console](https://developer.adobe.com/console). If you have the button "create project from template" next to the button "create new project" then you are provisioned for App Builder.
 
 **What information do I need for the AEM trial?**
 
-Just your company name and the email address you use for your employer. You can invite others within your company to join the trial as well. 
+Just your company name and the email address you use for your employer. You can invite others within your company to join the trial as well.
 
 **Is there a cost for the trial?**
 
@@ -43,11 +43,11 @@ No. The trial is free to use for the duration of the trial period.
 
 **How long does it take to get access for the AEM Trial**
 
-Access is granted almost immediately. Usually it takes 15-30 minutes until your new Adobe IMS org is created and products are made available. 
+Access is granted almost immediately. Usually it takes 15-30 minutes until your new Adobe IMS org is created and products are made available.
 
 **Do I need a special role within my company to use App Builder?**
 
-Once your organization has been onboarded, anyone who has a Developer Role or System Administrator permissions will be able to create projects for App Builder in the [Developer Console](/console)
+Once your organization has been onboarded, anyone who has a Developer Role or System Administrator permissions will be able to create projects for App Builder in the [Developer Console](https://developer.adobe.com/console)
 
 If you are unable to access the Adobe Admin Console you will need to ask a System Admin for the org ID and Name in order to apply for a trial.
 
@@ -61,4 +61,4 @@ Please refer to our [product description page](https://helpx.adobe.com/legal/pro
 
 **Can I use this with Creative Cloud or Document Cloud?**
 
-While we hope to be able to add Creative Cloud and Document Cloud use cases, we do not currently support them. Right now App Builder is focused on use cases for Adobe Experience Cloud. 
+While we hope to be able to add Creative Cloud and Document Cloud use cases, we do not currently support them. Right now App Builder is focused on use cases for Adobe Experience Cloud.

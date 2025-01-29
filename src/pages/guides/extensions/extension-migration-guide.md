@@ -34,7 +34,7 @@ Previously, if you initialize a new App Builder Project in the CLI, you will see
     - This file is automatically included in `.gitignore`. **It is not intended be shared given the credentials and secrets listed.**
 1. `console.json`: this file contains the credentials set up through your App Builder project. 
     - This file is also automatically included in `.gitignore`. **It is not intended be shared given the credentials and secrets listed.** 
-    - This file can be downloaded directly from the [Adobe Developer Console](/console) as well. You can retrieve it by going to a workspace, and clicking on the `Download all` button. 
+    - This file can be downloaded directly from the [Adobe Developer Console](https://developer.adobe.com/console) as well. You can retrieve it by going to a workspace, and clicking on the `Download all` button. 
 
 ### New File Structure
 With the introduction of extensions, your new file structure would look something like this --
@@ -68,7 +68,7 @@ What happens if you don't migrate:
 With this context, let's dive in. 
 
 ### 1. Update Tooling
-First of all, please make sure your local tooling and environment set up is up to date. You can find the latest supported environment and tooling info in [here](../../getting-started). 
+First of all, please make sure your local tooling and environment set up is up to date. You can find the latest supported environment and tooling info in [here](../../getting-started/index.md). 
 
 ### 2. Update Configuration
 Your existing application could be one of three types: 

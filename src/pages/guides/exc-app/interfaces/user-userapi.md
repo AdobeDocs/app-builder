@@ -46,7 +46,7 @@ reduce the number of lingering sessions for solutions who have their own session
 
 ###  emit
 
-▸ **emit**<**K**>(`type`: K, `event?`: UserInfoEvent[K]): *void*
+▸ **emit** \<**K**\> (`type`: K, `event?`: UserInfoEvent[K]): *void*`
 
 *Inherited from void*
 
@@ -69,7 +69,7 @@ Name | Type | Description |
 
 ###  off
 
-▸ **off**<**K**>(`type`: K, `handler`: function): *void*
+▸ **off**\<**K**\>(`type`: K, `handler`: function): *void*
 
 *Inherited from void*
 
@@ -103,7 +103,7 @@ Name | Type |
 
 ###  on
 
-▸ **on**<**K**>(`type`: K, `handler`: function): *void*
+▸ **on**\<**K**\>(`type`: K, `handler`: function): *void*
 
 *Inherited from void*
 
@@ -150,8 +150,6 @@ re-authenticated.
 
 ###  get
 
-▸ **get**<**T**>(`type`: T): *Promise‹UserInfo[T]›*
-
 Gets the specified type of information about an user.
 
 **Type parameters:**
@@ -163,5 +161,3 @@ Gets the specified type of information about an user.
 Name | Type | Description |
 ------ | ------ | ------ |
 `type` | T | The type of information to get.  |
-
-**Returns:** *Promise‹UserInfo[T]›*

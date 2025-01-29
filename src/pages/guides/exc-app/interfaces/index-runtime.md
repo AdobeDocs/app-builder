@@ -4,12 +4,12 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: 'Interface: Runtime <**T**>'
+title: Runtime
 ---
 
-# Interface: Runtime <**T**>
+# Interface: Runtime < **T** >
 
-Defines the runtime object providing all unified-shell APIs for solution authors.
+Defines the runtime object providing all unified-shell APIs for solution authors test.
 
 ## Type parameters
 
@@ -33,7 +33,7 @@ Defines the runtime object providing all unified-shell APIs for solution authors
 
 ###  emit
 
-▸ **emit**<**K**>(`type`: K, `event?`: T[K]): *void*
+▸ **emit** < **K** > (`type`: K, `event?`: T[ K ]): *void*
 
 *Inherited from void*
 
@@ -41,56 +41,31 @@ Invoke all handlers for the given type.
 
 **Type parameters:**
 
-▪ **K**: *keyof T*
-
-**Parameters:**
-
-Name | Type | Description |
------- | ------ | ------ |
-`type` | K | The event type to invoke. |
-`event?` | T[K] | Any value (object is recommended and powerful), passed to each handler. |
-
-**Returns:** *void*
-
-<hr />
-
-###  off
-
-▸ **off**<**K**>(`type`: K, `handler`: function): *void*
-
-*Inherited from void*
-
-Remove an event handler for the given type.
-
-**Type parameters:**
-
-▪ **K**: *keyof T*
+▪ **K** : *keyof T*
 
 **Parameters:**
 
 ▪ **type**: *K*
 
-Type of event to unregister `handler` from.
+Type of event to listen for.
 
 ▪ **handler**: *function*
 
-Handler function to remove.
+Function to call in response to given event.
 
-▸ (`event?`: T[K]): *void*
+▸ (`event?`: T[ K ]): *void*
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`event?` | T[K] |
+| Name     | Type     |
+|----------| -------- |
+| `event?` | T[ K ]   |
 
 **Returns:** *void*
 
-<hr />
-
 ###  on
 
-▸ **on**<**K**>(`type`: K, `handler`: function): *void*
+▸ **on** < **K** > (`type`: K, `handler`: function): *void*
 
 *Inherited from void*
 
@@ -110,12 +85,12 @@ Type of event to listen for.
 
 Function to call in response to given event.
 
-▸ (`event?`: T[K]): *void*
+▸ (`event?`: T[ K ]): *void*
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`event?` | T[K] |
+| Name     | Type     |
+|----------| -------- |
+| `event?` | T[ K ]   |
 
 **Returns:** *void*

@@ -13,7 +13,7 @@ At a high level, there are three main stages a custom app would go through: buil
 
 ## Build 
 
-You start in the [Developer Console](/console) by creating a new project, adding credentials for the Adobe APIs you want to use in your app (e.g. Adobe Campaign) and defining the sandboxes you need (prod, stage, sandboxes for developers). With the project in place, you are ready to set your local development environment.
+You start in the [Developer Console](https://developer.adobe.com/console) by creating a new project, adding credentials for the Adobe APIs you want to use in your app (e.g. Adobe Campaign) and defining the sandboxes you need (prod, stage, sandboxes for developers). With the project in place, you are ready to set your local development environment.
 
 This will allow the CLI to use the project and deploy the code to the right environments. The CLI can also help with scaffolding the application. Based on what you are trying to create, you can pick one of the available templates to get code generated. This generates code for the client side and microservices for the backend. 
 

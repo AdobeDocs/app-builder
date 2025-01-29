@@ -11,7 +11,7 @@ keywords:
 
 ## Overview
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"  />
+<DiscoverBlock slots="heading, link, text" width="100%"   />
 
 ### Introducing App Builder
 
@@ -21,7 +21,7 @@ This App Builder tech talk aims to explore what’s possible with App Builder as
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"  />
+<DiscoverBlock slots="heading, link, text" width="100%"   />
 
 ### Getting Started
 
@@ -31,7 +31,7 @@ In this video, we will cover how to setup your project in the Adobe Developer Co
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"  />
+<DiscoverBlock slots="heading, link, text" width="100%"   />
 
 ### Architecture
 
@@ -41,7 +41,7 @@ A Breakdown of App Builder's Architecture.
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"  />
+<DiscoverBlock slots="heading, link, text" width="100%"   />
 
 ### Security
 
@@ -51,7 +51,7 @@ A Full Security Overview.
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"  />
+<DiscoverBlock slots="heading, link, text" width="100%"   />
 
 ### User Journey
 
@@ -63,7 +63,7 @@ Following the End-to-End User Journey.
 
 ## Exploring App Builder
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"  />
+<DiscoverBlock slots="heading, link, text" width="100%"   />
 
 ### Projects and Workspaces
 
@@ -73,7 +73,7 @@ The App Builder team shared a short presentation about projects and workspaces a
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"  />
+<DiscoverBlock slots="heading, link, text" width="100%"   />
 
 ### React Spectrum
 
@@ -83,7 +83,7 @@ We are joined by Rob Snow from the React Spectrum team to learn about React Spec
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"  />
+<DiscoverBlock slots="heading, link, text" width="100%"   />
 
 ### Custom Events
 
@@ -94,18 +94,18 @@ Join us as we dive deep into the topic of Adobe I/O Events including our new fea
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"  />
+<DiscoverBlock slots="heading, link, text" width="100%"   />
 
 ### CI/CD
 
 [Watch (51mins)](exploring/ci-cd.md)
 
-Manik Jindal, App Builder Product Manager, will dive into CI/CD. You'll learn how to set up Github CI/CD we include with App Builder. In addition, we'll cover how to setup  a custom CI/CD pipeline with your tool of choice. Bring your questions and the App Builder team will be happy to answer any and all after the presentation.
+Manik Jindal, App Builder Product Manager, will dive into CI/CD. You'll learn how to set up GitHub CI/CD we include with App Builder. In addition, we'll cover how to setup  a custom CI/CD pipeline with your tool of choice. Bring your questions and the App Builder team will be happy to answer any and all after the presentation.
 
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"  />
+<DiscoverBlock slots="heading, link, text" width="100%"   />
 
 ### Debugging
 
@@ -116,7 +116,7 @@ This session we go in depth on debugging. Shazron Abdullah & Duy Nguyen take you
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"  />
+<DiscoverBlock slots="heading, link, text" width="100%"   />
 
 ### Learning Resources
 
@@ -127,7 +127,7 @@ We focus on learning resources from code labs to documentation to videos like th
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"  />
+<DiscoverBlock slots="heading, link, text" width="100%"   />
 
 ### Live Wired Sneak
 
@@ -140,7 +140,7 @@ Join us for a very special Adobe Summit edition of Office Hours. Ron, Alex and D
 
 ## Case Study
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"  />
+<DiscoverBlock slots="heading, link, text" width="100%"   />
 
 ### Dashboard Case Study
 
@@ -151,7 +151,7 @@ App Builder Case Study
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"  />
+<DiscoverBlock slots="heading, link, text" width="100%"   />
 
 ### ODE Case Study
 
@@ -161,7 +161,7 @@ App Builder Case Study
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"  />
+<DiscoverBlock slots="heading, link, text" width="100%"   />
 
 ### Deep Dive Use Cases
 
@@ -172,7 +172,7 @@ Manik & Ron take a look at a number of great use cases. Join us as we share some
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"  />
+<DiscoverBlock slots="heading, link, text" width="100%"   />
 
 ### Softcrylic Partner Showcase
 
@@ -184,7 +184,7 @@ Sundar Sritharan from Softcrylic joins us to share what they are cooking up with
 
 ## Adobe Developers Live 
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"  />
+<DiscoverBlock slots="heading, link, text" width="100%"   />
 
 ### App Builder Deep Dive
 
@@ -194,7 +194,7 @@ Join us and see App Builder in action: code, security, headfull and headless app
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"  />
+<DiscoverBlock slots="heading, link, text" width="100%"   />
 
 ### Extend Adobe Experience Cloud
 
@@ -204,7 +204,7 @@ You want to extend Adobe solutions using a modern architecture that works for mu
 
 
 
-<DiscoverBlock slots="heading, link, text" width="100%" arrange="column"  />
+<DiscoverBlock slots="heading, link, text" width="100%"   />
 
 ### Asset Compute Service Extensibility
 

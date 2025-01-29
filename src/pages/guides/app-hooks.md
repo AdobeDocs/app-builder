@@ -115,7 +115,7 @@ module.exports = () => {
 ## Legacy App (no extensions)
 
 In the root of your app, you will have to add a `hooks` key in the `app.config.yaml` file, under the `application` key. Example:
-```
+```yaml
 application:
   hooks:
     pre-app-run: echo pre-app-run
@@ -126,7 +126,7 @@ If you add extensions to a standalone app via `aio app add extension`, note that
 ## App with Extensions
 
 In your app extension folder (typically at `src/EXTENSION_NAME`), find the `ext.config.yaml` file, and add in a `hooks` key. Example:
-```
+```yaml
 hooks:
   pre-app-run: echo pre-app-run
 ```

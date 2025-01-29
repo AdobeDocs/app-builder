@@ -11,7 +11,7 @@ title: Publishing Your First App Builder Application
 
 In this tutorial, we'll guide you through the following steps to give you an introduction on how to publish your first App Builder Application. 
 After you deployed your application, you need to go through the 3 steps below to publish your SPA
-1. Submit for publishing approval [Adobe Developer Console](/console)
+1. Submit for publishing approval [Adobe Developer Console](https://developer.adobe.com/console/)
 2. Review and approve the app in [My Exchange](https://exchange.adobe.com/my-exchange.html)
 3. After approval, your app will be available at [Adobe Experience Cloud](https://experience.adobe.com)
 
@@ -80,7 +80,7 @@ Click on `App Builder Apps` to discover the applications published for your orga
 
 # Publishing your headless App Builder App
 
-The `App Builder Apps` [Adobe Experience Cloud](https://experience.adobe.com) only lists App Builder Apps that are SPAs. If you publish a headless app, please refer to our code lab [Your First Headless App with App Builder](https://developer.adobe.com/app-builder/docs/resources/barcode-reader/).
+The `App Builder Apps` [Adobe Experience Cloud](https://experience.adobe.com) only lists App Builder Apps that are SPAs. If you publish a headless app, please refer to our code lab [Your First Headless App with App Builder](../resources/barcode-reader/index.md).
 
 We might provide supplementary discoverability mechanisms for published headless apps in future App Builder releases.
 

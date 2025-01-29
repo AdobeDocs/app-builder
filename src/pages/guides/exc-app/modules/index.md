@@ -15,7 +15,7 @@ Cloud.
 ### Interfaces
 
 * [Modules](../interfaces/index.md)
-* [Runtime](../interfaces/index.runtime.md)
+* [Runtime](../interfaces/index-runtime.md)
 
 ### Functions
 
@@ -52,13 +52,13 @@ init(() => {
 Callback used to bootstrap a solution. The runtime object is passed in as a
 parameter to this callback.
 
-▸ (`runtime`: [Runtime](../interfaces/index.runtime.md)): *void*
+▸ (`runtime`: [Runtime](../interfaces/index-runtime.md)): *void*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`runtime` | [Runtime](../interfaces/index.runtime.md) |
+`runtime` | [Runtime](../interfaces/index-runtime.md) |
 
 **Returns:** *void*
 
@@ -66,7 +66,7 @@ Name | Type |
 
 ###  runtime
 
-▸ **runtime**(): *[Runtime](../interfaces/index.runtime.md)*
+▸ **runtime**(): *[Runtime](../interfaces/index-runtime.md)*
 
 Get the runtime object which contains all unified-shell APIs.
 
@@ -84,6 +84,6 @@ export class MyComponent extends React.Component {
 }
 ```
 
-**Returns:** *[Runtime](../interfaces/index.runtime.md)*
+**Returns:** *[Runtime](../interfaces/index-runtime.md)*
 
 The runtime object.

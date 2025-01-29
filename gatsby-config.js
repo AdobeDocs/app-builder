@@ -185,7 +185,7 @@ module.exports = {
           },
           {
             "title": "UI Extensibility",
-            "path": "guides/extensions/ui-extensibility.md"
+            "path": "https://developer.adobe.com/uix/docs/"
           }
         ]
       },
@@ -321,11 +321,11 @@ module.exports = {
       },
       {
         "title": "Integration Guide for building Event-driven Applications with I/O Events",
-        "path": "guides/events/webhooks.md"
+        "path": "https://developer.adobe.com/events/docs/guides/"
       },
       {
         "title": "Custom Events Overview",
-        "path": "guides/events/custom-events.md"
+        "path": "https://developer.adobe.com/events/docs/guides/using/custom_events/"
       },
       {
         "title": "Reference documentation",
