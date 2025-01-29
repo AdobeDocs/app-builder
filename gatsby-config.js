@@ -12,11 +12,11 @@
 
 module.exports = {
   siteMetadata: {
-    "home": {
-      "title": "App Builder",
-      "path": "/app-builder"
-    },
     pages: [
+      {
+        "title": "App Builder",
+        "path": "/app-builder"
+      },
       {
         "title": "Overview",
         "path": "overview/index.md"

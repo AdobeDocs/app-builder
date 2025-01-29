@@ -23,11 +23,12 @@ Next, confirm access to the following services:
 - **note:** You need a developer or system admin role for your Adobe Experience Cloud IMS organization.
 
 Adobe Experience Cloud IMS Organization _(required)_
+```
     - App Builder access is provided via an Adobe Experience Cloud IMS Org. If you are using the trial you should use the IMS org you requested or that was assigned to you. If you have a license for App Builder, then the IMS org was selected by the person who purchsed it for your company.
     - If you do not have access to an organization:
         - _Customers: Please contact your account manager for access._
         - _Partners: Please contact your partner manager or request sandbox access via [Adobe Solution Partner Portal](https://solutionpartners.adobe.com/home.html)._
-
+```
 - A GitHub Account _(optional)_
     - A [GitHub](https://github.com/) account is optional, but highly recommended, for setting up your CI/CD workflow.
 

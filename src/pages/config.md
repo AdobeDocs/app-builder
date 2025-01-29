@@ -1,10 +1,8 @@
 - pathPrefix:
     - /app-builder/docs/
 
-- home:
-    - [App Builder](/app-builder)
-
 - pages:
+    - [App Builder](/app-builder)
     - [Overview](overview/index.md)
     - [Getting Started](getting-started/index.md)
     - [Guides](guides/index.md)
