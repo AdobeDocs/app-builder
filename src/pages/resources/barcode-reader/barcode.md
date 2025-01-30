@@ -20,7 +20,7 @@ First, install the dependency with:
 npm i bwip-js --save
 ```
 
-Then import the dependency in your action: 
+Then import the dependency into your action: 
 
 ```javascript
 const bwipjs = require('bwip-js');
@@ -116,7 +116,7 @@ This will:
 
 Note that we'll cover how to do debug an App Builder app in a different Code Lab.
 
-Now if you add the value parameter to the url e.g. `?value=test`, the action should generate a barcode:
+Nowadd the value parameter, e.g. `?value=test`, to the url so the action will generate a barcode:
 
 ![barcode](assets/barcode-test.png)
 
@@ -131,6 +131,6 @@ Entering deploy in the CLI will output the deployed action URL:
 
 ![deploy](assets/deploy.png)  
 
-**Congratulations ! Your first App Builder Headless App is live.** 
+**Congratulations! Your first App Builder Headless App is live.** 
 
 How can we test that the passed value is actually rendered as a barcode? Fortunately, there are barcode readers that we can use in our tests.

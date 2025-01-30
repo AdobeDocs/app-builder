@@ -6,7 +6,7 @@ keywords:
   - Developer Tooling
 contributors:
   - 'https://github.com/duynguyen'
-title: 'Lesson 1: Getting familiar with Debugger'
+title: 'Lesson 1: Getting Familiar with Debugger'
 ---
 
 # Lesson 1: Getting to know wskdebug
@@ -28,6 +28,7 @@ Navigate to "Run" mode:
 
 ![debug-config](assets/debug-config.png)
 
+Select the `WebAndActions` profile, and click the Start Debugging button:
 Select the `WebAndActions` profile, and click the Start Debugging button:
 
 ![run-debug](assets/run-debug.png)

@@ -44,5 +44,6 @@ application:
 ```
 
 To test the trigger schedule,  deploy the app again with `aio app deploy`, and observe that the action is invoked after 1 - 2 minutes with `aio rt activation list`.
+To test the trigger schedule,  deploy the app again with `aio app deploy`, and observe that the action is invoked after 1 - 2 minutes with `aio rt activation list`.
 
 ![activation-list](assets/activation-list.png)

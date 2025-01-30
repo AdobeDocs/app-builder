@@ -6,7 +6,7 @@ keywords:
   - Developer Tooling
 contributors:
   - 'https://github.com/duynguyen'
-title: 'Lesson 4: Integrate and use the custom worker in AEMaaCS'
+title: 'Lesson 4: Integrate and Use the Custom Worker in AEMaaCS'
 ---
 
 # Lesson 4: Integrate and Use the Custom Worker in AEMaaCS

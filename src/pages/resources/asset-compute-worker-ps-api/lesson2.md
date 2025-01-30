@@ -6,9 +6,10 @@ keywords:
   - Developer Tooling
 contributors:
   - 'https://github.com/duynguyen'
-title: 'Lesson 2: Configure the app'
+title: 'Lesson 2: Configure the App'
 ---
 
+# Lesson 2: Configure the App
 # Lesson 2: Configure the App
 
 As you log in when creating the application, most of the App Builder credentials get collected in your `.env` file. However, using the Developer tool requires additional credentials.
@@ -32,7 +33,7 @@ AZURE_STORAGE_KEY=
 AZURE_STORAGE_CONTAINER_NAME=
 ```
 
-After that, add the absolute path to the private key file created while adding services to your App Builder Project:
+Then add the absolute path to the private key file created while adding services to your App Builder Project:
 
 ```bash
 ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
@@ -40,7 +41,7 @@ ASSET_COMPUTE_PRIVATE_KEY_FILE_PATH=
 
 Finally, download the file from the Adobe Developer Console. Go to the root of the workspace you are using and click on “Download All” in the upper-right corner. The file is downloaded with `<namespace>-<workspace>.json` as the filename. Rename it to `console.json` and move it in the root folder of your project.
 
-Once all the credentials are properly configured, you can execute the application with the Asset Compute Developer Tool by the command `aio app run`. It deploys the action to Adobe I/O Runtime and start the development tool on your local machine, available at `http://localhost:9000`. You can then upload a test image, specify the rendition request, and then run the test to see the rendition result. Here is an example rendition request:
+Once all the credentials are properly configured, you can execute the application with the Asset Compute Developer Tool by the command `aio app run`. This deploys the action to Adobe I/O Runtime and starts the development tool, available at `http://localhost:9000`, on your local machine. You can then upload a test image, specify the rendition request, and then run the test to see the rendition result. Here is an example rendition request:
 
 ```json
 "renditions": [
@@ -51,7 +52,7 @@ Once all the credentials are properly configured, you can execute the applicatio
 ]
 ```
 
-Looking at the action code in `actions/<worker-name>/index.js`, you can see what it does is simply copying the source file to generate a new rendition.
+Looking at the action code in `actions/<worker-name>/index.js`, you can see it simply copies the source file to generate a new rendition.
 
 ```javascript
 const { worker, SourceCorruptError } = require('@adobe/asset-compute-sdk');

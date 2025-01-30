@@ -9,12 +9,12 @@ title: 'Lesson 3: Testing a Serverless Action'
 
 # Lesson 3: Testing a Serverless Action
 
-An App Builder App created with `aio app init` has a [jest](https://jestjs.io/) test structure by default. We'll show how to take advantage of it.
+An App Builder App created with `aio app init` has a [Jest](https://jestjs.io/) test structure by default. We'll show how to take advantage of it.
 
 ## Unit tests
 
-Under `test/actions`, you should see a file named `barcode.test.js`. We'll add our barcode action unit tests in there.
-First we're adding required dependencies like the action itself, the logger and `bwip-js` that we'll mock using jest utilities.   
+Under `test/actions`, you should see a file named `barcode.test.js`. We'll add our barcode action unit tests to it.
+First we add some required dependencies like the action itself, the logger, and `bwip-js` that we'll mock using Jest utilities.   
 
 ```javascript
 const { Core } = require('@adobe/aio-sdk');
@@ -123,6 +123,7 @@ Running the unit tests should output 100% coverage (which also includes the util
 
 ![unit-tests](assets/unit-tests.png) 
 
+## End-to-End tests
 ## End-to-End tests
 
 Similar to unit tests, we have a predefined structure for end-to-end tests, but it's empty - so let's add a test that will read our barcode.

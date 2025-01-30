@@ -13,6 +13,7 @@ contributors:
 # Scheduling Cron Jobs with Alarms
 
 This Code Lab will guide you through creating cron jobs in an App Builder application using OpenWhisk Alarms Package. 
+This Code Lab will guide you through creating cron jobs in an App Builder application using OpenWhisk Alarms Package. 
 
 App Builder simplifies the process of building Cloud Native Applications that use Adobe I/O Runtime, which is based on OpenWhisk and uses its architecture to provide function-as-a-service (FaaS). 
 
