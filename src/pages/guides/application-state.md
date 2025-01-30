@@ -13,7 +13,7 @@ Application state could be a pre-defined variable of your action that is accessi
 
 ## Default parameters
 
-Sometimes you want to bind the same parameter values for all invocations or you just set default values of your action. In either case, you have two different options: setting params at the action level, or at the package level (so all actions in that package can inherit them). These params are set in the manifest.yaml file, as the following example.
+Sometimes you want to bind the same parameter values for all invocations or you just set default values of your action. In either case, you have two different options: setting params at the action level, or at the package level (so all actions in that package can inherit them). These params are set in the `manifest.yaml` file, as the following example.
 
 ```yaml
 hello-world:
@@ -22,7 +22,7 @@ hello-world:
     name: Joe
 ```
 
-In many cases, these variables are different depending on the build environment of the app, such as different tenant names in dev, stage, prod, etc. To make it work seamlessly with Git commits, you could store the real value of the variables in the .env file (which is not committed to Git), and reference them in the manifest.yaml file.
+In many cases, these variables are different depending on the build environment of the app, such as different tenant names in dev, stage, prod, etc. To make it work seamlessly with Git commits, you could store the real value of the variables in the `.env` file (which is not committed to Git), and reference them in the `manifest.yaml` file.
 
 ```bash
 # in .env
@@ -60,19 +60,19 @@ Please refer to the [feature matrix](#feature-matrix) for a detailed comparison.
 
 ## State
 
-*We've just released a [new State version](https://github.com/adobe/aio-lib-state/releases/tag/4.0.0) built on top of our own storage service. [Legacy State](https://github.com/adobe/aio-lib-state/tree/3.x) (@adobe/aio-lib-state < v4 based on CosmosDB) is still available, but we strongly advise new users to use the latest library version to avoid migrating later. Note that this applies also to State imported from @adobe/aio-sdk < v6. We will be sending out migration steps for existing customers soon. The [feature matrix](#feature-matrix) provides a detailed comparison of both versions.*
+*We've just released a [new State version](https://github.com/adobe/aio-lib-state/releases/tag/4.0.0) built on top of our own storage service. [Legacy State](https://github.com/adobe/aio-lib-state/tree/3.x) (`@adobe/aio-lib-state` < v4 based on CosmosDB) is still available, but we strongly advise new users to use the latest library version to avoid migrating later. Note that this applies also to `State` imported from `@adobe/aio-sdk` < v6. We will be sending out migration steps for existing customers soon. The [feature matrix](#feature-matrix) provides a detailed comparison of both versions.*
 
 ***How is my data stored?***
 
 - State is a multi-tenant storage. Your data is isolated in a "State container" which maps to your I/O Runtime namespace and application Workspace. This means that each application Workspace has its own isolated data.
-- You have the option to store data in either the amer, emea or apac region. These regions operate independently, so treat them as separate instances. You may prefer one region over the other to optimize latency, as it may be closer to your users, or for compliance reasons such as GDPR. 
+- You have the option to store data in either the `amer`, `emea` or `apac` region. These regions operate independently, so treat them as separate instances. You may prefer one region over the other to optimize latency, as it may be closer to your users, or for compliance reasons such as GDPR. 
 - Your data is not eternal. There is a configurable time-to-live (TTL) for each key-value pair, the default is 1 day and the maximum is 1 year (365 days).
 
 Region Acronyms are abbreviations for one or more continents that are part of a business region.
 
-- amer: North, Central, and South America. Data is stored in the US.
-- apac: Asia and Pacific. Data is stored in Japan.
-- emea: Europe, the Middle East, and Africa. Data is stored in the EU.
+- `amer`: North, Central, and South America. Data is stored in the US.
+- `apac`: Asia and Pacific. Data is stored in Japan.
+- `emea`: Europe, the Middle East, and Africa. Data is stored in the EU.
 
 ### Getting started
 
@@ -119,9 +119,9 @@ Explore the [full API](https://github.com/adobe/aio-lib-state/blob/main/doc/api.
 
 ***CLI usage, from your local machine***:
 
-Available for aio --version >= 10.2.
+Available for `aio --version` >= `10.2`.
 
-The CLI must be run from within a valid App Builder application folder and uses the Runtime credentials to authenticate your requests to State. Each namespace has its own State container, so please ensure that your are accessing the expected instance by looking in your .env file for the AIO_RUNTIME_NAMESPACE variable.
+The CLI must be run from within a valid App Builder application folder and uses the Runtime credentials to authenticate your requests to State. Each namespace has its own State container, so please ensure that your are accessing the expected instance by looking in your `.env` file for the `AIO_RUNTIME_NAMESPACE` variable.
 
 ```bash
 > aio app state
@@ -138,9 +138,9 @@ COMMANDS
   app state stats   Display stats
 ```
 
-The default region is amer, to access another region, you can use the --region flag or add the AIO_STATE_REGION=emea variable to your .env.
+The default region is `amer`, to access another region, you can use the `--region` flag or add the `AIO_STATE_REGION=emea` variable to your `.env`.
 
-Navigate the CLI usage documentation from the repo's [README](https://github.com/adobe/aio-cli-plugin-app-storage?tab=readme-ov-file#usage) or by using the --help flag on the desired command.
+Navigate the CLI usage documentation from the repo's [README](https://github.com/adobe/aio-cli-plugin-app-storage?tab=readme-ov-file#usage) or by using the `--help` flag on the desired command.
 
 ### Usage limits
 
@@ -188,7 +188,7 @@ It is important to understand that `list` is scanning through your keys:
 - every call to `list` will iterate over up to 1000 keys. The former `countHint` option is now ignored.
 - As an example, trying to match 1 key in a 10k key-values data-set will still require 10 calls to `list` to fetch it.
 
-list provides the following guarantees:
+`list` provides the following guarantees:
 
 - A full iteration always returns all keys that were present in the container during the start to the end of a full iteration.
 - A full iteration never returns any key that was deleted prior to an iteration.
@@ -200,7 +200,7 @@ However, list also has the following drawbacks:
   same iteration). You can mitigate this by either performing operations that are
   safe when applied multiple times (recommended with many keys) or by collecting all keys in an
   array first and then remove any duplicates.
-- In some rare cases, list may return expired keys.
+- In some rare cases, `list` may return expired keys.
 
 Please note, that `list` is subject to the bandwidth rate-limiting quotas, so listing many keys may result in 429s.
 
@@ -223,7 +223,7 @@ The `match` filter is applied server-side **after** traversing elements, this me
 
 ### Troubleshooting
 
-Set DEBUG=@adobe/aio-lib-state* to see debug logs.
+Set `DEBUG=@adobe/aio-lib-state*` to see debug logs.
 
 ## Files
 
