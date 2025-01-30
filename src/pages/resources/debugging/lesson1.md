@@ -25,7 +25,7 @@ You will see the VSCode launch profile generated automatically in `.vscode/launc
 
 Navigate to the "Run" mode:
 
-![debug-config](assets/debug-config.png)
+![debug-config](./assets/debug-config.png)
 
 Select the `WebAndActions` profile, and click the Start Debugging button:
 
