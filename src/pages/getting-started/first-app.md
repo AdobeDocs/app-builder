@@ -115,10 +115,10 @@ There are a few sample flows listed below. Some developers may not have access t
 
 1. In your Terminal, navigate to where you want to initialize your project and type in the following command in your Terminal:
 
-    ```
+    ```bash
     aio app init <app_name>
     ```
-
+  
     You will be prompted with a few questions about how you want your app to be boostrapped and configured:
 
 1. Select `Organization` that you'd like to use for this new App Builder Application. Navigate through the list to find the project and workspace you just created. If you have a lot of organizations, you can also start typing to shorten the list.
