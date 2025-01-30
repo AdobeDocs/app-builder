@@ -53,8 +53,8 @@ This guide would cover configuring your app builder application to forward appli
 
 6. Go to Azure Portal, and on the overview screen of your workspace, select Logs on the left menu. Run a query using the table name you provided in step 3. Note the table name that shows up on the Azure portal will have the suffix **`_CL`** appended to the table name you provided.
 
-7. If you don't see any logs in Azure, please check the log forwarding errors.
-8. 
+7. If you don't see any logs in Azure, please check the log forwarding errors. 
+
     ```yaml
     aio app config get log-forwarding errors
     ```

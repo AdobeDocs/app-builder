@@ -120,7 +120,7 @@ However, we strongly recommend to validate these changes against the application
 
 The `require-adobe-auth` annotation is not compatible with the `final` annotation, which is protecting default parameters in web actions. More precisely, the `final` annotation won't have any effect when the `require-adobe-auth` annotation is set.
 This also impacts other web action annotations such as `web-custom-options`.
-See https://github.com/adobe/aio-cli-plugin-runtime/issues/150 for more details.
+See [https://github.com/adobe/aio-cli-plugin-runtime/issues/150](https://github.com/adobe/aio-cli-plugin-runtime/issues/150) for more details.
 
 A workaround for supporting final parameters without relying on the `final` annotation is to set them using the [State](https://github.com/adobe/aio-lib-state) SDK. Parameters set in State will be shared among actions running within the same namespace. You can set a permanent value in State from outside an Adobe I/O Runtime action by calling this endpoint: 
 ```bash
