@@ -150,6 +150,8 @@ re-authenticated.
 
 ###  get
 
+▸ **get**<**T**>(`type`: T): *Promise‹UserInfo[T]›*
+
 Gets the specified type of information about an user.
 
 **Type parameters:**
@@ -161,3 +163,5 @@ Gets the specified type of information about an user.
 Name | Type | Description |
 ------ | ------ | ------ |
 `type` | T | The type of information to get.  |
+
+**Returns:** *Promise‹UserInfo[T]›*
