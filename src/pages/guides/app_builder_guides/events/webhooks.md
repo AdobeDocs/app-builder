@@ -7,7 +7,7 @@ keywords:
 title: Introduction to Adobe I/O Events Webhooks
 ---
 
-import MetaRedirect from '../../../components/MetaRedirect'
+import MetaRedirect from '../../../../components/MetaRedirect'
 
 <MetaRedirect url="https://www.adobe.io/apis/experienceplatform/events/docs.html#!adobedocs/adobeio-events/master/intro/webhooks_intro.md" />
 
