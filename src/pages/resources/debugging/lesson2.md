@@ -17,7 +17,7 @@ At this time, the action should run successfully, and you will see the response 
 
 ![exc-invoke](assets/exc-invoke.png)
 
-Let's try debugging this action. Go back to the Explorer View in VSCode, open the file `actions/hello/index.js`. At line 40, it makes a request to the Adobe I/O Runtime API docs at https://adobeioruntime.net/api/v1/api-docs:
+Let's try debugging this action. Go back to the Explorer View in VSCode, open the file `actions/hello/index.js`. At line 40, it makes a request to the Adobe I/O Runtime API docs at [https://adobeioruntime.net/api/v1/api-docs:](https://adobeioruntime.net/api/v1/api-docs:)
 
 ```javascript
 const apiEndpoint = 'https://adobeioruntime.net/api/v1/api-docs'
@@ -28,9 +28,9 @@ You may want to debug what is returned from this API call to decide what to do n
 
 ![set-breakpoint](assets/set-breakpoint.png)
 
-Back in the Chrome Debug window, access the action inside ExC Shell if you haven't already: https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080. Select the `hello` action and invoke. Your debugger should stop at the breakpoint you set, so you can inspect values of the variables in your code.
+Back in the Chrome Debug window, access the action inside ExC Shell if you haven't already: [https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080](https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080). Select the `hello` action and invoke. Your debugger should stop at the breakpoint you set, so you can inspect values of the variables in your code.
 
->Note: If your code uses App Builder [State](https://github.com/adobe/aio-lib-state) or [Files](https://github.com/adobe/aio-lib-files) SDKs, you cannot use this debugging method. There are more details about it [here](../../getting_started/common_troubleshooting.md#debugging-errors-with-state-and-files-sdk).
+>Note: If your code uses App Builder [State](https://github.com/adobe/aio-lib-state) or [Files](https://github.com/adobe/aio-lib-files) SDKs, you cannot use this debugging method. There are more details about it [here](../../getting-started/common-troubleshooting.md#debugging-errors-with-state-and-files-sdk).
 
 <Embed slots="video" />
 
