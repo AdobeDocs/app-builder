@@ -37,7 +37,7 @@ Now try invoking the `get-profiles` action. Select it from the dropdown list and
 
 ![error-401](assets/error-401.png)
 
-Previously, you saw from the Terminal output that it is possible to access the app from ExC Shell: https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080. You might be asked to log in using your Adobe ID.  
+Previously, you saw from the Terminal output that it is possible to access the app from ExC Shell: [https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080](https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080). You might be asked to log in using your Adobe ID.  
 When opened, the UI is similar to that when you access it on localhost, except the ExC Shell is on top:
 
 ![exc](assets/exc.png)

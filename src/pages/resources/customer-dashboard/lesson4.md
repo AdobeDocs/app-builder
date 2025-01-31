@@ -104,7 +104,7 @@ The `Home` component above requires the `ims` object in its `propTypes` to get t
 <Home ims={props.ims} />
 ```
 
-Since your app is already running because you ran `aio app run` in the previous lesson, just refresh the webpage at https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080 to see the updated UI:
+Since your app is already running because you ran `aio app run` in the previous lesson, just refresh the webpage at [https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080](https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080) to see the updated UI:
 
 ![ui-profiles](assets/ui-profiles.png)
 
