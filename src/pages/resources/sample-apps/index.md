@@ -76,7 +76,7 @@ This is an App Builder App which enables users to browse through events from Jou
 
 ### Adobe I/O Events - Azure Service Bus connector
 
-<https://github.com/AdobeDocs/adobeio-samples-events-azureservicebus-connector> 
+[https://github.com/AdobeDocs/adobeio-samples-events-azureservicebus-connector](https://github.com/AdobeDocs/adobeio-samples-events-azureservicebus-connector)
 
 This is a sample I/O Events consumer, built using App Builder, that forwards all incoming events to Azure Service Bus. This sample consumer application can be used as a reference to connect Adobe I/O Events with enterprise's Azure Service Bus.
 
