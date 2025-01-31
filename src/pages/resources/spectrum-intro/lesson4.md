@@ -58,7 +58,7 @@ This will:
  1. Bundle all static files (HTML, CSS, JS, assets etc.) using the built-in web application bundler [Parcel](https://parceljs.org/).  
  2. Start a local development server on http://localhost:9080/. 
 
-Thanks to the Experience Shell integration, you also preview the SPA directly on the Adobe Experience Cloud by going to https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080
+Thanks to the Experience Shell integration, you also preview the SPA directly on the Adobe Experience Cloud by going to [https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080](https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080)
 
 To deploy the web assets to the CDN, use: 
 
