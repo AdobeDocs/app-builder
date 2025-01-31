@@ -52,7 +52,7 @@ Then, make sure you've included the relevant classes to choose which scale and c
 <html lang="en" dir="ltr" class="spectrum spectrum--medium spectrum--light"> 
 ```
 
-Then include the Adobe Fonts e.g. using your Typekit id. Visit https://typekit.com/account/kits to create one.
+Then include the Adobe Fonts e.g. using your Typekit id. Visit [https://typekit.com/account/kits](https://typekit.com/account/kits) to create one.
 
 ```html 
 <!-- mge7bvf is the Typekit id. Please don't reuse, it's not meant for production. -->
@@ -63,11 +63,11 @@ Then include the Adobe Fonts e.g. using your Typekit id. Visit https://typekit.c
 Then you can start using components by copy/pasting their code from the [documentation](http://opensource.adobe.com/spectrum-css/).
 For our example, we'll use following components: 
 
-* Heading: https://opensource.adobe.com/spectrum-css/components/typography-heading/
-* Form: https://opensource.adobe.com/spectrum-css/components/form/
-* CTA Button: https://opensource.adobe.com/spectrum-css/components/button-cta/
-* Textfield: https://opensource.adobe.com/spectrum-css/components/textfield/
-* Checkbox: https://opensource.adobe.com/spectrum-css/components/checkbox/
+* Heading: [https://opensource.adobe.com/spectrum-css/components/typography-heading/](https://opensource.adobe.com/spectrum-css/components/typography-heading/)
+* Form: [https://opensource.adobe.com/spectrum-css/components/form/](https://opensource.adobe.com/spectrum-css/components/form/)
+* CTA Button: [https://opensource.adobe.com/spectrum-css/components/button-cta/](https://opensource.adobe.com/spectrum-css/components/button-cta/)
+* Textfield: [https://opensource.adobe.com/spectrum-css/components/textfield/](https://opensource.adobe.com/spectrum-css/components/textfield/)
+* Checkbox: [https://opensource.adobe.com/spectrum-css/components/checkbox/](https://opensource.adobe.com/spectrum-css/components/checkbox/)
 
 Resulting in the following code: 
 
