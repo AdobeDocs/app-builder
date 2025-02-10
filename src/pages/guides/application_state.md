@@ -177,7 +177,7 @@ The quota is shared for all State containers in the organization, across all reg
 
 *Example: org 123 is entitled to 3 quotas, the total bandwidth usage of the organization should not exceed 600GB/month and the storage across regions should not exceed 3GB.*
 
-### List guarantees
+### List considerations
 
 Using `state.list`, you can scan through the keys stored in your State container. `list` is a cursor-based iterator, which requires multiple calls to the State service to traverse all your keys.
 
@@ -187,21 +187,20 @@ It is important to understand that `list` is scanning through your keys:
 - every call to `list` will iterate over up to 1000 keys. The former `countHint` option is now ignored.
 - As an example, trying to match 1 key in a 10k key-values data-set will still require 10 calls to `list` to fetch it.
 
-`list` provides the following guarantees:
+The `list` command is not strongly consistent, and the following points need to be taken into account:
 
-- A full iteration always returns all keys that were present in the container during the start to the end of a full iteration.
-- A full iteration never returns any key that was deleted prior to an iteration.
-
-However, list also has the following drawbacks:
-
-- Keys that were not constantly present in the collection during a full iteration, may be returned or not: it is undefined.
+- We are sending `list` requests to a replica, there is a ~5ms lag, after which a
+  full iteration returns keys that were present in the container and doesn't
+  return keys that were deleted prior to an iteration.
+- Keys that were not constantly present in the collection during a full
+  iteration, may be returned or not: it is undefined.
 - A given key may be returned multiple times across iterations (but not within a
   same iteration). You can mitigate this by either performing operations that are
   safe when applied multiple times (recommended with many keys) or by collecting all keys in an
   array first and then remove any duplicates.
 - In some rare cases, `list` may return expired keys.
 
-Please note, that `list` is subject to the bandwidth rate-limiting quotas, so listing many keys may result in 429s.
+Please note, that `list` is subject to rate-limiting, so listing many keys may result in 429s.
 
 ### `match` option
 
