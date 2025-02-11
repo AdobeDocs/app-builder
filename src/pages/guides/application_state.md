@@ -249,4 +249,4 @@ To learn more please visit the [Adobe I/O File Storage library](https://github.c
 | max storage | 1TB | 1GB (scalable) | 10GB |
 | max monthly load | N/A | 200GB (scalable) | N/A |
 | regions | East US <br/> West US read-only | Amer (US) <br/>Emea (EU)<br/> Apac (JPN) | East US <br/> Europe read-only
-| consistency | strong | strong | eventual
+| consistency | strong | strong (CRUD), eventual for `list` | eventual
