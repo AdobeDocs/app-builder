@@ -169,16 +169,14 @@ In case of exceeding the storage limits the service will return with 403s. You w
 
 ### Quotas
 
-Every organization with App Builder access is entitled to at least 1 State quota.
+At the organization level, 1 App Builder pack provides:
 
-At the organization level, 1 quota provides:
-
-- 200GB/month bandwidth usage (~5MB/min): `bandwidth usage = bytes uploaded + bytes downloaded`
-- 1GB storage: `storage usage = 2 * key_sizes + value_sizes`
+- 1TB/month bandwidth usage: `bandwidth usage = bytes uploaded + bytes downloaded`
+- 10GB storage: `storage usage = 2 * key_sizes + value_sizes`
 
 The quota is shared for all State containers in the organization, across all regions and is tracked for billing purposes.
 
-*Example: org 123 is entitled to 3 quotas, the total bandwidth usage of the organization should not exceed 600GB/month and the storage across regions should not exceed 3GB.*
+*Example: org 123 is entitled to 3 quotas, the total bandwidth usage of the organization should not exceed 3TB/month and the storage across regions should not exceed 30GB.*
 
 ### List considerations
 
@@ -249,7 +247,7 @@ To learn more please visit the [Adobe I/O File Storage library](https://github.c
 | key charset | open | `alphanumeric` with `_-.` | any but `/\?#` |
 | max load | N/A | 10MB/min, 1MB/s <br/> 1k/min `list` requests | 900 RU/min (~KB/min) |
 | max key values | N/A | 100K (scalable) | N/A |
-| max storage | 1TB | 1GB (scalable) | 10GB |
-| max monthly load | N/A | 200GB (scalable) | N/A |
+| max storage | 1TB | 10GB (scalable) | 10GB |
+| max monthly load | N/A | 1TB (scalable) | N/A |
 | regions | East US <br/> West US read-only | Amer (US) <br/>Emea (EU)<br/> Apac (JPN) | East US <br/> Europe read-only
 | consistency | strong | strong (CRUD), eventual for `list` | eventual
