@@ -159,10 +159,13 @@ In case of exceeding the usage limits, the State service will return with 429s. 
 
 **Storage**
 
-- 100K key-values pairs
-- 1GB storage usage: `2 * key_sizes + value_sizes`
+- 200K key-values pairs.
+- 1GB for production Workspaces.
+- 200MB for non-production Workspaces.
 
-In case of exceeding the storage limits the service will return with an error and you will have to delete keys or wait for expiration to resume writing.
+Storage usage is calculated as `2 * key_sizes + value_sizes`
+
+In case of exceeding the storage limits the service will return with 403s. You will have to delete keys or wait for key expirations (with a few minutes delay) to resume writing.
 
 ### Quotas
 
