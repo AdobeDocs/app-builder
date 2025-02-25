@@ -163,7 +163,7 @@ In case of exceeding the usage limits, the State service will return with 429s. 
 - 1GB for production Workspaces.
 - 200MB for non-production Workspaces.
 
-Storage usage is calculated as `2 * key_sizes + value_sizes`
+Storage usage is calculated as `(2 * key_sizes) + value_sizes`
 
 In case of exceeding the storage limits the service will return with 403s. You will have to delete keys or wait for key expirations (with a few minutes delay) to resume writing.
 
@@ -172,7 +172,7 @@ In case of exceeding the storage limits the service will return with 403s. You w
 At the organization level, 1 App Builder pack provides:
 
 - 1TB/month bandwidth usage: `bandwidth usage = bytes uploaded + bytes downloaded`
-- 10GB storage: `storage usage = 2 * key_sizes + value_sizes`
+- 10GB storage: `storage usage = (2 * key_sizes) + value_sizes`
 
 The quota is shared for all State containers in the organization, across all regions and is tracked for billing purposes.
 
