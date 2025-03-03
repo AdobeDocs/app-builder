@@ -124,7 +124,7 @@ The full spec can be found [here](https://github.com/apache/openwhisk-wskdeploy/
 Here is an example to get started:
 
 ```yaml
-runtimeManifest
+runtimeManifest:
    packages:
      myapp:
        license: Apache-2.0
@@ -252,7 +252,7 @@ The Experience Cloud Shell extension supports a `view` operation that points to 
 In the following example the `impl` field points to an `index.html` file stored in the `web/` folder of the extension.
 
 ```yaml
-extensions
+extensions:
   dx/excshell/1:
     operations:
       view:
