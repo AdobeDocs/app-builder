@@ -141,7 +141,16 @@ The default region is `amer`, to access another region, you can use the `--regio
 
 Navigate the CLI usage documentation from the repo's [README](https://github.com/adobe/aio-cli-plugin-app-storage?tab=readme-ov-file#usage) or by using the `--help` flag on the desired command.
 
-### Quotas and Limits
+### Constraints
+
+- State is only available to Runtime namespaces created via the Developer Console, which follow the App Builder format: `orgId-project(-workspace)?`. Legacy namespaces are not supported.
+- Max state value size: `1MB`.
+- Max state key size: `1024 bytes`.
+- Max-supported TTL is `365 days`.
+- Values format: any `string|binary`.
+- Keys format: `string` only `alphanumeric` with `-`,`_`,`.`.
+
+### Usage quotas and limits
 
 The following quotas and limits apply while dealing with Application State associated with your App Builder application.
 
