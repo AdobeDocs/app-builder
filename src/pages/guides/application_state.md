@@ -145,12 +145,8 @@ Navigate the CLI usage documentation from the repo's [README](https://github.com
 
 The following quotas and limits apply while dealing with Application State associated with your App Builder application.
 
-Quotas are shared for all workspaces in the organization, across regions and
-tracked for billing purposes.
-
-Usage limits are enforced at the **workspace**
-level within a **single** region. The State service returns 429 (rate-limits) or
-403 (storage limits) errors if exceeded.
+Quotas are shared across the organisation. Workspace limits are defined at the *workspace* level. The State service may return 429 (rate-limits) or
+403 (storage limits) errors if limits are exceeded.
 
 | #  | Limit | Limit Type | Default Limit | Can it be Increased? | Notes |
 |----|-------|-----------|--------------|----------------------|-------|
