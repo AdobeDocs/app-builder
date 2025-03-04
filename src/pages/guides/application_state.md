@@ -141,42 +141,26 @@ The default region is `amer`, to access another region, you can use the `--regio
 
 Navigate the CLI usage documentation from the repo's [README](https://github.com/adobe/aio-cli-plugin-app-storage?tab=readme-ov-file#usage) or by using the `--help` flag on the desired command.
 
-### Usage limits
+### Quotas and Limits
 
-Usage limits are enforced at the **workspace** level within a **single** region.
+The following quotas and limits apply while dealing with Application State associated with your App Builder application.
 
-**Load**
+Quotas are shared for all workspaces in the organization, across regions and
+tracked for billing purposes.
 
-- bandwidth
-  - 10MB/min with up to 1MB/sec peaks for production Workspaces.
-  - 2MB/min with up to 1MB/sec peaks for non-production Workspaces.
+Usage limits are enforced at the **workspace**
+level within a **single** region. The State service returns 429 (rate-limits) or
+403 (storage limits) errors if exceeded.
 
-- requests
-  - 1000 req/min for `list`, `deleteAll`, `stats` operations on production Workspaces.
-  - 200 req/min for `list`, `deleteAll`, `stats` operations on non-production Workspaces.
-
-In case of exceeding the usage limits, the State service will return with 429s. However, a retry mechanism in the State library will mitigate the propagation of the error on short time windows.
-
-**Storage**
-
-- 200K key-values pairs.
-- 1GB for production Workspaces.
-- 200MB for non-production Workspaces.
-
-Storage usage is calculated as `(2 * key_sizes) + value_sizes`
-
-In case of exceeding the storage limits the service will return with 403s. You will have to delete keys or wait for key expirations (with a few minutes delay) to resume writing.
-
-### Quotas
-
-At the organization level, 1 App Builder pack provides:
-
-- 1TB/month bandwidth usage: `bandwidth usage = bytes uploaded + bytes downloaded`
-- 10GB storage: `storage usage = (2 * key_sizes) + value_sizes`
-
-The quota is shared for all State containers in the organization, across all regions and is tracked for billing purposes.
-
-*Example: org 123 is entitled to 3 quotas, the total bandwidth usage of the organization should not exceed 3TB/month and the storage across regions should not exceed 30GB.*
+| #  | Limit | Limit Type | Default Limit | Can it be Increased? | Notes |
+|----|-------|-----------|--------------|----------------------|-------|
+| 1  | How much data can you store in State? | Quota (increases with number of packs) | Up to 10 GB per App Builder pack | Yes, by purchasing more packs of App Builder | Storage is calculated as: (2 * total size of keys) + (total size of values). |
+| 2  | How much State bandwidth can you utilize? | Quota (increases with number of packs) | 1 TB per month per App Builder pack | Yes, by purchasing more packs of App Builder | Bandwidth is calculated as: total bytes uploaded + total bytes downloaded. |
+| 3  | How much data can you store in State in a single App Builder workspace? | Workspace limit (fixed per workspace) | 1 GB for production workspaces, 200 MB for other workspaces | Yes, by raising a support ticket (up to 10 GB, potentially more depending on case) | Storage is calculated as: (2 * total size of keys) + (total size of values). |
+| 4  | How much State burst bandwidth can you consume in a single App Builder workspace? | Workspace limit (fixed per workspace) | burst of 1 MB/s <br> 10 MB/min for production workspaces, 2 MB/min for other workspaces | Yes, by raising a support ticket (up to 3 MB/s and 30 MB/min * number of App Builder packs purchased) | Bandwidth is calculated as: total bytes uploaded + total bytes downloaded. |
+| 5  | How fast can you increase your bandwidth consumption in a single App Builder workspace? | Workspace limit (fixed per workspace) | 100 KB/s per minute | No | - |
+| 6  | How many keys can you store in State in a single App Builder workspace? | Workspace limit (fixed per workspace) | 200K | Yes, by raising a support ticket (up to 500K keys) | This limit does not scale with the number of App Builder packs purchased. |
+| 7  | How many list operations can you run per minute in a single App Builder workspace? | Workspace limit (fixed per workspace) | 1K/min | Yes, by raising a support ticket (up to 10K/min) | This limit does not scale with the number of App Builder packs purchased. |
 
 ### List considerations
 
@@ -246,8 +230,8 @@ To learn more please visit the [Adobe I/O File Storage library](https://github.c
 | max key size | 1KB | 1KB | 1KB |
 | key charset | open | `alphanumeric` with `_-.` | any but `/\?#` |
 | max load | N/A | 10MB/min, 1MB/s <br/> 1k/min `list` requests | 900 RU/min (~KB/min) |
-| max key values | N/A | 100K (scalable) | N/A |
-| max storage | 1TB | 10GB (scalable) | 10GB |
+| max key values | N/A | 200K (scalable) | N/A |
+| max storage | 1TB | 10GB | 10GB |
 | max monthly load | N/A | 1TB (scalable) | N/A |
 | regions | East US <br/> West US read-only | Amer (US) <br/>Emea (EU)<br/> Apac (JPN) | East US <br/> Europe read-only
 | consistency | strong | strong (CRUD), eventual for `list` | eventual
