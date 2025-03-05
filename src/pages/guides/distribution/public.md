@@ -255,6 +255,7 @@ productDependencies:
 - **RTCDP** - Real-time Customer Data Platform
 - **AJO** - Journey Optimizer
 - **CJA** - Customer Journey Analytics
+- **GPM** - GenStudio for Performance Marketing
 
 Product version information can be found on [Adobe Experience League](https://experienceleague.adobe.com/en/docs).
 
