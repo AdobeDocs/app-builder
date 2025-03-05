@@ -157,15 +157,15 @@ The following quotas and limits apply while dealing with Application State assoc
 Quotas are shared across the organisation. Workspace limits are defined at the *workspace* level. The State service may return 429 (rate-limits) or
 403 (storage limits) errors if limits are exceeded.
 
-| #  | Limit | Limit Type | Default Limit | Can it be Increased? | Notes |
-|----|-------|-----------|--------------|----------------------|-------|
-| 1  | How much data can you store in State? | Quota (increases with number of packs) | Up to 10 GB per App Builder pack | Yes, by purchasing more packs of App Builder | Storage is calculated as: `(2 * total size of keys) + (total size of values)`. |
-| 2  | How much State bandwidth can you utilize? | Quota (increases with number of packs) | 1 TB per month per App Builder pack | Yes, by purchasing more packs of App Builder | Bandwidth is calculated as: total bytes uploaded + total bytes downloaded. |
-| 3  | How much data can you store in State in a single App Builder workspace? | Workspace limit (fixed per workspace) | 1 GB for production workspaces <br/> 200 MB for other workspaces | Yes, by raising a support ticket. You can request an increase up to 10 GB. <br/> *Note: Increasing the limit beyond 10 GB in a single workspace can be supported depending on your case. Raise a support ticket to find out more.* | Storage is calculated as: `(2 * total size of keys) + (total size of values)`. |
-| 4  | How much State burst bandwidth can you consume in a single App Builder workspace? | Workspace limit (fixed per workspace) | 1 MB/s (bursts) <br/> <br/> 10 MB/min for production workspaces <br/> 2 MB/min for other workspaces | Yes, by raising a support ticket. You can request an increase up to 3 MB/s and 30 MB/min per App Builder packs purchased. | Bandwidth is calculated as: `total bytes uploaded + total bytes downloaded`. |
-| 5  | How fast can you increase your bandwidth consumption in a single App Builder workspace? | Workspace limit (fixed per workspace) | 100 KB/s per minute | No | - |
-| 6  | How many keys can you store in State in a single App Builder workspace? | Workspace limit (fixed per workspace) | 200K | Yes, by raising a support ticket. You can request an increase up to 500K keys. | This limit does not scale with the number of App Builder packs purchased. |
-| 7  | How many list operations can you run per minute in a single App Builder workspace? | Workspace limit (fixed per workspace) | 1K/min | Yes, by raising a support ticket. You can request an increase up to 10K/min. | This limit does not scale with the number of App Builder packs purchased. |
+| Limit | Limit Type | Default Limit | Can it be Increased? | Notes |
+|-------|-----------|--------------|----------------------|-------|
+| How much data can you store in State? | Quota (increases with number of packs) | Up to 10 GB per App Builder pack | Yes, by purchasing more packs of App Builder | Storage is calculated as: `(2 * total size of keys) + (total size of values)`. |
+| How much State bandwidth can you utilize? | Quota (increases with number of packs) | 1 TB per month per App Builder pack | Yes, by purchasing more packs of App Builder | Bandwidth is calculated as: total bytes uploaded + total bytes downloaded. |
+| How much data can you store in State in a single App Builder workspace? | Workspace limit (fixed per workspace) | 1 GB for production workspaces <br/> 200 MB for other workspaces | Yes, by raising a support ticket. You can request an increase up to 10 GB. <br/> *Note: Increasing the limit beyond 10 GB in a single workspace can be supported depending on your case. Raise a support ticket to find out more.* | Storage is calculated as: `(2 * total size of keys) + (total size of values)`. |
+| How much State burst bandwidth can you consume in a single App Builder workspace? | Workspace limit (fixed per workspace) | 1 MB/s (bursts) <br/> <br/> 10 MB/min for production workspaces <br/> 2 MB/min for other workspaces | Yes, by raising a support ticket. You can request an increase up to 3 MB/s and 30 MB/min per App Builder packs purchased. | Bandwidth is calculated as: `total bytes uploaded + total bytes downloaded`. |
+| How fast can you increase your bandwidth consumption in a single App Builder workspace? | Workspace limit (fixed per workspace) | 100 KB/s per minute | No | - |
+| How many keys can you store in State in a single App Builder workspace? | Workspace limit (fixed per workspace) | 200K | Yes, by raising a support ticket. You can request an increase up to 500K keys. | This limit does not scale with the number of App Builder packs purchased. |
+| How many list operations can you run per minute in a single App Builder workspace? | Workspace limit (fixed per workspace) | 1K/min | Yes, by raising a support ticket. You can request an increase up to 10K/min. | This limit does not scale with the number of App Builder packs purchased. |
 
 ### List considerations
 
