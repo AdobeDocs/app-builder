@@ -55,7 +55,7 @@ Create a file named .vscode/launch.json at the root of your project with the fol
 
 ```json
 {
-  "version": "0.3.0",
+  "version": "0.2.0",
   "configurations": [
     {
       "name": "App Builder: debug actions",
