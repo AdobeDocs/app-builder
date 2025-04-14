@@ -19,7 +19,7 @@ module.exports = {
     pages: [
       {
         "title": "Overview",
-        "path": "intro_and_overview"
+        "path": "intro_and_overview/app_builder_overview"
       },
       {
         "title": "Getting Started",
@@ -37,23 +37,27 @@ module.exports = {
     subPages: [
       {
         "title": "Overview",
-        "path": "intro_and_overview/app_builder_overview.md"
+        "path": "intro_and_overview/app_builder_overview"
       },
       {
-        "title": "What is App Builder",
-        "path": "intro_and_overview/what_is_app_builder.md"
+        "title": "How it works",
+        "path": "intro_and_overview/app_builder_overview/how_it_works.md"
       },
       {
-        "title": "Business Case",
-        "path": "intro_and_overview/business_case.md"
+        "title": "How to Get Access",
+        "path": "intro_and_overview/app_builder_overview/getting_access.md"
+      },
+      {
+        "title": "App Builder and Adobe I/O Runtime",
+        "path": "intro_and_overview/app_builder_overview/firefly_and_runtime.md"
       },
       {
         "title": "FAQ",
-        "path": "intro_and_overview/faq.md"
+        "path": "intro_and_overview/app_builder_overview/faq.md"
       },
       {
         "title": "Community",
-        "path": "intro_and_overview/community.md"
+        "path": "intro_and_overview/app_builder_overview/community.md"
       },
       {
         "title": "Creating your First App Builder App",
