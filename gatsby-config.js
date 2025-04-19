@@ -41,23 +41,23 @@ module.exports = {
         "pages": [
           {
             "title": "App Builder Overview",
-            "path": "intro_and_overview/app_builder_overview/app_builder_overview"
+            "path": "intro_and_overview/app_builder_overview"
           },
           {
             "title": "What is App Builder",
-            "path": "intro_and_overview/what_is_app_builder/what_is_app_builder"
+            "path": "intro_and_overview/what_is_app_builder"
           },
           {
             "title": "Business Case",
-            "path": "intro_and_overview/business_case/business_case"
+            "path": "intro_and_overview/business_case"
           },
           {
             "title": "FAQ",
-            "path": "intro_and_overview/faq/faq"
+            "path": "intro_and_overview/faq"
           },
           {
             "title": "Community",
-            "path": "intro_and_overview/community/community"
+            "path": "intro_and_overview/community"
           }
         ]
       },
@@ -71,27 +71,27 @@ module.exports = {
             "pages": [
               {
                 "title": "App Builder and Runtime",
-                "path": "get_started/app_builder_get_started/app_builder_and_runtime/app_builder_and_runtime"
+                "path": "get_started/app_builder_get_started/app_builder_and_runtime"
               },
               {
                 "title": "App Builder Introduction",
-                "path": "get_started/app_builder_get_started/app_builder_intro/app_builder_intro"
+                "path": "get_started/app_builder_get_started/app_builder_intro"
               },
               {
                 "title": "Creating your First App",
-                "path": "get_started/app_builder_get_started/first_app/first_app"
+                "path": "get_started/app_builder_get_started/first_app"
               },
               {
                 "title": "Publishing Your App",
-                "path": "get_started/app_builder_get_started/publish_app/publish_app"
+                "path": "get_started/app_builder_get_started/publish_app"
               },
               {
                 "title": "Setting Up",
-                "path": "get_started/app_builder_get_started/set_up/set_up"
+                "path": "get_started/app_builder_get_started/set_up"
               },
               {
                 "title": "Troubleshooting",
-                "path": "get_started/app_builder_get_started/troubleshoot/troubleshoot"
+                "path": "get_started/app_builder_get_started/troubleshoot"
               }
             ]
           },
@@ -101,35 +101,35 @@ module.exports = {
             "pages": [
               {
                 "title": "Activations",
-                "path": "get_started/runtime_getting_started/activations/activations"
+                "path": "get_started/runtime_getting_started/activations"
               },
               {
                 "title": "Deploy",
-                "path": "get_started/runtime_getting_started/deploy/deploy"
+                "path": "get_started/runtime_getting_started/deploy"
               },
               {
                 "title": "Entities",
-                "path": "get_started/runtime_getting_started/entities/entities"
+                "path": "get_started/runtime_getting_started/entities"
               },
               {
                 "title": "How Runtime Works",
-                "path": "get_started/runtime_getting_started/how_runtime_works/how_runtime_works"
+                "path": "get_started/runtime_getting_started/how_runtime_works"
               },
               {
                 "title": "Resources",
-                "path": "get_started/runtime_getting_started/resources/resources"
+                "path": "get_started/runtime_getting_started/resources"
               },
               {
                 "title": "Runtime Introduction",
-                "path": "get_started/runtime_getting_started/runtime_intro/runtime_intro"
+                "path": "get_started/runtime_getting_started/runtime_intro"
               },
               {
                 "title": "Setup",
-                "path": "get_started/runtime_getting_started/setup/setup"
+                "path": "get_started/runtime_getting_started/setup"
               },
               {
                 "title": "Understanding Runtime",
-                "path": "get_started/runtime_getting_started/understanding_runtime/understanding_runtime"
+                "path": "get_started/runtime_getting_started/understanding_runtime"
               }
             ]
           }
@@ -141,15 +141,15 @@ module.exports = {
         "pages": [
           {
             "title": "Application State",
-            "path": "guides/application_state/application_state"
+            "path": "guides/application_state"
           },
           {
             "title": "Contribution Guide",
-            "path": "guides/contribution_guide/contribution_guide"
+            "path": "guides/contribution_guide"
           },
           {
             "title": "References",
-            "path": "guides/references/references"
+            "path": "guides/references"
           },
           {
             "title": "App Builder Guides",
@@ -161,23 +161,23 @@ module.exports = {
                 "pages": [
                   {
                     "title": "App Hooks",
-                    "path": "guides/app_builder_guides/architecture_overview/app_hooks/app_hooks"
+                    "path": "guides/app_builder_guides/architecture_overview/app_hooks"
                   },
                   {
                     "title": "Application State",
-                    "path": "guides/app_builder_guides/architecture_overview/application_state/application_state"
+                    "path": "guides/app_builder_guides/architecture_overview/application_state"
                   },
                   {
                     "title": "Architecture Overview",
-                    "path": "guides/app_builder_guides/architecture_overview/architecture_overview/architecture_overview"
+                    "path": "guides/app_builder_guides/architecture_overview/architecture_overview"
                   },
                   {
                     "title": "Introduction to React Spectrum",
-                    "path": "guides/app_builder_guides/architecture_overview/introduction_to_react_spectrum/introduction_to_react_spectrum"
+                    "path": "guides/app_builder_guides/architecture_overview/introduction_to_react_spectrum"
                   },
                   {
                     "title": "Using SDKs",
-                    "path": "guides/app_builder_guides/architecture_overview/using_sdks/using_sdks"
+                    "path": "guides/app_builder_guides/architecture_overview/using_sdks"
                   }
                 ]
               },
@@ -187,23 +187,23 @@ module.exports = {
                 "pages": [
                   {
                     "title": "Azure Log Analytics",
-                    "path": "guides/app_builder_guides/application_logging/azure_log_analytics/azure_log_analytics"
+                    "path": "guides/app_builder_guides/application_logging/azure_log_analytics"
                   },
                   {
                     "title": "Logging",
-                    "path": "guides/app_builder_guides/application_logging/logging/logging"
+                    "path": "guides/app_builder_guides/application_logging/logging"
                   },
                   {
                     "title": "New Relic",
-                    "path": "guides/app_builder_guides/application_logging/new_relic/new_relic"
+                    "path": "guides/app_builder_guides/application_logging/new_relic"
                   },
                   {
                     "title": "Splunk Cloud",
-                    "path": "guides/app_builder_guides/application_logging/splunk_cloud/splunk_cloud"
+                    "path": "guides/app_builder_guides/application_logging/splunk_cloud"
                   },
                   {
                     "title": "Splunk Enterprise",
-                    "path": "guides/app_builder_guides/application_logging/splunk_enterprise/splunk_enterprise"
+                    "path": "guides/app_builder_guides/application_logging/splunk_enterprise"
                   }
                 ]
               },
@@ -213,11 +213,11 @@ module.exports = {
                 "pages": [
                   {
                     "title": "Configuration",
-                    "path": "guides/app_builder_guides/configuration/configuration/configuration"
+                    "path": "guides/app_builder_guides/configuration/configuration"
                   },
                   {
                     "title": "Webpack Configuration",
-                    "path": "guides/app_builder_guides/configuration/webpack_configuration/webpack_configuration"
+                    "path": "guides/app_builder_guides/configuration/webpack_configuration"
                   }
                 ]
               },
@@ -227,29 +227,29 @@ module.exports = {
                 "pages": [
                   {
                     "title": "CI/CD for App Builder Apps",
-                    "path": "guides/app_builder_guides/deployment/cicd_for_app_builder_apps/cicd_for_app_builder_apps"
+                    "path": "guides/app_builder_guides/deployment/cicd_for_app_builder_apps"
                   },
                   {
                     "title": "Credential Rotation",
-                    "path": "guides/app_builder_guides/deployment/credential_rotation/credential_rotation"
+                    "path": "guides/app_builder_guides/deployment/credential_rotation"
                   },
                   {
                     "title": "Deployment",
-                    "path": "guides/app_builder_guides/deployment/deployment/deployment"
+                    "path": "guides/app_builder_guides/deployment/deployment"
                   },
                   {
                     "title": "Setting Response Headers",
-                    "path": "guides/app_builder_guides/deployment/setting_response_headers/setting_response_headers"
+                    "path": "guides/app_builder_guides/deployment/setting_response_headers"
                   }
                 ]
               },
               {
                 "title": "Development",
-                "path": "guides/app_builder_guides/development/development"
+                "path": "guides/app_builder_guides/development"
               },
               {
                 "title": "Distribution",
-                "path": "guides/app_builder_guides/distribution/distribution"
+                "path": "guides/app_builder_guides/distribution"
               },
               {
                 "title": "Events",
@@ -257,11 +257,11 @@ module.exports = {
                 "pages": [
                   {
                     "title": "Custom Events",
-                    "path": "guides/app_builder_guides/events/custom_events/custom_events"
+                    "path": "guides/app_builder_guides/events/custom_events"
                   },
                   {
                     "title": "Webhooks",
-                    "path": "guides/app_builder_guides/events/webhooks/webhooks"
+                    "path": "guides/app_builder_guides/events/webhooks"
                   }
                 ]
               },
@@ -271,7 +271,7 @@ module.exports = {
                 "pages": [
                   {
                     "title": "AEC Integration",
-                    "path": "guides/app_builder_guides/exc_app/aec_integration/aec_integration"
+                    "path": "guides/app_builder_guides/exc_app/aec_integration"
                   },
                   {
                     "title": "Interfaces",
@@ -279,73 +279,73 @@ module.exports = {
                     "pages": [
                       {
                         "title": "Modules",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/modules/modules"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/modules"
                       },
                       {
                         "title": "Page ObjectWithHref",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/page.objectwithhref/page.objectwithhref"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/page.objectwithhref"
                       },
                       {
                         "title": "Page ObjectWithPath",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/page.objectwithpath/page.objectwithpath"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/page.objectwithpath"
                       },
                       {
                         "title": "Page PageAPI",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/page.pageapi/page.pageapi"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/page.pageapi"
                       },
                       {
                         "title": "Page PageAPIProperties",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/page.pageapiproperties/page.pageapiproperties"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/page.pageapiproperties"
                       },
                       {
                         "title": "Runtime",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/runtime/runtime"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/runtime"
                       },
                       {
                         "title": "TopBar Callback",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.callback/topbar.callback"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.callback"
                       },
                       {
                         "title": "TopBar CustomFeedbackConfig",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.customfeedbackconfig/topbar.customfeedbackconfig"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.customfeedbackconfig"
                       },
                       {
                         "title": "TopBar CustomSearchConfig",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.customsearchconfig/topbar.customsearchconfig"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.customsearchconfig"
                       },
                       {
                         "title": "TopBar ExternalFeedbackConfig",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.externalfeedbackconfig/topbar.externalfeedbackconfig"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.externalfeedbackconfig"
                       },
                       {
                         "title": "TopBar HelpCenterFeedbackConfig",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.helpcenterfeedbackconfig/topbar.helpcenterfeedbackconfig"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.helpcenterfeedbackconfig"
                       },
                       {
                         "title": "TopBar Solution",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.solution/topbar.solution"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.solution"
                       },
                       {
                         "title": "TopBar TopBarAPI",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.topbarapi/topbar.topbarapi"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.topbarapi"
                       },
                       {
                         "title": "TopBar TopBarAPIProperties",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.topbarapiproperties/topbar.topbarapiproperties"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.topbarapiproperties"
                       },
                       {
                         "title": "User UserAPI",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/user.userapi/user.userapi"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/user.userapi"
                       },
                       {
                         "title": "User UserInfo",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/user.userinfo/user.userinfo"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/user.userinfo"
                       }
                     ]
                   },
                   {
                     "title": "Migrate App to Exp Cloud SPA",
-                    "path": "guides/app_builder_guides/exc_app/migrate_app_to_exp_cloud_spa/migrate_app_to_exp_cloud_spa"
+                    "path": "guides/app_builder_guides/exc_app/migrate_app_to_exp_cloud_spa"
                   },
                   {
                     "title": "Modules",
@@ -353,19 +353,19 @@ module.exports = {
                     "pages": [
                       {
                         "title": "Index",
-                        "path": "guides/app_builder_guides/exc_app/modules/index/index"
+                        "path": "guides/app_builder_guides/exc_app/modules/index"
                       },
                       {
                         "title": "Page",
-                        "path": "guides/app_builder_guides/exc_app/modules/page/page"
+                        "path": "guides/app_builder_guides/exc_app/modules/page"
                       },
                       {
                         "title": "TopBar",
-                        "path": "guides/app_builder_guides/exc_app/modules/topbar/topbar"
+                        "path": "guides/app_builder_guides/exc_app/modules/topbar"
                       },
                       {
                         "title": "User",
-                        "path": "guides/app_builder_guides/exc_app/modules/user/user"
+                        "path": "guides/app_builder_guides/exc_app/modules/user"
                       }
                     ]
                   }
@@ -377,17 +377,17 @@ module.exports = {
                 "pages": [
                   {
                     "title": "Extension Migration Guide",
-                    "path": "guides/app_builder_guides/extensions/extension_migration_guide/extension_migration_guide"
+                    "path": "guides/app_builder_guides/extensions/extension_migration_guide"
                   },
                   {
                     "title": "Extensions",
-                    "path": "guides/app_builder_guides/extensions/extensions/extensions"
+                    "path": "guides/app_builder_guides/extensions/extensions"
                   }
                 ]
               },
               {
                 "title": "Optimization",
-                "path": "guides/app_builder_guides/optimization/optimization"
+                "path": "guides/app_builder_guides/optimization"
               },
               {
                 "title": "Security",
@@ -395,17 +395,17 @@ module.exports = {
                 "pages": [
                   {
                     "title": "Index",
-                    "path": "guides/app_builder_guides/security/index/index"
+                    "path": "guides/app_builder_guides/security/index"
                   },
                   {
                     "title": "Understanding Authentication",
-                    "path": "guides/app_builder_guides/security/understanding_authentication/understanding_authentication"
+                    "path": "guides/app_builder_guides/security/understanding_authentication"
                   }
                 ]
               },
               {
                 "title": "Telemetry",
-                "path": "guides/app_builder_guides/telemetry/telemetry"
+                "path": "guides/app_builder_guides/telemetry"
               }
             ]
           },
@@ -415,27 +415,27 @@ module.exports = {
             "pages": [
               {
                 "title": "Asynchronous Calls",
-                "path": "guides/runtime_guides/asynchronous_calls/asynchronous_calls"
+                "path": "guides/runtime_guides/asynchronous_calls"
               },
               {
                 "title": "Creating Actions",
-                "path": "guides/runtime_guides/creating_actions/creating_actions"
+                "path": "guides/runtime_guides/creating_actions"
               },
               {
                 "title": "Creating REST APIs",
-                "path": "guides/runtime_guides/creating_rest_apis/creating_rest_apis"
+                "path": "guides/runtime_guides/creating_rest_apis"
               },
               {
                 "title": "CI/CD Pipeline",
-                "path": "guides/runtime_guides/ci-cd_pipeline/ci-cd_pipeline"
+                "path": "guides/runtime_guides/ci-cd_pipeline"
               },
               {
                 "title": "Debugging",
-                "path": "guides/runtime_guides/debugging/debugging"
+                "path": "guides/runtime_guides/debugging"
               },
               {
                 "title": "Logging & Monitoring",
-                "path": "guides/runtime_guides/logging_monitoring/logging_monitoring"
+                "path": "guides/runtime_guides/logging_monitoring"
               },
               {
                 "title": "Reference Docs",
@@ -443,73 +443,73 @@ module.exports = {
                 "pages": [
                   {
                     "title": "API Reference",
-                    "path": "guides/runtime_guides/reference_docs/api_ref/api_ref"
+                    "path": "guides/runtime_guides/reference_docs/api_ref"
                   },
                   {
                     "title": "CLI Usage",
-                    "path": "guides/runtime_guides/reference_docs/cli_use/cli_use"
+                    "path": "guides/runtime_guides/reference_docs/cli_use"
                   },
                   {
                     "title": "Configuring Proxy",
-                    "path": "guides/runtime_guides/reference_docs/configuringproxy/configuringproxy"
+                    "path": "guides/runtime_guides/reference_docs/configuringproxy"
                   },
                   {
                     "title": "Environment Variables",
-                    "path": "guides/runtime_guides/reference_docs/environment_variables/environment_variables"
+                    "path": "guides/runtime_guides/reference_docs/environment_variables"
                   },
                   {
                     "title": "Feeds",
-                    "path": "guides/runtime_guides/reference_docs/feeds/feeds"
+                    "path": "guides/runtime_guides/reference_docs/feeds"
                   },
                   {
                     "title": "Index",
-                    "path": "guides/runtime_guides/reference_docs/index/index"
+                    "path": "guides/runtime_guides/reference_docs/index"
                   },
                   {
                     "title": "Multiple Regions",
-                    "path": "guides/runtime_guides/reference_docs/multiple_regions/multiple_regions"
+                    "path": "guides/runtime_guides/reference_docs/multiple_regions"
                   },
                   {
                     "title": "Packages",
-                    "path": "guides/runtime_guides/reference_docs/packages/packages"
+                    "path": "guides/runtime_guides/reference_docs/packages"
                   },
                   {
                     "title": "Prepackages",
-                    "path": "guides/runtime_guides/reference_docs/prepackages/prepackages"
+                    "path": "guides/runtime_guides/reference_docs/prepackages"
                   },
                   {
                     "title": "Runtimes",
-                    "path": "guides/runtime_guides/reference_docs/runtimes/runtimes"
+                    "path": "guides/runtime_guides/reference_docs/runtimes"
                   },
                   {
                     "title": "Sequences & Compositions",
-                    "path": "guides/runtime_guides/reference_docs/sequences_compositions/sequences_compositions"
+                    "path": "guides/runtime_guides/reference_docs/sequences_compositions"
                   },
                   {
                     "title": "Triggers & Rules",
-                    "path": "guides/runtime_guides/reference_docs/triggersrules/triggersrules"
+                    "path": "guides/runtime_guides/reference_docs/triggersrules"
                   },
                   {
                     "title": "WSK Usage",
-                    "path": "guides/runtime_guides/reference_docs/wsk_use/wsk_use"
+                    "path": "guides/runtime_guides/reference_docs/wsk_use"
                   }
                 ]
               },
               {
                 "title": "Security General",
-                "path": "guides/runtime_guides/security_general/security_general"
+                "path": "guides/runtime_guides/security_general"
               },
               {
                 "title": "Securing Web Actions",
-                "path": "guides/runtime_guides/securing_web_actions/securing_web_actions"
+                "path": "guides/runtime_guides/securing_web_actions"
               },
               {
                 "title": "System Settings",
-                "path": "guides/runtime_guides/system_settings/system_settings"
+                "path": "guides/runtime_guides/system_settings"
               },
               {
                 "title": "Throughput Tuning",
-                "path": "guides/runtime_guides/throughput_tuning/throughput_tuning"
+                "path": "guides/runtime_guides/throughput_tuning"
               },
               {
                 "title": "Tools",
@@ -517,29 +517,29 @@ module.exports = {
                 "pages": [
                   {
                     "title": "CLI Install",
-                    "path": "guides/runtime_guides/tools/cli_install/cli_install"
+                    "path": "guides/runtime_guides/tools/cli_install"
                   },
                   {
                     "title": "Index",
-                    "path": "guides/runtime_guides/tools/index/index"
+                    "path": "guides/runtime_guides/tools/index"
                   },
                   {
                     "title": "WSKDeploy Install",
-                    "path": "guides/runtime_guides/tools/wskdeploy_install/wskdeploy_install"
+                    "path": "guides/runtime_guides/tools/wskdeploy_install"
                   }
                 ]
               },
               {
                 "title": "Troubleshooting",
-                "path": "guides/runtime_guides/troubleshooting/troubleshooting"
+                "path": "guides/runtime_guides/troubleshooting"
               },
               {
                 "title": "Using Packages",
-                "path": "guides/runtime_guides/using_packages/using_packages"
+                "path": "guides/runtime_guides/using_packages"
               },
               {
                 "title": "Using Runtime",
-                "path": "guides/runtime_guides/using_runtime/using_runtime"
+                "path": "guides/runtime_guides/using_runtime"
               }
             ]
           }
