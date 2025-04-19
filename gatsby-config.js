@@ -19,41 +19,47 @@ module.exports = {
     pages: [
       {
         "title": "Overview",
-        "path": "intro_and_overview/app_builder_overview.md"
+        "path": "intro_and_overview/app_builder_overview"
       },
       {
         "title": "Getting Started",
-        "path": "get_started/app_builder_get_started/first_app.md"
+        "path": "get_started/app_builder_get_started/first_app"
       },
       {
         "title": "Guides",
-        "path": "guides/guides_index.md"
+        "path": "guides/guides_index"
       },
       {
         "title": "Resources",
-        "path": "resources/index.md"
+        "path": "resources/"
       }
     ],
     subPages: [
       {
         "title": "Overview",
-        "path": "intro_and_overview/app_builder_overview.md"
-      },
-      {
-        "title": "What is App Builder",
-        "path": "intro_and_overview/what_is_app_builder.md"
-      },
-      {
-        "title": "Business Case",
-        "path": "intro_and_overview/business_case.md"
-      },
-      {
-        "title": "FAQ",
-        "path": "intro_and_overview/faq.md"
-      },
-      {
-        "title": "Community",
-        "path": "intro_and_overview/community.md"
+        "path": "intro_and_overview/app_builder_overview",
+        "pages": [
+          {
+            "title": "App Builder Overview",
+            "path": "intro_and_overview/app_builder_overview/app_builder_overview"
+          },
+          {
+            "title": "What is App Builder",
+            "path": "intro_and_overview/what_is_app_builder/what_is_app_builder"
+          },
+          {
+            "title": "Business Case",
+            "path": "intro_and_overview/business_case/business_case"
+          },
+          {
+            "title": "FAQ",
+            "path": "intro_and_overview/faq/faq"
+          },
+          {
+            "title": "Community",
+            "path": "intro_and_overview/community/community"
+          }
+        ]
       },
       {
         "title": "Getting Started",
@@ -65,27 +71,27 @@ module.exports = {
             "pages": [
               {
                 "title": "App Builder and Runtime",
-                "path": "get_started/app_builder_get_started/app_builder_and_runtime.md"
+                "path": "get_started/app_builder_get_started/app_builder_and_runtime/app_builder_and_runtime"
               },
               {
                 "title": "App Builder Introduction",
-                "path": "get_started/app_builder_get_started/app_builder_intro.md"
+                "path": "get_started/app_builder_get_started/app_builder_intro/app_builder_intro"
               },
               {
                 "title": "Creating your First App",
-                "path": "get_started/app_builder_get_started/first_app.md"
+                "path": "get_started/app_builder_get_started/first_app/first_app"
               },
               {
                 "title": "Publishing Your App",
-                "path": "get_started/app_builder_get_started/publish_app.md"
+                "path": "get_started/app_builder_get_started/publish_app/publish_app"
               },
               {
                 "title": "Setting Up",
-                "path": "get_started/app_builder_get_started/set_up.md"
+                "path": "get_started/app_builder_get_started/set_up/set_up"
               },
               {
                 "title": "Troubleshooting",
-                "path": "get_started/app_builder_get_started/troubleshoot.md"
+                "path": "get_started/app_builder_get_started/troubleshoot/troubleshoot"
               }
             ]
           },
@@ -95,35 +101,35 @@ module.exports = {
             "pages": [
               {
                 "title": "Activations",
-                "path": "get_started/runtime_getting_started/activations.md"
+                "path": "get_started/runtime_getting_started/activations/activations"
               },
               {
                 "title": "Deploy",
-                "path": "get_started/runtime_getting_started/deploy.md"
+                "path": "get_started/runtime_getting_started/deploy/deploy"
               },
               {
                 "title": "Entities",
-                "path": "get_started/runtime_getting_started/entities.md"
+                "path": "get_started/runtime_getting_started/entities/entities"
               },
               {
                 "title": "How Runtime Works",
-                "path": "get_started/runtime_getting_started/how_runtime_works.md"
+                "path": "get_started/runtime_getting_started/how_runtime_works/how_runtime_works"
               },
               {
                 "title": "Resources",
-                "path": "get_started/runtime_getting_started/resources.md"
+                "path": "get_started/runtime_getting_started/resources/resources"
               },
               {
                 "title": "Runtime Introduction",
-                "path": "get_started/runtime_getting_started/runtime_intro.md"
+                "path": "get_started/runtime_getting_started/runtime_intro/runtime_intro"
               },
               {
                 "title": "Setup",
-                "path": "get_started/runtime_getting_started/setup.md"
+                "path": "get_started/runtime_getting_started/setup/setup"
               },
               {
                 "title": "Understanding Runtime",
-                "path": "get_started/runtime_getting_started/understanding_runtime.md"
+                "path": "get_started/runtime_getting_started/understanding_runtime/understanding_runtime"
               }
             ]
           }
@@ -135,15 +141,15 @@ module.exports = {
         "pages": [
           {
             "title": "Application State",
-            "path": "guides/application_state.md"
+            "path": "guides/application_state/application_state"
           },
           {
             "title": "Contribution Guide",
-            "path": "guides/contribution_guide.md"
+            "path": "guides/contribution_guide/contribution_guide"
           },
           {
             "title": "References",
-            "path": "guides/references.md"
+            "path": "guides/references/references"
           },
           {
             "title": "App Builder Guides",
@@ -155,23 +161,23 @@ module.exports = {
                 "pages": [
                   {
                     "title": "App Hooks",
-                    "path": "guides/app_builder_guides/architecture_overview/app_hooks.md"
+                    "path": "guides/app_builder_guides/architecture_overview/app_hooks/app_hooks"
                   },
                   {
                     "title": "Application State",
-                    "path": "guides/app_builder_guides/architecture_overview/application_state.md"
+                    "path": "guides/app_builder_guides/architecture_overview/application_state/application_state"
                   },
                   {
                     "title": "Architecture Overview",
-                    "path": "guides/app_builder_guides/architecture_overview/architecture_overview.md"
+                    "path": "guides/app_builder_guides/architecture_overview/architecture_overview/architecture_overview"
                   },
                   {
                     "title": "Introduction to React Spectrum",
-                    "path": "guides/app_builder_guides/architecture_overview/introduction_to_react_spectrum.md"
+                    "path": "guides/app_builder_guides/architecture_overview/introduction_to_react_spectrum/introduction_to_react_spectrum"
                   },
                   {
                     "title": "Using SDKs",
-                    "path": "guides/app_builder_guides/architecture_overview/using_sdks.md"
+                    "path": "guides/app_builder_guides/architecture_overview/using_sdks/using_sdks"
                   }
                 ]
               },
@@ -181,23 +187,23 @@ module.exports = {
                 "pages": [
                   {
                     "title": "Azure Log Analytics",
-                    "path": "guides/app_builder_guides/application_logging/azure_log_analytics.md"
+                    "path": "guides/app_builder_guides/application_logging/azure_log_analytics/azure_log_analytics"
                   },
                   {
                     "title": "Logging",
-                    "path": "guides/app_builder_guides/application_logging/logging.md"
+                    "path": "guides/app_builder_guides/application_logging/logging/logging"
                   },
                   {
                     "title": "New Relic",
-                    "path": "guides/app_builder_guides/application_logging/new_relic.md"
+                    "path": "guides/app_builder_guides/application_logging/new_relic/new_relic"
                   },
                   {
                     "title": "Splunk Cloud",
-                    "path": "guides/app_builder_guides/application_logging/splunk_cloud.md"
+                    "path": "guides/app_builder_guides/application_logging/splunk_cloud/splunk_cloud"
                   },
                   {
                     "title": "Splunk Enterprise",
-                    "path": "guides/app_builder_guides/application_logging/splunk_enterprise.md"
+                    "path": "guides/app_builder_guides/application_logging/splunk_enterprise/splunk_enterprise"
                   }
                 ]
               },
@@ -207,11 +213,11 @@ module.exports = {
                 "pages": [
                   {
                     "title": "Configuration",
-                    "path": "guides/app_builder_guides/configuration/configuration.md"
+                    "path": "guides/app_builder_guides/configuration/configuration/configuration"
                   },
                   {
                     "title": "Webpack Configuration",
-                    "path": "guides/app_builder_guides/configuration/webpack_configuration.md"
+                    "path": "guides/app_builder_guides/configuration/webpack_configuration/webpack_configuration"
                   }
                 ]
               },
@@ -221,29 +227,29 @@ module.exports = {
                 "pages": [
                   {
                     "title": "CI/CD for App Builder Apps",
-                    "path": "guides/app_builder_guides/deployment/cicd_for_app_builder_apps.md"
+                    "path": "guides/app_builder_guides/deployment/cicd_for_app_builder_apps/cicd_for_app_builder_apps"
                   },
                   {
                     "title": "Credential Rotation",
-                    "path": "guides/app_builder_guides/deployment/credential_rotation.md"
+                    "path": "guides/app_builder_guides/deployment/credential_rotation/credential_rotation"
                   },
                   {
                     "title": "Deployment",
-                    "path": "guides/app_builder_guides/deployment/deployment.md"
+                    "path": "guides/app_builder_guides/deployment/deployment/deployment"
                   },
                   {
                     "title": "Setting Response Headers",
-                    "path": "guides/app_builder_guides/deployment/setting_response_headers.md"
+                    "path": "guides/app_builder_guides/deployment/setting_response_headers/setting_response_headers"
                   }
                 ]
               },
               {
                 "title": "Development",
-                "path": "guides/app_builder_guides/development.md"
+                "path": "guides/app_builder_guides/development/development"
               },
               {
                 "title": "Distribution",
-                "path": "guides/app_builder_guides/distribution.md"
+                "path": "guides/app_builder_guides/distribution/distribution"
               },
               {
                 "title": "Events",
@@ -251,11 +257,11 @@ module.exports = {
                 "pages": [
                   {
                     "title": "Custom Events",
-                    "path": "guides/app_builder_guides/events/custom_events.md"
+                    "path": "guides/app_builder_guides/events/custom_events/custom_events"
                   },
                   {
                     "title": "Webhooks",
-                    "path": "guides/app_builder_guides/events/webhooks.md"
+                    "path": "guides/app_builder_guides/events/webhooks/webhooks"
                   }
                 ]
               },
@@ -265,7 +271,7 @@ module.exports = {
                 "pages": [
                   {
                     "title": "AEC Integration",
-                    "path": "guides/app_builder_guides/exc_app/aec_integration.md"
+                    "path": "guides/app_builder_guides/exc_app/aec_integration/aec_integration"
                   },
                   {
                     "title": "Interfaces",
@@ -273,73 +279,73 @@ module.exports = {
                     "pages": [
                       {
                         "title": "Modules",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/modules.md"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/modules/modules"
                       },
                       {
                         "title": "Page ObjectWithHref",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/page.objectwithhref.md"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/page.objectwithhref/page.objectwithhref"
                       },
                       {
                         "title": "Page ObjectWithPath",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/page.objectwithpath.md"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/page.objectwithpath/page.objectwithpath"
                       },
                       {
                         "title": "Page PageAPI",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/page.pageapi.md"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/page.pageapi/page.pageapi"
                       },
                       {
                         "title": "Page PageAPIProperties",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/page.pageapiproperties.md"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/page.pageapiproperties/page.pageapiproperties"
                       },
                       {
                         "title": "Runtime",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/runtime.md"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/runtime/runtime"
                       },
                       {
                         "title": "TopBar Callback",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.callback.md"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.callback/topbar.callback"
                       },
                       {
                         "title": "TopBar CustomFeedbackConfig",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.customfeedbackconfig.md"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.customfeedbackconfig/topbar.customfeedbackconfig"
                       },
                       {
                         "title": "TopBar CustomSearchConfig",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.customsearchconfig.md"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.customsearchconfig/topbar.customsearchconfig"
                       },
                       {
                         "title": "TopBar ExternalFeedbackConfig",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.externalfeedbackconfig.md"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.externalfeedbackconfig/topbar.externalfeedbackconfig"
                       },
                       {
                         "title": "TopBar HelpCenterFeedbackConfig",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.helpcenterfeedbackconfig.md"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.helpcenterfeedbackconfig/topbar.helpcenterfeedbackconfig"
                       },
                       {
                         "title": "TopBar Solution",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.solution.md"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.solution/topbar.solution"
                       },
                       {
                         "title": "TopBar TopBarAPI",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.topbarapi.md"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.topbarapi/topbar.topbarapi"
                       },
                       {
                         "title": "TopBar TopBarAPIProperties",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.topbarapiproperties.md"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/topbar.topbarapiproperties/topbar.topbarapiproperties"
                       },
                       {
                         "title": "User UserAPI",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/user.userapi.md"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/user.userapi/user.userapi"
                       },
                       {
                         "title": "User UserInfo",
-                        "path": "guides/app_builder_guides/exc_app/interfaces/user.userinfo.md"
+                        "path": "guides/app_builder_guides/exc_app/interfaces/user.userinfo/user.userinfo"
                       }
                     ]
                   },
                   {
                     "title": "Migrate App to Exp Cloud SPA",
-                    "path": "guides/app_builder_guides/exc_app/migrate_app_to_exp_cloud_spa.md"
+                    "path": "guides/app_builder_guides/exc_app/migrate_app_to_exp_cloud_spa/migrate_app_to_exp_cloud_spa"
                   },
                   {
                     "title": "Modules",
@@ -347,19 +353,19 @@ module.exports = {
                     "pages": [
                       {
                         "title": "Index",
-                        "path": "guides/app_builder_guides/exc_app/modules/index.md"
+                        "path": "guides/app_builder_guides/exc_app/modules/index/index"
                       },
                       {
                         "title": "Page",
-                        "path": "guides/app_builder_guides/exc_app/modules/page.md"
+                        "path": "guides/app_builder_guides/exc_app/modules/page/page"
                       },
                       {
                         "title": "TopBar",
-                        "path": "guides/app_builder_guides/exc_app/modules/topbar.md"
+                        "path": "guides/app_builder_guides/exc_app/modules/topbar/topbar"
                       },
                       {
                         "title": "User",
-                        "path": "guides/app_builder_guides/exc_app/modules/user.md"
+                        "path": "guides/app_builder_guides/exc_app/modules/user/user"
                       }
                     ]
                   }
@@ -371,17 +377,17 @@ module.exports = {
                 "pages": [
                   {
                     "title": "Extension Migration Guide",
-                    "path": "guides/app_builder_guides/extensions/extension_migration_guide.md"
+                    "path": "guides/app_builder_guides/extensions/extension_migration_guide/extension_migration_guide"
                   },
                   {
                     "title": "Extensions",
-                    "path": "guides/app_builder_guides/extensions/extensions.md"
+                    "path": "guides/app_builder_guides/extensions/extensions/extensions"
                   }
                 ]
               },
               {
                 "title": "Optimization",
-                "path": "guides/app_builder_guides/optimization.md"
+                "path": "guides/app_builder_guides/optimization/optimization"
               },
               {
                 "title": "Security",
@@ -389,17 +395,17 @@ module.exports = {
                 "pages": [
                   {
                     "title": "Index",
-                    "path": "guides/app_builder_guides/security/index.md"
+                    "path": "guides/app_builder_guides/security/index/index"
                   },
                   {
                     "title": "Understanding Authentication",
-                    "path": "guides/app_builder_guides/security/understanding_authentication.md"
+                    "path": "guides/app_builder_guides/security/understanding_authentication/understanding_authentication"
                   }
                 ]
               },
               {
                 "title": "Telemetry",
-                "path": "guides/app_builder_guides/telemetry.md"
+                "path": "guides/app_builder_guides/telemetry/telemetry"
               }
             ]
           },
@@ -409,27 +415,27 @@ module.exports = {
             "pages": [
               {
                 "title": "Asynchronous Calls",
-                "path": "guides/runtime_guides/asynchronous_calls.md"
+                "path": "guides/runtime_guides/asynchronous_calls/asynchronous_calls"
               },
               {
                 "title": "Creating Actions",
-                "path": "guides/runtime_guides/creating_actions.md"
+                "path": "guides/runtime_guides/creating_actions/creating_actions"
               },
               {
                 "title": "Creating REST APIs",
-                "path": "guides/runtime_guides/creating_rest_apis.md"
+                "path": "guides/runtime_guides/creating_rest_apis/creating_rest_apis"
               },
               {
                 "title": "CI/CD Pipeline",
-                "path": "guides/runtime_guides/ci-cd_pipeline.md"
+                "path": "guides/runtime_guides/ci-cd_pipeline/ci-cd_pipeline"
               },
               {
                 "title": "Debugging",
-                "path": "guides/runtime_guides/debugging.md"
+                "path": "guides/runtime_guides/debugging/debugging"
               },
               {
                 "title": "Logging & Monitoring",
-                "path": "guides/runtime_guides/logging_monitoring.md"
+                "path": "guides/runtime_guides/logging_monitoring/logging_monitoring"
               },
               {
                 "title": "Reference Docs",
@@ -437,73 +443,73 @@ module.exports = {
                 "pages": [
                   {
                     "title": "API Reference",
-                    "path": "guides/runtime_guides/reference_docs/api_ref.md"
+                    "path": "guides/runtime_guides/reference_docs/api_ref/api_ref"
                   },
                   {
                     "title": "CLI Usage",
-                    "path": "guides/runtime_guides/reference_docs/cli_use.md"
+                    "path": "guides/runtime_guides/reference_docs/cli_use/cli_use"
                   },
                   {
                     "title": "Configuring Proxy",
-                    "path": "guides/runtime_guides/reference_docs/configuringproxy.md"
+                    "path": "guides/runtime_guides/reference_docs/configuringproxy/configuringproxy"
                   },
                   {
                     "title": "Environment Variables",
-                    "path": "guides/runtime_guides/reference_docs/environment_variables.md"
+                    "path": "guides/runtime_guides/reference_docs/environment_variables/environment_variables"
                   },
                   {
                     "title": "Feeds",
-                    "path": "guides/runtime_guides/reference_docs/feeds.md"
+                    "path": "guides/runtime_guides/reference_docs/feeds/feeds"
                   },
                   {
                     "title": "Index",
-                    "path": "guides/runtime_guides/reference_docs/index.md"
+                    "path": "guides/runtime_guides/reference_docs/index/index"
                   },
                   {
                     "title": "Multiple Regions",
-                    "path": "guides/runtime_guides/reference_docs/multiple_regions.md"
+                    "path": "guides/runtime_guides/reference_docs/multiple_regions/multiple_regions"
                   },
                   {
                     "title": "Packages",
-                    "path": "guides/runtime_guides/reference_docs/packages.md"
+                    "path": "guides/runtime_guides/reference_docs/packages/packages"
                   },
                   {
                     "title": "Prepackages",
-                    "path": "guides/runtime_guides/reference_docs/prepackages.md"
+                    "path": "guides/runtime_guides/reference_docs/prepackages/prepackages"
                   },
                   {
                     "title": "Runtimes",
-                    "path": "guides/runtime_guides/reference_docs/runtimes.md"
+                    "path": "guides/runtime_guides/reference_docs/runtimes/runtimes"
                   },
                   {
                     "title": "Sequences & Compositions",
-                    "path": "guides/runtime_guides/reference_docs/sequences_compositions.md"
+                    "path": "guides/runtime_guides/reference_docs/sequences_compositions/sequences_compositions"
                   },
                   {
                     "title": "Triggers & Rules",
-                    "path": "guides/runtime_guides/reference_docs/triggersrules.md"
+                    "path": "guides/runtime_guides/reference_docs/triggersrules/triggersrules"
                   },
                   {
                     "title": "WSK Usage",
-                    "path": "guides/runtime_guides/reference_docs/wsk_use.md"
+                    "path": "guides/runtime_guides/reference_docs/wsk_use/wsk_use"
                   }
                 ]
               },
               {
                 "title": "Security General",
-                "path": "guides/runtime_guides/security_general.md"
+                "path": "guides/runtime_guides/security_general/security_general"
               },
               {
                 "title": "Securing Web Actions",
-                "path": "guides/runtime_guides/securing_web_actions.md"
+                "path": "guides/runtime_guides/securing_web_actions/securing_web_actions"
               },
               {
                 "title": "System Settings",
-                "path": "guides/runtime_guides/system_settings.md"
+                "path": "guides/runtime_guides/system_settings/system_settings"
               },
               {
                 "title": "Throughput Tuning",
-                "path": "guides/runtime_guides/throughput_tuning.md"
+                "path": "guides/runtime_guides/throughput_tuning/throughput_tuning"
               },
               {
                 "title": "Tools",
@@ -511,29 +517,29 @@ module.exports = {
                 "pages": [
                   {
                     "title": "CLI Install",
-                    "path": "guides/runtime_guides/tools/cli_install.md"
+                    "path": "guides/runtime_guides/tools/cli_install/cli_install"
                   },
                   {
                     "title": "Index",
-                    "path": "guides/runtime_guides/tools/index.md"
+                    "path": "guides/runtime_guides/tools/index/index"
                   },
                   {
                     "title": "WSKDeploy Install",
-                    "path": "guides/runtime_guides/tools/wskdeploy_install.md"
+                    "path": "guides/runtime_guides/tools/wskdeploy_install/wskdeploy_install"
                   }
                 ]
               },
               {
                 "title": "Troubleshooting",
-                "path": "guides/runtime_guides/troubleshooting.md"
+                "path": "guides/runtime_guides/troubleshooting/troubleshooting"
               },
               {
                 "title": "Using Packages",
-                "path": "guides/runtime_guides/using_packages.md"
+                "path": "guides/runtime_guides/using_packages/using_packages"
               },
               {
                 "title": "Using Runtime",
-                "path": "guides/runtime_guides/using_runtime.md"
+                "path": "guides/runtime_guides/using_runtime/using_runtime"
               }
             ]
           }
@@ -541,39 +547,35 @@ module.exports = {
       },
       {
         "title": "Resources",
-        "path": "resources",
+        "path": "resources/",
         "pages": [
           {
             "title": "Asset Compute Worker PS API",
             "path": "resources/asset-compute-worker-ps-api",
             "pages": [
               {
-                "title": "Index",
-                "path": "resources/asset-compute-worker-ps-api/index.md"
-              },
-              {
-                "title": "Lesson 1",
-                "path": "resources/asset-compute-worker-ps-api/lesson1.md"
-              },
-              {
-                "title": "Lesson 2",
-                "path": "resources/asset-compute-worker-ps-api/lesson2.md"
-              },
-              {
-                "title": "Lesson 3",
-                "path": "resources/asset-compute-worker-ps-api/lesson3.md"
-              },
-              {
-                "title": "Lesson 4",
-                "path": "resources/asset-compute-worker-ps-api/lesson4.md"
-              },
-              {
                 "title": "Requirements",
-                "path": "resources/asset-compute-worker-ps-api/requirements.md"
+                "path": "resources/asset-compute-worker-ps-api/requirements"
               },
               {
-                "title": "Well Done",
-                "path": "resources/asset-compute-worker-ps-api/welldone.md"
+                "title": "Lesson 1: Create an app from Asset Compute template",
+                "path": "resources/asset-compute-worker-ps-api/lesson1"
+              },
+              {
+                "title": "Lesson 2: Configure the app",
+                "path": "resources/asset-compute-worker-ps-api/lesson2"
+              },
+              {
+                "title": "Lesson 3: Develop worker calling Photoshop API",
+                "path": "resources/asset-compute-worker-ps-api/lesson3"
+              },
+              {
+                "title": "Lesson 4: Integrate worker in AEMaaCS",
+                "path": "resources/asset-compute-worker-ps-api/lesson4"
+              },
+              {
+                "title": "Well done",
+                "path": "resources/asset-compute-worker-ps-api/welldone"
               }
             ]
           },
@@ -582,62 +584,60 @@ module.exports = {
             "path": "resources/barcode-reader",
             "pages": [
               {
-                "title": "Barcode",
-                "path": "resources/barcode-reader/barcode.md"
-              },
-              {
-                "title": "Bootstrap",
-                "path": "resources/barcode-reader/bootstrap.md"
-              },
-              {
-                "title": "Index",
-                "path": "resources/barcode-reader/index.md"
-              },
-              {
                 "title": "Requirements",
-                "path": "resources/barcode-reader/requirements.md"
+                "path": "resources/barcode-reader/requirements"
               },
               {
-                "title": "Test",
-                "path": "resources/barcode-reader/test.md"
+                "title": "Lesson 1: Bootstrap a Headless App",
+                "path": "resources/barcode-reader/bootstrap"
               },
               {
-                "title": "Well Done",
-                "path": "resources/barcode-reader/welldone.md"
+                "title": "Lesson 2: Writing a Serverless Action",
+                "path": "resources/barcode-reader/barcode"
+              },
+              {
+                "title": "Lesson 3: Unit and E2E Tests",
+                "path": "resources/barcode-reader/test"
+              },
+              {
+                "title": "Well done",
+                "path": "resources/barcode-reader/welldone"
               }
             ]
           },
           {
             "title": "Blog Articles",
-            "path": "resources/blog_articles.md"
+            "path": "resources/blog_articles",
+            "pages": [
+              {
+                "title": "Blog Articles",
+                "path": "resources/blog_articles/blog_articles"
+              }
+            ]
           },
           {
             "title": "CI/CD",
             "path": "resources/ci-cd",
             "pages": [
               {
-                "title": "Index",
-                "path": "resources/ci-cd/index.md"
-              },
-              {
-                "title": "Lesson 1",
-                "path": "resources/ci-cd/lesson1.md"
-              },
-              {
-                "title": "Lesson 2",
-                "path": "resources/ci-cd/lesson2.md"
-              },
-              {
-                "title": "Lesson 3",
-                "path": "resources/ci-cd/lesson3.md"
-              },
-              {
                 "title": "Requirements",
-                "path": "resources/ci-cd/requirements.md"
+                "path": "resources/ci-cd/requirements"
               },
               {
-                "title": "Well Done",
-                "path": "resources/ci-cd/welldone.md"
+                "title": "Lesson 1: Setup CI/CD",
+                "path": "resources/ci-cd/lesson1"
+              },
+              {
+                "title": "Lesson 2: Monitoring CI/CD",
+                "path": "resources/ci-cd/lesson2"
+              },
+              {
+                "title": "Lesson 3: Custom CI/CD workflow",
+                "path": "resources/ci-cd/lesson3"
+              },
+              {
+                "title": "Well done",
+                "path": "resources/ci-cd/welldone"
               }
             ]
           },
@@ -646,28 +646,24 @@ module.exports = {
             "path": "resources/cron-jobs",
             "pages": [
               {
-                "title": "Index",
-                "path": "resources/cron-jobs/index.md"
-              },
-              {
-                "title": "Lesson 1",
-                "path": "resources/cron-jobs/lesson1.md"
-              },
-              {
-                "title": "Lesson 2",
-                "path": "resources/cron-jobs/lesson2.md"
-              },
-              {
-                "title": "Lesson 3",
-                "path": "resources/cron-jobs/lesson3.md"
-              },
-              {
                 "title": "Requirements",
-                "path": "resources/cron-jobs/requirements.md"
+                "path": "resources/cron-jobs/requirements"
               },
               {
-                "title": "Well Done",
-                "path": "resources/cron-jobs/welldone.md"
+                "title": "Lesson 1: Bootstrap a Headless App",
+                "path": "resources/cron-jobs/lesson1"
+              },
+              {
+                "title": "Lesson 2: Set up Alarm Feed with Trigger and Rule",
+                "path": "resources/cron-jobs/lesson2"
+              },
+              {
+                "title": "Lesson 3: Types of Alarm Feed",
+                "path": "resources/cron-jobs/lesson3"
+              },
+              {
+                "title": "Well done",
+                "path": "resources/cron-jobs/welldone"
               }
             ]
           },
@@ -676,44 +672,40 @@ module.exports = {
             "path": "resources/custom-asset-compute-worker",
             "pages": [
               {
-                "title": "AEM Cloud Assets",
-                "path": "resources/custom-asset-compute-worker/aem-cloud-assets.md"
-              },
-              {
-                "title": "Index",
-                "path": "resources/custom-asset-compute-worker/index.md"
-              },
-              {
-                "title": "Lesson 1",
-                "path": "resources/custom-asset-compute-worker/lesson1.md"
-              },
-              {
-                "title": "Lesson 2",
-                "path": "resources/custom-asset-compute-worker/lesson2.md"
-              },
-              {
-                "title": "Lesson 3",
-                "path": "resources/custom-asset-compute-worker/lesson3.md"
-              },
-              {
-                "title": "Lesson 4",
-                "path": "resources/custom-asset-compute-worker/lesson4.md"
-              },
-              {
-                "title": "Lesson 5",
-                "path": "resources/custom-asset-compute-worker/lesson5.md"
-              },
-              {
-                "title": "Our Worker",
-                "path": "resources/custom-asset-compute-worker/our-worker.md"
-              },
-              {
                 "title": "Requirements",
-                "path": "resources/custom-asset-compute-worker/requirements.md"
+                "path": "resources/custom-asset-compute-worker/requirements"
+              },
+              {
+                "title": "How AEM as Cloud assets works",
+                "path": "resources/custom-asset-compute-worker/aem-cloud-assets"
+              },
+              {
+                "title": "Architecture of our worker",
+                "path": "resources/custom-asset-compute-worker/our-worker"
+              },
+              {
+                "title": "Configure services",
+                "path": "resources/custom-asset-compute-worker/lesson1"
+              },
+              {
+                "title": "Local environment setup",
+                "path": "resources/custom-asset-compute-worker/lesson2"
+              },
+              {
+                "title": "Implement the worker",
+                "path": "resources/custom-asset-compute-worker/lesson3"
+              },
+              {
+                "title": "Test the worker",
+                "path": "resources/custom-asset-compute-worker/lesson4"
+              },
+              {
+                "title": "Setup AEM to use the worker",
+                "path": "resources/custom-asset-compute-worker/lesson5"
               },
               {
                 "title": "Well Done",
-                "path": "resources/custom-asset-compute-worker/welldone.md"
+                "path": "resources/custom-asset-compute-worker/welldone"
               }
             ]
           },
@@ -722,36 +714,32 @@ module.exports = {
             "path": "resources/customer-dashboard",
             "pages": [
               {
-                "title": "Index",
-                "path": "resources/customer-dashboard/index.md"
-              },
-              {
-                "title": "Lesson 1",
-                "path": "resources/customer-dashboard/lesson1.md"
-              },
-              {
-                "title": "Lesson 2",
-                "path": "resources/customer-dashboard/lesson2.md"
-              },
-              {
-                "title": "Lesson 3",
-                "path": "resources/customer-dashboard/lesson3.md"
-              },
-              {
-                "title": "Lesson 4",
-                "path": "resources/customer-dashboard/lesson4.md"
-              },
-              {
-                "title": "Lesson 5",
-                "path": "resources/customer-dashboard/lesson5.md"
-              },
-              {
                 "title": "Requirements",
-                "path": "resources/customer-dashboard/requirements.md"
+                "path": "resources/customer-dashboard/requirements"
+              },
+              {
+                "title": "Lesson 1: Create a New App Builder App from Campaign Standard Template",
+                "path": "resources/customer-dashboard/lesson1"
+              },
+              {
+                "title": "Lesson 2: Explore the App Builder App",
+                "path": "resources/customer-dashboard/lesson2"
+              },
+              {
+                "title": "Lesson 3: Run the App Builder App Locally",
+                "path": "resources/customer-dashboard/lesson3"
+              },
+              {
+                "title": "Lesson 4: List All Customer Profiles on the UI",
+                "path": "resources/customer-dashboard/lesson4"
+              },
+              {
+                "title": "Lesson 5: Add Personalized Promotion Emails Triggering",
+                "path": "resources/customer-dashboard/lesson5"
               },
               {
                 "title": "Well Done",
-                "path": "resources/customer-dashboard/welldone.md"
+                "path": "resources/customer-dashboard/welldone"
               }
             ]
           },
@@ -760,28 +748,24 @@ module.exports = {
             "path": "resources/debugging",
             "pages": [
               {
-                "title": "Index",
-                "path": "resources/debugging/index.md"
-              },
-              {
-                "title": "Lesson 1",
-                "path": "resources/debugging/lesson1.md"
-              },
-              {
-                "title": "Lesson 2",
-                "path": "resources/debugging/lesson2.md"
-              },
-              {
-                "title": "Lesson 3",
-                "path": "resources/debugging/lesson3.md"
-              },
-              {
                 "title": "Requirements",
-                "path": "resources/debugging/requirements.md"
+                "path": "resources/debugging/requirements"
+              },
+              {
+                "title": "Lesson 1: Getting familiar with Debugger",
+                "path": "resources/debugging/lesson1"
+              },
+              {
+                "title": "Lesson 2: Debugging Application Code",
+                "path": "resources/debugging/lesson2"
+              },
+              {
+                "title": "Lesson 3: Managing Application Logs",
+                "path": "resources/debugging/lesson3"
               },
               {
                 "title": "Well Done",
-                "path": "resources/debugging/welldone.md"
+                "path": "resources/debugging/welldone"
               }
             ]
           },
@@ -790,32 +774,28 @@ module.exports = {
             "path": "resources/event-driven",
             "pages": [
               {
-                "title": "Index",
-                "path": "resources/event-driven/index.md"
-              },
-              {
-                "title": "Lesson 1",
-                "path": "resources/event-driven/lesson1.md"
-              },
-              {
-                "title": "Lesson 2",
-                "path": "resources/event-driven/lesson2.md"
-              },
-              {
-                "title": "Lesson 3",
-                "path": "resources/event-driven/lesson3.md"
-              },
-              {
-                "title": "Lesson 4",
-                "path": "resources/event-driven/lesson4.md"
-              },
-              {
                 "title": "Requirements",
-                "path": "resources/event-driven/requirements.md"
+                "path": "resources/event-driven/requirements"
+              },
+              {
+                "title": "Lesson 1: Create a New App Builder App from Template",
+                "path": "resources/event-driven/lesson1"
+              },
+              {
+                "title": "Lesson 2: Register the App as Event Provider",
+                "path": "resources/event-driven/lesson2"
+              },
+              {
+                "title": "Lesson 3: Fire an Event",
+                "path": "resources/event-driven/lesson3"
+              },
+              {
+                "title": "Lesson 4: Consume Events",
+                "path": "resources/event-driven/lesson4"
               },
               {
                 "title": "Well Done",
-                "path": "resources/event-driven/welldone.md"
+                "path": "resources/event-driven/welldone"
               }
             ]
           },
@@ -824,24 +804,20 @@ module.exports = {
             "path": "resources/events-runtime",
             "pages": [
               {
-                "title": "Index",
-                "path": "resources/events-runtime/index.md"
-              },
-              {
-                "title": "Lesson 1",
-                "path": "resources/events-runtime/lesson1.md"
-              },
-              {
-                "title": "Lesson 2",
-                "path": "resources/events-runtime/lesson2.md"
-              },
-              {
                 "title": "Requirements",
-                "path": "resources/events-runtime/requirements.md"
+                "path": "resources/events-runtime/requirements"
               },
               {
-                "title": "Well Done",
-                "path": "resources/events-runtime/welldone.md"
+                "title": "Lesson 1: Step by Step Guide",
+                "path": "resources/events-runtime/lesson1"
+              },
+              {
+                "title": "Lesson 2: Verify the result",
+                "path": "resources/events-runtime/lesson2"
+              },
+              {
+                "title": "Well done",
+                "path": "resources/events-runtime/welldone"
               }
             ]
           },
@@ -850,28 +826,24 @@ module.exports = {
             "path": "resources/journaling-events",
             "pages": [
               {
-                "title": "Index",
-                "path": "resources/journaling-events/index.md"
-              },
-              {
-                "title": "Lesson 1",
-                "path": "resources/journaling-events/lesson1.md"
-              },
-              {
-                "title": "Lesson 2",
-                "path": "resources/journaling-events/lesson2.md"
-              },
-              {
-                "title": "Lesson 3",
-                "path": "resources/journaling-events/lesson3.md"
-              },
-              {
                 "title": "Requirements",
-                "path": "resources/journaling-events/requirements.md"
+                "path": "resources/journaling-events/requirements"
               },
               {
-                "title": "Well Done",
-                "path": "resources/journaling-events/welldone.md"
+                "title": "Lesson 1: Create an Event Provider using App Builder",
+                "path": "resources/journaling-events/lesson1"
+              },
+              {
+                "title": "Lesson 2: Create the Event Consumer using Journaling API",
+                "path": "resources/journaling-events/lesson2"
+              },
+              {
+                "title": "Lesson 3: End to end test",
+                "path": "resources/journaling-events/lesson3"
+              },
+              {
+                "title": "Well done",
+                "path": "resources/journaling-events/welldone"
               }
             ]
           },
@@ -884,34 +856,26 @@ module.exports = {
                 "path": "resources/sample_apps/code_snippets",
                 "pages": [
                   {
-                    "title": "Analytics",
-                    "path": "resources/sample_apps/code_snippets/analytics.md"
+                    "title": "Caching HTTP responses",
+                    "path": "resources/sample_apps/code_snippets/caching"
                   },
                   {
-                    "title": "Events",
-                    "path": "resources/sample_apps/code_snippets/events.md"
+                    "title": "App Builder Files SDK",
+                    "path": "resources/sample_apps/code_snippets/files"
                   },
                   {
-                    "title": "Files",
-                    "path": "resources/sample_apps/code_snippets/files.md"
+                    "title": "App Builder State SDK",
+                    "path": "resources/sample_apps/code_snippets/state"
                   },
                   {
-                    "title": "Index",
-                    "path": "resources/sample_apps/code_snippets/index.md"
+                    "title": "I/O Events handler",
+                    "path": "resources/sample_apps/code_snippets/events"
                   },
                   {
-                    "title": "State",
-                    "path": "resources/sample_apps/code_snippets/state.md"
+                    "title": "Real-time data from Adobe Analytics API 1.4",
+                    "path": "resources/sample_apps/code_snippets/analytics"
                   }
                 ]
-              },
-              {
-                "title": "Demo",
-                "path": "resources/sample_apps/demo.md"
-              },
-              {
-                "title": "Index",
-                "path": "resources/sample_apps/index.md"
               }
             ]
           },
@@ -920,32 +884,24 @@ module.exports = {
             "path": "resources/spectrum-intro",
             "pages": [
               {
-                "title": "Index",
-                "path": "resources/spectrum-intro/index.md"
+                "title": "Lesson 1: What is Spectrum ?",
+                "path": "resources/spectrum-intro/lesson1"
               },
               {
-                "title": "Lesson 1",
-                "path": "resources/spectrum-intro/lesson1.md"
+                "title": "Lesson 2: Using Spectrum CSS",
+                "path": "resources/spectrum-intro/lesson2"
               },
               {
-                "title": "Lesson 2",
-                "path": "resources/spectrum-intro/lesson2.md"
+                "title": "Lesson 3: Using React Spectrum",
+                "path": "resources/spectrum-intro/lesson3"
               },
               {
-                "title": "Lesson 3",
-                "path": "resources/spectrum-intro/lesson3.md"
+                "title": "Lesson 4: Using React Spectrum in App Builder",
+                "path": "resources/spectrum-intro/lesson4"
               },
               {
-                "title": "Lesson 4",
-                "path": "resources/spectrum-intro/lesson4.md"
-              },
-              {
-                "title": "Requirements",
-                "path": "resources/spectrum-intro/requirements.md"
-              },
-              {
-                "title": "Well Done",
-                "path": "resources/spectrum-intro/welldone.md"
+                "title": "Well done",
+                "path": "resources/spectrum-intro/welldone"
               }
             ]
           },
@@ -954,40 +910,36 @@ module.exports = {
             "path": "resources/todo-app",
             "pages": [
               {
-                "title": "Index",
-                "path": "resources/todo-app/index.md"
-              },
-              {
-                "title": "Lesson 1",
-                "path": "resources/todo-app/lesson1.md"
-              },
-              {
-                "title": "Lesson 2",
-                "path": "resources/todo-app/lesson2.md"
-              },
-              {
-                "title": "Lesson 3",
-                "path": "resources/todo-app/lesson3.md"
-              },
-              {
-                "title": "Lesson 4",
-                "path": "resources/todo-app/lesson4.md"
-              },
-              {
-                "title": "Lesson 5",
-                "path": "resources/todo-app/lesson5.md"
-              },
-              {
-                "title": "Lesson 6",
-                "path": "resources/todo-app/lesson6.md"
-              },
-              {
                 "title": "Requirements",
-                "path": "resources/todo-app/requirements.md"
+                "path": "resources/todo-app/requirements"
               },
               {
-                "title": "Well Done",
-                "path": "resources/todo-app/welldone.md"
+                "title": "Lesson 1: Create a New App Builder App with the React Spectrum template",
+                "path": "resources/todo-app/lesson1"
+              },
+              {
+                "title": "Lesson 2: Setup Runtime actions",
+                "path": "resources/todo-app/lesson2"
+              },
+              {
+                "title": "Lesson 3: Setup the CreateTodoList component",
+                "path": "resources/todo-app/lesson3"
+              },
+              {
+                "title": "Lesson 4: Setup the Todo component",
+                "path": "resources/todo-app/lesson4"
+              },
+              {
+                "title": "Lesson 5: Setup the TodoList component",
+                "path": "resources/todo-app/lesson5"
+              },
+              {
+                "title": "Lesson 6: Bringing the pieces together to build the App",
+                "path": "resources/todo-app/lesson6"
+              },
+              {
+                "title": "Well done",
+                "path": "resources/todo-app/welldone"
               }
             ]
           },
@@ -996,20 +948,28 @@ module.exports = {
             "path": "resources/videos",
             "pages": [
               {
-                "title": "Developers Live",
-                "path": "resources/videos/developers-live",
+                "title": "Overview",
+                "path": "resources/videos/overview",
                 "pages": [
                   {
-                    "title": "Asset Compute Service Extensibility",
-                    "path": "resources/videos/developers-live/asset-compute-service-extensibility.md"
+                    "title": "Introducing App Builder",
+                    "path": "resources/videos/overview/introduction"
                   },
                   {
-                    "title": "Deep Dive",
-                    "path": "resources/videos/developers-live/deep-dive.md"
+                    "title": "Getting Started",
+                    "path": "resources/videos/overview/getting-started"
                   },
                   {
-                    "title": "Extend Experience Cloud",
-                    "path": "resources/videos/developers-live/extend-experience-cloud.md"
+                    "title": "Architecture",
+                    "path": "resources/videos/overview/architecture"
+                  },
+                  {
+                    "title": "A Full Security Overview",
+                    "path": "resources/videos/overview/security"
+                  },
+                  {
+                    "title": "User Journey",
+                    "path": "resources/videos/overview/e2e-user-journey"
                   }
                 ]
               },
@@ -1018,78 +978,66 @@ module.exports = {
                 "path": "resources/videos/exploring",
                 "pages": [
                   {
-                    "title": "CI/CD",
-                    "path": "resources/videos/exploring/ci-cd.md"
-                  },
-                  {
-                    "title": "Custom Events",
-                    "path": "resources/videos/exploring/custom-events.md"
-                  },
-                  {
-                    "title": "Dashboard Case Study",
-                    "path": "resources/videos/exploring/dashboard-case-study.md"
-                  },
-                  {
-                    "title": "Debugging",
-                    "path": "resources/videos/exploring/debugging.md"
-                  },
-                  {
-                    "title": "Deep Dive Use Cases",
-                    "path": "resources/videos/exploring/deep-dive-use-cases.md"
-                  },
-                  {
-                    "title": "Learning Resources",
-                    "path": "resources/videos/exploring/learning-resources.md"
-                  },
-                  {
-                    "title": "Live Wired Sneak",
-                    "path": "resources/videos/exploring/live-wired-sneak.md"
-                  },
-                  {
-                    "title": "ODE Case Study",
-                    "path": "resources/videos/exploring/ode-case-study.md"
-                  },
-                  {
                     "title": "Projects and Workspaces",
-                    "path": "resources/videos/exploring/projects-and-workspaces.md"
+                    "path": "resources/videos/exploring/projects-and-workspaces"
                   },
                   {
                     "title": "React Spectrum",
-                    "path": "resources/videos/exploring/react-spectrum.md"
+                    "path": "resources/videos/exploring/react-spectrum"
                   },
                   {
-                    "title": "Softcrylic Showcase",
-                    "path": "resources/videos/exploring/softcrylic-showcase.md"
+                    "title": "Custom Events",
+                    "path": "resources/videos/exploring/custom-events"
+                  },
+                  {
+                    "title": "CI/CD",
+                    "path": "resources/videos/exploring/ci-cd"
+                  },
+                  {
+                    "title": "Debugging",
+                    "path": "resources/videos/exploring/debugging"
+                  },
+                  {
+                    "title": "Learning Resources",
+                    "path": "resources/videos/exploring/learning-resources"
+                  },
+                  {
+                    "title": "Dashboard Case Study",
+                    "path": "resources/videos/exploring/dashboard-case-study"
+                  },
+                  {
+                    "title": "ODE Case Study",
+                    "path": "resources/videos/exploring/ode-case-study"
+                  },
+                  {
+                    "title": "Deep Dive Use Cases",
+                    "path": "resources/videos/exploring/deep-dive-use-cases"
+                  },
+                  {
+                    "title": "Live Wired Sneak",
+                    "path": "resources/videos/exploring/live-wired-sneak"
+                  },
+                  {
+                    "title": "Softcrylic Partner Showcase",
+                    "path": "resources/videos/exploring/softcrylic-showcase"
                   }
                 ]
               },
               {
-                "title": "Index",
-                "path": "resources/videos/index.md"
-              },
-              {
-                "title": "Overview",
-                "path": "resources/videos/overview",
+                "title": "Developers Live",
+                "path": "resources/videos/developers-live",
                 "pages": [
                   {
-                    "title": "Architecture",
-                    "path": "resources/videos/overview/architecture.md"
+                    "title": "App Builder Deep Dive",
+                    "path": "resources/videos/developers-live/deep-dive"
                   },
                   {
-                    "title": "E2E User Journey",
-                    "path": "resources/videos/overview/e2e-user-journey.md"
+                    "title": "Asset Compute Service Extensibility",
+                    "path": "resources/videos/developers-live/asset-compute-service-extensibility"
                   },
                   {
-                    "title": "Getting Started",
-                    "path": "resources/videos/overview/getting-started.md"
-                  },
-                  {
-                    "title": "Introduction",
-                    "path": "resources/videos/overview/introduction.md"
-                  },
-                  {
-                    "title": "Security",
-                    "path": "resources/videos/overview/security.md"
+                    "title": "Extend Adobe Experience Cloud",
+                    "path": "resources/videos/developers-live/extend-experience-cloud"
                   }
                 ]
               }
