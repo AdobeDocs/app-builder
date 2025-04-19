@@ -14,7 +14,7 @@ Welcome to the App Builder Guides section. Here you'll find comprehensive docume
 ## Architecture and Development
 
 * [Architecture Overview](architecture_overview/architecture_overview.md)
-* [Application State](architecture_overview/application_state.md)
+* [Application State](application_state.md)
 * [Development](development.md)
 * [Distribution](distribution.md)
 * [Optimization](optimization.md)

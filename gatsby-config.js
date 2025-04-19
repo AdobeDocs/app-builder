@@ -156,10 +156,6 @@ module.exports = {
                     "path": "guides/app_builder_guides/architecture_overview/app_hooks/"
                   },
                   {
-                    "title": "Application State",
-                    "path": "guides/app_builder_guides/architecture_overview/application_state/"
-                  },
-                  {
                     "title": "Introduction to React Spectrum",
                     "path": "guides/app_builder_guides/architecture_overview/introduction_to_react_spectrum/"
                   },
@@ -168,6 +164,10 @@ module.exports = {
                     "path": "guides/app_builder_guides/architecture_overview/using_sdks/"
                   }
                 ]
+              },
+              {
+                "title": "Application State",
+                "path": "guides/app_builder_guides/application_state/"
               },
               {
                 "title": "Application Logging",

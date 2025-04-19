@@ -141,7 +141,7 @@ App Builder uses webpack for bundling I/O Runtime action code. See [Webpack Conf
 
 ## Next steps
 
-Continue to [Dealing with Application State](application_state.md).
+Continue to [Dealing with Application State](../application_state.md).
 
 Return to [App Builder Overview](../../../intro_and_overview/app_builder_overview.md).
 

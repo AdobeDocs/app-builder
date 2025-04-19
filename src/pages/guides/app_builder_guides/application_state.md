@@ -39,7 +39,7 @@ hello-world:
 
 ### Considerations about security
 
-For authentication with Adobe APIs, you should use [App Builder Security Guidelines](../security/index.md) and Adobe-supported SDKs.
+For authentication with Adobe APIs, you should use [App Builder Security Guidelines](security/index.md) and Adobe-supported SDKs.
 
 For other third-party systems and APIs when provisioning actions with secrets and passwords is necessary, you can use the default parameters as demonstrated above. To support this use case, all default parameters are automatically encrypted, and decrypted just before the action code is executed. Thus, the only time you will have access to the decrypted value is while executing the action code.
 
@@ -235,8 +235,8 @@ Files is currently implemented as an abstraction layer over Azure Blob. Major ch
 
 ## Next steps
 
-Continue to [Introduction to React Spectrum](introduction_to_react_spectrum.md).
+Continue to [Introduction to React Spectrum](architecture_overview/introduction_to_react_spectrum.md).
 
-Return to [Architecture Overview](architecture_overview.md).
+Return to [Architecture Overview](architecture_overview/architecture_overview.md).
 
-Return to the [Guides Index](../../../guides/index.md).
+Return to the [Guides Index](../../guides/index.md). 
