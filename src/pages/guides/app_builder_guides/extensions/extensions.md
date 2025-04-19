@@ -74,4 +74,4 @@ Explore [Adobe Developer documentation for UI Extensibility](https://developer.a
 
 Continue to the [Extension Migration Guide](extension_migration_guide.md).
 
-Return to the [Guides Index](../../guides_index.md).
+Return to the [Guides Index](../../index.md).

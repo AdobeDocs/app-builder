@@ -39,4 +39,4 @@ You can create a feed according to several different architectural patterns. Thr
 
 Return to the [Runtime Reference Documentation Index](index.md).
 
-Return to the [Guides Index](../../guides_index.md).
+Return to the [Guides Index](../../index.md).

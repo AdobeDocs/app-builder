@@ -109,4 +109,4 @@ This guide covers configuration of App Builder applications to forward logs to y
    
    Return to [Managing Application Logs](logging.md).
    
-   Return to [Guides Index](../../guides_index.md).
+   Return to [Guides Index](../../index.md).

@@ -282,4 +282,4 @@ Shared packages enforce `execute-only` permission for any operation initiated fr
 
 ## Next step
 
-Return to [Guides Index](../guides_index.md).
+Return to [Guides Index](../index.md).

@@ -110,4 +110,4 @@ The deployed Custom Application will then be available at `https://<namespace>.a
 
 Continue to [CI/CD for App Builder Applications](cicd_for_app_builder_apps.md).
 
-Return to the [Guides Index](../../guides_index.md).
+Return to the [Guides Index](../../index.md).

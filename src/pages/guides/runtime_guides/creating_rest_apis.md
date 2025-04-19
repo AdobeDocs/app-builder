@@ -323,4 +323,4 @@ It can take up to five minutes to see the changes from creation or update of an 
 
 ## Next step
 
-Return to [Guides Index](../guides_index.md).
+Return to [Guides Index](../index.md).

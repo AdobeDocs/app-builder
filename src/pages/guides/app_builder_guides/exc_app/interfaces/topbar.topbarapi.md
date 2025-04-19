@@ -161,4 +161,4 @@ Explore the attributes and behavior of Adobe Experience Cloud Interfaces:
 |                                             | [Solution](topbar.solution.md)                             |                          |
 |                                             | [API Properties](topbar.topbarapiproperties.md)            | `                        |
 
-Return to the [Guides Index](../../../guides_index.md).
+Return to the [Guides Index](../../../index.md).

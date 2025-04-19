@@ -24,4 +24,4 @@ For more information about the `aio` CLI, check the [package home page](https://
 
 Return to the [Runtime Tools](index.md) Index.
 
-Return to the [Guides Index](../../guides_index.md).
+Return to the [Guides Index](../../index.md).

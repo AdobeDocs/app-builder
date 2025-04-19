@@ -275,4 +275,4 @@ As with actions, you can edit your extension configuration directly by modifying
 
 Return to [Introduction to Extensions](extensions.md).
 
-Return to [Guides Index](../../guides_index.md).
+Return to [Guides Index](../../index.md).

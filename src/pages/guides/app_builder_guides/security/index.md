@@ -197,4 +197,4 @@ Developers can build serverless processes and user-context-aware applications wi
 
 Continue to [Understanding Authentication](understanding_authentication.md).
 
-Return to [Guides Index](../../../guides/guides_index.md).
+Return to [Guides Index](../../../guides/index.md).

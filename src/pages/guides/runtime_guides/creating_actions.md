@@ -377,4 +377,4 @@ wskdeploy undeploy
 
 ## Next step
 
-Return to [Guides Index](../../guides/guides_index.md).
+Return to [Guides Index](../../guides/index.md).

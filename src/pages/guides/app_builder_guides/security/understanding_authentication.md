@@ -23,4 +23,4 @@ The Adobe I/O IMS SDK Library can simplify your interaction with Adobe authentic
 
 Return to [Security Overview](index.md).
 
-Return to [Guides Index](../../../guides/guides_index.md).
+Return to [Guides Index](../../../guides/index.md).

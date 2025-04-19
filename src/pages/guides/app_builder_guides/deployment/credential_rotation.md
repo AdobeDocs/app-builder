@@ -64,4 +64,4 @@ Continue to [Setting Response Headers](setting_response_headers.md).
 
 Return to [Deployment Overview](deployment.md).
 
-Return to the [Guides Index](../../guides_index.md).
+Return to the [Guides Index](../../index.md).

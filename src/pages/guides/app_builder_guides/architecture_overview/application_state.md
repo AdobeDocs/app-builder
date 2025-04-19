@@ -239,4 +239,4 @@ Continue to [Introduction to React Spectrum](introduction_to_react_spectrum.md).
 
 Return to [Architecture Overview](architecture_overview.md).
 
-Return to the [Guides Index](../../../guides/guides_index.md).
+Return to the [Guides Index](../../../guides/index.md).

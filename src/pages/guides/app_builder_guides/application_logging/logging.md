@@ -129,6 +129,6 @@ It returns the most recent 10 log forwarding errors for the current log forwardi
 
 ## Next steps
 
-Return to [Guides Index](../../guides_index.md).
+Return to [Guides Index](../../index.md).
 
 Return to [App Builder Overview](../../../intro_and_overview/app_builder_overview.md).

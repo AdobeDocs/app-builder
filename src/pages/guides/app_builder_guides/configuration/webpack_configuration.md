@@ -210,4 +210,4 @@ module.exports = (env) => ({
 
 Return to [Configuration](configuration.md).
 
-Return to [Guides Index](../../../guides/guides_index.md).
+Return to [Guides Index](../../../guides/index.md).

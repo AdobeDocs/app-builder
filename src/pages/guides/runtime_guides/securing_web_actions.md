@@ -71,4 +71,4 @@ For a fuller discussion of this topic you can read [Heroku's discussion of their
 
 Review the [Security Guide](security_general.md).
 
-Return to [Guides Index](../guides_index.md).
+Return to [Guides Index](../index.md).

@@ -88,4 +88,4 @@ Check this [page](debugging.md) if you want to learn how to debug your actions l
 
 ## Next steps
 
-Return to the [Guides Index](../guides_index.md).
+Return to the [Guides Index](../index.md).

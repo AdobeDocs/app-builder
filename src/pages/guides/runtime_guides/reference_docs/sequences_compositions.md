@@ -84,4 +84,4 @@ I/O Runtime does not support parallel compositions.
 
 Return to the [Runtime Reference Documentation Index](index.md).
 
-Return to the [Guides Index](../../guides_index.md).
+Return to the [Guides Index](../../index.md).

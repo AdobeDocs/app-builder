@@ -81,4 +81,4 @@ Runtime ingress IPs are not static. To facilitate operational changes,  IPs retu
 
 Proceed to [Securing Web Actions](securing_web_actions.md).
 
-Return to [Guides Index](../guides_index.md).
+Return to [Guides Index](../index.md).

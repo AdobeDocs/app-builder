@@ -130,4 +130,4 @@ An EC2 instance with NGINX installed is a prerequisite for configuring this prox
 
 Return to the [Runtime Reference Documentation Index](index.md).
 
-Return to the [Guides Index](../../guides_index.md).
+Return to the [Guides Index](../../index.md).

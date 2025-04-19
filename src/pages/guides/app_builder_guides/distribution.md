@@ -302,4 +302,4 @@ Hook-handler functions will be passed two items:
 
 ## Next step
 
-Return to the [Guides Index](../guides_index.md).
+Return to the [Guides Index](../index.md).

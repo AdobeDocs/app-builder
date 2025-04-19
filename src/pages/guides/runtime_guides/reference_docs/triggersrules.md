@@ -138,4 +138,4 @@ Triggers and rules stand outside packages: you cannot place either in a package.
 
 Return to the [Runtime Reference Documentation Index](index.md).
 
-Return to the [Guides Index](../../guides_index.md).
+Return to the [Guides Index](../../index.md).

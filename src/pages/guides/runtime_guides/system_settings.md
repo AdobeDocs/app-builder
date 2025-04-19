@@ -48,4 +48,4 @@ Activation Time To Live (TTL) is seven days. This is a system setting that can't
 
 ## Next step
 
-Return to [Guides Index](../guides_index.md).
+Return to [Guides Index](../index.md).

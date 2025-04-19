@@ -74,4 +74,4 @@ If you are unable to set up log forwarding using these procedures, please visit 
 
 Return to [Managing Application Logs](logging.md).
 
-Return to [Guides Index](../../guides_index.md).
+Return to [Guides Index](../../index.md).

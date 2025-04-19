@@ -90,4 +90,4 @@ Continue to [Credential Rotation](credential_rotation.md).
 
 Return to [Deployment Overview](deployment.md).
 
-Return to the [Guides Index](../../guides_index.md).
+Return to the [Guides Index](../../index.md).

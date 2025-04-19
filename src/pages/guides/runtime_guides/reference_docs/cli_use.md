@@ -37,4 +37,4 @@ Each command also offers help, so you can for example, run `aio runtime action -
 
 Return to the [Runtime Reference Documentation Index](index.md).
 
-Return to the [Guides Index](../../guides_index.md).
+Return to the [Guides Index](../../index.md).

@@ -22,4 +22,4 @@ Exceeding this limit will result in the action being terminated or not completin
 
 Review [System Settings](system_settings.md) and defaults.
 
-Return to [Guides Index](../guides_index.md).
+Return to [Guides Index](../index.md).

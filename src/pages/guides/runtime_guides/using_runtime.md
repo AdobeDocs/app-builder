@@ -30,4 +30,4 @@ Adobe I/O Runtime is more than a way of deploying individual actions and invokin
 
 Continue to [Creating Actions](creating_actions.md).
 
-Return to [Guides Index](../guides_index.md).
+Return to [Guides Index](../index.md).

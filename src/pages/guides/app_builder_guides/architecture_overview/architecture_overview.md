@@ -145,4 +145,4 @@ Continue to [Dealing with Application State](application_state.md).
 
 Return to [App Builder Overview](../../../intro_and_overview/app_builder_overview.md).
 
-Return to [Guides Index](../../../guides/guides_index.md).
+Return to [Guides Index](../../../guides/index.md).

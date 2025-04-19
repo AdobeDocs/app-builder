@@ -407,4 +407,4 @@ If you can't view your application in the App Builder Catalog of Adobe Experienc
 
 Proceed to [Webpack Configuration](webpack_configuration.md).
 
-Return to [Guides Index](../../../guides/guides_index.md).
+Return to [Guides Index](../../../guides/index.md).

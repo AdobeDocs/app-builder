@@ -116,4 +116,4 @@ The [Extension Migration Guide](../extensions/extension_migration_guide.md#old-f
 
 Explore migration details in the [Extension Migration Guide](../extensions/extension_migration_guide.md).
 
-Return to the [Guides Index](../../guides_index.md).
+Return to the [Guides Index](../../index.md).

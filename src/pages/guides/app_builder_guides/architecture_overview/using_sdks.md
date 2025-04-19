@@ -79,4 +79,4 @@ While many features of Adobe Analytics API have been [migrated to the new 2.0 AP
 
 Continue to [App Builder Application Tooling Lifecycle Event Hooks](app_hooks.md).
 
-Return to [Guides Index](../../../guides/guides_index.md).
+Return to [Guides Index](../../../guides/index.md).

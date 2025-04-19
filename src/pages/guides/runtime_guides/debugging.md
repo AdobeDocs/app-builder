@@ -47,4 +47,4 @@ For details of how `wskdebug` works, its limitations, and how to use it to its f
 
 ## Next step
 
-Return to the [Guides Index](../guides_index.md).
+Return to the [Guides Index](../index.md).

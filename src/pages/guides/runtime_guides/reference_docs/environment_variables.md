@@ -16,4 +16,4 @@ When an action is being executed, your code can use the following environment va
 
 Return to the [Runtime Reference Documentation Index](index.md).
 
-Return to the [Guides Index](../../guides_index.md).
+Return to the [Guides Index](../../index.md).

@@ -98,4 +98,4 @@ await move(files, 'my/remote/folder/', 'my/remote/dest') // will rename folder t
 
 ## Next step
 
-Return to [Guides Index](../guides_index.md).
+Return to [Guides Index](../index.md).

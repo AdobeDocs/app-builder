@@ -29,4 +29,4 @@ Please note that regions can change due to a failover or permanent platform chan
 
 Return to the [Runtime Reference Documentation Index](index.md).
 
-Return to the [Guides Index](../../guides_index.md).
+Return to the [Guides Index](../../index.md).

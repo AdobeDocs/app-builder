@@ -14,24 +14,24 @@ module.exports = {
   siteMetadata: {
     "home": {
       "title": "App Builder",
-      "path": "/app-builder/"
+      "path": "/app-builder"
     },
     pages: [
       {
         "title": "Overview",
-        "path": "intro_and_overview/"
+        "path": "intro_and_overview"
       },
       {
         "title": "Getting Started",
-        "path": "get_started/"
+        "path": "get_started"
       },
       {
         "title": "Guides",
-        "path": "guides/"
+        "path": "guides"
       },
       {
         "title": "Resources",
-        "path": "resources/"
+        "path": "resources"
       }
     ],
     subPages: [

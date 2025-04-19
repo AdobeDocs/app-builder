@@ -103,4 +103,4 @@ Retrieval of the action activationId (and not the trigger activationId) is trick
 
 Learn about [Triggers and Rules](reference_docs/triggersrules.md).
 
-Return to [Guides Index](../guides_index.md).
+Return to [Guides Index](../index.md).

@@ -24,4 +24,4 @@ The AEM Commerce team documented this approach in a [blog post](https://medium.c
 
 ## Next step
 
-Return to the [Guides Index](../../guides/guides_index.md).
+Return to the [Guides Index](../../guides/index.md).

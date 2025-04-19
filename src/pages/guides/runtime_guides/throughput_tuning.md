@@ -87,4 +87,4 @@ This response would add the `storeId` to the cache key, so that subsequent reque
 
 ## Next step
 
-Return to [Guides Index](../guides_index.md).
+Return to [Guides Index](../index.md).

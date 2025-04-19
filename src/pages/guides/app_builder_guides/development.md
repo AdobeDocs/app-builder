@@ -110,4 +110,4 @@ Learn more about using a JavaScript debugger
 
 ## Next step
 
-Return to [Guides Index](../guides_index.md).
+Return to [Guides Index](../index.md).

@@ -30,4 +30,4 @@ Adobe follows [12 Factor](https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227
 
 ## Next step
 
-Return to the [Guides Index](guides_index.md).
+Return to the [Guides Index](index.md).

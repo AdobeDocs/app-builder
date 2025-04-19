@@ -16,4 +16,4 @@ This Guide contains reference documentation for Runtime APIs, command-line tools
 
 #### Next step
 
-Return to the [Guides Index](../../guides_index.md).
+Return to the [Guides Index](../../index.md).
