@@ -67,12 +67,8 @@ module.exports = {
         "pages": [
           {
             "title": "App Builder Getting Started",
-            "path": "get_started/app_builder_get_started",
+            "path": "get_started/app_builder_get_started/app_builder_and_runtime",
             "pages": [
-              {
-                "title": "App Builder and Runtime",
-                "path": "get_started/app_builder_get_started/app_builder_and_runtime"
-              },
               {
                 "title": "App Builder Introduction",
                 "path": "get_started/app_builder_get_started/app_builder_intro"
@@ -97,7 +93,7 @@ module.exports = {
           },
           {
             "title": "Runtime Getting Started",
-            "path": "get_started/runtime_getting_started",
+            "path": "get_started/runtime_getting_started/runtime_intro",
             "pages": [
               {
                 "title": "Activations",
@@ -118,10 +114,6 @@ module.exports = {
               {
                 "title": "Resources",
                 "path": "get_started/runtime_getting_started/resources"
-              },
-              {
-                "title": "Runtime Introduction",
-                "path": "get_started/runtime_getting_started/runtime_intro"
               },
               {
                 "title": "Setup",
@@ -157,7 +149,7 @@ module.exports = {
             "pages": [
               {
                 "title": "Architecture Overview",
-                "path": "guides/app_builder_guides/architecture_overview",
+                "path": "guides/app_builder_guides/architecture_overview/architecture_overview",
                 "pages": [
                   {
                     "title": "App Hooks",
@@ -166,10 +158,6 @@ module.exports = {
                   {
                     "title": "Application State",
                     "path": "guides/app_builder_guides/architecture_overview/application_state"
-                  },
-                  {
-                    "title": "Architecture Overview",
-                    "path": "guides/app_builder_guides/architecture_overview/architecture_overview"
                   },
                   {
                     "title": "Introduction to React Spectrum",
@@ -183,15 +171,11 @@ module.exports = {
               },
               {
                 "title": "Application Logging",
-                "path": "guides/app_builder_guides/application_logging",
+                "path": "guides/app_builder_guides/application_logging/logging",
                 "pages": [
                   {
                     "title": "Azure Log Analytics",
                     "path": "guides/app_builder_guides/application_logging/azure_log_analytics"
-                  },
-                  {
-                    "title": "Logging",
-                    "path": "guides/app_builder_guides/application_logging/logging"
                   },
                   {
                     "title": "New Relic",
@@ -209,12 +193,8 @@ module.exports = {
               },
               {
                 "title": "Configuration",
-                "path": "guides/app_builder_guides/configuration",
+                "path": "guides/app_builder_guides/configuration/configuration",
                 "pages": [
-                  {
-                    "title": "Configuration",
-                    "path": "guides/app_builder_guides/configuration/configuration"
-                  },
                   {
                     "title": "Webpack Configuration",
                     "path": "guides/app_builder_guides/configuration/webpack_configuration"
@@ -223,7 +203,7 @@ module.exports = {
               },
               {
                 "title": "Deployment",
-                "path": "guides/app_builder_guides/deployment",
+                "path": "guides/app_builder_guides/deployment/deployment",
                 "pages": [
                   {
                     "title": "CI/CD for App Builder Apps",
@@ -232,10 +212,6 @@ module.exports = {
                   {
                     "title": "Credential Rotation",
                     "path": "guides/app_builder_guides/deployment/credential_rotation"
-                  },
-                  {
-                    "title": "Deployment",
-                    "path": "guides/app_builder_guides/deployment/deployment"
                   },
                   {
                     "title": "Setting Response Headers",
@@ -253,12 +229,8 @@ module.exports = {
               },
               {
                 "title": "Events",
-                "path": "guides/app_builder_guides/events",
+                "path": "guides/app_builder_guides/events/custom_events ",
                 "pages": [
-                  {
-                    "title": "Custom Events",
-                    "path": "guides/app_builder_guides/events/custom_events"
-                  },
                   {
                     "title": "Webhooks",
                     "path": "guides/app_builder_guides/events/webhooks"
@@ -267,12 +239,8 @@ module.exports = {
               },
               {
                 "title": "Exc App",
-                "path": "guides/app_builder_guides/exc_app",
+                "path": "guides/app_builder_guides/exc_app/aec_integration",
                 "pages": [
-                  {
-                    "title": "AEC Integration",
-                    "path": "guides/app_builder_guides/exc_app/aec_integration"
-                  },
                   {
                     "title": "Interfaces",
                     "path": "guides/app_builder_guides/exc_app/interfaces",
@@ -352,10 +320,6 @@ module.exports = {
                     "path": "guides/app_builder_guides/exc_app/modules",
                     "pages": [
                       {
-                        "title": "Index",
-                        "path": "guides/app_builder_guides/exc_app/modules/index"
-                      },
-                      {
                         "title": "Page",
                         "path": "guides/app_builder_guides/exc_app/modules/page"
                       },
@@ -373,15 +337,11 @@ module.exports = {
               },
               {
                 "title": "Extensions",
-                "path": "guides/app_builder_guides/extensions",
+                "path": "guides/app_builder_guides/extensions/extensions",
                 "pages": [
                   {
                     "title": "Extension Migration Guide",
                     "path": "guides/app_builder_guides/extensions/extension_migration_guide"
-                  },
-                  {
-                    "title": "Extensions",
-                    "path": "guides/app_builder_guides/extensions/extensions"
                   }
                 ]
               },
@@ -393,10 +353,6 @@ module.exports = {
                 "title": "Security",
                 "path": "guides/app_builder_guides/security",
                 "pages": [
-                  {
-                    "title": "Index",
-                    "path": "guides/app_builder_guides/security/index"
-                  },
                   {
                     "title": "Understanding Authentication",
                     "path": "guides/app_builder_guides/security/understanding_authentication"
@@ -462,10 +418,6 @@ module.exports = {
                     "path": "guides/runtime_guides/reference_docs/feeds"
                   },
                   {
-                    "title": "Index",
-                    "path": "guides/runtime_guides/reference_docs/index"
-                  },
-                  {
                     "title": "Multiple Regions",
                     "path": "guides/runtime_guides/reference_docs/multiple_regions"
                   },
@@ -518,10 +470,6 @@ module.exports = {
                   {
                     "title": "CLI Install",
                     "path": "guides/runtime_guides/tools/cli_install"
-                  },
-                  {
-                    "title": "Index",
-                    "path": "guides/runtime_guides/tools/index"
                   },
                   {
                     "title": "WSKDeploy Install",
