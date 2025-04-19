@@ -19,15 +19,15 @@ module.exports = {
     pages: [
       {
         "title": "Overview",
-        "path": "intro_and_overview/app_builder_overview/"
+        "path": "intro_and_overview/"
       },
       {
         "title": "Getting Started",
-        "path": "get_started/app_builder_get_started/first_app/"
+        "path": "get_started/"
       },
       {
         "title": "Guides",
-        "path": "guides/guides_index/"
+        "path": "guides/"
       },
       {
         "title": "Resources",
@@ -37,11 +37,11 @@ module.exports = {
     subPages: [
       {
         "title": "Overview",
-        "path": "intro_and_overview/app_builder_overview/",
+        "path": "intro_and_overview/",
         "pages": [
           {
             "title": "App Builder Overview",
-            "path": "intro_and_overview/app_builder_overview/"
+            "path": "intro_and_overview/"
           },
           {
             "title": "What is App Builder",
@@ -63,15 +63,15 @@ module.exports = {
       },
       {
         "title": "Getting Started",
-        "path": "get_started/app_builder_get_started/first_app/",
+        "path": "get_started/",
         "pages": [
           {
             "title": "App Builder Getting Started",
-            "path": "get_started/app_builder_get_started/app_builder_and_runtime/",
+            "path": "get_started/app_builder_get_started/app_builder_intro/",
             "pages": [
               {
-                "title": "App Builder Introduction",
-                "path": "get_started/app_builder_get_started/app_builder_intro/"
+                "title": "Setting Up",
+                "path": "get_started/app_builder_get_started/set_up/"
               },
               {
                 "title": "Creating your First App",
@@ -82,10 +82,6 @@ module.exports = {
                 "path": "get_started/app_builder_get_started/publish_app/"
               },
               {
-                "title": "Setting Up",
-                "path": "get_started/app_builder_get_started/set_up/"
-              },
-              {
                 "title": "Troubleshooting",
                 "path": "get_started/app_builder_get_started/troubleshoot/"
               }
@@ -93,8 +89,12 @@ module.exports = {
           },
           {
             "title": "Runtime Getting Started",
-            "path": "get_started/runtime_getting_started/runtime_intro/",
+            "path": "get_started/runtime_getting_started/",
             "pages": [
+              {
+                "title": "Overview",
+                "path": "get_started/runtime_getting_started/"
+              },
               {
                 "title": "Activations",
                 "path": "get_started/runtime_getting_started/activations/"
@@ -129,7 +129,7 @@ module.exports = {
       },
       {
         "title": "Guides",
-        "path": "guides/guides_index/",
+        "path": "guides/",
         "pages": [
           {
             "title": "Application State",
@@ -470,10 +470,6 @@ module.exports = {
                   {
                     "title": "CLI Install",
                     "path": "guides/runtime_guides/tools/cli_install/"
-                  },
-                  {
-                    "title": "WSKDeploy Install",
-                    "path": "guides/runtime_guides/tools/wskdeploy_install/"
                   }
                 ]
               },
