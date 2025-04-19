@@ -115,7 +115,7 @@ The `runtimeManifest` field holds the back-end configuration deployed into Adobe
 Here is an example `runtimeManifest`:
 
 ```yaml
-runtimeManifest
+runtimeManifest:
    packages:
      myapp:
        license: Apache-2.0
@@ -243,7 +243,7 @@ The Experience Cloud Shell extension supports a `view` operation that points to 
 In this example, the `impl` field points to an `index.html` file stored in the `web/` folder of the extension:
 
 ```yaml
-extensions
+extensions:
   dx/excshell/1:
     operations:
       view:
