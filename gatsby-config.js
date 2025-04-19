@@ -63,7 +63,7 @@ module.exports = {
       },
       {
         "title": "Getting Started",
-        "path": "get_started",
+        "path": "get_started/app_builder_get_started/first_app",
         "pages": [
           {
             "title": "App Builder Getting Started",
@@ -137,7 +137,7 @@ module.exports = {
       },
       {
         "title": "Guides",
-        "path": "guides",
+        "path": "guides/guides_index",
         "pages": [
           {
             "title": "Application State",
