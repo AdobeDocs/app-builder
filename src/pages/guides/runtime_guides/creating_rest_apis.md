@@ -1,5 +1,7 @@
 # Creating REST APIs
 
+> Note: IO Runtime cleans up custom APIs that have not been accessed for 90 days.
+
 This tutorial shows how to create REST APIs from web actions deployed to Adobe I/O Runtime. It starts with the assumption that you've created and deployed four web actions to manage CRUD operations for the `pet` entity:
 
 | CRUD Operation | Action Name |

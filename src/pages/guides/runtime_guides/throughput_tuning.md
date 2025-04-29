@@ -18,7 +18,7 @@ aio rt:action:create actionName fileName.js -c 100
 
 ### Concurrency considerations
 
-1. Containers are kept warm after for 10 minutes after an invocation finishes. For those 10 minutes, it is highly unlikely (p<.01) that invoking the same action will require a cold start.
+1. Containers are kept warm after for 5 minutes after an invocation finishes. For those 5 minutes, it is highly unlikely (p<.01) that invoking the same action will require a cold start.
 2. Experiment with the value you set for concurrency limits. The default, `200`, is a good place to start, but a smaller or a larger value may be better depending on how much memory and other resources your action consumes.  
 3. Be sure your code is designed to work when executed in parallel. For example, avoid using global variables to store values that may differ between invocations.
 4. If an action works on a large data set that is not different from one invocation to another, a global variable can maximize the chances that the next execution can use it. But your code should handle the condition in which the variable is not initialized.
@@ -27,7 +27,7 @@ aio rt:action:create actionName fileName.js -c 100
 
 ### Using pre-warmed containers
 
-A second way avoid cold-starts and mimimize latency is to create actions that use the default Node version, and a memory settings of `256MB`, `512MB`, or `1024MB`. 
+A second way avoid cold-starts and minimize latency is to create actions that use the default Node version, and a memory settings of `256MB`, `512MB`, or `1024MB`. 
 
 The system has a pool of "pre-warmed" containers it will use for any incoming call that can't be sent to a running container - so long as the action matches the pre-warmed container's Node version and memory setting. If it does, time will still be spent for injecting your action code, but not for creating a container first. If it doesn't, your action will wait while the system creates a new container.
 
