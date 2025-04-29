@@ -64,7 +64,7 @@ Note the `$userNamespace` variable. Runtime requests require access to the same 
 
 #### Interpreting: the Controller
 
-The Controller is the core component of Runtime (OpenWhisk). It serves as the interface for everything a user can do. It is an imlementation of the actual REST API, written in the [Scala](https://www.scala-lang.org/) programming language, and built on the [Akka](https://akka.io/ "Akka runtime") runtime environment and the [Spray](https://spray.readthedocs.io/en/latest/introduction/what-is-spray.html) REST/HTTP toolkit.
+The Controller is the core component of I/O Runtime. It serves as the interface for everything a user can do. It is an implementation of the actual REST API, written in the [Scala](https://www.scala-lang.org/) programming language, and built on the [Akka](https://akka.io/ "Akka runtime") runtime environment and the [Spray](https://spray.readthedocs.io/en/latest/introduction/what-is-spray.html) REST/HTTP toolkit.
 
 The Controller receives HTTP requests from nginx and interprets them. The results may be a [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) requests or direct invocations of an action. In this example, the Controller reads an HTTP POST request to an existing action as an invocation of that action, and moves to the next step.
 
@@ -75,6 +75,38 @@ Now the Controller authenticates the user and determines authorization, by check
 #### Retrieving: CosmosDB
 
 CosmosDB stores user credentials and also the code for the actions themselves. So, after the Controller has determined user permissions by its first call to CosmosDB, it calls CosmosDB again, to a database called **whisks.** CosmosDB returns the code for the action, so the Controller can take the next step: queueing the action for processing.
+
+#### Kafka: Managing Event Queues
+
+Kafka is a critical component in the Adobe I/O Runtime architecture, responsible for managing event queues and ensuring reliable communication between system components. It acts as the backbone for asynchronous processing, enabling scalability and fault tolerance.
+
+1. **Event Queueing**: Kafka serves as the intermediary for queuing events between the Controller and the Invoker. When the Controller receives an action invocation request, it places the request in a Kafka topic for processing.
+
+2. **Decoupling Components**: By using Kafka, the architecture decouples the Controller from the Invoker, allowing them to scale independently. This ensures that high volumes of requests can be handled without bottlenecks.
+
+3. **Topic Management**: Each namespace or action may have its own Kafka topic, ensuring isolation and efficient processing. Kafka topics are configured to handle retries and ensure message delivery.
+
+4. **Fault Tolerance**: Kafka's distributed nature ensures that messages are not lost, even in the event of a system failure. This guarantees reliable execution of actions.
+
+5. **Monitoring and Metrics**: Kafka provides metrics for monitoring queue lengths, processing times, and throughput, helping developers optimize their applications and identify bottlenecks.
+
+By leveraging Kafka, Adobe I/O Runtime ensures robust, scalable, and efficient event-driven processing.
+
+#### Invoker: Executing the Action
+
+The Invoker is the component responsible for executing actions in Adobe I/O Runtime. Once the Controller queues an action for processing, the Invoker retrieves it and performs the following steps:
+
+1. **K8s Pod Management**: The Invoker manages K8s pods, which are used to isolate and execute actions. If a warm container is available, it reuses it to avoid cold starts. Otherwise, it creates a new container.
+
+2. **Code Injection**: The action code, retrieved earlier by the Controller, is injected into the container. This ensures that the container is ready to execute the specific action.
+
+3. **Execution**: The Invoker runs the action within the container, passing any input parameters received from the trigger or direct invocation.
+
+4. **Result Handling**: Once the action completes, the Invoker collects the result (output) and sends it back to the Controller. If an error occurs during execution, the Invoker captures the error details and returns them as part of the response.
+
+5. **Resource Cleanup**: After execution, the Invoker may keep the container warm for a short period (default: 5 minutes) to handle subsequent invocations efficiently. If no further invocations occur, the container is terminated to free up resources.
+
+The Invoker ensures that actions are executed securely, efficiently, and in isolation, leveraging the scalability of the serverless architecture.
 
 ## Next step
 
