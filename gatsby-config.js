@@ -36,7 +36,7 @@ module.exports = {
     ],
     subPages: [
       {
-        "title": "Overview",
+        "title": "Introduction",
         "path": "intro_and_overview/",
         "pages": [
           {
@@ -62,7 +62,7 @@ module.exports = {
         ]
       },
       {
-        "title": "Getting Started",
+        "title": "Quick Start",
         "path": "get_started/",
         "pages": [
           {
@@ -128,17 +128,9 @@ module.exports = {
         ]
       },
       {
-        "title": "Guides",
+        "title": "Develop",
         "path": "guides/",
         "pages": [
-          {
-            "title": "Application State",
-            "path": "guides/application_state/"
-          },
-          {
-            "title": "Contribution Guide",
-            "path": "guides/contribution_guide/"
-          },
           {
             "title": "References",
             "path": "guides/references/"
@@ -370,6 +362,10 @@ module.exports = {
             "path": "guides/runtime_guides/",
             "pages": [
               {
+                "title": "Contribution Guide",
+                "path": "guides/contribution_guide/"
+              },
+              {
                 "title": "Asynchronous Calls",
                 "path": "guides/runtime_guides/asynchronous_calls/"
               },
@@ -486,11 +482,15 @@ module.exports = {
                 "path": "guides/runtime_guides/using_runtime/"
               }
             ]
+          },
+          {
+            "title": "Contribution Guide",
+            "path": "guides/contribution_guide/"
           }
         ]
       },
       {
-        "title": "Resources",
+        "title": "Learning",
         "path": "resources/",
         "pages": [
           {
