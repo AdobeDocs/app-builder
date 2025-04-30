@@ -221,7 +221,7 @@ module.exports = {
               },
               {
                 "title": "Events",
-                "path": "guides/app_builder_guides/events/custom_events /",
+                "path": "guides/app_builder_guides/events/custom_events/",
                 "pages": [
                   {
                     "title": "Webhooks",

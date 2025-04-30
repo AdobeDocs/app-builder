@@ -1,8 +1,11 @@
-```yaml
+---
 keywords:
-  - [need to add keywords]
+  - App Builder
+  - Extensibility
+  - API Documentation
+  - Developer Tooling
 title: Business case
-```
+---
 
 # Business case for App Builder
 

@@ -1,8 +1,11 @@
-```yaml
+---
 keywords:
-  - Adobe I/O  - Extensibility  - API Documentation  - Developer Tooling
+  - Adobe I/O  
+  - Extensibility  
+  - API Documentation  
+  - Developer Tooling
 title: How it Works
-```
+---
 
 ## What is App Builder?
 
