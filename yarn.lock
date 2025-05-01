@@ -33,9 +33,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@adobe/gatsby-theme-aio@npm:4.16.0-rc9":
-  version: 4.16.0-rc9
-  resolution: "@adobe/gatsby-theme-aio@npm:4.16.0-rc9"
+"@adobe/gatsby-theme-aio@npm:4.16.0-rc17":
+  version: 4.16.0-rc17
+  resolution: "@adobe/gatsby-theme-aio@npm:4.16.0-rc17"
   dependencies:
     "@adobe/focus-ring-polyfill": "npm:^0.1.5"
     "@adobe/gatsby-source-github-file-contributors": "npm:^0.3.1"
@@ -81,6 +81,7 @@ __metadata:
     classnames: "npm:^2.3.2"
     core-js: "npm:^3.25.1"
     file-saver: "npm:^2.0.5"
+    gatsby-plugin-adobe-aep: "npm:^1.0.0"
     gatsby-plugin-algolia: "npm:^0.26.0"
     gatsby-plugin-emotion: "npm:^7.23.0"
     gatsby-plugin-layout: "npm:^3.23.0"
@@ -131,7 +132,7 @@ __metadata:
     gatsby: ^4.22.0
     react: ^17.0.2
     react-dom: ^17.0.2
-  checksum: 10/e201a59ec8e72a22263588106707c889d3d9e5f93e652f345337f364989f106c9a708f2df04d7152082bdb35f73579d33347c3a5f072722a5646e642c1c5b0a7
+  checksum: 10/44787c1bd56355800de09d78f13aaad335caaa38ca0b04c4a22531eb64a20fb4e0303c6794e2cf12ae03e840f78b8acd47544c66d6fe53496f51c64745de0569
   languageName: node
   linkType: hard
 
@@ -8412,7 +8413,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "adobe-developer-app-builder@workspace:."
   dependencies:
-    "@adobe/gatsby-theme-aio": "npm:4.16.0-rc9"
+    "@adobe/gatsby-theme-aio": "npm:4.16.0-rc17"
     "@adobe/react-spectrum": "npm:^3.35.1"
     gatsby: "npm:4.22.0"
     react: "npm:^17.0.2"
@@ -13488,6 +13489,13 @@ __metadata:
   peerDependencies:
     "@parcel/core": ^2.0.0
   checksum: 10/4751ce0e5e56e47becef2cfe6f1b1cc92c8cd51cc933a71d33d8cb01fdaccdee1d6a88e6ecdbdf8231988ca5694d93bbab30a2f7c882c00207fb971a6a12834a
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-adobe-aep@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "gatsby-plugin-adobe-aep@npm:1.0.0"
+  checksum: 10/db7be2a3c163d453815b133f95a30349f5938fe243f6f4c25c1042a6ee07845ea339a04cef73d94fe34f9e90e9965c3d6e14c90813b042a0e820cae2738e829e
   languageName: node
   linkType: hard
 
