@@ -18,16 +18,15 @@ Here you'll learn what systems you need to access, how to access them, and how t
 
 **Adobe Experience Cloud Identity Management Service (IMS) organization** membership, with a Developer or System Admin role, is needed to access App Builder.
 
-* If your organization has a license for App Builder, use the IMS organization selected by the person who purchased it
+* If your organization has a license for App Builder, use the IMS organization where App Builder is provisioned. Some companies have multiple IMS Organizations. Check with your company admin who manages Adobe software for details.
 
-* If you are using App Builder as a trial, use the IMS organization that you requested or was assigned to you when the trial was initiated
-- If you do not have access to an organization:
+- If you do not have access to your IMS organization:
   
-  - Customers should request access from their account manager
+  - Customers should request access from their account manager or their company IT/Marketing admin
   
   - Partners should request App Builder access from their partner manager, or Sandbox access though the [Adobe Solution Partner Portal](https://solutionpartners.adobe.com/home.html)
 
-**App Builder access** is available under a purchased license or as a trial. For example, the AEM Headless trial includes App Builder.
+**App Builder access** is only available with a purchased license. 
 
 **[Adobe Developer Console](https://developer.adobe.com/developer-console/)** gives you access to APIs, SDKs, and developer tools. It also provides a way to set up your credentials.
 
