@@ -3,7 +3,8 @@ const fs = require('node:fs');
 const { globSync }= require('glob');
 
 function getRedirectionsFilePath() {
-    return path.resolve(__dirname + '/src/pages/redirects.json');
+    const redirectionsFilePath = path.join(__dirname, 'src', 'pages', 'redirects.json');
+    return path.resolve(redirectionsFilePath);
 }
 
 function readRedirectionsFile() {

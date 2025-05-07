@@ -17,22 +17,30 @@ function normalizeLinksInMarkdownFile(file, files) {
     let data = fs.readFileSync(file, 'utf8');
     const links = matchAll(data, new RegExp(linkPattern, "gm"));
     [...links].forEach(link => {
-
-        // ensure link includes file name and extension
+        const optionalPrefix = link[2] ?? '';
         const from = link[3] ?? '';
         let to = from;
-        if(link[2]?.endsWith('/') && to === '') {
-            to = 'index.md';
-        }
-        if(to.endsWith('/')) {
+
+        // ensure link includes file name and extension
+        if(to.endsWith('/') || optionalPrefix.endsWith('/') && !to) {
             to = `${to}index.md`
         }
-        if(!to.endsWith('.md')) {
+        if(!to.endsWith('.md') && to) {
             to = `${to}.md`;
         }
 
+        to = to.replaceAll('/', path.sep);
+
+        // ensure simplest relative path
+        // this removes trailing slash, so need to do this after the file name and extension checks above
+        const absolute = path.resolve(relativeToDir, to);
+        const relative = path.relative(relativeToDir, absolute);
+        to = relative;
+
         // ensure the link we constructed above exists
         const toExists = relativeFiles.find(file => to === file);
+
+        to = to.replaceAll(path.sep, '/');
 
         if(to !== from && toExists) {
             linkMap.set(from, to);

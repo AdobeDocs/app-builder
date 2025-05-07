@@ -54,8 +54,12 @@ function getFileMap(files) {
 function getLinkMap(fileMap, relativeToDir) {
     const linkMap = new Map();    
     fileMap.forEach((toFile, fromFile) => {
-        const fromRelFile = path.relative(relativeToDir, fromFile);
-        const toRelFile = path.relative(relativeToDir, toFile);
+        let fromRelFile = path.relative(relativeToDir, fromFile);
+        fromRelFile = fromRelFile.replaceAll(path.sep, '/');
+
+        let toRelFile = path.relative(relativeToDir, toFile);
+        toRelFile = toRelFile.replaceAll(path.sep, '/');
+
         linkMap.set(fromRelFile, toRelFile);
     });
     return linkMap;
@@ -83,7 +87,7 @@ function renameLinksInRedirectsFile(fileMap) {
 }
 
 function renameLinksInGatsbyConfigFile(fileMap, file) {
-    const dir = 'src/pages';
+    const dir = path.join('src', 'pages');
     replaceLinksInFile({
         file,
         linkMap: getLinkMap(fileMap, dir),
