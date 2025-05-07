@@ -22,7 +22,7 @@ You'll see several options for your app to include, such as serverless actions, 
 
 ## Single-Page application
 
-This will generate a single-page application project using [React](https://reactjs.org/) and [Experience Cloud Shell](../../guides/app_builder_guides/exc_app/aec_integration.md) utilities to integrate the SPA within the Adobe Experience Cloud.
+This will generate a single-page application project using [React](https://reactjs.org/) and [Experience Cloud Shell](../../guides/app_builder_guides/exc_app/aec-integration.md) utilities to integrate the SPA within the Adobe Experience Cloud.
 The best ways to use Experience Shell (for example, routing) will be covered in another Code Lab.
 
 App Builder SPAs follow [JAMstack principles](https://jamstack.org/): "Fast and secure apps delivered by pre-rendering files and serving them directly from a Content Delivery Network." 

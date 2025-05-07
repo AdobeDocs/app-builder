@@ -98,7 +98,7 @@ This deployment is triggered when running `aio app deploy` at the root of the Cu
 
 ![Remote Runtime Actions and UI](../../../images/remote-actions-remote-ui.png)
 
-The UI is deployed to the Content Delivery Network on behalf of the Developer's Runtime credentials. It communicates with [Runtime](../../../intro_and_overview/what_is_app_builder.md#what-is-adobe-io-runtime) actions deployed to the developer's Runtime namespace.
+The UI is deployed to the Content Delivery Network on behalf of the Developer's Runtime credentials. It communicates with [Runtime](../../../intro_and_overview/what-is-app-builder.md#what-is-adobe-io-runtime) actions deployed to the developer's Runtime namespace.
 
 The [Token-Vending Machine](https://github.com/adobe/aio-tvm) supplied with App Builder is implicitely used by the CLI `aio app deploy` command, and validates the developer's Runtime credentials against Runtime.
 
@@ -108,6 +108,6 @@ The deployed Custom Application will then be available at `https://<namespace>.a
 
 ## Next steps
 
-Continue to [CI/CD for App Builder Applications](cicd_for_app_builder_apps.md).
+Continue to [CI/CD for App Builder Applications](cicd-for-app-builder-apps.md).
 
 Return to the [Guides Index](../../index.md).

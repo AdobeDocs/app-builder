@@ -33,7 +33,7 @@ This Code Lab provides an end-to-end solution that demonstrates how to use the J
 - **Event consumer**, the most important demonstration in this Code Lab. We will create another App Builder headless app to create cron jobs with alarms, and set up recurring jobs to pull from the Journaling API every x mins and write into App Builder storage.
 
 Event provider and event consumer both need to be deployed as App Builder apps under different namespaces to endsure end-to-end workflow.
-If you don't have them already, create two projects at Console following the steps detailed in [Creating your First App Builder Application](../../get_started/app_builder_get_started/first_app.md).
+If you don't have them already, create two projects at Console following the steps detailed in [Creating your First App Builder Application](../../get_started/app_builder_get_started/first-app.md).
 
 When they are successfully set up, you should be able to see your event consumer periodically pull events from the Journaling API and write them into storage.
 For your convenience, there is a complete solution of this Code Lab [here](https://github.com/AdobeDocs/adobeio-samples-journaling-events).

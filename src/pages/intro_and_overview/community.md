@@ -21,4 +21,4 @@ Adobe welcomes contributions from customer, partner, and independent Developers.
   * [SDK repository]( https://github.com/adobe/aio-sdk)
   * [App Builder](https://github.com/AdobeDocs/app-builder) and [I/O Runtime](https://github.com/AdobeDocs/adobe-io-runtime) documentation repositories
 
-Adobe and its contributors agree to a Code of Conduct, and to follow established protocols and best practices to maintain a respectful, productive working environment for all of us. Please review our [contribution guidelines](../guides/contribution_guide.md) for details.
+Adobe and its contributors agree to a Code of Conduct, and to follow established protocols and best practices to maintain a respectful, productive working environment for all of us. Please review our [contribution guidelines](../guides/contribution-guide.md) for details.

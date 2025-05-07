@@ -114,11 +114,11 @@ The [Adobe Experience Leage App Builder Community](https://experienceleaguecommu
 
 ### What limits does I/O Runtime impose on actions?
 
-Limits and their default values are listed under [System Settings](../guides/runtime_guides/system_settings.md); the most important are function timeouts and the maximum payloads that can be posted to functions.
+Limits and their default values are listed under [System Settings](../guides/runtime_guides/system-settings.md); the most important are function timeouts and the maximum payloads that can be posted to functions.
 
 ### Do ingress IP addresses for Adobe I/O Runtime ever change?
 
-Yes, IP addresses returned when looking up an Adobe I/O Runtime endpoint's DNS record can change at any time. To avoid issues connecting and routing to the platform, clients should not cache DNS-lookup responses for Adobe I/O Runtime endpoints beyond the TTL of the DNS record. For more information, see [Secure communication with back-end services](../guides/runtime_guides/security_general.md#secure-communication-with-back-end-services) in the [Security Guide](../guides/runtime_guides/security_general.md).
+Yes, IP addresses returned when looking up an Adobe I/O Runtime endpoint's DNS record can change at any time. To avoid issues connecting and routing to the platform, clients should not cache DNS-lookup responses for Adobe I/O Runtime endpoints beyond the TTL of the DNS record. For more information, see [Secure communication with back-end services](../guides/runtime_guides/security-general.md#secure-communication-with-back-end-services) in the [Security Guide](../guides/runtime_guides/security-general.md).
 
 ### What ports and outbound connections does I/O Runtime support?
 
@@ -132,4 +132,4 @@ If you need a port not on the list, please share the use case with us.
 
 I/O Runtime runs in multiple regions, deploys code in all of them, and executes it in the region closest to the caller (latency-based routing). Execution cannot be restricted to a specific region or regions.
 
-For more information about regions and where actions are executed, see [Multiple Regions](../guides/runtime_guides/reference_docs/multiple_regions.md).
+For more information about regions and where actions are executed, see [Multiple Regions](../guides/runtime_guides/reference_docs/multiple-regions.md).

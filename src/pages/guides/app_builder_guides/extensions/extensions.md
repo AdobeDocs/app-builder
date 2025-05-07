@@ -56,11 +56,11 @@ These instructions will show you how to set up extension point information in ne
 
 ### New projects
 
-The instructions in [Creating your First App Builder Application](../../../get_started/app_builder_get_started/first_app.md) show how to set up extension point information by default in App Builder projects. 
+The instructions in [Creating your First App Builder Application](../../../get_started/app_builder_get_started/first-app.md) show how to set up extension point information by default in App Builder projects. 
 
 ### Migrating projects and editing endpoints
 
-If you would like to migrate an App Builder application created before July 28, 2021 or edit an application's endpoints, please follow the [Extension Migration Guide](extension_migration_guide.md). 
+If you would like to migrate an App Builder application created before July 28, 2021 or edit an application's endpoints, please follow the [Extension Migration Guide](extension-migration-guide.md). 
 
 ## UI extensibility
 
@@ -72,6 +72,6 @@ A complete discussion and hands-on sample project may be found in the [Adobe Dev
 
 Explore [Adobe Developer documentation for UI Extensibility](https://developer.adobe.com/uix/docs/).
 
-Continue to the [Extension Migration Guide](extension_migration_guide.md).
+Continue to the [Extension Migration Guide](extension-migration-guide.md).
 
 Return to the [Guides Index](../../index.md).

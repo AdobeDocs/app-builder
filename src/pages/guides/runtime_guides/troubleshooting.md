@@ -9,7 +9,7 @@ The most common reasons for exceeding local storage for an action are:
 - Writing too many verbose logs
 - Storing large files on local storage without cleaning them up
 
-Please refer to the local storage limit configured for an action, found in [System Settings](./system_settings.md) section.
+Please refer to the local storage limit configured for an action, found in [System Settings](./system-settings.md) section.
 Exceeding this limit will result in the action being terminated or not completing successfully.
 
 ### Mitigation Strategies
@@ -20,6 +20,6 @@ Exceeding this limit will result in the action being terminated or not completin
 
 ## Next step
 
-Review [System Settings](system_settings.md) and defaults.
+Review [System Settings](system-settings.md) and defaults.
 
 Return to [Guides Index](../index.md).

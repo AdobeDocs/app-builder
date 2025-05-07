@@ -31,7 +31,7 @@ ___
 
 ### page
 
-• **page**: *[PageApi](page.pageapi.md)*
+• **page**: *[PageApi](page-pageapi.md)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 ### topbar
 
-• **topbar**: *[TopbarApi](topbar.topbarapi.md)*
+• **topbar**: *[TopbarApi](topbar-topbarapi.md)*
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Type declaration:
 
-▸ (): *[UserApi](user.userapi.md)*
+▸ (): *[UserApi](user-userapi.md)*
 
 ## Next steps
 
@@ -65,13 +65,13 @@ Explore the attributes and behavior of Adobe Experience Cloud Interfaces:
 
 | Page                                        | Topbar                                                     | User                     |
 | ------------------------------------------- | ---------------------------------------------------------- | ------------------------ |
-| [Object with Href](page.objectwithhref.md)  | [Callback](topbar.callback.md)                             | [API](user.userapi.md)   |
-| [Object with Path](page.objectwithpath.md)  | [Custom Feedback](topbar.customfeedbackconfig.md)          | [Info](user.userinfo.md) |
-| [API](page.pageapi.md)                      | [Custom Search](topbar.customsearchconfig.md)              |                          |
-| [API Properties](page.pageapiproperties.md) | [Help Center Feedback](topbar.helpcenterfeedbackconfig.md) |                          |
-|                                             | [External Feedback](topbar.externalfeedbackconfig.md)      |                          |
-|                                             | [Solution](topbar.solution.md)                             |                          |
-|                                             | [API](topbar.topbarapi.md)                                 |                          |
-|                                             | [API Properties](topbar.topbarapiproperties.md)            | `                        |
+| [Object with Href](page-objectwithhref.md)  | [Callback](topbar-callback.md)                             | [API](user-userapi.md)   |
+| [Object with Path](page-objectwithpath.md)  | [Custom Feedback](topbar-customfeedbackconfig.md)          | [Info](user-userinfo.md) |
+| [API](page-pageapi.md)                      | [Custom Search](topbar-customsearchconfig.md)              |                          |
+| [API Properties](page-pageapiproperties.md) | [Help Center Feedback](topbar-helpcenterfeedbackconfig.md) |                          |
+|                                             | [External Feedback](topbar-externalfeedbackconfig.md)      |                          |
+|                                             | [Solution](topbar-solution.md)                             |                          |
+|                                             | [API](topbar-topbarapi.md)                                 |                          |
+|                                             | [API Properties](topbar-topbarapiproperties.md)            | `                        |
 
 Return to the [Guides Index](../../../index.md).

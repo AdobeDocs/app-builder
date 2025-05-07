@@ -33,7 +33,7 @@ When you test this functionality for web action using Postman or a web browser w
 
 ## Returning large response payloads
 
-An Adobe I/O Runtime action can return a [response payload of 1MB](../runtime_guides/system_settings.md) - enough for most use cases. If your action will return a larger payload, we provide a scalable solution with [App Builder Files SDK](https://github.com/adobe/aio-lib-files). It allows you to [persist a binary file to the blob storage](https://github.com/adobe/aio-lib-files/blob/master/doc/api.md#Files+write), obtain [a temporary downloadable URL](https://github.com/adobe/aio-lib-files/blob/master/doc/api.md#Files+generatePresignURL) and return an [HTTP Redirect response](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302) to the file with this URL. Here is a demonstration:
+An Adobe I/O Runtime action can return a [response payload of 1MB](../runtime_guides/system-settings.md) - enough for most use cases. If your action will return a larger payload, we provide a scalable solution with [App Builder Files SDK](https://github.com/adobe/aio-lib-files). It allows you to [persist a binary file to the blob storage](https://github.com/adobe/aio-lib-files/blob/master/doc/api.md#Files+write), obtain [a temporary downloadable URL](https://github.com/adobe/aio-lib-files/blob/master/doc/api.md#Files+generatePresignURL) and return an [HTTP Redirect response](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302) to the file with this URL. Here is a demonstration:
 
 ```javascript
 const fileLocation = '/private-dir/large-image.png'

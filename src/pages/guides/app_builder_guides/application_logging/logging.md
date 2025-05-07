@@ -47,7 +47,7 @@ The AIO CLI [App plugin](https://github.com/adobe/aio-cli-plugin-app) provides t
 
 To see more command options, run `aio app logs --help` on your terminal.
 
-The `aio app logs` command can be used by developers or by scripts running in a [CI/CD pipeline](../deployment/cicd_for_app_builder_apps.md). The command can also be used for App Builder Applications deployed on Runtime, or running locally through the `aio app run --local` command as discussed in the [Deployment Guide](../deployment/deployment.md).
+The `aio app logs` command can be used by developers or by scripts running in a [CI/CD pipeline](../deployment/cicd-for-app-builder-apps.md). The command can also be used for App Builder Applications deployed on Runtime, or running locally through the `aio app run --local` command as discussed in the [Deployment Guide](../deployment/deployment.md).
 
 ### Runtime plugin
 
@@ -64,10 +64,10 @@ In addition to viewing application logs using the AIO CLI, Developers can config
 Supported log management solutions include:
 
 - Adobe I/O Runtime (default)
-- [Splunk Cloud](splunk_cloud.md)
-- [Splunk Enterprise](splunk_enterprise.md)
-- [Azure Log Analytics](azure_log_analytics.md)
-- [New Relic](new_relic.md)
+- [Splunk Cloud](splunk-cloud.md)
+- [Splunk Enterprise](splunk-enterprise.md)
+- [Azure Log Analytics](azure-log-analytics.md)
+- [New Relic](new-relic.md)
 
 Follow these links to see how to set up log forwarding using each solution.
 
@@ -102,10 +102,10 @@ Running `aio app deploy --no-actions` or `aio app deploy --no-log-forwarding-upd
 
 Please visit the Guide for your log management solution of interest to see how to set up log forwarding.
 
-- [Splunk Cloud](splunk_cloud.md)
-- [Splunk Enterprise](splunk_enterprise.md)
-- [Azure Log Analytics](azure_log_analytics.md)
-- [New Relic](new_relic.md)
+- [Splunk Cloud](splunk-cloud.md)
+- [Splunk Enterprise](splunk-enterprise.md)
+- [Azure Log Analytics](azure-log-analytics.md)
+- [New Relic](new-relic.md)
 
 #### Viewing the current log forwarding configuration
 

@@ -13,8 +13,8 @@ Welcome to the App Builder Guides section. Here you'll find comprehensive docume
 
 ## Architecture and Development
 
-* [Architecture Overview](architecture_overview/architecture_overview.md)
-* [Application State](application_state.md)
+* [Architecture Overview](architecture_overview/architecture-overview.md)
+* [Application State](application-state.md)
 * [Development](development.md)
 * [Distribution](distribution.md)
 * [Optimization](optimization.md)
@@ -25,13 +25,13 @@ Welcome to the App Builder Guides section. Here you'll find comprehensive docume
 * [Configuration](configuration/configuration.md)
 * [Deployment](deployment/deployment.md)
 * [Application Logging](application_logging/logging.md)
-* [Events](events/custom_events.md)
+* [Events](events/custom-events.md)
 * [Extensions](extensions/extensions.md)
 * [Security](security/index.md)
 
 ## Integration
 
-* [Adobe Experience Cloud Integration](exc_app/aec_integration.md)
+* [Adobe Experience Cloud Integration](exc_app/aec-integration.md)
 
 ## Next step
 

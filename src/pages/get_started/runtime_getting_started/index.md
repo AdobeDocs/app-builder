@@ -6,7 +6,7 @@ Runtime delivers a flexible, on-demand computing resource: function-as-a-service
 
 ## Next steps
 
-For an overview of I/O Runtime terminology and its computing model, see [Entities and Core Concepts](entities.md) and [How Adobe I/O Runtime Works](how_runtime_works.md).
+For an overview of I/O Runtime terminology and its computing model, see [Entities and Core Concepts](entities.md) and [How Adobe I/O Runtime Works](how-runtime-works.md).
 
 For a step-by-step tutorial for building applications on I/O Runtime, follow this tutorial:
 
@@ -14,4 +14,4 @@ For a step-by-step tutorial for building applications on I/O Runtime, follow thi
 - [Deploy and invoke your first action](deploy.md)
 - [Retrieve action invocation results](activations.md)
 
-For detailed description of the Runtime programming model, components, and processes, with recommendations about working with Runtime and optimizing performance, see [Understanding Adobe I/O Runtime ](understanding_runtime.md).
+For detailed description of the Runtime programming model, components, and processes, with recommendations about working with Runtime and optimizing performance, see [Understanding Adobe I/O Runtime ](understanding-runtime.md).

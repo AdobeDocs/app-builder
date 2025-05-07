@@ -12,7 +12,7 @@ title: 'Lesson 1: Bootstrap a Headless App'
 # Lesson 1: Bootstrap a Headless App
 
 First, you need a new headless app created with AIO CLI. This app needs only a simple action to test the cron job, so all other components have been deselected.
-Follow this, from [Creating your First App Builder Application](../../get_started/app_builder_get_started/first_app.md)
+Follow this, from [Creating your First App Builder Application](../../get_started/app_builder_get_started/first-app.md)
 
 ![app-init](assets/app-init.png)
 

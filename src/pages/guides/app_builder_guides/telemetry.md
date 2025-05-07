@@ -71,6 +71,6 @@ Telemetry itself is implemented as a CLI plugin.  It is developed in the open an
 
 ## Next steps
 
-Review Adobe policies and guidelines for [contributions](../contribution_guide.md).
+Review Adobe policies and guidelines for [contributions](../contribution-guide.md).
 
 Return to the [Guides Index](../index.md).

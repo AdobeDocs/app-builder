@@ -15,4 +15,4 @@ import Requirements from '../transclusions/_requirements.md'
 
 ## Code Lab Environment
 
-The optional [Visual Studio Code](../../get_started/app_builder_get_started/set_up.md#optional-tool) IDE is required for this lab. Please make sure it is installed.
+The optional [Visual Studio Code](../../get_started/app_builder_get_started/set-up.md#optional-tool) IDE is required for this lab. Please make sure it is installed.
