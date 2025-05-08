@@ -103,7 +103,7 @@ You can use the step-through debugging features of VS Code, inspect variables, a
 
 ### Secure actions 
 
-The `aio app dev` command simluates Adobe authentication (i.e. `require-adobe-auth` annotation). If your actions are secured with `require-adobe-auth: true`, you will have to include both `Authorization` and `x-gw-ims-org-id` headers in your requests. Any value will work.
+The `aio app dev` command simulates Adobe authentication (i.e. `require-adobe-auth` annotation). If your actions are secured with `require-adobe-auth: true`, you will have to include both `Authorization` and `x-gw-ims-org-id` headers in your requests. Any value will work.
 
 ## More information
 
