@@ -1,18 +1,18 @@
 {
   "private": true,
-  "name": "dev-site-documentation-template",
+  "name": "adobe-developer-app-builder",
   "version": "1.0.0",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AdobeDocs/dev-site-documentation-template"
+    "url": "https://github.com/AdobeDocs/app-builder"
   },
   "author": {
     "name": "Stephan Ringel",
     "url": "https://github.com/icaraps"
   },
   "dependencies": {
-    "@adobe/gatsby-theme-aio": "^4.14.6",
+    "@adobe/gatsby-theme-aio": "4.16.0-rc9",
     "gatsby": "4.22.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
@@ -26,6 +26,7 @@
     "start:prefix": "gatsby build --prefix-paths && gatsby serve --prefix-paths",
     "dev": "gatsby develop",
     "dev:https": "gatsby develop --https --host localhost.corp.adobe.com --port 9000",
+    "build:incremental": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -41,7 +42,7 @@
       "remark-validate-links"
     ]
   },
-  "packageManager": "yarn@3.2.1",
+  "packageManager": "yarn@4.9.1",
   "devDependencies": {
     "glob": "11.0.0",
     "remark-cli": "^11.0.0",
