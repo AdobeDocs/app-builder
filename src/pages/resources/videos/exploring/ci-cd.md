@@ -14,4 +14,4 @@ Manik Jindal, App Builder Product Manager, dives into CI/CD. Learn how to set up
 
 <Embed slots="video"/>
 
-<https://youtu.be/lbB2jl2rQZM>
+https://youtu.be/lbB2jl2rQZM

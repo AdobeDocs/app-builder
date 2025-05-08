@@ -11,4 +11,4 @@ keywords:
 
 <Embed slots="video"/>
 
-<https://youtu.be/PtRxpO_2AvE>
+https://youtu.be/PtRxpO_2AvE

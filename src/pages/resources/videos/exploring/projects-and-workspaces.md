@@ -14,4 +14,4 @@ The App Builder team shares a short presentation about projects and workspaces, 
 
 <Embed slots="video"/>
 
-<https://youtu.be/bXftsgCnwks>
+https://youtu.be/bXftsgCnwks

@@ -14,4 +14,4 @@ In this video, we will cover how to set up your project in the Adobe Developer C
 
 <Embed slots="video"/>
 
-<https://youtu.be/AwL0QRxH9JQ>
+https://youtu.be/AwL0QRxH9JQ

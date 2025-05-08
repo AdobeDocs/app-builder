@@ -30,7 +30,7 @@ You can use this Activation ID in the aio cli to trace the error that occurred i
 
 `aio rt activation logs`
 
-<failed_activation_id>
+[failed_activation_id]
 
 You may now get activation IDs for two types of failed activations:
 

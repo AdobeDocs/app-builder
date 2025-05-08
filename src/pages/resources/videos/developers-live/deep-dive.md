@@ -14,4 +14,4 @@ Join us and see App Builder in action: code, security, headful and headless apps
 
 <Embed slots="video"/>
 
-<https://youtu.be/Iq-ObRXikDQ>
+https://youtu.be/Iq-ObRXikDQ
