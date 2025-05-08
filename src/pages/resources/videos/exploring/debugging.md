@@ -14,4 +14,4 @@ In this session in-depth study of debugging, Shazron Abdullah and Duy Nguyen tak
 
 <Embed slots="video"/>
 
-<https://youtu.be/RgHNJWTCSqw>
+https://youtu.be/RgHNJWTCSqw

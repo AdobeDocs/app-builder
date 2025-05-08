@@ -14,4 +14,4 @@ Learn how to use App Builder to build custom Asset Compute worker for asset proc
 
 <Embed slots="video"/>
 
-<https://youtu.be/6wdbd050UMM>
+https://youtu.be/6wdbd050UMM

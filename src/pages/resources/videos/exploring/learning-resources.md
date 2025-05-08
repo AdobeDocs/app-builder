@@ -14,4 +14,4 @@ We focus on learning resources, from Code Labs to documentation to videos like t
 
 <Embed slots="video"/>
 
-<https://youtu.be/MLvwAsoXpFg>
+https://youtu.be/MLvwAsoXpFg

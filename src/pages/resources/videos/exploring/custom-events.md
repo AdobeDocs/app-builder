@@ -14,4 +14,4 @@ Join us as we dive deep into the topic of Adobe I/O Events, including our new Ap
 
 <Embed slots="video"/>
 
-<https://youtu.be/RWOEZ9RaqRI>
+https://youtu.be/RWOEZ9RaqRI

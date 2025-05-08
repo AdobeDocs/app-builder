@@ -14,4 +14,4 @@ Join us for a very special Adobe Summit edition of Office Hours. Ron, Alex and D
 
 <Embed slots="video"/>
 
-<https://youtu.be/8TayjL1bONc>
+https://youtu.be/8TayjL1bONc

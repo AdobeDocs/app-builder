@@ -14,4 +14,4 @@ We are joined by Rob Snow from the React Spectrum team discuss React Spectrum, h
 
 <Embed slots="video"/>
 
-<https://youtu.be/W5Cqb0QYLSs>
+https://youtu.be/W5Cqb0QYLSs

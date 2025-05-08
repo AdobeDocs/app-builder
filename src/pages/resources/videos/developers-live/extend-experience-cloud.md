@@ -14,4 +14,4 @@ If you want to extend Adobe solutions using a modern architecture that works for
 
 <Embed slots="video"/>
 
-<https://youtu.be/FGMhy38OKMg>
+https://youtu.be/FGMhy38OKMg
