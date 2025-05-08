@@ -27,7 +27,7 @@ Optional. When specified, this URL will be invoked when the user logs out. This 
 
 ### emit
 
-▸ **emit**<**K**>(`type`: K, `event?`: UserInfoEvent[K]): *void*
+▸ **emit** \<**K**\>(`type`: K, `event?`: UserInfoEvent[K]): *void*
 
 *Inherited from void*
 
@@ -50,7 +50,7 @@ ___
 
 ### off
 
-▸ **off**<**K**>(`type`: K, `handler`: function): *void*
+▸ **off**\<**K**\>(`type`: K, `handler`: function): *void*
 
 *Inherited from void*
 
@@ -84,7 +84,7 @@ ___
 
 ### on
 
-▸ **on**<**K**>(`type`: K, `handler`: function): *void*
+▸ **on**\<**K**\>(`type`: K, `handler`: function): *void*
 
 *Inherited from void*
 
@@ -130,7 +130,7 @@ ___
 
 ### get
 
-▸ **get**<**T**>(`type`: T): *Promise‹UserInfo[T]›*
+▸ **get**\<**T**\>(`type`: T): *Promise‹UserInfo[T]›*
 
 Gets the specified type of information about an user.
 
