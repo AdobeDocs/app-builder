@@ -47,7 +47,7 @@ A full security overview.
 
 ### User journey
 
-[Watch (4mins)](overview/e2e-user-journey.md) 
+[Watch (4mins)](overview/e2-e-user-journey.md) 
 
 Presents the end-to-end user journey.
 
