@@ -39,7 +39,7 @@ hello-world:
 
 ### Considerations about security
 
-For authentication with Adobe APIs, you should leverage [App Builder Security Guideline](security/index.md) using our supported SDKs.
+For authentication with Adobe APIs, you should leverage [App Builder Security Guideline](./security/index.md) using our supported SDKs.
 
 For other 3rd party systems and APIs when provisioning actions with the secrets/passwords is a must, you can then use the default params as demonstrated above. In order to support this use case, all default params are automatically encrypted. They are decrypted just before the action code is executed. Thus, the only time you have access to the decrypted value is while executing the action code.
 
@@ -50,6 +50,7 @@ As part of App Builder, you will have out-of-the-box access to *Files* and *Stat
 No pre-configuration is required, just install the libraries and use them in your project. We will be transparently using your App Builder credentials to authorize and entitle your requests.
 
 *When should I use Files vs State?*
+
 
 - Files is good for transferring large payloads (bandwidth oriented) and State is good for fast access (latency oriented).
 - Files supports sharing data via presigned-url, State supports setting expirations.
@@ -64,7 +65,7 @@ Please refer to the [feature matrix](#feature-matrix) for a detailed comparison.
 ***How is my data stored?***
 
 - State is a multi-tenant storage. Your data is isolated in a "State container" which maps to your I/O Runtime namespace and application Workspace. This means that each application Workspace has its own isolated data.
-- You have the option to store data in either the `amer`, `emea` or `apac` region. These regions operate independently, so treat them as separate instances. You may prefer one region over the other to optimize latency, as it may be closer to your users, or for compliance reasons such as GDPR. 
+- You have the option to store data in either the `amer`, `emea` or `apac` region. These regions operate independently, so treat them as separate instances. You may prefer one region over the other to optimize latency, as it may be closer to your users, or for compliance reasons such as GDPR.
 - Your data is not eternal. There is a configurable time-to-live (TTL) for each key-value pair, the default is 1 day and the maximum is 1 year (365 days).
 
 Region Acronyms are abbreviations for one or more continents that are part of a business region.
@@ -141,33 +142,43 @@ The default region is `amer`, to access another region, you can use the `--regio
 
 Navigate the CLI usage documentation from the repo's [README](https://github.com/adobe/aio-cli-plugin-app-storage?tab=readme-ov-file#usage) or by using the `--help` flag on the desired command.
 
-### Constraints
+### Usage limits
 
-- State is only available to Runtime namespaces created via the Developer Console, which follow the App Builder format: `orgId-project(-workspace)?`. Legacy namespaces are not supported.
-- Max state value size: `1MB`.
-- Max state key size: `1024 bytes`.
-- Max-supported TTL is `365 days`.
-- Values format: any `string|binary`.
-- Keys format: `string` only `alphanumeric` with `-`,`_`,`.`.
+Usage limits are enforced at the **workspace** level within a **single** region.
 
-### Usage quotas and limits
+**Load**
 
-The following quotas and limits apply while dealing with Application State associated with your App Builder application.
+- bandwidth
+  - 10MB/min with up to 1MB/sec peaks for production Workspaces.
+  - 2MB/min with up to 1MB/sec peaks for non-production Workspaces.
 
-Quotas are shared across the organisation. Workspace limits are defined at the *workspace* level. The State service may return 429 (rate-limits) or
-403 (storage limits) errors if limits are exceeded.
+- requests
+  - 1000 req/min for `list`, `deleteAll`, `stats` operations on production Workspaces.
+  - 200 req/min for `list`, `deleteAll`, `stats` operations on non-production Workspaces.
 
-| Limit | Limit Type | Default Limit | Can it be Increased? | Notes |
-|-------|-----------|--------------|----------------------|-------|
-| How much data can you store in State? | Quota (increases with number of packs) | Up to 10 GB per App Builder pack | Yes, by purchasing more packs of App Builder | Storage is calculated as: `(2 * total size of keys) + (total size of values)`. |
-| How much State bandwidth can you utilize? | Quota (increases with number of packs) | 1 TB per month per App Builder pack | Yes, by purchasing more packs of App Builder | Bandwidth is calculated as: total bytes uploaded + total bytes downloaded. |
-| How much data can you store in State in a single App Builder workspace? | Workspace limit (fixed per workspace) | 1 GB for production workspaces <br/> 200 MB for other workspaces | Yes, by raising a support ticket. You can request an increase up to 10 GB. <br/> *Note: Increasing the limit beyond 10 GB in a single workspace can be supported depending on your case. Raise a support ticket to find out more.* | Storage is calculated as: `(2 * total size of keys) + (total size of values)`. |
-| How much State burst bandwidth can you consume in a single App Builder workspace? | Workspace limit (fixed per workspace) | 1 MB/s (bursts) <br/> <br/> 10 MB/min for production workspaces <br/> 2 MB/min for other workspaces | Yes, by raising a support ticket. You can request an increase up to 3 MB/s and 30 MB/min per App Builder packs purchased. | Bandwidth is calculated as: `total bytes uploaded + total bytes downloaded`. |
-| How fast can you increase your bandwidth consumption in a single App Builder workspace? | Workspace limit (fixed per workspace) | 100 KB/s per minute | No | - |
-| How many keys can you store in State in a single App Builder workspace? | Workspace limit (fixed per workspace) | 200K | Yes, by raising a support ticket. You can request an increase up to 500K keys. | This limit does not scale with the number of App Builder packs purchased. |
-| How many list operations can you run per minute in a single App Builder workspace? | Workspace limit (fixed per workspace) | 1K/min | Yes, by raising a support ticket. You can request an increase up to 10K/min. | This limit does not scale with the number of App Builder packs purchased. |
+In case of exceeding the usage limits, the State service will return with 429s. However, a retry mechanism in the State library will mitigate the propagation of the error on short time windows.
 
-### List considerations
+**Storage**
+
+- 100K key-values pairs
+- 1GB storage usage: `2 * key_sizes + value_sizes`
+
+In case of exceeding the storage limits the service will return with an error and you will have to delete keys or wait for expiration to resume writing.
+
+### Quotas
+
+Every organization with App Builder access is entitled to at least 1 State quota.
+
+At the organization level, 1 quota provides:
+
+- 200GB/month bandwidth usage (~5MB/min): bandwidth usage = bytes uploaded + bytes downloaded
+- 1GB storage: storage usage = 2 * key_sizes + value_sizes
+
+The quota is shared for all State containers in the organization, across all regions and is tracked for billing purposes.
+
+*Example: org 123 is entitled to 3 quotas, the total bandwidth usage of the organization should not exceed 600GB/month and the storage across regions should not exceed 3GB.*
+
+### List guarantees
 
 Using `state.list`, you can scan through the keys stored in your State container. `list` is a cursor-based iterator, which requires multiple calls to the State service to traverse all your keys.
 
@@ -177,20 +188,21 @@ It is important to understand that `list` is scanning through your keys:
 - every call to `list` will iterate over up to 1000 keys. The former `countHint` option is now ignored.
 - As an example, trying to match 1 key in a 10k key-values data-set will still require 10 calls to `list` to fetch it.
 
-The `list` command is not strongly consistent, and the following points need to be taken into account:
+`list` provides the following guarantees:
 
-- We are sending `list` requests to a replica, there is a ~5ms lag, after which a
-  full iteration returns keys that were present in the container and doesn't
-  return keys that were deleted prior to an iteration.
-- Keys that were not constantly present in the collection during a full
-  iteration, may be returned or not: it is undefined.
+- A full iteration always returns all keys that were present in the container during the start to the end of a full iteration.
+- A full iteration never returns any key that was deleted prior to an iteration.
+
+However, list also has the following drawbacks:
+
+- Keys that were not constantly present in the collection during a full iteration, may be returned or not: it is undefined.
 - A given key may be returned multiple times across iterations (but not within a
   same iteration). You can mitigate this by either performing operations that are
   safe when applied multiple times (recommended with many keys) or by collecting all keys in an
   array first and then remove any duplicates.
 - In some rare cases, `list` may return expired keys.
 
-Please note, that `list` is subject to rate-limiting, so listing many keys may result in 429s.
+Please note, that `list` is subject to the bandwidth rate-limiting quotas, so listing many keys may result in 429s.
 
 ### `match` option
 
@@ -221,22 +233,22 @@ To learn more please visit the [Adobe I/O File Storage library](https://github.c
 
 ## Feature Matrix
 
-|       | Files     | State    | State Legacy                   |
-| ----------- | ----------- |----------- |--------------------------------|
-| read <br/> write <br/> delete | Y | Y | Y                              |
-| list | Y | Y | N |               
-| streams | Y | N | N |                              
-| copy | Y | N | N |                             
-| deleteAll | N | Y | N |                              
-| sharing | Y (pre-sign URLs) | N | N   |                           
-| Time-To-Live | N | Y | Y               |               
-| max TTL | infinite | 365 days | infinite    |                   
-| max file/value size | 200GB | 1MB | 2MB                            |
-| max key size | 1KB | 1KB | 1KB                            |
-| key charset | open | `alphanumeric` with `_-.` | any but `/\?#`                 |
-| max load | N/A | 10MB/min, 1MB/s <br/> 1k/min `list` requests | 900 RU/min (~KB/min)           |
-| max key values | N/A | 200K (scalable) | N/A                            |
-| max storage | 1TB | 10GB | 10GB                           |
-| max monthly load | N/A | 1TB (scalable) | N/A                            |
-| regions | East US <br/> West US read-only | Amer (US) <br/>Emea (EU)<br/> Apac (JPN) | East US <br/> Europe read-only  |
-| consistency | strong | strong (CRUD), eventual for `list` | eventual             |          
+|                     | Files                      | State                                   | State Legacy              |
+| ------------------- | -------------------------- |-----------------------------------------| ------------------------- |
+| read  write  delete | Y                          | Y                                       | Y                         |
+| list                | Y                          | Y                                       | N                         |
+| streams             | Y                          | N                                       | N                         |
+| copy                | Y                          | N                                       | N                         |
+| deleteAll           | N                          | Y                                       | N                         |
+| sharing             | Y (pre-sign URLs)          | N                                       | N                         |
+| Time-To-Live        | N                          | Y                                       | Y                         |
+| max TTL             | infinite                   | 365 days                                | infinite                  |
+| max file/value size | 200GB                      | 1MB                                     | 2MB                       |
+| max key size        | 1KB                        | 1KB                                     | 1KB                       |
+| key charset         | open                       | `alphanumeric` with `_-.`               | any but `/\?#`            |
+| max load            | N/A                        | 10MB/min, 1MB/s  1k/min `list` requests | 900 RU/min (~KB/min)      |
+| max key values      | N/A                        | 100K (scalable)                         | N/A                       |
+| max storage         | 1TB                        | 1GB (scalable)                          | 10GB                      |
+| max monthly load    | N/A                        | 200GB (scalable)                        | N/A                       |
+| regions             | East US  West US read-only | Amer (US) Emea (EU) Apac (JPN)          | East US  Europe read-only |
+| consistency         | strong                     | strong (CRUD), eventual for `list`       | eventual                  |
