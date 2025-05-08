@@ -9,6 +9,6 @@ keywords:
 
 # Following the End-to-End User Journey
 
-<Media slots="video"/>
+<Embed slots="video"/>
 
 <https://youtu.be/N_0MxSIoKDM>
