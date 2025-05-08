@@ -5,7 +5,7 @@ Welcome to the Getting Started section of App Builder documentation. Here you'll
 ## Choose Your Path
 
 ### App Builder Getting Started
-If you're new to App Builder, start with our [App Builder Getting Started guide](app_builder_get_started/app_builder_intro/). This guide will walk you through:
+If you're new to App Builder, start with our [App Builder Getting Started guide](app_builder_get_started/app_builder_intro.md). This guide will walk you through:
 - Setting up your development environment
 - Creating your first App Builder application
 - Publishing your app
