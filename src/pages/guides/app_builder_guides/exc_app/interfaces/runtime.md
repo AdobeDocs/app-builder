@@ -4,10 +4,10 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: 'Interface: Runtime /<**T**/>'
+title: 'Interface: Runtime \<**T**\>'
 ---
 
-# Interface: Runtime /<**T**/>
+# Interface: Runtime \<**T**\>
 
 Defines the runtime object providing all unified-shell APIs for solution authors.
 
@@ -25,7 +25,7 @@ Defines the runtime object providing all unified-shell APIs for solution authors
 
 ### emit
 
-▸ **emit** /<**K**/>(`type`: K, `event?`: T[K]): *void*
+▸ **emit** \<**K**\>(`type`: K, `event?`: T[K]): *void*
 
 *Inherited from void*
 
@@ -48,7 +48,7 @@ ___
 
 ### off
 
-▸ **off**/<**K**/>(`type`: K, `handler`: function): *void*
+▸ **off**\<**K**\>(`type`: K, `handler`: function): *void*
 
 *Inherited from void*
 
@@ -82,7 +82,7 @@ ___
 
 ### on
 
-▸ **on**/<**K**/>(`type`: K, `handler`: function): *void*
+▸ **on**\<**K**\>(`type`: K, `handler`: function): *void*
 
 *Inherited from void*
 
