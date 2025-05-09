@@ -76,8 +76,6 @@ Handler function to remove.
 
 **Returns:** *void*
 
-___
-
 ### on
 
 ▸ **on**\<**K**\>(`type`: K, `handler`: function): *void*
