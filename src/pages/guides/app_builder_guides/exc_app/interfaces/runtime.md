@@ -4,7 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: 'Interface: Runtime'
+title: 'Interface: Runtime \<**T**\>'
 ---
 
 # Interface: Runtime \<**T**\>
@@ -43,8 +43,6 @@ Invoke all handlers for the given type.
 | `event?` | T[K] | Any value  passed to each handler -  object is recommended, and powerful |
 
 **Returns:** *void*
-
-___
 
 ### off
 
