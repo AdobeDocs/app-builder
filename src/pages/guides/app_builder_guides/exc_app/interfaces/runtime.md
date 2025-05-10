@@ -4,7 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: 'Interface: Runtime \<**T**\>'
+title: 'Interface: Runtime'
 ---
 
 # Interface: Runtime \<**T**\>
