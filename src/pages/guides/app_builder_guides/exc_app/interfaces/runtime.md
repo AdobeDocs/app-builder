@@ -44,8 +44,6 @@ Invoke all handlers for the given type.
 
 **Returns:** *void*
 
-<hr/>
-
 ### off
 
 ▸ **off**\<**K**\>(`type`: K, `handler`: function): *void*
@@ -78,7 +76,6 @@ Handler function to remove.
 
 **Returns:** *void*
 
-<hr/>
 
 ### on
 
