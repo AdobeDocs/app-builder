@@ -13,7 +13,7 @@ title: Frequently Asked Questions
 
 ### What is App Builder?
 
-App Builder is a complete design, application, and runtime framework for building third-party cloud-native applications that run on Adobe infrastructure to extend the functionality of Adobe Experience Platform and Adobe Experience Cloud. Developers use App Builder to create custom integrations between Adobe and third-party products, to improve operational efficiency and workflow.
+App Builder is a complete design, application, and runtime framework for building third-party cloud-native applications that run on Adobe infrastructure to extend the functionality of Adobe Experience Cloud and Adobe Experience Platform. Developers use App Builder to create custom integrations between Adobe and third-party products, to improve operational efficiency and workflow.
 
 ### What is it used for?
 
@@ -21,7 +21,7 @@ App Builder is ideal for creating small actions that run repeatedly in response 
 
 App Builder can also be used to create more complex applications. For example, Adobe's marketing team uses an App Builder application to manage tracking codes for marketing campaigns, and makes it available to the extended team using the same Experience Cloud URL they use to access other Adobe Experience Cloud solutions.
 
-Adobe Experience Manager and Adobe Commerce customers can use App Builder to create UI extensions that let users work their own way during AEM authoring or in the Commerce Admin UI.
+Adobe Experience Manager and Adobe Commerce customers can use App Builder to create UI extensions that let users work their own way during AEM authoring or in the Commerce Admin UI. In addition, UI extensions are now available in both Adobe Workfront and Adobe GenStudio for Performance Marketing!
 
 Adobe Commerce customers can also create an API Mesh, a powerful capability that uses a GraphQL mesh to aggregate API requests from a variety of back-end services. This dramatically increases performance by calling only required objects from APIs. 
 
@@ -41,10 +41,10 @@ App Builder offers a complete application framework for extending Adobe solution
 * An execution environment so you do not need to bring your own infrastructure:
   * Adobe I/O Runtime serverless platform for backend
   * Content Delivery Network for static assets
-  * experience.adobe.com for surfacing the UI
+  * experience.adobe.com for applications with UI
   * Custom events for publishing events through Adobe infrastructure
   * File and data storage to persist application state
-* App Builder apps are surfaced within [experience.adobe.com](https://experience.adobe.com), so end users can move seamlessly between Adobe and App Builder apps
+* App Builder apps are surfaced within [experience.adobe.com](https://experience.adobe.com), so end users can move seamlessly between Adobe Experience Cloud applications and App Builder applications.
 
 ### How is App Builder different than Adobe I/O Runtime?
 
@@ -66,7 +66,7 @@ Finally, customers can purchase a license for use with any Adobe Experience Clou
 
 ### Are trials available?
 
-Yes. App Builder Trial is offered as part of [Adobe Experience Manager Headless Trial](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&cli=headless_exl_banner_campaign&co=US&lang=en).
+Not at this time.
 
 ### What is included with an App Builder license?
 
@@ -74,15 +74,15 @@ App Builder is licensed in packs that include runtime, event, storage, and other
 
 ### How can I get access to App Builder if my company is already licensed?
 
-App Builder is available from either the Adobe I/O Command Line Interface (CLI) or the Adobe Developer Console to Adobe enterprise users. Users must have Developer or System Admin permissions from an Adobe Identity Management System (IMS) organization licensed for App Builder. Please contact the system administrator of your Adobe IMS organization for help getting Developer access.
+First, make sure you have Developer or System Admin permissions from Adobe's Identity Management System (IMS) organization. Please contact the system administrator of your Adobe IMS organization for help getting Developer access. Once you confirm access use either the Adobe I/O Command Line Interface (CLI) or the [Adobe Developer Console](https://developer.adobe.com/console) to start a project.
 
 ### Is App Builder available to individuals who are not part of a company?
 
-No. App Builder is availabile only to Adobe enterprise customers and partners. 
+No. App Builder is availabile only to Adobe enterprise customers and partners.
 
-### **How can I get access to I/O Runtime?**
+### How can I get access to I/O Runtime?
 
-Since I/O Runtime is now part of App Builder, you may already have access. If not, consider an [App Builder Trial](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&cli=headless_exl_banner_campaign&co=US&lang=en).
+I/O Runtime is part of App Builder, if your company has a license for App Builder you already have access.
 
 ## Using App Builder
 
@@ -94,21 +94,21 @@ Yes. App Builder was built for extensibility, from Adobe's open-source developme
 
 We currently support the JavaScript language and Node.js environment, which cover the majority of code used on the web today. The free npm Registry contains ready-made libraries developers can bring into most applications.
 
-App Builder supports the three latest Node.js versions. When a new Node version is added to the system, old versions are still available. So old actions will still work, but new ones can't be created with the old versions. We encourage developers to update actions to the latest version in order to take advantage of the pre-warmed containers feature.
+App Builder supports the three latest Node.js versions. When a new Node version is added to the system, old versions are still available. So old actions will still work, but new ones can't be created with the old versions. We encourage developers to update actions to the latest version in order to take advantage of our pre-warmed containers feature.
 
 ### Can I use App Builder to extend Document Cloud or Creative Cloud products?
 
-Not now. App Builder's current focus is the Adobe Experience Platform and Adobe Experience Cloud. We may include App Builder access in the future for Adobe Document Cloud and Adobe Creative Cloud.
+Not yet. App Builder's current focus is the Adobe Experience Platform and Adobe Experience Cloud. We may include App Builder access in the future for Adobe Document Cloud and Adobe Creative Cloud.
 
 ### How can I simplify distribution of custom applications across my company?
 
-Enterprises can use Adobe Exchange to control application lifecycles (test, publish, unpublish), and AEM User Access Control to manage access to App Builder apps.
+Enterprises can use [Adobe Exchange](https://exchange.adobe.com) to control application lifecycles (test, publish, unpublish), and AEM User Access Control to manage access to App Builder apps.
 
 ### How do I request support for App Builder?
 
 App Builder uses the same support process as other Adobe Experience Cloud products. Details can be found in Adobe's [Enterprise Support Programs](https://helpx.adobe.com/support/programs/enterprise-support-programs.html).
 
-The [Adobe Experience Leage App Builder Community](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/adobe-app-builder) page offers Developer support for I/O Runtime questions.
+Visit our [App Builder Community](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/adobe-app-builder) page on Experience League for developer support on all things App Builder.
 
 ## Using I/O Runtime
 
