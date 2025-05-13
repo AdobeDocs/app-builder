@@ -26,25 +26,3 @@ Returns the details of the namespace associated with the specified organization 
 #### _Responses:_
 
 Response content type: `application/json`
-
-| Code | Description                        |
-| --- | ---------------------------------- |
-| 200 | Successful operationExample value: |
-
-{
-    "name": "string",
-    "auth": "string"
-
-}
-Model:
-NamespaceDTO {
-description: Namespace Details
-    name    string
-            Namespace name
-    auth    string
-            Auth associated with Namespace
-}
-
-### POST /runtime/admin/namespaces/{orgId}/{intId}
-
-Creates a new namespace and returns the details of the newly created namespace. If namespace already exists it returns the details of the namespace.
