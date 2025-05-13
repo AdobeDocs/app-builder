@@ -28,10 +28,10 @@ Returns the details of the namespace associated with the specified organization 
 Response content type: `application/json`
 
 | Code | Description                        |
-| ---- | ---------------------------------- |
-| 200  | Successful operationExample value: |
-| {    |                                    |
+| --- | ---------------------------------- |
+| 200 | Successful operationExample value: |
 
+{
     "name": "string",
     "auth": "string"
 
@@ -43,7 +43,7 @@ description: Namespace Details
             Namespace name
     auth    string
             Auth associated with Namespace
-}|
+}
 
 ### POST /runtime/admin/namespaces/{orgId}/{intId}
 
@@ -63,7 +63,7 @@ Creates a new namespace and returns the details of the newly created namespace. 
 Response content type: `application/json`
 |Code|Description|
 |--- |--- |
-|200|Successful operation Example value:
+|200|Successful operation Example value:|
 {
 "name": "string",
 "auth": "string"
@@ -75,7 +75,7 @@ description: Namespace Details
             Namespace name
     auth    string
             Auth associated with Namespace
-}|
+}
 
 ### DELETE /runtime/admin/namespaces/{orgId}/{intId}
 
@@ -115,7 +115,7 @@ Returns the list of actions associated with the specified organization and integ
 Response content type: `application/json`
 |Code|Description|
 |--- |--- |
-|200|Successful operation Example value:
+|200|Successful operation Example value:|
 [
   {
     "name": "string",
@@ -200,7 +200,7 @@ exec        ExecDTO {
             }
 url         string
             Action url
-}]|
+}]
 
 ### POST /runtime/namespaces/{orgId}/{intId}/actions
 
@@ -218,8 +218,9 @@ Creates a new action.
 | "code": "string",      |                              |
 | "namespace": "string", |                              |
 | "version": "string",   |                              |
-| "params": [            |                              |
-
+|Authorization (string: header)|Authorization token in format: Bearer {token}|
+|X-Api-Key (string: header)|Api key|
+ "params": [    
     {
       "key": "string",
       "value": {}
@@ -298,9 +299,7 @@ exec        ExecDTO {
             }
 url         string
             Action url
-}]|
-|Authorization (string: header)|Authorization token in format: Bearer {token}|
-|X-Api-Key (string: header)|Api key|
+}]
 
 #### _Responses:_
 
@@ -328,7 +327,7 @@ Returns the details of an action.
 Response content type: `application/json`
 |Code|Description|
 |--- |--- |
-|200|Successful operation Example value:
+|200|Successful operation Example value:|
 {
   "name": "string",
   "namespace": "string",
@@ -394,7 +393,7 @@ exec        ExecDTO {
             }
 url         string
             Action url
-}]|
+}]
 
 ### POST /runtime/namespaces/{orgId}/{intId}/actions/{name}
 
@@ -415,7 +414,7 @@ Executes an action.
 Response content type: `application/json`
 |Code|Description|
 |--- |--- |
-|200|Successful operation Example value:
+|200|Successful operation Example value:|
 {
   "name": "string",
   "code": "string",
@@ -474,7 +473,7 @@ version     string
 response    {
             description:    
             Action invocation response
-}|
+}
 
 ### PUT /runtime/namespaces/{orgId}/{intId}/actions/{name}
 
@@ -493,9 +492,10 @@ Updates an action.
 | "code": "string",      |                              |
 | "namespace": "string", |                              |
 | "version": "string",   |                              |
-| "params": [            |                              |
-
-    {
+|Authorization (string: header)|Authorization token in format: Bearer {token}|
+|X-Api-Key (string: header)|Api key|
+"params": [
+{
       "key": "string",
       "value": {}
     }
@@ -572,9 +572,8 @@ exec        ExecDTO {
             }
 url         string
             Action url
-}]|
-|Authorization (string: header)|Authorization token in format: Bearer {token}|
-|X-Api-Key (string: header)|Api key|
+}]
+
 
 #### _Responses:_
 
@@ -620,7 +619,7 @@ Returns a list of built-in actions.
 Response content type: `application/json`
 |Code|Description|
 |--- |--- |
-|200|Successful operationExample value:
+|200|Successful operationExample value:|
 [
   {
     "name": "string",
@@ -705,7 +704,7 @@ exec        ExecDTO {
             }
 url         string
             Action url
-}]|
+}]
 
 ### POST /runtime/namespaces/{orgId}/{intId}/handleEventRegistration
 
@@ -781,7 +780,7 @@ registration_id     string
 Response content type: `application/json`
 |Code|Description|
 |--- |--- |
-|200|Successful operation Example value:
+|200|Successful operation Example value:|
 {
   "id": "string",
   "name": "string",
@@ -832,7 +831,7 @@ runtime_action      string
                     Action to handle event
 registration_id     string
                     Event registration id
-}|
+}
 
 ### DELETE /runtime/namespaces/{orgId}/{intId}/handleEventDeletion/{clientId}/{registrationId}
 
@@ -882,8 +881,9 @@ Updates an event registration.
 | "integration_status": "string",       |                    |
 | "delivery_type": "string",            |                    |
 | "webhook_url": "string",              |                    |
-| "events_of_interest": [               |                    |
-
+|Authorization (string: header)|Authorization token in format: Bearer {token}|
+|X-Api-Key (string: header)|Api key|
+"events_of_interest": [       
     {
       "event_code": "string",
       "provider": "string"
@@ -925,16 +925,15 @@ runtime_action      string
                     Action to handle event
 registration_id     string
                     Event registration id
-}|
-|Authorization (string: header)|Authorization token in format: Bearer {token}|
-|X-Api-Key (string: header)|Api key|
+}
+
 
 #### _Responses:_
 
 Response content type: `application/json`
 |Code|Description|
 |--- |--- |
-|200|Successful operation Example value:
+|200|Successful operation Example value:|
 {
   "id": "string",
   "name": "string",
@@ -985,7 +984,7 @@ runtime_action      string
                     Action to handle event
 registration_id     string
                     Event registration id
-}|
+}
 
 ### POST /runtime/namespaces/{orgId}/{intId}/handleEventStatus/{clientId}/{registrationId}/{status}
 
@@ -1010,7 +1009,7 @@ Updates the status of an event registration.
 Response content type: `application/json`
 |Code|Description|
 |--- |--- |
-|200|Successful operation Example value:
+|200|Successful operation Example value:|
 {
   "id": "string",
   "name": "string",
@@ -1061,7 +1060,7 @@ runtime_action      string
                     Action to handle event
 registration_id     string
                     Event registration id
-}|
+}
 
 ## Next steps
 
