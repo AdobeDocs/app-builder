@@ -54,37 +54,3 @@ One way to verify whether a response is returned from the cache or not is to che
 ```
 X-GW-Cache: HIT
 ```
-
-<InlineAlert slots="text"/>
-
-Encoded responses can't be cached, so the `Content-Encoding` response header must be empty to cache responses. 
-
-### Vary header
-
-The caching layer supports the use of [Vary header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Vary) to cache based on header fields as well as on URL and query parameters.
-
-This action responds to certain header fields while doing a complex calculation:
-
-```
-curl -H "storeId: 1234" https://runtime-namespace-1.
-adobeioruntime.net/api/v1/web/store?query={products
-(pageSize: 10,filter:{ id:{ eq:"abcedefg"}}){items{name}}}`
-```
-
-It could produce this response:
-
-```
-HTTP/1.1 200 OK
-Content-Type: application/json
-Vary: storeId
-Cache-Control: max-age=120
-X-GW-Cache: MISS
-
-{"someBigData" : ["array"]}
-```
-
-This response would add the `storeId` to the cache key, so that subsequent requests with the same `storeId` in their headers would create a `HIT`, up to the limits imposed by the cache control header settings. Any time the value varied, it would be a `MISS`, and would be stored under a new key with new cache control directives.
-
-## Next step
-
-Return to [Guides Index](../index.md).
