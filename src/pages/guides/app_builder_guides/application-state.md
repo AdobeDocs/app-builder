@@ -122,3 +122,22 @@ Explore the [full API](https://github.com/adobe/aio-lib-state/blob/main/doc/api.
 Available for `aio --version` >= `10.2`.
 
 The CLI must be run from within a valid App Builder application folder and uses the Runtime credentials to authenticate your requests to State. Each namespace has its own State container, so please ensure that your are accessing the expected instance by looking in your `.env` file for the `AIO_RUNTIME_NAMESPACE` variable.
+
+```bash
+> aio app state
+Manage your App Builder State storage
+
+USAGE
+  $ aio app state COMMAND
+
+COMMANDS
+  app state delete  Delete key-values
+  app state get     Get a key-value
+  app state list    List key-values
+  app state put     Put a key-value
+  app state stats   Display stats
+```
+
+The default region is `amer`, to access another region, you can use the `--region` flag or add the `AIO_STATE_REGION=emea` variable to your `.env`.
+
+Navigate the CLI usage documentation from the repo's [README](https://github.com/adobe/aio-cli-plugin-app-storage?tab=readme-ov-file#usage) or by using the `--help` flag on the desired command.
