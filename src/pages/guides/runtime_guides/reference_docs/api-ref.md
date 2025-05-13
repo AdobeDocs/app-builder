@@ -586,3 +586,209 @@ url         string
             Action url
 }]
 ```
+
+#### _Responses:_
+
+Response content type: `application/json`
+
+| Code | Description                        |
+| --- | ---------------------------------- |
+| _default_ | Successful operation |
+
+### DELETE /runtime/namespaces/{orgId}/{intId}/actions/{name}
+
+Deletes an action.
+
+#### _Parameters:_
+
+| Name                                 | Description                                     |
+| ------------------------------------ | ----------------------------------------------- |
+| `orgId` (`string`: _path_)           | Organization ID                                 |
+| `intId` (`string`: _path_)           | Integration ID                                  |
+| `name` (`string`: _path_)            | Action name                                     |
+| `Authorization` (`string`: _header_) | Authorization token in format: `Bearer {token}` |
+| `X-Api-Key` (`string`: _header_)     | Api key                                         |
+
+#### _Responses:_
+
+Response content type: `application/json`
+
+| Code | Description                        |
+| --- | ---------------------------------- |
+| _default_ | Successful operation |
+
+### GET /runtime/system/actions
+
+Returns a list of built-in actions.
+
+#### _Parameters:_
+
+| Name                                 | Description                                     |
+| ------------------------------------ | ----------------------------------------------- |
+| `Authorization` (`string`: _header_) | Authorization token in format: `Bearer {token}` |
+| `X-Api-Key` (`string`: _header_)     | Api key                                         |
+
+#### _Responses:_
+
+Response content type: `application/json`
+
+| Code | Description                        |
+| --- | ---------------------------------- |
+|200|Successful operationExample value:|
+```
+[
+  {
+    "name": "string",
+    "code": "string",
+    "namespace": "string",
+    "version": "string",
+    "params": [
+      {
+        "key": "string",
+        "value": {}
+      }
+    ],
+    "annotations": [
+      {
+        "key": "string",
+        "value": {}
+      }
+    ],
+    "limits": {
+      "timeout": "string",
+      "memory": "string",
+      "logs": "string"
+    },
+    "exec": {
+      "kind": "string",
+      "binary": false,
+      "components": [
+        "string"
+      ]
+    },
+    "url": "string"
+  }
+]
+Model: 
+[ActionDTO {
+description: OpenWhisk Action
+name        string
+            Action name
+code        string
+            Action code
+namespace   string
+            Action namespace
+version     string
+            Action version
+params      [Action params
+            KeyValuePairDTO {
+            description: OpenWhisk Action param
+            key     string
+                    Param Name
+            value   {
+                        description: Param value
+                    }
+            }]
+annotations [Action annotations
+            KeyValuePairDTO {
+            description: OpenWhisk Action param
+            key     string
+                    Param Name
+            value   {
+                        description: Param value
+                    }
+            }]
+limits      LimitsDTO {
+            description: OpenWhisk Action Limits
+            timeout     string
+                        Action timeout
+            memory      string
+                        Action memory limit
+            logs        string
+                        Action logs
+            }
+exec        ExecDTO {
+            description: OpenWhisk Action exec details
+            kind    string
+            Action kind
+            binary  boolean
+                    default: false
+                    Is action binary
+            components  [
+                        Action components in case of sequence
+                        string]
+            }
+url         string
+            Action url
+}]
+```
+### POST /runtime/namespaces/{orgId}/{intId}/handleEventRegistration
+
+Registers an event registration and assigns a given action to the event.
+
+#### _Parameters:_
+
+| Name                            | Description     |
+| ------------------------------- | --------------- |
+| orgId (string: path)            | Organization ID |
+| intId (string: path)            | Integration ID  |
+| body (body)                     | Example value:  |
+| {                               |                 |
+| "id": "string",                 |                 |
+| "name": "string",               |                 |
+| "description": "string",        |                 |
+| "client_id": "string",          |                 |
+| "type": "string",               |                 |
+| "integration_status": "string", |                 |
+| "delivery_type": "string",      |                 |
+| "webhook_url": "string",        |                 |
+|Authorization (string: header)|Authorization token in format: Bearer {token}|
+|X-Ams-Consumer-Id (string: header)|AMS consumer ID|
+|X-Ams-Application-Id (string: header)|AMS application ID|
+|X-Api-Key (string: header)|Api key|
+| "events_of_interest": [         |                 |
+```
+    {
+      "event_code": "string",
+      "provider": "string"
+    }
+
+  ],
+  "runtime_action": "string",
+  "registration_id": "string"
+}Parameter content type: application/json
+Model: 
+EventDTO {
+description: Adobe I/O Event Details
+id                  string
+                    Event id
+name                string
+                    Event name
+description         string
+                    Event code
+Client id           string
+                    Event namespace
+type                string
+                    Event type
+integration_status  string
+                    Event integration status
+delivery_type       string
+                    Event delivery type
+webhook_url         string
+                    Webhook url
+events_of_interest  [
+                    Events of interest to listen to
+                    EventsOfInterestDTO{
+                    description: Events of interest
+                        event_code  string
+                                    Event code
+                        provider    string
+                                    Event provider
+                    }]
+runtime_action      string
+                    Action to handle event
+registration_id     string
+                    Event registration id
+}
+```
+
