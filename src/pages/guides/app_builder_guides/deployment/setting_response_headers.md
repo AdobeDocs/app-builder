@@ -54,6 +54,20 @@ application:
 
 Once headers are added, they can be deployed with the app using the `aio app:deploy` command. Note that the paths specified in rules are relative to the distributable folder created after the application build, and not to the application root.
 
+## Opting Out of Default Response Headers
+
+By default, App Builder may set certain response headers automatically for your web actions. If you want to take full control and override all default response headers with your own custom options, you must explicitly opt out of the defaults.
+
+To do this, update your web action with the `web-custom-options` annotation set to `true` using the CLI:
+
+```bash
+aio app action update <your-action-name> --web true -a web-custom-options true
+```
+
+Replace `<your-action-name>` with the name of your web action. This command ensures that only the response headers you define (for example, in your manifest or action code) will be applied, and no additional default headers will be set by App Builder.
+
+This is especially important if you require strict control over CORS, security, or other HTTP headers for your application's endpoints.
+
 ## Disallowed headers
 
 Developers may set any HTTP or custom response headers except those in the list below. If the listed headers are specified in the manifest, they will be ignored and not included in the response.
