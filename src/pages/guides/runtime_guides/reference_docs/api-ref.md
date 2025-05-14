@@ -120,6 +120,7 @@ Response content type: `application/json`
 | Code | Description                        |
 | --- | ---------------------------------- |
 |200|Successful operation Example value:|
+
 ```
 [
   {
@@ -213,20 +214,21 @@ Creates a new action.
 
 #### _Parameters:_
 
-| Name                   | Description                  |
-| ---------------------- | ---------------------------- |
-| orgId (string: path)   | Organization ID              |
-| intId (string: path)   | Integration ID               |
-| body (body)            | Action form.  Example value: |
-| {                      |                              |
-| "name": "string",      |                              |
-| "code": "string",      |                              |
-| "namespace": "string", |                              |
-| "version": "string",   |                              |
-|Authorization (string: header)|Authorization token in format: Bearer {token}|
-|X-Api-Key (string: header)|Api key|
+| Name                           | Description                                   |
+|--------------------------------|-----------------------------------------------|
+| orgId (string: path)           | Organization ID                               |
+| intId (string: path)           | Integration ID                                |
+| Authorization (string: header) | Authorization token in format: Bearer {token} |
+| X-Api-Key (string: header)     | Api key                                       |
+| body (body)                    | Action form.  Example value:                  |
+
 ```
- "params": [    
+{
+  "name": "string", 
+  "code": "string",
+  "namespace": "string",
+  "version": "string",
+  "params": [    
     {
       "key": "string",
       "value": {}
@@ -336,6 +338,7 @@ Response content type: `application/json`
 | Code | Description                        |
 | --- | ---------------------------------- |
 |200|Successful operation Example value:|
+
 ```
 {
   "name": "string",
@@ -492,22 +495,24 @@ Updates an action.
 
 #### _Parameters:_
 
-| Name                   | Description                  |
-| ---------------------- | ---------------------------- |
-| orgId (string: path)   | Organization ID              |
-| intId (string: path)   | Integration ID               |
-| name (string: path)    | Action name                  |
-| body (body)            | Action form.  Example value: |
-| {                      |                              |
-| "name": "string",      |                              |
-| "code": "string",      |                              |
-| "namespace": "string", |                              |
-| "version": "string",   |                              |
-|Authorization (string: header)|Authorization token in format: Bearer {token}|
-|X-Api-Key (string: header)|Api key|
+| Name                          | Description                                   |
+|-------------------------------|-----------------------------------------------|
+| orgId (string: path)          | Organization ID                               |
+| intId (string: path)          | Integration ID                                |
+| name (string: path)           | Action name                                   |
+| Authorization (string: header) | Authorization token in format: Bearer {token} |
+| X-Api-Key (string: header)    | Api key                                       |
+| body (body)                   | Action form.  Example value:                  |
+      
+
 ```
-"params": [
 {
+ "name": "string",
+ "code": "string",
+ "namespace": "string",
+ "version": "string",     
+ "params": [
+ {
       "key": "string",
       "value": {}
     }
@@ -632,9 +637,10 @@ Returns a list of built-in actions.
 
 Response content type: `application/json`
 
-| Code | Description                        |
-| --- | ---------------------------------- |
-|200|Successful operationExample value:|
+| Code | Description                         |
+| --- |-------------------------------------|
+|200| Successful operationExample value:  |
+
 ```
 [
   {
@@ -728,26 +734,27 @@ Registers an event registration and assigns a given action to the event.
 
 #### _Parameters:_
 
-| Name                            | Description     |
-| ------------------------------- | --------------- |
-| orgId (string: path)            | Organization ID |
-| intId (string: path)            | Integration ID  |
-| body (body)                     | Example value:  |
-| {                               |                 |
-| "id": "string",                 |                 |
-| "name": "string",               |                 |
-| "description": "string",        |                 |
-| "client_id": "string",          |                 |
-| "type": "string",               |                 |
-| "integration_status": "string", |                 |
-| "delivery_type": "string",      |                 |
-| "webhook_url": "string",        |                 |
-|Authorization (string: header)|Authorization token in format: Bearer {token}|
-|X-Ams-Consumer-Id (string: header)|AMS consumer ID|
-|X-Ams-Application-Id (string: header)|AMS application ID|
-|X-Api-Key (string: header)|Api key|
-| "events_of_interest": [         |                 |
+| Name                                  | Description                                   |
+|---------------------------------------|-----------------------------------------------|
+| orgId (string: path)                  | Organization ID                               |
+| intId (string: path)                  | Integration ID                                |
+| Authorization (string: header)        | Authorization token in format: Bearer {token} |
+| X-Ams-Consumer-Id (string: header)    | AMS consumer ID                               |
+| X-Ams-Application-Id (string: header) | AMS application ID                            |
+| X-Api-Key (string: header)            | Api key                                       |
+| body (body)                           | Example value:  |
+
 ```
+{
+  "id": "string",
+  "name": "string",
+  "description": "string",
+  "client_id": "string",
+  "type": "string",
+  "integration_status": "string",
+  "delivery_type": "string",
+  "webhook_url": "string",   
+  "events_of_interest": [    
     {
       "event_code": "string",
       "provider": "string"
@@ -799,6 +806,7 @@ Response content type: `application/json`
 | Code | Description                        |
 | --- | ---------------------------------- |
 |200|Successful operation Example value:|
+
 ```
 {
   "id": "string",
@@ -884,28 +892,29 @@ Updates an event registration.
 
 #### _Parameters:_
 
-| Name                                  | Description        |
-| ------------------------------------- | ------------------ |
-| orgId (string: path)                  | Organization ID    |
-| intId (string: path)                  | Integration ID     |
-| clientId (string: path)               | IMS client ID      |
-| registrationId (string: path)         | Registration ID    |
-| X-Ams-Consumer-Id (string: header)    | AMS consumer ID    |
-| X-Ams-Application-Id (string: header) | AMS application ID |
-| body (body)                           | Example value:     |
-| {                                     |                    |
-| "id": "string",                       |                    |
-| "name": "string",                     |                    |
-| "description": "string",              |                    |
-| "client_id": "string",                |                    |
-| "type": "string",                     |                    |
-| "integration_status": "string",       |                    |
-| "delivery_type": "string",            |                    |
-| "webhook_url": "string",              |                    |
-|Authorization (string: header)|Authorization token in format: Bearer {token}|
-|X-Api-Key (string: header)|Api key|
+| Name                                  | Description                                   |
+|---------------------------------------|-----------------------------------------------|
+| orgId (string: path)                  | Organization ID                               |
+| intId (string: path)                  | Integration ID                                |
+| clientId (string: path)               | IMS client ID                                 |
+| registrationId (string: path)         | Registration ID                               |
+| X-Ams-Consumer-Id (string: header)    | AMS consumer ID                               |
+| X-Ams-Application-Id (string: header) | AMS application ID                            |
+| Authorization (string: header)        | Authorization token in format: Bearer {token} |
+| X-Api-Key (string: header)            | Api key                                       |
+| body (body)                           | Example value:                                |
+
 ```
-"events_of_interest": [       
+{
+  "id": "string",
+  "name": "string",
+  "description": "string",
+  "client_id": "string",
+  "type": "string",
+  "integration_status": "string",
+  "delivery_type": "string",
+  "webhook_url": "string",       
+  "events_of_interest": [       
     {
       "event_code": "string",
       "provider": "string"
