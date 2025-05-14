@@ -56,7 +56,7 @@
             - [Events](https://developer.adobe.com/events/docs/guides/using/custom_events/) 
                 - [Webhooks](https://developer.adobe.com/events/docs/guides/) 
             - [Exc App](guides/app_builder_guides/exc_app/aec-integration.md) 
-                - [Interfaces](guides/app_builder_guides/exc_app/interfaces/) 
+                - [Interfaces](guides/app_builder_guides/exc_app/interfaces/index.md) 
                     - [Modules](guides/app_builder_guides/exc_app/interfaces/modules.md) 
                     - [Page ObjectWithHref](guides/app_builder_guides/exc_app/interfaces/page-objectwithhref.md) 
                     - [Page ObjectWithPath](guides/app_builder_guides/exc_app/interfaces/page-objectwithpath.md) 

@@ -28,7 +28,7 @@ Please refer to the [FAQ](faq.md) for information about licensing or trial of Ap
   
   - [Get Started with App Builder](../get_started/app_builder_get_started/app-builder-intro.md) covering access, setup, creation, publication, and troubleshooting of your first App Builder app
   
-  - [Get Started with Adobe I/O Runtime](../get_started/runtime_getting_started/runtime_intro.md) covering access, setup, deployment, and invocation of your first Adobe Runtime action, recovery and interpretation of results, and core concepts and tactics for optimizing performance
+  - [Get Started with Adobe I/O Runtime](../get_started/runtime_getting_started/index.md) covering access, setup, deployment, and invocation of your first Adobe Runtime action, recovery and interpretation of results, and core concepts and tactics for optimizing performance
 
 - **Resolve issues** and optimize performance with App Builder resources:
   

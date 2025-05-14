@@ -19,7 +19,7 @@ This series of tutorials will show you how to:
 
 * Troubleshoot your app and correct common error conditions
 
-Customers with currently deployed Adobe I/O Runtime actions they wish to convert into App Builder applications should consider [this shortcut](app_builder_and_runtime.md).
+Customers with currently deployed Adobe I/O Runtime actions they wish to convert into App Builder applications should consider [this shortcut](../../intro_and_overview/index.md).
 
 ## Overview
 

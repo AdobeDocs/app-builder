@@ -81,6 +81,6 @@ We recommend using [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm) o
 
 This completes the "Getting Started" tutorial series for App Builder. 
 
-To learn how to extend App Builder capabilities using the Adobe I/O Runtime platform, proceed to the [Get Started with Adobe I/O Runtime](../runtime_getting_started/runtime_intro.md) tutorial.
+To learn how to extend App Builder capabilities using the Adobe I/O Runtime platform, proceed to the [Get Started with Adobe I/O Runtime](../runtime_getting_started/index.md) tutorial.
 
 For in-depth review of App Builder architecture, development, deployment, integration, and security, visit the [Guides Index](../../guides/index.md) and select your topic of interest.
