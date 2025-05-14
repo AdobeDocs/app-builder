@@ -29,51 +29,51 @@ The final app is based on the Production workspace, so it is important to make s
 
 To begin the approval process, navigate to the Production workspace and select **Submit for approval** in the top-right corner of the screen or **Approval** in the left navigation.
 
-![](E:\GitHub\app-builder\src\pages\images\approval-production-overview.png)
+![](../../images/approval-production-overview.png)
 
 On the Approval screen you will be able to fill out the **App Submission Details** form.
 
 These details will be visible to people who use your app and administrators who review your application. Once the form is completed, select **Submit** to begin the approval process.
 
-![](E:\GitHub\app-builder\src\pages\images\approval-app-submission-details.png)
+![](../../images/approval-app-submission-details.png)
 
 You will be returned to the Approval screen, where the Status of your application should now be "In Review."
 
-![](E:\GitHub\app-builder\src\pages\images\approval-in-review.png)
+![](../../images/approval-in-review.png)
 
 Following a review by your organization administrators, your application will either be approved and published, or rejected. If it is rejected, your Admin will be able to include a note telling you what went wrong so you can fix the error and resubmit.
 
-![](E:\GitHub\app-builder\src\pages\images\approval-app-rejected.png)
+![](../../images/approval-app-rejected.png)
 
 ### Published app
 
 Once your application has been submitted for approval, the Admin can see it pending for review in Adobe Exchange. The next section will describe Admin approval flow from My Exchange. From Console side, once an application has been approved, its Status will be updated to Published and the application will be available for use by employees within your enterprise organization.
 
-![](E:\GitHub\app-builder\src\pages\images\approval-published.png)
+![](../../images/approval-published.png)
 
 ## Administrator review of your app (MyExchange part)
 
 Once an application has been submitted for approval, your organization's Administrators will see it in My Exchange -> Experience Cloud Apps, and you will see your submitted apps under Pending Review status.
 
-![](E:\GitHub\app-builder\src\pages\images\approval-myexchange.png)
+![](../../images/approval-myexchange.png)
 
 The reviewer can review this app and approve it or reject it. If the application is rejected, your admin will be able to include a note telling you what went wrong, so you can fix the error and resubmit.
 
-![](E:\GitHub\app-builder\src\pages\images\approval-myexchange-review.png)
+![](../../images/approval-myexchange-review.png)
 
 After the app is approved, you will see it in the Approved section. The reviewer can also unpublish the app, requiring the app owner to resubmit it for review and approval.
 
-![](E:\GitHub\app-builder\src\pages\images\approval-myexchange-revoke.png)
+![](../../images/approval-myexchange-revoke.png)
 
 ## Check your published app at Experience Cloud
 
 Once the reviewer has approved your application, you will be notified by email and your app will appear at Adobe Experience Cloud:
 
-![](E:\GitHub\app-builder\src\pages\images\approval-myapp-home.png)
+![](../../images/approval-myapp-home.png)
 
 Click on `App Builder Apps` to discover all the applications published for your organization.
 
-![](E:\GitHub\app-builder\src\pages\images\approval-myapp-customapps.png)
+![](../../images/approval-myapp-customapps.png)
 
 # Publishing your headless App Builder app
 
