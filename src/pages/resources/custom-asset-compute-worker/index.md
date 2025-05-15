@@ -13,7 +13,8 @@ contributors:
 # Build Custom Asset Compute Worker
 
 ![front-banner](assets/hero-banner.jpg)
-<a href="https://www.freepik.com/vectors/banner">Hero banner created by starline - www.freepik.com</a>
+
+[Hero banner created by starline - www.freepik.com](https://www.freepik.com/vectors/banner)
 
 > Note: This Code Lab is based on the [How to generate intelligent renditions with AEM as a Cloud](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/how-to-generate-intelligent-renditions-with-aem-as-a-cloud/m-p/379588) blog post.
 
