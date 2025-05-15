@@ -9,9 +9,7 @@ contributors:
 title: Codelab Environment Requirements
 ---
 
-import Requirements from '../transclusions/_requirements.md'
-
-<Requirements/>
+<Fragment src="../transclusions/_requirements.md"/>
 
 ## Code Lab environment
 
