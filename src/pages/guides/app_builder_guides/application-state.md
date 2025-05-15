@@ -1,10 +1,10 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
-title: Dealing with Application State
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+  title: Dealing with Application State
 ---
 
 # Dealing with Application State
@@ -39,7 +39,7 @@ hello-world:
 
 ### Considerations about security
 
-For authentication with Adobe APIs, you should leverage [App Builder Security Guideline](./security/index.md) using our supported SDKs.
+For authentication with Adobe APIs, you should leverage [App Builder Security Guideline](security/index.md) using our supported SDKs.
 
 For other 3rd party systems and APIs when provisioning actions with the secrets/passwords is a must, you can then use the default params as demonstrated above. In order to support this use case, all default params are automatically encrypted. They are decrypted just before the action code is executed. Thus, the only time you have access to the decrypted value is while executing the action code.
 
@@ -50,7 +50,6 @@ As part of App Builder, you will have out-of-the-box access to *Files* and *Stat
 No pre-configuration is required, just install the libraries and use them in your project. We will be transparently using your App Builder credentials to authorize and entitle your requests.
 
 *When should I use Files vs State?*
-
 
 - Files is good for transferring large payloads (bandwidth oriented) and State is good for fast access (latency oriented).
 - Files supports sharing data via presigned-url, State supports setting expirations.
@@ -141,3 +140,103 @@ COMMANDS
 The default region is `amer`, to access another region, you can use the `--region` flag or add the `AIO_STATE_REGION=emea` variable to your `.env`.
 
 Navigate the CLI usage documentation from the repo's [README](https://github.com/adobe/aio-cli-plugin-app-storage?tab=readme-ov-file#usage) or by using the `--help` flag on the desired command.
+
+### Constraints
+
+- State is only available to Runtime namespaces created via the Developer Console, which follow the App Builder format: `orgId-project(-workspace)?`. Legacy namespaces are not supported.
+- Max state value size: `1MB`.
+- Max state key size: `1024 bytes`.
+- Max-supported TTL is `365 days`.
+- Values format: any `string|binary`.
+- Keys format: `string` only `alphanumeric` with `-`,`_`,`.`.
+
+### Usage quotas and limits
+
+The following quotas and limits apply while dealing with Application State associated with your App Builder application.
+
+Quotas are shared across the organisation. Workspace limits are defined at the *workspace* level. The State service may return 429 (rate-limits) or
+403 (storage limits) errors if limits are exceeded.
+
+| Limit                                                                                   | Limit Type                            | Default Limit                                                                                      | Can it be Increased?                                                                                                                                                                                                               | Notes                                                                         |
+|-----------------------------------------------------------------------------------------|---------------------------------------|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| How much data can you store in State?                                                   | Quota (increases with number of packs) | Up to 10 GB per App Builder pack                                                                   | Yes, by purchasing more packs of App Builder                                                                                                                                                                                       | Storage is calculated as: `(2 * total size of keys) + (total size of values)`. |
+| How much State bandwidth can you utilize?                                               | Quota (increases with number of packs) | 1 TB per month per App Builder pack                                                                | Yes, by purchasing more packs of App Builder                                                                                                                                                                                       | Bandwidth is calculated as: total bytes uploaded + total bytes downloaded.    |
+| How much data can you store in State in a single App Builder workspace?                 | Workspace limit (fixed per workspace) | 1 GB for production workspaces <br/> 200 MB for other workspaces                                   | Yes, by raising a support ticket. You can request an increase up to 10 GB. <br/> *Note: Increasing the limit beyond 10 GB in a single workspace can be supported depending on your case. Raise a support ticket to find out more.* | Storage is calculated as: `(2 * total size of keys) + (total size of values)`. |
+| How much State burst bandwidth can you consume in a single App Builder workspace?       | Workspace limit (fixed per workspace) | 1 MB/s (bursts) <br/> <br/> 10 MB/min for production workspaces <br/> 2 MB/min for other workspaces | Yes, by raising a support ticket. You can request an increase up to 3 MB/s and 30 MB/min per App Builder packs purchased.                                                                                                          | Bandwidth is calculated as: `total bytes uploaded + total bytes downloaded`.  |
+| How fast can you increase your bandwidth consumption in a single App Builder workspace? | Workspace limit (fixed per workspace) | 100 KB/s per minute                                                                                | No                                                                                                                                                                                                                                 | -                                                                             |
+| How many keys can you store in State in a single App Builder workspace?                 | Workspace limit (fixed per workspace) | 200K                                                                                               | Yes, by raising a support ticket. You can request an increase up to 500K keys.                                                                                                                                                     | This limit does not scale with the number of App Builder packs purchased.     |
+| How many list operations can you run per minute in a single App Builder workspace?      | Workspace limit (fixed per workspace) | 1K/min                                                                                             | Yes, by raising a support ticket. You can request an increase up to 10K/min.                                                                                                                                                       | This limit does not scale with the number of App Builder packs purchased.     |
+
+### List considerations
+
+Using `state.list`, you can scan through the keys stored in your State container. `list` is a cursor-based iterator, which requires multiple calls to the State service to traverse all your keys.
+
+It is important to understand that `list` is scanning through your keys:
+
+- **the more keys you have stored**, the longer a full iteration will take to complete, regardless of whether you use the [using a glob-style pattern](#match-option).
+- every call to `list` will iterate over up to 1000 keys. The former `countHint` option is now ignored.
+- As an example, trying to match 1 key in a 10k key-values data-set will still require 10 calls to `list` to fetch it.
+
+The `list` command is not strongly consistent, and the following points need to be taken into account:
+
+- We are sending `list` requests to a replica, there is a ~5ms lag, after which a
+  full iteration returns keys that were present in the container and doesn't
+  return keys that were deleted prior to an iteration.
+- Keys that were not constantly present in the collection during a full
+  iteration, may be returned or not: it is undefined.
+- A given key may be returned multiple times across iterations (but not within a
+  same iteration). You can mitigate this by either performing operations that are
+  safe when applied multiple times (recommended with many keys) or by collecting all keys in an
+  array first and then remove any duplicates.
+- In some rare cases, `list` may return expired keys.
+
+Please note, that `list` is subject to rate-limiting, so listing many keys may result in 429s.
+
+### `match` option
+
+`state.deleteAll` and `state.list` support a `match` option to filter keys.
+
+`match` supports a glob-style pattern via the `*` character, suppose you have the following keys: `key`, `base.key`, `key-1`
+
+- `match=key` will match `key`
+- `match=k*` will match `key`
+- `match=*k*` will match `key`, `base.key`, `key-1`
+- `match=*-1` will match `key-1`
+- `match=base.*-1` will match none
+
+The `match` filter is applied server-side **after** traversing elements, this means:
+
+- `match` does not reduce the work needed to iterate over your key-values.
+- every call to `list` may return only few keys when matching a handful of key-values in a large dataset.
+
+### Troubleshooting
+
+Set `DEBUG=@adobe/aio-lib-state*` to see debug logs.
+
+## Files
+
+*Files is currently implemented as an abstraction layer over Azure Blob. Major changes and additional features are planned, stay tuned.*
+
+To learn more please visit the [Adobe I/O File Storage library](https://github.com/adobe/aio-lib-files?tab=readme-ov-file#adobe-io-lib-files) repository.
+
+## Feature Matrix
+
+|                            | Files                           | State                                        | State Legacy                   |
+|----------------------------|---------------------------------|----------------------------------------------|--------------------------------|
+| read <br/>write<br/>delete | Y                               | Y                                            | Y                              |
+| list                       | Y                               | Y                                            | N                              |
+| streams                    | Y                               | N                                            | N                              |
+| copy                       | Y                               | N                                            | N                              |
+| deleteAll                  | N                               | Y                                            | N                              |
+| sharing                    | Y (pre-sign URLs)               | N                                            | N                              |
+| Time-To-Live               | N                               | Y                                            | Y                              |
+| max TTL                    | infinite                        | 365 days                                     | infinite                       |
+| max file/value size        | 200GB                           | 1MB                                          | 2MB                            |
+| max key size               | 1KB                             | 1KB                                          | 1KB                            |
+| key charset                | open                            | `alphanumeric` with `_-.`                    | any but `/\?#`                 |
+| max load                   | N/A                             | 10MB/min, 1MB/s <br/> 1k/min `list` requests | 900 RU/min (~KB/min)           |
+| max key values             | N/A                             | 200K (scalable)                              | N/A                            |
+| max storage                | 1TB                             | 10GB                                         | 10GB                           |
+| max monthly load           | N/A                             | 1TB (scalable)                               | N/A                            |
+| regions                    | East US <br/> West US read-only | Amer (US) <br/>Emea (EU)<br/> Apac (JPN)     | East US <br/> Europe read-only |
+| consistency                | strong                          | strong (CRUD), eventual for `list`           | eventual                       |
