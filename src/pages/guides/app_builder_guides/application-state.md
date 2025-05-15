@@ -157,16 +157,6 @@ The following quotas and limits apply while dealing with Application State assoc
 Quotas are shared across the organisation. Workspace limits are defined at the *workspace* level. The State service may return 429 (rate-limits) or
 403 (storage limits) errors if limits are exceeded.
 
-| Limit                                                                                   | Limit Type                            | Default Limit                                                                     | Can it be Increased?                                                                                                                                                                                                         | Notes                                                                         |
-|-----------------------------------------------------------------------------------------|---------------------------------------|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| How much data can you store in State?                                                   | Quota (increases with number of packs) | Up to 10 GB per App Builder pack                                                  | Yes, by purchasing more packs of App Builder                                                                                                                                                                                 | Storage is calculated as: `(2 * total size of keys) + (total size of values)`. |
-| How much State bandwidth can you utilize?                                               | Quota (increases with number of packs) | 1 TB per month per App Builder pack                                               | Yes, by purchasing more packs of App Builder                                                                                                                                                                                 | Bandwidth is calculated as: total bytes uploaded + total bytes downloaded.    |
-| How much data can you store in State in a single App Builder workspace?                 | Workspace limit (fixed per workspace) | 1 GB for production workspaces 200 MB for other workspaces                        | Yes, by raising a support ticket. You can request an increase up to 10 GB. *Note: Increasing the limit beyond 10 GB in a single workspace can be supported depending on your case. Raise a support ticket to find out more.* | Storage is calculated as: `(2 * total size of keys) + (total size of values)`. |
-| How much State burst bandwidth can you consume in a single App Builder workspace?       | Workspace limit (fixed per workspace) | 1 MB/s (bursts) 10 MB/min for production workspaces 2 MB/min for other workspaces | Yes, by raising a support ticket. You can request an increase up to 3 MB/s and 30 MB/min per App Builder packs purchased.                                                                                                    | Bandwidth is calculated as: `total bytes uploaded + total bytes downloaded`.  |
-| How fast can you increase your bandwidth consumption in a single App Builder workspace? | Workspace limit (fixed per workspace) | 100 KB/s per minute                                                               | No                                                                                                                                                                                                                           | -                                                                             |
-| How many keys can you store in State in a single App Builder workspace?                 | Workspace limit (fixed per workspace) | 200K                                                                              | Yes, by raising a support ticket. You can request an increase up to 500K keys.                                                                                                                                               | This limit does not scale with the number of App Builder packs purchased.     |
-| How many list operations can you run per minute in a single App Builder workspace?      | Workspace limit (fixed per workspace) | 1K/min                                                                            | Yes, by raising a support ticket. You can request an increase up to 10K/min.                                                                                                                                                 | This limit does not scale with the number of App Builder packs purchased.     |
-
 ### List considerations
 
 Using `state.list`, you can scan through the keys stored in your State container. `list` is a cursor-based iterator, which requires multiple calls to the State service to traverse all your keys.
@@ -220,23 +210,3 @@ Set `DEBUG=@adobe/aio-lib-state*` to see debug logs.
 To learn more please visit the [Adobe I/O File Storage library](https://github.com/adobe/aio-lib-files?tab=readme-ov-file#adobe-io-lib-files) repository.
 
 ## Feature Matrix
-
-|                     | Files                       | State                                  | State Legacy                   |
-|---------------------|-----------------------------|----------------------------------------|--------------------------------|
-| read write delete   | Y                           | Y                                      | Y                              |
-| list                | Y                           | Y                                      | N                              |
-| streams             | Y                           | N                                      | N                              |
-| copy                | Y                           | N                                      | N                              |
-| deleteAll           | N                           | Y                                      | N                              |
-| sharing             | Y (pre-sign URLs)           | N                                      | N                              |
-| Time-To-Live        | N                           | Y                                      | Y                              |
-| max TTL             | infinite                    | 365 days                               | infinite                       |
-| max file/value size | 200GB                       | 1MB                                    | 2MB                            |
-| max key size        | 1KB                         | 1KB                                    | 1KB                            |
-| key charset         | open                        | `alphanumeric` with `_-.`              | any but `/\?#`                 |
-| max load            | N/A                         | 10MB/min, 1MB/s 1k/min `list` requests | 900 RU/min (~KB/min)           |
-| max key values      | N/A                         | 200K (scalable)                        | N/A                            |
-| max storage         | 1TB                         | 10GB                                   | 10GB                           |
-| max monthly load    | N/A                         | 1TB (scalable)                         | N/A                            |
-| regions             | East US West US read-only   | Amer (US) Emea (EU)  Apac (JPN)        | East US Europe read-only |
-| consistency         | strong                      | strong (CRUD), eventual for `list`     | eventual                       |
