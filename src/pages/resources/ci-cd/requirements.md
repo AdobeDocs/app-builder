@@ -7,7 +7,9 @@ keywords:
 title: Codelab Environment Requirements
 ---
 
-<Fragment src="../transclusions/requirements.md"/>
+import Requirements from '../transclusions/requirements.md'
+
+<Requirements/>
 
 ## Code Lab Environment
 
