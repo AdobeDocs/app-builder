@@ -7,4 +7,7 @@ keywords:
 title: 'Requirements'
 ---
 
-<Fragment src="../transclusions/requirements.md"/>
+import Requirements from '../transclusions/requirements.md'
+
+<Requirements/>
+
