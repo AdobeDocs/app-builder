@@ -12,9 +12,9 @@ Actions may be invoked by HTTP calls (RESTful or HTTP) or by other actions. Acti
 
 Actions may be organized into any number of **packages** within a namespace. Packages are used to organize the code, manage different versions of the same action, or share code with other tenants or applications. Packages marked **shareable** may be bound to the namespaces of anyone who has their full name, in the manner of symbolic links.
 
-![](E:\GitHub\app-builder\src\pages\images\quickstart-programming-model.png)
+![](../../images/quickstart-programming-model.png)
 
-![](E:\GitHub\app-builder\src\pages\images\quickstart-shared-packages.png)
+![](../../images/quickstart-shared-packages.png)
 
 Actions may be invoked anonymously - with no authorization required - or with authentication. Runtime supports basic authorization  Developers can implement their own auth. We will be adding support for IMS based auth.
 
@@ -24,7 +24,7 @@ Adobe I/O Runtime is built on the Apache OpenWhisk open-source project, so many 
 
 This diagram shows the high-level architecture of I/O Runtime built on OpenWhisk:
 
-![](E:\GitHub\app-builder\src\pages\images\quickstart-components.png)
+![](../../images/quickstart-components.png)
 
 This is the sequence by which Runtime components execute user code when an action is executed:
 
