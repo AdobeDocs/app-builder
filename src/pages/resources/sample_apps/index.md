@@ -15,10 +15,9 @@ These are complete sample applications built using App Builder. See below for a 
 
 <DiscoverBlock slots="heading, link, text" width="100%" />
 
-### Demo: Adobe Stock image search
+### Spectrum introduction
 
-[Demo](demo.md) 
+[Start (20 min)](spectrum-intro/index.md)
 
-is an App Builder demo app that enables searching Adobe Stock images.
-
+Introduction to Spectrum to build an App Builder App UI.
 
