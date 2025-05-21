@@ -7,7 +7,7 @@ keywords:
 title: App Builder Sample Apps  
 ---
 
-# Sample Apps
+# Sample Apps New
 
 These are complete sample applications built using App Builder. See below for a [collection of code snippets](#code-snippets) for common operations.
 
@@ -49,8 +49,3 @@ This is a complete solution of the Code Lab [Building an App Builder To-Do App w
 
 Here is a collection of basic code snippets to get you started: 
 
-* [Caching HTTP responses](code_snippets/index.md)
-* [App Builder Files SDK](code_snippets/files.md)
-* [App Builder State SDK](code_snippets/state.md)
-* [I/O Events handler](code_snippets/events.md)
-* [Real-time data from Adobe Analytics API 1.4](code_snippets/analytics.md)
