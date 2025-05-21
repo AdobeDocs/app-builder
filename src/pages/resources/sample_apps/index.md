@@ -7,7 +7,7 @@ keywords:
 title: App Builder Sample Apps  
 ---
 
-# Sample Apps New
+# Sample Apps
 
 These are complete sample applications built using App Builder. See below for a [collection of code snippets](#code-snippets) for common operations.
 
