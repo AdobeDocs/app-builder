@@ -19,5 +19,3 @@ These are complete sample applications built using App Builder. See below for a 
 
 [Demo](demo.md) is an App Builder demo app that enables searching Adobe Stock images.
 
-<DiscoverBlock slots="heading, link, text" width="100%" />
-
