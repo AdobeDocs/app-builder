@@ -33,8 +33,6 @@ Gets or set the favicon for the page. If this isn't set, then the default Experi
 page.favicon = "https://img.icons8.com/color/48/000000/thumb-up.png";
 ```
 
-___
-
 ### modal
 
 • **modal**: *boolean*
@@ -48,8 +46,6 @@ Configuration to show or hide a modal with full-screen overlay. Defaults to fals
 ```typescript
 page.modal = true;
 ```
-
-___
 
 ### preventDefaultCombos
 
@@ -70,7 +66,6 @@ page.preventDefaultCombos = [
 ];
 ```
 
-___
 
 ### spinner
 
@@ -86,7 +81,6 @@ Gets or sets a value indicating whether or not to show a spinner on the page. Th
 page.spinner = true;
 ```
 
-___
 
 ### title
 
@@ -102,7 +96,6 @@ Gets or sets the title of the page.
 page.title = 'Adobe Experience Cloud';
 ```
 
-___
 
 ### viewportTakeover
 
@@ -138,7 +131,6 @@ page.done();
 
 **Returns:** *void*
 
-___
 
 ### generateShellUrl
 
@@ -166,7 +158,6 @@ page.generateShellUrl({href: 'https://example.com/abc'});
 
 The shell URL for the specified view of the solution.
 
-___
 
 ### iframeReload
 
@@ -182,7 +173,6 @@ page.iframeReload();
 
 **Returns:** *void*
 
-___
 
 ### openInNewTab
 
@@ -204,7 +194,6 @@ page.openInNewTab('/path');
 
 **Returns:** *void*
 
-___
 
 ### shellRedirect
 

@@ -19,49 +19,41 @@ title: 'Interface: UserInfo'
 
 • **imsOrg**: *string*
 
-___
 
 ### imsOrgName
 
 • **imsOrgName**: *string*
 
-___
 
 ### imsOrgs
 
 • **imsOrgs**: *object[]*
 
-___
 
 ### imsProfile
 
 • **imsProfile**: *Record‹string, any›*
 
-___
 
 ### imsToken
 
 • **imsToken**: *string*
 
-___
 
 ### locale
 
 • **locale**: *string*
 
-___
 
 ### preferredLanguages
 
 • **preferredLanguages**: *string[]*
 
-___
 
 ### subOrg
 
 • **subOrg**: *string | null*
 
-___
 
 ### tenant
 

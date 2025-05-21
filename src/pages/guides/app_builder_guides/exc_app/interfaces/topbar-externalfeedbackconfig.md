@@ -19,19 +19,16 @@ title: 'Interface: ExternalFeedbackConfig'
 
 • **buttonLabel**: *string*
 
-___
 
 ### enabled
 
 • **enabled**: *boolean*
 
-___
 
 ### type
 
 • **type**: *"external"*
 
-___
 
 ### url
 

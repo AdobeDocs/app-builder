@@ -19,19 +19,16 @@ title: 'Interface: CustomFeedbackConfig'
 
 • **buttonLabel**: *string*
 
-___
 
 ### callback
 
 • **callback**: *[Callback](topbar-callback.md)*
 
-___
 
 ### enabled
 
 • **enabled**: *boolean*
 
-___
 
 ### type
 

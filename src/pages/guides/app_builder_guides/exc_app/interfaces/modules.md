@@ -27,25 +27,21 @@ description: Interface modules
 | ---------- | ---- |
 | `options?` | any  |
 
-___
 
 ### page
 
 • **page**: *[PageApi](page-pageapi.md)*
 
-___
 
 ### runtime
 
 • **runtime**: *[Runtime](runtime.md)*
 
-___
 
 ### topbar
 
 • **topbar**: *[TopbarApi](topbar-topbarapi.md)*
 
-___
 
 ### user
 

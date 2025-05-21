@@ -43,7 +43,6 @@ Invoke all handlers for the given type.
 | `event?` | T[K] | Any value  passed to each handler -  object is recommended, and powerful |
 
 **Returns:** *void*
-<hr />
 
 ### off
 
@@ -76,7 +75,6 @@ Handler function to remove.
 | `event?` | T[K] |
 
 **Returns:** *void*
-<hr />
 
 ### on
 

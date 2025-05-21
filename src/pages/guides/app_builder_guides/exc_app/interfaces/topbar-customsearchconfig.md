@@ -21,7 +21,6 @@ title: 'Interface: CustomSearchConfig'
 
 The callback to execute when the search icon is clicked.
 
-___
 
 ### `Optional` enabled
 
@@ -29,7 +28,6 @@ ___
 
 Used to control whether or not the search icon in the top bar is enabled and clickable.
 
-___
 
 ### `Optional` open
 
