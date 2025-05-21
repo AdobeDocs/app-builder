@@ -509,6 +509,8 @@ Please visit the [Debugging App Builder Apps](../../resources/debugging/index.md
 
 If the local development is run (`aio app run`), the actions you call are run directly on Adobe I/O Runtime. When you use `aio app dev`, the actions are run or debugged directly in Node. In both cases your front end is run on localhost.
 
+> **Note:** `aio app dev` does not fully emulate the Adobe I/O Runtime environment. When running locally, your action code executes *in process* within Node.js and is not completely isolated. As a result, some values from `process.env` may be accessible, but this will not be the case in the deployed environment. **Do not write action code that relies on environment variables from your `.env` file being available at runtime.** Instead, use `.env` to populate action inputs (as defined in your `ext.config.yaml`), and access these values as parameters passed to your action during invocation.
+
 ### 6.4 Retrieve application logs
 
 #### 6.4.1 Dev
