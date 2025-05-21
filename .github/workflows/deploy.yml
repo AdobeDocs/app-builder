@@ -11,22 +11,11 @@ on:
         options:
           - stage
           - prod
-          - stage & prod
-      clean:
-        description: "Clean cache?"
-        type: boolean
-        required: true
-        default: "no"
-      build-navigation:
-        description: "Build navigation file?"
-        type: boolean
-        required: true
-        default: "false"
-      build-redirections:
-        description: "Build redirections file?"
-        type: boolean
-        required: true
-        default: "false"
+      baseSha:
+        description: "Use base SHA commit to deploy from (empty string defaults to last commit before HEAD)"
+        type: string
+        required: false
+        default: ""
 
 jobs:
   set-state:
@@ -36,9 +25,7 @@ jobs:
       branch_short_ref: ${{ steps.get_branch.outputs.branch }}
       deploy_stage: ${{ contains(inputs.env, 'stage') }}
       deploy_prod: ${{ contains(inputs.env, 'prod') }}
-      clean_cache: ${{ inputs.clean }}
-      build_navigation: ${{ inputs.build-navigation }}
-      build_redirections: ${{ inputs.build-redirections }}
+      base_Sha: ${{ github.event.inputs.baseSha }}
 
     steps:
       - name: Checkout
@@ -64,15 +51,13 @@ jobs:
     steps:
       - run: echo "Deploy to stage - ${{ needs.set-state.outputs.deploy_stage }}"
       - run: echo "Deploy to prod - ${{ needs.set-state.outputs.deploy_prod }}"
-      - run: echo "Clean cache - ${{ needs.set-state.outputs.clean_cache }}"
-      - run: echo "Build navigation file - ${{ needs.set-state.outputs.build_navigation }}"
-      - run: echo "Build redirections file - ${{ needs.set-state.outputs.build_redirections }}"
       - run: echo "Path prefix - ${{ needs.set-state.outputs.path_prefix }}"
       - run: echo "Repository org - ${{ github.event.repository.owner.login }}"
       - run: echo "Repository name - ${{ github.event.repository.name }}"
       - run: echo "Repository branch - ${{ needs.set-state.outputs.branch_short_ref }}"
+      - run: echo "Base Sha - ${{ needs.set-state.outputs.base_Sha }}"
 
-  build:
+  deploy:
     defaults:
       run:
         shell: bash
@@ -82,59 +67,101 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node v18 for Yarn v3
-        if: needs.set-state.outputs.build_navigation == 'true' || needs.set-state.outputs.build_redirections == 'true'
-        uses: actions/setup-node@v4
+      - name: Get changed files in the src/pages and static folder
+        id: changed-files-specific
+        uses: tj-actions/changed-files@v46.0.5
         with:
-          node-version: "18"
-
-      - name: Enable Corepack for Yarn v3
-        if: needs.set-state.outputs.build_navigation == 'true' || needs.set-state.outputs.build_redirections == 'true'
-        run: corepack enable
-
-      - name: Install Yarn v4
-        if: needs.set-state.outputs.build_navigation == 'true' || needs.set-state.outputs.build_redirections == 'true'
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: set version stable
-
-      - name: Install Dependencies
-        if: needs.set-state.outputs.build_navigation == 'true' || needs.set-state.outputs.build_redirections == 'true'
-        uses: borales/actions-yarn@v3
-        env:
-          YARN_ENABLE_IMMUTABLE_INSTALLS: false
-        with:
-          cmd: install
-
-      - name: Build navigation file
-        if: needs.set-state.outputs.build_navigation == 'true'
-        uses: borales/actions-yarn@v3
-        with:
-          cmd: buildNavigation
-
-      - name: Build redirections file
-        if: needs.set-state.outputs.build_redirections == 'true'
-        uses: borales/actions-yarn@v3
-        with:
-          cmd: buildRedirections
-
-      - name: Clean cache on stage
-        if: needs.set-state.outputs.clean_cache == 'true' && needs.set-state.outputs.deploy_stage == 'true'
-        run: |
-            bash .github/scripts/process-mds.sh cache stage ${{ needs.set-state.outputs.branch_short_ref }} "${{ needs.set-state.outputs.path_prefix }}"
-
-      - name: Clean cache on prod
-        if: needs.set-state.outputs.clean_cache == 'true' && needs.set-state.outputs.deploy_prod == 'true'
-        run: |
-            bash .github/scripts/process-mds.sh cache prod ${{ needs.set-state.outputs.branch_short_ref }} "${{ needs.set-state.outputs.path_prefix }}"
+          json: true
+          escape_json: false
+          files: |
+            src/pages/**
+            static/**
+          base_sha: ${{ needs.set-state.outputs.base_Sha }}
 
       - name: Deploy to stage
-        if: needs.set-state.outputs.deploy_stage == 'true'
-        run: |
-            bash .github/scripts/process-mds.sh preview stage ${{ needs.set-state.outputs.branch_short_ref }} "${{ needs.set-state.outputs.path_prefix }}"
+        if: needs.set-state.outputs.deploy_stage == 'true' && steps.changed-files-specific.outputs.any_modified == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const script = require('./.github/scripts/deploy.js');
+
+            await script({
+              core,
+              changes: ${{ steps.changed-files-specific.outputs.all_changed_files }},
+              deletions: ${{ steps.changed-files-specific.outputs.deleted_files }},
+              operation: "preview",
+              siteEnv: "stage",
+              branch: "${{ needs.set-state.outputs.branch_short_ref }}",
+              pathPrefix: "${{ needs.set-state.outputs.path_prefix }}"
+            });
+
+      - name: Clean cache on stage
+        if: needs.set-state.outputs.deploy_stage == 'true' && steps.changed-files-specific.outputs.any_modified == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const script = require('./.github/scripts/deploy.js');
+
+            await script({
+              core,
+              changes: ${{ steps.changed-files-specific.outputs.all_changed_files }},
+              deletions: ${{ steps.changed-files-specific.outputs.deleted_files }},
+              operation: "cache",
+              siteEnv: "stage",
+              branch: "${{ needs.set-state.outputs.branch_short_ref }}",
+              pathPrefix: "${{ needs.set-state.outputs.path_prefix }}"
+            });
 
       - name: Deploy to prod
-        if: needs.set-state.outputs.deploy_prod == 'true'
-        run: |            
-            bash .github/scripts/process-mds.sh preview prod ${{ needs.set-state.outputs.branch_short_ref }} "${{ needs.set-state.outputs.path_prefix }}"
-            bash .github/scripts/process-mds.sh live prod ${{ needs.set-state.outputs.branch_short_ref }} "${{ needs.set-state.outputs.path_prefix }}"
+        if: needs.set-state.outputs.deploy_prod == 'true' && steps.changed-files-specific.outputs.any_modified == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const script = require('./.github/scripts/deploy.js');
+
+            await script({
+              core,
+              changes: ${{ steps.changed-files-specific.outputs.all_changed_files }},
+              deletions: ${{ steps.changed-files-specific.outputs.deleted_files }},
+              operation: "preview",
+              siteEnv: "prod",
+              branch: "${{ needs.set-state.outputs.branch_short_ref }}",
+              pathPrefix: "${{ needs.set-state.outputs.path_prefix }}"
+            });
+
+            await script({
+              core,
+              changes: ${{ steps.changed-files-specific.outputs.all_changed_files }},
+              deletions: ${{ steps.changed-files-specific.outputs.deleted_files }},
+              operation: "live",
+              siteEnv: "prod",
+              branch: "${{ needs.set-state.outputs.branch_short_ref }}",
+              pathPrefix: "${{ needs.set-state.outputs.path_prefix }}"
+            });
+
+      - name: Clean cache on prod
+        if: needs.set-state.outputs.deploy_prod == 'true' && steps.changed-files-specific.outputs.any_modified == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const script = require('./.github/scripts/deploy.js');
+
+            await script({
+              core,
+              changes: ${{ steps.changed-files-specific.outputs.all_changed_files }},
+              deletions: ${{ steps.changed-files-specific.outputs.deleted_files }},
+              operation: "cache",
+              siteEnv: "stage",
+              branch: "${{ needs.set-state.outputs.branch_short_ref }}",
+              pathPrefix: "${{ needs.set-state.outputs.path_prefix }}"
+            });
+
+            await script({
+              core,
+              changes: ${{ steps.changed-files-specific.outputs.all_changed_files }},
+              deletions: ${{ steps.changed-files-specific.outputs.deleted_files }},
+              operation: "cache",
+              siteEnv: "prod",
+              branch: "${{ needs.set-state.outputs.branch_short_ref }}",
+              pathPrefix: "${{ needs.set-state.outputs.path_prefix }}"
+            });

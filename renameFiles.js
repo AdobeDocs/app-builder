@@ -1,18 +1,20 @@
 const path = require('path');
 const fs = require('node:fs');
-const { pathPrefix } = require('./gatsby-config.js');
+const { pathPrefix: pathPrefixFromGatsbyConfig } = require('./gatsby-config.js');
 const { 
     readRedirectionsFile, 
     writeRedirectionsFile, 
     getRedirectionsFilePath, 
+    getDeployableFiles,
     getMarkdownFiles, 
     getFindPatternForMarkdownFiles,
     getReplacePatternForMarkdownFiles,
+    removeFileExtension,
     replaceLinksInFile 
 } = require('./scriptUtils.js');
 
 function toKebabCase(str) {
-    const isScreamingSnakeCase = new RegExp(/^[A-Z0-9_]*$/gm).test(str);
+    const isScreamingSnakeCase = new RegExp(/^[A-Z0-9_]*$/).test(str);
     str = isScreamingSnakeCase ? str.toLowerCase() : str;
     return str
         .match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
@@ -25,19 +27,43 @@ function toEdsCase(str) {
     return isValid ? str : toKebabCase(str);
 }
 
-function toUrl(file, renameBaseWithoutExt = name => name) {
-    const base = path.basename(file);
-    const ext = path.extname(file);
-    const end = file.length - base.length;
-    const baseWithoutExt = base.substring(0, base.length - ext.length);
-    const newBaseWithoutExt = renameBaseWithoutExt(baseWithoutExt);
-    return `${file.substring(0, end)}${newBaseWithoutExt}`
+function getPathPrefixFromConfig() {
+    const CONFIG_PATH = path.join('src', 'pages', 'config.md');
+    if (!fs.existsSync(CONFIG_PATH)) {
+        return null;
+    }
+    
+    const data = fs.readFileSync(CONFIG_PATH).toString();
+    if(!data) {
+        return null;
+    }
+
+    const lines = data.split("\n");
+    
+    // find the pathPrefix key
+    const keyIndex = lines.findIndex(line => new RegExp(/\s*-\s*pathPrefix:/).test(line));
+    if (keyIndex < 0) {
+        return null;
+    }
+    
+    // find the pathPrefix value
+    const line = lines.slice(keyIndex + 1)?.find(line => new RegExp(/\s*-/).test(line));
+    if(!line) {
+        null;
+    }
+
+    // extract pathPrefix
+    const pathPrefixLine = line.match(new RegExp(/(\s*-\s*)(\S*)(\s*)/));
+    if(!pathPrefixLine) {
+        return null;
+    }
+    return pathPrefixLine[2];
 }
 
 function renameFile(file, renameBaseWithoutExt) {
-    const url = toUrl(file, renameBaseWithoutExt);
+    const renamedFileWithoutExt = removeFileExtension(file, renameBaseWithoutExt);
     const ext = path.extname(file);
-    return `${url}${ext}`
+    return `${renamedFileWithoutExt}${ext}`
 }
 
 function getFileMap(files) {
@@ -75,14 +101,14 @@ function renameLinksInMarkdownFile(fileMap, file) {
     });
 }
 
-function renameLinksInRedirectsFile(fileMap) {
+function renameLinksInRedirectsFile(fileMap, pathPrefix) {
     const file = getRedirectionsFilePath();
     const dir = path.dirname(file);
     replaceLinksInFile({
         file,
         linkMap: getLinkMap(fileMap, dir),
-        getFindPattern: (from) => `(['"]?)(Source|Destination)(['"]?\\s*:\\s*['"])(${pathPrefix}${toUrl(from)})(/?)(#[^'"]*)?(['"])`,
-        getReplacePattern: (to) => `$1$2$3${pathPrefix}${toUrl(to)}$5$6$7`,
+        getFindPattern: (from) => `(['"]?)(Source|Destination)(['"]?\\s*:\\s*['"])(${pathPrefix}${removeFileExtension(from)})(/?)(#[^'"]*)?(['"])`,
+        getReplacePattern: (to) => `$1$2$3${pathPrefix}${removeFileExtension(to)}$5$6$7`,
     });
 }
 
@@ -96,15 +122,15 @@ function renameLinksInGatsbyConfigFile(fileMap, file) {
     });
 }
 
-function appendRedirects(fileMap) {
+function appendRedirects(fileMap, pathPrefix) {
     const file = getRedirectionsFilePath();
     const dir = path.dirname(file);
     const linkMap = getLinkMap(fileMap, dir);
     const newData = [];
     linkMap.forEach((to, from) => {
         newData.push({
-            Source:  `${pathPrefix}${toUrl(from)}`, 
-            Destination: `${pathPrefix}${toUrl(to)}`,
+            Source:  `${pathPrefix}${removeFileExtension(from)}`, 
+            Destination: `${pathPrefix}${removeFileExtension(to)}`,
         })
     });
     const currData = readRedirectionsFile();
@@ -119,23 +145,27 @@ function renameFiles(map) {
 }
 
 try {
-    const markdownFiles = getMarkdownFiles();
-    const fileMap = getFileMap(markdownFiles);
-    markdownFiles.forEach(file => {
-        renameLinksInMarkdownFile(fileMap, file);
+    const files = getDeployableFiles();
+    const fileMap = getFileMap(files);
+
+    const mdFiles = getMarkdownFiles();
+    mdFiles.forEach(mdFile => {
+        renameLinksInMarkdownFile(fileMap, mdFile);
     });
-    renameFiles(fileMap);
 
     const redirectsFile = getRedirectionsFilePath();
+    const pathPrefix = getPathPrefixFromConfig() ?? pathPrefixFromGatsbyConfig;
     if(fs.existsSync(redirectsFile)) {
-        renameLinksInRedirectsFile(fileMap);
-        appendRedirects(fileMap);
+        renameLinksInRedirectsFile(fileMap, pathPrefix);
+        appendRedirects(fileMap, pathPrefix);
     }
 
     const gatsbyConfigFile = 'gatsby-config.js';
     if(fs.existsSync(gatsbyConfigFile)) {
         renameLinksInGatsbyConfigFile(fileMap, gatsbyConfigFile);
     }
+
+    renameFiles(fileMap);
 
 } catch (err) {
     console.error(err);
