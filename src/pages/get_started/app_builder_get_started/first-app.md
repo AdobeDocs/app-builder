@@ -9,7 +9,7 @@ title: Creating your First App Builder Application
 
 # Create your First App Builder Application
 
-This is a guide through the steps to set up and develop an App Builder Application. Please refer to the [Common issues](#8-common-issues) section at the end of this page to resolve any problems you encounter. 
+This is a guide through the steps to set up and develop an App Builder Application. Please refer to the [Common issues](#8-common-issues) section at the end of this page to resolve any problems you encounter.
 
 ## 1. Check your environment and tools
 
@@ -22,49 +22,48 @@ Make sure you have [access to App Builder](set-up.md#access-and-credentials), an
 Follow these instructions to set up your project:
 
 1. Navigate to [Adobe Developer Console](https://developer.adobe.com/developer-console/).
-   
+
    ![Adobe Developer Console](../../images/console-1.png)
 
 2. Use the IMS Org Switcher in the upper right corner to select the IMS organization you want to use if it is not the current one.
-   
+
    ![Org Switcher](../../images/console-2.png)
 
-3. Once you are in the correct organization, click on `Quick Start` and select the option `Create project from template`
-   
+3. Once you are in the correct organization, click on `Quick Start` and select the option `Create project from template` 
    > **Note:** if you don't see the `Create project from template` option, confirm that the IMS org is correct. If it is, you do not yet have access to App Builder: recheck the process in [Set up Access, Environment, and Tools](set-up.md).
 
 4. Select `App Builder` from the list of templates.
-   
+
    ![Select Template](../../images/console-3.png)
 
 5. Enter `Project Title` and `App Name` for your templated project.
-   
-   `Project Title` identifies the project in [Adobe Developer Console](https://developer.adobe.com/developer-console/) and the [CLI](https://github.com/adobe/aio-cli). We recommend changing the default title to a meaningful project title. 
-   
-   `App Name` is the unique identifier for your application. 
-   
+
+   `Project Title` identifies the project in [Adobe Developer Console](https://developer.adobe.com/developer-console/) and the [CLI](https://github.com/adobe/aio-cli). We recommend changing the default title to a meaningful project title.
+
+   `App Name` is the unique identifier for your application.
+
    > **Note:** once project setup is complete, `App Name` cannot be changed.
-   
+
    The "Include Runtime with each workspace" checkbox is checked by default, so each workspace will be provisioned with a unique Adobe I/O Runtime namespace automatically. This allows Developers to work within their own unique Adobe I/O Runtimeenvironments.
-   
+
    > **Note:** If you deselect the checkbox to decline automatic inclusion of Adobe I/O Runtime, you will need to enable it manually for each individual workspace. You cannot auto-add Adobe I/O Runtime to all workspaces once the initial setup is complete.
-   
+
    You can manually remove Adobe I/O Runtime from individual workspaces later if it is not needed.
-   
+
    Click `Save` when ready.
-   
+
    ![Select Template](../../images/console-4.png)
 
 6. You should now see a new project generated with two default `Workspaces`.
-   
+
    - Workspaces can be used to manage different deployment environments (Development, Q/A, Staging, Production) for your application and to provide individual working environments for each Developer on the project. The workspace is where you will connect services and get credential details needed to connect to Adobe APIs. Connected services may differ from workspace to workspace, and credentials used within each workspace are not shared across workspaces.
-   
+
    - Every App Builder project has two default workspaces, `Production` and `Stage`. You can add more workspaces as needed. The `Production` workspace is used for submission and distribution workflows: when you’re ready to deploy your app, you will submit it for approval from the Production workspace.
-     
+
      ![Project Preview](../../images/console-5.png)
 
 7. Create a new workspace or select a workspace to add [APIs](https://developer.adobe.com/developer-console/docs/guides/services/#add-api) and [Events](https://developer.adobe.com/developer-console/docs/guides/services/services-add-event/) that you will need for your application.
-   
+
     ![Workspace](../../images/console-6.png)
 
 To learn more about Adobe Developer Console, please refer to [Console Documentation](https://developer.adobe.com/developer-console/docs).
@@ -74,13 +73,13 @@ To learn more about Adobe Developer Console, please refer to [Console Documentat
 Once your project is set up in Adobe Developer Console, you can move on to your local environment. You can always go back to Adobe Developer Console to modify your project later.
 
 1. Navigate to the Terminal and enter:
-   
+
    ```bash
    aio login
    ```
 
 2. A browser window should open, asking you to sign in with your Adobe ID. If the window does not automatically, copy/paste the URL shown in your browser to log in:
-   
+
    ```bash
    $ aio login
    Visit this url to log in:
@@ -88,7 +87,7 @@ Once your project is set up in Adobe Developer Console, you can move on to your 
    ```
 
 3. Once you've logged in, you can close the browser window and go back to Terminal. You will see your user token string displayed in the terminal. Tokens are automatically stored in the CLI configuration, so the CLI can use them to talk to Adobe Developer Console.
-   
+
    ```bash
    eyJ4NXUiOixxxxxxxxxxxxxxxxxxx
    ```
@@ -108,15 +107,15 @@ Enterprise organization users may learn to initialize App Builder projects using
 #### 4.1.1 Initialize your project with Extension Points
 
 1. In Terminal, navigate to where you want to initialize your project and type:
-   
+
    ```bash
    aio app init <app_name>
    ```
-   
+
    You will be prompted with a few questions about how you want your app to be boostrapped and configured.
 
 2. Select the `Organization` you plan to use for the new App Builder Application. Navigate through the list to find the project and workspace you just created. If the list of organizations is long, start typing the project name to shorten it.
-   
+
    ```bash
    $ aio app init helloworld
    Retrieving information from Adobe Developer Console..
@@ -124,7 +123,7 @@ Enterprise organization users may learn to initialize App Builder projects using
    ```
 
 3. Once you have selected the org, project and workspace, select the product you would like to extend:
-   
+
    ```bash
    ? Which extension point(s) do you with to implement?
    select components to include (Press <space> to select, <a> to toggle all, <i> to invert selection)
@@ -133,28 +132,28 @@ Enterprise organization users may learn to initialize App Builder projects using
    ```
 
 4. Select the `Project` you plan to use for the new App Builder application. Navigate through the list to find the project you just created. If it is long, you can start typing to shorten it.
-   
+
    ```bash
    ? Select Project Demo Project SAXU
    ```
 
 5. When this selection is complete, the build process should initialize, with installation of npm dependencies.
-   
+
    ```bash
    create package.json
    create app.config.yaml
    create .aio
    create README.md
-   
+
    .......
-   
+
    found 0 vulnerabilities
-   
+
    ✔ App initialization finished!
    ```
 
 6. Your project is initialized. Open the folder you just created to see the files that were generated:
-   
+
    ```bash
    $ cd helloworld
    $ ls
@@ -165,25 +164,25 @@ Enterprise organization users may learn to initialize App Builder projects using
 7. Note that you can add or remove extension points, back-end actions, SPA front-end, and Github workflows from your application later using the `aio app <add|delete> ext`, `aio app <add|delete> action`, `aio app <add|delete> web-assets` and `aio app <add|delete> ci` commands, respectively, in your application folder.
 
 8. You can also install an App Builder template from the template registry: discover available templates in the App Builder template registry with the command:
-   
+
    ```bash
    aio templates discover
    ```
 
 9. Install desired templates with this command:
-   
+
    ```bash
    aio templates install <npm package name>
    ```
-   
+
     or this one:
-   
+
    ```bash
    aio templates discover --interactive
    ```
-   
+
     The template's npm package will be downloaded and extracted, and Developer Console resources such as services and workspaces will be created and configured based on the template's **install.yaml** configuration file. `npm install` will run in the background to install the npm package.
-   
+
    This ends the section on how enterprise organization users can initialize App Builder projects using extension points. Please continue reading to explore alternative initialization protocols, or skip ahead to [Anatomy of an App Builder Application](#5-anatomy-of-an-app-builder-application).
 
 #### 4.1.2 Initialize an empty project
@@ -306,7 +305,7 @@ This ends the section on how enterprise organization users can initialize an emp
 
 This flow is intended for Developers who:
 
-- Do not have access to Adobe Developer Console as entitled enterprise organization users, probably due to permission issues, but 
+- Do not have access to Adobe Developer Console as entitled enterprise organization users, probably due to permission issues, but
 
 - Can get credentials that are tied to an App Builder workspace from an entitled enterprise organization administrator or Developer
 
@@ -315,7 +314,7 @@ For this flow to work, the Developer should ask someone with access to set up a 
 ![Workspace Download](../../images/console-7.png)
 
 1. In Terminal, navigate to the place where you want to initialize your project and type:
-   
+
    ```bash
    aio app init <app_name> --import <path_to_config_file>
    ```
@@ -323,7 +322,7 @@ For this flow to work, the Developer should ask someone with access to set up a 
 2. Select project configuration options as in the preceding section
 
 3. When your project is initialized, open the folder you just created to seethe files generated:
-   
+
    ```bash
    $ cd helloworld
    $ ls
@@ -333,23 +332,23 @@ For this flow to work, the Developer should ask someone with access to set up a 
 
 4. When you generate a project using a downloaded configuration file without logging into Adobe Developer Console on your CLI, everything should be the same.
    Adobe uses the values from the downloaded file to pre-populate values in your `.env` and `.aio`. The only difference you will notice is the missing `config.json` file, because that's the file you used to generate this project.
-   
-   This ends the tutorial for Developers initializing their apps from a Console config file. you may review the next section on Developers without access or credentials, or scroll down to "Anatomy of an App Builder Application" below. 
+
+   This ends the tutorial for Developers initializing their apps from a Console config file. you may review the next section on Developers without access or credentials, or scroll down to "Anatomy of an App Builder Application" below.
 
 #### 4.2.2 Developer without any credentials
 
 This flow is intended for Developers who have no access or credentials but still want to look at the code.
 
 1. In your Terminal, navigate to the place where you want to initialize your project and type:
-   
+
    ```bash
    aio app init <app_name> -y
    ```
-   
+
    The `-y` flag allows user to skip all questions and generates a sample project with only the `generic` sample action.
 
 2. You should see similar files generated, but none of the config files will be pre-populated.
-   
+
    ```bash
    $ cd helloworld
    $ ls
@@ -375,7 +374,7 @@ You should see these folders and files in your project:
 4. `app.config.yaml` is the master configuration file. It follows the same principle as the individual `ext.config.yaml`, and compiles these individual file into one comprehensive config upon application build.
 5. `lib`  contains all the shared utility actions across different extension points.
 6. `package.json` describes project definition and various metadata relevant to the project. It sends information to npm that allows npm to identify the project and handle its dependencies. Learn more [here](https://nodejs.org/en/learn/getting-started/an-introduction-to-the-npm-package-manager#packages).
-7. `.aio` contains config variables that are useful for the CLI to facilitate the app, for example, supported API services. 
+7. `.aio` contains config variables that are useful for the CLI to facilitate the app, for example, supported API services.
    - This file should not be committed to a source code versioning system.
    - You can manually update the file or use the `aio config` commands to add or to remove configurations. Learn more about the [Config Plugin](https://github.com/adobe/aio-cli-plugin-config).
 8. `.env`contains environment variables that are useful for the app during development, for example Adobe I/O Runtime credentials and Adobe Product API key, secrets, and other tenant specifics.
@@ -586,13 +585,13 @@ You can undeploy your app with `aio app undeploy`. To learn more about deploymen
 1. Please first make sure your CLI and all plugins are up to date. For the CLI, you can check the version through `aio -v` and compare it with the `npm show @adobe/aio-cli version`. If your CLI is outdated, update it by running `npm install -g @adobe/aio-cli`. After that, you can simply run `aio update` to ensure all core plugins are updated.
 
 2. If you see a validation error, you did not pass in an authorization header to an action that expected one. See `Trying the Sample App` section above, or learn more about this in our [Security Overview](../../guides/app_builder_guides/security/index.md).
-   
+
    ```bash
    {"error": "cannot validate token, reason: missing authorization header"}
    ```
 
 3. If you see a missing parameter error, you did not pass in required parameters to an action that expected one. See `Trying the Sample App` section above.
-   
+
    ```bash
    {"error": "missing parameter(s) 'apiKey,companyId'"}`
    ```
