@@ -53,7 +53,6 @@ The callback used to bootstrap a solution. The runtime object is passed in as a 
 
 **Returns:** *void*
 
-___
 
 ### runtime
 

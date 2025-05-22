@@ -27,6 +27,5 @@ This section provides an overview and quick navigation for all interfaces availa
 | [UserAPI](user-userapi.md)                                     | APIs for user information, authentication, and events. |
 | [UserInfo](user-userinfo.md)                                   | Structure for user identity, org, and locale information. |
 
----
 
 Return to the [Guides Index](../../../index.md). 
