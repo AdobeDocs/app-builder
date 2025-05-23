@@ -1,7 +1,7 @@
 {
-    "total": 309,
+    "total": 308,
     "offset": 0,
-    "limit": 309,
+    "limit": 308,
     "data": [
         {
             "Source": "/app-builder/docs/resources",
@@ -1056,11 +1056,11 @@
             "Destination": "/app-builder/docs/guides/app_builder_guides/events/custom-events"
         },
         {
-            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user-userinfo",
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user.userinfo",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user-userinfo"
         },
         {
-            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user-userapi",
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user.userapi",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user-userapi"
         },
         {
@@ -1132,7 +1132,7 @@
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/migrate-app-to-exp-cloud-spa"
         },
         {
-            "Source": "/app-builder/docs/guides/contribution-guide",
+            "Source": "/app-builder/docs/guides/contribution_guide",
             "Destination": "/app-builder/docs/guides/contribution-guide"
         },
         {
@@ -1148,7 +1148,7 @@
             "Destination": "/app-builder/docs/guides/runtime_guides/creating-actions"
         },
         {
-            "Source": "/app-builder/docs/guides/runtime_guides/ci-cd-pipeline",
+            "Source": "/app-builder/docs/guides/runtime_guides/ci-cd_pipeline",
             "Destination": "/app-builder/docs/guides/runtime_guides/ci-cd-pipeline"
         },
         {
@@ -1158,10 +1158,6 @@
         {
             "Source": "/app-builder/docs/guides/runtime_guides/reference_docs/api_ref",
             "Destination": "/app-builder/docs/guides/runtime_guides/reference_docs/api-ref"
-        },
-        {
-            "Source": "/app-builder/docs/guides/runtime_guides/ci_cd_pipeline",
-            "Destination": "/app-builder/docs/guides/runtime_guides/ci-cd-pipeline"
         },
         {
             "Source": "/app-builder/docs/guides/runtime_guides/reference_docs/wsk_use",
