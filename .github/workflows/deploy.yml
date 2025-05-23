@@ -112,7 +112,7 @@ jobs:
               pathPrefix: "${{ needs.set-state.outputs.path_prefix }}"
             });
 
-      - name: Deploy to prod
+      - name: Deploy to prod (Step 1 of 2)
         if: needs.set-state.outputs.deploy_prod == 'true' && steps.changed-files-specific.outputs.any_modified == 'true'
         uses: actions/github-script@v7
         with:
@@ -128,6 +128,13 @@ jobs:
               branch: "${{ needs.set-state.outputs.branch_short_ref }}",
               pathPrefix: "${{ needs.set-state.outputs.path_prefix }}"
             });
+
+      - name: Deploy to prod (Step 2 of 2)
+        if: needs.set-state.outputs.deploy_prod == 'true' && steps.changed-files-specific.outputs.any_modified == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const script = require('./.github/scripts/deploy.js');
 
             await script({
               core,

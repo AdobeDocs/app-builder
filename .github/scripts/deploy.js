@@ -48,7 +48,7 @@ module.exports = async ({ core, changes, deletions, operation, siteEnv, branch, 
     file = file.replace('src/pages/', '');
 
     const theFilePath = `${pathPrefix}/${file}`;
-    const deleteUrl = `https://admin.hlx.page/live/adobedocs/${edsSiteEnv}/${codeRepoBranch}${theFilePath}`;
+    const deleteUrl = `https://admin.hlx.page/${operation}/adobedocs/${edsSiteEnv}/${codeRepoBranch}${theFilePath}`;
     const deleteCmd = `curl -XDELETE -vi ${args} ${deleteUrl}`;
 
 
@@ -58,7 +58,7 @@ module.exports = async ({ core, changes, deletions, operation, siteEnv, branch, 
         return;
       }
 
-      console.log(`::group:: Deleting ${theFilePath} \n${deleteExecOut} \n::endgroup::`);
+      console.log(`::group:: Deleting ${operation} on ${theFilePath} \nThe command: ${deleteCmd} \n${deleteExecOut} \n::endgroup::`);
     });
   });
 }
