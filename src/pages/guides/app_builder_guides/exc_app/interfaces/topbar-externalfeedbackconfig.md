@@ -19,16 +19,19 @@ title: 'Interface: ExternalFeedbackConfig'
 
 • **buttonLabel**: *string*
 
+<HorizontalLine/>
 
 ### enabled
 
 • **enabled**: *boolean*
 
+<HorizontalLine/>
 
 ### type
 
 • **type**: *"external"*
 
+<HorizontalLine/>
 
 ### url
 

@@ -19,16 +19,19 @@ title: 'Interface: CustomFeedbackConfig'
 
 • **buttonLabel**: *string*
 
+<HorizontalLine/>
 
 ### callback
 
 • **callback**: *[Callback](topbar-callback.md)*
 
+<HorizontalLine/>
 
 ### enabled
 
 • **enabled**: *boolean*
 
+<HorizontalLine/>
 
 ### type
 

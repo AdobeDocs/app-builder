@@ -44,6 +44,8 @@ Invoke all handlers for the given type.
 
 **Returns:** *void*
 
+<HorizontalLine/>
+
 ### off
 
 ▸ **off**\<**K**\>(`type`: K, `handler`: function): *void*
@@ -75,6 +77,8 @@ Handler function to remove.
 | `event?` | T[K] |
 
 **Returns:** *void*
+
+<HorizontalLine/>
 
 ### on
 
