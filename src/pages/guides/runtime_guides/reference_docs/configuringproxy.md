@@ -4,7 +4,7 @@ For security reasons, Runtime does not expose egress IPs. Customers who need a w
 
 This can be done by adding a proxy component (in this example, an AWS EC2 instance running nginx). The proxy component will have a fixed IP address, so using an IP allowlist can secure the backend service. Communication between I/O Runtime and the proxy component will be secured via mutual TLS (mTLS) communication. 
 
-![](E:\GitHub\app-builder\src\pages\images\configure-proxy.png)
+![](../../../images/configure-proxy.png)
 
 The following steps outline how to:
 

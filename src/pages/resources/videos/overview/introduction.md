@@ -12,6 +12,6 @@ keywords:
 
 This App Builder tech talk aims to explore what’s possible with App Builder, and answers questions from customers and partners.  Join us to learn more about how App Builder helps you to build cloud-native applications for your employees. You’ll learn about common use cases, and see how to get started building with App Builder.
 
-<Media slots="video"/>
+<Embed slots="video"/>
 
-<https://youtu.be/kd2i50J9MZI>
+https://youtu.be/kd2i50J9MZI

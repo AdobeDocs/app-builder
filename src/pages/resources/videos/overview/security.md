@@ -9,6 +9,6 @@ keywords:
 
 # A Full Security Overview
 
-<Media slots="video"/>
+<Embed slots="video"/>
 
-<https://youtu.be/CHPDtDejy6Q>
+https://youtu.be/CHPDtDejy6Q

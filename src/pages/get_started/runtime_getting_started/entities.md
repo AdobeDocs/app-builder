@@ -8,9 +8,9 @@ Actions are stateless functions that run on Adobe I/O Runtime. Actions can be us
 
 For more information, see:
 
-- [Creating Actions](../../guides/runtime_guides/creating_actions.md)
-- [Securing Web Actions](../../guides/runtime_guides/securing_web_actions.md)
-- [CI/CD Pipeline](../../guides/runtime_guides/ci-cd_pipeline.md)
+- [Creating Actions](../../guides/runtime_guides/creating-actions.md)
+- [Securing Web Actions](../../guides/runtime_guides/securing-web-actions.md)
+- [CI/CD Pipeline](../../guides/runtime_guides/ci-cd-pipeline.md)
 
 ## Namespaces
 
@@ -50,4 +50,4 @@ For more information, see [Using Feeds](../../guides/runtime_guides/reference_do
 
 ## Next step
 
-Next we'll see how these entities interact to deliver Runtime function-as-a-service, in [How Adobe I/O Runtime works](how_runtime_works.md)
+Next we'll see how these entities interact to deliver Runtime function-as-a-service, in [How Adobe I/O Runtime works](how-runtime-works.md)

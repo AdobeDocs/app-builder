@@ -12,6 +12,6 @@ keywords:
 
 Manik and Ron take a look at a number of great use cases, and share some popular ways to use App Builder.
 
-<Media slots="video"/>
+<Embed slots="video"/>
 
-<https://youtu.be/P19nBf6DGAI>
+https://youtu.be/P19nBf6DGAI

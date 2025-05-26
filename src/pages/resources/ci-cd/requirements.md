@@ -7,7 +7,7 @@ keywords:
 title: Codelab Environment Requirements
 ---
 
-import Requirements from '../transclusions/_requirements.md'
+import Requirements from '../transclusions/requirements.md'
 
 <Requirements/>
 

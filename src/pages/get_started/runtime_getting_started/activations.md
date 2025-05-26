@@ -98,7 +98,7 @@ At a scale of millions of activations per day, it may be difficult to screen out
 
 The exceptions are asynchronous actions invoked in a non-blocking fashion. Their results are persisted regardless of success or failure, so you can extract their responses later. 
 
-You can still view the total number of executions, as described in the [Logging and Monitoring](../../guides/runtime_guides/logging_monitoring.md) Guide. 
+You can still view the total number of executions, as described in the [Logging and Monitoring](../../guides/runtime_guides/logging-monitoring.md) Guide. 
 
 To review all activation results during development, set the extra logging header to `on` in the request: 
 
@@ -129,6 +129,6 @@ Activation time to live is seven days, a system setting, and can't be changed by
 
 This completes the "Get Started with Adobe I/O Runtime" tutorial. 
 
-For a detailed review of Runtime components, operations, settings, and tuning, see [Understanding I/O Runtime](understanding_runtime.md).
+For a detailed review of Runtime components, operations, settings, and tuning, see [Understanding I/O Runtime](understanding-runtime.md).
 
-The procedures described above will help you debug your first actions. For additional details about debugging tools and processes, review the [Logging and Monitoring](../../guides/runtime_guides/logging_monitoring.md) Guide.
+The procedures described above will help you debug your first actions. For additional details about debugging tools and processes, review the [Logging and Monitoring](../../guides/runtime_guides/logging-monitoring.md) Guide.

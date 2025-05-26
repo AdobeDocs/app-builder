@@ -17,7 +17,7 @@ Developers may distribute App Builder applications privately or publicly.
 
 Privately distributed apps are available only to users in the Developer's organization. They are submitted through the [Developer Console](https://developer.adobe.com/developer-console/), reviewed by an Administrator of the organization, and accessed through the [App Builder Catalog](https://experience.adobe.com/#/@adobeio/custom-apps). 
 
-See [Publishing Your First App Builder Application](../../get_started/app_builder_get_started/publish_app.md) for a thorough discussion of this topic and a hands-on sample project.
+See [Publishing Your First App Builder Application](../../get_started/app_builder_get_started/publish-app.md) for a thorough discussion of this topic and a hands-on sample project.
 
 > Note: Only Adobe Experience Cloud Shell extensions may appear in the App Builder Catalog.
 
@@ -291,7 +291,7 @@ When a Developer uploads a package to Adobe Developer Distribution, these valida
 
 #### Hooks
 
-Two [hooks](architecture_overview/app_hooks.md) are available to customize the packaging step:
+Two [hooks](architecture_overview/app-hooks.md) are available to customize the packaging step:
 
 1. `pre-pack` - runs before packaging
 2. `post-pack` - runs after packaging

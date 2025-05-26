@@ -9,6 +9,6 @@ keywords:
 
 # Exploring App Builder - Dashboard Case Study
 
-<Media slots="video"/>
+<Embed slots="video"/>
 
-<https://youtu.be/jvDONM3kJwY>
+https://youtu.be/jvDONM3kJwY

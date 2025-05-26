@@ -111,7 +111,7 @@ hostname: <alternative hostname for the UI>
 
 #### Runtime Manifest
 
-The `runtimeManifest` field holds the back-end configuration deployed into Adobe I/O Runtime; its full spec can be found [here](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification/html). Acceptable values for the `limits` fields below can be found on the [Runtime System Settings](../../runtime_guides/system_settings.md) page.
+The `runtimeManifest` field holds the back-end configuration deployed into Adobe I/O Runtime; its full spec can be found [here](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification/html). Acceptable values for the `limits` fields below can be found on the [Runtime System Settings](../../runtime_guides/system-settings.md) page.
 Here is an example `runtimeManifest`:
 
 ```yaml
@@ -152,7 +152,7 @@ runtimeManifest:
 > - `concurrency`: the maximum number of action invocations that can be sent in parallel to the same container (default 200, min: 1,max: 500)
 > - `logs`: the maximum log size for the action (in MB, default 10, min: 0, max: 10)
 > 
-> More info on `limits` can be found on the [Runtime System Settings](../../runtime_guides/system_settings.md) page.
+> More info on `limits` can be found on the [Runtime System Settings](../../runtime_guides/system-settings.md) page.
 
 ##### Annotations
 
@@ -173,7 +173,7 @@ runtimeManifest:
 In addition to the [base annotations](https://github.com/adobe-apiplatform/incubator-openwhisk/blob/master/docs/annotations.md) provided by Runtime, there are two special ones: 
 
 - **disable-download** (default: false) determines whether action code can be downloaded. Once this annotation is set to true, it cannot be set back to false. 
-- **require-adobe-auth** (Default: false) determines whether the action will require Adobe authentication to invoke. See [here](../../app_builder_guides/security/index.md#authentication-and-authorization-handling) for more.
+- **require-adobe-auth** (Default: false) determines whether the action will require Adobe authentication to invoke. See [here](../security/index.md#authentication-and-authorization-handling) for more.
 
 ##### API Gateway Configuration
 
@@ -403,8 +403,8 @@ The legacy configuration system does not have an `app.config.yaml` and instead u
 
 ## Next steps
 
-If you can't view your application in the App Builder Catalog of Adobe Experience Cloud, this migration protocol may be useful: [Migrating Apps to DX Experience Cloud v1 SPAs](../exc_app/migrate_app_to_exp_cloud_spa.md).
+If you can't view your application in the App Builder Catalog of Adobe Experience Cloud, this migration protocol may be useful: [Migrating Apps to DX Experience Cloud v1 SPAs](../exc_app/migrate-app-to-exp-cloud-spa.md).
 
-Proceed to [Webpack Configuration](webpack_configuration.md).
+Proceed to [Webpack Configuration](webpack-configuration.md).
 
-Return to [Guides Index](../../../guides/index.md).
+Return to [Guides Index](../../index.md).

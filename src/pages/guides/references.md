@@ -38,4 +38,4 @@ title: Reference Documentation
  
   ## Next step
 
-  Return to [Guides Index](../guides/).
+  Return to [Guides Index](index.md).

@@ -9,6 +9,6 @@ keywords:
 
 # A Breakdown of App Builder's Architecture
 
-<Media slots="video"/>
+<Embed slots="video"/>
 
-<https://youtu.be/LbAVytUm94g>
+https://youtu.be/LbAVytUm94g

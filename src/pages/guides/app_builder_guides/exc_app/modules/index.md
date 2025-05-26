@@ -53,7 +53,6 @@ The callback used to bootstrap a solution. The runtime object is passed in as a 
 
 **Returns:** *void*
 
-___
 
 ### runtime
 
@@ -91,13 +90,13 @@ Explore the attributes and behavior of Adobe Experience Cloud Interfaces:
 
 | Page                                             | Topbar                                                     | User                          |
 | ------------------------------------------------ | ---------------------------------------------------------- | ----------------------------- |
-| [Object with Href](../interfaces/page.objectwithhref.md) | [Callback](../interfaces/topbar.callback.md)          | [User API](../interfaces/user.userapi.md)   |
-| [Object with Path](../interfaces/page.objectwithpath.md)  | [Custom Feedback](../interfaces/topbar.customfeedbackconfig.md)        | [User Info](../interfaces/user.userinfo.md) |
-| [Page API](../interfaces/page.pageapi.md)                      | [Custom Search](../interfaces/topbar.customsearchconfig.md)              |                               |
-| [Page API Properties](../interfaces/page.pageapiproperties.md) | [Help Center Feedback](../interfaces/topbar.helpcenterfeedbackconfig.md) |                               |
-|                                                  | [External Feedback](../interfaces/topbar.externalfeedbackconfig.md)      |                               |
-|                                                  | [Solution](../interfaces/topbar.solution.md)                             |                               |
-|                                                  | [Topbar API](../interfaces/topbar.topbarapi.md)                          |                               |
-|                                                  | [Topbar API Properties](../interfaces/topbar.topbarapiproperties.md)     |                               |
+| [Object with Href](../interfaces/page-objectwithhref.md) | [Callback](../interfaces/topbar-callback.md)          | [User API](../interfaces/user-userapi.md)   |
+| [Object with Path](../interfaces/page-objectwithpath.md)  | [Custom Feedback](../interfaces/topbar-customfeedbackconfig.md)        | [User Info](../interfaces/user-userinfo.md) |
+| [Page API](../interfaces/page-pageapi.md)                      | [Custom Search](../interfaces/topbar-customsearchconfig.md)              |                               |
+| [Page API Properties](../interfaces/page-pageapiproperties.md) | [Help Center Feedback](../interfaces/topbar-helpcenterfeedbackconfig.md) |                               |
+|                                                  | [External Feedback](../interfaces/topbar-externalfeedbackconfig.md)      |                               |
+|                                                  | [Solution](../interfaces/topbar-solution.md)                             |                               |
+|                                                  | [Topbar API](../interfaces/topbar-topbarapi.md)                          |                               |
+|                                                  | [Topbar API Properties](../interfaces/topbar-topbarapiproperties.md)     |                               |
 
 Return to the [Guides Index](../../../index.md).

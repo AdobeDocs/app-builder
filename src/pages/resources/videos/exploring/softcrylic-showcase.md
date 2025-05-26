@@ -12,6 +12,6 @@ keywords:
 
 Sundar Sritharan from Softcrylic joins us to share what they are cooking up with App Builder.
 
-<Media slots="video"/>
+<Embed slots="video"/>
 
-<https://youtu.be/3q53AlcWlB4>
+https://youtu.be/3q53AlcWlB4

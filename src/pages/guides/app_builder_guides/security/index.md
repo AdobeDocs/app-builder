@@ -15,11 +15,11 @@ App Builder saves Developers' time with an [SDK](https://github.com/adobe/aio-sd
 
 ## Securing access to App Builder applications
 
-All interactions with [Adobe Product APIs](https://developer.adobe.com/apis) need to be authenticated against Adobe Identity Management Services (IMS). [Understanding Authentication](understanding_authentication.md) outlines Adobe's approach to authentication, with links to in-depth resources and a code library.
+All interactions with [Adobe Product APIs](https://developer.adobe.com/apis) need to be authenticated against Adobe Identity Management Services (IMS). [Understanding Authentication](understanding-authentication.md) outlines Adobe's approach to authentication, with links to in-depth resources and a code library.
 
 ### Adobe IMS support for App Builder applications
 
-App Builder [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) help developers [bootstrap applications](../../../get_started/app_builder_get_started/set_up.md) easily from templates, using `aio app init`. Included are templates for Runtime web actions, which integrate with [Adobe Product APIs](https://developer.adobe.com/apis) that can be extended using App Builder.
+App Builder [SDK](https://github.com/adobe/aio-sdk) and [CLI](https://github.com/adobe/aio-cli) help developers [bootstrap applications](../../../get_started/app_builder_get_started/set-up.md) easily from templates, using `aio app init`. Included are templates for Runtime web actions, which integrate with [Adobe Product APIs](https://developer.adobe.com/apis) that can be extended using App Builder.
 Any generated action is initialized with boilerplate code based on App Builder [SDK libraries](https://github.com/adobe/aio-sdk). Out of the box, these steps are implemented:
 
 - **Validation** that an Adobe IMS bearer token has been passed as Authorization header of the request that invoked the action
@@ -50,10 +50,10 @@ These SPAs are business-to-employee custom applications that deploy into the [Ex
 ![SPA Access Sequence Diagram](../../../images/security-spa-access-sequence-diagram.png)
 
 The SPA front end interacts with Runtime web actions on specific events triggered at UI level.
-In this scenario, the Experience Cloud Shell exposes a [client-side API](../exc_app/aec_integration.md), which can be used by the SPA to obtain the OAuth token generated for the logged-in user. 
+In this scenario, the Experience Cloud Shell exposes a [client-side API](../exc_app/aec-integration.md), which can be used by the SPA to obtain the OAuth token generated for the logged-in user. 
 This token will be used by back-end Runtime actions to call [Adobe Product APIs](https://developer.adobe.com/apis), which need to be integrated in the application.
 
-SPAs bootstrapped from the [CLI](https://github.com/adobe/aio-cli) using `aio app init` automatically include a [React-Spectrum](https://react-spectrum.adobe.com/)-based front end that integrates with the Experience Cloud Shell [client-side API](../exc_app/aec_integration.md), and sends the user OAuth token from the client to the invoked Runtime actions.
+SPAs bootstrapped from the [CLI](https://github.com/adobe/aio-cli) using `aio app init` automatically include a [React-Spectrum](https://react-spectrum.adobe.com/)-based front end that integrates with the Experience Cloud Shell [client-side API](../exc_app/aec-integration.md), and sends the user OAuth token from the client to the invoked Runtime actions.
 
 ### Authentication and authorization handling
 
@@ -151,7 +151,7 @@ Please use a different variable until this issue is resolved.
 
 ### I/O Runtime Specific guidelines
 
-[Security guidelines for I/O Runtime](../../runtime_guides/security_general.md) generally apply to the back-end actions of App Builder applications. The guidelines below are specific to App Builder applications.
+[Security guidelines for I/O Runtime](../../runtime_guides/security-general.md) generally apply to the back-end actions of App Builder applications. The guidelines below are specific to App Builder applications.
 
 ### Transport Security
 
@@ -168,11 +168,11 @@ This combination of `Enterprise Organization`, `Project`, `Workspace`, and `Runt
 
 #### Runtime actions
 
-Back-end Runtime actions used by App Builder applications respect the [tenant isolation model](../../../get_started/runtime_getting_started/understanding_runtime.md#security-considerations) implemented by I/O Runtime.
+Back-end Runtime actions used by App Builder applications respect the [tenant isolation model](../../../get_started/runtime_getting_started/understanding-runtime.md#security-considerations) implemented by I/O Runtime.
 
 #### Cloud storage and content delivery network (CDN) for SPA static files
 
-When an App Builder single-page application (SPA) is deployed into the [Experience Cloud Shell](https://experience.adobe.com), the static assets of the SPA are deployed from the CLI or a [CI/CD pipeline](../deployment/cicd_for_app_builder_apps.md) to App Builder's cloud storage and CDN.
+When an App Builder single-page application (SPA) is deployed into the [Experience Cloud Shell](https://experience.adobe.com), the static assets of the SPA are deployed from the CLI or a [CI/CD pipeline](../deployment/cicd-for-app-builder-apps.md) to App Builder's cloud storage and CDN.
 
 Both of these have a strict isolation according to the Runtime namespace. Cloud Storage containers hosting App Builder SPAs can be accessed only by configuring the [CLI](https://github.com/adobe/aio-cli) with appropriate workspace credentials.
 
@@ -195,6 +195,6 @@ Developers can build serverless processes and user-context-aware applications wi
 
 ## Next steps
 
-Continue to [Understanding Authentication](understanding_authentication.md).
+Continue to [Understanding Authentication](understanding-authentication.md).
 
-Return to [Guides Index](../../../guides/index.md).
+Return to [Guides Index](../../index.md).

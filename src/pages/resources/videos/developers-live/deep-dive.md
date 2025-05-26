@@ -12,6 +12,6 @@ keywords:
 
 Join us and see App Builder in action: code, security, headful and headless apps, CI/CD, and more.
 
-<Media slots="video"/>
+<Embed slots="video"/>
 
-<https://youtu.be/Iq-ObRXikDQ>
+https://youtu.be/Iq-ObRXikDQ

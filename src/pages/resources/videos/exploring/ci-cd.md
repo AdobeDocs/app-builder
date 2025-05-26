@@ -12,6 +12,6 @@ keywords:
 
 Manik Jindal, App Builder Product Manager, dives into CI/CD. Learn how to set up the Github CI/CD we include with App Builder, and how to set up a custom CI/CD pipeline with your tool of choice. 
 
-<Media slots="video"/>
+<Embed slots="video"/>
 
-<https://youtu.be/lbB2jl2rQZM>
+https://youtu.be/lbB2jl2rQZM
