@@ -31,6 +31,8 @@ Gets or set the favicon for the page. If this isn't set, the default Experience 
 page.favicon = "https://img.icons8.com/color/48/000000/thumb-up.png";
 ```
 
+<HorizontalLine/>
+
 ### modal
 
 • **modal**: *boolean*
@@ -42,6 +44,8 @@ Configuration to show or hide a modal with full-screen overlay. Defaults to fals
 ```typescript
 page.modal = true;
 ```
+
+<HorizontalLine/>
 
 ### preventDefaultCombos
 
@@ -60,6 +64,8 @@ page.preventDefaultCombos = [
 ];
 ```
 
+<HorizontalLine/>
+
 ### spinner
 
 • **spinner**: *boolean*
@@ -72,6 +78,8 @@ Gets or sets a value indicating whether or not to show a spinner on the page. Th
 page.spinner = true;
 ```
 
+<HorizontalLine/>
+
 ### title
 
 • **title**: *string*
@@ -83,6 +91,8 @@ Gets or sets the title of the page.
 ```typescript
 page.title = 'Adobe Experience Cloud';
 ```
+
+<HorizontalLine/>
 
 ### viewportTakeover
 

@@ -23,6 +23,7 @@ Defines the attributes of the solution to display on the left side of the top ba
 
 The icon to display in the solution area. If this isn't set, then the default Experience Cloud icon will be used.
 
+<HorizontalLine/>
 
 ### shortTitle
 
@@ -30,6 +31,7 @@ The icon to display in the solution area. If this isn't set, then the default Ex
 
 The title to display on smaller browser resolutions where the horizonal space is constrained.
 
+<HorizontalLine/>
 
 ### title
 
