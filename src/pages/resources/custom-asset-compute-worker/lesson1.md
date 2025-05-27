@@ -53,4 +53,4 @@ To test your configuration:
 [imgix-create-azure-source]: https://docs.imgix.com/setup/creating-sources/microsoft-azure 'Setting up your Microsoft Azure Source'
 [imgix-tools]: https://dashboard.imgix.com/tools
 [adobe-console]: https://console.adobe.io 'Adobe IO Console'
-[adobe-console-firefly-template]: ../../get_started/app_builder_get_started/first_app.md#2-creating-a-new-project-on-developer-console 'Creating new project on Adobe Developer console'
+[adobe-console-firefly-template]: ../../get_started/app_builder_get_started/first-app.md#2-creating-a-new-project-on-developer-console 'Creating new project on Adobe Developer console'

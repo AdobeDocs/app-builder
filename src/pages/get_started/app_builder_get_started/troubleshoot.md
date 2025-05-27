@@ -45,7 +45,7 @@ You could also try running your actions locally with the `aio app dev` command. 
 
 ## Action logs
 
-[Web actions](../../guides/runtime_guides/creating_actions.md/#invoking-web-actions) in your app are blocking requests; their activation results are not recorded if they are invoked successfully. To enforce persistence of activation results. pass the `x-ow-extra-logging: on` flag in the request headers. In the development mode of an SPA, you can add this flag directly to the "invoking action" function so you will have the activation results and logs recorded for all requests. They could then be retrieved as shown in the [General debugging](#general-debugging) section above.
+[Web actions](../../guides/runtime_guides/creating-actions.md#invoking-web-actions) in your app are blocking requests; their activation results are not recorded if they are invoked successfully. To enforce persistence of activation results. pass the `x-ow-extra-logging: on` flag in the request headers. In the development mode of an SPA, you can add this flag directly to the "invoking action" function so you will have the activation results and logs recorded for all requests. They could then be retrieved as shown in the [General debugging](#general-debugging) section above.
 
 ```javascript
 headers['x-ow-extra-logging'] = 'on'
