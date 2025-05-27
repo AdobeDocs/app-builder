@@ -27,21 +27,25 @@ description: Interface modules
 | ---------- | ---- |
 | `options?` | any  |
 
+<HorizontalLine/>
 
 ### page
 
 • **page**: *[PageApi](page-pageapi.md)*
 
+<HorizontalLine/>
 
 ### runtime
 
 • **runtime**: *[Runtime](runtime.md)*
 
+<HorizontalLine/>
 
 ### topbar
 
 • **topbar**: *[TopbarApi](topbar-topbarapi.md)*
 
+<HorizontalLine/>
 
 ### user
 

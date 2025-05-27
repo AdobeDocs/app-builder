@@ -29,6 +29,8 @@ Gets or sets a custom environment label in the shell.
 topbar.customEnvLabel = 'Beta';
 ```
 
+<HorizontalLine/>
+
 ### solution
 
 • **solution**: *[Solution](topbar-solution.md)*
@@ -45,6 +47,7 @@ topbar.solution = {
 };
 ```
 
+<HorizontalLine/>
 
 ### workspaces
 

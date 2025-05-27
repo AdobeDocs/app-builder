@@ -19,41 +19,49 @@ title: 'Interface: UserInfo'
 
 • **imsOrg**: *string*
 
+<HorizontalLine/>
 
 ### imsOrgName
 
 • **imsOrgName**: *string*
 
+<HorizontalLine/>
 
 ### imsOrgs
 
 • **imsOrgs**: *object[]*
 
+<HorizontalLine/>
 
 ### imsProfile
 
 • **imsProfile**: *Record‹string, any›*
 
+<HorizontalLine/>
 
 ### imsToken
 
 • **imsToken**: *string*
 
+<HorizontalLine/>
 
 ### locale
 
 • **locale**: *string*
 
+<HorizontalLine/>
 
 ### preferredLanguages
 
 • **preferredLanguages**: *string[]*
 
+<HorizontalLine/>
 
 ### subOrg
 
 • **subOrg**: *string | null*
 
+<HorizontalLine/>
 
 ### tenant
 

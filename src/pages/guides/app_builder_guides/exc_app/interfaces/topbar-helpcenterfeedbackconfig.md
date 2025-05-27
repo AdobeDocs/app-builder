@@ -19,14 +19,19 @@ title: 'Interface: HelpCenterFeedbackConfig'
 
 • **buttonLabel**: *string*
 
+<HorizontalLine/>
 
 ### enabled
 
 • **enabled**: *boolean*
 
+<HorizontalLine/>
+
 ### `Optional` subject
 
 • **subject**? : *undefined | string*
+
+<HorizontalLine/>
 
 ### type
 
