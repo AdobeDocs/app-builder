@@ -33,8 +33,6 @@ Gets or sets a custom environment label in the shell.
 topbar.customEnvLabel = 'Beta';
 ```
 
-<HorizontalLine/>
-
 ### solution
 
 • **solution**: *[Solution](topbar-solution.md)*
@@ -52,8 +50,6 @@ topbar.solution = {
   shortTitle: 'AEC'
 };
 ```
-
-<HorizontalLine/>
 
 ### workspaces
 
@@ -109,7 +105,6 @@ Registers a callback to execute when the hero (solution) icon in the upper lefth
 
 **Returns:** *void*
 
-<HorizontalLine/>
 
 ### setCustomSearch
 
@@ -124,8 +119,6 @@ Determines whether or not to enable the custom search property, and enacts a cal
 | `config` | [CustomSearchConfig](topbar-customsearchconfig.md) &#124; null |
 
 **Returns:** *void*
-
-<HorizontalLine/>
 
 ### setFeedbackButton
 
