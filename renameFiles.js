@@ -27,6 +27,26 @@ function toEdsCase(str) {
     return isValid ? str : toKebabCase(str);
 }
 
+function toUrl(str) {
+    let url = removeFileExtension(str);
+
+    // replace '/index' with trailing slash
+    if(url.endsWith('/index')) {
+        const index = url.lastIndexOf('index');
+        url = url.substring(0, index);
+    }
+
+    return url;
+}
+
+function removeTrailingSlash(str) {
+    if(str.endsWith('/')) {
+        const index = str.length - 1;
+        str = str.substring(0, index);
+    }
+    return str;
+}
+
 function getPathPrefixFromConfig() {
     const CONFIG_PATH = path.join('src', 'pages', 'config.md');
     if (!fs.existsSync(CONFIG_PATH)) {
@@ -60,8 +80,11 @@ function getPathPrefixFromConfig() {
     return pathPrefixLine[2];
 }
 
-function renameFile(file, renameBaseWithoutExt) {
-    const renamedFileWithoutExt = removeFileExtension(file, renameBaseWithoutExt);
+function toEdsPath(file) {
+    const renamedFileWithoutExt = removeFileExtension(file)
+        .split(path.sep)
+        .map(token => toEdsCase(token))
+        .join(path.sep);
     const ext = path.extname(file);
     return `${renamedFileWithoutExt}${ext}`
 }
@@ -69,7 +92,7 @@ function renameFile(file, renameBaseWithoutExt) {
 function getFileMap(files) {
     const map = new Map();
     files.forEach(from => { 
-        const to = renameFile(from, toEdsCase)
+        const to = toEdsPath(from)
         if(to !== from) {
             map.set(from, to) 
         }
@@ -91,6 +114,16 @@ function getLinkMap(fileMap, relativeToDir) {
     return linkMap;
 }
 
+function renameLinksInGatsbyConfigFile(fileMap, file) {
+    const dir = path.join('src', 'pages');
+    replaceLinksInFile({
+        file,
+        linkMap: getLinkMap(fileMap, dir),
+        getFindPattern: (from) => `(['"]?path['"]?\\s*:\\s*['"])(/|./)?(${from})(#[^'"]*)?(['"])`,
+        getReplacePattern: (to) => `$1$2${to}$4$5`,
+    });
+}
+
 function renameLinksInMarkdownFile(fileMap, file) {
     const dir = path.dirname(file);
     replaceLinksInFile({ 
@@ -104,21 +137,39 @@ function renameLinksInMarkdownFile(fileMap, file) {
 function renameLinksInRedirectsFile(fileMap, pathPrefix) {
     const file = getRedirectionsFilePath();
     const dir = path.dirname(file);
-    replaceLinksInFile({
-        file,
-        linkMap: getLinkMap(fileMap, dir),
-        getFindPattern: (from) => `(['"]?)(Source|Destination)(['"]?\\s*:\\s*['"])(${pathPrefix}${removeFileExtension(from)})(/?)(#[^'"]*)?(['"])`,
-        getReplacePattern: (to) => `$1$2$3${pathPrefix}${removeFileExtension(to)}$5$6$7`,
-    });
-}
+    const linkMap = getLinkMap(fileMap, dir);
 
-function renameLinksInGatsbyConfigFile(fileMap, file) {
-    const dir = path.join('src', 'pages');
+    // rename redirects for correct paths
     replaceLinksInFile({
         file,
-        linkMap: getLinkMap(fileMap, dir),
-        getFindPattern: (from) => `(['"]?path['"]?\\s*:\\s*['"])(/|./)?(${from})(#[^'"]*)?(['"])`,
-        getReplacePattern: (to) => `$1$2${to}$4$5`,
+        linkMap,
+        getFindPattern: (from) => `(['"]?)(Source|Destination)(['"]?\\s*:\\s*['"])(${pathPrefix}${toUrl(from)})(#[^'"]*)?(['"])`,
+        getReplacePattern: (to) => `$1$2$3${pathPrefix}${toUrl(to)}$5$6`,
+    });
+
+    // rename redirects for paths that don't end in a trailing slash but should
+    // (handle non-existent paths added by 'buildRedirections.js')
+    replaceLinksInFile({
+        file,
+        linkMap,
+        getFindPattern: (from) => `(['"]?)(Source)(['"]?\\s*:\\s*['"])(${pathPrefix}${removeTrailingSlash(toUrl(from))})(#[^'"]*)?(['"])`,
+        getReplacePattern: (to) => `$1$2$3${pathPrefix}${removeTrailingSlash(toUrl(to))}$5$6`,
+    });
+    replaceLinksInFile({
+        file,
+        linkMap,
+        getFindPattern: (from) => `(['"]?)(Source)(['"]?\\s*:\\s*['"])(${pathPrefix}${removeTrailingSlash(toUrl(from))}/index)(#[^'"]*)?(['"])`,
+        getReplacePattern: (to) => `$1$2$3${pathPrefix}${removeTrailingSlash(toUrl(to))}/index$5$6`,
+    });
+
+
+    // rename redirects for paths that end in a trailing slash but shouldn't
+    // (handle non-existent paths added by 'buildRedirections.js')
+    replaceLinksInFile({
+        file,
+        linkMap,
+        getFindPattern: (from) => `(['"]?)(Source)(['"]?\\s*:\\s*['"])(${pathPrefix}${toUrl(from)}/)(#[^'"]*)?(['"])`,
+        getReplacePattern: (to) => `$1$2$3${pathPrefix}${toUrl(to)}/$5$6`,
     });
 }
 
@@ -129,8 +180,8 @@ function appendRedirects(fileMap, pathPrefix) {
     const newData = [];
     linkMap.forEach((to, from) => {
         newData.push({
-            Source:  `${pathPrefix}${removeFileExtension(from)}`, 
-            Destination: `${pathPrefix}${removeFileExtension(to)}`,
+            Source:  `${pathPrefix}${toUrl(from)}`, 
+            Destination: `${pathPrefix}${toUrl(to)}`,
         })
     });
     const currData = readRedirectionsFile();
@@ -138,9 +189,34 @@ function appendRedirects(fileMap, pathPrefix) {
     writeRedirectionsFile(data);
 }
 
+function deleteEmptyDirectoryUpwards(startDir, stopDir) {
+    const isEmpty = fs.readdirSync(startDir).length === 0;
+    if(isEmpty && startDir !== stopDir) {
+        fs.rmdirSync(startDir);
+        deleteEmptyDirectoryUpwards(path.dirname(startDir), stopDir);
+    }
+}
+
 function renameFiles(map) {
+    // create new dirs
+    map.forEach((to, _) => {
+        const toDir = path.dirname(to);
+        if (!fs.existsSync(toDir)) { 
+            fs.mkdirSync(toDir, { recursive: true });
+        }
+    });
+
+    // rename
     map.forEach((to, from) => {
         fs.renameSync(from, to);
+    });
+
+    // delete old dirs
+    map.forEach((_, from) => {
+        const fromDir = path.dirname(from);
+        if (fs.existsSync(fromDir)) { 
+            deleteEmptyDirectoryUpwards(fromDir, __dirname);
+        }
     });
 }
 

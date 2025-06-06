@@ -1,7 +1,7 @@
 {
-    "total": 308,
+    "total": 376,
     "offset": 0,
-    "limit": 308,
+    "limit": 376,
     "data": [
         {
             "Source": "/app-builder/docs/resources",
@@ -968,268 +968,540 @@
             "Destination": "/app-builder/docs/intro_and_overview/what-is-app-builder"
         },
         {
+            "Source": "/app-builder/docs/intro_and_overview/what_is_app_builder/",
+            "Destination": "/app-builder/docs/intro_and_overview/what-is-app-builder"
+        },
+        {
             "Source": "/app-builder/docs/intro_and_overview/business_case",
             "Destination": "/app-builder/docs/intro_and_overview/business-case"
+        },
+        {
+            "Source": "/app-builder/docs/intro_and_overview/business_case/",
+            "Destination": "/app-builder/docs/intro_and_overview/business-case"
+        },
+        {
+            "Source": "/app-builder/docs/get_started/app_builder_get_started/set_up/",
+            "Destination": "/app-builder/docs/get_started/app_builder_get_started/set-up"
         },
         {
             "Source": "/app-builder/docs/get_started/app_builder_get_started/set_up",
             "Destination": "/app-builder/docs/get_started/app_builder_get_started/set-up"
         },
         {
+            "Source": "/app-builder/docs/get_started/app_builder_get_started/publish_app/",
+            "Destination": "/app-builder/docs/get_started/app_builder_get_started/publish-app"
+        },
+        {
             "Source": "/app-builder/docs/get_started/app_builder_get_started/publish_app",
             "Destination": "/app-builder/docs/get_started/app_builder_get_started/publish-app"
+        },
+        {
+            "Source": "/app-builder/docs/get_started/app_builder_get_started/first_app/",
+            "Destination": "/app-builder/docs/get_started/app_builder_get_started/first-app"
         },
         {
             "Source": "/app-builder/docs/get_started/app_builder_get_started/first_app",
             "Destination": "/app-builder/docs/get_started/app_builder_get_started/first-app"
         },
         {
+            "Source": "/app-builder/docs/get_started/app_builder_get_started/app_builder_intro/",
+            "Destination": "/app-builder/docs/get_started/app_builder_get_started/app-builder-intro"
+        },
+        {
             "Source": "/app-builder/docs/get_started/app_builder_get_started/app_builder_intro",
             "Destination": "/app-builder/docs/get_started/app_builder_get_started/app-builder-intro"
+        },
+        {
+            "Source": "/app-builder/docs/get_started/runtime_getting_started/understanding_runtime/",
+            "Destination": "/app-builder/docs/get_started/runtime_getting_started/understanding-runtime"
         },
         {
             "Source": "/app-builder/docs/get_started/runtime_getting_started/understanding_runtime",
             "Destination": "/app-builder/docs/get_started/runtime_getting_started/understanding-runtime"
         },
         {
+            "Source": "/app-builder/docs/get_started/runtime_getting_started/how_runtime_works/",
+            "Destination": "/app-builder/docs/get_started/runtime_getting_started/how-runtime-works"
+        },
+        {
             "Source": "/app-builder/docs/get_started/runtime_getting_started/how_runtime_works",
             "Destination": "/app-builder/docs/get_started/runtime_getting_started/how-runtime-works"
+        },
+        {
+            "Source": "/app-builder/docs/guides/app_builder_guides/architecture_overview/using_sdks/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/architecture_overview/using-sdks"
         },
         {
             "Source": "/app-builder/docs/guides/app_builder_guides/architecture_overview/using_sdks",
             "Destination": "/app-builder/docs/guides/app_builder_guides/architecture_overview/using-sdks"
         },
         {
+            "Source": "/app-builder/docs/guides/app_builder_guides/architecture_overview/introduction_to_react_spectrum/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/architecture_overview/introduction-to-react-spectrum"
+        },
+        {
             "Source": "/app-builder/docs/guides/app_builder_guides/architecture_overview/introduction_to_react_spectrum",
             "Destination": "/app-builder/docs/guides/app_builder_guides/architecture_overview/introduction-to-react-spectrum"
+        },
+        {
+            "Source": "/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture_overview/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview"
         },
         {
             "Source": "/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture_overview",
             "Destination": "/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview"
         },
         {
+            "Source": "/app-builder/docs/guides/app_builder_guides/architecture_overview/app_hooks/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/architecture_overview/app-hooks"
+        },
+        {
             "Source": "/app-builder/docs/guides/app_builder_guides/architecture_overview/app_hooks",
             "Destination": "/app-builder/docs/guides/app_builder_guides/architecture_overview/app-hooks"
+        },
+        {
+            "Source": "/app-builder/docs/guides/app_builder_guides/application_state/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/application-state"
         },
         {
             "Source": "/app-builder/docs/guides/app_builder_guides/application_state",
             "Destination": "/app-builder/docs/guides/app_builder_guides/application-state"
         },
         {
+            "Source": "/app-builder/docs/guides/app_builder_guides/application_logging/splunk_enterprise/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/application_logging/splunk-enterprise"
+        },
+        {
             "Source": "/app-builder/docs/guides/app_builder_guides/application_logging/splunk_enterprise",
             "Destination": "/app-builder/docs/guides/app_builder_guides/application_logging/splunk-enterprise"
+        },
+        {
+            "Source": "/app-builder/docs/guides/app_builder_guides/application_logging/splunk_cloud/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/application_logging/splunk-cloud"
         },
         {
             "Source": "/app-builder/docs/guides/app_builder_guides/application_logging/splunk_cloud",
             "Destination": "/app-builder/docs/guides/app_builder_guides/application_logging/splunk-cloud"
         },
         {
+            "Source": "/app-builder/docs/guides/app_builder_guides/application_logging/new_relic/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/application_logging/new-relic"
+        },
+        {
             "Source": "/app-builder/docs/guides/app_builder_guides/application_logging/new_relic",
             "Destination": "/app-builder/docs/guides/app_builder_guides/application_logging/new-relic"
+        },
+        {
+            "Source": "/app-builder/docs/guides/app_builder_guides/application_logging/azure_log_analytics/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/application_logging/azure-log-analytics"
         },
         {
             "Source": "/app-builder/docs/guides/app_builder_guides/application_logging/azure_log_analytics",
             "Destination": "/app-builder/docs/guides/app_builder_guides/application_logging/azure-log-analytics"
         },
         {
+            "Source": "/app-builder/docs/guides/app_builder_guides/deployment/setting_response_headers/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/deployment/setting-response-headers"
+        },
+        {
             "Source": "/app-builder/docs/guides/app_builder_guides/deployment/setting_response_headers",
             "Destination": "/app-builder/docs/guides/app_builder_guides/deployment/setting-response-headers"
+        },
+        {
+            "Source": "/app-builder/docs/guides/app_builder_guides/deployment/credential_rotation/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/deployment/credential-rotation"
         },
         {
             "Source": "/app-builder/docs/guides/app_builder_guides/deployment/credential_rotation",
             "Destination": "/app-builder/docs/guides/app_builder_guides/deployment/credential-rotation"
         },
         {
+            "Source": "/app-builder/docs/guides/app_builder_guides/deployment/cicd_for_app_builder_apps/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/deployment/cicd-for-app-builder-apps"
+        },
+        {
             "Source": "/app-builder/docs/guides/app_builder_guides/deployment/cicd_for_app_builder_apps",
             "Destination": "/app-builder/docs/guides/app_builder_guides/deployment/cicd-for-app-builder-apps"
+        },
+        {
+            "Source": "/app-builder/docs/guides/app_builder_guides/configuration/webpack_configuration/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/configuration/webpack-configuration"
         },
         {
             "Source": "/app-builder/docs/guides/app_builder_guides/configuration/webpack_configuration",
             "Destination": "/app-builder/docs/guides/app_builder_guides/configuration/webpack-configuration"
         },
         {
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/aec_integration/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/aec-integration"
+        },
+        {
             "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/aec_integration",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/aec-integration"
+        },
+        {
+            "Source": "/app-builder/docs/guides/app_builder_guides/events/custom_events/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/events/custom-events"
         },
         {
             "Source": "/app-builder/docs/guides/app_builder_guides/events/custom_events",
             "Destination": "/app-builder/docs/guides/app_builder_guides/events/custom-events"
         },
         {
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user.userinfo/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user-userinfo"
+        },
+        {
             "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user.userinfo",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user-userinfo"
         },
         {
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user.userapi/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user-userapi"
+        },
+        {
             "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user.userapi",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user-userapi"
+        },
+        {
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar.topbarapiproperties/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar-topbarapiproperties"
         },
         {
             "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar.topbarapiproperties",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar-topbarapiproperties"
         },
         {
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar.topbarapi/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar-topbarapi"
+        },
+        {
             "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar.topbarapi",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar-topbarapi"
+        },
+        {
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar.solution/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar-solution"
         },
         {
             "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar.solution",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar-solution"
         },
         {
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar.helpcenterfeedbackconfig/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar-helpcenterfeedbackconfig"
+        },
+        {
             "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar.helpcenterfeedbackconfig",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar-helpcenterfeedbackconfig"
+        },
+        {
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar.externalfeedbackconfig/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar-externalfeedbackconfig"
         },
         {
             "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar.externalfeedbackconfig",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar-externalfeedbackconfig"
         },
         {
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar.customsearchconfig/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar-customsearchconfig"
+        },
+        {
             "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar.customsearchconfig",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar-customsearchconfig"
+        },
+        {
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar.customfeedbackconfig/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar-customfeedbackconfig"
         },
         {
             "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar.customfeedbackconfig",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar-customfeedbackconfig"
         },
         {
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar.callback/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar-callback"
+        },
+        {
             "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar.callback",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/topbar-callback"
+        },
+        {
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/page.pageapiproperties/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/page-pageapiproperties"
         },
         {
             "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/page.pageapiproperties",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/page-pageapiproperties"
         },
         {
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/page.pageapi/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/page-pageapi"
+        },
+        {
             "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/page.pageapi",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/page-pageapi"
+        },
+        {
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/page.objectwithpath/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/page-objectwithpath"
         },
         {
             "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/page.objectwithpath",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/page-objectwithpath"
         },
         {
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/page.objectwithhref/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/page-objectwithhref"
+        },
+        {
             "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/page.objectwithhref",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/page-objectwithhref"
+        },
+        {
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user.userinfo/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user-userinfo"
         },
         {
             "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user.userinfo",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user-userinfo"
         },
         {
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user.userapi/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user-userapi"
+        },
+        {
             "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user.userapi",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/interfaces/user-userapi"
+        },
+        {
+            "Source": "/app-builder/docs/guides/app_builder_guides/security/understanding_authentication/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/security/understanding-authentication"
         },
         {
             "Source": "/app-builder/docs/guides/app_builder_guides/security/understanding_authentication",
             "Destination": "/app-builder/docs/guides/app_builder_guides/security/understanding-authentication"
         },
         {
+            "Source": "/app-builder/docs/guides/app_builder_guides/extensions/extension_migration_guide/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/extensions/extension-migration-guide"
+        },
+        {
             "Source": "/app-builder/docs/guides/app_builder_guides/extensions/extension_migration_guide",
             "Destination": "/app-builder/docs/guides/app_builder_guides/extensions/extension-migration-guide"
+        },
+        {
+            "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/migrate_app_to_exp_cloud_spa/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/migrate-app-to-exp-cloud-spa"
         },
         {
             "Source": "/app-builder/docs/guides/app_builder_guides/exc_app/migrate_app_to_exp_cloud_spa",
             "Destination": "/app-builder/docs/guides/app_builder_guides/exc_app/migrate-app-to-exp-cloud-spa"
         },
         {
+            "Source": "/app-builder/docs/guides/contribution_guide/",
+            "Destination": "/app-builder/docs/guides/contribution-guide"
+        },
+        {
             "Source": "/app-builder/docs/guides/contribution_guide",
             "Destination": "/app-builder/docs/guides/contribution-guide"
+        },
+        {
+            "Source": "/app-builder/docs/guides/runtime_guides/logging_monitoring/",
+            "Destination": "/app-builder/docs/guides/runtime_guides/logging-monitoring"
         },
         {
             "Source": "/app-builder/docs/guides/runtime_guides/logging_monitoring",
             "Destination": "/app-builder/docs/guides/runtime_guides/logging-monitoring"
         },
         {
+            "Source": "/app-builder/docs/guides/runtime_guides/creating_rest_apis/",
+            "Destination": "/app-builder/docs/guides/runtime_guides/creating-rest-apis"
+        },
+        {
             "Source": "/app-builder/docs/guides/runtime_guides/creating_rest_apis",
             "Destination": "/app-builder/docs/guides/runtime_guides/creating-rest-apis"
+        },
+        {
+            "Source": "/app-builder/docs/guides/runtime_guides/creating_actions/",
+            "Destination": "/app-builder/docs/guides/runtime_guides/creating-actions"
         },
         {
             "Source": "/app-builder/docs/guides/runtime_guides/creating_actions",
             "Destination": "/app-builder/docs/guides/runtime_guides/creating-actions"
         },
         {
+            "Source": "/app-builder/docs/guides/runtime_guides/ci-cd_pipeline/",
+            "Destination": "/app-builder/docs/guides/runtime_guides/ci-cd-pipeline"
+        },
+        {
             "Source": "/app-builder/docs/guides/runtime_guides/ci-cd_pipeline",
             "Destination": "/app-builder/docs/guides/runtime_guides/ci-cd-pipeline"
+        },
+        {
+            "Source": "/app-builder/docs/guides/runtime_guides/asynchronous_calls/",
+            "Destination": "/app-builder/docs/guides/runtime_guides/asynchronous-calls"
         },
         {
             "Source": "/app-builder/docs/guides/runtime_guides/asynchronous_calls",
             "Destination": "/app-builder/docs/guides/runtime_guides/asynchronous-calls"
         },
         {
+            "Source": "/app-builder/docs/guides/runtime_guides/reference_docs/api_ref/",
+            "Destination": "/app-builder/docs/guides/runtime_guides/reference_docs/api-ref"
+        },
+        {
             "Source": "/app-builder/docs/guides/runtime_guides/reference_docs/api_ref",
             "Destination": "/app-builder/docs/guides/runtime_guides/reference_docs/api-ref"
+        },
+        {
+            "Source": "/app-builder/docs/guides/runtime_guides/reference_docs/wsk_use/",
+            "Destination": "/app-builder/docs/guides/runtime_guides/reference_docs/wsk-use"
         },
         {
             "Source": "/app-builder/docs/guides/runtime_guides/reference_docs/wsk_use",
             "Destination": "/app-builder/docs/guides/runtime_guides/reference_docs/wsk-use"
         },
         {
+            "Source": "/app-builder/docs/guides/runtime_guides/reference_docs/sequences_compositions/",
+            "Destination": "/app-builder/docs/guides/runtime_guides/reference_docs/sequences-compositions"
+        },
+        {
             "Source": "/app-builder/docs/guides/runtime_guides/reference_docs/sequences_compositions",
             "Destination": "/app-builder/docs/guides/runtime_guides/reference_docs/sequences-compositions"
+        },
+        {
+            "Source": "/app-builder/docs/guides/runtime_guides/reference_docs/multiple_regions/",
+            "Destination": "/app-builder/docs/guides/runtime_guides/reference_docs/multiple-regions"
         },
         {
             "Source": "/app-builder/docs/guides/runtime_guides/reference_docs/multiple_regions",
             "Destination": "/app-builder/docs/guides/runtime_guides/reference_docs/multiple-regions"
         },
         {
+            "Source": "/app-builder/docs/guides/runtime_guides/reference_docs/environment_variables/",
+            "Destination": "/app-builder/docs/guides/runtime_guides/reference_docs/environment-variables"
+        },
+        {
             "Source": "/app-builder/docs/guides/runtime_guides/reference_docs/environment_variables",
             "Destination": "/app-builder/docs/guides/runtime_guides/reference_docs/environment-variables"
+        },
+        {
+            "Source": "/app-builder/docs/guides/runtime_guides/reference_docs/cli_use/",
+            "Destination": "/app-builder/docs/guides/runtime_guides/reference_docs/cli-use"
         },
         {
             "Source": "/app-builder/docs/guides/runtime_guides/reference_docs/cli_use",
             "Destination": "/app-builder/docs/guides/runtime_guides/reference_docs/cli-use"
         },
         {
+            "Source": "/app-builder/docs/guides/contribution_guide/",
+            "Destination": "/app-builder/docs/guides/contribution-guide"
+        },
+        {
             "Source": "/app-builder/docs/guides/contribution_guide",
             "Destination": "/app-builder/docs/guides/contribution-guide"
+        },
+        {
+            "Source": "/app-builder/docs/guides/runtime_guides/using_runtime/",
+            "Destination": "/app-builder/docs/guides/runtime_guides/using-runtime"
         },
         {
             "Source": "/app-builder/docs/guides/runtime_guides/using_runtime",
             "Destination": "/app-builder/docs/guides/runtime_guides/using-runtime"
         },
         {
+            "Source": "/app-builder/docs/guides/runtime_guides/using_packages/",
+            "Destination": "/app-builder/docs/guides/runtime_guides/using-packages"
+        },
+        {
             "Source": "/app-builder/docs/guides/runtime_guides/using_packages",
             "Destination": "/app-builder/docs/guides/runtime_guides/using-packages"
+        },
+        {
+            "Source": "/app-builder/docs/guides/runtime_guides/throughput_tuning/",
+            "Destination": "/app-builder/docs/guides/runtime_guides/throughput-tuning"
         },
         {
             "Source": "/app-builder/docs/guides/runtime_guides/throughput_tuning",
             "Destination": "/app-builder/docs/guides/runtime_guides/throughput-tuning"
         },
         {
+            "Source": "/app-builder/docs/guides/runtime_guides/system_settings/",
+            "Destination": "/app-builder/docs/guides/runtime_guides/system-settings"
+        },
+        {
             "Source": "/app-builder/docs/guides/runtime_guides/system_settings",
             "Destination": "/app-builder/docs/guides/runtime_guides/system-settings"
+        },
+        {
+            "Source": "/app-builder/docs/guides/runtime_guides/security_general/",
+            "Destination": "/app-builder/docs/guides/runtime_guides/security-general"
         },
         {
             "Source": "/app-builder/docs/guides/runtime_guides/security_general",
             "Destination": "/app-builder/docs/guides/runtime_guides/security-general"
         },
         {
+            "Source": "/app-builder/docs/guides/runtime_guides/securing_web_actions/",
+            "Destination": "/app-builder/docs/guides/runtime_guides/securing-web-actions"
+        },
+        {
             "Source": "/app-builder/docs/guides/runtime_guides/securing_web_actions",
             "Destination": "/app-builder/docs/guides/runtime_guides/securing-web-actions"
+        },
+        {
+            "Source": "/app-builder/docs/guides/runtime_guides/tools/cli_install/",
+            "Destination": "/app-builder/docs/guides/runtime_guides/tools/cli-install"
         },
         {
             "Source": "/app-builder/docs/guides/runtime_guides/tools/cli_install",
             "Destination": "/app-builder/docs/guides/runtime_guides/tools/cli-install"
         },
         {
+            "Source": "/app-builder/docs/resources/blog_articles/",
+            "Destination": "/app-builder/docs/resources/blog-articles"
+        },
+        {
             "Source": "/app-builder/docs/resources/blog_articles",
             "Destination": "/app-builder/docs/resources/blog-articles"
+        },
+        {
+            "Source": "/app-builder/docs/resources/videos/overview/e2e_user_journey/",
+            "Destination": "/app-builder/docs/resources/videos/overview/e2-e-user-journey"
         },
         {
             "Source": "/app-builder/docs/resources/videos/overview/e2e_user_journey",
             "Destination": "/app-builder/docs/resources/videos/overview/e2-e-user-journey"
         },
         {
+            "Source": "/app-builder/docs/resources/videos/exploring/react_spectrum/",
+            "Destination": "/app-builder/docs/resources/videos/exploring/react-spectrum"
+        },
+        {
             "Source": "/app-builder/docs/resources/videos/exploring/react_spectrum",
             "Destination": "/app-builder/docs/resources/videos/exploring/react-spectrum"
+        },
+        {
+            "Source": "/app-builder/docs/resources/videos/exploring/projects_and_workspaces/",
+            "Destination": "/app-builder/docs/resources/videos/exploring/projects-and-workspaces"
         },
         {
             "Source": "/app-builder/docs/resources/videos/exploring/projects_and_workspaces",
             "Destination": "/app-builder/docs/resources/videos/exploring/projects-and-workspaces"
         },
         {
+            "Source": "/app-builder/docs/resources/videos/exploring/custom_events/",
+            "Destination": "/app-builder/docs/resources/videos/exploring/custom-events"
+        },
+        {
             "Source": "/app-builder/docs/resources/videos/exploring/custom_events",
             "Destination": "/app-builder/docs/resources/videos/exploring/custom-events"
+        },
+        {
+            "Source": "/app-builder/docs/resources/videos/exploring/ci_cd/",
+            "Destination": "/app-builder/docs/resources/videos/exploring/ci-cd"
         },
         {
             "Source": "/app-builder/docs/resources/videos/exploring/ci_cd",
