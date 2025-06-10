@@ -24,7 +24,7 @@ In the Code Lab [Consume Events using Journaling API](../journaling-events/index
 
 Two main benefits to choose Runtime actions as webhook are: 
 
-- [Built in Signature Verification](https://developer.adobe.com/events/docs/guides/sdk/sdk_signature_verification/)
+- [Built in Signature Verification](https://developer.adobe.com/events/docs/guides/sdk/sdk-signature-verification)
 - Tracing actions with Activation IDs 
 
 ## How to choose between Journaling API and Runtime Action webhook
