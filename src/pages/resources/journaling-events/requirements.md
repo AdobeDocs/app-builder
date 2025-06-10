@@ -20,6 +20,6 @@ In addition to above prerequisites, review the documents below to familiarize yo
 * [Build an Event-Driven App Builder App Using Custom Events](../event-driven/index.md)
 * [Scheduling Cron Jobs with Alarms](../cron-jobs/index.md)
 * [Adobe I/O Events CLI Plugin](https://github.com/adobe/aio-cli-plugin-events)
-* [Journaling API](https://developer.adobe.com/events/docs/guides/api/journaling_api/)
+* [Journaling API](https://developer.adobe.com/events/docs/guides/api/journaling-api)
 
 

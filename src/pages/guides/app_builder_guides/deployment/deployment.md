@@ -22,7 +22,7 @@ In the following chapters of this documentation, it will be assumed that:
   - **AIO_RUNTIME_AUTH**, holding the credentials for use by the Runtime namespace
   - **AIO_RUNTIME_NAMESPACE**, holding the name for use by the Runtime namespace
 
-If you do not own a [Runtime](https://developer.adobe.com/runtime) namespace, please [request trial access](https://developer.adobe.com/app-builder/trial/). Please also check the [Setup Requirements](../../../get_started/runtime_getting_started/setup.md) documentation before trying out the deployment scenarios described below.
+If you do not own a [Runtime](https://developer.adobe.com/runtime) namespace, please [request trial access](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/set-up#access-and-credentials). Please also check the [Setup Requirements](../../../get_started/runtime_getting_started/setup.md) documentation before trying out the deployment scenarios described below.
 
 The CLI offers three types of deployment to Developers:
 

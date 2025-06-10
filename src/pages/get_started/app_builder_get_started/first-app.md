@@ -62,7 +62,7 @@ Follow these instructions to set up your project:
 
      ![Project Preview](../../images/console-5.png)
 
-7. Create a new workspace or select a workspace to add [APIs](https://developer.adobe.com/developer-console/docs/guides/services/#add-api) and [Events](https://developer.adobe.com/developer-console/docs/guides/services/services-add-event/) that you will need for your application.
+7. Create a new workspace or select a workspace to add [APIs](https://developer.adobe.com/developer-console/docs/guides/services/#add-api) and [Events](https://developer.adobe.com/developer-console/docs/guides/services/services-add-event) that you will need for your application.
 
     ![Workspace](../../images/console-6.png)
 
@@ -222,7 +222,7 @@ select components to include (Press <space> to select, <a> to toggle all, <i> to
 Each option represents a feature you can enable for the App Builder application. Select one or more depending on the application you intend to build. For this tutorial, we recommend you select them all.
 
 - **Actions: Deploy Runtime actions** adds the boilerplate for backend serverless actions on Adobe I/O Runtime
-- **Events: Publish to Adobe I/O Events** adds the boilerplate for a serverless action that publishes [Custom I/O Events](https://developer.adobe.com/events/docs/guides/using/custom_events/)
+- **Events: Publish to Adobe I/O Events** adds the boilerplate for a serverless action that publishes [Custom I/O Events](https://developer.adobe.com/events/docs/guides/using/custom-events)
 - **Web Assets: Deploy hosted static assets** adds the boilerplate for front-end [React-Spectrum](https://react-spectrum.adobe.com/) Single-Page Applications (SPAs) and static assets
 - **CI/CD: Include GitHub Actions based workflows for Build, Test and Deploy** adds the boilerplate for Github Actions that support the Continuous Integration/Continuous Delivery (CI/CD) process for the application
 
