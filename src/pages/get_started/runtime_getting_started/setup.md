@@ -37,7 +37,8 @@ There are two ways to configure the `aio` CLI:
 
 ### Configure aio CLI
 
-The `aio` CLI will pick up credentials from an `.env` file in the current working directory.
+1. `aio app use <project configuration file location>.json`
+2. This will generate `.env` and `.aio` files in your current working directory.
 
 ## Test that the CLI is set up correctly
 
