@@ -19,12 +19,12 @@ Here you'll learn what systems you need to access, how to access them, and how t
 * If your organization has a license for App Builder, use the IMS organization where App Builder is provisioned. Some companies have multiple IMS Organizations. Check with your company admin who manages Adobe software for details.
 
 - If you do not have access to your IMS organization:
-  
+
   - Customers should request access from their account manager or their company IT/Marketing admin
-  
+
   - Partners should request App Builder access from their partner manager, or Sandbox access though the [Adobe Solution Partner Portal](https://solutionpartners.adobe.com/home.html)
 
-**App Builder access** is only available with a purchased license. 
+**App Builder access** is only available with a purchased license.
 
 **[Adobe Developer Console](https://developer.adobe.com/developer-console/)** gives you access to APIs, SDKs, and developer tools. It also provides a way to set up your credentials.
 
@@ -39,7 +39,7 @@ Here you'll learn what systems you need to access, how to access them, and how t
 [**Adobe I/O Command Line Interface (CLI)**](https://github.com/adobe/aio-cli)
 
 - `npm install -g @adobe/aio-cli`
-- If Adobe I/O CLI is already installed, please make sure you have the latest version: 
+- If Adobe I/O CLI is already installed, please make sure you have the latest version:
   - Check your CLI version using `aio -v` and compare it to`npm show @adobe/aio-cli version`. If your CLI is outdated, update it by running `npm install -g @adobe/aio-cli`.
   - Even if your Adobe I/O CLI is up to date, run `aio update` to make sure all core plugins are updated.
   - For seven days after release of a new version of Adobe I/O CLI, you'll see a message like this before the command output:
