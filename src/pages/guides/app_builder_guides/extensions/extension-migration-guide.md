@@ -33,8 +33,8 @@ Under the old file structure, initialization of a new App Builder Project in the
 4. `e2e`:  folder for end-to-end tests.
 5. `manifest.yml`: file describing back-end actions to deploy or redeploy
    - `manifest` file contents should adhere to the [OpenWhisk deployment YAML specification](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification#package-specification). Once defined, the [CLI](https://github.com/adobe/aio-cli) uses this file to deploy or redeploy actions. You might see values like `$CUSTOMER_PROFILE_TENANT` listed on this page; they are environment variables that can be defined in the `.env` file.
-6. `package.json`: file with the project definition and relevant metadata.
-   - `package.json` gives informs npm so it can identify the project and handle its dependencies. Learn more [here](https://nodejs.org/docs/v22.12.0/api/packages.html#packagejson-and-file-extensions).
+6. `package.json`: this file describes project definition and various metadata relevant to the project.
+    - It is used by `npm install` to install all the project's dependencies. The package is private and not expected to be published/shared on [npmjs.com](https://www.npmjs.com/). Learn more [here](https://docs.npmjs.com/about-packages-and-modules).
 7. `.aio`: file containing configuration variables used by the [CLI](https://github.com/adobe/aio-cli) to facilitate the application, for example supported API services. This file can be committed to a source-code versioning system.
    - You may manually update the file, or use `aio config` commands to add or to configurations. Learn more about the [Config Plugin](https://github.com/adobe/aio-cli-plugin-config).
 8. `.env`: file containing environment variables useful for application development, for example Adobe I/O Runtime credentials and Adobe Product API tenant specifics  such as API key and secrets.
