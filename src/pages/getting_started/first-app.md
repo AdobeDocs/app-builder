@@ -19,11 +19,11 @@ In this tutorial, we'll guide you through the following steps to give you an int
 1. Developing the Application
 1. Deploying the Application
 
-If you run into any issues during development, please first refer to the [Common Issues section](first-app.md#common-issues) on this page. 
+If you run into any issues during development, please first refer to the [Common Issues section](first-app.md#common-issues) on this page.
 
 ## 1. Set up Local Environment
 
-Ensure your local environment and tooling is up to date. Instructions are here: [Setting up Your Environment](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#local-environment-set-up). Make sure you have access to App Builder as described here [How to Get Access to App Builder](../overview/getting_access.md). If are have not yet been granted access, you may want to wait before proceeding.
+Ensure your local environment and tooling is up to date. Instructions are here: [Setting up Your Environment](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#local-environment-set-up). Make sure you have access to App Builder as described here [How to Get Access to App Builder](../get_started/app_builder_get_started/set-up.md#access-and-credentials). If are have not yet been granted access, you may want to wait before proceeding.
 
 ## 2. Create a new Project on Developer Console
 
@@ -42,7 +42,7 @@ Follow the instructions to set up your project:
 3. Once you are in the correct organization, Under `Quick Start`, click on the option to `Create project from template`.
 
   > **Note:** if you don't have the `Create project from template` option, confirm the IMS org is correct. If it is, you do not yet have access to App Builder.
-   Make sure you followed the process for [How to Get Access to App Builder](../overview/getting_access.md).
+   Make sure you followed the process for [How to Get Access to App Builder](../get_started/app_builder_get_started/set-up.md#access-and-credentials).
 
 4. Select `App Builder` from the list of templates.
 
@@ -50,12 +50,12 @@ Follow the instructions to set up your project:
 
 5. Enter `Project Title` and `App Name` for your templated project.
 
-  `Project Title` is used to identify this project within [Adobe Developer Console](/console) and in [CLI](https://github.com/adobe/aio-cli). We recommend changing the default title to a meaningful project title. 
-  
-  `App Name` is a unique identifier for your application. 
-  
+  `Project Title` is used to identify this project within [Adobe Developer Console](/console) and in [CLI](https://github.com/adobe/aio-cli). We recommend changing the default title to a meaningful project title.
+
+  `App Name` is a unique identifier for your application.
+
  > **Note:** once project set up is complete `App Name` cannot be changed.
-   
+
   By default, the "Include Runtime with each workspace" checkbox is checked. Each workspace is automatically provisioned with a unique [Adobe I/O Runtime](/runtime) namespace allowing each developer to work within their own [Adobe I/O Runtime](/runtime) environment.
 
  > **Note:** If you deselect the checkbox and do not opt for automatic inclusion of [Adobe I/O Runtime](/runtime), you will need to enable it manually for each individual workspace. You cannot auto-add [Adobe I/O Runtime](/runtime) to all workspaces after the initial set up is complete.
@@ -68,13 +68,13 @@ Follow the instructions to set up your project:
 
 6. You should see a new project generated with 2 default `Workspaces`.
     - Workspaces can be used to manage different deployment environments (dev, qa, stage, prod) for your application and to provide individual working environment for each developer on the project. Workspace is where you will connect services and get the credential details needed to connect to [Adobe APIs](/apis). Connected services can differ from workspace to workspace, and credentials used within each workspace is not shared across workspaces.
-   
+
     - Each App Builder project has two default workspaces: `Production` and `Stage`. You can add more workspaces as needed. The `Production` workspace is a special workspace used for the submission and distribution flow. When you’re ready to deploy your app, you will submit it for approval from the Production workspace.
-   
+
     ![Project Preview](../images/console-5.png)
 
 7. Create a new workspace or select a workspace to add [APIs](https://developer.adobe.com/developer-console/docs/guides/services/#add-a-service) and [Events](https://developer.adobe.com/developer-console/docs/guides/services/services-add-event/) that you will need for your application.
-   
+
     ![Workspace](../images/console-6.png)
 
 To learn more about Adobe Developer Console, please refer to [Console Documentation](https://developer.adobe.com/developer-console/docs).
@@ -369,7 +369,7 @@ You should see these folders and files in your project:
 1. `app.config.yaml`: this is the master configuration file. It follows the same principle as the individual `ext.config.yaml`, and compiles these individual file into one comprehensive config upon application build.
 1. `lib`: this folder will contain all the shared utility actions across different extension points.
 1. `package.json`: this file describes project definition and various metadata relevant to the project.
-    - It is used to give information to npm that allows it to identify the project as well as handle the project's dependencies. Learn more [here](https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-json/).
+    - It is used by `npm install` to install all the project's dependencies. The package is private and not expected to be published/shared on [npmjs.com](https://www.npmjs.com/). Learn more [here](https://docs.npmjs.com/about-packages-and-modules).
 1. `.aio`: this file contains config variables that are useful for the [CLI](https://github.com/adobe/aio-cli) to facilitate the app, e.g. supported API services. **This file should not be committed to a source code versioning system.**
     - You can manually update the file or use the `aio config` commands to add or to remove configurations. Learn more about the [Config Plugin](https://github.com/adobe/aio-cli-plugin-config).
 1. `.env`: this file contains environment variables that are useful for the app during development, e.g. Adobe I/O Runtime credentials and Adobe Product API tenant specifics (API key, secrets, etc.)
