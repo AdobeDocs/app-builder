@@ -369,7 +369,7 @@ You should see these folders and files in your project:
 1. `app.config.yaml`: this is the master configuration file. It follows the same principle as the individual `ext.config.yaml`, and compiles these individual file into one comprehensive config upon application build.
 1. `lib`: this folder will contain all the shared utility actions across different extension points.
 1. `package.json`: this file describes project definition and various metadata relevant to the project.
-    - It is used to give information to npm that allows it to identify the project as well as handle the project's dependencies. Learn more [here](https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-json/).
+    - It is used by `npm install` to install all the project's dependencies. The package is private and not expected to be published/shared on [npmjs.com](https://www.npmjs.com/). Learn more [here](https://docs.npmjs.com/about-packages-and-modules).
 1. `.aio`: this file contains config variables that are useful for the [CLI](https://github.com/adobe/aio-cli) to facilitate the app, e.g. supported API services. **This file should not be committed to a source code versioning system.**
     - You can manually update the file or use the `aio config` commands to add or to remove configurations. Learn more about the [Config Plugin](https://github.com/adobe/aio-cli-plugin-config).
 1. `.env`: this file contains environment variables that are useful for the app during development, e.g. Adobe I/O Runtime credentials and Adobe Product API tenant specifics (API key, secrets, etc.)
