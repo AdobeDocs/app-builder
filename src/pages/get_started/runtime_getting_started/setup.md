@@ -23,6 +23,7 @@ In the Developer Console:
 * Create a new `Project`.
 * Select a workspace option, for example `Production`.
 * Click `Add service` and choose `Runtime`.
+** `Runtime` may be automatically included in your workspace.
 * Navigate back to `Workspace overview` page and click on the `Download all` button at the top of the page. This will download the configuration file for this project and workspace.
 * Open the configuration file in a text editor and search for the `runtime` > `namespaces` entry. Here you will find the namespace `name` and `auth` values you will use to configure the `aio` CLI. 
 
@@ -36,7 +37,8 @@ There are two ways to configure the `aio` CLI:
 
 ### Configure aio CLI
 
-The `aio` CLI will pick up credentials from an `.env` file in the current working directory.
+1. `aio app use <project configuration file location>.json`
+2. This will generate `.env` and `.aio` files in your current working directory.
 
 ## Test that the CLI is set up correctly
 
