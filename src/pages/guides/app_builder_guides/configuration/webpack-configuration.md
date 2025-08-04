@@ -198,11 +198,11 @@ App Builder does not allow changing of these Webpack configuration options; if t
 
 If you export a function, an asynchronous function, or an array of functions from your Webpack configuration file, App Builder will pass the environment to those functions. You can use this to make decisions about bundling based on the environment.
 
-For example, if you export an environment variable called `FEATURE_FLAG_PIRATES_BOUNTY` before building your application, you can use it in your Webpack configuration file:
+For example, if you export an environment variable called `ENVIRONMENT` before building your application, you can use it in your Webpack configuration file:
 
 ```javascript
 module.exports = (env) => ({
-  mode: env.FEATURE_FLAG_PIRATES_BOUNTY ? 'production' : 'development'
+  mode: env.ENVIRONMENT === 'production' ? 'production' : 'development'
 })
 ```
 
