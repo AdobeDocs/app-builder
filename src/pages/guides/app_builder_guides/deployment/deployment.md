@@ -28,9 +28,13 @@ An App Builder app can contain different components - frontend, backend, extensi
 
 By default, an App Builder Project on the Developer Console contains a Production and a Stage workspace. The Production and Stage workspaces can be used by your team for shared production and staging environments respectively. Furthermore, you can add more workspaces to your App Builder project, even an individual workspace for every developer on your team.
 
+![High-Level CI/CD architecture](../../../images/high-level-ci-cd-architecture.png)
+
 Each workspace is completely isolated from other workspaces and can be deployed to separately. To deploy to a workspace, you must select it before running the `aio app deploy` command. See the section below to know more.
 
 ## How to deploy your app?
+
+The following steps outline how you can deploy an App Builder app from your machine. If you want to deploy it from a CI/CD pipeline, please reach our [guide on setting up a CI/CD pipeline](cicd-for-app-builder-apps.md).
 
 1. Open your terminal and navigate to the root of your App Builder app. The directory that contains the `app.config.yaml`, `.aio`, and `.env` files. 
 
