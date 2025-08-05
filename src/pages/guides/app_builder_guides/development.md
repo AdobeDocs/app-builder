@@ -6,7 +6,7 @@ keywords:
   - Developer Tooling
 ---
 
-# Development
+# Local Development
 
 ## Localhost dev server
 
