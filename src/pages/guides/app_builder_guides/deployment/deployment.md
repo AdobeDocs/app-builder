@@ -9,12 +9,22 @@ description: The guide explains how App Builder apps can be deployed.
 
 The [AIO CLI](https://github.com/adobe/aio-cli) allows developers to deploy their App Builder app to Adobe servers. The following guide explains how App Builder apps are deployed. Read our [CI/CD guide](cicd-for-app-builder-apps.md), to set up a CI/CD pipeline to deploy your app.
 
+<InlineAlert slots="text" />
+
+Starting with AIO CLI v11, the use of Runtime namespace auth to deploy App Builder apps has been discontinued. Instead, Adobe IMS authentication is required to deploy App Builder apps, regardless of whether you are deploying from your local machine or a CI/CD pipeline. 
+
+You must either log in to the CLI `aio login` or [set up a CI/CD pipeline](cicd-for-app-builder-apps.md) using a technical account to deploy your App Builder app. 
+
+<InlineAlert slots="text" />
+
+The following guide covers details on deploying your app to Adobe servers. If you want to run your app locally, read our guide on [local development](../development.md).
+
 ## Which components of the App Builder app are deployed?
 
 An App Builder app can contain different components - frontend, backend, extensions, and event registrations. These components are declared in the `app.config.yaml` file. When you deploy your App Builder app, the following components are deployed.
 
 1. **Frontend web assets**: During deployment, web assets (html, js, css, .map, images, and other static assets) are packed and deployed to the App Builder CDN. The CDN is automatically provisioned in the selected Project and Workspace.
-2. **Adobe I/O Runtime entities**: During deployment the following Runtime entites are deployed to the Adobe I/O Runtime namespace in the selected Project and Workspace.
+2. **Adobe I/O Runtime entities**: During deployment the following Runtime entities are deployed to the Adobe I/O Runtime namespace in the selected Project and Workspace.
    1. [Actions](../../runtime_guides/creating-actions.md) 
    2. [Sequences](../../runtime_guides/reference_docs/sequences-compositions.md#sequences) 
    3. [APIs](../../runtime_guides/creating-rest-apis.md)
@@ -30,11 +40,16 @@ By default, an App Builder Project on the Developer Console contains a Productio
 
 ![High-Level CI/CD architecture](../../../images/high-level-ci-cd-architecture.png)
 
-Each workspace is completely isolated from other workspaces and can be deployed to separately. To deploy to a workspace, you must select it before running the `aio app deploy` command. See the section below to know more.
+Each workspace is completely isolated from other workspaces and can be deployed separately. To deploy to a workspace, you must select it before running the `aio app deploy` command. See the section below to know more.
 
 ## How to deploy your app?
 
-The following steps outline how you can deploy an App Builder app from your machine. If you want to deploy it from a CI/CD pipeline, please reach our [guide on setting up a CI/CD pipeline](cicd-for-app-builder-apps.md).
+The following steps outline how you can deploy an App Builder app from your machine. If you want to deploy it from a CI/CD pipeline, please read our [guide on setting up a CI/CD pipeline](cicd-for-app-builder-apps.md).
+
+<InlineAlert slots="text" />
+
+Note: This guide refers to the "root of your App Builder app". The root of your App Builder app is the directory that contains the `app.config.yaml`, `.aio`, and `.env` files.
+
 
 1. Open your terminal and navigate to the root of your App Builder app. The directory that contains the `app.config.yaml`, `.aio`, and `.env` files. 
 
@@ -44,7 +59,7 @@ The following steps outline how you can deploy an App Builder app from your mach
    ```
    If you want to log in to a different account, you can use the `aio logout --force` command to log out.
 
-3. Ensure a Developer Console Project and Workspace is selected in your project. If you are at the root of your App Builder app directory, the Project and Workspace will be determined using the values in the `.aio` file. 
+3. Ensure a Developer Console Project and Workspace is selected in your project. If you are at the root of your App Builder app, the Project and Workspace will be determined using the values in the `.aio` file. 
    ```bash
    aio where
    ```
@@ -71,14 +86,22 @@ The following steps outline how you can deploy an App Builder app from your mach
 
 ## Tracking deployment activity
 
-Whenever a developer makes a change to a Project, her action is recorded in the [Project Activity Logs](https://developer.adobe.com/developer-console/docs/guides/projects/#view-a-projects-activity-log). Each activity log describes who made what change and when. 
+Whenever a developer makes a change to a Project, the action is recorded in the [Project Activity Logs](https://developer.adobe.com/developer-console/docs/guides/projects/#view-a-projects-activity-log). Each activity log describes who made what change, and when. 
 
 Activities related to deploying an App Builder are also captured in the Project Activity Logs. This includes deployment to any Workspace in the Project. Furthermore, Activity logs are captured whether the app is deployed from a developer's machine or from a CI/CD pipeline.
 
-<InlineAlert slots="text">
-The AIO CLI v10 introduces the mandatory use Adobe IMS authentication to deploy App Builder apps. Therefore, activity logs are captured only if you use AIO CLI v10 or higher. 
+Note: While deployment activity is recorded, the actual contents of the deployment are not recorded in the activity logs.
 
-Currently, older versions of the AIO CLI can be used to deploy App Builder apps, but that deployment will not be recorded in the Project Activity Logs. Once AIO CLI v10 reaches critical adoption, the App Builder team will communicate plans arounding restricting deployment from older CLI versions. 
+The following deployment activities are captured as Project Activity logs:
+1. Deploying and undeploying static assets to the App Builder CDN.
+2. Deploying Action code to Adobe I/O Runtime.
+3. Deploying Triggers, Rules, Sequences, or APIs to Adobe I/O Runtime.
+4. Changing the Log forwarding configuration for the workspace.
+
+<InlineAlert slots="text">
+The AIO CLI v11 introduces the mandatory use of Adobe IMS authentication to deploy App Builder apps. Therefore, activity logs are captured only if you use AIO CLI v11 or higher. 
+
+Currently, older versions of the AIO CLI can be used to deploy App Builder apps, but that deployment will not be recorded in the Project Activity Logs. Once AIO CLI v11 reaches critical adoption, the App Builder team will communicate plans around restricting deployments from older CLI versions. 
 
 Meanwhile, we strongly recommend that you upgrade your AIO CLI version to 10 or higher for a better security posture.
 </InlineAlert>
@@ -90,9 +113,13 @@ Deployment activity logs were recorded from Aug 11, 2025 onward. Historical data
 
 ## Undeploying your app
 
-You can run the `aio app undeploy` command at the root of your App Builder app directory to undeploy all components deployed through the `aio app deploy` command.
+You can run the `aio app undeploy` command at the root of your App Builder app to undeploy all components deployed through the `aio app deploy` command.
 
-Use this command carefully because if you inadvertantly undeploy the app from the Production workspace, it could result in downtime. You can of course deploy the app again immediately.
+You can view the help menu (`aio app undeploy --help`) to understand the available advanced options. Using these options you can undeploy only parts of your application.
+
+Use this command carefully because if you inadvertently undeploy the app from the Production workspace, it could result in downtime. You can of course deploy the app again immediately.
+
+Note: Starting with AIO CLI v11, Adobe IMS authentication is also required to undeploy your app.
 
 
 ## Next steps
