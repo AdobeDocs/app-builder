@@ -186,7 +186,6 @@ If your App Builder app requires other application secrets (such as API keys for
    ```yml
    MY_CUSTOM_SECRET: ${{ secrets.MY_CUSTOM_SECRET_STAGE}}
    ```
-   <InlineAlert slots="text" />
    Adding the secret to the workflow definition is equivalent to adding the secret to the `.env` file locally. The CI/CD pipeline will ensure your action receives this secret during deployment.
 
 2. Save the value of `MY_CUSTOM_SECRET_STAGE` to your GitHub repository (steps are outlined in [Step 4](#step-4-add-secrets-to-your-github-repository)).
