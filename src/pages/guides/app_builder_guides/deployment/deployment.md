@@ -1,8 +1,8 @@
 ---
 keywords:
   - Deployment
-title: Deployment
-description: The guide explains how App Builder apps can be deployed.
+title: Deployment Guide
+description: The guide explains how App Builder apps are deployed.
 ---
 
 # Deployment Overview
