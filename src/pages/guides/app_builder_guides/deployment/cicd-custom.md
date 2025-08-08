@@ -2,6 +2,14 @@
 
 To deploy an App Builder app, you can build a CI/CD pipeline with any industry-leading tool and the AIO CLI. The following general steps outline how you can set up a CI/CD pipeline.
 
++ [Step 1: Prepare a Workspace for deployment using a CI/CD pipeline](#step-1-prepare-a-workspace-for-deployment-using-a-cicd-pipeline)
++ [Step 2: Compute the `.aio` and `.env` files](#step-2-compute-the-aio-and-env-files)
++ [Step 3: Setting up the secrets in secret store](#step-3-setting-up-the-secrets-in-secret-store)
++ [Step 4: Repeat for other workspaces](#step-4-repeat-for-other-workspaces)
++ [Step 5: Installing AIO CLI in your CI/CD pipeline](#step-5-installing-aio-cli-in-your-cicd-pipeline)
++ [Step 6: Writing the deployment script](#step-6-writing-the-deployment-script)
+
+
 ## Step 1: Prepare a Workspace for deployment using a CI/CD pipeline
 
 To enable a workspace for deployment via a CI/CD pipeline:

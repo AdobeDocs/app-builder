@@ -7,17 +7,7 @@ keywords:
 title: CI/CD for App Builder Applications
 ---
 
-+ [CI/CD for App Builder Applications](#cicd-for-app-builder-applications)
-  + [Local application development](#local-application-development)
-  + [GitHub actions support](#github-actions-support)
-    + [Github workflows](#github-workflows)
-    + [GitHub actions for AIO CLI](#github-actions-for-aio-cli)
-    + [GitHub secrets](#github-secrets)
-  + [Bring your own CI/CD pipeline](#bring-your-own-cicd-pipeline)
-  + [Next steps](#next-steps)
-
-
-# CI/CD for App Builder Applications
+# CI/CD for App Builder Applications: Overview
 
 Continuous integration and continuous delivery (CI/CD) is a crucial component for the success of any development team, including teams developing App Builder apps. By automating deployment, CI/CD allows the development team to build and deploy apps free of any variances that may arise from building and deploying the app from a developer's machine.
 
