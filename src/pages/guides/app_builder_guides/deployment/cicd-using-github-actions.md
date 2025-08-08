@@ -1,3 +1,13 @@
+---
+keywords:
+  - Deployment
+  - aio app deploy
+  - CI/CD
+  - GitHub Actions
+title: CI/CD using GitHub Actions
+description: Setting up a CI/CD pipeline to deploy App Builder apps using GitHub Actions
+---
+
 # Setting up a CI/CD pipeline to deploy App Builder apps using GitHub Actions
 
 To deploy App Builder apps, App Builder supports a CI/CD pipeline using GitHub Actions out of the box. The following guide explains how you can set it up.
@@ -176,9 +186,8 @@ If your App Builder app requires other application secrets (such as API keys for
    ```yml
    MY_CUSTOM_SECRET: ${{ secrets.MY_CUSTOM_SECRET_STAGE}}
    ```
-   <InlineAlert slots="text">
+   <InlineAlert slots="text" />
    Adding the secret to the workflow definition is equivalent to adding the secret to the `.env` file locally. The CI/CD pipeline will ensure your action receives this secret during deployment.
-   </InlineAlert>
 
 2. Save the value of `MY_CUSTOM_SECRET_STAGE` to your GitHub repository (steps are outlined in [Step 4](#step-4-add-secrets-to-your-github-repository)).
 

@@ -1,3 +1,12 @@
+---
+keywords:
+  - Deployment
+  - aio app deploy
+  - CI/CD
+title: Custom CI/CD pipeline
+description: Setting up a custom CI/CD pipeline to deploy App Builder apps
+---
+
 # Setting up a custom CI/CD pipeline to deploy App Builder apps
 
 To deploy an App Builder app, you can build a CI/CD pipeline with any industry-leading tool and the AIO CLI. The following general steps outline how you can set up a CI/CD pipeline.

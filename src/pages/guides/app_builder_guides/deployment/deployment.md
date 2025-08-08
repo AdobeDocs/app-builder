@@ -1,6 +1,7 @@
 ---
 keywords:
   - Deployment
+  - aio app deploy
 title: Deployment Guide
 description: The guide explains how App Builder apps are deployed.
 ---
@@ -11,13 +12,19 @@ The [AIO CLI](https://github.com/adobe/aio-cli) allows developers to deploy thei
 
 <InlineAlert slots="text" />
 
-Starting with AIO CLI v11, the use of Runtime namespace auth to deploy App Builder apps has been discontinued. Instead, Adobe IMS authentication is required to deploy App Builder apps, regardless of whether you are deploying from your local machine or a CI/CD pipeline. 
-
-You must either log in to the CLI `aio login` or [set up a CI/CD pipeline](cicd-for-app-builder-apps.md) using a technical account to deploy your App Builder app. 
+Starting with AIO CLI v11, the use of Runtime namespace auth to deploy App Builder apps has been discontinued. Instead, Adobe IMS authentication is required to deploy App Builder apps, regardless of whether you are deploying from your local machine or a CI/CD pipeline. You must either log in to the CLI (`aio login`) or [set up a CI/CD pipeline](cicd-for-app-builder-apps.md) using the [OAuth Server-to-Server credential](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) to deploy your App Builder app. 
 
 <InlineAlert slots="text" />
 
 The following guide covers details on deploying your app to Adobe servers. If you want to run your app locally, read our guide on [local development](../development.md).
+
++ [Which components of the App Builder app are deployed?](#which-components-of-the-app-builder-app-are-deployed)
++ [Multiple deployment environments](#multiple-deployment-environments)
++ [How to deploy your app?](#how-to-deploy-your-app)
++ [Tracking deployment activity](#tracking-deployment-activity)
++ [Undeploying your app](#undeploying-your-app)
++ [Next steps](#next-steps)
+
 
 ## Which components of the App Builder app are deployed?
 
@@ -161,17 +168,14 @@ The following deployment activities are captured as Project Activity logs:
 3. Deploying Triggers, Rules, Sequences, or APIs to Adobe I/O Runtime.
 4. Changing the Log forwarding configuration for the workspace.
 
-<InlineAlert slots="text">
-The AIO CLI v11 introduces the mandatory use of Adobe IMS authentication to deploy App Builder apps. Therefore, activity logs are captured only if you use AIO CLI v11 or higher. 
+<InlineAlert slots="text" />
 
-Currently, older versions of the AIO CLI can be used to deploy App Builder apps, but that deployment will not be recorded in the Project Activity Logs. Once AIO CLI v11 reaches critical adoption, the App Builder team will communicate plans around restricting deployments from older CLI versions. 
+1. The AIO CLI v11 introduces the mandatory use of Adobe IMS authentication to deploy App Builder apps. Therefore, Activity logs are only captured if you use AIO CLI v11 or higher.
+2. Once AIO CLI v11 reaches critical adoption, Adobe will announce plans to restrict deployments from AIO CLI v10 or lower. Meanwhile,for a better security posture, we strongly recommend customers to upgrade the AIO CLI version to v11 or higher.
 
-Meanwhile, we strongly recommend upgrading your AIO CLI version to 11 or higher for a better security posture.
-</InlineAlert>
 
-<InlineAlert slots="text">
-Deployment activity logs were recorded from Aug 11, 2025 onward. Historical data before then is not available. The activity logs are retained for a year.
-</InlineAlert>
+<InlineAlert slots="text" />
+Adobe started recording App Builder deployment activity logs from Aug 8, 2025 for App Builder apps deployed using AIO CLI v11 or higher. Historical data before Aug 8, 2025 is not available. All activity logs are retained for a year.
 
 
 ![Activity Logs](../../../images/activity-logs.png)
