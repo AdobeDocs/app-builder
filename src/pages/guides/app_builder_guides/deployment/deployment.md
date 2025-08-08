@@ -34,13 +34,76 @@ An App Builder app can contain different components - frontend, backend, extensi
 3. **Extensions** - During deployment, your app is registered as an extension in the Adobe extension registry against any extension points implemented in the app.
 4. **Event Registrations** - During deployment, any event registrations defined in the `app.config.yaml` file are created in the selected Project and workspace.
 
+Here's a sample `app.config.yaml` file containing different components of the App Builder app.
+```YAML
+application:
+  actions: actions
+  web: web-src
+  runtimeManifest:
+    packages:
+      test-app:
+        license: Apache-2.0
+        actions:
+          generic:
+            function: actions/generic/index.js
+            web: 'yes'
+            runtime: nodejs:18
+            inputs:
+              LOG_LEVEL: debug
+            annotations:
+              require-adobe-auth: true
+              final: true
+          generic2:
+            function: actions/generic/index.js
+            web: 'yes'
+            runtime: nodejs:22
+            inputs:
+              LOG_LEVEL: debug
+            annotations:
+              require-adobe-auth: true
+              final: true
+        sequences:
+            all_generic:
+              actions: generic, generic2
+        triggers:
+          triggerA:
+            inputs:
+              name: Foo
+              place: the Shire
+          Every24Hours:
+            feed: /whisk.system/alarms/alarm
+            inputs:
+              cron: "0 */24 * * *"
+              name: Foo
+        rules:
+          generic2OnCron:
+            action: generic2
+            trigger: Every24Hours
+          ruleA:
+            action: generic
+            trigger: triggerA
+        apis:
+          my-api-name: # API Name
+            some-base-path: # Base Path
+              some-relative-path: # Relative Path
+                generic: # Name of the action to connect this path to
+                  method: get
+                  response: http
+          my-api-name-2: # API Name
+            some-base-path-2: # Base Path
+              some-relative-path/{id}: # Relative Path
+                generic: # Name of the action to connect this path to
+                  method: get
+                  response: http
+```
+
 ## Multiple deployment environments
 
-By default, an App Builder Project on the Developer Console contains a Production and a Stage workspace. The Production and Stage workspaces can be used by your team for shared production and staging environments respectively. Furthermore, you can add more workspaces to your App Builder project, even an individual workspace for every developer on your team.
+By default, an App Builder Project on the Developer Console contains a Production and a Stage workspace. The Production and Stage workspaces can be used by your team for shared production and staging environments, respectively. Furthermore, you can add more workspaces to your App Builder project, even an individual workspace for every developer on your team.
 
 ![High-Level CI/CD architecture](../../../images/high-level-ci-cd-architecture.png)
 
-Each workspace is completely isolated from other workspaces and can be deployed separately. To deploy to a workspace, you must select it before running the `aio app deploy` command. See the section below to know more.
+Each workspace is completely isolated from other workspaces and can be deployed separately. To deploy to a workspace, you must select it before running the `aio app deploy` command. See the section below for more information.
 
 ## How to deploy your app?
 
@@ -73,7 +136,7 @@ Note: This guide refers to the "root of your App Builder app". The root of your 
    ```
    When prompted, be sure to merge the `.aio` and the `.env` files to avoid losing any other configuration you may have added to those files.
    
-5. To deploy the app run 
+5. To deploy the app, run 
    ```bash
    aio app deploy
    ``` 
@@ -86,7 +149,7 @@ Note: This guide refers to the "root of your App Builder app". The root of your 
 
 ## Tracking deployment activity
 
-Whenever a developer makes a change to a Project, the action is recorded in the [Project Activity Logs](https://developer.adobe.com/developer-console/docs/guides/projects/#view-a-projects-activity-log). Each activity log describes who made what change, and when. 
+Whenever a developer makes a change to a Project, her action is recorded in the [Project Activity Logs](https://developer.adobe.com/developer-console/docs/guides/projects/#view-a-projects-activity-log). Each activity log describes who made what change, and when. 
 
 Activities related to deploying an App Builder are also captured in the Project Activity Logs. This includes deployment to any Workspace in the Project. Furthermore, Activity logs are captured whether the app is deployed from a developer's machine or from a CI/CD pipeline.
 
@@ -103,12 +166,15 @@ The AIO CLI v11 introduces the mandatory use of Adobe IMS authentication to depl
 
 Currently, older versions of the AIO CLI can be used to deploy App Builder apps, but that deployment will not be recorded in the Project Activity Logs. Once AIO CLI v11 reaches critical adoption, the App Builder team will communicate plans around restricting deployments from older CLI versions. 
 
-Meanwhile, we strongly recommend that you upgrade your AIO CLI version to 10 or higher for a better security posture.
+Meanwhile, we strongly recommend upgrading your AIO CLI version to 11 or higher for a better security posture.
 </InlineAlert>
 
 <InlineAlert slots="text">
 Deployment activity logs were recorded from Aug 11, 2025 onward. Historical data before then is not available. The activity logs are retained for a year.
 </InlineAlert>
+
+
+![Activity Logs](../../../images/activity-logs.png)
 
 
 ## Undeploying your app
@@ -125,5 +191,9 @@ Note: Starting with AIO CLI v11, Adobe IMS authentication is also required to un
 ## Next steps
 
 Continue to [CI/CD for App Builder Applications](cicd-for-app-builder-apps.md).
+
+Set up [CI/CD using GitHub Actions](cicd-using-github-actions.md).
+
+Set up [custom CI/CD pipeline](cicd-custom.md).
 
 Return to the [Guides Index](../../index.md).
