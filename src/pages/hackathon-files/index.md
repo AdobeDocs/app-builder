@@ -5,6 +5,13 @@ keywords:
   - Documentation
 title: App Builder Guides
 description: Comprehensive guides for building and deploying applications with App Builder.
+faqs:
+- question: What topics are covered in the App Builder Guides?
+  answer: The guides cover architecture, development, configuration, deployment, security, and integration aspects of building applications with App Builder.
+- question: Where can I find information about App Builder deployment?
+  answer: Deployment details are included under the Configuration and Deployment section of the App Builder Guides.
+- question: Does the App Builder support integrations with other platforms?
+  answer: Yes, the guides include information about integrating App Builder with Adobe Experience Cloud and other services.
 ---
 
 # App Builder Guides

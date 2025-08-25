@@ -6,6 +6,11 @@ keywords:
   - Set up
 title: Set Up Access, Environment, and Tools
 description: App Builder is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure.
+faqs:
+- question: What access do I need to start using App Builder?
+  answer: You need membership in an Adobe Experience Cloud IMS organization with a Developer or System Admin role, and your organization must have a license for App Builder.
+- question: How do I request access if I don’t have it?
+  answer: Customers should contact their account manager or company IT/Marketing admin, while partners should request access from their partner manager or via the Adobe Solution Partner Portal.
 ---
 
 # Set Up Access, Environment, and Tools
