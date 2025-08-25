@@ -30,6 +30,7 @@ jobs:
     uses: AdobeDocs/adp-devsite-workflow/.github/workflows/ai-deploy-metadata.yml@app-builder-test
     with:
       FILE_NAME: "all_pages_content.txt"
+      TARGET_BRANCH: ${{ inputs.target_branch }}
     secrets:
       AZURE_OPENAI_ENDPOINT: ${{ secrets.AZURE_OPENAI_ENDPOINT }}
       AZURE_OPENAI_API_KEY: ${{ secrets.AZURE_OPENAI_API_KEY }}
