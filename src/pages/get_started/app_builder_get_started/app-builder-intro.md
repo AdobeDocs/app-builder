@@ -1,12 +1,24 @@
 ---
+title: Get Started with App Builder
+description: This tutorial series guides you through the entire App Builder development lifecycle from setup and development to deployment, testing, and publishing your application.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
-title: How it Works
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- App Builder
+faqs:
+- question: What is Adobe App Builder?
+  answer: Adobe App Builder is a development framework that allows you to create, deploy, and manage custom applications integrated with Adobe Experience Cloud.
+- question: How do I start building an app with App Builder?
+  answer: Begin by creating a new project in the Developer Console, adding required Adobe API credentials, and setting up your local development environment using available templates.
+- question: Can I test my app before publishing it?
+  answer: Yes, you can deploy your application to sandboxes or CI/CD pipelines and simulate end-user interactions before making it publicly available.
+- question: How is my app published to end users?
+  answer: After deploying and testing, you initiate the publishing process via the Developer Console, and once approved by Admin, the app becomes available to authenticated business users.
+- question: Can I convert existing Adobe I/O Runtime actions to App Builder apps?
+  answer: Yes, Adobe provides a shortcut for customers with existing Adobe I/O Runtime actions to streamline converting them into App Builder applications.
 ---
-
 # Get Started with App Builder
 
 This series of tutorials will show you how to:

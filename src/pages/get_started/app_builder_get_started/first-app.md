@@ -1,12 +1,24 @@
 ---
 keywords:
-  - App Builder
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
-title: Creating your First App Builder Application
+- App Builder
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Adobe Developer Console
+title: Create your First App Builder Application
+description: This guide walks you through setting up and developing your first App Builder Application using Adobe Developer Console and CLI tools.
+faqs:
+- question: What is App Builder used for?
+  answer: App Builder enables developers to create custom applications that extend Adobe products through APIs and runtime services.
+- question: How do I set up my environment for App Builder development?
+  answer: Ensure you have access to App Builder, set up your local development environment following the official setup guide, and have necessary CLI tools installed.
+- question: Can I create multiple workspaces for different deployment stages?
+  answer: Yes, you can create multiple workspaces such as Development, Staging, and Production to manage different environments separately.
+- question: How do I add APIs or events to my App Builder project?
+  answer: Use the Adobe Developer Console to select your project workspace and add the required APIs or events needed by your application.
+- question: What should I do if I encounter issues during setup?
+  answer: Refer to the Common issues section of the guide for troubleshooting steps or check the Adobe Developer Console documentation for additional help.
 ---
-
 # Create your First App Builder Application
 
 This is a guide through the steps to set up and develop an App Builder Application. Please refer to the [Common issues](#8-common-issues) section at the end of this page to resolve any problems you encounter.

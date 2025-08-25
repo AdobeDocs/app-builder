@@ -1,3 +1,24 @@
+---
+title: Set up Your Environment
+description: Learn how to get access, install, and configure the Adobe I/O CLI to start working with Adobe I/O Runtime and App Builder. This guide covers namespace creation, credential retrieval, and CLI testing.
+keywords:
+- Adobe I/O Runtime
+- Adobe I/O CLI
+- App Builder trial
+- namespace configuration
+- Adobe Developer Console
+faqs:
+- question: How do I sign up for Adobe I/O Runtime access?
+  answer: You can sign up for an Adobe App Builder trial, which includes access to Adobe I/O Runtime, by registering through the Adobe Commerce business trial sign-up page.
+- question: What are the prerequisites for installing the Adobe I/O CLI?
+  answer: You need to have Node.js and npm installed on your system, both at their latest versions, before installing the Adobe I/O CLI via npm.
+- question: How do I create a namespace for Adobe I/O Runtime?
+  answer: Create a new project in the Adobe Developer Console, add the Runtime service, and download the configuration file that contains the namespace name and credentials.
+- question: What permissions are required to manage namespaces?
+  answer: Managing namespaces requires either the Developer role or System Administrator permissions within the organization’s Adobe Developer Console.
+- question: How do I verify that the Adobe I/O CLI is configured correctly?
+  answer: After configuring the CLI, run the command `aio runtime list` to display the entities in your namespace. A proper list indicates a correct setup.
+---
 # Set up Your Environment
 
 ## Get access

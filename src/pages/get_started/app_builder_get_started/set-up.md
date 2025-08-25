@@ -1,13 +1,24 @@
 ---
-keywords:
-  - Acquire Access
-  - Credentials
-  - Local Environment
-  - Set up
 title: Set Up Access, Environment, and Tools
-description: App Builder is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure.
+description: App Builder is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure. This guide covers accessing necessary systems, configuring your local environment, and essential developer tools.
+keywords:
+- Acquire Access
+- Credentials
+- Local Environment
+- App Builder Setup
+- Adobe Developer Tools
+faqs:
+- question: What role do I need to access the Adobe Experience Cloud IMS organization?
+  answer: You need to be a member of the IMS organization with either a Developer or System Admin role to access App Builder.
+- question: How can I request access if I do not have permissions to my IMS organization?
+  answer: Customers should request access from their account manager or company IT/Marketing admin, while partners should contact their partner manager or use the Adobe Solution Partner Portal.
+- question: What NodeJS versions are recommended for setting up the local environment?
+  answer: Use NodeJS version 18 or 20, as odd versions are not recommended for compatibility with Adobe I/O CLI.
+- question: How do I keep the Adobe I/O CLI up to date?
+  answer: Check your version with `aio -v` and update by running `npm install -g @adobe/aio-cli` if needed, then run `aio update` to refresh all core plugins.
+- question: Is Visual Studio Code required for local development with Adobe I/O CLI?
+  answer: Visual Studio Code is the supported IDE and recommended for debugging and advanced features, but other code editors can be used without full debugging support.
 ---
-
 # Set Up Access, Environment, and Tools
 
 Here you'll learn what systems you need to access, how to access them, and how to configure your local environment.

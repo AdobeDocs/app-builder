@@ -1,12 +1,20 @@
 ---
-keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
 title: App Builder and Adobe I/O Runtime
+description: App Builder simplifies building cloud-native applications running on Adobe I/O Runtime, enabling easy migration and development of serverless actions. Learn the key steps to convert existing actions and leverage powerful Adobe developer tools.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Cloud Native Applications
+faqs:
+- question: What is Adobe I/O Runtime?
+  answer: Adobe I/O Runtime is a serverless platform that allows developers to execute code in response to events without managing servers. It enables scalable and event-driven applications.
+- question: How does App Builder simplify application development on Adobe I/O Runtime?
+  answer: App Builder provides templates and CLI tools that streamline creation, deployment, and management of cloud-native applications, reducing boilerplate and simplifying workflows.
+- question: Can I convert existing Adobe I/O Runtime actions to use App Builder?
+  answer: Yes, by creating a new App Builder project, copying your existing actions, and deploying them within the App Builder framework, you can manage and extend your applications more efficiently.
 ---
-
 # App Builder and Adobe I/O Runtime
 
 App Builder greatly simplifies the process of building cloud native applications that run on Adobe I/O Runtime. 

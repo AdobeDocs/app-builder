@@ -1,3 +1,20 @@
+---
+title: Getting Started with App Builder
+description: Learn how to set up your environment and create your first application with App Builder and Adobe I/O Runtime. This guide provides step-by-step instructions to help you get started quickly.
+keywords:
+- App Builder
+- Adobe I/O Runtime
+- serverless development
+- application setup
+- app publishing
+faqs:
+- question: How do I start using App Builder for the first time?
+  answer: Begin by following the App Builder Getting Started guide, which walks you through setting up your development environment, creating your first app, and publishing it.
+- question: What is Adobe I/O Runtime and how does it relate to App Builder?
+  answer: Adobe I/O Runtime is a serverless platform that enables backend action deployment; App Builder uses Runtime to run your app’s logic and manage serverless functions.
+- question: Where can I find additional learning resources after the getting started guides?
+  answer: After completing the initial guides, you can explore the detailed Guides section for advanced topics and the Resources section for support and extra materials.
+---
 # Getting Started with App Builder
 
 Welcome to the Getting Started section of App Builder documentation. Here you'll find comprehensive guides to help you start working with App Builder and Adobe I/O Runtime.

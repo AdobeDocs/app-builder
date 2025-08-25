@@ -1,12 +1,24 @@
 ---
-keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
 title: Troubleshooting Common Issues
+description: A guide to help developers resolve frequent problems encountered when building with App Builder, covering debugging, authentication, and environment setup.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- App Builder Debugging
+faqs:
+- question: How can I check the status of my App Builder action activations?
+  answer: You can list recent activations using the command `aio runtime activation list`, which shows details like ID, start/end time, duration, and status.
+- question: What does a "developer error" status mean in action activations?
+  answer: It typically indicates compilation issues, missing variables, or action timeouts caused by internal failures or backend service delays.
+- question: How do I enable logging for web actions in App Builder?
+  answer: Add the header `x-ow-extra-logging: on` to your web action requests to persist activation results and logs for troubleshooting.
+- question: Why might I get authorization errors with Adobe authentication in my actions?
+  answer: This often happens if the request lacks a valid user token or JWT; ensure correct token usage based on whether your app is SPA or headless.
+- question: Can I debug State and Files SDK code locally with `aio app dev`?
+  answer: No, because local debugging runs outside Adobe Runtime and cannot access secure cloud storage used by these SDKs unless configured with external storage like Azure Cosmos DB.
 ---
-
 # Troubleshooting Common Issues
 
 This is a guide for troubleshooting some of the most common issues you may encounter when developing App Builder apps.
