@@ -1,12 +1,24 @@
 ---
 keywords:
-  - App Builder
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
-title: Creating your First App Builder Application
+- App Builder
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Adobe Developer Console
+title: Create your First App Builder Application
+description: This guide walks you through the essential steps to set up and develop your first App Builder Application using Adobe Developer Console and CLI tools.
+faqs:
+- question: What is the Adobe Developer Console used for in App Builder?
+  answer: Adobe Developer Console is used to create projects, manage credentials, add APIs and events, and configure workspaces for developing App Builder applications.
+- question: How do I start creating a new App Builder project?
+  answer: You start by logging into Adobe Developer Console, creating a project from the App Builder template, and then configuring your project and workspaces.
+- question: What is the purpose of workspaces in an App Builder project?
+  answer: Workspaces provide isolated environments for development, staging, and production, each with independent credentials and connected services.
+- question: How can I log in to Adobe from the CLI?
+  answer: Use the command `aio login` in your terminal to open a browser window for Adobe ID authentication, which stores your credentials for CLI use.
+- question: Can I change the App Name after creating the project?
+  answer: No, the App Name is a unique identifier and cannot be changed once the project setup is complete.
 ---
-
 # Create your First App Builder Application
 
 This is a guide through the steps to set up and develop an App Builder Application. Please refer to the [Common issues](#8-common-issues) section at the end of this page to resolve any problems you encounter.

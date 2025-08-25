@@ -1,3 +1,24 @@
+---
+title: Entities and Core Concepts
+description: Learn about Adobe I/O Runtime's key entities including actions, namespaces, triggers, rules, packages, sequences, compositions, and feeds, and how they interact to form a serverless computing model.
+keywords:
+- Adobe I/O Runtime
+- Actions
+- Triggers and Rules
+- Packages and Compositions
+- Serverless Architecture
+faqs:
+- question: What are Actions in Adobe I/O Runtime?
+  answer: Actions are stateless functions that execute in response to events. They perform tasks such as processing images, responding to API calls, or posting tweets.
+- question: How does a Namespace help organize Runtime entities?
+  answer: A namespace prefixes all entity names for an organization, helping to logically organize and separate entities within Adobe I/O Runtime.
+- question: What is the difference between Triggers and Feeds?
+  answer: Triggers classify and activate events that initiate actions, while feeds manage the stream of events by creating, deleting, or pausing event flows to triggers.
+- question: How do Rules function in Adobe I/O Runtime?
+  answer: Rules link triggers to actions so that when a trigger fires, the associated action is invoked with the trigger’s event data.
+- question: What are Sequences and Compositions?
+  answer: Sequences chain multiple actions in order where output of one feeds the next, while compositions use complex logic flows to execute actions in variable orders using combinator methods.
+---
 # Entities and Core Concepts
 
 Adobe I/O Runtime's computing model is composed of functional elements or entities, and the interactions among them. This glossary defines the most important entities, outlines their interactions, and links to relevant resources in the Guides and elsewhere in this documentation.

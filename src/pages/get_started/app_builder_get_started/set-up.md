@@ -1,13 +1,24 @@
 ---
-keywords:
-  - Acquire Access
-  - Credentials
-  - Local Environment
-  - Set up
 title: Set Up Access, Environment, and Tools
 description: App Builder is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure.
+keywords:
+- Acquire Access
+- Credentials
+- Local Environment
+- Set up
+- Adobe I/O CLI
+faqs:
+- question: What roles are required to access the Adobe Experience Cloud IMS organization for App Builder?
+  answer: You need to be a member of the IMS organization with either a Developer or System Admin role to access App Builder.
+- question: How can customers or partners request access to App Builder if they do not have it?
+  answer: Customers should request access from their account manager or company IT/Marketing admin, while partners should request it through their partner manager or the Adobe Solution Partner Portal.
+- question: What NodeJS versions are recommended for setting up the local environment?
+  answer: NodeJS versions 18 or 20 are recommended; odd versions are not advised for the best compatibility.
+- question: How do I ensure my Adobe I/O CLI is up to date?
+  answer: Check your CLI version with `aio -v` and compare it to the latest version on npm. Update using `npm install -g @adobe/aio-cli` and run `aio update` to update core plugins.
+- question: Is Visual Studio Code required for local development with App Builder?
+  answer: Visual Studio Code is the supported IDE recommended for editing and debugging, but you can use other code editors for basic development without advanced debugging features.
 ---
-
 # Set Up Access, Environment, and Tools
 
 Here you'll learn what systems you need to access, how to access them, and how to configure your local environment.

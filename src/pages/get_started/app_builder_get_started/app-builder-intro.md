@@ -1,12 +1,24 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
-title: How it Works
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- App Builder
+title: Get Started with App Builder
+description: A comprehensive guide to building, deploying, testing, and publishing your first App Builder app with Adobe I/O Runtime and Developer Console.
+faqs:
+- question: What is App Builder used for?
+  answer: App Builder helps you create, deploy, and manage custom applications integrated with Adobe Experience Cloud using Adobe I/O Runtime and APIs.
+- question: How do I start building an app with App Builder?
+  answer: Begin by creating a new project in the Developer Console, adding necessary API credentials, and setting up your local development environment.
+- question: What are sandboxes in App Builder?
+  answer: Sandboxes are separate environments like development, staging, and production to safely build and test your app before publishing.
+- question: How do I deploy and test my app?
+  answer: Use the CLI to deploy your app to a sandbox or integrate it with a GitHub CI/CD pipeline to run and simulate end-user interactions.
+- question: How is my app published and made available to users?
+  answer: After deploying and testing, initiate the publish process in the Developer Console; after admin approval, your app will be accessible in Adobe Experience Cloud.
 ---
-
 # Get Started with App Builder
 
 This series of tutorials will show you how to:
