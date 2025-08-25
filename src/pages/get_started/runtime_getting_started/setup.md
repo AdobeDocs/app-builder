@@ -1,3 +1,24 @@
+---
+title: Set up Your Environment
+description: Learn how to set up your environment for Adobe I/O Runtime, including installing the aio CLI, configuring namespaces, and testing your setup.
+keywords:
+- Adobe I/O Runtime setup
+- aio CLI installation
+- Developer Console namespace
+- Adobe App Builder environment
+- configure aio CLI
+faqs:
+- question: What is Adobe I/O Runtime?
+  answer: Adobe I/O Runtime is a serverless platform integrated with Adobe App Builder that lets you run custom code and manage events within your Adobe products.
+- question: How do I install the aio CLI?
+  answer: You can install the aio CLI using npm by running the command npm install -g @adobe/aio-cli after ensuring npm and Node.js are up to date.
+- question: What permissions do I need to manage namespaces?
+  answer: Namespace management requires either the Developer role or System Administrator permissions in the Adobe Developer Console.
+- question: How do I configure the aio CLI if I don’t have Developer role permissions?
+  answer: You can configure the aio CLI manually using the namespace name and auth credentials found in the downloaded configuration file.
+- question: How can I verify that the aio CLI is set up correctly?
+  answer: After configuration, run the command aio runtime list to confirm it can access your namespace entities successfully.
+---
 # Set up Your Environment
 
 ## Get access

@@ -1,12 +1,24 @@
 ---
-keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
 title: Troubleshooting Common Issues
+description: This guide provides solutions for common issues encountered when developing App Builder apps, including debugging tips and authentication error fixes.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- App Builder Troubleshooting
+faqs:
+- question: How can I view the logs for debugging my App Builder actions?
+  answer: You can use the App Builder Logging SDK and run commands like `aio runtime activation list` to see activation summaries, or `aio runtime activation logs activationID` to view detailed logs of specific activations.
+- question: What should I do if I encounter authorization errors with Adobe authentication?
+  answer: Verify that your SPA or headless app uses the correct user tokens or JWTs respectively, and ensure that the `web-src/` folder is properly configured or removed for headless apps to avoid token validation issues.
+- question: Why might running actions locally with `aio app dev` not work with State or Files SDKs?
+  answer: Debugging locally with `aio app dev` won't work with State or Files SDKs because their security restricts access to cloud storage from outside Adobe Runtime; using your own cloud storage can resolve this.
+- question: How do I handle NodeJS compatibility issues on Mac M1 chips?
+  answer: Since precompiled NodeJS binaries prior to version 15.x do not support the ARM64 architecture, switching your shell architecture from arm64 to x86 using nvm is recommended.
+- question: How can I ensure that web actions record activation results and logs?
+  answer: Pass the header `x-ow-extra-logging: on` in your web action requests to enforce persistence of activation results and logs, especially useful during SPA development.
 ---
-
 # Troubleshooting Common Issues
 
 This is a guide for troubleshooting some of the most common issues you may encounter when developing App Builder apps.

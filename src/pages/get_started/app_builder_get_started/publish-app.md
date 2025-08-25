@@ -1,12 +1,24 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- App Builder Publishing
 title: Publishing Your First App Builder Application
+description: This guide walks you through the essential steps to publish your first App Builder Single-Page Application, from submission to approval and final deployment in Adobe Experience Cloud.
+faqs:
+- question: What are the initial steps to publish an App Builder application?
+  answer: To publish your app, submit it for approval via the Adobe Developer Console, have your organization administrator review it in My Exchange, and then verify the published app in Adobe Experience Cloud.
+- question: Who approves an App Builder application before publishing?
+  answer: The enterprise organization administrator is responsible for reviewing and approving App Builder applications before they are published.
+- question: How can I track the status of my app submission?
+  answer: After submission, you can track your app’s status in the Adobe Developer Console under the Approval screen, where it will show statuses like "In Review," "Approved," or "Rejected."
+- question: What happens if my app submission is rejected?
+  answer: If rejected, the administrator provides notes explaining what needs to be fixed, allowing you to make corrections and resubmit for approval.
+- question: Can headless App Builder apps be published the same way as SPAs?
+  answer: No, headless apps are handled differently; refer to the Code Lab "Headless Apps with App Builder" for the appropriate publishing process.
 ---
-
 # Publishing Your First App Builder Application
 
 This tutorial will guide you through the three steps needed to publish your first App Builder Single-Page Application (SPA):
