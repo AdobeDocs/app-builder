@@ -1,12 +1,31 @@
 ---
+title: Interface: ObjectWithPath
+description: Documentation for the ObjectWithPath interface including its properties and related modules in Adobe Experience Cloud.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- ObjectWithPath
+# --- FAQs ---
+faqs:
+- question: What is the ObjectWithPath interface?
+  answer: It is an interface that includes a relative path property used within the solution for Adobe Experience Cloud Extensibility.
+- question: What type is the 'path' property in ObjectWithPath?
+  answer: The 'path' property is a string representing a relative path within the solution.
+- question: How do I specify the path in ObjectWithPath?
+  answer: You specify it as an object with a 'path' key and string value, e.g., {path: '/abc'}.
+- question: Where can I find related modules to ObjectWithPath?
+  answer: Related modules such as Index, Page, TopBar, and User are linked in the documentation for further exploration.
+- question: What are some Adobe Experience Cloud interfaces related to ObjectWithPath?
+  answer: Interfaces including Modules, Runtime, Page object with Href, TopBar callbacks, and User API are related and linked in the docs.
 keywords:
   - Adobe I/O
   - Extensibility
   - API Documentation
   - Developer Tooling
 title: 'Interface: ObjectWithPath'
----
-
+...
 # Interface: ObjectWithPath
 
 ## Hierarchy

@@ -1,14 +1,32 @@
 ---
+title: Lesson 1: Create an App Builder App from the Asset Compute Template
+description: Step-by-step instructions to create an Adobe App Builder app using the Asset Compute template, including setup with Adobe Developer Console and CLI commands.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Asset Compute
+# --- FAQs ---
+faqs:
+- question: How do I start creating an app using the Asset Compute template?
+  answer: Begin by creating a project in the Adobe Developer Console with the Asset Compute and Adobe Photoshop APIs added, then initialize your app via the Adobe I/O CLI using `aio app init <app-name>`.
+- question: Which services should be added to the workspace for this Code Lab?
+  answer: Add both the Asset Compute service and the Adobe Photoshop APIs (Trial) service to your workspace.
+- question: What do I do if I have not logged in to Adobe Developer Console from the CLI?
+  answer: Running `aio app init` will prompt you to sign in through a browser to authenticate with your Adobe ID.
+- question: Which extension point should I select during the app initialization?
+  answer: Select the "DX Asset Compute Worker" extension point when prompted by the CLI.
+- question: Where should I add my custom application logic?
+  answer: Add your custom code to the `index.js` file located in the `actions/<worker-name>` folder within your newly created app project.
+contributors:
+  - 'https://github.com/duynguyen'
 keywords:
   - Adobe I/O
   - Extensibility
   - API Documentation
   - Developer Tooling
-contributors:
-  - 'https://github.com/duynguyen'
-title: 'Lesson 1: Create an App Builder app from the Asset Compute template'
 ---
-
 # Lesson 1: Create an App Builder App from the Asset Compute Template
 
 To begin this Code Lab, you should have [a project already created from App Builder Template in Adobe Developer Console](../../get_started/app_builder_get_started/first-app.md#2-create-a-new-project-on-developer-console). Please add the `Asset Compute` and `Adobe Photoshop APIs (Trial)` services to the workspace that you are using for the Code Lab.

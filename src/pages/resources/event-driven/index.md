@@ -1,17 +1,28 @@
 ---
-keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
 title: Build an Event-Driven App Builder App Using Custom Events
 description: >-
   Introduction to applying Custom I/O Events in event-driven use cases of App
   Builder applications.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+# --- FAQs ---
+faqs:
+- question: What is App Builder used for?
+  answer: App Builder is a framework for building and deploying custom web applications that extend Adobe Experience Cloud solutions using modern technologies and best practices.
+- question: What does the Custom Event CLI Plugin do?
+  answer: It is an open-source plugin that allows developers to build reactive, event-driven applications by leveraging Adobe I/O custom events.
+- question: How can I register my app as an event provider?
+  answer: You can register your app using the custom event functionality provided by Adobe I/O to emit events that other applications can subscribe to.
+- question: What technologies does App Builder incorporate?
+  answer: App Builder uses JAM stack, serverless computing, Node.js, React, event-driven architecture, microservices, and continuous integration and delivery.
+- question: What will I learn from this Code Lab?
+  answer: You will learn to build a simple web app using App Builder and enable event-driven workflows using Adobe I/O custom event templates.
 contributors:
-  - 'https://github.com/Yu1986'
+- 'https://github.com/Yu1986'
 ---
-
 # Build an Event-Driven App Builder App Using Custom Events
 
 ## Overview

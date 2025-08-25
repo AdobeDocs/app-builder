@@ -1,14 +1,23 @@
 ---
+title: How AEM as Cloud Assets Works
+description: Overview of how AEM as Cloud Assets handles asset processing using Azure Blob storage and Adobe Asset Compute services.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Asset Compute
 contributors:
   - 'https://github.com/marcinczeczko'
-title: How AEM as Cloud Aassets Works
+# --- FAQs ---
+faqs:
+- question: What storage does AEM as Cloud Assets use for asset binaries?
+  answer: AEM as Cloud Assets uses Azure Blob storage to store asset binaries, with AEM coordinating access to this cloud storage.
+- question: How does Adobe Asset Compute service process assets?
+  answer: The Asset Compute service processes assets asynchronously by dispatching jobs to workers that transform asset binaries and store renditions back to cloud storage.
+- question: How does AEM track the status of asset processing jobs?
+  answer: AEM polls the Adobe I/O Events service periodically to get updates on job statuses and updates the asset metadata once processing is complete.
 ---
-
 # How AEM as Cloud Assets Works
 
 Asset binaries are no longer processed by the AEM instance. AEM only coordinates access to the Azure Blob storage where binaries are stored.

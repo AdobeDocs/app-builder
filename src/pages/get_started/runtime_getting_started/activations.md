@@ -1,3 +1,25 @@
+---
+title: Retrieve Action Invocation Results
+description: Learn how to retrieve and interpret action invocation activation records, including logs, responses, and managing successful activations in Adobe I/O Runtime.
+keywords:
+- activation record
+- action invocation
+- Adobe I/O Runtime
+- activation logs
+- asynchronous activations
+# --- FAQs ---
+faqs:
+- question: How do I list recent action activations?
+  answer: Use the command `aio rt:activation:list` to view activation IDs and action names invoked in the last seven days.
+- question: How can I get the full details of a specific activation?
+  answer: Run `aio rt:activation:get <activation id>` to retrieve the complete activation record including logs, response, and annotations.
+- question: Can I retrieve only the invocation result or logs separately?
+  answer: Yes, use `aio rt:activation:result <activation id>` for just the result and `aio rt:activation:logs <activation id>` for just the logs.
+- question: Why might successful activations not be stored?
+  answer: To optimize performance at large scale, successful activations are not persisted unless the action is asynchronous and non-blocking.
+- question: How long are activation records retained?
+  answer: Activation records are stored for seven days and automatically deleted afterward; this retention period cannot be changed.
+---
 # Retrieve Action Invocation Results
 
 The activation record of an action invocation contains information to help you understand what happened. It contains the invocation's: 

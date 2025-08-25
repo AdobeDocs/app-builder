@@ -1,12 +1,31 @@
 ---
+title: Get Started with App Builder
+description: Learn how to build, deploy, test, and publish your first App Builder app with Adobe I/O, including setup, troubleshooting, and access management.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- App Builder
+# --- FAQs ---
+faqs:
+- question: What are the main development stages in App Builder?
+  answer: The main stages are build, deploy and test, and publish, aligned to your own development process.
+- question: How do I start building my App Builder app?
+  answer: Start by creating a new project in the Developer Console and adding the necessary Adobe API credentials.
+- question: How can I deploy and test my app?
+  answer: Use the CLI to deploy your app to a sandbox or CI/CD pipeline, then run and test it within Experience Cloud.
+- question: How do I publish my App Builder app for end users?
+  answer: Initiate the publish process from the Developer Console; after admin approval, the app becomes available to authenticated business users.
+- question: Where can I find tools and environment setup instructions for App Builder?
+  answer: Review the setup guide covering access permissions, credentials, local environment, and tools needed for App Builder.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: How it Works
 ---
-
 # Get Started with App Builder
 
 This series of tutorials will show you how to:

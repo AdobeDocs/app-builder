@@ -1,12 +1,30 @@
 ---
+title: Interface: ObjectWithHref
+description: Documentation for the ObjectWithHref interface, detailing its href property and related Adobe Experience Cloud modules.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Interface
+# --- FAQs ---
+faqs:
+- question: What is the ObjectWithHref interface?
+  answer: It is an interface defining an object containing an href property that represents the URL of a solution page.
+- question: What type is the href property in ObjectWithHref?
+  answer: The href property is a string containing the URL of the solution page.
+- question: How can I use the ObjectWithHref interface?
+  answer: Create objects with a string href property to represent links to solution pages, e.g., { href: 'https://example.com/abc' }.
+- question: Where can I find related interfaces and modules?
+  answer: Related modules include Index, Page, TopBar, and User, accessible via their respective documentation links.
+- question: How does ObjectWithHref relate to Adobe Experience Cloud?
+  answer: It is part of the interfaces used within Adobe Experience Cloud for linking and navigation in solution pages.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: 'Interface: ObjectWithHref'
----
-
 # Interface: ObjectWithHref
 
 ## Hierarchy

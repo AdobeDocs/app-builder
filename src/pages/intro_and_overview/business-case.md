@@ -1,4 +1,24 @@
 ---
+title: Business case for App Builder
+description: Discover why enterprise organizations choose App Builder to extend Adobe solutions with fast, secure, scalable, and Adobe-native applications, supported by real-world use cases and examples.
+keywords:
+- App Builder
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Adobe I/O Runtime
+# --- FAQs ---
+faqs:
+- question: What are the main benefits of using App Builder?
+  answer: App Builder offers fast time to value, consistent user experience, built-in security, no infrastructure management, and native Adobe integration, streamlining app development.
+- question: What types of applications can I create with App Builder?
+  answer: You can build custom dashboards, integrations, extended Adobe functionalities, microservices, IoT applications, API backends, mobile backends, and data processing pipelines.
+- question: How does App Builder ensure security for custom apps?
+  answer: App Builder integrates API authorization and user access control consistent with Adobe solutions, ensuring secure and seamless user management.
+- question: Can App Builder handle event-driven and serverless architectures?
+  answer: Yes, App Builder runs on Adobe I/O Runtime, supporting event-driven, on-demand microservices without requiring server configuration or maintenance.
+- question: Where can I find real-world examples of App Builder implementations?
+  answer: Examples include Cognizant’s real-time airline app, Wunderman Thompson’s image reformatting, Adobe Cloud Manager CLI plug-in, VRT's dynamic content creation, and Bank of America's personalized marketing offers.
 keywords:
   - App Builder
   - Extensibility
@@ -6,7 +26,6 @@ keywords:
   - Developer Tooling
 title: Business case
 ---
-
 # Business case for App Builder
 
 Enterprise organizations that want to extend the capabilities of their Adobe solutions will find a clear path forward in App Builder.

@@ -1,12 +1,31 @@
 ---
+title: Migrating Legacy Applications
+description: A detailed guide to migrating legacy Adobe App Builder applications from the old file structure to the new Extensions-based file structure and configuration protocol.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Application Migration
+# --- FAQs ---
+faqs:
+- question: What applications does this migration guide apply to?
+  answer: It applies only to legacy applications created before July 28, 2021, that have not migrated to the new App Builder structure and have not been used since October 28, 2021.
+- question: What are the key differences between the old and new file structures?
+  answer: The old file structure uses separate folders for actions and web source, while the new structure organizes code under `src` folders per extension point with configuration files like `ext.config.yaml` and `app.config.yaml`.
+- question: Why should I migrate my application to the new file structure?
+  answer: Migrating allows you to leverage Extensions, enjoy more flexible configuration setups, and benefit from Adobe's improved security validation.
+- question: How do environment variables work in the new configuration?
+  answer: Environment variables defined in `.env` can be referenced in configuration files like `manifest.yml`, supporting credentials and API keys necessary for deployment.
+- question: Where can I find instructions to update my local environment for migration?
+  answer: Follow the environment setup instructions detailed in the App Builder getting started guide linked within the migration guide under local environment setup.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: Extension Migration Guide
 ---
-
 # Migrating Legacy Applications
 
 > Note: This information applies **only** to applications that:

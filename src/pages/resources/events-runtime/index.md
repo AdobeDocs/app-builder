@@ -1,17 +1,27 @@
 ---
-keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
 title: Events Using Runtime Actions as Webhook
-description: >-
-  Creating cron jobs in an App Builder application to consume events using
-  Journaling API.
+description: Creating cron jobs in an App Builder application to consume events using Journaling API and runtime actions as webhook endpoints.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Webhook Integration
+# --- FAQs ---
+faqs:
+- question: What are runtime actions as webhooks in Adobe I/O?
+  answer: Runtime actions as webhooks are endpoints created in Adobe I/O Runtime that execute when events fire, enabling real-time event handling.
+- question: What benefits do runtime action webhooks provide?
+  answer: They offer built-in signature verification and allow tracing actions with Activation IDs for easier debugging.
+- question: When should I use Journaling API versus runtime action webhooks?
+  answer: Use Journaling API for long-running asynchronous processes needing guaranteed event handling, and runtime action webhooks for short, synchronous actions under 10 seconds.
+- question: How do I register a runtime action webhook for events?
+  answer: Register your runtime action as a webhook endpoint via the Adobe Developer Console in the events SYNC webhook registration process.
+- question: Can I debug runtime action webhook executions?
+  answer: Yes, Adobe I/O provides debug tracing through Activation IDs in the console to track success and failure scenarios.
 contributors:
   - 'https://github.com/Yu1986'
 ---
-
 # Events Using Runtime Actions as Webhook
 
 The Code Lab will show how to consume events using runtime actions as webhook. 

@@ -1,4 +1,24 @@
 ---
+title: Architecture Overview
+description: An App Builder Application is a serverless application that extends Adobe Product APIs. These applications can be headless or headful. Each of these types is described in more detail in the sections that follow.
+keywords:
+- Headless Application
+- Headful Application
+- SDK Components
+- SDK Library
+- Migration Guides
+# --- FAQs ---
+faqs:
+- question: What are the two main types of App Builder applications?
+  answer: App Builder applications can be either headless, which are serverless actions running on I/O Runtime, or headful, which are Single-Page Applications with full user interfaces served via CDN.
+- question: How do headless applications integrate with Adobe systems?
+  answer: Headless applications are designed to be invoked by remote scripts or workflows, such as AEM Assets or ACS activities, enabling automation and integration without a UI.
+- question: What is the purpose of the App Builder CLI?
+  answer: The CLI provides developers with authentication, configuration, certificate management, and lifecycle management capabilities to interact with Adobe I/O Runtime and Developer Console.
+- question: What SDK libraries are included in the main SDK library?
+  answer: The main SDK library bundles reusable SDKs including Adobe Analytics, Target, Campaign Standard, IMS for authentication, Files SDK for storage, and State SDK for key-value data.
+- question: How does App Builder support CI/CD for applications?
+  answer: App Builder integrates with GitHub Actions, Workflows, and Secrets to automate setup, testing, build, deployment, and secure handling of application secrets.
 keywords:
   - Headless Application
   - Headful Application
@@ -8,7 +28,6 @@ keywords:
 title: Architecture Overview
 description: An App Builder Application is a serverless application that extends Adobe Product APIs. These applications can be headless or headful. Each of these types is described in more detail in the sections that follow.
 ---
-
 # Architecture Overview
 
 ## Types of App Builder apps

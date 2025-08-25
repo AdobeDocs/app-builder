@@ -1,3 +1,24 @@
+---
+title: Pre-Installed Packages
+description: Overview and usage guide for the pre-installed alarms package available in the I/O Runtime, including setup instructions for scheduling triggers and actions.
+keywords:
+- pre-installed packages
+- alarms package
+- trigger scheduling
+- cron jobs
+- I/O Runtime
+faqs:
+- question: How do I get details about a pre-installed package?
+  answer: Run the command `aio rt:package:get /whisk.system/alarms` to retrieve package details.
+- question: How can I invoke an action from a shared package?
+  answer: Use the fully qualified name with the command `aio rt:action:invoke /whisk.system/alarms/alarm`.
+- question: What are the steps to use the alarms package?
+  answer: Create your actions, create a trigger with the desired frequency, and link them by creating a rule.
+- question: How do I create an interval-based trigger to fire every 10 minutes?
+  answer: Use the command with feed `/whisk.system/alarms/interval` and set `minutes` to 10, specifying a stop date.
+- question: Where can I find more information about cron scheduling?
+  answer: Visit [crontab.org](http://crontab.org) for detailed documentation on cron syntax and scheduling.
+---
 # Pre-Installed Packages
 
 These packages are pre-installed and available to any I/O Runtime user:

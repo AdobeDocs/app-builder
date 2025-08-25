@@ -1,3 +1,25 @@
+---
+title: Using the wsk CLI
+description: A guide to using the OpenWhisk wsk command line interface, including available commands and how to get help for each.
+keywords:
+- wsk CLI
+- OpenWhisk
+- command line interface
+- actions
+- help commands
+# --- FAQs ---
+faqs:
+- question: How do I list all available wsk commands?
+  answer: Use the command `wsk --help` to display a list of all available wsk commands and flags.
+- question: How can I get detailed help on a specific wsk command?
+  answer: Run `wsk [command] --help` to see detailed usage and options for that particular command.
+- question: How do I create a new action using wsk?
+  answer: Use `wsk action create ACTION_NAME ACTION` and add necessary flags; run `wsk action create --help` for more details.
+- question: What flag do I use to specify the API host in wsk?
+  answer: Use the `--apihost HOST` flag to specify the OpenWhisk API host when running wsk commands.
+- question: How do I enable verbose output for troubleshooting in wsk?
+  answer: Add the `-v` or `--verbose` flag to your wsk commands to get detailed output for debugging purposes.
+---
 # Using the wsk CLI
 
 You can use the `--help` flag to navigate the list of supported commands:

@@ -1,14 +1,27 @@
 ---
+title: Lesson 3: Fire an Event
+description: This lesson guides you through firing an event using Adobe I/O Runtime. It covers using the publish-event action, configuring manifest and app settings, running the app locally and deploying it, and testing event publishing with a webhook.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Event Publishing
 contributors:
   - 'https://github.com/Yu1986'
-title: 'Lesson 3: Fire an Event'
+# --- FAQs ---
+faqs:
+- question: How do I trigger an event using the publish-event action?
+  answer: Use the "invoke" button in the UI to call the publish-event web action, passing parameters like apiKey, providerId, eventCode, and payload to successfully fire the event.
+- question: Where do I configure event-related parameters like providerId and eventCode?
+  answer: Add these parameters in the manifest.yml under the publish-events action inputs section before deploying the app.
+- question: How can I run and test the app locally?
+  answer: Use the command `aio app run` to deploy the action locally and access the UI at https://localhost:9080 for testing.
+- question: How do I deploy the app to Adobe I/O Runtime?
+  answer: Deploy the app using `aio app deploy`, which publishes your app and provides a URL to access it on Adobe I/O Runtime.
+- question: How can I verify that events are being published successfully?
+  answer: Use a webhook tool like https://io-webhook.herokuapp.com/ and configure it in your Console integration, then check the webhook results for event payloads after invoking the action.
 ---
-
 # Lesson 3: Fire an Event
 
 Once the app is set up and the event provider registered, we can make a user click of the `invoke` button a fire event This lesson will walk through the code in `publish-event` template, test it on the UI using the "invoke" button, and see the success response, in this lession using webhook.

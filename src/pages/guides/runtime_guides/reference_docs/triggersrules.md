@@ -1,3 +1,25 @@
+---
+title: Using Triggers and Rules
+description: Learn how to use triggers and rules in Adobe I/O Runtime to automate event-based actions, including creating, firing, and linking triggers to actions.
+keywords:
+- Adobe I/O Runtime
+- triggers
+- rules
+- event-driven actions
+- CLI commands
+# --- FAQs ---
+faqs:
+- question: What is a trigger in Adobe I/O Runtime?
+  answer: A trigger represents a class of events and carries key-value pairs as JSON which can invoke actions when fired.
+- question: How do rules work in linking triggers and actions?
+  answer: Rules associate specific triggers with actions so that firing the trigger automatically invokes the linked action.
+- question: Can one trigger invoke multiple actions?
+  answer: Yes, by creating different rules that link the same trigger to multiple actions, you can invoke several actions from one trigger.
+- question: How do I create and fire a trigger using the CLI?
+  answer: Use `aio rt:trigger:create <triggerName>` to create and `aio rt:trigger:fire <triggerName> --param key value` to fire a trigger.
+- question: How can I stop a rule from executing?
+  answer: You can disable a rule anytime with the command `aio rt:rule:disable <ruleName>`.
+---
 # Using Triggers and Rules
 
 Actions invoked directly in the CLI have limited application; Adobe I/O Runtime is most useful when it is configured to respond to events. Runtime features that support this are triggers and rules:

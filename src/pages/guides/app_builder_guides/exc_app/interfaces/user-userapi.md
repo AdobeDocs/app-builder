@@ -1,4 +1,23 @@
 ---
+title: Interface: UserAPI
+description: Documentation for the UserAPI interface, detailing its properties, event methods, and other methods for user session management and event handling.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- UserAPI
+faqs:
+- question: What is the purpose of the logoutUrl property in UserAPI?
+  answer: The optional logoutUrl property, when specified, is invoked upon user logout to help reduce lingering sessions for solutions managing their own session servers in addition to IMS.
+- question: How do I register and unregister event handlers with UserAPI?
+  answer: Use the on(type, handler) method to register and the off(type, handler) method to unregister event handlers for specific user events, with type being a key of UserInfoEvent.
+- question: How can I notify the system when user authentication has expired?
+  answer: Call the authExpired() method to notify the unified shell that APIs are returning 401 errors and the user requires re-authentication.
+- question: How do I retrieve specific user information using UserAPI?
+  answer: Use the get(type) method with the appropriate key from UserInfo to asynchronously get the specified user information.
+- question: What event system does UserAPI extend or implement?
+  answer: UserAPI extends the EventEmitter for UserInfoEvent, enabling it to emit, listen to, and remove handlers for user-related events.
 keywords:
   - Adobe I/O
   - Extensibility
@@ -6,7 +25,6 @@ keywords:
   - Developer Tooling
 title: 'Interface: UserAPI'
 ---
-
 # Interface: UserAPI
 
 ## Hierarchy

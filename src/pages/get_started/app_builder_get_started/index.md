@@ -1,12 +1,25 @@
 ---
+title: App Builder and Adobe I/O Runtime
+description: Overview of using App Builder to simplify cloud native application development on Adobe I/O Runtime and steps to convert existing actions to App Builder applications.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+faqs:
+- question: How do I start a new App Builder project?
+  answer: Create a new project in the Developer Console and select the App Builder template to get started.
+- question: How can I convert existing Adobe I/O Runtime actions to App Builder applications?
+  answer: Initialize a new App Builder application using the Adobe CLI, copy your existing actions into the project, then deploy and test them.
+- question: Where can I learn more about using App Builder?
+  answer: Refer to the "Create your First App Builder Application" guide for detailed steps and additional capabilities.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: App Builder and Adobe I/O Runtime
 ---
-
 # App Builder and Adobe I/O Runtime
 
 App Builder greatly simplifies the process of building cloud native applications that run on Adobe I/O Runtime. 

@@ -1,3 +1,21 @@
+---
+title: Get Started with Adobe I/O Runtime
+description: Introduction to Adobe I/O Runtime, Adobe’s serverless computing platform based on Apache OpenWhisk, enabling deployment and execution of cloud functions without managing servers.
+keywords:
+- Adobe I/O Runtime
+- serverless computing
+- Apache OpenWhisk
+- function-as-a-service
+- cloud functions
+# --- FAQs ---
+faqs:
+- question: What is Adobe I/O Runtime?
+  answer: Adobe I/O Runtime is a serverless platform that lets you deploy and execute custom code in the cloud without managing servers.
+- question: How do I start building applications with I/O Runtime?
+  answer: Follow the step-by-step tutorials: set up your environment, deploy and invoke your first action, and then retrieve action invocation results.
+- question: Where can I learn more about Runtime’s programming model?
+  answer: Review the Understanding Adobe I/O Runtime documentation for detailed information on components, workflows, and performance optimization.
+---
 # Get Started with Adobe I/O Runtime
 
 Adobe I/O Runtime is Adobe’s serverless computing platform based on Apache OpenWhisk, an open-source project of the Apache Software Foundation. Runtime lets you deploy your own custom code to the cloud and call it as needed, so you can execute functions, also called "actions," from the cloud without deploying or configuring a server. 

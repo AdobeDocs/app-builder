@@ -1,14 +1,22 @@
 ---
+title: Architecture of Our Worker
+description: Overview of building a custom worker for the Asset Compute service using imgIX to process and deliver image renditions.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- imgIX
 contributors:
   - 'https://github.com/marcinczeczko'
-title: Architecture of our worker
+faqs:
+- question: What is the role of the custom worker in the Asset Compute service?
+  answer: The custom worker produces image renditions by transferring source images to Azure blob storage, generating imgIX URLs with transformation parameters, and fetching processed images back to AEM storage.
+- question: How does imgIX fit into the image processing workflow?
+  answer: imgIX provides CDN caching, rendering clusters for image processing, and sources images from storage like Azure blob storage, enabling dynamic image transformation and delivery.
+- question: Why does the worker download images from imgIX instead of serving from the CDN?
+  answer: The worker downloads images from imgIX and uploads them to AEM storage to integrate processed renditions into the AEM binaries cloud storage instead of serving directly via the imgIX CDN.
 ---
-
 # Architecture of Our Worker
 
 We're going to build a custom worker for Asset Compute service that will produce renditions using the [imgIX][**imgix**] service.

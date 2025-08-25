@@ -1,14 +1,27 @@
 ---
+title: Lesson 1: Configure Services
+description: Instructions to configure Azure blob storage, imgIX, and Adobe I/O services for asset management.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Azure Blob Storage
+# --- FAQs ---
+faqs:
+- question: How do I create Azure blob storage containers for this setup?
+  answer: Create two containers in your Azure blob storage account: one named 'imgix' for the imgIX service assets, and another named 'source' for local testing purposes.
+- question: How do I configure imgIX to use Azure blob storage?
+  answer: In your imgIX account, create a source pointing to your Azure blob storage, enable Secure URLs, and note your imgIX subdomain and security token for later use.
+- question: How can I test that imgIX is configured correctly with my Azure blob storage?
+  answer: Upload an image to the 'imgix' container, sign the image URL using the imgIX dashboard tools, and open the signed URL in a browser to verify the image loads.
+- question: Which services should I add to my Adobe I/O project for this integration?
+  answer: Add Asset Compute, I/O Management API, and I/O Events services to your Adobe I/O project using the App Builder template.
+- question: How do I generate and manage keys for Adobe I/O services?
+  answer: When adding the first service in Adobe I/O, choose to generate a key pair, download the zip file, and securely store the private.key for authentication.
 contributors:
   - 'https://github.com/marcinczeczko'
-title: 'Lesson 1: Configure Services'
 ---
-
 # Lesson 1: Configure Services
 # Lesson 1: Configure Services
 

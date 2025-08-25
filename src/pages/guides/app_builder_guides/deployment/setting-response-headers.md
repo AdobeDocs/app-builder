@@ -1,11 +1,27 @@
 ---
+title: Setting Response Headers
+description: How to set response headers for your static assets
 keywords:
-  - cli
-  - response headers
+- cli
+- response headers
+# --- FAQs ---
+faqs:
+- question: How do I set response headers for static assets in App Builder?
+  answer: Add response header rules in your application manifest file under the web response-headers section, specifying paths and headers.
+- question: Can I override default response headers set by App Builder?
+  answer: Yes, opt out of default headers by updating your web action with the web-custom-options annotation set to true via the CLI.
+- question: What types of rules can I use to apply headers to static content?
+  answer: Use rules targeting all content, folders, file extensions, or specific files to apply headers selectively.
+- question: Which response headers are disallowed and ignored if set in the manifest?
+  answer: Headers like content-length, content-type, cache-control, server, and others specified are ignored to prevent overriding internal or CDN-specific headers.
+- question: How do I deploy changes after setting response headers?
+  answer: Deploy your application with the `aio app:deploy` command after updating header rules in the manifest.
+keywords:
+- cli
+- response headers
 title: Setting Response Headers
 description: How to set response headers for your static assets
 ---
-
 # Setting Response Headers
 
 For applications with UI, static assets such as HTML, Javascript, css, and images are served by the Content Content Delivery Network through the `adobeio-static.net` domain. App Builder has supported setting response headers for this static content since aio-cli version 9.3.0.

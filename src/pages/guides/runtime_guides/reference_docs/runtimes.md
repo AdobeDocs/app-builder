@@ -1,3 +1,25 @@
+---
+title: Runtimes
+description: Overview of Adobe I/O Runtime supported Node.js versions, pre-installed npm modules, and instructions for specifying runtime kinds.
+keywords:
+- Adobe I/O Runtime
+- Node.js versions
+- npm modules
+- action runtime
+- Docker images
+# --- FAQs ---
+faqs:
+- question: Which Node.js versions does Adobe I/O Runtime support?
+  answer: Adobe I/O Runtime supports the three latest Node.js versions, including v22.6.0, v20.7.0, and v18.14.2. You should keep your actions updated to use the latest supported version.
+- question: Do I need to package npm modules with my action code?
+  answer: No, common npm modules like express, openwhisk, body-parser, redis, node-fetch, dnscache, and prom-client are pre-installed in the runtime images.
+- question: How can I specify the Node.js version when creating an action?
+  answer: Use the --kind flag with the version, for example, `aio rt:action:create actionName fromFile.js --kind nodejs:20` to specify Node.js 20.
+- question: Where can I find the Docker images for the runtimes?
+  answer: Docker images for supported Node.js versions are available on Docker Hub under adobeapiplatform/adobe-action-nodejs-vXX tags.
+- question: Why should I update my action to the latest Node.js version?
+  answer: Updating ensures you benefit from the latest security updates and improved cold-start performance with pre-warmed containers.
+---
 # Runtimes
 
 Adobe I/O Runtime supports the three latest Node.js versions (see the [Node.js release schedule](https://nodejs.org/en/about/previous-releases#release-schedule) for details). We encourage you to keep actions updated to the latest version so you can take advantage of latest security updates and the pre-warmed container feature that dramatically improves cold-start times.

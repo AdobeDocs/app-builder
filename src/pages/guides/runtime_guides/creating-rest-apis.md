@@ -1,3 +1,24 @@
+---
+title: Creating REST APIs
+description: Learn how to create and secure REST APIs from web actions in Adobe I/O Runtime using aio CLI, Swagger files, CORS configuration, and IMS authentication.
+keywords:
+- REST APIs
+- Adobe I/O Runtime
+- aio CLI
+- Swagger
+- CORS
+faqs:
+- question: How do I create API endpoints using the aio CLI?
+  answer: Use the `aio rt:api:create` command with parameters specifying base path, endpoint, HTTP method, and action name. For example, `aio rt:api:create /pet-store /pet post createPet --response-type http`.
+- question: How can I export and restore a REST API using Swagger files?
+  answer: Export an API by running `aio rt:api:get /pet-store > pet-store-swagger.json`, and restore it with `aio rt:api:create --config-file pet-store-swagger.json` ensuring the actions exist in the namespace.
+- question: How do I enable static CORS responses on REST APIs?
+  answer: Define an `options` HTTP method in your OpenAPI/Swagger file with the desired CORS headers under the `responses` section, which will send static CORS headers automatically.
+- question: How can I implement dynamic CORS header responses?
+  answer: Create a custom web action returning CORS headers with a 204 status code, configure it to handle `OPTIONS` requests, and map this action to the `options` method in your API.
+- question: How do I secure API endpoints using IMS authentication?
+  answer: Enable IMS validation by creating actions with `-a require-gw-validation true`, then specify required scopes or client IDs in your Swagger file’s `security` and `securityDefinitions` sections to enforce access control.
+---
 # Creating REST APIs
 
 > Note: IO Runtime cleans up custom APIs that have not been accessed for 90 days.

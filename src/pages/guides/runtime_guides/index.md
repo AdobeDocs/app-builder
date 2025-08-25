@@ -1,12 +1,19 @@
 ---
-keywords:
-  - Adobe I/O Runtime
-  - Guides
-  - Documentation
 title: Runtime Guides
 description: Comprehensive guides for working with Adobe I/O Runtime.
+keywords:
+- Adobe I/O Runtime
+- Guides
+- Documentation
+# --- FAQs ---
+faqs:
+- question: What topics are covered in the Runtime Guides?
+  answer: The guides cover getting started, development and operations, security, tools, and references for Adobe I/O Runtime.
+- question: Where can I find instructions on creating REST APIs?
+  answer: You can find instructions under the "Getting Started" section in the "Creating REST APIs" link.
+- question: How can I access security-related information for Adobe I/O Runtime?
+  answer: Security topics are covered in the "Security" section, including general security guides and securing web actions.
 ---
-
 # Runtime Guides
 
 Welcome to the Runtime Guides section. Here you'll find comprehensive documentation about working with Adobe I/O Runtime.

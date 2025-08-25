@@ -1,12 +1,31 @@
 ---
+title: Creating your First App Builder Application
+description: A step-by-step tutorial on setting up and developing your first App Builder Application using Adobe Developer Console and CLI tools.
 keywords:
-  - App Builder
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- App Builder
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Adobe Developer Console
+# --- FAQs ---
+faqs:
+- question: How do I create a new App Builder project in Adobe Developer Console?
+  answer: Navigate to Adobe Developer Console, select your IMS organization, click 'Create project from template', choose 'App Builder', fill in the project details, and save to generate your project with default workspaces.
+- question: What is the purpose of workspaces in an App Builder project?
+  answer: Workspaces manage different deployment environments and provide isolated spaces for developers to connect services and manage credentials without sharing them across environments.
+- question: How can I sign in to Adobe Developer Console using the CLI?
+  answer: Run `aio login` in your terminal, sign in via the opened browser window with your Adobe ID, and the CLI will automatically store your authentication token.
+- question: Can I change the App Name after setting up my project?
+  answer: No, once the project setup is complete, the App Name cannot be changed, so choose it carefully during initialization.
+- question: What should I do if I don't see the 'Create project from template' option?
+  answer: Ensure you have selected the correct IMS organization and that you have been granted access to App Builder as outlined in the access documentation.
+keywords:
+- App Builder
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: Creating your First App Builder Application
 ---
-
 # Creating your First App Builder Application
 
 In this tutorial, we'll guide you through the following steps to give you an introduction on how to set up and develop an App Builder Application.

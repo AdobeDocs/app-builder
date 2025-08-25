@@ -1,14 +1,27 @@
 ---
+title: Lesson 4: Test the worker
+description: Instructions to test your Asset Compute worker using the Asset Compute Devtool and deploy it for AEM integration.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Asset Compute
+# --- FAQs ---
+faqs:
+- question: How do I start testing the worker locally?
+  answer: Run the command `aio app run` to launch the Asset Compute Devtool in your browser and test the worker directly.
+- question: What parameter is required to test the worker correctly?
+  answer: You need to provide the `imgix` parameter in the worker request object as an escaped JSON string specifying resizing options.
+- question: How can I resize an image to 300x300 pixels in the test tool?
+  answer: Use the parameter `"imgix": "{ \"h\": 300, \"w\": 300}"` when running the worker in the Asset Compute Devtool.
+- question: How do I deploy my worker for use with AEM?
+  answer: Run `aio app deploy`, which will provide a deployment URL to configure your worker in AEM.
+- question: Where do I find the URL to configure the worker in AEM after deployment?
+  answer: The deployment command outputs the worker URL; copy and save it for the AEM configuration.
 contributors:
   - 'https://github.com/marcinczeczko'
-title: 'Lesson 4: Test the worker'
 ---
-
 # Lesson 4: Test the Worker
 
 Run this command:

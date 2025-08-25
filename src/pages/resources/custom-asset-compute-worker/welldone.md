@@ -1,14 +1,18 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 contributors:
-  - 'https://github.com/marcinczeczko'
-title: Well done
----
-
+- 'https://github.com/marcinczeczko'
+title: Well Done
+description: Summary of completing the Code Lab on generating intelligent asset renditions with AEM as a Cloud Service.
+faqs:
+- question: How can I create custom asset renditions in AEM as a Cloud Service?
+  answer: Implement your custom worker using a third-party image processing service and configure AEM to use it for generating asset renditions.
+- question: How do I test my custom worker before deployment?
+  answer: Test your custom worker locally to ensure it processes assets correctly before configuring it in AEM.
 # Well Done
 
 Congratulations! You have successfully completed the Code Lab and your AEM instance can now generate intelligent renditions.

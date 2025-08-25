@@ -1,4 +1,22 @@
 ---
+title: How it Works
+description: Overview of App Builder, Adobe I/O Runtime, and how enterprise developers can build and deploy custom web applications on Adobe Experience Cloud.
+keywords:
+- Adobe I/O  
+- Extensibility  
+- API Documentation  
+- Developer Tooling
+faqs:
+- question: What is App Builder?
+  answer: App Builder is a framework for enterprise developers to create and deploy custom web applications that extend Adobe Experience Cloud solutions using modern technologies like JAM stack, serverless computing, Node, and React.
+- question: What are the main components of App Builder?
+  answer: Its main components include Single-Page Applications using React Spectrum, Adobe I/O Runtime for backend microservices, developer tools like CLI and SDKs, and integration with Adobe Experience Cloud's execution environment.
+- question: What is Adobe I/O Runtime?
+  answer: Adobe I/O Runtime is a serverless computing platform that runs backend application logic in response to events or HTTP requests, allowing developers to focus on code rather than infrastructure.
+- question: How does serverless computing benefit developers using App Builder?
+  answer: It abstracts server management, enabling developers to deploy on-demand functions that scale automatically and respond to events, simplifying infrastructure concerns.
+- question: How do I get started with building an App Builder application?
+  answer: Begin by reviewing core App Builder concepts and follow the "Get Started with App Builder" tutorial series for step-by-step guidance on building your first application.
 keywords:
   - Adobe I/O  
   - Extensibility  
@@ -6,7 +24,6 @@ keywords:
   - Developer Tooling
 title: How it Works
 ---
-
 ## What is App Builder?
 
 App Builder is a complete framework for enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure. 

@@ -1,11 +1,18 @@
 ---
-keywords:
-  - Contribution
-  - Code Reviews
-title: Contribution Guides
+title: Contributing
 description: Thanks for choosing to contribute! The following are a set of guidelines to follow when contributing to this project.
+keywords:
+- Contribution
+- Code Reviews
+# --- FAQs ---
+faqs:
+- question: How do I report unacceptable behavior?
+  answer: Report unacceptable behavior by emailing Adobe at Grp-opensourceoffice@adobe.com as outlined in the Code of Conduct.
+- question: Do I need to sign a Contributor License Agreement?
+  answer: Yes, all third-party contributions require a signed CLA with Adobe, which you only need to submit once.
+- question: How should I submit my code contributions?
+  answer: Submit contributions via pull requests following the project’s pull request template and wait for review by project committers.
 ---
-
 # Contributing
 
 Thanks for choosing to contribute! The following are a set of guidelines to follow when contributing to this project.

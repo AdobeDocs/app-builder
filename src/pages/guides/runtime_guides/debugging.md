@@ -1,3 +1,25 @@
+---
+title: Debugging Node.js Actions
+description: A guide on how to debug Node.js actions locally using wskdebug, integrated with Visual Studio Code, to replicate the I/O Runtime environment.
+keywords:
+- Node.js debugging
+- wskdebug
+- Visual Studio Code
+- I/O Runtime
+- Docker
+# --- FAQs ---
+faqs:
+- question: How do I install wskdebug?
+  answer: Install Node.js (v10+), have Docker configured locally, then run `npm install -g @adobe/wskdebug` to install wskdebug globally.
+- question: How does wskdebug facilitate debugging Node.js actions?
+  answer: wskdebug replaces the deployed action with an agent that forwards activations to a local container where the action runs with an open debug port for IDE connection.
+- question: How can I configure Visual Studio Code to debug my Node.js action?
+  answer: Create a launch.json configuration using wskdebug as the runtimeExecutable and specify your action name and source file, then set breakpoints and launch.
+- question: What happens if the wskdebug agent is killed by I/O Runtime during debugging?
+  answer: You will need to restore the original action content to continue running your action correctly after the agent is stopped.
+- question: Where can I find more detailed information about using wskdebug?
+  answer: Visit the Adobe wskdebug GitHub repository at https://github.com/adobe/wskdebug for full documentation and advanced usage details.
+---
 # Debugging Node.js Actions
 
 The easiest way to debug your actions is to use a local Node.js server and run the action code on your machine. But this is not the environment used by I/O Runtime to execute those actions. `wskdebug` assists with debugging and live development, and is integrated with Visual Studio Code.

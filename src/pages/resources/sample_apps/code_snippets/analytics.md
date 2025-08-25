@@ -1,12 +1,31 @@
 ---
+title: Real-Time Data from Adobe Analytics API 1.4
+description: Demonstrates how to write an action accessing Adobe Analytics Real-time API 1.4 using Adobe I/O Runtime.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
-title: App Builder Code Snippets - Real-time data from Adobe Analytics API 1.4  
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Adobe Analytics
+# --- FAQs ---
+faqs:
+- question: How do I authenticate requests to the Adobe Analytics API 1.4?
+  answer: Use a Bearer token in the Authorization header along with your API key and IMS org ID headers for authentication.
+- question: What is the purpose of the sample payload in the code snippet?
+  answer: The sample payload customizes the real-time report request, specifying metrics, elements, and report suite details.
+- question: How do I handle missing required inputs in my request?
+  answer: Check for missing parameters and headers before making the API call and return a 400 error if any are missing.
+- question: What should I customize before using this code in production?
+  answer: Replace placeholder values like reportSuiteID, x-proxy-global-company-id, and other parameters with your actual data.
+- question: How are errors handled in this action?
+  answer: Client-side errors return a 400 response, while server-side errors log the issue and return a 500 response with a 'server error' message.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+title: App Builder Code Snippets - Real-time data from Adobe Analytics API 1.4
 ---
-
 # Real-Time Data from Adobe Analytics API 1.4
 
 Demonstrates how to write an action accessing Adobe Analytics Real-time API 1.4

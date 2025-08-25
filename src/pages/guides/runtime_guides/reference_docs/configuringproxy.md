@@ -1,3 +1,25 @@
+---
+title: Configuring a Secure Proxy
+description: Learn how to set up a secure proxy using an AWS EC2 instance with NGINX and mutual TLS (mTLS) to enable IP whitelisting and secure communication between I/O Runtime and downstream services.
+keywords:
+- secure proxy
+- mutual TLS
+- mTLS configuration
+- AWS EC2 nginx
+- IP whitelisting
+# --- FAQs ---
+faqs:
+- question: Why use a proxy for securing communication with downstream services?
+  answer: A proxy with a fixed IP address allows IP whitelisting, enhancing security by controlling which systems can access the backend. It also enables mutual TLS to secure data in transit.
+- question: How do I generate certificates needed for mTLS on my EC2 instance?
+  answer: Use OpenSSL commands to generate self-signed server and client certificates with keys, as shown in the guide, and place them in the proper NGINX configuration directory.
+- question: How do I configure NGINX to proxy traffic using mTLS?
+  answer: Modify the example `mtls.conf` by replacing `DESTINATION_HOST` with your proxy target, then deploy the configuration and certificates to your EC2 instance’s `/etc/nginx/conf.d/` folder before restarting NGINX.
+- question: How can I enable my AppBuilder app to communicate securely with the proxy?
+  answer: Add environment variables for the mTLS client cert and key in your `.env` and reference these in `app.config.yaml` inputs to use them in action code when making HTTP requests.
+- question: How do I test that the proxy and mTLS setup is working correctly?
+  answer: Verify SSH access, then use `curl` commands with the client certificate and key locally on the EC2 instance to ensure NGINX accepts the secure connection before deploying your app for runtime testing.
+---
 ## Configuring a Secure Proxy
 
 For security reasons, Runtime does not expose egress IPs. Customers who need a way to secure communication with downstream services using IP whitelisting can use a proxy between their backend service and I/O Runtime.

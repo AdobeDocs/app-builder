@@ -1,4 +1,24 @@
 ---
+title: Lesson 1: Introduction to Spectrum
+description: Overview of Adobe's Spectrum design system, its principles, resources, and community-driven development for consistent Adobe Cloud experiences.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Design System
+# --- FAQs ---
+faqs:
+- question: What is Adobe Spectrum?
+  answer: Adobe Spectrum is a design system with guidelines and components to create consistent experiences across all Adobe Cloud products.
+- question: Which platforms does Spectrum support?
+  answer: Spectrum applies to all platforms, including both desktop and mobile environments.
+- question: How can I get the Spectrum UI kits?
+  answer: Download the latest UI kits as a ZIP file containing .xd files from Adobe's Spectrum website.
+- question: Are Adobe Clean fonts freely available for all uses?
+  answer: No, Adobe Clean font families are restricted fonts meant exclusively for Adobe products and require acceptance of Adobe Developer Terms.
+- question: How can I contact the Spectrum team?
+  answer: You can reach the Spectrum team directly via email at spectrum@adobe.com.
 keywords:
   - Adobe I/O
   - Extensibility
@@ -6,7 +26,6 @@ keywords:
   - Developer Tooling
 title: 'Lesson 1: Introduction to Spectrum'
 ---
-
 # Lesson 1: Introduction to Spectrum
 
 Spectrum is Adobe's design system, with design guidelines and recommended components to create a unified experience across all Adobe Clouds. A team of Adobe engineers and User Experience designers launched the Spectrum initiative years ago; today it is publicly released and gaining community support. 

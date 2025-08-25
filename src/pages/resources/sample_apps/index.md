@@ -1,12 +1,31 @@
 ---
+title: Sample Apps
+description: Complete sample applications built using App Builder, showcasing various integrations and use cases with Adobe I/O APIs.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- App Builder
+# --- FAQs ---
+faqs:
+- question: What are App Builder sample apps?
+  answer: App Builder sample apps are complete applications demonstrating integrations and functionalities using Adobe I/O and App Builder tools.
+- question: Where can I find the App Builder code snippets?
+  answer: Code snippets are available in the code_snippets directory, covering caching, Files SDK, State SDK, I/O Events, and Analytics API examples.
+- question: How can I use the Customer profiles dashboard app?
+  answer: The Customer profiles dashboard lists customer profiles from Adobe Campaign Standard and enables sending personalized marketing emails via the GitHub repository.
+- question: What is the Throttled queue processing sample app?
+  answer: It is a headless app managing task queues that communicate with throttled external systems like bit.ly, respecting their request limits.
+- question: Can I build custom compute workers for AEM using App Builder?
+  answer: Yes, the Custom Assets compute worker sample shows how to integrate Photoshop APIs for automated asset rendition in AEM.
 keywords:
   - Adobe I/O
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: App Builder Sample Apps  
+title: App Builder Sample Apps
 ---
-
 # Sample Apps
 
 These are complete sample applications built using App Builder. See below for a [collection of code snippets](#code-snippets) for common operations.

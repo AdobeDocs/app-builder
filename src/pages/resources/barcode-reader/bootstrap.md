@@ -1,12 +1,31 @@
 ---
+title: 'Lesson 1: Bootstrap a Headless App Builder App'
+description: 'Step-by-step guide to initialize and configure a headless Adobe I/O App Builder application focusing on serverless actions deployment.'
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Headless App Builder
+# --- FAQs ---
+faqs:
+- question: How do I initialize a new headless Adobe I/O app?
+  answer: Use the command `aio app init my-barcode-app --no-extensions` and select only the "Actions: Deploy Runtime actions" option during setup.
+- question: What files should I modify when starting my barcode app?
+  answer: Begin by modifying `app.config.yaml` for action definitions, `package.json` for dependencies, `.env` for secret keys, and create or update the action source code in `actions/barcode/index.js`.
+- question: Should I commit my `.env` file to source control?
+  answer: No, `.env` contains your Adobe I/O Runtime credentials and should never be committed to source control for security reasons.
+- question: How is logging managed in the barcode action?
+  answer: The action uses Adobe I/O Core Logger with a configurable log level, defaulting to 'info' and enabling detailed logs if `LOG_LEVEL` is set to 'debug'.
+- question: What should I do if fetch to the external API fails inside the action?
+  answer: The action logs the error and returns a 500 server error response to ensure proper error handling during runtime failures.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: 'Lesson 1: Bootstrap a Headless App Builder App'
 ---
-
 # Lesson 1: Bootstrap a Headless App Builder App
 
 In order to create your barcode application, use the following command:

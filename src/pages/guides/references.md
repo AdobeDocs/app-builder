@@ -1,4 +1,20 @@
 ---
+title: Reference Documentation
+description: Comprehensive list of Adobe I/O developer tools, SDK libraries, and related resources for building and managing applications.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- SDK Libraries
+# --- FAQs ---
+faqs:
+- question: What is the Adobe Developer Console used for?
+  answer: The Adobe Developer Console is used to create and manage projects, configure APIs, and generate credentials for Adobe I/O integrations.
+- question: How can I automate CLI setup with GitHub Actions?
+  answer: Use the Adobe aio-cli-setup-action GitHub Action to automatically install and configure the Adobe CLI in your workflows.
+- question: Where can I find libraries for Adobe Experience Platform services?
+  answer: SDK libraries such as Adobe Experience Platform Real-Time Customer Profile and Adobe Target are available in the aio-sdk GitHub repository for integration.
 keywords:
   - Adobe I/O
   - Extensibility
@@ -6,7 +22,6 @@ keywords:
   - Developer Tooling
 title: Reference Documentation
 ---
-
 # Reference Documentation
 
 * [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/)

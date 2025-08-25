@@ -1,4 +1,26 @@
 ---
+title: Dealing with Application State
+description: Learn how to manage application state in Adobe App Builder using default parameters, runtime persistence via Files and State services, and the newest State library with usage and security considerations.
+keywords:
+- Application State
+- Adobe App Builder
+- State Library
+- Runtime Persistence
+- Security Considerations
+# --- FAQs ---
+faqs:
+- question: How can I set default parameters for all action invocations?
+  answer: Set default parameters in the `manifest.yaml` file at the action or package level, and use environment variables in a `.env` file to handle environment-specific values securely.
+- question: When should I use Files storage versus State storage in App Builder?
+  answer: Use Files for large payloads over 100KB and data sharing via presigned URLs; use State for fast access to smaller data with optional expirations and latency sensitivity.
+- question: How is data isolated and stored in the new State service?
+  answer: Data is isolated per application Workspace in multi-tenant containers, stored regionally (amer, emea, apac), with configurable TTL defaults and limits for security and compliance.
+- question: What are the usage limits for State keys and values?
+  answer: State keys can be up to 1024 bytes alphanumeric strings, values up to 1MB, with a maximum TTL of 365 days, and usage subject to organizational quotas to avoid rate-limit errors.
+- question: How do I get started using the State library in my Runtime actions?
+  answer: Install `@adobe/aio-lib-state` via npm, initialize it with optional region config, and use the API to get, put, delete, and list state key-value pairs within your actions.
+---
+---
 keywords:
 - Adobe I/O
 - Extensibility

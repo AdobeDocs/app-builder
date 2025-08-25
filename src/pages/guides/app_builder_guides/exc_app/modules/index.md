@@ -1,10 +1,29 @@
 ---
+title: External Module: Index
+description: This API integrates solution web applications with the Adobe Experience Cloud unified shell, providing initialization and runtime access functions.
+keywords:
+- External Module
+- Adobe Experience Cloud
+- Runtime
+- Init
+- Unified Shell
+# --- FAQs ---
+faqs:
+- question: What is the purpose of the init function?
+  answer: The init function initializes a solution web application by invoking a provided bootstrap callback once the runtime environment is ready.
+- question: How do I access the runtime object?
+  answer: You can access the runtime object by calling the runtime() function, which provides all unified-shell APIs.
+- question: What should the bootstrap callback receive in the init function?
+  answer: The bootstrap callback receives the runtime object as a parameter to bootstrap the solution properly.
+- question: Where can I find more details about related external modules?
+  answer: Explore the [Page](page.md), [TopBar](topbar.md), and [User](user.md) external modules for further information.
+- question: What interfaces relate to this external module?
+  answer: The primary related interfaces include Modules and Runtime, which provide the structures and behaviors used within this module.
 keywords:
   - External Module
 title: 'External module: "index"'
 description: External modules
 ---
-
 # External Module: Index
 
 This API is used to integrate solution web applications with the unified shell of Adobe Experience Cloud.

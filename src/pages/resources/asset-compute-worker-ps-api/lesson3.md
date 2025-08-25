@@ -1,14 +1,27 @@
 ---
+title: Lesson 3: Develop Custom Worker Calling Photoshop APIs
+description: Learn how to develop a custom worker to call Adobe Photoshop APIs for image processing, including setup, dependencies, and example code to remove image backgrounds using the Photoshop API SDK.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Photoshop API
+# --- FAQs ---
+faqs:
+- question: What dependencies are required to develop a custom worker using Photoshop APIs?
+  answer: You need @adobe/aio-lib-photoshop-api, @adobe/aio-sdk, @adobe/asset-compute-sdk, and uuid added as dependencies in your package.json.
+- question: How do I call Photoshop APIs in my worker code?
+  answer: Initialize the Photoshop SDK client with orgId, apiKey, and accessToken, then use its methods like createCutout to process images.
+- question: Where do I add the apiKey required by the Photoshop SDK?
+  answer: Include apiKey as an input parameter in your worker's ext.config.yaml file under the worker action inputs section.
+- question: How can I test my custom worker after development?
+  answer: Deploy your action using 'aio app deploy' and test it via the 'aio app run' command in the Adobe development tool UI.
+- question: Where can I find more options to enhance my worker with Photoshop APIs?
+  answer: Consult the official Photoshop API documentation on Adobe's developer site for additional photo editing capabilities.
 contributors:
   - 'https://github.com/duynguyen'
-title: 'Lesson 3: Develop custom worker calling Photoshop APIs'
 ---
-
 # Lesson 3: Develop Custom Worker Calling Photoshop APIs
 
 Now that you have the development environment set up locally and can run a basic worker, let's enhance it to do something more complex.

@@ -1,4 +1,24 @@
 ---
+title: App Builder Application Tooling Lifecycle Event Hooks
+description: Detailed guidance on defining and using lifecycle event hooks in Adobe I/O App Builder for command customization and app extensibility.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- App Builder
+# --- FAQs ---
+faqs:
+- question: What are lifecycle event hooks in App Builder?
+  answer: Lifecycle event hooks allow you to run custom commands before, after, or in place of app plug-in commands defined in your app’s config YAML files.
+- question: Which commands support hooks in App Builder?
+  answer: The commands aio app run, build, deploy, undeploy, test, and pack support various lifecycle event hooks customized via YAML configuration.
+- question: How do I define a hook to run a JavaScript file?
+  answer: Specify the relative path to the JS file in the hooks section of app.config.yaml or ext.config.yaml; the file must export a function.
+- question: Can I add hooks for apps with extensions?
+  answer: Yes, hooks in app.config.yaml run first, followed by hooks in each extension’s ext.config.yaml file.
+- question: How do build-actions and deploy-actions hooks differ?
+  answer: build-actions hooks customize the build process, while deploy-actions support additional deployment steps to multiple servers or locations.
 keywords:
   - Adobe I/O
   - Extensibility
@@ -6,7 +26,6 @@ keywords:
   - Developer Tooling
 title: App Builder application tooling lifecycle event hooks
 ---
-
 # App Builder Application Tooling Lifecycle Event Hooks
 
 Hooks can be defined to run before, after, or in place of many app plug-in commands in the app.config.yaml or ext.config.yaml file of your app. 

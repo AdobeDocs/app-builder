@@ -1,4 +1,24 @@
 ---
+title: 'Lesson 1: Create an Event Provider using App Builder'
+description: 'Step-by-step guide to create and register an event provider using Adobe App Builder, including firing events and scheduling cron jobs with the OpenWhisk Alarms Package.'
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- App Builder
+# --- FAQs ---
+faqs:
+- question: How do I create an event provider using App Builder?
+  answer: Use the App Builder template to create a new app, selecting 'I/O management API' and the 'publish-event' CLI template to configure your event provider.
+- question: How can I register my app as an event provider?
+  answer: Install the Adobe I/O Event CLI plugin with npm and follow the registration steps provided in the related Code Lab documentation.
+- question: How do I fire events from my event provider?
+  answer: Follow the instructions in the Code Lab for firing events, selecting Journaling API as the event consumer to verify event delivery.
+- question: How can I schedule cron jobs to fire events automatically?
+  answer: Use the OpenWhisk runtime alarms package by defining triggers and rules in your app configuration to schedule events at regular intervals.
+- question: How do I test if my event provider is working correctly?
+  answer: Deploy your app using `aio app deploy`, invoke an action via `aio rt action invoke`, and verify results and logs with `aio rt activation get` and `aio rt activation logs`.
 keywords:
   - Adobe I/O
   - Extensibility
@@ -8,7 +28,6 @@ contributors:
   - 'https://github.com/Yu1986'
 title: 'Lesson 1: Create an Event Provider using App Builder'
 ---
-
 # Lesson 1: Create an Event Provider using App Builder
 
 In this lesson, we will :

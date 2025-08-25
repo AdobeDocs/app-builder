@@ -1,3 +1,25 @@
+---
+title: App Builder Overview
+description: Comprehensive documentation for App Builder, a framework for enterprise developers to create, deploy, and optimize custom web applications on Adobe infrastructure.
+keywords:
+- App Builder
+- Adobe Experience Cloud
+- Adobe I/O Runtime
+- Enterprise web applications
+- Developer resources
+# --- FAQs ---
+faqs:
+- question: What is App Builder?
+  answer: App Builder is a framework for enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions using Adobe infrastructure.
+- question: Who should use App Builder?
+  answer: App Builder is designed for Adobe enterprise customers and partners looking to extend Adobe Experience Cloud capabilities.
+- question: Where can I start learning to use App Builder?
+  answer: Begin with the "Get Started with App Builder" tutorial which covers setup, creation, publication, and troubleshooting of your first app.
+- question: How do I find technical support for App Builder?
+  answer: Use the FAQ section for common issues, technical guides, tutorial videos, and code labs available in the documentation.
+- question: How can I contribute to App Builder development and community?
+  answer: Join the Developer Forums, contribute to open-source repositories, and participate in the worldwide App Builder Developer community. 
+---
 # App Builder Overview
 
 This documentation describes App Builder, a complete framework for enterprise Developers to build and deploy custom web applications. App Builder applications extend Adobe Experience Cloud solutions and run on Adobe infrastructure, including Adobe I/O Runtime, the serverless, event-driven, on-demand computing platform included with App Builder.

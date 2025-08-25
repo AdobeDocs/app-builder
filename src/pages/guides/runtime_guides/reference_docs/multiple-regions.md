@@ -1,3 +1,25 @@
+---
+title: Multiple Regions
+description: Overview of how actions are executed across multiple AWS regions with latency-based routing and environment variables to identify execution regions.
+keywords:
+- AWS
+- Multi-region
+- Latency-based routing
+- Action execution
+- Environment variables
+# --- FAQs ---
+faqs:
+- question: In which AWS regions are actions executed?
+  answer: Actions are executed in one of three AWS regions: US East (us-east-1), EU (eu-west-1), or Asia Pacific (ap-northeast-1).
+- question: How is the execution region for an action determined?
+  answer: A latency-based routing policy runs the action in the fastest available region at execution time automatically.
+- question: Can clients specify the region where an action runs?
+  answer: No, clients cannot restrict the region; routing is handled automatically to ensure lowest latency.
+- question: How can I find out the region where my action is running?
+  answer: Use the environment variable `__OW_REGION` at runtime to determine the current execution region.
+- question: Should I hard-code regions in my application for action execution?
+  answer: No, because regions may change due to failover or platform changes; your application should handle dynamic regions gracefully.
+---
 # Multiple Regions
 
 Actions are executed in one of three regions on AWS:

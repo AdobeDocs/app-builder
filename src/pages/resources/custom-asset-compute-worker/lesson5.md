@@ -1,14 +1,27 @@
 ---
+title: Lesson 5: Set Up AEM to Use the Worker
+description: Instructions on configuring Adobe Experience Manager (AEM) to use a custom worker for image processing via processing profiles and renditions.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- AEM Worker
 contributors:
   - 'https://github.com/marcinczeczko'
-title: 'Lesson 5: Setup AEM to use the worker'
+# --- FAQs ---
+faqs:
+- question: How do I create a processing profile in AEM?
+  answer: Go to Tools -> Assets -> Processing Profiles in your AEM Cloud instance and create a new profile with a custom name.
+- question: How do I configure renditions to use a worker in AEM?
+  answer: In the processing profile's Custom tab, add JSON configuration for image transformations specifying your worker’s parameters.
+- question: How can I crop images focusing on faces or important areas?
+  answer: Use the JSON crop value "faces,entropy" with fit set to "crop" and specify your desired width and height.
+- question: How do I apply a text watermark to an image rendition?
+  answer: Add a "mark" parameter in your rendition’s JSON config pointing to the watermark URL with desired text and style.
+- question: How do I apply the processing profile to a folder in AEM?
+  answer: Navigate to the DAM folder and apply the processing profile so new uploads automatically use the configured renditions.
 ---
-
 # Lesson 5: Set Up AEM to Use the Worker
 
 Go to your AEM Cloud instance and open Tools -> Assets -> Processing Profiles. Then create a new processing profile, for example `My Worker test profile`. On the Custom tab, configure your renditions to use your worker, as shown here:

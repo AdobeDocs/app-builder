@@ -1,3 +1,24 @@
+---
+title: Creating Actions
+description: Learn how to create, invoke, and manage actions on Adobe I/O Runtime using the aio CLI, including setting default parameters and configuring web actions.
+keywords:
+- Adobe I/O Runtime
+- aio CLI
+- actions
+- default parameters
+- web actions
+faqs:
+- question: How do I name a function to be used as an Adobe I/O Runtime action?
+  answer: Your function must be named *main* or export an entry point called *main* to be executed as an action.
+- question: How can I invoke an action and see its resulting output?
+  answer: Use `aio rt:action:invoke <action-name> --result` to invoke the action and display the result directly.
+- question: How do I set default parameters for an action?
+  answer: Use the `--param <key> <value>` flag during action creation or update to assign default parameters that apply unless overridden at invocation.
+- question: How do I create a web action with aio CLI?
+  answer: Add the `--web true` flag when creating or updating an action to enable web invocation for the action.
+- question: How can I pass multiple default parameters using a file?
+  answer: Store parameters in a JSON file and use the `--param-file <filename>` flag when creating, updating, or invoking actions.
+---
 # Creating Actions
 
 To execute as an action on Adobe I/O Runtime, the function you code must both :

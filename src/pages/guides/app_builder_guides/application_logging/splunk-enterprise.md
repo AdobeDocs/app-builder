@@ -1,4 +1,28 @@
 ---
+title: Forwarding Logs to Splunk Enterprise
+description: Configuration guide for forwarding logs from App Builder applications to a Splunk Enterprise deployment using HTTP Event Collector.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Logging
+- Log Forwarding
+- Monitoring
+- Splunk
+- Splunk Enterprise
+# --- FAQs ---
+faqs:
+- question: What are the prerequisites for forwarding logs to Splunk Enterprise?
+  answer: You need a Splunk Enterprise index, a local App Builder development setup, and the latest AIO CLI installed.
+- question: How do I set up the Splunk HTTP Event Collector for log forwarding?
+  answer: Add a new HTTP Event Collector input in Splunk, configure source type as automatic, select the index, and save the token for authorization.
+- question: How can I verify my Splunk hostname and port for log forwarding?
+  answer: Confirm your hostname and port by sending a test cURL POST request with your token to Splunk's HTTP Event Collector and look for a 200 OK response.
+- question: How do I configure log forwarding in my App Builder application?
+  answer: Use the command `aio app config set log-forwarding` and provide your Splunk hostname, port, index, and HEC token without protocol prefixes.
+- question: What should I do if logs do not appear in Splunk after configuration?
+  answer: Check for log forwarding errors with `aio app config get log-forwarding errors` and ensure your configuration details are correct.
 keywords:
   - Adobe I/O
   - Extensibility
@@ -11,7 +35,6 @@ keywords:
   - Splunk Enterprise
 title: Forwarding Logs to Splunk Enterprise
 ---
-
 # Forwarding Logs to Splunk Enterprise
 
 This guide covers configuration of App Builder applications to forward logs to your Splunk Enterprise deployment.

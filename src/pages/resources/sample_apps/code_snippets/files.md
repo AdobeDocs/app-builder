@@ -1,12 +1,31 @@
 ---
+title: App Builder Files SDK
+description: Sample code snippets demonstrating how to use the Adobe I/O App Builder Files SDK to list files, generate presigned URLs, download files with redirect, and upload files.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Files SDK
+# --- FAQs ---
+faqs:
+- question: How do I list files using the Files SDK?
+  answer: Use the Files SDK's list method with an optional 'path' parameter to retrieve files stored in a specified directory.
+- question: How can I generate a presigned URL for a private file?
+  answer: Call generatePresignURL on the file location with an optional expiry time to get a temporary URL for file access.
+- question: How do I return a file with a redirect using the Files SDK?
+  answer: Generate a presigned URL and return a response with a 302 status code and the presigned URL in the 'location' header.
+- question: What parameters are required to upload a file using the Files SDK?
+  answer: You need to provide both 'fileUrl' (source URL of the file) and 'fileLocation' (target path in Files SDK) parameters.
+- question: How are errors handled in these Files SDK examples?
+  answer: Errors are logged and returned with appropriate HTTP status codes like 400 for client errors and 500 for server errors.
 keywords:
   - Adobe I/O
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: App Builder Code Snippets - App Builder Files SDK  
+title: App Builder Code Snippets - App Builder Files SDK
 ---
-
 # App Builder Files SDK
 
 ## Demonstrates how to return a list of files stored with the Files SDK

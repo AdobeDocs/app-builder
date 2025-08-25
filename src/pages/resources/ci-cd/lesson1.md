@@ -1,12 +1,31 @@
 ---
+title: Lesson 1: Setup CI/CD
+description: Learn how to setup continuous integration and deployment (CI/CD) for your App Builder app using pre-defined Adobe I/O GitHub actions, including configuring GitHub repositories, workflow files, and secrets for stage and production environments.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- CI/CD
+# --- FAQs ---
+faqs:
+- question: How do I initialize an App Builder app with GitHub Actions workflows?
+  answer: Use the command `aio app init` inside your cloned GitHub repository folder and choose to include GitHub Actions workflows during the setup prompts.
+- question: Which Adobe I/O GitHub Actions are used in the CI/CD workflows?
+  answer: The workflows use `adobe/aio-cli-setup-action` to setup the CLI and `adobe/aio-apps-action` to run build, test, and deploy commands.
+- question: When do the default GitHub workflows run?
+  answer: The `pr_test.yml` workflow runs on pull requests, `deploy_stage.yml` runs on pushes to the master branch, and `deploy_prod.yml` runs on published releases.
+- question: What GitHub secrets are required for the CI/CD workflows?
+  answer: You need to configure `AIO_RUNTIME_NAMESPACE_STAGE` and `AIO_RUNTIME_AUTH_STAGE` for staging, and `AIO_RUNTIME_NAMESPACE_PROD` and `AIO_RUNTIME_AUTH_PROD` for production.
+- question: How can I see my workflows running and troubleshoot failures?
+  answer: Visit the Actions tab at `https://github.com/<org>/<project_name>/actions` to monitor workflow runs and check logs if workflows fail, often due to missing secrets.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: 'Lesson 1: Setup CI/CD'
 ---
-
 # Lesson 1: Setup CI/CD
 
 App Builder comes with pre-defined GitHub actions to manage your CI/CD workflow. **GitHub actions can only work once the App Builder app and the corresponding GitHub actions are committed to a GitHub repository.**

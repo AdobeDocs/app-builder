@@ -1,7 +1,21 @@
 ---
 title: Requirements
+description: Overview of the skills and prerequisites needed to start developing with App Builder.
+keywords:
+- App Builder
+- programming skills
+- Javascript
+- Node.js
+- development prerequisites
+faqs:
+- question: What programming skills are required to start with App Builder?
+  answer: Basic programming skills in any language are required to begin developing with App Builder.
+- question: Is knowledge of Javascript and Node.js necessary?
+  answer: Knowledge of Javascript and Node.js is optional but recommended for better development experience.
+- question: Where can I set up my environment before starting the Code Lab?
+  answer: Follow the linked guides on accessing App Builder, setting up your environment, and creating your first app before starting.
+title: Requirements
 ---
-
 # Requirements
 
 This Code Lab is useful for anyone getting started with developing App Builder apps.

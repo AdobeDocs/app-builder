@@ -1,7 +1,26 @@
 ---
+title: Migrating Apps to DX Experience Cloud v1 SPAs
+description: Tutorial on migrating App Builder standalone applications to DX Experience Cloud v1 Single-Page Applications (SPAs) for Adobe Experience Cloud compatibility.
+keywords:
+- migration
+- DX Experience Cloud
+- SPA
+- App Builder
+- Adobe Experience Cloud
+# --- FAQs ---
+faqs:
+- question: How can I identify if my app is a standalone application?
+  answer: Standalone applications lack the "App Builder ExcShell" sub-heading in Adobe Exchange, unlike DX Experience Cloud v1 SPAs.
+- question: What is the first step in migrating to DX Experience Cloud v1 SPA?
+  answer: Create a new folder `src/dx-excshell-1`, then move the `web-src`, `test`, `e2e`, and `actions` folders under it.
+- question: How do I configure the extension after moving directories?
+  answer: Create and modify `src/dx-excshell-1/ext.config.yaml` by copying from `app.config.yaml`, removing the `application` tag, adjusting indentation, and adding specific `operations`.
+- question: What should I do if my application is already published before migrating?
+  answer: The application must be revoked in Adobe Exchange by an Admin before re-initializing and deploying the migrated app.
+- question: How do I finalize migration and get the app listed in Adobe Experience Cloud?
+  answer: After deploying, submit the app for approval via Adobe Developer Console; once approved by an Admin, it appears in the App Builder Catalog.
 title: 'Migration tutorial - Standalone Application to DX Experience Cloud SPA v1'
 ---
-
 # Migrating Apps to DX Experience Cloud v1 SPAs
 
 ## Overview

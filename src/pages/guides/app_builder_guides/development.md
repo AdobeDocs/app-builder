@@ -1,11 +1,30 @@
 ---
+title: Local Development
+description: Comprehensive guide on using the aio-cli development server for local development, differences between aio app dev and aio app run commands, debugging with VS Code and Chrome DevTools, and handling action security in App Builder applications.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Local Development
+# --- FAQs ---
+faqs:
+- question: What is the purpose of the aio-cli localhost dev server?
+  answer: The aio-cli localhost dev server allows you to run, develop, and test your applications locally with HTTPS support and hot reloading for instant feedback on changes.
+- question: How do aio app dev and aio app run commands differ?
+  answer: aio app run deploys and runs actions on Runtime with live logs and activation records, while aio app dev runs actions locally in a debuggable process without deployment or activation records.
+- question: Can I use State-lib and Files-lib with aio app dev?
+  answer: No, storage libraries have security restrictions that prevent their use in aio app dev; they require Runtime actions and will fail if called locally.
+- question: How can I debug App Builder applications with VS Code?
+  answer: Create a .vscode/launch.json configuration to run aio app dev and use VS Code's debug panel to set breakpoints and inspect code execution with full source map support.
+- question: What should I do to debug actions secured with require-adobe-auth?
+  answer: Include both Authorization and x-gw-ims-org-id headers with any values in your requests when using aio app dev to simulate Adobe authentication.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 ---
-
 # Local Development
 
 ## Localhost dev server

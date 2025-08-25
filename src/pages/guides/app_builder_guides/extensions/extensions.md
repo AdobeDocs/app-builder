@@ -1,4 +1,24 @@
 ---
+title: Introduction to Extensions
+description: Overview of Extensions in Adobe App Builder, enabling developers to extend Adobe products with integrated, flexible extension points and UI extensions.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- App Builder
+# --- FAQs ---
+faqs:
+- question: What are extensions in Adobe App Builder?
+  answer: Extensions are contracts between Adobe products and App Builder applications, allowing developers to extend Adobe products through defined extension points and endpoints.
+- question: What is an extension point?
+  answer: An extension point defines how a product can be extended, specifying allowed operations and data formats for App Builder applications.
+- question: Which extension points does App Builder currently support?
+  answer: App Builder supports two extension points: AEM Asset Microservices and Experience Cloud UI.
+- question: How do I set up extension points in new projects?
+  answer: New projects can set up extension points automatically by following the Creating your First App Builder Application guide.
+- question: Where can I find more information on UI extensibility?
+  answer: Detailed documentation and samples for UI extensibility are available in the Adobe Developer documentation for UI Extensibility.
 keywords:
   - Adobe I/O
   - Extensibility
@@ -6,7 +26,6 @@ keywords:
   - Developer Tooling
 title: Introduction to Extensions
 ---
-
 # Introduction to Extensions
 
 App Builder originally supported only Single-Page Applications (SPAs) accessed in [Experience Cloud UI](https://experience.adobe.com) and standalone Headless Applications. In response to customer requests, we added services like [AEM Asset Microservices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=en) to extend Adobe products through App Builder.  But Developers still had to set up connections manually between AEM and their custom processing profiles. 

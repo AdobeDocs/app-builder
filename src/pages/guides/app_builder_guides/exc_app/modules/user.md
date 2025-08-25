@@ -1,12 +1,31 @@
 ---
+title: External Module: User
+description: User APIs provide user-specific information such as IMS organization, profile, access token, and tenant details, and support capabilities like session notifications and logout URL configuration.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- User API
+# --- FAQs ---
+faqs:
+- question: How do I import the User API module?
+  answer: Import the User API using `import user from '@adobe/exc-app/user';` to access user-specific information and capabilities.
+- question: How can I retrieve multiple user attributes simultaneously?
+  answer: Use `Promise.all` with multiple `user.get()` calls to fetch attributes like imsOrg, imsToken, and imsProfile in parallel.
+- question: How do I listen for real-time changes to user data?
+  answer: Subscribe to change events with `user.on('change:<attribute>')` to receive updates, for example `user.on('change:locale')`.
+- question: What user-specific attributes can be accessed via the User API?
+  answer: Attributes include imsOrg, imsOrgName, imsOrgs, imsToken, imsProfile, locale, subOrg, tenant, and preferredLanguages.
+- question: Where can I find related modules and next steps for Adobe Experience Cloud interfaces?
+  answer: Explore the Index, Page, and TopBar external modules, as well as detailed interfaces like Modules and Runtime in the documentation.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: 'External module: user'
 ---
-
 # External Module: User
 
 User APIs request user-specific information such as IMS organization, IMS profile, access token, tenant, and so on. They also  add capabilities to solutions, for example notifying the shell when a session expires, or configuring a logout URL to expire custom sessions.

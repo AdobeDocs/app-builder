@@ -1,12 +1,26 @@
 ---
+title: Well Done
+description: Summary of completing an App Builder Headless App, including steps learned and next actions like using barcode action in Adobe Campaign.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+# --- FAQs ---
+faqs:
+- question: How do I start building an App Builder Headless App?
+  answer: Begin by bootstrapping your app using the App Builder CLI, then proceed to write Runtime actions and tests.
+- question: How can I deploy my Runtime action?
+  answer: Deploy your Runtime action locally first for testing, then deploy the Runtime web action on Adobe infrastructure.
+- question: How can I use the barcode action in Adobe Campaign?
+  answer: You can integrate the barcode action within email templates in Adobe Campaign, as demonstrated in the referenced Medium article.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: Well done
 ---
-
 # Well Done
 # Well Done
 

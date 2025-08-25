@@ -1,12 +1,31 @@
 ---
+title: External Module: Page
+description: Overview of the Page external module APIs for interacting with and customizing the main page, including setting titles, favicons, and navigation.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Page Module
+# --- FAQs ---
+faqs:
+- question: How do I change the page title using the Page module?
+  answer: Assign a new string value to `page.title`, for example, `page.title = 'New Title';`.
+- question: How can I show a loading spinner while performing async operations?
+  answer: Set `page.spinner = true` before the operation and `page.spinner = false` after it completes.
+- question: How do I generate a shell URL for a relative path?
+  answer: Use `page.generateShellUrl('/relative/path')` to create a shell URL that opens the specified solution URL.
+- question: How can I navigate to another solution using the Page module?
+  answer: Call `page.shellRedirect('/target')` with the relative path of the target solution.
+- question: What types can be used to specify a location with the Page API?
+  answer: Use either an object with a path, e.g., `{path: '/abc'}`, or with an href URL, e.g., `{href: 'https://example.com/abc'}`.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: 'External module: page'
 ---
-
 # External Module: Page
 
 Page APIs let solutions interact with and personalize the main page, for example by setting the title or favicon, or refreshing the solution iframe.

@@ -1,12 +1,31 @@
 ---
+title: App Builder State SDK
+description: Code snippets demonstrating how to read and write key-value pairs using the Adobe App Builder State SDK, including sample curl requests.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
-title: App Builder Code Snippets - App Builder State SDK  
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- State SDK
+# --- FAQs ---
+faqs:
+- question: How do I read a value by key using the App Builder State SDK?
+  answer: Use the State SDK's get method with the desired key to retrieve its value asynchronously.
+- question: How can I write a key-value pair into the State SDK?
+  answer: Use the State SDK's put method to store a key-value pair, ensuring keys that exist are handled correctly.
+- question: What happens if I try to write a key that already exists?
+  answer: The sample code returns the existing value without overwriting it; you can modify this behavior if needed.
+- question: How are errors handled in the State SDK actions?
+  answer: The sample includes error logging and returns appropriate HTTP status codes for client or server errors.
+- question: How can I test these State SDK actions quickly?
+  answer: Use the provided sample curl commands to read or write state data from the command line.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+title: App Builder Code Snippets - App Builder State SDK
 ---
-
 # App Builder State SDK
 
 ## Read a value by key from the State SDK

@@ -1,15 +1,23 @@
 ---
+title: Build Custom Asset Compute Worker
+description: Guide to building a custom Asset Compute Worker using third-party services to generate intelligent image renditions in Adobe Experience Manager.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
-title: Custom Asset Compute Worker
-description: Building a Custom Asset Compute Worker leveraging 3rd-party services to generate intelligent renditions in AEM.
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Asset Compute
+# --- FAQs ---
+faqs:
+- question: What is a Custom Asset Compute Worker?
+  answer: It is a specialized service built to generate intelligent image renditions, leveraging third-party services, and used within Adobe Experience Manager.
+- question: How can I create a Custom Asset Compute Worker?
+  answer: You can create one by following this Code Lab, which guides you through using App Builder to develop and deploy the worker.
+- question: What are some examples of intelligent renditions?
+  answer: Examples include converting images to greyscale or cropping images intelligently around detected faces.
 contributors: 
-  - https://github.com/marcinczeczko 
+  - https://github.com/marcinczeczko
 ---
-
 # Build Custom Asset Compute Worker
 
 ![front-banner](assets/hero-banner.jpg)

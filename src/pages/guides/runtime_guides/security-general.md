@@ -1,3 +1,25 @@
+---
+title: Security Guide
+description: Comprehensive guide reviewing security considerations and best practices for working with Runtime functions in serverless environments.
+keywords:
+- Runtime security
+- sandboxing
+- cross-site scripting
+- secrets management
+- transport security
+# --- FAQs ---
+faqs:
+- question: How does Runtime sandboxing enhance security for functions?
+  answer: Each action runs in its own container with resource limits, isolating execution and preventing cross-namespace reuse to enhance security.
+- question: How should input parameters be handled to prevent XSS attacks?
+  answer: Treat all user inputs as unsafe and sanitize or validate them before use, avoiding direct insertion into SQL queries or JavaScript evaluations.
+- question: What is the recommended approach to manage secrets in Runtime functions?
+  answer: Store secrets in trusted external systems or use encrypted default parameters within Runtime to ensure secrets are only decrypted during execution.
+- question: How can I secure communication between my functions and external services?
+  answer: Use HTTPS or other secure channels for all communications and consider deploying a proxy to maintain secure backend connectivity.
+- question: What precautions should be taken when using web actions and cookies?
+  answer: Avoid setting cookies directly in web actions; instead, consult securing-web-actions guidelines and consider using CDNs with security features.
+---
 # Security Guide
 
 This guide reviews security issues to consider when working with Runtime functions. Only a subset of these may apply to your use case: for example, the section about cookies isn't relevant if you aren't using web actions. This guide will help you keep your functions secure and steer you away from practices that are risky in a serverless environment.

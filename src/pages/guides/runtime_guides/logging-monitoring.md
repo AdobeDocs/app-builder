@@ -1,3 +1,25 @@
+---
+title: Logging and Monitoring
+description: Learn how to use Adobe I/O Runtime CLI tools to debug and monitor your actions, retrieve activation logs, understand error codes, and integrate third-party monitoring solutions.
+keywords:
+- Adobe I/O Runtime
+- activation logs
+- debugging actions
+- error codes
+- third-party monitoring
+# --- FAQs ---
+faqs:
+- question: How do I list the latest activations in Adobe I/O Runtime?
+  answer: Run the command `aio rt:activation:list` to retrieve the most recent activations in your current namespace.
+- question: How can I get detailed logs for a specific activation?
+  answer: Use the command `aio rt:activation:logs <activation ID>` to fetch the logs outputted by your action during that activation.
+- question: How do I enable logging for all activations, including successful ones?
+  answer: Set the header `X-OW-EXTRA-LOGGING: on` in your action request to persist all activation results during development.
+- question: What do the different error codes in activation results indicate?
+  answer: Error codes like `action developer error` or `application error` identify if the failure is due to code issues, runtime errors, or internal system problems.
+- question: Can I send activation logs to external monitoring tools?
+  answer: While Adobe I/O Runtime lacks built-in integrations, you can push data to tools like Epsagon or New Relic by instrumenting your actions accordingly.
+---
 # Logging and Monitoring
 
 The `AIO` CLI offers a number of tools you can use to debug your actions while running them on Adobe I/O Runtime.

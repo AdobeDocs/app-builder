@@ -1,3 +1,25 @@
+---
+title: Securing Web Actions
+description: Learn how to secure web actions using Basic Authentication, Adobe IMS OAuth, and best practices for non-web actions and cookies on Adobe I/O Runtime.
+keywords:
+- web actions
+- Basic Authentication
+- OAuth
+- Adobe IMS
+- security best practices
+# --- FAQs ---
+faqs:
+- question: How do I enable Basic Authentication for a web action?
+  answer: Use the CLI with the `--web-secure` flag specifying your secret during action creation or update. Then, include the header `X-Require-Whisk-Auth` with the secret when invoking the action.
+- question: What happens if the authentication header is missing or incorrect?
+  answer: The web action invocation will return an authentication error indicating access failed or was not provided.
+- question: How can I enable IMS OAuth authentication for a web action?
+  answer: Create or update the web action with the argument `-a require-gw-validation true` to require IMS validation, then configure the security in your Swagger API route.
+- question: Can I use namespace credentials to call non-web actions?
+  answer: Yes, encode your namespace credentials in Base64 and pass them in the `Authorization: Basic` header for secure calls to non-web actions.
+- question: Why should I avoid directly using cookies with Runtime web actions?
+  answer: Because Runtime infrastructure is shared, cookies can leak between namespaces; instead, use a forwarding proxy with a trusted domain and implement access controls within your function.
+---
 # Securing Web Actions
 
 By default, a web action can be invoked by anyone knowing the action's URL. If you want to restrict 'access, either use Basic Authentication or you build your own authentication layer.

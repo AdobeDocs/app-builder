@@ -1,17 +1,27 @@
 ---
+title: Consume Events Using the Journaling API
+description: Creating cron jobs in an App Builder application to consume events reliably using the Journaling API.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
-title: Consume Events Using Journaling API
-description: >-
-  Creating cron jobs in an App Builder application to consume events using
-  Journaling API.
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Journaling API
+# --- FAQs ---
+faqs:
+- question: What is the Journaling API used for in App Builder apps?
+  answer: The Journaling API is used to retrieve events reliably, ensuring no events are lost even during surges, unlike the Runtime webhook that may return 429 errors.
+- question: How does the cron job consume events using the Journaling API?
+  answer: A Runtime action using the Alarm package triggers cron jobs that periodically pull events from the Journaling API and store them in App Builder storage.
+- question: How are events stored to prevent data loss?
+  answer: Events are stored with an index in aio-lib-state storage so that if a job fails, the next run continues from the same point without missing any events.
+- question: Do I need both an event provider and consumer app?
+  answer: Yes, for an end-to-end workflow you should deploy an event provider to generate events and an event consumer to pull and store those events using separate App Builder projects.
+- question: Where can I find a complete implementation of this Code Lab?
+  answer: The full solution is available on GitHub at https://github.com/AdobeDocs/adobeio-samples-journaling-events.
 contributors:
   - 'https://github.com/Yu1986'
 ---
-
 # Consume Events Using the Journaling API
 
 This Code Lab will guide you through creating cron jobs in an App Builder application to consume events using the Journaling API.

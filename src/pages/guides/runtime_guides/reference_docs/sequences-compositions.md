@@ -1,3 +1,24 @@
+---
+title: Sequences and Compositions
+description: Overview of how to orchestrate action flows in Apache OpenWhisk using sequences and compositions, including creation, invocation, limitations, and use of Composer.
+keywords:
+- OpenWhisk
+- sequences
+- compositions
+- Composer
+- action orchestration
+faqs:
+- question: How do you create a sequence of actions in OpenWhisk?
+  answer: Use the `--sequence` flag with `aio rt:action:create` and specify actions with their full namespace. For example, `aio rt:action:create mySequence --sequence /namespace/package/actionA,/namespace/package/actionB`.
+- question: What is the timeout limit for sequences in blocking calls?
+  answer: Sequences invoked in a blocking manner have a fixed 60-second timeout for the total execution of all actions combined.
+- question: How can I run an action in a sequence if it needs more than 60 seconds to execute?
+  answer: Invoke that action in a non-blocking manner using the OpenWhisk npm module inside another action to avoid the 60-second blocking limit.
+- question: What is Apache OpenWhisk Composer used for?
+  answer: Composer allows you to create compositions with control flow logic like conditional branching and loops, enabling complex action orchestration beyond simple sequences.
+- question: How do you deploy a composition created with Composer?
+  answer: Define the composition in JavaScript, generate a JSON file with `compose myComp.js > myComp.json`, then deploy using `deploy compositionName myComp.json`.
+---
 # Sequences and Compositions
 
 There are two ways to orchestrate a series of action calls into a flow: sequences and compositions.

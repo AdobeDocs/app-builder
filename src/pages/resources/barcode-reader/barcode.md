@@ -1,4 +1,24 @@
 ---
+title: Lesson 2: Writing a Serverless Action
+description: This lesson guides you through creating a serverless action that generates a Code128 barcode using the bwip-js npm package, including installation, implementation, local testing, deployment, and error handling.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Serverless Action
+# --- FAQs ---
+faqs:
+- question: How do I install the barcode generation dependency?
+  answer: Install bwip-js by running `npm i bwip-js --save` in your project directory.
+- question: How do I generate a barcode image in my serverless action?
+  answer: Use bwip-js's `toBuffer` method with barcode settings and return the image as a Base64 string with the correct content-type header.
+- question: How can I test my barcode action locally?
+  answer: Run `aio app run --local` to start a local OpenWhisk environment for testing and debugging your action.
+- question: What should I configure before deploying my App Builder Headless app?
+  answer: Set Adobe I/O Runtime secrets in `.env` and disable built-in authentication by setting `require-adobe-auth: false` in `manifest.yml`.
+- question: How can I verify that the barcode generated contains the correct value?
+  answer: Append the `value` parameter to the action URL (e.g., `?value=test`) and use a barcode reader to scan and verify the output.
 keywords:
   - Adobe I/O
   - Extensibility
@@ -6,7 +26,6 @@ keywords:
   - Developer Tooling
 title: 'Lesson 2: Writing a Serverless Action'
 ---
-
 # Lesson 2: Writing a Serverless Action
 
 There are many existing npm packages to display a barcode. Some don't play well in serverless environments. 

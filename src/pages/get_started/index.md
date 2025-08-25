@@ -1,3 +1,23 @@
+```yaml
+---
+title: Getting Started with App Builder
+description: Comprehensive guides to help you start working with App Builder and Adobe I/O Runtime, including setup, development, and deployment.
+keywords:
+- App Builder
+- Adobe I/O Runtime
+- Getting Started
+- Serverless Development
+- Development Environment
+# --- FAQs ---
+faqs:
+- question: How do I start using App Builder?
+  answer: Begin with the App Builder Getting Started guide to set up your environment, create your first app, publish it, and troubleshoot common issues.
+- question: What is Adobe I/O Runtime used for?
+  answer: Adobe I/O Runtime enables serverless development; use its Getting Started guide to learn fundamentals, environment setup, deploying actions, and best practices.
+- question: Where can I find more detailed information after the initial guides?
+  answer: Explore the Guides section for in-depth features and visit the Resources section for additional support and materials.
+---
+```
 # Getting Started with App Builder
 
 Welcome to the Getting Started section of App Builder documentation. Here you'll find comprehensive guides to help you start working with App Builder and Adobe I/O Runtime.

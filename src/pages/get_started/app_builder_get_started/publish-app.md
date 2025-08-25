@@ -1,12 +1,31 @@
 ---
+title: Publishing Your First App Builder Application
+description: A step-by-step tutorial guiding you through submitting, approving, and publishing your first App Builder Single-Page Application via Adobe Developer Console, My Exchange, and Adobe Experience Cloud.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- App Builder
+# --- FAQs ---
+faqs:
+- question: How do I submit my App Builder application for approval?
+  answer: Submit your app through Adobe Developer Console by selecting the Production workspace and clicking "Submit for approval" to begin the review process.
+- question: Who approves App Builder applications?
+  answer: App Builder applications require approval only by your enterprise organization's administrator before publishing.
+- question: Where can I track the status of my app submission?
+  answer: You can track your app's status under the Approval screen in the Adobe Developer Console and see review status in My Exchange under Pending Review.
+- question: What happens if my app is rejected during the approval process?
+  answer: Your administrator will provide notes explaining the rejection so you can fix issues and resubmit the application for approval.
+- question: How can I find my published app after approval?
+  answer: Once approved, your app appears under "App Builder Apps" in Adobe Experience Cloud for your organization to access.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: Publishing Your First App Builder Application
 ---
-
 # Publishing Your First App Builder Application
 
 This tutorial will guide you through the three steps needed to publish your first App Builder Single-Page Application (SPA):

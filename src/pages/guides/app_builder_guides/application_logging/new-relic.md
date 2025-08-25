@@ -1,16 +1,38 @@
 ---
+title: Forwarding Logs to New Relic
+description: Guide to configure your App Builder application to forward logs to New Relic, including setup, prerequisites, and troubleshooting steps.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
-  - Logging
-  - Log Forwarding
-  - Monitoring
-  - New Relic
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Logging
+- Log Forwarding
+- Monitoring
+- New Relic
+# --- FAQs ---
+faqs:
+- question: What do I need before setting up log forwarding to New Relic?
+  answer: Ensure you have a New Relic account with an Ingest license API key, a local App Builder setup, and the latest AIO CLI installed.
+- question: How do I determine the correct New Relic base URI?
+  answer: Check your New Relic home URL; if it starts with https://one.newrelic.com/ use https://log-api.newrelic.com/log/v1, if it starts with https://one.eu.newrelic.com/ use https://log-api.eu.newrelic.com/log/v1.
+- question: How do I configure log forwarding in my App Builder project?
+  answer: Run `aio app config set log-forwarding` from your project directory, select New Relic, then enter the base URI and license key when prompted.
+- question: How can I verify if log forwarding is working correctly?
+  answer: Use `aio app config get log-forwarding` to check configuration, then generate application logs and verify their presence in New Relic Logs.
+- question: What should I do if logs don't appear in New Relic after setup?
+  answer: Check for forwarding errors using `aio app config get log-forwarding errors` and seek help at the Adobe Experience League App Builder Community if needed.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Logging
+- Log Forwarding
+- Monitoring
+- New Relic
 title: Forwarding Logs to New Relic
 ---
-
 # Forwarding Logs to New Relic
 
 This guide covers configuration of your App Builder application to forward logs to your New Relic deployment.

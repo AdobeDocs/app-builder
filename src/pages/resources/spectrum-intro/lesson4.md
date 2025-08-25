@@ -1,12 +1,31 @@
 ---
+title: Lesson 4: React Spectrum in App Builder
+description: Learn how to initialize, run, and deploy a React Spectrum single-page application using Adobe App Builder with Experience Cloud Shell integration and CDN caching.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- React Spectrum
+# --- FAQs ---
+faqs:
+- question: How do I initialize an App Builder React Spectrum app?
+  answer: Use the CLI command `aio app init my-app --standalone-app` and select the 'Web Assets: Deploy hosted static assets' option.
+- question: Where are the React app source files located?
+  answer: The React app source files are inside the `web-src` folder, including Experience Cloud Shell utilities and React Spectrum components.
+- question: How can I run the app locally for development?
+  answer: Run `aio app run` to bundle files with Parcel and start a local server at http://localhost:9080/.
+- question: How do I deploy the React Spectrum SPA to Adobe's CDN?
+  answer: Use the CLI command `aio app deploy` after configuring your namespace and credentials in the `env` file.
+- question: What caching strategy is used for deployed resources?
+  answer: HTML files are cached for 60 seconds, while CSS, JS, and assets are cached for one week via Cache-Control headers.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: 'Lesson 4: React Spectrum in App Builder'
 ---
-
 # Lesson 4: React Spectrum in App Builder
 
 To initialize an App Builder app, let’s use the `init` command from the [CLI](https://github.com/adobe/aio-cli).

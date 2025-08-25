@@ -1,17 +1,23 @@
 ---
-keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
 title: Build a Customer Profiles Dashboard with App Builder
-description: >-
-  Creating a dashboard of customer profiles from Adobe Campaign Standard using
-  App Builder.
+description: Creating a dashboard of customer profiles from Adobe Campaign Standard using App Builder.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Campaign Standard API
+# --- FAQs ---
+faqs:
+- question: What is App Builder?
+  answer: App Builder is a framework for enterprise developers to build and deploy custom web applications extending Adobe Experience Cloud solutions using modern technologies and best practices.
+- question: How does this lab help with Adobe Campaign Standard?
+  answer: This lab guides you to create a dashboard listing customer profiles and set up workflows to send personalized email promotions through Campaign Standard API.
+- question: Where can I find the complete solution code?
+  answer: The full solution is available at the AdobeDocs GitHub repository under adobeio-samples-customers-dashboard.
 contributors:
-  - 'https://github.com/duynguyen'
+- 'https://github.com/duynguyen'
 ---
-
 # Build a Customer Profiles Dashboard with App Builder
 
 This Code Lab will guide you through creating a dashboard of customer profiles from Adobe Campaign Standard using App Builder.  

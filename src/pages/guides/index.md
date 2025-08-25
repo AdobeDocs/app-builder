@@ -1,12 +1,31 @@
 ---
+title: Guides Index
+description: A comprehensive index of guides for Adobe App Builder and Adobe I/O Runtime, covering architecture, development, security, deployment, and more.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
-title: Reference Documentation
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- App Builder
+# --- FAQs ---
+faqs:
+- question: What guides are available for Adobe App Builder?
+  answer: The Adobe App Builder guides cover architecture, logging, configuration, deployment, development, events, extensions, integration with Adobe Experience Cloud, optimization, security, and telemetry.
+- question: Where can I find tutorials for Adobe I/O Runtime?
+  answer: Start with the "Using Adobe I/O Runtime" tutorial, then explore detailed topics like creating actions, security, debugging, and CI/CD pipeline.
+- question: How do I find the App Builder reference documentation?
+  answer: The App Builder reference documentation index is linked in the guides for quick access.
+- question: What topics does the Adobe I/O Runtime security guide cover?
+  answer: It includes securing web actions and general security best practices for runtime environments.
+- question: How can I return to the App Builder overview?
+  answer: You can return by following the provided link to the App Builder Overview page.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+title: Guides Index
 ---
-
 # Guides Index
 
 ## App Builder guides

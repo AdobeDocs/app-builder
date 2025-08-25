@@ -1,4 +1,24 @@
 ---
+title: Create your First App Builder Application
+description: A step-by-step guide to setting up and developing your first App Builder Application using Adobe Developer Console and CLI tools.
+keywords:
+- App Builder
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Adobe Developer Console
+# --- FAQs ---
+faqs:
+- question: How do I set up my environment for App Builder development?
+  answer: Ensure you have access to App Builder and update your local environment and tools as described in the setup guide before starting your project.
+- question: How do I create a new App Builder project in Adobe Developer Console?
+  answer: Use the Quick Start option to create a project from the App Builder template, then enter project details and configure workspaces as needed.
+- question: How do I sign in to Adobe Developer Console from the CLI?
+  answer: Run `aio login` in your terminal to open a browser for Adobe ID sign-in and authenticate your CLI session.
+- question: What are workspaces in an App Builder project?
+  answer: Workspaces manage different deployment environments and developer work environments, each with separate API connections and credentials.
+- question: How do I initialize my App Builder project using the CLI?
+  answer: Use `aio app init <app_name>` and follow prompts to select your Adobe org, project, workspace, and extension points to bootstrap your app.
 keywords:
   - App Builder
   - Extensibility
@@ -6,7 +26,6 @@ keywords:
   - Developer Tooling
 title: Creating your First App Builder Application
 ---
-
 # Create your First App Builder Application
 
 This is a guide through the steps to set up and develop an App Builder Application. Please refer to the [Common issues](#8-common-issues) section at the end of this page to resolve any problems you encounter.

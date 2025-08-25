@@ -1,12 +1,31 @@
 ---
+title: Optimizing App Builder Apps
+description: Learn practical techniques to optimize your App Builder applications for performance, cost, and operational efficiency including caching strategies, handling large payloads, and file management.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- App Builder Optimization
+# --- FAQs ---
+faqs:
+- question: How can I improve App Builder app performance with caching?
+  answer: Use the `Cache-Control` directive in your action responses to cache HTTP results, reducing backend invocations and improving response times.
+- question: What is the maximum response payload size for Adobe I/O Runtime actions?
+  answer: Adobe I/O Runtime actions can return response payloads of up to 1MB; larger payloads should be handled using App Builder Files SDK and presigned URLs.
+- question: How do I serve large files efficiently in App Builder?
+  answer: Persist files with the Files SDK, generate temporary presigned URLs, and return an HTTP 302 redirect to serve large files without exceeding payload limits.
+- question: Why is there no atomic move operation in the App Builder Files SDK?
+  answer: Because cloud storage providers often lack atomic move operations, the SDK leaves move implementations to the application level to balance abstraction and consistency.
+- question: How can I implement a move operation with the App Builder Files SDK?
+  answer: Implement move by copying the file/folder to the destination then deleting the source, and optionally use a progress callback to track the operation.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: Optimizing App Builder Apps
 ---
-
 # Optimizing App Builder Apps
 
 There are many ways to optimize a web app: for security, performance, or operational cost, to name a few. Here are some techniques to help you get the most from your App Builder applications.

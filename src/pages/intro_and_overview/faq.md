@@ -1,12 +1,31 @@
 ---
+title: Frequently Asked Questions
+description: Common questions and detailed answers about Adobe App Builder, its uses, licensing, and integration with Adobe Experience Cloud.
 keywords:
-  - App Builder
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- App Builder
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Adobe Experience Cloud
+# --- FAQs ---
+faqs:
+- question: What is Adobe App Builder?
+  answer: Adobe App Builder is a comprehensive framework for designing, building, and running third-party cloud-native applications that extend Adobe Experience Cloud and Adobe Experience Platform functionality.
+- question: How can I license Adobe App Builder?
+  answer: App Builder can be licensed by purchasing it with Adobe Experience Manager, Adobe Commerce, or as part of other Adobe Experience Cloud products; some licenses include packs automatically or can be requested from Adobe sales.
+- question: Can I extend or customize App Builder?
+  answer: Yes, App Builder is designed for extensibility with open-source components, allowing developers to swap or customize components to fit their needs.
+- question: What languages and environments does App Builder support?
+  answer: App Builder supports JavaScript and Node.js, including the three latest Node.js versions, utilizing the npm Registry for libraries.
+- question: Is App Builder available to individual developers?
+  answer: No, App Builder is only available to Adobe enterprise customers and partners, not to individuals outside a company.
+keywords:
+- App Builder
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: Frequently Asked Questions
 ---
-
 # Frequently Asked Questions
 
 ## About App Builder

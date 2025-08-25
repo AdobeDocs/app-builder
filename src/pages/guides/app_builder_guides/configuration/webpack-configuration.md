@@ -7,8 +7,21 @@ keywords:
   - Webpack
   - Configuration
   - Developer Tooling
+  - App Builder
+  - Bundling
+# --- FAQs ---
+faqs:
+- question: How do I specify a Webpack configuration for a single action?
+  answer: Place the `*webpack-config.js` file in the action's directory to specify a Webpack configuration for that single action.
+- question: Can I use ES module syntax in my Webpack config file?
+  answer: No, App Builder requires the Webpack configuration file to be written in CommonJS syntax; ES modules are not supported.
+- question: Where does App Builder look for Webpack configuration files?
+  answer: App Builder searches for `*webpack-config.js` starting from the action's directory, then up through parent folders to the project root.
+- question: What Webpack configuration options are immutable in App Builder?
+  answer: The options `target` (must be `node`), `output.path`, and `output.filename` cannot be changed and will be ignored if specified.
+- question: How can environment variables be used in the Webpack configuration?
+  answer: If your configuration exports a function, App Builder passes environment variables allowing you to customize settings based on the build environment.
 ---
-
 # Webpack Configuration
 
 ## Overview

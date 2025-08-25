@@ -1,7 +1,22 @@
 ---
+title: Interfaces Index
+description: Overview and quick navigation of all interfaces available in the Adobe Experience Cloud App Builder extensibility APIs.
+keywords:
+- Adobe Experience Cloud
+- App Builder
+- Interfaces
+- APIs
+- Extensibility
+# --- FAQs ---
+faqs:
+- question: What is the purpose of this Interfaces Index?
+  answer: This index provides an overview and quick navigation to all interfaces available in the Adobe Experience Cloud App Builder APIs.
+- question: Where can I find detailed documentation for each interface?
+  answer: Each interface is documented in its own file, linked in the index table.
+- question: How do I explore the capabilities of different APIs?
+  answer: Use the index to navigate to specific interface documentation to explore their features and usage.
 title: 'Adobe Experience Cloud App Builder: Interfaces Index'
 ---
-
 # Interfaces Index
 
 This section provides an overview and quick navigation for all interfaces available in the Adobe Experience Cloud App Builder extensibility APIs. Each interface is documented in detail in its own file. Use this index to explore the available APIs and their capabilities.

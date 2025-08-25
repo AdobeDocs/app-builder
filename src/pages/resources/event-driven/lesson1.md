@@ -1,14 +1,27 @@
 ---
+title: Lesson 1: Create a New App Builder App from Template
+description: Step-by-step guide to creating an Adobe App Builder app from a template, including setting up a console integration and initializing the app using CLI.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- App Builder
+# --- FAQs ---
+faqs:
+- question: What information is needed from the Adobe I/O console integration?
+  answer: You need the IMS Org Id, API key, JWT token, config.zip file, and project.json metadata.
+- question: How do I add the I/O Management API to my Adobe I/O project?
+  answer: Go to Add to Project > Add an API > Adobe Services > I/O Management API and follow the configuration instructions.
+- question: How can I initialize a new App Builder app using the CLI?
+  answer: Use the command `aio app init <Your-project-name> --no-extensions` and follow the prompts to select features and sample actions.
+- question: Which sample action type should be selected for this lab?
+  answer: Select the Generic sample action type and keep the publish-event template.
+- question: Where can I find detailed instructions if this is my first time using App Builder?
+  answer: Refer to the guide "Creating your First App Builder App" linked in the document for detailed steps.
 contributors:
   - 'https://github.com/Yu1986'
-title: 'Lesson 1: Create a New App Builder App from Template'
 ---
-
 # Lesson 1: Create a New App Builder App from Template
 
 ## Create a Console integration and set up the project

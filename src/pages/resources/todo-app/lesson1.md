@@ -1,12 +1,27 @@
----
+```yaml
+title: 'Lesson 1: Create a New App Builder App using the React Spectrum template'
+description: Learn how to initialize a new App Builder app using the React Spectrum starter template and Runtime actions with the Adobe I/O CLI.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- React Spectrum
+# --- FAQs ---
+faqs:
+- question: How do I initialize a new App Builder app with the React Spectrum template?
+  answer: Use the command `aio app init todo-app --no-extensions` and select the appropriate options, including the React Spectrum 3 UI template.
+- question: Which sample action should I select during app initialization?
+  answer: Choose the default 'Generic' sample action which uses the aio-lib-state service for this lab.
+- question: Where are environment variables defined after app creation?
+  answer: They are automatically defined in the `.env` file, including `AIO_runtime_namespace`, `AIO_runtime_auth`, and `SERVICE_API_KEY`.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: 'Lesson 1: Create a New App Builder App with the React Spectrum template'
----
-
+```
 # Lesson 1: Create a New App Builder App using the React Spectrum template
 
 In this lesson, we'll start bootstrapping the app with Runtime actions and the React Spectrum starter template.

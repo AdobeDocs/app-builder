@@ -1,12 +1,31 @@
 ---
+title: Troubleshooting Common Issues
+description: A guide to troubleshooting common issues encountered when developing App Builder applications, including debugging, logging, authentication errors, and environment setup tips.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- App Builder
+# --- FAQs ---
+faqs:
+- question: How can I check for errors in my App Builder action code?
+  answer: Use the `aio runtime activation list` command to view recent activations and check their statuses. For detailed error info, run `aio runtime activation get activationID` or `aio runtime activation logs activationID`.
+- question: What should I do if I encounter authentication errors with Adobe authorization?
+  answer: Ensure your SPA uses valid user tokens from Adobe Experience Cloud Shell, and headless apps use valid JWT or user access tokens. Remove unwanted `web-src/` folders with `aio app delete web-assets` if needed.
+- question: Can I debug actions locally using `aio app dev` when using State or Files SDKs?
+  answer: No. Due to security restrictions, State and Files SDKs cannot be debugged locally because local hosts aren't authorized to access those cloud services.
+- question: How do I enable persistent logging for web actions?
+  answer: Add the header `x-ow-extra-logging: on` to your web action requests to ensure activation results and logs are recorded for all requests.
+- question: What is a recommended Node version management tool for supporting App Builder?
+  answer: Use Node Version Manager (nvm) to manage and update your Node versions as recommended for App Builder compatibility, especially on macOS M1 chips.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: Troubleshooting Common Issues
 ---
-
 # Troubleshooting Common Issues
 
 This is a guide for troubleshooting some of the most common issues you may encounter when developing App Builder apps.

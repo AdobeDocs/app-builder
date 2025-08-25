@@ -1,3 +1,25 @@
+---
+title: Asynchronous Calls
+description: Learn how to implement asynchronous calls using web actions, triggers, and rules in Adobe I/O Runtime to handle long-running processes beyond the default synchronous timeout.
+keywords:
+- asynchronous calls
+- web actions
+- triggers and rules
+- Adobe I/O Runtime
+- long-running actions
+# --- FAQs ---
+faqs:
+- question: What is the maximum timeout for synchronous web actions?
+  answer: Synchronous web actions have a timeout limit of 60 seconds; actions needing more time should use asynchronous calls.
+- question: How do I create a web action that runs an action asynchronously?
+  answer: Create a worker action with extended timeout, then create a web action that invokes the worker action with blocking set to false.
+- question: How can I retrieve the result of an asynchronous web action?
+  answer: The web action returns an activation ID on invocation, which you can use to fetch the result once the worker action completes.
+- question: When should I use triggers and rules for asynchronous calls?
+  answer: Use triggers and rules for asynchronous calls with POST methods where you want to decouple the execution, but for GET requests, use web actions.
+- question: How do I find the URI and authorization token for triggers?
+  answer: Use the command `aio rt:trigger:get my-worker-trigger -v` to get verbose details including URI and authorization headers.
+---
 # Asynchronous Calls
 
 The system executes web actions or REST APIs as synchronous (blocking) calls and gives them 60 seconds to complete their work. Actions that need more time can use asynchronous (async) calls, and use up to 180 minutes. 

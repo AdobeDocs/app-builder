@@ -1,4 +1,19 @@
 ---
+title: Developer Community
+description: Join the worldwide community of App Builder Developers contributing to Adobe Experience Platform and Adobe Experience Cloud solutions through collaboration and open-source projects.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+# --- FAQs ---
+faqs:
+- question: How can I join the Adobe App Builder Developer Community?
+  answer: Join the App Builder Developer Community on Experience League to connect with other developers, ask questions, and share knowledge.
+- question: Where can I contribute to Adobe's open-source projects?
+  answer: You can contribute to the CLI, SDK, App Builder, and I/O Runtime repositories available on GitHub by submitting issues and pull requests.
+- question: What guidelines should I follow when contributing?
+  answer: Follow Adobe's Code of Conduct and contribution guidelines to maintain a respectful and productive environment.
 keywords:
   - Adobe I/O
   - Extensibility
@@ -6,7 +21,6 @@ keywords:
   - Developer Tooling
 title: Developer community
 ---
-
 # Developer Community
 
 Join the worldwide community of App Builder Developers building apps and extensions for Adobe Experience Platform and Adobe Experience Cloud solutions.

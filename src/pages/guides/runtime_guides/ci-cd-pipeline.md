@@ -1,3 +1,21 @@
+---
+title: CI/CD Pipeline
+description: Learn how to build and manage a CI/CD pipeline using Adobe I/O Runtime tools, including namespaces, CLI tools, versioning, and Swagger specifications for REST APIs.
+keywords:
+- Adobe I/O Runtime
+- CI/CD pipeline
+- namespaces
+- versioning actions
+- Swagger specifications
+# --- FAQs ---
+faqs:
+- question: How can I separate different environments in Adobe I/O Runtime?
+  answer: Use namespaces to create and manage separate environments like Development, QE, Staging, and Production, allowing you to deploy different versions of your actions accordingly.
+- question: What CLI tools help automate deployments in Adobe I/O Runtime?
+  answer: Use the `aio` and `wskdeploy` CLI tools to automate deployments, manage dependencies, and create manifest files describing your packages and actions.
+- question: How should I manage versioning for my actions?
+  answer: Create a new package for each release and include version numbers in package names or use a "latest" package to maintain multiple versions, enabling flexible client version usage.
+---
 # CI/CD Pipeline
 
 Adobe I/O Runtime offers a number of tools to help you build a CI/CD pipeline for managing your actions. 

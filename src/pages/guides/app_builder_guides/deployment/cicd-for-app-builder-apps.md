@@ -1,4 +1,24 @@
 ---
+title: CI/CD for App Builder Applications: Overview
+description: Learn how to set up continuous integration and continuous delivery (CI/CD) pipelines for Adobe App Builder applications using GitHub Actions or custom CI/CD tools.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- CI/CD
+# --- FAQs ---
+faqs:
+- question: What is the benefit of using CI/CD for App Builder apps?
+  answer: CI/CD automates building and deploying App Builder applications, ensuring consistent deployments and reducing variances from manual processes.
+- question: How can I set up a CI/CD pipeline for App Builder apps?
+  answer: You can set up a CI/CD pipeline using GitHub Actions by following Adobe's step-by-step instructions linked in the guide.
+- question: What GitHub workflows are provided for App Builder CI/CD?
+  answer: Workflows include running unit tests on pull requests, deploying to the Stage workspace on main branch merges, and deploying to Production on release creation.
+- question: Can I use other CI/CD tools besides GitHub Actions?
+  answer: Yes, you can build a custom CI/CD pipeline with any industry-leading tool using the AIO CLI.
+- question: Where can I find the GitHub Actions for AIO CLI?
+  answer: The CLI Setup and Apps Actions are available on GitHub Marketplace and can be integrated into your workflows.
 keywords:
   - Adobe I/O
   - Extensibility
@@ -6,7 +26,6 @@ keywords:
   - Developer Tooling
 title: CI/CD for App Builder Applications
 ---
-
 # CI/CD for App Builder Applications: Overview
 
 Continuous integration and continuous delivery (CI/CD) is a crucial component for the success of any development team, including teams developing App Builder apps. By automating deployment, CI/CD allows the development team to build and deploy apps free of any variances that may arise from building and deploying the app from a developer's machine.

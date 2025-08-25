@@ -1,14 +1,27 @@
 ---
+title: Lesson 1: Create a New App Builder App from Campaign Standard Template
+description: Step-by-step instructions to initialize a new App Builder app using the Campaign Standard template, including setting up environment variables and exploring the project.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- App Builder
+# --- FAQs ---
+faqs:
+- question: How do I initialize a new App Builder app from the CLI?
+  answer: Use the command `aio app init [app-name]` and follow prompts to select org, project, workspace, and included features.
+- question: Which sample action should I select for Campaign Standard integration?
+  answer: Select the `Adobe Campaign Standard` sample action when prompted during initialization.
+- question: How do I open the newly created app project in VS Code?
+  answer: Run `code [app-folder]` from the command line or open VS Code and select the app folder manually.
+- question: What environment variables must be set for the app to work?
+  answer: Set `AIO_runtime_namespace`, `AIO_runtime_auth`, `SERVICE_API_KEY`, and `CAMPAIGN_STANDARD_TENANT` in the `.env` file.
+- question: Where do I find the API key and runtime credentials?
+  answer: Download the Runtime credentials and obtain the API key from the Adobe I/O Console.
 contributors:
   - 'https://github.com/duynguyen'
-title: 'Lesson 1: Create a New App Builder App from Campaign Standard Template'
 ---
-
 # Lesson 1: Create a New App Builder App from Campaign Standard Template
 
 To initialize an App Builder app, use the `init` command from the CLI:

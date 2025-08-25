@@ -1,14 +1,27 @@
 ---
+title: 'Lesson 2: Register the App as an Event Provider'
+description: 'Learn how to register your app as an event provider using the Adobe I/O Events CLI Plugin, including creating event metadata and webhook registration.'
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Events CLI
+# --- FAQs ---
+faqs:
+- question: How do I start registering an event provider using the CLI?
+  answer: Install the Adobe I/O Events CLI Plugin and run commands to select your org, project, and workspace before creating the event provider with `aio event provider create`.
+- question: What information do I need to create event metadata?
+  answer: When creating event metadata, provide a `label` and `event code` as prompted by the CLI after running `aio event eventmetadata create <provider id>`.
+- question: How do I create a webhook registration for my event provider?
+  answer: Use `aio event registration create` to get a JSON template, then create and fill a `.json` file with your details and deploy it accordingly.
+- question: Can I register an event provider using code instead of the CLI?
+  answer: Yes, you can use the JavaScript sample code from the AdobeDocs GitHub repository by filling in the `.env` file and running `npm start`.
+- question: Where can I verify that my event provider is registered?
+  answer: Check the Adobe I/O Console where you will see your event provider registered along with its journaling endpoint.
 contributors:
   - 'https://github.com/Yu1986'
-title: 'Lesson 2: Register the App as Event Provider'
 ---
-
 # Lesson 2: Register the App as an Event Provider
 
 After you have set up your integration and collected the information, you can start to set up your event provider.

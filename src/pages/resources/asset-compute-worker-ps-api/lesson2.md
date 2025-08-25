@@ -1,14 +1,26 @@
 ---
+title: Lesson 2: Configure the App
+description: Instructions for configuring credentials and running the Asset Compute Developer tool in your application using Adobe I/O Runtime.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Asset Compute
 contributors:
   - 'https://github.com/duynguyen'
-title: 'Lesson 2: Configure the App'
+faqs:
+- question: Which cloud storage providers can I use for the Asset Compute Developer tool?
+  answer: You can use either Amazon S3 or Azure Storage by adding the respective storage credentials to your configuration.
+- question: Where do I add my cloud storage credentials for the Developer tool?
+  answer: Add your S3 or Azure cloud storage credentials as environment variables in your `.env` file.
+- question: How do I obtain and configure the private key file for my App Builder project?
+  answer: Download the `<namespace>-<workspace>.json` file from the Adobe Developer Console, rename it to `console.json`, and place it in the root folder of your project.
+- question: How do I start the Asset Compute Developer tool locally?
+  answer: Run `aio app run` in your project root to deploy the action to Adobe I/O Runtime and start the local development tool on `http://localhost:9000`.
+- question: What does the sample worker code for the rendition do?
+  answer: The sample code simply copies the source file to create a new rendition without modification.
 ---
-
 # Lesson 2: Configure the App
 # Lesson 2: Configure the App
 

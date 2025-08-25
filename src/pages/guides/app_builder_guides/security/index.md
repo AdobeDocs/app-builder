@@ -1,4 +1,24 @@
 ---
+title: Security Overview
+description: Overview of security features and requirements for Adobe App Builder applications, including authentication, authorization, and best practices for securing access to APIs and actions.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- App Builder Security
+# --- FAQs ---
+faqs:
+- question: How does App Builder simplify securing cloud-native applications?
+  answer: App Builder provides an SDK and CLI with templates and boilerplate code that handle authentication and API client instantiation, saving developers time in securing applications.
+- question: What authentication method do App Builder applications use to access Adobe Product APIs?
+  answer: They use Adobe IMS bearer tokens passed as Authorization headers, validated via Adobe Identity Management Services.
+- question: How are JWT tokens for headless App Builder applications managed?
+  answer: JWT tokens obtained from the Developer Console have a 24-hour lifespan, but the IMS SDK Library can generate or renew tokens programmatically to avoid manual refreshes.
+- question: What security layers are applied when deploying App Builder applications?
+  answer: Applications include an out-of-the-box authentication and authorization layer that validates bearer tokens against Adobe IMS and Adobe Exchange before allowing access.
+- question: Can the require-adobe-auth annotation be disabled?
+  answer: Yes, developers can disable it by setting the annotation to false or removing it, but it's recommended to keep it true for actions integrating Adobe Product APIs to maintain security.
 keywords:
   - Adobe I/O
   - Extensibility
@@ -6,7 +26,6 @@ keywords:
   - Developer Tooling
 title: Security Overview
 ---
-
 # Security Overview
 
 Security requirements of application development projects vary widely. Meeting them often requires complex, time-consuming implementations with substantial support at the SDK and tools level. 

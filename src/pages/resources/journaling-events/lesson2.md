@@ -1,14 +1,26 @@
 ---
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Journaling API
 contributors:
-  - 'https://github.com/Yu1986'
-title: 'Lesson 2: Create the Event Consumer using Journaling API'
+- 'https://github.com/Yu1986'
+title: 'Lesson 2: Create an Event Consumer using the Journaling API'
+description: 'Learn how to create an event consumer using Adobe I/O Journaling API, store events with aio-lib-state, and automate event pulling with scheduled cron jobs.'
+faqs:
+- question: What is the purpose of the Journaling API in Adobe I/O Events?
+  answer: The Journaling API enables enterprise integrations to consume events at their own pace in bulk, without additional registration, retaining data for 7 days.
+- question: How do I store events retrieved from the Journaling API?
+  answer: Use the aio-lib-state library to store events in App Builder storage, ensuring events and their positions are saved reliably.
+- question: How can I schedule recurring event consumption from the Journaling API?
+  answer: Set up cron jobs with alarms, following the procedure in the Scheduling Cron Jobs lesson, to pull events automatically every set interval.
+- question: How do I verify that my event was fired and captured by the Journaling API?
+  answer: Use curl, Postman, or the Custom Event SDK to query your unique Journaling API endpoint and confirm the event is recorded.
+- question: Why is it important to track the latest event position when saving events?
+  answer: Tracking the latest event position prevents event loss by allowing the consumer to resume fetching events from the last successfully processed index.
 ---
-
 # Lesson 2: Create an Event Consumer using the Journaling API
 
 In this lesson, we will:

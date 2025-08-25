@@ -1,3 +1,21 @@
+---
+title: Adobe I/O Runtime Reference Documentation
+description: Reference documentation for Adobe I/O Runtime APIs, CLI tools, and runtime entities to help developers efficiently use and manage Adobe Runtime services.
+keywords:
+- Adobe I/O
+- Runtime APIs
+- CLI tools
+- Triggers and Rules
+- Action orchestration
+# --- FAQs ---
+faqs:
+- question: How do I use the aio CLI for Adobe I/O Runtime?
+  answer: Refer to the aio CLI guide (cli-use.md) to learn the commands and options for interacting with Adobe I/O Runtime via the command line.
+- question: Where can I find details about managing triggers and rules?
+  answer: Check the Triggers and Rules documentation (triggersrules.md) to understand how to create and manage triggers and rules effectively.
+- question: How can I configure secure communication with back-end services?
+  answer: See the Configuring a Secure Proxy guide (configuringproxy.md) for instructions on setting up a secure proxy to communicate with back-end services.
+---
 # Adobe I/O Runtime Reference Documentation
 
 This Guide contains reference documentation for Runtime APIs, command-line tools, and entities.

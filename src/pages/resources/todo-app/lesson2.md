@@ -1,12 +1,31 @@
 ---
+title: Lesson 2: Set up Runtime Actions
+description: This lesson covers setting up Runtime actions to handle CRUD operations on multiple to-do lists with maximum item configuration, using aio-lib-state for state management.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Runtime Actions
+# --- FAQs ---
+faqs:
+- question: What is the purpose of the global configuration file in this lesson?
+  answer: The global configuration file defines a MAX_TODO_ITEMS value to limit the number of to-do items per list, ensuring manageable list sizes.
+- question: How do I install the aio-lib-state library used in this example?
+  answer: Use the command `npm i --save @adobe/aio-lib-state` to install the library before importing it in your code.
+- question: What operations are supported by the Runtime action’s CRUD setup?
+  answer: The supported operations are create, read, update, and delete to manage to-do lists and items.
+- question: How does the code handle duplicate to-do list names when creating new lists?
+  answer: It checks if a list with the given name exists and returns an error if it does to prevent duplicates.
+- question: What happens if the to-do list reaches the maximum allowed items during an update?
+  answer: The code returns an error response indicating the maximum number of todos has been reached for that list.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: 'Lesson 2: Setup Runtime actions'
 ---
-
 # Lesson 2: Set up Runtime Actions
 
 In this lesson, we'll set up the Runtime actions to handle the CRUD operations. The will be able to handle multiple to-do lists, and each  can have several to-do items.

@@ -1,3 +1,21 @@
+---
+title: Troubleshooting
+description: Guidance on resolving common issues related to actions, including handling local storage limits and mitigating action evictions.
+keywords:
+- Actions
+- Local Storage
+- Logging
+- File Management
+- System Settings
+# --- FAQs ---
+faqs:
+- question: What causes a pod to exceed local storage and be evicted?
+  answer: Excessive verbose logging and storing large files without cleanup are the primary causes. Monitor and limit log verbosity and manage file cleanup to prevent eviction.
+- question: How can I reduce log storage usage in my actions?
+  answer: Use the @adobe/aio-sdk logging library with the DEBUG level during development and set AIO_LOG_LEVEL to INFO or WARN in production to minimize storage while keeping essential logs.
+- question: What should I do if my action exceeds the configured local storage limit?
+  answer: Review and adjust logging practices, ensure all temporary files are deleted after execution, and check your local storage limits in System Settings to avoid exceeding quotas.
+---
 # Troubleshooting
 
 If you're having trouble with your actions or activations, here is a common issue and its solution.

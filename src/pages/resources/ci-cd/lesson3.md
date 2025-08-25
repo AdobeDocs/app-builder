@@ -1,12 +1,29 @@
 ---
+title: Lesson 3: Custom CI/CD workflow
+description: Learn how to set environment variables in GitHub workflows and implement custom CI/CD workflows for Adobe I/O Runtime projects.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+faqs:
+- question: How can I add environment variables to my GitHub workflows for Adobe I/O Runtime?
+  answer: Define the environment variables as inputs in your `app.config.yaml`, add corresponding GitHub secrets, and map these secrets in your deploy workflow YAML files under the `env` section.
+- question: Where do I configure environment variables for the Runtime action inputs?
+  answer: You configure them as inputs in the `runtimeManifest` section of `app.config.yaml` using the keys and environment variable references.
+- question: How do I access environment variables in Adobe I/O Runtime functions?
+  answer: Environment variables set in the workflow are passed as parameters to your function and can be accessed via `params` object inside your JavaScript code.
+- question: What should I do if GitHub Actions isn't supported in my environment?
+  answer: Implement a custom CI/CD workflow using the Adobe CLI for automation and ensure a secure secret management solution for deployment credentials.
+- question: Why is security important in custom CI/CD workflows for Adobe I/O?
+  answer: Because deployment requires sensitive credentials, a secure secret management system is necessary to protect these credentials within the CI/CD pipeline.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: 'Lesson 3: Custom CI/CD workflow'
 ---
-
 # Lesson 3: Custom CI/CD workflow
 
 ## Setting environment variables

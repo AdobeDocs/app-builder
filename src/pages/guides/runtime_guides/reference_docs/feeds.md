@@ -1,3 +1,25 @@
+---
+title: Using Feeds
+description: Learn how to create and manage event feeds in Adobe Runtime using feed actions, with different implementation patterns such as hooks, polling, and connections.
+keywords:
+- Feeds
+- Feed actions
+- Triggers
+- Event streams
+- Runtime
+# --- FAQs ---
+faqs:
+- question: What is the difference between triggers and feeds?
+  answer: Triggers classify individual events and are linked to actions by rules, while feeds are streams of events managed by a feed action controlling the flow of input to a single trigger.
+- question: How do I create a feed in Runtime?
+  answer: First create a feed action that accepts lifecycleEvent, triggerName, and authKey parameters, then create a trigger using the '--feed' parameter to associate it with the feed action.
+- question: What are the key lifecycle events a feed action must support?
+  answer: A feed action should support 'CREATE', 'READ', 'DELETE', 'PAUSE', and 'UNPAUSE' lifecycleEvent commands to manage the feed stream.
+- question: Which architectural patterns can be used to implement feeds?
+  answer: You can implement feeds using hooks (webhooks), polling at scheduled intervals, or persistent external connections that fire events into Runtime.
+- question: Can I use the '--feed' parameter with trigger update and delete commands?
+  answer: Yes, the '--feed' parameter can also be used with 'aio rt:trigger:update' and 'aio rt:trigger:delete' commands to manage feeds linked to triggers.
+---
 # Using Feeds
 
 Feeds are streams of events. The difference between [triggers](triggersrules.md 'Using Triggers and Rules') and feeds is:

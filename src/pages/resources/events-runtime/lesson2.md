@@ -1,14 +1,21 @@
 ---
+title: Lesson 2: Verify the Result
+description: A detailed explanation on verifying runtime action invocations, using activation IDs for debugging, and understanding event handler sequences in Adobe I/O.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 contributors:
-  - 'https://github.com/Yu1986'
-title: 'Lesson 2: Verify the result'
+- 'https://github.com/Yu1986'
+faqs:
+- question: How do I trace errors for a failed runtime action invocation?
+  answer: Use the Activation ID provided in the error response and run `aio rt activation logs [failed_activation_id]` in the CLI to retrieve detailed logs for debugging.
+- question: What does the 'bound_package' represent in this event handler setup?
+  answer: The 'bound_package' is a default parameter package that binds the shared package deployed in the Adobe namespace containing the validate action.
+- question: What types of failed activations can provide Activation IDs for debugging?
+  answer: Activation IDs can be retrieved for failures in both the signature validator action and your runtime action, enabling targeted debugging.
 ---
-
 # Lesson 2: Verify the Result
 
 Let's take a closer look at these actions:

@@ -1,3 +1,24 @@
+---
+title: Adobe I/O Runtime API Reference
+description: Reference documentation for Adobe I/O Runtime API endpoints covering namespaces and actions management including retrieval, creation, and deletion.
+keywords:
+- Adobe I/O Runtime
+- API Reference
+- Namespaces
+- Actions
+- Integration
+faqs:
+- question: What is the base URL for all Adobe I/O Runtime API calls?
+  answer: The base URL for all API calls is https://api.adobe.io/.
+- question: How do I retrieve namespace details for an organization and integration?
+  answer: Use the GET /runtime/admin/namespaces/{orgId}/{intId} endpoint with the required orgId and intId path parameters and proper authorization headers.
+- question: How can I create a new namespace via the API?
+  answer: Call POST /runtime/admin/namespaces/{orgId}/{intId} with the organization and integration IDs, including your authorization token and API key in headers.
+- question: What is required to delete a namespace using the API?
+  answer: Use DELETE /runtime/admin/namespaces/{orgId}/{intId} with valid orgId, intId, and authorization headers to delete the specified namespace.
+- question: How do I list or create actions within a namespace?
+  answer: To list actions, call GET /runtime/namespaces/{orgId}/{intId}/actions; to create a new action, use POST on the same endpoint with an action definition in the request body.
+---
 # Adobe I/O Runtime API Reference
 
 ## API endpoints

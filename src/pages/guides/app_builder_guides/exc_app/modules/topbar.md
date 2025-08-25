@@ -1,12 +1,31 @@
 ---
+title: External Module: Topbar
+description: Documentation for the External Module Topbar, detailing APIs to interact with and personalize the top bar including configuration of solution areas, workspaces, and search customization.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Topbar
+# --- FAQs ---
+faqs:
+- question: What is the purpose of the Topbar module?
+  answer: The Topbar module allows solutions to interact with and personalize the top bar interface, such as configuring the solution area, workspaces, and customizing search options.
+- question: How do I import the Topbar module in my project?
+  answer: Import the Topbar module using `import topbar from '@adobe/exc-app/topbar';` in your TypeScript or JavaScript code.
+- question: What kind of configurations can I set with the Topbar APIs?
+  answer: You can configure elements like custom feedback, search behavior, solution areas, help center feedback, and workspace settings through various interfaces.
+- question: Where can I find detailed interface documentation for the Topbar module?
+  answer: Detailed interfaces such as Callback, CustomFeedbackConfig, CustomSearchConfig, and TopbarApi are linked within the documentation for in-depth reference.
+- question: What are the next steps after understanding the Topbar module?
+  answer: Explore other external modules such as Index, Page, and User, as well as Adobe Experience Cloud interfaces for a broader understanding of available APIs.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: 'External module: topbar'
 ---
-
 # External Module: Topbar
 
 Topbar APIs let solutions interact with and personalize the top bar, for example by configuring the solution area on the left, setting up workspaces, or customizing search.

@@ -1,14 +1,21 @@
 ---
+title: Lesson 1: Getting to know wskdebug
+description: Introduction to debugging OpenWhisk actions using wskdebug with VSCode, covering setup and launch configurations.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 contributors:
-  - 'https://github.com/duynguyen'
-title: 'Lesson 1: Getting Familiar with Debugger'
+- 'https://github.com/duynguyen'
+faqs:
+- question: How do I start debugging OpenWhisk actions with wskdebug?
+  answer: Create your app with AIO CLI, open it in VSCode, then run `aio app run` with optional flags. Use the generated launch profiles to start debugging.
+- question: What launch profile should I select for end-to-end debugging?
+  answer: Use the `WebAndActions` compound launch profile to debug all actions and UI components together.
+- question: Why do I see a "Failure" error when invoking the hello action?
+  answer: This error is expected during initial debugging; check the browser console for details and confirm the action is ready in the debug console.
 ---
-
 # Lesson 1: Getting to know wskdebug
 
 First, you need an app created with AIO CLI:

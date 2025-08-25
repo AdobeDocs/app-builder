@@ -1,12 +1,31 @@
 ---
+title: Lesson 2: Monitoring CI/CD
+description: Learn how to monitor, debug, and run tests in CI/CD workflows using GitHub Actions for App Builder Apps.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- CI/CD
+# --- FAQs ---
+faqs:
+- question: How do I monitor GitHub Actions workflows in my repository?
+  answer: You can monitor workflows directly on the GitHub Actions tab at https://github.com/<org>/<project_name>/actions.
+- question: What should I do if a GitHub action job fails due to missing secrets?
+  answer: Define the required secrets in your repository settings and then re-run the failed job using the "Re-run all jobs" button.
+- question: How can I run tests automatically on pull requests?
+  answer: Configure a GitHub action like `pr_test.yml` to run `aio app test` whenever a pull request is submitted.
+- question: How do I deploy my app to production using GitHub Actions?
+  answer: Perform a GitHub release in your project repository to trigger the production deploy action relying on the `release` event.
+- question: Can I debug GitHub Actions jobs locally?
+  answer: No, jobs run in the cloud; however, you can debug by viewing run logs and enabling verbose logging as detailed in GitHub documentation.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: 'Lesson 2: Monitoring CI/CD'
 ---
-
 # Lesson 2: Monitoring CI/CD
 
 Once your GitHub actions and secrets are defined in the repository, you can monitor the workflow directly in GitHub on `https://github.com/<org>/<project_name>/actions`.

@@ -1,14 +1,33 @@
 ---
+title: Lesson 3: Run the App Builder App Locally
+description: Instructions on how to run the App Builder app locally using the AIO CLI, including handling local HTTPS warnings and testing action invocation.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- App Builder
+# --- FAQs ---
+faqs:
+- question: How do I run the App Builder app locally?
+  answer: Open the terminal in VS Code and run the command `aio app run` to deploy the app locally on https://localhost:9080.
+- question: Why do I get a browser warning about the certificate on localhost?
+  answer: Because the localhost site uses HTTPS without a certificate, the browser will warn you, which you can safely accept to continue.
+- question: What causes a 401 Unauthorized error when invoking get-profiles?
+  answer: This error occurs when the request lacks a user token in the header, preventing authorized access.
+- question: How can I invoke actions with my Adobe IMS user token locally?
+  answer: Access the app via ExC Shell with your Adobe ID login, which stores your user profile and allows authorized action invocation.
+- question: Where can I learn more about App Builder app security?
+  answer: Refer to the App Builder App Security Overview guide in the documentation for detailed security concepts.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 contributors:
-  - 'https://github.com/duynguyen'
+- 'https://github.com/duynguyen'
 title: 'Lesson 3: Run the App Builder App Locally'
 ---
-
 # Lesson 3: Run the App Builder App Locally
 
 First, open the terminal in VS Code:

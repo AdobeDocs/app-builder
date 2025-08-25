@@ -1,4 +1,28 @@
 ---
+title: Forwarding Logs to Splunk Cloud
+description: Guide to configure Adobe App Builder for forwarding application logs to a Splunk Cloud account using HTTP Event Collector.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Logging
+- Log Forwarding
+- Monitoring
+- Splunk
+- Splunk Cloud
+# --- FAQs ---
+faqs:
+- question: How do I create an index on Splunk Cloud for log forwarding?
+  answer: Follow Splunk’s index creation guide in their documentation to set up a new index for receiving logs from your App Builder application.
+- question: What ports are supported for forwarding logs to Splunk Cloud?
+  answer: I/O Runtime supports only ports 443 and 8088 for forwarding logs to Splunk Cloud via HTTP Event Collector.
+- question: How can I verify that my Splunk HTTP Event Collector is set up correctly?
+  answer: Use a cURL POST request to your Splunk hostname and port with the authorization token. A 200 OK response confirms correct setup.
+- question: How do I configure log forwarding in my App Builder project?
+  answer: Run `aio app config set log-forwarding` in your project directory and enter the Splunk HEC details including hostname, port, index, and token as prompted.
+- question: What should I do if I don't see logs appearing in Splunk after configuration?
+  answer: Check for log forwarding errors by running `aio app config get log-forwarding errors` and verify your setup steps and credentials.
 keywords:
   - Adobe I/O
   - Extensibility
@@ -11,7 +35,6 @@ keywords:
   - Splunk Cloud
 title: Forwarding Logs to Splunk Cloud
 ---
-
 # Forwarding Logs to Splunk Cloud
 
 This guide covers configuring App Builder to forward application logs to a Splunk Cloud account. 

@@ -1,3 +1,25 @@
+---
+title: How Adobe I/O Runtime Works
+description: Overview of Adobe I/O Runtime architecture based on Apache OpenWhisk, detailing the event-driven process from triggers to executed actions using components like Nginx, Controller, CosmosDB, Kafka, and Invoker.
+keywords:
+- Adobe I/O Runtime
+- Apache OpenWhisk
+- serverless architecture
+- event-driven functions
+- Kafka queue management
+# --- FAQs ---
+faqs:
+- question: What is Adobe I/O Runtime based on?
+  answer: Adobe I/O Runtime is based on the open source Apache OpenWhisk platform, providing function-as-a-service with an event-driven architecture.
+- question: How are actions executed in Adobe I/O Runtime?
+  answer: Actions, written in JavaScript/Node.js, are executed when triggered by events or direct invocation through CLI or REST API, managed by isolated container instances.
+- question: What role does Kafka play in Adobe I/O Runtime?
+  answer: Kafka manages event queues between the Controller and Invoker, enabling scalable, reliable, and fault-tolerant asynchronous processing.
+- question: How does Adobe I/O Runtime handle authentication and authorization?
+  answer: The Controller authenticates users and checks authorization by querying credentials stored in CosmosDB before executing actions.
+- question: How does Adobe I/O Runtime achieve scalability and cost efficiency?
+  answer: By invoking action containers only when triggered and disposing of them after execution, it scales automatically with demand, minimizing runtime costs.
+---
 ```yaml
 keywords:
   - [need keywords]

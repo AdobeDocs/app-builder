@@ -1,3 +1,24 @@
+---
+title: Working with Packages
+description: Learn how to create, update, share, bind, and manage packages in I/O Runtime to organize and control your actions effectively.
+keywords:
+- packages
+- I/O Runtime
+- shared packages
+- package binding
+- default parameters
+faqs:
+- question: How do I create a package in I/O Runtime?
+  answer: Use the command `aio rt:package:create <package-name>` to create a new package.
+- question: Can I delete a package that contains actions or triggers?
+  answer: No, packages can only be deleted if they are empty, meaning they have no actions or triggers defined.
+- question: How do I set default parameters for all actions in a package?
+  answer: Update the package with `aio rt:package:update <package-name> --param <key> <value>` to define default parameters.
+- question: What does making a package shared do?
+  answer: Marking a package as shared with `--shared yes` makes it available to other users for execution, but with execute-only permissions.
+- question: How do I use a shared package from another namespace?
+  answer: Bind the shared package using `aio rt:package:bind /namespace/package original-name` to your namespace to invoke its actions.
+---
 # Working with Packages
 
 Packages are a simple and yet important concept in I/O Runtime. You can use packages to handle versioning (deploy new version of your actions in a new package), create different actions with the same name within the same namespace, group together actions that are related, share actions with other parties, and much more.

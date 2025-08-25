@@ -1,14 +1,26 @@
 ---
+title: Lesson 1: Initialize an App Builder App Using a Template
+description: Step-by-step guide to initialize an Adobe App Builder app using a template, register events, create event consumers, and integrate event runtime actions.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Event Registration
 contributors:
   - 'https://github.com/Yu1986'
-title: 'Lesson 1: Step by Step Guide'
+faqs:
+- question: How do I initialize an App Builder app using a template?
+  answer: Follow the instructions to create a new App Builder app from a template including the `publish-event` and `I/O management API`, then deploy it using `aio app deploy`.
+- question: How can I register my app as an event provider?
+  answer: Run `aio event registration create` and select `webhook` delivery type using the provided JSON example to register your app as an event provider.
+- question: What is required to create an event consumer in App Builder?
+  answer: Use the `generic` App Builder template to create an action such as `consume-event` that handles events and deploy it to use as the event consumer.
+- question: How do I modify an action to safely use it as an event consumer?
+  answer: Ensure the action does not include `web: yes` or `require-adobe-auth: true` in the manifest.yml to maintain your app’s security.
+- question: How do I verify that event registration was successful?
+  answer: Check your terminal for confirmation after event registration and verify registration details appear in the Adobe Developer console under the event section.
 ---
-
 # Lesson 1: Initialize an App Builder App Using a Template
 
 If you don't have an App Builder app, please follow [Create a New App Builder App from Template](../event-driven/lesson1.md) to create one. Make sure you have `publish-event`in the template, and add `I/O management API`in the console. Then run `aio app deploy`, and you should see this: 

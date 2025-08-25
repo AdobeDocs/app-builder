@@ -1,12 +1,31 @@
 ---
+title: Using Client SDKs for Accessing Adobe APIs
+description: Overview of Adobe Experience Cloud client SDKs, how to initialize them, and usage guidance for Adobe APIs including Analytics and Customer Profile.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Client SDKs
+# --- FAQs ---
+faqs:
+- question: How do I initialize a client SDK for Adobe APIs?
+  answer: Provide the API key and access token as mandatory parameters, and include tenant name and organization ID when required, as shown in the initialization example for Customer Profile.
+- question: Where can I find the Adobe Experience Cloud client SDK libraries?
+  answer: The SDKs are available as npm modules on GitHub under repositories like aio-lib-analytics and aio-lib-customer-profile.
+- question: How do I generate project scaffolding for Adobe APIs?
+  answer: Use the CLI command `aio app init` and select one of the provided templates to get started quickly.
+- question: What if a feature is only available in Adobe Analytics API 1.4?
+  answer: Use the Generic action template and the node-fetch module to directly call the API endpoint following example snippets provided in Adobe documentation.
+- question: How do I manage API keys and tenant information securely?
+  answer: Store real values in the `.env` file and map them to default action parameters in the `manifest.yml` file to keep secrets out of code.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: Using Client SDKs for Accessing Adobe APIs
 ---
-
 # Using Client SDKs for Accessing Adobe APIs
 
 To simplify interactions with Adobe APIs, we have created a number of libraries for Adobe Experience Cloud solution APIs. These libraries are npm modules that provide JavaScript abstractions on top of Adobe product APIs. 

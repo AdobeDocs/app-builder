@@ -1,12 +1,30 @@
 ---
+title: Lesson 2: Spectrum CSS
+description: Learn how to use Spectrum CSS, the CSS-only implementation of Spectrum, to build accessible, themed UI components with minimal bundle size and recommended best practices.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Spectrum CSS
+faqs:
+- question: What is Spectrum CSS?
+  answer: Spectrum CSS is the CSS-only implementation of Spectrum, designed for simple UI styling such as typography and form elements without JavaScript.
+- question: When should I use Spectrum CSS vs. Adobe’s JavaScript libraries?
+  answer: Use Spectrum CSS for simple applications needing only styles, and prefer Adobe's React, Angular, or web components libraries for complex interactive components.
+- question: How do I include Spectrum CSS themes in my project?
+  answer: Include the appropriate CSS files from the @spectrum-css npm packages and add classes like spectrum--medium and spectrum--light to your HTML element for scale and theme.
+- question: How do I add Adobe Fonts when using Spectrum CSS?
+  answer: Add the Adobe Fonts script with your Typekit ID in your HTML to load the fonts needed by Spectrum CSS.
+- question: How do I enable focus-ring support across all browsers?
+  answer: Install and include the @adobe/focus-ring-polyfill script to ensure consistent focus-ring display on keyboard navigation.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: 'Lesson 2: Spectrum CSS'
 ---
-
 # Lesson 2: Spectrum CSS
 
 Spectrum CSS is the CSS-only implementation of Spectrum.

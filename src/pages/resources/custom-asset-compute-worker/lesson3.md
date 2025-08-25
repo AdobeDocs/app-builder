@@ -1,14 +1,35 @@
 ---
+title: Lesson 3: Implement the Worker
+description: This lesson guides you through creating and configuring an Adobe Asset Compute worker using the AIO CLI, setting environment variables, editing the runtime manifest, installing dependencies, and implementing the worker code to handle image processing with Azure Blob Storage and imgIX integration.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Asset Compute Worker
+contributors:
+  - 'https://github.com/marcinczeczko'
+# --- FAQs ---
+faqs:
+- question: How do I initialize a new Adobe Asset Compute worker application?
+  answer: Use the AIO CLI command `aio app init my-custom-worker` and follow prompts to select your Adobe Organization, project, and runtime action type as Adobe Asset Compute worker.
+- question: Where should I set environment variables for deployment?
+  answer: Edit the `.env` file for local development or configure them directly in your CI/CD pipeline environment variables in production.
+- question: What runtime manifest configuration is needed for the worker?
+  answer: Define the worker action under `runtimeManifest` with necessary inputs like imgix credentials, concurrency limits, and annotations in the `ext.config.yaml` file.
+- question: Which dependencies must be installed for the worker code?
+  answer: Install `@adobe/aio-lib-files` for Azure Blob Storage interaction and `imgix-core-js` for generating signed imgIX URLs using `npm install @adobe/aio-lib-files imgix-core-js`.
+- question: How does the worker process image renditions?
+  answer: It copies source assets to Azure storage for imgIX, generates signed URLs based on rendition instructions, downloads processed images, and stores them as renditions in AEM.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 contributors:
   - 'https://github.com/marcinczeczko'
 title: 'Lesson 3: Implement the worker'
 ---
-
 # Lesson 3: Implement the Worker
 
 Create a new application using the AIO CLI:

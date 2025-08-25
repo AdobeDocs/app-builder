@@ -1,3 +1,21 @@
+---
+title: Environment Variables
+description: Overview of environment variables available during OpenWhisk action execution to provide context and control.
+keywords:
+- OpenWhisk
+- environment variables
+- action execution
+- runtime configuration
+- cloud regions
+# --- FAQs ---
+faqs:
+- question: What is the purpose of the __OW_ACTION_NAME variable?
+  answer: __OW_ACTION_NAME provides the current executing action's name, enabling code to identify which action is running.
+- question: How can I determine the cloud platform from within an action?
+  answer: Use the __OW_CLOUD variable, which indicates whether the action is running on AWS or Azure cloud.
+- question: What does __OW_ALLOW_CONCURRENT signify?
+  answer: __OW_ALLOW_CONCURRENT indicates if the runtime supports concurrency; for Node.js actions, it should always be true.
+---
 # Environment Variables
 
 When an action is being executed, your code can use the following environment variables:

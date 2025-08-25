@@ -1,14 +1,22 @@
 ---
+title: Lesson 3: End-to-End Test
+description: Guide to configuring and testing the event provider and consumer apps with the OpenWhisk Alarm Package for automated event triggering and consumption.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- App Builder
 contributors:
-  - 'https://github.com/Yu1986'
-title: 'Lesson 3: End to end test'
+- 'https://github.com/Yu1986'
+faqs:
+- question: How do I configure the alarm package to trigger events automatically?
+  answer: Set up the `app.config.yaml` file and use the `/whisk.system/alarms/interval` feed with the required `minutes` parameter to schedule trigger events.
+- question: What parameters can I set for the interval feed in the OpenWhisk Alarm Package?
+  answer: You must set the `minutes` parameter; optionally, you can configure `trigger_payload`, `startDate`, and `stopDate` for customized scheduling.
+- question: How do I connect triggers to event actions in this setup?
+  answer: Create a trigger with the `/whisk.system/alarms/interval` feed and a rule that links this trigger to your `publish-event` or `consume-event` actions.
 ---
-
 # Lesson 3: End-to-End Test
 
 In the previous lessons, we have set up two App Builder apps:

@@ -1,12 +1,25 @@
 ---
+title: Understanding Authentication
+description: Overview of Adobe authentication methods, including OAuth 2.0 and JWT, and available SDKs for developer integration with Adobe APIs.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+faqs:
+- question: What authentication protocols does Adobe use for its APIs?
+  answer: Adobe uses OAuth 2.0 and JWT protocols for authenticating and authorizing API access in its services.
+- question: When should I use JWT versus OAuth 2.0 for Adobe API integration?
+  answer: Use JWT for server-to-server programmatic authentication and OAuth 2.0 when an end-user must authenticate before API calls.
+- question: How can the Adobe I/O IMS SDK Library help developers?
+  answer: The Adobe I/O IMS SDK Library simplifies Adobe authentication setups and can be configured for easier token management.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: Understanding Authentication
 ---
-
 # Understanding Authentication
 
 This page outlines Adobe authentication and available libraries, for Developers planning to work with Adobe APIs in their custom applications.

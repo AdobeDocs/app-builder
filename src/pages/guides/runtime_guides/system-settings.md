@@ -1,3 +1,25 @@
+---
+title: System Settings
+description: Overview of system settings, limits, and best practices for designing and debugging actions, including timeout, memory, concurrency, and container usage.
+keywords:
+- timeout
+- memory limit
+- action concurrency
+- pre-warmed containers
+- activation TTL
+# --- FAQs ---
+faqs:
+- question: How can I increase the action timeout beyond the default 60 seconds?
+  answer: Use the command `aio rt:action:create action-name source.js -t <milliseconds>` to set a higher timeout, but note blocking calls like web actions will still time out after 60 seconds.
+- question: What is the maximum memory allocation per container?
+  answer: The memory limit per container is configurable per action, with a default of 256MB and a maximum of 4096MB.
+- question: How do pre-warmed containers reduce latency?
+  answer: Pre-warmed containers are maintained with common Node versions and memory sizes, so your action starts faster by skipping container creation time if settings match.
+- question: What happens if my sequence of actions exceeds the 60-second timeout?
+  answer: You must invoke long-running actions as non-blocking calls to avoid the 60-second timeout limit imposed on blocking sequences.
+- question: What is the Activation Time To Live (TTL) and can it be changed?
+  answer: Activation TTL is fixed at seven days and cannot be changed, so activations older than this are automatically purged.
+---
 # System Settings
 
 These are the system settings and limitations to consider when designing and debugging your actions.

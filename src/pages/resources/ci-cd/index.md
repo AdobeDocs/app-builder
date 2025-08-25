@@ -1,4 +1,19 @@
 ---
+title: Setup CI/CD in an App Builder App
+description: Setting up CI/CD for an App Builder App using GitHub Actions.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+# --- FAQs ---
+faqs:
+- question: What is a workspace in App Builder?
+  answer: A workspace in App Builder represents an environment with its own Adobe service integrations, runtime namespace, cloud storage, CDN settings, and related credentials.
+- question: How can I set up CI/CD for different environments in App Builder?
+  answer: You can create CI/CD workflows for stage and production environments using GitHub Actions, leveraging the default bootstrapped project from the App Builder CLI.
+- question: Where can I learn more about the architectural details of App Builder CI/CD?
+  answer: Review the App Builder CI/CD documentation linked in the guide to understand the architecture and deployment process comprehensively.
 keywords:
   - Adobe I/O
   - Extensibility
@@ -7,7 +22,6 @@ keywords:
 title: Setup CI/CD in an App Builder App
 description: Setting up CI/CD for an App Builder App using GitHub Actions.
 ---
-
 # Setup CI/CD in an App Builder App
 
 App Builder allows you to manage multiple environments called workspaces. Each workspace has its own setup: 

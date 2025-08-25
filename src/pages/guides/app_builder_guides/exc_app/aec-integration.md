@@ -1,12 +1,31 @@
 ---
+title: Integration with Adobe Experience Cloud
+description: Guide on integrating custom App Builder applications with Adobe Experience Cloud, detailing APIs, events, and setup instructions.
 keywords:
-  - Adobe I/O
-  - Extensibility
-  - API Documentation
-  - Developer Tooling
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
+- Adobe Experience Cloud
+# --- FAQs ---
+faqs:
+- question: How do I start integrating App Builder applications with Adobe Experience Cloud?
+  answer: Begin by including the runtime loader script on your homepage and adding the @adobe/exc-app package to your NPM dependencies, then invoke the init API as shown in the example.
+- question: What APIs are available for Adobe Experience Cloud integration?
+  answer: The key APIs include Index, Page, TopBar, and User modules, each providing functionalities to initialize, personalize, and interact with the Experience Cloud shell.
+- question: What is the 'Ready' event and how should I use it?
+  answer: The Ready event fires when initial configuration is received from the shell; you should wait for this event before rendering your app to ensure locale and workspace translations are available.
+- question: How can my solution respond to configuration updates from the Adobe Experience Cloud shell?
+  answer: Listen for the Configuration event, which carries updated payloads similar to the Ready event, allowing your app to update org, token, and locale information dynamically.
+- question: Under what license is this integration project available?
+  answer: The project is licensed under the Creative Commons Attribution-NoDerivatives 4.0 International Public License.
+keywords:
+- Adobe I/O
+- Extensibility
+- API Documentation
+- Developer Tooling
 title: Integration Guide with Adobe Experience Cloud
 ---
-
 # Integration with Adobe Experience Cloud
 
 > Note: this section shows how to integrate custom App Builder applications with Adobe Experience Cloud (AEC). App Builder can also be used to extend the AEC User Interface, as discussed [here](../extensions/extensions.md), with links to Developer documentation and a sample project.
