@@ -84,8 +84,8 @@ You must add the following secrets to your GitHub repository to ensure your CI/C
 |----|------------|----------------------------------------------|-------------------------------|
 |  1 | Stage      | CLIENTID_STAGE                               | deploy_stage.yml, pr_test.yml |
 |  2 | Stage      | CLIENTSECRET_STAGE                           | deploy_stage.yml, pr_test.yml |
-|  3 | Stage      | TECHNICALACCOUNTID_STAGE                     | deploy_stage.yml, pr_test.yml |
-|  4 | Stage      | TECHNICALACCOUNTEMAIL_STAGE                  | deploy_stage.yml, pr_test.yml |
+|  3 | Stage      | TECHNICALACCID_STAGE                         | deploy_stage.yml, pr_test.yml |
+|  4 | Stage      | TECHNICALACCEMAIL_STAGE                      | deploy_stage.yml, pr_test.yml |
 |  5 | Stage      | IMSORGID_STAGE                               | deploy_stage.yml, pr_test.yml |
 |  6 | Stage      | SCOPES_STAGE                                 | deploy_stage.yml, pr_test.yml |
 |  7 | Stage      | AIO_RUNTIME_NAMESPACE_STAGE                  | deploy_stage.yml, pr_test.yml |
@@ -126,8 +126,8 @@ main (){
 
     echo "CLIENTID:                     $(echo "$config" | jq -r --arg ctx "$ctx" '.ims.contexts[$ctx].client_id')"
     echo "CLIENTSECRET:                 $(echo "$config" | jq --arg ctx "$ctx" '.ims.contexts[$ctx].client_secrets' |  jq -r | jq -r '.[0]')"
-    echo "TECHNICALACCOUNTID:           $(echo "$config" | jq -r --arg ctx "$ctx" '.ims.contexts[$ctx].technical_account_id')"
-    echo "TECHNICALACCOUNTEMAIL:        $(echo "$config" | jq -r --arg ctx "$ctx" '.ims.contexts[$ctx].technical_account_email')"
+    echo "TECHNICALACCID:               $(echo "$config" | jq -r --arg ctx "$ctx" '.ims.contexts[$ctx].technical_account_id')"
+    echo "TECHNICALACCEMAIL:            $(echo "$config" | jq -r --arg ctx "$ctx" '.ims.contexts[$ctx].technical_account_email')"
     echo "IMSORGID:                     $(echo "$config" | jq -r --arg ctx "$ctx" '.ims.contexts[$ctx].ims_org_id')"
     echo "SCOPES:                       $(echo "$config" | jq --arg ctx "$ctx" '.ims.contexts[$ctx].scopes' | jq -r | jq -r '. | join(",")')"
     echo "AIO_RUNTIME_NAMESPACE:        $(echo "$config" | jq -r '.runtime.namespace')"
@@ -158,8 +158,8 @@ Here's a sample output
 ➜  test-deploy-service ../fetch-secrets.sh 
 CLIENTID:                     dc***************************64c
 CLIENTSECRET:                 p**-******************************Nl
-TECHNICALACCOUNTID:           0*********************AC@techacct.adobe.com
-TECHNICALACCOUNTEMAIL:        2******d-4**c-4**2-8**f-1*********a4@techacct.adobe.com
+TECHNICALACCID:               0*********************AC@techacct.adobe.com
+TECHNICALACCEMAIL:            2******d-4**c-4**2-8**f-1*********a4@techacct.adobe.com
 IMSORGID:                     6*********************01@AdobeOrg
 SCOPES:                       ["AdobeID","openid","read_organizations","additional_info.projectedProductContext","additional_info.roles","adobeio_api","read_client_secret","manage_client_secrets"]
 AIO_RUNTIME_NAMESPACE:        2***4-manikdeploytest-stage
@@ -204,8 +204,8 @@ Repeat steps 2-5 for the Production workspace. We have included some notes for e
 |----|------------|----------------------------------------------|-------------------------------|
 |  1 | Production | CLIENTID_PROD                                | deploy_prod.yml               |
 |  2 | Production | CLIENTSECRET_PROD                            | deploy_prod.yml               |
-|  3 | Production | TECHNICALACCOUNTID_PROD                      | deploy_prod.yml               |
-|  4 | Production | TECHNICALACCOUNTEMAIL_PROD                   | deploy_prod.yml               |
+|  3 | Production | TECHNICALACCID_PROD                          | deploy_prod.yml               |
+|  4 | Production | TECHNICALACCEMAIL_PROD                       | deploy_prod.yml               |
 |  5 | Production | IMSORGID_PROD                                | deploy_prod.yml               |
 |  6 | Production | SCOPES_PROD                                  | deploy_prod.yml               |
 |  7 | Production | AIO_RUNTIME_NAMESPACE_PROD                   | deploy_prod.yml               |
