@@ -145,7 +145,7 @@ runtimeManifest:
 
 > Note: the example above sets limit values.  Limits are defined as:
 > 
-> - `timeout`: the maximum time that an action may run before it is terminated (in msec., default 60000 [1 minute], min: 100 [0.1 second], max: 3600000 [60 hours])
+> - `timeout`: the maximum time that an action may run before it is terminated (in msec., default 60000 [1 minute], min: 100 [0.1 second], max: 3600000 [60 minutes])
 >   - For web actions served from the Content Delivery Network, there is a hard timeout limit of 30 seconds.
 > - `memory`: the maximum allocation of memory for an action (in MB, default: 256, min: 128, max: 4096)
 >   - Specifying nonstandard values like 671 can increase the number of "cold start" container initializations: Runtime maintains pre-warmed containers only for common memory sizes (128, 256, 512, 1024, etc.)
