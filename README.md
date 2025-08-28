@@ -1,35 +1,91 @@
-# App Builder Docs
+# Adobe App Builder Documentation
 
-For prod:
-see https://developer.adobe.com/app-builder/docs/intro_and_overview/
+Adobe App Builder documentation site deployed to EDS.
+The production address is https://developer.adobe.com/app-builder/
 
-For stage:
-see https://developer-stage.adobe.com/app-builder/docs/intro_and_overview/
+## Quick Start
 
-## Git config
-git config core.ignorecase false
+For local development, you need to start three servers:
 
-## How to set navigation
-Create a directory hierarchy in `src/pages/config.md`
+1. **Main dev server** (this repo):
+```bash
+npm run dev
+```
 
-## Local development
-This is not possible at the moment (we're still working on it)
+2. **ADP Devsite** ([adp-devsite](https://github.com/AdobeDocs/adp-devsite)):
+```bash
+git clone https://github.com/AdobeDocs/adp-devsite
+cd adp-devsite
+npm install
+npm run dev
+```
 
-## Launching a deploy
-Go to Actions > Deployment > Run workflow
-Select the branch you like to deploy from.
-Select the environment to deploy to.  
-Only the most recently committed files will be deployed by default.
-You may specify a particular commit using its SHA to initiate the deployment from that point.
-Alternatively, you may choose to deploy all files in a single operation.
+3. **Runtime connector** ([devsite-runtime-connector](https://github.com/aemsites/devsite-runtime-connector)):
+```bash
+git clone https://github.com/aemsites/devsite-runtime-connector
+cd devsite-runtime-connector
+npm install
+npm run dev
+```
 
-## Check Links
-Run the yarn checkLinks command to identify any broken local or external links.
+Once all three servers are running, navigate to http://localhost:3000
 
-## Where to ask for help
+## Commands
 
-The slack channel #adobe-developer-website is our main point of contact for help. Feel free to join the channel and ask any questions.
+**Development**
+- `npm run dev` - Start local server (requires other services above)
 
-## Troubleshoot
+**Content Management**
+- `npm run buildNavigation` - Generate navigation structure (one-time Gatsby migration only)
+- `npm run buildRedirections` - Build URL redirections (one-time Gatsby migration only)
+- `npm run renameFiles` - Rename files to Adobe conventions
+- `npm run normalizeLinks` - Normalize internal/external links
 
-https://wiki.corp.adobe.com/display/AdobeCloudPlatform/The+Next+Generation+Developer+Website+-+DevDocs+and+DevBiz#DeveloperWebsite--63309052
+**Validation**
+- `npm run lint` - Run linting checks
+
+**Site Features**
+- `npm run buildSiteWideBanner` - Generate site-wide banner
+
+*All commands use `@AdobeDocs/adp-devsite-utils` for standardized tooling.*
+
+## Linting
+
+**Automated**: Runs on PRs when `src/pages/**` files change
+**Manual**: `npm run lint`
+
+Validates markdown syntax, links, content structure, and Adobe style guidelines.
+
+**Troubleshooting**: If pages are not showing up as expected, check lint warnings to identify potential issues.
+
+## Navigation
+
+To update navigation structure:
+1. Edit `src/pages/config.md` directly
+
+*Note: `npm run buildNavigation` is only needed for initial Gatsby migration.*
+
+## Redirects
+
+To manage URL redirections:
+1. Edit `src/pages/redirects.json` directly
+
+*Note: `npm run buildRedirections` is only needed for initial Gatsby migration.*
+
+## Deployment
+
+**Staging**:
+- Actions > Deployment > Run workflow
+- Can deploy from any branch to staging
+- Uses incremental builds from last commit by default
+- Use `deployAll` function for full rebuild if needed
+- **URL**: `developer-stage.adobe.com/app-builder/`
+
+**Production**:
+- Automatically deploys from `main` branch
+- Uses incremental builds from last commit
+- **URL**: `developer.adobe.com/app-builder/`
+
+## Support
+
+Join `#adobe-developer-website` Slack channel for help.

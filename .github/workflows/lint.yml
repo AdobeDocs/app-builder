@@ -1,0 +1,17 @@
+---
+    name: Lint
+    on:
+      pull_request:
+        branches: [main]
+        paths:
+          - 'src/pages/**'
+    
+    jobs:
+      lint:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout
+            uses: actions/checkout@v4
+    
+          - name: Lint
+            run: npx --yes github:AdobeDocs/adp-devsite-utils runLint -v
