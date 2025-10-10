@@ -10,14 +10,14 @@ Stay up to date with the latest features, improvements, and bug fixes in App Bui
 
 #### Bug Fixes
 
-- Fixed an issue in the @adobe/aio-lib-runtime library
+- Fixed proxy SSL CONNECT issues with openwhisk library
 
 #### Upgrade Instructions
 
 To use the update in the aio-cli, just reinstall the cli:
 
 ```
-npm install -g @adobe/aio-lib-runtime
+npm install -g @adobe/aio-cli
 ```
 
 [Full release changes](https://github.com/adobe/aio-lib-runtime/releases/tag/7.1.8)
@@ -54,6 +54,25 @@ To update in the aio-cli, just reinstall the cli if you are on `aio-cli@11.x`. I
 No user action is needed, all future installs will use the new version of the service.
 
 ## September 2025
+
+*September 30, 2025*
+
+### @adobe/aio-lib-runtime 7.1.7
+
+#### Bug Fixes
+
+- Fixed a TypeError that occurred during deployment when attempting to read the 'length' property of an undefined object
+
+#### Upgrade Instructions
+
+To use the update in the aio-cli, just reinstall the cli:
+
+```
+npm install -g @adobe/aio-cli
+```
+
+[Full release changes](https://github.com/adobe/aio-lib-runtime/releases/tag/7.1.7)
+
 
 *September 22, 2025*
 
