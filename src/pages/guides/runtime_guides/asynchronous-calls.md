@@ -10,19 +10,19 @@ First, we create an action. This one, `worker`, uses a setTimeout function to si
 
 ```
 // worker.js
-async function main() {
-    return new Promise(function(resolve, reject) {
-        // simulates a long-running task
-        setTimeout(function() {
-            const result = {
-                statusCode: 200,
-                body: { 
-                    payload: 'Hello from the long running job!'
-                }
-            };
-            resolve(result);
-        }, 100000); // 100 seconds
-    });   
+async function main(args) {
+  return new Promise(function(resolve, reject) {
+      setTimeout(function() {
+          const result = {
+              statusCode: 200,
+              body: { 
+                  payload: 'Hello from the long running job!',
+                  args: args.foo // sample arg from caller
+              }
+          };
+          resolve(result);
+      }, 100000);
+  });   
 }
 
 exports.main = main;
@@ -40,13 +40,14 @@ Then we build a web action that calls the `worker` action we created above. We c
 // web-action.js
 const openwhisk = require('openwhisk');
 
-// This returns the activation ID of the action that it called
+ // This returns the activation ID of the action that it called
 async function main() {
     const ow = openwhisk();
     const result = await ow.actions.invoke({
       name: 'worker', // the name of the action to invoke
       blocking: false, // this is the flag that instructs to execute the worker asynchronous
-      result: true
+      result: true,
+      params: { foo: 'bar' } // send args to the worker
     }); 
     return {
       statusCode: 200,
