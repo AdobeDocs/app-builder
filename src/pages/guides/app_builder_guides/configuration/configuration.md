@@ -226,7 +226,7 @@ Learn more about API Gateway Configuration with the [Action APIs QuickStart](htt
 
 #### Hooks to customize the tooling
 
-Hooks can be used to customize `aio app` commands, as documented [here](https://github.com/AdobeDocs/project-firefly/blob/main/src/pages/guides/app-hooks.md).
+Hooks can be used to customize `aio app` commands, as documented [here]([https://github.com/AdobeDocs/project-firefly/blob/main/src/pages/guides/app-hooks.md](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/app-hooks).
 
 ### Extension-specific configuration
 
