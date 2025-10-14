@@ -10,17 +10,18 @@ First, we create an action. This one, `worker`, uses a setTimeout function to si
 
 ```
 // worker.js
-function main(args) {
+async function main() {
     return new Promise(function(resolve, reject) {
+        // simulates a long-running task
         setTimeout(function() {
-            var result = {
+            const result = {
                 statusCode: 200,
                 body: { 
                     payload: 'Hello from the long running job!'
                 }
             };
             resolve(result);
-        }, 100000);
+        }, 100000); // 100 seconds
     });   
 }
 
@@ -36,19 +37,21 @@ aio rt:action:create my-worker worker.js -t 120000
 Then we build a web action that calls the `worker` action we created above. We can simplify this step by using the OpenWhisk Node module. Since it's part of I/O Runtime Node.js environment, we don't need to pack the module with our code. 
 
 ```
-//web-action.js
-let openwhisk = require("openwhisk");
+// web-action.js
+const openwhisk = require('openwhisk');
 
- // This returns the activation ID of the action that it called
-function main(args) {
-    let ow = openwhisk();
-    return ow.actions.invoke({
-                    name: 'worker', // the name of the action to invoke
-                    blocking: false, // this is the flag that instructs to execute the worker asynchronous
-                    result: false,
-                    params: args
-                    }); 
-
+// This returns the activation ID of the action that it called
+async function main() {
+    const ow = openwhisk();
+    const result = await ow.actions.invoke({
+      name: 'worker', // the name of the action to invoke
+      blocking: false, // this is the flag that instructs to execute the worker asynchronous
+      result: true
+    }); 
+    return {
+      statusCode: 200,
+      body: result
+    }
 }
 
 exports.main = main;
