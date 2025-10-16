@@ -199,9 +199,77 @@ actions:
 
 The same [annotations](configuration.md#annotations) available for regular actions can be applied to sequences, including `require-adobe-auth` and `disable-download`.
 
-## Testing Sequences
+## CLI Commands for Sequences
 
-After configuring your sequence in `app.config.yaml`, you can test it using the CLI:
+While this guide focuses on declarative configuration in `app.config.yaml`, you can also manage sequences using CLI commands. This is useful for testing, one-off tasks, or when you need to create sequences programmatically.
+
+### Creating Sequences via CLI
+
+You can create a sequence directly using the `aio` CLI:
+
+```bash
+# Create a basic sequence
+aio runtime action create my-sequence --sequence action1,action2,action3
+
+# Create a sequence with full paths
+aio runtime action create my-sequence --sequence /namespace/pkg/action1,/namespace/pkg/action2
+
+# Create a web-enabled sequence
+aio runtime action create my-sequence --sequence action1,action2,action3 --web true
+
+# Create a sequence with annotations
+aio runtime action create my-sequence --sequence action1,action2 --annotation require-adobe-auth true
+```
+
+### Listing and Getting Sequence Details
+
+```bash
+# List all actions (including sequences)
+aio runtime action list
+
+# Get details about a specific sequence
+aio runtime action get my-sequence
+
+# Get the sequence definition in JSON format
+aio runtime action get my-sequence --summary
+```
+
+### Invoking Sequences
+
+```bash
+# Invoke a sequence
+aio runtime action invoke my-sequence --result
+
+# Invoke with parameters
+aio runtime action invoke my-sequence --param key1 value1 --param key2 value2 --result
+
+# Invoke asynchronously (non-blocking)
+aio runtime action invoke my-sequence --param key value
+
+# Invoke and get the activation ID
+aio runtime action invoke my-sequence --result --blocking
+```
+
+### Updating Sequences
+
+```bash
+# Update an existing sequence
+aio runtime action update my-sequence --sequence newaction1,newaction2,newaction3
+
+# Update sequence annotations
+aio runtime action update my-sequence --annotation description "Updated description"
+```
+
+### Deleting Sequences
+
+```bash
+# Delete a sequence
+aio runtime action delete my-sequence
+```
+
+### Testing Sequences
+
+After deploying your application with sequences defined in `app.config.yaml`, you can test them:
 
 ```bash
 # Deploy your application
@@ -212,18 +280,37 @@ aio runtime action invoke my-package/my-sequence --result
 
 # With parameters
 aio runtime action invoke my-package/my-sequence --param key value --result
+
+# Get activation logs
+aio runtime activation list
+aio runtime activation get <activation-id>
 ```
 
-## Migration from CLI
+### CLI vs Declarative Configuration
 
-If you previously created sequences using CLI commands:
+**Use CLI commands when:**
+- Prototyping or testing sequences quickly
+- Creating temporary sequences for debugging
+- Automating sequence management in scripts
+- Working outside of an App Builder project
 
+**Use `app.config.yaml` when:**
+- Building production applications
+- Managing sequences as part of your version-controlled codebase
+- Deploying sequences consistently across environments
+- Working within an App Builder project structure
+
+## Migration from CLI to Declarative Configuration
+
+If you previously created sequences using CLI commands, you can migrate them to declarative configuration in `app.config.yaml` for better maintainability and version control.
+
+**Before (CLI approach):**
 ```bash
-aio runtime action create my-sequence --sequence action1,action2,action3
+aio runtime action create my-sequence --sequence action1,action2,action3 --web true
+aio runtime action update my-sequence --annotation require-adobe-auth true
 ```
 
-You can now declare them in `app.config.yaml`:
-
+**After (Declarative approach):**
 ```yaml
 runtimeManifest:
   packages:
@@ -234,14 +321,23 @@ runtimeManifest:
             - action1
             - action2
             - action3
+          web: true
+          annotations:
+            require-adobe-auth: true
 ```
 
-This declarative approach makes your sequence configuration version-controlled and easier to maintain.
+**Benefits of migration:**
+- Sequences are version-controlled alongside your application code
+- Consistent deployment across different environments
+- Easier to review changes through pull requests
+- Reduces manual CLI commands and potential human error
+- Better integration with CI/CD pipelines
 
 ## Additional Resources
 
 - [OpenWhisk Sequence Specification](https://github.com/apache/openwhisk-wskdeploy/blob/master/specification/html/spec_sequences.md)
 - [App Builder Configuration](configuration.md)
+- [Runtime Sequences & Compositions](../../runtime_guides/reference_docs/sequences-compositions.md) - In-depth CLI usage and compositions
 - [Runtime System Settings](../../runtime_guides/system-settings.md)
 
 ## Next Steps

@@ -46,6 +46,7 @@
                 - [Splunk Cloud](guides/app_builder_guides/application_logging/splunk-cloud.md) 
                 - [Splunk Enterprise](guides/app_builder_guides/application_logging/splunk-enterprise.md) 
             - [Configuration](guides/app_builder_guides/configuration/configuration.md) 
+                - [Sequences](guides/app_builder_guides/configuration/sequences.md) 
                 - [Webpack Configuration](guides/app_builder_guides/configuration/webpack-configuration.md) 
             - [Deployment](guides/app_builder_guides/deployment/deployment.md) 
                 - [CI/CD overview](guides/app_builder_guides/deployment/cicd-for-app-builder-apps.md) 
