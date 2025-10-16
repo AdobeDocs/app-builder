@@ -27,7 +27,7 @@ Sequences are ideal when you need to:
 **When NOT to use sequences:**
 - When you need conditional logic or branching
 - When actions need to run in parallel
-- When you need error handling between steps (use a conductor action instead)
+- When you need error handling between steps (use a [conductor action](https://github.com/apache/incubator-openwhisk-composer/blob/master/docs/COMBINATORS.md) instead)
 
 ## Basic Syntax
 
