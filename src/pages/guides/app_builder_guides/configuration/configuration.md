@@ -232,12 +232,9 @@ Sequences allow you to chain multiple actions together, where the output of one 
 runtimeManifest:
   packages:
     my-package:
-      actions:
+      sequences:
         my-sequence:
-          sequence:
-            - action1
-            - action2
-            - action3
+          actions: action1, action2, action3
           web: true
 ```
 

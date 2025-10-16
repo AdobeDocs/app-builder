@@ -31,18 +31,15 @@ Sequences are ideal when you need to:
 
 ## Basic Syntax
 
-Sequences are declared in your `app.config.yaml` file under the `actions` section of the `runtimeManifest`. The key difference from regular actions is that sequences use the `sequence` property instead of `function` to define the ordered list of actions to execute.
+Sequences are declared in your `app.config.yaml` file under the `sequences` section of the `runtimeManifest`, separate from regular actions.
 
 ```yaml
 runtimeManifest:
   packages:
     my-package:
-      actions:
+      sequences:
         my-sequence:
-          sequence:
-            - action1
-            - action2
-            - action3
+          actions: action1, action2, action3
 ```
 
 ## Complete Example
@@ -76,13 +73,11 @@ application:
           format-output:
             function: actions/format-output/index.js
             runtime: nodejs:20
-          
-          # The sequence that chains the actions together
+        
+        # The sequence that chains the actions together
+        sequences:
           data-pipeline:
-            sequence:
-              - validate-input
-              - process-data
-              - format-output
+            actions: validate-input, process-data, format-output
             web: true
             annotations:
               require-adobe-auth: true
@@ -93,12 +88,9 @@ application:
 When referencing actions in a sequence, you can use simple names (if in the same package) or full paths:
 
 ```yaml
-actions:
+sequences:
   my-sequence:
-    sequence:
-      - /namespace/package/action1
-      - /namespace/package/action2
-      - action3  # Same package
+    actions: /namespace/package/action1, /namespace/package/action2, action3
 ```
 
 ## Web Actions as Sequences
@@ -109,12 +101,9 @@ Sequences can be exposed as web actions just like regular actions:
 runtimeManifest:
   packages:
     my-package:
-      actions:
+      sequences:
         public-api-sequence:
-          sequence:
-            - authenticate
-            - process-request
-            - format-response
+          actions: authenticate, process-request, format-response
           web: true
           web-export: true
 ```
@@ -150,14 +139,11 @@ application:
           send-notification:
             function: actions/send-notification/index.js
             runtime: nodejs:20
-          
-          # Sequence that orchestrates the deletion workflow
+        
+        # Sequence that orchestrates the deletion workflow
+        sequences:
           delete-workflow:
-            sequence:
-              - list-resources
-              - validate-deletion
-              - delete-resources
-              - send-notification
+            actions: list-resources, validate-deletion, delete-resources, send-notification
             web: true
             annotations:
               require-adobe-auth: true
@@ -185,11 +171,9 @@ If any action in the sequence fails:
 Sequences can have their own annotations and default parameters:
 
 ```yaml
-actions:
+sequences:
   my-sequence:
-    sequence:
-      - action1
-      - action2
+    actions: action1, action2
     inputs:
       defaultParam: "value"
     annotations:
@@ -315,12 +299,9 @@ aio runtime action update my-sequence --annotation require-adobe-auth true
 runtimeManifest:
   packages:
     my-package:
-      actions:
+      sequences:
         my-sequence:
-          sequence:
-            - action1
-            - action2
-            - action3
+          actions: action1, action2, action3
           web: true
           annotations:
             require-adobe-auth: true
