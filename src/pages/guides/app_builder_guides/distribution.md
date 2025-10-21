@@ -267,6 +267,44 @@ Product version information can be found on [Adobe Experience League](https://ex
 
 Once an app is configured for public distribution, it can be packaged and uploaded to [Adobe Developer Distribution](https://developer.adobe.com/developer-distribution/). 
 
+#### Prerequisites
+
+Before running `aio app pack`, especially on a freshly checked-out project that hasn't been run before, you need to ensure the project is properly configured and bound to an App Builder workspace. The packaging command requires that your local project is connected to a workspace with the necessary APIs and credentials.
+
+If you're working with a newly cloned repository or a project that hasn't been set up yet, follow these steps:
+
+1. **Create an App Builder project** in the [Adobe Developer Console](https://developer.adobe.com/console)
+   
+2. **Add the required APIs** to your workspace in the Developer Console
+
+3. **Download the workspace configuration**
+   - In the Developer Console, navigate to your workspace
+   - Click "Download all" to get the `workspace.json` file
+
+4. **Bind your local project to the workspace**
+   ```sh
+   aio app use workspace.json
+   ```
+
+5. **Install dependencies**
+   ```sh
+   npm install
+   ```
+
+6. **Run the app at least once** to complete the configuration binding
+   ```sh
+   aio app run
+   ```
+   
+   Or alternatively:
+   ```sh
+   aio app dev
+   ```
+
+Once these steps are completed, your project will be properly configured and bound to the workspace, allowing you to successfully run the packaging command.
+
+#### Running the Pack Command
+
 The `aio app pack` command verifies and bundles applications for upload. In the root of your app folder, run:
 
 ```sh
