@@ -4,6 +4,10 @@
 
 Sequences in Adobe App Builder allow you to chain multiple actions together, where the output of one action becomes the input of the next. While sequences can be created using CLI commands, they can also be configured declaratively in your `app.config.yaml` file following the [OpenWhisk specification](https://github.com/apache/openwhisk-wskdeploy/blob/master/specification/html/spec_sequences.md).
 
+<InlineAlert variant="info" slots="text" />
+
+To get started quickly with a hands-on example, check out the [action-sequences QuickStart](https://github.com/adobe/appbuilder-quickstarts/tree/master/action-sequences) which provides a ready-to-run sample application.
+
 ## What are Sequences?
 
 A sequence is a special type of action that executes a series of actions in order. The result of one action is passed as the input to the next action in the sequence. This provides a powerful way to compose actions without writing additional code to handle the chaining logic.
@@ -317,6 +321,7 @@ runtimeManifest:
 
 ## Additional Resources
 
+- [Action Sequences QuickStart](https://github.com/adobe/appbuilder-quickstarts/tree/master/action-sequences) - Hands-on sample application to get started quickly
 - [OpenWhisk Sequence Specification](https://github.com/apache/openwhisk-wskdeploy/blob/master/specification/html/spec_sequences.md)
 - [App Builder Configuration](configuration.md)
 - [Runtime Sequences & Compositions](../../runtime_guides/reference_docs/sequences-compositions.md) - In-depth CLI usage and compositions
