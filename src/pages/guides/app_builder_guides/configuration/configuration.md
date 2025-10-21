@@ -224,6 +224,22 @@ runtimeManifest:
 
 Learn more about API Gateway Configuration with the [Action APIs QuickStart](https://github.com/adobe/appbuilder-quickstarts/tree/master/action-apis).
 
+##### Sequences
+
+Sequences allow you to chain multiple actions together, where the output of one action becomes the input of the next. They can be configured declaratively in your `app.config.yaml` file.
+
+```yaml
+runtimeManifest:
+  packages:
+    my-package:
+      sequences:
+        my-sequence:
+          actions: action1, action2, action3
+          web: true
+```
+
+Learn more about configuring sequences in the [Sequences Guide](sequences.md).
+
 #### Hooks to customize the tooling
 
 Hooks can be used to customize `aio app` commands, as documented [here]([https://github.com/AdobeDocs/project-firefly/blob/main/src/pages/guides/app-hooks.md](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/app-hooks).
@@ -405,6 +421,8 @@ The legacy configuration system does not have an `app.config.yaml` and instead u
 
 If you can't view your application in the App Builder Catalog of Adobe Experience Cloud, this migration protocol may be useful: [Migrating Apps to DX Experience Cloud v1 SPAs](../exc_app/migrate-app-to-exp-cloud-spa.md).
 
-Proceed to [Webpack Configuration](webpack-configuration.md).
+Learn more about:
+- [Configuring Sequences](sequences.md) - Chain actions together declaratively
+- [Webpack Configuration](webpack-configuration.md) - Customize your build process
 
 Return to [Guides Index](../../index.md).
