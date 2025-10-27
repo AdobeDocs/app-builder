@@ -4,7 +4,7 @@ keywords:
 - Extensibility
 - API Documentation
 - Developer Tooling
-  title: Dealing with Application State
+title: Dealing with Application State
 ---
 
 # Dealing with Application State
