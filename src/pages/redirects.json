@@ -852,6 +852,18 @@
           "Destination": "/app-builder/docs/guides/app_builder_guides/configuration/cdn-response-headers"
         },
         {
+          "Source": "/app-builder/docs/guides/app_builder_guides/deployment/setting-response-headers",
+          "Destination": "/app-builder/docs/guides/app_builder_guides/configuration/cdn-response-headers"
+        },
+        {
+          "Source": "/app-builder/docs/guides/app_builder_guides/deployment/setting-response-headers/",
+          "Destination": "/app-builder/docs/guides/app_builder_guides/configuration/cdn-response-headers"
+        },
+        {
+          "Source": "/app-builder/docs/guides/app_builder_guides/deployment/setting_response_headers",
+          "Destination": "/app-builder/docs/guides/app_builder_guides/configuration/cdn-response-headers"
+        },
+        {
             "Source": "/app-builder/docs/guides/app_builder_guides/architecture_overview/using-sdks/",
             "Destination": "/app-builder/docs/guides/app_builder_guides/architecture_overview/using-sdks"
         },
