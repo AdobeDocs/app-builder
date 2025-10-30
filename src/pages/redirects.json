@@ -828,8 +828,8 @@
             "Destination": "/app-builder/docs/guides/app_builder_guides/events/custom-events"
         },
         {
-            "Source": "/app-builder/docs/guides/app_builder_guides/deployment/setting-response-headers/",
-            "Destination": "/app-builder/docs/guides/app_builder_guides/deployment/setting-response-headers"
+            "Source": "/app-builder/docs/guides/app_builder_guides/configuration/cdn-response-headers/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/configuration/cdn-response-headers"
         },
         {
             "Source": "/app-builder/docs/guides/app_builder_guides/deployment/deployment/",
@@ -1100,12 +1100,12 @@
             "Destination": "/app-builder/docs/guides/app_builder_guides/application_logging/azure-log-analytics"
         },
         {
-            "Source": "/app-builder/docs/guides/app_builder_guides/deployment/setting_response_headers/",
-            "Destination": "/app-builder/docs/guides/app_builder_guides/deployment/setting-response-headers"
+            "Source": "/app-builder/docs/guides/app_builder_guides/configuration/cdn_response_headers/",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/configuration/cdn-response-headers"
         },
         {
-            "Source": "/app-builder/docs/guides/app_builder_guides/deployment/setting_response_headers",
-            "Destination": "/app-builder/docs/guides/app_builder_guides/deployment/setting-response-headers"
+            "Source": "/app-builder/docs/guides/app_builder_guides/configuration/cdn_response_headers",
+            "Destination": "/app-builder/docs/guides/app_builder_guides/configuration/cdn-response-headers"
         },
         {
             "Source": "/app-builder/docs/guides/app_builder_guides/deployment/credential_rotation/",
