@@ -420,5 +420,6 @@ If you can't view your application in the App Builder Catalog of Adobe Experienc
 Learn more about:
 - [Configuring Sequences](sequences.md) - Chain actions together declaratively
 - [Webpack Configuration](webpack-configuration.md) - Customize your build process
+- [Configuring CDN Response Headers](cdn-response-headers.md) - Customize your web-assets response headers
 
 Return to [Guides Index](../../index.md).
