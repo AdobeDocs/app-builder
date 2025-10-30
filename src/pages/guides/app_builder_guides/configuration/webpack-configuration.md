@@ -208,6 +208,8 @@ module.exports = (env) => ({
 
 ## Next steps
 
+Learn more about [CDN Response Headers](cdn-response-headers.md)
+
 Return to [Configuration](configuration.md).
 
 Return to [Guides Index](../../index.md).

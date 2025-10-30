@@ -60,7 +60,7 @@ Again, it is critically important to pass all parameters in a single `update` ca
 
 ## Next steps
 
-Continue to [Setting Response Headers](setting-response-headers.md).
+This concludes the Deployment section.
 
 Return to [Deployment Overview](deployment.md).
 

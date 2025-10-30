@@ -2,17 +2,18 @@
 keywords:
   - cli
   - response headers
-title: Setting Response Headers
+title: CDN Response Headers
 description: How to set response headers for your static assets
 ---
 
-# Setting Response Headers
+# CDN Response Headers
 
 For applications with UI, static assets such as HTML, Javascript, css, and images are served by the Content Content Delivery Network through the `adobeio-static.net` domain. App Builder has supported setting response headers for this static content since aio-cli version 9.3.0.
 
 This feature applies to any App Builder applications with UI, and is helpful for use cases such as:
 
 - Setting `CORS` Headers to enforce access policies
+- Controlling web-assets caching behavior via [`Cache-Control` headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Cache-Control)
 - Enabling `Content Security Policy` for assets
 - Adding any `custom headers` required by the application UI
 
@@ -50,6 +51,9 @@ application:
         Content-security-policy: default-src 'self'
       /lib/sample.js: # add headers to specific ile
         Content-security-policy: default-src 'self' example.com *.example.com
+      /*.png:
+        # cache all png files for 1 hour at CDN level and 1 minute in browser
+        cache-control: s-maxage=3600, max-age=60
 ```
 
 Once headers are added, they can be deployed with the app using the `aio app:deploy` command. Note that the paths specified in rules are relative to the distributable folder created after the application build, and not to the application root.
@@ -78,29 +82,28 @@ Listed headers are ignored because they are either meant for internal use or are
 2. age
 3. allow
 4. alt-svc
-5. cache-control
-6. connection
-7. content-length
-8. content-type
-9. content-disposition
-10. content-encoding
-11. content-language
-12. content-length
-13. date
-14. etag
-15. expires
-16. last-modified
-17. location
-18. server
-19. trailer
-20. transfer-encoding
-21. upgrade
-22. x-cache
+5. connection
+6. content-length
+7. content-type
+8. content-disposition
+9. content-encoding
+10. content-language
+11. content-length
+12. date
+13. etag
+14. expires
+15. last-modified
+16. location
+17. server
+18. trailer
+19. transfer-encoding
+20. upgrade
+21. x-cache
 
 ## Next steps
 
-This concludes the Deployment section.
+This concludes the Configuration section.
 
-Return to [Deployment Overview](deployment.md).
+Return to [Configuration Overview](configuration.md).
 
 Return to the [Guides Index](../../index.md).

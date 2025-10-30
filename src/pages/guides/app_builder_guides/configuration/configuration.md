@@ -98,10 +98,6 @@ web: <path to web folder>
 unitTest: <path to unit test folder>
 e2eTest: <path to e2e test folder>
 dist: <path to build output folder>
-htmlCacheDuration: <cache duration for UI .html files, default: 60s>
-jsCacheDuration: <cache duration for UI .js files, default: about a week>
-cssCacheDuration: <cache duration for UI .css files, default: about a week>
-imageCacheDuration: <cache duration for UI image (.jpg, .png, .gif, etc.) files, default: about a week>
 tvmurl: <alternative tvm url used to upload the UI>
 awsaccesskeyid: <upload UI to own s3, provide credentials>
 awssecretaccesskey: <upload UI to own s3, provide credentials>
@@ -424,5 +420,6 @@ If you can't view your application in the App Builder Catalog of Adobe Experienc
 Learn more about:
 - [Configuring Sequences](sequences.md) - Chain actions together declaratively
 - [Webpack Configuration](webpack-configuration.md) - Customize your build process
+- [Configuring CDN Response Headers](cdn-response-headers.md) - Customize your web-assets response headers
 
 Return to [Guides Index](../../index.md).
