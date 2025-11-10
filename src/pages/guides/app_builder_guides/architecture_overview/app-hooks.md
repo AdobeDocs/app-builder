@@ -100,6 +100,10 @@ hooks:
 
 ## Using JavaScript files
 
+> [!NOTE]
+>
+> When using JavaScript files, be aware that if your `hooks` definitions are in a file other than `app.config.yaml` (and then used via the `$include` directive), the paths to the hook JS scripts must be relative to the root `app.config.yaml` file.
+
 You can specify a JavaScript file that contains your hook code. The file must export a function. 
 
 **app.config.yaml**
