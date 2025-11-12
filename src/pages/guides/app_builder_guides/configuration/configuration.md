@@ -301,7 +301,7 @@ extensions:
     $include: ./src/dx-excshell-1/ext.config.yaml
 ```
 
-Except for `hooks` definitions that point to JavaScript files (which will always be resolved relative to the root `app.config.yaml` file), any configuration paths defined in other files (like `./src/dx-excshell-1/ext.config.yaml`) must be relative to that file.
+Configuration paths defined in other files (such as `./src/dx-excshell-1/ext.config.yaml`) must be relative to that file. The exception is `hooks` definitions that point to JavaScript files, which are always resolved relative to the root `app.config.yaml` file.
 
 ### Public distribution configuration
 
