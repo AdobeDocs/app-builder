@@ -100,7 +100,7 @@ hooks:
 
 ## Using JavaScript files
 
-You can specify a JavaScript file that contains your hook code. The file must export a function. 
+You can specify a JavaScript file that contains your hook code. The file must export a function. If you are defining a hook in a separate config file (e.g. `ext.config.yaml`), that later is included in the root `app.config.yaml` file (via the `$include` directive), the hook path must be relative to the root.
 
 **app.config.yaml**
 
