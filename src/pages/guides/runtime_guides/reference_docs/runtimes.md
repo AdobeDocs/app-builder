@@ -4,6 +4,15 @@ Adobe I/O Runtime supports the three latest Node.js versions (see the [Node.js r
 
 These npm modules are pre-installed, so you don't need to package them with your action code to use them:
 
+### Node.js v24.0.1
+
+    "express": "4.18.2",
+    "openwhisk": "3.21.8",
+    "body-parser": "1.20.3",
+    "redis": "4.6.13",
+    "dnscache": "1.0.2",
+    "prom-client": "14.2.0"
+
 ### Node.js v22.6.0
 
     "express": "4.18.2",
@@ -58,13 +67,13 @@ These npm modules are pre-installed, so you don't need to package them with your
 To specify a kind:
 
 ```
-aio rt:action:create actionName fromFile.js --kind nodejs:20 
+aio rt:action:create actionName fromFile.js --kind nodejs:20
 ```
 
 or
 
 ```
-aio rt:action:create actionName fromFile.js --kind nodejs:18 
+aio rt:action:create actionName fromFile.js --kind nodejs:18
 ```
 
 These images are on Docker Hub:
