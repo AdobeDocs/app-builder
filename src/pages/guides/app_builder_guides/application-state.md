@@ -64,7 +64,7 @@ Please refer to the [feature matrix](#feature-matrix) for a detailed comparison.
 ***How is my data stored?***
 
 - State is a multi-tenant storage. Your data is isolated in a "State container" which maps to your I/O Runtime namespace and application Workspace. This means that each application Workspace has its own isolated data.
-- You have the option to store data in either the `amer`, `emea` or `apac` region. These regions operate independently, so treat them as separate instances. You may prefer one region over the other to optimize latency, as it may be closer to your users, or for compliance reasons such as GDPR.
+- You have the option to store data in either the `amer`, `emea`, `apac`, or `aus` region. These regions operate independently, so treat them as separate instances. You may prefer one region over the other to optimize latency, as it may be closer to your users, or for compliance reasons such as GDPR.
 - Your data is not eternal. There is a configurable time-to-live (TTL) for each key-value pair, the default is 1 day and the maximum is 1 year (365 days).
 
 Region Acronyms are abbreviations for one or more continents that are part of a business region.
@@ -72,6 +72,7 @@ Region Acronyms are abbreviations for one or more continents that are part of a 
 - `amer`: North, Central, and South America. Data is stored in the US.
 - `apac`: Asia and Pacific. Data is stored in Japan.
 - `emea`: Europe, the Middle East, and Africa. Data is stored in the EU.
+- `aus`: Australia. Data is stored in Australia.
 
 ### Getting started
 
@@ -86,8 +87,9 @@ npm install @adobe/aio-lib-state
 
   // init with implicit I/O Runtime credentials, default region is 'amer'.
   const state = await stateLib.init()
-  // set an explicit region
+  // set an explicit region (emea, apac, or aus)
   const state2 = await stateLib.init({ region: 'emea' })
+  const state3 = await stateLib.init({ region: 'aus' })
 
   // get
   const res = await state.get('key') // res = { value, expiration }
@@ -137,7 +139,7 @@ COMMANDS
   app state stats   Display stats
 ```
 
-The default region is `amer`, to access another region, you can use the `--region` flag or add the `AIO_STATE_REGION=emea` variable to your `.env`.
+The default region is `amer`, to access another region, you can use the `--region` flag or add the `AIO_STATE_REGION` variable to your `.env` (e.g., `AIO_STATE_REGION=aus` for Australia).
 
 Navigate the CLI usage documentation from the repo's [README](https://github.com/adobe/aio-cli-plugin-app-storage?tab=readme-ov-file#usage) or by using the `--help` flag on the desired command.
 
@@ -238,5 +240,5 @@ To learn more please visit the [Adobe I/O File Storage library](https://github.c
 | max key values      | N/A                         | 200K (scalable)                        | N/A                        |
 | max storage         | 1TB                         | 10GB                                   | 10GB                       |
 | max monthly load    | N/A                         | 1TB (scalable)                         | N/A                        |
-| regions             | East US West US read-only   | Amer (US) Emea (EU)  Apac (JPN)        | East US Europe read-only   |
+| regions             | East US West US read-only   | Amer (US) Emea (EU)  Apac (JPN) Aus (AU) | East US Europe read-only   |
 | consistency         | strong                      | strong (CRUD), eventual for `list`     | eventual                   |
