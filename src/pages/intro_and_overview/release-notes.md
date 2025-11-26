@@ -2,6 +2,120 @@
 
 Stay up to date with the latest features, improvements, and bug fixes in App Builder and Adobe I/O Runtime.
 
+## November 2025
+
+*November 27, 2025*
+
+### @adobe/aio-lib-state 5.3.0 & @adobe/aio-cli-plugin-app-storage 1.2.0
+
+#### New Features
+
+- Added support for the new Australia (AUS) region for App Builder State
+- Customers can now store state data in Australia for data residency and compliance requirements
+- All state CLI commands now accept `--region aus` flag
+- Available regions are now: `amer` (US), `emea` (EU), `apac` (Japan), and `aus` (Australia)
+
+#### Usage Examples
+
+Library usage:
+```javascript
+const state = await stateLib.init({ region: 'aus' })
+```
+
+CLI usage:
+```bash
+aio app state get mykey --region aus
+```
+
+Environment variable:
+```bash
+export AIO_STATE_REGION=aus
+```
+
+#### Upgrade Instructions
+
+To use the update, reinstall the aio-cli or update `@adobe/aio-lib-state` to `^5.3.0` in your project's package.json.
+
+[Full release changes - aio-lib-state](https://github.com/adobe/aio-lib-state/releases/tag/5.3.0)  
+[Full release changes - aio-cli-plugin-app-storage](https://github.com/adobe/aio-cli-plugin-app-storage/releases/tag/1.2.0)
+
+
+*November 22, 2025*
+
+### @adobe/aio-lib-state 5.2.0 & @adobe/aio-lib-core-networking 5.1.0
+
+#### New Features
+
+- Added `logRetryAfterSeconds` option to both libraries (defaults to 10 seconds)
+- When a network call is throttled with a `429` response and the `Retry-After` header exceeds this value, it will log the retry as a warning
+- This helps surface when you might be exceeding State service usage limits due to throttling
+- Previously, retries were only logged when logging level was set to `debug`
+- Set `logRetryAfterSeconds` to `0` to disable this behavior
+
+#### Upgrade Instructions
+
+Update the respective dependencies in your projects to the appropriate versions above to enable this feature.
+
+[Full release changes - aio-lib-state](https://github.com/adobe/aio-lib-state/releases/tag/5.2.0)  
+[Full release changes - aio-lib-core-networking](https://github.com/adobe/aio-lib-core-networking/releases/tag/5.1.0)
+
+
+*November 18, 2025*
+
+### @adobe/aio-lib-runtime 7.2.0
+
+#### New Features
+
+- Added Node.js 24 runtime support to App Builder Stage environment
+
+#### Upgrade Instructions
+
+To use the update in the aio-cli, just reinstall the cli:
+
+```
+npm install -g @adobe/aio-cli
+```
+
+[Full release changes](https://github.com/adobe/aio-lib-runtime/releases/tag/7.2.0)
+
+
+*November 18, 2025*
+
+### @adobe/aio-cli 11.0.1
+
+#### Bug Fixes
+
+- Fixed warnings and issues when upgrading to use Node.js v24
+
+#### Upgrade Instructions
+
+Install the cli via:
+
+```
+npm install -g @adobe/aio-cli
+```
+
+[Full release changes](https://github.com/adobe/aio-cli/releases/tag/11.0.1)
+
+
+*November 18, 2025*
+
+### @adobe/aio-lib-templates 3.0.4 & @adobe/aio-cli-plugin-telemetry 2.0.3
+
+#### Bug Fixes
+
+- Fixed proxy issues with telemetry and template listing
+- When using `aio app init`, telemetry and template listing was not going through a configured proxy properly
+- Was not connecting via SSL CONNECT as expected
+
+#### Upgrade Instructions
+
+To get the updates in the aio-cli, just reinstall the cli.
+
+[Full release changes - aio-lib-templates](https://github.com/adobe/aio-lib-templates/releases/tag/3.0.4)  
+[Full release changes - aio-cli-plugin-telemetry](https://github.com/adobe/aio-cli-plugin-telemetry/releases/tag/2.0.3)
+
+
 ## October 2025
 
 *October 7, 2025*
