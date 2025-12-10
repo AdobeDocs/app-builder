@@ -22,6 +22,7 @@
       .replace('guides/security_overview.md', 'guides/security.md')
       .replace('guides/understanding_authentication.md', 'guides/security/understanding_authentication.md')
       .replace('guides/ci_cd_for_firefly_apps.md', 'guides/deployment/ci_cd_for_firefly_apps.md')
+      .replace('guides/app_builder_guides/application-state.md', 'guides/app_builder_guides/storage/application-state.md')
       .replace('faq.md', 'overview/faq.md')
       .replace('reference_documentation.md', 'guides/reference_documentation.md')
       .replace('contribution_guides.md', 'guides/contribution_guides.md')
