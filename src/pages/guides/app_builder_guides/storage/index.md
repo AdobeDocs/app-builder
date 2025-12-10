@@ -11,16 +11,16 @@ title: Storage Options
 
 As part of App Builder, you have out-of-the-box access to three storage services for persisting data dynamically from your Runtime actions: **Database**, **Files**, and **State**. Each service is designed for different use cases, with distinct benefits and trade-offs.
 
-## Quick Comparison
+## Quick comparison
 
 The following table summarizes the key differences between the three storage services:
 
 | Feature | State | Files | Database |
 |---------|-------|-------|----------|
-| **Best for** | Fast key-value access | Large file storage | Complex queries & relationships |
+| **Best for** | Fast key-value access | Large file storage | Complex queries and relationships |
 | **Max value size** | 1 MB | 200 GB | Limited by document size |
 | **Data model** | Key-value pairs | Binary blobs | Document collections |
-| **Query capability** | Get by key, list with glob | Get by path | Rich queries, aggregations, indexes |
+| **Query capability** | Get by key, list with glob | Get by path | Rich queries, aggregations, and indexes |
 | **TTL support** | Yes (max 365 days) | No | No |
 | **Sharing** | No | Yes (pre-signed URLs) | No |
 | **Provisioning** | Automatic | Automatic | Manual (CLI or SDK) |
@@ -46,7 +46,7 @@ State provides a high-performance key-value store optimized for low-latency acce
 - **Storage quotas** — Limited to 10 GB per App Builder pack, 1 GB per production workspace
 - **Eventual consistency for list** — List operations may not immediately reflect recent changes
 
-### When to Use State
+### When to use state
 
 - Session data and user preferences
 - Caching frequently accessed data
@@ -77,7 +77,7 @@ Files provides blob storage for large binary data, built as an abstraction over 
 - **Limited querying** — Only path-based access, no search capabilities
 - **Regional constraints** — Data stored in US regions only
 
-### When to Use Files
+### When to use files
 
 - Storing images, videos, or documents
 - Large payloads over 100 KB
@@ -93,7 +93,7 @@ Database Storage provides a document-style database with a MongoDB-compatible AP
 
 ### Benefits
 
-- **Rich queries** — Full query language with filters, projections, sorting
+- **Rich queries** — Full query language with filters, projections, and sorting
 - **Aggregation pipelines** — Complex data transformations and analytics
 - **Indexing** — Create indexes for optimized query performance
 - **Collections** — Organize data into logical groups
@@ -110,7 +110,7 @@ Database Storage provides a document-style database with a MongoDB-compatible AP
 - **Limited admin commands** — Fewer administrative features than standalone MongoDB
 - **Connection management** — Must handle client connections properly
 
-### When to Use Database
+### When to use database
 
 - Complex data with relationships between entities
 - Data requiring advanced queries and filtering
@@ -121,7 +121,7 @@ Database Storage provides a document-style database with a MongoDB-compatible AP
 
 [Learn more about Database](database.md)
 
-## Choosing the Right Storage
+## Choosing the right storage
 
 Use this decision guide to select the appropriate storage service:
 
@@ -139,7 +139,7 @@ Is your data larger than 100 KB?
                   └── No → Use State (simpler) or Database (more features)
 ```
 
-### Common Patterns
+### Common patterns
 
 | Use Case | Recommended Storage |
 |----------|---------------------|
@@ -153,7 +153,7 @@ Is your data larger than 100 KB?
 | Temporary processing data | State (with TTL) |
 | Cached API responses | State (with TTL) |
 
-## Getting Started
+## Getting started
 
 All three storage services integrate seamlessly with App Builder:
 

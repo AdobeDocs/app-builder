@@ -59,7 +59,7 @@ Please refer to the [feature matrix](#feature-matrix) for a detailed comparison.
 
 ## State
 
-*We've just released a [new State version](https://github.com/adobe/aio-lib-state/releases/tag/4.0.0) built on top of our own storage service. [Legacy State](https://github.com/adobe/aio-lib-state/tree/3.x) (`@adobe/aio-lib-state` < v4 based on CosmosDB) is still available, but we strongly advise new users to use the latest library version to avoid migrating later. Note that this applies also to `State` imported from `@adobe/aio-sdk` < v6. We will be sending out migration steps for existing customers soon. The [feature matrix](#feature-matrix) provides a detailed comparison of both versions.*
+**Note:** We've released a [new State version](https://github.com/adobe/aio-lib-state/releases/tag/4.0.0) built on top of our own storage service. [Legacy State](https://github.com/adobe/aio-lib-state/tree/3.x) (`@adobe/aio-lib-state` < v4 based on CosmosDB) is still available, but we strongly advise new users to use the latest library version to avoid migrating later. Note that this applies also to `State` imported from `@adobe/aio-sdk` < v6. We will be sending out migration steps for existing customers soon. The [feature matrix](#feature-matrix) provides a detailed comparison of both versions.
 
 ***How is my data stored?***
 
@@ -67,7 +67,7 @@ Please refer to the [feature matrix](#feature-matrix) for a detailed comparison.
 - You have the option to store data in either the `amer`, `emea`, `apac`, or `aus` region. These regions operate independently, so treat them as separate instances. You may prefer one region over the other to optimize latency, as it may be closer to your users, or for compliance reasons such as GDPR.
 - Your data is not eternal. There is a configurable time-to-live (TTL) for each key-value pair, the default is 1 day and the maximum is 1 year (365 days).
 
-Region Acronyms are abbreviations for one or more continents that are part of a business region.
+Region acronyms are abbreviations for one or more continents that are part of a business region.
 
 - `amer`: North, Central, and South America. Data is stored in the US.
 - `apac`: Asia and Pacific. Data is stored in Japan.
@@ -156,7 +156,7 @@ Navigate the CLI usage documentation from the repo's [README](https://github.com
 
 The following quotas and limits apply while dealing with Application State associated with your App Builder application.
 
-Quotas are shared across the organisation. Workspace limits are defined at the *workspace* level. The State service may return 429 (rate-limits) or
+Quotas are shared across the organization. Workspace limits are defined at the *workspace* level. The State service may return 429 (rate-limits) or
 403 (storage limits) errors if limits are exceeded.
 
 | Limit                                                                                   | Limit Type                            | Default Limit                                                                     | Can it be Increased?                                                                                                                                                                                                         | Notes                                                                         |
@@ -221,7 +221,7 @@ Set `DEBUG=@adobe/aio-lib-state*` to see debug logs.
 
 To learn more please visit the [Adobe I/O File Storage library](https://github.com/adobe/aio-lib-files?tab=readme-ov-file#adobe-io-lib-files) repository.
 
-## Feature Matrix
+## Feature matrix
 
 |                     | Files                       | State                                  | State Legacy               |
 |---------------------|-----------------------------|----------------------------------------|----------------------------|

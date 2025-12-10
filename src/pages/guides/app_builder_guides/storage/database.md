@@ -11,21 +11,21 @@ title: Database Storage Getting Started
 
 # Overview
 
-Database Storage for App Builder provides document style database persistence for AIO Runtime Actions. The **aio-lib-db**, which is closely modeled on the MongoDB Database Driver for NodeJS, provides the primary programming interface, while the DB Plugin in the AIO CLI provides additional access.
+Database Storage for App Builder provides document-style database persistence for AIO Runtime Actions. The **aio-lib-db**, which is closely modeled on the MongoDB Database Driver for NodeJS, provides the primary programming interface, while the DB Plugin in the AIO CLI provides additional access.
 
-There is a strict one to one relationship between an AIO Project Workspace and a Workspace Database, and each Workspace Database is entirely isolated from all other Workspace Databases.
+There is a strict one-to-one relationship between an AIO Project Workspace and a Workspace Database, and each Workspace Database is entirely isolated from all other Workspace Databases.
 
-Before use a Workspace Database must be explicitly provisioned using either **aio-lib-db** or the AIO CLI. This is a self service operation subject to organizational quotas and limits.
+Before use, a Workspace Database must be explicitly provisioned using either **aio-lib-db** or the AIO CLI. This is a self-service operation subject to organizational quotas and limits.
 
-Workspace Databases are provisioned in one and only one of the following regions: `amer`, `apac` and `emea`. These acronyms are defined as follows:
+Workspace Databases are provisioned in one and only one of the following regions: `amer`, `apac`, and `emea`. These acronyms are defined as follows:
 
 - `amer`: North, Central, and South America. Data is stored in the US.
 - `apac`: Asia and Pacific. Data is stored in Japan.
 - `emea`: Europe, the Middle East, and Africa. Data is stored in the EU.
 
-## DB Plugin in the AIO CLI
+## DB plugin in the AIO CLI
 
-The DB Plugin in the AIO CLI is a utility that facilitates provisioning, initializing, querying and monitoring Workspace Databases.
+The DB Plugin in the AIO CLI is a utility that facilitates provisioning, initializing, querying, and monitoring Workspace Databases.
 
 The following is only a brief introduction to the DB Plugin. For more thorough documentation see [aio-cli-plugin-app-storage](https://github.com/adobe/aio-cli-plugin-app-storage/tree/epic/abdb-implementation).
 
@@ -33,13 +33,13 @@ The following is only a brief introduction to the DB Plugin. For more thorough d
 
 To be included in aio --version >= 11.0.0
 
-### Region Selection
+### Region selection
 
-When using the DB Plugin in the AIO CLI, it important that the region is the same as where the database is provisioned. If not, the connection will fail.
+When using the DB Plugin in the AIO CLI, it is important that the region is the same as where the database is provisioned. If not, the connection will fail.
 
-The default region is `amer`, and to set a different one, you can use the `--region` flag or add the `AIO_DB_REGION` variable to your .env file. Supported regions include `amer`, `emea` and `apac`.
+The default region is `amer`, and to set a different one, you can use the `--region` flag or add the `AIO_DB_REGION` variable to your .env file. Supported regions include `amer`, `emea`, and `apac`.
 
-### Provisioning a Workspace Database
+### Provisioning a workspace database
 
 To provision a Workspace Database in the current AIO Project Workspace is as simple as:
 
@@ -71,7 +71,7 @@ aio app db delete              # Delete the database for your App Builder applic
 
 ### Collections
 
-Collections do not have to be explicitly created in order to start using them. But if specific fields need to be indexed or documents need require schema validation, then creating a collection beforehand would make sense.
+Collections do not have to be explicitly created in order to start using them. But if specific fields need to be indexed or documents require schema validation, then creating a collection beforehand would make sense.
 
 To create an empty collection named inventory:
 
@@ -85,9 +85,7 @@ To create an empty collection with schema validation:
 aio app db collection create inventory --validator '{"type": "object", "required": ["sku", "quantity"]}'
 ```
 
-<InlineAlert variant="info" slots="text" />
-
-Schema validation is much less common in document style databases in comparison with relational databases, and not requiring strict schemas is in fact part of the strength of document style databases. They should used judiciously if at all for App Builder applications. See [Schema Validation](https://www.mongodb.com/docs/manual/core/schema-validation/) in the MongoDB documentation for more information.
+**Note:** Schema validation is much less common in document-style databases in comparison with relational databases, and not requiring strict schemas is in fact part of the strength of document-style databases. They should be used judiciously if at all for App Builder applications. See [Schema Validation](https://www.mongodb.com/docs/manual/core/schema-validation/) in the MongoDB documentation for more information.
 
 Other collection commands:
 
@@ -133,7 +131,7 @@ See [Indexes for Query Optimization](https://www.mongodb.com/docs/drivers/node/c
 
 ### Documents
 
-The DB Plugin for the AIO CLI is useful for inserting documents and making ad hoc queries against collections. It also supports a rich set of of update, replace and delete operations, but those are expected to be used sparingly.
+The DB Plugin for the AIO CLI is useful for inserting documents and making ad hoc queries against collections. It also supports a rich set of update, replace, and delete operations, but those are expected to be used sparingly.
 
 To insert a document into a collection:
 
@@ -170,7 +168,7 @@ aio app db document delete COLLECTION FILTER              # Delete a document fr
 aio app db document count COLLECTION FILTER               # Count documents in a collection
 ```
 
-## Runtime Actions and aio-lib-db
+## Runtime actions and aio-lib-db
 
 The **aio-lib-db** package provides the main programming interface for App Builder Database Storage. It is intentionally modeled on the [MongoDB Node Driver](https://www.mongodb.com/docs/drivers/node/current/) striving to be a near drop-in replacement for applications developed for MongoDB and/or AWS DocumentDB.
 
@@ -182,7 +180,7 @@ Much of the extensive documentation for the [MongoDB Node Driver](https://www.mo
 npm install @adobe/aio-lib-db
 ```
 
-### Basic Usage
+### Basic usage
 
 The following assumes that a Workspace Database has been provisioned in the AIO Project Workspace using the DB Plugin in the AIO CLI as described above.
 
@@ -232,9 +230,9 @@ A few things to note in comparison with the MongoDB Node Driver:
 - There is no need to specify connection credentials because these are taken from the runtime context, specifically runtime namespace and auth.
 - There is no need to specify the database URL because all requests go through the App Builder Storage Database Service.
 - The library must be initialized in the same region as the where the database was provisioned.
-- There is no option to select a different database because there is always a one to one relationship between a AIO Project Workspace and Workspace Database.
+- There is no option to select a different database because there is always a one-to-one relationship between an AIO Project Workspace and Workspace Database.
 
-### Basic CRUD Operations
+### Basic CRUD operations
 
 Included in the following are links to the equivalent methods for the [MongoDB Node Driver](https://www.mongodb.com/docs/drivers/node/current/).
 
@@ -408,7 +406,7 @@ MongoDB Node Driver references:
 
 - [Delete Documents](https://www.mongodb.com/docs/drivers/node/current/crud/delete/)
 
-#### Bulk Operations
+#### Bulk operations
 
 Multiple operations in a single request:
 
@@ -426,7 +424,7 @@ MongoDB Node Driver references:
 
 - [Bulk Operations](https://www.mongodb.com/docs/drivers/node/current/crud/bulk-write/)
 
-#### String and Object Representations of the _id Field
+#### String and object Representations of the _id field
 
 Every document in DocumentDB has a required **_id** field that acts as its unique identifier within a collection. Values for the **_id** field may be specified in the document or generated on the fly by the database server.
 
@@ -481,7 +479,7 @@ const pipeline = [
 const cursor = collection.aggregate(pipeline)
 ```
 
-A geo spacial example:
+A geospatial example:
 
 ```javascript
 const nearbyStores = await stores.aggregate()
@@ -501,7 +499,7 @@ MongoDB Node Driver references:
 - [Aggregation Operations](https://www.mongodb.com/docs/drivers/node/current/aggregation/)
 - [Aggregation Pipeline Stages](https://www.mongodb.com/docs/drivers/node/current/aggregation/pipeline-stages/)
 
-## MongoDB and DocumentDB Compatibility
+## MongoDB and DocumentDB compatibility
 
 The MongoDB 8.0 features supported by App Builder Database Storage (ABDB) are constrained by the AWS DocumentDB with MongoDB compatibility on which it is built.
 
@@ -511,7 +509,7 @@ Beyond those imposed by AWS DocumentDB there are additional constraints imposed 
 
 The following sections highlights the differences between the App Builder Database Storage API and AWS DocumentDB.
 
-### Database Commands
+### Database commands
 
 Database commands are not supported by App Builder Database Storage.
 
@@ -525,7 +523,7 @@ Same as DocumentDB 8.0.
 
 AWS reference: [Query and projection operators](https://docs.aws.amazon.com/documentdb/latest/developerguide/mongo-apis.html#mongo-apis-query)
 
-### Update Operators
+### Update operators
 
 Same as DocumentDB 8.0.
 
@@ -537,9 +535,9 @@ Same as DocumentDB 8.0.
 
 AWS reference: [Geospatial](https://docs.aws.amazon.com/documentdb/latest/developerguide/mongo-apis.html#mongo-apis-geospatial)
 
-### Cursor Methods
+### Cursor methods
 
-Although the general access patterns for cursors with App Builder Database Storage closely follow the the DocumentDB/MongoDB model (see Cursor Access Patterns above) only a subset of other methods are supported, and these are only supported when initializing a cursor.
+Although the general access patterns for cursors with App Builder Database Storage closely follow the DocumentDB/MongoDB model (see Cursor Access Patterns above) only a subset of other methods are supported, and these are only supported when initializing a cursor.
 
 Supported methods when initializing a **find** cursor:
 
@@ -614,7 +612,7 @@ Same as DocumentDB 8.0.
 
 AWS reference: [Indexes and index properties](https://docs.aws.amazon.com/documentdb/latest/developerguide/mongo-apis.html#mongo-apis-index)
 
-## Support and Contact Information
+## Support and contact information
 
 For any questions, issues, or feedback regarding App Builder Database Storage, please reach out to the team at:
 
