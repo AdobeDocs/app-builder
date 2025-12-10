@@ -9,7 +9,7 @@ title: Storage Options
 
 # Storage Options
 
-As part of App Builder, you have out-of-the-box access to three storage services for persisting data dynamically from your Runtime actions: **Database**, **Files**, and **State**. Each service is designed for different use cases, with distinct benefits and trade-offs.
+As part of App Builder, you have access to three storage services for persisting data dynamically from your Runtime actions: **Database**, **Files**, and **State**. Each service is designed for different use cases, with distinct benefits and trade-offs.
 
 ## Quick comparison
 
@@ -58,7 +58,7 @@ State provides a high-performance key-value store optimized for low-latency acce
 
 ## Files
 
-Files provides blob storage for large binary data, built as an abstraction over cloud storage services.
+Files provides blob storage for large binary data, built as an abstraction layer over cloud storage services.
 
 ### Benefits
 
@@ -81,7 +81,7 @@ Files provides blob storage for large binary data, built as an abstraction over 
 
 - Storing images, videos, or documents
 - Large payloads over 100 KB
-- Data that needs to be shared via URL
+- Data that needs to be shared by URL
 - Binary data requiring streaming
 - Long-term storage without expiration
 
@@ -169,4 +169,4 @@ npm install @adobe/aio-lib-db
 aio app db provision
 ```
 
-No additional configuration is needed—the libraries automatically use your App Builder credentials for authentication and authorization.
+No additional configuration is needed. The libraries automatically use your App Builder credentials for authentication and authorization.

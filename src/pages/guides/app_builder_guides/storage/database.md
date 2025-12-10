@@ -73,7 +73,7 @@ aio app db delete
 
 ### Collections
 
-Collections do not have to be explicitly created in order to start using them. But if specific fields need to be indexed or documents require schema validation, then creating a collection beforehand would make sense.
+Collections do not have to be explicitly created in order to start using them, but if specific fields need to be indexed or documents require schema validation, then creating a collection beforehand makes sense.
 
 To create an empty collection named `inventory`:
 
@@ -246,9 +246,9 @@ async function main() {
 
 A few things to note in comparison with the MongoDB Node Driver:
 
-- There is no need to specify connection credentials because these are taken from the runtime context, specifically runtime namespace and auth.
-- There is no need to specify the database URL because all requests go through the App Builder Storage Database Service.
-- The library must be initialized in the same region as the where the database was provisioned.
+- You do not need to specify connection credentials because they are taken from the runtime context, specifically runtime namespace and auth.
+- You do not need to specify the database URL because all requests go through the App Builder Storage Database Service.
+- The library must be initialized in the same region the database was provisioned in.
 - There is no option to select a different database because there is always a one-to-one relationship between an AIO Project Workspace and Workspace Database.
 
 ### Basic CRUD operations
@@ -307,14 +307,14 @@ const cursor = userCollection.find({ age: { $gte: 18 } })
 
 MongoDB Node Driver references:
 
-- [Find Documents](https://www.mongodb.com/docs/drivers/node/current/crud/query/retrieve/)
-- [Specify Documents to Return](https://www.mongodb.com/docs/drivers/node/current/crud/query/specify-documents-to-return/)
-- [Specify Which Fields to Return](https://www.mongodb.com/docs/drivers/node/current/crud/query/project/)
-- [Specify a Query](https://www.mongodb.com/docs/drivers/node/current/crud/query/query-document/)
-- [Count Documents](https://www.mongodb.com/docs/drivers/node/current/crud/query/count/)
-- [Retrieve Distinct Values](https://www.mongodb.com/docs/drivers/node/current/crud/query/distinct/)
-- [Search Text](https://www.mongodb.com/docs/drivers/node/current/crud/query/text/)
-- [Search Geospatially](https://www.mongodb.com/docs/drivers/node/current/crud/query/geo/)
+- [Find documents](https://www.mongodb.com/docs/drivers/node/current/crud/query/retrieve/)
+- [Specify documents to return](https://www.mongodb.com/docs/drivers/node/current/crud/query/specify-documents-to-return/)
+- [Specify which fields to return](https://www.mongodb.com/docs/drivers/node/current/crud/query/project/)
+- [Specify a auery](https://www.mongodb.com/docs/drivers/node/current/crud/query/query-document/)
+- [Count documents](https://www.mongodb.com/docs/drivers/node/current/crud/query/count/)
+- [Retrieve distinct values](https://www.mongodb.com/docs/drivers/node/current/crud/query/distinct/)
+- [Search text](https://www.mongodb.com/docs/drivers/node/current/crud/query/text/)
+- [Search geospatially](https://www.mongodb.com/docs/drivers/node/current/crud/query/geo/)
 
 #### Cursor access patterns
 
@@ -354,7 +354,7 @@ stream.on('data', (doc) => {
 
 MongoDB Node Driver references:
 
-- [Access Data From a Cursor](https://www.mongodb.com/docs/drivers/node/current/crud/query/cursor/)
+- [Access data from a cursor](https://www.mongodb.com/docs/drivers/node/current/crud/query/cursor/)
 
 #### Updating documents
 
@@ -518,17 +518,17 @@ MongoDB Node Driver references:
 
 ## MongoDB and DocumentDB compatibility
 
-The MongoDB 8.0 features supported by App Builder Database Storage (ABDB) are constrained by the AWS DocumentDB with MongoDB compatibility on which it is built.
+The MongoDB 8.0 features supported by App Builder Database Storage (ABDB) are constrained by the AWS DocumentDB with MongoDB compatibility it is built on.
 
 The primary reference for MongoDB compatibility is [Supported MongoDB APIs, operations, and data types in Amazon DocumentDB](https://docs.aws.amazon.com/documentdb/latest/developerguide/mongo-apis.html). Note that ABDB uses version 8.0 of the MongoDB API. Some additional functional differences are documented at [Functional differences: Amazon DocumentDB and MongoDB](https://docs.aws.amazon.com/documentdb/latest/developerguide/functional-differences.html).
 
 Beyond those imposed by AWS DocumentDB there are additional constraints imposed by the App Builder Database Storage itself. For example, the App Builder DB exposes far fewer administrative commands than either DocumentDB or MongoDB, because it is a multi-tenant offering.
 
-The following sections highlights the differences between the App Builder Database Storage API and AWS DocumentDB.
+The following sections highlight the differences between the App Builder Database Storage API and AWS DocumentDB.
 
 ### Database commands
 
-Database commands are not supported by App Builder Database Storage.
+Database commands are not supported by the App Builder Database Storage.
 
 Administrative and diagnostic features are limited to those provided by the `aio-lib-db` package and the db plugin for the aio cli.
 
@@ -554,7 +554,7 @@ AWS reference: [Geospatial](https://docs.aws.amazon.com/documentdb/latest/develo
 
 ### Cursor methods
 
-Although the general access patterns for cursors with App Builder Database Storage closely follow the DocumentDB/MongoDB model (see Cursor Access Patterns above) only a subset of other methods are supported, and these are only supported when initializing a cursor.
+Although the general access patterns for cursors with App Builder Database Storage closely follow the DocumentDB/MongoDB model (see the previously mentioned Cursor Access Patterns) only a subset of other methods are supported, and these are only supported when initializing a cursor.
 
 Supported methods when initializing a `find` cursor:
 
@@ -631,7 +631,7 @@ AWS reference: [Indexes and index properties](https://docs.aws.amazon.com/docume
 
 ## Support and contact information
 
-For any questions, issues, or feedback regarding App Builder Database Storage, please reach out to the team at:
+For any questions, issues, or feedback regarding App Builder Database Storage, reach out to the team using one of the following:
 
 - **Slack** - [#commerce-app-builder-db-early-access](https://adobe.enterprise.slack.com/archives/C09CVBYJU12)
 - **Github Issues** - File issues on the relevant repository
