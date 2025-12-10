@@ -62,11 +62,13 @@ aio app db ping
 Additional database commands include:
 
 ```bash
-aio app db stats               # Get statistics about your App Builder database
+# Get statistics about your App Builder database
+aio app db stats
 ```
 
 ```bash
-aio app db delete              # Delete the database for your App Builder application (non-production only)
+# Delete the database for your App Builder application (non-production only)
+aio app db delete
 ```
 
 ### Collections
@@ -90,10 +92,17 @@ aio app db collection create inventory --validator '{"type": "object", "required
 Other collection commands:
 
 ```bash
-aio app db collection list                           # List the collections in the database
-aio app db collection rename <CURRENTNAME> <NEWNAME> # Rename a collection in the database
-aio app db collection drop <COLLECTION>              # Drop a collection from the database
-aio app db collection stats <COLLECTION>             # Get statistics for a collection in the database
+# List the collections in the database
+aio app db collection list
+
+# Rename a collection in the database
+aio app db collection rename <CURRENTNAME> <NEWNAME>
+
+# Drop a collection from the database
+aio app db collection drop <COLLECTION>
+
+# Get statistics for a collection in the database
+aio app db collection stats <COLLECTION>
 ```
 
 ### Indexes
@@ -115,8 +124,11 @@ aio app db index create <COLLECTION> -s '{"name":"text", "category":"text"}'
 Other index commands:
 
 ```bash
-aio app db index drop <COLLECTION> <INDEXNAME>   # Drop an index from a collection in the database
-aio app db index list <COLLECTION>               # Get the list of indexes from a collection in the database
+# Drop an index from a collection in the database
+aio app db index drop <COLLECTION> <INDEXNAME>
+
+# Get the list of indexes from a collection in the database
+aio app db index list <COLLECTION>
 ```
 
 The following index types are supported:
@@ -162,10 +174,17 @@ aio app db document find <COLLECTION> '{}'
 Other document commands:
 
 ```bash
-aio app db document update <COLLECTION> <FILTER> <UPDATE>       # Update documents in a collection
-aio app db document replace <COLLECTION> <FILTER> <REPLACEMENT> # Replace a document in a collection
-aio app db document delete <COLLECTION> <FILTER>                # Delete a document from a collection
-aio app db document count <COLLECTION> <FILTER>                 # Count documents in a collection
+# Update documents in a collection
+aio app db document update <COLLECTION> <FILTER> <UPDATE>
+
+# Replace a document in a collection
+aio app db document replace <COLLECTION> <FILTER> <REPLACEMENT>
+
+# Delete a document from a collection
+aio app db document delete <COLLECTION> <FILTER>
+
+# Count documents in a collection
+aio app db document count <COLLECTION> <FILTER>
 ```
 
 ## Runtime actions and aio-lib-db
