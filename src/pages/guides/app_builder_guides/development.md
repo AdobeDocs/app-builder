@@ -43,9 +43,11 @@ When you use the command `aio app dev`:
 - There are no activation records
 - Logs cannot be forwarded
 
-## State-lib and Files-lib usage
+## Storage libraries
 
-There are also differences in what your actions can do in these cases. The storage libraries have security restrictions that limit calls from outside Runtime actions, so if your action needs either state or files libs, it will fail with `aio app dev`.  Third-party APIs may have similar restrictions.
+There are also differences in what your actions can do in these cases. The state and file libraries have security restrictions that limit calls from outside Runtime actions, so if your action needs either state or files libs, it will fail with `aio app dev`.  Third-party APIs may have similar restrictions.
+
+The database library works with `aio app dev` by connecting directly to the database provisioned for a workspace. This feature is disabled for production workspaces.
 
 ## Debugging
 

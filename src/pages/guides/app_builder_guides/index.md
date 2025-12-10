@@ -14,10 +14,10 @@ Welcome to the App Builder Guides section. Here you'll find comprehensive docume
 ## Architecture and Development
 
 * [Architecture Overview](architecture_overview/architecture-overview.md)
-* [Application State](application-state.md)
 * [Development](development.md)
 * [Distribution](distribution.md)
 * [Optimization](optimization.md)
+* [Storage](./storage/application-state.md)
 * [Telemetry](telemetry.md)
 
 ## Configuration and Deployment
