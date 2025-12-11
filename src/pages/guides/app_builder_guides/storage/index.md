@@ -18,7 +18,7 @@ The following table summarizes the key differences between the three storage ser
 | Feature | State | Files | Database |
 |---------|-------|-------|----------|
 | **Best for** | Fast key-value access | Large file storage | Complex queries and relationships |
-| **Max value size** | 1 MB | 200 GB | Limited by document size |
+| **Max value size** | 1 MB | 200 GB | Max document size is 16MB |
 | **Data model** | Key-value pairs | Binary blobs | Document collections |
 | **Query capability** | Get by key, list with glob | Get by path | Rich queries, aggregations, and indexes |
 | **TTL support** | Yes (max 365 days) | No | No |

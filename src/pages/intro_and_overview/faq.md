@@ -43,12 +43,12 @@ App Builder offers a complete application framework for extending Adobe solution
   * Content Delivery Network for static assets
   * experience.adobe.com for applications with UI
   * Custom events for publishing events through Adobe infrastructure
-  * File, session, and database storage to persist application state
+  * File, state, and database storage to persist application state
 * App Builder apps are surfaced within [experience.adobe.com](https://experience.adobe.com), so end users can move seamlessly between Adobe Experience Cloud applications and App Builder applications.
 
 ### How is App Builder different than Adobe I/O Runtime?
 
-App Builder builds on top of existing Adobe technologies, one of which is Adobe I/O Runtime. It makes developers more productive: by adding state and database storage, CDN, and custom events, App Builder makes it easy to address complex use cases that would otherwise have required purchasing these services from other vendors.
+App Builder builds on top of existing Adobe technologies, one of which is Adobe I/O Runtime. It makes developers more productive: by adding file, state, and database storage, CDN, and custom events, App Builder makes it easy to address complex use cases that would otherwise have required purchasing these services from other vendors.
 
 ### Are the tools open source?
 
