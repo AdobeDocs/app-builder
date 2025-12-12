@@ -3,7 +3,7 @@
 
 
 - pages:
-    - [App Builder](../)
+    - [App Builder](https://developer.adobe.com/app-builder/)
     - [Overview](intro_and_overview/index.md)
     - [Getting Started](get_started/index.md)
     - [Guides](guides/index.md)
