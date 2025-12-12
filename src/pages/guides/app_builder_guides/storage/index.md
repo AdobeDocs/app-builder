@@ -9,6 +9,8 @@ title: Storage Options
 
 # Storage Options
 
+**IMPORTANT:** The App Builder Database Storage feature is in beta. It is not recommended for production use.
+
 As part of App Builder, you have access to three storage services for persisting data dynamically from your Runtime actions: **Database**, **Files**, and **State**. Each service is designed for different use cases, with distinct benefits and trade-offs.
 
 ## Quick comparison

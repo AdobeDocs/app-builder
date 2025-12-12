@@ -11,6 +11,8 @@ title: Getting Started with Database Storage
 
 # Getting Started with Database Storage
 
+**IMPORTANT:** The App Builder Database Storage feature is in beta. It is not recommended for production use.
+
 Database Storage for App Builder provides document-style database persistence for AIO Runtime Actions. The [`aio-lib-db` library](https://github.com/adobe/aio-lib-db), which is closely modeled on the MongoDB Database Driver for NodeJS, provides the primary programming interface, while the DB Plugin in the AIO CLI provides additional access.
 
 There is a strict one-to-one relationship between an AIO project workspace and a workspace database, and each workspace database is entirely isolated from all other workspace databases.
