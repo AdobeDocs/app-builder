@@ -46,7 +46,7 @@ const token = getBearerToken(params)
 const orgId = params.__ow_headers['x-gw-ims-org-id']
 ```
 
-The remaining parameters, `tenant` and `apiKey`, must be passed as default parameters as detailed in [Application State](../application-state.md). The real values would be set as environment variables in the `.env` file, mapped to the action default parameters in the `manifest.yml` file. Here are sample snippets taken from these files:
+The remaining parameters, `tenant` and `apiKey`, must be passed as default parameters as detailed in [Application State](../storage/application-state.md). The real values would be set as environment variables in the `.env` file, mapped to the action default parameters in the `manifest.yml` file. Here are sample snippets taken from these files:
 
 ```bash
 # in .env

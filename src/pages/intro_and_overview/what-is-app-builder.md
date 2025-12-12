@@ -16,8 +16,8 @@ It uses modern technologies like JAM stack, serverless computing, Node, and Reac
 Its main components are:
 
 - **Single-Page Applications** (SPAs) that use React Spectrum for the client side - the same UI toolkit used by Adobe solutions
-- **I/O Runtime**, Adobe’s serverless platform, used to create backend microservices and orchestrate APIs
-- **Developer tools** including the Command-Line Interface (CLI), SDKs, Adobe Services and Developer Console. Support for Adobe authentication, end-user access control, publishing/consuming custom events, data and file storage, CI/CD pipelines, Content Delivery Network, and developer sandboxes are all included.
+- **I/O Runtime**, Adobe's serverless platform, used to create backend microservices and orchestrate APIs
+- **Developer tools** including the Command-Line Interface (CLI), SDKs, Adobe Services and Developer Console. Support for Adobe authentication, end-user access control, publishing/consuming custom events, file, state, and database storage, CI/CD pipelines, Content Delivery Network, and developer sandboxes are all included.
 - **[Adobe Experience Cloud](https://experience.adobe.com/)** execution environment, so custom apps will live side by side with Adobe Experience Cloud solutions and will execute in the context of the organization and its authenticated employees.
 
 ## What is Adobe I/O Runtime?
