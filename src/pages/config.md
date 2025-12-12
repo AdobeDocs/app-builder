@@ -87,7 +87,7 @@
                 - [Understanding Authentication](guides/app_builder_guides/security/understanding-authentication.md) 
             - [Storage Options](guides/app_builder_guides/storage/index.md)
                 - [State and Files](guides/app_builder_guides/storage/application-state.md)
-                - [Database](guides/app_builder_guides/storage/database.md)
+                - [Database (Beta)](guides/app_builder_guides/storage/database.md)
             - [Telemetry](guides/app_builder_guides/telemetry.md) 
         - [Runtime Guides](guides/runtime_guides/index.md) 
             - [Contribution Guide](guides/contribution-guide.md) 

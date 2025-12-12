@@ -33,7 +33,11 @@ The following is only a brief introduction to the DB plugin. For more thorough d
 
 ### Installation
 
-To be included in aio --version >= 11.0.0
+To install the pre-GA plugin for the AIO CLI:
+
+```bash
+aio plugins:install @adobe/aio-cli-plugin-app-storage@next
+```
 
 ### Region selection
 
