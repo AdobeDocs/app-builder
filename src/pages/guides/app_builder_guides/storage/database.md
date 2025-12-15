@@ -11,7 +11,7 @@ title: Getting Started with Database Storage
 
 # Getting Started with Database Storage
 
-**IMPORTANT:** The App Builder Database Storage feature is in beta. It is not recommended for production use.
+**IMPORTANT:** This documentation describes a product in early-access development and does not reflect all functionality intended for general availability (GA). It cannot be used in production until GA.
 
 Database Storage for App Builder provides document-style database persistence for AIO Runtime Actions. The [`aio-lib-db` library](https://github.com/adobe/aio-lib-db), which is closely modeled on the MongoDB Database Driver for NodeJS, provides the primary programming interface, while the DB Plugin in the AIO CLI provides additional access.
 
@@ -634,10 +634,3 @@ AWS reference: [Data types](https://docs.aws.amazon.com/documentdb/latest/develo
 Same as DocumentDB 8.0.
 
 AWS reference: [Indexes and index properties](https://docs.aws.amazon.com/documentdb/latest/developerguide/mongo-apis.html#mongo-apis-index)
-
-## Support and contact information
-
-For any questions, issues, or feedback regarding App Builder Database Storage, reach out to the team using one of the following:
-
-- **Slack** - [#commerce-app-builder-db-early-access](https://adobe.enterprise.slack.com/archives/C09CVBYJU12)
-- **Github Issues** - File issues on the relevant repository
