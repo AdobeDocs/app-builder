@@ -242,7 +242,7 @@ Learn more about configuring sequences in the [Sequences Guide](sequences.md).
 
 #### Hooks to customize the tooling
 
-Hooks can be used to customize `aio app` commands, as documented in the [hooks guide](../architecture_overview/app-hooks.md)
+Hooks can be used to customize `aio app` commands, as documented in the [hooks guide](../architecture_overview/app-hooks.md).
 
 ### Extension-specific configuration
 
