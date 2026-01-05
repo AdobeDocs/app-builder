@@ -10,7 +10,9 @@ App Builder is for Adobe enterprise customers and Adobe partners working with th
 
 ## How to use these documents
 
-**Business users and decision-makers** can review the [Business Case for App Builder](business-case.md), outlining the agility, efficiency, and security App Builder brings to the modern enterprise, as well as the most pertinent App Builder [use cases](business-case.md#example-use-cases) and links to [real-world success stories](business-case.md#examples-from-the-real-world) from Adobe customers and partners. 
+**Stay informed** about the latest updates, features, and improvements by reviewing the [Release Notes](release-notes.md).
+
+**Business users and decision-makers** can review the [Business Case for App Builder](business-case.md), outlining the agility, efficiency, and security App Builder brings to the modern enterprise, as well as the most pertinent App Builder [use cases](business-case.md#example-use-cases) and links to [real-world success stories](business-case.md#examples-from-the-real-world) from Adobe customers and partners. 
 
 Please refer to the [FAQ](faq.md) for information about licensing or trial of App Builder, or contact your Adobe Sales representative.
 
@@ -46,6 +48,7 @@ Please refer to the [FAQ](faq.md) for information about licensing or trial of Ap
 
 To learn more about App Builder, please consult the following:
 
+- [Release Notes](release-notes.md) - Stay current with the latest features and updates
 - [What Is App Builder?](what-is-app-builder.md)
 - [Architecture Overview](../guides/app_builder_guides/architecture_overview/architecture-overview.md)
 

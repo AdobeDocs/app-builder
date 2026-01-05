@@ -9,7 +9,7 @@ title: Reference Documentation
 
 # Reference Documentation
 
-* [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/)
+* [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/)
 * [Adobe CLI](https://github.com/adobe/aio-cli)
 * [App Builder Application Generators](https://github.com/adobe/generator-aio-app)
 * [Developer Console Project Generators](https://github.com/adobe/generator-aio-console)
@@ -25,6 +25,7 @@ title: Reference Documentation
   * [Adobe Target Library](https://github.com/adobe/aio-lib-target)
   * [Adobe Developer Console Library](https://github.com/adobe/aio-lib-console)
   * [Adobe I/O Events Library](https://github.com/adobe/aio-lib-events)
+  * [Adobe Document Database Library ](https://github.com/adobe/aio-lib-db)
   * [Core SDK Library](https://github.com/adobe/aio-sdk-core)
     * [Logging Library](https://github.com/adobe/aio-lib-core-logging)
     * [Error Handling Library](https://github.com/adobe/aio-lib-core-errors)

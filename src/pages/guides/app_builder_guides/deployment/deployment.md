@@ -1,113 +1,203 @@
 ---
 keywords:
   - Deployment
-  - Local Deployment
-  - Architecture
-title: Deployment
-description: The CLI provides out-of-the-box features for developers to manage the lifecycle of their  App Builder Applications. This documentation focuses on the application deployment step of this lifecycle.
+  - aio app deploy
+title: Deployment Guide
+description: The guide explains how App Builder apps are deployed.
 ---
 
 # Deployment Overview
 
-The [CLI](https://github.com/adobe/aio-cli) includes features for Developers to manage App Builder Application lifecycles. This section focuses on the deployment step of the lifecycle.
+The [AIO CLI](https://github.com/adobe/aio-cli) allows developers to deploy their App Builder app to Adobe servers. The following guide explains how App Builder apps are deployed. Read our [CI/CD guide](cicd-for-app-builder-apps.md), to set up a CI/CD pipeline to deploy your app.
 
-## Setup assumptions
+<InlineAlert slots="text" />
 
-In the following chapters of this documentation, it will be assumed that:
+Starting with AIO CLI v11, the use of Runtime namespace auth to deploy App Builder apps has been discontinued. Instead, Adobe IMS authentication is required to deploy App Builder apps, regardless of whether you are deploying from your local machine or a CI/CD pipeline. You must either log in to the CLI (`aio login`) or [set up a CI/CD pipeline](cicd-for-app-builder-apps.md) using the [OAuth Server-to-Server credential](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) to deploy your App Builder app. 
 
-- Custom Adobe applications were bootstrapped from a [generator](https://github.com/adobe/generator-aio-app/) using the CLI
+<InlineAlert slots="text" />
 
-- There is a **.env** file at the root of the application folder, containing these keys and their values:
-  
-  - **AIO_RUNTIME_AUTH**, holding the credentials for use by the Runtime namespace
-  - **AIO_RUNTIME_NAMESPACE**, holding the name for use by the Runtime namespace
+The following guide covers details on deploying your app to Adobe servers. If you want to run your app locally, read our guide on [local development](../development.md).
 
-If you do not own a [Runtime](https://developer.adobe.com/runtime) namespace, please [request trial access](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/set-up#access-and-credentials). Please also check the [Setup Requirements](../../../get_started/runtime_getting_started/setup.md) documentation before trying out the deployment scenarios described below.
++ [Which components of the App Builder app are deployed?](#which-components-of-the-app-builder-app-are-deployed)
++ [Multiple deployment environments](#multiple-deployment-environments)
++ [How to deploy your app?](#how-to-deploy-your-app)
++ [Tracking deployment activity](#tracking-deployment-activity)
++ [Undeploying your app](#undeploying-your-app)
++ [Next steps](#next-steps)
 
-The CLI offers three types of deployment to Developers:
 
-## Local deployment
+## Which components of the App Builder app are deployed?
 
-Local deployment capabilities are offered to Developers who plan to test and debug their application before it is deployed to the Content Delivery Network included with App Builder.
+An App Builder app can contain different components - frontend, backend, extensions, and event registrations. These components are declared in the `app.config.yaml` file. When you deploy your App Builder app, the following components are deployed.
 
-### Local Runtime actions and UI
+1. **Frontend web assets**: During deployment, web assets (html, js, css, .map, images, and other static assets) are packed and deployed to the App Builder CDN. The CDN is automatically provisioned in the selected Project and Workspace.
+2. **Adobe I/O Runtime entities**: During deployment the following Runtime entities are deployed to the Adobe I/O Runtime namespace in the selected Project and Workspace.
+   1. [Actions](../../runtime_guides/creating-actions.md) 
+   2. [Sequences](../../runtime_guides/reference_docs/sequences-compositions.md#sequences) 
+   3. [APIs](../../runtime_guides/creating-rest-apis.md)
+   4. [Rules](../../runtime_guides/reference_docs/triggersrules.md#about-rules) 
+   5. [Triggers](../../runtime_guides/reference_docs/triggersrules.md#about-triggers) 
+   6. [Log Forwarding configuration](../application_logging/logging.md#forwarding-application-logs) 
+3. **Extensions** - During deployment, your app is registered as an extension in the Adobe extension registry against any extension points implemented in the app.
+4. **Event Registrations** - During deployment, any event registrations defined in the `app.config.yaml` file are created in the selected Project and workspace.
 
-#### Use case
-
-This local deployment feature is useful for Developers to get a preview of their custom application before deploying it to Runtime and Content Delivery Network. They will also benefit from local Runtime actions and UI debugging capabilities.
-
-The feature also helps Developers planning to work on their custom application implementation without an Internet connection. Of course, in this case they will not able to interact with [Adobe APIs](https://developer.adobe.com/apis) or remote third-party systems.
-
-Developers who choose this option will not be able to run code that uses [Files](https://github.com/adobe/aio-lib-files) or [State](https://github.com/adobe/aio-lib-state) SDKs, the [cron jobs scheduler with Alarms package](../../../resources/cron-jobs/index.md), or to expose web actions as webhooks for [I/O Events](https://developer.adobe.com/events/) or external events providers. These are only available when the actions are deployed to Runtime.
-
-This deployment scenario doesn't require any specific credentials, since both Runtime actions and application UI are hosted on the developer's machine.
-
-#### CLI command
-
-This deployment is triggered when running `aio app dev` at the root of the Custom Application source code directory.
-
-#### Architecture
-
-![Local Runtime Actions and UI](../../../images/cli-dev.jpg)
-
-The Runtime actions of the application will be run in NodeJS:
-
+Here's a sample `app.config.yaml` file containing different components of the App Builder app.
+```YAML
+application:
+  actions: actions
+  web: web-src
+  runtimeManifest:
+    packages:
+      test-app:
+        license: Apache-2.0
+        actions:
+          generic:
+            function: actions/generic/index.js
+            web: 'yes'
+            runtime: nodejs:18
+            inputs:
+              LOG_LEVEL: debug
+            annotations:
+              require-adobe-auth: true
+              final: true
+          generic2:
+            function: actions/generic/index.js
+            web: 'yes'
+            runtime: nodejs:22
+            inputs:
+              LOG_LEVEL: debug
+            annotations:
+              require-adobe-auth: true
+              final: true
+        sequences:
+            all_generic:
+              actions: generic, generic2
+        triggers:
+          triggerA:
+            inputs:
+              name: Foo
+              place: the Shire
+          Every24Hours:
+            feed: /whisk.system/alarms/alarm
+            inputs:
+              cron: "0 */24 * * *"
+              name: Foo
+        rules:
+          generic2OnCron:
+            action: generic2
+            trigger: Every24Hours
+          ruleA:
+            action: generic
+            trigger: triggerA
+        apis:
+          my-api-name: # API Name
+            some-base-path: # Base Path
+              some-relative-path: # Relative Path
+                generic: # Name of the action to connect this path to
+                  method: get
+                  response: http
+          my-api-name-2: # API Name
+            some-base-path-2: # Base Path
+              some-relative-path/{id}: # Relative Path
+                generic: # Name of the action to connect this path to
+                  method: get
+                  response: http
 ```
-http://localhost:9080/api/v1/web/<namespace>/<pkg-name>/<action-name>
-```
 
-**pkg-name** and **action-name** are the names of the package and action, chosen by the Developer when bootstrapping the application from the generator executed using `aio app init <appname>`.
+## Multiple deployment environments
 
-For headful custom applications, the UI will be served locally from [ParcelJS](https://parceljs.org/features/cli), which is the underlying framework used by the [CLI](https://github.com/adobe/aio-cli) to build the front-end source code.
+By default, an App Builder Project on the Developer Console contains a Production and a Stage workspace. The Production and Stage workspaces can be used by your team for shared production and staging environments, respectively. Furthermore, you can add more workspaces to your App Builder project, even an individual workspace for every developer on your team.
 
-### Remote Runtime actions and local UI
+![High-Level CI/CD architecture](../../../images/high-level-ci-cd-architecture.png)
 
-#### Technical prerequisites
+Each workspace is completely isolated from other workspaces and can be deployed separately. To deploy to a workspace, you must select it before running the `aio app deploy` command. See the section below for more information.
 
-This deployment scenario requires Runtime credentials in a .env file at the root of the custom application source code folder, as documented in the [Setup assumptions](#setup-assumptions) above.
+## How to deploy your app?
 
-#### Use case
+The following steps outline how you can deploy an App Builder app from your machine. If you want to deploy it from a CI/CD pipeline, please read our [guide on setting up a CI/CD pipeline](cicd-for-app-builder-apps.md).
 
-This feature is useful for Developers planning to test and debug locally their custom application in a live environment fully integrated to Adobe's ecosystem, with minimal deployment time and efforts.
+<InlineAlert slots="text" />
 
-#### CLI command
+Note: This guide refers to the "root of your App Builder app". The root of your App Builder app is the directory that contains the `app.config.yaml`, `.aio`, and `.env` files.
 
-This deployment is triggered when running `aio app run` at the root of the Custom Application source code directory.
 
-#### Architecture
+1. Open your terminal and navigate to the root of your App Builder app. The directory that contains the `app.config.yaml`, `.aio`, and `.env` files. 
 
-![Remote Runtime Actions and local UI](../../../images/remote-actions-local-ui.png)
+2. Ensure you are logged in to the CLI. Make sure to pick the correct account (personal vs company account) and the correct profile during the login.
+   ```bash
+   aio login
+   ```
+   If you want to log in to a different account, you can use the `aio logout --force` command to log out.
 
-The UI is still served locally from [ParcelJS](https://parceljs.org/features/cli/), which allows hot updates of the front-end code. It communicates with Runtime actions deployed to the Developer's Runtime namespace.
+3. Ensure a Developer Console Project and Workspace is selected in your project. If you are at the root of your App Builder app, the Project and Workspace will be determined using the values in the `.aio` file. 
+   ```bash
+   aio where
+   ```
 
-## Full deployment
+4. If a Project and Workspace is not selected, or you want to pick a different one, navigate to the Project and Workspace on the Developer Console. On the Workspace overview page, click the `Download all` button to download the `workspace-config.json` file.
+   
+   ![Download Workspace JSON](../../../images/download-workspace-config-json.png)
 
-#### Technical prerequisites
+   ```bash
+   aio app use <path_to_workspace_config_json_file>
+   ```
+   When prompted, be sure to merge the `.aio` and the `.env` files to avoid losing any other configuration you may have added to those files.
+   
+5. To deploy the app, run 
+   ```bash
+   aio app deploy
+   ``` 
 
-This deployment scenario requires Runtime credentials in an `.env` file at the root of the custom application source code folder, as documented in the [Setup assumptions](#setup-assumptions) above.
+   You can view the help menu (`aio app deploy --help`) to understand the advanced deployment options available to you. Using these options you can deploy only parts of your application or skip deploying some parts.
 
-#### Use case
+   Note: you can skip steps 2-4 if you have already logged in to the CLI and selected the correct Project and Workspace.
 
-This feature is useful for Developers planning to test and preview custom applications fully integrated to Adobe's ecosystem, in conditions that are similar to a production deployment.
+6. Once your app is deployed it will be available at `https://<namespace>.adobeio-static.net/`
 
-#### CLI command
+## Tracking deployment activity
 
-This deployment is triggered when running `aio app deploy` at the root of the Custom Application source code directory.
+Whenever a developer makes a change to a Project, her action is recorded in the [Project Activity Logs](https://developer.adobe.com/developer-console/docs/guides/projects/#view-a-projects-activity-log). Each activity log describes who made what change, and when. 
 
-#### Architecture
+Activities related to deploying an App Builder are also captured in the Project Activity Logs. This includes deployment to any Workspace in the Project. Furthermore, Activity logs are captured whether the app is deployed from a developer's machine or from a CI/CD pipeline.
 
-![Remote Runtime Actions and UI](../../../images/remote-actions-remote-ui.png)
+Note: While deployment activity is recorded, the actual contents of the deployment are not recorded in the activity logs.
 
-The UI is deployed to the Content Delivery Network on behalf of the Developer's Runtime credentials. It communicates with [Runtime](../../../intro_and_overview/what-is-app-builder.md#what-is-adobe-io-runtime) actions deployed to the developer's Runtime namespace.
+The following deployment activities are captured as Project Activity logs:
+1. Deploying and undeploying static assets to the App Builder CDN.
+2. Deploying Action code to Adobe I/O Runtime.
+3. Deploying Triggers, Rules, Sequences, or APIs to Adobe I/O Runtime.
+4. Changing the Log forwarding configuration for the workspace.
 
-The [Token-Vending Machine](https://github.com/adobe/aio-tvm) supplied with App Builder is implicitely used by the CLI `aio app deploy` command, and validates the developer's Runtime credentials against Runtime.
+<InlineAlert slots="text" />
 
-If the credentials are valid, the Token Vending Machine provides an access token to the CLI, which authorizes the CLI to deploy the static files of the custom application to the Content Delivery Network.
+1. The AIO CLI v11 introduces the mandatory use of Adobe IMS authentication to deploy App Builder apps. Therefore, Activity logs are only captured if you use AIO CLI v11 or higher.
+2. Once AIO CLI v11 reaches critical adoption, Adobe will announce plans to restrict deployments from AIO CLI v10 or lower. Meanwhile,for a better security posture, we strongly recommend customers to upgrade the AIO CLI version to v11 or higher.
 
-The deployed Custom Application will then be available at `https://<namespace>.adobeio-static.net/index.html`
+
+<InlineAlert slots="text" />
+Adobe started recording App Builder deployment activity logs from Aug 8, 2025 for App Builder apps deployed using AIO CLI v11 or higher. Historical data before Aug 8, 2025 is not available. All activity logs are retained for a year.
+
+
+![Activity Logs](../../../images/activity-logs.png)
+
+
+## Undeploying your app
+
+You can run the `aio app undeploy` command at the root of your App Builder app to undeploy all components deployed through the `aio app deploy` command.
+
+You can view the help menu (`aio app undeploy --help`) to understand the available advanced options. Using these options you can undeploy only parts of your application.
+
+Use this command carefully because if you inadvertently undeploy the app from the Production workspace, it could result in downtime. You can of course deploy the app again immediately.
+
+Note: Starting with AIO CLI v11, Adobe IMS authentication is also required to undeploy your app.
+
 
 ## Next steps
 
 Continue to [CI/CD for App Builder Applications](cicd-for-app-builder-apps.md).
+
+Set up [CI/CD using GitHub Actions](cicd-using-github-actions.md).
+
+Set up [custom CI/CD pipeline](cicd-custom.md).
 
 Return to the [Guides Index](../../index.md).

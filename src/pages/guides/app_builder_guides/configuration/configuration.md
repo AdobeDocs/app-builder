@@ -144,8 +144,8 @@ runtimeManifest:
 > The example copies all .txt files from the `myfilestoinclude/` directory and places them in a new dir `text/` available when your action is invoked via `fs.readFile('text/somefile.txt', 'utf8', callback);`
 
 > Note: the example above sets limit values.  Limits are defined as:
->
-> - `timeout`: the maximum time that an action may run before it is terminated (in msec., default 60000 [1 minute], min: 100 [0.1 second], max: 3600000 [60 hours])
+> 
+> - `timeout`: the maximum time that an action may run before it is terminated (in msec., default 60000 [1 minute], min: 100 [0.1 second], max: 3600000 [60 minutes])
 >   - For web actions served from the Content Delivery Network, there is a hard timeout limit of 30 seconds.
 > - `memory`: the maximum allocation of memory for an action (in MB, default: 256, min: 128, max: 4096)
 >   - Specifying nonstandard values like 671 can increase the number of "cold start" container initializations: Runtime maintains pre-warmed containers only for common memory sizes (128, 256, 512, 1024, etc.)
@@ -224,6 +224,22 @@ runtimeManifest:
 
 Learn more about API Gateway Configuration with the [Action APIs QuickStart](https://github.com/adobe/appbuilder-quickstarts/tree/master/action-apis).
 
+##### Sequences
+
+Sequences allow you to chain multiple actions together, where the output of one action becomes the input of the next. They can be configured declaratively in your `app.config.yaml` file.
+
+```yaml
+runtimeManifest:
+  packages:
+    my-package:
+      sequences:
+        my-sequence:
+          actions: action1, action2, action3
+          web: true
+```
+
+Learn more about configuring sequences in the [Sequences Guide](sequences.md).
+
 #### Hooks to customize the tooling
 
 Hooks can be used to customize `aio app` commands, as documented [hooks](../architecture_overview/app-hooks.md)
@@ -285,7 +301,7 @@ extensions:
     $include: ./src/dx-excshell-1/ext.config.yaml
 ```
 
-Configuration paths defined in `./src/dx-excshell-1/ext.config.yaml` must be relative to that file.
+Configuration paths defined in other files (such as `./src/dx-excshell-1/ext.config.yaml`) must be relative to that file. The exception is `hooks` definitions that point to JavaScript files, which are always resolved relative to the root `app.config.yaml` file.
 
 ### Public distribution configuration
 
@@ -405,6 +421,8 @@ The legacy configuration system does not have an `app.config.yaml` and instead u
 
 If you can't view your application in the App Builder Catalog of Adobe Experience Cloud, this migration protocol may be useful: [Migrating Apps to DX Experience Cloud v1 SPAs](../exc_app/migrate-app-to-exp-cloud-spa.md).
 
-Proceed to [Webpack Configuration](webpack-configuration.md).
+Learn more about:
+- [Configuring Sequences](sequences.md) - Chain actions together declaratively
+- [Webpack Configuration](webpack-configuration.md) - Customize your build process
 
 Return to [Guides Index](../../index.md).

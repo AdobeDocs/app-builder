@@ -6,7 +6,7 @@ keywords:
   - Developer Tooling
 ---
 
-# Development
+# Local Development
 
 ## Localhost dev server
 
@@ -43,9 +43,11 @@ When you use the command `aio app dev`:
 - There are no activation records
 - Logs cannot be forwarded
 
-## State-lib and Files-lib usage
+## Storage libraries
 
-There are also differences in what your actions can do in these cases. The storage libraries have security restrictions that limit calls from outside Runtime actions, so if your action needs either state or files libs, it will fail with `aio app dev`.  Third-party APIs may have similar restrictions.
+There are also differences in what your actions can do in these cases. The state and file libraries have security restrictions that limit calls from outside Runtime actions, so if your action needs either state or files libs, it will fail with `aio app dev`.  Third-party APIs may have similar restrictions.
+
+The database library works with `aio app dev` by connecting directly to the database provisioned for a workspace. This feature is disabled for production workspaces.
 
 ## Debugging
 
@@ -111,6 +113,21 @@ Learn more about using a JavaScript debugger
 
 - [Chrome devtools](https://developer.chrome.com/docs/devtools/)
 - [Node.js debugging in VS Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging)
+
+## Troubleshooting local development
+
+### Chrome 142 and Local Network Access restrictions
+
+If you are unable to access your local development server at `https://localhost:9080` (or your configured port) in Chrome version 142 or later, you may need to disable the "Local Network Access" restriction. Chrome 142 introduced stricter local network access checks that can prevent access to localhost applications.
+
+To resolve this issue:
+
+1. Open Chrome and type `chrome://flags` in the address bar, then press Enter
+2. In the search bar at the top, type "Local Network Access Checks"
+3. Click the dropdown menu next to the "Local Network Access Checks" flag and select **Disabled**
+4. Click the **Relaunch** button that appears at the bottom of the screen to apply the changes
+
+After relaunching Chrome, you should be able to access your local App Builder application.
 
 ## Next step
 
