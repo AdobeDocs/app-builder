@@ -52,13 +52,13 @@ When extensions were introduced, the file structure changed to:
    - Under each folder will be both the actions and the front-end code for the application. You should also see `ext.config.yaml`, a file containing all the action and extension configuration for the extension point corresponding to its folder. This configuration allows more flexibility in defining and managing extension points. This file is also imported to `app.config.yaml`, the master config file.
    - The action definition in this file should adhere to the [OpenWhisk deployment YAML specification](https://github.com/apache/openwhisk-wskdeploy/tree/master/specification#package-specification).
    - Once defined, the [CLI](https://github.com/adobe/aio-cli) uses this file to deploy or redeploy actions. You might see values like `$CUSTOMER_PROFILE_TENANT` listed on this page; they are environment variables that can be defined in the `.env` file.
-1. `app.config.yaml`,  the master configuration file. It follows the same principle as the individual `ext.config.yaml`, and compiles these individual files into one comprehensive configuration upon application build.
-1. `lib`: a folder containing all the shared utility actions across different extension points.
-1. `package.json`: this file describes project definition and various metadata relevant to the project.
+2. `app.config.yaml`,  the master configuration file. It follows the same principle as the individual `ext.config.yaml`, and compiles these individual files into one comprehensive configuration upon application build.
+3. `lib`: a folder containing all the shared utility actions across different extension points.
+4. `package.json`: this file describes project definition and various metadata relevant to the project.
     - It is used by `npm install` to install all the project's dependencies. The package is private and not expected to be published/shared on [npmjs.com](https://www.npmjs.com/). Learn more [here](https://docs.npmjs.com/about-packages-and-modules).
-1. `.aio`: this file contains config variables that are useful for the [CLI](https://github.com/adobe/aio-cli) to facilitate the app, e.g. supported API services.
+5. `.aio`: this file contains config variables that are useful for the [CLI](https://github.com/adobe/aio-cli) to facilitate the app, e.g. supported API services.
    - You can manually update the file or use the `aio config` commands to add or to remove configurations. Learn more about the [Config Plugin](https://github.com/adobe/aio-cli-plugin-config).
-1. `.env`: file containing environment variables useful for application development, for example Adobe I/O Runtime credentials and Adobe Product API tenant specifics such as API key and secrets.
+6. `.env`: file containing environment variables useful for application development, for example Adobe I/O Runtime credentials and Adobe Product API tenant specifics such as API key and secrets.
    - The environment variables defined here can be used in the application (for example in `manifest.yml`). If credentials are set up for the selected workspaces, you should see some of these values such as `AIO_runtime_auth` and `AIO_runtime_namespace`pre-populated upon initialization.
    - This file is automatically included in `.gitignore`: the listed credentials and secrets are not intended to be shared.
 
