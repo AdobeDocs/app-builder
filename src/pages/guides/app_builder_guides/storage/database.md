@@ -634,3 +634,7 @@ AWS reference: [Data types](https://docs.aws.amazon.com/documentdb/latest/develo
 Same as DocumentDB 8.0.
 
 AWS reference: [Indexes and index properties](https://docs.aws.amazon.com/documentdb/latest/developerguide/mongo-apis.html#mongo-apis-index)
+
+## Support and contact information
+
+For any questions, issues, or feedback regarding App Builder Database Storage, reach out to the team on [Slack](https://magentocommeng.slack.com/archives/C0A24MS9D0F):
