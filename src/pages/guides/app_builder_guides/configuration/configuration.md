@@ -49,7 +49,7 @@ extensions:
               runtime: nodejs:18
 
 # public distribution only - customer configuration
-configSchema: 
+configSchema:
   title: 'the title'
   description: 'the description'
   properties:
@@ -59,7 +59,7 @@ configSchema:
       envKey: 'SLACK_WEBHOOK'
 
 # public distribution only - required products
-requiredProducts: 
+requiredProducts:
   - code: AEP
     minVersion: 0.0.0
     maxVersion: 1.0.0
@@ -137,11 +137,11 @@ runtimeManifest:
              concurrency: 1
              logs: 10
            include:
-              - ["myfilestoinclude/*.txt", "text/"]        
+              - ["myfilestoinclude/*.txt", "text/"]
 ```
 
 > Note: the example above demonstrates the 'include' field of an action, for cases when you may want to have a file deployed with your action code and available to your code while it runs.
-> The example copies all .txt files from the `myfilestoinclude/` directory and places them in a new dir `text/` available when your action is invoked via `fs.readFile('text/somefile.txt', 'utf8', callback);` 
+> The example copies all .txt files from the `myfilestoinclude/` directory and places them in a new dir `text/` available when your action is invoked via `fs.readFile('text/somefile.txt', 'utf8', callback);`
 
 > Note: the example above sets limit values.  Limits are defined as:
 > 
@@ -151,12 +151,12 @@ runtimeManifest:
 >   - Specifying nonstandard values like 671 can increase the number of "cold start" container initializations: Runtime maintains pre-warmed containers only for common memory sizes (128, 256, 512, 1024, etc.)
 > - `concurrency`: the maximum number of action invocations that can be sent in parallel to the same container (default 200, min: 1,max: 500)
 > - `logs`: the maximum log size for the action (in MB, default 10, min: 0, max: 10)
-> 
+>
 > More info on `limits` can be found on the [Runtime System Settings](../../runtime_guides/system-settings.md) page.
 
 ##### Annotations
 
-Annotations may be added to Runtime actions to modify their behavior. 
+Annotations may be added to Runtime actions to modify their behavior.
 
 ```yaml
 runtimeManifest:
@@ -167,17 +167,17 @@ runtimeManifest:
          generic:
            annotations:
              require-adobe-auth: true
-             disable-download: true  
+             disable-download: true
 ```
 
-In addition to the [base annotations](https://github.com/adobe-apiplatform/incubator-openwhisk/blob/master/docs/annotations.md) provided by Runtime, there are two special ones: 
+In addition to the [base annotations](https://github.com/adobe-apiplatform/incubator-openwhisk/blob/master/docs/annotations.md) provided by Runtime, there are two special ones:
 
-- **disable-download** (default: false) determines whether action code can be downloaded. Once this annotation is set to true, it cannot be set back to false. 
+- **disable-download** (default: false) determines whether action code can be downloaded. Once this annotation is set to true, it cannot be set back to false.
 - **require-adobe-auth** (Default: false) determines whether the action will require Adobe authentication to invoke. See [here](../security/index.md#authentication-and-authorization-handling) for more.
 
 ##### API Gateway Configuration
 
-A Runtime API Gateway configuration can be added to expose web actions over specific paths and HTTP verbs. 
+A Runtime API Gateway configuration can be added to expose web actions over specific paths and HTTP verbs.
 
 > Note: It can take 5 to 10 minutes for new gateway configurations to provision. Until they do, you may see 404 errors from your API.
 
@@ -195,7 +195,7 @@ runtimeManifest:
            function: actions/get-pet/index.js
            web: 'yes'
            runtime: nodejs:18
-       apis: 
+       apis:
         get-pets: # API Name
           v1: # Base Path
             pets: # Relative Path
@@ -210,13 +210,13 @@ runtimeManifest:
                 response: http
 ```
 
-> Note: The configuration above will result in the following: 
-> 
+> Note: The configuration above will result in the following:
+>
 > - `GET https://adobeioruntime.net/apis/[namespace]/v1/pets`
 > - `GET https://adobeioruntime.net/apis/[namespace]/v1/pets/{petName}`
 
 > Note: The second API above defines a path parameter in the relative path by using curly braces, i.e `pets/{petName}`
-> 
+>
 > - APIs using path parameters must use the `http` response type
 
 - These options are available for `method`: get, post, put, delete, patch
@@ -242,7 +242,7 @@ Learn more about configuring sequences in the [Sequences Guide](sequences.md).
 
 #### Hooks to customize the tooling
 
-Hooks can be used to customize `aio app` commands, as documented [here]([https://github.com/AdobeDocs/project-firefly/blob/main/src/pages/guides/app-hooks.md](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/app-hooks).
+Hooks can be used to customize `aio app` commands, as documented in the [hooks guide](../architecture_overview/app-hooks.md).
 
 ### Extension-specific configuration
 
@@ -308,7 +308,7 @@ Configuration paths defined in other files (such as `./src/dx-excshell-1/ext.con
 A subset of configuration options is specific to publicly distributable apps, as detailed in the [Distribution](../distribution.md#public) Guide.
 
 ```yaml
-configSchema: 
+configSchema:
   title: 'the title'
   description: 'the description'
   properties:
@@ -317,7 +317,7 @@ configSchema:
       description: 'Please provide the webhook used by this application. Configure in slack.com'
       envKey: 'SLACK_WEBHOOK'
 
-requiredProducts: 
+requiredProducts:
   - code: AEP
     minVersion: 0.0.0
     maxVersion: 1.0.0
@@ -381,7 +381,7 @@ async function main (params) {
 exports.main = main
 ```
 
-Alternatively, environment variables defined in a .env file can be configured as inputs to a package, making them accessible to all actions within the package through their parameters. 
+Alternatively, environment variables defined in a .env file can be configured as inputs to a package, making them accessible to all actions within the package through their parameters.
 Keep in mind that package-level inputs can still be overridden at the action level.
 
 #### app.config.yaml
@@ -398,7 +398,7 @@ runtimeManifest:
            runtime: nodejs:18
 ```
 
-**Note:** You can specify package-level parameters directly via the command line without redeploying. 
+**Note:** You can specify package-level parameters directly via the command line without redeploying.
 Refer to `aio rt package bind --help` for more details.
 
 ## `.aio`
