@@ -8,7 +8,7 @@ title: How I/O Runtime works
 
 Adobe I/O Runtime is based on the open source Apache OpenWhisk platform, and uses the OpenWhisk architecture to provide function-as-a-service. Here is a high-level look at the architecture:
 
-<img src="https://developer.adobe.com/runtime/docs/static/2f65d806954291bfd2a474f3c8b2f9f4/73c8b/howitworks_f01.png" title="The OpenWhisk architecture" alt="The OpenWhisk architecture" data-align="center" />
+![The OpenWhisk architecture](https://developer.adobe.com/runtime/docs/static/2f65d806954291bfd2a474f3c8b2f9f4/73c8b/howitworks_f01.png)
 
 The figure shows how Runtime (via OpenWhisk) is set up to respond to events and direct invocations. Whether the event comes from an external or internal source, it is associated with a trigger, which invokes an action according to any rules that are applied. Actions can also be invoked directly through the Runtime (OpenWhisk) CLI or the REST API.
 
