@@ -17,13 +17,49 @@ Database Storage for App Builder provides document-style database persistence fo
 
 There is a strict one-to-one relationship between an AIO project workspace and a workspace database, and each workspace database is entirely isolated from all other workspace databases.
 
-Before use, a workspace database must be explicitly provisioned using either `aio-lib-db` or the AIO CLI. This is a self-service operation subject to organizational quotas and limits.
+## Provisioning a Workspace Database
 
-Workspace databases are provisioned in one and only one of the following regions: `amer`, `apac`, and `emea`. These acronyms are defined as follows:
+Before using Database Storage in an AIO project workspace, a workspace database must be provisioned. This is a self-service operation requiring no special permissions.
+
+Note that is a strict one-to-one relationship between an AIO project workspace and a workspace database, and each workspace database is entirely isolated from all other workspace databases. Also, each workspace database must reside in one and only one of the following regions:
 
 - `amer`: North, Central, and South America. Data is stored in the US.
 - `apac`: Asia and Pacific. Data is stored in Japan.
 - `emea`: Europe, the Middle East, and Africa. Data is stored in the EU.
+
+A workspace database can be provisioned in one of two ways: declaratively in the `app.config.yaml` application manifest or manually using the db plugin in the AIO CLI.
+
+To provision a database declaratively, add the follow to the runtime manifest of `app.config.yaml`:
+
+```yaml
+application:
+  runtimeManifest:
+    database:
+      auto-provision: true
+      region: emea
+```
+
+When the application is deployed using `aio app deploy` a database will be provisioned in the specified region unless it is already present.
+
+To provision a database using the AIO CLI, the following command can be used:
+
+```bash
+aio app db provision [--region emea]
+```
+
+In addition to provisioning a workspace database in the selected region, running this command will automatically add a database entry to the runtime manifest of `app.config.yaml`:
+
+```yaml
+application:
+  runtimeManifest:
+    database:
+      auto-provision: false
+      region: emea
+```
+
+Both runtime actions using `aio-lib-db` and the db plugin for the AIO CLI will use the database region defined in `app.config.yaml` and otherwise will default to `amer`.
+
+In case a workspace database is provisioned in the wrong region, it must first be deleted and then provisioned in the correct region. The process is to delete the database using `aio app db delete`, set the correct region in the `app.config.yaml` application manifest, and then provision the new workspace database using `aio app deploy` or `aio app db provision`.
 
 ## DB plugin in the AIO CLI
 
@@ -36,6 +72,7 @@ The following is only a brief introduction to the DB plugin. For more thorough d
 To install the pre-GA plugin for the AIO CLI:
 
 ```bash
+aio plugins:install @adobe/aio-cli-plugin-app@next
 aio plugins:install @adobe/aio-cli-plugin-app-storage@next
 ```
 
@@ -43,7 +80,9 @@ aio plugins:install @adobe/aio-cli-plugin-app-storage@next
 
 When using the DB plugin in the AIO CLI, it is important that the region is the same as where the database is provisioned. If not, the connection will fail.
 
-The default region is `amer`, and to set a different one, you can use the `--region` flag or add the `AIO_DB_REGION` variable to your `.env` file. Supported regions include `amer`, `emea`, and `apac`.
+If a database region is present in the `app.config.yaml` application manifest, that is the region the DB plugin will use.
+
+If no database region is present in the `app.config.yaml` application manifest, the region may be specified using the `--region` option and will default to `amer`. The `AIO_DB_REGION` environment variable can also be used but is generally not recommended.
 
 ### Provisioning a workspace database
 
@@ -220,11 +259,8 @@ const { DbError } = require('@adobe/aio-lib-db')
 async function main() {
   let client
   try {
-    // Initialize the library. Defaults to amer region
+    // Database region is defined in app.config.yaml and defaults to amer
     const db = await libDb.init()
-
-    // Region must be specified if the database is not in the amer region
-    // const db = await libDb.init({region: 'emea'})
 
     // Set up a connection
     client = await db.connect()
