@@ -2,6 +2,24 @@
 
 Stay up to date with the latest features, improvements, and bug fixes in App Builder and Adobe I/O Runtime.
 
+## January 2026
+
+*January 26, 2026*
+
+### @adobe/aio-cli-plugin-app 14.4.0 & @adobe/aio-lib-console 5.5.0
+
+#### New Features
+- Validate app config by default in CLI app plugin
+- Inherit secrets in prerelease workflow in CLI app plugin
+- Append x-request-id header to error if present
+
+#### Upgrade Instructions
+
+To use the update, reinstall the aio-cli or update `@adobe/aio-aio-lib-console` to `^5.5` in your project's package.json.
+
+[Full release changes - aio-cli-plugin-app](https://github.com/adobe/aio-cli-plugin-app/releases/tag/14.4.0)  
+[Full release changes - aio-lib-console](https://github.com/adobe/aio-lib-console/releases/tag/5.5.0)
+
 ## November 2025
 
 *November 27, 2025*
