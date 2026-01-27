@@ -1,10 +1,11 @@
 # Multiple Regions
 
-Actions are executed in one of three regions on AWS:
+Actions are executed in one of four regions on AWS:
 
 * `US East` (us-east-1) | Northern Virginia
 * `EU` (eu-west-1) | Ireland
 * `Asia Pacific` (ap-northeast-1) | Tokyo
+* `Asia Pacific (Sydney)` (ap-southeast-2) | Sydney
 
 ## How do we execute your action?
 
