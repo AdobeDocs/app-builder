@@ -2,6 +2,21 @@
 
 Stay up to date with the latest features, improvements, and bug fixes in App Builder and Adobe I/O Runtime.
 
+## December 2025
+
+*December 3, 2025*
+
+### @adobe/aio-lib-ims-oauth 6.0.5
+
+`aio login` on Windows issues: A patch release of a lib in the `aio-cli` fixes these login issues:
+- `--no-open` flag was not working (all OSes)
+- auto open of the login link in your default browser was not working (Windows Command Prompt and Windows PowerShell)
+- any error in auto open will be captured, and the user will receive a warning to open the login link (which is logged into the console) manually in their browser
+
+[Full release changes - aio-lib-ims-oauth](https://github.com/adobe/aio-lib-ims-oauth/releases/tag/6.0.5)
+
+To get the updates in the aio-cli, just reinstall the cli.
+
 ## November 2025
 
 *November 27, 2025*
