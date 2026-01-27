@@ -44,7 +44,7 @@ When the application is deployed using `aio app deploy` a database will be provi
 To provision a database using the AIO CLI, the following command can be used:
 
 ```bash
-aio app db provision [--region emea]
+aio app db provision [--region <area>]
 ```
 
 In addition to provisioning a workspace database in the selected region, running this command will automatically add a database entry to the runtime manifest of `app.config.yaml`:
