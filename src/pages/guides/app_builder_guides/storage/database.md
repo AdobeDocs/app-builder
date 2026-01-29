@@ -57,7 +57,9 @@ application:
       region: emea
 ```
 
-Both runtime actions using `aio-lib-db` and the db plugin for the AIO CLI will use the database region defined in `app.config.yaml` and otherwise will default to `amer`.
+The db plugin for the AIO CLI will use the database region defined in `app.config.yaml`. If it is not defined there, it will either use the `amer` default or whatever is defined in the `AIO_DB_REGION` environment variable.
+
+In runtime actions, however, **aio-lib-db** must be initialized in the same region as defined in `app.config.yaml`. If that region is anything other than the `amer` default, the region should be set either by passing a `{region: "<region>"}` argument to the `libDb.init()` method or by setting the `AIO_DB_REGION` environment variable.
 
 In case a workspace database is provisioned in the wrong region, it must first be deleted and then provisioned in the correct region. The process is to delete the database using `aio app db delete`, set the correct region in the `app.config.yaml` application manifest, and then provision the new workspace database using `aio app deploy` or `aio app db provision`.
 
@@ -82,7 +84,7 @@ When using the DB plugin in the AIO CLI, it is important that the region is the 
 
 If a database region is present in the `app.config.yaml` application manifest, that is the region the DB plugin will use.
 
-If no database region is present in the `app.config.yaml` application manifest, the region may be specified using the `--region` option and will default to `amer`. The `AIO_DB_REGION` environment variable can also be used but is generally not recommended.
+If no database region is present in the `app.config.yaml` application manifest, the region may be specified using the `--region` option or by setting `AIO_DB_REGION` environment variable and will otherwise default to `amer`.
 
 ### Provisioning a workspace database
 
@@ -244,6 +246,14 @@ Much of the extensive documentation for the [MongoDB Node Driver](https://www.mo
 npm install @adobe/aio-lib-db
 ```
 
+### Region selection
+
+**aio-lib-db** must be initialized in the region the workspace database was provisioned. Otherwise, the connection will fail.
+
+To explicitly initialize the library in a specific region, pass the `{region: "<region>"}` arguement to the `libDb.init()` method.
+
+Called with no arguments, `libDb.init()` will initialize the library either in the default `amer` region or in the region defined in the `AIO_DB_REGION` environment variable.
+
 ### Basic usage
 
 The following assumes that a Workspace Database has been provisioned in the AIO Project Workspace using the DB Plugin in the AIO CLI as described above.
@@ -259,8 +269,12 @@ const { DbError } = require('@adobe/aio-lib-db')
 async function main() {
   let client
   try {
-    // Database region is defined in app.config.yaml and defaults to amer
+
+    // Implicit region initialization
     const db = await libDb.init()
+      
+    // Explicit region initialization
+    // const db = await libDb.init({region: "emea"})
 
     // Set up a connection
     client = await db.connect()
