@@ -7,6 +7,7 @@ keywords:
   - DocumentDB
   - MongoDB
 title: Getting Started with Database Storage
+description: All the basics needed to start using Database Storage for App Builder projects.
 ---
 
 # Getting Started with Database Storage
@@ -21,7 +22,7 @@ There is a strict one-to-one relationship between an AIO project workspace and a
 
 Before using Database Storage in an AIO project workspace, a workspace database must be provisioned. This is a self-service operation requiring no special permissions.
 
-Note that is a strict one-to-one relationship between an AIO project workspace and a workspace database, and each workspace database is entirely isolated from all other workspace databases. Also, each workspace database must reside in one and only one of the following regions:
+Note that there is a strict one-to-one relationship between an AIO project workspace and a workspace database, and each workspace database is entirely isolated from all other workspace databases. Also, each workspace database must reside in one and only one of the following regions:
 
 - `amer`: North, Central, and South America. Data is stored in the US.
 - `apac`: Asia and Pacific. Data is stored in Japan.
