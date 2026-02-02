@@ -64,7 +64,7 @@ These npm modules (and their dependencies) are pre-installed, so you don't need 
     "dnscache": "1.0.2",
     "prom-client": "12.0.0"
 
-> Note: These modules may have dependencies that will also be available out of the box in the runtime environment. If after updating your action's runtime you are getting an error about not being able to find a module, but the errant module is not listed here, this may be the case.
+> Note: These modules may have dependencies that will also be available out of the box in the runtime environment. If after updating your action's runtime you are getting an error about not being able to find a module, but the errant module is not listed here, this may be the case. You will need to explicitly install these dependencies in your project and bundle them with your action code to complete the update. 
 
 To specify a kind:
 
