@@ -2,7 +2,7 @@
 
 Adobe I/O Runtime supports the three latest Node.js versions (see the [Node.js release schedule](https://nodejs.org/en/about/previous-releases#release-schedule) for details). We encourage you to keep actions updated to the latest version so you can take advantage of latest security updates and the pre-warmed container feature that dramatically improves cold-start times.
 
-These npm modules are pre-installed, so you don't need to package them with your action code to use them:
+These npm modules (and their dependencies) are pre-installed, so you don't need to package them with your action code to use them:
 
 ### Node.js v24.0.1
 
@@ -63,6 +63,8 @@ These npm modules are pre-installed, so you don't need to package them with your
     "node-fetch": "2.6.7",
     "dnscache": "1.0.2",
     "prom-client": "12.0.0"
+
+> Note: These modules may have dependencies that will also be available out of the box in the runtime environment. If after updating your action's runtime you are getting an error about not being able to find a module, but the errant module is not listed here, this may be the case.
 
 To specify a kind:
 
