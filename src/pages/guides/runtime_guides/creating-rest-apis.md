@@ -55,7 +55,7 @@ or
 curl https://<YOUR-NAMESPACE>.adobeioruntime.net:443/apis/pet-store/pet/2345 -X GET
 ```
 
-In this example, the `{di}` value, 2335, will be mapped to a {payload.id}.
+In this example, the `\{di\}` value, 2335, will be mapped to a \{payload.id\}.
 
 > **Note** that this URL differs from what `aio` returns. This is due to protections in Runtime that segregate namespaces from one another when invoking web actions. The `aio`-generated link will still work, but it will return a `308` redirect to your namespace's subdomain on Runtime. For a further discussion of this issue, please see [Securing Web Actions](securing-web-actions.md).
 
