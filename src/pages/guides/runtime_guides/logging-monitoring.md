@@ -60,7 +60,7 @@ One tool that made it easy to do this is [Epsagon](https://epsagon.com). Epsagon
 
 #### New Relic
 
-Another tool that can be used to monitor your actions is New Relic, which offers a Node.js agent that can be used to monitor your actions. Check this [guide](https://docs.newrelic.com/docs/agents/nodejs-agent/getting-started/introduction-new-relic-nodejs) to learn more.
+Another tool that can be used to monitor your actions is New Relic, which offers a Node.js agent that can be used to monitor your actions. Check the [New Relic Node.js agent documentation](https://docs.newrelic.com/docs/apm/agents/nodejs-agent/getting-started/introduction-new-relic-nodejs/) to learn more.
 
 For example if you want to send to New Relic the execution time for one action, you could build your action code as follows:
 

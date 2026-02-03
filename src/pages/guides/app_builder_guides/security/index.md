@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Security Overview
+description: This document provides a comprehensive security overview of App Builder.
 ---
 
 # Security Overview

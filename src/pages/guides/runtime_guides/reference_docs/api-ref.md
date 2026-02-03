@@ -27,9 +27,12 @@ Returns the details of the namespace associated with the specified organization 
 
 Response content type: `application/json`
 
-| Code | Description                        |
-| --- | ---------------------------------- |
-| 200 | Successful operationExample value: |
+| Code | Description          |
+| --- | -------------------- |
+| 200 | Successful operation |
+
+Example value:
+
 ```
 {
     "name": "string",
@@ -62,9 +65,12 @@ Creates a new namespace and returns the details of the newly created namespace. 
 
 Response content type: `application/json`
 
-| Code | Description                        |
-| --- | ---------------------------------- |
-|200|Successful operation Example value:|
+| Code | Description          |
+| --- | -------------------- |
+|200|Successful operation |
+
+Example value:
+
 ```
 {
 "name": "string",
@@ -117,9 +123,11 @@ Returns the list of actions associated with the specified organization and integ
 
 Response content type: `application/json`
 
-| Code | Description                        |
-| --- | ---------------------------------- |
-|200|Successful operation Example value:|
+| Code | Description          |
+| --- | -------------------- |
+|200|Successful operation |
+
+Example value:
 
 ```
 [
@@ -220,7 +228,9 @@ Creates a new action.
 | intId (string: path)           | Integration ID                                |
 | Authorization (string: header) | Authorization token in format: Bearer {token} |
 | X-Api-Key (string: header)     | Api key                                       |
-| body (body)                    | Action form.  Example value:                  |
+| body (body)                    | Action form                                   |
+
+Example value:
 
 ```
 {
@@ -335,9 +345,11 @@ Returns the details of an action.
 
 Response content type: `application/json`
 
-| Code | Description                        |
-| --- | ---------------------------------- |
-|200|Successful operation Example value:|
+| Code | Description          |
+| --- | -------------------- |
+|200|Successful operation |
+
+Example value:
 
 ```
 {
@@ -425,9 +437,12 @@ Executes an action.
 
 Response content type: `application/json`
 
-| Code | Description                        |
-| --- | ---------------------------------- |
-|200|Successful operation Example value:|
+| Code | Description          |
+| --- | -------------------- |
+|200|Successful operation |
+
+Example value:
+
 ```
 {
   "name": "string",
@@ -502,8 +517,10 @@ Updates an action.
 | name (string: path)           | Action name                                   |
 | Authorization (string: header) | Authorization token in format: Bearer {token} |
 | X-Api-Key (string: header)    | Api key                                       |
-| body (body)                   | Action form.  Example value:                  |
+| body (body)                   | Action form                                   |
       
+
+Example value:
 
 ```
 {
@@ -637,9 +654,11 @@ Returns a list of built-in actions.
 
 Response content type: `application/json`
 
-| Code | Description                         |
-| --- |-------------------------------------|
-|200| Successful operationExample value:  |
+| Code | Description          |
+| --- |---------------------|
+|200| Successful operation |
+
+Example value:
 
 ```
 [
@@ -742,7 +761,9 @@ Registers an event registration and assigns a given action to the event.
 | X-Ams-Consumer-Id (string: header)    | AMS consumer ID                               |
 | X-Ams-Application-Id (string: header) | AMS application ID                            |
 | X-Api-Key (string: header)            | Api key                                       |
-| body (body)                           | Example value:  |
+| body (body)                           | Registration details                          |
+
+Example value:
 
 ```
 {
@@ -803,9 +824,11 @@ registration_id     string
 
 Response content type: `application/json`
 
-| Code | Description                        |
-| --- | ---------------------------------- |
-|200|Successful operation Example value:|
+| Code | Description          |
+| --- | -------------------- |
+|200|Successful operation |
+
+Example value:
 
 ```
 {
@@ -902,7 +925,9 @@ Updates an event registration.
 | X-Ams-Application-Id (string: header) | AMS application ID                            |
 | Authorization (string: header)        | Authorization token in format: Bearer {token} |
 | X-Api-Key (string: header)            | Api key                                       |
-| body (body)                           | Example value:                                |
+| body (body)                           | Registration details                          |
+
+Example value:
 
 ```
 {
@@ -963,9 +988,12 @@ registration_id     string
 
 Response content type: `application/json`
 
-| Code | Description                        |
-| --- | ---------------------------------- |
-|200|Successful operation Example value:|
+| Code | Description          |
+| --- | -------------------- |
+|200|Successful operation |
+
+Example value:
+
 ```
 {
   "id": "string",
@@ -1041,9 +1069,12 @@ Updates the status of an event registration.
 
 Response content type: `application/json`
 
-| Code | Description                        |
-| --- | ---------------------------------- |
-|200|Successful operation Example value:|
+| Code | Description          |
+| --- | -------------------- |
+|200|Successful operation |
+
+Example value:
+
 ```
 {
   "id": "string",
