@@ -13,13 +13,13 @@ This tutorial shows how to create REST APIs from web actions deployed to Adobe I
 
 You can map these actions to a REST API for managing `pet` resources:
 
-| Endpoint  | HTTP Method | Action Nam  |
-| --------- | ----------- | ----------- |
-| /pet      | POST        | `addPet`    |
-| /pet      | GET         | `getPet`    |
-| /pet/{id} | GET         | `getPet`    |
-| /pet/{id} | PUT         | `updatePet` |
-| /pet/{id} | DELETE      | `deletePet` |
+| Endpoint   | HTTP Method | Action Nam  |
+| -----------| ----------- | ----------- |
+| /pet       | POST        | `addPet`    |
+| /pet       | GET         | `getPet`    |
+| /pet/\{id\}| GET         | `getPet`    |
+| /pet/\{id\}| PUT         | `updatePet` |
+| /pet/\{id\}| DELETE      | `deletePet` |
 
  This is how to do it:
 
