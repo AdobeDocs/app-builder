@@ -1,3 +1,7 @@
+---
+title: "Creating Actions"
+description: "Guide to creating actions using Adobe I/O Runtime."
+---
 # Creating Actions
 
 To execute as an action on Adobe I/O Runtime, the function you code must both :

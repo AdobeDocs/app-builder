@@ -16,12 +16,12 @@ Returns the details of the namespace associated with the specified organization 
 
 #### _Parameters:_
 
-| Name                                 | Description                                     |
-| ------------------------------------ | ----------------------------------------------- |
-| `orgId` (`string`: _path_)           | Organization ID                                 |
-| `intId` (`string`: _path_)           | Integration ID                                  |
-| `Authorization` (`string`: _header_) | Authorization token in format: `Bearer {token}` |
-| `X-Api-Key` (`string`: _header_)     | Api key                                         |
+| Name                                 | Description                                       |
+| ------------------------------------ | ------------------------------------------------- |
+| `orgId` (`string`: _path_)           | Organization ID                                   |
+| `intId` (`string`: _path_)           | Integration ID                                    |
+| `Authorization` (`string`: _header_) | Authorization token in format: `Bearer \{token\}` |
+| `X-Api-Key` (`string`: _header_)     | Api key                                           |
 
 #### _Responses:_
 
@@ -54,12 +54,12 @@ Creates a new namespace and returns the details of the newly created namespace. 
 
 #### _Parameters:_
 
-| Name                                 | Description                                     |
-| ------------------------------------ | ----------------------------------------------- |
-| `orgId` (`string`: _path_)           | Organization ID                                 |
-| `intId` (`string`: _path_)           | Integration ID                                  |
-| `Authorization` (`string`: _header_) | Authorization token in format: `Bearer {token}` |
-| `X-Api-Key` (`string`: _header_)     | Api key                                         |
+| Name                                 | Description                                        |
+| ------------------------------------ | -------------------------------------------------- |
+| `orgId` (`string`: _path_)           | Organization ID                                    |
+| `intId` (`string`: _path_)           | Integration ID                                     |
+| `Authorization` (`string`: _header_) | Authorization token in format: `Bearer \{token]\}` |
+| `X-Api-Key` (`string`: _header_)     | Api key                                            |
 
 #### _Responses:_
 
@@ -91,20 +91,20 @@ Deletes the namespace associated with the specified organization and integration
 
 #### _Parameters:_
 
-| Name                                 | Description                                     |
-| ------------------------------------ | ----------------------------------------------- |
-| `orgId` (`string`: _path_)           | Organization ID                                 |
-| `intId` (`string`: _path_)           | Integration ID                                  |
-| `Authorization` (`string`: _header_) | Authorization token in format: `Bearer {token}` |
-| `X-Api-Key` (`string`: _header_)     | Api key                                         |
+| Name                                 | Description                                       |
+| ------------------------------------ | ------------------------------------------------- |
+| `orgId` (`string`: _path_)           | Organization ID                                   |
+| `intId` (`string`: _path_)           | Integration ID                                    |
+| `Authorization` (`string`: _header_) | Authorization token in format: `Bearer \{token\}` |
+| `X-Api-Key` (`string`: _header_)     | Api key                                           |
 
 #### _Responses:_
 
 Response content type: `application/json`
 
-| Code                                 | Description                                     |
-| ------------------------------------ | ----------------------------------------------- |
-| _default_ | Successful operation |
+| Code      | Description                                     |
+| --------- | ----------------------------------------------- |
+| _default_ | Successful operation                            |
 
 ### GET /runtime/namespaces/\{orgId\}/\{intId\}/actions
 
@@ -112,12 +112,12 @@ Returns the list of actions associated with the specified organization and integ
 
 #### _Parameters:_
 
-| Name                                 | Description                                     |
-| ------------------------------------ | ----------------------------------------------- |
-| `orgId` (`string`: _path_)           | Organization ID                                 |
-| `intId` (`string`: _path_)           | Integration ID                                  |
-| `Authorization` (`string`: _header_) | Authorization token in format: `Bearer {token}` |
-| `X-Api-Key` (`string`: _header_)     | Api key                                         |
+| Name                                 | Description                                       |
+| ------------------------------------ | ------------------------------------------------- |
+| `orgId` (`string`: _path_)           | Organization ID                                   |
+| `intId` (`string`: _path_)           | Integration ID                                    |
+| `Authorization` (`string`: _header_) | Authorization token in format: `Bearer \{token\}` |
+| `X-Api-Key` (`string`: _header_)     | Api key                                           |
 
 #### _Responses:_
 
@@ -222,13 +222,13 @@ Creates a new action.
 
 #### _Parameters:_
 
-| Name                           | Description                                   |
-|--------------------------------|-----------------------------------------------|
-| orgId (string: path)           | Organization ID                               |
-| intId (string: path)           | Integration ID                                |
-| Authorization (string: header) | Authorization token in format: Bearer {token} |
-| X-Api-Key (string: header)     | Api key                                       |
-| body (body)                    | Action form                                   |
+| Name                           | Description                                       |
+|--------------------------------|-------------------------------------------------- |
+| orgId (string: path)           | Organization ID                                   |
+| intId (string: path)           | Integration ID                                    |
+| Authorization (string: header) | Authorization token in format: `Bearer \{token\}` |
+| X-Api-Key (string: header)     | Api key                                           |
+| body (body)                    | Action form                                       |
 
 Example value:
 
@@ -333,13 +333,13 @@ Returns the details of an action.
 
 #### _Parameters:_
 
-| Name                                 | Description                                     |
-| ------------------------------------ | ----------------------------------------------- |
-| `orgId` (`string`: _path_)           | Organization ID                                 |
-| `intId` (`string`: _path_)           | Integration ID                                  |
-| `name` (`string`: _path_)            | Action name                                     |
-| `Authorization` (`string`: _header_) | Authorization token in format: `Bearer {token}` |
-| `X-Api-Key` (`string`: _header_)     | Api key                                         |
+| Name                                 | Description                                       |
+| ------------------------------------ | ------------------------------------------------- |
+| `orgId` (`string`: _path_)           | Organization ID                                   |
+| `intId` (`string`: _path_)           | Integration ID                                    |
+| `name` (`string`: _path_)            | Action name                                       |
+| `Authorization` (`string`: _header_) | Authorization token in format: `Bearer \{token\}` |
+| `X-Api-Key` (`string`: _header_)     | Api key                                           |
 
 #### _Responses:_
 
@@ -425,21 +425,21 @@ Executes an action.
 
 #### _Parameters:_
 
-| Name                                 | Description                                     |
-| ------------------------------------ | ----------------------------------------------- |
-| `orgId` (`string`: _path_)           | Organization ID                                 |
-| `intId` (`string`: _path_)           | Integration ID                                  |
-| `name` (`string`: _path_)            | Action name                                     |
-| `Authorization` (`string`: _header_) | Authorization token in format: `Bearer {token}` |
-| `X-Api-Key` (`string`: _header_)     | Api key                                         |
+| Name                                 | Description                                       |
+| ------------------------------------ | ------------------------------------------------- |
+| `orgId` (`string`: _path_)           | Organization ID                                   |
+| `intId` (`string`: _path_)           | Integration ID                                    |
+| `name` (`string`: _path_)            | Action name                                       |
+| `Authorization` (`string`: _header_) | Authorization token in format: `Bearer \{token\}` |
+| `X-Api-Key` (`string`: _header_)     | Api key                                           |
 
 #### _Responses:_
 
 Response content type: `application/json`
 
-| Code | Description          |
-| --- | -------------------- |
-|200|Successful operation |
+|Code | Description         |
+|---- | --------------------|
+|200  | Successful operation|
 
 Example value:
 
@@ -510,14 +510,14 @@ Updates an action.
 
 #### _Parameters:_
 
-| Name                          | Description                                   |
-|-------------------------------|-----------------------------------------------|
-| orgId (string: path)          | Organization ID                               |
-| intId (string: path)          | Integration ID                                |
-| name (string: path)           | Action name                                   |
-| Authorization (string: header) | Authorization token in format: Bearer {token} |
-| X-Api-Key (string: header)    | Api key                                       |
-| body (body)                   | Action form                                   |
+| Name                          | Description                                       |
+|-------------------------------|-------------------------------------------------- |
+| orgId (string: path)          | Organization ID                                   |
+| intId (string: path)          | Integration ID                                    |
+| name (string: path)           | Action name                                       |
+| Authorization (string: header)| Authorization token in format: `Bearer \{token\}` |
+| X-Api-Key (string: header)    | Api key                                           |
+| body (body)                   | Action form                                       |
       
 
 Example value:
@@ -623,13 +623,13 @@ Deletes an action.
 
 #### _Parameters:_
 
-| Name                                 | Description                                     |
-| ------------------------------------ | ----------------------------------------------- |
-| `orgId` (`string`: _path_)           | Organization ID                                 |
-| `intId` (`string`: _path_)           | Integration ID                                  |
-| `name` (`string`: _path_)            | Action name                                     |
-| `Authorization` (`string`: _header_) | Authorization token in format: `Bearer {token}` |
-| `X-Api-Key` (`string`: _header_)     | Api key                                         |
+| Name                                 | Description                                       |
+| ------------------------------------ | ------------------------------------------------- |
+| `orgId` (`string`: _path_)           | Organization ID                                   |
+| `intId` (`string`: _path_)           | Integration ID                                    |
+| `name` (`string`: _path_)            | Action name                                       |
+| `Authorization` (`string`: _header_) | Authorization token in format: `Bearer \{token\}` |
+| `X-Api-Key` (`string`: _header_)     | Api key                                           |
 
 #### _Responses:_
 
@@ -645,10 +645,10 @@ Returns a list of built-in actions.
 
 #### _Parameters:_
 
-| Name                                 | Description                                     |
-| ------------------------------------ | ----------------------------------------------- |
-| `Authorization` (`string`: _header_) | Authorization token in format: `Bearer {token}` |
-| `X-Api-Key` (`string`: _header_)     | Api key                                         |
+| Name                                 | Description                                       |
+| ------------------------------------ | ------------------------------------------------- |
+| `Authorization` (`string`: _header_) | Authorization token in format: `Bearer \{token\}` |
+| `X-Api-Key` (`string`: _header_)     | Api key                                           |
 
 #### _Responses:_
 
@@ -753,15 +753,15 @@ Registers an event registration and assigns a given action to the event.
 
 #### _Parameters:_
 
-| Name                                  | Description                                   |
-|---------------------------------------|-----------------------------------------------|
-| orgId (string: path)                  | Organization ID                               |
-| intId (string: path)                  | Integration ID                                |
-| Authorization (string: header)        | Authorization token in format: Bearer {token} |
-| X-Ams-Consumer-Id (string: header)    | AMS consumer ID                               |
-| X-Ams-Application-Id (string: header) | AMS application ID                            |
-| X-Api-Key (string: header)            | Api key                                       |
-| body (body)                           | Registration details                          |
+| Name                                  | Description                                       |
+|---------------------------------------|-------------------------------------------------- |
+| orgId (string: path)                  | Organization ID                                   |
+| intId (string: path)                  | Integration ID                                    |
+| Authorization (string: header)        | Authorization token in format: `Bearer \{token\}` |
+| X-Ams-Consumer-Id (string: header)    | AMS consumer ID                                   |
+| X-Ams-Application-Id (string: header) | AMS application ID                                |
+| X-Api-Key (string: header)            | Api key                                           |
+| body (body)                           | Registration details                              |
 
 Example value:
 
@@ -890,16 +890,16 @@ Deletes an event registration.
 
 #### _Parameters:_
 
-| Name                                      | Description                                     |
-| ----------------------------------------- | ----------------------------------------------- |
-| `orgId` (`string`: _path_)                | Organization ID                                 |
-| `intId` (`string`: _path_)                | Integration ID                                  |
-| `clientId ` (`string`: _path_)            | IMS client ID                                   |
-| `registrationId` (`string`: _path_)       | ID of registration                              |
-| `X-Ams-Consumer-Id` (`string`: _path_)    | AMS consumer ID                                 |
-| `X-Ams-Application-Id` (`string`: _path_) | AMS application ID                              |
-| `Authorization` (`string`: _header_)      | Authorization token in format: `Bearer {token}` |
-| `X-Api-Key` (`string`: _header_)          | Api key                                         |
+| Name                                      | Description                                       |
+| ----------------------------------------- | ------------------------------------------------- |
+| `orgId` (`string`: _path_)                | Organization ID                                   |
+| `intId` (`string`: _path_)                | Integration ID                                    |
+| `clientId ` (`string`: _path_)            | IMS client ID                                     |
+| `registrationId` (`string`: _path_)       | ID of registration                                |
+| `X-Ams-Consumer-Id` (`string`: _path_)    | AMS consumer ID                                   |
+| `X-Ams-Application-Id` (`string`: _path_) | AMS application ID                                |
+| `Authorization` (`string`: _header_)      | Authorization token in format: `Bearer \{token\}` |
+| `X-Api-Key` (`string`: _header_)          | Api key                                           |
 
 #### _Responses:_
 
@@ -915,17 +915,17 @@ Updates an event registration.
 
 #### _Parameters:_
 
-| Name                                  | Description                                   |
-|---------------------------------------|-----------------------------------------------|
-| orgId (string: path)                  | Organization ID                               |
-| intId (string: path)                  | Integration ID                                |
-| clientId (string: path)               | IMS client ID                                 |
-| registrationId (string: path)         | Registration ID                               |
-| X-Ams-Consumer-Id (string: header)    | AMS consumer ID                               |
-| X-Ams-Application-Id (string: header) | AMS application ID                            |
-| Authorization (string: header)        | Authorization token in format: Bearer {token} |
-| X-Api-Key (string: header)            | Api key                                       |
-| body (body)                           | Registration details                          |
+| Name                                  | Description                                       |
+|---------------------------------------|-------------------------------------------------- |
+| orgId (string: path)                  | Organization ID                                   |
+| intId (string: path)                  | Integration ID                                    |
+| clientId (string: path)               | IMS client ID                                     |
+| registrationId (string: path)         | Registration ID                                   |
+| X-Ams-Consumer-Id (string: header)    | AMS consumer ID                                   |
+| X-Ams-Application-Id (string: header) | AMS application ID                                |
+| Authorization (string: header)        | Authorization token in format: `Bearer \{token\}` |
+| X-Api-Key (string: header)            | Api key                                           |
+| body (body)                           | Registration details                              |
 
 Example value:
 
@@ -1053,17 +1053,17 @@ Updates the status of an event registration.
 
 #### _Parameters:_
 
-| Name                                      | Description                                     |
-| ----------------------------------------- | ----------------------------------------------- |
-| `orgId` (`string`: _path_)                | Organization ID                                 |
-| `intId` (`string`: _path_)                | Integration ID                                  |
-| `clientId ` (`string`: _path_)            | IMS client ID                                   |
-| `registrationId` (`string`: _path_)       | ID of registration                              |
-| `status` (`string`: _path_)               | Status of the registration                      |
-| `X-Ams-Consumer-Id` (`string`: _path_)    | AMS consumer ID                                 |
-| `X-Ams-Application-Id` (`string`: _path_) | AMS application ID                              |
-| `Authorization` (`string`: _header_)      | Authorization token in format: `Bearer {token}` |
-| `X-Api-Key` (`string`: _header_)          | Api key                                         |
+| Name                                      | Description                                       |
+| ----------------------------------------- | ------------------------------------------------- |
+| `orgId` (`string`: _path_)                | Organization ID                                   |
+| `intId` (`string`: _path_)                | Integration ID                                    |
+| `clientId ` (`string`: _path_)            | IMS client ID                                     |
+| `registrationId` (`string`: _path_)       | ID of registration                                |
+| `status` (`string`: _path_)               | Status of the registration                        |
+| `X-Ams-Consumer-Id` (`string`: _path_)    | AMS consumer ID                                   |
+| `X-Ams-Application-Id` (`string`: _path_) | AMS application ID                                |
+| `Authorization` (`string`: _header_)      | Authorization token in format: `Bearer \{token\}` |
+| `X-Api-Key` (`string`: _header_)          | Api key                                           |
 
 #### _Responses:_
 

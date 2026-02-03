@@ -13,13 +13,13 @@ This tutorial shows how to create REST APIs from web actions deployed to Adobe I
 
 You can map these actions to a REST API for managing `pet` resources:
 
-| Endpoint  | HTTP Method | Action Nam  |
-| --------- | ----------- | ----------- |
-| /pet      | POST        | `addPet`    |
-| /pet      | GET         | `getPet`    |
-| /pet/{id} | GET         | `getPet`    |
-| /pet/{id} | PUT         | `updatePet` |
-| /pet/{id} | DELETE      | `deletePet` |
+| Endpoint   | HTTP Method | Action Nam  |
+| -----------| ----------- | ----------- |
+| /pet       | POST        | `addPet`    |
+| /pet       | GET         | `getPet`    |
+| /pet/\{id\}| GET         | `getPet`    |
+| /pet/\{id\}| PUT         | `updatePet` |
+| /pet/\{id\}| DELETE      | `deletePet` |
 
  This is how to do it:
 
@@ -55,7 +55,7 @@ or
 curl https://<YOUR-NAMESPACE>.adobeioruntime.net:443/apis/pet-store/pet/2345 -X GET
 ```
 
-In this example, the `{di}` value, 2335, will be mapped to a {payload.id}.
+In this example, the `\{di\}` value, 2335, will be mapped to a \{payload.id\}.
 
 > **Note** that this URL differs from what `aio` returns. This is due to protections in Runtime that segregate namespaces from one another when invoking web actions. The `aio`-generated link will still work, but it will return a `308` redirect to your namespace's subdomain on Runtime. For a further discussion of this issue, please see [Securing Web Actions](securing-web-actions.md).
 
