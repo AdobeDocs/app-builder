@@ -10,7 +10,7 @@ Adobe I/O Runtime supports the following API endpoints for interacting programma
 2. For all the API calls on this page, the base URL is:  
    `https://api.adobe.io/`
 
-### GET /runtime/admin/namespaces/{orgId}/{intId}
+### GET /runtime/admin/namespaces/\{orgId\}/\{intId\}
 
 Returns the details of the namespace associated with the specified organization and integration.
 
@@ -27,9 +27,12 @@ Returns the details of the namespace associated with the specified organization 
 
 Response content type: `application/json`
 
-| Code | Description                        |
-| --- | ---------------------------------- |
-| 200 | Successful operationExample value: |
+| Code | Description          |
+| --- | -------------------- |
+| 200 | Successful operation |
+
+Example value:
+
 ```
 {
     "name": "string",
@@ -45,7 +48,7 @@ description: Namespace Details
             Auth associated with Namespace
 }
 ```
-### POST /runtime/admin/namespaces/{orgId}/{intId}
+### POST /runtime/admin/namespaces/\{orgId\}/\{intId\}
 
 Creates a new namespace and returns the details of the newly created namespace. If namespace already exists it returns the details of the namespace.
 
@@ -62,9 +65,12 @@ Creates a new namespace and returns the details of the newly created namespace. 
 
 Response content type: `application/json`
 
-| Code | Description                        |
-| --- | ---------------------------------- |
-|200|Successful operation Example value:|
+| Code | Description          |
+| --- | -------------------- |
+|200|Successful operation |
+
+Example value:
+
 ```
 {
 "name": "string",
@@ -79,7 +85,7 @@ description: Namespace Details
             Auth associated with Namespace
 }
 ```
-### DELETE /runtime/admin/namespaces/{orgId}/{intId}
+### DELETE /runtime/admin/namespaces/\{orgId\}/\{intId\}
 
 Deletes the namespace associated with the specified organization and integration.
 
@@ -100,7 +106,7 @@ Response content type: `application/json`
 | ------------------------------------ | ----------------------------------------------- |
 | _default_ | Successful operation |
 
-### GET /runtime/namespaces/{orgId}/{intId}/actions
+### GET /runtime/namespaces/\{orgId\}/\{intId\}/actions
 
 Returns the list of actions associated with the specified organization and integration.
 
@@ -117,9 +123,11 @@ Returns the list of actions associated with the specified organization and integ
 
 Response content type: `application/json`
 
-| Code | Description                        |
-| --- | ---------------------------------- |
-|200|Successful operation Example value:|
+| Code | Description          |
+| --- | -------------------- |
+|200|Successful operation |
+
+Example value:
 
 ```
 [
@@ -208,7 +216,7 @@ url         string
             Action url
 }]
 ``` 
-### POST /runtime/namespaces/{orgId}/{intId}/actions
+### POST /runtime/namespaces/\{orgId\}/\{intId\}/actions
 
 Creates a new action.
 
@@ -220,7 +228,9 @@ Creates a new action.
 | intId (string: path)           | Integration ID                                |
 | Authorization (string: header) | Authorization token in format: Bearer {token} |
 | X-Api-Key (string: header)     | Api key                                       |
-| body (body)                    | Action form.  Example value:                  |
+| body (body)                    | Action form                                   |
+
+Example value:
 
 ```
 {
@@ -317,7 +327,7 @@ Response content type: `application/json`
 | --- | ---------------------------------- |
 | _default_ | Successful operation |
 
-### GET /runtime/namespaces/{orgId}/{intId}/actions/{name}
+### GET /runtime/namespaces/\{orgId\}/\{intId\}/actions/\{name\}
 
 Returns the details of an action.
 
@@ -335,9 +345,11 @@ Returns the details of an action.
 
 Response content type: `application/json`
 
-| Code | Description                        |
-| --- | ---------------------------------- |
-|200|Successful operation Example value:|
+| Code | Description          |
+| --- | -------------------- |
+|200|Successful operation |
+
+Example value:
 
 ```
 {
@@ -407,7 +419,7 @@ url         string
             Action url
 }]
 ```
-### POST /runtime/namespaces/{orgId}/{intId}/actions/{name}
+### POST /runtime/namespaces/\{orgId\}/\{intId\}/actions/\{name\}
 
 Executes an action.
 
@@ -425,9 +437,12 @@ Executes an action.
 
 Response content type: `application/json`
 
-| Code | Description                        |
-| --- | ---------------------------------- |
-|200|Successful operation Example value:|
+| Code | Description          |
+| --- | -------------------- |
+|200|Successful operation |
+
+Example value:
+
 ```
 {
   "name": "string",
@@ -489,7 +504,7 @@ response    {
             Action invocation response
 }
 ```
-### PUT /runtime/namespaces/{orgId}/{intId}/actions/{name}
+### PUT /runtime/namespaces/\{orgId\}/\{intId\}/actions/\{name\}
 
 Updates an action.
 
@@ -502,8 +517,10 @@ Updates an action.
 | name (string: path)           | Action name                                   |
 | Authorization (string: header) | Authorization token in format: Bearer {token} |
 | X-Api-Key (string: header)    | Api key                                       |
-| body (body)                   | Action form.  Example value:                  |
+| body (body)                   | Action form                                   |
       
+
+Example value:
 
 ```
 {
@@ -600,7 +617,7 @@ Response content type: `application/json`
 | --- | ---------------------------------- |
 | _default_ | Successful operation |
 
-### DELETE /runtime/namespaces/{orgId}/{intId}/actions/{name}
+### DELETE /runtime/namespaces/\{orgId\}/\{intId\}/actions/\{name\}
 
 Deletes an action.
 
@@ -637,9 +654,11 @@ Returns a list of built-in actions.
 
 Response content type: `application/json`
 
-| Code | Description                         |
-| --- |-------------------------------------|
-|200| Successful operationExample value:  |
+| Code | Description          |
+| --- |---------------------|
+|200| Successful operation |
+
+Example value:
 
 ```
 [
@@ -728,7 +747,7 @@ url         string
             Action url
 }]
 ```
-### POST /runtime/namespaces/{orgId}/{intId}/handleEventRegistration
+### POST /runtime/namespaces/\{orgId\}/\{intId\}/handleEventRegistration
 
 Registers an event registration and assigns a given action to the event.
 
@@ -742,7 +761,9 @@ Registers an event registration and assigns a given action to the event.
 | X-Ams-Consumer-Id (string: header)    | AMS consumer ID                               |
 | X-Ams-Application-Id (string: header) | AMS application ID                            |
 | X-Api-Key (string: header)            | Api key                                       |
-| body (body)                           | Example value:  |
+| body (body)                           | Registration details                          |
+
+Example value:
 
 ```
 {
@@ -803,9 +824,11 @@ registration_id     string
 
 Response content type: `application/json`
 
-| Code | Description                        |
-| --- | ---------------------------------- |
-|200|Successful operation Example value:|
+| Code | Description          |
+| --- | -------------------- |
+|200|Successful operation |
+
+Example value:
 
 ```
 {
@@ -861,7 +884,7 @@ registration_id     string
 }
 ```
 
-### DELETE /runtime/namespaces/{orgId}/{intId}/handleEventDeletion/{clientId}/{registrationId}
+### DELETE /runtime/namespaces/\{orgId\}/\{intId\}/handleEventDeletion/\{clientId\}/\{registrationId\}
 
 Deletes an event registration.
 
@@ -886,7 +909,7 @@ Response content type: `application/json`
 | --- | ---------------------------------- |
 | _default_ | Successful operation |
 
-### PUT /runtime/namespaces/{orgId}/{intId}/handleEventUpdate/{clientId}/{registrationId}
+### PUT /runtime/namespaces/\{orgId\}/\{intId\}/handleEventUpdate/\{clientId\}/\{registrationId\}
 
 Updates an event registration.
 
@@ -902,7 +925,9 @@ Updates an event registration.
 | X-Ams-Application-Id (string: header) | AMS application ID                            |
 | Authorization (string: header)        | Authorization token in format: Bearer {token} |
 | X-Api-Key (string: header)            | Api key                                       |
-| body (body)                           | Example value:                                |
+| body (body)                           | Registration details                          |
+
+Example value:
 
 ```
 {
@@ -963,9 +988,12 @@ registration_id     string
 
 Response content type: `application/json`
 
-| Code | Description                        |
-| --- | ---------------------------------- |
-|200|Successful operation Example value:|
+| Code | Description          |
+| --- | -------------------- |
+|200|Successful operation |
+
+Example value:
+
 ```
 {
   "id": "string",
@@ -1019,7 +1047,7 @@ registration_id     string
                     Event registration id
 }
 ```
-### POST /runtime/namespaces/{orgId}/{intId}/handleEventStatus/{clientId}/{registrationId}/{status}
+### POST /runtime/namespaces/\{orgId\}/\{intId\}/handleEventStatus/\{clientId\}/\{registrationId\}/\{status\}
 
 Updates the status of an event registration.
 
@@ -1041,9 +1069,12 @@ Updates the status of an event registration.
 
 Response content type: `application/json`
 
-| Code | Description                        |
-| --- | ---------------------------------- |
-|200|Successful operation Example value:|
+| Code | Description          |
+| --- | -------------------- |
+|200|Successful operation |
+
+Example value:
+
 ```
 {
   "id": "string",

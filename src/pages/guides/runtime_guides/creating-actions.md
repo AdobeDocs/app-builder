@@ -323,7 +323,7 @@ Make sure to declare any npm dependencies required for your functions in the pac
 
 ### wskdeploy manifest file
 
-The final step in deploying a ZIP action is to create the manifest file wskdeploy will use to create the action. In the parent folder of the folder that contains your function files and npm modules, create a `manifest.yaml`file. See the [YAML reference card](http://yaml.org/refcard.html) for more information on YAML format.
+The final step in deploying a ZIP action is to create the manifest file wskdeploy will use to create the action. In the parent folder of the folder that contains your function files and npm modules, create a `manifest.yaml`file. See the [YAML specification](https://yaml.org/spec/) for more information on YAML format.
 
 This is the folder structure:
 
