@@ -10,7 +10,7 @@ Adobe I/O Runtime supports the following API endpoints for interacting programma
 2. For all the API calls on this page, the base URL is:  
    `https://api.adobe.io/`
 
-### GET /runtime/admin/namespaces/{orgId}/{intId}
+### GET /runtime/admin/namespaces/\{orgId\}/\{intId\}
 
 Returns the details of the namespace associated with the specified organization and integration.
 
@@ -48,7 +48,7 @@ description: Namespace Details
             Auth associated with Namespace
 }
 ```
-### POST /runtime/admin/namespaces/{orgId}/{intId}
+### POST /runtime/admin/namespaces/\{orgId\}/\{intId\}
 
 Creates a new namespace and returns the details of the newly created namespace. If namespace already exists it returns the details of the namespace.
 
@@ -85,7 +85,7 @@ description: Namespace Details
             Auth associated with Namespace
 }
 ```
-### DELETE /runtime/admin/namespaces/{orgId}/{intId}
+### DELETE /runtime/admin/namespaces/\{orgId\}/\{intId\}
 
 Deletes the namespace associated with the specified organization and integration.
 
@@ -106,7 +106,7 @@ Response content type: `application/json`
 | ------------------------------------ | ----------------------------------------------- |
 | _default_ | Successful operation |
 
-### GET /runtime/namespaces/{orgId}/{intId}/actions
+### GET /runtime/namespaces/\{orgId\}/\{intId\}/actions
 
 Returns the list of actions associated with the specified organization and integration.
 
@@ -216,7 +216,7 @@ url         string
             Action url
 }]
 ``` 
-### POST /runtime/namespaces/{orgId}/{intId}/actions
+### POST /runtime/namespaces/\{orgId\}/\{intId\}/actions
 
 Creates a new action.
 
@@ -327,7 +327,7 @@ Response content type: `application/json`
 | --- | ---------------------------------- |
 | _default_ | Successful operation |
 
-### GET /runtime/namespaces/{orgId}/{intId}/actions/{name}
+### GET /runtime/namespaces/\{orgId\}/\{intId\}/actions/\{name\}
 
 Returns the details of an action.
 
@@ -419,7 +419,7 @@ url         string
             Action url
 }]
 ```
-### POST /runtime/namespaces/{orgId}/{intId}/actions/{name}
+### POST /runtime/namespaces/\{orgId\}/\{intId\}/actions/\{name\}
 
 Executes an action.
 
@@ -504,7 +504,7 @@ response    {
             Action invocation response
 }
 ```
-### PUT /runtime/namespaces/{orgId}/{intId}/actions/{name}
+### PUT /runtime/namespaces/\{orgId\}/\{intId\}/actions/\{name\}
 
 Updates an action.
 
@@ -617,7 +617,7 @@ Response content type: `application/json`
 | --- | ---------------------------------- |
 | _default_ | Successful operation |
 
-### DELETE /runtime/namespaces/{orgId}/{intId}/actions/{name}
+### DELETE /runtime/namespaces/\{orgId\}/\{intId\}/actions/\{name\}
 
 Deletes an action.
 
@@ -747,7 +747,7 @@ url         string
             Action url
 }]
 ```
-### POST /runtime/namespaces/{orgId}/{intId}/handleEventRegistration
+### POST /runtime/namespaces/\{orgId\}/\{intId\}/handleEventRegistration
 
 Registers an event registration and assigns a given action to the event.
 
@@ -884,7 +884,7 @@ registration_id     string
 }
 ```
 
-### DELETE /runtime/namespaces/{orgId}/{intId}/handleEventDeletion/{clientId}/{registrationId}
+### DELETE /runtime/namespaces/\{orgId\}/\{intId\}/handleEventDeletion/\{clientId\}/\{registrationId\}
 
 Deletes an event registration.
 
@@ -909,7 +909,7 @@ Response content type: `application/json`
 | --- | ---------------------------------- |
 | _default_ | Successful operation |
 
-### PUT /runtime/namespaces/{orgId}/{intId}/handleEventUpdate/{clientId}/{registrationId}
+### PUT /runtime/namespaces/\{orgId\}/\{intId\}/handleEventUpdate/\{clientId\}/\{registrationId\}
 
 Updates an event registration.
 
@@ -1047,7 +1047,7 @@ registration_id     string
                     Event registration id
 }
 ```
-### POST /runtime/namespaces/{orgId}/{intId}/handleEventStatus/{clientId}/{registrationId}/{status}
+### POST /runtime/namespaces/\{orgId\}/\{intId\}/handleEventStatus/\{clientId\}/\{registrationId\}/\{status\}
 
 Updates the status of an event registration.
 
