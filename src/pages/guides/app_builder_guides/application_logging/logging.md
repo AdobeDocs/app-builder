@@ -68,7 +68,7 @@ To access your application logs in the Developer Console:
 1. Navigate to the [Adobe Developer Console](https://developer.adobe.com/console)
 2. Select your organization and project
 3. Choose the workspace containing your deployed App Builder application
-4. Click on **Logs** in the left navigation menu
+4. Click on **App Builder Logs** in the left navigation menu
 
 ### Features
 
