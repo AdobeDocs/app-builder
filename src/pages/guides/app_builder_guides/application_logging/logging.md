@@ -90,6 +90,14 @@ The Developer Console Logs UI is ideal for:
 
 For more advanced log management needs such as long-term retention, complex queries, alerting, or correlation with other infrastructure logs, consider setting up [log forwarding](#forwarding-application-logs) to a dedicated log management solution.
 
+### Tips for faster searches
+
+To get the best performance from the Logs UI:
+
+- **Use the activation ID if you have it**: Searching by a specific activation ID is the fastest way to find logs for a particular invocation
+- **Start with a narrow time range**: Begin with a short time window and only widen it if you don't find what you're looking for
+- **Avoid broad keyword searches over long time windows**: Combining generic search terms with extended time ranges can slow down results
+
 ## Forwarding Application logs
 
 In addition to viewing application logs using the AIO CLI, Developers can configure App Builder applications to forward all application logs to a customer-owned log management solution. Forwarding logs has several benefits over retrieving them through the AIO CLI, especially for applications deployed in Production or Staging environments. 
