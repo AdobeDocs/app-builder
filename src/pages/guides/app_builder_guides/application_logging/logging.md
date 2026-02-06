@@ -57,6 +57,47 @@ This command also offers options to `--watch` or `--tail` the logs, and other op
 
 As with `aio app logs`, the `aio runtime logs` command can be used by Developers or by scripts running in a [Deployment Guide](../deployment/deployment.md). The command can also be used for App Builder applications deployed on Runtime or  running locally through the `aio app run --local` command as discussed in the [Deployment Guide](../deployment/deployment.md).
 
+## Viewing logs in Adobe Developer Console
+
+In addition to viewing logs via the CLI, you can view and search application logs directly in the Adobe Developer Console UI. This provides a convenient browser-based interface for debugging and monitoring your Runtime actions without needing to use command-line tools.
+
+### Accessing the Logs UI
+
+To access your application logs in the Developer Console:
+
+1. Navigate to the [Adobe Developer Console](https://developer.adobe.com/console)
+2. Select your organization and project
+3. Choose the workspace containing your deployed App Builder application
+4. Click on **App Builder Logs** in the left navigation menu
+
+### Features
+
+The Logs UI displays logs from all your Runtime action activations, including both successful and failed invocations. Key features include:
+
+- **View all activations**: Unlike the default Runtime log storage (which only stores logs for failed or asynchronous activations), the Console UI shows logs from all action invocations
+- **Search by action name**: Use the search box to filter logs by action. You can enter:
+  - The full action path (e.g., `mynamespace/mypackage/myaction`)
+  - A short action name (e.g., `myaction`)
+- **Free-text search**: Search within log messages for specific content such as error messages, log levels (`info`, `error`, `warn`), or any text present in your logs
+
+### When to use the Console UI
+
+The Developer Console Logs UI is ideal for:
+
+- **Quick debugging**: Rapidly inspect recent action invocations without switching to a terminal
+- **Viewing successful activations**: Access logs that wouldn't normally be stored in Runtime
+- **Ad-hoc searches**: Find specific log entries across multiple activations
+
+For more advanced log management needs such as long-term retention, complex queries, alerting, or correlation with other infrastructure logs, consider setting up [log forwarding](#forwarding-application-logs) to a dedicated log management solution.
+
+### Tips for faster searches
+
+To get the best performance from the Logs UI:
+
+- **Use the activation ID if you have it**: Searching by a specific activation ID is the fastest way to find logs for a particular invocation
+- **Start with a narrow time range**: Begin with a short time window and only widen it if you don't find what you're looking for
+- **Avoid broad keyword searches over long time windows**: Combining generic search terms with extended time ranges can slow down results
+
 ## Forwarding Application logs
 
 In addition to viewing application logs using the AIO CLI, Developers can configure App Builder applications to forward all application logs to a customer-owned log management solution. Forwarding logs has several benefits over retrieving them through the AIO CLI, especially for applications deployed in Production or Staging environments. 
