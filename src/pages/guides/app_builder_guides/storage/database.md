@@ -107,17 +107,31 @@ To check connectivity with the database:
 aio app db ping
 ```
 
-Additional database commands include:
+### Deleting a workspace database
+
+```bash
+# Delete the database for your App Builder application (non-production only)
+aio app db delete
+```
+### Usage statics
 
 ```bash
 # Get statistics about your App Builder database
 aio app db stats
 ```
 
-```bash
-# Delete the database for your App Builder application (non-production only)
-aio app db delete
-```
+| field returned | description                                   |
+|----------------|-----------------------------------------------|
+| Namespace      | the runtime namespace of the database         |
+| collections    | the number of collections                     |
+| objects        | the number of objects/documents               |
+| views          | the number of views (not currently supported) |
+| indexes        | the number of indexes                         |
+| dataSize       | the actual amount of storage used in bytes    |
+| storageSize    | space allocated for storage in bytes          |
+| indexSize      | space allocated for indexes in bytes          |
+| ok             | whether the request was successful            |
+| lastUpdated    | when the statistics where last updated        |
 
 ### Collections
 
@@ -237,9 +251,9 @@ aio app db document count <COLLECTION> <FILTER>
 
 ## Runtime actions and aio-lib-db
 
-The` aio-lib-db` package provides the main programming interface for App Builder Database Storage. It is intentionally modeled on the [MongoDB Node Driver](https://www.mongodb.com/docs/drivers/node/current/) striving to be a near drop-in replacement for applications developed for MongoDB and/or AWS DocumentDB.
+The `aio-lib-db` package provides the main programming interface for App Builder Database Storage and the README at [aio-lib-db](https://github.com/adobe/aio-lib-db) provides its main documentation.
 
-Much of the extensive documentation for the [MongoDB Node Driver](https://www.mongodb.com/docs/drivers/node/current/) is valid for `aio-lib-db`. Rather than duplicating, the following guide provides links to the MongoDB documentation, with notes about any important differences where applicable.
+The `aio-lib-db` package is intentionally modeled on the [MongoDB Node Driver](https://www.mongodb.com/docs/drivers/node/current/) striving to be a near drop-in replacement for applications developed for MongoDB and/or AWS DocumentDB.
 
 ### Installation
 
