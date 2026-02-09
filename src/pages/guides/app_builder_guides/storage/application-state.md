@@ -154,7 +154,7 @@ Navigate the CLI usage documentation from the repo's [README](https://github.com
 
 ### Usage quotas and limits
 
-See [Usage quotas and limits](index.md#usage-quotas-and-limits).
+These are documented at [Usage quotas and limits](index.md#usage-quotas-and-limits).
 
 ### List considerations
 

@@ -64,10 +64,6 @@ In runtime actions, however, **aio-lib-db** must be initialized in the same regi
 
 In case a workspace database is provisioned in the wrong region, it must first be deleted and then provisioned in the correct region. The process is to delete the database using `aio app db delete`, set the correct region in the `app.config.yaml` application manifest, and then provision the new workspace database using `aio app deploy` or `aio app db provision`.
 
-## Usage quotas and limits
-
-See [Usage quotas and limits](index.md#usage-quotas-and-limits).
-
 ## DB plugin in the AIO CLI
 
 The DB plugin in the AIO CLI is a utility that facilitates provisioning, initializing, querying, and monitoring workspace databases.
@@ -703,3 +699,49 @@ AWS reference: [Data types](https://docs.aws.amazon.com/documentdb/latest/develo
 Same as DocumentDB 8.0.
 
 AWS reference: [Indexes and index properties](https://docs.aws.amazon.com/documentdb/latest/developerguide/mongo-apis.html#mongo-apis-index)
+
+## Usage quotas and limits
+
+These are documented at [Usage quotas and limits](index.md#usage-quotas-and-limits).
+
+## Data Durability and Resiliency
+
+App Builder Database is built on a industry-standard managed, fault-tolerant database architecture designed to deliver high durability and availability for customer data.
+
+When data is successfully written to App Builder Database, it is synchronously persisted across multiple storage nodes within the service. This design protects committed data against common failure scenarios, including individual node failures, hardware issues, and other infrastructure-level disruptions.
+
+The service continuously monitors storage health and automatically repairs or replaces underlying components as needed, without requiring customer intervention. These mechanisms ensure that committed data remains available and durable.
+
+### Recovering from Accidental Deletion or Data Corruption
+
+In some cases, data loss may occur as a result of **accidental deletion or unintended data corruption caused by customer actions**, such as application logic errors, incorrect update operations, or misconfigured scripts. When data has been deleted or corrupted by customer activity, recovery may be possible through backup restoration, subject to availability and timing constraints. Restoration is not automatic and requires immediate customer action.
+
+Backup restoration is intended for emergency recovery scenarios and is not guaranteed in all cases.
+
+### Emergency Restoration Process
+
+If a customer believes they have accidentally deleted or corrupted their data, they must initiate the restoration process as quickly as possible.
+
+**Customer responsibilities**
+
+The customer must:
+
+* **Immediately contact Adobe Support or their Adobe account team** to request a restoration.
+* Submit the request as soon as the issue is identified.
+* Restoration is only possible within a **limited time window**, and delays may make recovery impossible.
+* Provide the following information to assist with the restoration request:
+  * IMS Organization name
+  * IMS Organization ID
+  * The workspace / runtime namespace in which the database was deleted
+  * Any additional context about the deletion event, if available
+
+**Adobe responsibilities**
+
+Upon receiving a valid request, Adobe will:
+* Assess whether a backup snapshot is available for the affected database
+* Work with the customer to attempt restoration from the most appropriate backup
+* Communicate any limitations, risks, or constraints associated with the restoration effort
+
+Restoration attempts are **best-effort** and may not be possible in all scenarios.
+
+ 
