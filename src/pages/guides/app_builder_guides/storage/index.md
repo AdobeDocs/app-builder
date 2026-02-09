@@ -31,7 +31,7 @@ The following table summarizes the key differences between the three storage ser
 
 The following quotas and limits apply while dealing with Persistent Storage associated with your App Builder application.
 
-Quotas are shared across the organisation. Workspace limits are defined at the *workspace* level. The Database and State services may return 429 (rate-limits) or
+Quotas are shared across the organization. Workspace limits are defined at the *workspace* level. The Database and State services may return 429 (rate-limits) or
 403 (storage limits) errors if limits are exceeded.
 
 | Limit                                                                                   | Limit Type                             | Default Limit                                                                     | Can it be Increased?                                                                                                                                                                                                         | Notes                                                                          |
