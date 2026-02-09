@@ -10,7 +10,7 @@ title: Getting Started with Database Storage
 description: All the basics needed to start using Database Storage for App Builder projects.
 ---
 
-# Getting Started with Database Storage
+# Getting started with Database Storage
 
 **IMPORTANT:** This documentation describes a product in early-access development and does not reflect all functionality intended for general availability (GA). It cannot be used in production until GA.
 
@@ -18,7 +18,7 @@ Database Storage for App Builder provides document-style database persistence fo
 
 There is a strict one-to-one relationship between an AIO project workspace and a workspace database, and each workspace database is entirely isolated from all other workspace databases.
 
-## Provisioning a Workspace Database
+## Provisioning a workspace database
 
 Before using Database Storage in an AIO project workspace, a workspace database must be provisioned. This is a self-service operation requiring no special permissions.
 
@@ -514,7 +514,7 @@ MongoDB Node Driver references:
 
 - [Bulk Operations](https://www.mongodb.com/docs/drivers/node/current/crud/bulk-write/)
 
-#### String and object Representations of the _id field
+#### String and object representations of the _id field
 
 Every document in DocumentDB has a required `_id` field that acts as its unique identifier within a collection. Values for the `_id` field may be specified in the document or generated on the fly by the database server.
 
@@ -712,13 +712,13 @@ When data is successfully written to App Builder Database, it is synchronously p
 
 The service continuously monitors storage health and automatically repairs or replaces underlying components as needed, without requiring customer intervention. These mechanisms ensure that committed data remains available and durable.
 
-### Recovering from Accidental Deletion or Data Corruption
+### Recovering from accidental deletion or data corruption
 
 In some cases, data loss may occur as a result of **accidental deletion or unintended data corruption caused by customer actions**, such as application logic errors, incorrect update operations, or misconfigured scripts. When data has been deleted or corrupted by customer activity, recovery may be possible through backup restoration, subject to availability and timing constraints. Restoration is not automatic and requires immediate customer action.
 
 Backup restoration is intended for emergency recovery scenarios and is not guaranteed in all cases.
 
-### Emergency Restoration Process
+### Emergency restoration process
 
 If a customer believes they have accidentally deleted or corrupted their data, they must initiate the restoration process as quickly as possible.
 
@@ -743,5 +743,3 @@ Upon receiving a valid request, Adobe will:
 * Communicate any limitations, risks, or constraints associated with the restoration effort
 
 Restoration attempts are **best-effort** and may not be possible in all scenarios.
-
- 
