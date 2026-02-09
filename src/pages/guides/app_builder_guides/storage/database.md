@@ -64,6 +64,10 @@ In runtime actions, however, **aio-lib-db** must be initialized in the same regi
 
 In case a workspace database is provisioned in the wrong region, it must first be deleted and then provisioned in the correct region. The process is to delete the database using `aio app db delete`, set the correct region in the `app.config.yaml` application manifest, and then provision the new workspace database using `aio app deploy` or `aio app db provision`.
 
+## Usage quotas and limits
+
+See [Usage quotas and limits](index.md#usage-quotas-and-limits).
+
 ## DB plugin in the AIO CLI
 
 The DB plugin in the AIO CLI is a utility that facilitates provisioning, initializing, querying, and monitoring workspace databases.
