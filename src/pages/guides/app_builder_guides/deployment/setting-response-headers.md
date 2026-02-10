@@ -78,7 +78,6 @@ Listed headers are ignored because they are either meant for internal use or are
 2. age
 3. allow
 4. alt-svc
-5. cache-control
 6. connection
 7. content-length
 8. content-type
