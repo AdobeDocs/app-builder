@@ -179,9 +179,9 @@ Both of these have a strict isolation according to the Runtime namespace. Cloud 
 
 The CDN serves these static assets from a subdomain dedicated exclusively to the Runtime namespace associated with the App Builder application workspace to which the SPA is deployed.
 
-#### Files and State services
+#### Files, State and Database services
 
-The [Files](https://github.com/adobe/aio-lib-files) and [State](https://github.com/adobe/aio-lib-state) libraries from the App Builder SDK offer an abstraction layer for interacting with App Builder's file storage and data tier from within a Runtime action. 
+The [Files](https://github.com/adobe/aio-lib-files), [State](https://github.com/adobe/aio-lib-state) and [Database](https://github.com/adobe/aio-lib-db) libraries from the App Builder SDK offer an abstraction layer for interacting with App Builder's file, state and database storage from within a Runtime action.
 Access to data stored in these underlying services is restricted to the Runtime namespace in which the action is executed.
 
 #### App Builder Apps service
