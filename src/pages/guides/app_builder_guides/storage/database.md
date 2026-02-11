@@ -279,7 +279,6 @@ The following is the general pattern for loading and using `aio-lib-db`:
 
 ```javascript
 const libDb = require('@adobe/aio-lib-db')
-const { DbError } = require('@adobe/aio-lib-db')
 
 async function main() {
   let client
@@ -301,7 +300,7 @@ async function main() {
 
   } catch (error) {
     // Errors thrown by the database are reported as such
-    if (error instanceof DbError) {
+    if (error.name == 'DbError') {
       console.error('Database error:', error.message);
     } else {
       console.error('Unexpected error:', error);
