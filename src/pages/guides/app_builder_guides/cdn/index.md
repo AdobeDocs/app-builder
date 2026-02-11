@@ -87,11 +87,13 @@ Apps can provide a custom error document. When a URL does not correspond to an e
 Including a version identifier in your file or folder names is highly recommended. The default Parcel build process takes care of this automatically. Versioning guarantees that each file instance is uniquely named—creating a distinct cache key for every version. This enables the use of longer `Cache-Control: max-age` values, since only HTML file paths remain consistent between deployments. Deployments are atomic: every deployment replaces all existing files with the newly built set.
 
 Examples:
+```
 index.html
 404.html
 web-src.c244e3e9.js
 web-src.96dfb607.css
 404.58deabca.css
+```
 
 ## Response Headers
 
