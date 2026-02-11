@@ -79,8 +79,6 @@ The CDN automatically serves a default document. URLs ending with a trailing sla
 /docs/  => /docs/index.html
 /docs   => /docs/index.html
 
-
-
 ## Default Error Handling
 Apps can provide a custom error document. When a URL does not correspond to an existing file, the CDN will look for and serve `/404.html` as the error page. If `/404.html` is not present, a default error document will be displayed instead.
 
@@ -113,8 +111,6 @@ Certain headers are managed by the CDN and cannot be overridden. If specified in
 - `x-cache`
 
 For the complete list, see [Disallowed Headers](../deployment/setting-response-headers.md#disallowed-headers).
-
-
 
 ## Cache Management
 
@@ -192,27 +188,6 @@ This model ensures that users always receive the most up-to-date version of your
 - Upon cache expiry, the edge cache validates the ETag with your origin.
 - If unchanged, the cache is refreshed and served; if changed, the new version replaces the old one in the cache and is delivered to users.
 - You can view the ETag value in the response headers, as well as in the CDN view of the Developer Console.
-
-
-### Disabling Cache
-
-# TODO 
-
-To prevent caching for specific responses, use the appropriate `Cache-Control` directives:
-
-```javascript
-async function main(params) {
-  return {
-    headers: {
-      'Cache-Control': 'no-cache, no-store, must-revalidate',
-      'Pragma': 'no-cache'
-    },
-    statusCode: 200,
-    body: { message: 'This response is never cached.' }
-  }
-}
-```
-
 
 ## Security
 
