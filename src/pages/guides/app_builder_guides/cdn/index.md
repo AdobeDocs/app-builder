@@ -105,7 +105,7 @@ For detailed information on configuring response headers, see [Setting Response 
 
 Certain headers are managed by the CDN and cannot be overridden. If specified in your manifest, they will be ignored:
 
-#### common examples
+#### Common Examples
 - `content-type`
 - `content-length`
 - `content-encoding`
@@ -129,14 +129,14 @@ When users visit your site, there are two main types of caching that affect how 
 
 **Server (CDN) cache** operates on the edge servers that distribute your content globally. The CDN keeps copies of your static assets and dynamic responses to serve them to multiple users efficiently. Unlike browser cache, you (as the site owner) can control aspects of CDN cache—such as cache invalidation—via deployment tools or the CDN configuration. This allows you to purge, refresh, or update files for all users at once.
 
-### Cache-Control: max-age vs. s-max-age
+### Cache-Control: max-age vs. s-maxage
 
 - **max-age**: Specifies, in seconds, how long a resource will be considered fresh (cacheable) by browsers and all intermediate caches. It is used by both browsers and CDNs when present.
-- **s-max-age**: A directive specifically for shared caches (like CDNs or proxies). If set, it overrides `max-age` in those environments, but browsers will ignore it.
+- **s-maxage**: A directive specifically for shared caches (like CDNs or proxies). If set, it overrides `max-age` in those environments, but browsers will ignore it.
 
 **Example:**
 ```
-Cache-Control: max-age=600, s-max-age=1200
+Cache-Control: max-age=600, s-maxage=1200
 ```
 - Browsers will cache the resource for 10 minutes (600 seconds).
 - CDNs and proxies may cache it for 20 minutes (1200 seconds).

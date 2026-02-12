@@ -65,7 +65,7 @@ To deploy the web assets to the CDN, use:
 aio app deploy
 ```
 
-The CDN is provisioned on `adobeio-static.net` and the deployed App Builder SPA will be available at `https://<namespace>.adobeio-static.net/<appname>-<appversion>/index.html`.
+The CDN is provisioned on `adobeio-static.net` and the deployed App Builder SPA will be available at `https://<namespace>.adobeio-static.net/index.html`.
 
 ## Caching
 
