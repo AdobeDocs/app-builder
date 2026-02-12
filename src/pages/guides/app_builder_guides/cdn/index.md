@@ -31,10 +31,10 @@ When you deploy your application, static assets are available at:
 https://<namespace>.adobeio-static.net/index.html
 ```
 
-For example, if your namespace is `53144-919browniguana-stage` and you deploy the app, the URL would be:
+For example, if your namespace is `1234-myproject-stage` and you deploy the app, the URL would be:
 
 ```
-https://53144-919browniguana-stage.adobeio-static.net/index.html
+https://1234-myproject-stage.adobeio-static.net/index.html
 ```
 
 ## Features
@@ -73,17 +73,17 @@ async function main(params) {
 
 Caching action responses can significantly improve performance and reduce costs by avoiding repeated action invocations for identical requests.
 
-## Default root 
+## Default Root
 The CDN automatically serves a default document. URLs ending with a trailing slash or lacking a file extension are redirected to the default `index.html` file.
-
+```
 /docs/  => /docs/index.html
 /docs   => /docs/index.html
-
+```
 ## Default Error Handling
 Apps can provide a custom error document. When a URL does not correspond to an existing file, the CDN will look for and serve `/404.html` as the error page. If `/404.html` is not present, a default error document will be displayed instead.
 
 
-### Path Versioning
+## Path Versioning
 Including a version identifier in your file or folder names is highly recommended. The default Parcel build process takes care of this automatically. Versioning guarantees that each file instance is uniquely named—creating a distinct cache key for every version. This enables the use of longer `Cache-Control: max-age` values, since only HTML file paths remain consistent between deployments. Deployments are atomic: every deployment replaces all existing files with the newly built set.
 
 Examples:
@@ -105,6 +105,7 @@ For detailed information on configuring response headers, see [Setting Response 
 
 Certain headers are managed by the CDN and cannot be overridden. If specified in your manifest, they will be ignored:
 
+#### common examples
 - `content-type`
 - `content-length`
 - `content-encoding`
@@ -154,11 +155,9 @@ While CDNs are designed to cache static assets for fast delivery, it's important
 
 - **Cache is dynamic and shared:** The CDN's global edge locations share a cache pool not only across your site but also among many other customers. Space is finite, and most CDNs (including App Builder's) optimize cache storage for high-traffic content.
 
-- **High-traffic sites influence cache:** Files that receive frequent requests are more likely to be retained in the cache. In contrast, assets from "quiet" sites (with fewer or infrequent visitors) may be evicted sooner, especially if other customers' content is more popular and quickly fills up available cache space on that edge.
+- **Cache is optimized for volume:**  The CDN prioritizes assets based on how often and how recently they are used. Files that receive frequent requests are more likely to be retained in the cache. In contrast, assets from "quiet" sites (with fewer or infrequent visitors) may be evicted early from the cache due to overall demand and available space.
 
 - **Geographic cache locality:** Caching is region-based. If your users are mostly in Europe, for example, your files will likely be cached on European CDN edge locations where those requests happen. However, if no one in Asia has accessed your site recently, those files may not be cached in Asian edge locations—so the first user there could experience a slower, cache-miss response.
-
-- **Cache is optimized for volume:** The CDN prioritizes assets based on how often and how recently they are used ("hot" files). Unpopular or long-tail assets—regardless of the `Cache-Control` settings—may be evicted early from the cache due to overall demand and available space.
 
 #### What this means for your application
 
@@ -171,7 +170,7 @@ While CDNs are designed to cache static assets for fast delivery, it's important
 **Bottom line:**  
 CDN cache is highly effective for speeding up access to popular content and for users in frequently accessed regions, but it is ultimately optimized for shared efficiency—not for guaranteed persistence of all files. Plan for cache-miss scenarios, and make sure your application origin can handle requests that aren't served from the edge cache.
 
-### Etags
+### ETags
 An **ETag** ("entity tag") is a unique identifier assigned to a specific version of a file or resource. Each time a file changes—such as after you update your code, modify assets, or redeploy your app—a new ETag value is generated for that file. This allows both browsers and CDNs to efficiently determine whether a cached version of a file is still valid.
 
 #### How ETags enable efficient cache validation
