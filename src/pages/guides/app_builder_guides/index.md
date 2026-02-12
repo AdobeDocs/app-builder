@@ -24,6 +24,7 @@ Welcome to the App Builder Guides section. Here you'll find comprehensive docume
 
 * [Configuration](configuration/configuration.md)
 * [Deployment](deployment/deployment.md)
+* [Content Delivery Network](cdn/index.md)
 * [Application Logging](application_logging/logging.md)
 * [Events](events/custom-events.md)
 * [Extensions](extensions/extensions.md)
