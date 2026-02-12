@@ -54,7 +54,7 @@ The CDN enforces default caching policies, governed by the HTTP `Cache-Control` 
 ## Caching for Runtime Actions
 
 Responses from runtime actions are not cached directly by the CDN; instead, they are subject to a secondary caching layer with certain limitations:
-- The maximum cache duration is 20 minutes.
+- The maximum cache duration is 30 minutes.
 - Once cached, the content cannot be invalidated manually.
 
 To enable caching for an action, set the `Cache-Control` header in your response:
@@ -63,7 +63,7 @@ To enable caching for an action, set the `Cache-Control` header in your response
 async function main(params) {
   return {
     headers: {
-      'Cache-Control': 'max-age=1200'
+      'Cache-Control': 'max-age=1800'
     },
     statusCode: 200,
     body: { message: 'This response is cached for 20 minutes.' }
