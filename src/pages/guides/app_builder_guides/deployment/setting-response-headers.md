@@ -75,27 +75,25 @@ Developers may set any HTTP or custom response headers except those in the list 
 Listed headers are ignored because they are either meant for internal use or are CDN-specific headers that should not be overridden.
 
 1. accept-ranges
-2. age
-3. allow
-4. alt-svc
-5. cache-control
-6. connection
-7. content-length
-8. content-type
-9. content-disposition
-10. content-encoding
-11. content-language
-12. content-length
-13. date
-14. etag
-15. expires
-16. last-modified
-17. location
-18. server
-19. trailer
-20. transfer-encoding
-21. upgrade
-22. x-cache
+1. age
+1. allow
+1. alt-svc
+1. connection
+1. content-length
+1. content-type
+1. content-disposition
+1. content-encoding
+1. content-language
+1. date
+1. etag
+1. expires
+1. last-modified
+1. location
+1. server
+1. trailer
+1. transfer-encoding
+1. upgrade
+1. x-cache
 
 ## Next steps
 

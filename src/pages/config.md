@@ -44,6 +44,7 @@
                 - [New Relic](guides/app_builder_guides/application_logging/new-relic.md) 
                 - [Splunk Cloud](guides/app_builder_guides/application_logging/splunk-cloud.md) 
                 - [Splunk Enterprise](guides/app_builder_guides/application_logging/splunk-enterprise.md) 
+            - [CDN](guides/app_builder_guides/cdn/index.md)
             - [Configuration](guides/app_builder_guides/configuration/configuration.md) 
                 - [Sequences](guides/app_builder_guides/configuration/sequences.md) 
                 - [Webpack Configuration](guides/app_builder_guides/configuration/webpack-configuration.md) 

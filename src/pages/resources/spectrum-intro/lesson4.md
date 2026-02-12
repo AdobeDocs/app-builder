@@ -65,17 +65,4 @@ To deploy the web assets to the CDN, use:
 aio app deploy
 ```
 
-The CDN is provisioned on `adobeio-static.net` and the deployed App Builder SPA will be available at `https://<namespace>.adobeio-static.net/<appname>-<appversion>/index.html`.
-
-## Caching
-
-Content caching is defined via the HTTP header [Cache-Control](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control) and is measured in seconds.
-
-| Resource type | max-age |
-| ------------- | ------- |
-| HTML          | 60      |
-| CSS           | 604800  |
-| JS            | 604800  |
-| Assets        | 604800  |
-
-That is, HTML content is cached for one minute; the rest is cached for one week.
+The CDN is provisioned on `adobeio-static.net` and the deployed App Builder SPA will be available at `https://<namespace>.adobeio-static.net/index.html`.
