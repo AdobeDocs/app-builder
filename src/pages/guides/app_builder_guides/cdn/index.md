@@ -66,7 +66,7 @@ async function main(params) {
       'Cache-Control': 'max-age=1800'
     },
     statusCode: 200,
-    body: { message: 'This response is cached for 20 minutes.' }
+    body: { message: 'This response is cached for 30 minutes.' }
   }
 }
 ```

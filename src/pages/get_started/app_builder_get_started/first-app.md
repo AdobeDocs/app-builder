@@ -570,9 +570,9 @@ Your deployed actions:
 ...
 
 To view your deployed application:
-  -> https://<namespace>.adobeio-static.net/<packagename>/index.html
+  -> https://<namespace>.adobeio-static.net/index.html
 To view your deployed application in the Experience Cloud shell:
-  -> https://experience.adobe.com/?devMode=true#/custom-apps/?localDevUrl=https://<namespace>.adobeio-static.net/<packagename>/index.html
+  -> https://experience.adobe.com/?devMode=true#/custom-apps/?localDevUrl=https://<namespace>.adobeio-static.net/index.html
 Well done, your app is now online 🏄
 ```
 
