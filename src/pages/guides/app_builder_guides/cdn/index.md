@@ -119,8 +119,15 @@ For the complete list, see [Disallowed Headers](../deployment/setting-response-h
 
 ### Cache Invalidation
 
-Redeploying your application with `aio app deploy` does not automatically invalidate the CDN cache. The short default max-age on `index.html` ensures new versions are typically available to users within a minute. However, if you've configured a longer max-age for `index.html`, you may need to manually invalidate the cache. Cache invalidation removes the cached item so subsequent requests will fetch the latest version. Note that App Builder only allows cache invalidation of the default document, `index.html`, underscoring the importance of path versioning. You can trigger a cache invalidation from the Developer Console on the CDN configuration page. It may take up to 10 minutes for invalidations to propagate across all cache regions.
+Redeploying your application with `aio app deploy` does not automatically invalidate the CDN cache.
 
+By default, `index.html` has a short max-age, so new versions are typically available to users within a minute. If you've configured a longer max-age for `index.html`, you may need to manually invalidate the cache.
+
+Cache invalidation removes the cached item so subsequent requests will fetch the latest version.
+
+App Builder only allows cache invalidation of the default document, `index.html`. This limitation underscores the importance of path versioning.
+
+You can trigger a cache invalidation from the Developer Console on the CDN configuration page. It may take up to 10 minutes for invalidations to propagate across all cache regions.
 ### Browser Cache vs. Server (CDN) Cache
 
 When users visit your site, there are two main types of caching that affect how quickly content is delivered and updated: **browser cache** and **server (CDN) cache**.
