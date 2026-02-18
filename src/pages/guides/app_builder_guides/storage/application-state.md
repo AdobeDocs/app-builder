@@ -72,7 +72,7 @@ Region acronyms are abbreviations for one or more continents that are part of a 
 - `amer`: North, Central, and South America. Data is stored in the US.
 - `apac`: Asia and Pacific. Data is stored in Japan.
 - `emea`: Europe, the Middle East, and Africa. Data is stored in the EU.
-- `aus`: Australia. Data is stored in Australia. (State and Files only)
+- `aus`: Australia. Data is stored in Australia.
 
 ### Getting started
 

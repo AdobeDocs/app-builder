@@ -27,6 +27,7 @@ Note that there is a strict one-to-one relationship between an AIO project works
 - `amer`: North, Central, and South America. Data is stored in the US.
 - `apac`: Asia and Pacific. Data is stored in Japan.
 - `emea`: Europe, the Middle East, and Africa. Data is stored in the EU.
+- `aus`: Australia. Data is stored in Australia.
 
 A workspace database can be provisioned in one of two ways: declaratively in the `app.config.yaml` application manifest or manually using the db plugin in the AIO CLI.
 
