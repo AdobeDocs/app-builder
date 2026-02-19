@@ -2,6 +2,23 @@
 
 Stay up to date with the latest features, improvements, and bug fixes in App Builder and Adobe I/O Runtime.
 
+## February 2026
+
+*February 19, 2026*
+
+### CNA/deploy-service
+
+#### New Features
+
+- Send more descriptive error messages upon failure
+- Provide descriptive error upon failure caused by legacy namespace format
+
+#### Upgrade Instructions
+
+No action should be necessary to receive this update.
+
+[Full release changes - deploy-service](https://git.corp.adobe.com/CNA/deploy-service/pull/104)
+
 ## January 2026
 
 *January 26, 2026*
