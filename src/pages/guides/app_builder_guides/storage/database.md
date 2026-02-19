@@ -118,21 +118,47 @@ aio app db delete
 
 ```bash
 # Get statistics about your App Builder database
-aio app db stats
+aio app db stats # bytes
+aio app db stats --scale 1024 # KB
 ```
 
-| field returned | description                                   |
-|----------------|-----------------------------------------------|
-| Namespace      | the runtime namespace of the database         |
-| collections    | the number of collections                     |
-| objects        | the number of objects/documents               |
-| views          | the number of views (not currently supported) |
-| indexes        | the number of indexes                         |
-| dataSize       | the actual amount of storage used in bytes    |
-| storageSize    | space allocated for storage in bytes          |
-| indexSize      | space allocated for indexes in bytes          |
-| ok             | whether the request was successful            |
-| lastUpdated    | when the statistics where last updated        |
+| field returned | description                                                                                     |
+|----------------|-------------------------------------------------------------------------------------------------|
+| ok             | whether the request was successful                                                              |
+| namespace      | the runtime namespace of the database                                                           |
+| collections    | the number of collections                                                                       |
+| objects        | the number of objects/documents                                                                 |
+| views          | the number of views (not currently supported)                                                   |
+| indexes        | the number of indexes                                                                           |
+| dataSize       | the actual amount of storage used (default bytes)                                               |
+| storageSize    | space allocated for storage (default bytes)                                                     |
+| indexSize      | space allocated for indexes (default bytes)                                                     |
+| scaleFactor    | the scale factor used for the size fields, ex: 1024 for kilobyte-scale (default is 1 for bytes) |
+| lastUpdated    | when the statistics where last updated                                                          |
+
+```bash
+# Get statistics about all databases in your IMS Org
+aio app db org stats # bytes
+aio app db org stats --scale $((1024*1024)) # MB
+```
+
+| field returned            | description                                                                                  |
+|---------------------------|----------------------------------------------------------------------------------------------|
+| ok                        | whether the request was successful                                                           |
+| databases                 | the number of databases in the organization                                                  |
+| collections               | the total number of collections across databases                                             |
+| dataSize                  | the total actual amount of storage used across databases (default bytes)                     |
+| storageSize               | space allocated for storage (default bytes)                                                  |
+| indexSize                 | space allocated for indexes (default bytes)                                                  |
+| scaleFactor               | the scale factor used for the size fields (default is 1 for bytes)                           |
+| databaseStats             | an array of statistics for individual databases in the organization                          |
+| databaseStats.namespace   | the runtime namespace the database corresponds to                                            |
+| databaseStats.dataSize    | the actual amount of storage used by the database (default bytes)                            |
+| databaseStats.storageSize | space allocated for storage for the database (default bytes)                                 |
+| databaseStats.indexSize   | space allocated for indexes for the database (default bytes)                                 |
+| databaseStats.collections | the number of collections in the database                                                    |
+| databaseStats.scaleFactor | the scale factor used for the size fields in the databaseStats array(default is 1 for bytes) |
+| databaseStats.lastUpdated | when the database statistics were last updated                                               |
 
 ### Collections
 
