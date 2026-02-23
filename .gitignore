@@ -9,7 +9,7 @@
 
 # npm yarn
 node_modules
-package.lock
+package-lock.json
 yarn-error.log
 .pnp.*
 .yarn/*
@@ -44,3 +44,6 @@ local-test.yml
 # yalc
 .yalc
 yalc.lock
+
+# json files
+adp-site-metadata.json
