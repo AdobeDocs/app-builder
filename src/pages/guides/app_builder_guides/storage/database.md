@@ -142,23 +142,23 @@ aio app db org stats # bytes
 aio app db org stats --scale $((1024*1024)) # MB
 ```
 
-| field returned            | description                                                                                  |
-|---------------------------|----------------------------------------------------------------------------------------------|
-| ok                        | Whether the request was successful                                                           |
-| databases                 | The number of databases in the organization                                                  |
-| collections               | The total number of collections across databases                                             |
-| dataSize                  | The total actual amount of storage used across databases (default bytes)                     |
-| storageSize               | Space allocated for storage (default bytes)                                                  |
-| indexSize                 | Space allocated for indexes (default bytes)                                                  |
-| scaleFactor               | The scale factor used for the size fields (default is 1 for bytes)                           |
-| databaseStats             | An array of statistics for individual databases in the organization                          |
-| databaseStats.namespace   | The runtime namespace the database corresponds to                                            |
-| databaseStats.dataSize    | The actual amount of storage used by the database (default bytes)                            |
-| databaseStats.storageSize | Space allocated for storage for the database (default bytes)                                 |
-| databaseStats.indexSize   | Space allocated for indexes for the database (default bytes)                                 |
-| databaseStats.collections | The number of collections in the database                                                    |
-| databaseStats.scaleFactor | The scale factor used for the size fields in the databaseStats array(default is 1 for bytes) |
-| databaseStats.lastUpdated | When the database statistics were last updated                                               |
+| field returned            | description                                                                                   |
+|---------------------------|-----------------------------------------------------------------------------------------------|
+| ok                        | Whether the request was successful                                                            |
+| databases                 | The number of databases in the organization                                                   |
+| collections               | The total number of collections across databases                                              |
+| dataSize                  | The total actual amount of storage used across databases (default bytes)                      |
+| storageSize               | Space allocated for storage (default bytes)                                                   |
+| indexSize                 | Space allocated for indexes (default bytes)                                                   |
+| scaleFactor               | The scale factor used for the size fields (default is 1 for bytes)                            |
+| databaseStats             | An array of statistics for individual databases in the organization                           |
+| databaseStats.namespace   | The runtime namespace the database corresponds to                                             |
+| databaseStats.dataSize    | The actual amount of storage used by the database (default bytes)                             |
+| databaseStats.storageSize | Space allocated for storage for the database (default bytes)                                  |
+| databaseStats.indexSize   | Space allocated for indexes for the database (default bytes)                                  |
+| databaseStats.collections | The number of collections in the database                                                     |
+| databaseStats.scaleFactor | The scale factor used for the size fields in the databaseStats array (default is 1 for bytes) |
+| databaseStats.lastUpdated | When the database statistics were last updated                                                |
 
 ### Collections
 
