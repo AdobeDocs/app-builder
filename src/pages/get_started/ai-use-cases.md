@@ -433,7 +433,7 @@ description: Use when working with App Builder actions in specific extension poi
 
 ## AEM: `src/aem-cf-console-admin-1/actions/`
 - AEM Content Fragments
-- Use AEM Assets HTTP API
+- Use AEM OpenAPI (better coverage for Content Fragments)
 - OAuth bearer token
 ```
 
