@@ -86,7 +86,17 @@ aio app deploy
 
 **Configure in Your AI Assistant:**
 
-Add your deployed MCP server URL to your AI assistant's configuration (Claude Desktop, Cursor, or other MCP-compatible tools). Your MCP server will be available at: `https://your-https://<workspace-name>.adobeio-static.net/.adobeioruntime.net/api/v1/web/mcp/server`
+Add your deployed MCP server URL to your AI assistant's configuration (Claude Desktop, Cursor, or other MCP-compatible tools). 
+
+After deployment, your MCP server URL will be:
+```
+https://<namespace>-<workspace>.adobeioruntime.net/api/v1/web/mcp/server
+```
+
+**Example:**
+```
+https://52381-myproject-stage.adobeioruntime.net/api/v1/web/mcp/server
+```
 
 Refer to your AI assistant's documentation for specific configuration steps.
 
