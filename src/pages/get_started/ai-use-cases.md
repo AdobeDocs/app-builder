@@ -381,8 +381,10 @@ my-ai-app/
 ├── src/
 │   ├── dx-excshell-1/         # Unified Shell (if selected)
 │   │   ├── actions/           # Backend actions
-│   │   └── web-src/           # Frontend UI
+│   │   ├── web-src/           # Frontend UI
+│   │   └── ext.config.yaml    # Extension configuration
 │   ├── workfront-ui-1/        # Workfront (if selected)
+│   │   └── ext.config.yaml    # Extension configuration
 │   └── ...                    # Other extension points
 ├── app.config.yaml            # App configuration
 ├── package.json
@@ -426,7 +428,7 @@ description: Use when working with App Builder actions in specific extension poi
 
 ## Workfront: `src/workfront-ui-1/actions/`
 - Workfront UI extensions
-- Use Workfront API v15.0
+- Use Workfront API v21.0
 - SessionId authentication
 
 ## AEM: `src/aem-cf-console-admin-1/actions/`
@@ -453,7 +455,7 @@ Use AI to help you! Example prompt:
 
 ```
 I'm in src/workfront-ui-1/actions/. Create an action called fetch-tasks.js 
-that queries Workfront API v15.0 for open tasks in a project. Accept projectId 
+that queries Workfront API v21.0 for open tasks in a project. Accept projectId 
 as a parameter. Use @adobe/aio-sdk for logging. Return tasks sorted by due date.
 ```
 
@@ -479,7 +481,7 @@ async function main(params) {
     
     // Query Workfront API
     const response = await fetch(
-      `https://${params.WORKFRONT_DOMAIN}/attask/api/v15.0/task/search?projectID=${projectId}&status=NEW,INP&$$LIMIT=100`,
+      `https://${params.WORKFRONT_DOMAIN}/attask/api/v21.0/task/search?projectID=${projectId}&status=NEW,INP&$$LIMIT=100`,
       {
         headers: {
           'Sessionid': params.WORKFRONT_API_KEY
@@ -649,7 +651,7 @@ Convert user's natural language request into Workfront API parameters:
 
 ### Step 2: Query Workfront API
 
-Call Workfront API v15.0 with constructed filters:
+Call Workfront API v21.0 with constructed filters:
 
 ```bash
 GET https://your-instance.workfront.com/attask/api/v15.0/task/search
