@@ -86,11 +86,6 @@ aio plugins:install @adobe/aio-cli-plugin-app@next
 aio plugins:install @adobe/aio-cli-plugin-app-storage@next
 ```
 
-The db pluging for the AIO CLI is included in the latest version of the AIO CLI (TODO verify if this is enough.)
-```bash
-npm install -g @adobe/aio-cli
-```
-
 ### Region selection
 
 When using the DB plugin in the AIO CLI, it is important that the region is the same as where the database is provisioned. If not, the connection will fail.
