@@ -29,7 +29,7 @@ App Builder affects more than just Developers. See the end-to-end journey of an 
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
-### A breakdown of App Builder’s architecture
+### A breakdown of App Builder's architecture
 
 [Read on Medium](https://medium.com/adobetech/a-breakdown-of-fireflys-architecture-project-firefly-guides-fe4f38e16014)
 
@@ -57,7 +57,7 @@ Adobe has more than 5,000 engineers working across the world on hundreds of prod
 
 [Read on Medium](https://medium.com/adobetech/the-future-of-project-firefly-b2b-and-b2c-expansion-89de7ec60610)
 
-Almost a year ago, we launched the Developer preview program for a new third-party developer capability called App Builder. If you haven’t heard of App Builder, the simplest way to explain it is …
+Almost a year ago, we launched the Developer preview program for a new third-party developer capability called App Builder. If you haven't heard of App Builder, the simplest way to explain it is …
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
@@ -83,7 +83,7 @@ App Builder is a complete framework that enables enterprise developers to build 
 
 [Read on Medium](https://medium.com/adobetech/debugging-applications-project-firefly-ecbe3e2a4495)
 
-“If debugging is the process of removing software bugs, then programming must be the process of putting them in.” — Edsger Dijkstra. Well put, Mr. Dijkstra. Ever since the first bug was discovered by…
+"If debugging is the process of removing software bugs, then programming must be the process of putting them in." — Edsger Dijkstra. Well put, Mr. Dijkstra. Ever since the first bug was discovered by…
 
 ## Partner use cases and contributions
 
@@ -101,11 +101,11 @@ Oleksandr's App Builder service for Adobe Commerce enables developers to extend 
 
 [Read on Medium](https://medium.com/adobetech/building-an-spa-to-enhance-b2e-workflows-with-project-firefly-de128b180ee3)
 
-Learn how Ensemble used the power of Adobe’s App Builder framework to develop a custom SPA that enhanced their B2E campaign code tracking workflows.
+Learn how Ensemble used the power of Adobe's App Builder framework to develop a custom SPA that enhanced their B2E campaign code tracking workflows.
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
-### Contributing to Adobe’s open-source world with the Adobe Experience Platform SDK for App Builder
+### Contributing to Adobe's open-source world with the Adobe Experience Platform SDK for App Builder
 
 [Read on Medium](https://medium.com/adobetech/contributing-to-adobes-open-source-world-with-the-adobe-experience-platform-sdk-for-project-1ae80d140608)
 
@@ -117,7 +117,7 @@ The Adobe Experience Platform provides an API-first approach - and while working
 
 [Read on Medium](https://medium.com/adobetech/use-cases-project-firefly-cloud-native-apps-32f5ac6ef718)
 
-It’s hard to believe that it was just May 2020 when we introduced App Builder to the world at a Developer preview. As Adobe’s complete framework for building custom, cloud-native Experience Cloud…
+It's hard to believe that it was just May 2020 when we introduced App Builder to the world at a Developer preview. As Adobe's complete framework for building custom, cloud-native Experience Cloud…
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
@@ -125,7 +125,7 @@ It’s hard to believe that it was just May 2020 when we introduced App Builder 
 
 [Read on Medium](https://medium.com/adobetech/adobe-i-o-powered-aemaacs-assets-export-implemented-in-real-time-or-batch-mode-95b8f275cca2)
 
-AEMaaCS Assets offers a cloud-native digital assets management solution that is scalable, reliable, and hassle-free. It’s never been a better time for enterprises to adopt such a solution as their…
+AEMaaCS Assets offers a cloud-native digital assets management solution that is scalable, reliable, and hassle-free. It's never been a better time for enterprises to adopt such a solution as their…
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
@@ -151,8 +151,7 @@ Vadym built an App Builder app that automated Adobe Target impression-capping co
 
 [Read on Adobe Developer Blog](https://blog.developer.adobe.com/en/publish/2022/05/adobe-app-builder-the-power-of-scaling-at-your-fingertips-8ae1149b7ebd)
 
-Kelvin demonstrated how App Builder's auto-scaling reduced batch asset processing from 20 seconds (sequential) to 6 seconds (parallel fanout), achieving 70% faster performance.
-The platform automatically scales containers based on load using configurable limits in app.config.yaml, enabling efficient processing of thousands of assets without managing infrastructure.
+Kelvin demonstrated how App Builder's auto-scaling reduced batch asset processing from 20 seconds (sequential) to 6 seconds (parallel fanout), achieving 70% faster performance. The platform automatically scales containers based on load using configurable limits in app.config.yaml, enabling efficient processing of thousands of assets without managing infrastructure.
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
@@ -168,13 +167,13 @@ Adobe.com's Chimera Card Collection powered by App Builder served 9 million resp
 
 [Read on Medium](https://www.netcentric.biz/insights/2020/06/building-an-aep-demo-with-firefly.html?utm_source=linkedin&utm_medium=social_nonpaid&utm_campaign=20_insights&utm_content=link_post&es_id=8e9abf83f6)
 
-Find out how our team of experts built a real-time airline application using AEP, Adobe I/O Runtime, and Adobe’s latest App Builder technology - in just six weeks.
+Find out how our team of experts built a real-time airline application using AEP, Adobe I/O Runtime, and Adobe's latest App Builder technology - in just six weeks.
 
 ## Miscellaneous
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
-### How we made App Builder’s videos remotely while quarantined at home
+### How we made App Builder's videos remotely while quarantined at home
 
 [Read on Medium](https://medium.com/adobetech/how-we-made-project-firefly-videos-remotely-in-quarantine-1a20c0f53e83)
 
