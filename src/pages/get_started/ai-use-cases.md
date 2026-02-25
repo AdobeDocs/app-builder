@@ -621,6 +621,7 @@ To use this skill, you need:
 - ✅ Adobe Workfront instance URL
 - ✅ OAuth Server-to-Server credentials with Workfront API access
 - ✅ Valid access token from App Builder authentication
+- ✅ Workfront API v21.0 OpenAPI specification for complete endpoint details
 
 ## Related Skills
 
@@ -654,7 +655,7 @@ Convert user's natural language request into Workfront API parameters:
 Call Workfront API v21.0 with constructed filters:
 
 ```bash
-GET https://your-instance.workfront.com/attask/api/v15.0/task/search
+GET https://your-instance.workfront.com/attask/api/v21.0/task/search
 ```
 
 ### Step 3: Format Response
@@ -817,4 +818,3 @@ We'll review community contributions and feature the best skills in our document
 ---
 
 *Last updated: February 2026*
-
