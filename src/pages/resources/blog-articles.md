@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: App Builder Blog Articles
+description: Discover blog articles, tutorials, and real-world examples showcasing App Builder use cases and best practices
 ---
 
 # App Builder Blog Articles
@@ -165,7 +166,7 @@ Adobe.com's Chimera Card Collection powered by App Builder served 9 million resp
 
 ### Building a real-time airline application using Adobe Experience Platform, Adobe I/O Runtime and App Builder
 
-[Read on Medium](https://www.netcentric.biz/insights/2020/06/building-an-aep-demo-with-firefly.html?utm_source=linkedin&utm_medium=social_nonpaid&utm_campaign=20_insights&utm_content=link_post&es_id=8e9abf83f6)
+[Read on Medium](https://www.netcentric.biz/insights/2020/06/building-an-aep-demo-with-firefly)
 
 Find out how our team of experts built a real-time airline application using AEP, Adobe I/O Runtime, and Adobe's latest App Builder technology - in just six weeks.
 
