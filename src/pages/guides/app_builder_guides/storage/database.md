@@ -301,7 +301,7 @@ npm install @adobe/aio-lib-db
 
 ### Initialization and Authentication
 
-**aio-lib-db** must always be initialized with an IMS Access Token. As long as the "App Builder Data Services" API has been set up, the simplest way to generate a token is by using the **@adobe/aio-sdk** library like so:
+**aio-lib-db** must always be initialized with an IMS Access Token. The simplest way to generate a token is by using the **@adobe/aio-sdk** library like so:
 
 ```javascript
 const { generateAccessToken } = require('@adobe/aio-sdk').Core.AuthClient;
@@ -309,6 +309,20 @@ async function main(params) {
   const token = await generateAccessToken(params);
   const db = await libDb.init({token: token});
 }
+```
+
+**Important**: for the above code to work in a runtime action, two things must be in place:
+
+- The AIO project workspace must include the "App Builder Data Services" API.
+- The `include-ims-credentials` annotation for the runtime action must be set to `true` in the `app.config.yaml` application manifest.
+
+The `include-ims-credentials` annotation looks something like this:
+```yaml
+actions:
+  action:
+    function: actions/generic/action.js
+    annotations:
+      include-ims-credentials: true
 ```
 
 The **@adobe/aio-sdk** library transparently manages caching and refreshing tokens as need so there is no need to implement that yourself.
