@@ -89,36 +89,11 @@ App Builder is a complete framework that enables enterprise developers to build 
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
-### From idea to app: building a real Adobe App Builder solution that extends Experience Cloud
-
-[Read on Experience League](https://experienceleague.adobe.com/en/perspectives/from-idea-to-app-building-a-real-adobe-app-builder-solution-that-extends-experience-cloud)
-
-Vadym built an App Builder app that automated Adobe Target impression-capping configuration from 45 minutes of manual work per activity to one click. The solution reduced operational effort from nearly an hour to seconds while ensuring consistent, governed execution directly in Experience Cloud.
-
-<DiscoverBlock slots="heading, link, text" width="100%"/>
-
 ### How App Builder helps drive business agility for your commerce platform
 
 [Read on Adobe for Business](https://business.adobe.com/blog/how-to/how-app-builder-helps-you-implement-a-composable-commerce-strategy)
 
 Oleksandr's App Builder service for Adobe Commerce enables developers to extend capabilities and integrate third-party services without customizing core code. App Builder reduces maintenance costs and speeds deployment through serverless microservices that use stable APIs and events, avoiding traditional customization complexity.
-
-<DiscoverBlock slots="heading, link, text" width="100%"/>
-
-### Adobe Developer App Builder — The Power of Scaling at Your Fingertips
-
-[Read on Adobe Developer Blog](https://blog.developer.adobe.com/en/publish/2022/05/adobe-app-builder-the-power-of-scaling-at-your-fingertips-8ae1149b7ebd)
-
-Kelvin demonstrated how App Builder's auto-scaling reduced batch asset processing from 20 seconds (sequential) to 6 seconds (parallel fanout), achieving 70% faster performance.
-The platform automatically scales containers based on load using configurable limits in app.config.yaml, enabling efficient processing of thousands of assets without managing infrastructure.
-
-<DiscoverBlock slots="heading, link, text" width="100%"/>
-
-### Powering Adobe MAX with App Builder and I/O Runtime
-
-[Read on Adobe Developer Blog](https://blog.developer.adobe.com/en/publish/2022/00/powering-adobe-max-with-app-builder-io-runtime)
-
-Adobe.com's Chimera Card Collection powered by App Builder served 9 million responses during Adobe MAX, handling peak traffic of 153 requests per second—4.5x more than Adobe Summit. The serverless architecture scaled automatically with zero outages by leveraging I/O Runtime and Azure Blob storage caching to drastically reduce response times and increase throughput.
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
@@ -161,6 +136,31 @@ AEMaaCS Assets offers a cloud-native digital assets management solution that is 
 Anil is a big advocate of App Builder for non-developers. He shares insights, based on his first, and very successful, experience building with App Builder.
 
 ## Real-World examples
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### From idea to app: building a real Adobe App Builder solution that extends Experience Cloud
+
+[Read on Experience League](https://experienceleague.adobe.com/en/perspectives/from-idea-to-app-building-a-real-adobe-app-builder-solution-that-extends-experience-cloud)
+
+Vadym built an App Builder app that automated Adobe Target impression-capping configuration from 45 minutes of manual work per activity to one click. The solution reduced operational effort from nearly an hour to seconds while ensuring consistent, governed execution directly in Experience Cloud.
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### Adobe Developer App Builder — The Power of Scaling at Your Fingertips
+
+[Read on Adobe Developer Blog](https://blog.developer.adobe.com/en/publish/2022/05/adobe-app-builder-the-power-of-scaling-at-your-fingertips-8ae1149b7ebd)
+
+Kelvin demonstrated how App Builder's auto-scaling reduced batch asset processing from 20 seconds (sequential) to 6 seconds (parallel fanout), achieving 70% faster performance.
+The platform automatically scales containers based on load using configurable limits in app.config.yaml, enabling efficient processing of thousands of assets without managing infrastructure.
+
+<DiscoverBlock slots="heading, link, text" width="100%"/>
+
+### Powering Adobe MAX with App Builder and I/O Runtime
+
+[Read on Adobe Developer Blog](https://blog.developer.adobe.com/en/publish/2022/00/powering-adobe-max-with-app-builder-io-runtime)
+
+Adobe.com's Chimera Card Collection powered by App Builder served 9 million responses during Adobe MAX, handling peak traffic of 153 requests per second—4.5x more than Adobe Summit. The serverless architecture scaled automatically with zero outages by leveraging I/O Runtime and Azure Blob storage caching to drastically reduce response times and increase throughput.
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
