@@ -565,11 +565,53 @@ aio app logs --tail
 
 ## Agent Skills Specification Reference
 
-> **Note:** Agent Skills are an [open standard](https://agentskills.io/specification) for AI-discoverable capabilities. While App Builder doesn't have pre-built Adobe Skills templates yet, you can build custom skills using the MCP protocol or by following the Agent Skills specification.
+> **Note:** Agent Skills are an [open standard](https://agentskills.io/specification) for AI-discoverable capabilities. While App Builder doesn't have pre-built Adobe Skills templates yet, **we will be building a skills library and CLI tooling** to make it easy to discover and install Adobe integration patterns. In the meantime, you can build custom skills using the MCP protocol or by following the Agent Skills specification.
 
 ### What Are Agent Skills?
 
 Agent Skills use a standardized directory structure and metadata format that makes capabilities discoverable to AI assistants. Think of them as "API documentation for AI agents."
+
+### Installing Skills with `aio` CLI
+
+Similar to `playwright-cli install --skills`, App Builder can install pre-built skills directly into your project:
+
+```bash
+# Install Adobe product skills
+aio skill install workfront-task-query
+aio skill install aem-content-fragments
+aio skill install analytics-query
+
+# Install all recommended skills for an extension point
+aio skill install --all --extension workfront-ui-1
+
+# List available skills
+aio skill list --available
+
+# List installed skills in current project
+aio skill list --installed
+```
+
+**Benefits:**
+- **Known issues embedded** - Skills contain deprecation warnings (e.g., "Use AEM OpenAPI instead of HTTP API")
+- **Best practices enforced** - AI assistants automatically recommend current APIs
+- **Version-aware** - Skills specify minimum API versions and flag deprecated endpoints
+- **Auto-updates** - Run `aio skill update` to get latest best practices
+
+**Example: Skill with Known Issue**
+
+```markdown
+---
+name: aem-content-fragments
+description: Query and manage AEM Content Fragments using OpenAPI
+known-issues:
+  - api: "AEM Assets HTTP API"
+    status: deprecated
+    recommendation: "Use AEM OpenAPI - better coverage for Content Fragments"
+    migration: "https://developer.adobe.com/experience-manager/docs/openapi/"
+---
+```
+
+When an AI assistant tries to use the deprecated HTTP API, the skill automatically suggests the OpenAPI alternative.
 
 ### Directory Structure
 
