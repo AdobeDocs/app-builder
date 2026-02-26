@@ -1,12 +1,14 @@
-## Development Tools for AI-Powered App Builder
+# AI-Powered Development Tools for App Builder
 
-Learn how to use modern AI coding assistants (Cursor, GitHub Copilot, Claude) to accelerate App Builder development. Inspired by [AEM's AI Coding Agents Guide](https://www.aem.live/developer/ai-coding-agents).
+Learn how to use modern AI coding assistants (Cursor, GitHub Copilot, Claude) to accelerate App Builder development.
 
-### Using AI Assistants with App Builder
+---
+
+## Using AI Assistants with App Builder
 
 AI coding tools can help you build App Builder applications faster, but they need the right context.
 
-#### Key Tips for Effective AI Prompts:
+### Key Tips for Effective AI Prompts
 
 1. **Be specific about the platform:**
    - Say "App Builder action" or "Adobe I/O Runtime"
@@ -29,13 +31,17 @@ AI coding tools can help you build App Builder applications faster, but they nee
 
 ```
 I'm building an App Builder action in src/workfront-ui-1/actions/. Create an 
-action that fetches open tasks from Workfront API v15.0. Use OAuth S2S for 
+action that fetches open tasks from Workfront API v21.0. Use OAuth S2S for 
 authentication with credentials from environment variables (ADOBE_CLIENT_ID, 
 ADOBE_CLIENT_SECRET). Follow App Builder action patterns with statusCode and 
 body. Reference developer.adobe.com/app-builder/docs/ for best practices.
 ```
 
-#### Create Project Context Files
+> **See also:** [AI Use Cases with App Builder](ai-use-cases.md) - Learn what you can build with AI on App Builder (MCP servers, documentation assistants, AI agents, and more).
+
+---
+
+## Create Project Context Files
 
 Add an `AGENTS.md` file to your project root:
 
@@ -59,11 +65,13 @@ Add an `AGENTS.md` file to your project root:
 
 This helps AI understand your project structure and generate correct code based on folder context.
 
-#### "Vibe Coding" with App Builder
+---
+
+## "Vibe Coding" with App Builder
 
 Modern AI tools like Cursor, GitHub Copilot, and Claude enable rapid prototyping through conversational coding. Here's how to leverage this workflow with App Builder:
 
-**Quick Onboarding Flow:**
+### Quick Onboarding Flow
 
 1. **Start with AI-assisted prototyping:**
    - Use Cursor/Copilot to build your app logic and APIs first
@@ -87,7 +95,7 @@ Modern AI tools like Cursor, GitHub Copilot, and Claude enable rapid prototyping
    - AI adds proper `statusCode`, `body`, logging patterns
    - AI integrates Adobe authentication (OAuth S2S)
 
-**Example Vibe Coding Prompt:**
+### Example Vibe Coding Prompt
 
 ```
 Create a basic campaign landing page that captures lead form submissions. 
@@ -98,72 +106,15 @@ App Builder and display the landing page form in the Experience Cloud Shell
 (exc shell) with a summary dashboard showing total leads captured.
 ```
 
-**Why This Works:**
+### Why This Works
+
 - App Builder is just Node.js, so your AI-generated code works with minimal changes
 - One-command deployment (`aio app deploy`) means no DevOps setup
 - AI assistants already know serverless patterns, easy to adapt to App Builder
 
 ---
 
-## Quick Start: Deploy Your First AI Integration
-
-### Prerequisites
-
-- Node.js 18+
-- Adobe Developer Console project with I/O Runtime enabled ([Create one](https://developer.adobe.com/app-builder/docs/getting_started/))
-- AI service API key (OpenAI, Groq, Anthropic, etc.) - optional depending on use case
-
-### Step 1: Create & Initialize Project
-
-**Initialize App Builder Project:**
-
-```bash
-# Create new App Builder project
-aio app init my-ai-app
-
-# Select template based on your use case:
-# - "All Actions" - For backend-only (MCP servers, APIs)
-# - "All Extensions" - For UI extensions (Unified Shell, Workfront, AEM)
-
-cd my-ai-app
-```
-
-**Project Structure:**
-
-```
-my-ai-app/
-├── src/
-│   ├── dx-excshell-1/         # Unified Shell (if selected)
-│   │   ├── actions/           # Backend actions
-│   │   ├── web-src/           # Frontend UI
-│   │   └── ext.config.yaml    # Extension configuration
-│   ├── workfront-ui-1/        # Workfront (if selected)
-│   │   └── ext.config.yaml    # Extension configuration
-│   └── ...                    # Other extension points
-├── app.config.yaml            # App configuration
-├── package.json
-└── .env                       # Local secrets
-```
-
----
-
-### Step 2: Configure, Code & Deploy
-
-**1. Add API Keys (stored securely, never in code):**
-
-```bash
-# For Adobe APIs (required)
-aio app config set ADOBE_CLIENT_ID your-client-id
-aio app config set ADOBE_CLIENT_SECRET your-client-secret
-aio app config set ADOBE_IMS_ORG_ID your-org-id
-
-# For AI providers (if using LLMs)
-aio app config set OPENAI_API_KEY your-openai-key
-# or
-aio app config set ANTHROPIC_API_KEY your-anthropic-key
-```
-
-**2. Create Context Files for AI:**
+## Create Context Files for AI
 
 Create `.skills/app-builder-actions-developer.md`:
 
@@ -191,32 +142,43 @@ description: Use when working with App Builder actions in specific extension poi
 - OAuth bearer token
 ```
 
-Create `AGENTS.md`:
+---
 
-```markdown
-# App Builder AI Development Guide
+## Best Practices for AI-Assisted Development
 
-When working in this project:
-- Check folder path to determine extension point
-- Use extension point-specific SDKs and APIs
-- Follow App Builder action patterns (statusCode, body, headers)
-- OAuth S2S for authentication (NOT JWT)
+### Do's
+
+✅ **Specify extension points** - Tell AI which folder you're working in  
+✅ **Reference official docs** - Point to developer.adobe.com URLs  
+✅ **Include auth patterns** - Mention OAuth S2S explicitly  
+✅ **Use current API versions** - Workfront v21.0, AEM OpenAPI  
+✅ **Ask for logging** - Request `@adobe/aio-sdk` logger usage  
+✅ **Verify output** - Review AI-generated code for App Builder patterns
+
+### Don'ts
+
+❌ **Don't say "serverless function"** - AI assumes AWS Lambda  
+❌ **Don't mention JWT** - Deprecated in Jan 2025  
+❌ **Don't use old API versions** - v15.0, HTTP API are outdated  
+❌ **Don't skip error handling** - Always include statusCode and try/catch  
+❌ **Don't hardcode credentials** - Use environment variables
+
+---
+
+## Example AI Workflows
+
+### Workflow 1: Create New Action
+
+**Prompt:**
+```
+I'm in src/workfront-ui-1/actions/. Create fetch-tasks/index.js that queries 
+Workfront API v21.0 for open tasks in a project. Accept projectId param. 
+Use @adobe/aio-sdk logger. Return JSON with statusCode 200 and tasks array 
+sorted by due date. OAuth S2S from environment variables.
 ```
 
-**3. Write Your Action Code:**
-
-Use AI to help you! Example prompt:
-
-```
-I'm in src/workfront-ui-1/actions/. Create an action called fetch-tasks.js 
-that queries Workfront API v21.0 for open tasks in a project. Accept projectId 
-as a parameter. Use @adobe/aio-sdk for logging. Return tasks sorted by due date.
-```
-
-**Example Generated Action:**
-
+**AI generates:**
 ```javascript
-// src/workfront-ui-1/actions/fetch-tasks/index.js
 const { Core } = require('@adobe/aio-sdk');
 const fetch = require('node-fetch');
 
@@ -227,389 +189,137 @@ async function main(params) {
     const { projectId } = params;
     
     if (!projectId) {
-      return {
-        statusCode: 400,
-        body: { error: 'projectId parameter required' }
-      };
+      return { statusCode: 400, body: { error: 'projectId required' } };
     }
     
-    // Query Workfront API
     const response = await fetch(
-      `https://${params.WORKFRONT_DOMAIN}/attask/api/v21.0/task/search?projectID=${projectId}&status=NEW,INP&$$LIMIT=100`,
-      {
-        headers: {
-          'Sessionid': params.WORKFRONT_API_KEY
-        }
-      }
+      `https://${params.WORKFRONT_DOMAIN}/attask/api/v21.0/task/search?projectID=${projectId}&status=NEW,INP`,
+      { headers: { 'Sessionid': params.WORKFRONT_API_KEY } }
     );
     
-    if (!response.ok) {
-      throw new Error(`Workfront API error: ${response.statusText}`);
-    }
-    
     const data = await response.json();
-    
-    // Sort by due date
     const tasks = (data.data || []).sort((a, b) => 
       new Date(a.plannedCompletionDate) - new Date(b.plannedCompletionDate)
     );
     
-    logger.info(`Fetched ${tasks.length} tasks for project ${projectId}`);
-    
-    return {
-      statusCode: 200,
-      body: { tasks }
-    };
+    logger.info(`Fetched ${tasks.length} tasks`);
+    return { statusCode: 200, body: { tasks } };
     
   } catch (error) {
     logger.error(error);
-    return {
-      statusCode: 500,
-      body: { error: error.message }
-    };
+    return { statusCode: 500, body: { error: error.message } };
   }
 }
 
 exports.main = main;
 ```
 
-**4. Test Locally:**
+### Workflow 2: Migrate Deprecated API
 
-```bash
-# Start local development server
-aio app dev
-
-# Test your action (in another terminal)
-curl http://localhost:9080/api/v1/web/fetch-tasks \
-  -H "Content-Type: application/json" \
-  -d '{"projectId": "abc123"}'
+**Prompt:**
+```
+Convert this AEM HTTP API code to use AEM OpenAPI instead. I'm in 
+src/aem-cf-console-admin-1/actions/. Update to use OpenAPI for Content 
+Fragments with OAuth bearer token from params.
 ```
 
-**5. Deploy:**
+**AI identifies:**
+- Deprecated HTTP API patterns
+- Suggests OpenAPI endpoints
+- Updates authentication from basic auth to OAuth bearer
+- Maintains App Builder action structure
 
-```bash
-# Deploy to Adobe I/O Runtime
-aio app deploy
+### Workflow 3: Add Error Handling
 
-# Your action is now live at:
-# https://your-namespace.adobeioruntime.net/api/v1/web/fetch-tasks
+**Prompt:**
+```
+Add comprehensive error handling to this App Builder action. Include:
+- Input validation with 400 responses
+- API error handling with specific status codes
+- Logging at each step
+- Proper try/catch wrapping
 ```
 
-**6. View Logs:**
-
-```bash
-# View recent logs
-aio app logs
-
-# Stream logs in real-time
-aio app logs --tail
-```
+**AI adds:**
+- Parameter validation
+- Specific error responses (400, 401, 500)
+- Logger calls for debugging
+- Clean error messages
 
 ---
 
-### Next Steps
+## AI Assistant Configuration
 
-1. **Add More Actions:** Build additional actions for different Adobe products
-2. **Configure AI Assistant:** Connect Claude Desktop or Cursor to your MCP server (if applicable)
-3. **Set Up CI/CD:** Automate deployments with GitHub Actions
-4. **Monitor Usage:** Track action invocations and errors in logs
-5. **Iterate with AI:** Use AI assistants to refine and extend your actions
+### Cursor Configuration
 
----
+Add to `.cursorrules` in your project:
 
-## Agent Skills Specification Reference
+```
+# App Builder Project Rules
 
-> **Note:** Agent Skills are an [open standard](https://agentskills.io/specification) for AI-discoverable capabilities. While App Builder doesn't have pre-built Adobe Skills templates yet, **we will be building a skills library and CLI tooling** to make it easy to discover and install Adobe integration patterns. In the meantime, you can build custom skills using the MCP protocol or by following the Agent Skills specification.
+This is an Adobe App Builder project.
 
-### What Are Agent Skills?
+## Extension Points
+- src/dx-excshell-1/ = Unified Shell
+- src/workfront-ui-1/ = Workfront
+- src/aem-cf-console-admin-1/ = AEM Content Fragments
 
-Agent Skills use a standardized directory structure and metadata format that makes capabilities discoverable to AI assistants. Think of them as "API documentation for AI agents."
+## Action Patterns
+- Always use statusCode and body in responses
+- Use @adobe/aio-sdk for logging
+- OAuth S2S from environment variables (NOT JWT)
+- Use current API versions (Workfront v21.0, AEM OpenAPI)
 
-### Installing Skills with `aio` CLI
-
-Similar to `playwright-cli install --skills`, App Builder can install pre-built skills directly into your project:
-
-```bash
-# Install Adobe product skills
-aio skill install workfront-task-query
-aio skill install aem-content-fragments
-aio skill install analytics-query
-
-# Install all recommended skills for an extension point
-aio skill install --all --extension workfront-ui-1
-
-# List available skills
-aio skill list --available
-
-# List installed skills in current project
-aio skill list --installed
+## Documentation
+- App Builder: https://developer.adobe.com/app-builder/docs/
+- I/O Runtime: https://developer.adobe.com/runtime/docs/
 ```
 
-**Benefits:**
-- **Known issues embedded** - Skills contain deprecation warnings (e.g., "Use AEM OpenAPI instead of HTTP API")
-- **Best practices enforced** - AI assistants automatically recommend current APIs
-- **Version-aware** - Skills specify minimum API versions and flag deprecated endpoints
-- **Auto-updates** - Run `aio skill update` to get latest best practices
+### GitHub Copilot Configuration
 
-**Example: Skill with Known Issue**
+Add to `.github/copilot-instructions.md`:
 
 ```markdown
----
-name: aem-content-fragments
-description: Query and manage AEM Content Fragments using OpenAPI
-known-issues:
-  - api: "AEM Assets HTTP API"
-    status: deprecated
-    recommendation: "Use AEM OpenAPI - better coverage for Content Fragments"
-    migration: "https://developer.adobe.com/experience-manager/docs/openapi/"
----
-```
+# App Builder Development Guidelines
 
-When an AI assistant tries to use the deprecated HTTP API, the skill automatically suggests the OpenAPI alternative.
-
-### Directory Structure
-
-```
-my-app-builder-project/
-├── actions/
-│   └── skills/                    # Skills directory
-│       ├── adobe-analytics-query/
-│       │   ├── SKILL.md           # Skill definition (metadata + docs)
-│       │   └── index.js           # Implementation (App Builder action)
-│       ├── adobe-assets-search/
-│       │   ├── SKILL.md
-│       │   └── index.js
-│       └── registry.js            # Skills discovery endpoint
-├── app.config.yaml
-└── package.json
-```
-
-### SKILL.md Format
-
-Each skill has a `SKILL.md` file with YAML frontmatter + Markdown description following the [Adobe Skills specification](https://github.com/adobe/skills):
-
-````markdown
----
-name: workfront-task-query
-description: Query and analyze Workfront tasks by team, status, or priority. Helps identify overdue tasks, resource allocation, and project health.
----
-
-# Workfront Task Query
-
-Query Adobe Workfront to retrieve task information based on natural language criteria.
-
-## When to Use This Skill
-
-Use this skill when:
-- You need to find tasks by assignee, team, or status
-- You want to identify overdue or high-priority work
-- You're analyzing project health and resource allocation
-- You need task data for reporting or dashboards
-
-**Example queries:**
-- "Show my open tasks due this week"
-- "What high-priority tasks are overdue?"
-- "List all tasks assigned to the Marketing team"
-
-## Prerequisites
-
-To use this skill, you need:
-- ✅ Adobe Workfront instance URL
-- ✅ OAuth Server-to-Server credentials with Workfront API access
-- ✅ Valid access token from App Builder authentication
-- ✅ Workfront API v21.0 OpenAPI specification for complete endpoint details
-
-## Related Skills
-
-- **workfront-project-status** - Get overall project health metrics
-- **workfront-resource-allocation** - Analyze team capacity and workload
-- **workfront-time-tracking** - Query logged hours and time entries
-
-## Workflow
-
-### Step 1: Parse Natural Language Query
-
-Convert user's natural language request into Workfront API parameters:
-
+## Action Structure
+All actions in `src/*/actions/` must return:
 ```javascript
-// Input: "Show my open tasks due this week"
-// Output:
 {
-  filters: {
-    status: "INP",  // In Progress
-    assignedToID: "<current-user-id>",
-    plannedCompletionDate: {
-      gte: "2026-02-25",
-      lte: "2026-03-03"
-    }
-  }
+  statusCode: number,
+  body: object | string
 }
-```
-
-### Step 2: Query Workfront API
-
-Call Workfront API v21.0 with constructed filters:
-
-```bash
-GET https://your-instance.workfront.com/attask/api/v21.0/task/search
-```
-
-### Step 3: Format Response
-
-Transform API response into human-readable results:
-
-```json
-{
-  "tasks": [
-    {
-      "name": "Design homepage mockup",
-      "dueDate": "2026-02-28",
-      "priority": "high",
-      "assignee": "John Doe",
-      "project": "Website Redesign"
-    }
-  ],
-  "summary": {
-    "total": 5,
-    "overdue": 1,
-    "dueThisWeek": 4
-  }
-}
-```
-
-## Example Usage
-
-**Query 1: High-priority overdue tasks**
-```
-User: "What high-priority tasks are overdue?"
-
-Response:
-Found 3 high-priority overdue tasks:
-1. "Update brand guidelines" - Due: Feb 20 (5 days overdue) - John Doe
-2. "Review Q1 budget" - Due: Feb 22 (3 days overdue) - Jane Smith
-3. "Finalize campaign creative" - Due: Feb 23 (2 days overdue) - Mike Johnson
-```
-
-**Query 2: Team workload**
-```
-User: "List all tasks assigned to the Marketing team"
-
-Response:
-Marketing team has 12 active tasks:
-- 8 in progress
-- 3 not started
-- 1 overdue
 ```
 
 ## Authentication
+Use OAuth Server-to-Server (NOT JWT):
+- ADOBE_CLIENT_ID from params
+- ADOBE_CLIENT_SECRET from params
+- Never hardcode credentials
 
-Requires OAuth Server-to-Server credentials:
-- Store `ADOBE_CLIENT_ID`, `ADOBE_CLIENT_SECRET` in App Builder environment
-- Fetch access token using client credentials flow
-- Include token in Workfront API requests
-
-## Error Handling
-
-Handle common errors:
-- **401 Unauthorized**: Refresh OAuth token
-- **403 Forbidden**: User lacks Workfront permissions
-- **404 Not Found**: Invalid task or project ID
-- **Rate Limit**: Implement retry with backoff
-````
-
-### Progressive Disclosure Concept
-
-Agent Skills use **progressive disclosure** to provide the right level of detail based on AI context:
-
-1. **Skill Registry** - High-level list of available skills (names + 1-line descriptions)
-2. **Skill Definition** (SKILL.md frontmatter) - Concise name and description
-3. **Full Documentation** (SKILL.md body) - When to use, workflow, examples, error handling
-
-AI assistants first see the registry, then request specific skill details only when needed.
-
-### Learn More
-
-- [AgentSkills.io Specification](https://agentskills.io/specification) - Full Agent Skills spec
-- [MCP Protocol](https://modelcontextprotocol.io/) - Model Context Protocol docs
-- [App Builder Documentation](https://developer.adobe.com/app-builder/docs/) - Complete platform guide
+## API Versions
+- Workfront: v21.0 (NOT v15.0)
+- AEM: OpenAPI (NOT HTTP API)
+- Analytics: 2.0 API
+```
 
 ---
 
 ## Resources
 
 - [App Builder Documentation](https://developer.adobe.com/app-builder/docs/)
-- [Agent Skills Specification](https://agentskills.io/specification)
-- [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk)
-- [DocuBot Example](https://github.com/rokapooradobe/adobe-docubot)
-- [MCP Server Generator](https://github.com/robbiekapoor/generator-app-remote-mcp-server-generic)
+- [AEM AI Coding Agents Guide](https://www.aem.live/developer/ai-coding-agents)
 - [Cursor Rules for App Builder](https://github.com/robbiekapoor/benges-app_builder-cursor-rules-base)
+- [MCP Server Generator](https://github.com/robbiekapoor/generator-app-remote-mcp-server-generic)
 
 ---
 
 ## Next Steps
 
-1. **Explore Templates:** Run `aio app init` and browse AI-focused templates
-2. **Join Community:** [Adobe Developer Forums](https://experienceleaguecommunities.adobe.com/t5/adobe-i-o-console/ct-p/adobe-io-console)
-3. **Read Guides:** [App Builder Guides](https://developer.adobe.com/app-builder/docs/guides/)
-4. **Watch Demos:** [App Builder on YouTube](https://www.youtube.com/playlist?list=PLcVEYUqU7VReYsRrAlB0ydgeKIvcxYXXz)
-5. **Contribute Your Skills:** Help grow the App Builder Agent Skills ecosystem by sharing your custom skills
-
-**Ready to build? Start with one command:**
-
-```bash
-aio app init --template @adobe/generator-app-agent-skills
-```
-
----
-
-## Contribute Your App Builder Skills
-
-We welcome contributions from the community! If you've built Agent Skills for App Builder, share them with other developers.
-
-### How to Contribute:
-
-1. **Create your skill** following the [Agent Skills specification](https://agentskills.io/specification)
-2. **Test your skill** with AI assistants (Claude, Cursor, GitHub Copilot)
-3. **Document your skill** with clear examples and use cases
-4. **Submit to the community** via the [Adobe Skills repository](https://github.com/adobe/skills)
-
-### What Skills to Contribute:
-
-**Adobe API Integrations:**
-- Analytics queries and reporting
-- AEM Assets search and management
-- Campaign automation workflows
-- Target experiment management
-- Commerce order processing
-
-**Developer Tools:**
-- Code generation and scaffolding
-- Testing and deployment automation
-- Documentation generation
-- Error analysis and debugging
-
-**Business Workflows:**
-- Lead capture and CRM integration
-- Customer data synchronization
-- Content publishing pipelines
-- Approval workflows
-
-### Contribution Benefits:
-
-- Help other developers accelerate their App Builder projects
-- Get feedback and improvements from the community
-- Build your reputation as an App Builder expert
-- Contribute to the growing AI + Adobe ecosystem
-
-### How to Submit Your Skills:
-
-Share your App Builder skills with the community:
-
-- **Adobe Developer Forums**: Post your skill in the [App Builder Community](https://experienceleaguecommunities.adobe.com/t5/adobe-i-o-console/ct-p/adobe-io-console)
-- **GitHub**: Open an issue or discussion in the App Builder docs repository
-- **Developer Support**: Contact the App Builder team via Adobe Developer Console
-
-We'll review community contributions and feature the best skills in our documentation and examples.
+1. **Set up context files** - Create AGENTS.md and .cursorrules
+2. **Test AI prompts** - Try the example workflows above
+3. **Iterate** - Refine prompts based on AI output quality
+4. **Share learnings** - Document what works for your team
 
 ---
 
