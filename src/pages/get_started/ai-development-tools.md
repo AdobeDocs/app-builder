@@ -37,7 +37,7 @@ ADOBE_CLIENT_SECRET). Follow App Builder action patterns with statusCode and
 body. Reference developer.adobe.com/app-builder/docs/ for best practices.
 ```
 
-> **See also:** [AI Use Cases with App Builder](ai-use-cases.md) - Learn what you can build with AI on App Builder (MCP servers, documentation assistants, AI agents, and more).
+> **See also:** [AI Use Cases with App Builder](../resources/ai-use-cases.md) - Learn what you can build with AI on App Builder (MCP servers, documentation assistants, AI agents, and more).
 
 ---
 
