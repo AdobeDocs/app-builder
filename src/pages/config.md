@@ -23,6 +23,7 @@
             - [Creating your First App](get_started/app_builder_get_started/first-app.md) 
             - [Publishing Your App](get_started/app_builder_get_started/publish-app.md) 
             - [Troubleshooting](get_started/app_builder_get_started/troubleshoot.md) 
+            - [AI Development Tools](get_started/app_builder_get_started/ai-development-tools.md) 
         - [Runtime Getting Started](get_started/runtime_getting_started/index.md) 
             - [Overview](get_started/runtime_getting_started/index.md) 
             - [Activations](get_started/runtime_getting_started/activations.md) 
