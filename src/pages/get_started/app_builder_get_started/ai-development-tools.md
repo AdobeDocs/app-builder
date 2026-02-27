@@ -26,7 +26,7 @@ AI coding tools can help you build App Builder applications faster, but they nee
 ### Key Tips for Effective AI Prompts
 
 1. **Be specific about the platform:**
-   - Say "App Builder action" or "Adobe I/O Runtime"
+   - Say "App Builder action"
    - Don't say "serverless function" (AI returns AWS Lambda docs)
 
 2. **Reference official docs:**
