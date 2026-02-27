@@ -113,6 +113,10 @@ The [Errors SDK library](https://github.com/adobe/aio-lib-core-errors) is the ba
 
 The [Networking SDK library](https://github.com/adobe/aio-lib-core-networking) provides low-level networking tools such as exponential back-off that can be used in SDK libraries and custom API clients.
 
+##### Authentication
+
+The [Authentication SDK library](https://github.com/adobe/aio-lib-core-auth) helps Developers generate access tokens using OAuth service-to-service (S2S) credentials, enabling Runtime actions to call Adobe services.
+
 ### Token-Vending Machine
 
 The [Token-Vending Machine](https://github.com/adobe/aio-tvm) is exposed as an API deployed to Runtime, provided with App Builder.
