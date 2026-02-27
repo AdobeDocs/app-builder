@@ -30,8 +30,7 @@ AI coding tools can help you build App Builder applications faster, but they nee
    - Don't say "serverless function" (AI returns AWS Lambda docs)
 
 2. **Reference official docs:**
-   - App Builder: `developer.adobe.com/app-builder/docs/`
-   - Adobe I/O Runtime: `developer.adobe.com/runtime/docs/`
+   - App Builder & Runtime docs: `developer.adobe.com/app-builder/docs/`
 
 3. **Specify folder context:**
    - `src/dx-excshell-1/actions/` = Unified Shell
@@ -164,7 +163,7 @@ description: Use when working with App Builder actions in specific extension poi
 ### Do's
 
 ✅ **Specify extension points** - Tell AI which folder you're working in  
-✅ **Reference official docs** - Point to developer.adobe.com URLs  
+✅ **Reference official docs** - Point to developer.adobe.com/app-builder/docs/  
 ✅ **Include auth patterns** - Mention OAuth S2S explicitly  
 ✅ **Use current API versions** - Workfront v21.0, AEM OpenAPI  
 ✅ **Ask for logging** - Request `@adobe/aio-sdk` logger usage  
@@ -286,8 +285,7 @@ This is an Adobe App Builder project.
 - Use current API versions (Workfront v21.0, AEM OpenAPI)
 
 ## Documentation
-- App Builder: https://developer.adobe.com/app-builder/docs/
-- I/O Runtime: https://developer.adobe.com/runtime/docs/
+- App Builder & Runtime: https://developer.adobe.com/app-builder/docs/
 ```
 
 ### GitHub Copilot Configuration
