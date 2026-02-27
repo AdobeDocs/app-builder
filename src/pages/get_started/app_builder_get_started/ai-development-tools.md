@@ -15,51 +15,43 @@ description: Learn how to use AI coding assistants like Cursor, GitHub Copilot, 
 
 # AI-Powered Development Tools for App Builder
 
-Learn how to use modern AI coding assistants (Cursor, GitHub Copilot, Claude) to accelerate App Builder development.
+Learn how to use modern AI coding assistants (Cursor, GitHub Copilot, Claude) to accelerate App Builder development. AI tools can help you build App Builder applications faster, but they need the right context about the platform.
 
----
+## Key tips for effective AI prompts
 
-## Using AI Assistants with App Builder
+**Be specific about the platform.** Say "App Builder action" or "Adobe I/O Runtime" instead of "serverless function" (which makes AI return AWS Lambda patterns).
 
-AI coding tools can help you build App Builder applications faster, but they need the right context.
+**Reference official docs.** Point AI to `developer.adobe.com/app-builder/docs/` for both App Builder and Runtime documentation.
 
-### Key Tips for Effective AI Prompts
+**Specify folder context.** Tell AI which extension point you are working in:
 
-1. **Be specific about the platform:**
-   - Say "App Builder action"
-   - Don't say "serverless function" (AI returns AWS Lambda docs)
+- `src/dx-excshell-1/actions/` for Unified Shell (Experience Cloud)
+- `src/workfront-ui-1/actions/` for Workfront
+- `src/aem-cf-console-admin-1/actions/` for AEM Content Fragments
 
-2. **Reference official docs:**
-   - App Builder & Runtime docs: `developer.adobe.com/app-builder/docs/`
+**Include authentication details.** Always mention "OAuth Server-to-Server from environment variables" and never JWT (deprecated Jan 2025).
 
-3. **Specify folder context:**
-   - `src/dx-excshell-1/actions/` = Unified Shell
-   - `src/workfront-ui-1/actions/` = Workfront
-   - `src/aem-cf-console-admin-1/actions/` = AEM Content Fragments
+**Use current API versions.** Workfront v21.0 (not v15.0), AEM OpenAPI (not HTTP API), Analytics 2.0 API.
 
-4. **Include authentication details:**
-   - Always mention "OAuth Server-to-Server from environment variables"
-   - Never JWT (deprecated Jan 2025)
+**Ask for logging.** Request `@adobe/aio-sdk` logger usage in generated code.
 
-**Example Prompt:**
+Here is an example prompt that follows all of these tips:
 
 ```
-I'm building an App Builder action in src/workfront-ui-1/actions/. Create an 
-action that fetches open tasks from Workfront API v21.0. Use OAuth S2S for 
-authentication with credentials from environment variables (ADOBE_CLIENT_ID, 
-ADOBE_CLIENT_SECRET). Follow App Builder action patterns with statusCode and 
+I'm building an App Builder action in src/workfront-ui-1/actions/. Create an
+action that fetches open tasks from Workfront API v21.0. Use OAuth S2S for
+authentication with credentials from environment variables (ADOBE_CLIENT_ID,
+ADOBE_CLIENT_SECRET). Follow App Builder action patterns with statusCode and
 body. Reference developer.adobe.com/app-builder/docs/ for best practices.
 ```
 
-> **See also:** [AI Use Cases with App Builder](../../resources/ai-use-cases.md) - Learn what you can build with AI on App Builder (MCP servers, documentation assistants, AI agents, and more).
+## Setting up project context files
 
----
+AI assistants generate better code when they understand your project structure. You can add context files to your project root that AI tools will read automatically.
 
-## Create Project Context Files
+**AGENTS.md** provides general project context. Create this file at your project root:
 
-Add an `AGENTS.md` file to your project root:
-
-```markdown
+```
 # App Builder Project Context
 
 ## Extension Points
@@ -75,150 +67,83 @@ Add an `AGENTS.md` file to your project root:
 ## Authentication
 - OAuth Server-to-Server (NOT JWT)
 - Credentials in .env for local dev
+
+## Action Patterns
+- Always use statusCode and body in responses
+- Use @adobe/aio-sdk for logging
+- Use current API versions (Workfront v21.0, AEM OpenAPI)
+
+## Documentation
+- App Builder and Runtime: https://developer.adobe.com/app-builder/docs/
 ```
 
-This helps AI understand your project structure and generate correct code based on folder context.
+**For Cursor**, add a `.cursorrules` file at your project root with the same information. Cursor reads this file automatically when you open the project.
 
----
+**For GitHub Copilot**, add a `.github/copilot-instructions.md` file. Copilot reads this file to understand your project conventions.
 
-## "Vibe Coding" with App Builder
+All three formats serve the same purpose: giving the AI assistant context about App Builder action patterns, authentication, API versions, and extension points.
 
-Modern AI tools like Cursor, GitHub Copilot, and Claude enable rapid prototyping through conversational coding. Here's how to leverage this workflow with App Builder:
+## Rapid prototyping with AI
 
-### Quick Onboarding Flow
+App Builder is just Node.js, so AI-generated code works with minimal changes. Here is a typical workflow:
 
-1. **Start with AI-assisted prototyping:**
-   - Use Cursor/Copilot to build your app logic and APIs first
-   - Focus on business logic without worrying about deployment
-   - Iterate quickly with AI suggestions
+1. Use Cursor or Copilot to build your app logic and APIs first. Focus on business logic without worrying about deployment.
 
-2. **Onboard to App Builder in minutes:**
-   ```bash
-   # Initialize App Builder project
-   aio app init my-app
-   
-   # Copy your AI-generated code into actions/
-   cp my-prototype.js src/dx-excshell-1/actions/myaction/index.js
-   
-   # Deploy instantly
-   aio app deploy
-   ```
+2. Initialize an App Builder project and copy your code in:
 
-3. **AI helps with App Builder patterns:**
-   - Ask AI: "Convert this Express.js endpoint to an App Builder action"
-   - AI adds proper `statusCode`, `body`, logging patterns
-   - AI integrates Adobe authentication (OAuth S2S)
-
-### Example Vibe Coding Prompt
-
-```
-Create a basic campaign landing page that captures lead form submissions. 
-Build it as an App Builder action with proper error handling, OAuth S2S 
-authentication, and logging. Store lead data using App Builder State storage 
-and send a Slack notification when a new lead is submitted. Deploy on Adobe 
-App Builder and display the landing page form in the Experience Cloud Shell 
-(exc shell) with a summary dashboard showing total leads captured.
+```bash
+aio app init my-app
+cd my-app
+cp my-prototype.js src/dx-excshell-1/actions/myaction/index.js
+aio app deploy
 ```
 
-### Why This Works
+3. Ask AI to adapt the code to App Builder patterns. For example: "Convert this Express.js endpoint to an App Builder action with proper statusCode, body, and OAuth S2S authentication."
 
-- App Builder is just Node.js, so your AI-generated code works with minimal changes
-- One-command deployment (`aio app deploy`) means no DevOps setup
-- AI assistants already know serverless patterns, easy to adapt to App Builder
+This works well because App Builder uses standard Node.js, deployment is a single command (`aio app deploy`), and AI assistants already know serverless patterns that map directly to App Builder actions.
 
----
+## Example: creating a new action
 
-## Create Context Files for AI
-
-Create `.skills/app-builder-actions-developer.md`:
-
-```markdown
----
-name: app-builder-actions-developer
-description: Use when working with App Builder actions in specific extension points
----
-
-# Extension Point Context
-
-## Unified Shell: `src/dx-excshell-1/actions/`
-- Experience Cloud Shell extensions
-- Use @adobe/exc-app SDK
-- Access user IMS token
-
-## Workfront: `src/workfront-ui-1/actions/`
-- Workfront UI extensions
-- Use Workfront API v21.0
-- SessionId authentication
-
-## AEM: `src/aem-cf-console-admin-1/actions/`
-- AEM Content Fragments
-- Use AEM OpenAPI (better coverage for Content Fragments)
-- OAuth bearer token
-```
-
----
-
-## Best Practices for AI-Assisted Development
-
-### Do's
-
-✅ **Specify extension points** - Tell AI which folder you're working in  
-✅ **Reference official docs** - Point to developer.adobe.com/app-builder/docs/  
-✅ **Include auth patterns** - Mention OAuth S2S explicitly  
-✅ **Use current API versions** - Workfront v21.0, AEM OpenAPI  
-✅ **Ask for logging** - Request `@adobe/aio-sdk` logger usage  
-✅ **Verify output** - Review AI-generated code for App Builder patterns
-
-### Don'ts
-
-❌ **Don't say "serverless function"** - AI assumes AWS Lambda  
-❌ **Don't mention JWT** - Deprecated in Jan 2025  
-❌ **Don't use old API versions** - v15.0, HTTP API are outdated  
-❌ **Don't skip error handling** - Always include statusCode and try/catch  
-❌ **Don't hardcode credentials** - Use environment variables
-
----
-
-## Example AI Workflows
-
-### Workflow 1: Create New Action
+Here is a prompt and the code an AI assistant would generate:
 
 **Prompt:**
+
 ```
-I'm in src/workfront-ui-1/actions/. Create fetch-tasks/index.js that queries 
-Workfront API v21.0 for open tasks in a project. Accept projectId param. 
-Use @adobe/aio-sdk logger. Return JSON with statusCode 200 and tasks array 
+I'm in src/workfront-ui-1/actions/. Create fetch-tasks/index.js that queries
+Workfront API v21.0 for open tasks in a project. Accept projectId param.
+Use @adobe/aio-sdk logger. Return JSON with statusCode 200 and tasks array
 sorted by due date. OAuth S2S from environment variables.
 ```
 
-**AI generates:**
+**Generated code:**
+
 ```javascript
 const { Core } = require('@adobe/aio-sdk');
 const fetch = require('node-fetch');
 
 async function main(params) {
   const logger = Core.Logger('fetch-tasks', { level: params.LOG_LEVEL || 'info' });
-  
+
   try {
     const { projectId } = params;
-    
+
     if (!projectId) {
       return { statusCode: 400, body: { error: 'projectId required' } };
     }
-    
+
     const response = await fetch(
       `https://${params.WORKFRONT_DOMAIN}/attask/api/v21.0/task/search?projectID=${projectId}&status=NEW,INP`,
       { headers: { 'Sessionid': params.WORKFRONT_API_KEY } }
     );
-    
+
     const data = await response.json();
-    const tasks = (data.data || []).sort((a, b) => 
+    const tasks = (data.data || []).sort((a, b) =>
       new Date(a.plannedCompletionDate) - new Date(b.plannedCompletionDate)
     );
-    
+
     logger.info(`Fetched ${tasks.length} tasks`);
     return { statusCode: 200, body: { tasks } };
-    
+
   } catch (error) {
     logger.error(error);
     return { statusCode: 500, body: { error: error.message } };
@@ -228,95 +153,39 @@ async function main(params) {
 exports.main = main;
 ```
 
-### Workflow 2: Migrate Deprecated API
+Notice how the generated code follows App Builder conventions: it exports a `main` function, returns `statusCode` and `body`, uses the `@adobe/aio-sdk` logger, and reads credentials from `params` (environment variables).
 
-**Prompt:**
+## Example: migrating a deprecated API
+
+AI assistants can help you migrate from deprecated APIs. Use a prompt like:
+
 ```
-Convert this AEM HTTP API code to use AEM OpenAPI instead. I'm in 
-src/aem-cf-console-admin-1/actions/. Update to use OpenAPI for Content 
+Convert this AEM HTTP API code to use AEM OpenAPI instead. I'm in
+src/aem-cf-console-admin-1/actions/. Update to use OpenAPI for Content
 Fragments with OAuth bearer token from params.
 ```
 
-**AI identifies:**
-- Deprecated HTTP API patterns
-- Suggests OpenAPI endpoints
-- Updates authentication from basic auth to OAuth bearer
-- Maintains App Builder action structure
+The AI will identify deprecated HTTP API patterns, suggest OpenAPI endpoints, update authentication from basic auth to OAuth bearer, and maintain the App Builder action structure.
 
-### Workflow 3: Add Error Handling
+## Example: adding error handling
 
-**Prompt:**
-```
-Add comprehensive error handling to this App Builder action. Include:
-- Input validation with 400 responses
-- API error handling with specific status codes
-- Logging at each step
-- Proper try/catch wrapping
-```
-
-**AI adds:**
-- Parameter validation
-- Specific error responses (400, 401, 500)
-- Logger calls for debugging
-- Clean error messages
-
----
-
-## AI Assistant Configuration
-
-### Cursor Configuration
-
-Add to `.cursorrules` in your project:
+Ask AI to improve error handling in existing actions:
 
 ```
-# App Builder Project Rules
-
-This is an Adobe App Builder project.
-
-## Extension Points
-- src/dx-excshell-1/ = Unified Shell
-- src/workfront-ui-1/ = Workfront
-- src/aem-cf-console-admin-1/ = AEM Content Fragments
-
-## Action Patterns
-- Always use statusCode and body in responses
-- Use @adobe/aio-sdk for logging
-- OAuth S2S from environment variables (NOT JWT)
-- Use current API versions (Workfront v21.0, AEM OpenAPI)
-
-## Documentation
-- App Builder & Runtime: https://developer.adobe.com/app-builder/docs/
+Add comprehensive error handling to this App Builder action. Include
+input validation with 400 responses, API error handling with specific
+status codes, logging at each step, and proper try/catch wrapping.
 ```
 
-### GitHub Copilot Configuration
+The AI will add parameter validation, specific error responses (400, 401, 500), logger calls at each step, and clean error messages.
 
-Add to `.github/copilot-instructions.md`:
+## Common mistakes to avoid
 
-```markdown
-# App Builder Development Guidelines
-
-## Action Structure
-All actions in `src/*/actions/` must return:
-```javascript
-{
-  statusCode: number,
-  body: object | string
-}
-```
-
-## Authentication
-Use OAuth Server-to-Server (NOT JWT):
-- ADOBE_CLIENT_ID from params
-- ADOBE_CLIENT_SECRET from params
-- Never hardcode credentials
-
-## API Versions
-- Workfront: v21.0 (NOT v15.0)
-- AEM: OpenAPI (NOT HTTP API)
-- Analytics: 2.0 API
-```
-
----
+- **Saying "serverless function"** makes AI assume AWS Lambda patterns instead of App Builder.
+- **Mentioning JWT** leads to deprecated authentication code. Always specify OAuth Server-to-Server.
+- **Using old API versions** like Workfront v15.0 or AEM HTTP API produces outdated code.
+- **Skipping error handling** results in actions that return unhelpful 500 errors. Always ask for statusCode and try/catch.
+- **Hardcoding credentials** instead of reading them from environment variables creates security risks.
 
 ## Resources
 
@@ -325,15 +194,9 @@ Use OAuth Server-to-Server (NOT JWT):
 - [Cursor Rules for App Builder](https://github.com/robbiekapoor/benges-app_builder-cursor-rules-base)
 - [MCP Server Generator](https://github.com/robbiekapoor/generator-app-remote-mcp-server-generic)
 
----
+## Next steps
 
-## Next Steps
-
-1. **Set up context files** - Create AGENTS.md and .cursorrules
-2. **Test AI prompts** - Try the example workflows above
-3. **Iterate** - Refine prompts based on AI output quality
-4. **Share learnings** - Document what works for your team
-
----
-
-*Last updated: February 2026*
+1. Create an `AGENTS.md` or `.cursorrules` file in your App Builder project.
+2. Try the example prompts above with your AI assistant.
+3. Refine your prompts based on the output quality.
+4. Share what works with your team.
