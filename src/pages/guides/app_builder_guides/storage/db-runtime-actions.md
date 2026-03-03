@@ -12,7 +12,7 @@ description: Learn how to use the aio-lib-db library to connect to and perform o
 
 # Runtime actions with Database Storage
 
-The following assumes that a [workspace database](./database.md#provisioning-a-workspace-database) has been provisioned in the AIO Project Workspace using the [DB plugin in the AIO CLI](./db-commands.md).
+The following assumes that a [workspace database](./database.md#provision-a-workspace-database) has been provisioned in the AIO Project Workspace using the [DB plugin in the AIO CLI](./db-commands.md).
 
 Connecting to App Builder Database Storage is where `aio-lib-db` most differs from the MongoDB Node Driver.
 
@@ -57,7 +57,7 @@ async function main() {
 
 A few things to note in comparison with the MongoDB Node Driver:
 
-- You do not need to specify connection credentials because they are taken from the runtime context, specifically runtime namespace and auth.
+- You do not need to specify connection credentials because they are taken from the runtime context, specifically the runtime namespace and auth.
 - You do not need to specify the database URL because all requests go through the App Builder Storage Database Service.
 - The library must be initialized in the same region the database was provisioned in.
 - There is no option to select a different database because there is always a one-to-one relationship between an AIO Project Workspace and Workspace Database.
@@ -105,7 +105,7 @@ Find all documents matching a filter (returns a cursor - see next section):
 const cursor = userCollection.find({ age: { $gte: 18 } })
 ```
 
-Find with projection, sort, skip and limit (returns a cursor - see next section):
+Find with projection, sort, skip, and limit (returns a cursor):
 
 ```javascript
 const cursor = userCollection.find({ age: { $gte: 18 } })
@@ -240,7 +240,7 @@ Using `toArray()` loads all results into memory:
 const results = await cursor.toArray()
 ```
 
-Using iteration is memory efficient:
+Using iteration is memory-efficient:
 
 ```javascript
 while (await cursor.hasNext()) {
@@ -249,7 +249,7 @@ while (await cursor.hasNext()) {
 }
 ```
 
-Using for `await...of` is the most convenient:
+Using `for await...of` is the most convenient:
 
 ```javascript
 for await (const doc of cursor) {
@@ -291,7 +291,7 @@ const cursor = collection.find({ status: 'active' })
 
 ## Aggregations
 
-Aggregates are a powerful tool for building complex queries.
+Aggregates are powerful tools for building complex queries.
 
 Simple aggregate pipeline:
 
@@ -321,6 +321,8 @@ const nearbyStores = await stores.aggregate()
 ```
 
 The following advanced example identifies the top five performing active product categories from recent sales data, useful for business intelligence dashboards or reporting.
+
+It is adapted from MongoDB's [Complete Aggregation Pipeline Tutorials](https://www.mongodb.com/docs/manual/tutorial/aggregation-complete-examples/). With only a few exceptions, the examples there are valid for App Builder Database Storage. (The `$set` and `$unset` stages are not supported.)
 
 ```js
 // Complex aggregation with multiple stages
@@ -356,7 +358,7 @@ MongoDB Node Driver references:
 - [Aggregation Operations](https://www.mongodb.com/docs/drivers/node/current/aggregation/)
 - [Aggregation Pipeline Stages](https://www.mongodb.com/docs/drivers/node/current/aggregation/pipeline-stages/)
 
-## Storage Statics
+## Storage Statistics
 
 You can retrieve storage statistics for your database and organization using the `dbStats()` and `orgStats()` methods on the client object, respectively.
 
@@ -366,7 +368,7 @@ You can retrieve storage statistics for your database and organization using the
 // Get storage statistics for the database with the default scale factor (bytes)
 const dbStats = client.dbStats()
 
-// Get storage statistics for the database with a scale factor (e.g. KB)
+// Get storage statistics for the database with a scale factor (for example, KB)
 const dbStatsKb = client.dbStats({ scale: 1024 })
 ```
 | field returned | description                                                                                     |
@@ -388,7 +390,7 @@ const dbStatsKb = client.dbStats({ scale: 1024 })
 // Get combined storage statistics across databases in the organization with the default scale factor (bytes)
 const orgStats = client.orgStats()
 
-// Get combined storage statistics across databases in the organization with a scale factor (e.g. MB)
+// Get combined storage statistics across databases in the organization with a scale factor (for example. MB)
 const orgStatsMb = client.orgStats({ scale: 1024 * 1024 })
 ```
 | Field returned            | Description                                                                                                                |
@@ -444,14 +446,14 @@ with a result something like this:
 }
 ```
 
-When the `_id` field is represented as a string, for example in an HTTP request or text file, it needs to be converted to an ObjectId before using in a query filter. To retrieve the above document, for example, something like the following is required:
+When the `_id` field is represented as a string, for example, in an HTTP request or text file, it needs to be converted to an ObjectId before it is used in a query filter. To retrieve the above document, for example, specify code similar to the following:
 
 ```javascript
 const {ObjectId} = require('bson')
 const userDocument = await userCollection.findOne({ _id: new ObjectId("56fc40f9d735c28df206d078")})
 ```
 
-with a result something like this:
+Results similar to the following will be returned:
 
 ```json
 {
@@ -465,6 +467,8 @@ See the [MongoDB docs](https://www.mongodb.com/docs/manual/core/document/#std-la
 ## Collection management
 
 The `collection` object provides methods for managing collections in the database, such as creating, dropping, and renaming collections.
+
+Collections do not need to be explicitly created before using them. For example, if a user is inserted into a `users` collection, the `users` collection will be automatically created if it does not already exist.
 
 ```javascript
 // Drop a collection (permanently delete)
@@ -490,7 +494,7 @@ const newCollection = await client.createCollection('analytics', {
 
 ## Query options
 
-You can specify various options when performing queries to control the behavior of the query execution, such as which index to use, how long the query should run before timing out, and how the results should be sorted and collated.
+You can specify various options when performing queries to control the behavior of query execution, such as which index to use, how long the query should run before timing out, and how the results should be sorted and collated.
 
 ```javascript
 // Advanced query options

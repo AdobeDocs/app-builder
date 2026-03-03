@@ -6,15 +6,15 @@ keywords:
   - aio-lib-db
   - DocumentDB
   - MongoDB
-title: Database Storage Commands
-description: Descover the essential commands and operations available in the App Builder Database Storage library for managing your application's data effectively.
+title: aio app db Commands
+description: Discover the essential commands and operations available in App Builder Database Storage for managing your application's data effectively.
 ---
 
-# Database Storage commands
+# aio app db commands
 
 The database plugin in the AIO CLI is a utility that facilitates provisioning, initializing, querying, and monitoring workspace databases.
 
-The following is only a brief introduction to the DB plugin. For more thorough documentation see [aio-cli-plugin-app-storage](https://github.com/adobe/aio-cli-plugin-app-storage/tree/epic/abdb-implementation).
+The following is only a brief introduction to the DB Plugin. For more thorough documentation, see [aio-cli-plugin-app-storage](https://github.com/adobe/aio-cli-plugin-app-storage/tree/epic/abdb-implementation).
 
 ## Installation
 
@@ -27,21 +27,23 @@ aio plugins:install @adobe/aio-cli-plugin-app-storage@next
 
 ## Region selection
 
-When using the DB plugin in the AIO CLI, it is important that the region is the same as where the database is provisioned. If not, the connection will fail.
+When using the DB Plugin in the AIO CLI, it is important that the region is the same as where the database is provisioned. If not, the connection will fail.
 
-If a database region is present in the `app.config.yaml` application manifest, that is the region the DB plugin will use.
+If a database region is present in the `app.config.yaml` application manifest, that is the region the DB Plugin will use.
 
-If no database region is present in the `app.config.yaml` application manifest, the region may be specified using the `--region` option or by setting `AIO_DB_REGION` environment variable and will otherwise default to `amer`.
+If no database region is present in the `app.config.yaml` application manifest, the region may be specified using the `--region` option or by setting the `AIO_DB_REGION` environment variable and will otherwise default to `amer`.
 
 ## Provision a workspace database
 
-To provision a workspace database in the current AIO project workspace is as simple as:
+To provision a workspace database in the current AIO Project Workspace with the default `amer` region:
 
 ```bash
 aio app db provision
 ```
 
-The provisioning status can be retrieved with this:
+[Provision a workspace database](./database.md#provision-a-workspace-database) describes the provisioning process further.
+
+The provisioning status can be retrieved with:
 
 ```bash
 aio app db status
@@ -60,7 +62,7 @@ aio app db ping
 aio app db delete
 ```
 
-## Usage statics
+## Usage statistics
 
 ```bash
 # Get statistics about your App Builder database
@@ -68,7 +70,7 @@ aio app db stats # bytes
 aio app db stats --scale 1024 # KB
 ```
 
-| Field returned   |Description |
+| Field returned   | Description |
 | ---              | --- |
 | `ok`             | Whether the request was successful  |
 | `namespace`      | The runtime namespace of the database |
@@ -79,8 +81,8 @@ aio app db stats --scale 1024 # KB
 | `dataSize`       | The actual amount of storage used (default bytes) |
 | `storageSize`    | Space allocated for storage (default bytes) |
 | `indexSize`      | Space allocated for indexes (default bytes) |
-| `scaleFactor`    | The scale factor used for the size fields, ex: 1024 for kilobyte-scale (default is 1 for bytes) |
-| `lastUpdated`    | When the statistics where last updated |
+| `scaleFactor`    | The scale factor used for the size fields. For example, 1024 for kilobyte-scale (default is 1 for bytes) |
+| `lastUpdated`    | When the statistics were last updated |
 
 ```bash
 # Get statistics about all databases in your IMS Org
@@ -122,7 +124,7 @@ To create an empty collection with schema validation:
 aio app db collection create inventory --validator '{"type": "object", "required": ["sku", "quantity"]}'
 ```
 
-**Note:** Schema validation is much less common in document-style databases in comparison with relational databases, and not requiring strict schemas is in fact part of the strength of document-style databases. They should be used judiciously if at all for App Builder applications. See [Schema Validation](https://www.mongodb.com/docs/manual/core/schema-validation/) in the MongoDB documentation for more information.
+> **Note:** Schema validation is much less common in document-style databases in comparison with relational databases, and not requiring strict schemas is in fact part of the strength of document-style databases. They should be used judiciously, if at all, for App Builder applications. See [Schema Validation](https://www.mongodb.com/docs/manual/core/schema-validation/) in the MongoDB documentation for more information.
 
 Other collection commands:
 
@@ -142,9 +144,9 @@ aio app db collection stats <COLLECTION>
 
 ### Indexes
 
-Indexing frequently queried fields is basic to optimizing the performance of a database.
+Indexing frequently queried fields is fundamental to optimizing the performance of a database.
 
-To create a default type index on specific fields:
+To create a default-type index on specific fields:
 
 ```bash
 aio app db index create <COLLECTION> -k sku -k rating
@@ -168,13 +170,13 @@ aio app db index list <COLLECTION>
 
 The following index types are supported:
 
-- 2dsphere
-- Compound Index
-- Multikey Index
 - Single Field Index
-- Text Index (including case insensitive)
+- Compound Index (multiple fields)
+- Multikey Index (indexes on embedded arrays)
+- Text Index (including case-insensitive)
+- Geospatial Index (2dsphere)
 
-See [Indexes for Query Optimization](https://www.mongodb.com/docs/drivers/node/current/indexes/) in the MongoDB Documentation for more information.
+See [Indexes for Query Optimization](https://www.mongodb.com/docs/drivers/node/current/indexes/) in the MongoDB documentation for more information.
 
 ### Documents
 
@@ -204,7 +206,7 @@ To find documents in a collection without a filter:
 aio app db document find <COLLECTION> '{}'
 ```
 
-**Note:** By default, only the first 20 documents in a collection are returned and only up to a maximum of 100. In order to retrieve all documents in collection larger than 100 documents, `aio-lib-db` needs to be used.
+> **Note:** By default, only the first 20 documents in a collection are returned, with a maximum of 100. To retrieve all documents in a collection larger than 100 documents, `aio-lib-db` needs to be used.
 
 Other document commands:
 

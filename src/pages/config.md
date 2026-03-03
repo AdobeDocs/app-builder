@@ -89,7 +89,7 @@
             - [Storage Options](guides/app_builder_guides/storage/index.md)
                 - [State and Files](guides/app_builder_guides/storage/application-state.md)
                 - [Database (Beta)](guides/app_builder_guides/storage/database.md)
-                    - [AIO Plugin Commands](guides/app_builder_guides/storage/db-commands.md)
+                    - [aio app db Commands](guides/app_builder_guides/storage/db-commands.md)
                     - [MongoDB Compatibility](guides/app_builder_guides/storage/db-mongo-compatibility.md)
                     - [Runtime Actions](guides/app_builder_guides/storage/db-runtime-actions.md)
                     - [Best Practices](guides/app_builder_guides/storage/db-best-practices.md)
