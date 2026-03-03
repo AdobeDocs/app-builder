@@ -322,7 +322,7 @@ const nearbyStores = await stores.aggregate()
 
 The following advanced example identifies the top five performing active product categories from recent sales data, useful for business intelligence dashboards or reporting.
 
-It is adapted from MongoDB's [Complete Aggregation Pipeline Tutorials](https://www.mongodb.com/docs/manual/tutorial/aggregation-complete-examples/). With only a few exceptions, the examples there are valid for App Builder Database Storage. (The `$set` and `$unset` stages are not supported.)
+The example is adapted from MongoDB's [Complete Aggregation Pipeline Tutorials](https://www.mongodb.com/docs/manual/tutorial/aggregation-complete-examples/). With only a few exceptions, the examples on that site are valid for App Builder Database Storage. (The `$set` and `$unset` stages are not supported.)
 
 ```js
 // Complex aggregation with multiple stages
@@ -358,7 +358,7 @@ MongoDB Node Driver references:
 - [Aggregation Operations](https://www.mongodb.com/docs/drivers/node/current/aggregation/)
 - [Aggregation Pipeline Stages](https://www.mongodb.com/docs/drivers/node/current/aggregation/pipeline-stages/)
 
-## Storage Statistics
+## Storage statistics
 
 You can retrieve storage statistics for your database and organization using the `dbStats()` and `orgStats()` methods on the client object, respectively.
 
@@ -371,18 +371,18 @@ const dbStats = client.dbStats()
 // Get storage statistics for the database with a scale factor (for example, KB)
 const dbStatsKb = client.dbStats({ scale: 1024 })
 ```
-| field returned | description                                                                                     |
+| Field returned | Description                                                                                     |
 |----------------|-------------------------------------------------------------------------------------------------|
-| collections    | the number of collections                                                                       |
-| objects        | the number of objects/documents                                                                 |
-| views          | the number of views (not currently supported)                                                   |
-| indexes        | the number of indexes                                                                           |
-| dataSize       | the actual amount of storage used (default bytes)                                               |
-| storageSize    | space allocated for storage (default bytes)                                                     |
-| indexSize      | space allocated for indexes (default bytes)                                                     |
-| ok             | whether the request was successful                                                              |
-| scaleFactor    | the scale factor used for the size fields, ex: 1024 for kilobyte-scale (default is 1 for bytes) |
-| lastUpdated    | when the statistics were last updated                                                           |
+| collections    | The number of collections                                                                       |
+| objects        | The number of objects/documents                                                                 |
+| views          | The number of views (not currently supported)                                                   |
+| indexes        | The number of indexes                                                                           |
+| dataSize       | The actual amount of storage used (default bytes)                                               |
+| storageSize    | Space allocated for storage (default bytes)                                                     |
+| indexSize      | Space allocated for indexes (default bytes)                                                     |
+| ok             | Whether the request was successful                                                              |
+| scaleFactor    | The scale factor used for the size fields, ex: 1024 for kilobyte-scale (default is 1 for bytes) |
+| lastUpdated    | When the statistics were last updated                                                           |
 
 ### Organization storage statistics
 
@@ -431,7 +431,7 @@ await collection.dropIndex('email_1');
 
 Every document in DocumentDB has a required `_id` field that acts as its unique identifier within a collection. Values for the `_id` field may be specified in the document or generated on the fly by the database server.
 
-When a document with no value specified for the `_id` field is inserted into a collection, the database service will generate a unique value for the field of type ObjectId and add it to the document. So the following:
+When a document with no value specified for the `_id` field is inserted into a collection, the database service will generate a unique value for the field of type ObjectId and add it to the document.
 
 ```javascript
 const result = await userCollection.insertOne({name: "Jane Smith"})
