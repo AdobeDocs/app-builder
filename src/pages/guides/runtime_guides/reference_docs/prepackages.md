@@ -39,7 +39,7 @@ The alarms package contains:
 
 <InlineAlert variant="info" slots="text" />
 
-**Date format:** The `startDate` and `stopDate` parameters must use ISO-8601 format (for example, `"2027-01-01T00:00:00.000Z"`). Do not use epoch millisecond timestamps. Both dates must be in the future at the time of deployment. **Timezone:** Cron expressions for `/whisk.system/alarms/alarm` are always evaluated in UTC. The `timezone` parameter from the upstream OpenWhisk documentation is ignored in Adobe I/O Runtime.
+**Date format:** The `startDate` and `stopDate` parameters must use ISO-8601 format. You can use UTC (for example, `"2027-01-01T00:00:00.000Z"`) or include a timezone offset (for example, `"2027-01-01T05:30:00.000+05:30"`). Do not use epoch millisecond timestamps. Both dates must be in the future at the time of deployment. **Cron schedule:** Cron expressions for `/whisk.system/alarms/alarm` are always evaluated in UTC. The `timezone` parameter from the upstream OpenWhisk documentation is ignored in Adobe I/O Runtime.
 
 To create a trigger named `my-interval` on an interval-based schedule that will fire every 10 minutes until January 31, 2028:
 
