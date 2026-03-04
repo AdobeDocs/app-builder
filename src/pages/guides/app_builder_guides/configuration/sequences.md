@@ -115,7 +115,7 @@ runtimeManifest:
 
 ## Real-World Example
 
-Here's a practical example of a sequence that processes and deletes resources, based on this [internal example](https://git.corp.adobe.com/CNA/app-builder-delete-proj/blob/main/app.config.yaml#L41):
+Here's a practical example of a sequence that processes and deletes resources:
 
 ```yaml
 application:
