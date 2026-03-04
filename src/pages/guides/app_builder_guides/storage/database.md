@@ -300,6 +300,7 @@ npm install @adobe/aio-lib-db
 
 ```javascript
 const { generateAccessToken } = require('@adobe/aio-sdk').Core.AuthClient;
+const libDb = require('@adobe/aio-lib-db');
 async function main(params) {
   const token = await generateAccessToken(params);
   const db = await libDb.init({token: token});
