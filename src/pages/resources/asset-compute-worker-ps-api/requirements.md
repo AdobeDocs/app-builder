@@ -16,5 +16,5 @@ title: Codelab Environment Requirements
 In addition to above prerequisites, you'll need:
 
 * An AEM as a Cloud Service instance running in your IMS org
-* Photoshop API service already provisioned for your org. If you haven't already, please [sign up for the trial](/photoshop/api/).
+* Photoshop API service already provisioned for your org.
 * [Understanding the working of a custom application in AEM Assets](https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html).
