@@ -12,7 +12,7 @@ title: Publishing Your First App Builder Application
 This tutorial will guide you through the three steps needed to publish your first App Builder Single-Page Application (SPA):
 
 1. Submit for publishing approval through [Adobe Developer Console](https://developer.adobe.com/developer-console/)
-2. Review and approve the app in [My Exchange](https://exchange.adobe.com/my-exchange.html)
+2. Review and approve the app in [Adobe Exchange](https://exchange.adobe.com/manage/apps/ec/ABD/list/private)
 3. Check your app at [Adobe Experience Cloud](https://experience.adobe.com)
 
 ## Project approvals (Console part)
@@ -47,13 +47,13 @@ Following a review by your organization administrators, your application will ei
 
 ### Published app
 
-Once your application has been submitted for approval, the Admin can see it pending for review in Adobe Exchange. The next section will describe Admin approval flow from My Exchange. From Console side, once an application has been approved, its Status will be updated to Published and the application will be available for use by employees within your enterprise organization.
+Once your application has been submitted for approval, the Admin can see it pending for review in Adobe Exchange. The next section will describe Admin approval flow from Adobe Exchange. From Console side, once an application has been approved, its Status will be updated to Published and the application will be available for use by employees within your enterprise organization.
 
 ![](../../images/approval-published.png)
 
-## Administrator review of your app (MyExchange part)
+## Administrator review of your app from Adobe Exchange
 
-Once an application has been submitted for approval, your organization's Administrators will see it in My Exchange -> Experience Cloud Apps, and you will see your submitted apps under Pending Review status.
+After you submit an application for approval, your organization's administrators can find it in Adobe Exchange under Manage → App Builder applications → Private distribution. Your submitted application will appear with a Pending Review status.
 
 ![](../../images/approval-myexchange.png)
 
@@ -61,7 +61,7 @@ The reviewer can review this app and approve it or reject it. If the application
 
 ![](../../images/approval-myexchange-review.png)
 
-After the app is approved, you will see it in the Approved section. The reviewer can also unpublish the app, requiring the app owner to resubmit it for review and approval.
+After the application is approved, the reviewer can also unpublish the app, requiring the app owner to resubmit it for review and approval.
 
 ![](../../images/approval-myexchange-revoke.png)
 
