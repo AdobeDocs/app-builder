@@ -620,8 +620,7 @@ AI assistants first see the registry, then request specific skill details only w
 - [Agent Skills Specification](https://agentskills.io/specification)
 - [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk)
 - [DocuBot Example](https://github.com/rokapooradobe/adobe-docubot)
-- [MCP Server Generator](https://github.com/robbiekapoor/generator-app-remote-mcp-server-generic)
-- [Cursor Rules for App Builder](https://github.com/robbiekapoor/benges-app_builder-cursor-rules-base)
+- [AI Coding Developer Tooling for Adobe Commerce App Builder](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/coding-tools)
 
 ---
 
