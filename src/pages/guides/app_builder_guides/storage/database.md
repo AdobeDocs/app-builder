@@ -299,8 +299,9 @@ npm install @adobe/aio-lib-db
 **aio-lib-db** must always be initialized with an IMS Access Token. The simplest way to generate a token is by using the **@adobe/aio-sdk** library like so:
 
 ```javascript
-const { generateAccessToken } = require('@adobe/aio-sdk').Core.AuthClient;
+const {generateAccessToken} = require('@adobe/aio-sdk').Core.AuthClient;
 const libDb = require('@adobe/aio-lib-db');
+
 async function main(params) {
   const token = await generateAccessToken(params);
   const db = await libDb.init({token: token});
@@ -336,8 +337,8 @@ Called without an explicit region, `libDb.init()` will initialize the library ei
 The following is the general pattern for initializing and using `aio-lib-db`. It assumes that a Workspace Database has been provisioned in the AIO Project Workspace using the DB Plugin in the AIO CLI as described above.
 
 ```javascript
-const { generateAccessToken } = require('@adobe/aio-sdk').Core.AuthClient;
-const libDb = require('@adobe/aio-lib-db')
+const {generateAccessToken} = require('@adobe/aio-sdk').Core.AuthClient;
+const libDb = require('@adobe/aio-lib-db');
 
 async function main(params) {
   let client
