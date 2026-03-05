@@ -191,4 +191,6 @@ npm install @adobe/aio-lib-db
 aio app db provision
 ```
 
-No additional configuration is needed. The libraries automatically use your App Builder credentials for authentication and authorization.
+For State and Files no additional configuration is needed. These libraries automatically use your App Builder credentials for authentication and authorization.
+
+The Database library does require some additional configuration (see [App Builder Data Services API](./database.md#initialization-and-authentication) for details) but does not require any special entitlements beyond App Builder itself.
