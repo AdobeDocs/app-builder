@@ -107,11 +107,11 @@ This example has the following requirements:
 The `include-ims-credentials` annotation will look similar to the following example:
 
 ```yaml
-actions:
-  action:
-    function: actions/generic/action.js
-    annotations:
-      include-ims-credentials: true
+  actions:
+    action:
+      function: actions/generic/action.js
+      annotations:
+        include-ims-credentials: true
 ```
 
 The **@adobe/aio-sdk** library transparently manages caching and refreshing tokens as needed, so you do not need to implement caching or refreshing tokens yourself.
