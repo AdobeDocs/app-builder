@@ -30,10 +30,10 @@ async function main(params) {
     const token = await generateAccessToken(params);
 
     // Implicit region initialization
-    const db = await libDb.init({token: token})
+    const db = await libDb.init({token: token.access_token})
 
     // Explicit region initialization
-    // const db = await libDb.init({token: token, region: "emea"})
+    // const db = await libDb.init({token: token.access_token, region: "emea"})
 
     // Set up a connection
     client = await db.connect()

@@ -95,7 +95,7 @@ const libDb = require('@adobe/aio-lib-db');
 
 async function main(params) {
   const token = await generateAccessToken(params);
-  const db = await libDb.init({token: token});
+  const db = await libDb.init({token: token.access_token});
 }
 ```
 
