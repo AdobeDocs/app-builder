@@ -19,17 +19,21 @@ Connecting to App Builder Database Storage is where `aio-lib-db` most differs fr
 The following is the general pattern for loading and using `aio-lib-db`:
 
 ```javascript
-const libDb = require('@adobe/aio-lib-db')
+const {generateAccessToken} = require('@adobe/aio-sdk').Core.AuthClient;
+const libDb = require('@adobe/aio-lib-db');
 
-async function main() {
+async function main(params) {
   let client
   try {
 
+    // Generate IMS access token
+    const token = await generateAccessToken(params);
+
     // Implicit region initialization
-    const db = await libDb.init()
-      
+    const db = await libDb.init({token: token.access_token})
+
     // Explicit region initialization
-    // const db = await libDb.init({region: "emea"})
+    // const db = await libDb.init({token: token.access_token, region: "emea"})
 
     // Set up a connection
     client = await db.connect()
@@ -57,8 +61,8 @@ async function main() {
 
 A few things to note in comparison with the MongoDB Node Driver:
 
-- You do not need to specify connection credentials because they are taken from the runtime context, specifically the runtime namespace and auth.
 - You do not need to specify the database URL because all requests go through the App Builder Storage Database Service.
+- Authentication depends on IMS Tokens, which requires setting the `include-ims-credentials` flag for the runtime action. See [Initialization and Authentication](./database.md#initialization-and-authentication) for details.
 - The library must be initialized in the same region the database was provisioned in.
 - There is no option to select a different database because there is always a one-to-one relationship between an AIO Project Workspace and Workspace Database.
 

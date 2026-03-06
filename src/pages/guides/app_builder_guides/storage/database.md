@@ -18,6 +18,12 @@ Database Storage for App Builder provides document-style database persistence fo
 
 There is a strict one-to-one relationship between an AIO project workspace and a workspace database, and each workspace database is entirely isolated from all other workspace databases.
 
+## App Builder Data Services API
+
+In order to use App Builder Database Storage in an AIO project workspace, you must add the **App Builder Data Services** API, which provides the necessary authentication between runtime actions and the App Builder Database Storage service.
+
+You can add the **App Builder Data Services** API in the developer console like any other API. It does not require any special license or subscription beyond the App Builder license.
+
 ## Provision a workspace database
 
 Before using Database Storage in an AIO project workspace, a workspace database must be provisioned. This is a self-service operation requiring no special permissions.
@@ -79,13 +85,48 @@ Run the following command in the root of your AIO project workspace to install t
 npm install @adobe/aio-lib-db
 ```
 
+### Initialization and authentication
+
+You must always initialize **aio-lib-db** with an IMS Access Token. The simplest way to generate a token is by using the **@adobe/aio-sdk** library as demonstrated in the following example:
+
+```javascript
+const {generateAccessToken} = require('@adobe/aio-sdk').Core.AuthClient;
+const libDb = require('@adobe/aio-lib-db');
+
+async function main(params) {
+  const token = await generateAccessToken(params);
+  const db = await libDb.init({token: token.access_token});
+}
+```
+
+This example has the following requirements:
+
+- The AIO project workspace must include the **App Builder Data Services** API. See [App Builder Data Services API](#app-builder-data-services-api) for details.
+- The `include-ims-credentials` annotation for the runtime action must be set to `true` in the `app.config.yaml` application manifest.
+
+The `include-ims-credentials` annotation will look similar to the following example:
+
+```yaml
+  actions:
+    action:
+      function: actions/generic/action.js
+      annotations:
+        include-ims-credentials: true
+```
+
+The **@adobe/aio-sdk** library transparently manages caching and refreshing tokens as needed, so you do not need to implement caching or refreshing tokens yourself.
+
 ### Region selection
 
 **aio-lib-db** must be initialized in the region the workspace database was provisioned. Otherwise, the connection will fail.
 
-To explicitly initialize the library in a specific region, pass the `{region: "<region>"}` arguement to the `libDb.init()` method.
+To explicitly initialize the library in a specific region, pass the `{region: "<region>"}` argument to the `libDb.init()` method.
 
-Called with no arguments, `libDb.init()` will initialize the library either in the default `amer` region or in the region defined in the `AIO_DB_REGION` environment variable.
+Called without an explicit region, `libDb.init()` will initialize the library either in the default `amer` region or in the region defined in the `AIO_DB_REGION` environment variable.
+
+### General use
+
+Using `aio-lib-db` in a runtime action is documented at [Runtime actions with Database Storage](./db-runtime-actions.md).
 
 ## Usage quotas and limits
 

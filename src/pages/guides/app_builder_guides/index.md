@@ -17,7 +17,7 @@ Welcome to the App Builder Guides section. Here you'll find comprehensive docume
 * [Development](development.md)
 * [Distribution](distribution.md)
 * [Optimization](optimization.md)
-* [Storage](./storage/application-state.md)
+* [Storage](./storage/index.md)
 * [Telemetry](telemetry.md)
 
 ## Configuration and Deployment
