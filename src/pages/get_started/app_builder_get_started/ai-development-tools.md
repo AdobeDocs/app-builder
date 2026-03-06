@@ -45,6 +45,8 @@ ADOBE_CLIENT_SECRET). Follow App Builder action patterns with statusCode and
 body. Reference developer.adobe.com/app-builder/docs/ for best practices.
 ```
 
+> **See also:** [AI Use Cases with App Builder](../resources/ai-use-cases.md) - Learn what you can build with AI on App Builder (MCP servers, documentation assistants, AI agents, and more).
+
 ## Setting up project context files
 
 AI assistants generate better code when they understand your project structure. You can add context files to your project root that AI tools will read automatically.
@@ -76,6 +78,7 @@ AI assistants generate better code when they understand your project structure. 
 ## Documentation
 - App Builder and Runtime: https://developer.adobe.com/app-builder/docs/
 ```
+**Adobe Skills** (`.skills/` directory) provide structured, reusable knowledge for AI agents. Use skills to define domain-specific patterns like extension points, API versions, and authentication flows that AI can reference across projects. Learn more at [github.com/adobe/skills](https://github.com/adobe/skills).
 
 **For Cursor**, add a `.cursorrules` file at your project root with the same information. Cursor reads this file automatically when you open the project.
 
@@ -191,12 +194,12 @@ The AI will add parameter validation, specific error responses (400, 401, 500), 
 
 - [App Builder Documentation](https://developer.adobe.com/app-builder/docs/)
 - [AEM AI Coding Agents Guide](https://www.aem.live/developer/ai-coding-agents)
-- [Cursor Rules for App Builder](https://github.com/robbiekapoor/benges-app_builder-cursor-rules-base)
-- [MCP Server Generator](https://github.com/robbiekapoor/generator-app-remote-mcp-server-generic)
+- [Adobe Skills](https://github.com/adobe/skills)
 
 ## Next steps
 
-1. Create an `AGENTS.md` or `.cursorrules` file in your App Builder project.
-2. Try the example prompts above with your AI assistant.
-3. Refine your prompts based on the output quality.
-4. Share what works with your team.
+1. **Set up context files** - Create AGENTS.md and .cursorrules
+2. **Create Adobe Skills** - Use the `.skills/` pattern (shown above) to give AI agents structured knowledge about your App Builder patterns and APIs
+3. **Test AI prompts** - Try the example workflows above
+4. **Iterate** - Refine prompts based on AI output quality
+5. **Share learnings** - Document what works for your team
