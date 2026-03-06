@@ -202,4 +202,4 @@ The AI will add parameter validation, specific error responses (400, 401, 500), 
 2. **Create Adobe Skills** - Use the `.skills/` pattern (shown above) to give AI agents structured knowledge about your App Builder patterns and APIs
 3. **Test AI prompts** - Try the example workflows above
 4. **Iterate** - Refine prompts based on AI output quality
-5. **Share learnings** - Document what works for your tea
+5. **Share learnings** - Document what works for your team
