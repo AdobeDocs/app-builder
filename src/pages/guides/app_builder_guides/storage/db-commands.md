@@ -18,7 +18,7 @@ The following is only a brief introduction to the DB Plugin. For more thorough d
 
 ## Installation
 
-The DB plugin for the AIO CLI requires `@adobe/aio-cli-plugin-app` version 14.5.1 or higher and `@adobe/aio-cli-plugin-app-storage` version 1.3.0 (to be confirmed) or higher.
+The DB plugin for the AIO CLI requires `@adobe/aio-cli-plugin-app` version 14.5.1 or higher and `@adobe/aio-cli-plugin-app-storage` version 1.3.0 or higher.
 
 These are install automatically by updating `@adobe/aio-cli` to the latest version:
 ```bash
