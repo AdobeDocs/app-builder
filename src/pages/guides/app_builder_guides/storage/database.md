@@ -20,9 +20,9 @@ There is a strict one-to-one relationship between an AIO project workspace and a
 
 ## App Builder Data Services API
 
-In order to use App Builder Database Storage in an AIO project workspace you must add the "App Builder Data Services" API. This sets up the necessary authentication between runtime actions and the App Builder Database Storage service itself.
+In order to use App Builder Database Storage in an AIO project workspace, you must add the **App Builder Data Services** API, which provides the necessary authentication between runtime actions and the App Builder Database Storage service.
 
-Adding the "App Builder Data Services" API can be done in the developer console like any other API, and does not require any special license or subscription beyond the App Builder license itself.
+You can add the **App Builder Data Services** API in the developer console like any other API. It does not require any special license or subscription beyond the App Builder license.
 
 ## Provision a workspace database
 
@@ -85,9 +85,9 @@ Run the following command in the root of your AIO project workspace to install t
 npm install @adobe/aio-lib-db
 ```
 
-### Initialization and Authentication
+### Initialization and authentication
 
-**aio-lib-db** must always be initialized with an IMS Access Token. The simplest way to generate a token is by using the **@adobe/aio-sdk** library like so:
+You must always initialize **aio-lib-db** with an IMS Access Token. The simplest way to generate a token is by using the **@adobe/aio-sdk** library as demonstrated in the following example:
 
 ```javascript
 const {generateAccessToken} = require('@adobe/aio-sdk').Core.AuthClient;
@@ -99,12 +99,13 @@ async function main(params) {
 }
 ```
 
-**Important**: for the above code to work in a runtime action, two things must be in place:
+This example has the following requirements:
 
-- The AIO project workspace must include the "App Builder Data Services" API. See [App Builder Data Services API](#usage-quotas-and-limits) for details.
+- The AIO project workspace must include the **App Builder Data Services** API. See [App Builder Data Services API](#usage-quotas-and-limits) for details.
 - The `include-ims-credentials` annotation for the runtime action must be set to `true` in the `app.config.yaml` application manifest.
 
-The `include-ims-credentials` annotation looks something like this:
+The `include-ims-credentials` annotation will look similar to the following example:
+
 ```yaml
 actions:
   action:
@@ -113,7 +114,7 @@ actions:
       include-ims-credentials: true
 ```
 
-The **@adobe/aio-sdk** library transparently manages caching and refreshing tokens as need so there is no need to implement that yourself.
+The **@adobe/aio-sdk** library transparently manages caching and refreshing tokens as needed, so you do not need to implement caching or refreshing tokens yourself.
 
 ### Region selection
 
