@@ -193,4 +193,4 @@ aio app db provision
 
 For State and Files no additional configuration is needed. These libraries automatically use your App Builder credentials for authentication and authorization.
 
-The Database library does require some additional configuration, but does not require any special entitlements beyond App Builder itself. See the [App Builder Data Services API](./database.md#initialization-and-authentication) documentation for details.
+The Database library does require some additional configuration, but does not require any special entitlements beyond App Builder itself. See the [App Builder Data Services API](./database.md#app-builder-data-services-api) documentation for details.
