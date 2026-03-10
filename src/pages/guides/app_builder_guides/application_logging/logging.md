@@ -65,7 +65,7 @@ The AIO CLI [Runtime plugin](https://github.com/adobe/aio-cli-plugin-runtime) op
  
 This command also offers options to `--watch` or `--tail` the logs, and other options you can review by running `aio runtime logs --help`. 
 
-As with `aio app logs`, the `aio runtime logs` command can be used by Developers or by scripts running in a [Deployment Guide](../deployment/deployment.md). The command can also be used for App Builder applications deployed on Runtime or  running locally through the `aio app run --local` command as discussed in the [Deployment Guide](../deployment/deployment.md).
+As with `aio app logs`, the `aio runtime logs` command can be used by Developers or by scripts running in a [CI/CD pipeline](../deployment/cicd-for-app-builder-apps.md). The command can also be used for App Builder applications deployed on Runtime or running locally through the `aio app run --local` command as discussed in the [Deployment Guide](../deployment/deployment.md).
 
 ## Viewing logs in Adobe Developer Console
 
