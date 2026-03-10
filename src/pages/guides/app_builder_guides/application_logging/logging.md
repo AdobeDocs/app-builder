@@ -34,7 +34,7 @@ When a new App Builder application is bootstrapped from the [AIO CLI](https://gi
 
 You control which log levels are emitted by setting the `LOG_LEVEL` input (for example in your action's `inputs` in `manifest.yml` or `app.config.yaml`). The runtime filters logs by this level before writing: only messages at or above the configured level are written. For example:
 
-- If `LOG_LEVEL` is `error`, only `logger.error()` output is written (and typically goes to stderr). Calls to `logger.info()`, `logger.debug()`, and `logger.warn()` are not written at all, so they never appear in the Logs UI or CLI.
+- If `LOG_LEVEL` is `error`, only `logger.error()` output is written, goes to stdout. Calls to `logger.info()`, `logger.debug()`, and `logger.warn()` are not written at all, so they never appear in the Logs UI or CLI.
 - If `LOG_LEVEL` is `info`, you get `info`, `warn`, and `error`; `logger.debug()` is not written.
 - If `LOG_LEVEL` is `debug`, all levels are written.
 
