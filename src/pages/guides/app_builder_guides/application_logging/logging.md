@@ -34,11 +34,11 @@ When a new App Builder application is bootstrapped from the [AIO CLI](https://gi
 
 You control which log levels are emitted by setting the `LOG_LEVEL` input (for example in your action's `inputs` in `manifest.yml` or `app.config.yaml`). The runtime filters logs by this level before writing: only messages at or above the configured level are written. For example:
 
-- If `LOG_LEVEL` is `error`, only `logger.error()` output is written (and typically goes to stderr). Calls to `logger.info()`, `logger.debug()`, and `logger.warn()` are not written at all, so they never appear in the Logs UI or CLI.
+- If `LOG_LEVEL` is `error`, only `logger.error()` output is written. Calls to `logger.info()`, `logger.debug()`, and `logger.warn()` are not written at all, so they never appear in the Logs UI or CLI.
 - If `LOG_LEVEL` is `info`, you get `info`, `warn`, and `error`; `logger.debug()` is not written.
 - If `LOG_LEVEL` is `debug`, all levels are written.
 
-If you do not see expected `logger.info()` or `logger.debug()` output in the Logs UI or CLI, ensure the action's `LOG_LEVEL` is set to `info` or `debug` (for example `LOG_LEVEL: debug` in the action inputs). The Logs UI filters by stream (stdout or stderr); what appears in each stream depends on what was actually emitted, which is governed by `LOG_LEVEL`.
+If you do not see expected `logger.info()` or `logger.debug()` output in the Logs UI or CLI, ensure the action's `LOG_LEVEL` is set to `info` or `debug` (for example `LOG_LEVEL: debug` in the action inputs).
 
 ## Accessing logs with App Builder CLI
 
@@ -89,7 +89,7 @@ The Logs UI displays logs from all your Runtime action activations, including bo
   - The full action path (e.g., `mynamespace/mypackage/myaction`)
   - A short action name (e.g., `myaction`)
 - **Free-text search**: Search within log messages for specific content such as error messages, log levels (`info`, `error`, `warn`), or any text present in your logs
-- **Log stream filter**: Filter by output stream (All, stdout, or stderr). What appears in each stream depends on what your action wrote and on the action's `LOG_LEVEL` (see [Log Level (LOG_LEVEL) and What Gets Written](#log-level-log_level-and-what-gets-written)).
+- **Log stream filter**: Filter by stream (All, stdout, or stderr). `LOG_LEVEL` controls which `logger.*()` messages are emitted, but the App Builder SDK writes all logger output to stdout by default (including `logger.error()`). stderr typically contains uncaught exceptions and `console.error()`.
 
 ### When to use the Console UI
 
