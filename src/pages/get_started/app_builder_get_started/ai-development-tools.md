@@ -194,6 +194,7 @@ The AI will add parameter validation, specific error responses (400, 401, 500), 
 
 - [App Builder Documentation](https://developer.adobe.com/app-builder/docs/)
 - [AEM AI Coding Agents Guide](https://www.aem.live/developer/ai-coding-agents)
+- [App Builder MCP Template](https://github.com/adobe/generator-app-remote-mcp-server-generic)
 - [Adobe Skills](https://github.com/adobe/skills)
 
 ## Next steps
