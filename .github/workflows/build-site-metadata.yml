@@ -1,0 +1,10 @@
+---
+name: Build Site Metadata
+on:
+    pull_request:
+    workflow_dispatch:
+
+jobs:
+    build-site-metadata:
+        name: Build Site Metadata
+        uses: AdobeDocs/adp-devsite-workflow/.github/workflows/build-site-metadata.yml@main

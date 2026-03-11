@@ -1,17 +1,36 @@
 ---
-    name: Lint
-    on:
-      pull_request:
-        branches: [main]
-        paths:
-          - 'src/pages/**'
-    
-    jobs:
-      lint:
-        runs-on: ubuntu-latest
-        steps:
-          - name: Checkout
-            uses: actions/checkout@v4
-    
-          - name: Lint
-            run: npx --yes github:AdobeDocs/adp-devsite-utils runLint -v
+  name: Lint
+  on:
+    pull_request:
+      branches: [main]
+      paths:
+        - 'src/pages/**'
+  
+  jobs:
+    lint:
+      runs-on: ubuntu-latest
+      permissions:
+        contents: read
+        pull-requests: write
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v4
+  
+        - name: Lint
+          id: lint
+          continue-on-error: true
+          run: npx --yes github:AdobeDocs/adp-devsite-utils runLint -v
+
+        - name: Post Linter Report to PR
+          if: always()
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            PR_ID: ${{ github.event.pull_request.number }}
+            GITHUB_REPOSITORY: ${{ github.repository }}
+          run: |
+            npm install --no-save github:AdobeDocs/adp-devsite-scripts
+            node node_modules/adp-devsite-scripts/linter-bot/postLinterReport.js
+
+        - name: Fail if linter found errors
+          if: steps.lint.outcome == 'failure'
+          run: exit 1
