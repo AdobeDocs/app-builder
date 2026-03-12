@@ -142,7 +142,7 @@ Assuming that `config` contains your Webpack configuration:
   },
   target: 'node' // Cannot change
   entry: [
-    'path to the action',
+    '\<path to the action\>', 
     ...config.entry
   ],
   resolve: { 
