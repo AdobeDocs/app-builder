@@ -26,8 +26,6 @@ Stop managing infrastructure. Start building intelligent experiences.
 - **Rate limiting** - Prevent abuse and control costs
 - **Regional deployment** - Meet data residency requirements (amer/apac/emea)
 
----
-
 ## AI Use Cases on App Builder
 
 ### 1. MCP (Model Context Protocol) Servers
@@ -110,8 +108,6 @@ Refer to your AI assistant's documentation for specific configuration steps.
 - **Access control** - OAuth S2S authentication  
 - **Cost control** - Monitor and rate-limit AI-driven API usage
 
----
-
 ### 2. Documentation Assistants
 
 Build **AI-powered chatbots** that answer developer questions based on your documentation, GitHub issues, and internal knowledge bases.
@@ -166,8 +162,6 @@ aio app deploy
 
 **See the [DocuBot README](https://github.com/rokapooradobe/adobe-docubot) for complete setup instructions.**
 
----
-
 ### 3. AI Agent Hosting
 
 Host **AI agents and autonomous workflows** on App Builder without managing containers or orchestration.
@@ -184,8 +178,6 @@ Host **AI agents and autonomous workflows** on App Builder without managing cont
 - Scale automatically with demand
 - Secure credential management for LLM API keys
 - Built-in logging and monitoring
-
----
 
 ### 4. Content Analysis & Auto-Tagging
 
@@ -209,8 +201,6 @@ Calls vision API (Google Vision, AWS Rekognition)
     ↓
 Tags extracted & written back to AEM
 ```
-
----
 
 ### 5. Predictive Workflows & Forecasting
 
@@ -238,8 +228,6 @@ async function predictChurn(params) {
   return prediction;
 }
 ```
-
----
 
 ## Quick Start: Deploy Your First AI Integration
 
@@ -280,8 +268,6 @@ my-ai-app/
 ├── package.json
 └── .env                       # Local secrets
 ```
-
----
 
 ### Step 2: Configure, Code & Deploy
 
@@ -395,8 +381,6 @@ aio app logs
 aio app logs --tail
 ```
 
----
-
 ### Next Steps
 
 1. **Add More Actions:** Build additional actions for different Adobe products
@@ -404,8 +388,6 @@ aio app logs --tail
 3. **Set Up CI/CD:** Automate deployments with GitHub Actions
 4. **Monitor Usage:** Track action invocations and errors in logs
 5. **Iterate with AI:** Use AI assistants to refine and extend your actions
-
----
 
 ## Agent Skills Specification Reference
 
@@ -623,8 +605,6 @@ AI assistants first see the registry, then request specific skill details only w
 - [MCP Protocol](https://modelcontextprotocol.io/) - Model Context Protocol docs
 - [App Builder Documentation](https://developer.adobe.com/app-builder/docs/) - Complete platform guide
 
----
-
 ## Resources
 
 - [App Builder Documentation](https://developer.adobe.com/app-builder/docs/)
@@ -632,8 +612,6 @@ AI assistants first see the registry, then request specific skill details only w
 - [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk)
 - [DocuBot Example](https://github.com/rokapooradobe/adobe-docubot)
 - [AI Coding Developer Tooling for Adobe Commerce App Builder](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/coding-tools)
-
----
 
 ## Next Steps
 
@@ -648,8 +626,6 @@ AI assistants first see the registry, then request specific skill details only w
 ```bash
 aio app init --template @adobe/generator-app-agent-skills
 ```
-
----
 
 ## Contribute Your App Builder Skills
 
@@ -699,8 +675,6 @@ Share your App Builder skills with the community:
 - **Developer Support**: Contact the App Builder team via Adobe Developer Console
 
 We'll review community contributions and feature the best skills in our documentation and examples.
-
----
 
 *Last updated: February 2026*
 
