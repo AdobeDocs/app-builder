@@ -45,7 +45,7 @@ ADOBE_CLIENT_SECRET). Follow App Builder action patterns with statusCode and
 body. Reference developer.adobe.com/app-builder/docs/ for best practices.
 ```
 
-> **See also:** [AI Use Cases with App Builder](../resources/ai-use-cases.md) - Learn what you can build with AI on App Builder (MCP servers, documentation assistants, AI agents, and more).
+> **See also:** [AI Use Cases with App Builder](../../resources/ai-use-cases.md) - Learn what you can build with AI on App Builder (MCP servers, documentation assistants, AI agents, and more).
 
 ## Setting up project context files
 
@@ -192,7 +192,7 @@ The AI will add parameter validation, specific error responses (400, 401, 500), 
 
 ## Resources
 
-- [App Builder Documentation](https://developer.adobe.com/app-builder/docs/)
+- [App Builder Documentation](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
 - [AEM AI Coding Agents Guide](https://www.aem.live/developer/ai-coding-agents)
 - [MCP Server Generator](https://github.com/adobe/generator-app-remote-mcp-server-generic)
 - [Adobe Skills](https://github.com/adobe/skills)
