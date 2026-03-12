@@ -121,6 +121,8 @@
             - [Using Packages](guides/runtime_guides/using-packages.md) 
             - [Using Runtime](guides/runtime_guides/using-runtime.md) 
         - [Contribution Guide](guides/contribution-guide.md) 
+    - [AI](resources/ai-use-cases.md)
+        - [Build AI Integrations](resources/ai-use-cases.md)
     - [Learning](resources/index.md) 
         - [Asset Compute Worker PS API](resources/asset-compute-worker-ps-api/index.md) 
             - [Requirements](resources/asset-compute-worker-ps-api/requirements.md) 
