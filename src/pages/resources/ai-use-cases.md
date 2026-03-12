@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Extensibility
+  - AI
+  - MCP
+  - Agent Skills
+title: Build AI Integrations with App Builder
+description: Deploy AI-powered integrations with App Builder including MCP servers, documentation assistants, and agent skills.
+---
+
 # Build AI Integrations with App Builder
 
 **Deploy AI-powered integrations in minutes, not weeks.** App Builder provides zero-infrastructure, enterprise-grade hosting for AI agents, MCP servers, and intelligent workflows—with built-in security, authentication, and auto-scaling.
