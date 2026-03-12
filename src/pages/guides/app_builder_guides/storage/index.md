@@ -9,8 +9,6 @@ title: Storage Options
 
 # Storage Options
 
-**IMPORTANT:** This documentation describes a product in early-access development and does not reflect all functionality intended for general availability (GA). It cannot be used in production until GA.
-
 As part of App Builder, you have access to three storage services for persisting data dynamically from your Runtime actions: **Database**, **Files**, and **State**. Each service is designed for different use cases, with distinct benefits and trade-offs.
 
 ## Quick comparison
