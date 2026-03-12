@@ -30,6 +30,16 @@ Both the core logging library and the core errors library can be used directly i
 
 When a new App Builder application is bootstrapped from the [AIO CLI](https://github.com/adobe/aio-cli) using the `aio app init` command, the [generated boilerplate action code](https://github.com/adobe/generator-aio-app) integrates with both the core and errors logging libraries by default.
 
+### Log Level (LOG_LEVEL) and What Gets Written
+
+You control which log levels are emitted by setting the `LOG_LEVEL` input (for example in your action's `inputs` in `manifest.yml` or `app.config.yaml`). The runtime filters logs by this level before writing: only messages at or above the configured level are written. For example:
+
+- If `LOG_LEVEL` is `error`, only `logger.error()` output is written. Calls to `logger.info()`, `logger.debug()`, and `logger.warn()` are not written at all, so they never appear in the Logs UI or CLI.
+- If `LOG_LEVEL` is `info`, you get `info`, `warn`, and `error`; `logger.debug()` is not written.
+- If `LOG_LEVEL` is `debug`, all levels are written.
+
+If you do not see expected `logger.info()` or `logger.debug()` output in the Logs UI or CLI, ensure the action's `LOG_LEVEL` is set to `info` or `debug` (for example `LOG_LEVEL: debug` in the action inputs).
+
 ## Accessing logs with App Builder CLI
 
 App Builder [CLI](https://github.com/adobe/aio-cli) exposes application logs to Developers at different levels:
@@ -55,7 +65,7 @@ The AIO CLI [Runtime plugin](https://github.com/adobe/aio-cli-plugin-runtime) op
  
 This command also offers options to `--watch` or `--tail` the logs, and other options you can review by running `aio runtime logs --help`. 
 
-As with `aio app logs`, the `aio runtime logs` command can be used by Developers or by scripts running in a [Deployment Guide](../deployment/deployment.md). The command can also be used for App Builder applications deployed on Runtime or  running locally through the `aio app run --local` command as discussed in the [Deployment Guide](../deployment/deployment.md).
+As with `aio app logs`, the `aio runtime logs` command can be used by Developers or by scripts running in a [CI/CD pipeline](../deployment/cicd-for-app-builder-apps.md). The command can also be used for App Builder applications deployed on Runtime or running locally through the `aio app dev || aio app run` command as discussed in the [Deployment Guide](../deployment/deployment.md).
 
 ## Viewing logs in Adobe Developer Console
 
@@ -79,6 +89,7 @@ The Logs UI displays logs from all your Runtime action activations, including bo
   - The full action path (e.g., `mynamespace/mypackage/myaction`)
   - A short action name (e.g., `myaction`)
 - **Free-text search**: Search within log messages for specific content such as error messages, log levels (`info`, `error`, `warn`), or any text present in your logs
+- **Log stream filter**: Filter by stream (All, stdout, or stderr). `LOG_LEVEL` controls which `logger.*()` messages are emitted, but the App Builder SDK writes all logger output to stdout by default (including `logger.error()`). stderr typically contains uncaught exceptions and `console.error()`.
 
 ### When to use the Console UI
 
