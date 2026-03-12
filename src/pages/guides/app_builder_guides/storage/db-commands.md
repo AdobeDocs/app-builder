@@ -18,7 +18,7 @@ The following is only a brief introduction to the DB Plugin. For more thorough d
 
 ## Installation
 
-To install the plugin for the AIO CLI:
+To install the early access plugin for the AIO CLI:
 
 ```bash
 aio plugins:install @adobe/aio-cli-plugin-app@next
