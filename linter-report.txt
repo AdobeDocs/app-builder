@@ -1,0 +1,3026 @@
+═══════════════════════════════════════════════════════════════
+                     LINTER REPORT
+═══════════════════════════════════════════════════════════════
+
+Generated: 2026-03-12T00:34:37.225Z
+Mode: Full Linting (all rules + dead links check)
+Target Directory: /Users/parussel/Documents/cursor-docs/app-builder
+
+───────────────────────────────────────────────────────────────
+
+Files to process: 222
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/get_started/app_builder_get_started/app-builder-intro.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/get_started/app_builder_get_started/first-app.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 69:62
+    Message: Unexpected dead URL `https://developer.adobe.com/developer-console/docs`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 242:74
+    Message: Unexpected dead URL `https://developers.adobetarget.com/api/#admin-apis`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 259:59
+    Message: Unexpected redirecting URL `https://opensource.adobe.com/spectrum-css`, expected final URL `https://opensource.adobe.com/spectrum-css/`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 245:85
+    Message: Unexpected redirecting URL `https://docs.adobe.com/content/help/en/campaign-standard/using/working-with-apis/get-started-apis.html`, expected final URL `https://experienceleague.adobe.com/en/docs/campaign-standard/using/working-with-apis/get-started-apis`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 244:99
+    Message: Unexpected redirecting URL `https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/api.html`, expected final URL `https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/api`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 414:56
+    Message: Unexpected dead URL `https://openwhisk.apache.org/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 426:151
+    Message: Unexpected dead URL `https://letsencrypt.org/docs/certificates-for-localhost/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 480:330
+    Message: Unexpected dead URL `https://adminconsole.adobe.com/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 489:47
+    Message: Unexpected dead URL `http://experience.adobe.com/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 531:12
+    Message: Unexpected dead URL `https://jestjs.io/`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/get_started/app_builder_get_started/index.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/get_started/app_builder_get_started/publish-app.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 78:1
+    Message: Unexpected duplicate toplevel heading, exected a single heading with rank `1`
+    Rule: no-multiple-toplevel-headings
+
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 32:1
+    Message: Image is missing alt text: ../../images/approval-production-overview.png
+    Rule: no-alt-text-for-image
+
+  ⚠️  WARNING
+    Location: Line 38:1
+    Message: Image is missing alt text: ../../images/approval-app-submission-details.png
+    Rule: no-alt-text-for-image
+
+  ⚠️  WARNING
+    Location: Line 42:1
+    Message: Image is missing alt text: ../../images/approval-in-review.png
+    Rule: no-alt-text-for-image
+
+  ⚠️  WARNING
+    Location: Line 46:1
+    Message: Image is missing alt text: ../../images/approval-app-rejected.png
+    Rule: no-alt-text-for-image
+
+  ⚠️  WARNING
+    Location: Line 52:1
+    Message: Image is missing alt text: ../../images/approval-published.png
+    Rule: no-alt-text-for-image
+
+  ⚠️  WARNING
+    Location: Line 58:1
+    Message: Image is missing alt text: ../../images/approval-myexchange.png
+    Rule: no-alt-text-for-image
+
+  ⚠️  WARNING
+    Location: Line 62:1
+    Message: Image is missing alt text: ../../images/approval-myexchange-review.png
+    Rule: no-alt-text-for-image
+
+  ⚠️  WARNING
+    Location: Line 66:1
+    Message: Image is missing alt text: ../../images/approval-myexchange-revoke.png
+    Rule: no-alt-text-for-image
+
+  ⚠️  WARNING
+    Location: Line 72:1
+    Message: Image is missing alt text: ../../images/approval-myapp-home.png
+    Rule: no-alt-text-for-image
+
+  ⚠️  WARNING
+    Location: Line 76:1
+    Message: Image is missing alt text: ../../images/approval-myapp-customapps.png
+    Rule: no-alt-text-for-image
+
+  ⚠️  WARNING
+    Location: Line 15:34
+    Message: Unexpected redirecting URL `https://exchange.adobe.com/my-exchange.html`, expected final URL `https://exchange.adobe.com/manage`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/get_started/app_builder_get_started/set-up.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 8:1
+    Message: Description is too long (192 characters). Consider keeping it under 160 characters.
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 61:5
+    Message: Unexpected dead URL `https://www.npmjs.com/package/inquirer#support-os-terminals`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 61:103
+    Message: Unexpected dead URL `https://www.npmjs.com/package/inquirer#known-issues`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 59:62
+    Message: Unexpected dead URL `https://www.npmjs.com/package/inquirer`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 37:163
+    Message: Unexpected dead URL `https://github.com/nvm-sh/nvm/blob/master/README.md`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 55:146
+    Message: Unexpected dead URL `http://releases.ubuntu.com/16.04/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 67:3
+    Message: Unexpected dead URL `https://code.visualstudio.com/download`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 25:105
+    Message: Unexpected dead URL `https://solutionpartners.adobe.com/home.html`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/get_started/app_builder_get_started/troubleshoot.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 21:225
+    Message: Cannot find file `../guides/application_logging.md`
+    Rule: missing-file
+
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 42:271
+    Message: Unexpected dead URL `mailto:iodev@adobe.com`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 64:113
+    Message: Unexpected dead URL `https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/#service-account-jwt-credential-deprecated`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 72:120
+    Message: Unexpected dead URL `https://azure.microsoft.com/en-us/products/cosmos-db/`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/get_started/index.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/get_started/runtime_getting_started/activations.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/get_started/runtime_getting_started/deploy.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/get_started/runtime_getting_started/entities.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/get_started/runtime_getting_started/how-runtime-works.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 57:1
+    Message: Image is missing alt text: ../../images/howitworks_f02.png
+    Rule: no-alt-text-for-image
+
+  ⚠️  WARNING
+    Location: Line 11:1
+    Message: Unexpected dead URL `https://developer.adobe.com/runtime/docs/static/2f65d806954291bfd2a474f3c8b2f9f4/73c8b/howitworks_f01.png`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 63:1
+    Message: Unexpected dead URL `https://www.nginx.com/`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/get_started/runtime_getting_started/index.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/get_started/runtime_getting_started/resources.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 13:28
+    Message: Unexpected redirecting URL `https://twitter.com/adobeio`, expected final URL `https://x.com/adobeio`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 19:64
+    Message: Unexpected redirecting URL `https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/adobe-app-builder`, expected final URL `https://experienceleaguecommunities.adobe.com/adobe-developer-19`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 9:30
+    Message: Unexpected redirecting URL `https://github.com/apache/incubator-openwhisk/tree/master/docs`, expected final URL `https://github.com/apache/openwhisk/tree/master/docs`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 13:68
+    Message: Unexpected dead URL `https://medium.com/adobetech/tagged/platform`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/get_started/runtime_getting_started/setup.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/get_started/runtime_getting_started/understanding-runtime.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 15:1
+    Message: Image is missing alt text: ../../images/quickstart-programming-model.png
+    Rule: no-alt-text-for-image
+
+  ⚠️  WARNING
+    Location: Line 17:1
+    Message: Image is missing alt text: ../../images/quickstart-shared-packages.png
+    Rule: no-alt-text-for-image
+
+  ⚠️  WARNING
+    Location: Line 27:1
+    Message: Image is missing alt text: ../../images/quickstart-components.png
+    Rule: no-alt-text-for-image
+
+  ⚠️  WARNING
+    Location: Line 147:78
+    Message: Unexpected dead URL `https://medium.com/adobetech/tagged/platform`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 147:38
+    Message: Unexpected redirecting URL `https://twitter.com/adobeio`, expected final URL `https://x.com/adobeio`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 23:157
+    Message: Unexpected redirecting URL `https://github.com/apache/incubator-openwhisk/tree/master/docs`, expected final URL `https://github.com/apache/openwhisk/tree/master/docs`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 73:129
+    Message: Unexpected redirecting URL `https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/adobe-app-builder`, expected final URL `https://experienceleaguecommunities.adobe.com/adobe-developer-19`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/application-state.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/application_logging/azure-log-analytics.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 21:82
+    Message: Unexpected redirecting URL `https://docs.microsoft.com/en-us/azure/azure-monitor/logs/quick-create-workspace`, expected final URL `https://learn.microsoft.com/en-us/azure/azure-monitor/logs/quick-create-workspace`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 64:90
+    Message: Unexpected redirecting URL `https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/app-builder`, expected final URL `https://experienceleaguecommunities.adobe.com/`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/application_logging/logging.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 175:11
+    Message: Cannot find file `../../../intro_and_overview/app_builder_overview.md`
+    Rule: missing-file
+
+  ⚠️  WARNING
+    Location: Line 19:307
+    Message: Unexpected dead URL `https://www.npmjs.com/package/debug`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 19:252
+    Message: Unexpected dead URL `https://www.npmjs.com/package/winston`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 68:20
+    Message: Unexpected dead URL `https://developer.adobe.com/console`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/application_logging/new-relic.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 73:81
+    Message: Unexpected redirecting URL `https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/adobe-app-builder`, expected final URL `https://experienceleaguecommunities.adobe.com/adobe-developer-19`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/application_logging/splunk-cloud.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 106:81
+    Message: Unexpected redirecting URL `https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/adobe-app-builder`, expected final URL `https://experienceleaguecommunities.adobe.com/adobe-developer-19`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 21:71
+    Message: Unexpected dead URL `https://docs.splunk.com/Documentation/Splunk/8.2.4/Indexer/Setupmultipleindexes`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 51:72
+    Message: Unexpected dead URL `https://docs.splunk.com/Documentation/Splunk/8.2.4/Data/UsetheHTTPEventCollector#Send_data_to_HTTP_Event_Collector_on_Splunk_Cloud_Platform`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/application_logging/splunk-enterprise.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 21:78
+    Message: Unexpected dead URL `https://docs.splunk.com/Documentation/Splunk/8.2.4/Indexer/Setupmultipleindexes`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 51:72
+    Message: Unexpected dead URL `https://docs.splunk.com/Documentation/Splunk/8.2.4/Data/UsetheHTTPEventCollector#Send_data_to_HTTP_Event_Collector_on_Splunk_Enterprise`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 106:84
+    Message: Unexpected redirecting URL `https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/adobe-app-builder`, expected final URL `https://experienceleaguecommunities.adobe.com/adobe-developer-19`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/architecture_overview/app-hooks.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/architecture_overview/architecture-overview.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 146:11
+    Message: Cannot find file `../../../intro_and_overview/app_builder_overview.md`
+    Rule: missing-file
+
+  ⚠️  WARNING
+    Location: Line 9:1
+    Message: Description is too long (211 characters). Consider keeping it under 160 characters.
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 74:107
+    Message: Unexpected dead URL `https://adobedocs.github.io/analytics-2.0-apis/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 75:7
+    Message: Unexpected dead URL `https://github.com/adobe/aio-lib-target`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 23:101
+    Message: Unexpected dead URL `https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/assets-workflow.html`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 23:223
+    Message: Unexpected dead URL `https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/data-management-activities/external-api.html`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 61:69
+    Message: Unexpected dead URL `http://experiencecloud.adobe.com/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 75:101
+    Message: Unexpected dead URL `https://developers.adobetarget.com/api/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 76:123
+    Message: Unexpected dead URL `https://experienceleague.adobe.com/docs/campaign-standard/using/working-with-apis/get-started-apis.html?lang=en`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 80:5
+    Message: Unexpected dead URL `https://github.com/adobe/aio-lib-core-ims`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 82:3
+    Message: Unexpected dead URL `https://github.com/adobe/aio-lib-core-ims-oauth`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 83:3
+    Message: Unexpected dead URL `https://github.com/adobe/aio-lib-core-ims-jwt`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 87:7
+    Message: Unexpected dead URL `https://github.com/adobe/aio-lib-files`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 123:46
+    Message: Unexpected dead URL `https://github.com/adobe/aio-lib-files`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 88:7
+    Message: Unexpected dead URL `https://github.com/adobe/aio-lib-state`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 124:48
+    Message: Unexpected dead URL `https://github.com/adobe/aio-lib-state`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 92:5
+    Message: Unexpected dead URL `https://github.com/adobe/aio-sdk-core`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 98:5
+    Message: Unexpected dead URL `https://github.com/adobe/aio-sdk-core`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 106:5
+    Message: Unexpected dead URL `https://github.com/adobe/aio-lib-core-logging`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 110:5
+    Message: Unexpected dead URL `https://github.com/adobe/aio-lib-core-errors`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 114:5
+    Message: Unexpected dead URL `https://github.com/adobe/aio-lib-core-networking`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 118:5
+    Message: Unexpected dead URL `https://github.com/adobe/aio-tvm`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 130:3
+    Message: Unexpected dead URL `https://github.com/features/actions`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 130:60
+    Message: Unexpected dead URL `https://github.com/adobe/aio-cli-setup-action`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 130:137
+    Message: Unexpected dead URL `https://github.com/adobe/aio-apps-action`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 131:3
+    Message: Unexpected redirecting URL `https://docs.github.com/en/actions/writing-workflows`, expected final URL `https://docs.github.com/en/actions/how-tos/write-workflows`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 132:3
+    Message: Unexpected redirecting URL `https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets`, expected final URL `https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/architecture_overview/introduction-to-react-spectrum.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/architecture_overview/using-sdks.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 76:54
+    Message: Unexpected dead URL `https://developer.adobe.com/analytics-apis/docs/2.0/#!AdobeDocs/analytics-2.0-apis/master/migration-guide.md`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/configuration/configuration.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/configuration/sequences.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 118:94
+    Message: Unexpected dead URL `https://git.corp.adobe.com/CNA/app-builder-delete-proj/blob/main/app.config.yaml#L41`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 118:94
+    Message: Unexpected dead URL `https://git.corp.adobe.com/CNA/app-builder-delete-proj/blob/main/app.config.yaml#L41`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 34:53
+    Message: Unexpected redirecting URL `https://github.com/apache/incubator-openwhisk-composer/blob/master/docs/COMBINATORS.md`, expected final URL `https://github.com/apache/openwhisk-composer/blob/master/docs/COMBINATORS.md`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/configuration/webpack-configuration.md
+───────────────────────────────────────────────────────────────
+  ❌ ERROR
+    Message: Failed to process file - Angle bracket "<path to the action>" found in table cell. Escape with "\<" and "\>" to prevent MDX parsing errors (e.g., "<path to the action>" → "\<path to the action\>").
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/deployment/cicd-for-app-builder-apps.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/development.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty title in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/distribution.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 9:1
+    Message: Description is too long (182 characters). Consider keeping it under 160 characters.
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 226:136
+    Message: Unexpected dead URL `https://developer.adobe.com/developer-distribution/experience-cloud/docs/guides/discoverandmanage/#discover`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 226:260
+    Message: Unexpected dead URL `https://developer.adobe.com/developer-distribution/experience-cloud/docs/guides/discoverandmanage/#acquire`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 18:264
+    Message: Unexpected dead URL `https://experience.adobe.com/#/@adobeio/custom-apps`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/aec-integration.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 20:8
+    Message: Unexpected dead URL `https://www.npmjs.com/package/@adobe/exc-app`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 27:16
+    Message: Unexpected dead URL `https://www.npmjs.com/package/@adobe/exc-app`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/interfaces/index.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/interfaces/page-objectwithhref.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/interfaces/page-objectwithpath.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/interfaces/page-pageapi.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/interfaces/page-pageapiproperties.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/interfaces/runtime.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/interfaces/topbar-callback.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/interfaces/topbar-customfeedbackconfig.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/interfaces/topbar-customsearchconfig.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/interfaces/topbar-externalfeedbackconfig.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/interfaces/topbar-helpcenterfeedbackconfig.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/interfaces/topbar-solution.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/interfaces/topbar-topbarapi.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/interfaces/topbar-topbarapiproperties.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/interfaces/user-userapi.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/interfaces/user-userinfo.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/migrate-app-to-exp-cloud-spa.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 2:1
+    Message: Title is too long (73 characters). Consider keeping it under 60 characters.
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/modules/page.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/modules/topbar.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/exc_app/modules/user.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/extensions/extension-migration-guide.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 37:144
+    Message: Unexpected dead URL `https://www.npmjs.com/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 58:144
+    Message: Unexpected dead URL `https://www.npmjs.com/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 35:52
+    Message: Unexpected dead URL `https://github.com/apache/openwhisk-wskdeploy/tree/master/specification#package-specification`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 53:62
+    Message: Unexpected dead URL `https://github.com/apache/openwhisk-wskdeploy/tree/master/specification#package-specification`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 39:119
+    Message: Unexpected dead URL `https://github.com/adobe/aio-cli-plugin-config`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 60:129
+    Message: Unexpected dead URL `https://github.com/adobe/aio-cli-plugin-config`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 265:172
+    Message: Unexpected dead URL `https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/adobe-app-builder`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 37:192
+    Message: Unexpected dead URL `https://docs.npmjs.com/about-packages-and-modules`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 58:192
+    Message: Unexpected dead URL `https://docs.npmjs.com/about-packages-and-modules`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/extensions/extensions.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 12:230
+    Message: Unexpected redirecting URL `https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=en`, expected final URL `https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/index.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 29:3
+    Message: Cannot find file `events/custom-events.md`
+    Rule: missing-file
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/optimization.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 36:558
+    Message: Unexpected redirecting URL `https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302`, expected final URL `https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/302`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 36:298
+    Message: Unexpected dead URL `https://github.com/adobe/aio-lib-files/blob/master/doc/api.md#Files+write`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 36:425
+    Message: Unexpected dead URL `https://github.com/adobe/aio-lib-files/blob/master/doc/api.md#Files+generatePresignURL`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/security/understanding-authentication.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/storage/application-state.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 42:57
+    Message: Cannot find file `security/index.md`
+    Rule: missing-file
+
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/storage/database.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 179:288
+    Message: Unexpected dead URL `https://www.mongodb.com/docs/manual/core/schema-validation/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 231:5
+    Message: Unexpected dead URL `https://www.mongodb.com/docs/drivers/node/current/indexes/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 283:58
+    Message: Unexpected dead URL `https://www.mongodb.com/docs/drivers/node/current/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 353:71
+    Message: Unexpected dead URL `https://www.mongodb.com/docs/drivers/node/current/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 379:3
+    Message: Unexpected dead URL `https://www.mongodb.com/docs/drivers/node/current/crud/insert/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 407:3
+    Message: Unexpected dead URL `https://www.mongodb.com/docs/drivers/node/current/crud/query/retrieve/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 408:3
+    Message: Unexpected dead URL `https://www.mongodb.com/docs/drivers/node/current/crud/query/specify-documents-to-return/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 409:3
+    Message: Unexpected dead URL `https://www.mongodb.com/docs/drivers/node/current/crud/query/project/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 410:3
+    Message: Unexpected dead URL `https://www.mongodb.com/docs/drivers/node/current/crud/query/query-document/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 411:3
+    Message: Unexpected dead URL `https://www.mongodb.com/docs/drivers/node/current/crud/query/count/`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/storage/index.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/app_builder_guides/telemetry.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 8:1
+    Message: Description is too long (233 characters). Consider keeping it under 160 characters.
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/contribution-guide.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 15:232
+    Message: Unexpected dead URL `mailto:Grp-opensourceoffice@adobe.com`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 29:15
+    Message: Unexpected dead URL `https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 19:197
+    Message: Unexpected redirecting URL `http://opensource.adobe.com/cla.html`, expected final URL `https://opensource.adobe.com/cla.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 25:28
+    Message: Unexpected redirecting URL `https://github.com/AdobeDocs/project-firefly/blob/main/.github/PULL_REQUEST_TEMPLATE.md`, expected final URL `https://github.com/AdobeDocs/app-builder/blob/main/.github/PULL_REQUEST_TEMPLATE.md`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 15:35
+    Message: Unexpected redirecting URL `https://github.com/AdobeDocs/project-firefly/blob/main/.github/CODE_OF_CONDUCT.md`, expected final URL `https://github.com/AdobeDocs/app-builder/blob/main/.github/CODE_OF_CONDUCT.md`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/index.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 22:3
+    Message: Cannot find file `app_builder_guides/events/custom-events.md`
+    Rule: missing-file
+
+  ⚠️  WARNING
+    Location: Line 51:11
+    Message: Cannot find file `../intro_and_overview/app_builder_overview.md`
+    Rule: missing-file
+
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/references.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 12:3
+    Message: Unexpected dead URL `https://developer.adobe.com/developer-console/docs/guides/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 14:3
+    Message: Unexpected dead URL `https://github.com/adobe/generator-aio-app`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 15:3
+    Message: Unexpected dead URL `https://github.com/adobe/generator-aio-console`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 16:3
+    Message: Unexpected dead URL `https://github.com/adobe/aio-lib-ims`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 17:3
+    Message: Unexpected dead URL `https://github.com/adobe/aio-tvm`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 18:3
+    Message: Unexpected dead URL `https://github.com/adobe/aio-sdk`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 19:5
+    Message: Unexpected dead URL `https://github.com/adobe/aio-lib-files`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 20:5
+    Message: Unexpected dead URL `https://github.com/adobe/aio-lib-state`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 21:5
+    Message: Unexpected dead URL `https://github.com/adobe/aio-lib-analytics`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 35:3
+    Message: Unexpected dead URL `https://github.com/features/actions`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 36:5
+    Message: Unexpected dead URL `https://github.com/adobe/aio-cli-setup-action`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/asynchronous-calls.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/ci-cd-pipeline.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 23:53
+    Message: Unexpected dead URL `https://medium.com/adobetech/functions-packaging-and-versioning-in-adobe-i-o-runtime-7accdfd95e0a`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/creating-actions.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 320:43
+    Message: Cannot find file `tools/wskdeploy_install.md`
+    Rule: missing-file
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/creating-rest-apis.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 322:1
+    Message: Unexpected duplicate toplevel heading, exected a single heading with rank `1`
+    Rule: no-multiple-toplevel-headings
+
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 82:1
+    Message: Unexpected redirecting URL `https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS`, expected final URL `https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/debugging.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/index.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 39:3
+    Message: Cannot find file `tools/wskdeploy_install.md`
+    Rule: missing-file
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/logging-monitoring.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 25:1
+    Message: Unexpected duplicate toplevel heading, exected a single heading with rank `1`
+    Rule: no-multiple-toplevel-headings
+
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 59:42
+    Message: Unexpected dead URL `https://epsagon.com/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 59:238
+    Message: Unexpected dead URL `https://docs.epsagon.com/docs/openwhisk?utm_source=adobe.io&utm_medium=referral&utm_campaign=adobe_io_docs`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 59:362
+    Message: Unexpected dead URL `https://www.youtube.com/watch?v=4iprbivqrxQ&t=1517s`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 63:150
+    Message: Unexpected dead URL `https://docs.newrelic.com/docs/apm/agents/nodejs-agent/getting-started/introduction-new-relic-nodejs/`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/reference_docs/api-ref.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: N/A
+    Message: Unexpected offline connection, expected either an online connection or `skipOffline: true`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/reference_docs/cli-use.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/reference_docs/configuringproxy.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 7:1
+    Message: Image is missing alt text: ../../../images/configure-proxy.png
+    Rule: no-alt-text-for-image
+
+  ⚠️  WARNING
+    Location: Line 14:88
+    Message: Unexpected dead URL `https://docs.nginx.com/nginx/deployment-guides/amazon-web-services/ec2-instances-for-nginx/`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/reference_docs/environment-variables.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/reference_docs/feeds.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/reference_docs/index.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/reference_docs/multiple-regions.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/reference_docs/packages.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/reference_docs/prepackages.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/reference_docs/runtimes.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/reference_docs/sequences-compositions.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 77:3
+    Message: Unexpected redirecting URL `https://github.com/apache/incubator-openwhisk-composer/blob/master/docs/COMBINATORS.md`, expected final URL `https://github.com/apache/openwhisk-composer/blob/master/docs/COMBINATORS.md`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 76:29
+    Message: Unexpected redirecting URL `https://github.com/apache/incubator-openwhisk-composer`, expected final URL `https://github.com/apache/openwhisk-composer`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 32:34
+    Message: Unexpected dead URL `https://github.com/apache/incubator-openwhisk/blob/master/docs/actions.md#creating-action-sequences`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 32:34
+    Message: Unexpected redirecting URL `https://github.com/apache/incubator-openwhisk/blob/master/docs/actions.md#creating-action-sequences`, expected final URL `https://github.com/apache/openwhisk/blob/master/docs/actions.md`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/reference_docs/triggersrules.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/reference_docs/wsk-use.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/securing-web-actions.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 54:1
+    Message: Unexpected duplicate toplevel heading, exected a single heading with rank `1`
+    Rule: no-multiple-toplevel-headings
+
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/security-general.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 69:75
+    Message: Unexpected dead URL `https://en.wikipedia.org/wiki/Content_delivery_network#notable_content_delivery_service_providers`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 13:301
+    Message: Unexpected redirecting URL `https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)`, expected final URL `https://owasp.org/www-community/attacks/xss/`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 17:186
+    Message: Unexpected dead URL `https://github.com/apache/incubator-openwhisk/blob/master/docs/webactions.md#web-actions`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 17:186
+    Message: Unexpected redirecting URL `https://github.com/apache/incubator-openwhisk/blob/master/docs/webactions.md#web-actions`, expected final URL `https://github.com/apache/openwhisk/blob/master/docs/webactions.md`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/system-settings.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/throughput-tuning.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 64:39
+    Message: Unexpected redirecting URL `https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Vary`, expected final URL `https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Vary`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/tools/cli-install.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 21:53
+    Message: Unexpected dead URL `https://www.npmjs.com/package/@adobe/aio-cli`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/tools/index.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 6:3
+    Message: Cannot find file `wskdeploy_install.md`
+    Rule: missing-file
+
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/troubleshooting.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/using-packages.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/guides/runtime_guides/using-runtime.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/intro_and_overview/business-case.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 53:54
+    Message: Unexpected dead URL `https://medium.com/adobetech/setting-up-adobe-i-o-cli-for-cloud-manager-8820f47e3c94`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 55:56
+    Message: Unexpected dead URL `https://medium.com/adobetech/how-bank-of-america-is-using-adobe-i-o-runtime-to-boost-the-efficiency-of-its-personalized-offers-699de38cf751`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 54:37
+    Message: Unexpected dead URL `https://medium.com/adobetech/how-belgian-broadcaster-vrt-turned-to-adobe-i-o-runtime-to-dynamically-create-newsletter-content-5cafe224a2a5`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 56:39
+    Message: Unexpected dead URL `https://medium.com/adobetech/how-adobe-com-uses-i-o-runtime-to-optimize-on-site-b2b-personalization-6c10b9888981`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 51:48
+    Message: Unexpected redirecting URL `https://www.netcentric.biz/insights/2020/06/building-an-aep-demo-with-firefly.html?utm_source=linkedin&utm_medium=social_nonpaid&utm_campaign=20_insights&utm_content=link_post&es_id=8e9abf83f6`, expected final URL `https://www.netcentric.biz/insights/2020/06/building-an-aep-demo-with-firefly`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 52:57
+    Message: Unexpected redirecting URL `https://tech.cognifide.com/blog/2020/how-to-generate-intelligent-renditions-aem-cloud/`, expected final URL `https://wttech.blog/blog/2020/how-to-generate-intelligent-renditions-aem-cloud/`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/intro_and_overview/community.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 18:12
+    Message: Unexpected redirecting URL `https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/adobe-app-builder`, expected final URL `https://experienceleaguecommunities.adobe.com/adobe-developer-19`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/intro_and_overview/faq.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 111:11
+    Message: Unexpected redirecting URL `https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/adobe-app-builder`, expected final URL `https://experienceleaguecommunities.adobe.com/adobe-developer-19`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/intro_and_overview/index.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/intro_and_overview/release-notes.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing frontmatter section - add --- at the beginning with title and description
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/intro_and_overview/what-is-app-builder.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/ai-use-cases.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 290:40
+    Message: Cannot find file `ai-development-tools.md`
+    Rule: missing-file
+
+  ⚠️  WARNING
+    Location: Line 620:21
+    Message: Unexpected redirecting URL `https://developer.adobe.com/app-builder/docs/guides/`, expected final URL `https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 606:3
+    Message: Unexpected redirecting URL `https://developer.adobe.com/app-builder/docs/`, expected final URL `https://developer.adobe.com/app-builder/docs/intro_and_overview/`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 610:3
+    Message: Unexpected redirecting URL `https://developer.adobe.com/app-builder/docs/`, expected final URL `https://developer.adobe.com/app-builder/docs/intro_and_overview/`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 237:61
+    Message: Unexpected redirecting URL `https://developer.adobe.com/app-builder/docs/getting_started/`, expected final URL `https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 619:24
+    Message: Unexpected redirecting URL `https://experienceleaguecommunities.adobe.com/t5/adobe-i-o-console/ct-p/adobe-io-console`, expected final URL `https://experienceleaguecommunities.adobe.com/`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 673:54
+    Message: Unexpected redirecting URL `https://experienceleaguecommunities.adobe.com/t5/adobe-i-o-console/ct-p/adobe-io-console`, expected final URL `https://experienceleaguecommunities.adobe.com/`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 37:5
+    Message: Unexpected redirecting URL `https://modelcontextprotocol.io/`, expected final URL `https://modelcontextprotocol.io/docs/getting-started/intro`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 605:3
+    Message: Unexpected redirecting URL `https://modelcontextprotocol.io/`, expected final URL `https://modelcontextprotocol.io/docs/getting-started/intro`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/asset-compute-worker-ps-api/lesson1.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 9:1
+    Message: Title is too long (67 characters). Consider keeping it under 60 characters.
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/asset-compute-worker-ps-api/lesson2.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 13:1
+    Message: Unexpected duplicate toplevel heading, exected a single heading with rank `1`
+    Rule: no-multiple-toplevel-headings
+
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/asset-compute-worker-ps-api/lesson3.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 33:126
+    Message: Unexpected dead URL `https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_removeBackground/`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/asset-compute-worker-ps-api/lesson4.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/asset-compute-worker-ps-api/requirements.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 20:3
+    Message: Unexpected redirecting URL `https://experienceleague.adobe.com/docs/asset-compute/using/extend/custom-application-internals.html`, expected final URL `https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/custom-application-internals`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/asset-compute-worker-ps-api/welldone.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/barcode-reader/barcode.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 13:30
+    Message: Unexpected dead URL `https://www.npmjs.com/package/bwip-js/`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/barcode-reader/bootstrap.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/barcode-reader/index.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 20:3
+    Message: Unexpected dead URL `https://ringel.adobeioruntime.net/api/v1/web/my-barcode-app-0.0.1/barcode?value=adobe`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/barcode-reader/requirements.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/barcode-reader/test.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/barcode-reader/welldone.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 11:1
+    Message: Unexpected duplicate toplevel heading, exected a single heading with rank `1`
+    Rule: no-multiple-toplevel-headings
+
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 13:142
+    Message: Unexpected dead URL `https://medium.com/adobetech/adobe-i-o-runtime-polishing-the-rough-edges-of-saas-solutions-238f82b58765`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/blog-articles.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 136:1
+    Message: Unexpected redirecting URL `https://www.netcentric.biz/insights/2020/06/building-an-aep-demo-with-firefly.html?utm_source=linkedin&utm_medium=social_nonpaid&utm_campaign=20_insights&utm_content=link_post&es_id=8e9abf83f6`, expected final URL `https://www.netcentric.biz/insights/2020/06/building-an-aep-demo-with-firefly`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/ci-cd/lesson1.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 16:118
+    Message: Unexpected dead URL `https://help.github.com/en/github/getting-started-with-github/create-a-repo`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 29:185
+    Message: Unexpected dead URL `https://github.com/marketplace/actions/aio-cli-setup`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 30:207
+    Message: Unexpected dead URL `https://github.com/adobe/aio-apps-action`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 38:262
+    Message: Unexpected dead URL `https://github.com/adobe/aio-apps-action`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 36:177
+    Message: Unexpected dead URL `https://help.github.com/en/actions/reference/events-that-trigger-workflows#pull-request-event-pull_request`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 79:25
+    Message: Unexpected dead URL `https://help.github.com/en/actions/reference/events-that-trigger-workflows#push-event-push`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 125:162
+    Message: Unexpected dead URL `https://help.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 125:296
+    Message: Unexpected dead URL `https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 182:81
+    Message: Unexpected dead URL `https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 206:69
+    Message: Unexpected dead URL `https://developer.github.com/v3/actions/secrets/#create-or-update-a-secret-for-a-repository`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 208:43
+    Message: Unexpected redirecting URL `https://console.adobe.io/`, expected final URL `https://developer.adobe.com/console/`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 214:14
+    Message: Unexpected redirecting URL `https://console.adobe.io/`, expected final URL `https://developer.adobe.com/console/`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/ci-cd/lesson2.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 53:92
+    Message: Unexpected redirecting URL `https://docs.github.com/en/free-pro-team@latest/actions/managing-workflow-runs`, expected final URL `https://docs.github.com/en/actions/how-tos/manage-workflow-runs`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/ci-cd/lesson3.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 14:94
+    Message: Unexpected dead URL `https://docs.github.com/en/free-pro-team@latest/actions/reference/environment-variables`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/ci-cd/requirements.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 16:3
+    Message: Unexpected redirecting URL `https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account`, expected final URL `https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/ci-cd/welldone.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/cron-jobs/lesson1.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/cron-jobs/lesson2.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/cron-jobs/lesson3.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/cron-jobs/requirements.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/cron-jobs/welldone.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/custom-asset-compute-worker/aem-cloud-assets.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/custom-asset-compute-worker/index.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 19:39
+    Message: Unexpected dead URL `https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/how-to-generate-intelligent-renditions-with-aem-as-a-cloud/m-p/379588`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 17:1
+    Message: Unexpected dead URL `https://www.freepik.com/vectors/banner`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 25:29
+    Message: Unexpected redirecting URL `https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html`, expected final URL `https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 26:14
+    Message: Unexpected redirecting URL `https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html`, expected final URL `https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/introduction`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/custom-asset-compute-worker/lesson1.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 13:1
+    Message: Unexpected duplicate toplevel heading, exected a single heading with rank `1`
+    Rule: no-multiple-toplevel-headings
+
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 52:1
+    Message: Unexpected redirecting URL `https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal`, expected final URL `https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 55:1
+    Message: Unexpected redirecting URL `https://console.adobe.io/`, expected final URL `https://developer.adobe.com/console/`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/custom-asset-compute-worker/lesson2.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/custom-asset-compute-worker/lesson3.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/custom-asset-compute-worker/lesson4.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/custom-asset-compute-worker/lesson5.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/custom-asset-compute-worker/our-worker.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/custom-asset-compute-worker/requirements.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 21:1
+    Message: Unexpected dead URL `https://azure.microsoft.com/en-us/free/`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/custom-asset-compute-worker/welldone.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/customer-dashboard/index.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 23:1
+    Message: Unexpected dead URL `https://www.adobe.com/marketing/campaign.html`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 25:1
+    Message: Unexpected redirecting URL `https://docs.adobe.com/content/help/en/campaign-standard/using/working-with-apis/about-campaign-standard-apis/about-campaign-standard-apis.html`, expected final URL `https://experienceleague.adobe.com/en/docs/campaign-standard/using/working-with-apis/get-started-apis`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/customer-dashboard/lesson1.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 9:1
+    Message: Title is too long (70 characters). Consider keeping it under 60 characters.
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/customer-dashboard/lesson2.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 16:23
+    Message: Unexpected dead URL `https://docs.npmjs.com/creating-a-package-json-file`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 116:138
+    Message: Unexpected redirecting URL `https://docs.adobe.com/content/help/en/campaign-standard/using/working-with-apis/managing-profiles/retrieving-profiles.html`, expected final URL `https://experienceleague.adobe.com/en/docs/campaign-standard/using/working-with-apis/managing-profiles/retrieving-profiles`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/customer-dashboard/lesson3.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 24:151
+    Message: Unexpected dead URL `https://localhost:9080/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 40:99
+    Message: Unexpected dead URL `https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/customer-dashboard/lesson4.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 107:145
+    Message: Unexpected dead URL `https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 14:26
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/index.html`, expected final URL `https://react-spectrum.adobe.com/`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/customer-dashboard/lesson5.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 18:76
+    Message: Unexpected dead URL `https://www.npmjs.com/package/uuid`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 18:151
+    Message: Unexpected dead URL `https://www.npmjs.com/package/bwip-js`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/customer-dashboard/requirements.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/customer-dashboard/welldone.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/debugging/lesson1.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/debugging/lesson2.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 14:153
+    Message: Unexpected dead URL `https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 31:93
+    Message: Unexpected dead URL `https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/debugging/lesson3.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/debugging/requirements.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/debugging/welldone.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/event-driven/lesson1.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 27:41
+    Message: Unexpected redirecting URL `https://console.adobe.io/`, expected final URL `https://developer.adobe.com/console/`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/event-driven/lesson2.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/event-driven/lesson3.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 163:27
+    Message: Unexpected dead URL `https://io-webhook.herokuapp.com/`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/event-driven/lesson4.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 24:192
+    Message: Unexpected dead URL `https://developer.adobe.com/events/docs/guides/api/journaling_api/`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/event-driven/requirements.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 22:76
+    Message: Unexpected dead URL `https://console.adobe.io/`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/event-driven/welldone.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/events-runtime/lesson1.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/events-runtime/lesson2.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/events-runtime/requirements.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/events-runtime/welldone.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/index.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 124:11
+    Message: Cannot find file `../intro_and_overview/app_builder_overview.md`
+    Rule: missing-file
+
+  ⚠️  WARNING
+    Location: Line 118:1
+    Message: Unexpected redirecting URL `https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/consume-aem-events.html?lang=en`, expected final URL `https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/overview`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/journaling-events/index.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 25:11
+    Message: Unexpected dead URL `https://developer.adobe.com/events/docs/guides/api/journaling_api/`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/journaling-events/lesson1.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/journaling-events/lesson2.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/journaling-events/lesson3.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/journaling-events/requirements.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/journaling-events/welldone.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/sample_apps/code_snippets/analytics.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 7:1
+    Message: Title is too long (71 characters). Consider keeping it under 60 characters.
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/sample_apps/code_snippets/events.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/sample_apps/code_snippets/files.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/sample_apps/code_snippets/index.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/sample_apps/code_snippets/state.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/sample_apps/demo.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/sample_apps/index.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/spectrum-intro/lesson1.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 51:56
+    Message: Unexpected dead URL `mailto:spectrum@adobe.com`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 43:72
+    Message: Unexpected redirecting URL `https://www.adobe.com/products/type/font-licensing/restricted-fonts.html`, expected final URL `https://helpx.adobe.com/fonts/using/adobe-type-resources-faq.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 41:65
+    Message: Unexpected redirecting URL `https://console.adobe.io/downloads/`, expected final URL `https://developer.adobe.com/console/downloads/`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/spectrum-intro/lesson2.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 23:92
+    Message: Unexpected dead URL `https://www.npmjs.com/org/spectrum-css`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 118:101
+    Message: Unexpected dead URL `https://www.npmjs.com/package/loadicons`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 68:72
+    Message: Unexpected redirecting URL `http://opensource.adobe.com/spectrum-css/`, expected final URL `https://opensource.adobe.com/spectrum-css/`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 72:3
+    Message: Unexpected dead URL `https://opensource.adobe.com/spectrum-css/components/form/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 73:3
+    Message: Unexpected dead URL `https://opensource.adobe.com/spectrum-css/components/button-cta/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 71:3
+    Message: Unexpected dead URL `https://opensource.adobe.com/spectrum-css/components/typography-heading/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 74:3
+    Message: Unexpected dead URL `https://opensource.adobe.com/spectrum-css/components/textfield/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 75:3
+    Message: Unexpected dead URL `https://opensource.adobe.com/spectrum-css/components/checkbox/`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/spectrum-intro/lesson3.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 74:13
+    Message: Unexpected dead URL `https://react-spectrum.adobe.com/docs/react-spectrum/Provider.html`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 22:52
+    Message: Unexpected redirecting URL `https://reactjs.org/docs/getting-started.html`, expected final URL `https://react.dev/learn`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/spectrum-intro/lesson4.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 58:39
+    Message: Unexpected dead URL `http://localhost:9080/`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 25:60
+    Message: Unexpected redirecting URL `https://reactjs.org/`, expected final URL `https://react.dev/`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 60:113
+    Message: Unexpected dead URL `https://experience.adobe.com/?devMode=true#/apps/?localDevUrl=https://localhost:9080`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 43:86
+    Message: Unexpected dead URL `https://jestjs.io/`, expected live URL
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/spectrum-intro/requirements.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/spectrum-intro/welldone.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/todo-app/lesson1.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 7:1
+    Message: Title is too long (71 characters). Consider keeping it under 60 characters.
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/todo-app/lesson2.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/todo-app/lesson3.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 62:15
+    Message: Unexpected redirecting URL `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment`, expected final URL `https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 25:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/Flex.html`, expected final URL `https://react-spectrum.adobe.com/v3/Flex.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 27:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/TextField.html`, expected final URL `https://react-spectrum.adobe.com/v3/TextField.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 28:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/Button.html`, expected final URL `https://react-spectrum.adobe.com/v3/Button.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 26:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/Form.html`, expected final URL `https://react-spectrum.adobe.com/v3/Form.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 95:33
+    Message: Unexpected redirecting URL `https://reactjs.org/docs/rendering-elements.html`, expected final URL `https://legacy.reactjs.org/docs/rendering-elements.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 65:39
+    Message: Unexpected redirecting URL `https://reactjs.org/docs/handling-events.html`, expected final URL `https://legacy.reactjs.org/docs/handling-events.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 15:102
+    Message: Unexpected redirecting URL `https://reactjs.org/docs/introducing-jsx.html`, expected final URL `https://legacy.reactjs.org/docs/introducing-jsx.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 48:156
+    Message: Unexpected redirecting URL `https://reactjs.org/docs/hooks-intro.html`, expected final URL `https://legacy.reactjs.org/docs/hooks-intro.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 15:159
+    Message: Unexpected redirecting URL `https://reactjs.org/docs/components-and-props.html`, expected final URL `https://legacy.reactjs.org/docs/components-and-props.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 50:30
+    Message: Unexpected redirecting URL `https://reactjs.org/docs/hooks-state.html`, expected final URL `https://legacy.reactjs.org/docs/hooks-state.html`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/todo-app/lesson4.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 20:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/Flex.html`, expected final URL `https://react-spectrum.adobe.com/v3/Flex.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 12:179
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/TextField.html`, expected final URL `https://react-spectrum.adobe.com/v3/TextField.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 21:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/TextField.html`, expected final URL `https://react-spectrum.adobe.com/v3/TextField.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 44:31
+    Message: Unexpected redirecting URL `https://reactjs.org/docs/hooks-state.html`, expected final URL `https://legacy.reactjs.org/docs/hooks-state.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 12:101
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/Checkbox.html`, expected final URL `https://react-spectrum.adobe.com/v3/Checkbox.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 22:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/Checkbox.html`, expected final URL `https://react-spectrum.adobe.com/v3/Checkbox.html`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/todo-app/lesson5.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 26:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/Flex.html`, expected final URL `https://react-spectrum.adobe.com/v3/Flex.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 27:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/Form.html`, expected final URL `https://react-spectrum.adobe.com/v3/Form.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 28:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/TextField.html`, expected final URL `https://react-spectrum.adobe.com/v3/TextField.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 54:11
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/workflow-icons.html`, expected final URL `https://react-spectrum.adobe.com/v3/workflow-icons.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 25:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/Well.html`, expected final URL `https://react-spectrum.adobe.com/v3/Well.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 24:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/View.html`, expected final URL `https://react-spectrum.adobe.com/v3/View.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 30:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/AlertDialog.html`, expected final URL `https://react-spectrum.adobe.com/v3/AlertDialog.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 93:36
+    Message: Unexpected redirecting URL `https://reactjs.org/docs/hooks-state.html`, expected final URL `https://legacy.reactjs.org/docs/hooks-state.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 29:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/ActionButton.html`, expected final URL `https://react-spectrum.adobe.com/v3/ActionButton.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 31:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/DialogTrigger.html`, expected final URL `https://react-spectrum.adobe.com/v3/DialogTrigger.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 109:158
+    Message: Unexpected redirecting URL `https://reactjs.org/docs/lists-and-keys.html`, expected final URL `https://legacy.reactjs.org/docs/lists-and-keys.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 121:19
+    Message: Unexpected redirecting URL `https://reactjs.org/docs/hooks-intro.html`, expected final URL `https://legacy.reactjs.org/docs/hooks-intro.html`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/todo-app/lesson6.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 36:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/Flex.html`, expected final URL `https://react-spectrum.adobe.com/v3/Flex.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 35:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/View.html`, expected final URL `https://react-spectrum.adobe.com/v3/View.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 137:12
+    Message: Unexpected redirecting URL `https://reactjs.org/docs/conditional-rendering.html`, expected final URL `https://legacy.reactjs.org/docs/conditional-rendering.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 33:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/theming.html`, expected final URL `https://react-spectrum.adobe.com/v3/theming.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 34:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/ProgressCircle.html`, expected final URL `https://react-spectrum.adobe.com/v3/ProgressCircle.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 38:3
+    Message: Unexpected dead URL `https://react-spectrum.adobe.com/react-spectrum/Grid.html#repeat`, expected live URL
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 38:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/Grid.html#repeat`, expected final URL `https://react-spectrum.adobe.com/v3/Grid.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 37:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/Grid.html`, expected final URL `https://react-spectrum.adobe.com/v3/Grid.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 32:3
+    Message: Unexpected redirecting URL `https://react-spectrum.adobe.com/react-spectrum/Provider.html`, expected final URL `https://react-spectrum.adobe.com/v3/Provider.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 121:139
+    Message: Unexpected redirecting URL `https://reactjs.org/docs/hooks-effect.html`, expected final URL `https://legacy.reactjs.org/docs/hooks-effect.html`
+    Rule: no-dead-urls
+
+  ⚠️  WARNING
+    Location: Line 56:153
+    Message: Unexpected redirecting URL `https://reactjs.org/docs/hooks-state.html`, expected final URL `https://legacy.reactjs.org/docs/hooks-state.html`
+    Rule: no-dead-urls
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/todo-app/requirements.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/todo-app/welldone.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/transclusions/requirements.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/videos/developers-live/extend-experience-cloud.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 2:1
+    Message: Title is too long (69 characters). Consider keeping it under 60 characters.
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/videos/exploring/ci-cd.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 3:1
+    Message: Description is too long (328 characters). Consider keeping it under 160 characters.
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/videos/exploring/custom-events.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 3:1
+    Message: Description is too long (281 characters). Consider keeping it under 160 characters.
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/videos/exploring/dashboard-case-study.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/videos/exploring/live-wired-sneak.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 3:1
+    Message: Description is too long (432 characters). Consider keeping it under 160 characters.
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/videos/exploring/ode-case-study.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/videos/exploring/projects-and-workspaces.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 3:1
+    Message: Description is too long (176 characters). Consider keeping it under 160 characters.
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/videos/exploring/react-spectrum.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 3:1
+    Message: Description is too long (249 characters). Consider keeping it under 160 characters.
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/videos/index.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+  ⚠️  WARNING
+    Location: Line 2:1
+    Message: Title is too long (64 characters). Consider keeping it under 60 characters.
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/videos/overview/architecture.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/videos/overview/e2-e-user-journey.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/videos/overview/getting-started.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 3:1
+    Message: Description is too long (169 characters). Consider keeping it under 160 characters.
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/videos/overview/introduction.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 3:1
+    Message: Description is too long (356 characters). Consider keeping it under 160 characters.
+    Rule: check-frontmatter
+
+───────────────────────────────────────────────────────────────
+📄 FILE: src/pages/resources/videos/overview/security.md
+───────────────────────────────────────────────────────────────
+  ⚠️  WARNING
+    Location: Line 1:1
+    Message: Missing or empty description in frontmatter
+    Rule: check-frontmatter
+
+
+═══════════════════════════════════════════════════════════════
+                        SUMMARY
+═══════════════════════════════════════════════════════════════
+
+  📁 Files processed:    222
+  📄 Files with issues:  198
+  ❌ Total errors:       1
+  ⚠️  Total warnings:     480
+  📋 Total issues:       481
+
+Result: ❌ FAILED - Fatal errors found
+
+═══════════════════════════════════════════════════════════════

@@ -34,7 +34,7 @@ Host **standardized MCP servers** that expose Adobe data and capabilities to AI 
 
 **What is MCP?**
 
-The [Model Context Protocol](https://modelcontextprotocol.io/) is an open standard that enables AI assistants (Claude, Cursor, etc.) to securely interact with external systems. Instead of hardcoding API credentials in AI configs, MCP servers act as secure intermediaries.
+The [Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro) is an open standard that enables AI assistants (Claude, Cursor, etc.) to securely interact with external systems. Instead of hardcoding API credentials in AI configs, MCP servers act as secure intermediaries.
 
 **Architecture:**
 
@@ -234,7 +234,7 @@ async function predictChurn(params) {
 ### Prerequisites
 
 - Node.js 18+
-- Adobe Developer Console project with I/O Runtime enabled ([Create one](https://developer.adobe.com/app-builder/docs/getting_started/))
+- Adobe Developer Console project with I/O Runtime enabled ([Create one](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app))
 - AI service API key (OpenAI, Groq, Anthropic, etc.) - optional depending on use case
 
 ### Step 1: Create & Initialize Project
@@ -287,7 +287,7 @@ aio app config set ANTHROPIC_API_KEY your-anthropic-key
 
 **2. Write Your Action Code:**
 
-Use AI assistants to help you! See the [AI Development Tools Guide](ai-development-tools.md) for tips on using Cursor, GitHub Copilot, and Claude with App Builder.
+Use AI assistants to help you! See the [AI Coding Developer Tooling](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/coding-tools) guide for tips on using Cursor, GitHub Copilot, and Claude with App Builder.
 
 **Example Action:**
 
@@ -602,12 +602,12 @@ AI assistants first see the registry, then request specific skill details only w
 ### Learn More
 
 - [AgentSkills.io Specification](https://agentskills.io/specification) - Full Agent Skills spec
-- [MCP Protocol](https://modelcontextprotocol.io/) - Model Context Protocol docs
-- [App Builder Documentation](https://developer.adobe.com/app-builder/docs/) - Complete platform guide
+- [MCP Protocol](https://modelcontextprotocol.io/docs/getting-started/intro) - Model Context Protocol docs
+- [App Builder Documentation](https://developer.adobe.com/app-builder/docs/intro_and_overview/) - Complete platform guide
 
 ## Resources
 
-- [App Builder Documentation](https://developer.adobe.com/app-builder/docs/)
+- [App Builder Documentation](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
 - [Agent Skills Specification](https://agentskills.io/specification)
 - [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk)
 - [DocuBot Example](https://github.com/rokapooradobe/adobe-docubot)
@@ -616,8 +616,8 @@ AI assistants first see the registry, then request specific skill details only w
 ## Next Steps
 
 1. **Explore Templates:** Run `aio app init` and browse AI-focused templates
-2. **Join Community:** [Adobe Developer Forums](https://experienceleaguecommunities.adobe.com/t5/adobe-i-o-console/ct-p/adobe-io-console)
-3. **Read Guides:** [App Builder Guides](https://developer.adobe.com/app-builder/docs/guides/)
+2. **Join Community:** [Adobe Developer Forums](https://experienceleaguecommunities.adobe.com/)
+3. **Read Guides:** [App Builder Guides](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/architecture_overview/architecture-overview)
 4. **Watch Demos:** [App Builder on YouTube](https://www.youtube.com/playlist?list=PLcVEYUqU7VReYsRrAlB0ydgeKIvcxYXXz)
 5. **Contribute Your Skills:** Help grow the App Builder Agent Skills ecosystem by sharing your custom skills
 
@@ -670,7 +670,7 @@ We welcome contributions from the community! If you've built Agent Skills for Ap
 
 Share your App Builder skills with the community:
 
-- **Adobe Developer Forums**: Post your skill in the [App Builder Community](https://experienceleaguecommunities.adobe.com/t5/adobe-i-o-console/ct-p/adobe-io-console)
+- **Adobe Developer Forums**: Post your skill in the [App Builder Community](https://experienceleaguecommunities.adobe.com/)
 - **GitHub**: Open an issue or discussion in the App Builder docs repository
 - **Developer Support**: Contact the App Builder team via Adobe Developer Console
 
