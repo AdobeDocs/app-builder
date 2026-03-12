@@ -126,6 +126,8 @@
             - [Using Runtime](guides/runtime_guides/using-runtime.md) 
         - [Contribution Guide](guides/contribution-guide.md) 
     - [Learning](resources/index.md) 
+        - [AI](resources/ai-use-cases.md)
+            - [Build AI Integrations](resources/ai-use-cases.md)
         - [Asset Compute Worker PS API](resources/asset-compute-worker-ps-api/index.md) 
             - [Requirements](resources/asset-compute-worker-ps-api/requirements.md) 
             - [Lesson 1: Create an app from Asset Compute template](resources/asset-compute-worker-ps-api/lesson1.md) 
