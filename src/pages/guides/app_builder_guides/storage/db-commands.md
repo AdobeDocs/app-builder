@@ -18,11 +18,22 @@ The following is only a brief introduction to the DB Plugin. For more thorough d
 
 ## Installation
 
-To install the early access plugin for the AIO CLI:
+If you installed the early access versions of the plugins, you must uninstall them before updating `@adobe/aio-cli`:
 
 ```bash
-aio plugins:install @adobe/aio-cli-plugin-app@next
-aio plugins:install @adobe/aio-cli-plugin-app-storage@next
+aio plugins:uninstall @adobe/aio-cli-plugin-app
+aio plugins:uninstall @adobe/aio-cli-plugin-app-storage
+```
+
+The DB plugin for the AIO CLI requires the following:
+
+- `@adobe/aio-cli-plugin-app` version 14.5.1 or higher
+- `@adobe/aio-cli-plugin-app-storage` version 1.3.0 or higher.
+
+These are installed automatically by updating `@adobe/aio-cli` to the latest version:
+
+```bash
+npm install -g @adobe/aio-cli
 ```
 
 ## Region selection
