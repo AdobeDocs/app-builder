@@ -45,6 +45,6 @@ local-test.yml
 .yalc
 yalc.lock
 
-#txt
+# Added by update-bot
 linter-output.txt
 linter-report.txt
