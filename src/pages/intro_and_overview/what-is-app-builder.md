@@ -9,7 +9,7 @@ title: How it Works
 
 ## What is App Builder?
 
-App Builder is a complete framework for enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure. 
+App Builder is a complete platform for enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure. 
 
 It uses modern technologies like JAM stack, serverless computing, Node, and React, and helps developers build applications using best practices including event-driven architecture, microservices, and Continuous Integration/Continuous Delivery (CI/CD).
 
