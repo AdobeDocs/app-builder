@@ -152,7 +152,7 @@ If a customer believes they have accidentally deleted or corrupted their data, t
 
 The customer must:
 
-- **Immediately contact Adobe Support or their Adobe account team** to request a restoration.
+- **Immediately contact Adobe Support** to request a restoration.
 - Submit the request as soon as the issue is identified.
 - Restoration is only possible within a **limited time window**, and delays may make recovery impossible.
 - Provide the following information to assist with the restoration request:
