@@ -89,7 +89,7 @@
                 - [Understanding Authentication](guides/app_builder_guides/security/understanding-authentication.md) 
             - [Storage Options](guides/app_builder_guides/storage/index.md)
                 - [State and Files](guides/app_builder_guides/storage/application-state.md)
-                - [Database (Beta)](guides/app_builder_guides/storage/database.md)
+                - [Database](guides/app_builder_guides/storage/database.md)
                     - [aio app db Commands](guides/app_builder_guides/storage/db-commands.md)
                     - [Runtime Actions](guides/app_builder_guides/storage/db-runtime-actions.md)
                     - [MongoDB Compatibility](guides/app_builder_guides/storage/db-mongo-compatibility.md)
