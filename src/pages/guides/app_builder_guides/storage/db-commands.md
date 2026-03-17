@@ -27,8 +27,8 @@ aio plugins:uninstall @adobe/aio-cli-plugin-app-storage
 
 The DB plugin for the AIO CLI requires the following:
 
-- `@adobe/aio-cli-plugin-app` version 14.5.1 or higher
-- `@adobe/aio-cli-plugin-app-storage` version 1.3.0 or higher.
+- `@adobe/aio-cli-plugin-app` version 14.7.0 or higher
+- `@adobe/aio-cli-plugin-app-storage` version 1.5.0 or higher.
 
 These are installed automatically by updating `@adobe/aio-cli` to the latest version:
 
