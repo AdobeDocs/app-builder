@@ -25,7 +25,6 @@
     "redirectCheck:stage": "npx --yes github:AdobeDocs/adp-devsite-utils redirectChecker stage --verbose",
     "redirectCheck:prod": "npx --yes github:AdobeDocs/adp-devsite-utils redirectChecker prod --verbose"
   },
-  "packageManager": "yarn@3.2.1",
   "devDependencies": {
     "express": "5.1.0"
   }
