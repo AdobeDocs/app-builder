@@ -5,6 +5,8 @@ description: This guide helps you diagnose and fix common issues when using App 
 
 # Database Storage Troubleshooting Guide
 
+This guide helps you diagnose and resolve common issues encountered when using App Builder Database Storage. It covers required setup prerequisites, authentication changes introduced with IMS token-based access, and step-by-step solutions for the most frequently reported errors. Work through each section that applies to your situation, starting with the required setup checklist before investigating specific error messages.
+
 ## Required Setup and Versions
 
 Before troubleshooting specific errors, confirm the following.
@@ -14,13 +16,13 @@ Before troubleshooting specific errors, confirm the following.
 In Adobe Developer Console:
 
 1. Open your project.
-2. Select the workspace you are using.
-3. Click Add API.
-4. Add App Builder Data Services.
+1. Select the workspace you are using.
+1. Click **Add API**.
+1. Add **App Builder Data Services**.
 
-This is required for App Builder Database access and for IMS credentials to be generated.
+This step is required for App Builder Database access and for IMS credentials to be generated.
 
-### IMS credentials are present in your .env file
+### IMS credentials are present in your `.env` file
 
 After adding the API, sync credentials into your local configuration:
 
@@ -28,7 +30,7 @@ After adding the API, sync credentials into your local configuration:
 aio app use --merge
 ```
 
-This populates entries like:
+The command populates entries like:
 
 ```bash
 IMS_OAUTH_S2S_CLIENT_ID=...
@@ -41,7 +43,7 @@ If these values are missing, the IMS token generation for DB will not work corre
 
 ### AIO CLI is up to date (for DB support and plugin fixes)
 
-To use App Builder Database reliably, you should be on at least these versions:
+To use App Builder Database reliably, you must be running the following packages:
 
 ```text
 @adobe/aio-cli 11.0.2+
@@ -85,7 +87,7 @@ Confirm that your package.json (and the deployed code) is using:
 @adobe/aio-lib-db 1.0.0 or later
 ```
 
-Always follow the version recommendation in [Getting Started with Database Storage](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/database) for the most up-to-date guidance.
+Always follow the version recommendation in [Getting Started with Database Storage](./database.md) for the most up-to-date guidance.
 
 ## Migrating to IMS Token Authentication
 
@@ -94,7 +96,7 @@ App Builder Database now uses IMS token-based authentication instead of the lega
 - `AIO_RUNTIME_NAMESPACE`
 - `AIO_RUNTIME_AUTH`
 
-If you are migrating an existing app, follow the migration steps in [Getting Started with Database Storage](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/database) (including adding App Builder Data Services in Developer Console, and updating your code to use `generateAccessToken` from `@adobe/aio-sdk`).
+If you are migrating an existing app, follow the migration steps in [Getting Started with Database Storage](./database.md) (including adding App Builder Data Services in Developer Console, and updating your code to use `generateAccessToken` from `@adobe/aio-sdk`).
 
 After completing the migration, use the error-specific sections below (for example, 401: OAuth token is not valid, Missing required scope, Region and provisioning errors).
 
@@ -139,334 +141,338 @@ application:
 
 ## Common Errors and How to Fix Them
 
+The following sections describe the most common errors you may encounter when working with App Builder Database Storage, along with their likely causes and recommended fixes. Each entry includes the symptoms to look for, an explanation of what is causing the problem, and the steps needed to resolve it.
+
 ### 401: OAuth token is not valid
 
-#### Symptoms
+You might receive this error when:
 
 - CLI commands such as `aio app db find` work.
 - Calling the database from your runtime action (using `@adobe/aio-lib-db`) fails with an error like:
 
-```text
-findOne failed with code 401: OAuth token is not valid
-```
+  ```text
+  findOne failed with code 401: OAuth token is not valid
+  ```
 
-#### Likely causes
+Likely causes include:
 
 - `include-ims-credentials: true` annotation is missing or not applied to the action.
-- IMS scopes are incomplete or not synced into .env.
+- IMS scopes are incomplete or not synced into `.env`.
 - You are passing the wrong value as `token` to `libDb.init` (for example, the token object instead of `access_token`).
 - `@adobe/aio-lib-db` is on an older version that does not support the IMS flow you are using.
-- You are mixing environments (stage vs prod): the runtime namespace and IMS auth environment do not match.
+- You are mixing environments (stage vs prod). The runtime namespace and IMS auth environment do not match.
 
-#### How to fix
+To fix this error:
 
-##### Confirm the action annotation
+- Confirm the action annotation:
 
-```yaml
-application:
-  actions:
-    my-action:
-      annotations:
-        include-ims-credentials: true
-```
+  ```yaml
+  application:
+    actions:
+      my-action:
+        annotations:
+          include-ims-credentials: true
+  ```
 
-Re-deploy your app so the updated annotation is applied.
+  Re-deploy your app so the updated annotation is applied.
 
-##### Re-sync workspace credentials to .env
+- Re-sync workspace credentials to `.env`
 
-Ensure App Builder Data Services API is added to the workspace, then run:
+  Ensure App Builder Data Services API is added to the workspace, then run:
 
-```bash
-aio app use --merge
-```
+  ```bash
+  aio app use --merge
+  ```
 
-Confirm `IMS_OAUTH_S2S_*` and `IMS_OAUTH_S2S_SCOPES` are present.
+  Confirm `IMS_OAUTH_S2S_*` and `IMS_OAUTH_S2S_SCOPES` are present.
 
-##### Pass the correct value to libDb.init
+- Pass the correct value to libDb.init
 
-```javascript
-const tokenResponse = await Core.AuthClient.generateAccessToken(params);
-const accessToken = tokenResponse && tokenResponse.access_token;
-const db = await libDb.init({ token: accessToken });
-const client = await db.connect();
-```
+  ```javascript
+  const tokenResponse = await Core.AuthClient.generateAccessToken(params);
+  const accessToken = tokenResponse && tokenResponse.access_token;
+  const db = await libDb.init({ token: accessToken });
+  const client = await db.connect();
+  ```
 
-Make sure you are not doing:
+  Make sure you are not doing:
 
-```javascript
-await libDb.init({ token: tokenResponse }); // incorrect
-```
+  ```javascript
+  await libDb.init({ token: tokenResponse }); // incorrect
+  ```
 
-##### Update @adobe/aio-lib-db
+- Update `@adobe/aio-lib-db`
 
-```bash
-npm update @adobe/aio-lib-db
-```
+  ```bash
+  npm update @adobe/aio-lib-db
+  ```
 
-Confirm that `@adobe/aio-lib-db` is 1.0.0 or later, as recommended in the docs.
+  Confirm that `@adobe/aio-lib-db` is 1.0.0 or later, as recommended in the docs.
 
-##### Optionally validate the token against IMS
+- Optionally validate the token against IMS
 
-If you suspect a token issue, validate with `@adobe/aio-lib-ims` as described in Token validation - aio-lib-ims.
+  If you suspect a token issue, validate with `@adobe/aio-lib-ims` as described in Token validation - aio-lib-ims.
 
-##### Check environment consistency
+- Check environment consistency
 
-Ensure:
+  Ensure:
 
-- The runtime namespace used by your action is in the same environment (prod vs stage) as the database.
-- You are not using a `development-*` namespace with a production-only auth path or vice versa.
+  - The runtime namespace used by your action is in the same environment (prod or stage) as the database.
+  - You are not using a `development-*` namespace with a production-only auth path or vice versa.
 
 ### Database not provisioned (auto-provisioning issues)
 
-#### Symptoms
+You might receive this error when:
 
-Your app config contains:
+- Your app config contains:
 
-```yaml
-application:
-  runtimeManifest:
-    database:
-      auto-provision: true
-```
+  ```yaml
+  application:
+    runtimeManifest:
+      database:
+        auto-provision: true
+  ```
 
-You see Database not provisioned at runtime, or auto-provisioning does not create a database.
+- You see `Database not provisioned` at runtime, or auto-provisioning does not create a database.
 
-#### Likely causes
+Likely causes include:
 
 - A known issue in auto-provisioning logic in older `@adobe/aio-cli-plugin-app` / `@adobe/aio-cli-plugin-app-storage` versions.
 - Region misconfiguration in app.config.yaml.
 
-#### How to fix
+To fix this error:
 
-##### Update CLI and DB plugin
+- Update the CLI and DB plugins
 
-Make sure you are on a GA-supported setup:
+  Make sure you are on a GA-supported setup:
 
-```bash
-# Uninstall any locally installed early-access versions
-aio plugins:uninstall @adobe/aio-cli-plugin-app
-aio plugins:uninstall @adobe/aio-cli-plugin-app-storage
+  ```bash
+  # Uninstall any locally installed early-access versions
+  aio plugins:uninstall @adobe/aio-cli-plugin-app
+  aio plugins:uninstall @adobe/aio-cli-plugin-app-storage
 
-# Update the CLI globally (pulls in GA plugin versions)
-npm install -g @adobe/aio-cli
-```
+  # Update the CLI globally (pulls in GA plugin versions)
+  npm install -g @adobe/aio-cli
+  ```
 
-Then verify versions:
+  Then verify the versions:
 
-```bash
-aio -v
-aio plugins
-```
+  ```bash
+  aio -v
+  aio plugins
+  ```
 
-##### Manually provision the database once
+- Manually provision the database once
 
-```bash
-aio app db provision
-```
+  ```bash
+  aio app db provision
+  ```
 
-Optionally specify a region:
+  Optionally specify a region:
 
-```bash
-aio app db provision --region amer
-```
+  ```bash
+  aio app db provision --region amer
+  ```
 
-##### Check app.config.yaml database config
+- Check the `app.config.yaml` database configuration
 
-After provisioning, ensure the database block is correct:
+  After provisioning, ensure the database block is correct:
 
-```yaml
-application:
-  runtimeManifest:
-    database:
-      auto-provision: true
-      region: amer
-```
+  ```yaml
+  application:
+    runtimeManifest:
+      database:
+        auto-provision: true
+        region: amer
+  ```
 
-##### If the CLI reports a plugin error
+- If the CLI reports a plugin error
 
-If you see `TypeError: opts.getPluginsList is not a function`, update the main CLI to the latest version:
+  If you see `TypeError: opts.getPluginsList is not a function`, update the main CLI to the latest version:
 
-```bash
-npm install -g @adobe/aio-cli
-```
+  ```bash
+  npm install -g @adobe/aio-cli
+  ```
 
 ### Region and provisioning errors
 
-#### Typical messages
+Typical errors include:
 
-- Database provisioning failed: ... code 503: No provisioning cluster configuration found for region: us-east-1
+- An error message similar to
+
+  `Database provisioning failed: ... code 503: No provisioning cluster configuration found for region: us-east-1`
+
 - Timeouts when connecting to a database that was incorrectly configured for a given Dev Console / region
+
 - Confusion around multiple regions (for example, provisioning in emea and then switching to amer)
 
-#### Key rules
+To resolve these issues, keep the following in mind:
 
-- A database is provisioned in one region at a time, configured in app.config.yaml.
-- In Production Dev Console, use any region listed as available when provisioning.
-- In Staging Dev Console, App Builder Database currently supports `amer` and `amer2`.
+- A database is provisioned in one region at a time, configured in `app.config.yaml`.
+- In the Production Dev Console, use any region listed as available when provisioning.
+- In the Staging Dev Console, App Builder Database currently supports `amer` and `amer2`.
 
-Make sure the region in app.config.yaml matches one of the supported regions for the Dev Console (Production vs Staging) where your project/workspace lives. If you configure an unsupported region for that Dev Console, provisioning will fail with errors such as:
+Make sure the region in `app.config.yaml` matches one of the supported regions for the Dev Console (Production vs Staging) where your project/workspace lives. If you configure an unsupported region for that Dev Console, provisioning will fail with errors such as:
 
 ```text
 No provisioning cluster configuration found for region: ...
 ```
 
-#### How to fix
+To fix these errors:
 
-##### Ensure you only have one region configured
+- Ensure you only have one region configured
 
-In app.config.yaml, your DB block should use a single region:
+  In `app.config.yaml`, your DB block should use a single region:
 
-```yaml
-application:
-  runtimeManifest:
-    database:
-      auto-provision: true
-      region: amer
-```
+  ```yaml
+  application:
+    runtimeManifest:
+      database:
+        auto-provision: true
+        region: amer
+  ```
 
-##### If you previously provisioned in an unsupported or problematic region
+- If you previously provisioned in an unsupported or problematic region
 
-Delete the existing database:
+  Delete the existing database:
 
-```bash
-aio app db delete
-```
+  ```bash
+  aio app db delete
+  ```
 
-Remove or correct the `database:` block in app.config.yaml.
+  Remove or correct the `database:` block in app.config.yaml.
 
-Re-provision in a supported region (for example, amer in Staging or Production):
+  Re-provision in a supported region (for example, amer in Staging or Production):
 
-```bash
-aio app db provision --region amer
-```
+  ```bash
+  aio app db provision --region amer
+  ```
 
-##### Dev Console (Stage vs Prod)
+- In the Dev Consoles (Stage vs Prod)
 
-- Namespaces starting with `development-` always belong to the Staging Dev Console.
-- In the Staging Dev Console, App Builder Database Storage is used for pre-production testing and may be subject to unscheduled changes. It is not guaranteed to be as stable as Production.
-- If you encounter unexpected provisioning errors in Staging and your region configuration is correct, confirm you are using a supported Stage region (`amer` or `amer2`). If the issue persists, contact Adobe Support or your Adobe representative.
+  - Namespaces starting with `development-` always belong to the Staging Dev Console.
+  - In the Staging Dev Console, App Builder Database Storage is used for pre-production testing and may be subject to unscheduled changes. It is not guaranteed to be as stable as Production.
+  - If you encounter unexpected provisioning errors in Staging and your region configuration is correct, confirm you are using a supported Stage region (`amer` or `amer2`). If the issue persists, contact Adobe Support or your Adobe representative.
 
-If you require higher stability for critical workflows, prefer using the Production Dev Console and a production namespace.
+  If you require higher stability for critical workflows, prefer using the Production Dev Console and a production namespace.
 
-### Missing required scope: adobeio.abdata.write
+### Missing required scope: `adobeio.abdata.write`
 
-#### Symptoms
-
-Running `aio app db status` or similar CLI commands fails with:
+You might encounter this error when running `aio app db status` or similar CLI commands fails with:
 
 ```text
 Failed to check database status: ... code 403: Missing required scope: adobeio.abdata.write
 ```
 
-#### Likely causes
+Likely causes include:
 
 - Your workspace does not have the App Builder Data Services API added.
 - After switching workspaces in the CLI, the API integration was implicitly removed (CLI syncing can overwrite workspace configuration).
-- .env does not contain the required IMS scopes.
+- `.env` does not contain the required IMS scopes.
 
-#### How to fix
+To fix this error:
 
-##### Add the API to each workspace that uses DB
+- Add the API to each workspace that uses DB
 
-In Developer Console for each workspace, add App Builder Data Services API.
+  In the Developer Console for each workspace, add the App Builder Data Services API.
 
-##### Re-sync credentials
+- Re-sync credentials
 
-```bash
-aio app use --merge
-```
+  ```bash
+  aio app use --merge
+  ```
 
-Verify that `IMS_OAUTH_S2S_SCOPES` includes:
+  Verify that `IMS_OAUTH_S2S_SCOPES` includes:
 
-```text
-adobeio.abdata.read
-adobeio.abdata.write
-adobeio.abdata.manage
-```
+  ```text
+  adobeio.abdata.read
+  adobeio.abdata.write
+  adobeio.abdata.manage
+  ```
 
-##### Be careful when syncing workspaces
+- Be careful when syncing workspaces
 
-When the CLI asks whether to sync workspace configuration, understand that syncing can remove APIs that are not present in the target workspace. Ensure the workspace you are syncing already has the App Builder Data Services API.
+  When the CLI asks whether to sync workspace configuration, understand that syncing can remove APIs that are not present in the target workspace. Ensure the workspace you are syncing already has the App Builder Data Services API.
 
 ### CLI works, app times out (aio app dev / local dev)
 
-#### Symptoms
+This error occur might occur when:
 
 - `aio app db` commands (for example, `aio app db provision`, `aio app db find`) work.
 - Your action, when run locally via `aio app dev`, times out when connecting to the database.
 - You can create collections and indices through the CLI but not from your app when running locally.
 
-#### Likely causes
+Likely causes include:
 
-- Local dev is not running with the latest CLI / plugin versions.
-- The project is not using the correct workspace or region in app.config.yaml.
+- Your local dev is not running with the latest CLI / plugin versions.
+- The project is not using the correct workspace or region in `app.config.yaml`.
 - The database was not successfully provisioned for the workspace used by `aio app dev`.
 
-#### How to fix
+To fix these errors: 
 
-##### Update CLI and plugins
+- Update the CLI and plugins
 
-Ensure your AIO CLI and plugins are up to date (see Required Setup and Versions).
+  Ensure your AIO CLI and plugins are up to date (see Required Setup and Versions).
 
-##### Confirm workspace and region configuration
+- Confirm workspace and region configuration
 
-Run:
+  Run:
 
-```bash
-aio app use
-```
+  ```bash
+  aio app use
+  ```
 
-Confirm that the active workspace matches the one where your database was provisioned.
+  Confirm that the active workspace matches the one where your database was provisioned.
 
-Check app.config.yaml to ensure `database.region` matches the region where the DB was provisioned.
+  Check app.config.yaml to ensure `database.region` matches the region where the DB was provisioned.
 
-##### Re-check provisioning
+- Re-check provisioning
 
-From your project directory:
+  From your project directory:
 
-```bash
-aio app db status
-```
+  ```bash
+  aio app db status
+  ```
 
-If no database is found, provision one:
+  If no database is found, provision one:
 
-```bash
-aio app db provision --region <your-region>
-```
+  ```bash
+  aio app db provision --region <your-region>
+  ```
 
-##### Set the local DB endpoint if needed
+- Set the local DB endpoint if needed
 
-If the CLI works but local dev still times out, set `AIO_DB_ENDPOINT` in .env to the region-specific endpoint (for example, `https://...-amer.app-builder.adp.adobe.io`).
+  If the CLI works but local dev still times out, set `AIO_DB_ENDPOINT` in .env to the region-specific endpoint (for example, `https://...-amer.app-builder.adp.adobe.io`).
 
-##### Retry local dev
+- Retry local dev
 
-Restart `aio app dev` after any configuration changes. If timeouts persist, contact Adobe Support or your Adobe representative with:
+  Restart `aio app dev` after any configuration changes. If timeouts persist, contact Adobe Support or your Adobe representative with:
 
-- The exact command (`aio app dev`)
-- Region and runtime namespace
-- Any error logs from your terminal
+  - The exact command (`aio app dev`)
+  - Region and runtime namespace
+  - Any error logs from your terminal
 
 ### Database created previously (pre-IMS) is no longer accessible
 
-#### Symptoms
+These errors might occur when:
 
 - You migrated to IMS token-based authentication.
 - You can provision and use a new database.
 - The old database, created with `AIO_RUNTIME_NAMESPACE` + `AIO_RUNTIME_AUTH`, appears empty or inaccessible.
 
-#### Likely causes
+Likely causes include:
 
 - You are connecting with a different runtime namespace than the one used when the original DB was created.
 - You are mixing the Production Dev Console and Staging Dev Console (for example, DB created in Staging but now connecting from a Production project).
 - In rare cases, there might be environment-side changes that affect access to legacy namespaces.
 
-#### How to check
+How to check:
 
 Confirm that you are using the same Adobe Developer Console instance (Production vs Staging) where the database was originally provisioned.
 
-In Developer Console, verify the runtime namespace for the workspace where the original database was created, and ensure your current app is using that exact namespace.
+In the Developer Console, verify the runtime namespace for the workspace where the original database was created, and ensure your current app is using that exact namespace.
 
-Confirm that the region and app.config.yaml settings match the original provisioning (if you know which region was used).
+Confirm that the region and `app.config.yaml` settings match the original provisioning (if you know which region was used).
 
 If the Dev Console instance, runtime namespace, and region all match and you still cannot see your data, contact Adobe Support or your Adobe representative with:
 
@@ -477,29 +483,25 @@ If the Dev Console instance, runtime namespace, and region all match and you sti
 
 ### Action file size too large
 
-#### Symptoms
+These errors might occur when:
 
 - You package your action as a ZIP and upload it manually (for example, via CI or custom tooling).
 - ZIP size is around or above ~50 MB.
 - Deployment or execution fails due to action size limitations.
 
-#### Cause
-
 App Builder Runtime enforces a per-action code size limit. The documented limit is approximately 22 MB per action. Large dependencies or bundled assets can easily exceed this limit.
-
-#### How to fix
 
 To stay within the per-action size limit:
 
 - Prefer using the standard `aio app build` process over hand-crafted ZIPs.
 - Split large functionality into multiple smaller actions where possible.
-- Remove unused dependencies from package.json.
-- Avoid bundling large static assets (images, archives, etc.) inside the action code package.
+- Remove unused dependencies from `package.json`.
+- Avoid bundling large static assets (such as images and archives) inside the action code package.
 - Where appropriate, move large assets to an external storage system and load them at runtime instead of bundling.
 
 Refer to System settings and limitations for the latest runtime limits and behaviors.
 
-## Quick Error -> Fix Summary
+## Error Fix Summary
 
 | Symptom / Error | Likely Cause | Fix (Short) |
 | --- | --- | --- |
