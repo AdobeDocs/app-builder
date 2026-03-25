@@ -1,11 +1,11 @@
 ---
-title: Database Storage Troubleshooting Guide
+title: Database Storage Troubleshooting
 description: This guide helps you diagnose and fix common issues when using App Builder Database Storage (including the IMS token-based authentication update).
 ---
 
-# Database Storage Troubleshooting Guide
+# Database Storage Troubleshooting
 
-This guide helps you diagnose and resolve common issues encountered when using App Builder Database Storage. It covers required setup prerequisites, authentication changes introduced with IMS token-based access, and step-by-step solutions for the most frequently reported errors. Work through each section that applies to your situation, starting with the required setup checklist before investigating specific error messages.
+This topic helps you diagnose and resolve common issues encountered when using App Builder Database Storage. It covers required setup prerequisites, authentication changes introduced with IMS token-based access, and step-by-step solutions for the most frequently reported errors. Work through each section that applies to your situation, starting with the required setup checklist before investigating specific error messages.
 
 ## Required setup and versions
 
