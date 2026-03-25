@@ -13,7 +13,7 @@ title: Frequently Asked Questions
 
 ### What is App Builder?
 
-App Builder is a complete design, application, and runtime framework for building third-party cloud-native applications that run on Adobe infrastructure to extend the functionality of Adobe Experience Cloud and Adobe Experience Platform. Developers use App Builder to create custom integrations between Adobe and third-party products, to improve operational efficiency and workflow.
+App Builder is a complete design, application, and runtime platform for building third-party cloud-native applications that run on Adobe infrastructure to extend the functionality of Adobe Experience Cloud and Adobe Experience Platform. Developers use App Builder to create custom integrations between Adobe and third-party products, to improve operational efficiency and workflow.
 
 ### What is it used for?
 
@@ -27,11 +27,11 @@ Adobe Commerce customers can also create an API Mesh, a powerful capability that
 
 ### How does it compare to other application frameworks?
 
-App Builder is not a generic serverless framework for creating cloud-native apps. It is designed specifically to help third parties extend and integrate Adobe Experience Cloud and Adobe Experience Platform. It comes pre-integrated with Adobe APIs, Events, Adobe I/O Runtime, and Adobe authentication and authorization.
+App Builder is not a generic serverless platform for creating cloud-native apps. It is designed specifically to help third parties extend and integrate Adobe Experience Cloud and Adobe Experience Platform. It comes pre-integrated with Adobe APIs, Events, Adobe I/O Runtime, and Adobe authentication and authorization.
 
 ### What is "in the box"?
 
-App Builder offers a complete application framework for extending Adobe solutions:
+App Builder offers a complete application offering for extending Adobe solutions:
 
 * Support for headful (single-page) or headless apps (microservices, service-to-service integrations)
 * Default UI toolkit React-Spectrum, with the option to use other toolkits
