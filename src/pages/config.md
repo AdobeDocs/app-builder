@@ -94,6 +94,7 @@
                     - [Runtime Actions](guides/app_builder_guides/storage/db-runtime-actions.md)
                     - [MongoDB Compatibility](guides/app_builder_guides/storage/db-mongo-compatibility.md)
                     - [Best Practices](guides/app_builder_guides/storage/db-best-practices.md)
+                    - [Troubleshooting](guides/app_builder_guides/storage/db-troubleshooting-guide.md)
             - [Telemetry](guides/app_builder_guides/telemetry.md) 
         - [Runtime Guides](guides/runtime_guides/index.md) 
             - [Contribution Guide](guides/contribution-guide.md) 

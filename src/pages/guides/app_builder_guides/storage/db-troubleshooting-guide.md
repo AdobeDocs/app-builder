@@ -7,7 +7,7 @@ description: This guide helps you diagnose and fix common issues when using App 
 
 This guide helps you diagnose and resolve common issues encountered when using App Builder Database Storage. It covers required setup prerequisites, authentication changes introduced with IMS token-based access, and step-by-step solutions for the most frequently reported errors. Work through each section that applies to your situation, starting with the required setup checklist before investigating specific error messages.
 
-## Required Setup and Versions
+## Required setup and versions
 
 Before troubleshooting specific errors, confirm the following.
 
@@ -30,7 +30,7 @@ After adding the API, sync credentials into your local configuration:
 aio app use --merge
 ```
 
-The command populates entries like:
+The command populates entries like this:
 
 ```bash
 IMS_OAUTH_S2S_CLIENT_ID=...
@@ -89,7 +89,7 @@ Confirm that your package.json (and the deployed code) is using:
 
 Always follow the version recommendation in [Getting Started with Database Storage](./database.md) for the most up-to-date guidance.
 
-## Migrating to IMS Token Authentication
+## Migrating to IMS token authentication
 
 App Builder Database now uses IMS token-based authentication instead of the legacy values:
 
@@ -128,7 +128,7 @@ async function main(params) {
 module.exports.main = main;
 ```
 
-In app.config.yaml, ensure:
+Ensure `app.config.yaml` is similar to the following:
 
 ```yaml
 application:
@@ -139,7 +139,7 @@ application:
         include-ims-credentials: true
 ```
 
-## Common Errors and How to Fix Them
+## Common errors and how to fix them
 
 The following sections describe the most common errors you may encounter when working with App Builder Database Storage, along with their likely causes and recommended fixes. Each entry includes the symptoms to look for, an explanation of what is causing the problem, and the steps needed to resolve it.
 
@@ -186,7 +186,7 @@ To fix this error:
 
   Confirm `IMS_OAUTH_S2S_*` and `IMS_OAUTH_S2S_SCOPES` are present.
 
-- Pass the correct value to libDb.init
+- Pass the correct value to `libDb.init`:
 
   ```javascript
   const tokenResponse = await Core.AuthClient.generateAccessToken(params);
@@ -195,7 +195,7 @@ To fix this error:
   const client = await db.connect();
   ```
 
-  Make sure you are not doing:
+  Make sure you are not making a call like this:
 
   ```javascript
   await libDb.init({ token: tokenResponse }); // incorrect
@@ -209,13 +209,9 @@ To fix this error:
 
   Confirm that `@adobe/aio-lib-db` is 1.0.0 or later, as recommended in the docs.
 
-- Optionally validate the token against IMS
+- Optionally validate the token against IMS. If you suspect a token issue, validate with `@adobe/aio-lib-ims` as described in Token validation - aio-lib-ims.
 
-  If you suspect a token issue, validate with `@adobe/aio-lib-ims` as described in Token validation - aio-lib-ims.
-
-- Check environment consistency
-
-  Ensure:
+- Check environment consistency. Ensure that:
 
   - The runtime namespace used by your action is in the same environment (prod or stage) as the database.
   - You are not using a `development-*` namespace with a production-only auth path or vice versa.
@@ -242,9 +238,7 @@ Likely causes include:
 
 To fix this error:
 
-- Update the CLI and DB plugins
-
-  Make sure you are on a GA-supported setup:
+- Update the CLI and DB plugins. Make sure you are on a GA-supported setup:
 
   ```bash
   # Uninstall any locally installed early-access versions
@@ -262,7 +256,7 @@ To fix this error:
   aio plugins
   ```
 
-- Manually provision the database once
+- Manually provision the database once:
 
   ```bash
   aio app db provision
@@ -274,9 +268,7 @@ To fix this error:
   aio app db provision --region amer
   ```
 
-- Check the `app.config.yaml` database configuration
-
-  After provisioning, ensure the database block is correct:
+- Check the `app.config.yaml` database configuration. After provisioning, ensure the database block is correct:
 
   ```yaml
   application:
@@ -286,7 +278,7 @@ To fix this error:
         region: amer
   ```
 
-- If the CLI reports a plugin error
+- If the CLI reports a plugin error:
 
   If you see `TypeError: opts.getPluginsList is not a function`, update the main CLI to the latest version:
 
@@ -320,7 +312,7 @@ No provisioning cluster configuration found for region: ...
 
 To fix these errors:
 
-- Ensure you only have one region configured
+- Ensure you only have one region configured.
 
   In `app.config.yaml`, your DB block should use a single region:
 
@@ -340,9 +332,9 @@ To fix these errors:
   aio app db delete
   ```
 
-  Remove or correct the `database:` block in app.config.yaml.
+  Remove or correct the `database:` block in `app.config.yaml`.
 
-  Re-provision in a supported region (for example, amer in Staging or Production):
+  Re-provision in a supported region (for example, `amer` in Staging or Production):
 
   ```bash
   aio app db provision --region amer
@@ -410,9 +402,7 @@ Likely causes include:
 
 To fix these errors: 
 
-- Update the CLI and plugins
-
-  Ensure your AIO CLI and plugins are up to date (see Required Setup and Versions).
+- Update the CLI and plugins. Ensure your AIO CLI and plugins are up to date (see Required Setup and Versions).
 
 - Confirm workspace and region configuration
 
@@ -426,9 +416,7 @@ To fix these errors:
 
   Check app.config.yaml to ensure `database.region` matches the region where the DB was provisioned.
 
-- Re-check provisioning
-
-  From your project directory:
+- Re-check provisioning. From your project directory:
 
   ```bash
   aio app db status
@@ -440,13 +428,9 @@ To fix these errors:
   aio app db provision --region <your-region>
   ```
 
-- Set the local DB endpoint if needed
+- Set the local DB endpoint if needed. If the CLI works but local dev still times out, set `AIO_DB_ENDPOINT` in .env to the region-specific endpoint (for example, `https://...-amer.app-builder.adp.adobe.io`).
 
-  If the CLI works but local dev still times out, set `AIO_DB_ENDPOINT` in .env to the region-specific endpoint (for example, `https://...-amer.app-builder.adp.adobe.io`).
-
-- Retry local dev
-
-  Restart `aio app dev` after any configuration changes. If timeouts persist, contact Adobe Support or your Adobe representative with:
+- Retry local dev. Restart `aio app dev` after any configuration changes. If timeouts persist, contact Adobe Support or your Adobe representative with:
 
   - The exact command (`aio app dev`)
   - Region and runtime namespace
@@ -501,7 +485,7 @@ To stay within the per-action size limit:
 
 Refer to System settings and limitations for the latest runtime limits and behaviors.
 
-## Error Fix Summary
+## Error fix summary
 
 | Symptom / Error | Likely Cause | Fix (Short) |
 | --- | --- | --- |
@@ -514,7 +498,7 @@ Refer to System settings and limitations for the latest runtime limits and behav
 | Old pre-IMS DB appears missing after migration | Namespace or environment mismatch | Ensure runtime namespace and environment match original; if still failing, contact support. |
 | Action ZIP around 50 MB fails or misbehaves | Exceeds per-action size limit | Reduce bundle size, split actions, remove unused dependencies. |
 
-## Where to Go Next
+## Related information
 
 - Core how-to and reference: [Getting Started with Database Storage](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/database)
 - Runtime limits and behavior: [System settings and limitations](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings#codesize)
