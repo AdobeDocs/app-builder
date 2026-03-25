@@ -13,7 +13,7 @@ Enterprise organizations that want to extend the capabilities of their Adobe sol
 
 ## Why use App Builder?
 
-The main reasons to choose the App Builder framework over third-party point solutions or do-it-yourself customizations are:
+The main reasons to choose App Builder over third-party point solutions or do-it-yourself customizations are:
 
 - **Time to value** – App Builder is the fastest way to extend Adobe solutions.
 - **Consistent user experience** – users can move smoothly between Adobe solutions and custom apps that share the same look and feel - without authenticating under a different username and password, switching contexts, or learning a new UI. 
@@ -23,7 +23,7 @@ The main reasons to choose the App Builder framework over third-party point solu
 
 ## Example use cases
 
-Here are some typical applications that can be built with the App Builder framework:
+Here are some typical applications that can be built with App Builder:
 
 - **Custom dashboards** and decision-support tools that use data from Adobe solutions or other systems
 - **Custom experiences** that let users interact with Adobe solutions the way they want
