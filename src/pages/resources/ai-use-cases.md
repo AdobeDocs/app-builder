@@ -676,5 +676,3 @@ Share your App Builder skills with the community:
 
 We'll review community contributions and feature the best skills in our documentation and examples.
 
-*Last updated: February 2026*
-
