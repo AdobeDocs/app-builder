@@ -23,6 +23,7 @@ Welcome to the App Builder Guides section. Here you'll find comprehensive docume
 ## Configuration and Deployment
 
 * [Configuration](configuration/configuration.md)
+* [TypeScript Actions](configuration/typescript-actions.md)
 * [Deployment](deployment/deployment.md)
 * [Content Delivery Network](cdn/index.md)
 * [Application Logging](application_logging/logging.md)
