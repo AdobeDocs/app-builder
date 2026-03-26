@@ -140,6 +140,8 @@ runtimeManifest:
               - ["myfilestoinclude/*.txt", "text/"]
 ```
 
+> Note: the `function` field can also point to TypeScript files (e.g., `index.ts`) when a Webpack configuration with `ts-loader` is present. See [TypeScript Actions](typescript-actions.md) for setup details.
+
 > Note: the example above demonstrates the 'include' field of an action, for cases when you may want to have a file deployed with your action code and available to your code while it runs.
 > The example copies all .txt files from the `myfilestoinclude/` directory and places them in a new dir `text/` available when your action is invoked via `fs.readFile('text/somefile.txt', 'utf8', callback);`
 
@@ -424,5 +426,6 @@ If you can't view your application in the App Builder Catalog of Adobe Experienc
 Learn more about:
 - [Configuring Sequences](sequences.md) - Chain actions together declaratively
 - [Webpack Configuration](webpack-configuration.md) - Customize your build process
+- [TypeScript Actions](typescript-actions.md) - Use TypeScript in your Runtime actions
 
 Return to [Guides Index](../../index.md).

@@ -17,18 +17,18 @@ App Builder bundles Runtime action code using Webpack. Users can specify Webpack
 
 ## Configuration file
 
-When Runtime action code is bundled during `aio app build|run|deploy` the action directory is searched for a webpack config file named `*webpack-config.js`. The search is done first in the directory of the action being built, then the parent directory, up to the project root.
+When Runtime action code is bundled during `aio app build|run|deploy` the action directory is searched for a webpack config file named `*webpack-config.js` or `*webpack-config.cjs`. The search is done first in the directory of the action being built, then the parent directory, up to the project root.
 
-- To specify a Webpack configuration for a single action, place the `*webpack-config.js` file in the action folder.
+- To specify a Webpack configuration for a single action, place the config file in the action folder.
 
-- To specify a Webpack configuration for a set of actions, place the `*webpack-config.js` file in the parent directory of your action
+- To specify a Webpack configuration for a set of actions, place the config file in the parent directory of your action
   folders.
 
-- To specify a Webpack configuration for an entire project, place the `*webpack-config.js` file in the root directory of your project.
+- To specify a Webpack configuration for an entire project, place the config file in the root directory of your project.
 
 ### ES module syntax
 
-App Builder does not currently support ES Module syntax. This file must be written in CommonJS, or failures will occur at build time. 
+The webpack config file must be written in CommonJS, or failures will occur at build time. If your project uses ES modules (`"type": "module"` in `package.json`), name the file `*webpack-config.cjs` so that Node.js treats it as CommonJS.
 
 ## Configuration types
 
@@ -208,6 +208,7 @@ module.exports = (env) => ({
 
 ## Next steps
 
-Return to [Configuration](configuration.md).
+- [TypeScript Actions](typescript-actions.md) — Use TypeScript in your Runtime actions
+- [Configuration](configuration.md) — Full `app.config.yaml` reference
 
 Return to [Guides Index](../../index.md).
