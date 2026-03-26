@@ -45,7 +45,7 @@ application:
       region: emea
 ```
 
-When the application is deployed using `aio app deploy` a database will be provisioned in the specified region unless it is already present.
+When the application is deployed using `aio app deploy` a database will be provisioned in the specified region unless it is already present. Declarative provisioning does not occur during `aio app run` or `aio app dev` commands, so the database will need to be provisioned manually using the AIO CLI for local development.
 
 To provision a database using the AIO CLI, the following command can be used:
 

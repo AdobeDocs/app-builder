@@ -235,6 +235,7 @@ Likely causes include:
 
 - A known issue in auto-provisioning logic in older `@adobe/aio-cli-plugin-app` / `@adobe/aio-cli-plugin-app-storage` versions.
 - Region misconfiguration in app.config.yaml.
+- Running the app locally through `aio app run` or `aio app dev` without manually provisioning a database first.
 
 To fix this error:
 
