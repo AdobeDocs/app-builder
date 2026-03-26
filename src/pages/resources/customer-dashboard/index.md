@@ -27,4 +27,4 @@ In this lab, you will learn how to:
 * Build a simple web app listing customer profiles 
 * Set up a custom workflow for sending personalized email promotions through Campaign Standard API
 
-A complete solution of this Code Lab can be found at [AdobeDocs/adobeio-samples-customers-dashboard](https://github.com/AdobeDocs/adobeio-samples-customers-dashboard).  
+A complete solution of this Code Lab can be found at [AdobeDocs/adobeio-samples-customers-dashboard](https://github.com/AdobeDocs/adobeio-samples-customers-dashboard).
