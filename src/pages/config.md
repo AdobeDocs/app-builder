@@ -48,6 +48,7 @@
             - [CDN](guides/app_builder_guides/cdn/index.md)
             - [Configuration](guides/app_builder_guides/configuration/configuration.md) 
                 - [Sequences](guides/app_builder_guides/configuration/sequences.md) 
+                - [TypeScript Actions](guides/app_builder_guides/configuration/typescript-actions.md) 
                 - [Webpack Configuration](guides/app_builder_guides/configuration/webpack-configuration.md) 
             - [Deployment](guides/app_builder_guides/deployment/deployment.md) 
                 - [CI/CD overview](guides/app_builder_guides/deployment/cicd-for-app-builder-apps.md) 
