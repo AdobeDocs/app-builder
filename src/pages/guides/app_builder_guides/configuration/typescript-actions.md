@@ -73,7 +73,7 @@ runtimeManifest:
         my-action:
           function: actions/my-action/index.ts
           web: 'yes'
-          runtime: nodejs:18
+          runtime: nodejs:22
 ```
 
 That's it. App Builder will use Webpack with `ts-loader` to compile your TypeScript action during build and deployment.
