@@ -80,14 +80,13 @@ That's it. App Builder will use Webpack with `ts-loader` to compile your TypeScr
 
 ## Limitations
 
-- **CommonJS output only** — Runtime actions must produce CommonJS modules. App Builder enforces this automatically (`output.libraryTarget` defaults to `commonjs2`), so no extra configuration is needed.
-- **Webpack config must be CommonJS** — The webpack configuration file must use CommonJS syntax (`.js` or `.cjs`). ES module syntax (`.mjs`) is not supported.
-- **Immutable Webpack options** — You cannot override `target`, `output.path`, or `output.filename` in your webpack configuration. See [Immutable options](webpack-configuration.md#immutable-options) for details.
 - **Debugging** — The VS Code debugger steps through the compiled JavaScript output by default. Adding `devtool: 'inline-source-map'` to your webpack configuration (as shown above) enables source map support, which improves the debugging experience but may not be a perfect 1:1 mapping with your original TypeScript source.
+
+For general Webpack constraints (immutable options, supported config formats, etc.), see [Webpack Configuration](webpack-configuration.md).
 
 ## Example project
 
-The [typescript-app quickstart](https://github.com/adobe/appbuilder-quickstarts/tree/master/typescript-app) provides a complete working example.
+The [typescript-app quickstart](https://github.com/adobe/appbuilder-quickstarts/tree/master/typescript-app) demonstrates TypeScript in an App Builder project. Note that it uses a manual `tsc` compilation approach; the `ts-loader` method described on this page is a simpler alternative that avoids the need for a separate build step or duplicated source directories.
 
 ## Next steps
 
