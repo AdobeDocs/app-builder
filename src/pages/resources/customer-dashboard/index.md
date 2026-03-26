@@ -15,7 +15,6 @@ contributors:
 # Build a Customer Profiles Dashboard with App Builder
 
 This Code Lab will guide you through creating a dashboard of customer profiles from Adobe Campaign Standard using App Builder.  
-This Code Lab will guide you through creating a dashboard of customer profiles from Adobe Campaign Standard using App Builder.  
 
 App Builder is a complete platform that enables enterprise Developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure. It uses modern technologies (JAM stack, serverless computing, Node, and React) and ensures best practices when building applications (event-driven architecture, microservices, continuous integration, and delivery).  
 
