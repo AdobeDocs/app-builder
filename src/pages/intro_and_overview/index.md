@@ -1,6 +1,6 @@
 # App Builder Overview
 
-This documentation describes App Builder, a complete platform for enterprise Developers to build and deploy custom web applications. App Builder applications extend Adobe Experience Cloud solutions and run on Adobe infrastructure, including Adobe I/O Runtime, the serverless, event-driven, on-demand computing platform included with App Builder.
+This documentation describes App Builder, a complete framework for enterprise Developers to build and deploy custom web applications. App Builder applications extend Adobe Experience Cloud solutions and run on Adobe infrastructure, including Adobe I/O Runtime, the serverless, event-driven, on-demand computing platform included with App Builder.
 
 The documentation includes guides, references, and tools to help Developers understand the App Builder framework, learn how to use it, resolve technical issues, optimize performance, and contribute to its development.
 
