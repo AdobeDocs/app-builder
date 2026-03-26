@@ -86,7 +86,7 @@ For general Webpack constraints (immutable options, supported config formats, et
 
 ## Example project
 
-The [typescript-app quickstart](https://github.com/adobe/appbuilder-quickstarts/tree/master/typescript-app) demonstrates TypeScript in an App Builder project. Note that it uses a manual `tsc` compilation approach; the `ts-loader` method described on this page is a simpler alternative that avoids the need for a separate build step or duplicated source directories.
+The [typescript-app quickstart](https://github.com/adobe/appbuilder-quickstarts/tree/master/typescript-app) provides a complete working example of TypeScript Runtime actions using the `ts-loader` approach described on this page.
 
 ## Next steps
 
