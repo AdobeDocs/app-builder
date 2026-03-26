@@ -76,7 +76,7 @@ What can we do to democratize cloud-native applications? We introduce App Builde
 
 [Read on Medium](https://medium.com/adobetech/project-firefly-how-to-projects-and-workspaces-9738d31338e7)
 
-App Builder is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure.
+App Builder is a complete platform that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure.
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
@@ -102,7 +102,7 @@ Oleksandr's App Builder service for Adobe Commerce enables developers to extend 
 
 [Read on Medium](https://medium.com/adobetech/building-an-spa-to-enhance-b2e-workflows-with-project-firefly-de128b180ee3)
 
-Learn how Ensemble used the power of Adobe's App Builder framework to develop a custom SPA that enhanced their B2E campaign code tracking workflows.
+Learn how Ensemble used the power of Adobe's App Builder platform to develop a custom SPA that enhanced their B2E campaign code tracking workflows.
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
@@ -118,7 +118,7 @@ The Adobe Experience Platform provides an API-first approach - and while working
 
 [Read on Medium](https://medium.com/adobetech/use-cases-project-firefly-cloud-native-apps-32f5ac6ef718)
 
-It's hard to believe that it was just May 2020 when we introduced App Builder to the world at a Developer preview. As Adobe's complete framework for building custom, cloud-native Experience Cloud…
+It's hard to believe that it was just May 2020 when we introduced App Builder to the world at a Developer preview. As Adobe's complete platform for building custom, cloud-native Experience Cloud…
 
 <DiscoverBlock slots="heading, link, text" width="100%"/>
 
