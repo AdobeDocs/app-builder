@@ -96,6 +96,7 @@
                     - [MongoDB Compatibility](guides/app_builder_guides/storage/db-mongo-compatibility.md)
                     - [Best Practices](guides/app_builder_guides/storage/db-best-practices.md)
                     - [Troubleshooting](guides/app_builder_guides/storage/db-troubleshooting.md)
+                    - [Setting Up Collections and Indexes](guides/app_builder_guides/storage/db-post-deploy-setup.md)
             - [Telemetry](guides/app_builder_guides/telemetry.md) 
         - [Runtime Guides](guides/runtime_guides/index.md) 
             - [Contribution Guide](guides/contribution-guide.md) 
