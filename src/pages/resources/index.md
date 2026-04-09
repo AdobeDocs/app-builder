@@ -121,4 +121,4 @@ Learn why is it a good idea to build event-driven applications and how to build 
 
 ## Next step
 
-Return to [App Builder Overview](../intro_and_overview/app_builder_overview.md).
+Return to [App Builder Overview](../intro_and_overview/what-is-app-builder.md).

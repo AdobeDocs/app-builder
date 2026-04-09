@@ -183,4 +183,4 @@ It returns the most recent 10 log forwarding errors for the current log forwardi
 
 Return to [Guides Index](../../index.md).
 
-Return to [App Builder Overview](../../../intro_and_overview/app_builder_overview.md).
+Return to [App Builder Overview](../../../intro_and_overview/what-is-app-builder.md).

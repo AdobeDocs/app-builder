@@ -315,10 +315,6 @@ Requirements to deploy a ZIP action are:
 
 - Create a manifest file
 
-### wskdeploy
-
-If you need to install `wskdeploy`, check [Setting up the wskdeploy CLI](tools/wskdeploy_install.md).
-
 ### Package.json file
 
 You use the package.json file to specify the dependencies. If you don't have one already, in the same folder where your function files are, run `npm init -y`.
