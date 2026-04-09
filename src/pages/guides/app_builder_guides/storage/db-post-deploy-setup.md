@@ -18,7 +18,7 @@ Provisioning a workspace database with `auto-provision: true` creates an empty d
 
 A practical solution is to use a `post-app-deploy` hook: a script that runs automatically at the end of every `aio app deploy`. The script creates collections and indexes if they do not yet exist, and skips them silently if they do. This makes the setup **idempotent** and safe to run on every deployment.
 
-<InlineAlert variant="info" slots="text"/>
+<InlineAlert variant="info" slots="text" />
 
 A fully declarative approach — defining collections and indexes directly in `app.config.yaml` — is on the roadmap. The hook-based approach described here is the recommended path today.
 
@@ -39,6 +39,17 @@ A fully declarative approach — defining collections and indexes directly in `a
   ```bash
   npm install @adobe/aio-lib-db @adobe/aio-sdk
   ```
+
+## Supported index types
+
+`aio-lib-db` uses the same index syntax as the MongoDB Node.js driver. Supported types follow [DocumentDB 8.0 compatibility](./db-mongo-compatibility.md):
+
+| Index type | Key value | Use case |
+|---|---|---|
+| Ascending / descending | `1` / `-1` | Equality and range queries, sort optimization |
+| Text | `"text"` | Full-text search across string fields |
+| Geospatial | `"2dsphere"` | Location-based queries |
+| Unique | `options: { unique: true }` | Enforce uniqueness on a field |
 
 ## Configure the hook in app.config.yaml
 
@@ -167,6 +178,11 @@ const postDeployDbSetup = async () => {
   const namespace =
     process.env.AIO_runtime_namespace || process.env.__OW_NAMESPACE;
 
+  // ensure __OW_NAMESPACE is set so generateAccessToken can auto-detect stage vs prod IMS
+  if (namespace && !process.env.__OW_NAMESPACE) {
+    process.env.__OW_NAMESPACE = namespace;
+  }
+
   if (!clientId || !clientSecret || !orgId) {
     console.warn(
       '[post-deploy-db-setup] IMS credentials not found in environment — skipping DB setup.'
@@ -239,7 +255,10 @@ When `aio app deploy` finishes, the AIO CLI calls the `post-app-deploy` hook and
 2. Generates an IMS access token using `Core.AuthClient.generateAccessToken`.
 3. Connects to the workspace database via `aio-lib-db`.
 4. Iterates over the index definitions and calls `createIndex` for each one.
-5. Catches "index already exists" errors (codes `85` and `86`) and skips them silently — so re-deploying never fails due to pre-existing indexes.
+5. Catches "index already exists" errors and skips them silently — so re-deploying never fails due to pre-existing indexes. Three cases are handled:
+   - Code `85` (`IndexOptionsConflict`): an index with the same name exists but with different options
+   - Code `86` (`IndexKeySpecsConflict`): an index on the same keys exists but with a different name
+   - Message fallback: `/already exists|duplicate/i` for drivers that surface the conflict as a string rather than a numeric code
 6. Closes the database connection.
 
 If credentials are missing, the script logs a warning and exits cleanly without failing the deployment.
@@ -254,15 +273,20 @@ node scripts/post-deploy-db-setup.js
 
 Make sure your `.env` file is populated with the IMS credentials before running.
 
-## Index types
+## Verifying the setup
 
-The `aio-lib-db` library is modeled on the MongoDB Node Driver, so it supports the same index types:
+After deploying, confirm the indexes were created using the AIO CLI:
 
-| Index type | Key value | Use case |
-|---|---|---|
-| Ascending / descending | `1` / `-1` | Equality and range queries, sort optimization |
-| Text | `"text"` | Full-text search across string fields |
-| Geospatial | `"2dsphere"` | Location-based queries |
-| Unique | `options: { unique: true }` | Enforce uniqueness on a field |
+```bash
+aio app db index list <collection-name>
+```
 
-For a full reference on supported operations, see [MongoDB Compatibility](./db-mongo-compatibility.md).
+For example, using the collections from the script above:
+
+```bash
+aio app db index list stores
+aio app db index list user_favorites
+```
+
+Each command lists the indexes on the collection, including their names and key specifications.
+
