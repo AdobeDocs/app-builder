@@ -2,6 +2,127 @@
 
 Stay up to date with the latest features, improvements, and bug fixes in App Builder and Adobe I/O Runtime.
 
+## April 2026
+
+*April 1, 2026*
+
+### @adobe/aio-cli-plugin-console 5.2.0
+
+#### New Features
+
+- Added `aio console project create` command to create new App Builder projects non-interactively
+- Added `aio console workspace create` command to create workspaces in existing projects non-interactively
+- Useful for scripted and agentic workflows where interactive terminal prompts are not available
+
+#### Upgrade Instructions
+
+To use the update, reinstall the aio-cli:
+
+```
+npm install -g @adobe/aio-cli
+```
+
+[Full release changes](https://github.com/adobe/aio-cli-plugin-console/releases/tag/5.2.0)
+
+## March 2026
+
+*March 24, 2026*
+
+### @adobe/aio-lib-ims-oauth 6.1.0
+
+#### New Features
+
+- Added `AIO_IMS_LOCAL_LOGIN_PORT` environment variable to configure the local login callback port
+- Enables interactive `aio login` from inside Docker containers by port-forwarding the configured port to the host browser
+
+#### Upgrade Instructions
+
+To use the update, reinstall the aio-cli:
+
+```
+npm install -g @adobe/aio-cli
+```
+
+[Full release changes](https://github.com/adobe/aio-lib-ims-oauth/releases/tag/6.1.0)
+
+*March 10, 2026*
+
+### @adobe/aio-cli 11.0.2 & @adobe/aio-cli-lib-app-config 4.2.0
+
+#### Bug Fixes
+
+- Fixed a `TypeError: opts.getPluginsList is not a function` error that occurred when installing CLI plugins
+- Aligned `app.config.yaml` action and package schema validation with the OpenWhisk specification
+
+#### Upgrade Instructions
+
+To use the update, reinstall the aio-cli:
+
+```
+npm install -g @adobe/aio-cli
+```
+
+[Full release changes - aio-cli](https://github.com/adobe/aio-cli/releases/tag/11.0.2)  
+[Full release changes - aio-cli-lib-app-config](https://github.com/adobe/aio-cli-lib-app-config/releases/tag/4.2.0)
+
+## February 2026
+
+*February 24, 2026*
+
+### Activation Logs and CDN Management in Developer Console
+
+#### New Features
+
+Two new features are now available in Adobe Developer Console for App Builder projects:
+
+**Console Logs UI**
+
+View and search your action logs directly in Developer Console — no CLI required:
+- See all activations, not just failures
+- Access the last 3 days of logs
+- Search by action name or log content
+- Filter by time range
+
+Access via **Console → Project → Workspace → App Builder Logs**. For longer retention, configure [log forwarding](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/application_logging/logging#viewing-logs-in-adobe-developer-console) to Splunk, Azure, or New Relic.
+
+**CDN Management**
+
+A new CDN page in Developer Console for managing your CDN settings:
+- View your CDN URL and deployment info
+- See the last deployer and timestamp
+- Enable or disable caching with one click
+- Invalidate the cache directly from the UI
+
+Access via **Console → Project → Workspace → App Builder CDN**. See the [CDN overview](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/cdn/#cache-management) for details.
+
+#### User Action Required
+
+None — these features are available automatically in Developer Console.
+
+*February 3–5, 2026*
+
+### @adobe/aio-lib-web 7.1.1, @adobe/aio-cli-plugin-app 14.4.2, @adobe/aio-cli-plugin-console 5.1.0 & @adobe/aio-cli-plugin-runtime 8.1.0
+
+#### Bug Fixes
+
+- **aio-lib-web**: Fixed a long-standing issue where static HTML files in subfolders were unreachable when deployed from Windows machines
+- **aio-cli-plugin-app**: Fixed `aio app install` to fall back to `npm install` when `npm ci` fails due to an out-of-sync lockfile in packages published before lockfile support was added
+- **aio-cli-plugin-console**: Fixed a `require() of ES Module` error
+- **aio-cli-plugin-runtime**: Fixed the `rt` alias so it correctly displays help
+
+#### Upgrade Instructions
+
+To use the updates, reinstall the aio-cli:
+
+```
+npm install -g @adobe/aio-cli
+```
+
+[Full release changes - aio-lib-web](https://github.com/adobe/aio-lib-web/releases/tag/7.1.1)  
+[Full release changes - aio-cli-plugin-app](https://github.com/adobe/aio-cli-plugin-app/releases/tag/14.4.2)  
+[Full release changes - aio-cli-plugin-console](https://github.com/adobe/aio-cli-plugin-console/releases/tag/5.1.0)  
+[Full release changes - aio-cli-plugin-runtime](https://github.com/adobe/aio-cli-plugin-runtime/releases/tag/8.1.0)
+
 ## January 2026
 
 *January 26, 2026*
