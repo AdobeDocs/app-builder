@@ -14,13 +14,13 @@ description: How to use post-app-deploy hooks to automatically set up database c
 
 # Setting up database collections and indexes
 
-Provisioning a workspace database with `auto-provision: true` creates an empty database. Setting up the collections, indexes, and schema validators your application needs is still a separate step — and doing it manually after every deployment is error-prone.
+Provisioning a workspace database with `auto-provision: true` creates an empty database. Setting up the collections, indexes, and schema validators your application needs is still a separate step, and doing it manually after every deployment is error-prone.
 
 A practical solution is to use a `post-app-deploy` hook: a script that runs automatically at the end of every `aio app deploy`. The script creates collections and indexes if they do not yet exist, and skips them silently if they do. This makes the setup **idempotent** and safe to run on every deployment.
 
 <InlineAlert variant="info" slots="text" />
 
-A fully declarative approach — defining collections and indexes directly in `app.config.yaml` — is on the roadmap. The hook-based approach described here is the recommended path today.
+A fully declarative approach (defining collections and indexes directly in `app.config.yaml`) is on the roadmap. The hook-based approach described here is the recommended path today.
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ A fully declarative approach — defining collections and indexes directly in `a
   | `IMS_OAUTH_S2S_CLIENT_ID` | Client ID of the server-to-server credential |
   | `IMS_OAUTH_S2S_CLIENT_SECRET` | Client secret |
   | `IMS_OAUTH_S2S_ORG_ID` | IMS Organization ID |
-  | `IMS_OAUTH_S2S_SCOPES` | JSON array of scopes, e.g. `["AdobeID","openid"]` |
+  | `IMS_OAUTH_S2S_SCOPES` | JSON array of scopes, such as `["AdobeID","openid"]` |
 
 - The following packages are installed in your project:
 
@@ -71,7 +71,7 @@ The hook runs once after `aio app deploy` completes successfully. It does **not*
 
 ## The hook script
 
-Create `scripts/post-deploy-db-setup.js` in the root of your project. The example below creates two collections — `stores` and `user_favorites` — with their respective indexes. Adapt the collection names and index definitions to match your application's data model.
+Create `scripts/post-deploy-db-setup.js` in the root of your project. The example below creates two collections, `stores` and `user_favorites`, with their respective indexes. Adapt the collection names and index definitions to match your application's data model.
 
 ```javascript
 /**
@@ -252,14 +252,14 @@ module.exports = postDeployDbSetup;
 When `aio app deploy` finishes, the AIO CLI calls the `post-app-deploy` hook and executes the script. The script:
 
 1. Reads IMS credentials from environment variables.
-2. Generates an IMS access token using `Core.AuthClient.generateAccessToken`.
-3. Connects to the workspace database via `aio-lib-db`.
-4. Iterates over the index definitions and calls `createIndex` for each one.
-5. Catches "index already exists" errors and skips them silently — so re-deploying never fails due to pre-existing indexes. Three cases are handled:
+1. Generates an IMS access token using `Core.AuthClient.generateAccessToken`.
+1. Connects to the workspace database via `aio-lib-db`.
+1. Iterates over the index definitions and calls `createIndex` for each one.
+1. Catches `index already exists` errors and skips them silently, so re-deploying never fails due to pre-existing indexes. Three cases are handled:
    - Code `85` (`IndexOptionsConflict`): an index with the same name exists but with different options
    - Code `86` (`IndexKeySpecsConflict`): an index on the same keys exists but with a different name
    - Message fallback: `/already exists|duplicate/i` for drivers that surface the conflict as a string rather than a numeric code
-6. Closes the database connection.
+1. Closes the database connection.
 
 If credentials are missing, the script logs a warning and exits cleanly without failing the deployment.
 
@@ -289,4 +289,3 @@ aio app db index list user_favorites
 ```
 
 Each command lists the indexes on the collection, including their names and key specifications.
-
