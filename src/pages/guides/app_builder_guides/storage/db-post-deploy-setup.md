@@ -14,7 +14,7 @@ description: How to use post-app-deploy hooks to automatically set up database c
 
 # Setting up database collections and indexes
 
-Provisioning a workspace database with `auto-provision: true` creates an empty database. Setting up the collections, indexes, and schema validators your application needs is still a separate step, and doing it manually after every deployment is error-prone.
+Provisioning a workspace database with `auto-provision: true` creates an empty database. Setting up the collections, indexes, and schema validators your application needs is still a separate step that must be done manually.
 
 A practical solution is to use a `post-app-deploy` hook: a script that runs automatically at the end of every `aio app deploy`. The script creates collections and indexes if they do not yet exist, and skips them silently if they do. This makes the setup **idempotent** and safe to run on every deployment.
 
