@@ -36,7 +36,6 @@ Welcome to the Runtime Guides section. Here you'll find comprehensive documentat
 ## Tools and Reference
 
 * [CLI Usage](tools/cli-install.md)
-* [WSKDeploy Install](tools/wskdeploy_install.md)
 * [Reference Documentation](reference_docs/index.md)
 
 ## Next step
