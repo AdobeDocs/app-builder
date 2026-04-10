@@ -18,7 +18,6 @@ Provisioning a workspace database with `auto-provision: true` creates an empty d
 
 A practical solution is to use a `post-app-deploy` hook: a script that runs automatically at the end of every `aio app deploy`. The script creates collections and indexes if they do not yet exist, and skips them silently if they do. This makes the setup **idempotent** and safe to run on every deployment.
 
-
 ## Prerequisites
 
 - A workspace database has been provisioned. See [Getting started with Database Storage](./database.md) for details.
@@ -29,7 +28,7 @@ A practical solution is to use a `post-app-deploy` hook: a script that runs auto
 `aio-lib-db` uses the same index syntax as the MongoDB Node.js driver. Supported types follow [DocumentDB 8.0 compatibility](./db-mongo-compatibility.md):
 
 | Index type | Key value | Use case |
-|---|---|---|
+| --- | --- | --- |
 | Ascending / descending | `1` / `-1` | Equality and range queries, sort optimization |
 | Text | `"text"` | Full-text search across string fields |
 | Geospatial | `"2dsphere"` | Location-based queries |
