@@ -19,7 +19,7 @@ For a close examination of App Builder's components, operation, and resources, f
 * [Deployment](app_builder_guides/deployment/deployment.md)
 * [Development](app_builder_guides/development.md)
 * [Distribution](app_builder_guides/distribution.md)
-* [Events](../resources/event-driven/)
+* [Events](../resources/event-driven/index.md)
 * [CDN](app_builder_guides/cdn/index.md)
 * [Extensions](app_builder_guides/extensions/extensions.md)
 * [Integration with Adobe Experience Cloud](app_builder_guides/exc_app/aec-integration.md)
