@@ -18,27 +18,11 @@ Provisioning a workspace database with `auto-provision: true` creates an empty d
 
 A practical solution is to use a `post-app-deploy` hook: a script that runs automatically at the end of every `aio app deploy`. The script creates collections and indexes if they do not yet exist, and skips them silently if they do. This makes the setup **idempotent** and safe to run on every deployment.
 
-<InlineAlert variant="info" slots="text" />
-
-A fully declarative approach (defining collections and indexes directly in `app.config.yaml`) is on the roadmap. The hook-based approach described here is the recommended path today.
 
 ## Prerequisites
 
 - A workspace database has been provisioned. See [Getting started with Database Storage](./database.md) for details.
-- An IMS OAuth server-to-server credential is configured for your AIO project workspace. The following environment variables must be set in your `.env` file:
-
-  | Variable | Description |
-  |---|---|
-  | `IMS_OAUTH_S2S_CLIENT_ID` | Client ID of the server-to-server credential |
-  | `IMS_OAUTH_S2S_CLIENT_SECRET` | Client secret |
-  | `IMS_OAUTH_S2S_ORG_ID` | IMS Organization ID |
-  | `IMS_OAUTH_S2S_SCOPES` | JSON array of scopes, such as `["AdobeID","openid"]` |
-
-- The following packages are installed in your project:
-
-  ```bash
-  npm install @adobe/aio-lib-db @adobe/aio-sdk
-  ```
+- An IMS OAuth server-to-server credential is configured for your AIO project workspace and the corresponding environment variables are available in your `.env` file. See [IMS credentials are present in your .env file](./db-troubleshooting.md#ims-credentials-are-present-in-your-env-file) for setup instructions.
 
 ## Supported index types
 
