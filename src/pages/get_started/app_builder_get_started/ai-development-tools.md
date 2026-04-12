@@ -32,6 +32,8 @@ Skills work with any AI coding tool that can read project files: Cursor, VS Code
 - **appbuilder-e2e-testing** - End-to-end testing with Playwright
 - **appbuilder-cicd-pipeline** - CI/CD with GitHub Actions
 
+Adobe Skills are open source: [github.com/adobe/skills](https://github.com/adobe/skills)
+
 ### Setup (Cursor)
 
 1. Open your project folder in Cursor. The `.cursor/skills/` directory contains App Builder skills that Cursor reads automatically.
@@ -90,8 +92,6 @@ Copy the `.cursor/skills/` directory into your project. Skills are portable - th
 ```bash
 cp -r /path/to/skills/.cursor/skills/ your-project/.cursor/skills/
 ```
-
-Skills are open source: [github.com/adobe/skills](https://github.com/adobe/skills)
 
 ## Key tips for effective AI prompts
 
