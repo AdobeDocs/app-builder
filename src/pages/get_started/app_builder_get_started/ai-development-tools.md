@@ -160,7 +160,7 @@ All formats serve the same purpose: giving the AI assistant context about App Bu
 - **Hardcoding credentials** instead of reading them from environment variables creates security risks.
 - **Reusing namespaces** without realizing it, deploying a second app to the same Console project namespace overwrites the first. Create a separate Console project for each app.
 
-> **See also:** [AI Use Cases with App Builder](../../resources/ai-use-cases.md): Learn what you can build with AI on App Builder (MCP servers, documentation assistants, AI agents, and more).
+> **See also:** [AI Use Cases with App Builder](../../resources/ai-use-cases.md): Learn what you can build with AI on App Builder (MCP servers, documentation assistants, AI agents, and many more).
 
 ## Resources
 
