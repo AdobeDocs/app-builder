@@ -19,7 +19,7 @@ Learn how to use modern AI coding assistants (Cursor, GitHub Copilot, Claude) to
 
 ## Building with AI and App Builder Skills
 
-**App Builder Skills** are structured knowledge files that teach AI agents how App Builder works. Skills eliminate verbose prompts — instead of explaining templates, auth patterns, and CLI commands every time, the agent already knows them.
+**App Builder Skills** are structured knowledge files that teach AI agents how App Builder works. Skills eliminate verbose prompts instead of explaining templates, auth patterns, and CLI commands every time, the agent already knows them.
 
 Skills work with any AI coding tool that can read project files: Cursor, VS Code with Copilot, Windsurf, Claude Code, and others. Add an `AGENTS.md` or context file to your project root and the AI picks up App Builder conventions automatically. The example below was built end-to-end in [Cursor](https://cursor.com) using skills in the `.cursor/skills/` directory, but the same patterns apply to other IDEs.
 
@@ -158,9 +158,9 @@ All formats serve the same purpose: giving the AI assistant context about App Bu
 - **Using old API versions** like Workfront v15.0 or AEM HTTP API produces outdated code.
 - **Skipping error handling** results in actions that return unhelpful 500 errors. Always ask for statusCode and try/catch.
 - **Hardcoding credentials** instead of reading them from environment variables creates security risks.
-- **Reusing namespaces** without realizing it — deploying a second app to the same Console project namespace overwrites the first. Create a separate Console project for each app.
+- **Reusing namespaces** without realizing it, deploying a second app to the same Console project namespace overwrites the first. Create a separate Console project for each app.
 
-> **See also:** [AI Use Cases with App Builder](../../resources/ai-use-cases.md) — Learn what you can build with AI on App Builder (MCP servers, documentation assistants, AI agents, and more).
+> **See also:** [AI Use Cases with App Builder](../../resources/ai-use-cases.md): Learn what you can build with AI on App Builder (MCP servers, documentation assistants, AI agents, and more).
 
 ## Resources
 
