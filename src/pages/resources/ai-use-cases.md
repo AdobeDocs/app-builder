@@ -15,12 +15,12 @@ description: Deploy AI-powered integrations with App Builder including MCP serve
 
 ## Why App Builder for AI?
 
-- **Isolated containers** — Each action runs in its own secure sandbox
-- **Encrypted credential storage** — No hardcoded API keys
-- **OAuth 2.0** — Enterprise SSO and Server-to-Server authentication
-- **Auto-scaling** — Handles traffic spikes without configuration
-- **Regional deployment** — Data residency support (amer/apac/emea)
-- **One-command deploy** — `aio app deploy` ships to production
+- **Isolated containers** - Each action runs in its own secure sandbox
+- **Encrypted credential storage** - No hardcoded API keys
+- **OAuth 2.0** - Enterprise SSO and Server-to-Server authentication
+- **Auto-scaling** - Handles traffic spikes without configuration
+- **Regional deployment** - Data residency support (amer/apac/emea)
+- **One-command deploy** - `aio app deploy` ships to production
 
 ## AI Use Cases
 
@@ -66,9 +66,9 @@ Add this URL to your AI assistant's configuration (Claude Desktop, Cursor, or ot
 
 **Example queries your MCP server can handle:**
 
-- *"Show my open tasks due this week"* → Queries Adobe Workfront
-- *"Find all product images tagged 'Spring 2026'"* → Searches AEM Assets
-- *"What's the conversion rate for homepage test?"* → Checks Adobe Target
+- *"Show my open tasks due this week"* - Queries Adobe Workfront
+- *"Find all product images tagged 'Spring 2026'"* - Searches AEM Assets
+- *"What's the conversion rate for homepage test?"* - Checks Adobe Target
 
 ### Documentation Assistants
 
@@ -86,7 +86,7 @@ LLM generates answer with citations
 Formatted response in Slack
 ```
 
-**Example:** [DocuBot](https://github.com/rokapooradobe/adobe-docubot) — an AI Slack assistant that answers App Builder questions using official docs, generates code snippets, and troubleshoots errors. Powered by LLM providers (OpenAI, Anthropic, Groq) with vector search against indexed documentation.
+**Example:** [DocuBot](https://github.com/rokapooradobe/adobe-docubot) - an AI Slack assistant that answers App Builder questions using official docs, generates code snippets, and troubleshoots errors. Powered by LLM providers (OpenAI, Anthropic, Groq) with vector search against indexed documentation.
 
 ### AI Agent Hosting
 
@@ -124,7 +124,7 @@ Use **machine learning models** to power intelligent business workflows: custome
 
 - Node.js 18+
 - Adobe Developer Console project with I/O Runtime enabled ([Create one](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app))
-- AI service API key (OpenAI, Anthropic, etc.) — optional depending on use case
+- AI service API key (OpenAI, Anthropic, etc.) - optional depending on use case
 
 ### Initialize, build, deploy
 
