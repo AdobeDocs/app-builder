@@ -19,7 +19,7 @@ Learn how to use modern AI coding assistants (Cursor, GitHub Copilot, Claude) to
 
 ## Building with AI and App Builder Skills
 
-**App Builder Skills** are structured knowledge files that teach AI agents how App Builder works. Skills eliminate verbose prompts instead of explaining templates, auth patterns, and CLI commands every time, the agent already knows them.
+**App Builder Skills** are structured knowledge files that teach AI agents how App Builder works. Skills eliminate verbose prompts instead of explaining templates, auth patterns, and CLI commands every time, the agent already knows them. See [Adobe Skills.](https://github.com/adobe/skills)
 
 Skills work with any AI coding tool that can read project files: Cursor, VS Code with Copilot, Windsurf, Claude Code, and others. Add an `AGENTS.md` or context file to your project root and the AI picks up App Builder conventions automatically. The example below was built end-to-end in [Cursor](https://cursor.com) using skills in the `.cursor/skills/` directory, but the same patterns apply to other IDEs.
 
@@ -90,7 +90,6 @@ Copy the `.cursor/skills/` directory into your project. Skills are portable — 
 ```bash
 cp -r /path/to/skills/.cursor/skills/ your-project/.cursor/skills/
 ```
-Skills are open source: [github.com/adobe/skills](https://github.com/adobe/skills)
 
 ## Key tips for effective AI prompts
 
