@@ -151,7 +151,7 @@ Use AI assistants to write your action code. See the [AI-Powered Development Too
 
 Available skills cover project initialization, action scaffolding, UI development, testing, and CI/CD. See the [AI-Powered Development Tools](ai-development-tools.md) guide for setup and usage.
 
-Skills are open source: [github.com/adobe/skills](https://github.com/adobe/skills)
+Adobe Skills are open source: [github.com/adobe/skills](https://github.com/adobe/skills)
 
 ### Contribute a Skill
 
