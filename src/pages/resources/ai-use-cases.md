@@ -143,13 +143,13 @@ aio app dev
 aio app deploy
 ```
 
-Use AI assistants to write your action code. See the [AI-Powered Development Tools](ai-development-tools.md) guide for how to use Cursor with App Builder Skills to build and deploy apps from a single prompt.
+Use AI assistants to write your action code. See the [AI-Powered Development Tools](../get_started/app_builder_get_started/ai-development-tools.md) guide for how to use Cursor with App Builder Skills to build and deploy apps from a single prompt.
 
 ## App Builder Skills
 
 **App Builder Skills** are structured knowledge files that teach AI agents how to build on App Builder. Skills encode patterns for project scaffolding, action development, UI building, testing, and deployment so AI assistants produce correct code without verbose prompts.
 
-Available skills cover project initialization, action scaffolding, UI development, testing, and CI/CD. See the [AI-Powered Development Tools](ai-development-tools.md) guide for setup and usage.
+Available skills cover project initialization, action scaffolding, UI development, testing, and CI/CD. See the [AI-Powered Development Tools](../get_started/app_builder_get_started/ai-development-tools.md) guide for setup and usage.
 
 Adobe Skills are open source: [github.com/adobe/skills](https://github.com/adobe/skills)
 
@@ -166,7 +166,7 @@ Contributions welcome for Adobe API integrations (Analytics, AEM, Campaign, Targ
 ## Resources
 
 - [App Builder Documentation](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
-- [AI-Powered Development Tools](ai-development-tools.md)
+- [AI-Powered Development Tools](../get_started/app_builder_get_started/ai-development-tools.md)
 - [Agent Skills Specification](https://agentskills.io/specification)
 - [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk)
 - [DocuBot Example](https://github.com/rokapooradobe/adobe-docubot)
