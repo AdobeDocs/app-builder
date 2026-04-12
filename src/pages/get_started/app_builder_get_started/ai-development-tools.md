@@ -19,18 +19,18 @@ Learn how to use modern AI coding assistants (Cursor, GitHub Copilot, Claude) to
 
 ## Building with AI and App Builder Skills
 
-**App Builder Skills** are structured knowledge files that teach AI agents how App Builder works. Skills eliminate verbose prompts instead of explaining templates, auth patterns, and CLI commands every time, the agent already knows them.
+**App Builder Skills** are structured knowledge files that teach AI agents how App Builder works. Skills eliminate verbose prompts. Instead of explaining templates, auth patterns, and CLI commands every time, the agent already knows them.
 
 Skills work with any AI coding tool that can read project files: Cursor, VS Code with Copilot, Windsurf, Claude Code, and others. Add an `AGENTS.md` or context file to your project root and the AI picks up App Builder conventions automatically. The example below was built end-to-end in [Cursor](https://cursor.com) using skills in the `.cursor/skills/` directory, but the same patterns apply to other IDEs.
 
 ### Available skills
 
-- **appbuilder-project-init** — Scaffolds projects, maps intent to templates, runs `aio app init`
-- **appbuilder-action-scaffolder** — Creates Runtime actions with validation, error handling, SDK wiring
-- **appbuilder-ui-scaffolder** — Builds React Spectrum UIs for App Builder frontends
-- **appbuilder-testing** — Unit and integration test patterns
-- **appbuilder-e2e-testing** — End-to-end testing with Playwright
-- **appbuilder-cicd-pipeline** — CI/CD with GitHub Actions
+- **appbuilder-project-init** - Scaffolds projects, maps intent to templates, runs `aio app init`
+- **appbuilder-action-scaffolder** - Creates Runtime actions with validation, error handling, SDK wiring
+- **appbuilder-ui-scaffolder** - Builds React Spectrum UIs for App Builder frontends
+- **appbuilder-testing** - Unit and integration test patterns
+- **appbuilder-e2e-testing** - End-to-end testing with Playwright
+- **appbuilder-cicd-pipeline** - CI/CD with GitHub Actions
 
 ### Setup (Cursor)
 
@@ -79,17 +79,18 @@ Without skills, you'd need to tell the AI all of this in every prompt:
 | Template selection | "Use `@adobe/generator-app-excshell`" | Agent reads the template decision table |
 | Authentication | "Remove `require-adobe-auth` from ext.config.yaml AND clear the `requiredHeaders` array in the action code" | Agent knows about the two-layer auth pattern |
 | Action patterns | "Export a `main` function, return `statusCode` and `body`, use `@adobe/aio-sdk` logger" | Agent follows the action scaffolder |
-| Console setup | Manual — download JSON, copy namespace/auth to `.env` | Agent runs `aio console project create` and wires it up |
+| Console setup | Manual - download JSON, copy namespace/auth to `.env` | Agent runs `aio console project create` and wires it up |
 | API versions | "Use Workfront v21.0, AEM OpenAPI, Analytics 2.0" | Documented in skill references |
 | Deployment | "Run `aio app deploy --force-deploy`" | Agent deploys automatically |
 
 ### Adding skills to your project
 
-Copy the `.cursor/skills/` directory into your project. Skills are portable — they work in any App Builder project opened in Cursor.
+Copy the `.cursor/skills/` directory into your project. Skills are portable - they work in any App Builder project opened in Cursor.
 
 ```bash
 cp -r /path/to/skills/.cursor/skills/ your-project/.cursor/skills/
 ```
+
 Skills are open source: [github.com/adobe/skills](https://github.com/adobe/skills)
 
 ## Key tips for effective AI prompts
@@ -154,13 +155,13 @@ All formats serve the same purpose: giving the AI assistant context about App Bu
 
 - **Saying "serverless function"** makes AI assume AWS Lambda patterns instead of App Builder.
 - **Mentioning JWT** leads to deprecated authentication code. Always specify OAuth Server-to-Server.
-- **Forgetting two-layer auth** — `require-adobe-auth` in the manifest AND `requiredHeaders` in action code are independent. Both must be addressed when disabling auth.
+- **Forgetting two-layer auth** - `require-adobe-auth` in the manifest AND `requiredHeaders` in action code are independent. Both must be addressed when disabling auth.
 - **Using old API versions** like Workfront v15.0 or AEM HTTP API produces outdated code.
 - **Skipping error handling** results in actions that return unhelpful 500 errors. Always ask for statusCode and try/catch.
 - **Hardcoding credentials** instead of reading them from environment variables creates security risks.
-- **Reusing namespaces** without realizing it, deploying a second app to the same Console project namespace overwrites the first. Create a separate Console project for each app.
+- **Reusing namespaces** without realizing it - deploying a second app to the same Console project namespace overwrites the first. Create a separate Console project for each app.
 
-> **See also:** [AI Use Cases with App Builder](../../resources/ai-use-cases.md): Learn what you can build with AI on App Builder (MCP servers, documentation assistants, AI agents, and more).
+> **See also:** [AI Use Cases with App Builder](../../resources/ai-use-cases.md) - Learn what you can build with AI on App Builder (MCP servers, documentation assistants, AI agents, and many more).
 
 ## Resources
 
