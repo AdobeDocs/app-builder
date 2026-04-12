@@ -13,6 +13,8 @@ title: AI-Powered Development Tools for App Builder
 description: Learn how to use AI coding assistants like Cursor, GitHub Copilot, and Claude to accelerate App Builder development
 ---
 
+# AI-Powered Development Tools for App Builder
+
 Learn how to use modern AI coding assistants (Cursor, GitHub Copilot, Claude) to accelerate App Builder development. AI tools can help you build App Builder applications faster, but they need the right context about the platform.
 
 ## Building with AI and App Builder Skills
