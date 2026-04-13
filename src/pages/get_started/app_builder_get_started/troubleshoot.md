@@ -18,7 +18,7 @@ This is a guide for troubleshooting some of the most common issues you may encou
 
 ## General debugging
 
-When your action code doesn't work as expected, you may want to check the logs to investigate what went wrong. App Builder provides the [Logging SDK](https://github.com/adobe/aio-lib-core-logging) for this; please check out [App Builder's Application Logging](../guides/application_logging.md) for more details.
+When your action code doesn't work as expected, you may want to check the logs to investigate what went wrong. App Builder provides the [Logging SDK](https://github.com/adobe/aio-lib-core-logging) for this; please check out [App Builder's Application Logging](../../guides/app_builder_guides/application_logging/logging.md) for more details.
 
 To see the latest activations of your project, run this command:
 

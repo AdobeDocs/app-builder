@@ -17,7 +17,85 @@ description: Learn how to use AI coding assistants like Cursor, GitHub Copilot, 
 
 Learn how to use modern AI coding assistants (Cursor, GitHub Copilot, Claude) to accelerate App Builder development. AI tools can help you build App Builder applications faster, but they need the right context about the platform.
 
+## Building with AI and App Builder Skills
+
+**App Builder Skills** are structured knowledge files that teach AI agents how App Builder works. Skills eliminate verbose prompts. Instead of explaining templates, auth patterns, and CLI commands every time, the agent already knows them.
+
+Skills work with any AI coding tool that can read project files: Cursor, VS Code with Copilot, Windsurf, Claude Code, and others. Add an `AGENTS.md` or context file to your project root and the AI picks up App Builder conventions automatically. The example below was built end-to-end in [Cursor](https://cursor.com) using skills in the `.cursor/skills/` directory, but the same patterns apply to other IDEs.
+
+### Available skills
+
+- **appbuilder-project-init** - Scaffolds projects, maps intent to templates, runs `aio app init`
+- **appbuilder-action-scaffolder** - Creates Runtime actions with validation, error handling, SDK wiring
+- **appbuilder-ui-scaffolder** - Builds React Spectrum UIs for App Builder frontends
+- **appbuilder-testing** - Unit and integration test patterns
+- **appbuilder-e2e-testing** - End-to-end testing with Playwright
+- **appbuilder-cicd-pipeline** - CI/CD with GitHub Actions
+
+Adobe Skills are open source: [github.com/adobe/skills](https://github.com/adobe/skills)
+
+### Setup (Cursor)
+
+1. Open your project folder in Cursor. The `.cursor/skills/` directory contains App Builder skills that Cursor reads automatically.
+2. Make sure the `aio` CLI is installed and you're logged in (`aio login`).
+3. That's it. Ask Cursor to build something.
+
+For other IDEs, add an `AGENTS.md` file to your project root with App Builder context (see [Setting up project context files](#setting-up-project-context-files) below). Any AI tool with terminal access can run `aio` CLI commands to scaffold, deploy, and manage Console projects.
+
+### Example: building a unit converter app (built in Cursor)
+
+With skills, you don't need to specify templates, auth patterns, or deployment steps. The agent figures it all out.
+
+**Prompt:**
+
+```
+Using Cursor skills, create an App Builder unit converter app under the
+unit-converter folder. The backend action should convert between length
+(miles, km, feet, meters, inches, cm), weight (lbs, kg, oz, grams), and
+temperature (F, C, K). The frontend should let users pick a category, pick
+a conversion, enter a value, and see results in a table. Create a new
+Console project for it and deploy.
+```
+
+**What the agent does (no user intervention):**
+
+1. Reads the `appbuilder-project-init` skill, selects `@adobe/generator-app-excshell`
+2. Scaffolds the project with `aio app init`
+3. Creates a Console project via `aio console project create`
+4. Downloads workspace credentials and populates `.env`
+5. Removes `require-adobe-auth` from the manifest (reads the action scaffolder skill to handle both layers)
+6. Writes the backend action with conversion logic, input validation, and error handling
+7. Writes the React Spectrum frontend with Pickers, NumberField, and TableView
+8. Deploys with `aio app deploy`
+
+**Result:** A live app at `https://<namespace>.adobeio-static.net/index.html`
+
+See the deployed example: [https://52381-unitconverter-stage.adobeio-static.net/index.html](https://52381-unitconverter-stage.adobeio-static.net/index.html)
+
+### What skills handle for you
+
+Without skills, you'd need to tell the AI all of this in every prompt:
+
+| Concern | Without skills | With skills |
+|---|---|---|
+| Template selection | "Use `@adobe/generator-app-excshell`" | Agent reads the template decision table |
+| Authentication | "Remove `require-adobe-auth` from ext.config.yaml AND clear the `requiredHeaders` array in the action code" | Agent knows about the two-layer auth pattern |
+| Action patterns | "Export a `main` function, return `statusCode` and `body`, use `@adobe/aio-sdk` logger" | Agent follows the action scaffolder |
+| Console setup | Manual - download JSON, copy namespace/auth to `.env` | Agent runs `aio console project create` and wires it up |
+| API versions | "Use Workfront v21.0, AEM OpenAPI, Analytics 2.0" | Documented in skill references |
+| Deployment | "Run `aio app deploy --force-deploy`" | Agent deploys automatically |
+
+### Adding skills to your project
+
+Copy the `.cursor/skills/` directory into your project. Skills are portable - they work in any App Builder project opened in Cursor.
+
+```bash
+cp -r /path/to/skills/.cursor/skills/ your-project/.cursor/skills/
+```
+
 ## Key tips for effective AI prompts
+
+Whether or not you use skills, these tips produce better results from any AI assistant:
 
 **Be specific about the platform.** Say "App Builder action" or "Adobe I/O Runtime" instead of "serverless function" (which makes AI return AWS Lambda patterns).
 
@@ -35,21 +113,9 @@ Learn how to use modern AI coding assistants (Cursor, GitHub Copilot, Claude) to
 
 **Ask for logging.** Request `@adobe/aio-sdk` logger usage in generated code.
 
-Here is an example prompt that follows all of these tips:
-
-```
-I'm building an App Builder action in src/workfront-ui-1/actions/. Create an
-action that fetches open tasks from Workfront API v21.0. Use OAuth S2S for
-authentication with credentials from environment variables (ADOBE_CLIENT_ID,
-ADOBE_CLIENT_SECRET). Follow App Builder action patterns with statusCode and
-body. Reference developer.adobe.com/app-builder/docs/ for best practices.
-```
-
-> **See also:** [AI Use Cases with App Builder](../../resources/ai-use-cases.md) - Learn what you can build with AI on App Builder (MCP servers, documentation assistants, AI agents, and more).
-
 ## Setting up project context files
 
-AI assistants generate better code when they understand your project structure. You can add context files to your project root that AI tools will read automatically.
+AI assistants generate better code when they understand your project structure. You can add context files that AI tools read automatically.
 
 **AGENTS.md** provides general project context. Create this file at your project root:
 
@@ -78,117 +144,24 @@ AI assistants generate better code when they understand your project structure. 
 ## Documentation
 - App Builder and Runtime: https://developer.adobe.com/app-builder/docs/
 ```
-**Adobe Skills** (`.skills/` directory) provide structured, reusable knowledge for AI agents. Use skills to define domain-specific patterns like extension points, API versions, and authentication flows that AI can reference across projects. Learn more at [github.com/adobe/skills](https://github.com/adobe/skills).
 
-**For Cursor**, add a `.cursorrules` file at your project root with the same information. Cursor reads this file automatically when you open the project.
+**For Cursor**, add skills to `.cursor/skills/` (recommended) or a `.cursorrules` file at your project root.
 
 **For GitHub Copilot**, add a `.github/copilot-instructions.md` file. Copilot reads this file to understand your project conventions.
 
-All three formats serve the same purpose: giving the AI assistant context about App Builder action patterns, authentication, API versions, and extension points.
-
-## Rapid prototyping with AI
-
-App Builder is just Node.js, so AI-generated code works with minimal changes. Here is a typical workflow:
-
-1. Use Cursor or Copilot to build your app logic and APIs first. Focus on business logic without worrying about deployment.
-
-2. Initialize an App Builder project and copy your code in:
-
-```bash
-aio app init my-app
-cd my-app
-cp my-prototype.js src/dx-excshell-1/actions/myaction/index.js
-aio app deploy
-```
-
-3. Ask AI to adapt the code to App Builder patterns. For example: "Convert this Express.js endpoint to an App Builder action with proper statusCode, body, and OAuth S2S authentication."
-
-This works well because App Builder uses standard Node.js, deployment is a single command (`aio app deploy`), and AI assistants already know serverless patterns that map directly to App Builder actions.
-
-## Example: creating a new action
-
-Here is a prompt and the code an AI assistant would generate:
-
-**Prompt:**
-
-```
-I'm in src/workfront-ui-1/actions/. Create fetch-tasks/index.js that queries
-Workfront API v21.0 for open tasks in a project. Accept projectId param.
-Use @adobe/aio-sdk logger. Return JSON with statusCode 200 and tasks array
-sorted by due date. OAuth S2S from environment variables.
-```
-
-**Generated code:**
-
-```javascript
-const { Core } = require('@adobe/aio-sdk');
-const fetch = require('node-fetch');
-
-async function main(params) {
-  const logger = Core.Logger('fetch-tasks', { level: params.LOG_LEVEL || 'info' });
-
-  try {
-    const { projectId } = params;
-
-    if (!projectId) {
-      return { statusCode: 400, body: { error: 'projectId required' } };
-    }
-
-    const response = await fetch(
-      `https://${params.WORKFRONT_DOMAIN}/attask/api/v21.0/task/search?projectID=${projectId}&status=NEW,INP`,
-      { headers: { 'Sessionid': params.WORKFRONT_API_KEY } }
-    );
-
-    const data = await response.json();
-    const tasks = (data.data || []).sort((a, b) =>
-      new Date(a.plannedCompletionDate) - new Date(b.plannedCompletionDate)
-    );
-
-    logger.info(`Fetched ${tasks.length} tasks`);
-    return { statusCode: 200, body: { tasks } };
-
-  } catch (error) {
-    logger.error(error);
-    return { statusCode: 500, body: { error: error.message } };
-  }
-}
-
-exports.main = main;
-```
-
-Notice how the generated code follows App Builder conventions: it exports a `main` function, returns `statusCode` and `body`, uses the `@adobe/aio-sdk` logger, and reads credentials from `params` (environment variables).
-
-## Example: migrating a deprecated API
-
-AI assistants can help you migrate from deprecated APIs. Use a prompt like:
-
-```
-Convert this AEM HTTP API code to use AEM OpenAPI instead. I'm in
-src/aem-cf-console-admin-1/actions/. Update to use OpenAPI for Content
-Fragments with OAuth bearer token from params.
-```
-
-The AI will identify deprecated HTTP API patterns, suggest OpenAPI endpoints, update authentication from basic auth to OAuth bearer, and maintain the App Builder action structure.
-
-## Example: adding error handling
-
-Ask AI to improve error handling in existing actions:
-
-```
-Add comprehensive error handling to this App Builder action. Include
-input validation with 400 responses, API error handling with specific
-status codes, logging at each step, and proper try/catch wrapping.
-```
-
-The AI will add parameter validation, specific error responses (400, 401, 500), logger calls at each step, and clean error messages.
+All formats serve the same purpose: giving the AI assistant context about App Builder action patterns, authentication, API versions, and extension points.
 
 ## Common mistakes to avoid
 
 - **Saying "serverless function"** makes AI assume AWS Lambda patterns instead of App Builder.
 - **Mentioning JWT** leads to deprecated authentication code. Always specify OAuth Server-to-Server.
+- **Forgetting two-layer auth** - `require-adobe-auth` in the manifest AND `requiredHeaders` in action code are independent. Both must be addressed when disabling auth.
 - **Using old API versions** like Workfront v15.0 or AEM HTTP API produces outdated code.
 - **Skipping error handling** results in actions that return unhelpful 500 errors. Always ask for statusCode and try/catch.
 - **Hardcoding credentials** instead of reading them from environment variables creates security risks.
+- **Reusing namespaces** without realizing it - deploying a second app to the same Console project namespace overwrites the first. Create a separate Console project for each app.
+
+> **See also:** [AI Use Cases with App Builder](../../resources/ai-use-cases.md) - Learn what you can build with AI on App Builder (MCP servers, documentation assistants, AI agents, and many more).
 
 ## Resources
 
@@ -196,11 +169,3 @@ The AI will add parameter validation, specific error responses (400, 401, 500), 
 - [AEM AI Coding Agents Guide](https://www.aem.live/developer/ai-coding-agents)
 - [MCP Server Generator](https://github.com/adobe/generator-app-remote-mcp-server-generic)
 - [Adobe Skills](https://github.com/adobe/skills)
-
-## Next steps
-
-1. **Set up context files** - Create AGENTS.md and .cursorrules
-2. **Create Adobe Skills** - Use the `.skills/` pattern (shown above) to give AI agents structured knowledge about your App Builder patterns and APIs
-3. **Test AI prompts** - Try the example workflows above
-4. **Iterate** - Refine prompts based on AI output quality
-5. **Share learnings** - Document what works for your team
