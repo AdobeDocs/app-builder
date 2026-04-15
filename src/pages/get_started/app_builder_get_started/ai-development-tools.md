@@ -51,7 +51,14 @@ With skills, you don't need to specify templates, auth patterns, or deployment s
 **Prompt:**
 
 ```
-Using the App Builder skills at github.com/adobe/skills, create an App Builder unit converter app under the unit-converter folder. The backend action should convert between length (miles, km, feet, meters, inches, cm), weight (lbs, kg, oz, grams), and temperature (F, C, K). The frontend should let users pick a category, pick a conversion, enter a value, and see results in a table. Create a new Console project for it and deploy.
+Using the App Builder skills at github.com/adobe/skills,
+create an App Builder unit converter app under the
+unit-converter folder. The backend action should convert
+between length (miles, km, feet, meters, inches, cm),
+weight (lbs, kg, oz, grams), and temperature (F, C, K).
+The frontend should let users pick a category, pick a
+conversion, enter a value, and see results in a table.
+Create a new Console project for it and deploy.
 ```
 
 **What the agent does (no user intervention):**
