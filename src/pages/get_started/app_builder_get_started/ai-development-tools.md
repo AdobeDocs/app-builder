@@ -36,9 +36,11 @@ Adobe Skills are open source: [github.com/adobe/skills](https://github.com/adobe
 
 ### Setup (Cursor)
 
-1. Open your project folder in Cursor. The `.cursor/skills/` directory contains App Builder skills that Cursor reads automatically.
+1. Reference the App Builder skills in your prompt. E.g. *"Using the App Builder skills at [github.com/adobe/skills](https://github.com/adobe/skills), build me a..."* Cursor will fetch the relevant skill automatically.
 2. Make sure the `aio` CLI is installed and you're logged in (`aio login`).
 3. That's it. Ask Cursor to build something.
+
+Cursor reads skills on-demand and only the relevant skill is loaded when the agent needs it, so token usage stays minimal regardless of how many skills are available.
 
 For other IDEs, add an `AGENTS.md` file to your project root with App Builder context (see [Setting up project context files](#setting-up-project-context-files) below). Any AI tool with terminal access can run `aio` CLI commands to scaffold, deploy, and manage Console projects.
 
@@ -49,12 +51,7 @@ With skills, you don't need to specify templates, auth patterns, or deployment s
 **Prompt:**
 
 ```
-Using Cursor skills, create an App Builder unit converter app under the
-unit-converter folder. The backend action should convert between length
-(miles, km, feet, meters, inches, cm), weight (lbs, kg, oz, grams), and
-temperature (F, C, K). The frontend should let users pick a category, pick
-a conversion, enter a value, and see results in a table. Create a new
-Console project for it and deploy.
+Using the App Builder skills at github.com/adobe/skills, create an App Builder unit converter app under the unit-converter folder. The backend action should convert between length (miles, km, feet, meters, inches, cm), weight (lbs, kg, oz, grams), and temperature (F, C, K). The frontend should let users pick a category, pick a conversion, enter a value, and see results in a table. Create a new Console project for it and deploy.
 ```
 
 **What the agent does (no user intervention):**
@@ -145,7 +142,7 @@ AI assistants generate better code when they understand your project structure. 
 - App Builder and Runtime: https://developer.adobe.com/app-builder/docs/
 ```
 
-**For Cursor**, add skills to `.cursor/skills/` (recommended) or a `.cursorrules` file at your project root.
+**For Cursor**, point to the [App Builder skills folder](https://github.com/adobe/skills) as described in the setup section above.
 
 **For GitHub Copilot**, add a `.github/copilot-instructions.md` file. Copilot reads this file to understand your project conventions.
 
