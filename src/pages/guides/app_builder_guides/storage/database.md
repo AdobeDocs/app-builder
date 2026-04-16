@@ -100,6 +100,7 @@ async function main(params) {
 This example has the following requirements:
 
 - The AIO project workspace must include the **App Builder Data Services** API. See [App Builder Data Services API](#app-builder-data-services-api) for details.
+
 - The `include-ims-credentials` annotation for the runtime action must be set to `true` in the `app.config.yaml` application manifest.
 
 The `include-ims-credentials` annotation will look similar to the following example:
