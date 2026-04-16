@@ -126,6 +126,8 @@ Called without an explicit region, `libDb.init()` will initialize the library ei
 
 Using `aio-lib-db` in a runtime action is documented at [Runtime actions with Database Storage](./db-runtime-actions.md).
 
+To automate collection and index setup on every deployment, see [Setting Up Collections and Indexes](./db-post-deploy-setup.md).
+
 ## Usage quotas and limits
 
 These are documented at [Usage quotas and limits](index.md#usage-quotas-and-limits).
