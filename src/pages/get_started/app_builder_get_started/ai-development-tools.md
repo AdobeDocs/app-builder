@@ -15,6 +15,8 @@ description: Learn how to use AI coding assistants like Cursor, GitHub Copilot, 
 
 # AI-Powered Development Tools for App Builder
 
+App Builder isn't just for developers. With AI coding assistants, anyone who can describe what they need can build on the platform. Marketers automating campaign workflows, designers prototyping interactive experiences, analysts building custom dashboards, product managers wiring up cross-app integrations, sales teams creating demo environments, executives visualizing pipeline data, project managers orchestrating approvals. If you can write a sentence about what you want, AI can turn it into a working App Builder application. The skills and tools on this page make that possible regardless of your role or technical background.
+
 Learn how to use modern AI coding assistants (Cursor, GitHub Copilot, Claude) to accelerate App Builder development. AI tools can help you build App Builder applications faster, but they need the right context about the platform.
 
 ## Building with AI and App Builder Skills
