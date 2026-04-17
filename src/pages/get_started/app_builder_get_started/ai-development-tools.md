@@ -171,7 +171,7 @@ All formats serve the same purpose: giving the AI assistant context about App Bu
 
 ## Resources
 
-- [App Builder Documentation](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
+- [App Builder Documentation](https://developer.adobe.com/app-builder/docs/)
 - [AEM AI Coding Agents Guide](https://www.aem.live/developer/ai-coding-agents)
 - [MCP Server Generator](https://github.com/adobe/generator-app-remote-mcp-server-generic)
 - [Adobe Skills](https://github.com/adobe/skills)
