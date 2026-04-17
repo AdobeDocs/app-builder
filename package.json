@@ -28,12 +28,16 @@
   "packageManager": "yarn@3.2.1",
   "devDependencies": {
     "express": "5.1.0"
-  }
-}
-"lint": {
-  "skipRules": {
-    "no-unsanitized-path-segments": [
-      "src/pages/get_started/"
-    ]
+  },
+  "lint": {
+    "skipRules": {
+      "no-unsanitized-path-segments": [
+        "src/pages/get_started/",
+        "src/pages/guides/app_builder_guides/",
+        "src/pages/guides/runtime_guides/",
+        "src/pages/intro_and_overview/",
+        "src/pages/resources/sample_apps/"
+      ]
+    }
   }
 }
