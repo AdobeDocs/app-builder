@@ -15,6 +15,8 @@ description: Learn how to use AI coding assistants like Cursor, GitHub Copilot, 
 
 # AI-Powered Development Tools for App Builder
 
+App Builder isn't just for developers anymore. With the advent of AI coding assistants, anyone who can describe what they need can build on the platform. Marketers automating workflows, designers prototyping experiences, analysts building dashboards, PMs wiring up integrations. If you can write a sentence about what you want, AI can turn it into a working App Builder application. The skills and tools on this page make that possible regardless of your technical background.
+
 Learn how to use modern AI coding assistants (Cursor, GitHub Copilot, Claude) to accelerate App Builder development. AI tools can help you build App Builder applications faster, but they need the right context about the platform.
 
 ## Building with AI and App Builder Skills
@@ -169,7 +171,7 @@ All formats serve the same purpose: giving the AI assistant context about App Bu
 
 ## Resources
 
-- [App Builder Documentation](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
+- [App Builder Documentation](https://developer.adobe.com/app-builder/docs/)
 - [AEM AI Coding Agents Guide](https://www.aem.live/developer/ai-coding-agents)
 - [MCP Server Generator](https://github.com/adobe/generator-app-remote-mcp-server-generic)
 - [Adobe Skills](https://github.com/adobe/skills)
