@@ -52,7 +52,7 @@ With skills, you don't need to specify templates, auth patterns, or deployment s
 
 **Prompt:**
 
-```
+```text
 Using the App Builder skills at github.com/adobe/skills,
 create an App Builder unit converter app under the
 unit-converter folder. The backend action should convert
@@ -83,7 +83,7 @@ See the deployed example: [https://52381-unitconverter-stage.adobeio-static.net/
 Without skills, you'd need to tell the AI all of this in every prompt:
 
 | Concern | Without skills | With skills |
-|---|---|---|
+| --- | --- | --- |
 | Template selection | "Use `@adobe/generator-app-excshell`" | Agent reads the template decision table |
 | Authentication | "Remove `require-adobe-auth` from ext.config.yaml AND clear the `requiredHeaders` array in the action code" | Agent knows about the two-layer auth pattern |
 | Action patterns | "Export a `main` function, return `statusCode` and `body`, use `@adobe/aio-sdk` logger" | Agent follows the action scaffolder |
@@ -93,7 +93,7 @@ Without skills, you'd need to tell the AI all of this in every prompt:
 
 ### Adding skills to your project
 
-Copy the `.cursor/skills/` directory into your project. Skills are portable - they work in any App Builder project opened in Cursor.
+Point Cursor at the public skills repo: [github.com/adobe/skills](https://github.com/adobe/skills). Skills load on-demand from the prompt; you do not need to copy files into your tree for Cursor to use them. To vendor skills for offline use or other tools, clone the repo and reference the `.cursor/skills/` paths from your machine.
 
 ```bash
 cp -r /path/to/skills/.cursor/skills/ your-project/.cursor/skills/
@@ -125,7 +125,7 @@ AI assistants generate better code when they understand your project structure. 
 
 **AGENTS.md** provides general project context. Create this file at your project root:
 
-```
+```text
 # App Builder Project Context
 
 ## Extension Points
@@ -171,7 +171,7 @@ All formats serve the same purpose: giving the AI assistant context about App Bu
 
 ## Resources
 
-- [App Builder Documentation](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
+- [App Builder Documentation](https://developer.adobe.com/app-builder/docs/)
 - [AEM AI Coding Agents Guide](https://www.aem.live/developer/ai-coding-agents)
 - [MCP Server Generator](https://github.com/adobe/generator-app-remote-mcp-server-generic)
 - [Adobe Skills](https://github.com/adobe/skills)
