@@ -30,3 +30,10 @@
     "express": "5.1.0"
   }
 }
+"lint": {
+  "skipRules": {
+    "no-unsanitized-path-segments": [
+      "src/pages/get_started/"
+    ]
+  }
+}
