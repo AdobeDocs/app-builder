@@ -4,6 +4,28 @@ Stay up to date with the latest features, improvements, and bug fixes in App Bui
 
 ## April 2026
 
+*April 17, 2026*
+
+### @adobe/aio-cli-plugin-console 5.3.0
+
+#### New Features
+
+- Added `aio console api list` command to list API services available to the selected Organization (flags services that require a product profile)
+- Added `aio console workspace api list` command to list API services subscribed to a Workspace, including their product profiles
+- Added `aio console workspace api add` command to subscribe one or more API services to a Workspace by service code, using OAuth Server-to-Server credentials
+- Added repeatable `--license-config '<sdkCode>=<profileNameOrId>[,...]'` flag on `workspace api add` for services that require a product profile (e.g. Adobe Analytics)
+- Together with `aio console project create` and `aio console workspace create` (5.2.0), this completes a fully non-interactive App Builder project bootstrap workflow for scripted and agentic use cases
+
+#### Upgrade Instructions
+
+To use the update, reinstall the aio-cli:
+
+```
+npm install -g @adobe/aio-cli
+```
+
+[Full release changes](https://github.com/adobe/aio-cli-plugin-console/releases/tag/5.3.0)
+
 *April 1, 2026*
 
 ### @adobe/aio-cli-plugin-console 5.2.0
