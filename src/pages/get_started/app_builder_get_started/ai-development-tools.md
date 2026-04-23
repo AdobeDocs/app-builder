@@ -78,7 +78,7 @@ Create a new Console project for it and deploy.
 
 See the deployed example: [https://52381-unitconverter-stage.adobeio-static.net/index.html](https://52381-unitconverter-stage.adobeio-static.net/index.html)
 
-You can also [try](https://developer.adobe.com/app-builder/trial) App Builder (currently requires an IMS org).
+You can also [try](https://developer.adobe.com/app-builder/trial) App Builder (currently requires an IMS org) using the trial link provided.
 
 ### What skills handle for you
 
