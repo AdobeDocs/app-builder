@@ -78,6 +78,8 @@ Create a new Console project for it and deploy.
 
 See the deployed example: [https://52381-unitconverter-stage.adobeio-static.net/index.html](https://52381-unitconverter-stage.adobeio-static.net/index.html)
 
+You can also [try](https://developer.adobe.com/app-builder/trial/) App Builder (currently requires an IMS org).
+
 ### What skills handle for you
 
 Without skills, you'd need to tell the AI all of this in every prompt:
@@ -175,3 +177,4 @@ All formats serve the same purpose: giving the AI assistant context about App Bu
 - [AEM AI Coding Agents Guide](https://www.aem.live/developer/ai-coding-agents)
 - [MCP Server Generator](https://github.com/adobe/generator-app-remote-mcp-server-generic)
 - [Adobe Skills](https://github.com/adobe/skills)
+- [App Builder Trial](https://developer.adobe.com/app-builder/trial/)
