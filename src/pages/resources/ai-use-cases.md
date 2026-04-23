@@ -169,5 +169,5 @@ Contributions welcome for Adobe API integrations (Analytics, AEM, Campaign, Targ
 - [AI-Powered Development Tools](../get_started/app_builder_get_started/ai-development-tools.md)
 - [Agent Skills Specification](https://agentskills.io/specification)
 - [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk)
-- [DocuBot Example](https://github.com/rokapooradobe/adobe-docubot)
 - [Adobe Developer Forums](https://experienceleaguecommunities.adobe.com/)
+- [App Builder Trial](https://developer.adobe.com/app-builder/trial)
