@@ -70,32 +70,33 @@ Note: This guide refers to the "root of your App Builder app". The root of your 
 
 ## Step 4: Add secrets to your GitHub repository
 
-Before you can deploy your app from the CI/CD pipeline using GitHub Actions, you must add your application secrets to your repository. To do so:
+Before you can deploy your app from the CI/CD pipeline using GitHub Actions, you must add your application secrets to your repository. App Builder uses [GitHub Actions environments](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment) to scope secrets per deployment target. To set up the `stage` environment:
 
 1. Open your GitHub repository
-2. Navigate to the `Settings` tab > `Secrets and variables` on the left nav > `Actions`
-3. Click on `New repository secret`. Note: App Builder does not support environment secrets yet. Ensure you add the secrets as repository secrets and not environment secrets.
-4. Enter the secrets as key-value pairs in the Name and Secret text inputs respectively.
-5. Click `Add Secret`
+2. Navigate to the `Settings` tab > `Environments` on the left nav
+3. Click `New environment`, name it `stage`, and click `Configure environment`
+4. Under `Environment secrets`, click `Add secret`
+5. Enter the secrets as key-value pairs in the Name and Secret text inputs respectively
+6. Click `Add secret`
 
-You must add the following secrets to your GitHub repository to ensure your CI/CD pipeline can test Pull Requests and deploy your application.
+You must add the following secrets to the `stage` environment to ensure your CI/CD pipeline can test Pull Requests and deploy your application.
 
-|    | Workspace  | Secret Name                                  | Required for which workflow   |
-|----|------------|----------------------------------------------|-------------------------------|
-|  1 | Stage      | CLIENTID_STAGE                               | deploy_stage.yml, pr_test.yml |
-|  2 | Stage      | CLIENTSECRET_STAGE                           | deploy_stage.yml, pr_test.yml |
-|  3 | Stage      | TECHNICALACCID_STAGE                         | deploy_stage.yml, pr_test.yml |
-|  4 | Stage      | TECHNICALACCEMAIL_STAGE                      | deploy_stage.yml, pr_test.yml |
-|  5 | Stage      | IMSORGID_STAGE                               | deploy_stage.yml, pr_test.yml |
-|  6 | Stage      | SCOPES_STAGE                                 | deploy_stage.yml, pr_test.yml |
-|  7 | Stage      | AIO_RUNTIME_NAMESPACE_STAGE                  | deploy_stage.yml, pr_test.yml |
-|  8 | Stage      | AIO_RUNTIME_AUTH_STAGE                       | deploy_stage.yml              |
-|  9 | Stage      | AIO_PROJECT_ID_STAGE                         | deploy_stage.yml              |
-| 10 | Stage      | AIO_PROJECT_NAME_STAGE                       | deploy_stage.yml              |
-| 11 | Stage      | AIO_PROJECT_ORG_ID_STAGE                     | deploy_stage.yml              |
-| 12 | Stage      | AIO_PROJECT_WORKSPACE_ID_STAGE               | deploy_stage.yml              |
-| 13 | Stage      | AIO_PROJECT_WORKSPACE_NAME_STAGE             | deploy_stage.yml              |
-| 14 | Stage      | AIO_PROJECT_WORKSPACE_DETAILS_SERVICES_STAGE | deploy_stage.yml              |
+|    | Workspace  | Secret Name                              | Required for which workflow   |
+|----|------------|------------------------------------------|-------------------------------|
+|  1 | Stage      | CLIENTID                                 | deploy_stage.yml, pr_test.yml |
+|  2 | Stage      | CLIENTSECRET                             | deploy_stage.yml, pr_test.yml |
+|  3 | Stage      | TECHNICALACCID                           | deploy_stage.yml, pr_test.yml |
+|  4 | Stage      | TECHNICALACCEMAIL                        | deploy_stage.yml, pr_test.yml |
+|  5 | Stage      | IMSORGID                                 | deploy_stage.yml, pr_test.yml |
+|  6 | Stage      | SCOPES                                   | deploy_stage.yml, pr_test.yml |
+|  7 | Stage      | AIO_RUNTIME_NAMESPACE                    | deploy_stage.yml, pr_test.yml |
+|  8 | Stage      | AIO_RUNTIME_AUTH                         | deploy_stage.yml              |
+|  9 | Stage      | AIO_PROJECT_ID                           | deploy_stage.yml              |
+| 10 | Stage      | AIO_PROJECT_NAME                         | deploy_stage.yml              |
+| 11 | Stage      | AIO_PROJECT_ORG_ID                       | deploy_stage.yml              |
+| 12 | Stage      | AIO_PROJECT_WORKSPACE_ID                 | deploy_stage.yml              |
+| 13 | Stage      | AIO_PROJECT_WORKSPACE_NAME               | deploy_stage.yml              |
+| 14 | Stage      | AIO_PROJECT_WORKSPACE_DETAILS_SERVICES   | deploy_stage.yml              |
 
 
 To obtain the values for each of these secrets in the correct format, use the following script to print your secrets to your terminal window.
@@ -175,20 +176,20 @@ AIO_PROJECT_WORKSPACE_DETAILS_SERVICES:   [{"code":"AdobeIOManagementAPISDK","na
 
 <InlineAlert slots="text" />
 
-Note: The script outputs the variables without the `_STAGE` suffix, you'll need to add the suffix to the secret name while storing it in GitHub Secrets. You must match the secret names exactly to the names mentioned in the table	.
+Note: Store each secret value directly under the name shown in the table above inside the `stage` environment. No suffix is needed — environment scoping ensures the correct secrets are used for each deployment target.
 
 
 ## Step 5: Add any custom secrets
 
-If your App Builder app requires other application secrets (such as API keys for third-party APIs), you will also need to store them in GitHub Secrets. To do so
+If your App Builder app requires other application secrets (such as API keys for third-party APIs), you will also need to store them in the `stage` GitHub Actions environment. To do so
 
 1. Add your secrets to `deploy_stage.yml` file. Add them under the `env` key under the `Deploy` step.
    ```yml
-   MY_CUSTOM_SECRET: ${{ secrets.MY_CUSTOM_SECRET_STAGE}}
+   MY_CUSTOM_SECRET: ${{ secrets.MY_CUSTOM_SECRET }}
    ```
    Adding the secret to the workflow definition is equivalent to adding the secret to the `.env` file locally. The CI/CD pipeline will ensure your action receives this secret during deployment.
 
-2. Save the value of `MY_CUSTOM_SECRET_STAGE` to your GitHub repository (steps are outlined in [Step 4](#step-4-add-secrets-to-your-github-repository)).
+2. Save the value of `MY_CUSTOM_SECRET` to the `stage` environment in your GitHub repository (steps are outlined in [Step 4](#step-4-add-secrets-to-your-github-repository)).
 
 ## Step 6: Repeat for Production workspace
 
@@ -196,26 +197,26 @@ Repeat steps 2-5 for the Production workspace. We have included some notes for e
 
 1. Step 2: Add I/O Management API to the Production workspace
 2. Step 3: Compute the `.aio` and `.env` files for your Production workspace
-3. Step 4: Once you've computed the `.aio` and `.env` file, you can run the `fetch-secrets.sh` script again to see the production values. However, this time, be sure to add the suffix `_PROD` instead of `_STAGE` while saving the secret in the GitHub repository. See table below.
-4. Step 5: Ensure that you pick the production values of your custom secrets and add it to the `deploy_prod.yml` file instead.
+3. Step 4: Once you've computed the `.aio` and `.env` file, you can run the `fetch-secrets.sh` script again to see the production values. In your GitHub repository, go to `Settings` > `Environments`, create a new environment named `production`, and add the secrets listed in the table below. Use the same secret names as in the `stage` environment — environment scoping keeps the values separate.
+4. Step 5: Ensure that you pick the production values of your custom secrets and add them to the `production` environment and to the `deploy_prod.yml` file instead.
 
 
-|    | Workspace  | Secret Name                                  | Required for which workflow   |
-|----|------------|----------------------------------------------|-------------------------------|
-|  1 | Production | CLIENTID_PROD                                | deploy_prod.yml               |
-|  2 | Production | CLIENTSECRET_PROD                            | deploy_prod.yml               |
-|  3 | Production | TECHNICALACCID_PROD                          | deploy_prod.yml               |
-|  4 | Production | TECHNICALACCEMAIL_PROD                       | deploy_prod.yml               |
-|  5 | Production | IMSORGID_PROD                                | deploy_prod.yml               |
-|  6 | Production | SCOPES_PROD                                  | deploy_prod.yml               |
-|  7 | Production | AIO_RUNTIME_NAMESPACE_PROD                   | deploy_prod.yml               |
-|  8 | Production | AIO_RUNTIME_AUTH_PROD                        | deploy_prod.yml               |
-|  9 | Production | AIO_PROJECT_ID_PROD                          | deploy_prod.yml               |
-| 10 | Production | AIO_PROJECT_NAME_PROD                        | deploy_prod.yml               |
-| 11 | Production | AIO_PROJECT_ORG_ID_PROD                      | deploy_prod.yml               |
-| 12 | Production | AIO_PROJECT_WORKSPACE_ID_PROD                | deploy_prod.yml               |
-| 13 | Production | AIO_PROJECT_WORKSPACE_NAME_PROD              | deploy_prod.yml               |
-| 14 | Production | AIO_PROJECT_WORKSPACE_DETAILS_SERVICES_PROD  | deploy_prod.yml               |
+|    | Workspace  | Secret Name                              | Required for which workflow   |
+|----|------------|------------------------------------------|-------------------------------|
+|  1 | Production | CLIENTID                                 | deploy_prod.yml               |
+|  2 | Production | CLIENTSECRET                             | deploy_prod.yml               |
+|  3 | Production | TECHNICALACCID                           | deploy_prod.yml               |
+|  4 | Production | TECHNICALACCEMAIL                        | deploy_prod.yml               |
+|  5 | Production | IMSORGID                                 | deploy_prod.yml               |
+|  6 | Production | SCOPES                                   | deploy_prod.yml               |
+|  7 | Production | AIO_RUNTIME_NAMESPACE                    | deploy_prod.yml               |
+|  8 | Production | AIO_RUNTIME_AUTH                         | deploy_prod.yml               |
+|  9 | Production | AIO_PROJECT_ID                           | deploy_prod.yml               |
+| 10 | Production | AIO_PROJECT_NAME                         | deploy_prod.yml               |
+| 11 | Production | AIO_PROJECT_ORG_ID                       | deploy_prod.yml               |
+| 12 | Production | AIO_PROJECT_WORKSPACE_ID                 | deploy_prod.yml               |
+| 13 | Production | AIO_PROJECT_WORKSPACE_NAME               | deploy_prod.yml               |
+| 14 | Production | AIO_PROJECT_WORKSPACE_DETAILS_SERVICES   | deploy_prod.yml               |
 
 
 ## Step 7: Repeat for any other shared workspace
@@ -224,6 +225,4 @@ You can set up CI/CD to deploy to any workspace. To do so:
 
 1. Create another GitHub workflow `deploy_workspace.yml` in the `.github/workflows` folder.
 2. You can freely customize the trigger for the workflow and other aspects of deployment. Read the documentation for GitHub workflows [here](https://docs.github.com/en/actions/how-tos/write-workflows). Also see the [GitHub actions published by App Builder](./cicd-for-app-builder-apps.md#github-actions-for-aio-cli).
-3. Similar to how you performed the steps 2-6 from the Production workspace, you can repeat them for another workspace. When you save your secrets in the GitHub Repository ensure that
-   1. You have added an appropriate suffix to the secret name.
-   2. The secret name matches the name you have used in `deploy_workspace.yml` file.
+3. Similar to how you performed steps 2-6 for the Production workspace, you can repeat them for another workspace. In the new workflow file, set the `environment` field on the job to the name of the GitHub Actions environment you created for that workspace. Add the required secrets to that environment in your GitHub repository — no suffix is needed as the environment provides the scoping.
