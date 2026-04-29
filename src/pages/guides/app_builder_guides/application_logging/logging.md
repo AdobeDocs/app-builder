@@ -90,6 +90,8 @@ The Logs UI displays logs from all your Runtime action activations, including bo
   - A short action name (e.g., `myaction`)
 - **Free-text search**: Search within log messages for specific content such as error messages, log levels (`info`, `error`, `warn`), or any text present in your logs
 - **Log stream filter**: Filter by stream (All, stdout, or stderr). `LOG_LEVEL` controls which `logger.*()` messages are emitted, but the App Builder SDK writes all logger output to stdout by default (including `logger.error()`). stderr typically contains uncaught exceptions and `console.error()`.
+- **Filter by action**: Use the Actions dropdown to narrow logs to one or more specific actions in your workspace
+- **Group by Activation ID**: Toggle the grouped view to collapse all log lines from the same action invocation into a single expandable row
 
 ### When to use the Console UI
 
