@@ -4,6 +4,24 @@ Stay up to date with the latest features, improvements, and bug fixes in App Bui
 
 ## April 2026
 
+*April 27, 2026*
+
+### @adobe/aio-apps-action 4.1.0
+
+#### New Features
+
+- Export Service-to-Server (S2S) credentials as environment variables during `aio app deploy`, making them available to actions at deploy time
+
+#### Upgrade Instructions
+
+To use the update, pin the action to `4.1.0` in your GitHub Actions workflow:
+
+```yaml
+uses: adobe/aio-apps-action@4.1.0
+```
+
+[Full release changes](https://github.com/adobe/aio-apps-action/releases/tag/4.1.0)
+
 *April 17, 2026*
 
 ### @adobe/aio-cli-plugin-console 5.3.0
