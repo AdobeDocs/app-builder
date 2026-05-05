@@ -1,3 +1,3 @@
 # Documentation
 
-Please see the [centralized README](https://github.com/AdobeDocs/adp-devsite-utils/blob/main/README.md).
+Please see the [ADP Developer Site Documentation](https://developer-stage.adobe.com/dev-docs-reference/).
