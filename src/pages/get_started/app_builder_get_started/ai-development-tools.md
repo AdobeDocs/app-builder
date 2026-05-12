@@ -22,7 +22,7 @@ Learn how to use modern AI coding assistants (Cursor, GitHub Copilot, Claude) to
 ## Why App Builder for AI
 
 - **No infrastructure:** Deploy in one command. No servers, no clusters.
-- **Scales automatically:"** From one user to thousands, no config changes.
+- **Scales automatically:** From one user to thousands, no config changes.
 - **Secure by default:** IMS (Identity management) auth and encryption included, not bolted on.
 - **Already included:** No extra license for existing App Builder customers.
 - **Adobe managed:** We run the platform. You build the app.
