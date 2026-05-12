@@ -24,7 +24,6 @@ Learn how to use modern AI coding assistants (Cursor, GitHub Copilot, Claude) to
 - **No infrastructure:** Deploy in one command. No servers, no clusters.
 - **Scales automatically:** From one user to thousands, no config changes.
 - **Secure by default:** IMS (Identity management) auth and encryption included, not bolted on.
-- **Already included:** No extra license for existing App Builder customers.
 - **Adobe managed:** We run the platform. You build the app.
 - **Usage-based pricing:** Pay for what you use. Nothing when idle.
 - **Minutes to production:** Not days. Not hours. Minutes.
