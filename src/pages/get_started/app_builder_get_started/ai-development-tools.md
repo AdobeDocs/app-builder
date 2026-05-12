@@ -19,6 +19,16 @@ App Builder isn't just for developers anymore. With the advent of AI coding assi
 
 Learn how to use modern AI coding assistants (Cursor, GitHub Copilot, Claude) to accelerate App Builder development. AI tools can help you build App Builder applications faster, but they need the right context about the platform.
 
+## Why App Builder for AI
+
+- **No infrastructure:** Deploy in one command. No servers, no clusters.
+- **Scales automatically:"** From one user to thousands, no config changes.
+- **Secure by default:** IMS (Identity management) auth and encryption included, not bolted on.
+- **Already included:** No extra license for existing App Builder customers.
+- **Adobe managed:** We run the platform. You build the app.
+- **Usage-based pricing:** Pay for what you use. Nothing when idle.
+- **Minutes to production:** Not days. Not hours. Minutes.
+
 ## Building with AI and App Builder Skills
 
 **App Builder Skills** are structured knowledge files that teach AI agents how App Builder works. Skills eliminate verbose prompts. Instead of explaining templates, auth patterns, and CLI commands every time, the agent already knows them.
@@ -174,6 +184,7 @@ All formats serve the same purpose: giving the AI assistant context about App Bu
 ## Resources
 
 - [App Builder Documentation](https://developer.adobe.com/app-builder/docs/)
+- [App Builder Adobe Summit Session: Build Fast, Secure AI-Powered Integrations with Adobe App Builder - OS605](https://business.adobe.com/summit/2026/sessions/build-fast-secure-aipowered-integrations-with-adob-os605.html)
 - [AEM AI Coding Agents Guide](https://www.aem.live/developer/ai-coding-agents)
 - [MCP Server Generator](https://github.com/adobe/generator-app-remote-mcp-server-generic)
 - [Adobe Skills](https://github.com/adobe/skills)
