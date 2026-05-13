@@ -89,7 +89,7 @@ then initialize the app and deploy.
 
 **Result:** A live app at `https://<namespace>.adobeio-static.net/index.html`
 
-See the deployed example: [https://52381-unitconverter-stage.adobeio-static.net/index.html](https://52381-unitconverter-stage.adobeio-static.net/index.html)
+See the deployed example here: [https://52381-unitconverter-stage.adobeio-static.net/index.html](https://52381-unitconverter-stage.adobeio-static.net/index.html)
 
 You can also [try](https://developer.adobe.com/app-builder/trial) App Builder using the trial link provided.
 
