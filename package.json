@@ -8,25 +8,26 @@
     "url": "https://github.com/AdobeDocs/app-builder"
   },
   "author": {
-    "name": "Stephan Ringel",
-    "url": "https://github.com/icaraps"
+    "name": "Tim Kim",
+    "url": "https://github.com/timkim"
+  },
+  "engines": {
+    "node": "^24.11.0"
   },
   "scripts": {
-    "dev": "node ./dev.mjs",
-    "buildNavigation": "npx --yes github:AdobeDocs/adp-devsite-utils buildNavigation -v",
-    "buildRedirections": "npx --yes github:AdobeDocs/adp-devsite-utils buildRedirections -v",
-    "renameFiles": "npx --yes github:AdobeDocs/adp-devsite-utils renameFiles -v",
-    "normalizeLinks": "npx --yes github:AdobeDocs/adp-devsite-utils normalizeLinks -v",
-    "buildSiteWideBanner": "npx --yes github:AdobeDocs/adp-devsite-utils buildSiteWideBanner -v",
-    "lint": "npx --yes github:AdobeDocs/adp-devsite-utils runLint -v",
-    "lint:errorOnly": "npx --yes github:AdobeDocs/adp-devsite-utils runLint",
-    "link:skipdeadlinks": "npx --yes github:AdobeDocs/adp-devsite-utils runLint --skip-dead-links -v",
-    "link:deadlinkonly": "npx --yes github:AdobeDocs/adp-devsite-utils runLint --dead-links-only -v",
-    "redirectCheck:stage": "npx --yes github:AdobeDocs/adp-devsite-utils redirectChecker stage --verbose",
-    "redirectCheck:prod": "npx --yes github:AdobeDocs/adp-devsite-utils redirectChecker prod --verbose"
-  },
-  "packageManager": "yarn@3.2.1",
-  "devDependencies": {
-    "express": "5.1.0"
+    "dev": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils dev",
+    "buildNavigation": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils buildNavigation -v",
+    "buildRedirections": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils buildRedirections -v",
+    "renameFiles": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils renameFiles -v",
+    "normalizeLinks": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils normalizeLinks -v",
+    "buildSiteWideBanner": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils buildSiteWideBanner -v",
+    "buildSiteMetadata": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils buildSiteMetadata -v",
+    "buildContributors": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils buildContributorsV2 -v",
+    "lint": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils runLint -v",
+    "lint:errorOnly": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils runLint",
+    "link:externalLinkOnly": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils runLint --external-links-only -v",
+    "link:checkAllLinks": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils runLint --internal-links-only --external-links-only -v",
+    "redirectCheck:stage": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils redirectChecker stage --verbose",
+    "redirectCheck:prod": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils redirectChecker prod --verbose"
   }
 }
