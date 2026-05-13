@@ -48,7 +48,7 @@ Adobe Skills are open source: [github.com/adobe/skills](https://github.com/adobe
 ### Setup (Cursor)
 
 1. Reference the App Builder skills in your prompt. E.g. *"Using the App Builder skills at [github.com/adobe/skills](https://github.com/adobe/skills), build me a..."* Cursor will fetch the relevant skill automatically.
-2. Make sure the `aio` CLI is installed and you're logged in (`aio login`).
+2. Make sure the latest version of the `aio` CLI is installed and you're logged in (`aio login`).
 3. That's it. Ask Cursor to build something.
 
 Cursor reads skills on-demand and only the relevant skill is loaded when the agent needs it, so token usage stays minimal regardless of how many skills are available.
@@ -70,7 +70,11 @@ weight (lbs, kg, oz, grams), and temperature (F, C, K).
 The frontend should let users pick a category, pick a
 conversion, enter a value, and see results in a table.
 Create a new Console project for it and deploy.
+Install the latest version of the App Builder AIO CLI,
+create a new console project, create a new console workspace,
+then initialize the app and deploy.
 ```
+**Note:** The AI agent will build the entire app for you, but it helps to be specific in your prompt. For example, explicitly asking it to install the latest CLI and create a new Console project ensures it uses the most up-to-date tools and doesn't accidentally reuse an existing project. The more details you provide (what the app should do, how the UI should look, which setup steps to follow), the better the result.
 
 **What the agent does (no user intervention):**
 
@@ -126,7 +130,9 @@ Whether or not you use skills, these tips produce better results from any AI ass
 
 **Include authentication details.** Always mention "OAuth Server-to-Server from environment variables" and never JWT (deprecated Jan 2025).
 
-**Use current API versions.** Workfront v21.0 (not v15.0), AEM OpenAPI (not HTTP API), Analytics 2.0 API.
+**Use current API and CLI versions.** Always ask the AI to install or use the latest version of the AIO CLI. For APIs: Workfront v21.0 (not v15.0), AEM OpenAPI (not HTTP API), Analytics 2.0 API.
+
+**Ask for new project setup when needed.** Tell the AI to create a new Console project and workspace rather than reusing an existing one. This avoids namespace conflicts and ensures a clean environment.
 
 **Ask for logging.** Request `@adobe/aio-sdk` logger usage in generated code.
 
