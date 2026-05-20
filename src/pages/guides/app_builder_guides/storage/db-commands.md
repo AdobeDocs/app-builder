@@ -155,7 +155,7 @@ aio app db collection stats <COLLECTION>
 
 ### Indexes
 
-Indexing frequently queried fields is fundamental to optimizing the performance of a database.
+Indexing frequently queried fields is fundamental to optimizing the performance of a database. No document may have values for the indexed fields that exceed 2048 bytes combined.
 
 To create a default-type index on specific fields:
 

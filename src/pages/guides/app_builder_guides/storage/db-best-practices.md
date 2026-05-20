@@ -40,7 +40,7 @@ const users = await collection.find({})
 
 ## Use indexes for frequent queries
 
-Creating indexes on fields that are frequently queried can significantly improve query performance by allowing the database to quickly locate relevant documents without scanning the entire collection.
+Creating indexes on fields that are frequently queried can significantly improve query performance by allowing the database to quickly locate relevant documents without scanning the entire collection. No document may have values for the indexed fields that exceed 2048 bytes combined. Indexes should be created before data is inserted if possible to help avoid unexpected errors. If an index only needs to cover a subset of the documents in a collection, consider using a partial index to further optimize performance. See [Partial Indexes](https://www.mongodb.com/docs/manual/core/index-partial/) in the MongoDB documentation for more information.
 
 ```javascript
 // Create indexes for frequently queried fields
