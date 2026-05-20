@@ -594,17 +594,19 @@
     {
       "page": "/guides/app_builder_guides/storage/db-best-practices",
       "avatars": [
+        "https://avatars.githubusercontent.com/u/24830189?v=4",
         "https://avatars.githubusercontent.com/u/11652541?v=4"
       ],
-      "lastUpdated": "3/2/2026"
+      "lastUpdated": "5/20/2026"
     },
     {
       "page": "/guides/app_builder_guides/storage/db-commands",
       "avatars": [
+        "https://avatars.githubusercontent.com/u/24830189?v=4",
         "https://avatars.githubusercontent.com/u/11652541?v=4",
         "https://avatars.githubusercontent.com/u/6577801?v=4"
       ],
-      "lastUpdated": "3/17/2026"
+      "lastUpdated": "5/20/2026"
     },
     {
       "page": "/guides/app_builder_guides/storage/db-mongo-compatibility",
@@ -616,10 +618,11 @@
     {
       "page": "/guides/app_builder_guides/storage/db-post-deploy-setup",
       "avatars": [
+        "https://avatars.githubusercontent.com/u/24830189?v=4",
         "https://avatars.githubusercontent.com/u/11652541?v=4",
         "https://avatars.githubusercontent.com/u/108254100?v=4"
       ],
-      "lastUpdated": "4/10/2026"
+      "lastUpdated": "5/20/2026"
     },
     {
       "page": "/guides/app_builder_guides/storage/db-runtime-actions",
@@ -635,7 +638,7 @@
         "https://avatars.githubusercontent.com/u/24830189?v=4",
         "https://avatars.githubusercontent.com/u/11652541?v=4"
       ],
-      "lastUpdated": "3/26/2026"
+      "lastUpdated": "5/20/2026"
     },
     {
       "page": "/guides/app_builder_guides/telemetry",
