@@ -486,6 +486,23 @@ To stay within the per-action size limit:
 
 Refer to System settings and limitations for the latest runtime limits and behaviors.
 
+### Key too large to index
+
+This error might occur when:
+
+- One or more documents have values in the indexed field or combination of fields that exceed the 2048-byte maximum index key size (for example, a string field with a very long value).
+- You attempt to create an index on a collection with existing documents.
+
+If a document has an indexed field that exceeds the maximum index key size, possible strategies to resolve the issue include:
+
+- Identify and remove documents with excessively large values in the indexed field or fields.
+- Index on a shorted or hashed version of the field if the original values are too large to index directly.
+- Use a partial index that only includes documents where the indexed field is below a certain size threshold. See [Partial Indexes](https://www.mongodb.com/docs/manual/core/index-partial/) in the MongoDB documentation for more information. 
+
+If you encounter this error when creating an index on a collection with existing documents but none exceed the 2048-byte maximum for the indexed fields:
+
+- Recreate the collection and add the index before inserting the documents. This is the best practice to avoid indexing issues and related performance problems.
+
 ## Error fix summary
 
 | Symptom / Error | Likely Cause | Fix (Short) |
@@ -498,6 +515,7 @@ Refer to System settings and limitations for the latest runtime limits and behav
 | CLI works but app (`aio app dev`) times out | Local dev endpoint not set for region | Set `AIO_DB_ENDPOINT` in .env (for example, `https://...-amer.app-builder.adp.adobe.io`). |
 | Old pre-IMS DB appears missing after migration | Namespace or environment mismatch | Ensure runtime namespace and environment match original; if still failing, contact support. |
 | Action ZIP around 50 MB fails or misbehaves | Exceeds per-action size limit | Reduce bundle size, split actions, remove unused dependencies. |
+| Key too large to index | Collection has documents before creating index | Recreate the collection and index before inserting documents |
 
 ## Related information
 
