@@ -490,10 +490,10 @@ Refer to System settings and limitations for the latest runtime limits and behav
 
 This error might occur when:
 
-- One or more documents have values in the indexed field or combination of fields that exceed the 2048-byte maximum index key size (for example, a string field with a very long value).
+- One or more documents have values in the indexed fields that exceed the 2048-byte maximum index key size combined (for example, a string field with 500 characters combined with another string field with 1750 characters).
 - You attempt to create an index on a collection with existing documents.
 
-If a document has an indexed field that exceeds the maximum index key size, possible strategies to resolve the issue include:
+If a document has an indexed field or combination of fields that exceeds the maximum index key size, possible strategies to resolve the issue include:
 
 - Identify and remove documents with excessively large values in the indexed field or fields.
 - Index on a shorted or hashed version of the field if the original values are too large to index directly.
@@ -515,7 +515,8 @@ If you encounter this error when creating an index on a collection with existing
 | CLI works but app (`aio app dev`) times out | Local dev endpoint not set for region | Set `AIO_DB_ENDPOINT` in .env (for example, `https://...-amer.app-builder.adp.adobe.io`). |
 | Old pre-IMS DB appears missing after migration | Namespace or environment mismatch | Ensure runtime namespace and environment match original; if still failing, contact support. |
 | Action ZIP around 50 MB fails or misbehaves | Exceeds per-action size limit | Reduce bundle size, split actions, remove unused dependencies. |
-| Key too large to index | Collection has documents before creating index | Recreate the collection and index before inserting documents |
+| Index creation errors but specification format is valid | Collection has documents before creating index | Recreate the collection and index before inserting documents |
+| Key too large to index | Document exceeds 2048 bytes for indexed field(s) | Index on smaller fields or remove/exclude documents with large values |
 
 ## Related information
 
