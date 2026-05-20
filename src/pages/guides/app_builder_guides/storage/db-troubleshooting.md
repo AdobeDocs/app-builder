@@ -496,7 +496,7 @@ This error might occur when:
 If a document has an indexed field or combination of fields that exceeds the maximum index key size, possible strategies to resolve the issue include:
 
 - Identify and remove documents with excessively large values in the indexed field or fields.
-- Index on a shorted or hashed version of the field if the original values are too large to index directly.
+- Index on a shortened or hashed version of the field if the original values are too large to index directly.
 - Use a partial index that only includes documents where the indexed field is below a certain size threshold. See [Partial Indexes](https://www.mongodb.com/docs/manual/core/index-partial/) in the MongoDB documentation for more information. 
 
 If you encounter this error when creating an index on a collection with existing documents but none exceed the 2048-byte maximum for the indexed fields:
