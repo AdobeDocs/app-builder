@@ -25,7 +25,7 @@ A practical solution is to use a `post-app-deploy` hook: a script that runs auto
 
 ## Supported index types
 
-`aio-lib-db` uses the same index syntax as the MongoDB Node.js driver. Values for the fields in an index specification must not exceed 2048 bytes combined in a single document. Supported types follow [DocumentDB 8.0 compatibility](./db-mongo-compatibility.md):
+`aio-lib-db` uses the same index syntax as the MongoDB Node.js driver. No document may have values for the indexed fields that exceed 2048 bytes combined. Supported types follow [DocumentDB 8.0 compatibility](./db-mongo-compatibility.md):
 
 | Index type | Key value | Use case |
 | --- | --- | --- |

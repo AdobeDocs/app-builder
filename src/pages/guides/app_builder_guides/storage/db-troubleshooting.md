@@ -490,7 +490,7 @@ Refer to System settings and limitations for the latest runtime limits and behav
 
 This error might occur when:
 
-- One or more documents have values in the indexed fields that exceed the 2048-byte maximum index key size combined (for example, a string field with 500 characters combined with another string field with 1750 characters).
+- One or more documents have values in the indexed fields that exceed the 2048-byte maximum index key size combined (for example, a document that has a string field with 500 characters combined with another string field with 1750 characters that are both in the specification for a single index).
 - You attempt to create an index on a collection with existing documents.
 
 If a document has an indexed field or combination of fields that exceeds the maximum index key size, possible strategies to resolve the issue include:
