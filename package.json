@@ -1,11 +1,10 @@
 {
-  "private": true,
-  "name": "adobe-developer-app-builder",
+  "name": "dev-docs-template",
   "version": "1.0.0",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AdobeDocs/app-builder"
+    "url": "https://github.com/AdobeDocs/dev-docs-template"
   },
   "author": {
     "name": "Tim Kim",
