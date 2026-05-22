@@ -1,10 +1,10 @@
 {
-  "name": "dev-docs-template",
+  "name": "adobe-developer-app-builder",
   "version": "1.0.0",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AdobeDocs/dev-docs-template"
+    "url": "https://github.com/AdobeDocs/app-builder"
   },
   "author": {
     "name": "Tim Kim",
@@ -30,3 +30,4 @@
     "redirectCheck:prod": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils redirectChecker prod --verbose"
   }
 }
+
