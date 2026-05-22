@@ -3,8 +3,6 @@ name: Lint
 on:
   pull_request:
     branches: [main]
-    paths:
-      - 'src/pages/**'
 
 jobs:
   lint:
@@ -12,9 +10,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Check for src/pages changes
+        id: changes
+        run: |
+          git diff --name-only origin/${{ github.base_ref }}...HEAD | grep -q '^src/pages/' \
+            && echo "changed=true" >> $GITHUB_OUTPUT \
+            || echo "changed=false" >> $GITHUB_OUTPUT
 
       - name: Lint
         id: lint
+        if: steps.changes.outputs.changed == 'true'
         continue-on-error: true
         run: npx --yes github:AdobeDocs/adp-devsite-utils runLint -v
 
@@ -30,7 +38,8 @@ jobs:
           path: |
             linter-report.txt
             pr-number.txt
+          if-no-files-found: ignore
 
       - name: Fail if linter found errors
-        if: steps.lint.outcome == 'failure'
+        if: steps.changes.outputs.changed == 'true' && steps.lint.outcome == 'failure'
         run: exit 1
