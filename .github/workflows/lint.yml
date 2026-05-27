@@ -15,8 +15,10 @@ jobs:
 
       - name: Check for src/pages changes
         id: changes
+        env:
+          BASE_REF: ${{ github.base_ref }}
         run: |
-          git diff --name-only origin/${{ github.base_ref }}...HEAD | grep -q '^src/pages/' \
+          git diff --name-only "origin/${BASE_REF}...HEAD" | grep -q '^src/pages/' \
             && echo "changed=true" >> $GITHUB_OUTPUT \
             || echo "changed=false" >> $GITHUB_OUTPUT
 
@@ -28,7 +30,9 @@ jobs:
 
       - name: Save PR number
         if: always()
-        run: echo "${{ github.event.pull_request.number }}" > pr-number.txt
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: echo "$PR_NUMBER" > pr-number.txt
 
       - name: Upload linter report
         if: always()
