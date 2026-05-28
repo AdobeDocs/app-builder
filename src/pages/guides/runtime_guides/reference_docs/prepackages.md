@@ -82,7 +82,7 @@ aio rt:trigger:create my-cron-trigger \
   --param stopDate "2028-01-01T00:00:00.000Z"
 ```
 
-Here are some examples of how to set various `cron` values - for more information, check this [page](http://crontab.org):
+Here are some examples of how to set various `cron` values - for more information, see [crontab.guru](https://crontab.guru/):
 
 - `* * * * *`: The Trigger fires at the top of every minute
 - `0 * * * *`: The Trigger fires at the top of every hour

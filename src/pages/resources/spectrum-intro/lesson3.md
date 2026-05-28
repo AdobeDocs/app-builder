@@ -72,7 +72,7 @@ ReactDOM.render(
 
 Provider is the containing component that all other React Spectrum components are the children of. The Provider's theme is the CSS variable set for colorScheme and scale values.
 
-Consult the [React documentation](https://react-spectrum.adobe.com/docs/react-spectrum/Provider.html) for more details.
+Consult the [React documentation](https://react-spectrum.adobe.com/v3/Provider.html) for more details.
 
 > **Note**: A Typekit ID is required to use the suggested Adobe fonts. Visit [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) to create one. The default font is intended only for prototyping work.
 

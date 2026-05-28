@@ -223,7 +223,7 @@ configSchema:
 
 ### Required products
 
-Developers of publicly distributable App Builder apps can define Adobe products that are required for their apps to work properly. The [Discover](https://developer.adobe.com/developer-distribution/experience-cloud/docs/guides/discoverandmanage/#discover) and [Acquire](https://developer.adobe.com/developer-distribution/experience-cloud/docs/guides/discoverandmanage/#acquire) sections of the distribution documentation show how these options are surfaced to customers.
+Developers of publicly distributable App Builder apps can define Adobe products that are required for their apps to work properly. The [distribution documentation](https://developer.adobe.com/developer-distribution/experience-cloud/docs/guides/) shows how these options are surfaced to customers when they discover and acquire your app.
 
 #### Defining required products
 

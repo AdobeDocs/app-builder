@@ -22,7 +22,7 @@ There are three ways one can consume event:
 
 Adobe offers journaling to consume events. The Adobe I/O Events Journaling API lets enterprise integrations consume events at their own cadence and process them in bulk. Unlike webhooks, no additional registration or other configuration is required. Every enterprise integration that is registered for events is automatically enabled for journaling. Journaling data is retained for 7 days. 
 
-After you fire an event, you should be able to verify it by journaling the `UNIQUE API ENDPOINT` you get from the console by following the instructions in the Adobe I/O Events documentation: [Journaling API](https://developer.adobe.com/events/docs/guides/api/journaling_api/).
+After you fire an event, you should be able to verify it by journaling the `UNIQUE API ENDPOINT` you get from the console by following the instructions in the [Adobe I/O Events API documentation](https://developer.adobe.com/events/docs/guides/api/).
 
 You could also use the `Curl` command or `POSTMAN` to call the journaling `UNIQUE API ENDPOINT` to see your fired event. Or you could use [Custom event SDK](https://github.com/adobe/aio-lib-events/) to call the Journaling API and retrieve your event.
 

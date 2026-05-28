@@ -67,7 +67,7 @@ Although there is no out-of-the-box integration, there are still ways you can pu
 
 #### Epsagon
 
-One tool that made it easy to do this is [Epsagon](https://epsagon.com). Epsagon built an integration for OpenWhisk-based systems like I/O Runtime that simplifies seeing your activations, errors, latency information and logs. Check this [guide](https://docs.epsagon.com/docs/openwhisk?utm_source=adobe.io&utm_medium=referral&utm_campaign=adobe_io_docs) or this [video presentation](https://www.youtube.com/watch?v=4iprbivqrxQ&t=1517s) if you want to find more.
+One tool that made it easy to do this was Epsagon, which built an integration for OpenWhisk-based systems like I/O Runtime that simplified seeing your activations, errors, latency information, and logs. Watch the [video presentation](https://www.youtube.com/watch?v=4iprbivqrxQ&t=1517s) for an overview. (Note: Epsagon was acquired and its docs site is no longer available; comparable observability tools may offer similar OpenWhisk integrations.)
 
 #### New Relic
 
