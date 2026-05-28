@@ -30,6 +30,46 @@ Here you'll learn what systems you need to access, how to access them, and how t
 
 **[A GitHub account](https://github.com/)** is optional but highly recommended for setting up your CI/CD workflow.
 
+### Granting App Builder access in Adobe Admin Console
+
+If you are an IMS organization administrator, follow these steps to grant App Builder access to your developers. Once you complete these steps, users can sign in to [Adobe Developer Console](https://developer.adobe.com/console) and start building.
+
+A user needs two things to access App Builder:
+
+1. Membership in a product profile under the App Builder product
+2. The **Developer** or **System Administrator** role in the IMS organization
+
+> **Note:** Adobe does not use product profiles to scope App Builder permissions — every profile under the App Builder product grants the same access. However, the [Adobe Admin Console](https://adminconsole.adobe.com/) requires at least one profile to be selected before you can save a user assignment, so you must create one before assigning users.
+
+#### 1. Create a product profile for App Builder
+
+If your App Builder product does not already have a product profile, create one:
+
+1. Sign in to the [Adobe Admin Console](https://adminconsole.adobe.com/) and switch to the IMS organization where App Builder is provisioned.
+2. Open the **Products** tab and select **App Builder** from the product list.
+3. Click **New Profile**.
+4. Enter a profile name (any name is fine — for example, `App Builder Users`) and an optional description, then click **Next** and **Save**.
+
+#### 2. Assign users the Developer or System Administrator role
+
+Adobe Developer Console only surfaces App Builder to users who hold the Developer or System Administrator role.
+
+To grant the **Developer** role:
+
+1. In the [Adobe Admin Console](https://adminconsole.adobe.com/), open the **Users** tab and select **Developers**.
+2. Click **Add Developer**.
+3. Enter the user's email address.
+4. Under **Select Products and User Groups**, choose **App Builder** and select the product profile you created above.
+5. Click **Save**.
+
+To grant the **System Administrator** role instead (full org-wide admin access):
+
+1. In the [Adobe Admin Console](https://adminconsole.adobe.com/), open the **Users** tab and select **Administrators**.
+2. Click **Add Admin**.
+3. Enter the user's email address, leave the admin role set to **System Administrator**, and click **Save**. System Administrators automatically have access to App Builder and do not need to be added to a product profile separately.
+
+For more details on roles and permissions in the Admin Console, see the [Adobe Admin Console documentation](https://helpx.adobe.com/enterprise/using/admin-roles.html).
+
 ## Local environment setup
 
 ### Required tools
