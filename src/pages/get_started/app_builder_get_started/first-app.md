@@ -18,7 +18,7 @@ Make sure you have [access to App Builder](set-up.md#access-and-credentials), an
 
 ## 2. Create a new project on Developer Console
 
-[Adobe Developer Console](https://developer.adobe.com/developer-console/) gives you access to [APIs](https://developer.adobe.com/developer-console/docs/guides//guides/apis-and-services#apis), [SDKs](https://github.com/adobe/aio-sdk) and Developer tools to integrate and extend Adobe products. In App Builder, you will need access to [Adobe I/O Runtime](../runtime_getting_started/setup.md) credentials to deploy your application, and access to API credentials if you want to access Adobe APIs in your application.
+[Adobe Developer Console](https://developer.adobe.com/developer-console/) gives you access to [APIs](https://developer.adobe.com/developer-console/docs/guides/apis-and-services#apis), [SDKs](https://github.com/adobe/aio-sdk) and Developer tools to integrate and extend Adobe products. In App Builder, you will need access to [Adobe I/O Runtime](../runtime_getting_started/setup.md) credentials to deploy your application, and access to API credentials if you want to access Adobe APIs in your application.
 
 Follow these instructions to set up your project:
 
@@ -63,7 +63,7 @@ Follow these instructions to set up your project:
 
      ![Project Preview](../../images/console-5.png)
 
-7. Create a new workspace or select a workspace to add [APIs](https://developer.adobe.com/developer-console/docs/guides//guides/services/#add-api) and [Events](https://developer.adobe.com/developer-console/docs/guides//guides/services/services-add-event) that you will need for your application.
+7. Create a new workspace or select a workspace to add [APIs](https://developer.adobe.com/developer-console/docs/guides/services/#add-api) and [Events](https://developer.adobe.com/developer-console/docs/guides/services/services-add-event) that you will need for your application.
 
     ![Workspace](../../images/console-6.png)
 
@@ -237,7 +237,7 @@ select type of actions to generate (Press <space> to select, <a> to toggle all, 
  ◉ Generic
 ```
 
-These sample actions will help you get started quickly and illustrate best practices for integrating with [Adobe APIs](https://developer.adobe.com/developer-console/docs/guides//guides/services/#add-api) using [SDK](https://github.com/adobe/aio-sdk) in your applications.
+These sample actions will help you get started quickly and illustrate best practices for integrating with [Adobe APIs](https://developer.adobe.com/developer-console/docs/guides/services/#add-api) using [SDK](https://github.com/adobe/aio-sdk) in your applications.
 You may not see all the options listed below on your command line, because they are recommendations based on the credentials you added in the selected workspace. As with the preceding step, you can select any number of them:
 
 - **Adobe Target**, including dependencies and examples of accessing the [Adobe Target API](https://developers.adobetarget.com/api/#admin-apis)
