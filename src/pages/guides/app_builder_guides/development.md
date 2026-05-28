@@ -4,6 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
+description: 'Run, develop, and debug App Builder applications locally using the aio CLI development server and hot reloading.'
 ---
 
 # Local Development

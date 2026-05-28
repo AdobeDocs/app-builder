@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: 'Lesson 2: Explore the App Builder App'
+description: 'Explore the file structure, manifest, and credentials of a Campaign Standard App Builder application.'
 ---
 
 # Lesson 2: Explore the App Builder App

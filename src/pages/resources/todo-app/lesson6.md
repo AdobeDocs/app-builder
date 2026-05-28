@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Lesson 5: Bringing the pieces together to build the App'
+description: 'Assemble the React Spectrum components and Runtime actions into a complete to-do list App Builder application.'
 ---
 
 # Lesson 5: Assembling the Pieces to Build the App

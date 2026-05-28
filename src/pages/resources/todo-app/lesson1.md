@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Lesson 1: Create an App with the React Spectrum template'
+description: 'Create an App Builder application using the React Spectrum template for the to-do app Code Lab.'
 ---
 
 # Lesson 1: Create a New App Builder App using the React Spectrum template

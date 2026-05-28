@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Lesson 3: Setup the CreateTodoList component'
+description: 'Build the CreateTodoList React component using React Spectrum Form, TextField, and Button components.'
 ---
 
 # Lesson 3: Setup the CreateTodoList component

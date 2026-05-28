@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Interface: Runtime'
+description: 'Reference for the Runtime interface that provides unified-shell APIs and event handling for solution authors.'
 ---
 
 # Interface: Runtime

@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/Yu1986'
 title: Codelab Environment Requirements
+description: 'Environment, Console, and aio CLI Events plugin requirements for the event-driven App Builder Code Lab.'
 ---
 
 <Fragment src="../transclusions/requirements.md"/>

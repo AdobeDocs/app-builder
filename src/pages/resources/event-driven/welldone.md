@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/Yu1986'
 title: Well done
+description: 'Recap of the event-driven App Builder Code Lab and the I/O Events skills you learned.'
 ---
 
 # Well Done

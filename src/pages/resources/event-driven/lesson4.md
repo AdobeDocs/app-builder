@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/Yu1986'
 title: 'Lesson 4: Consume Events'
+description: 'Consume Adobe I/O Events from an App Builder application using the Journaling API, Runtime actions, or webhooks.'
 ---
 
 # Lesson 4: Consume Events

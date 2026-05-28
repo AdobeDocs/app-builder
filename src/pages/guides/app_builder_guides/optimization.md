@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Optimizing App Builder Apps
+description: 'Techniques to optimize App Builder applications for security, performance, and operational cost.'
 ---
 
 # Optimizing App Builder Apps

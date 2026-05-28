@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Lesson 2: Monitoring CI/CD'
+description: 'Monitor and debug failing GitHub Actions workflows for an App Builder application.'
 ---
 
 # Lesson 2: Monitoring CI/CD

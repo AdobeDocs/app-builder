@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Lesson 1: Introduction to Spectrum'
+description: 'Introduction to Adobe''s Spectrum design system and its goals for consistent, accessible experiences across Adobe products.'
 ---
 
 # Lesson 1: Introduction to Spectrum

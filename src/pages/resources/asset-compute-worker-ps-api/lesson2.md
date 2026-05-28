@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: 'Lesson 2: Configure the App'
+description: 'Configure cloud storage credentials and other settings required by the Asset Compute Developer tool.'
 ---
 
 # Lesson 2: Configure the App

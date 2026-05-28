@@ -10,6 +10,7 @@ keywords:
   - Azure
   - Azure Log Analytics
 title: Forwarding Logs to Azure Log Analytics
+description: 'Configure an App Builder application to forward logs to an Azure Log Analytics workspace.'
 ---
 
 # Forwarding Logs to Azure Log Analytics

@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Lesson 3: Custom CI/CD workflow'
+description: 'Customize CI/CD workflows for an App Builder application with extra environment variables and steps.'
 ---
 
 # Lesson 3: Custom CI/CD workflow

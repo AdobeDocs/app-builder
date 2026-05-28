@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Introduction to Extensions
+description: 'Introduction to extension points and endpoints that let App Builder applications extend Adobe products.'
 ---
 
 # Introduction to Extensions

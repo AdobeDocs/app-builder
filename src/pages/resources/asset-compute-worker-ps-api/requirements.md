@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: Codelab Environment Requirements
+description: 'Environment and account requirements for the Asset Compute worker with Photoshop APIs Code Lab.'
 ---
 
 <Fragment src="../transclusions/requirements.md"/>

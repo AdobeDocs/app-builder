@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: 'Lesson 1: Create an Asset Compute App Builder app'
+description: 'Create an App Builder app from the Asset Compute template and add Photoshop API services.'
 ---
 
 # Lesson 1: Create an App Builder App from the Asset Compute Template

@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/Yu1986'
 title: 'Lesson 1: Create a New App Builder App from Template'
+description: 'Create an App Builder application from a template for the event-driven Code Lab, including required Console services.'
 ---
 
 # Lesson 1: Create a New App Builder App from Template

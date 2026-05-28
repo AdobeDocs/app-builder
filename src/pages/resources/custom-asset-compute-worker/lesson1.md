@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/marcinczeczko'
 title: 'Lesson 1: Configure Services'
+description: 'Configure Azure blob storage, imgIX, and Adobe I/O services for the custom Asset Compute worker Code Lab.'
 ---
 
 # Lesson 1: Configure Services

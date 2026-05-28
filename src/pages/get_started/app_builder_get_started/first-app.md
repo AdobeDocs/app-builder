@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Creating your First App Builder Application
+description: 'Step-by-step guide to creating, configuring, and deploying your first App Builder application.'
 ---
 
 # Create your First App Builder Application

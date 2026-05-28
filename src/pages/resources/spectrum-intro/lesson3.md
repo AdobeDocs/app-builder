@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Lesson 3: React Spectrum'
+description: 'Use the React Spectrum component library to build accessible, internationalized UI from Spectrum components.'
 ---
 
 # Lesson 3: React Spectrum

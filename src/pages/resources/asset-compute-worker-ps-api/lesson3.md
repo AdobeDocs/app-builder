@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: 'Lesson 3: Develop custom worker calling Photoshop APIs'
+description: 'Develop a custom Asset Compute worker that calls Adobe Photoshop APIs to generate AEM Assets renditions.'
 ---
 
 # Lesson 3: Develop Custom Worker Calling Photoshop APIs

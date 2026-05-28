@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Publishing Your First App Builder Application
+description: 'How to submit, review, and publish App Builder SPAs through Developer Console, Adobe Exchange, and Adobe Experience Cloud.'
 ---
 
 # Publishing Your First App Builder Application

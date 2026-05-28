@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Lesson 1: Setup CI/CD'
+description: 'Set up a CI/CD workflow for an App Builder application using GitHub Actions and the bundled Adobe I/O actions.'
 ---
 
 # Lesson 1: Setup CI/CD

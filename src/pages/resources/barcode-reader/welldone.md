@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Well done
+description: 'Recap of the headless barcode reader Code Lab and the App Builder skills you learned.'
 ---
 
 # Well Done

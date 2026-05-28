@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: 'Lesson 4: Integrate and Use the Custom Worker in AEMaaCS'
+description: 'Deploy the custom Asset Compute worker and integrate it with AEM as a Cloud Service processing profiles.'
 ---
 
 # Lesson 4: Integrate and Use the Custom Worker in AEMaaCS

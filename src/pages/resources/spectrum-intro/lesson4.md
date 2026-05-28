@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Lesson 4: React Spectrum in App Builder'
+description: 'Build a React Spectrum App Builder single-page application using the aio CLI standalone template.'
 ---
 
 # Lesson 4: React Spectrum in App Builder

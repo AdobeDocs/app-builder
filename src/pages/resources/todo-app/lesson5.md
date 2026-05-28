@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Lesson 5: Setup the TodoList component'
+description: 'Build the TodoList React component to create, delete, and display to-do items in an App Builder application.'
 ---
 
 # Lesson 5: Set up the TodoList component

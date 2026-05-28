@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Interface: TopbarAPIProperties'
+description: 'Reference for the TopbarAPIProperties interface that lists settable attributes for the Experience Cloud top bar.'
 ---
 
 # Interface: TopbarAPIProperties

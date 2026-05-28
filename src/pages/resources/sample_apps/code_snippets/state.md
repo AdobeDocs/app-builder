@@ -4,7 +4,8 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: App Builder Code Snippets - App Builder State SDK  
+title: App Builder Code Snippets - App Builder State SDK
+description: 'Sample App Builder action that demonstrates how to read a value by key from the State SDK.'
 ---
 
 # App Builder State SDK

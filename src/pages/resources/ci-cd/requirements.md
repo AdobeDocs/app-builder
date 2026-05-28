@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Codelab Environment Requirements
+description: 'Environment, GitHub account, and tooling requirements for the CI/CD Code Lab.'
 ---
 
 <Fragment src="../transclusions/requirements.md"/>

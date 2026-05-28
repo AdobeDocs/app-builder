@@ -4,7 +4,8 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: App Builder Sample Apps  
+title: App Builder Sample Apps
+description: 'Sample App Builder applications and code snippets for common operations, ready to clone and adapt.'
 ---
 
 # Sample Apps

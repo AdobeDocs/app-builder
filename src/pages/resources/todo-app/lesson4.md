@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Lesson 4: Setup the Todo component'
+description: 'Build the Todo React component using React Spectrum Checkbox and TextField components.'
 ---
 
 # Lesson 4: Setup the Todo component

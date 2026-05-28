@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: 'Lesson 3: Types of Alarm Feed'
+description: 'Use other alarm feed types in Adobe I/O Runtime to fire triggers once or on a cron schedule.'
 ---
 
 # Lesson 3: Types of Alarm Feed

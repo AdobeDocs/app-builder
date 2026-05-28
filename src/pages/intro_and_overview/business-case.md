@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Business case
+description: 'Why enterprises choose App Builder over third-party or do-it-yourself customizations to extend Adobe solutions.'
 ---
 
 # Business case for App Builder

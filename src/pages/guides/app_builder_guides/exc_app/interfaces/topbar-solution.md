@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Interface: Solution'
+description: 'Reference for the Solution interface that defines icon, title, and shortTitle attributes for the top bar solution area.'
 ---
 
 # Interface: Solution

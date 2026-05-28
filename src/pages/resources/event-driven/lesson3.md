@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/Yu1986'
 title: 'Lesson 3: Fire an Event'
+description: 'Fire a custom event from an App Builder action using publish-event and the Adobe I/O Events SDK.'
 ---
 
 # Lesson 3: Fire an Event

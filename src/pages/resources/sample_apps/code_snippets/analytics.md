@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Code Snippets: Real-time Adobe Analytics API 1.4'
+description: 'Sample App Builder action that demonstrates how to access Adobe Analytics Real-time API 1.4.'
 ---
 
 # Real-Time Data from Adobe Analytics API 1.4

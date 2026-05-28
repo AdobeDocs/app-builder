@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: 'Lesson 4: List All Customer Profiles on the UI'
+description: 'Use React Spectrum to display a list of customer profiles loaded from Adobe Campaign Standard on the App Builder UI.'
 ---
 
 # Lesson 4: List All Customer Profiles on the UI

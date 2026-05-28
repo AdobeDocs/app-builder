@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Lesson 2: Spectrum CSS'
+description: 'Use Spectrum CSS to build a simple form with Spectrum''s typography and text-field components.'
 ---
 
 # Lesson 2: Spectrum CSS

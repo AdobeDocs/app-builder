@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Extension Migration Guide
+description: 'Migrate legacy App Builder applications created before July 2021 to the current file structure and configuration protocol.'
 ---
 
 # Migrating Legacy Applications
