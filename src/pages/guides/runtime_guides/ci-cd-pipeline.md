@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - CI/CD
+  - Namespaces
+  - Versioning
+title: 'CI/CD Pipeline'
+description: 'Tools and patterns for building a CI/CD pipeline for Adobe I/O Runtime actions, including namespaces and package versioning.'
+---
+
 # CI/CD Pipeline
 
 Adobe I/O Runtime offers a number of tools to help you build a CI/CD pipeline for managing your actions. 

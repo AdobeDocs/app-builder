@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Logging
+  - Monitoring
+  - Activations
+title: 'Logging and Monitoring'
+description: 'Use the aio CLI to retrieve activations and logs for Adobe I/O Runtime actions while debugging or monitoring.'
+---
+
 # Logging and Monitoring
 
 The `AIO` CLI offers a number of tools you can use to debug your actions while running them on Adobe I/O Runtime.

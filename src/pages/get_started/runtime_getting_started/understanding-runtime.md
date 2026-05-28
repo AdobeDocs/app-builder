@@ -1,3 +1,13 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Programming Model
+  - OpenWhisk
+title: 'Understanding Adobe I/O Runtime'
+description: 'Programming model, components, and architecture of Adobe I/O Runtime, the serverless platform that powers App Builder.'
+---
+
 # Understanding Adobe I/O Runtime
 
 Serverless platforms greatly simplify the development and operation of business applications. Successful use of them takes advantage of their many strengths, while working around their limitations. This Quick Start Guide explores the most critical of these considerations as they apply to I/O Runtime.

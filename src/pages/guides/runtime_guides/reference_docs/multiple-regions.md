@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Regions
+  - AWS
+  - Routing
+title: 'Multiple Regions'
+description: 'How Adobe I/O Runtime deploys and routes actions across multiple AWS regions using latency-based routing.'
+---
+
 # Multiple Regions
 
 Actions are executed in one of four regions on AWS:

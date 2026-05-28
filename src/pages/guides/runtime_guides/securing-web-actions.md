@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Web Actions
+  - Security
+  - Basic Authentication
+title: 'Securing Web Actions'
+description: 'Restrict access to Adobe I/O Runtime web actions using Basic Authentication, namespace credentials, or custom auth layers.'
+---
+
 # Securing Web Actions
 
 By default, a web action can be invoked by anyone knowing the action's URL. If you want to restrict 'access, either use Basic Authentication or you build your own authentication layer.

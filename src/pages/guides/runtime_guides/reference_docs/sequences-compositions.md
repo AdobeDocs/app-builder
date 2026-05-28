@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Sequences
+  - Compositions
+  - OpenWhisk
+title: 'Sequences and Compositions'
+description: 'Orchestrate Adobe I/O Runtime actions using sequences for linear chains or compositions for branching control flow.'
+---
+
 # Sequences and Compositions
 
 There are two ways to orchestrate a series of action calls into a flow: sequences and compositions.

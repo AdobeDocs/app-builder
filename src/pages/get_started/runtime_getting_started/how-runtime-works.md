@@ -1,8 +1,12 @@
-```yaml
+---
 keywords:
-  - [need keywords]
-title: How I/O Runtime works
-```
+  - Adobe I/O
+  - Runtime
+  - OpenWhisk
+  - Architecture
+title: 'How I/O Runtime works'
+description: 'How Adobe I/O Runtime uses the Apache OpenWhisk architecture to provide function-as-a-service execution.'
+---
 
 # How Adobe I/O Runtime Works
 

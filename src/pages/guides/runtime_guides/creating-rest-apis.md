@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - REST APIs
+  - Web Actions
+  - Swagger
+title: 'Creating REST APIs'
+description: 'Create REST APIs from Adobe I/O Runtime web actions using the aio CLI or Swagger definition files.'
+---
+
 # Creating REST APIs
 
 > Note: IO Runtime cleans up custom APIs that have not been accessed for 90 days.

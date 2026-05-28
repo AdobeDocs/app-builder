@@ -1,3 +1,13 @@
+---
+keywords:
+  - Adobe I/O
+  - App Builder
+  - Release Notes
+  - Runtime
+title: 'Release Notes'
+description: 'Release notes for App Builder, Adobe I/O Runtime, and their associated CLI plugins and GitHub Actions.'
+---
+
 # Release Notes
 
 Stay up to date with the latest features, improvements, and bug fixes in App Builder and Adobe I/O Runtime.

@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Security
+  - Sandboxing
+  - XSS
+title: 'Security Guide'
+description: 'Security considerations and best practices for Adobe I/O Runtime functions, covering sandboxing, XSS, cookies, and secrets.'
+---
+
 # Security Guide
 
 This guide reviews security issues to consider when working with Runtime functions. Only a subset of these may apply to your use case: for example, the section about cookies isn't relevant if you aren't using web actions. This guide will help you keep your functions secure and steer you away from practices that are risky in a serverless environment.

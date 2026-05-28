@@ -1,3 +1,13 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Limits
+  - System Settings
+title: 'System Settings'
+description: 'Reference table of Adobe I/O Runtime system settings and limits to consider when designing and debugging actions.'
+---
+
 # System Settings
 
 These are the system settings and limitations to consider when designing and debugging your actions.

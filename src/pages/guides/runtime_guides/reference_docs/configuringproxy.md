@@ -1,3 +1,15 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Proxy
+  - nginx
+  - mTLS
+  - Security
+title: 'Configuring a Secure Proxy'
+description: 'Configure an nginx proxy with mutual TLS so Adobe I/O Runtime actions can reach backend services protected by IP allow lists.'
+---
+
 ## Configuring a Secure Proxy
 
 For security reasons, Runtime does not expose egress IPs. Customers who need a way to secure communication with downstream services using IP whitelisting can use a proxy between their backend service and I/O Runtime.

@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - App Builder
+  - Sequences
+  - OpenWhisk
+  - Configuration
+title: 'Configuring Sequences in app.config.yaml'
+description: 'Configure App Builder action sequences declaratively in app.config.yaml using the OpenWhisk wskdeploy specification.'
+---
+
 # Configuring Sequences in app.config.yaml
 
 ## Overview

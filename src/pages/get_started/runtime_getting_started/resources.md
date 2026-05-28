@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - OpenWhisk
+  - Resources
+  - Support
+title: 'Resources and support'
+description: 'Resources, social media accounts, and community support channels for Adobe I/O Runtime developers.'
+---
+
 <HeroSimple slots="heading, text" />
 
 # Resources and support

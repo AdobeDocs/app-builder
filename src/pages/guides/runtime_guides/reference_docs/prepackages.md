@@ -1,3 +1,13 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Packages
+  - Alarms
+title: 'Pre-Installed Packages'
+description: 'Use the pre-installed alarms and other shared packages available to every Adobe I/O Runtime namespace.'
+---
+
 # Pre-Installed Packages
 
 These packages are pre-installed and available to any I/O Runtime user:
