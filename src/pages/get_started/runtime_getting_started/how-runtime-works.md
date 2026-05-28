@@ -54,7 +54,7 @@ Host: $openwhiskEndpoint
 
 Note the `$userNamespace` variable. Runtime requests require access to the same namespace in which the action was created. When users are configured for Runtime accounts, they are given their own personal namespaces. 
 
-![](../../images/howitworks_f02.png)
+![Diagram of the Runtime internal process flow](../../images/howitworks_f02.png)
 
 *Internal process flow*
 
