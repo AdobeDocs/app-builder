@@ -1,5 +1,5 @@
 ---
-title: App Builder Tech Talks, Deep Dive Sessions and Partner Use Cases     
+title: 'App Builder: Tech Talks and Partner Use Cases'
 keywords:
   - Adobe I/O
   - Extensibility

@@ -5,7 +5,7 @@ keywords:
   - Local Environment
   - Set up
 title: Set Up Access, Environment, and Tools
-description: App Builder is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure.
+description: Get the access, credentials, and local tooling you need to start building App Builder applications.
 ---
 
 # Set Up Access, Environment, and Tools

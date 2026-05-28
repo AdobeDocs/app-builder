@@ -1,5 +1,5 @@
 ---
-title: 'Migration tutorial - Standalone Application to DX Experience Cloud SPA v1'
+title: 'Migrate Standalone App to DX Experience Cloud SPA v1'
 ---
 
 # Migrating Apps to DX Experience Cloud v1 SPAs

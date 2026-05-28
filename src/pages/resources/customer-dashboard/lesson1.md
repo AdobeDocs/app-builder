@@ -6,7 +6,7 @@ keywords:
   - Developer Tooling
 contributors:
   - 'https://github.com/duynguyen'
-title: 'Lesson 1: Create a New App Builder App from Campaign Standard Template'
+title: 'Lesson 1: Create an App from the Campaign Standard Template'
 ---
 
 # Lesson 1: Create a New App Builder App from Campaign Standard Template

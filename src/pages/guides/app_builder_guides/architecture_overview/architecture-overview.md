@@ -6,7 +6,7 @@ keywords:
   - SDK Library
   - Migration Guides
 title: Architecture Overview
-description: An App Builder Application is a serverless application that extends Adobe Product APIs. These applications can be headless or headful. Each of these types is described in more detail in the sections that follow.
+description: Overview of headless and headful App Builder application architectures and the SDK components they use to extend Adobe product APIs.
 ---
 
 # Architecture Overview

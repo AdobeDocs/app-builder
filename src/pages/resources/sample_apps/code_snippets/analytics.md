@@ -4,7 +4,7 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: App Builder Code Snippets - Real-time data from Adobe Analytics API 1.4  
+title: 'Code Snippets: Real-time Adobe Analytics API 1.4'
 ---
 
 # Real-Time Data from Adobe Analytics API 1.4

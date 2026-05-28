@@ -1,6 +1,6 @@
 ---
 title: Introducing App Builder
-description: This App Builder tech talk aims to explore what’s possible with App Builder as well as answer questions from our customers & partners.  Join us to learn more about how App Builder enables you to build cloud native applications to empower your employees. You’ll learn about common use cases as well as a peek on how to get started building with App Builder.  
+description: Tech talk on what's possible with App Builder, common use cases, and how to start building cloud-native apps for your employees.
 keywords:
   - Adobe I/O
   - Extensibility
