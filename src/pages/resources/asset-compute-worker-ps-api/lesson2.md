@@ -10,7 +10,6 @@ title: 'Lesson 2: Configure the App'
 ---
 
 # Lesson 2: Configure the App
-# Lesson 2: Configure the App
 
 As you log in when creating the application, most of the App Builder credentials get collected in your `.env` file. However, using the Developer tool requires additional credentials.
 

@@ -22,7 +22,7 @@ aio rt:activation:logs <activation ID>
 2018-11-14T22:23:00.002Z       stdout: 1542234180001: param = John Doe
 ```
 
-# Retrieving activations for blocking successful calls
+## Retrieving activations for blocking successful calls
 
 At scale, when you run millions of activations in a day, it may be difficult to extract the activations that failed in order to debug them. To help with this task, the system skips persisting the activation that succeeded. 
 

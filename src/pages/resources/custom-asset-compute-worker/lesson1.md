@@ -10,9 +10,7 @@ title: 'Lesson 1: Configure Services'
 ---
 
 # Lesson 1: Configure Services
-# Lesson 1: Configure Services
 
-## Create Azure blob storage
 ## Create Azure blob storage
 
 You need to [create Azure blob storage][create-azure-blob] on your Azure account. Then, create two containers:
@@ -37,7 +35,6 @@ To test your configuration:
    `https://<your-subdomain>.imgix.net/image.png`
 3. Open the signed URL in the browser to verify the image is loaded
 
-## Configure Adobe I/O
 ## Configure Adobe I/O
 
 1. Go to the [https://console.adobe.io][adobe-console] and create a [new project using App Builder template][adobe-console-firefly-template].

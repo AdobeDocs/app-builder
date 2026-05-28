@@ -75,7 +75,7 @@ Click on `App Builder Apps` to discover all the applications published for your 
 
 ![](../../images/approval-myapp-customapps.png)
 
-# Publishing your headless App Builder app
+## Publishing your headless App Builder app
 
 The `App Builder Apps` Adobe Experience Cloud lists only App Builder SPAs. If you publish a headless app, please refer to our Code Lab [Headless Apps with App Builder](../../resources/barcode-reader/index.md).
 

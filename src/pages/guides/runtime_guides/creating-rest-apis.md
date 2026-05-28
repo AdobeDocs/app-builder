@@ -319,7 +319,7 @@ Requests that originate from the IP addresses on the disallow list will be rejec
 
 > Note: be sure the `my-require-gw-validation-web-action` is configured as a web action with `-a require-gw-validation true`, or the action can be accessed publicly with no restrictions on the non-API URL. 
 
-# How long does it take to create or update an API?
+## How long does it take to create or update an API?
 
 It can take up to five minutes to see the changes from creation or update of an API.
 
