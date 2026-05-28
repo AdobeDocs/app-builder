@@ -9,7 +9,7 @@ title: Introduction to Extensions
 
 # Introduction to Extensions
 
-App Builder originally supported only Single-Page Applications (SPAs) accessed in [Experience Cloud UI](https://experience.adobe.com) and standalone Headless Applications. In response to customer requests, we added services like [AEM Asset Microservices](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=en) to extend Adobe products through App Builder.  But Developers still had to set up connections manually between AEM and their custom processing profiles. 
+App Builder originally supported only Single-Page Applications (SPAs) accessed in [Experience Cloud UI](https://experience.adobe.com) and standalone Headless Applications. In response to customer requests, we added services like [AEM Asset Microservices](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use) to extend Adobe products through App Builder.  But Developers still had to set up connections manually between AEM and their custom processing profiles. 
 
 Extensions provide a simpler, more integrated way for Developers to extend products across the Adobe ecosystem. 
 

@@ -22,7 +22,7 @@ Here you'll learn what systems you need to access, how to access them, and how t
   
   - Customers should request access from their account manager or their company IT/Marketing admin
   
-  - Partners should request App Builder access from their partner manager, or Sandbox access though the [Adobe Solution Partner Portal](https://solutionpartners.adobe.com/home.html)
+  - Partners should request App Builder access from their partner manager, or Sandbox access though the [Adobe Solution Partner Portal](https://partners.adobe.com/digitalexperience/)
 
 **App Builder access** is only available with a purchased license. 
 

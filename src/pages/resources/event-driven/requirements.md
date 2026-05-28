@@ -19,6 +19,6 @@ In addition to the prerequisites listed above, please install the [Adobe I/O Eve
 npm install -g @adobe/aio-cli-plugin-events
 ```
 
-We assume that you have access and authorization to create integrations on [Adobe I/O Console](https://console.adobe.io/).  `I/O Management Service` needs to be enabled for the integration. This will help create the JWT token with adobeio_api scope that is required for all the API calls.
+We assume that you have access and authorization to create integrations on [Adobe I/O Console](https://developer.adobe.com/console/).  `I/O Management Service` needs to be enabled for the integration. This will help create the JWT token with adobeio_api scope that is required for all the API calls.
 
 ![webhook](assets/event.png)

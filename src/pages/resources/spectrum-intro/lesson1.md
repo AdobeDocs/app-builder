@@ -38,7 +38,7 @@ Spectrum connects different talents, viewpoints, and skills into something that 
 
 ### Adobe Clean Font families
 
-To use the Adobe Clean font families, download them through the [Adobe Developer Console](https://console.adobe.io/downloads/) using your Adobe ID. You’ll be asked to accept the Adobe Developer Terms of Use before using them.
+To use the Adobe Clean font families, download them through the [Adobe Developer Console](https://developer.adobe.com/console/downloads/) using your Adobe ID. You’ll be asked to accept the Adobe Developer Terms of Use before using them.
 
 > **Caution:** Adobe Clean, Adobe Clean Serif, and Adobe Clean Han are [restricted fonts](https://www.adobe.com/products/type/font-licensing/restricted-fonts.html) for the exclusive use of Adobe products and software.
 

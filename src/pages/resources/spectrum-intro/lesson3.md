@@ -19,7 +19,7 @@ React Spectrum is composed of three parts:
 
 React Spectrum enables accessibility and common behavior to be handled out of the box. Using it saves front-end development time, so you can focus on styling and other design-specific features that can be built on top of the library.
 
-If you're not familiar with React, please read the [React getting started guide](https://reactjs.org/docs/getting-started.html). 
+If you're not familiar with React, please read the [React getting started guide](https://react.dev/learn). 
 
 > Note: these documents, and this tutorial, refer to the legacy version of React. The sample project should work as indicated.
 

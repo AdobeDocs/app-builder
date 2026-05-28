@@ -11,7 +11,7 @@ title: 'Lesson 3: Custom CI/CD workflow'
 
 ## Setting environment variables
 
-You can add additional environment variables to the test and deploy GitHub workflows see the [GitHub documentation](https://docs.github.com/en/free-pro-team@latest/actions/reference/environment-variables) for more information.
+You can add additional environment variables to the test and deploy GitHub workflows see the [GitHub documentation](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-variables) for more information.
 
 In our case, if you want to add for example environment values named `MY_ENV_VALUE_1` and `MY_ENV_VALUE_2` to the stage and production deploy workflow, follow these steps:
 

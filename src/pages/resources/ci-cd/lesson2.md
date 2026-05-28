@@ -50,4 +50,4 @@ Finally, the Deploy GitHub action will run and deploy the App Builder App on the
 
 GitHub Actions provide cloud based CI/CD features; therefore you can't debug jobs locally. GitHub provides tools to help you debug failing jobs.
 
-Please find more information on how to view run logs, enable verbose logs, and more in the [GitHub documentation](https://docs.github.com/en/free-pro-team@latest/actions/managing-workflow-runs).   
+Please find more information on how to view run logs, enable verbose logs, and more in the [GitHub documentation](https://docs.github.com/en/actions/how-tos/manage-workflow-runs).   

@@ -20,7 +20,7 @@ Actions may be invoked anonymously - with no authorization required - or with au
 
 ## Understanding I/O Runtime components
 
-Adobe I/O Runtime is built on the Apache OpenWhisk open-source project, so many resources written for Apache OpenWhisk also apply to Adobe I/O Runtime. The [Apache OpenWhisk repository](https://github.com/apache/incubator-openwhisk/tree/master/docs) is a useful resource.
+Adobe I/O Runtime is built on the Apache OpenWhisk open-source project, so many resources written for Apache OpenWhisk also apply to Adobe I/O Runtime. The [Apache OpenWhisk repository](https://github.com/apache/openwhisk/tree/master/docs) is a useful resource.
 
 This diagram shows the high-level architecture of I/O Runtime built on OpenWhisk:
 
@@ -144,7 +144,7 @@ This is just the beginning for Adobe I/O Runtime. We encourage you to help us en
 
 ### Social media
 
-You can follow the Adobe I/O team on [Twitter](https://twitter.com/adobeio), [Medium](https://medium.com/adobetech/tagged/platform), and [Youtube](https://www.youtube.com/channel/UCDtYqOjS9Eq9gacLcbMwhhQ).
+You can follow the Adobe I/O team on [Twitter](https://x.com/adobeio), [Medium](https://medium.com/adobetech/tagged/platform), and [Youtube](https://www.youtube.com/channel/UCDtYqOjS9Eq9gacLcbMwhhQ).
 
 ### Support
 

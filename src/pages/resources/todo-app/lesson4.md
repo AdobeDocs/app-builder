@@ -9,7 +9,7 @@ title: 'Lesson 4: Setup the Todo component'
 
 # Lesson 4: Setup the Todo component
 
-In this lesson, we'll create a Todo React component composed of only two React Spectrum components: [Checkbox](https://react-spectrum.adobe.com/react-spectrum/Checkbox.html) and [TextField](https://react-spectrum.adobe.com/react-spectrum/TextField.html).
+In this lesson, we'll create a Todo React component composed of only two React Spectrum components: [Checkbox](https://react-spectrum.adobe.com/v3/Checkbox.html) and [TextField](https://react-spectrum.adobe.com/v3/TextField.html).
 
 In a way similar to [lesson 3](lesson3.md), we'll create the React component file under `web-src/src/components/` and name it `Todo.js`.
 
@@ -17,9 +17,9 @@ In a way similar to [lesson 3](lesson3.md), we'll create the React component fil
 
 This component will make use of several React Spectrum components: 
 
-* [Flex](https://react-spectrum.adobe.com/react-spectrum/Flex.html) for the layout.
-* [TextField](https://react-spectrum.adobe.com/react-spectrum/TextField.html) the input field for the todo value.
-* [Checkbox](https://react-spectrum.adobe.com/react-spectrum/Checkbox.html) to check a todo which is done.
+* [Flex](https://react-spectrum.adobe.com/v3/Flex.html) for the layout.
+* [TextField](https://react-spectrum.adobe.com/v3/TextField.html) the input field for the todo value.
+* [Checkbox](https://react-spectrum.adobe.com/v3/Checkbox.html) to check a todo which is done.
 
 ```javascript
 import { Flex, Checkbox, TextField } from '@adobe/react-spectrum';
@@ -41,7 +41,7 @@ function Todo({ name, todo, onUpdate }) {
 
 ## Updating a to-do item
 
-Again, we're going to use the [State hook](https://reactjs.org/docs/hooks-state.html) `useState` to declare two state variables, bind one to the Checkbox and the other to the Textfield:
+Again, we're going to use the [State hook](https://legacy.reactjs.org/docs/hooks-state.html) `useState` to declare two state variables, bind one to the Checkbox and the other to the Textfield:
 
 ```javascript
 const [value, setValue] = useState(todo.value);

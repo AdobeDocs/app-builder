@@ -79,7 +79,7 @@ This will work provided that the actions are already created in that namespace.
 
 ## Enable CORS on an HTTP resource
 
-[CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) headers can be controlled either statically or dynamically.
+[CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS) headers can be controlled either statically or dynamically.
 
 ### Static CORS response with OpenAPI
 

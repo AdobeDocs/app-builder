@@ -65,7 +65,7 @@ Then include the Adobe Fonts, for example using your Typekit ID. To create one, 
 <script>window.Typekit.load()</script>
 ```
 
-Now you can start using components by copy/pasting their code from the [documentation](http://opensource.adobe.com/spectrum-css/).
+Now you can start using components by copy/pasting their code from the [documentation](https://opensource.adobe.com/spectrum-css/).
 In this example, we'll use these components: 
 
 * [Heading](https://opensource.adobe.com/spectrum-css/components/typography-heading/)

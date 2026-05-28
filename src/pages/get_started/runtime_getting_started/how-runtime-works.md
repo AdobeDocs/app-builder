@@ -60,7 +60,7 @@ Note the `$userNamespace` variable. Runtime requests require access to the same 
 
 #### Receiving: nginx
 
-[Nginx](https://www.nginx.com/) is a reverse proxy and HTTP server. The OpenWhisk architecture uses it to terminal SSL and forward the HTTP request to the next component in the processing loop.
+[Nginx](https://www.f5.com/products/nginx) is a reverse proxy and HTTP server. The OpenWhisk architecture uses it to terminal SSL and forward the HTTP request to the next component in the processing loop.
 
 #### Interpreting: the Controller
 

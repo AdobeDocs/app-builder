@@ -17,7 +17,7 @@ Make sure you have [access to App Builder](set-up.md#access-and-credentials), an
 
 ## 2. Create a new project on Developer Console
 
-[Adobe Developer Console](https://developer.adobe.com/developer-console/) gives you access to [APIs](https://developer.adobe.com/developer-console/docs/guides/apis-and-services#apis), [SDKs](https://github.com/adobe/aio-sdk) and Developer tools to integrate and extend Adobe products. In App Builder, you will need access to [Adobe I/O Runtime](../runtime_getting_started/setup.md) credentials to deploy your application, and access to API credentials if you want to access Adobe APIs in your application.
+[Adobe Developer Console](https://developer.adobe.com/developer-console/) gives you access to [APIs](https://developer.adobe.com/developer-console/docs/guides//guides/apis-and-services#apis), [SDKs](https://github.com/adobe/aio-sdk) and Developer tools to integrate and extend Adobe products. In App Builder, you will need access to [Adobe I/O Runtime](../runtime_getting_started/setup.md) credentials to deploy your application, and access to API credentials if you want to access Adobe APIs in your application.
 
 Follow these instructions to set up your project:
 
@@ -62,11 +62,11 @@ Follow these instructions to set up your project:
 
      ![Project Preview](../../images/console-5.png)
 
-7. Create a new workspace or select a workspace to add [APIs](https://developer.adobe.com/developer-console/docs/guides/services/#add-api) and [Events](https://developer.adobe.com/developer-console/docs/guides/services/services-add-event) that you will need for your application.
+7. Create a new workspace or select a workspace to add [APIs](https://developer.adobe.com/developer-console/docs/guides//guides/services/#add-api) and [Events](https://developer.adobe.com/developer-console/docs/guides//guides/services/services-add-event) that you will need for your application.
 
     ![Workspace](../../images/console-6.png)
 
-To learn more about Adobe Developer Console, please refer to [Console Documentation](https://developer.adobe.com/developer-console/docs).
+To learn more about Adobe Developer Console, please refer to [Console Documentation](https://developer.adobe.com/developer-console/docs/guides/).
 
 ## 3. Sign in from the CLI
 
@@ -236,14 +236,14 @@ select type of actions to generate (Press <space> to select, <a> to toggle all, 
  ◉ Generic
 ```
 
-These sample actions will help you get started quickly and illustrate best practices for integrating with [Adobe APIs](https://developer.adobe.com/developer-console/docs/guides/services/#add-api) using [SDK](https://github.com/adobe/aio-sdk) in your applications.
+These sample actions will help you get started quickly and illustrate best practices for integrating with [Adobe APIs](https://developer.adobe.com/developer-console/docs/guides//guides/services/#add-api) using [SDK](https://github.com/adobe/aio-sdk) in your applications.
 You may not see all the options listed below on your command line, because they are recommendations based on the credentials you added in the selected workspace. As with the preceding step, you can select any number of them:
 
 - **Adobe Target**, including dependencies and examples of accessing the [Adobe Target API](https://developers.adobetarget.com/api/#admin-apis)
 - **Adobe Analytics**, including dependencies and examples of accessing the [Adobe Analytics 2.0 API](https://adobedocs.github.io/analytics-2.0-apis/)
-- **Adobe Audience Manager: Customer Data**, including dependencies and examples of accessing the [Adobe Audience Manager Customer Data API](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/api.html)
-- **Adobe Campaign Standard**, including dependencies and examples of accessing the [Adobe Campaign Standard (ACS) API](https://docs.adobe.com/content/help/en/campaign-standard/using/working-with-apis/get-started-apis.html)
-- **Adobe Experience Platform: Realtime Customer Profile**, including dependencies and examples of accessing the [Realtime Customer Profile API of Adobe Experience Platform](https://developer.adobe.com/experience-platform-apis/references/profile/)
+- **Adobe Audience Manager: Customer Data**, including dependencies and examples of accessing the [Adobe Audience Manager Customer Data API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/api)
+- **Adobe Campaign Standard**, including dependencies and examples of accessing the [Adobe Campaign Standard (ACS) API](https://experienceleague.adobe.com/en/docs/campaign-standard/using/working-with-apis/get-started-apis)
+- **Adobe Experience Platform: Realtime Customer Profile**, including dependencies and examples of accessing the [Realtime Customer Profile API of Adobe Experience Platform](https://developer.adobe.com/experience-platform-apis/references/profile)
 - **Generic**, a generic back-end action with hello-world flow that can be reused and modified, for simple serverless computing, third-party API integration, and more
 
 If you included `Web Assets` under Adobe I/O App features above, you will be given the choice to include the React Spectrum-based UI template or a raw HTML/JS UI template:
@@ -256,7 +256,7 @@ If you included `Web Assets` under Adobe I/O App features above, you will be giv
 
 - The `React Spectrum 3 UI` template adds a React-based UI with [React Spectrum](https://react-spectrum.adobe.com/) components included
 
-- The `Raw HTML/JS UI` will add a raw HTML/JS/CSS UI with [Spectrum CSS](https://opensource.adobe.com/spectrum-css) styles included.
+- The `Raw HTML/JS UI` will add a raw HTML/JS/CSS UI with [Spectrum CSS](https://opensource.adobe.com/spectrum-css/) styles included.
   
   Both templates come with boilerplate code needed to integrate your App Builder application with [Adobe Experience Cloud](../../guides/app_builder_guides/exc_app/aec-integration.md)
 

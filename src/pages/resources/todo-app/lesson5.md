@@ -21,14 +21,14 @@ We'll create the React component file under `web-src/src/components/` and name i
 
 This component will make use of several React Spectrum components: 
 
-* [View](https://react-spectrum.adobe.com/react-spectrum/View.html) a generic container.
-* [Well](https://react-spectrum.adobe.com/react-spectrum/Well.html) a generic pre-styled container which will contain the todo list.
-* [Flex](https://react-spectrum.adobe.com/react-spectrum/Flex.html) for the layout.
-* [Form](https://react-spectrum.adobe.com/react-spectrum/Form.html) to submit the todo.
-* [TextField](https://react-spectrum.adobe.com/react-spectrum/TextField.html) the input field for the todo value.
-* [ActionButton](https://react-spectrum.adobe.com/react-spectrum/ActionButton.html) to trigger form submission.
-* [AlertDialog](https://react-spectrum.adobe.com/react-spectrum/AlertDialog.html) to warn the user before deleting a todo list.
-* [DialogTrigger](https://react-spectrum.adobe.com/react-spectrum/DialogTrigger.html) to open the AlertDialog.
+* [View](https://react-spectrum.adobe.com/v3/View.html) a generic container.
+* [Well](https://react-spectrum.adobe.com/v3/Well.html) a generic pre-styled container which will contain the todo list.
+* [Flex](https://react-spectrum.adobe.com/v3/Flex.html) for the layout.
+* [Form](https://react-spectrum.adobe.com/v3/Form.html) to submit the todo.
+* [TextField](https://react-spectrum.adobe.com/v3/TextField.html) the input field for the todo value.
+* [ActionButton](https://react-spectrum.adobe.com/v3/ActionButton.html) to trigger form submission.
+* [AlertDialog](https://react-spectrum.adobe.com/v3/AlertDialog.html) to warn the user before deleting a todo list.
+* [DialogTrigger](https://react-spectrum.adobe.com/v3/DialogTrigger.html) to open the AlertDialog.
 
 ```javascript
 import { View, Flex, Form, TextField, ActionButton, AlertDialog, DialogTrigger, Well } from '@adobe/react-spectrum';
@@ -51,7 +51,7 @@ function TodoList({ todoList, onDelete, onUpdate }) {
 
 ## Spectrum Icons
 
-We'll add [React Spectrum Workflow Icons](https://react-spectrum.adobe.com/react-spectrum/workflow-icons.html) to the `TodoList` component. The icons are simply SVGs packed as React components.  
+We'll add [React Spectrum Workflow Icons](https://react-spectrum.adobe.com/v3/workflow-icons.html) to the `TodoList` component. The icons are simply SVGs packed as React components.  
 
 To import icons, you need the `@spectrum-icons/workflow` dependency. It's pre-installed if you initialize the App Builder app with the React Spectrum template.
 
@@ -90,7 +90,7 @@ Now you can use Spectrum CSS Heading classes to render the to-do list name.
 
 ## Rendering to-do items
 
-Once again, we're going to use the [State hook](https://reactjs.org/docs/hooks-state.html) `useState` to declare a state variable which will hold a list of to-do items. This list will be updated whenever a new to-do item is created. By default, it's initialized with the `todos` from the `todoList` prop: 
+Once again, we're going to use the [State hook](https://legacy.reactjs.org/docs/hooks-state.html) `useState` to declare a state variable which will hold a list of to-do items. This list will be updated whenever a new to-do item is created. By default, it's initialized with the `todos` from the `todoList` prop: 
 
 ```javascript
 const [todoItems, setTodoItems] = useState(todos);
@@ -106,7 +106,7 @@ Next we'll iterate over the `todoItems` array using the [map()](https://develope
 </View>
 ```
 
-The `key` property is necessary in React to uniquely identify the to-do item. In this case, we use the todo id. You can read more about React lists and keys [here](https://reactjs.org/docs/lists-and-keys.html).
+The `key` property is necessary in React to uniquely identify the to-do item. In this case, we use the todo id. You can read more about React lists and keys [here](https://legacy.reactjs.org/docs/lists-and-keys.html).
 
 We're also passing the `name`, `todo` and `onUpdate` props down to the `Todo` component.      
 
@@ -118,7 +118,7 @@ In [lesson 2](lesson2.md), we defined a `MAX_TODO_ITEMS` value within a global c
 import { MAX_TODO_ITEMS } from '../../defaults.json';
 ```
 
-Now we'll use the [React hook](https://reactjs.org/docs/hooks-intro.html) `useState` again to bind it to the TextField to create a new to-do item the way we did in the previous lesson: 
+Now we'll use the [React hook](https://legacy.reactjs.org/docs/hooks-intro.html) `useState` again to bind it to the TextField to create a new to-do item the way we did in the previous lesson: 
 
 ```javascript
 const [newTodo, setNewTodo] = useState('');

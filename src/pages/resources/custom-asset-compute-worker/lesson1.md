@@ -49,8 +49,8 @@ To test your configuration:
    pair** and your keys will be downloaded as a zip file.
 4. Unzip the file and write down the location to the **private.key**.
 
-[create-azure-blob]: https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal 'Create storage account and container'
+[create-azure-blob]: https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal 'Create storage account and container'
 [imgix-create-azure-source]: https://docs.imgix.com/setup/creating-sources/microsoft-azure 'Setting up your Microsoft Azure Source'
 [imgix-tools]: https://dashboard.imgix.com/tools
-[adobe-console]: https://console.adobe.io 'Adobe IO Console'
+[adobe-console]: https://developer.adobe.com/console/ 'Adobe IO Console'
 [adobe-console-firefly-template]: ../../get_started/app_builder_get_started/first-app.md#2-creating-a-new-project-on-developer-console 'Creating new project on Adobe Developer console'
