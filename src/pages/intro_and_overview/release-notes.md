@@ -28,7 +28,7 @@ Then run:
 aio runtime ip-list get
 ```
 
-See the [`aio runtime ip-list` command documentation](https://github.com/adobe/aio-cli-plugin-runtime#aio-runtime-ip-list) for full usage and flags.
+See the [`aio runtime ip-list get` command documentation](https://github.com/adobe/aio-cli-plugin-runtime#aio-runtime-ip-list-get) for full usage and flags.
 
 [Full release changes](https://github.com/adobe/aio-cli-plugin-runtime/releases/tag/8.3.0)
 
