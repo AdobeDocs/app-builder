@@ -2,6 +2,72 @@
 
 Stay up to date with the latest features, improvements, and bug fixes in App Builder and Adobe I/O Runtime.
 
+## June 2026
+
+*June 1, 2026*
+
+### @adobe/aio-cli-plugin-runtime 8.3.0
+
+#### New Features
+
+- Added `aio runtime ip-list get` command to fetch the current Adobe I/O Runtime outbound (egress) IP ranges, so you can update corporate or network allowlists without opening a support ticket
+- Supports the full IP list, region filtering, and JSON output
+- On first use for a given Adobe org, you are prompted to accept the I/O Runtime egress IP allowlist terms and provide a contact email for IP-change notifications; subsequent calls in the same org are non-interactive
+
+#### Upgrade Instructions
+
+To use the update, reinstall the aio-cli:
+
+```
+npm install -g @adobe/aio-cli
+```
+
+Then run:
+
+```
+aio runtime ip-list get
+```
+
+See the [`aio runtime ip-list` command documentation](https://github.com/adobe/aio-cli-plugin-runtime#aio-runtime-ip-list) for full usage and flags.
+
+[Full release changes](https://github.com/adobe/aio-cli-plugin-runtime/releases/tag/8.3.0)
+
+*May 29, 2026*
+
+### @adobe/aio-lib-files 4.1.4
+
+#### Security
+
+- Fixed CVE-2026-41907 by updating a vulnerable dependency
+
+#### Upgrade Instructions
+
+To use the update, reinstall the aio-cli:
+
+```
+npm install -g @adobe/aio-cli
+```
+
+[Full release changes](https://github.com/adobe/aio-lib-files/releases/tag/4.1.4)
+
+*May 28, 2026*
+
+### @adobe/aio-lib-runtime 7.4.0
+
+#### New Features
+
+- Added Node.js 26 runtime support
+
+#### Upgrade Instructions
+
+To use the update, reinstall the aio-cli:
+
+```
+npm install -g @adobe/aio-cli
+```
+
+[Full release changes](https://github.com/adobe/aio-lib-runtime/releases/tag/7.4.0)
+
 ## April 2026
 
 *April 27, 2026*
