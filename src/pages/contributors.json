@@ -746,10 +746,10 @@
     {
       "page": "/guides/runtime_guides/reference_docs/configuringproxy",
       "avatars": [
-        "https://avatars.githubusercontent.com/u/14320591?v=4",
-        "https://avatars.githubusercontent.com/u/38516639?v=4"
+        "https://avatars.githubusercontent.com/u/38516639?v=4",
+        "https://avatars.githubusercontent.com/u/14320591?v=4"
       ],
-      "lastUpdated": "5/26/2025"
+      "lastUpdated": "6/3/2026"
     },
     {
       "page": "/guides/runtime_guides/reference_docs/environment-variables",
@@ -828,9 +828,10 @@
     {
       "page": "/guides/runtime_guides/security-general",
       "avatars": [
+        "https://avatars.githubusercontent.com/u/38516639?v=4",
         "https://avatars.githubusercontent.com/u/14320591?v=4"
       ],
-      "lastUpdated": "5/26/2025"
+      "lastUpdated": "6/3/2026"
     },
     {
       "page": "/guides/runtime_guides/system-settings",
