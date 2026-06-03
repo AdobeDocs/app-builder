@@ -73,7 +73,15 @@ You can secure web actions using any CDN by following these steps:
 
 ## Secure communication with back-end services
 
-For security reasons, Runtime does not expose egress IPs . Customers who need a way to  communicate securely with their back-end services can use a proxy between their system and Runtime, as described in [Configuring a Secure Proxy](reference_docs/configuringproxy.md).
+If your back-end service restricts inbound traffic by IP, you can retrieve the current Adobe I/O Runtime outbound (egress) IP ranges and add them to your allowlist by running:
+
+```
+aio runtime ip-list get
+```
+
+This command (added in [`@adobe/aio-cli-plugin-runtime` 8.3.0](../../intro_and_overview/release-notes.md)) lets you update corporate or network allowlists without opening a support ticket. The first time you run it for a given Adobe org, you are prompted to accept the egress IP allowlist terms and provide a contact email for IP-change notifications; subsequent calls in the same org are non-interactive. Because these ranges can change over time, re-run the command periodically and watch for change notifications rather than hard-coding individual addresses.
+
+If you instead need a single, stable IP address — or want to secure the connection with mutual TLS (mTLS) — you can route traffic through a proxy you control, as described in [Configuring a Secure Proxy](reference_docs/configuringproxy.md).
 
 Runtime ingress IPs are not static. To facilitate operational changes,  IPs returned when looking up I/O Runtime endpoints may change. To ensure uninterrupted service availability, it is critical that clients honor the Time to Live (TTL) returned by I/O Runtime DNS records. When the IPs associated with these endpoints change due to operational adjustments, clients who rely on the outdated addresses may experience service disruptions, increased latency, or network connectivity issues. How clients honoring TTL is implementation-specific, but in general, clients should not cache DNS records for longer than the specified TTL.
 
