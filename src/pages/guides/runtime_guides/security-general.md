@@ -79,7 +79,7 @@ If your back-end service restricts inbound traffic by IP, you can retrieve the c
 aio runtime ip-list get
 ```
 
-This command (added in [`@adobe/aio-cli-plugin-runtime` 8.3.0](../../intro_and_overview/release-notes.md)) lets you update corporate or network allowlists without opening a support ticket. The first time you run it for a given Adobe org, you are prompted to accept the egress IP allowlist terms and provide a contact email for IP-change notifications; subsequent calls in the same org are non-interactive. Because these ranges can change over time, re-run the command periodically and watch for change notifications rather than hard-coding individual addresses.
+This command lets you update corporate or network allowlists without opening a support ticket. Make sure you are on the latest version of the [AIO CLI](https://github.com/adobe/aio-cli) (`npm install -g @adobe/aio-cli`); see the [release notes](../../intro_and_overview/release-notes.md) for details. The first time you run it for a given Adobe org, you are prompted to accept the egress IP allowlist terms and provide a contact email for IP-change notifications; subsequent calls in the same org are non-interactive. Because these ranges can change over time, re-run the command periodically and watch for change notifications rather than hard-coding individual addresses.
 
 If you instead need a single, stable IP address — or want to secure the connection with mutual TLS (mTLS) — you can route traffic through a proxy you control, as described in [Configuring a Secure Proxy](reference_docs/configuringproxy.md).
 
