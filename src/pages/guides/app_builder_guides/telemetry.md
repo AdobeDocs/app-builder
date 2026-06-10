@@ -26,6 +26,7 @@ The data collected includes:
 - Any flags used, but not the values of the flags 
 - How long each command ran, and whether it was successful
 - Information about the environment, including operating system, node version and CLI version
+- Whether the command was run by a person or an AI agent, and the agent's name
 
 ## What about secrets and sensitive data?
 
@@ -64,6 +65,8 @@ If you would like to turn telemetry off, simply run `aio telemetry off`
 Individual commands may be run with telemetry off by using the `--no-telemetry` flag, for example:
 
 `aio app info --no-telemetry`
+
+You can also set `AIO_TELEMETRY_DISABLED` to `true`, `1`, or `yes` to disable telemetry for a single run (handy in CI), without changing your saved setting.
 
 ## Show me the code
 
