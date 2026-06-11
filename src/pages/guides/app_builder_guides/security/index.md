@@ -136,18 +136,6 @@ The validator action enabled by `require-adobe-auth: true` annotation requires t
 
 To resolve this issue, add the "I/O Management API" service to the App Builder workspace. This adds the required scope to the JWT access token used by the headless application.
 
-#### Known issue 3: overwriting params.body
-
-Actions designed to receive data in params.body will behave differently with the validator, because the validator action currently always passes the value:
-
-```
-"body": {
-  "message": "validation success"
-}
-```
-
-Please use a different variable until this issue is resolved.
-
 ## Securing App Builder Applications
 
 ### I/O Runtime Specific guidelines
