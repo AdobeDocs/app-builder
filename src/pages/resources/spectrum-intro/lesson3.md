@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Lesson 3: React Spectrum'
+description: 'Use the React Spectrum component library to build accessible, internationalized UI from Spectrum components.'
 ---
 
 # Lesson 3: React Spectrum
@@ -19,7 +20,7 @@ React Spectrum is composed of three parts:
 
 React Spectrum enables accessibility and common behavior to be handled out of the box. Using it saves front-end development time, so you can focus on styling and other design-specific features that can be built on top of the library.
 
-If you're not familiar with React, please read the [React getting started guide](https://reactjs.org/docs/getting-started.html). 
+If you're not familiar with React, please read the [React getting started guide](https://react.dev/learn). 
 
 > Note: these documents, and this tutorial, refer to the legacy version of React. The sample project should work as indicated.
 
@@ -71,7 +72,7 @@ ReactDOM.render(
 
 Provider is the containing component that all other React Spectrum components are the children of. The Provider's theme is the CSS variable set for colorScheme and scale values.
 
-Consult the [React documentation](https://react-spectrum.adobe.com/docs/react-spectrum/Provider.html) for more details.
+Consult the [React documentation](https://react-spectrum.adobe.com/v3/Provider.html) for more details.
 
 > **Note**: A Typekit ID is required to use the suggested Adobe fonts. Visit [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) to create one. The default font is intended only for prototyping work.
 

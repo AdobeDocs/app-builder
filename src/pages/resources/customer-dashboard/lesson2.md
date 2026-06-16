@@ -7,13 +7,14 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: 'Lesson 2: Explore the App Builder App'
+description: 'Explore the file structure, manifest, and credentials of a Campaign Standard App Builder application.'
 ---
 
 # Lesson 2: Explore the App Builder App
 
 Within the newly created app, you have seen the `.env` file with your credentials for running the app. 
 
-`package.json` is the [crucial part](https://docs.npmjs.com/creating-a-package-json-file) of almost every NodeJS project. It contains the list of dependencies, version, reproducible builds, and so on.
+`package.json` is the [crucial part](https://docs.npmjs.com/creating-a-package-json-file/) of almost every NodeJS project. It contains the list of dependencies, version, reproducible builds, and so on.
 
 `ext.config.yaml` in the `src/dx-excshell-1/` folder is the cockpit of your App Builder app back end. It lists the declaration of serverless actions including name, source files, runtime kind, default parameters, annotations, and so on. You can find the grammar of writing manifest [here](https://github.com/apache/openwhisk-wskdeploy/blob/master/docs/programming_guide.md#wskdeploy-utility-by-example):
 
@@ -113,7 +114,7 @@ exports.main = main
 
 Here, the [action](https://github.com/apache/openwhisk/blob/master/docs/actions-nodejs.md) exposes a `main` function, which accepts a list of parameters from the client. It checks that required parameters for using the Campaign Standard SDK are present in the list, including the `Authorization` header for authentication against Adobe IMS.
 
-An access token is retrieved to initiate the SDK client instance, which is then used to retrieve the list of customer profiles using the [getAllProfiles()](https://docs.adobe.com/content/help/en/campaign-standard/using/working-with-apis/managing-profiles/retrieving-profiles.html) function. Finally, the profiles are returned to the client. The entire execution is wrapped within a try-catch block, so errors are handled appropriately.
+An access token is retrieved to initiate the SDK client instance, which is then used to retrieve the list of customer profiles using the [getAllProfiles()](https://experienceleague.adobe.com/en/docs/campaign-standard/using/working-with-apis/managing-profiles/retrieving-profiles) function. Finally, the profiles are returned to the client. The entire execution is wrapped within a try-catch block, so errors are handled appropriately.
 
 Next, let's see how the web UI communicates with the back end. All web assets are placed in the `src/dx-excshell-1/web-src` folder.
 

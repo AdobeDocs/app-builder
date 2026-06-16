@@ -7,9 +7,9 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: 'Lesson 2: Configure the App'
+description: 'Configure cloud storage credentials and other settings required by the Asset Compute Developer tool.'
 ---
 
-# Lesson 2: Configure the App
 # Lesson 2: Configure the App
 
 As you log in when creating the application, most of the App Builder credentials get collected in your `.env` file. However, using the Developer tool requires additional credentials.

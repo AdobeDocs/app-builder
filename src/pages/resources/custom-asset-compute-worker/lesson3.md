@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/marcinczeczko'
 title: 'Lesson 3: Implement the worker'
+description: 'Implement a custom Asset Compute worker that produces renditions using the imgIX service.'
 ---
 
 # Lesson 3: Implement the Worker

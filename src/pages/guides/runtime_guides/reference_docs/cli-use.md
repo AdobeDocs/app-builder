@@ -1,3 +1,13 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - aio CLI
+  - Commands
+title: 'Using aio CLI'
+description: 'Reference for the aio runtime command, its options, aliases, and subcommands for managing Runtime resources.'
+---
+
 # Using aio CLI
 
 ```

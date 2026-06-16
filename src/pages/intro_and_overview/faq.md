@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Frequently Asked Questions
+description: 'Frequently asked questions about App Builder, its use cases, pricing, and comparison with other application frameworks.'
 ---
 
 # Frequently Asked Questions

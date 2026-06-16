@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: How it Works
+description: 'Overview of how App Builder works and what you''ll learn in the get-started tutorial series.'
 ---
 
 # Get Started with App Builder

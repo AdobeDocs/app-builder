@@ -1,3 +1,13 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Programming Model
+  - OpenWhisk
+title: 'Understanding Adobe I/O Runtime'
+description: 'Programming model, components, and architecture of Adobe I/O Runtime, the serverless platform that powers App Builder.'
+---
+
 # Understanding Adobe I/O Runtime
 
 Serverless platforms greatly simplify the development and operation of business applications. Successful use of them takes advantage of their many strengths, while working around their limitations. This Quick Start Guide explores the most critical of these considerations as they apply to I/O Runtime.
@@ -12,19 +22,19 @@ Actions may be invoked by HTTP calls (RESTful or HTTP) or by other actions. Acti
 
 Actions may be organized into any number of **packages** within a namespace. Packages are used to organize the code, manage different versions of the same action, or share code with other tenants or applications. Packages marked **shareable** may be bound to the namespaces of anyone who has their full name, in the manner of symbolic links.
 
-![](../../images/quickstart-programming-model.png)
+![Diagram of the Runtime programming model with actions, namespaces, and packages](../../images/quickstart-programming-model.png)
 
-![](../../images/quickstart-shared-packages.png)
+![Diagram showing how shareable packages bind to other namespaces](../../images/quickstart-shared-packages.png)
 
 Actions may be invoked anonymously - with no authorization required - or with authentication. Runtime supports basic authorization  Developers can implement their own auth. We will be adding support for IMS based auth.
 
 ## Understanding I/O Runtime components
 
-Adobe I/O Runtime is built on the Apache OpenWhisk open-source project, so many resources written for Apache OpenWhisk also apply to Adobe I/O Runtime. The [Apache OpenWhisk repository](https://github.com/apache/incubator-openwhisk/tree/master/docs) is a useful resource.
+Adobe I/O Runtime is built on the Apache OpenWhisk open-source project, so many resources written for Apache OpenWhisk also apply to Adobe I/O Runtime. The [Apache OpenWhisk repository](https://github.com/apache/openwhisk/tree/master/docs) is a useful resource.
 
 This diagram shows the high-level architecture of I/O Runtime built on OpenWhisk:
 
-![](../../images/quickstart-components.png)
+![High-level Runtime architecture diagram built on OpenWhisk](../../images/quickstart-components.png)
 
 This is the sequence by which Runtime components execute user code when an action is executed:
 
@@ -144,7 +154,7 @@ This is just the beginning for Adobe I/O Runtime. We encourage you to help us en
 
 ### Social media
 
-You can follow the Adobe I/O team on [Twitter](https://twitter.com/adobeio), [Medium](https://medium.com/adobetech/tagged/platform), and [Youtube](https://www.youtube.com/channel/UCDtYqOjS9Eq9gacLcbMwhhQ).
+You can follow the Adobe I/O team on [Twitter](https://x.com/adobeio), [Medium](https://medium.com/adobetech/tagged/platform), and [Youtube](https://www.youtube.com/channel/UCDtYqOjS9Eq9gacLcbMwhhQ).
 
 ### Support
 

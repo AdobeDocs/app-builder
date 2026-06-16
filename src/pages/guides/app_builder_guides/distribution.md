@@ -6,7 +6,7 @@ keywords:
   - Public
   - Private
 title: Distribution
-description: The Developer Console and aio CLI provide features for developers to distribute their App Builder applications. This documentation focuses on the distribution step of this lifecycle.
+description: How to distribute App Builder applications publicly or privately using the Developer Console and the aio CLI.
 ---
 
 # Distribution Overview
@@ -223,7 +223,7 @@ configSchema:
 
 ### Required products
 
-Developers of publicly distributable App Builder apps can define Adobe products that are required for their apps to work properly. The [Discover](https://developer.adobe.com/developer-distribution/experience-cloud/docs/guides/discoverandmanage/#discover) and [Acquire](https://developer.adobe.com/developer-distribution/experience-cloud/docs/guides/discoverandmanage/#acquire) sections of the distribution documentation show how these options are surfaced to customers.
+Developers of publicly distributable App Builder apps can define Adobe products that are required for their apps to work properly. The [distribution documentation](https://developer.adobe.com/developer-distribution/experience-cloud/docs/guides/) shows how these options are surfaced to customers when they discover and acquire your app.
 
 #### Defining required products
 

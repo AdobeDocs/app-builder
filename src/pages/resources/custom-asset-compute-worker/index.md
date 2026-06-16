@@ -22,5 +22,5 @@ Image resizing or format conversion is a relatively easy task when doing renditi
 Your project might require more robust approaches supported by intelligent image services. For example, you might need to change images to greyscale, or intelligently crop the images around faces. 
 
 This Code Lab will guide you through the creating a [custom worker for Asset Compute][asset-compute-extensions] using App Builder, and how to use it in [Adobe Experience Manager as a Cloud service][aem-cloud].
-[asset-compute-extensions]: https://docs.adobe.com/content/help/en/asset-compute/using/extend/understand-extensibility.html
-[aem-cloud]: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html
+[asset-compute-extensions]: https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility
+[aem-cloud]: https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/overview/introduction

@@ -1,10 +1,11 @@
 ---
-title: App Builder Tech Talks, Deep Dive Sessions and Partner Use Cases     
+title: 'App Builder: Tech Talks and Partner Use Cases'
 keywords:
   - Adobe I/O
   - Extensibility
   - API Documentation
-  - Developer Tooling  
+  - Developer Tooling
+description: 'Index of App Builder tech talks, deep-dive sessions, and partner use case videos.'
 ---
 
 # App Builder Tech Talks, Deep Dive Sessions and Partner Use Cases

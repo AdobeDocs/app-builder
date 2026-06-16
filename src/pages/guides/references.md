@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Reference Documentation
+description: 'Reference links to the Adobe Developer Console, aio CLI, App Builder generators, and SDK libraries.'
 ---
 
 # Reference Documentation
@@ -12,7 +13,7 @@ title: Reference Documentation
 * [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/)
 * [Adobe CLI](https://github.com/adobe/aio-cli)
 * [App Builder Application Generators](https://github.com/adobe/generator-aio-app)
-* [Developer Console Project Generators](https://github.com/adobe/generator-aio-console)
+* [Developer Console Project Generators](https://github.com/adobe/aio-cli-lib-console)
 * [Adobe Authentication Library](https://github.com/adobe/aio-lib-ims)
 * [Token-Vending Machine](https://github.com/adobe/aio-tvm)
 * [SDK Libraries](https://github.com/adobe/aio-sdk)

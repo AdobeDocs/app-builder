@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/marcinczeczko'
 title: Architecture of our worker
+description: 'Architecture of a custom Asset Compute worker that produces renditions using imgIX and Azure blob storage.'
 ---
 
 # Architecture of Our Worker

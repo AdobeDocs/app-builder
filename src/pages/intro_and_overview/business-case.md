@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Business case
+description: 'Why enterprises choose App Builder over third-party or do-it-yourself customizations to extend Adobe solutions.'
 ---
 
 # Business case for App Builder
@@ -48,8 +49,8 @@ Execution of App Builder apps on Adobe's I/O Runtime serverless platform adds ev
 
 ## Examples from the real world
 
-- **Cognizant** demonstration airline website: [Building a Real-Time Airline Application Using Adobe Experience Platform, Adobe I/O Runtime and App Builder](https://www.netcentric.biz/insights/2020/06/building-an-aep-demo-with-firefly.html?utm_source=linkedin&utm_medium=social_nonpaid&utm_campaign=20_insights&utm_content=link_post&es_id=8e9abf83f6)
-- **Wunderman Thompson Technology** image reformatting: [How to generate intelligent renditions with AEM as a Cloud Service](https://tech.cognifide.com/blog/2020/how-to-generate-intelligent-renditions-aem-cloud/)
+- **Cognizant** demonstration airline website: [Building a Real-Time Airline Application Using Adobe Experience Platform, Adobe I/O Runtime and App Builder](https://www.netcentric.biz/insights/2020/06/building-an-aep-demo-with-firefly)
+- **Wunderman Thompson Technology** image reformatting: [How to generate intelligent renditions with AEM as a Cloud Service](https://wttech.blog/blog/2020/how-to-generate-intelligent-renditions-aem-cloud/)
 - **Adobe** Cloud Manager plug-in for Adobe I/O CLI: [Setting Up Adobe I/O CLI for Cloud Manager](https://medium.com/adobetech/setting-up-adobe-i-o-cli-for-cloud-manager-8820f47e3c94)
 - **VRT** dynamic content creation: [How Belgian Broadcaster VRT Turned to Adobe I/O Runtime to Dynamically Create Newsletter Content](https://medium.com/adobetech/how-belgian-broadcaster-vrt-turned-to-adobe-i-o-runtime-to-dynamically-create-newsletter-content-5cafe224a2a5)
 - **Bank of America** marketing offer personalization: [How Bank of America Is Using Adobe I/O Runtime to Boost the Efficiency of Its Personalized Offers in Adobe Target](https://medium.com/adobetech/how-bank-of-america-is-using-adobe-i-o-runtime-to-boost-the-efficiency-of-its-personalized-offers-699de38cf751)

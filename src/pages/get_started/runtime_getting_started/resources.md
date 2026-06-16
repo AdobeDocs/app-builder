@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - OpenWhisk
+  - Resources
+  - Support
+title: 'Resources and support'
+description: 'Resources, social media accounts, and community support channels for Adobe I/O Runtime developers.'
+---
+
 <HeroSimple slots="heading, text" />
 
 # Resources and support
@@ -6,11 +17,11 @@ Adobe I/O Runtime is built on top of Apache OpenWhisk, so blogs, documentation, 
 
 ## Resources
 
-A good starting point is the [Apache OpenWhisk repository](https://github.com/apache/incubator-openwhisk/tree/master/docs).
+A good starting point is the [Apache OpenWhisk repository](https://github.com/apache/openwhisk/tree/master/docs).
 
 ## Social media
 
-You can follow our team on [Twitter](https://twitter.com/adobeio), [Medium](https://medium.com/adobetech/tagged/platform), and [Youtube](https://www.youtube.com/channel/UCDtYqOjS9Eq9gacLcbMwhhQ).
+You can follow our team on [Twitter](https://x.com/adobeio), [Medium](https://medium.com/adobetech/tagged/platform), and [Youtube](https://www.youtube.com/channel/UCDtYqOjS9Eq9gacLcbMwhhQ).
 
 ## Support
 

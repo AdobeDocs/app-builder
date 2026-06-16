@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Triggers
+  - Rules
+  - Events
+title: 'Using Triggers and Rules'
+description: 'Use triggers and rules in Adobe I/O Runtime to invoke actions in response to events.'
+---
+
 # Using Triggers and Rules
 
 Actions invoked directly in the CLI have limited application; Adobe I/O Runtime is most useful when it is configured to respond to events. Runtime features that support this are triggers and rules:

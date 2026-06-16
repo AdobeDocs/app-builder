@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: 'Lesson 3: Develop custom worker calling Photoshop APIs'
+description: 'Develop a custom Asset Compute worker that calls Adobe Photoshop APIs to generate AEM Assets renditions.'
 ---
 
 # Lesson 3: Develop Custom Worker Calling Photoshop APIs
@@ -30,7 +31,7 @@ You will need the [App Builder Files SDK](https://github.com/adobe/aio-lib-files
 
 Make sure you run `npm install` after updating the `package.json` file, so that all the npm modules are installed.
 
-Then update your action code in `actions/<worker-name>/index.js` to use the Photoshop API SDK. In this example, it calls the [Remove Background API](https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop_removeBackground/) to remove the background of an image.
+Then update your action code in `actions/<worker-name>/index.js` to use the Photoshop API SDK. In this example, it calls the Remove Background API (see the [Photoshop API reference](https://developer.adobe.com/firefly-services/docs/photoshop/api/)) to remove the background of an image.
 
 ```javascript
 const { worker, SourceCorruptError } = require('@adobe/asset-compute-sdk');

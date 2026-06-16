@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: Codelab Environment Requirements
+description: 'Environment requirements for the App Builder cron jobs and alarm feeds Code Lab.'
 ---
 
 <Fragment src="../transclusions/requirements.md"/>

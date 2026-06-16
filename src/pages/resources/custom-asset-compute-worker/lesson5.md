@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/marcinczeczko'
 title: 'Lesson 5: Setup AEM to use the worker'
+description: 'Configure AEM as a Cloud Service to use a custom Asset Compute worker via processing profiles.'
 ---
 
 # Lesson 5: Set Up AEM to Use the Worker

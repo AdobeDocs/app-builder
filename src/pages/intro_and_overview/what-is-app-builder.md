@@ -5,6 +5,7 @@ keywords:
   - API Documentation  
   - Developer Tooling
 title: How it Works
+description: 'What App Builder is, its main components, and how Adobe I/O Runtime fits into it.'
 ---
 
 ## What is App Builder?

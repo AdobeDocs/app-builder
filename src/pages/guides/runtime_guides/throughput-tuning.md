@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Throughput
+  - Concurrency
+  - Performance
+title: 'Throughput Tuning'
+description: 'Tune Adobe I/O Runtime action concurrency and container reuse to maximize throughput and minimize cold-start latency.'
+---
+
 # Throughput Tuning
 
 ## Containers
@@ -61,7 +72,7 @@ Encoded responses can't be cached, so the `Content-Encoding` response header mus
 
 ### Vary header
 
-The caching layer supports the use of [Vary header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Vary) to cache based on header fields as well as on URL and query parameters.
+The caching layer supports the use of [Vary header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Vary) to cache based on header fields as well as on URL and query parameters.
 
 This action responds to certain header fields while doing a complex calculation:
 

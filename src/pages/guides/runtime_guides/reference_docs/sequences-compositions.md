@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Sequences
+  - Compositions
+  - OpenWhisk
+title: 'Sequences and Compositions'
+description: 'Orchestrate Adobe I/O Runtime actions using sequences for linear chains or compositions for branching control flow.'
+---
+
 # Sequences and Compositions
 
 There are two ways to orchestrate a series of action calls into a flow: sequences and compositions.
@@ -29,7 +40,7 @@ If we apply this limitation to the example above, then `actionA` and `actionB` h
 
 If one of your actions needs more than 60 seconds (therefore putting the sequence over the limit), the only solution is to invoke it as a non-blocking action using the OpenWhisk npm module. So, using the same example, you could have `actionA` calling another action in a non-blocking manner. You can see an example of how to do this [here](../asynchronous-calls.md).
 
-Read more about sequences on the [OpenWhisk documentation page](https://github.com/apache/incubator-openwhisk/blob/master/docs/actions.md#creating-action-sequences).
+Read more about sequences on the [OpenWhisk documentation page](https://github.com/apache/openwhisk/blob/master/docs/actions.md).
 
 ## Compositions
 
@@ -73,8 +84,8 @@ This creates a composition called `compositionA`. Invoke it like any other actio
 
 More information is available at:
 
-* Apache OpenWhisk Composer [home page]( https://github.com/apache/incubator-openwhisk-composer)
-* [Combinators](https://github.com/apache/incubator-openwhisk-composer/blob/master/docs/COMBINATORS.md), with a complete list of the control-flow structure.
+* Apache OpenWhisk Composer [home page]( https://github.com/apache/openwhisk-composer)
+* [Combinators](https://github.com/apache/openwhisk-composer/blob/master/docs/COMBINATORS.md), with a complete list of the control-flow structure.
 
 ### Parallel compositions
 

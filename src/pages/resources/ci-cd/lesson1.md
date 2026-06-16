@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Lesson 1: Setup CI/CD'
+description: 'Set up a CI/CD workflow for an App Builder application using GitHub Actions and the bundled Adobe I/O actions.'
 ---
 
 # Lesson 1: Setup CI/CD
@@ -13,7 +14,7 @@ App Builder comes with pre-defined GitHub actions to manage your CI/CD workflow.
 
 ## Setup your GitHub repository for your App Builder App
 
-To put your App Builder App up on GitHub, you'll need to create a repository for it to live in. You can follow these [steps](https://help.github.com/en/github/getting-started-with-github/create-a-repo) to create an empty repository.
+To put your App Builder App up on GitHub, you'll need to create a repository for it to live in. You can follow these [steps](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories) to create an empty repository.
 Once your repository is available on GitHub, you can copy your repository url e.g. `https://github.com/<org>/<project_name>.git`.
 
 Then in the command line, use `git clone https://github.com/<org>/<project_name>.git` to clone the repository to your local system.
@@ -33,7 +34,7 @@ By selecting the CI/CD workflow option, the application code will be initialized
 
 This folder contains default GitHub Workflows that can be customized and extended if needed. 
 
-**pr_test.yml** is the GitHub action that will run the App unit tests on the stage environment by calling `aio app test` against the requested changes. It will run anytime the [pull_request](https://help.github.com/en/actions/reference/events-that-trigger-workflows#pull-request-event-pull_request) event occurs.
+**pr_test.yml** is the GitHub action that will run the App unit tests on the stage environment by calling `aio app test` against the requested changes. It will run anytime the [pull_request](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows) event occurs.
 
 > Note: The versions in the example workflow files below (ex. @3) may not be the latest. We recommend updating to the newest major version when starting a new project, especially if setup is not working. To see the latest release, go to the Releases section of [adobe/aio-apps-action](https://github.com/adobe/aio-apps-action).
 
@@ -76,7 +77,7 @@ jobs:
 ```
 
 **deploy_stage.yml** is the GitHub action that will deploy the App Builder App to the stage environment on every new commit on the `master` branch by calling `aio app deploy`. 
-It will run anytime the [push](https://help.github.com/en/actions/reference/events-that-trigger-workflows#push-event-push) event occurs on the `master` branch. 
+It will run anytime the [push](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows) event occurs on the `master` branch. 
 
 ```yaml
 name: AIO App CI
@@ -122,7 +123,7 @@ jobs:
           AIO_RUNTIME_NAMESPACE: ${{ secrets.AIO_RUNTIME_NAMESPACE_STAGE }}
 ```
 
-**deploy_prod.yml** is the GitHub action that will deploy the App Builder App to the production environment by calling `aio app deploy`. It will run anytime the [release](https://help.github.com/en/actions/reference/events-that-trigger-workflows#release-event-release) event occurs. Please read [GitHub's documentation ](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository) to learn how to perform releases. 
+**deploy_prod.yml** is the GitHub action that will deploy the App Builder App to the production environment by calling `aio app deploy`. It will run anytime the [release](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows) event occurs. Please read [GitHub's documentation ](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository) to learn how to perform releases. 
 
 ```yaml
 name: AIO App CI
@@ -179,7 +180,7 @@ The GitHub actions defined in `deploy_stage.yml` will run by default. Go to `htt
 
 ## GitHub secrets
 
-To differentiate Stage from Production environments, the GitHub actions rely on [GitHub secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets). Encrypted secrets allow you to store sensitive information, such as access tokens, in your repository. 
+To differentiate Stage from Production environments, the GitHub actions rely on [GitHub secrets](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets). Encrypted secrets allow you to store sensitive information, such as access tokens, in your repository. 
 
 By default, the secrets required for `deploy_prod.yml` for the **Production environment** are named: 
 
@@ -205,13 +206,13 @@ If you can't add secrets to the repository, possibilities include:
 * You don't have admin access for an organization repository
 * You don't have write access to the repository if you're using the [GitHub Actions secrets API](https://developer.github.com/v3/actions/secrets/#create-or-update-a-secret-for-a-repository)
 
-The secrets value can be retrieved in the [Developer Console](https://console.adobe.io/), from which you can download  Stage and Production namespaces and credentials.
+The secrets value can be retrieved in the [Developer Console](https://developer.adobe.com/console/), from which you can download  Stage and Production namespaces and credentials.
 
 ![developer-console](assets/developer-console.png)  
 
 Follow these steps to retrieve the value for the secrets: `AIO_RUNTIME_NAMESPACE_STAGE`, `AIO_RUNTIME_AUTH_STAGE` and `AIO_RUNTIME_NAMESPACE_PROD`, `AIO_RUNTIME_AUTH_PRD`: 
 
-1. Go to the [Developer Console](https://console.adobe.io/)
+1. Go to the [Developer Console](https://developer.adobe.com/console/)
 2. Select the right org, project and workspace
 3. Click on the Download all button on the top right 
 

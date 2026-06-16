@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Lesson 3: Testing a Serverless Action'
+description: 'Write Jest unit tests for the barcode-generation serverless action used in the headless App Builder Code Lab.'
 ---
 
 # Lesson 3: Testing a Serverless Action

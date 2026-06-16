@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - REST APIs
+  - Web Actions
+  - Swagger
+title: 'Creating REST APIs'
+description: 'Create REST APIs from Adobe I/O Runtime web actions using the aio CLI or Swagger definition files.'
+---
+
 # Creating REST APIs
 
 > Note: IO Runtime cleans up custom APIs that have not been accessed for 90 days.
@@ -79,7 +90,7 @@ This will work provided that the actions are already created in that namespace.
 
 ## Enable CORS on an HTTP resource
 
-[CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) headers can be controlled either statically or dynamically.
+[CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS) headers can be controlled either statically or dynamically.
 
 ### Static CORS response with OpenAPI
 
@@ -319,7 +330,7 @@ Requests that originate from the IP addresses on the disallow list will be rejec
 
 > Note: be sure the `my-require-gw-validation-web-action` is configured as a web action with `-a require-gw-validation true`, or the action can be accessed publicly with no restrictions on the non-API URL. 
 
-# How long does it take to create or update an API?
+## How long does it take to create or update an API?
 
 It can take up to five minutes to see the changes from creation or update of an API.
 

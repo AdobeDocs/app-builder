@@ -14,7 +14,7 @@ description: Discover the essential commands and operations available in App Bui
 
 The database plugin in the AIO CLI is a utility that facilitates provisioning, initializing, querying, and monitoring workspace databases.
 
-The following is only a brief introduction to the DB Plugin. For more thorough documentation, see [aio-cli-plugin-app-storage](https://github.com/adobe/aio-cli-plugin-app-storage/tree/epic/abdb-implementation).
+The following is only a brief introduction to the DB Plugin. For more thorough documentation, see [aio-cli-plugin-app-storage](https://github.com/adobe/aio-cli-plugin-app-storage).
 
 ## Installation
 

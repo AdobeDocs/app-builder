@@ -5,6 +5,7 @@ keywords:
 - API Documentation
 - Developer Tooling
 title: Dealing with Application State
+description: 'Manage application state using default parameters, environment variables, and the State and Files storage SDKs.'
 ---
 
 # Dealing with Application State
