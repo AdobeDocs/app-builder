@@ -5,7 +5,7 @@ keywords:
   - Local Environment
   - Set up
 title: Set Up Access, Environment, and Tools
-description: App Builder is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure.
+description: Set up access, credentials, your local environment, and the tools you need to develop Adobe App Builder applications.
 ---
 
 # Set Up Access, Environment, and Tools
@@ -22,7 +22,7 @@ Here you'll learn what systems you need to access, how to access them, and how t
   
   - Customers should request access from their account manager or their company IT/Marketing admin
   
-  - Partners should request App Builder access from their partner manager, or Sandbox access though the [Adobe Solution Partner Portal](https://solutionpartners.adobe.com/home.html)
+  - Partners should request App Builder access from their partner manager, or Sandbox access though the [Adobe Solution Partner Portal](https://partners.adobe.com/digitalexperience/)
 
 **App Builder access** is only available with a purchased license. 
 
@@ -96,9 +96,9 @@ We aim to provide similar quality of local development experience on Windows 10 
 
 #### Supported terminals for the CLI
 
-The [CLI](https://github.com/adobe/aio-cli) uses the popular [inquirer](https://www.npmjs.com/package/inquirer) package for all its interactive functions such as application generators.
+The [CLI](https://github.com/adobe/aio-cli) uses the popular [inquirer](https://github.com/SBoudrias/Inquirer.js) package for all its interactive functions such as application generators.
 
-See [inquirer's Support section](https://www.npmjs.com/package/inquirer#support-os-terminals) and its [known issues](https://www.npmjs.com/package/inquirer#known-issues) for up-to-date details.
+See the [inquirer documentation](https://github.com/SBoudrias/Inquirer.js#readme) for up-to-date details on supported terminals and known issues.
 
 ### Optional tool
 
