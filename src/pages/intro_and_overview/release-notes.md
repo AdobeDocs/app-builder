@@ -2,6 +2,23 @@
 
 Stay up to date with the latest features, improvements, and bug fixes in App Builder and Adobe I/O Runtime.
 
+## June 2026
+
+*June 17, 2026*
+
+### @adobe/aio-cli-plugin-certificate
+
+#### Refactor
+
+- Upgrade module from CommonJS to ESM
+- Migrate test framework from Jest to Vitest
+
+#### Upgrade Instructions
+
+To use the update, reinstall the aio-cli or update `@adobe/aio-cli-plugin-certificate` to `^2.2` in your project's package.json.
+
+[Full release changes - aio-cli-plugin-certificate](https://github.com/adobe/aio-cli-plugin-certificate/releases/tag/2.2.0)
+
 ## January 2026
 
 *January 26, 2026*
