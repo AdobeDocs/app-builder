@@ -10,6 +10,7 @@ keywords:
   - Splunk
   - Splunk Cloud
 title: Forwarding Logs to Splunk Cloud
+description: 'Configure an App Builder application to forward logs to a Splunk Cloud index using the HTTP event collector.'
 ---
 
 # Forwarding Logs to Splunk Cloud

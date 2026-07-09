@@ -1,3 +1,13 @@
+---
+keywords:
+  - Adobe I/O
+  - App Builder
+  - Getting Started
+  - Runtime
+title: 'Getting Started with App Builder'
+description: 'Choose between the App Builder and Runtime getting-started paths and explore the rest of the App Builder documentation.'
+---
+
 # Getting Started with App Builder
 
 Welcome to the Getting Started section of App Builder documentation. Here you'll find comprehensive guides to help you start working with App Builder and Adobe I/O Runtime.

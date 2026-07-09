@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Lesson 2: Writing a Serverless Action'
+description: 'Write a serverless action that generates a code128 barcode image using the bwip-js npm package.'
 ---
 
 # Lesson 2: Writing a Serverless Action

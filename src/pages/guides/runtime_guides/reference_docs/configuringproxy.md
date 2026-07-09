@@ -1,10 +1,22 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Proxy
+  - nginx
+  - mTLS
+  - Security
+title: 'Configuring a Secure Proxy'
+description: 'Configure an nginx proxy with mutual TLS so Adobe I/O Runtime actions can reach backend services protected by IP allow lists.'
+---
+
 ## Configuring a Secure Proxy
 
 If you only need to allowlist Adobe I/O Runtime's outbound (egress) IP ranges on your downstream service, you can retrieve them directly with `aio runtime ip-list get` — see [Secure communication with back-end services](../security-general.md#secure-communication-with-back-end-services). No proxy is required for that case.
 
 A proxy is still useful when you need a single, stable IP address rather than a set of ranges, or when you want to secure the connection with mutual TLS (mTLS). This can be done by adding a proxy component (in this example, an AWS EC2 instance running nginx). The proxy component will have a fixed IP address, so using an IP allowlist can secure the backend service. Communication between I/O Runtime and the proxy component will be secured via mutual TLS (mTLS) communication. 
 
-![](../../../images/configure-proxy.png)
+![Diagram of an nginx proxy fronting Runtime with mTLS to the backend](../../../images/configure-proxy.png)
 
 The following steps outline how to:
 

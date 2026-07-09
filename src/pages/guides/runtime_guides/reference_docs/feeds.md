@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Feeds
+  - Triggers
+  - Rules
+title: 'Using Feeds'
+description: 'How feed actions create and manage event streams that fire triggers in Adobe I/O Runtime.'
+---
+
 # Using Feeds
 
 Feeds are streams of events. The difference between [triggers](triggersrules.md 'Using Triggers and Rules') and feeds is:

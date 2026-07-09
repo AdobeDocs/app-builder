@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Integration Guide with Adobe Experience Cloud
+description: 'Integrate custom App Builder applications with the Adobe Experience Cloud unified shell using the @adobe/exc-app package.'
 ---
 
 # Integration with Adobe Experience Cloud

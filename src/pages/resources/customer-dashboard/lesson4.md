@@ -7,11 +7,12 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: 'Lesson 4: List All Customer Profiles on the UI'
+description: 'Use React Spectrum to display a list of customer profiles loaded from Adobe Campaign Standard on the App Builder UI.'
 ---
 
 # Lesson 4: List All Customer Profiles on the UI
 
-The app UI is powered by [React Spectrum](https://react-spectrum.adobe.com/react-spectrum/index.html) by default. To learn more about React Spectrum, please consult the [React Spectrum Code Lab](../todo-app/index.md).  
+The app UI is powered by [React Spectrum](https://react-spectrum.adobe.com/) by default. To learn more about React Spectrum, please consult the [React Spectrum Code Lab](../todo-app/index.md).  
 
 In the [previous lesson](lesson3.md), customer profiles were loaded to the front end only when you click the "Invoke" button. Now we want the profiles loaded automatically on the Home page when the page is ready, with no human interaction. 
 

@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Developer community
+description: 'How to join the App Builder Developer community and contribute to Adobe open-source projects.'
 ---
 
 # Developer Community

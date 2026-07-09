@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Interface: Callback'
+description: 'Reference for the Callback function signature used by Experience Cloud top bar event handlers.'
 ---
 
 # Interface: Callback

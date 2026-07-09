@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: 'Lesson 3: Managing Application Logs'
+description: 'Manage application logs in App Builder applications using the core Logging library and LOG_LEVEL input.'
 ---
 
 # Lesson 3: Managing Application Logs

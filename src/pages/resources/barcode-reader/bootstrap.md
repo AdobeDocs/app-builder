@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Lesson 1: Bootstrap a Headless App Builder App'
+description: 'Bootstrap a headless App Builder application for the barcode generator Code Lab using aio app init.'
 ---
 
 # Lesson 1: Bootstrap a Headless App Builder App

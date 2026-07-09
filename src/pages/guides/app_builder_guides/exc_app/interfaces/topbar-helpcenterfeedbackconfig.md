@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Interface: HelpCenterFeedbackConfig'
+description: 'Reference for the HelpCenterFeedbackConfig interface that configures a help center feedback button in the Experience Cloud top bar.'
 ---
 
 # Interface: HelpCenterFeedbackConfig

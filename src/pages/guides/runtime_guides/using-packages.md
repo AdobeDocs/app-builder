@@ -1,3 +1,13 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Packages
+  - Feeds
+title: 'Using Packages with Adobe I/O Runtime'
+description: 'Bundle related Adobe I/O Runtime actions into packages, share parameters, and create feed actions.'
+---
+
 # Using Packages with Adobe I/O Runtime
 
 Individual actions (functions) can be effective, but you may also need to create sets of actions that interact with each other, or make them available to other Developers. Runtime meets these requirements with packages.

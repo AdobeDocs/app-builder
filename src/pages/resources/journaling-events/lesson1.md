@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/Yu1986'
 title: 'Lesson 1: Create an Event Provider using App Builder'
+description: 'Create an event provider using App Builder and the OpenWhisk Alarms package for the Journaling API Code Lab.'
 ---
 
 # Lesson 1: Create an Event Provider using App Builder

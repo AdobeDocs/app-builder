@@ -1,3 +1,12 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Reference Documentation
+title: 'Adobe I/O Runtime Reference Documentation'
+description: 'Index of reference documentation for Adobe I/O Runtime APIs, command-line tools, and entities.'
+---
+
 # Adobe I/O Runtime Reference Documentation
 
 This Guide contains reference documentation for Runtime APIs, command-line tools, and entities.

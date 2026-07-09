@@ -115,7 +115,7 @@ Building a Custom Asset Compute Worker using third-party services to generate in
 
 ### Build an app that consumes Adobe Experience Manager events
 
-[Start (30 min)](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/consume-aem-events.html?lang=en)
+[Start (30 min)](https://experienceleague.adobe.com/en/docs/events/adobe-developers-live-recordings/overview)
 
 Learn why is it a good idea to build event-driven applications and how to build them with ease using App Builder.
 

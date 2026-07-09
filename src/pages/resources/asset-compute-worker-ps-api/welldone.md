@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: Well done
+description: 'Recap of the Asset Compute worker with Photoshop APIs Code Lab and the skills you learned.'
 ---
 
 # Well Done

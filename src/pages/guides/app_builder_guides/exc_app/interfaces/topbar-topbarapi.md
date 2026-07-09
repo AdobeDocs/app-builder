@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Interface: TopbarAPI'
+description: 'Reference for the TopbarAPI interface that defines APIs for customizing the Experience Cloud top bar.'
 ---
 
 # Interface: TopbarAPI

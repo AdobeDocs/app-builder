@@ -1,3 +1,13 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - aio CLI
+  - Install
+title: 'Setting up the aio CLI'
+description: 'Install and update the aio CLI for managing Adobe I/O Runtime namespaces and authentication.'
+---
+
 # Setting up the aio CLI
 
 The `aio` CLI helps you to manage the `.wskprops` file as you use different namespaces. You will need `npm` to install it, so before you start, make sure you have the latest version of Node and npm installed.

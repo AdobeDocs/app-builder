@@ -6,7 +6,7 @@ keywords:
   - SDK Library
   - Migration Guides
 title: Architecture Overview
-description: An App Builder Application is a serverless application that extends Adobe Product APIs. These applications can be headless or headful. Each of these types is described in more detail in the sections that follow.
+description: Overview of headless and headful App Builder application architectures and the SDK components they use to extend Adobe product APIs.
 ---
 
 # Architecture Overview
@@ -20,7 +20,7 @@ These applications may be headless or headful, as described below.
 
 Headless applications consist of a set of serverless actions or sequences deployed to [I/O Runtime](../../../intro_and_overview/what-is-app-builder.md#what-is-adobe-io-runtime), Adobe's serverless platform.
 
-Headless applications integrate well with remote scripts or processes that invoke them, for example [AEM Assets workflows](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/assets-workflow.html) or [ACS activities](https://docs.adobe.com/content/help/en/campaign-standard/using/managing-processes-and-data/data-management-activities/external-api.html).
+Headless applications integrate well with remote scripts or processes that invoke them, for example [AEM Assets workflows](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-workflow) or [ACS activities](https://experienceleague.adobe.com/en/docs/campaign-standard/using/managing-processes-and-data/data-management-activities/external-api).
 
 ### Headful applications
 
@@ -73,14 +73,14 @@ The [main SDK library](https://github.com/adobe/aio-sdk) bundles smaller, reusab
 
 - The [Adobe Analytics](https://github.com/adobe/aio-lib-analytics) SDK library provides a client for the [Adobe Analytics 2.0 API](https://adobedocs.github.io/analytics-2.0-apis/)
 - The [Adobe Target](https://github.com/adobe/aio-lib-target) SDK library provides a client for the [Adobe Target 1.0 API](https://Developers.adobetarget.com/api/)
-- The [Adobe Campaign Standard](https://github.com/adobe/aio-lib-campaign-standard) SDK library provides a client for the [Adobe Campaign Standard API](https://experienceleague.adobe.com/docs/campaign-standard/using/working-with-apis/get-started-apis.html?lang=en)
+- The [Adobe Campaign Standard](https://github.com/adobe/aio-lib-campaign-standard) SDK library provides a client for the [Adobe Campaign Standard API](https://experienceleague.adobe.com/en/docs/campaign-standard/using/working-with-apis/get-started-apis)
 
 ##### Integration with Adobe's Identity Management System (IMS)
 
-The [Adobe IMS SDK library](https://github.com/adobe/aio-lib-core-ims) adds authentication management capabilities to Adobe's Identity Management Services, for these scenarios:
+The [Adobe IMS SDK library](https://github.com/adobe/aio-lib-ims) adds authentication management capabilities to Adobe's Identity Management Services, for these scenarios:
 
-- [User-based (OAuth 2.0)](https://github.com/adobe/aio-lib-core-ims-oauth)
-- [Technical account-based (JWT Bearer-token)](https://github.com/adobe/aio-lib-core-ims-jwt)
+- [User-based (OAuth 2.0)](https://github.com/adobe/aio-lib-ims-oauth)
+- [Technical account-based (JWT Bearer-token)](https://github.com/adobe/aio-lib-ims-jwt)
 
 ##### Integration with additional services provided with App Builder
 
@@ -128,8 +128,8 @@ It lets Developers perform these actions on behalf of their App Builder applicat
 [CI/CD support](../deployment/cicd-for-app-builder-apps.md) provided with App Builder for App Builder applications includes:
 
 - [GitHub Actions](https://github.com/features/actions) to [setup the CLI](https://github.com/adobe/aio-cli-setup-action) and use it to [perform actions](https://github.com/adobe/aio-apps-action) such as application testing, build, and deployment
-- [GitHub Workflows](https://docs.github.com/en/actions/writing-workflows) to orchestrate the GitHub Actions upon specific events triggered against the application repository
-- [GitHub Secrets](https://help.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets) to store application secrets required for the execution of the GitHub Workflows against specific environments
+- [GitHub Workflows](https://docs.github.com/en/actions/how-tos/write-workflows) to orchestrate the GitHub Actions upon specific events triggered against the application repository
+- [GitHub Secrets](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets) to store application secrets required for the execution of the GitHub Workflows against specific environments
 
 ### Webpack
 

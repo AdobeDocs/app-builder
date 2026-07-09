@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Interface: ExternalFeedbackConfig'
+description: 'Reference for the ExternalFeedbackConfig interface that configures an external feedback button in the Experience Cloud top bar.'
 ---
 
 # Interface: ExternalFeedbackConfig

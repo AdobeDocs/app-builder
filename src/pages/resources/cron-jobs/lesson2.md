@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: 'Lesson 2: Set up Alarm Feed with Trigger and Rule'
+description: 'Set up an alarm feed with a trigger and rule to invoke an App Builder action on an interval schedule.'
 ---
 
 # Lesson 2: Set up Alarm Feed with Trigger and Rule

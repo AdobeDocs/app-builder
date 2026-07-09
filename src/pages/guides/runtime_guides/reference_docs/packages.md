@@ -1,3 +1,13 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Packages
+  - OpenWhisk
+title: 'Working with Packages'
+description: 'Create, share, and bind Adobe I/O Runtime packages to organize actions and share default parameters.'
+---
+
 # Working with Packages
 
 Packages are a simple and yet important concept in I/O Runtime. You can use packages to handle versioning (deploy new version of your actions in a new package), create different actions with the same name within the same namespace, group together actions that are related, share actions with other parties, and much more.

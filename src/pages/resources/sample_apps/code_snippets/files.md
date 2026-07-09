@@ -4,7 +4,8 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: App Builder Code Snippets - App Builder Files SDK  
+title: App Builder Code Snippets - App Builder Files SDK
+description: 'Sample App Builder action that demonstrates how to return a list of files stored with the Files SDK.'
 ---
 
 # App Builder Files SDK

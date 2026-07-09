@@ -13,7 +13,7 @@ keywords:
 
 ## Overview
 
-App Builder bundles Runtime action code using Webpack. Users can specify Webpack configurations for individual actions, sets of actions, or entire projects. See [the Webpack site](https://webpack.js.org/configuration) for configuration options.
+App Builder bundles Runtime action code using Webpack. Users can specify Webpack configurations for individual actions, sets of actions, or entire projects. See [the Webpack site](https://webpack.js.org/configuration/) for configuration options.
 
 ## Configuration file
 

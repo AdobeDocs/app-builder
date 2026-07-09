@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: Well done
+description: 'Recap of the cron jobs Code Lab and the App Builder scheduler skills you learned.'
 ---
 
 # Well Done

@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Interface: PageApi'
+description: 'Reference for the PageApi interface that defines page-level APIs available to Experience Cloud solutions.'
 ---
 
 # Interface: PageAPI

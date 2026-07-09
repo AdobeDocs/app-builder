@@ -7,12 +7,11 @@ keywords:
 contributors:
   - 'https://github.com/marcinczeczko'
 title: 'Lesson 1: Configure Services'
+description: 'Configure Azure blob storage, imgIX, and Adobe I/O services for the custom Asset Compute worker Code Lab.'
 ---
 
 # Lesson 1: Configure Services
-# Lesson 1: Configure Services
 
-## Create Azure blob storage
 ## Create Azure blob storage
 
 You need to [create Azure blob storage][create-azure-blob] on your Azure account. Then, create two containers:
@@ -38,7 +37,6 @@ To test your configuration:
 3. Open the signed URL in the browser to verify the image is loaded
 
 ## Configure Adobe I/O
-## Configure Adobe I/O
 
 1. Go to the [https://console.adobe.io][adobe-console] and create a [new project using App Builder template][adobe-console-firefly-template].
 2. Add the following services to your project workspace:
@@ -49,8 +47,8 @@ To test your configuration:
    pair** and your keys will be downloaded as a zip file.
 4. Unzip the file and write down the location to the **private.key**.
 
-[create-azure-blob]: https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal 'Create storage account and container'
+[create-azure-blob]: https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal 'Create storage account and container'
 [imgix-create-azure-source]: https://docs.imgix.com/setup/creating-sources/microsoft-azure 'Setting up your Microsoft Azure Source'
 [imgix-tools]: https://dashboard.imgix.com/tools
-[adobe-console]: https://console.adobe.io 'Adobe IO Console'
+[adobe-console]: https://developer.adobe.com/console/ 'Adobe IO Console'
 [adobe-console-firefly-template]: ../../get_started/app_builder_get_started/first-app.md#2-creating-a-new-project-on-developer-console 'Creating new project on Adobe Developer console'

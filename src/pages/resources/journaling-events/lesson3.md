@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/Yu1986'
 title: 'Lesson 3: End to end test'
+description: 'Run an end-to-end test of the Journaling API event provider and consumer apps on different alarm schedules.'
 ---
 
 # Lesson 3: End-to-End Test

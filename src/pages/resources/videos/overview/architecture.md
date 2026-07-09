@@ -4,7 +4,8 @@ keywords:
   - Adobe I/O
   - Extensibility
   - API Documentation
-  - Developer Tooling  
+  - Developer Tooling
+description: 'Video walkthrough of App Builder''s architecture and how its components work together.'
 ---
 
 # A Breakdown of App Builder's Architecture

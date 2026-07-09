@@ -1,3 +1,16 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Actions
+  - Namespaces
+  - Triggers
+  - Rules
+  - Packages
+title: 'Entities and Core Concepts'
+description: 'Glossary of Adobe I/O Runtime entities including actions, namespaces, triggers, rules, packages, sequences, and feeds.'
+---
+
 # Entities and Core Concepts
 
 Adobe I/O Runtime's computing model is composed of functional elements or entities, and the interactions among them. This glossary defines the most important entities, outlines their interactions, and links to relevant resources in the Guides and elsewhere in this documentation.

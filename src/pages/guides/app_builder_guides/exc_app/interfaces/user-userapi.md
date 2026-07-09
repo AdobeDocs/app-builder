@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Interface: UserAPI'
+description: 'Reference for the UserAPI interface that exposes user information, authentication, and IMS events to solutions.'
 ---
 
 # Interface: UserAPI

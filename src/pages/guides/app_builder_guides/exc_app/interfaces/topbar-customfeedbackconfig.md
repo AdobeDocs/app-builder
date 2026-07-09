@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Interface: CustomFeedbackConfig'
+description: 'Reference for the CustomFeedbackConfig interface that configures a custom feedback button in the Experience Cloud top bar.'
 ---
 
 # Interface: CustomFeedbackConfig

@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - wsk
+  - CLI
+  - OpenWhisk
+title: 'Using the wsk CLI'
+description: 'Reference for the legacy wsk CLI commands for interacting with Adobe I/O Runtime actions, triggers, and packages.'
+---
+
 # Using the wsk CLI
 
 You can use the `--help` flag to navigate the list of supported commands:

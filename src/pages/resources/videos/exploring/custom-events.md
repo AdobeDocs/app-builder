@@ -1,6 +1,6 @@
 ---
 title: Exploring App Builder - Custom Events
-description: Join us as we dive deep into the topic of Adobe I/O Events including our new feature with App Builder - Custom Events. Kanika Gera, Sr Product Manager and Sangeetha Krishnan share everything you need to know about Adobe I/O Events and how they are used in App Builder applications. 
+description: A deep dive into Adobe I/O Events and the new Custom Events feature for App Builder, with PM Kanika Gera and Sangeetha Krishnan.
 keywords:
   - Adobe I/O
   - Extensibility

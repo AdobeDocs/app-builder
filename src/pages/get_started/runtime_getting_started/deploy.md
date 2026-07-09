@@ -1,3 +1,13 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Actions
+  - Deploy
+title: 'Deploy Your First Adobe I/O Runtime Action'
+description: 'Create, deploy, and test your first Adobe I/O Runtime action using the aio CLI.'
+---
+
 # Deploy Your First Adobe I/O Runtime Action
 
 In this step, you will create an I/O Runtime action, test it, and deploy it. 

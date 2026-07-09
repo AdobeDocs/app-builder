@@ -142,7 +142,7 @@ Anil is a big advocate of App Builder for non-developers. He shares insights, ba
 
 ### From idea to app: building a real Adobe App Builder solution that extends Experience Cloud
 
-[Read on Experience League](https://experienceleague.adobe.com/en/perspectives/from-idea-to-app-building-a-real-adobe-app-builder-solution-that-extends-experience-cloud)
+[Read on Experience League](https://experienceleague.adobe.com/en/perspectives/from-idea-to-app-building-a-real-adobe-app-builder-solution-that-extends-cx-enterprise)
 
 Vadym built an App Builder app that automated Adobe Target impression-capping configuration from 45 minutes of manual work per activity to one click. The solution reduced operational effort from nearly an hour to seconds while ensuring consistent, governed execution directly in Experience Cloud.
 

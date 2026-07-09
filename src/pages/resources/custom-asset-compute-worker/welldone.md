@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/marcinczeczko'
 title: Well done
+description: 'Recap of the custom Asset Compute worker Code Lab and the intelligent rendition skills you learned.'
 ---
 
 # Well Done

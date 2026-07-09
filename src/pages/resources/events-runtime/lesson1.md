@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/Yu1986'
 title: 'Lesson 1: Step by Step Guide'
+description: 'Initialize an App Builder application and register an event provider for the Runtime actions webhook Code Lab.'
 ---
 
 # Lesson 1: Initialize an App Builder App Using a Template

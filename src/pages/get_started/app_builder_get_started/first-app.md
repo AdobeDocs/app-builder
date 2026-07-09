@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Creating your First App Builder Application
+description: 'Step-by-step guide to creating, configuring, and deploying your first App Builder application.'
 ---
 
 # Create your First App Builder Application
@@ -66,7 +67,7 @@ Follow these instructions to set up your project:
 
     ![Workspace](../../images/console-6.png)
 
-To learn more about Adobe Developer Console, please refer to [Console Documentation](https://developer.adobe.com/developer-console/docs).
+To learn more about Adobe Developer Console, please refer to [Console Documentation](https://developer.adobe.com/developer-console/docs/guides/).
 
 ## 3. Sign in from the CLI
 
@@ -241,9 +242,9 @@ You may not see all the options listed below on your command line, because they 
 
 - **Adobe Target**, including dependencies and examples of accessing the [Adobe Target API](https://developers.adobetarget.com/api/#admin-apis)
 - **Adobe Analytics**, including dependencies and examples of accessing the [Adobe Analytics 2.0 API](https://adobedocs.github.io/analytics-2.0-apis/)
-- **Adobe Audience Manager: Customer Data**, including dependencies and examples of accessing the [Adobe Audience Manager Customer Data API](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/api.html)
-- **Adobe Campaign Standard**, including dependencies and examples of accessing the [Adobe Campaign Standard (ACS) API](https://docs.adobe.com/content/help/en/campaign-standard/using/working-with-apis/get-started-apis.html)
-- **Adobe Experience Platform: Realtime Customer Profile**, including dependencies and examples of accessing the [Realtime Customer Profile API of Adobe Experience Platform](https://developer.adobe.com/experience-platform-apis/references/profile/)
+- **Adobe Audience Manager: Customer Data**, including dependencies and examples of accessing the [Adobe Audience Manager Customer Data API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/api)
+- **Adobe Campaign Standard**, including dependencies and examples of accessing the [Adobe Campaign Standard (ACS) API](https://experienceleague.adobe.com/en/docs/campaign-standard/using/working-with-apis/get-started-apis)
+- **Adobe Experience Platform: Realtime Customer Profile**, including dependencies and examples of accessing the [Realtime Customer Profile API of Adobe Experience Platform](https://developer.adobe.com/experience-platform-apis/references/profile)
 - **Generic**, a generic back-end action with hello-world flow that can be reused and modified, for simple serverless computing, third-party API integration, and more
 
 If you included `Web Assets` under Adobe I/O App features above, you will be given the choice to include the React Spectrum-based UI template or a raw HTML/JS UI template:
@@ -256,7 +257,7 @@ If you included `Web Assets` under Adobe I/O App features above, you will be giv
 
 - The `React Spectrum 3 UI` template adds a React-based UI with [React Spectrum](https://react-spectrum.adobe.com/) components included
 
-- The `Raw HTML/JS UI` will add a raw HTML/JS/CSS UI with [Spectrum CSS](https://opensource.adobe.com/spectrum-css) styles included.
+- The `Raw HTML/JS UI` will add a raw HTML/JS/CSS UI with [Spectrum CSS](https://opensource.adobe.com/spectrum-css/) styles included.
   
   Both templates come with boilerplate code needed to integrate your App Builder application with [Adobe Experience Cloud](../../guides/app_builder_guides/exc_app/aec-integration.md)
 

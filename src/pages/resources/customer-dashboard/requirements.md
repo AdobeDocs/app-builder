@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: Codelab Environment Requirements
+description: 'Environment and Adobe Campaign Standard requirements for the customer dashboard Code Lab.'
 ---
 
 <Fragment src="../transclusions/requirements.md"/>

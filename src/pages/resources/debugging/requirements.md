@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: Codelab Environment Requirements
+description: 'Environment requirements for the App Builder debugging Code Lab, including Visual Studio Code.'
 ---
 
 <Fragment src="../transclusions/requirements.md"/>

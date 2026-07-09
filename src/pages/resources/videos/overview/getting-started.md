@@ -1,6 +1,6 @@
 ---
 title: App Builder - Getting Started
-description: In this video, we will cover how to setup your project in the Adobe Developer Console, init the code, review the project structure, test, and play with the working code.  
+description: Set up your project in Developer Console, initialize the code, review the structure, and test the working app.
 keywords:
   - Adobe I/O
   - Extensibility

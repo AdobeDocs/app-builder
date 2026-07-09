@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: 'Lesson 1: Bootstrap a Headless App'
+description: 'Bootstrap a headless App Builder application to be triggered on a schedule by an alarm feed.'
 ---
 
 # Lesson 1: Bootstrap a Headless App

@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Interface: UserInfo'
+description: 'Reference for the UserInfo interface describing user identity, IMS organization, and locale information.'
 ---
 
 # Interface: UserInfo

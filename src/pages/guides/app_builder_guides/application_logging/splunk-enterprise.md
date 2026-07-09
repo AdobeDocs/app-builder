@@ -10,6 +10,7 @@ keywords:
   - Splunk
   - Splunk Enterprise
 title: Forwarding Logs to Splunk Enterprise
+description: 'Configure an App Builder application to forward logs to a Splunk Enterprise index using the HTTP event collector.'
 ---
 
 # Forwarding Logs to Splunk Enterprise

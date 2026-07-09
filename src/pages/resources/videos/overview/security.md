@@ -4,7 +4,8 @@ keywords:
   - Adobe I/O
   - Extensibility
   - API Documentation
-  - Developer Tooling  
+  - Developer Tooling
+description: 'Video walkthrough of the App Builder security model, authentication, and authorization.'
 ---
 
 # A Full Security Overview

@@ -165,7 +165,7 @@ AI assistants generate better code when they understand your project structure. 
 - Use current API versions (Workfront v21.0, AEM OpenAPI)
 
 ## Documentation
-- App Builder and Runtime: https://developer.adobe.com/app-builder/docs/
+- App Builder and Runtime: https://developer.adobe.com/app-builder/docs/intro_and_overview/
 ```
 
 **For Cursor**, point to the [App Builder skills folder](https://github.com/adobe/skills) as described in the setup section above.
@@ -188,7 +188,7 @@ All formats serve the same purpose: giving the AI assistant context about App Bu
 
 ## Resources
 
-- [App Builder Documentation](https://developer.adobe.com/app-builder/docs/)
+- [App Builder Documentation](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
 - [App Builder Adobe Summit Session: Build Fast, Secure AI-Powered Integrations with Adobe App Builder - OS605](https://business.adobe.com/summit/2026/sessions/build-fast-secure-aipowered-integrations-with-adob-os605.html)
 - [AEM AI Coding Agents Guide](https://www.aem.live/developer/ai-coding-agents)
 - [MCP Server Generator](https://github.com/adobe/generator-app-remote-mcp-server-generic)

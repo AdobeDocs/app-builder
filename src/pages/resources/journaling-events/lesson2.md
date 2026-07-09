@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/Yu1986'
 title: 'Lesson 2: Create the Event Consumer using Journaling API'
+description: 'Create an event consumer using the Journaling API and store events with aio-lib-state.'
 ---
 
 # Lesson 2: Create an Event Consumer using the Journaling API

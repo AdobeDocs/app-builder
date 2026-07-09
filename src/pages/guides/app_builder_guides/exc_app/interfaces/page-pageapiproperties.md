@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Interface: PageAPIProperties'
+description: 'Reference for the PageApiProperties interface defining settable page-level attributes such as title and favicon.'
 ---
 
 # Interface: PageAPIProperties

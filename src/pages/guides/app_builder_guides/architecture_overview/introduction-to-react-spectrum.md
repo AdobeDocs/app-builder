@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Introduction to React Spectrum
+description: 'Introduction to the React Spectrum component library that implements Adobe''s Spectrum design language.'
 ---
 
 # Introduction to React Spectrum

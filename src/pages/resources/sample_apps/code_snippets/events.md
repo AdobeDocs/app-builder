@@ -4,7 +4,8 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: App Builder Code Snippets - I/O Events handler  
+title: App Builder Code Snippets - I/O Events handler
+description: 'Sample App Builder action that demonstrates how to write an I/O Events handler for webhook calls.'
 ---
 
 # I/O Events Handler

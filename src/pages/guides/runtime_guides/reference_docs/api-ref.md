@@ -1,3 +1,13 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - API Reference
+  - Namespaces
+title: 'Adobe I/O Runtime API Reference'
+description: 'Reference for the Adobe I/O Runtime management API endpoints used to interact with namespaces programmatically.'
+---
+
 # Adobe I/O Runtime API Reference
 
 ## API endpoints

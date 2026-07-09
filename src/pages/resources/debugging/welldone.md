@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: Well done
+description: 'Recap of the debugging Code Lab and the VS Code debugging skills you learned for App Builder applications.'
 ---
 
 # Well done

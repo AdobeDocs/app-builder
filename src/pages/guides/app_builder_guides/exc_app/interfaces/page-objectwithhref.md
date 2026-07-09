@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Interface: ObjectWithHref'
+description: 'Reference for the ObjectWithHref interface that represents a solution page by its URL.'
 ---
 
 # Interface: ObjectWithHref
