@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'External module: topbar'
+description: 'Reference for the Experience Cloud topbar module used to configure the solution area, workspaces, and custom search.'
 ---
 
 # External Module: Topbar

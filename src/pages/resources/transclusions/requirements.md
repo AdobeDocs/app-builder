@@ -1,5 +1,6 @@
 ---
 title: Requirements
+description: 'Shared environment requirements and skills prerequisites for App Builder Code Labs.'
 ---
 
 # Requirements

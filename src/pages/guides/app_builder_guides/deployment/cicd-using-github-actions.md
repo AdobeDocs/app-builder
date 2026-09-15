@@ -70,7 +70,7 @@ Note: This guide refers to the "root of your App Builder app". The root of your 
 
 ## Step 4: Add secrets to your GitHub repository
 
-Before you can deploy your app from the CI/CD pipeline using GitHub Actions, you must add your application secrets to your repository. App Builder uses [GitHub Actions environments](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment) to scope secrets per deployment target. To set up the `stage` environment:
+Before you can deploy your app from the CI/CD pipeline using GitHub Actions, you must add your application secrets to your repository. App Builder uses [GitHub Actions environments](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments) to scope secrets per deployment target. To set up the `stage` environment:
 
 1. Open your GitHub repository
 2. Navigate to the `Settings` tab > `Environments` on the left nav

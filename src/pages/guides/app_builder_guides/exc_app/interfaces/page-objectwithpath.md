@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Interface: ObjectWithPath'
+description: 'Reference for the ObjectWithPath interface that represents a solution page by its relative path.'
 ---
 
 # Interface: ObjectWithPath

@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/Yu1986'
 title: 'Lesson 1: Create a New App Builder App from Template'
+description: 'Create an App Builder application from a template for the event-driven Code Lab, including required Console services.'
 ---
 
 # Lesson 1: Create a New App Builder App from Template
@@ -24,7 +25,7 @@ To use the custom events CLI plugin, you need this information from the console 
 - `Config.zip`: Configuration file downloaded from the console, including `private key` and `certificate_pub.crt`
 
 - `project.json`: For instance, the `projectname-orgId-Production.json` file downloaded from the console 
-1. Navigate to the Adobe I/O console at [https://console.adobe.io](https://console.adobe.io) in your browser and create a project using an App Builder template, or use your existing project .
+1. Navigate to the Adobe I/O console at [https://developer.adobe.com/console/](https://developer.adobe.com/console/) in your browser and create a project using an App Builder template, or use your existing project .
 
 2. Select `Add to Project` -> `Add an API` -> `Adobe Services` -> `I/O managemenet API`.
 

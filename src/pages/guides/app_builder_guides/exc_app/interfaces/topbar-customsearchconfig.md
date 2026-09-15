@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Interface: CustomSearchConfig'
+description: 'Reference for the CustomSearchConfig interface that configures a custom search button in the Experience Cloud top bar.'
 ---
 
 # Interface: CustomSearchConfig

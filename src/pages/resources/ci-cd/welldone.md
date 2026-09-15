@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Well done
+description: 'Recap of the CI/CD Code Lab and the GitHub Actions skills you learned for App Builder applications.'
 ---
 
 # Well Done

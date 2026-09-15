@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Logging
+  - Monitoring
+  - Activations
+title: 'Logging and Monitoring'
+description: 'Use the aio CLI to retrieve activations and logs for Adobe I/O Runtime actions while debugging or monitoring.'
+---
+
 # Logging and Monitoring
 
 The `AIO` CLI offers a number of tools you can use to debug your actions while running them on Adobe I/O Runtime.
@@ -22,7 +33,7 @@ aio rt:activation:logs <activation ID>
 2018-11-14T22:23:00.002Z       stdout: 1542234180001: param = John Doe
 ```
 
-# Retrieving activations for blocking successful calls
+## Retrieving activations for blocking successful calls
 
 At scale, when you run millions of activations in a day, it may be difficult to extract the activations that failed in order to debug them. To help with this task, the system skips persisting the activation that succeeded. 
 
@@ -56,7 +67,7 @@ Although there is no out-of-the-box integration, there are still ways you can pu
 
 #### Epsagon
 
-One tool that made it easy to do this is [Epsagon](https://epsagon.com). Epsagon built an integration for OpenWhisk-based systems like I/O Runtime that simplifies seeing your activations, errors, latency information and logs. Check this [guide](https://docs.epsagon.com/docs/openwhisk?utm_source=adobe.io&utm_medium=referral&utm_campaign=adobe_io_docs) or this [video presentation](https://www.youtube.com/watch?v=4iprbivqrxQ&t=1517s) if you want to find more.
+One tool that made it easy to do this was Epsagon, which built an integration for OpenWhisk-based systems like I/O Runtime that simplified seeing your activations, errors, latency information, and logs. Watch the [video presentation](https://www.youtube.com/watch?v=4iprbivqrxQ&t=1517s) for an overview. (Note: Epsagon was acquired and its docs site is no longer available; comparable observability tools may offer similar OpenWhisk integrations.)
 
 #### New Relic
 

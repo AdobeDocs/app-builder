@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: 'Lesson 1: Getting Familiar with Debugger'
+description: 'Get familiar with wskdebug and the VS Code launch profiles generated for App Builder applications.'
 ---
 
 # Lesson 1: Getting to know wskdebug

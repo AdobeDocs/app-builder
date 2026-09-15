@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Lesson 5: Bringing the pieces together to build the App'
+description: 'Assemble the React Spectrum components and Runtime actions into a complete to-do list App Builder application.'
 ---
 
 # Lesson 5: Assembling the Pieces to Build the App
@@ -29,13 +30,13 @@ import { TodoList } from './TodoList';
 
 This component will make use of several React Spectrum components:
 
-* [Provider](https://react-spectrum.adobe.com/react-spectrum/Provider.html), the container of the React Spectrum application.
-* [defaultTheme](https://react-spectrum.adobe.com/react-spectrum/theming.html), the default React Spectrum theme.
-* [ProgressCircle](https://react-spectrum.adobe.com/react-spectrum/ProgressCircle.html), the loading indicator.
-* [View](https://react-spectrum.adobe.com/react-spectrum/View.html), a generic container.
-* [Flex](https://react-spectrum.adobe.com/react-spectrum/Flex.html), for the layout of the loading indicator.
-* [Grid](https://react-spectrum.adobe.com/react-spectrum/Grid.html), for the layout of the todo lists.
-* [Repeat](https://react-spectrum.adobe.com/react-spectrum/Grid.html#repeat), a helper function for Grid.
+* [Provider](https://react-spectrum.adobe.com/v3/Provider.html), the container of the React Spectrum application.
+* [defaultTheme](https://react-spectrum.adobe.com/v3/theming.html), the default React Spectrum theme.
+* [ProgressCircle](https://react-spectrum.adobe.com/v3/ProgressCircle.html), the loading indicator.
+* [View](https://react-spectrum.adobe.com/v3/View.html), a generic container.
+* [Flex](https://react-spectrum.adobe.com/v3/Flex.html), for the layout of the loading indicator.
+* [Grid](https://react-spectrum.adobe.com/v3/Grid.html), for the layout of the todo lists.
+* [Repeat](https://react-spectrum.adobe.com/v3/Grid.html), a helper function for Grid.
 
 ```javascript
 import { Provider, defaultTheme, View, Flex, Grid, repeat, ProgressCircle } from '@adobe/react-spectrum';
@@ -53,7 +54,7 @@ function App({ ims }) {
 
 ## Component state values
 
-On initialization, the App will display a loading indicator while fetching the todo lists. For the loading indicator and the to-do lists, we'll use the [State hook](https://reactjs.org/docs/hooks-state.html) `useState` again.   
+On initialization, the App will display a loading indicator while fetching the todo lists. For the loading indicator and the to-do lists, we'll use the [State hook](https://legacy.reactjs.org/docs/hooks-state.html) `useState` again.   
 
 ```javascript
 const [isLoading, setIsLoading] = useState(true);
@@ -118,7 +119,7 @@ const onUpdateTodoList = async (name, todo) => {
 
 ## Loading indicator
 
-By default, we'll be showing a `ProgressCircle` to indicate that the App is loading.  Meanwhile, the to-do lists will be fetched using an [Effect Hook](https://reactjs.org/docs/hooks-effect.html) which will run only once when the App is mounted.    
+By default, we'll be showing a `ProgressCircle` to indicate that the App is loading.  Meanwhile, the to-do lists will be fetched using an [Effect Hook](https://legacy.reactjs.org/docs/hooks-effect.html) which will run only once when the App is mounted.    
 
 Once we've retrieved the to-do lists, well update the to-do list state and set the loading state to `false`:
 
@@ -134,7 +135,7 @@ useEffect(() => {
 }, []);
 ```
 
-With React [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html), we can easily define what will be rendered based on the `isLoading` state. Once the state value is set to `false`, we'll display the `CreateTodoList` from [lesson 3](lesson3.md) and pass the `onCreateTodoList` callback function as prop:   
+With React [Conditional Rendering](https://legacy.reactjs.org/docs/conditional-rendering.html), we can easily define what will be rendered based on the `isLoading` state. Once the state value is set to `false`, we'll display the `CreateTodoList` from [lesson 3](lesson3.md) and pass the `onCreateTodoList` callback function as prop:   
 
 ```jsx
 <View elementType="main" minHeight="100vh">

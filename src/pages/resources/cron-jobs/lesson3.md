@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: 'Lesson 3: Types of Alarm Feed'
+description: 'Use other alarm feed types in Adobe I/O Runtime to fire triggers once or on a cron schedule.'
 ---
 
 # Lesson 3: Types of Alarm Feed
@@ -30,7 +31,7 @@ Note that `YYYY-MM-DDTHH:mm:ss.sssZ` is just a format for this field; you are fr
 
 ## Firing a trigger on a time-based schedule using cron
 
-The `/whisk.system/alarms/alarm` feed allows you to [fire an event on a time-based schedule using cron](https://github.com/apache/openwhisk-package-alarms#firing-a-trigger-on-a-time-based-schedule-using-cron). This is more generic than the `interval` and `once` feeds, because you can write crontab to configure the alarm service to trigger at the exact time and interval you want. The only required parameter is `cron`, a string based on the [UNIX crontab syntax](http://crontab.org) that indicates when to fire the trigger in UTC. Optional params are `trigger_payload`, `startDate` and `stopDate`.
+The `/whisk.system/alarms/alarm` feed allows you to [fire an event on a time-based schedule using cron](https://github.com/apache/openwhisk-package-alarms#firing-a-trigger-on-a-time-based-schedule-using-cron). This is more generic than the `interval` and `once` feeds, because you can write crontab to configure the alarm service to trigger at the exact time and interval you want. The only required parameter is `cron`, a string based on the [UNIX crontab syntax](https://crontab.guru/) that indicates when to fire the trigger in UTC. Optional params are `trigger_payload`, `startDate` and `stopDate`.
 
 <InlineAlert variant="warning" slots="text" />
 

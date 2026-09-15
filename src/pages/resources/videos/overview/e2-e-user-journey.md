@@ -4,7 +4,8 @@ keywords:
   - Adobe I/O
   - Extensibility
   - API Documentation
-  - Developer Tooling  
+  - Developer Tooling
+description: 'Video walkthrough of the end-to-end user journey for App Builder developers and end users.'
 ---
 
 # Following the End-to-End User Journey

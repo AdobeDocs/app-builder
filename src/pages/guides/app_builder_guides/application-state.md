@@ -5,6 +5,7 @@ keywords:
 - API Documentation
 - Developer Tooling
 title: Storage Options
+description: 'Compare Database, Files, and State storage services available out-of-the-box for persisting App Builder application data.'
 ---
 
 

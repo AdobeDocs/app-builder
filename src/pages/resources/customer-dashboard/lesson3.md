@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: 'Lesson 3: Run the App Builder App Locally'
+description: 'Run a Campaign Standard App Builder application locally with aio app run and accept the self-signed certificate.'
 ---
 
 # Lesson 3: Run the App Builder App Locally

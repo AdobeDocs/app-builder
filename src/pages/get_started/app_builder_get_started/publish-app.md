@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Publishing Your First App Builder Application
+description: 'How to submit, review, and publish App Builder SPAs through Developer Console, Adobe Exchange, and Adobe Experience Cloud.'
 ---
 
 # Publishing Your First App Builder Application
@@ -29,53 +30,53 @@ The final app is based on the Production workspace, so it is important to make s
 
 To begin the approval process, navigate to the Production workspace and select **Submit for approval** in the top-right corner of the screen or **Approval** in the left navigation.
 
-![](../../images/approval-production-overview.png)
+![Approval screen in the Production workspace](../../images/approval-production-overview.png)
 
 On the Approval screen you will be able to fill out the **App Submission Details** form.
 
 These details will be visible to people who use your app and administrators who review your application. Once the form is completed, select **Submit** to begin the approval process.
 
-![](../../images/approval-app-submission-details.png)
+![App submission details form](../../images/approval-app-submission-details.png)
 
 You will be returned to the Approval screen, where the Status of your application should now be "In Review."
 
-![](../../images/approval-in-review.png)
+![Approval screen showing application status In Review](../../images/approval-in-review.png)
 
 Following a review by your organization administrators, your application will either be approved and published, or rejected. If it is rejected, your Admin will be able to include a note telling you what went wrong so you can fix the error and resubmit.
 
-![](../../images/approval-app-rejected.png)
+![Approval screen showing a rejected application](../../images/approval-app-rejected.png)
 
 ### Published app
 
 Once your application has been submitted for approval, the Admin can see it pending for review in Adobe Exchange. The next section will describe Admin approval flow from Adobe Exchange. From Console side, once an application has been approved, its Status will be updated to Published and the application will be available for use by employees within your enterprise organization.
 
-![](../../images/approval-published.png)
+![Approval screen showing a published application](../../images/approval-published.png)
 
 ## Administrator review of your app from Adobe Exchange
 
 After you submit an application for approval, your organization's administrators can find it in Adobe Exchange under Manage → App Builder applications → Private distribution. Your submitted application will appear with a Pending Review status.
 
-![](../../images/approval-myexchange.png)
+![Pending Review listing in Adobe Exchange private distribution](../../images/approval-myexchange.png)
 
 The reviewer can review this app and approve it or reject it. If the application is rejected, your admin will be able to include a note telling you what went wrong, so you can fix the error and resubmit.
 
-![](../../images/approval-myexchange-review.png)
+![Adobe Exchange app review screen for an administrator](../../images/approval-myexchange-review.png)
 
 After the application is approved, the reviewer can also unpublish the app, requiring the app owner to resubmit it for review and approval.
 
-![](../../images/approval-myexchange-revoke.png)
+![Adobe Exchange unpublish action for an approved application](../../images/approval-myexchange-revoke.png)
 
 ## Check your published app at Experience Cloud
 
 Once the reviewer has approved your application, you will be notified by email and your app will appear at Adobe Experience Cloud:
 
-![](../../images/approval-myapp-home.png)
+![Approved app on the Adobe Experience Cloud home page](../../images/approval-myapp-home.png)
 
 Click on `App Builder Apps` to discover all the applications published for your organization.
 
-![](../../images/approval-myapp-customapps.png)
+![App Builder Apps list in Adobe Experience Cloud](../../images/approval-myapp-customapps.png)
 
-# Publishing your headless App Builder app
+## Publishing your headless App Builder app
 
 The `App Builder Apps` Adobe Experience Cloud lists only App Builder SPAs. If you publish a headless app, please refer to our Code Lab [Headless Apps with App Builder](../../resources/barcode-reader/index.md).
 

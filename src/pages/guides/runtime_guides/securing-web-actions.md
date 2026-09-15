@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Web Actions
+  - Security
+  - Basic Authentication
+title: 'Securing Web Actions'
+description: 'Restrict access to Adobe I/O Runtime web actions using Basic Authentication, namespace credentials, or custom auth layers.'
+---
+
 # Securing Web Actions
 
 By default, a web action can be invoked by anyone knowing the action's URL. If you want to restrict 'access, either use Basic Authentication or you build your own authentication layer.
@@ -51,7 +62,7 @@ aio rt:action:update my-require-validation-web-action main.js --web true -a requ
 
 To interact with the action, set up a security configuration in your Swagger API route for that action. Detailed instructions on how to do this can be found in [Securing API Endpoints](creating-rest-apis.md#securing-api-endpoints).  
 
-# Non-web actions
+## Non-web actions
 
 If your action is not a web action, you can still use your namespace credentials, base64 encoded, to call any of the actions in your namespace, like this:
 

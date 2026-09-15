@@ -1,3 +1,13 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Activations
+  - OpenWhisk
+title: 'Retrieve Action Invocation Results'
+description: 'Use aio rt:activation commands to list and retrieve invocation records, logs, and responses for Adobe I/O Runtime actions.'
+---
+
 # Retrieve Action Invocation Results
 
 The activation record of an action invocation contains information to help you understand what happened. It contains the invocation's: 

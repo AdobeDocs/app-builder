@@ -9,6 +9,7 @@ keywords:
   - Monitoring
   - New Relic
 title: Forwarding Logs to New Relic
+description: 'Configure an App Builder application to forward logs to a New Relic deployment using an Ingest license API key.'
 ---
 
 # Forwarding Logs to New Relic

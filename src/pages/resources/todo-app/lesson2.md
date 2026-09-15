@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'Lesson 2: Setup Runtime actions'
+description: 'Set up Runtime actions to handle CRUD operations for to-do lists in an App Builder application.'
 ---
 
 # Lesson 2: Set up Runtime Actions

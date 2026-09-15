@@ -10,6 +10,7 @@ keywords:
   - Azure
   - Azure Log Analytics
 title: Forwarding Logs to Azure Log Analytics
+description: 'Configure an App Builder application to forward logs to an Azure Log Analytics workspace.'
 ---
 
 # Forwarding Logs to Azure Log Analytics
@@ -18,7 +19,7 @@ This guide covers configuration of your App Builder application to forward logs 
 
 ## Prerequisites
 
-1. Access to an Azure Log Analytics workspace. If you need to create one, follow [Azure's guide](https://docs.microsoft.com/en-us/azure/azure-monitor/logs/quick-create-workspace)
+1. Access to an Azure Log Analytics workspace. If you need to create one, follow [Azure's guide](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/quick-create-workspace)
 2. Local development setup for your App Builder application
 3. The latest version of AIO CLI. Check by running `aio --version`; update by running `npm install -g @adobe/aio-cli`
 
@@ -61,7 +62,7 @@ This guide covers configuration of your App Builder application to forward logs 
    
    ## Next steps
    
-   If you are unable to set up log forwarding using these procedures, please visit Adobe [App Builder forums](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/app-builder) for support.
+   If you are unable to set up log forwarding using these procedures, please visit Adobe [App Builder forums](https://experienceleaguecommunities.adobe.com/) for support.
    
    Return to [Managing Application Logs](logging.md).
    

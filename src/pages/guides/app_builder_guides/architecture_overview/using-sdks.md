@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Using Client SDKs for Accessing Adobe APIs
+description: 'Use Adobe client SDKs to call Experience Cloud APIs such as Analytics, Audience Manager, Campaign Standard, and Target.'
 ---
 
 # Using Client SDKs for Accessing Adobe APIs

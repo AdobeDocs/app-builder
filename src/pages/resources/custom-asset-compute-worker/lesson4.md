@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/marcinczeczko'
 title: 'Lesson 4: Test the worker'
+description: 'Test a custom Asset Compute worker locally using the Asset Compute Developer tool.'
 ---
 
 # Lesson 4: Test the Worker

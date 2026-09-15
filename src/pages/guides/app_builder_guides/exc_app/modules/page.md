@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'External module: page'
+description: 'Reference for the Experience Cloud page module that lets solutions interact with and personalize the main page.'
 ---
 
 # External Module: Page

@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/marcinczeczko'
 title: How AEM as Cloud Aassets Works
+description: 'How AEM as a Cloud Service handles asset binaries and where Asset Compute custom workers fit in.'
 ---
 
 # How AEM as Cloud Assets Works

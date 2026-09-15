@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/Yu1986'
 title: 'Lesson 2: Register the App as Event Provider'
+description: 'Register an App Builder application as a custom event provider using the Adobe I/O Events CLI plugin.'
 ---
 
 # Lesson 2: Register the App as an Event Provider

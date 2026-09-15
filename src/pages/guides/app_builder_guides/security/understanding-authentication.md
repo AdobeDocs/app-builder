@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Understanding Authentication
+description: 'Overview of Adobe authentication options, OAuth 2.0 and JWT, and libraries to use them in App Builder applications.'
 ---
 
 # Understanding Authentication

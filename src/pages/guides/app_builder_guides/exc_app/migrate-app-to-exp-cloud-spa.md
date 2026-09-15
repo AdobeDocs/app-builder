@@ -1,5 +1,6 @@
 ---
-title: 'Migration tutorial - Standalone Application to DX Experience Cloud SPA v1'
+title: 'Migrate Standalone App to DX Experience Cloud SPA v1'
+description: 'Migrate a standalone App Builder application to a DX Experience Cloud v1 Single-Page Application.'
 ---
 
 # Migrating Apps to DX Experience Cloud v1 SPAs

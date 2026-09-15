@@ -1,3 +1,13 @@
+---
+keywords:
+  - Adobe I/O
+  - App Builder
+  - Configuration
+  - app.config.yaml
+title: 'App Builder Configuration Files'
+description: 'Reference for the app.config.yaml, .env, and .aio configuration files that define an App Builder application.'
+---
+
 # App Builder Configuration Files
 
 ## Overview

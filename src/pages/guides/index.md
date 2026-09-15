@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Reference Documentation
+description: 'Index of App Builder guides covering architecture, configuration, deployment, security, and reference documentation.'
 ---
 
 # Guides Index

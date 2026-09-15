@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/Yu1986'
 title: 'Lesson 3: Fire an Event'
+description: 'Fire a custom event from an App Builder action using publish-event and the Adobe I/O Events SDK.'
 ---
 
 # Lesson 3: Fire an Event
@@ -160,7 +161,7 @@ You will see your deployed link in the terminal.
 Next, let's see how the web UI communicates with the back end. In `web-src/src/components` we already provided a template of the UI.
 After you select the actions to `publish-events`, clicking the `invoke` button will invoke the action. The action will send out the event. When you invoke, you could also add actual parameters. In this example we added `{"payload": "you got a like"}` In the webhook result, you will see the payload: `{"data": "you got a like"}`.
 
-> Note: This example uses [this webhook tool](https://io-webhook.herokuapp.com/) to generate a webhook link and put the webhook to the console integration. You can use other tools, as discussed in the next lesson. 
+> Note: This example uses a webhook inspector tool such as [Webhook.site](https://webhook.site/) to generate a webhook URL and put the webhook to the console integration. You can use other tools, as discussed in the next lesson. 
 
 ![templateui](assets/template-ui.png)
 

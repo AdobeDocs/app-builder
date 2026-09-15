@@ -4,7 +4,8 @@ keywords:
   - Extensibility
   - API Documentation
   - Developer Tooling
-title: App Builder Code Snippets - Caching HTTP responses  
+title: App Builder Code Snippets - Caching HTTP responses
+description: 'Sample App Builder action that demonstrates how to cache an action''s HTTP response at the gateway level.'
 ---
 
 # Caching HTTP responses

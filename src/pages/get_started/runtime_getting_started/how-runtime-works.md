@@ -1,14 +1,18 @@
-```yaml
+---
 keywords:
-  - [need keywords]
-title: How I/O Runtime works
-```
+  - Adobe I/O
+  - Runtime
+  - OpenWhisk
+  - Architecture
+title: 'How I/O Runtime works'
+description: 'How Adobe I/O Runtime uses the Apache OpenWhisk architecture to provide function-as-a-service execution.'
+---
 
 # How Adobe I/O Runtime Works
 
 Adobe I/O Runtime is based on the open source Apache OpenWhisk platform, and uses the OpenWhisk architecture to provide function-as-a-service. Here is a high-level look at the architecture:
 
-![The OpenWhisk architecture](https://developer.adobe.com/runtime/docs/static/2f65d806954291bfd2a474f3c8b2f9f4/73c8b/howitworks_f01.png)
+![The OpenWhisk architecture](../../images/howitworks_f01.png)
 
 The figure shows how Runtime (via OpenWhisk) is set up to respond to events and direct invocations. Whether the event comes from an external or internal source, it is associated with a trigger, which invokes an action according to any rules that are applied. Actions can also be invoked directly through the Runtime (OpenWhisk) CLI or the REST API.
 
@@ -54,13 +58,13 @@ Host: $openwhiskEndpoint
 
 Note the `$userNamespace` variable. Runtime requests require access to the same namespace in which the action was created. When users are configured for Runtime accounts, they are given their own personal namespaces. 
 
-![](../../images/howitworks_f02.png)
+![Diagram of the Runtime internal process flow](../../images/howitworks_f02.png)
 
 *Internal process flow*
 
 #### Receiving: nginx
 
-[Nginx](https://www.nginx.com/) is a reverse proxy and HTTP server. The OpenWhisk architecture uses it to terminal SSL and forward the HTTP request to the next component in the processing loop.
+[Nginx](https://www.f5.com/products/nginx) is a reverse proxy and HTTP server. The OpenWhisk architecture uses it to terminal SSL and forward the HTTP request to the next component in the processing loop.
 
 #### Interpreting: the Controller
 

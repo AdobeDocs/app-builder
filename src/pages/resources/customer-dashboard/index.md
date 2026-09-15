@@ -20,7 +20,7 @@ App Builder is a complete platform that enables enterprise Developers to build a
 
 [Adobe Campaign Standard (ACS)](https://www.adobe.com/marketing/campaign.html) provides a platform for designing and executing digital marketing campaigns and provides an environment for visual campaign orchestration  
 
-[Campaign Standard APIs](https://docs.adobe.com/content/help/en/campaign-standard/using/working-with-apis/about-campaign-standard-apis/about-campaign-standard-apis.html) let you create integrations for Adobe Campaign Standard and build your own ecosystem by interfacing Adobe Campaign Standard with the panel of technologies that you use.
+[Campaign Standard APIs](https://experienceleague.adobe.com/en/docs/campaign-standard/using/working-with-apis/get-started-apis) let you create integrations for Adobe Campaign Standard and build your own ecosystem by interfacing Adobe Campaign Standard with the panel of technologies that you use.
 
 In this lab, you will learn how to:
 

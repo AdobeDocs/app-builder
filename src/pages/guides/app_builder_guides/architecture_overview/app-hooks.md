@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: App Builder application tooling lifecycle event hooks
+description: 'Reference for lifecycle event hooks you can define in app.config.yaml to run before, after, or in place of aio app commands.'
 ---
 
 # App Builder Application Tooling Lifecycle Event Hooks

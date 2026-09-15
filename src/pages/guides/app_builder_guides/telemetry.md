@@ -5,7 +5,7 @@ keywords:
   - Developer Tooling
   - telemetry
 title: Telemetry
-description: The latest release of the Adobe Developer Platform CLI (v9.0.0) collects anonymous telemetry data about general usage.  This is an optional feature, and you may opt-out if you would not like to share your anonymous usage information.
+description: Optional anonymous usage telemetry collected by the Adobe Developer Platform CLI v9.0.0 and how to opt out.
 ---
 
 # Telemetry

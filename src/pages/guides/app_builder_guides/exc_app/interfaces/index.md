@@ -1,5 +1,6 @@
 ---
 title: 'Adobe Experience Cloud App Builder: Interfaces Index'
+description: 'Index of interfaces available in the Adobe Experience Cloud App Builder extensibility APIs.'
 ---
 
 # Interfaces Index

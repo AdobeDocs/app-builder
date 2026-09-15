@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/marcinczeczko'
 title: 'Lesson 2: Local environment setup'
+description: 'Install the aio CLI and prepare the local environment for the custom Asset Compute worker Code Lab.'
 ---
 
 # Lesson 2: Local Environment Setup

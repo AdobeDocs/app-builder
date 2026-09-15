@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/Yu1986'
 title: Well done
+description: 'Recap of the Journaling API Code Lab and the high-availability event consumer skills you learned.'
 ---
 
 # Well Done

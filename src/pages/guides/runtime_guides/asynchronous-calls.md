@@ -1,3 +1,13 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Asynchronous
+  - Web Actions
+title: 'Asynchronous Calls'
+description: 'Patterns for running Adobe I/O Runtime work that exceeds the 60-second synchronous limit using asynchronous actions.'
+---
+
 # Asynchronous Calls
 
 The system executes web actions or REST APIs as synchronous (blocking) calls and gives them 60 seconds to complete their work. Actions that need more time can use asynchronous (async) calls, and use up to 180 minutes. 

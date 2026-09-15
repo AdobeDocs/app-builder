@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/Yu1986'
 title: Codelab Environment Requirements
+description: 'Environment requirements and supporting documents for the Runtime actions webhook Code Lab.'
 ---
 
 <Fragment src="../transclusions/requirements.md"/>

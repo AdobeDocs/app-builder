@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: 'Lesson 2: Debugging Application Code'
+description: 'Debug App Builder application code inside the Experience Cloud Shell using VS Code breakpoints.'
 ---
 
 # Lesson 2: Debugging Application Code

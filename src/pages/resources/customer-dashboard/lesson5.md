@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: 'Lesson 5: Add Personalized Promotion Emails Triggering'
+description: 'Add personalized promotion email triggering to the customer dashboard using a new Runtime action and uuid barcode.'
 ---
 
 # Lesson 5: Add Personalized Promotion Emails Triggering

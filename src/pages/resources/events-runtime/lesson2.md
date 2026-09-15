@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/Yu1986'
 title: 'Lesson 2: Verify the result'
+description: 'Verify event provider behavior by tracing actions with Activation IDs in the Adobe Developer Console.'
 ---
 
 # Lesson 2: Verify the Result

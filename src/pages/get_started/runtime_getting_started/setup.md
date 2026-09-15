@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Setup
+  - CLI
+  - Namespace
+title: 'Set up Your Environment'
+description: 'Install the aio CLI, create a Developer Console namespace, and sign in to start using Adobe I/O Runtime.'
+---
+
 # Set up Your Environment
 
 ## Get access

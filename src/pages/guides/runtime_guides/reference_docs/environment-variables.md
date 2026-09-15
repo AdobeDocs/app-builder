@@ -1,3 +1,13 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Environment Variables
+  - OpenWhisk
+title: 'Environment Variables'
+description: 'Reference for the OpenWhisk environment variables available to Adobe I/O Runtime actions at execution time.'
+---
+
 # Environment Variables
 
 When an action is being executed, your code can use the following environment variables:

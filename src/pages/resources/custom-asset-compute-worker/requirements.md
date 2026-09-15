@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/marcinczeczko'
 title: Codelab Environment Requirements
+description: 'Environment, third-party service, and account requirements for the custom Asset Compute worker Code Lab.'
 ---
 
 <Fragment src="../transclusions/requirements.md"/>

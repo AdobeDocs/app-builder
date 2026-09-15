@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: 'External module: user'
+description: 'Reference for the Experience Cloud user module that exposes IMS organization, profile, and access token information.'
 ---
 
 # External Module: User

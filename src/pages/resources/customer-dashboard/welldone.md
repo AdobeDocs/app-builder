@@ -7,6 +7,7 @@ keywords:
 contributors:
   - 'https://github.com/duynguyen'
 title: Well done
+description: 'Recap of the customer dashboard Code Lab and the Campaign Standard skills you learned.'
 ---
 
 # Well Done

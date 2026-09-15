@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Well done
+description: 'Recap of the Spectrum Code Lab and the App Builder design-system skills you learned.'
 ---
 
 # Well Done

@@ -5,6 +5,7 @@ keywords:
   - API Documentation
   - Developer Tooling
 title: Troubleshooting Common Issues
+description: 'Troubleshooting guide for the most common issues encountered while developing App Builder applications.'
 ---
 
 # Troubleshooting Common Issues

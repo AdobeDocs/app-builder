@@ -1,3 +1,14 @@
+---
+keywords:
+  - Adobe I/O
+  - Runtime
+  - Security
+  - Sandboxing
+  - XSS
+title: 'Security Guide'
+description: 'Security considerations and best practices for Adobe I/O Runtime functions, covering sandboxing, XSS, cookies, and secrets.'
+---
+
 # Security Guide
 
 This guide reviews security issues to consider when working with Runtime functions. Only a subset of these may apply to your use case: for example, the section about cookies isn't relevant if you aren't using web actions. This guide will help you keep your functions secure and steer you away from practices that are risky in a serverless environment.
@@ -10,11 +21,11 @@ Every action is run in its own container. Containers may be reused for the same 
 
 Anything that runs on the internet and accepts user input is potentially vulnerable to cross-site scripting (XSS) attacks. These take a variety of forms and can be easily introduced if you are not careful.
 
-Parameters sent to actions are not sanitized by the Runtime system. These inputs should therefore be treated as unsafe and sanitized before they are used. For example, do not pass parameters directly to a SQL queries or evaluate them in JavaScript. A good resource on how to avoid XSS attacks is the [Open Web Application Security Project (OWASP) XSS documentation](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)).
+Parameters sent to actions are not sanitized by the Runtime system. These inputs should therefore be treated as unsafe and sanitized before they are used. For example, do not pass parameters directly to a SQL queries or evaluate them in JavaScript. A good resource on how to avoid XSS attacks is the [Open Web Application Security Project (OWASP) XSS documentation](https://owasp.org/www-community/attacks/xss/).
 
 ## Cookies
 
-You can set cookies in two ways in Runtime: from JavaScript on the page using [document.cookie](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie) calls, or by passing a [Header object from a web action](https://github.com/apache/incubator-openwhisk/blob/master/docs/webactions.md#web-actions) with a Set-Cookie header directive. The way Runtime hosts functions raises some particular concerns for Developers.
+You can set cookies in two ways in Runtime: from JavaScript on the page using [document.cookie](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie) calls, or by passing a [Header object from a web action](https://github.com/apache/openwhisk/blob/master/docs/webactions.md) with a Set-Cookie header directive. The way Runtime hosts functions raises some particular concerns for Developers.
 
 We discourage the use of cookies directly from web actions on Runtime: please see [Securing Web Actions](securing-web-actions.md) for details.
 

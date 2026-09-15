@@ -4,7 +4,8 @@ keywords:
   - Adobe I/O
   - Extensibility
   - API Documentation
-  - Developer Tooling  
+  - Developer Tooling
+description: 'Exploring App Builder video walking through a dashboard case study built on App Builder.'
 ---
 
 # Exploring App Builder - Dashboard Case Study
