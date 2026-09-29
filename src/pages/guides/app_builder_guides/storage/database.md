@@ -22,7 +22,7 @@ To use App Builder Database Storage, add both the **App Builder Data Services** 
 
 The I/O Management API supplies the `adobeio_api` scope used to publish database provisioning and deletion events to Developer Console Activity Logs. Without this API, the database operation can succeed while audit event publication fails with an HTTP 403 response.
 
-After adding either API, generate a new OAuth Server-to-Server access token so that it includes the updated scopes. These APIs do not require any special license or subscription beyond the App Builder license.
+After adding either API, generate a new OAuth Server-to-Server access token so that it includes the updated scopes.
 
 ## Provision a workspace database
 
