@@ -18,9 +18,11 @@ There is a strict one-to-one relationship between an AIO project workspace and a
 
 ## App Builder Data Services API
 
-In order to use App Builder Database Storage in an AIO project workspace, you must add the **App Builder Data Services** API, which provides the necessary authentication between runtime actions and the App Builder Database Storage service.
+To use App Builder Database Storage, add both the **App Builder Data Services** API and the **I/O Management API** to the Adobe Developer Console project workspace. App Builder Data Services provides the authentication required between runtime actions and the Database Storage service.
 
-You can add the **App Builder Data Services** API in the developer console like any other API. It does not require any special license or subscription beyond the App Builder license.
+The I/O Management API supplies the `adobeio_api` scope used to publish database provisioning and deletion events to Developer Console Activity Logs. Without this API, the database operation can succeed while audit event publication fails with an HTTP 403 response.
+
+After adding either API, generate a new OAuth Server-to-Server access token so that it includes the updated scopes. These APIs do not require any special license or subscription beyond the App Builder license.
 
 ## Provision a workspace database
 
