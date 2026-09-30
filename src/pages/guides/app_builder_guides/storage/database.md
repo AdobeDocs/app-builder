@@ -20,7 +20,7 @@ There is a strict one-to-one relationship between an AIO project workspace and a
 
 To use App Builder Database Storage, add the **App Builder Data Services** API to the Adobe Developer Console project workspace. This API provides the authentication required between runtime actions and the Database Storage service.
 
-To publish database provisioning and deletion events to Developer Console Activity Logs, also add the **I/O Management API**. This API supplies the required `adobeio_api` scope. Without it, the database operation can still succeed, but audit event publication can fail with an HTTP 403 response.
+To record database provisioning and deletion activities in Developer Console Project Activity Logs, also add the **I/O Management API**. This API supplies the required `adobeio_api` scope. Without it, the database operation can still succeed, but recording the corresponding activity can fail with an HTTP 403 response.
 
 After adding either API, generate a new OAuth Server-to-Server access token so that it includes the updated scopes.
 
