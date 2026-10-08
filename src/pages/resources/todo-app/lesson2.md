@@ -81,7 +81,7 @@ const state = await stateLib.init();
 
 let todoList = await state.get(`todolist`);
 if (todoList?.value) {
-  todoList = todoList.value;
+  todoList = JSON.parse(todoList.value);
 }
 else {
   todoList = [];
@@ -104,8 +104,8 @@ switch (operation) {
         todos: []
       });
 
-      // Store the new list in the state storage with no expiry time
-      await state.put(`todolist`, todoList, { ttl: -1 });
+      // Store the new list in the state storage with the maximum expiry time (one year)
+      await state.put(`todolist`, JSON.stringify(todoList), { ttl: stateLib.MAX_TTL });
 
       body.message = `"${name}" added.`;
     } else {
@@ -130,14 +130,14 @@ switch (operation) {
           foundTodoList.todos[todoIndex] = todo;
           body.message = `Todo "${todo.id}" updated in "${name}".`;
 
-          await state.put(`todolist`, todoList, { ttl: -1 });
+          await state.put(`todolist`, JSON.stringify(todoList), { ttl: stateLib.MAX_TTL });
         } else {
           // Create a new todo item
           if (foundTodoList.todos.length < MAX_TODO_ITEMS) {
             foundTodoList.todos.unshift(todo);
             body.message = `Todo "${todo.id}" added to "${name}".`;
 
-            await state.put(`todolist`, todoList, { ttl: -1 });
+            await state.put(`todolist`, JSON.stringify(todoList), { ttl: stateLib.MAX_TTL });
           } else {
             return errorResponse(400, `Max ${MAX_TODO_ITEMS} todos reached for "${name}".`, logger);
           }
@@ -154,7 +154,7 @@ switch (operation) {
     // Filter out the todo list to delete by name
     const updatedTodoList = todoList.filter(({ name: todoListName }) => todoListName !== name);
 
-    await state.put(`todolist`, updatedTodoList, { ttl: -1 });
+    await state.put(`todolist`, JSON.stringify(updatedTodoList), { ttl: stateLib.MAX_TTL });
 
     body.message = `"${name}" todo list deleted.`;
     break;
@@ -169,6 +169,6 @@ return {
 };
 ```
 
-For every operation except `read`, we are using the `state.put()` function to update the `todolist` value. We also set the time to live option to `-1` so that the value of `todolist` won't expire.
+For every operation except `read`, we are using the `state.put()` function to update the `todolist` value. `aio-lib-state` only stores strings, so we serialize the list with `JSON.stringify()` before `state.put()` and parse it with `JSON.parse()` after `state.get()`. We also set the time-to-live option to `stateLib.MAX_TTL` (one year), the longest supported value. Infinite TTLs such as `-1` are rejected, and each `state.put()` resets the expiry.
 
 See the full action code [here](https://github.com/AdobeDocs/adobeio-samples-todoapp/blob/master/actions/todolist/index.js).
