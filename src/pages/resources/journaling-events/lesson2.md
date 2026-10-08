@@ -43,31 +43,33 @@ Set up write to storage inside the main function:
 
 ```javascript
 async function saveToDb(params, new_events) {
-  const stateCLient = await State.init()
+  const stateClient = await stateLib.init()
 
-
-  var events = await stateCLient.get(params.db_event_key) 
-  if (events === undefined) {
+  const stored = await stateClient.get(params.db_event_key)
+  let events
+  if (stored === undefined) {
     events = {latest: new_events[new_events.length - 1], events: new_events}
   } else {
-    events = events.value
+    events = JSON.parse(stored.value)
     events.latest = new_events[new_events.length - 1]
-    events.events.push(new_events)
+    events.events.push(...new_events)
   }
-  await stateCLient.put(params.db_event_key, events, { ttl: -1 })
+  await stateClient.put(params.db_event_key, JSON.stringify(events), { ttl: stateLib.MAX_TTL })
 }
 ```
+
+`aio-lib-state` only stores strings, so the events object is serialized with `JSON.stringify()` before `put()` and parsed with `JSON.parse()` after `get()`. Keys must match `^[a-zA-Z0-9-_.]{1,1024}$`, so `db_event_key` can't contain characters such as `:` or `/`. Infinite TTLs are not supported: the maximum is one year (`stateLib.MAX_TTL`), and each `put()` resets the expiry.
 
 Write down the event postion to make sure that if the action fails the next invocation will retrieve from the same index instead of the new one. This way, no events are lost.
 
 ```javascript
 async function getLatestEventPosition(params) {
-  const stateCLient = await State.init()
-  const events = await stateCLient.get(params.db_event_key)
-  if (events === undefined) {
+  const stateClient = await stateLib.init()
+  const stored = await stateClient.get(params.db_event_key)
+  if (stored === undefined) {
     return undefined
   } else {
-    return events.value.latest.position
+    return JSON.parse(stored.value).latest.position
   }
 }
 ```
