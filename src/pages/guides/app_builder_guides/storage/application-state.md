@@ -96,7 +96,7 @@ npm install @adobe/aio-lib-state
   const value = res.value
   // put
   await state.put('key', 'value') // with default ttl of 1 day
-  await state.put('another key', 'another value', { ttl: 200 }) // in seconds, use stateLib.MAX_TTL for 365 days.
+  await state.put('another-key', 'another value', { ttl: 200 }) // in seconds, use stateLib.MAX_TTL for 365 days.
   // delete
   await state.delete('key')
 
@@ -149,7 +149,7 @@ Navigate the CLI usage documentation from the repo's [README](https://github.com
 - Max state value size: `1MB`.
 - Max state key size: `1024 bytes`.
 - Max-supported TTL is `365 days`.
-- Values format: any `string|binary`.
+- Values format: `string` only. Serialize other data before `put` (for example, `JSON.stringify`) and parse it after `get` (`JSON.parse`). Non-string values, including `Buffer`, are rejected with `ERROR_BAD_ARGUMENT`.
 - Keys format: `string` only `alphanumeric` with `-`,`_`,`.`.
 
 ### Usage quotas and limits
