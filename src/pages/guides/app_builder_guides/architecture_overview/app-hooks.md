@@ -127,6 +127,14 @@ Set `AIO_RELOAD_ENV_ON_PRE_HOOKS` to a truthy value to make the command reload t
 AIO_RELOAD_ENV_ON_PRE_HOOKS=true aio app deploy
 ```
 
+You can also set it in the `.env` file of your app:
+
+```bash
+AIO_RELOAD_ENV_ON_PRE_HOOKS=true
+```
+
+A value set in your shell takes precedence over the one in `.env`.
+
 The reload runs after these hooks:
 
 - `pre-app-run`
