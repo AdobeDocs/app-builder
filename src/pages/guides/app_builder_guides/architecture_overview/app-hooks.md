@@ -124,12 +124,10 @@ A `pre-*` hook can change the `.env` file that the running `aio` command reads, 
 Set `AIO_RELOAD_ENV_ON_PRE_HOOKS` to a truthy value to make the command reload the environment variables right after the pre-hook finishes:
 
 ```bash
+# In your shell
 AIO_RELOAD_ENV_ON_PRE_HOOKS=true aio app deploy
-```
 
-You can also set it in the `.env` file of your app:
-
-```bash
+# Or in the .env file of your app
 AIO_RELOAD_ENV_ON_PRE_HOOKS=true
 ```
 
