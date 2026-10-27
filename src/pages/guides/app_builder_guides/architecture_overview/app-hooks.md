@@ -119,9 +119,9 @@ module.exports = () => {
 
 ## Reloading environment variables after pre-hooks
 
-A `pre-*` hook can change the `.env` or `.aio` file that the running `aio` command reads, for example when it fetches credentials or switches workspaces. By default, the command keeps the values it loaded at startup.
+A `pre-*` hook can change the `.env` file that the running `aio` command reads, for example when it fetches credentials or switches workspaces. By default, the command keeps the values it loaded at startup.
 
-Set `AIO_RELOAD_ENV_ON_PRE_HOOKS` to a truthy value to make the command reload the configuration right after the pre-hook finishes:
+Set `AIO_RELOAD_ENV_ON_PRE_HOOKS` to a truthy value to make the command reload the environment variables right after the pre-hook finishes:
 
 ```bash
 AIO_RELOAD_ENV_ON_PRE_HOOKS=true aio app deploy
