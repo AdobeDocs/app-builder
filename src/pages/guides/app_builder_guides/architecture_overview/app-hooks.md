@@ -133,8 +133,6 @@ You can also set it in the `.env` file of your app:
 AIO_RELOAD_ENV_ON_PRE_HOOKS=true
 ```
 
-A value set in your shell takes precedence over the one in `.env`.
-
 The reload runs after these hooks:
 
 - `pre-app-run`
