@@ -210,12 +210,13 @@
     {
       "page": "/guides/app_builder_guides/application-state",
       "avatars": [
+        "https://avatars.githubusercontent.com/u/6404095?v=4",
         "https://avatars.githubusercontent.com/u/11652541?v=4",
         "https://avatars.githubusercontent.com/u/38516639?v=4",
         "https://avatars.githubusercontent.com/u/36107?v=4",
         "https://avatars.githubusercontent.com/u/14320591?v=4"
       ],
-      "lastUpdated": "12/11/2025"
+      "lastUpdated": "10/8/2026"
     },
     {
       "page": "/guides/app_builder_guides/architecture_overview/app-hooks",
@@ -580,11 +581,12 @@
     {
       "page": "/guides/app_builder_guides/storage/application-state",
       "avatars": [
+        "https://avatars.githubusercontent.com/u/6404095?v=4",
         "https://avatars.githubusercontent.com/u/38516639?v=4",
         "https://avatars.githubusercontent.com/u/6577801?v=4",
         "https://avatars.githubusercontent.com/u/11652541?v=4"
       ],
-      "lastUpdated": "4/10/2026"
+      "lastUpdated": "10/8/2026"
     },
     {
       "page": "/guides/app_builder_guides/storage/database",
@@ -788,9 +790,10 @@
     {
       "page": "/guides/runtime_guides/reference_docs/prepackages",
       "avatars": [
+        "https://avatars.githubusercontent.com/u/1749703?v=4",
         "https://avatars.githubusercontent.com/u/38516639?v=4"
       ],
-      "lastUpdated": "3/5/2026"
+      "lastUpdated": "11/10/2026"
     },
     {
       "page": "/guides/runtime_guides/reference_docs/runtimes",
@@ -1199,11 +1202,12 @@
     {
       "page": "/resources/cron-jobs/lesson3",
       "avatars": [
+        "https://avatars.githubusercontent.com/u/1749703?v=4",
         "https://avatars.githubusercontent.com/u/38516639?v=4",
         "https://avatars.githubusercontent.com/u/36107?v=4",
         "https://avatars.githubusercontent.com/u/6012307?v=4"
       ],
-      "lastUpdated": "3/5/2026"
+      "lastUpdated": "11/10/2026"
     },
     {
       "page": "/resources/cron-jobs/requirements",
