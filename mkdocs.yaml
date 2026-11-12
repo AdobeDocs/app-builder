@@ -1,0 +1,12 @@
+site_name: app-builder
+docs_dir: src/pages
+repo_url: https://github.com/AdobeDocs/app-builder
+edit_uri: edit/main/src/pages/
+
+nav:
+  - Home: intro_and_overview/index.md
+  - App Builder Getting Started: get_started/app_builder_get_started/index.md
+  - Runtime Getting Started: get_started/index.md
+  - Creating your First App Builder Application: get_started/app_builder_get_started/first-app.md
+  - Guides: guides/index.md
+  - Resources: resources/index.md
